@@ -1,0 +1,130 @@
+import { Metadata } from "next";
+import { Badge } from "@/components/ui/badge";
+import { PostCard } from "@/components/blog/post-card";
+import { getAllBlogPosts } from "@/lib/api/blog";
+
+export const metadata: Metadata = {
+  title: "Ratgeber - HeizCenter Bayern | Wärmepumpe, Heizung & mehr",
+  description:
+    "Expertenwissen zu Wärmepumpen, Heizung, Sanitär und Klimaanlagen. Aktuelle Förderungen, Kosten, Tipps und Ratgeber für Hausbesitzer in Bayern.",
+  keywords: [
+    "Wärmepumpe Ratgeber",
+    "Heizung Kosten",
+    "BEG Förderung",
+    "Heizungsgesetz",
+    "Badsanierung Tipps",
+  ],
+};
+
+
+const categories = [
+  "Alle",
+  "Wärmepumpe",
+  "Heizung",
+  "Sanitär",
+  "Klimaanlage",
+  "Förderung",
+];
+
+export default async function BlogPage() {
+  const blogPosts = await getAllBlogPosts();
+  const featuredPosts = blogPosts.filter((post) => post.featured);
+
+  return (
+    <>
+      {/* Hero Section */}
+      <section className="bg-gradient-to-b from-blue-50 to-white py-16">
+        <div className="container">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+              Ratgeber & Wissen
+            </h1>
+            <p className="text-xl text-slate-600 mb-8">
+              Expertenwissen zu Wärmepumpen, Heizung, Sanitär und Klimaanlagen.
+              Bleiben Sie informiert über Förderungen, Kosten und Best Practices.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Category Filter */}
+      <section className="container py-8">
+        <div className="flex flex-wrap gap-3 justify-center">
+          {categories.map((category) => (
+            <Badge
+              key={category}
+              variant={category === "Alle" ? "default" : "outline"}
+              className="cursor-pointer hover:bg-blue-600 hover:text-white transition-colors px-4 py-2 text-sm"
+            >
+              {category}
+            </Badge>
+          ))}
+        </div>
+      </section>
+
+      {/* Featured Posts */}
+      <section className="container py-8">
+        <h2 className="text-3xl font-bold mb-8">Aktuelle Artikel</h2>
+        <div className="grid md:grid-cols-2 gap-8 mb-12">
+          {featuredPosts.map((post) => (
+            <PostCard
+              key={post.id}
+              slug={post.slug}
+              title={post.title}
+              excerpt={post.excerpt}
+              category={post.category}
+              date={post.date}
+              readingTime={post.readingTime}
+              featured={true}
+            />
+          ))}
+        </div>
+
+        {/* All Posts */}
+        <h2 className="text-2xl font-bold mb-6">Alle Artikel</h2>
+        <div className="grid md:grid-cols-3 gap-6">
+          {blogPosts.map((post) => (
+            <PostCard
+              key={post.id}
+              slug={post.slug}
+              title={post.title}
+              excerpt={post.excerpt}
+              category={post.category}
+              date={post.date}
+              readingTime={post.readingTime}
+              featured={false}
+            />
+          ))}
+        </div>
+      </section>
+
+      {/* Newsletter CTA */}
+      <section className="bg-blue-50 py-16 mt-12">
+        <div className="container">
+          <div className="max-w-2xl mx-auto text-center">
+            <h2 className="text-3xl font-bold mb-4">
+              Bleiben Sie auf dem Laufenden
+            </h2>
+            <p className="text-slate-600 mb-8">
+              Erhalten Sie neue Ratgeber-Artikel, Förderungs-Updates und Tipps
+              direkt in Ihr Postfach.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+              <input
+                type="email"
+                placeholder="Ihre E-Mail-Adresse"
+                className="flex-1 px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-600"
+              />
+              <button className="px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors">
+                Anmelden
+              </button>
+            </div>
+            <p className="text-xs text-slate-500 mt-3">
+              Kostenlos und jederzeit abbestellbar. Ihre Daten sind sicher.
+            </p>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
