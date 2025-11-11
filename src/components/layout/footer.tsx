@@ -6,7 +6,7 @@ export function Footer() {
   return (
     <footer className="bg-slate-900 text-white">
       <div className="container py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Company Info */}
           <div>
             <h3 className="text-xl font-bold mb-4">HeizCenter</h3>
@@ -97,6 +97,69 @@ export function Footer() {
                   </Link>
                 </li>
               ))}
+            </ul>
+          </div>
+
+          {/* Information */}
+          <div>
+            <h4 className="font-semibold mb-4">Information</h4>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <Link
+                  href="/ueber-uns"
+                  className="text-slate-400 hover:text-white transition-colors"
+                >
+                  Über uns
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/blog"
+                  className="text-slate-400 hover:text-white transition-colors"
+                >
+                  Ratgeber & Blog
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/rechner"
+                  className="text-slate-400 hover:text-white transition-colors"
+                >
+                  Kostenrechner
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/faq"
+                  className="text-slate-400 hover:text-white transition-colors"
+                >
+                  FAQ
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/foerderung"
+                  className="text-slate-400 hover:text-white transition-colors"
+                >
+                  Förderung
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/wartungsvertrag"
+                  className="text-slate-400 hover:text-white transition-colors"
+                >
+                  Wartungsvertrag
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/karriere"
+                  className="text-slate-400 hover:text-white transition-colors"
+                >
+                  Karriere
+                </Link>
+              </li>
             </ul>
           </div>
 
