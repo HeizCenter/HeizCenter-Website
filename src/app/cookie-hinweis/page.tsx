@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Cookie-Hinweis | HeizCenter",
+  title: "Cookie-Richtlinien | HeizCenter",
   description: "Informationen zur Verwendung von Cookies auf der HeizCenter Website.",
   robots: "noindex, nofollow",
 };
@@ -10,203 +10,143 @@ export default function CookieHinweisPage() {
   return (
     <div className="container py-16">
       <div className="max-w-4xl mx-auto prose prose-slate">
-        <h1 className="text-4xl font-bold mb-8">Cookie-Hinweis</h1>
+        <h1 className="text-4xl font-bold mb-8">Cookie-Richtlinien</h1>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-bold mb-4">Was sind Cookies?</h2>
           <p className="mb-4">
-            Cookies sind kleine Textdateien, die beim Besuch einer Website auf Ihrem Computer,
-            Tablet oder Smartphone gespeichert werden. Cookies enthalten Informationen, die bei
-            einem erneuten Besuch der Website wieder abgerufen werden können.
+            Cookies sind kleine Textbausteine, die von unseren Servern an Ihren Computer oder Ihr Gerät gesendet werden, wenn Sie auf unsere Dienste zugreifen.
+            Sie werden in Ihrem Browser gespeichert und später an unsere Server zurückgeschickt, damit wir kontextbezogene Inhalte bereitstellen können.
+            Ohne Cookies wäre die Nutzung des Internets eine viel frustrierendere Erfahrung.
+            Wir verwenden sie, um Ihre Aktivitäten auf unserer Website zu unterstützen. Zum Beispiel Ihre Sitzung (damit Sie sich nicht erneut anmelden müssen) oder Ihren Warenkorb.
           </p>
+
           <p className="mb-4">
-            Es gibt verschiedene Arten von Cookies:
+            Cookies werden auch verwendet, um uns zu helfen, Ihre Präferenzen zu verstehen, basierend auf früheren oder aktuellen Aktivitäten auf unserer Website (die Seiten, die Sie
+            besucht haben), Ihre Sprache und Ihr Land zu verstehen, was es uns ermöglicht, Ihnen einen besseren Service zu bieten.
+            Wir verwenden Cookies auch, um aggregierte Daten über den Website-Verkehr und die Website-Interaktion zu sammeln, damit wir Ihnen in Zukunft
+            bessere Website-Erfahrungen und -Tools anbieten können.
           </p>
-          <ul className="list-disc list-inside mb-4 space-y-2">
-            <li>
-              <strong>Session-Cookies:</strong> Temporäre Cookies, die nach dem Schließen des
-              Browsers automatisch gelöscht werden
-            </li>
-            <li>
-              <strong>Permanente Cookies:</strong> Cookies, die für eine bestimmte Zeitdauer auf
-              Ihrem Gerät gespeichert bleiben
-            </li>
-            <li>
-              <strong>Erstanbieter-Cookies:</strong> Cookies, die von der besuchten Website selbst
-              gesetzt werden
-            </li>
-            <li>
-              <strong>Drittanbieter-Cookies:</strong> Cookies, die von anderen Websites oder
-              Diensten gesetzt werden
-            </li>
-          </ul>
+
+          <p className="mb-6">
+            Hier finden Sie eine Übersicht über die Cookies, die auf Ihrem Gerät gespeichert werden können, wenn Sie unsere Website besuchen:
+          </p>
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-bold mb-4">Welche Cookies verwenden wir?</h2>
-
-          <h3 className="text-xl font-bold mb-3">1. Technisch notwendige Cookies</h3>
-          <p className="mb-4">
-            Diese Cookies sind für die Grundfunktionen der Website erforderlich und können nicht
-            deaktiviert werden. Sie werden nur als Reaktion auf von Ihnen getätigte Aktionen
-            gesetzt, wie z.B. das Setzen Ihrer Datenschutzeinstellungen, das Anmelden oder das
-            Ausfüllen von Formularen.
-          </p>
-          <div className="bg-gray-50 p-4 rounded-lg mb-4">
-            <table className="min-w-full">
-              <thead>
-                <tr className="border-b">
-                  <th className="text-left py-2">Cookie-Name</th>
-                  <th className="text-left py-2">Zweck</th>
-                  <th className="text-left py-2">Laufzeit</th>
+          <div className="overflow-x-auto">
+            <table className="min-w-full border-collapse border border-slate-300">
+              <thead className="bg-slate-100">
+                <tr>
+                  <th className="border border-slate-300 px-4 py-3 text-left font-bold">Kategorie des Cookies</th>
+                  <th className="border border-slate-300 px-4 py-3 text-left font-bold">Zweck</th>
+                  <th className="border border-slate-300 px-4 py-3 text-left font-bold">Beispiele</th>
                 </tr>
               </thead>
               <tbody>
-                <tr className="border-b">
-                  <td className="py-2">cookie_consent</td>
-                  <td className="py-2">Speichert Ihre Cookie-Einstellungen</td>
-                  <td className="py-2">1 Jahr</td>
+                <tr>
+                  <td className="border border-slate-300 px-4 py-3">
+                    <strong>Sitzung & Sicherheit</strong><br />
+                    <span className="text-sm">(essenziell)</span>
+                  </td>
+                  <td className="border border-slate-300 px-4 py-3">
+                    Benutzer authentifizieren, Benutzerdaten schützen und es der Website ermöglichen, die von den Benutzern erwarteten Dienste bereitzustellen,
+                    wie z. B. die Pflege des Inhalts ihres Warenkorbs oder das Zulassen von Dateiuploads.
+                    <br /><br />
+                    Die Website wird nicht richtig funktionieren, wenn Sie diese Cookies ablehnen oder verwerfen.
+                  </td>
+                  <td className="border border-slate-300 px-4 py-3">
+                    session_id (Odoo)
+                  </td>
                 </tr>
-                <tr className="border-b">
-                  <td className="py-2">session_id</td>
-                  <td className="py-2">Identifiziert Ihre Browsersitzung</td>
-                  <td className="py-2">Session</td>
+                <tr className="bg-slate-50">
+                  <td className="border border-slate-300 px-4 py-3">
+                    <strong>Präferenzen</strong><br />
+                    <span className="text-sm">(essenziell)</span>
+                  </td>
+                  <td className="border border-slate-300 px-4 py-3">
+                    Merken Sie sich Informationen über das bevorzugte Aussehen oder Verhalten der Website, wie z. B. Ihre bevorzugte Sprache oder Region.
+                    Ihr Erlebnis kann beeinträchtigt werden, wenn Sie diese Cookies ablehnen, aber die Website funktioniert weiterhin.
+                  </td>
+                  <td className="border border-slate-300 px-4 py-3">
+                    frontend_lang (Odoo)
+                  </td>
+                </tr>
+                <tr>
+                  <td className="border border-slate-300 px-4 py-3">
+                    <strong>Interaktionsverlauf</strong><br />
+                    <span className="text-sm">(optional)</span>
+                  </td>
+                  <td className="border border-slate-300 px-4 py-3">
+                    Dient zur Erfassung von Informationen über Ihre Interaktionen mit der Website, die von Ihnen besuchten Seiten,
+                    und spezifische Marketingkampagnen, die Sie auf die Website geführt haben.
+                    <br /><br />
+                    Wir können Ihnen möglicherweise nicht den besten Service bieten, wenn Sie diese Cookies ablehnen, aber die Website wird funktionieren.
+                  </td>
+                  <td className="border border-slate-300 px-4 py-3">
+                    im_livechat_previous_operator (Odoo)<br />
+                    utm_campaign (Odoo)<br />
+                    utm_source (Odoo)<br />
+                    utm_medium (Odoo)
+                  </td>
+                </tr>
+                <tr className="bg-slate-50">
+                  <td className="border border-slate-300 px-4 py-3">
+                    <strong>Werbung & Marketing</strong><br />
+                    <span className="text-sm">(optional)</span>
+                  </td>
+                  <td className="border border-slate-300 px-4 py-3">
+                    Wird verwendet, um Werbung für Nutzer attraktiver und für Veröffentlicher und Werbetreibende wertvoller zu machen,
+                    z. B. zur Bereitstellung relevanterer Werbung, wenn Sie andere Websites besuchen, auf denen Werbung angezeigt wird, oder zur Verbesserung der Berichterstattung über die Leistung von Werbekampagnen.
+                    <br /><br />
+                    Beachten Sie, dass einige Drittanbieter-Dienste zusätzliche Cookies auf Ihrem Browser installieren können, um Sie zu identifizieren.
+                    Sie können die Verwendung von Cookies durch Dritte verweigern und zwar auf der{" "}
+                    <a href="https://optout.networkadvertising.org/?c=1" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                      Verweigerungsseite der Netzwerkwerbeinitiative
+                    </a>.
+                    <br />
+                    Die Website funktioniert auch dann, wenn Sie diese Cookies ablehnen oder verwerfen.
+                  </td>
+                  <td className="border border-slate-300 px-4 py-3">
+                    __gads (Google)<br />
+                    __gac (Google)
+                  </td>
+                </tr>
+                <tr>
+                  <td className="border border-slate-300 px-4 py-3">
+                    <strong>Analytics</strong><br />
+                    <span className="text-sm">(optional)</span>
+                  </td>
+                  <td className="border border-slate-300 px-4 py-3">
+                    Verstehen Sie, wie Besucher unsere Website nutzen, mit Google Analytics.
+                    Erfahren Sie mehr über{" "}
+                    <a href="https://developers.google.com/analytics/resources/concepts/gaConceptsCookies?hl=en" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                      Analytics-Cookies und Informationen zum Datenschutz
+                    </a>.
+                    <br />
+                    Die Website funktioniert auch dann, wenn Sie diese Cookies ablehnen oder verwerfen.
+                  </td>
+                  <td className="border border-slate-300 px-4 py-3">
+                    _ga (Google)<br />
+                    _gat (Google)<br />
+                    _gid (Google)<br />
+                    _gac_* (Google)
+                  </td>
                 </tr>
               </tbody>
             </table>
           </div>
-
-          <h3 className="text-xl font-bold mb-3">2. Funktionale Cookies (optional)</h3>
-          <p className="mb-4">
-            Diese Cookies ermöglichen erweiterte Funktionalität und Personalisierung. Sie können von
-            uns oder von Drittanbietern gesetzt werden, deren Dienste wir auf unseren Seiten
-            verwenden. Wenn Sie diese Cookies nicht zulassen, funktionieren einige oder alle dieser
-            Dienste möglicherweise nicht einwandfrei.
-          </p>
-
-          <h3 className="text-xl font-bold mb-3">3. Analyse-Cookies (optional)</h3>
-          <p className="mb-4">
-            Diese Cookies sammeln Informationen darüber, wie Besucher unsere Website nutzen. Alle
-            Informationen, die diese Cookies sammeln, sind aggregiert und daher anonym. Wenn Sie
-            diese Cookies nicht zulassen, wissen wir nicht, wann Sie unsere Website besucht haben.
-          </p>
-          <div className="bg-gray-50 p-4 rounded-lg mb-4">
-            <p className="mb-2">
-              <strong>Google Analytics (optional)</strong>
-            </p>
-            <p className="text-sm">
-              Wir verwenden Google Analytics, um die Nutzung unserer Website zu analysieren. Die
-              durch das Cookie erzeugten Informationen über Ihre Benutzung dieser Website werden in
-              der Regel an einen Server von Google übertragen und dort gespeichert. Ihre IP-Adresse
-              wird dabei gekürzt (IP-Anonymisierung).
-            </p>
-          </div>
-
-          <h3 className="text-xl font-bold mb-3">4. Marketing-Cookies (optional)</h3>
-          <p className="mb-4">
-            Diese Cookies können über unsere Website von unseren Werbepartnern gesetzt werden. Sie
-            können von diesen Unternehmen verwendet werden, um ein Profil Ihrer Interessen zu
-            erstellen und Ihnen relevante Anzeigen auf anderen Websites zu zeigen. Wenn Sie diese
-            Cookies nicht zulassen, werden Sie nicht von zielgerichteter Werbung profitieren.
-          </p>
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-bold mb-4">Ihre Cookie-Einstellungen verwalten</h2>
           <p className="mb-4">
-            Sie haben das Recht, Ihre Cookie-Einstellungen jederzeit zu ändern. Beim ersten Besuch
-            unserer Website werden Sie gefragt, ob Sie der Verwendung von optionalen Cookies
-            zustimmen möchten.
-          </p>
-          <p className="mb-4">
-            <strong>Cookie-Einstellungen ändern:</strong>
-          </p>
-          <div className="bg-blue-50 p-6 rounded-lg mb-4">
-            <p className="mb-4">
-              Sie können Ihre Cookie-Einstellungen jederzeit über den Link "Cookie-Einstellungen" im
-              Footer dieser Website ändern. Dort können Sie:
-            </p>
-            <ul className="list-disc list-inside space-y-2">
-              <li>Ihre Zustimmung zu bestimmten Cookie-Kategorien widerrufen</li>
-              <li>Detaillierte Informationen zu den verwendeten Cookies einsehen</li>
-              <li>Ihre Einstellungen speichern und aktualisieren</li>
-            </ul>
-          </div>
-
-          <p className="mb-4">
-            <strong>Browser-Einstellungen:</strong>
-          </p>
-          <p className="mb-4">
-            Die meisten Browser akzeptieren Cookies automatisch. Sie können Ihren Browser jedoch so
-            einstellen, dass er Cookies ablehnt oder Sie benachrichtigt, wenn Cookies gesendet
-            werden. Bitte beachten Sie, dass einige Funktionen unserer Website möglicherweise nicht
-            ordnungsgemäß funktionieren, wenn Sie Cookies deaktivieren.
+            Sie können wählen, ob Ihr Computer Sie jedes Mal warnen soll, wenn ein Cookie gesendet wird, oder ob Sie alle Cookies deaktivieren möchten.
+            Jeder Browser ist ein wenig anders. Schauen Sie daher in das Hilfemenü Ihres Browsers, um zu erfahren, wie Sie Ihre Cookies korrekt ändern können.
           </p>
 
-          <div className="bg-gray-50 p-4 rounded-lg mb-4">
-            <p className="mb-2 font-bold">Cookies in verschiedenen Browsern verwalten:</p>
-            <ul className="list-disc list-inside space-y-2 text-sm">
-              <li>
-                <strong>Google Chrome:</strong> Einstellungen → Datenschutz und Sicherheit →
-                Cookies und andere Websitedaten
-              </li>
-              <li>
-                <strong>Mozilla Firefox:</strong> Einstellungen → Datenschutz & Sicherheit →
-                Cookies und Website-Daten
-              </li>
-              <li>
-                <strong>Safari:</strong> Einstellungen → Datenschutz → Cookies und Website-Daten
-              </li>
-              <li>
-                <strong>Microsoft Edge:</strong> Einstellungen → Cookies und Websiteberechtigungen
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <section className="mb-8">
-          <h2 className="text-2xl font-bold mb-4">Rechtsgrundlage</h2>
           <p className="mb-4">
-            Die Verwendung technisch notwendiger Cookies erfolgt auf Grundlage von Art. 6 Abs. 1
-            lit. f DSGVO (berechtigtes Interesse an der Funktionsfähigkeit der Website).
-          </p>
-          <p className="mb-4">
-            Die Verwendung optionaler Cookies (Funktional, Analyse, Marketing) erfolgt nur mit Ihrer
-            ausdrücklichen Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO und § 25 TTDSG. Sie können
-            Ihre Einwilligung jederzeit widerrufen.
+            Wir unterstützen derzeit keine Do-Not-Track-Signale, da es keinen Industriestandard für die Einhaltung gibt.
           </p>
         </section>
-
-        <section className="mb-8">
-          <h2 className="text-2xl font-bold mb-4">Weitere Informationen</h2>
-          <p className="mb-4">
-            Detaillierte Informationen zum Datenschutz und zur Datenverarbeitung finden Sie in
-            unserer{" "}
-            <a href="/datenschutz" className="text-blue-600 hover:underline">
-              Datenschutzerklärung
-            </a>
-            .
-          </p>
-          <p className="mb-4">
-            Bei Fragen zur Verwendung von Cookies können Sie uns jederzeit unter{" "}
-            <a href="mailto:datenschutz@heizcenter.de" className="text-blue-600 hover:underline">
-              datenschutz@heizcenter.de
-            </a>{" "}
-            kontaktieren.
-          </p>
-        </section>
-
-        <div className="bg-blue-50 p-6 rounded-lg mt-12">
-          <p className="text-sm text-slate-600">
-            <strong>Hinweis:</strong> Dies ist ein Muster-Cookie-Hinweis. Für den produktiven
-            Einsatz muss dieser entsprechend der tatsächlich verwendeten Cookies und Dienste
-            angepasst werden. Wir empfehlen die Verwendung einer Cookie-Consent-Management-Lösung.
-          </p>
-        </div>
-
-        <p className="text-sm text-slate-500 mt-8">
-          Letzte Aktualisierung: {new Date().toLocaleDateString("de-DE")}
-        </p>
       </div>
     </div>
   );
