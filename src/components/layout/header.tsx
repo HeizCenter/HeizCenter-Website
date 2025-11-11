@@ -11,6 +11,7 @@ const navigation = [
   { name: "Heizung", href: "/heizung" },
   { name: "Sanitär", href: "/sanitaer" },
   { name: "Klimaanlage", href: "/klimaanlage" },
+  { name: "Rechner", href: "/rechner" },
   { name: "Standorte", href: "/standorte" },
   { name: "Ratgeber", href: "/blog" },
   { name: "Kontakt", href: "/kontakt" },
