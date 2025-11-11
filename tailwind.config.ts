@@ -22,6 +22,49 @@ const config: Config = {
         ring: 'hsl(var(--ring))',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
+
+        // HeizCenter Brand Colors
+        'brand-blue': {
+          DEFAULT: 'hsl(var(--primary-blue))',
+          dark: 'hsl(var(--primary-blue-dark))',
+          light: 'hsl(var(--primary-blue-light))',
+          'ultra-light': 'hsl(var(--primary-blue-ultra-light))',
+        },
+        'brand-orange': {
+          DEFAULT: 'hsl(var(--secondary-orange))',
+          dark: 'hsl(var(--secondary-orange-dark))',
+          light: 'hsl(var(--secondary-orange-light))',
+        },
+        'brand-green': {
+          DEFAULT: 'hsl(var(--tertiary-green))',
+          dark: 'hsl(var(--tertiary-green-dark))',
+          light: 'hsl(var(--tertiary-green-light))',
+        },
+
+        // Neutral Grays
+        'brand-gray': {
+          900: 'hsl(var(--gray-900))',
+          800: 'hsl(var(--gray-800))',
+          700: 'hsl(var(--gray-700))',
+          500: 'hsl(var(--gray-500))',
+          300: 'hsl(var(--gray-300))',
+          200: 'hsl(var(--gray-200))',
+          100: 'hsl(var(--gray-100))',
+          50: 'hsl(var(--gray-50))',
+        },
+
+        // Status & Feedback Colors
+        success: 'hsl(var(--success))',
+        warning: 'hsl(var(--warning))',
+        error: 'hsl(var(--error))',
+        info: 'hsl(var(--info))',
+
+        // Service-Specific Accents
+        heating: 'hsl(var(--heating-red))',
+        water: 'hsl(var(--water-blue))',
+        climate: 'hsl(var(--climate-cyan))',
+        solar: 'hsl(var(--solar-yellow))',
+
         primary: {
           DEFAULT: 'hsl(var(--primary))',
           foreground: 'hsl(var(--primary-foreground))'

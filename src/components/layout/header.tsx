@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, Phone } from "lucide-react";
@@ -22,8 +23,17 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
       <div className="container flex h-16 items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center space-x-2">
-          <span className="text-2xl font-bold text-blue-600">HeizCenter</span>
+        <Link href="/" className="flex items-center space-x-3">
+          <Image
+            src="/images/logo.png"
+            alt="HeizCenter Logo"
+            width={40}
+            height={40}
+            className="h-10 w-auto"
+          />
+          <span className="text-2xl font-bold bg-gradient-to-r from-brand-blue to-brand-blue-light bg-clip-text text-transparent">
+            HeizCenter
+          </span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -32,7 +42,7 @@ export function Header() {
             <Link
               key={item.name}
               href={item.href}
-              className="text-sm font-medium transition-colors hover:text-blue-600"
+              className="text-sm font-medium transition-colors hover:text-brand-blue"
             >
               {item.name}
             </Link>
@@ -45,7 +55,7 @@ export function Header() {
             <Phone className="h-4 w-4" />
             <span className="font-medium">0821 123456</span>
           </a>
-          <Button asChild>
+          <Button asChild className="bg-brand-orange hover:bg-brand-orange-dark">
             <Link href="/kontakt">Beratung anfragen</Link>
           </Button>
         </div>
@@ -64,7 +74,7 @@ export function Header() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-lg font-medium transition-colors hover:text-blue-600"
+                  className="text-lg font-medium transition-colors hover:text-brand-blue"
                 >
                   {item.name}
                 </Link>
@@ -77,7 +87,7 @@ export function Header() {
                   <Phone className="h-5 w-5" />
                   <span>0821 123456</span>
                 </a>
-                <Button asChild className="w-full mt-4">
+                <Button asChild className="w-full mt-4 bg-brand-orange hover:bg-brand-orange-dark">
                   <Link href="/kontakt">Beratung anfragen</Link>
                 </Button>
               </div>

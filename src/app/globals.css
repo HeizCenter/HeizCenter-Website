@@ -4,25 +4,62 @@
 
 @layer base {
   :root {
+    /* HeizCenter Brand Colors */
+    --primary-blue: 213 100% 40%;           /* #0066CC - Main brand color */
+    --primary-blue-dark: 213 100% 30%;      /* #004499 - Hover states */
+    --primary-blue-light: 213 75% 52%;      /* #3385D6 - Backgrounds, tints */
+    --primary-blue-ultra-light: 213 100% 95%; /* #E6F2FF - Section backgrounds */
+
+    --secondary-orange: 15 100% 60%;        /* #FF6B35 - CTAs, warmth accent */
+    --secondary-orange-dark: 15 79% 54%;    /* #E55A2B - Hover states */
+    --secondary-orange-light: 15 100% 69%;  /* #FF8C5F - Tints, highlights */
+
+    --tertiary-green: 151 55% 40%;          /* #2D9B5D - Solar, sustainability */
+    --tertiary-green-dark: 151 59% 34%;     /* #228B48 - Emphasis */
+    --tertiary-green-light: 122 39% 49%;    /* #4CAF50 - Backgrounds */
+
+    /* Neutral Grays - Professional & Clean */
+    --gray-900: 0 0% 10%;                   /* #1A1A1A - Main text, headings */
+    --gray-800: 0 0% 20%;                   /* #333333 - Body text */
+    --gray-700: 0 0% 29%;                   /* #4A4A4A - Secondary text */
+    --gray-500: 0 0% 50%;                   /* #808080 - Disabled, placeholders */
+    --gray-300: 0 0% 82%;                   /* #D1D1D1 - Borders, dividers */
+    --gray-200: 0 0% 91%;                   /* #E8E8E8 - Light backgrounds */
+    --gray-100: 0 0% 96%;                   /* #F5F5F5 - Section backgrounds */
+    --gray-50: 0 0% 98%;                    /* #FAFAFA - Page background */
+
+    /* Status & Feedback Colors */
+    --success: 151 55% 40%;                 /* #2D9B5D - Success messages */
+    --warning: 35 100% 58%;                 /* #FFA726 - Warnings */
+    --error: 4 80% 56%;                     /* #E53935 - Errors, critical alerts */
+    --info: 213 100% 40%;                   /* #0066CC - Information, tips */
+
+    /* Service-Specific Accent Colors */
+    --heating-red: 3 100% 60%;              /* #FF4136 - Heizung section */
+    --water-blue: 202 100% 40%;             /* #0088CC - Sanitär section */
+    --climate-cyan: 187 100% 42%;           /* #00BCD4 - Klima section */
+    --solar-yellow: 45 100% 58%;            /* #FFCA28 - Solar section */
+
+    /* Shadcn/UI Tokens mapped to HeizCenter palette */
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 213 100% 40%;                /* Using primary-blue */
     --primary-foreground: 210 40% 98%;
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 15 100% 60%;                  /* Using secondary-orange */
+    --accent-foreground: 210 40% 98%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 213 100% 40%;                   /* Using primary-blue */
     --radius: 0.5rem;
   }
 
