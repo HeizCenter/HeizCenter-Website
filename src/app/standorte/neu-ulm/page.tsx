@@ -69,11 +69,10 @@ export default function NeuUlmPage() {
 
       <SubLocationHero
         subLocation="Neu-Ulm"
-        mainLocation="Ulm"
-        mainLocationHref="/standorte/ulm"
-        phone="+49 8234 966590"
-        description="Ihr zuverlässiger Partner für Wärmepumpen, Heizung, Sanitär und Klimaanlagen in Neu-Ulm. Schneller Service vom HeizCenter Ulm - nur eine Brücke entfernt."
         mainLocation="Gutenzell-Hürbel"
+        mainLocationHref="/standorte/gutenzell-huerbel"
+        phone="+49 8234 966590"
+        description="Ihr zuverlässiger Partner für Wärmepumpen, Heizung, Sanitär und Klimaanlagen in Neu-Ulm. Schneller Service vom HeizCenter Gutenzell-Hürbel - nur eine Brücke entfernt."
       />
 
       <LocationServices services={services} title="Unsere Leistungen in Neu-Ulm" />

@@ -69,11 +69,10 @@ export default function StadtbergenPage() {
 
       <SubLocationHero
         subLocation="Stadtbergen"
-        mainLocation="Augsburg"
-        mainLocationHref="/standorte/augsburg"
-        phone="+49 8234 966590"
-        description="Ihr zuverlässiger Partner für Wärmepumpen, Heizung, Sanitär und Klimaanlagen in Stadtbergen. Schneller Service vom HeizCenter Augsburg - direkt nebenan."
         mainLocation="Bobingen"
+        mainLocationHref="/standorte/bobingen"
+        phone="+49 8234 966590"
+        description="Ihr zuverlässiger Partner für Wärmepumpen, Heizung, Sanitär und Klimaanlagen in Stadtbergen. Schneller Service vom HeizCenter Bobingen - direkt nebenan."
       />
 
       <LocationServices services={services} title="Unsere Leistungen in Stadtbergen" />

@@ -69,11 +69,10 @@ export default function LaupheimPage() {
 
       <SubLocationHero
         subLocation="Laupheim"
-        mainLocation="Ulm"
-        mainLocationHref="/standorte/ulm"
-        phone="+49 8234 966590"
-        description="Ihr zuverlässiger Partner für Wärmepumpen, Heizung, Sanitär und Klimaanlagen in Laupheim. Schneller Service vom HeizCenter Ulm - in 30 Minuten vor Ort."
         mainLocation="Gutenzell-Hürbel"
+        mainLocationHref="/standorte/gutenzell-huerbel"
+        phone="+49 8234 966590"
+        description="Ihr zuverlässiger Partner für Wärmepumpen, Heizung, Sanitär und Klimaanlagen in Laupheim. Schneller Service vom HeizCenter Gutenzell-Hürbel - in 30 Minuten vor Ort."
       />
 
       <LocationServices services={services} title="Unsere Leistungen in Laupheim" />

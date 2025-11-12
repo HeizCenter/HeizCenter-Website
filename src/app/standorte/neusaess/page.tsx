@@ -69,11 +69,10 @@ export default function NeusaessPage() {
 
       <SubLocationHero
         subLocation="Neusäß"
-        mainLocation="Augsburg"
-        mainLocationHref="/standorte/augsburg"
-        phone="+49 8234 966590"
-        description="Ihr zuverlässiger Partner für Wärmepumpen, Heizung, Sanitär und Klimaanlagen in Neusäß. Schneller Service vom HeizCenter Augsburg - direkt vor den Toren der Stadt."
         mainLocation="Bobingen"
+        mainLocationHref="/standorte/bobingen"
+        phone="+49 8234 966590"
+        description="Ihr zuverlässiger Partner für Wärmepumpen, Heizung, Sanitär und Klimaanlagen in Neusäß. Schneller Service vom HeizCenter Bobingen - direkt vor den Toren der Stadt."
       />
 
       <LocationServices services={services} title="Unsere Leistungen in Neusäß" />

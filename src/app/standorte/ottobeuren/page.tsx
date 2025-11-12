@@ -69,11 +69,10 @@ export default function OttobeurenPage() {
 
       <SubLocationHero
         subLocation="Ottobeuren"
-        mainLocation="Memmingen"
-        mainLocationHref="/standorte/memmingen"
-        phone="+49 8234 966590"
-        description="Ihr zuverlässiger Partner für Wärmepumpen, Heizung, Sanitär und Klimaanlagen in Ottobeuren. Schneller Service vom HeizCenter Memmingen für den Markt Ottobeuren und das Kloster."
         mainLocation="Gutenzell-Hürbel"
+        mainLocationHref="/standorte/gutenzell-huerbel"
+        phone="+49 8234 966590"
+        description="Ihr zuverlässiger Partner für Wärmepumpen, Heizung, Sanitär und Klimaanlagen in Ottobeuren. Schneller Service vom HeizCenter Gutenzell-Hürbel für den Markt Ottobeuren und das Kloster."
       />
 
       <LocationServices services={services} title="Unsere Leistungen in Ottobeuren" />
