@@ -69,11 +69,10 @@ export default function GersthofenPage() {
 
       <SubLocationHero
         subLocation="Gersthofen"
-        mainLocation="Augsburg"
-        mainLocationHref="/standorte/augsburg"
-        phone="+49 8234 966590"
-        description="Ihr zuverlässiger Partner für Wärmepumpen, Heizung, Sanitär und Klimaanlagen in Gersthofen. Schneller Service vom HeizCenter Augsburg - in 20 Minuten vor Ort."
         mainLocation="Bobingen"
+        mainLocationHref="/standorte/bobingen"
+        phone="+49 8234 966590"
+        description="Ihr zuverlässiger Partner für Wärmepumpen, Heizung, Sanitär und Klimaanlagen in Gersthofen. Schneller Service vom HeizCenter Bobingen - in 20 Minuten vor Ort."
       />
 
       <LocationServices services={services} title="Unsere Leistungen in Gersthofen" />

@@ -69,11 +69,10 @@ export default function BlausteinPage() {
 
       <SubLocationHero
         subLocation="Blaustein"
-        mainLocation="Ulm"
-        mainLocationHref="/standorte/ulm"
-        phone="+49 8234 966590"
-        description="Ihr zuverlässiger Partner für Wärmepumpen, Heizung, Sanitär und Klimaanlagen in Blaustein. Schneller Service vom HeizCenter Ulm - in 15 Minuten vor Ort."
         mainLocation="Gutenzell-Hürbel"
+        mainLocationHref="/standorte/gutenzell-huerbel"
+        phone="+49 8234 966590"
+        description="Ihr zuverlässiger Partner für Wärmepumpen, Heizung, Sanitär und Klimaanlagen in Blaustein. Schneller Service vom HeizCenter Gutenzell-Hürbel - in 15 Minuten vor Ort."
       />
 
       <LocationServices services={services} title="Unsere Leistungen in Blaustein" />

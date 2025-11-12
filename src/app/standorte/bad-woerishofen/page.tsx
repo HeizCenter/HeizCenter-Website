@@ -69,11 +69,10 @@ export default function BadWoerishofenPage() {
 
       <SubLocationHero
         subLocation="Bad Wörishofen"
-        mainLocation="Memmingen"
-        mainLocationHref="/standorte/memmingen"
-        phone="+49 8234 966590"
-        description="Ihr zuverlässiger Partner für Wärmepumpen, Heizung, Sanitär und Klimaanlagen in Bad Wörishofen. Schneller Service vom HeizCenter Memmingen für den bekannten Kneipp-Kurort."
         mainLocation="Gutenzell-Hürbel"
+        mainLocationHref="/standorte/gutenzell-huerbel"
+        phone="+49 8234 966590"
+        description="Ihr zuverlässiger Partner für Wärmepumpen, Heizung, Sanitär und Klimaanlagen in Bad Wörishofen. Schneller Service vom HeizCenter Gutenzell-Hürbel für den bekannten Kneipp-Kurort."
       />
 
       <LocationServices services={services} title="Unsere Leistungen in Bad Wörishofen" />
