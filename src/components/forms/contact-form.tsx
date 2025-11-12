@@ -161,7 +161,7 @@ export function ContactForm() {
         <Checkbox id="gdprConsent" {...register("gdprConsent")} />
         <Label htmlFor="gdprConsent" className="text-sm leading-relaxed">
           Ich akzeptiere die{" "}
-          <a href="/datenschutz" className="text-blue-600 hover:underline">
+          <a href="/datenschutz" className="text-[#0F5B78] hover:underline">
             Datenschutzerklärung
           </a>{" "}
           und stimme zu, dass meine Daten zur Bearbeitung meiner Anfrage
@@ -187,7 +187,7 @@ export function ContactForm() {
       <Button
         type="submit"
         disabled={isSubmitting}
-        className="w-full bg-blue-600 hover:bg-blue-700 text-white"
+        className="w-full bg-[#0F5B78] hover:bg-[#0F5B78] text-white"
       >
         {isSubmitting ? (
           <>

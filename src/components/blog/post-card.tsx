@@ -26,7 +26,7 @@ export function PostCard({
     <Link href={`/blog/${slug}`}>
       <Card
         className={`hover:shadow-lg transition-shadow cursor-pointer group h-full ${
-          featured ? "border-2 border-blue-200" : ""
+          featured ? "border-2 border-[#0F5B78]/20" : ""
         }`}
       >
         <CardHeader>
@@ -35,12 +35,12 @@ export function PostCard({
               {category}
             </Badge>
             {featured && (
-              <Badge variant="outline" className="border-blue-600 text-blue-600">
+              <Badge variant="outline" className="border-[#0F5B78] text-[#0F5B78]">
                 Empfohlen
               </Badge>
             )}
           </div>
-          <h3 className="text-2xl font-bold group-hover:text-blue-600 transition-colors">
+          <h3 className="text-2xl font-bold group-hover:text-[#0F5B78] transition-colors">
             {title}
           </h3>
         </CardHeader>

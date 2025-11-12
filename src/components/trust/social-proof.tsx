@@ -37,7 +37,7 @@ export function SocialProofBar({ variant = "default" }: SocialProofBarProps) {
         </span>
         <span className="text-slate-300">•</span>
         <span className="flex items-center gap-1">
-          <TrendingUp className="h-4 w-4 text-blue-600" />
+          <TrendingUp className="h-4 w-4 text-[#0F5B78]" />
           15+ Jahre
         </span>
         <span className="text-slate-300">•</span>
@@ -55,9 +55,9 @@ export function SocialProofBar({ variant = "default" }: SocialProofBarProps) {
         {stats.map((stat, index) => (
           <div
             key={index}
-            className="bg-white rounded-lg p-4 border border-slate-200 text-center hover:border-blue-300 transition-colors"
+            className="bg-white rounded-lg p-4 border border-slate-200 text-center hover:border-[#0F5B78]/30 transition-colors"
           >
-            <div className="inline-flex items-center justify-center w-12 h-12 bg-blue-50 rounded-full text-blue-600 mb-2">
+            <div className="inline-flex items-center justify-center w-12 h-12 bg-[#0F5B78]/5 rounded-full text-[#0F5B78] mb-2">
               {stat.icon}
             </div>
             <p className="text-2xl font-bold text-slate-900 mb-1">
@@ -75,7 +75,7 @@ export function SocialProofBar({ variant = "default" }: SocialProofBarProps) {
     <div className="flex flex-wrap items-center justify-center gap-8">
       {stats.map((stat, index) => (
         <div key={index} className="flex items-center gap-2">
-          <div className="text-blue-600">{stat.icon}</div>
+          <div className="text-[#0F5B78]">{stat.icon}</div>
           <div>
             <p className="text-xl font-bold text-slate-900">{stat.value}</p>
             <p className="text-sm text-slate-600">{stat.label}</p>
@@ -112,9 +112,9 @@ export function LiveActivity({ variant = "appointments" }: LiveActivityProps) {
       icon: "🔧",
       text: "12 aktive Projekte in Ihrer Region",
       subtext: "Nächster Termin verfügbar: Diese Woche",
-      color: "text-blue-600",
-      bg: "bg-blue-50",
-      border: "border-blue-200",
+      color: "text-[#0F5B78]",
+      bg: "bg-[#0F5B78]/5",
+      border: "border-[#0F5B78]/20",
     },
   };
 
@@ -153,7 +153,7 @@ export function LocalBusinessProof({ city }: LocalBusinessProofProps) {
       </h3>
       <div className="grid grid-cols-3 gap-4 text-center">
         <div>
-          <p className="text-2xl font-bold text-blue-600">{data.projects}+</p>
+          <p className="text-2xl font-bold text-[#0F5B78]">{data.projects}+</p>
           <p className="text-xs text-slate-600 mt-1">Projekte in {city}</p>
         </div>
         <div>

@@ -24,9 +24,9 @@ export default function WartungsvertragPage() {
             { name: "Komfort", price: "249", features: ["2x jährliche Wartung", "Bevorzugter Notdienst", "15% Rabatt auf Reparaturen", "Kostenlose Anfahrt"], highlight: true },
             { name: "Premium", price: "399", features: ["3x jährliche Wartung", "24/7 Notdienst Priorität", "20% Rabatt auf Reparaturen", "Kostenlose Anfahrt", "Ersatzteilgarantie"] },
           ].map((plan, i) => (
-            <Card key={i} className={plan.highlight ? "border-2 border-blue-600" : ""}>
+            <Card key={i} className={plan.highlight ? "border-2 border-[#0F5B78]" : ""}>
               <CardContent className="p-8">
-                {plan.highlight && <div className="text-center mb-4"><span className="bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-bold">Beliebtester</span></div>}
+                {plan.highlight && <div className="text-center mb-4"><span className="bg-[#0F5B78] text-white px-4 py-1 rounded-full text-sm font-bold">Beliebtester</span></div>}
                 <h3 className="text-2xl font-bold text-center mb-2">{plan.name}</h3>
                 <div className="text-center mb-6">
                   <span className="text-4xl font-bold">{plan.price}€</span>
@@ -48,9 +48,9 @@ export default function WartungsvertragPage() {
           ))}
         </div>
 
-        <div className="bg-blue-50 p-8 rounded-lg">
+        <div className="bg-[#0F5B78]/5 p-8 rounded-lg">
           <h3 className="text-2xl font-bold mb-4 flex items-center gap-3">
-            <Shield className="h-8 w-8 text-blue-600" />
+            <Shield className="h-8 w-8 text-[#0F5B78]" />
             Warum ein Wartungsvertrag?
           </h3>
           <ul className="grid md:grid-cols-2 gap-4">

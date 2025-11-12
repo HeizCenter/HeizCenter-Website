@@ -30,7 +30,7 @@ export default function ChecklistenPage() {
             <Card key={i}>
               <CardHeader>
                 <CardTitle className="flex items-start gap-3">
-                  <CheckSquare className="h-6 w-6 text-blue-600 flex-shrink-0 mt-1" />
+                  <CheckSquare className="h-6 w-6 text-[#0F5B78] flex-shrink-0 mt-1" />
                   {item.title}
                 </CardTitle>
               </CardHeader>
@@ -48,7 +48,7 @@ export default function ChecklistenPage() {
           ))}
         </div>
 
-        <div className="mt-12 bg-blue-50 p-8 rounded-lg text-center">
+        <div className="mt-12 bg-[#0F5B78]/5 p-8 rounded-lg text-center">
           <h3 className="text-2xl font-bold mb-4">Individuelle Beratung gewünscht?</h3>
           <p className="mb-6">Vereinbaren Sie einen kostenlosen Beratungstermin mit unseren Experten.</p>
           <Button size="lg">Beratungstermin anfragen</Button>

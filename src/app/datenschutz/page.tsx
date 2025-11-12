@@ -15,12 +15,12 @@ export default function DatenschutzPage() {
         <nav className="mb-8 p-4 bg-slate-50 rounded-lg">
           <h2 className="text-lg font-bold mb-3">Inhaltsverzeichnis</h2>
           <ol className="space-y-1 text-sm">
-            <li><a href="#section-1" className="text-blue-600 hover:underline">1. Datenschutz auf einen Blick</a></li>
-            <li><a href="#section-2" className="text-blue-600 hover:underline">2. Hosting</a></li>
-            <li><a href="#section-3" className="text-blue-600 hover:underline">3. Allgemeine Hinweise und Pflichtinformationen</a></li>
-            <li><a href="#section-4" className="text-blue-600 hover:underline">4. Datenerfassung auf dieser Website</a></li>
-            <li><a href="#section-5" className="text-blue-600 hover:underline">5. Analyse-Tools und Werbung</a></li>
-            <li><a href="#section-6" className="text-blue-600 hover:underline">6. Plugins und Tools</a></li>
+            <li><a href="#section-1" className="text-[#0F5B78] hover:underline">1. Datenschutz auf einen Blick</a></li>
+            <li><a href="#section-2" className="text-[#0F5B78] hover:underline">2. Hosting</a></li>
+            <li><a href="#section-3" className="text-[#0F5B78] hover:underline">3. Allgemeine Hinweise und Pflichtinformationen</a></li>
+            <li><a href="#section-4" className="text-[#0F5B78] hover:underline">4. Datenerfassung auf dieser Website</a></li>
+            <li><a href="#section-5" className="text-[#0F5B78] hover:underline">5. Analyse-Tools und Werbung</a></li>
+            <li><a href="#section-6" className="text-[#0F5B78] hover:underline">6. Plugins und Tools</a></li>
           </ol>
         </nav>
 
@@ -64,7 +64,7 @@ export default function DatenschutzPage() {
           </p>
           <p className="mb-4">
             Details entnehmen Sie der Datenschutzerklärung von Odoo:{" "}
-            <a href="https://www.odoo.com/de_DE/privacy" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+            <a href="https://www.odoo.com/de_DE/privacy" target="_blank" rel="noopener noreferrer" className="text-[#0F5B78] hover:underline">
               https://www.odoo.com/de_DE/privacy
             </a>
           </p>
@@ -157,7 +157,7 @@ export default function DatenschutzPage() {
           </p>
           <p className="mb-4">
             Weitere Informationen:{" "}
-            <a href="https://www.whatsapp.com/legal/?eea=1#privacy-policy" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+            <a href="https://www.whatsapp.com/legal/?eea=1#privacy-policy" target="_blank" rel="noopener noreferrer" className="text-[#0F5B78] hover:underline">
               WhatsApp Datenschutzhinweise
             </a>
           </p>
@@ -179,7 +179,7 @@ export default function DatenschutzPage() {
           </p>
           <p className="mb-4">
             Weitere Informationen:{" "}
-            <a href="https://developers.google.com/fonts/faq" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+            <a href="https://developers.google.com/fonts/faq" target="_blank" rel="noopener noreferrer" className="text-[#0F5B78] hover:underline">
               Google Fonts FAQ
             </a>
           </p>
@@ -190,7 +190,7 @@ export default function DatenschutzPage() {
           </p>
           <p className="mb-4">
             Weitere Informationen:{" "}
-            <a href="https://fontawesome.com/privacy" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+            <a href="https://fontawesome.com/privacy" target="_blank" rel="noopener noreferrer" className="text-[#0F5B78] hover:underline">
               Font Awesome Privacy
             </a>
           </p>
@@ -199,7 +199,7 @@ export default function DatenschutzPage() {
         <div className="mt-12 pt-6 border-t text-sm text-slate-500">
           <p>
             Quelle:{" "}
-            <a href="https://www.e-recht24.de" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+            <a href="https://www.e-recht24.de" target="_blank" rel="noopener noreferrer" className="text-[#0F5B78] hover:underline">
               https://www.e-recht24.de
             </a>
           </p>

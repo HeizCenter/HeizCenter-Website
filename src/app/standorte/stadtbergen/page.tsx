@@ -71,8 +71,9 @@ export default function StadtbergenPage() {
         subLocation="Stadtbergen"
         mainLocation="Augsburg"
         mainLocationHref="/standorte/augsburg"
-        phone="+49 821 123456"
+        phone="+49 8234 966590"
         description="Ihr zuverlässiger Partner für Wärmepumpen, Heizung, Sanitär und Klimaanlagen in Stadtbergen. Schneller Service vom HeizCenter Augsburg - direkt nebenan."
+        mainLocation="Bobingen"
       />
 
       <LocationServices services={services} title="Unsere Leistungen in Stadtbergen" />
@@ -169,15 +170,15 @@ export default function StadtbergenPage() {
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-white p-6 rounded-lg text-center">
-                <div className="text-4xl font-bold text-blue-600 mb-2">15</div>
+                <div className="text-4xl font-bold text-[#0F5B78] mb-2">15</div>
                 <p className="text-slate-700">Minuten Anfahrtszeit maximal</p>
               </div>
               <div className="bg-white p-6 rounded-lg text-center">
-                <div className="text-4xl font-bold text-blue-600 mb-2">80+</div>
+                <div className="text-4xl font-bold text-[#0F5B78] mb-2">80+</div>
                 <p className="text-slate-700">Wärmepumpen in Stadtbergen installiert</p>
               </div>
               <div className="bg-white p-6 rounded-lg text-center">
-                <div className="text-4xl font-bold text-blue-600 mb-2">40%</div>
+                <div className="text-4xl font-bold text-[#0F5B78] mb-2">40%</div>
                 <p className="text-slate-700">BEG-Förderung für neue Heizungen</p>
               </div>
             </div>

@@ -40,10 +40,10 @@ export function UrgencyBanner({ variant = "limited-slots" }: UrgencyBannerProps)
       icon: <Users className="h-5 w-5" />,
       text: "Heizungs-Check vor dem Winter",
       subtext: "Jetzt Wartung buchen und beruhigt in die kalte Jahreszeit starten",
-      bg: "bg-blue-100",
-      border: "border-blue-300",
-      textColor: "text-blue-900",
-      buttonBg: "bg-blue-600 hover:bg-blue-700",
+      bg: "bg-[#0F5B78]/10",
+      border: "border-[#0F5B78]/30",
+      textColor: "text-[#0F5B78]",
+      buttonBg: "bg-[#0F5B78] hover:bg-[#0F5B78]",
     },
   };
 

@@ -13,7 +13,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Klimaanlage Installation in Augsburg, Ulm & Memmingen | HeizCenter",
+  title: "Klimaanlage Installation in Bobingen & Gutenzell-Hürbel | HeizCenter",
   description:
     "Professionelle Klimaanlagen für Wohnungen, Häuser und Gewerbe. Split-Klimaanlagen, Multi-Split-Systeme. Kühlen und Heizen mit einem Gerät. Jetzt beraten lassen!",
   keywords: [
@@ -192,7 +192,7 @@ export default function KlimaanlagePage() {
               </div>
             </div>
 
-            <div className="mt-12 bg-blue-50 p-8 rounded-lg">
+            <div className="mt-12 bg-[#0F5B78]/5 p-8 rounded-lg">
               <h3 className="text-2xl font-bold mb-4">
                 So finden Sie die richtige Klimaanlage
               </h3>

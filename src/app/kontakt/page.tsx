@@ -8,7 +8,7 @@ import { EmergencyForm } from "@/components/forms/emergency-form";
 export const metadata: Metadata = {
   title: "Kontakt - HeizCenter | Heizung, Sanitär & Wärmepumpen",
   description:
-    "Kontaktieren Sie HeizCenter für Heizung, Sanitär, Wärmepumpen und Klimaanlagen in Augsburg, Ulm und Memmingen. Angebot anfragen oder Notdienst 24/7.",
+    "Kontaktieren Sie HeizCenter für Heizung, Sanitär, Wärmepumpen und Klimaanlagen in Bobingen und Gutenzell-Hürbel. Angebot anfragen oder Notdienst 24/7.",
   openGraph: {
     title: "Kontakt - HeizCenter",
     description:
@@ -20,30 +20,30 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-600 to-blue-800 text-white py-16">
+      <section className="bg-gradient-to-br from-[#0F5B78] to-[#0F5B78] text-white py-16">
         <div className="container">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               Wir sind für Sie da
             </h1>
-            <p className="text-xl text-blue-100 mb-6">
+            <p className="text-xl text-white/90 mb-6">
               Ob Beratung, Angebot oder Notfall – kontaktieren Sie uns über das
               passende Formular oder rufen Sie uns direkt an.
             </p>
             <div className="flex flex-wrap gap-4">
               <a
-                href="tel:+49821123456"
-                className="inline-flex items-center gap-2 bg-white text-blue-600 px-6 py-3 rounded-lg font-bold hover:bg-blue-50 transition-colors"
+                href="tel:+4982349665900"
+                className="inline-flex items-center gap-2 bg-white text-[#0F5B78] px-6 py-3 rounded-lg font-bold hover:bg-[#FFCA28] hover:text-slate-900 transition-colors"
               >
                 <Phone className="h-5 w-5" />
-                +49 821 123456
+                +49 8234 96659 00
               </a>
               <a
-                href="mailto:info@heizcenter.de"
-                className="inline-flex items-center gap-2 bg-blue-700 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-600 transition-colors border border-blue-500"
+                href="mailto:service@heizcenter.de"
+                className="inline-flex items-center gap-2 bg-white/20 text-white px-6 py-3 rounded-lg font-bold hover:bg-white/30 transition-colors border border-white/40"
               >
                 <Mail className="h-5 w-5" />
-                info@heizcenter.de
+                service@heizcenter.de
               </a>
             </div>
           </div>
@@ -52,88 +52,79 @@ export default function ContactPage() {
 
       {/* Contact Info Cards */}
       <section className="container py-12">
-        <div className="grid md:grid-cols-3 gap-6 -mt-16 relative z-10">
-          {/* Augsburg */}
-          <div className="bg-white rounded-xl shadow-lg p-6 border-t-4 border-blue-600">
-            <MapPin className="h-8 w-8 text-blue-600 mb-3" />
-            <h3 className="font-bold text-xl mb-2">Augsburg</h3>
+        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto -mt-16 relative z-10">
+          {/* Bobingen */}
+          <div className="bg-white rounded-xl shadow-lg p-6 border-t-4 border-[#0F5B78]">
+            <MapPin className="h-8 w-8 text-[#0F5B78] mb-3" />
+            <h3 className="font-bold text-xl mb-2">HeizCenter Bobingen</h3>
             <p className="text-slate-600 mb-4">
-              Musterstraße 123
+              Lechallee 28
               <br />
-              86150 Augsburg
+              86399 Bobingen
             </p>
             <div className="flex items-start gap-2 text-sm text-slate-600 mb-2">
               <Phone className="h-4 w-4 mt-0.5 flex-shrink-0" />
               <a
-                href="tel:+49821123456"
-                className="hover:text-blue-600 transition-colors"
+                href="tel:+4982349665900"
+                className="hover:text-[#0F5B78] transition-colors"
               >
-                +49 821 123456
+                +49 8234 96659 00
+              </a>
+            </div>
+            <div className="flex items-start gap-2 text-sm text-slate-600 mb-2">
+              <Mail className="h-4 w-4 mt-0.5 flex-shrink-0" />
+              <a
+                href="mailto:service@heizcenter.de"
+                className="hover:text-[#0F5B78] transition-colors"
+              >
+                service@heizcenter.de
               </a>
             </div>
             <div className="flex items-start gap-2 text-sm text-slate-600">
               <Clock className="h-4 w-4 mt-0.5 flex-shrink-0" />
               <div>
-                <p>Mo-Fr: 8:00 - 17:00</p>
-                <p className="text-red-600 font-semibold">
+                <p>Mo-Fr: 08:00 - 17:00 Uhr</p>
+                <p>Sa: 09:00 - 13:00 Uhr</p>
+                <p className="text-red-600 font-semibold mt-1">
                   24/7 Notdienst verfügbar
                 </p>
               </div>
             </div>
           </div>
 
-          {/* Ulm */}
-          <div className="bg-white rounded-xl shadow-lg p-6 border-t-4 border-green-600">
-            <MapPin className="h-8 w-8 text-green-600 mb-3" />
-            <h3 className="font-bold text-xl mb-2">Ulm</h3>
+          {/* Gutenzell-Hürbel */}
+          <div className="bg-white rounded-xl shadow-lg p-6 border-t-4 border-[#0F5B78]">
+            <MapPin className="h-8 w-8 text-[#0F5B78] mb-3" />
+            <h3 className="font-bold text-xl mb-2">HeizCenter Gutenzell-Hürbel</h3>
             <p className="text-slate-600 mb-4">
-              Beispielweg 456
+              Schlüsselbergstraße 5
               <br />
-              89073 Ulm
+              88484 Gutenzell-Hürbel
             </p>
             <div className="flex items-start gap-2 text-sm text-slate-600 mb-2">
               <Phone className="h-4 w-4 mt-0.5 flex-shrink-0" />
               <a
-                href="tel:+49731234567"
-                className="hover:text-green-600 transition-colors"
+                href="tel:+4982349665900"
+                className="hover:text-[#0F5B78] transition-colors"
               >
-                +49 731 234567
+                +49 8234 96659 00
+              </a>
+            </div>
+            <div className="flex items-start gap-2 text-sm text-slate-600 mb-2">
+              <Mail className="h-4 w-4 mt-0.5 flex-shrink-0" />
+              <a
+                href="mailto:service@heizcenter.de"
+                className="hover:text-[#0F5B78] transition-colors"
+              >
+                service@heizcenter.de
               </a>
             </div>
             <div className="flex items-start gap-2 text-sm text-slate-600">
               <Clock className="h-4 w-4 mt-0.5 flex-shrink-0" />
               <div>
-                <p>Mo-Fr: 8:00 - 17:00</p>
-                <p className="text-red-600 font-semibold">
-                  24/7 Notdienst verfügbar
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Memmingen */}
-          <div className="bg-white rounded-xl shadow-lg p-6 border-t-4 border-orange-600">
-            <MapPin className="h-8 w-8 text-orange-600 mb-3" />
-            <h3 className="font-bold text-xl mb-2">Memmingen</h3>
-            <p className="text-slate-600 mb-4">
-              Teststraße 789
-              <br />
-              87700 Memmingen
-            </p>
-            <div className="flex items-start gap-2 text-sm text-slate-600 mb-2">
-              <Phone className="h-4 w-4 mt-0.5 flex-shrink-0" />
-              <a
-                href="tel:+49833145678"
-                className="hover:text-orange-600 transition-colors"
-              >
-                +49 8331 45678
-              </a>
-            </div>
-            <div className="flex items-start gap-2 text-sm text-slate-600">
-              <Clock className="h-4 w-4 mt-0.5 flex-shrink-0" />
-              <div>
-                <p>Mo-Fr: 8:00 - 17:00</p>
-                <p className="text-red-600 font-semibold">
+                <p>Mo-Fr: 08:00 - 17:00 Uhr</p>
+                <p>Sa: 09:00 - 13:00 Uhr</p>
+                <p className="text-red-600 font-semibold mt-1">
                   24/7 Notdienst verfügbar
                 </p>
               </div>
@@ -223,8 +214,8 @@ export default function ContactPage() {
             </h2>
             <div className="grid md:grid-cols-3 gap-6">
               <div className="text-center">
-                <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Clock className="h-8 w-8 text-blue-600" />
+                <div className="bg-[#0F5B78]/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Clock className="h-8 w-8 text-[#0F5B78]" />
                 </div>
                 <h3 className="font-bold mb-2">Schnelle Reaktion</h3>
                 <p className="text-sm text-slate-600">
@@ -270,38 +261,39 @@ export default function ContactPage() {
               "Kontaktieren Sie HeizCenter für Heizung, Sanitär, Wärmepumpen und Klimaanlagen",
             provider: {
               "@type": "LocalBusiness",
-              name: "HeizCenter",
-              telephone: "+49 821 123456",
-              email: "info@heizcenter.de",
+              name: "HeizCenter GmbH",
+              telephone: "+49 8234 96659 00",
+              email: "service@heizcenter.de",
               address: [
                 {
                   "@type": "PostalAddress",
-                  streetAddress: "Musterstraße 123",
-                  addressLocality: "Augsburg",
-                  postalCode: "86150",
+                  streetAddress: "Lechallee 28",
+                  addressLocality: "Bobingen",
+                  postalCode: "86399",
                   addressCountry: "DE",
                 },
                 {
                   "@type": "PostalAddress",
-                  streetAddress: "Beispielweg 456",
-                  addressLocality: "Ulm",
-                  postalCode: "89073",
-                  addressCountry: "DE",
-                },
-                {
-                  "@type": "PostalAddress",
-                  streetAddress: "Teststraße 789",
-                  addressLocality: "Memmingen",
-                  postalCode: "87700",
+                  streetAddress: "Schlüsselbergstraße 5",
+                  addressLocality: "Gutenzell-Hürbel",
+                  postalCode: "88484",
                   addressCountry: "DE",
                 },
               ],
-              openingHoursSpecification: {
-                "@type": "OpeningHoursSpecification",
-                dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-                opens: "08:00",
-                closes: "17:00",
-              },
+              openingHoursSpecification: [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                  opens: "08:00",
+                  closes: "17:00",
+                },
+                {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: "Saturday",
+                  opens: "09:00",
+                  closes: "13:00",
+                },
+              ],
             },
           }),
         }}

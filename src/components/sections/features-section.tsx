@@ -22,8 +22,8 @@ export function FeaturesSection({ title, features }: FeaturesSectionProps) {
           return (
             <Card key={index} className="border-2">
               <CardHeader>
-                <div className="mb-4 p-3 bg-blue-50 rounded-lg w-fit">
-                  <Icon className="h-8 w-8 text-blue-600" />
+                <div className="mb-4 p-3 bg-[#0F5B78]/5 rounded-lg w-fit">
+                  <Icon className="h-8 w-8 text-[#0F5B78]" />
                 </div>
                 <CardTitle>{feature.title}</CardTitle>
               </CardHeader>

@@ -32,7 +32,8 @@ export default function AichachPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-      <LocationHero name="Aichach" address="Service-Gebiet: 25 km von Augsburg" phone="+49 821 123456" email="info@heizcenter.de" description="HeizCenter Service Aichach. Wärmepumpen, Heizung, Sanitär mit schnellem Service." />
+      <LocationHero name="Aichach" address="Lechallee 28, 86399 Bobingen" phone="+49 8234 966590" email="service@heizcenter.de" description="HeizCenter Service Aichach. Wärmepumpen, Heizung, Sanitär mit schnellem Service."
+        mainLocation="Bobingen" />
       <LocationServices services={services} title="Unsere Leistungen in Aichach" />
       <section className="container py-16">
         <div className="max-w-4xl mx-auto prose">
@@ -40,7 +41,7 @@ export default function AichachPage() {
           <p className="text-lg mb-4">Von Augsburg betreuen wir Kunden in Aichach mit vollem Service.</p>
           <h3 className="text-2xl font-bold mb-3">Wärmepumpen</h3>
           <p className="mb-4">Moderne Wärmepumpen mit Förderung bis 40%.</p>
-          <div className="bg-blue-50 p-6 rounded-lg mt-6">
+          <div className="bg-[#0F5B78]/5 p-6 rounded-lg mt-6">
             <p><strong>Abdeckung:</strong> Aichach, Kühbach, Pöttmes, Schiltberg, Inchenhofen</p>
           </div>
         </div>

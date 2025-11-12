@@ -1,33 +1,42 @@
 import Link from "next/link";
+import Image from "next/image";
 import { LOCATIONS } from "@/lib/constants/locations";
 import { Phone, Mail, MapPin } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="bg-slate-900 text-white">
+    <footer className="bg-[#0F5B78] text-white">
       <div className="container py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-xl font-bold mb-4">HeizCenter</h3>
+            <div className="mb-4">
+              <Image
+                src="/images/logo.svg"
+                alt="HeizCenter Logo"
+                width={200}
+                height={60}
+                className="h-auto w-40"
+              />
+            </div>
             <p className="text-slate-400 mb-4">
               Ihr Experte für Wärmepumpen, Heizung, Sanitär & Klimaanlagen in
-              Bayern.
+              Bobingen und Gutenzell-Hürbel.
             </p>
             <div className="flex flex-col space-y-2 text-sm">
               <a
-                href="tel:+4982112345"
+                href="tel:+4982349665900"
                 className="flex items-center gap-2 text-slate-400 hover:text-white transition-colors"
               >
                 <Phone className="h-4 w-4" />
-                0821 123456
+                +49 8234 96659 00
               </a>
               <a
-                href="mailto:info@heizcenter.de"
+                href="mailto:service@heizcenter.de"
                 className="flex items-center gap-2 text-slate-400 hover:text-white transition-colors"
               >
                 <Mail className="h-4 w-4" />
-                info@heizcenter.de
+                service@heizcenter.de
               </a>
             </div>
           </div>
@@ -79,22 +88,21 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Locations */}
+          {/* Location */}
           <div>
             <h4 className="font-semibold mb-4">Standorte</h4>
             <ul className="space-y-3 text-sm">
               {LOCATIONS.map((location) => (
                 <li key={location.id}>
-                  <Link
-                    href={`/standorte/${location.id}`}
-                    className="text-slate-400 hover:text-white transition-colors flex items-start gap-2"
-                  >
+                  <div className="text-slate-400 flex items-start gap-2">
                     <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
                     <div>
-                      <div className="font-medium text-white">{location.name}</div>
-                      <div className="text-xs">{location.phone}</div>
+                      <div className="font-medium text-white">HeizCenter GmbH</div>
+                      <div className="text-xs">{location.address}</div>
+                      <div className="text-xs mt-1">{location.phone}</div>
+                      <div className="text-xs">Mo-Fr 08:00-17:00</div>
                     </div>
-                  </Link>
+                  </div>
                 </li>
               ))}
             </ul>
@@ -206,7 +214,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-slate-800">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-400">
-            <p>© 2025 HeizCenter. Alle Rechte vorbehalten.</p>
+            <p>© 2025 HeizCenter GmbH. Alle Rechte vorbehalten.</p>
             <p className="text-xs">
               Entwickelt mit ❤️ von{" "}
               <a

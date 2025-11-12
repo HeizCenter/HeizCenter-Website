@@ -32,13 +32,14 @@ export default function LeutkírchPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-      <LocationHero name="Leutkirch im Allgäu" address="Service-Gebiet: 35 km von Memmingen" phone="+49 821 123456" email="info@heizcenter.de" description="HeizCenter Service für Leutkirch im Allgäu." />
+      <LocationHero name="Leutkirch im Allgäu" address="Schlüsselbergstraße 5, 88484 Gutenzell-Hürbel" phone="+49 8234 966590" email="service@heizcenter.de" description="HeizCenter Service für Leutkirch im Allgäu."
+        mainLocation="Gutenzell-Hürbel" />
       <LocationServices services={services} title="Unsere Leistungen in Leutkirch" />
       <section className="container py-16">
         <div className="max-w-4xl mx-auto prose">
           <h2 className="text-3xl font-bold mb-6">Service Leutkirch</h2>
           <p className="text-lg">HeizCenter Service für Leutkirch. Alle Leistungen verfügbar.</p>
-          <div className="bg-blue-50 p-6 rounded-lg mt-6">
+          <div className="bg-[#0F5B78]/5 p-6 rounded-lg mt-6">
             <p><strong>Einzugsgebiet:</strong> Leutkirch, Urlau, Wuchzenhofen, Gebrazhofen</p>
           </div>
         </div>

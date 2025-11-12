@@ -100,7 +100,7 @@ export default function CookieHinweisPage() {
                     <br /><br />
                     Beachten Sie, dass einige Drittanbieter-Dienste zusätzliche Cookies auf Ihrem Browser installieren können, um Sie zu identifizieren.
                     Sie können die Verwendung von Cookies durch Dritte verweigern und zwar auf der{" "}
-                    <a href="https://optout.networkadvertising.org/?c=1" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                    <a href="https://optout.networkadvertising.org/?c=1" target="_blank" rel="noopener noreferrer" className="text-[#0F5B78] hover:underline">
                       Verweigerungsseite der Netzwerkwerbeinitiative
                     </a>.
                     <br />
@@ -119,7 +119,7 @@ export default function CookieHinweisPage() {
                   <td className="border border-slate-300 px-4 py-3">
                     Verstehen Sie, wie Besucher unsere Website nutzen, mit Google Analytics.
                     Erfahren Sie mehr über{" "}
-                    <a href="https://developers.google.com/analytics/resources/concepts/gaConceptsCookies?hl=en" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                    <a href="https://developers.google.com/analytics/resources/concepts/gaConceptsCookies?hl=en" target="_blank" rel="noopener noreferrer" className="text-[#0F5B78] hover:underline">
                       Analytics-Cookies und Informationen zum Datenschutz
                     </a>.
                     <br />

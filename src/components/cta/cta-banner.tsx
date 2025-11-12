@@ -10,7 +10,7 @@ interface CtaBannerProps {
 export function CtaBanner({ variant = "default", className }: CtaBannerProps) {
   const variants = {
     default: {
-      bg: "bg-gradient-to-r from-blue-600 to-blue-700",
+      bg: "bg-gradient-to-r from-[#0F5B78] to-[#0F5B78]",
       icon: <ArrowRight className="h-6 w-6" />,
       title: "Bereit für Ihr Projekt?",
       description: "Holen Sie sich jetzt ein kostenloses Angebot",
@@ -66,7 +66,7 @@ export function CtaBanner({ variant = "default", className }: CtaBannerProps) {
           </div>
           <Link
             href={config.href}
-            className="whitespace-nowrap bg-white text-blue-600 font-bold px-8 py-4 rounded-lg hover:bg-blue-50 transition-all duration-200 inline-flex items-center gap-2 shadow-lg flex-shrink-0"
+            className="whitespace-nowrap bg-white text-[#0F5B78] font-bold px-8 py-4 rounded-lg hover:bg-[#0F5B78]/5 transition-all duration-200 inline-flex items-center gap-2 shadow-lg flex-shrink-0"
           >
             {config.cta}
             <ArrowRight className="h-5 w-5" />

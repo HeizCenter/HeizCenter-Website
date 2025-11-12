@@ -46,7 +46,7 @@ export function ReviewWidget({
         {showLink && (
           <Link
             href="#bewertungen"
-            className="text-xs text-blue-600 hover:text-blue-700 mt-2 inline-flex items-center gap-1"
+            className="text-xs text-[#0F5B78] hover:text-[#0F5B78] mt-2 inline-flex items-center gap-1"
           >
             Alle Bewertungen ansehen
             <ExternalLink className="h-3 w-3" />
@@ -122,7 +122,7 @@ export function ReviewWidget({
       {showLink && (
         <Link
           href="#bewertungen"
-          className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-lg inline-flex items-center justify-center gap-2 transition-colors"
+          className="w-full bg-[#0F5B78] hover:bg-[#0F5B78] text-white font-bold py-3 rounded-lg inline-flex items-center justify-center gap-2 transition-colors"
         >
           Alle Bewertungen lesen
           <ExternalLink className="h-4 w-4" />

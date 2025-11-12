@@ -227,7 +227,7 @@ export function EmergencyForm() {
           <Checkbox id="gdprConsent" {...register("gdprConsent")} />
           <Label htmlFor="gdprConsent" className="text-sm leading-relaxed">
             Ich akzeptiere die{" "}
-            <a href="/datenschutz" className="text-blue-600 hover:underline">
+            <a href="/datenschutz" className="text-[#0F5B78] hover:underline">
               Datenschutzerklärung
             </a>{" "}
             *

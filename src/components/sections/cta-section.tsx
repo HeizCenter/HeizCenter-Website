@@ -16,7 +16,7 @@ export function CTASection({
 }: CTASectionProps) {
   if (variant === "gradient") {
     return (
-      <section className="bg-gradient-to-r from-blue-600 to-blue-700 text-white py-16">
+      <section className="bg-gradient-to-r from-[#0F5B78] to-[#0F5B78] text-white py-16">
         <div className="container text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">{title}</h2>
           <p className="text-xl mb-8 opacity-90">{description}</p>
@@ -43,7 +43,7 @@ export function CTASection({
 
   return (
     <section className="container py-16">
-      <Card className="border-2 border-blue-600">
+      <Card className="border-2 border-[#0F5B78]">
         <CardContent className="p-8 md:p-12">
           <div className="text-center max-w-2xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">{title}</h2>
@@ -53,7 +53,7 @@ export function CTASection({
                 href="tel:+4982112345"
                 className="flex flex-col items-center gap-2 p-4 rounded-lg hover:bg-slate-50 transition-colors"
               >
-                <Phone className="h-8 w-8 text-blue-600" />
+                <Phone className="h-8 w-8 text-[#0F5B78]" />
                 <span className="font-semibold">0821 123456</span>
                 <span className="text-sm text-slate-600">Anrufen</span>
               </a>
@@ -61,7 +61,7 @@ export function CTASection({
                 href="mailto:info@heizcenter.de"
                 className="flex flex-col items-center gap-2 p-4 rounded-lg hover:bg-slate-50 transition-colors"
               >
-                <Mail className="h-8 w-8 text-blue-600" />
+                <Mail className="h-8 w-8 text-[#0F5B78]" />
                 <span className="font-semibold">E-Mail</span>
                 <span className="text-sm text-slate-600">Schreiben</span>
               </a>
@@ -69,7 +69,7 @@ export function CTASection({
                 href="/standorte"
                 className="flex flex-col items-center gap-2 p-4 rounded-lg hover:bg-slate-50 transition-colors"
               >
-                <MapPin className="h-8 w-8 text-blue-600" />
+                <MapPin className="h-8 w-8 text-[#0F5B78]" />
                 <span className="font-semibold">3 Standorte</span>
                 <span className="text-sm text-slate-600">Besuchen</span>
               </Link>

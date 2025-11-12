@@ -12,7 +12,7 @@ export function FloatingActionButton() {
       icon: <Phone className="h-5 w-5" />,
       label: "Anrufen",
       href: "tel:+49821123456",
-      color: "bg-blue-600 hover:bg-blue-700",
+      color: "bg-[#0F5B78] hover:bg-[#0F5B78]",
     },
     {
       icon: <MessageCircle className="h-5 w-5" />,
@@ -60,7 +60,7 @@ export function FloatingActionButton() {
           "w-14 h-14 rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110",
           isOpen
             ? "bg-slate-700 hover:bg-slate-600 rotate-45"
-            : "bg-blue-600 hover:bg-blue-700"
+            : "bg-[#0F5B78] hover:bg-[#0F5B78]"
         )}
         aria-label={isOpen ? "Schließen" : "Kontaktoptionen öffnen"}
       >

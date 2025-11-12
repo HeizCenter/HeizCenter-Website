@@ -71,8 +71,9 @@ export default function LaupheimPage() {
         subLocation="Laupheim"
         mainLocation="Ulm"
         mainLocationHref="/standorte/ulm"
-        phone="+49 731 123456"
+        phone="+49 8234 966590"
         description="Ihr zuverlässiger Partner für Wärmepumpen, Heizung, Sanitär und Klimaanlagen in Laupheim. Schneller Service vom HeizCenter Ulm - in 30 Minuten vor Ort."
+        mainLocation="Gutenzell-Hürbel"
       />
 
       <LocationServices services={services} title="Unsere Leistungen in Laupheim" />
@@ -168,15 +169,15 @@ export default function LaupheimPage() {
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-white p-6 rounded-lg text-center">
-                <div className="text-4xl font-bold text-blue-600 mb-2">30</div>
+                <div className="text-4xl font-bold text-[#0F5B78] mb-2">30</div>
                 <p className="text-slate-700">Minuten Anfahrtszeit von Ulm</p>
               </div>
               <div className="bg-white p-6 rounded-lg text-center">
-                <div className="text-4xl font-bold text-blue-600 mb-2">30+</div>
+                <div className="text-4xl font-bold text-[#0F5B78] mb-2">30+</div>
                 <p className="text-slate-700">Gewerbeprojekte in Laupheim</p>
               </div>
               <div className="bg-white p-6 rounded-lg text-center">
-                <div className="text-4xl font-bold text-blue-600 mb-2">24/7</div>
+                <div className="text-4xl font-bold text-[#0F5B78] mb-2">24/7</div>
                 <p className="text-slate-700">Notdienst auch in Laupheim</p>
               </div>
             </div>

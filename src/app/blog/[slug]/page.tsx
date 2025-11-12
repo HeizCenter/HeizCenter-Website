@@ -134,12 +134,12 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               </div>
 
               {/* CTA */}
-              <Card className="bg-gradient-to-br from-blue-600 to-blue-800 text-white mt-8">
+              <Card className="bg-gradient-to-br from-[#0F5B78] to-[#0F5B78] text-white mt-8">
                 <CardContent className="p-8 text-center">
                   <h3 className="text-2xl font-bold mb-4">
                     Persönliche Beratung gewünscht?
                   </h3>
-                  <p className="text-blue-100 mb-6">
+                  <p className="text-white/90 mb-6">
                     Unsere Experten beraten Sie kostenlos und unverbindlich zu Ihrem
                     Projekt.
                   </p>

@@ -123,10 +123,11 @@ export default function LandsbergPage() {
 
       <LocationHero
         name="Landsberg am Lech"
-        address="Service-Gebiet: 35 km von Augsburg"
-        phone="+49 821 123456"
-        email="info@heizcenter.de"
+        address="Lechallee 28, 86399 Bobingen"
+        phone="+49 8234 966590"
+        email="service@heizcenter.de"
         description="HeizCenter Service für Landsberg am Lech und Umgebung. Schneller Service aus Augsburg für Wärmepumpen, Heizung, Sanitär und Klimaanlagen. Professionelle Beratung und Installation."
+        mainLocation="Bobingen"
       />
 
       <LocationServices
@@ -202,7 +203,7 @@ export default function LandsbergPage() {
               zertifizierte Kältetechniker, flüsterleise Premium-Geräte ab 19 dB(A).
             </p>
 
-            <div className="bg-blue-50 p-6 rounded-lg mt-8">
+            <div className="bg-[#0F5B78]/5 p-6 rounded-lg mt-8">
               <h3 className="text-xl font-bold mb-3">Service-Radius Landsberg</h3>
               <p className="text-slate-700 mb-3">
                 Von Landsberg am Lech aus betreuen wir auch:

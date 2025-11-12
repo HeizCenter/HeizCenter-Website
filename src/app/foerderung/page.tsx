@@ -15,10 +15,10 @@ export default function FoerderungPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-b from-blue-50 to-white py-20">
+      <section className="bg-gradient-to-b from-[#0F5B78]/5 to-white py-20">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
-            <Euro className="h-20 w-20 mx-auto mb-6 text-blue-600" />
+            <Euro className="h-20 w-20 mx-auto mb-6 text-[#0F5B78]" />
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Förderung & Zuschüsse 2025
             </h1>
@@ -44,7 +44,7 @@ export default function FoerderungPage() {
                 <CardTitle>Wärmepumpe</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="text-4xl font-bold text-blue-600 mb-4">bis 40%</div>
+                <div className="text-4xl font-bold text-[#0F5B78] mb-4">bis 40%</div>
                 <ul className="space-y-2 text-slate-600">
                   <li>✓ Grundförderung: 25%</li>
                   <li>✓ Geschwindigkeitsbonus: +20%</li>
@@ -62,7 +62,7 @@ export default function FoerderungPage() {
                 <CardTitle>Heizungsoptimierung</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="text-4xl font-bold text-blue-600 mb-4">bis 20%</div>
+                <div className="text-4xl font-bold text-[#0F5B78] mb-4">bis 20%</div>
                 <ul className="space-y-2 text-slate-600">
                   <li>✓ Hydraulischer Abgleich</li>
                   <li>✓ Heizungspumpe</li>
@@ -76,9 +76,9 @@ export default function FoerderungPage() {
             </Card>
           </div>
 
-          <div className="bg-blue-50 p-6 rounded-lg">
+          <div className="bg-[#0F5B78]/5 p-6 rounded-lg">
             <h3 className="text-xl font-bold mb-3 flex items-center gap-2">
-              <Info className="h-6 w-6 text-blue-600" />
+              <Info className="h-6 w-6 text-[#0F5B78]" />
               Wichtig zu wissen
             </h3>
             <ul className="space-y-2 text-slate-700">
@@ -145,7 +145,7 @@ export default function FoerderungPage() {
               { step: "4", title: "Auszahlung", desc: "Nach Verwendungsnachweis erfolgt die Auszahlung" },
             ].map((item, i) => (
               <div key={i} className="text-center">
-                <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                <div className="w-16 h-16 bg-[#0F5B78] text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                   {item.step}
                 </div>
                 <h3 className="font-bold mb-2">{item.title}</h3>
@@ -157,7 +157,7 @@ export default function FoerderungPage() {
       </section>
 
       {/* Our Service */}
-      <section className="bg-blue-600 text-white py-16">
+      <section className="bg-[#0F5B78] text-white py-16">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-6">Wir übernehmen die Antragstellung</h2>
@@ -177,7 +177,7 @@ export default function FoerderungPage() {
                 </div>
               ))}
             </div>
-            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600">
+            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-[#0F5B78]">
               <Link href="/kontakt?subject=Förderberatung">
                 <FileText className="mr-2 h-5 w-5" />
                 Jetzt Förderberatung anfragen
@@ -195,11 +195,11 @@ export default function FoerderungPage() {
             <p className="text-slate-700">
               Förderprogramme und -höhen können sich ändern. Die Angaben auf dieser Seite sind ohne
               Gewähr. Aktuelle Informationen erhalten Sie bei:{" "}
-              <a href="https://www.bafa.de" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+              <a href="https://www.bafa.de" target="_blank" rel="noopener noreferrer" className="text-[#0F5B78] hover:underline">
                 BAFA
               </a>{" "}
               und{" "}
-              <a href="https://www.kfw.de" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+              <a href="https://www.kfw.de" target="_blank" rel="noopener noreferrer" className="text-[#0F5B78] hover:underline">
                 KfW
               </a>.
             </p>

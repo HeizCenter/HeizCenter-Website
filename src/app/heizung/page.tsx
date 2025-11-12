@@ -6,7 +6,7 @@ import { CTASection } from "@/components/sections/cta-section";
 import { Flame, Clock, Euro, Wrench, Shield, Thermometer } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Heizung Installation & Wartung in Augsburg, Ulm & Memmingen",
+  title: "Heizung Installation & Wartung in Bobingen & Gutenzell-Hürbel",
   description:
     "Moderne Heizungsanlagen vom Fachbetrieb. Gas, Öl, Pellets oder Hybrid. Wartung, Reparatur und Notdienst. Über 20 Jahre Erfahrung.",
   keywords: [
@@ -109,7 +109,7 @@ export default function HeizungPage() {
     <>
       <ServiceHero
         title="Heizungsinstallation & Wartung"
-        description="Von der Planung über die Installation bis zur Wartung - Ihr Heizungsexperte mit über 20 Jahren Erfahrung in Augsburg, Ulm und Memmingen."
+        description="Von der Planung über die Installation bis zur Wartung - Ihr Heizungsexperte mit über 20 Jahren Erfahrung in Bobingen und Gutenzell-Hürbel."
         benefits={benefits}
         icon={Flame}
         badge="24/7 Notdienst"

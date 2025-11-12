@@ -33,7 +33,7 @@ export default async function BlogPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-gradient-to-b from-blue-50 to-white py-16">
+      <section className="bg-gradient-to-b from-[#0F5B78]/5 to-white py-16">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
@@ -54,7 +54,7 @@ export default async function BlogPage() {
             <Badge
               key={category}
               variant={category === "Alle" ? "default" : "outline"}
-              className="cursor-pointer hover:bg-blue-600 hover:text-white transition-colors px-4 py-2 text-sm"
+              className="cursor-pointer hover:bg-[#0F5B78] hover:text-white transition-colors px-4 py-2 text-sm"
             >
               {category}
             </Badge>
@@ -99,7 +99,7 @@ export default async function BlogPage() {
       </section>
 
       {/* Newsletter CTA */}
-      <section className="bg-blue-50 py-16 mt-12">
+      <section className="bg-[#0F5B78]/5 py-16 mt-12">
         <div className="container">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4">
@@ -115,7 +115,7 @@ export default async function BlogPage() {
                 placeholder="Ihre E-Mail-Adresse"
                 className="flex-1 px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-600"
               />
-              <button className="px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors">
+              <button className="px-6 py-3 bg-[#0F5B78] text-white rounded-lg font-medium hover:bg-[#0F5B78] transition-colors">
                 Anmelden
               </button>
             </div>

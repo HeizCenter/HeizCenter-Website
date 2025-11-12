@@ -71,8 +71,9 @@ export default function FriedbergPage() {
         subLocation="Friedberg"
         mainLocation="Augsburg"
         mainLocationHref="/standorte/augsburg"
-        phone="+49 821 123456"
+        phone="+49 8234 966590"
         description="Ihr zuverlässiger Partner für Wärmepumpen, Heizung, Sanitär und Klimaanlagen in Friedberg. Schneller Service vom HeizCenter Augsburg für die historische Herzogsstadt."
+        mainLocation="Bobingen"
       />
 
       <LocationServices services={services} title="Unsere Leistungen in Friedberg" />
@@ -170,15 +171,15 @@ export default function FriedbergPage() {
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-white p-6 rounded-lg text-center">
-                <div className="text-4xl font-bold text-blue-600 mb-2">25</div>
+                <div className="text-4xl font-bold text-[#0F5B78] mb-2">25</div>
                 <p className="text-slate-700">Minuten Anfahrtszeit von Augsburg</p>
               </div>
               <div className="bg-white p-6 rounded-lg text-center">
-                <div className="text-4xl font-bold text-blue-600 mb-2">10+</div>
+                <div className="text-4xl font-bold text-[#0F5B78] mb-2">10+</div>
                 <p className="text-slate-700">Projekte in der Friedberger Altstadt</p>
               </div>
               <div className="bg-white p-6 rounded-lg text-center">
-                <div className="text-4xl font-bold text-blue-600 mb-2">24/7</div>
+                <div className="text-4xl font-bold text-[#0F5B78] mb-2">24/7</div>
                 <p className="text-slate-700">Notdienst auch in Friedberg</p>
               </div>
             </div>

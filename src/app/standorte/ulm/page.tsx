@@ -170,10 +170,11 @@ export default function UlmPage() {
 
       <LocationHero
         name="Ulm"
-        address="Musterstraße 2, 89073 Ulm"
-        phone="+49 731 123456"
-        email="ulm@heizcenter.de"
+        address="Schlüsselbergstraße 5, 88484 Gutenzell-Hürbel"
+        phone="+49 8234 966590"
+        email="service@heizcenter.de"
         description="Ihr zuverlässiger Partner für Wärmepumpen, Heizung, Sanitär und Klimaanlagen in Ulm und Neu-Ulm. Über 20 Jahre Erfahrung, schneller Service und faire Preise."
+        mainLocation="Gutenzell-Hürbel"
       />
 
       <LocationServices services={services} title="Unsere Leistungen in Ulm" />

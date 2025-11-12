@@ -71,8 +71,9 @@ export default function NeusaessPage() {
         subLocation="Neusäß"
         mainLocation="Augsburg"
         mainLocationHref="/standorte/augsburg"
-        phone="+49 821 123456"
+        phone="+49 8234 966590"
         description="Ihr zuverlässiger Partner für Wärmepumpen, Heizung, Sanitär und Klimaanlagen in Neusäß. Schneller Service vom HeizCenter Augsburg - direkt vor den Toren der Stadt."
+        mainLocation="Bobingen"
       />
 
       <LocationServices services={services} title="Unsere Leistungen in Neusäß" />
@@ -165,15 +166,15 @@ export default function NeusaessPage() {
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-white p-6 rounded-lg text-center">
-                <div className="text-4xl font-bold text-blue-600 mb-2">20</div>
+                <div className="text-4xl font-bold text-[#0F5B78] mb-2">20</div>
                 <p className="text-slate-700">Minuten Anfahrtszeit maximal</p>
               </div>
               <div className="bg-white p-6 rounded-lg text-center">
-                <div className="text-4xl font-bold text-blue-600 mb-2">6</div>
+                <div className="text-4xl font-bold text-[#0F5B78] mb-2">6</div>
                 <p className="text-slate-700">Ortsteile im Servicegebiet</p>
               </div>
               <div className="bg-white p-6 rounded-lg text-center">
-                <div className="text-4xl font-bold text-blue-600 mb-2">40%</div>
+                <div className="text-4xl font-bold text-[#0F5B78] mb-2">40%</div>
                 <p className="text-slate-700">BEG-Förderung für Wärmepumpen</p>
               </div>
             </div>

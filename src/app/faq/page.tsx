@@ -44,7 +44,7 @@ const klimaanlageFAQs: FAQItem[] = [
 ];
 
 const serviceFAQs: FAQItem[] = [
-  { question: "In welchen Regionen sind Sie tätig?", answer: "Hauptstandorte: Augsburg, Ulm, Memmingen. Service-Gebiet: Radius 50 km inkl. Landkreise Aichach-Friedberg, Donau-Ries, Neu-Ulm, Günzburg, Unterallgäu." },
+  { question: "In welchen Regionen sind Sie tätig?", answer: "Hauptstandorte: Bobingen und Gutenzell-Hürbel. Service-Gebiet: Raum Augsburg, Ulm, Memmingen und Umgebung. Radius 50 km inkl. Landkreise Aichach-Friedberg, Donau-Ries, Neu-Ulm, Günzburg, Unterallgäu." },
   { question: "Bieten Sie Notdienst an?", answer: "Ja, 24/7-Heizungsnotdienst unter +49 821 123456-999. Auch an Wochenenden und Feiertagen. Schnelle Reaktionszeit im gesamten Service-Gebiet." },
   { question: "Wie schnell bekommen wir einen Termin?", answer: "Beratungstermin meist innerhalb 1 Woche. Installationstermine nach Verfügbarkeit, oft 2-4 Wochen. Notfälle: sofort bzw. innerhalb 24h." },
   { question: "Übernehmen Sie die Förderanträge?", answer: "Ja, vollständig. Wir erstellen alle erforderlichen Unterlagen für BEG, KfW und andere Programme. Service inklusive bei Beauftragung." },
@@ -55,7 +55,7 @@ export default function FAQPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-blue-600 to-blue-700 text-white py-20">
+      <section className="bg-gradient-to-br from-[#0F5B78] to-[#0F5B78] text-white py-20">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
             <HelpCircle className="h-20 w-20 mx-auto mb-6" />
@@ -84,9 +84,9 @@ export default function FAQPage() {
               <a
                 key={i}
                 href={item.href}
-                className="flex flex-col items-center gap-2 p-4 rounded-lg bg-slate-50 hover:bg-blue-50 transition-colors text-center"
+                className="flex flex-col items-center gap-2 p-4 rounded-lg bg-slate-50 hover:bg-[#0F5B78]/5 transition-colors text-center"
               >
-                <item.icon className="h-8 w-8 text-blue-600" />
+                <item.icon className="h-8 w-8 text-[#0F5B78]" />
                 <span className="text-sm font-medium">{item.name}</span>
               </a>
             ))}
@@ -98,7 +98,7 @@ export default function FAQPage() {
       <section id="waermepumpe" className="scroll-mt-20">
         <div className="container py-8">
           <div className="flex items-center gap-3 mb-6 max-w-3xl mx-auto">
-            <Zap className="h-10 w-10 text-blue-600" />
+            <Zap className="h-10 w-10 text-[#0F5B78]" />
             <h2 className="text-3xl font-bold">Wärmepumpe</h2>
           </div>
         </div>
@@ -120,7 +120,7 @@ export default function FAQPage() {
       <section id="sanitaer" className="scroll-mt-20">
         <div className="container py-8">
           <div className="flex items-center gap-3 mb-6 max-w-3xl mx-auto">
-            <Droplet className="h-10 w-10 text-blue-600" />
+            <Droplet className="h-10 w-10 text-[#0F5B78]" />
             <h2 className="text-3xl font-bold">Sanitär & Badsanierung</h2>
           </div>
         </div>
@@ -175,7 +175,7 @@ export default function FAQPage() {
                 </div>
                 <p className="mt-6 text-sm text-slate-600">
                   Mehr Informationen zu unserem Notdienst, Verfügbarkeit und Kosten finden Sie auf unserer{" "}
-                  <Link href="/notdienst" className="text-blue-600 hover:underline font-semibold">
+                  <Link href="/notdienst" className="text-[#0F5B78] hover:underline font-semibold">
                     Notdienst-Seite
                   </Link>
                   .
@@ -196,13 +196,13 @@ export default function FAQPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/kontakt"
-              className="inline-flex items-center justify-center px-8 py-4 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"
+              className="inline-flex items-center justify-center px-8 py-4 bg-[#0F5B78] text-white font-semibold rounded-lg hover:bg-[#0F5B78] transition-colors"
             >
               Kontakt aufnehmen
             </Link>
             <a
               href="tel:+49821123456"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-blue-600 text-blue-600 font-semibold rounded-lg hover:bg-blue-50 transition-colors"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-[#0F5B78] text-[#0F5B78] font-semibold rounded-lg hover:bg-[#0F5B78]/5 transition-colors"
             >
               <Phone className="h-5 w-5" />
               +49 821 123456

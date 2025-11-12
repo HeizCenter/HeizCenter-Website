@@ -147,9 +147,9 @@ export function PriceCalculator() {
   };
 
   return (
-    <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 md:p-8 border border-blue-200">
+    <div className="bg-gradient-to-br from-[#0F5B78]/5 to-[#0F5B78]/10 rounded-xl p-6 md:p-8 border border-[#0F5B78]/20">
       <div className="flex items-start gap-4 mb-6">
-        <div className="bg-blue-600 text-white rounded-lg p-3">
+        <div className="bg-[#0F5B78] text-white rounded-lg p-3">
           <Calculator className="h-6 w-6" />
         </div>
         <div>
@@ -306,7 +306,7 @@ export function PriceCalculator() {
             </div>
           </div>
 
-          <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
+          <div className="bg-[#0F5B78]/5 rounded-lg p-4 border border-[#0F5B78]/20">
             <p className="text-sm text-slate-700">
               <strong>Hinweis:</strong> Dies ist eine Schätzung basierend auf Durchschnittswerten. Die tatsächlichen
               Kosten können je nach individuellen Gegebenheiten variieren.
@@ -349,7 +349,7 @@ export function PriceCalculator() {
                   - {formatCurrency(breakdown.subsidyAmount)}
                 </span>
               </div>
-              <div className="flex justify-between py-3 bg-blue-600 text-white px-4 rounded-lg">
+              <div className="flex justify-between py-3 bg-[#0F5B78] text-white px-4 rounded-lg">
                 <span className="font-bold text-lg">Ihr Nettopreis</span>
                 <span className="font-bold text-2xl">
                   {formatCurrency(breakdown.netCost)}
@@ -378,7 +378,7 @@ export function PriceCalculator() {
               </div>
 
               <Link href={`/kontakt?tab=quote&service=waermepumpe&houseSize=${houseSize}&pumpType=${pumpType}&heatingType=${heatingType}&insulation=${insulation}&buildingYear=${buildingYear}&heatingSurface=${heatingSurface}&residents=${residents}&estimatedCost=${breakdown.netCost}`}>
-                <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold">
+                <Button className="w-full bg-[#0F5B78] hover:bg-[#0F5B78] text-white font-bold">
                   Genaues Angebot anfragen
                   <ArrowRight className="h-4 w-4 ml-2" />
                 </Button>

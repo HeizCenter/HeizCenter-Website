@@ -71,8 +71,9 @@ export default function BadWoerishofenPage() {
         subLocation="Bad Wörishofen"
         mainLocation="Memmingen"
         mainLocationHref="/standorte/memmingen"
-        phone="+49 8331 123456"
+        phone="+49 8234 966590"
         description="Ihr zuverlässiger Partner für Wärmepumpen, Heizung, Sanitär und Klimaanlagen in Bad Wörishofen. Schneller Service vom HeizCenter Memmingen für den bekannten Kneipp-Kurort."
+        mainLocation="Gutenzell-Hürbel"
       />
 
       <LocationServices services={services} title="Unsere Leistungen in Bad Wörishofen" />
@@ -168,15 +169,15 @@ export default function BadWoerishofenPage() {
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-white p-6 rounded-lg text-center">
-                <div className="text-4xl font-bold text-blue-600 mb-2">20</div>
+                <div className="text-4xl font-bold text-[#0F5B78] mb-2">20</div>
                 <p className="text-slate-700">Minuten Anfahrtszeit von Memmingen</p>
               </div>
               <div className="bg-white p-6 rounded-lg text-center">
-                <div className="text-4xl font-bold text-blue-600 mb-2">15+</div>
+                <div className="text-4xl font-bold text-[#0F5B78] mb-2">15+</div>
                 <p className="text-slate-700">Hotels und Pensionen betreut</p>
               </div>
               <div className="bg-white p-6 rounded-lg text-center">
-                <div className="text-4xl font-bold text-blue-600 mb-2">24/7</div>
+                <div className="text-4xl font-bold text-[#0F5B78] mb-2">24/7</div>
                 <p className="text-slate-700">Notdienst für Gewerbeobjekte</p>
               </div>
             </div>

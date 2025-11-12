@@ -170,10 +170,11 @@ export default function MemmingenPage() {
 
       <LocationHero
         name="Memmingen"
-        address="Musterstraße 3, 87700 Memmingen"
-        phone="+49 8331 123456"
-        email="memmingen@heizcenter.de"
+        address="Schlüsselbergstraße 5, 88484 Gutenzell-Hürbel"
+        phone="+49 8234 966590"
+        email="service@heizcenter.de"
         description="Ihr zuverlässiger Partner für Wärmepumpen, Heizung, Sanitär und Klimaanlagen in Memmingen und Unterallgäu. Über 20 Jahre Erfahrung, schneller Service und faire Preise."
+        mainLocation="Gutenzell-Hürbel"
       />
 
       <LocationServices

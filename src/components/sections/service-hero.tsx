@@ -19,12 +19,12 @@ export function ServiceHero({
   badge,
 }: ServiceHeroProps) {
   return (
-    <section className="bg-gradient-to-br from-blue-50 to-slate-50 py-16 md:py-24">
+    <section className="bg-gradient-to-br from-[#0F5B78]/5 to-slate-50 py-16 md:py-24">
       <div className="container">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <div className="flex items-center gap-4 mb-6">
-              <div className="p-4 bg-blue-600 rounded-2xl">
+              <div className="p-4 bg-[#0F5B78] rounded-2xl">
                 <Icon className="h-12 w-12 text-white" />
               </div>
               {badge && <Badge variant="secondary" className="text-base">{badge}</Badge>}
@@ -65,8 +65,8 @@ export function ServiceHero({
             </div>
           </div>
           <div className="relative">
-            <div className="aspect-square bg-gradient-to-br from-blue-100 to-blue-200 rounded-3xl flex items-center justify-center">
-              <Icon className="h-64 w-64 text-blue-600/20" />
+            <div className="aspect-square bg-gradient-to-br from-[#0F5B78]/10 to-[#0F5B78]/20 rounded-3xl flex items-center justify-center">
+              <Icon className="h-64 w-64 text-[#0F5B78]/20" />
             </div>
           </div>
         </div>

@@ -37,7 +37,7 @@ export function ClickToCall({
       <a
         href={telLink}
         className={cn(
-          "inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 transition-colors font-medium",
+          "inline-flex items-center gap-2 text-[#0F5B78] hover:text-[#0F5B78] transition-colors font-medium",
           className
         )}
       >
@@ -52,7 +52,7 @@ export function ClickToCall({
       <a
         href={telLink}
         className={cn(
-          "inline-flex items-center gap-2 bg-white border-2 border-blue-600 text-blue-600 font-bold rounded-full px-4 py-2 hover:bg-blue-50 transition-colors",
+          "inline-flex items-center gap-2 bg-white border-2 border-[#0F5B78] text-[#0F5B78] font-bold rounded-full px-4 py-2 hover:bg-[#0F5B78]/5 transition-colors",
           emergency && "border-red-600 text-red-600 hover:bg-red-50",
           className
         )}
@@ -71,7 +71,7 @@ export function ClickToCall({
         "inline-flex items-center gap-2 font-bold rounded-lg transition-all duration-200 hover:scale-105",
         emergency
           ? "bg-red-600 hover:bg-red-700 text-white"
-          : "bg-blue-600 hover:bg-blue-700 text-white",
+          : "bg-[#0F5B78] hover:bg-[#0F5B78] text-white",
         sizeClasses[size],
         className
       )}
@@ -145,7 +145,7 @@ export function LocationPhone({ location, variant = "compact" }: LocationPhonePr
         <p className="text-sm text-slate-600 mb-2">{location}</p>
         <a
           href={telLink}
-          className="text-xl font-bold text-blue-600 hover:text-blue-700 transition-colors flex items-center gap-2"
+          className="text-xl font-bold text-[#0F5B78] hover:text-[#0F5B78] transition-colors flex items-center gap-2"
         >
           <Phone className="h-5 w-5" />
           {phone}
@@ -158,7 +158,7 @@ export function LocationPhone({ location, variant = "compact" }: LocationPhonePr
   return (
     <a
       href={telLink}
-      className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 transition-colors"
+      className="inline-flex items-center gap-2 text-[#0F5B78] hover:text-[#0F5B78] transition-colors"
     >
       <Phone className="h-4 w-4" />
       <span className="font-semibold">

@@ -84,8 +84,8 @@ export function CustomerReviews({
   if (variant === "testimonial") {
     const featured = reviews[0];
     return (
-      <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-8 border border-blue-200 relative">
-        <Quote className="h-12 w-12 text-blue-300 absolute top-4 right-4 opacity-50" />
+      <div className="bg-gradient-to-br from-[#0F5B78]/5 to-[#0F5B78]/10 rounded-xl p-8 border border-[#0F5B78]/20 relative">
+        <Quote className="h-12 w-12 text-white/60 absolute top-4 right-4 opacity-50" />
         <div className="relative z-10">
           <div className="flex text-yellow-500 mb-4">
             {[...Array(featured.rating)].map((_, i) => (
@@ -148,7 +148,7 @@ export function ReviewStats({
     <div className="flex flex-wrap items-center justify-center gap-8">
       <div className="text-center">
         <div className="flex items-baseline justify-center gap-2 mb-1">
-          <span className="text-4xl font-bold text-blue-600">
+          <span className="text-4xl font-bold text-[#0F5B78]">
             {averageRating}
           </span>
           <span className="text-slate-600">/5</span>

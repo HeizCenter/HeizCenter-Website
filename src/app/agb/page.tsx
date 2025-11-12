@@ -37,7 +37,7 @@ export default function AGBPage() {
           <div className="mt-8 text-sm text-slate-600">
             <p>
               Bei Fragen zu unseren Geschäftsbedingungen kontaktieren Sie uns gerne unter{" "}
-              <a href="mailto:service@heizcenter.de" className="text-blue-600 hover:underline">
+              <a href="mailto:service@heizcenter.de" className="text-[#0F5B78] hover:underline">
                 service@heizcenter.de
               </a>
             </p>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -36,38 +37,92 @@ const services = [
 ];
 
 const locations = [
-  { name: "Augsburg", phone: "+49 821 123456" },
-  { name: "Ulm", phone: "+49 731 123456" },
-  { name: "Memmingen", phone: "+49 8331 123456" },
+  { name: "Bobingen", phone: "+49 8234 966590" },
+  { name: "Gutenzell-Hürbel", phone: "+49 8234 966590" },
 ];
 
 const stats = [
   { icon: Star, number: "60+", label: "Kundenbewertungen" },
   { icon: Award, number: "20+", label: "Jahre Erfahrung" },
-  { icon: Users, number: "3", label: "Standorte" },
+  { icon: Users, number: "2", label: "Standorte" },
 ];
 
 export default function Home() {
   return (
-    <div className="bg-gradient-to-b from-slate-50 to-white">
-      {/* Hero Section */}
-      <section className="container py-20 md:py-28">
-        <div className="text-center max-w-3xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold text-slate-900 mb-6">
-            Ihr Experte für moderne
-            <span className="text-blue-600"> Heizungslösungen</span>
-          </h1>
-          <p className="text-xl text-slate-600 mb-8">
-            Wärmepumpen, Heizung, Sanitär & Klimaanlagen in Augsburg, Ulm und
-            Memmingen. Über 20 Jahre Erfahrung und 60+ zufriedene Kunden.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" className="text-lg">
-              <Link href="/kontakt">Kostenlose Beratung anfragen</Link>
-            </Button>
-            <Button asChild size="lg" variant="outline" className="text-lg">
-              <Link href="/waermepumpe">Mehr über Wärmepumpen</Link>
-            </Button>
+    <div>
+      {/* Hero Section with Image Grid Background */}
+      <section className="relative min-h-[600px] flex items-center">
+        {/* Background Image Grid */}
+        <div className="absolute inset-0 grid grid-cols-2 grid-rows-2">
+          <div className="relative overflow-hidden">
+            <Image
+              src="/images/Solaranlage.webp"
+              alt="Solar installation"
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
+          <div className="relative overflow-hidden">
+            <Image
+              src="/images/Waermepumpe.jpeg"
+              alt="Heat pump"
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
+          <div className="relative overflow-hidden">
+            <Image
+              src="/images/HeizCenter_Heizung.webp"
+              alt="Heating system"
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
+          <div className="relative overflow-hidden">
+            <Image
+              src="/images/HeizCenter_Sanitär_Werkzeug.png"
+              alt="Plumbing tools"
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
+        </div>
+
+        {/* Teal Overlay */}
+        <div className="absolute inset-0 bg-[#0F5B78]/85"></div>
+
+        {/* Content */}
+        <div className="relative z-10 container py-20 md:py-28">
+          <div className="max-w-4xl mx-auto text-center text-white">
+            {/* Logo above title */}
+            <div className="mb-8 flex justify-center">
+              <Image
+                src="/images/logo.svg"
+                alt="HeizCenter Logo"
+                width={400}
+                height={120}
+                className="w-80 md:w-96 h-auto"
+                priority
+              />
+            </div>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+              Ihr Experte für moderne Heizungslösungen
+            </h1>
+            <p className="text-xl md:text-2xl mb-10 text-white/95">
+              Wärmepumpen, Heizung, Sanitär & Klimaanlagen in Bobingen und Gutenzell-Hürbel. Über 20 Jahre Erfahrung.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button asChild size="lg" className="bg-[#FFCA28] hover:bg-[#F5B800] text-slate-900 font-semibold">
+                <Link href="/kontakt">Kostenlose Beratung</Link>
+              </Button>
+              <Button asChild size="lg" className="bg-white hover:bg-white/90 text-[#0F5B78] font-semibold">
+                <Link href="/waermepumpe">Mehr über Wärmepumpen</Link>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
@@ -82,10 +137,10 @@ export default function Home() {
             const Icon = service.icon;
             return (
               <Link key={service.href} href={service.href}>
-                <Card className="h-full hover:shadow-lg transition-shadow border-2 hover:border-blue-500">
+                <Card className="h-full hover:shadow-lg transition-shadow border-2 hover:border-[#0F5B78]">
                   <CardHeader>
                     <div className="flex items-center justify-between mb-2">
-                      <Icon className="h-8 w-8 text-blue-600" />
+                      <Icon className="h-8 w-8 text-[#0F5B78]" />
                       <Badge variant="secondary">{service.badge}</Badge>
                     </div>
                     <CardTitle className="text-xl">{service.title}</CardTitle>
@@ -99,14 +154,14 @@ export default function Home() {
       </section>
 
       {/* Stats Section */}
-      <section className="bg-blue-50 py-16">
+      <section className="bg-[#0F5B78]/5 py-16">
         <div className="container">
           <div className="grid md:grid-cols-3 gap-8">
             {stats.map((stat, index) => {
               const Icon = stat.icon;
               return (
                 <div key={index} className="text-center">
-                  <Icon className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+                  <Icon className="h-12 w-12 text-[#0F5B78] mx-auto mb-4" />
                   <div className="text-4xl font-bold text-slate-900 mb-2">
                     {stat.number}
                   </div>
@@ -124,11 +179,11 @@ export default function Home() {
           <CardHeader className="text-center">
             <CardTitle className="text-3xl mb-2">Unsere Standorte</CardTitle>
             <CardDescription>
-              Wir sind für Sie in drei Standorten in Bayern verfügbar
+              HeizCenter GmbH - Ihr Experte in Bobingen und Gutenzell-Hürbel
             </CardDescription>
           </CardHeader>
           <CardContent>
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
               {locations.map((location) => (
                 <div key={location.name} className="text-center p-6">
                   <h3 className="text-xl font-semibold text-slate-900 mb-2">
@@ -136,7 +191,7 @@ export default function Home() {
                   </h3>
                   <a
                     href={`tel:${location.phone}`}
-                    className="text-blue-600 hover:underline"
+                    className="text-[#0F5B78] hover:underline"
                   >
                     {location.phone}
                   </a>
@@ -148,15 +203,15 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-blue-600 text-white py-16">
+      <section className="bg-slate-100 text-slate-900 py-16">
         <div className="container text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Bereit für Ihre neue Heizung?
           </h2>
-          <p className="text-xl mb-8 opacity-90">
+          <p className="text-xl mb-8 text-slate-700">
             Lassen Sie sich kostenlos und unverbindlich beraten!
           </p>
-          <Button asChild size="lg" variant="secondary" className="text-lg">
+          <Button asChild size="lg" className="bg-[#FFCA28] hover:bg-[#F5B800] text-slate-900 text-lg">
             <Link href="/kontakt">Jetzt Beratungstermin vereinbaren</Link>
           </Button>
         </div>

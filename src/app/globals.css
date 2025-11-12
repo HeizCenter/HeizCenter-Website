@@ -5,14 +5,14 @@
 @layer base {
   :root {
     /* HeizCenter Brand Colors */
-    --primary-blue: 213 100% 40%;           /* #0066CC - Main brand color */
-    --primary-blue-dark: 213 100% 30%;      /* #004499 - Hover states */
-    --primary-blue-light: 213 75% 52%;      /* #3385D6 - Backgrounds, tints */
-    --primary-blue-ultra-light: 213 100% 95%; /* #E6F2FF - Section backgrounds */
+    --primary-blue: 194 78% 26%;           /* #0F5B78 - Main teal-blue brand color */
+    --primary-blue-dark: 194 78% 20%;      /* #0A4459 - Hover states */
+    --primary-blue-light: 194 78% 35%;     /* #14789A - Backgrounds, tints */
+    --primary-blue-ultra-light: 194 78% 95%; /* #E8F4F7 - Section backgrounds */
 
-    --secondary-orange: 15 100% 60%;        /* #FF6B35 - CTAs, warmth accent */
-    --secondary-orange-dark: 15 79% 54%;    /* #E55A2B - Hover states */
-    --secondary-orange-light: 15 100% 69%;  /* #FF8C5F - Tints, highlights */
+    --secondary-yellow: 45 100% 58%;        /* #FFCA28 - CTAs, warmth accent */
+    --secondary-yellow-dark: 45 100% 48%;   /* #F5B800 - Hover states */
+    --secondary-yellow-light: 45 100% 68%;  /* #FFD54F - Tints, highlights */
 
     --tertiary-green: 151 55% 40%;          /* #2D9B5D - Solar, sustainability */
     --tertiary-green-dark: 151 59% 34%;     /* #228B48 - Emphasis */
@@ -32,7 +32,7 @@
     --success: 151 55% 40%;                 /* #2D9B5D - Success messages */
     --warning: 35 100% 58%;                 /* #FFA726 - Warnings */
     --error: 4 80% 56%;                     /* #E53935 - Errors, critical alerts */
-    --info: 213 100% 40%;                   /* #0066CC - Information, tips */
+    --info: 194 78% 26%;                   /* #0F5B78 - Information, tips */
 
     /* Service-Specific Accent Colors */
     --heating-red: 3 100% 60%;              /* #FF4136 - Heizung section */
@@ -47,19 +47,19 @@
     --card-foreground: 222.2 84% 4.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
-    --primary: 213 100% 40%;                /* Using primary-blue */
+    --primary: 194 78% 26%;                /* Using primary-blue (teal-blue #0F5B78) */
     --primary-foreground: 210 40% 98%;
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 15 100% 60%;                  /* Using secondary-orange */
-    --accent-foreground: 210 40% 98%;
+    --accent: 45 100% 58%;                  /* Using secondary-yellow */
+    --accent-foreground: 222.2 84% 4.9%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 213 100% 40%;                   /* Using primary-blue */
+    --ring: 194 78% 26%;                   /* Using primary-blue (teal-blue #0F5B78) */
     --radius: 0.5rem;
   }
 

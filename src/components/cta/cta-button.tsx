@@ -27,9 +27,9 @@ export function CtaButton({
   };
 
   const variantClasses = {
-    primary: "bg-blue-600 hover:bg-blue-700 text-white",
+    primary: "bg-[#0F5B78] hover:bg-[#0F5B78] text-white",
     secondary:
-      "bg-white hover:bg-slate-50 text-blue-600 border-2 border-blue-600",
+      "bg-white hover:bg-slate-50 text-[#0F5B78] border-2 border-[#0F5B78]",
     phone: "bg-green-600 hover:bg-green-700 text-white",
   };
 

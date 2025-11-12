@@ -36,7 +36,7 @@ export function LocationCoverage({
                   </div>
                 ))}
               </div>
-              <div className="mt-8 p-6 bg-blue-50 rounded-lg">
+              <div className="mt-8 p-6 bg-[#0F5B78]/5 rounded-lg">
                 <p className="text-slate-700">
                   <strong>Schnelle Anfahrt:</strong> Von unserem Standort in{" "}
                   {mainCity} erreichen wir Sie in der Regel innerhalb von 30-45

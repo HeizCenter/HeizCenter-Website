@@ -113,13 +113,13 @@ export function QuoteForm(props: QuoteFormProps) {
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
       {/* Calculator Data Notice */}
       {hasCalculatorData && (
-        <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 flex items-start gap-3">
-          <Calculator className="h-5 w-5 text-blue-600 flex-shrink-0 mt-0.5" />
+        <div className="bg-[#0F5B78]/5 border border-[#0F5B78]/20 rounded-lg p-4 flex items-start gap-3">
+          <Calculator className="h-5 w-5 text-[#0F5B78] flex-shrink-0 mt-0.5" />
           <div className="flex-1">
-            <h4 className="font-semibold text-blue-900 mb-1">
+            <h4 className="font-semibold text-[#0F5B78] mb-1">
               Daten aus Rechner übernommen
             </h4>
-            <p className="text-sm text-blue-800">
+            <p className="text-sm text-[#0F5B78]">
               Ihre Angaben aus dem Wärmepumpen-Rechner wurden automatisch in dieses Formular übertragen.
               Sie können alle Felder nach Bedarf anpassen.
             </p>
@@ -484,7 +484,7 @@ export function QuoteForm(props: QuoteFormProps) {
         <Checkbox id="gdprConsent" {...register("gdprConsent")} />
         <Label htmlFor="gdprConsent" className="text-sm leading-relaxed">
           Ich akzeptiere die{" "}
-          <a href="/datenschutz" className="text-blue-600 hover:underline">
+          <a href="/datenschutz" className="text-[#0F5B78] hover:underline">
             Datenschutzerklärung
           </a>{" "}
           und stimme zu, dass meine Daten zur Bearbeitung meiner Anfrage
@@ -510,7 +510,7 @@ export function QuoteForm(props: QuoteFormProps) {
       <Button
         type="submit"
         disabled={isSubmitting}
-        className="w-full bg-blue-600 hover:bg-blue-700 text-white"
+        className="w-full bg-[#0F5B78] hover:bg-[#0F5B78] text-white"
       >
         {isSubmitting ? (
           <>

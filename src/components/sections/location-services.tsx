@@ -28,11 +28,11 @@ export function LocationServices({
           return (
             <Card
               key={index}
-              className="border-2 hover:border-blue-200 transition-colors hover:shadow-lg"
+              className="border-2 hover:border-[#0F5B78]/20 transition-colors hover:shadow-lg"
             >
               <CardHeader>
-                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                  <Icon className="h-6 w-6 text-blue-600" />
+                <div className="w-12 h-12 bg-[#0F5B78]/10 rounded-lg flex items-center justify-center mb-4">
+                  <Icon className="h-6 w-6 text-[#0F5B78]" />
                 </div>
                 <CardTitle className="text-xl">{service.title}</CardTitle>
               </CardHeader>

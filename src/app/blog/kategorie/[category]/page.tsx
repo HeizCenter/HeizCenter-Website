@@ -58,7 +58,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
       </div>
 
       {/* Category Header */}
-      <section className="bg-gradient-to-b from-blue-50 to-white py-16">
+      <section className="bg-gradient-to-b from-[#0F5B78]/5 to-white py-16">
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <Badge className="mb-4">{category.name}</Badge>

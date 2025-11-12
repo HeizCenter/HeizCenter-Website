@@ -32,13 +32,14 @@ export default function ErbachPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-      <LocationHero name="Erbach (Donau)" address="Service-Gebiet: 20 km von Ulm" phone="+49 821 123456" email="info@heizcenter.de" description="HeizCenter Service für Erbach an der Donau." />
+      <LocationHero name="Erbach (Donau)" address="Schlüsselbergstraße 5, 88484 Gutenzell-Hürbel" phone="+49 8234 966590" email="service@heizcenter.de" description="HeizCenter Service für Erbach an der Donau."
+        mainLocation="Gutenzell-Hürbel" />
       <LocationServices services={services} title="Unsere Leistungen in Erbach" />
       <section className="container py-16">
         <div className="max-w-4xl mx-auto prose">
           <h2 className="text-3xl font-bold mb-6">Service Erbach (Donau)</h2>
           <p className="text-lg mb-4">Schneller Service für Erbach mit allen Heizungs- und Sanitär-Leistungen.</p>
-          <div className="bg-blue-50 p-6 rounded-lg mt-6">
+          <div className="bg-[#0F5B78]/5 p-6 rounded-lg mt-6">
             <p><strong>Einzugsgebiet:</strong> Erbach, Donaurieden, Ersingen, Ringingen</p>
           </div>
         </div>

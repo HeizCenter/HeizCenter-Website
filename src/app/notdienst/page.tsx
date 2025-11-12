@@ -4,10 +4,10 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "24/7 Heizungsnotdienst | HeizCenter Augsburg, Ulm & Memmingen",
+  title: "24/7 Heizungsnotdienst | HeizCenter Bobingen & Gutenzell-Hürbel",
   description:
     "Heizungsnotdienst rund um die Uhr. Schnelle Hilfe bei Heizungsausfall, Rohrbruch und anderen Notfällen. ☎ +49 821 123456-999",
-  keywords: ["Notdienst", "Heizungsnotdienst", "24/7", "Augsburg", "Ulm", "Memmingen"],
+  keywords: ["Notdienst", "Heizungsnotdienst", "24/7", "Bobingen", "Gutenzell-Hürbel", "Augsburg", "Ulm", "Memmingen"],
 };
 
 export default function NotdienstPage() {
@@ -68,7 +68,7 @@ export default function NotdienstPage() {
             <div className="grid md:grid-cols-2 gap-8">
               <Card>
                 <CardContent className="p-8">
-                  <Clock className="h-12 w-12 text-blue-600 mb-4" />
+                  <Clock className="h-12 w-12 text-[#0F5B78] mb-4" />
                   <h3 className="text-2xl font-bold mb-4">Verfügbarkeit</h3>
                   <ul className="space-y-3">
                     <li className="flex items-center gap-3">
@@ -115,7 +115,7 @@ export default function NotdienstPage() {
       <section className="container py-16">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-center">Kosten & Abrechnung</h2>
-          <div className="bg-blue-50 p-8 rounded-xl">
+          <div className="bg-[#0F5B78]/5 p-8 rounded-xl">
             <h3 className="text-xl font-bold mb-4">Transparente Preise</h3>
             <p className="mb-4">
               Notdiensteinsätze werden nach Aufwand berechnet. Die Preise setzen sich zusammen aus:

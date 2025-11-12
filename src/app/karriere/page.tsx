@@ -7,7 +7,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Karriere bei HeizCenter | Jobs & Ausbildung",
   description:
-    "Werde Teil des HeizCenter Teams! Ausbildungsplätze, Jobs für Installateure, Heizungsbauer und Servicetechniker in Augsburg, Ulm und Memmingen.",
+    "Werde Teil des HeizCenter Teams! Ausbildungsplätze, Jobs für Installateure, Heizungsbauer und Servicetechniker in Bobingen und Gutenzell-Hürbel.",
   keywords: ["Karriere", "Jobs", "Ausbildung", "Installateur", "Heizungsbauer", "Augsburg"],
 };
 
@@ -15,7 +15,7 @@ export default function KarrierePage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-b from-blue-50 to-white py-20">
+      <section className="bg-gradient-to-b from-[#0F5B78]/5 to-white py-20">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
@@ -39,8 +39,8 @@ export default function KarrierePage() {
           ].map((item, i) => (
             <Card key={i}>
               <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <item.icon className="h-8 w-8 text-blue-600" />
+                <div className="w-16 h-16 bg-[#0F5B78]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <item.icon className="h-8 w-8 text-[#0F5B78]" />
                 </div>
                 <h3 className="text-xl font-bold mb-3">{item.title}</h3>
                 <p className="text-slate-600">{item.desc}</p>
@@ -94,29 +94,29 @@ export default function KarrierePage() {
           <div className="grid md:grid-cols-2 gap-6">
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
-                <span className="text-blue-600">✓</span>
+                <span className="text-[#0F5B78]">✓</span>
                 <span>Übertarifliche Bezahlung</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-blue-600">✓</span>
+                <span className="text-[#0F5B78]">✓</span>
                 <span>30 Tage Urlaub</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-blue-600">✓</span>
+                <span className="text-[#0F5B78]">✓</span>
                 <span>Firmenfahrzeug auch zur privaten Nutzung</span>
               </li>
             </ul>
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
-                <span className="text-blue-600">✓</span>
+                <span className="text-[#0F5B78]">✓</span>
                 <span>Betriebliche Altersvorsorge</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-blue-600">✓</span>
+                <span className="text-[#0F5B78]">✓</span>
                 <span>Regelmäßige Schulungen & Weiterbildungen</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-blue-600">✓</span>
+                <span className="text-[#0F5B78]">✓</span>
                 <span>Moderne Werkzeuge und Ausstattung</span>
               </li>
             </ul>
@@ -125,24 +125,24 @@ export default function KarrierePage() {
       </section>
 
       {/* Application Process */}
-      <section className="bg-blue-600 text-white py-16">
+      <section className="bg-[#0F5B78] text-white py-16">
         <div className="container text-center">
           <h2 className="text-3xl font-bold mb-8">Bewerbungsprozess</h2>
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             <div>
               <div className="text-5xl font-bold mb-3">1</div>
               <h3 className="text-xl font-bold mb-2">Bewerbung</h3>
-              <p className="text-blue-100">Sende uns deine Unterlagen per E-Mail</p>
+              <p className="text-white/90">Sende uns deine Unterlagen per E-Mail</p>
             </div>
             <div>
               <div className="text-5xl font-bold mb-3">2</div>
               <h3 className="text-xl font-bold mb-2">Gespräch</h3>
-              <p className="text-blue-100">Lerne uns in einem persönlichen Gespräch kennen</p>
+              <p className="text-white/90">Lerne uns in einem persönlichen Gespräch kennen</p>
             </div>
             <div>
               <div className="text-5xl font-bold mb-3">3</div>
               <h3 className="text-xl font-bold mb-2">Start</h3>
-              <p className="text-blue-100">Herzlich willkommen im Team!</p>
+              <p className="text-white/90">Herzlich willkommen im Team!</p>
             </div>
           </div>
           <div className="mt-12">

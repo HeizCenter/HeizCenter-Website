@@ -32,7 +32,7 @@ export function StickyCta({
 
   const variants = {
     phone: {
-      bg: "bg-blue-600 hover:bg-blue-700",
+      bg: "bg-[#0F5B78] hover:bg-[#0F5B78]",
       icon: <Phone className="h-5 w-5" />,
       text: "Jetzt anrufen",
       href: "tel:+49821123456",

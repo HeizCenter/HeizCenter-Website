@@ -22,8 +22,8 @@ export function InlineCta({
         "Kontaktieren Sie uns für eine persönliche Beratung.",
       cta: "Jetzt Kontakt aufnehmen",
       href: "/kontakt",
-      bg: "bg-blue-600",
-      hoverBg: "hover:bg-blue-700",
+      bg: "bg-[#0F5B78]",
+      hoverBg: "hover:bg-[#0F5B78]",
     },
     quote: {
       icon: <FileText className="h-6 w-6" />,

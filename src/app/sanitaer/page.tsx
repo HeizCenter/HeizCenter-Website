@@ -13,7 +13,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Sanitär & Badsanierung in Augsburg, Ulm & Memmingen | HeizCenter",
+  title: "Sanitär & Badsanierung in Bobingen & Gutenzell-Hürbel | HeizCenter",
   description:
     "Professionelle Badsanierung und Sanitärinstallationen. Von der Planung bis zur Umsetzung. Barrierefreie Bäder, moderne Armaturen, Notdienst. Jetzt beraten lassen!",
   keywords: [
@@ -199,13 +199,13 @@ export default function SanitaerPage() {
               </div>
             </div>
 
-            <div className="mt-12 bg-blue-50 p-8 rounded-lg">
+            <div className="mt-12 bg-[#0F5B78]/5 p-8 rounded-lg">
               <h3 className="text-2xl font-bold mb-4">
                 Ablauf einer Badsanierung
               </h3>
               <ol className="space-y-4">
                 <li className="flex gap-4">
-                  <span className="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">
+                  <span className="flex-shrink-0 w-8 h-8 bg-[#0F5B78] text-white rounded-full flex items-center justify-center font-bold">
                     1
                   </span>
                   <div>
@@ -214,7 +214,7 @@ export default function SanitaerPage() {
                   </div>
                 </li>
                 <li className="flex gap-4">
-                  <span className="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">
+                  <span className="flex-shrink-0 w-8 h-8 bg-[#0F5B78] text-white rounded-full flex items-center justify-center font-bold">
                     2
                   </span>
                   <div>
@@ -223,7 +223,7 @@ export default function SanitaerPage() {
                   </div>
                 </li>
                 <li className="flex gap-4">
-                  <span className="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">
+                  <span className="flex-shrink-0 w-8 h-8 bg-[#0F5B78] text-white rounded-full flex items-center justify-center font-bold">
                     3
                   </span>
                   <div>
@@ -232,7 +232,7 @@ export default function SanitaerPage() {
                   </div>
                 </li>
                 <li className="flex gap-4">
-                  <span className="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">
+                  <span className="flex-shrink-0 w-8 h-8 bg-[#0F5B78] text-white rounded-full flex items-center justify-center font-bold">
                     4
                   </span>
                   <div>

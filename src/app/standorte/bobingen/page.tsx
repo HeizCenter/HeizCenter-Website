@@ -10,22 +10,23 @@ import { Zap, Flame, Droplet, Wind } from "lucide-react";
 
 export const metadata: Metadata = {
   title:
-    "HeizCenter Augsburg - Wärmepumpe, Heizung, Sanitär & Klimaanlage | Ihr Experte vor Ort",
+    "HeizCenter Bobingen - Hauptstandort | Wärmepumpe, Heizung, Sanitär & Klimaanlage",
   description:
-    "Ihr Fachbetrieb für Wärmepumpen, Heizungsinstallation, Badsanierung und Klimaanlagen in Augsburg. Kostenlose Beratung, schneller Service, faire Preise. Jetzt kontaktieren!",
+    "Unser Hauptstandort in Bobingen. Fachbetrieb für Wärmepumpen, Heizungsinstallation, Badsanierung und Klimaanlagen. Kostenlose Beratung, schneller Service, faire Preise.",
   keywords: [
-    "Wärmepumpe Augsburg",
-    "Heizung Augsburg",
-    "Sanitär Augsburg",
-    "Klimaanlage Augsburg",
-    "Badsanierung Augsburg",
-    "Heizungsnotdienst Augsburg",
-    "HeizCenter Augsburg",
+    "Wärmepumpe Bobingen",
+    "Heizung Bobingen",
+    "Sanitär Bobingen",
+    "Klimaanlage Bobingen",
+    "Badsanierung Bobingen",
+    "Heizungsnotdienst Bobingen",
+    "HeizCenter Bobingen",
+    "HeizCenter Hauptstandort",
   ],
   openGraph: {
-    title: "HeizCenter Augsburg - Ihr Experte für Wärmepumpen & Heizung",
+    title: "HeizCenter Bobingen - Hauptstandort für Wärmepumpen & Heizung",
     description:
-      "Professionelle Installation und Wartung von Wärmepumpen, Heizungen und Klimaanlagen in Augsburg.",
+      "Professionelle Installation und Wartung von Wärmepumpen, Heizungen und Klimaanlagen in Bobingen und Umgebung.",
   },
 };
 
@@ -33,21 +34,21 @@ const services: LocationService[] = [
   {
     title: "Wärmepumpe",
     description:
-      "Moderne Wärmepumpen für Augsburg. BEG-Förderung bis 40%. Energieeffizient und umweltfreundlich heizen.",
+      "Moderne Wärmepumpen für Bobingen und Umgebung. BEG-Förderung bis 40%. Energieeffizient und umweltfreundlich heizen.",
     icon: Zap,
     href: "/waermepumpe",
   },
   {
     title: "Heizung",
     description:
-      "Installation, Wartung und Reparatur aller Heizungssysteme. 24/7 Notdienst für Augsburg.",
+      "Installation, Wartung und Reparatur aller Heizungssysteme. 24/7 Notdienst für Bobingen und Umgebung.",
     icon: Flame,
     href: "/heizung",
   },
   {
     title: "Sanitär & Bad",
     description:
-      "Badsanierung und Sanitärinstallationen in Augsburg. 3D-Planung und Festpreisgarantie.",
+      "Badsanierung und Sanitärinstallationen in Bobingen. 3D-Planung und Festpreisgarantie.",
     icon: Droplet,
     href: "/sanitaer",
   },
@@ -61,47 +62,47 @@ const services: LocationService[] = [
 ];
 
 const coverageAreas = [
-  "Augsburg Innenstadt",
-  "Augsburg Pfersee",
-  "Augsburg Göggingen",
-  "Augsburg Haunstetten",
-  "Augsburg Lechhausen",
-  "Augsburg Oberhausen",
+  "Bobingen",
+  "Augsburg",
   "Königsbrunn",
   "Neusäß",
-  "Gersthofen",
-  "Stadtbergen",
   "Friedberg",
-  "Bobingen",
-  "Schwabmünchen",
-  "Meitingen",
+  "Stadtbergen",
+  "Gersthofen",
+  "Landsberg am Lech",
   "Aichach",
+  "Schwabmünchen",
+  "Mering",
+  "Dasing",
+  "Kissing",
+  "Wehringen",
+  "Schwabmünchen",
 ];
 
 // Generate LocalBusiness JSON-LD schema
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "@id": "https://heizcenter.de/standorte/augsburg",
-  name: "HeizCenter Augsburg",
-  image: "https://heizcenter.de/images/augsburg-location.jpg",
+  "@id": "https://heizcenter.de/standorte/bobingen",
+  name: "HeizCenter Bobingen",
+  image: "https://heizcenter.de/images/bobingen-location.jpg",
   description:
-    "Fachbetrieb für Wärmepumpen, Heizung, Sanitär und Klimaanlagen in Augsburg",
+    "Hauptstandort Bobingen - Fachbetrieb für Wärmepumpen, Heizung, Sanitär und Klimaanlagen",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Musterstraße 1",
-    addressLocality: "Augsburg",
-    postalCode: "86150",
+    streetAddress: "Lechallee 28",
+    addressLocality: "Bobingen",
+    postalCode: "86399",
     addressCountry: "DE",
   },
   geo: {
     "@type": "GeoCoordinates",
-    latitude: 48.3705,
-    longitude: 10.8978,
+    latitude: 48.2764,
+    longitude: 10.8336,
   },
-  telephone: "+49 821 123456",
-  email: "augsburg@heizcenter.de",
-  url: "https://heizcenter.de/standorte/augsburg",
+  telephone: "+49 8234 966590",
+  email: "service@heizcenter.de",
+  url: "https://heizcenter.de/standorte/bobingen",
   openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",
@@ -119,7 +120,7 @@ const localBusinessSchema = {
   priceRange: "€€",
   areaServed: {
     "@type": "City",
-    name: "Augsburg",
+    name: "Bobingen",
   },
   hasOfferCatalog: {
     "@type": "OfferCatalog",
@@ -161,7 +162,7 @@ const localBusinessSchema = {
   },
 };
 
-export default function AugsburgPage() {
+export default function BobingenPage() {
   return (
     <>
       <script
@@ -170,41 +171,37 @@ export default function AugsburgPage() {
       />
 
       <LocationHero
-        name="Augsburg"
+        name="Bobingen"
         address="Lechallee 28, 86399 Bobingen"
         phone="+49 8234 966590"
         email="service@heizcenter.de"
-        description="Ihr zuverlässiger Partner für Wärmepumpen, Heizung, Sanitär und Klimaanlagen in Augsburg und Umgebung. Über 20 Jahre Erfahrung, schneller Service und faire Preise."
-        mainLocation="Bobingen"
+        description="Unser Hauptstandort in Bobingen - Ihr zuverlässiger Partner für Wärmepumpen, Heizung, Sanitär und Klimaanlagen in der Region Augsburg. Über 20 Jahre Erfahrung, schneller Service und faire Preise."
       />
 
-      <LocationServices services={services} title="Unsere Leistungen in Augsburg" />
+      <LocationServices services={services} title="Unsere Leistungen in Bobingen" />
 
       <section className="container py-16">
         <div className="max-w-4xl mx-auto prose prose-slate">
           <h2 className="text-3xl font-bold mb-6">
-            Warum HeizCenter in Augsburg?
+            HeizCenter Bobingen - Ihr Hauptstandort im Raum Augsburg
           </h2>
           <p className="text-lg text-slate-700 mb-6">
-            Als etablierter Fachbetrieb in Augsburg sind wir Ihr kompetenter
-            Ansprechpartner für alle Fragen rund um Heizung, Sanitär und
-            Klimatechnik. Unsere Techniker kennen die regionalen
-            Besonderheiten und sind mit den Gegebenheiten in Augsburg und
-            Umgebung bestens vertraut.
+            Willkommen bei HeizCenter in Bobingen! Als unser Hauptstandort im Raum
+            Augsburg sind wir Ihr kompetenter Ansprechpartner für alle Fragen rund
+            um Heizung, Sanitär und Klimatechnik. Von hier aus betreuen wir Augsburg
+            und die gesamte Region mit kurzen Anfahrtswegen und schnellem Service.
           </p>
 
           <h3 className="text-2xl font-bold mb-4 mt-8">
-            Wärmepumpen in Augsburg - Die Heizung der Zukunft
+            Wärmepumpen in Bobingen - Die Heizung der Zukunft
           </h3>
           <p className="text-slate-700 mb-4">
-            Augsburg setzt auf Klimaschutz, und Wärmepumpen sind dabei ein
-            wichtiger Baustein. Als einer der führenden Wärmepumpen-Experten in
-            Augsburg installieren wir moderne Luft-Wasser-Wärmepumpen und
-            Erdwärmepumpen, die perfekt auf die klimatischen Bedingungen in
-            Schwaben abgestimmt sind.
+            Als einer der führenden Wärmepumpen-Experten in der Region installieren
+            wir moderne Luft-Wasser-Wärmepumpen und Erdwärmepumpen, die perfekt auf
+            die klimatischen Bedingungen in Schwaben abgestimmt sind.
           </p>
           <p className="text-slate-700 mb-4">
-            <strong>Unsere Wärmepumpen-Leistungen in Augsburg:</strong>
+            <strong>Unsere Wärmepumpen-Leistungen in Bobingen:</strong>
           </p>
           <ul className="list-disc list-inside space-y-2 text-slate-700 mb-6">
             <li>Kostenlose Vor-Ort-Beratung und Wirtschaftlichkeitsberechnung</li>
@@ -214,40 +211,38 @@ export default function AugsburgPage() {
             <li>Wartung und Kundendienst aus einer Hand</li>
           </ul>
           <p className="text-slate-700 mb-6">
-            Dank der staatlichen BEG-Förderung von bis zu 40% wird der Umstieg
-            auf eine Wärmepumpe in Augsburg besonders attraktiv. Wir helfen
-            Ihnen bei der Antragstellung und sorgen dafür, dass Sie alle
-            verfügbaren Förderungen optimal nutzen können.
+            Dank der staatlichen BEG-Förderung von bis zu 40% wird der Umstieg auf
+            eine Wärmepumpe besonders attraktiv. Wir helfen Ihnen bei der
+            Antragstellung und sorgen dafür, dass Sie alle verfügbaren Förderungen
+            optimal nutzen können.
           </p>
 
           <h3 className="text-2xl font-bold mb-4 mt-8">
-            Heizungsinstallation und -wartung in Augsburg
+            Heizungsinstallation und -wartung in Bobingen
           </h3>
           <p className="text-slate-700 mb-4">
-            Von der klassischen Gasheizung über Pelletheizungen bis hin zu
-            modernen Hybrid-Systemen - wir installieren und warten alle gängigen
-            Heizungssysteme in Augsburg. Unser 24/7-Notdienst ist für Sie da,
-            wenn die Heizung ausfällt.
+            Von der klassischen Gasheizung über Pelletheizungen bis hin zu modernen
+            Hybrid-Systemen - wir installieren und warten alle gängigen
+            Heizungssysteme. Unser 24/7-Notdienst ist für Sie da, wenn die Heizung
+            ausfällt.
           </p>
           <p className="text-slate-700 mb-6">
-            <strong>Besonders in Augsburg wichtig:</strong> Die regelmäßige
-            Wartung Ihrer Heizungsanlage spart nicht nur Energie, sondern ist
-            auch Voraussetzung für die Herstellergarantie. Unsere
+            Die regelmäßige Wartung Ihrer Heizungsanlage spart nicht nur Energie,
+            sondern ist auch Voraussetzung für die Herstellergarantie. Unsere
             Wartungsverträge sorgen für sorgenfreien Betrieb und verlängern die
             Lebensdauer Ihrer Heizung erheblich.
           </p>
 
           <h3 className="text-2xl font-bold mb-4 mt-8">
-            Badsanierung in Augsburg - Modern und barrierefrei
+            Badsanierung in Bobingen - Modern und barrierefrei
           </h3>
           <p className="text-slate-700 mb-4">
-            Träumen Sie von einem neuen Badezimmer? Wir setzen Ihre
-            Badezimmer-Träume in Augsburg in die Realität um. Mit unserer
-            3D-Badplanung können Sie Ihr neues Bad bereits vor Baubeginn
-            visualisieren.
+            Träumen Sie von einem neuen Badezimmer? Wir setzen Ihre Badezimmer-Träume
+            in die Realität um. Mit unserer 3D-Badplanung können Sie Ihr neues Bad
+            bereits vor Baubeginn visualisieren.
           </p>
           <p className="text-slate-700 mb-4">
-            <strong>Unsere Badsanierung in Augsburg umfasst:</strong>
+            <strong>Unsere Badsanierung in Bobingen umfasst:</strong>
           </p>
           <ul className="list-disc list-inside space-y-2 text-slate-700 mb-6">
             <li>3D-Planung und Festpreisangebot</li>
@@ -258,39 +253,38 @@ export default function AugsburgPage() {
           </ul>
 
           <h3 className="text-2xl font-bold mb-4 mt-8">
-            Klimaanlagen für Augsburg - Angenehm kühl im Sommer
+            Klimaanlagen für Bobingen - Angenehm kühl im Sommer
           </h3>
           <p className="text-slate-700 mb-4">
-            Die Sommer in Augsburg werden immer heißer. Eine moderne
-            Split-Klimaanlage sorgt für angenehme Temperaturen in Ihrem Zuhause
-            oder Büro. Und das Beste: Im Winter können Sie damit auch heizen!
+            Die Sommer werden immer heißer. Eine moderne Split-Klimaanlage sorgt für
+            angenehme Temperaturen in Ihrem Zuhause oder Büro. Und das Beste: Im
+            Winter können Sie damit auch heizen!
           </p>
           <p className="text-slate-700 mb-6">
-            Unsere Klimaanlagen sind flüsterleise (ab 19 dB(A)),
-            energieeffizient (A+++) und können per App gesteuert werden. Die
-            Installation erfolgt durch zertifizierte Kältetechniker und dauert
-            in der Regel nur 4-6 Stunden.
+            Unsere Klimaanlagen sind flüsterleise (ab 19 dB(A)), energieeffizient
+            (A+++) und können per App gesteuert werden. Die Installation erfolgt
+            durch zertifizierte Kältetechniker und dauert in der Regel nur 4-6
+            Stunden.
           </p>
 
           <h3 className="text-2xl font-bold mb-4 mt-8">
-            Schneller Service in ganz Augsburg
+            Schneller Service im ganzen Raum Augsburg
           </h3>
           <p className="text-slate-700 mb-4">
-            Von unserem Standort in Augsburg erreichen wir Sie schnell und
-            zuverlässig - egal ob Sie in der Innenstadt, Pfersee, Göggingen,
-            Haunstetten oder Lechhausen wohnen. Auch in den Nachbargemeinden wie
-            Königsbrunn, Neusäß, Stadtbergen oder Friedberg sind wir Ihr
-            regionaler Partner.
+            Von unserem Hauptstandort in Bobingen erreichen wir Sie schnell und
+            zuverlässig - egal ob Sie in Augsburg, Königsbrunn, Neusäß, Friedberg,
+            Stadtbergen oder einer der umliegenden Gemeinden wohnen.
           </p>
           <p className="text-slate-700 mb-6">
-            <strong>Das zeichnet uns aus:</strong> Kurze Anfahrtswege, keine
-            langen Wartezeiten, persönliche Beratung auf Augsburger Art und
-            faire Preise ohne versteckte Kosten.
+            <strong>Das zeichnet uns aus:</strong> Kurze Anfahrtswege, keine langen
+            Wartezeiten, persönliche Beratung und faire Preise ohne versteckte
+            Kosten. Als lokaler Fachbetrieb sind wir fest in der Region verwurzelt
+            und kennen die Besonderheiten vor Ort.
           </p>
         </div>
       </section>
 
-      <LocationCoverage mainCity="Augsburg" coverageAreas={coverageAreas} />
+      <LocationCoverage mainCity="Bobingen" coverageAreas={coverageAreas} />
 
       <CTASection variant="gradient" />
     </>

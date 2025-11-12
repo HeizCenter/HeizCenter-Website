@@ -32,7 +32,8 @@ export default function GuenzbergPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-      <LocationHero name="Günzburg" address="Service-Gebiet: 30 km von Ulm" phone="+49 821 123456" email="info@heizcenter.de" description="HeizCenter Service für Günzburg und Umgebung. Wärmepumpen, Heizung, Sanitär und Klimaanlagen mit professioneller Beratung." />
+      <LocationHero name="Günzburg" address="Schlüsselbergstraße 5, 88484 Gutenzell-Hürbel" phone="+49 8234 966590" email="service@heizcenter.de" description="HeizCenter Service für Günzburg und Umgebung. Wärmepumpen, Heizung, Sanitär und Klimaanlagen mit professioneller Beratung."
+        mainLocation="Gutenzell-Hürbel" />
       <LocationServices services={services} title="Unsere Leistungen in Günzburg" />
       <section className="container py-16">
         <div className="max-w-4xl mx-auto prose prose-slate">
@@ -42,7 +43,7 @@ export default function GuenzbergPage() {
           <p className="mb-4">Moderne Wärmepumpen-Installation mit BEG-Förderung bis 40%. Bis zu 70% Heizkosten sparen.</p>
           <h3 className="text-2xl font-bold mb-4">Heizung & Notdienst</h3>
           <p className="mb-4">Installation, Wartung und 24/7 Notdienst für alle Heizungssysteme in Günzburg.</p>
-          <div className="bg-blue-50 p-6 rounded-lg mt-8">
+          <div className="bg-[#0F5B78]/5 p-6 rounded-lg mt-8">
             <h3 className="text-xl font-bold mb-3">Service-Radius</h3>
             <p className="mb-2">Wir betreuen auch: Leipheim, Burgau, Ichenhausen, Offingen, Thannhausen</p>
           </div>

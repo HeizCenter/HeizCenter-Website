@@ -10,6 +10,7 @@ interface LocationHeroProps {
   email: string;
   description: string;
   openingHours?: string[];
+  mainLocation?: string;
 }
 
 export function LocationHero({
@@ -23,18 +24,24 @@ export function LocationHero({
     "Sa: 09:00 - 13:00 Uhr",
     "So: Geschlossen",
   ],
+  mainLocation,
 }: LocationHeroProps) {
   return (
-    <section className="bg-gradient-to-b from-blue-50 to-white py-20">
+    <section className="bg-gradient-to-b from-[#0F5B78]/5 to-white py-20">
       <div className="container">
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <MapPin className="h-8 w-8 text-blue-600" />
+              <MapPin className="h-8 w-8 text-[#0F5B78]" />
               <h1 className="text-4xl md:text-5xl font-bold">
                 HeizCenter {name}
               </h1>
             </div>
+            {mainLocation && (
+              <p className="text-sm text-slate-500 mb-4">
+                Service von HeizCenter {mainLocation}
+              </p>
+            )}
             <p className="text-xl text-slate-600 mb-8">{description}</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg">
@@ -46,12 +53,12 @@ export function LocationHero({
             </div>
           </div>
 
-          <Card className="shadow-xl border-2 border-blue-100">
+          <Card className="shadow-xl border-2 border-[#0F5B78]/10">
             <CardContent className="p-8">
               <h2 className="text-2xl font-bold mb-6">Kontaktdaten</h2>
               <div className="space-y-6">
                 <div className="flex gap-4">
-                  <MapPin className="h-6 w-6 text-blue-600 flex-shrink-0 mt-1" />
+                  <MapPin className="h-6 w-6 text-[#0F5B78] flex-shrink-0 mt-1" />
                   <div>
                     <p className="font-semibold mb-1">Adresse</p>
                     <p className="text-slate-600">{address}</p>
@@ -59,12 +66,12 @@ export function LocationHero({
                 </div>
 
                 <div className="flex gap-4">
-                  <Phone className="h-6 w-6 text-blue-600 flex-shrink-0 mt-1" />
+                  <Phone className="h-6 w-6 text-[#0F5B78] flex-shrink-0 mt-1" />
                   <div>
                     <p className="font-semibold mb-1">Telefon</p>
                     <a
                       href={`tel:${phone}`}
-                      className="text-blue-600 hover:underline"
+                      className="text-[#0F5B78] hover:underline"
                     >
                       {phone}
                     </a>
@@ -72,12 +79,12 @@ export function LocationHero({
                 </div>
 
                 <div className="flex gap-4">
-                  <Mail className="h-6 w-6 text-blue-600 flex-shrink-0 mt-1" />
+                  <Mail className="h-6 w-6 text-[#0F5B78] flex-shrink-0 mt-1" />
                   <div>
                     <p className="font-semibold mb-1">E-Mail</p>
                     <a
                       href={`mailto:${email}`}
-                      className="text-blue-600 hover:underline"
+                      className="text-[#0F5B78] hover:underline"
                     >
                       {email}
                     </a>
@@ -85,7 +92,7 @@ export function LocationHero({
                 </div>
 
                 <div className="flex gap-4">
-                  <Clock className="h-6 w-6 text-blue-600 flex-shrink-0 mt-1" />
+                  <Clock className="h-6 w-6 text-[#0F5B78] flex-shrink-0 mt-1" />
                   <div>
                     <p className="font-semibold mb-1">Öffnungszeiten</p>
                     <div className="text-slate-600 space-y-1">

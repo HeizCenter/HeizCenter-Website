@@ -80,9 +80,9 @@ export function TableOfContents({ selector = "article" }: TableOfContentsProps) 
               >
                 <a
                   href={`#${item.id}`}
-                  className={`text-sm hover:text-blue-600 transition-colors block py-1 ${
+                  className={`text-sm hover:text-[#0F5B78] transition-colors block py-1 ${
                     activeId === item.id
-                      ? "text-blue-600 font-semibold"
+                      ? "text-[#0F5B78] font-semibold"
                       : "text-slate-600"
                   }`}
                   onClick={(e) => {

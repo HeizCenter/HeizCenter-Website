@@ -127,7 +127,7 @@ export function ReviewShowcase({
             <p className="text-slate-700 mb-4 line-clamp-4">{review.text}</p>
             <div className="border-t border-slate-200 pt-4">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold flex-shrink-0">
+                <div className="w-10 h-10 bg-[#0F5B78]/10 rounded-full flex items-center justify-center text-[#0F5B78] font-bold flex-shrink-0">
                   {review.name.charAt(0)}
                 </div>
                 <div>
@@ -151,7 +151,7 @@ export function ReviewShowcase({
   if (variant === "featured") {
     const featured = reviews[0];
     return (
-      <div className="bg-gradient-to-br from-blue-600 to-blue-800 rounded-xl p-8 md:p-12 text-white relative overflow-hidden">
+      <div className="bg-gradient-to-br from-[#0F5B78] to-[#0F5B78] rounded-xl p-8 md:p-12 text-white relative overflow-hidden">
         <Quote className="h-16 w-16 text-white/20 absolute top-6 right-6" />
         <div className="relative z-10">
           <div className="flex text-yellow-400 mb-4">
@@ -168,7 +168,7 @@ export function ReviewShowcase({
             </div>
             <div>
               <p className="font-bold text-lg">{featured.name}</p>
-              <p className="text-blue-200">
+              <p className="text-white/80">
                 {featured.location} • {featured.service}
               </p>
             </div>
@@ -191,14 +191,14 @@ export function ReviewShowcase({
             ))}
           </div>
 
-          <Quote className="h-12 w-12 text-blue-200 mx-auto mb-4" />
+          <Quote className="h-12 w-12 text-white/80 mx-auto mb-4" />
 
           <p className="text-lg md:text-xl text-slate-700 text-center mb-6 leading-relaxed">
             {currentReview.text}
           </p>
 
           <div className="flex flex-col items-center">
-            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold text-2xl mb-3">
+            <div className="w-16 h-16 bg-[#0F5B78]/10 rounded-full flex items-center justify-center text-[#0F5B78] font-bold text-2xl mb-3">
               {currentReview.name.charAt(0)}
             </div>
             <p className="font-bold text-lg">{currentReview.name}</p>
@@ -219,7 +219,7 @@ export function ReviewShowcase({
       <div className="flex items-center justify-center gap-4 mt-6">
         <button
           onClick={prevReview}
-          className="w-10 h-10 rounded-full bg-white border-2 border-slate-300 hover:border-blue-600 transition-colors flex items-center justify-center"
+          className="w-10 h-10 rounded-full bg-white border-2 border-slate-300 hover:border-[#0F5B78] transition-colors flex items-center justify-center"
           aria-label="Vorherige Bewertung"
         >
           <ChevronLeft className="h-5 w-5 text-slate-600" />
@@ -235,7 +235,7 @@ export function ReviewShowcase({
               }}
               className={`h-2 rounded-full transition-all ${
                 index === currentIndex
-                  ? "w-8 bg-blue-600"
+                  ? "w-8 bg-[#0F5B78]"
                   : "w-2 bg-slate-300 hover:bg-slate-400"
               }`}
               aria-label={`Zur Bewertung ${index + 1}`}
@@ -245,7 +245,7 @@ export function ReviewShowcase({
 
         <button
           onClick={nextReview}
-          className="w-10 h-10 rounded-full bg-white border-2 border-slate-300 hover:border-blue-600 transition-colors flex items-center justify-center"
+          className="w-10 h-10 rounded-full bg-white border-2 border-slate-300 hover:border-[#0F5B78] transition-colors flex items-center justify-center"
           aria-label="Nächste Bewertung"
         >
           <ChevronRight className="h-5 w-5 text-slate-600" />

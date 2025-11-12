@@ -11,8 +11,8 @@ export function TrustBadges({ variant = "horizontal", className }: TrustBadgesPr
       icon: <Award className="h-6 w-6" />,
       title: "Meisterbetrieb",
       description: "Zertifizierte Qualität",
-      color: "text-blue-600",
-      bg: "bg-blue-50",
+      color: "text-[#0F5B78]",
+      bg: "bg-[#0F5B78]/5",
     },
     {
       icon: <Shield className="h-6 w-6" />,
@@ -93,9 +93,9 @@ export function CertificationBadge({
       title: "Meisterbetrieb",
       subtitle: "Handwerkskammer",
       icon: <Award className="h-full w-full" />,
-      color: "text-blue-600",
-      bg: "bg-blue-50",
-      border: "border-blue-200",
+      color: "text-[#0F5B78]",
+      bg: "bg-[#0F5B78]/5",
+      border: "border-[#0F5B78]/20",
     },
     beg: {
       title: "BEG Partner",

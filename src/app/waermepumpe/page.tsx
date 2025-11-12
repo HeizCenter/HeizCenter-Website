@@ -16,9 +16,9 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Wärmepumpe Installation in Augsburg, Ulm & Memmingen | HeizCenter",
+  title: "Wärmepumpe Installation in Bobingen & Gutenzell-Hürbel | HeizCenter",
   description:
-    "Moderne Wärmepumpen vom Experten. Bis zu 70% Energiekosten sparen. BEG-Förderung bis 40%. Kostenlose Beratung in Augsburg, Ulm und Memmingen.",
+    "Moderne Wärmepumpen vom Experten. Bis zu 70% Energiekosten sparen. BEG-Förderung bis 40%. Kostenlose Beratung in Bobingen und Gutenzell-Hürbel.",
   keywords: [
     "Wärmepumpe",
     "Wärmepumpe Augsburg",
@@ -145,14 +145,14 @@ export default function WaermepumpePage() {
       />
 
       {/* Kostenrechner CTA */}
-      <section className="bg-gradient-to-br from-blue-600 to-blue-700 text-white py-16">
+      <section className="bg-gradient-to-br from-[#0F5B78] to-[#0F5B78] text-white py-16">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
             <Calculator className="h-16 w-16 mx-auto mb-6" />
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Was kostet eine Wärmepumpe für Ihr Zuhause?
             </h2>
-            <p className="text-xl text-blue-100 mb-8">
+            <p className="text-xl text-white/90 mb-8">
               Berechnen Sie in wenigen Minuten die Kosten Ihrer neuen Wärmepumpe inklusive staatlicher Förderung. Unser Rechner berücksichtigt Ihre individuelle Situation und gibt Ihnen eine realistische Kostenschätzung.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -162,13 +162,13 @@ export default function WaermepumpePage() {
                   Jetzt Kosten berechnen
                 </Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="text-lg border-2 border-white text-white hover:bg-white hover:text-blue-600">
+              <Button asChild size="lg" variant="outline" className="text-lg border-2 border-white text-white hover:bg-white hover:text-[#0F5B78]">
                 <Link href="/kontakt">
                   Kostenloses Angebot anfragen
                 </Link>
               </Button>
             </div>
-            <p className="text-sm text-blue-100 mt-6">
+            <p className="text-sm text-white/90 mt-6">
               ✓ Kostenlos & unverbindlich  ✓ Mit BEG-Förderungsberechnung  ✓ Individuelle Beratung
             </p>
           </div>

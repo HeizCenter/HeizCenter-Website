@@ -30,10 +30,10 @@ const config: Config = {
           light: 'hsl(var(--primary-blue-light))',
           'ultra-light': 'hsl(var(--primary-blue-ultra-light))',
         },
-        'brand-orange': {
-          DEFAULT: 'hsl(var(--secondary-orange))',
-          dark: 'hsl(var(--secondary-orange-dark))',
-          light: 'hsl(var(--secondary-orange-light))',
+        'brand-yellow': {
+          DEFAULT: 'hsl(var(--secondary-yellow))',
+          dark: 'hsl(var(--secondary-yellow-dark))',
+          light: 'hsl(var(--secondary-yellow-light))',
         },
         'brand-green': {
           DEFAULT: 'hsl(var(--tertiary-green))',

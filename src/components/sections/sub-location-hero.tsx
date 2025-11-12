@@ -19,15 +19,15 @@ export function SubLocationHero({
   description,
 }: SubLocationHeroProps) {
   return (
-    <section className="bg-gradient-to-b from-blue-50 to-white py-16">
+    <section className="bg-gradient-to-b from-[#0F5B78]/5 to-white py-16">
       <div className="container">
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center gap-2 text-sm text-slate-600 mb-4">
-            <Link href="/standorte" className="hover:text-blue-600">
+            <Link href="/standorte" className="hover:text-[#0F5B78]">
               Standorte
             </Link>
             <ArrowRight className="h-4 w-4" />
-            <Link href={mainLocationHref} className="hover:text-blue-600">
+            <Link href={mainLocationHref} className="hover:text-[#0F5B78]">
               {mainLocation}
             </Link>
             <ArrowRight className="h-4 w-4" />
@@ -40,11 +40,11 @@ export function SubLocationHero({
           <p className="text-xl text-slate-600 mb-8">{description}</p>
 
           <div className="grid md:grid-cols-2 gap-6 mb-8">
-            <Card className="border-2 border-blue-100">
+            <Card className="border-2 border-[#0F5B78]/10">
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <MapPin className="h-6 w-6 text-blue-600" />
+                  <div className="w-12 h-12 bg-[#0F5B78]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <MapPin className="h-6 w-6 text-[#0F5B78]" />
                   </div>
                   <div>
                     <h3 className="font-bold mb-2">Ihr Standort</h3>
@@ -62,11 +62,11 @@ export function SubLocationHero({
               </CardContent>
             </Card>
 
-            <Card className="border-2 border-blue-100">
+            <Card className="border-2 border-[#0F5B78]/10">
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Phone className="h-6 w-6 text-blue-600" />
+                  <div className="w-12 h-12 bg-[#0F5B78]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Phone className="h-6 w-6 text-[#0F5B78]" />
                   </div>
                   <div>
                     <h3 className="font-bold mb-2">Direkter Kontakt</h3>
@@ -76,7 +76,7 @@ export function SubLocationHero({
                     </p>
                     <a
                       href={`tel:${phone}`}
-                      className="text-blue-600 font-semibold text-lg hover:underline"
+                      className="text-[#0F5B78] font-semibold text-lg hover:underline"
                     >
                       {phone}
                     </a>

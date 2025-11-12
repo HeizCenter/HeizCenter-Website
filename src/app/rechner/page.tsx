@@ -12,14 +12,14 @@ export default function RechnerPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-600 to-blue-700 text-white py-20">
+      <section className="bg-gradient-to-br from-[#0F5B78] to-[#0F5B78] text-white py-20">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
             <Calculator className="h-16 w-16 mx-auto mb-6" />
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Wärmepumpen-Kostenrechner
             </h1>
-            <p className="text-xl text-blue-100">
+            <p className="text-xl text-white/90">
               Berechnen Sie in wenigen Schritten die Kosten Ihrer neuen Wärmepumpe inkl. staatlicher Förderung
             </p>
           </div>
@@ -67,27 +67,27 @@ export default function RechnerPage() {
               </div>
 
               <div className="bg-white p-6 rounded-lg">
-                <Info className="h-10 w-10 text-blue-600 mb-4" />
+                <Info className="h-10 w-10 text-[#0F5B78] mb-4" />
                 <h3 className="text-xl font-bold mb-3">Zusätzliche Kosten möglich</h3>
                 <ul className="space-y-2 text-slate-600">
                   <li className="flex items-start gap-2">
-                    <span className="text-blue-600 mt-1">"</span>
+                    <span className="text-[#0F5B78] mt-1">"</span>
                     <span>Erdarbeiten (bei Erdwärmepumpen)</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-blue-600 mt-1">"</span>
+                    <span className="text-[#0F5B78] mt-1">"</span>
                     <span>Zusätzliche Heizkörper oder Fußbodenheizung</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-blue-600 mt-1">"</span>
+                    <span className="text-[#0F5B78] mt-1">"</span>
                     <span>Warmwasserspeicher (falls nicht vorhanden)</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-blue-600 mt-1">"</span>
+                    <span className="text-[#0F5B78] mt-1">"</span>
                     <span>Elektroinstallation (Starkstromanschluss)</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-blue-600 mt-1">"</span>
+                    <span className="text-[#0F5B78] mt-1">"</span>
                     <span>Dämmungsmaßnahmen bei Altbauten</span>
                   </li>
                 </ul>
@@ -130,25 +130,25 @@ export default function RechnerPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-blue-600 text-white py-16">
+      <section className="bg-[#0F5B78] text-white py-16">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4">
               Persönliche Beratung gewünscht?
             </h2>
-            <p className="text-xl text-blue-100 mb-8">
+            <p className="text-xl text-white/90 mb-8">
               Unsere Experten erstellen Ihnen ein individuelles Angebot basierend auf Ihrer Immobilie und beraten Sie zu allen Fördermöglichkeiten.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="/kontakt"
-                className="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-600 font-semibold rounded-lg hover:bg-blue-50 transition-colors"
+                className="inline-flex items-center justify-center px-8 py-4 bg-[#FFCA28] text-slate-900 font-semibold rounded-lg hover:bg-[#F5B800] transition-colors"
               >
                 Kostenlose Beratung anfragen
               </a>
               <a
                 href="tel:+4982349665900"
-                className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"
+                className="inline-flex items-center justify-center px-8 py-4 border-2 border-[#FFCA28] text-[#FFCA28] font-semibold rounded-lg hover:bg-[#FFCA28] hover:text-slate-900 transition-colors"
               >
                 +49 8234 96659 00
               </a>

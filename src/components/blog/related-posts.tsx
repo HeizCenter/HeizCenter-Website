@@ -37,7 +37,7 @@ export function RelatedPosts({
                     <Badge variant="secondary" className="mb-3 w-fit">
                       {post.category}
                     </Badge>
-                    <h3 className="text-xl font-bold group-hover:text-blue-600 transition-colors line-clamp-2">
+                    <h3 className="text-xl font-bold group-hover:text-[#0F5B78] transition-colors line-clamp-2">
                       {post.title}
                     </h3>
                   </CardHeader>

@@ -33,7 +33,7 @@ export default function ImpressumPage() {
         <section className="mb-8">
           <h3 className="text-xl font-bold mb-4">Telefon</h3>
           <p className="mb-2">
-            <a href="tel:+4982349665900" className="text-blue-600 hover:underline">
+            <a href="tel:+4982349665900" className="text-[#0F5B78] hover:underline">
               +49 8234 96659 00
             </a>
           </p>
@@ -42,7 +42,7 @@ export default function ImpressumPage() {
         <section className="mb-8">
           <h3 className="text-xl font-bold mb-4">WhatsApp</h3>
           <p className="mb-2">
-            <a href="https://wa.me/4982349665901" className="text-blue-600 hover:underline">
+            <a href="https://wa.me/4982349665901" className="text-[#0F5B78] hover:underline">
               +49 823 49 665 901
             </a>
           </p>
@@ -51,7 +51,7 @@ export default function ImpressumPage() {
         <section className="mb-8">
           <h3 className="text-xl font-bold mb-4">Email</h3>
           <p className="mb-2">
-            <a href="mailto:service@heizcenter.de" className="text-blue-600 hover:underline">
+            <a href="mailto:service@heizcenter.de" className="text-[#0F5B78] hover:underline">
               service@heizcenter.de
             </a>
           </p>
@@ -88,7 +88,7 @@ export default function ImpressumPage() {
               href="https://ec.europa.eu/consumers/odr"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-600 hover:underline"
+              className="text-[#0F5B78] hover:underline"
             >
               https://ec.europa.eu/consumers/odr
             </a>

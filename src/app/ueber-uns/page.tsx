@@ -7,7 +7,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Über uns - HeizCenter | Ihr regionaler Experte für Wärmepumpen & Heizung",
   description:
-    "Lernen Sie HeizCenter kennen. Seit über 20 Jahren Ihr Partner für Wärmepumpen, Heizung, Sanitär und Klimaanlagen in Augsburg, Ulm und Memmingen.",
+    "Lernen Sie HeizCenter kennen. Seit über 20 Jahren Ihr Partner für Wärmepumpen, Heizung, Sanitär und Klimaanlagen in Bobingen und Gutenzell-Hürbel.",
   keywords: ["HeizCenter", "Über uns", "Team", "Unternehmen", "Augsburg", "Wärmepumpen"],
 };
 
@@ -15,7 +15,7 @@ export default function UeberUnsPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-gradient-to-b from-blue-50 to-white py-20">
+      <section className="bg-gradient-to-b from-[#0F5B78]/5 to-white py-20">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
@@ -23,7 +23,7 @@ export default function UeberUnsPage() {
             </h1>
             <p className="text-xl text-slate-600 mb-8">
               Seit über 20 Jahren Ihr verlässlicher Partner für moderne Heiztechnik,
-              Sanitärinstallationen und Klimaanlagen in der Region Augsburg, Ulm und Memmingen.
+              Sanitärinstallationen und Klimaanlagen in der Region Bobingen und Gutenzell-Hürbel.
             </p>
           </div>
         </div>
@@ -37,7 +37,7 @@ export default function UeberUnsPage() {
             <p className="text-lg mb-6">
               HeizCenter wurde mit der Vision gegründet, modernes Heizen und Sanitär für jeden
               zugänglich zu machen. Was als kleiner Handwerksbetrieb in Augsburg begann, ist heute
-              ein etabliertes Unternehmen mit über 50 Mitarbeitern und drei Standorten in
+              ein etabliertes Unternehmen mit über 50 Mitarbeitern und zwei Standorten in
               Süddeutschland.
             </p>
             <p className="text-lg mb-6">
@@ -56,8 +56,8 @@ export default function UeberUnsPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <Card>
               <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Award className="h-8 w-8 text-blue-600" />
+                <div className="w-16 h-16 bg-[#0F5B78]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Award className="h-8 w-8 text-[#0F5B78]" />
                 </div>
                 <h3 className="text-xl font-bold mb-3">Qualität</h3>
                 <p className="text-slate-600">
@@ -68,8 +68,8 @@ export default function UeberUnsPage() {
 
             <Card>
               <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Heart className="h-8 w-8 text-blue-600" />
+                <div className="w-16 h-16 bg-[#0F5B78]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Heart className="h-8 w-8 text-[#0F5B78]" />
                 </div>
                 <h3 className="text-xl font-bold mb-3">Kundennähe</h3>
                 <p className="text-slate-600">
@@ -80,8 +80,8 @@ export default function UeberUnsPage() {
 
             <Card>
               <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <TrendingUp className="h-8 w-8 text-blue-600" />
+                <div className="w-16 h-16 bg-[#0F5B78]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <TrendingUp className="h-8 w-8 text-[#0F5B78]" />
                 </div>
                 <h3 className="text-xl font-bold mb-3">Innovation</h3>
                 <p className="text-slate-600">
@@ -92,8 +92,8 @@ export default function UeberUnsPage() {
 
             <Card>
               <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Users className="h-8 w-8 text-blue-600" />
+                <div className="w-16 h-16 bg-[#0F5B78]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Users className="h-8 w-8 text-[#0F5B78]" />
                 </div>
                 <h3 className="text-xl font-bold mb-3">Team</h3>
                 <p className="text-slate-600">
@@ -111,19 +111,19 @@ export default function UeberUnsPage() {
           <h2 className="text-3xl font-bold mb-12 text-center">HeizCenter in Zahlen</h2>
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-5xl font-bold text-blue-600 mb-2">20+</div>
+              <div className="text-5xl font-bold text-[#0F5B78] mb-2">20+</div>
               <div className="text-slate-600">Jahre Erfahrung</div>
             </div>
             <div>
-              <div className="text-5xl font-bold text-blue-600 mb-2">50+</div>
+              <div className="text-5xl font-bold text-[#0F5B78] mb-2">50+</div>
               <div className="text-slate-600">Mitarbeiter</div>
             </div>
             <div>
-              <div className="text-5xl font-bold text-blue-600 mb-2">3</div>
+              <div className="text-5xl font-bold text-[#0F5B78] mb-2">3</div>
               <div className="text-slate-600">Standorte</div>
             </div>
             <div>
-              <div className="text-5xl font-bold text-blue-600 mb-2">5000+</div>
+              <div className="text-5xl font-bold text-[#0F5B78] mb-2">5000+</div>
               <div className="text-slate-600">Zufriedene Kunden</div>
             </div>
           </div>
@@ -157,13 +157,13 @@ export default function UeberUnsPage() {
       <section className="container py-16">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold mb-8">Unsere Mission</h2>
-          <div className="bg-gradient-to-br from-blue-600 to-blue-700 text-white p-12 rounded-2xl">
+          <div className="bg-gradient-to-br from-[#0F5B78] to-[#0F5B78] text-white p-12 rounded-2xl">
             <p className="text-2xl font-medium mb-6">
               "Wir machen zukunftsfähige Heiztechnik für jeden zugänglich und sorgen für
               Behaglichkeit in Ihrem Zuhause – zuverlässig, kompetent und mit Leidenschaft für
               unser Handwerk."
             </p>
-            <p className="text-blue-100">
+            <p className="text-white/90">
               - Max Mustermann, Geschäftsführer HeizCenter GmbH
             </p>
           </div>
@@ -179,7 +179,7 @@ export default function UeberUnsPage() {
             kostenlosen Beratungstermin.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" variant="default" className="bg-white text-blue-600 hover:bg-slate-100">
+            <Button asChild size="lg" variant="default" className="bg-white text-[#0F5B78] hover:bg-slate-100">
               <Link href="/kontakt">Jetzt Kontakt aufnehmen</Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
