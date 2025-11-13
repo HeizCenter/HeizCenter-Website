@@ -4,9 +4,9 @@ import { Button } from "@/components/ui/button";
 import { Check, Shield } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Wartungsvertrag für Heizung & Wärmepumpe | HeizCenter",
-  description: "Sorglos-Wartungsverträge für Ihre Heizung. Regelmäßige Wartung, Priorität im Notfall und verlängerte Garantie.",
-  keywords: ["Wartungsvertrag", "Heizungswartung", "Wärmepumpe Wartung", "Service"],
+  title: "Wartungsvertrag Augsburg, Ulm & Memmingen - Heizung & Wärmepumpe | HeizCenter",
+  description: "Sorglos-Wartungsverträge für Ihre Heizung in Augsburg, Ulm und Memmingen. Regelmäßige Wartung, Priorität im Notfall und verlängerte Garantie.",
+  keywords: ["Wartungsvertrag", "Heizungswartung", "Wärmepumpe Wartung", "Service", "Augsburg", "Ulm", "Memmingen"],
 };
 
 export default function WartungsvertragPage() {

@@ -3,7 +3,7 @@ import { ServiceHero } from "@/components/sections/service-hero";
 import { FeaturesSection } from "@/components/sections/features-section";
 import { FAQSection, FAQItem } from "@/components/sections/faq-section";
 import { CTASection } from "@/components/sections/cta-section";
-import { Flame, Clock, Euro, Wrench, Shield, Thermometer, Sun } from "lucide-react";
+import { Flame, Clock, Euro, Wrench, Shield, Thermometer, Sun, Check } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ServiceSchema } from "@/components/schema/service-schema";
@@ -203,6 +203,55 @@ export default function HeizungPage() {
                   <li>Schrittweiser Umstieg auf erneuerbare Energien</li>
                 </ul>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Wartungsvertrag Section */}
+      <section className="container py-16">
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-gradient-to-br from-[#0F5B78] to-[#0D4A5E] rounded-2xl p-8 md:p-12 text-white">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center">
+                <Shield className="h-8 w-8 text-[#0F5B78]" />
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold">
+                Wartungsvertrag für langfristige Sicherheit
+              </h2>
+            </div>
+            <p className="text-xl mb-6 text-white/95">
+              Schützen Sie Ihre Investition mit einem Sorglos-Wartungsvertrag. Regelmäßige Wartung verlängert die Lebensdauer Ihrer Heizung, spart Energiekosten und verhindert teure Ausfälle.
+            </p>
+            <ul className="space-y-3 mb-8 text-lg">
+              <li className="flex items-start gap-3">
+                <Check className="h-6 w-6 flex-shrink-0 mt-1" />
+                <span>Regelmäßige professionelle Wartung (1-3x jährlich)</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <Check className="h-6 w-6 flex-shrink-0 mt-1" />
+                <span>Priorität im Notfall - schnelle Hilfe garantiert</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <Check className="h-6 w-6 flex-shrink-0 mt-1" />
+                <span>Bis zu 20% Rabatt auf Reparaturen</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <Check className="h-6 w-6 flex-shrink-0 mt-1" />
+                <span>Verlängerte Garantie und maximale Betriebssicherheit</span>
+              </li>
+            </ul>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button asChild size="lg" className="bg-[#FFCA28] hover:bg-[#F5B800] text-slate-900 font-semibold text-lg">
+                <Link href="/wartungsvertrag">
+                  Wartungsverträge ansehen
+                </Link>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-[#0F5B78] text-lg">
+                <Link href="/kontakt">
+                  Beratung anfragen
+                </Link>
+              </Button>
             </div>
           </div>
         </div>
