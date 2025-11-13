@@ -165,7 +165,7 @@ export default function SolarPage() {
         benefits={benefits}
         icon={Sun}
         badge="Bis zu 70% BAFA-Förderung"
-        imageSrc="/images/solar-thermal-installation.jpg"
+        imageSrc="/images/Solaranlage.webp"
       />
 
       <FeaturesSection
