@@ -157,7 +157,7 @@ export default function RechnerPage() {
                 href="/kontakt?tab=quote"
                 className="inline-flex items-center justify-center px-8 py-4 bg-[#FFCA28] text-slate-900 font-semibold rounded-lg hover:bg-[#F5B800] transition-colors"
               >
-                Kostenlose Beratung anfragen
+                Genaues Angebot anfragen
               </a>
               <a
                 href="tel:+4982349665900"
