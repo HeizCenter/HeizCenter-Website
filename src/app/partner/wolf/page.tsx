@@ -77,7 +77,7 @@ const features = [
       "Optimale Integration mit PV-Anlagen und Smart Home Systemen über Schnittstellen.",
     icon: CheckCircle2,
   },
-};
+];
 
 const faqs: FAQItem[] = [
   {
