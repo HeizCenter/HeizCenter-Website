@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Phone, Mail, MapPin, Clock, MessageSquare, FileText, AlertCircle } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, MessageSquare, FileText, AlertCircle, MessageCircle } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ContactForm } from "@/components/forms/contact-form";
 import { QuoteForm } from "@/components/forms/quote-form";
@@ -37,6 +37,15 @@ export default function ContactPage() {
               >
                 <Phone className="h-5 w-5" />
                 +49 8234 96659 00
+              </a>
+              <a
+                href="https://wa.me/4915111100331"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-white/20 text-white px-6 py-3 rounded-lg font-bold hover:bg-white/30 transition-colors border border-white/40"
+              >
+                <MessageCircle className="h-5 w-5" />
+                WhatsApp
               </a>
               <a
                 href="mailto:service@heizcenter.de"
