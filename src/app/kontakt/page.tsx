@@ -253,11 +253,11 @@ export default function ContactPage() {
 
               <div className="text-center">
                 <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl font-bold text-green-600">60+</span>
+                  <span className="text-2xl font-bold text-green-600">4.8★</span>
                 </div>
-                <h3 className="font-bold mb-2">Zufriedene Kunden</h3>
+                <h3 className="font-bold mb-2">Google Bewertung</h3>
                 <p className="text-sm text-slate-600">
-                  Über 60 positive Bewertungen sprechen für unsere Qualität
+                  5 positive Google Bewertungen sprechen für unsere Qualität
                 </p>
               </div>
 

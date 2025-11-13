@@ -176,8 +176,8 @@ export default function BlausteinPage() {
                 <p className="text-slate-700">Ortsteile im Servicegebiet</p>
               </div>
               <div className="bg-white p-6 rounded-lg text-center">
-                <div className="text-4xl font-bold text-[#0F5B78] mb-2">60+</div>
-                <p className="text-slate-700">Erdwärmepumpen in Blaustein</p>
+                <div className="text-4xl font-bold text-[#0F5B78] mb-2">4.8★</div>
+                <p className="text-slate-700">Google Bewertung</p>
               </div>
             </div>
           </div>

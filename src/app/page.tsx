@@ -42,7 +42,7 @@ const locations = [
 ];
 
 const stats = [
-  { icon: Star, number: "60+", label: "Kundenbewertungen" },
+  { icon: Star, number: "4.8★", label: "Google Bewertung" },
   { icon: Award, number: "20+", label: "Jahre Erfahrung" },
   { icon: Users, number: "2", label: "Standorte" },
 ];

@@ -11,14 +11,14 @@ export function ReviewWidget({
   showLink = true,
 }: ReviewWidgetProps) {
   const stats = {
-    totalReviews: 60,
-    averageRating: 4.9,
-    fiveStarCount: 58,
-    fourStarCount: 2,
+    totalReviews: 5,
+    averageRating: 4.8,
+    fiveStarCount: 4,
+    fourStarCount: 1,
     threeStarCount: 0,
     twoStarCount: 0,
     oneStarCount: 0,
-    googleRating: 4.9,
+    googleRating: 4.8,
     recommendationRate: 100,
   };
 
@@ -38,9 +38,9 @@ export function ReviewWidget({
           </div>
           <div className="border-l border-slate-300 pl-3">
             <p className="text-sm font-semibold text-slate-900">
-              {stats.totalReviews}+ Bewertungen
+              Bei Google bewertet
             </p>
-            <p className="text-xs text-slate-600">Google & ProvenExpert</p>
+            <p className="text-xs text-slate-600">{stats.totalReviews} Bewertungen</p>
           </div>
         </div>
         {showLink && (
@@ -72,7 +72,7 @@ export function ReviewWidget({
           ))}
         </div>
         <p className="text-slate-600">
-          Basierend auf {stats.totalReviews}+ Bewertungen
+          Basierend auf {stats.totalReviews} Google Bewertungen
         </p>
       </div>
 
@@ -144,10 +144,10 @@ export function GoogleReviewBadge({ variant = "small" }: GoogleReviewBadgeProps)
         <div>
           <p className="text-sm text-slate-600">Google Bewertung</p>
           <div className="flex items-baseline gap-1">
-            <span className="text-2xl font-bold">4.9</span>
+            <span className="text-2xl font-bold">4.8</span>
             <span className="text-slate-600">/5</span>
           </div>
-          <p className="text-xs text-slate-500">60+ Rezensionen</p>
+          <p className="text-xs text-slate-500">5 Bewertungen</p>
         </div>
       </div>
     );
@@ -156,8 +156,8 @@ export function GoogleReviewBadge({ variant = "small" }: GoogleReviewBadgeProps)
   return (
     <div className="inline-flex items-center gap-2 bg-white border border-slate-200 rounded-full px-3 py-1.5">
       <span className="text-lg">⭐</span>
-      <span className="text-sm font-semibold">4.9</span>
-      <span className="text-xs text-slate-600">(60+)</span>
+      <span className="text-sm font-semibold">4.8</span>
+      <span className="text-xs text-slate-600">(5)</span>
     </div>
   );
 }
