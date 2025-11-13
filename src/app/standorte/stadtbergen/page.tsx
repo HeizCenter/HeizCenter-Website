@@ -51,7 +51,7 @@ const localBusinessSchema = {
   "provider": {
     "@type": "LocalBusiness",
     "name": "HeizCenter Augsburg",
-    "telephone": "+49 821 123456",
+    "telephone": "+49 8234 96659 00",
   },
   "areaServed": {
     "@type": "City",

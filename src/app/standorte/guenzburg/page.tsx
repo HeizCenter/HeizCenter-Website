@@ -26,7 +26,7 @@ const faqs: FAQItem[] = [
   { question: "Entstehen Anfahrtskosten für Günzburg?", answer: "Anfahrtspauschale 25€. Bei größeren Aufträgen kostenlos. Beratung vor Ort immer kostenlos." },
 ];
 
-const schema = { "@context": "https://schema.org", "@type": "LocalBusiness", name: "HeizCenter Service Günzburg", address: { "@type": "PostalAddress", addressLocality: "Günzburg", addressCountry: "DE" }, geo: { latitude: 48.4536, longitude: 10.2759 }, telephone: "+49 821 123456", parentOrganization: { "@type": "Organization", name: "HeizCenter Ulm", url: "https://heizcenter.de/standorte/ulm" } };
+const schema = { "@context": "https://schema.org", "@type": "LocalBusiness", name: "HeizCenter Service Günzburg", address: { "@type": "PostalAddress", addressLocality: "Günzburg", addressCountry: "DE" }, geo: { latitude: 48.4536, longitude: 10.2759 }, telephone: "+49 8234 96659 00", parentOrganization: { "@type": "Organization", name: "HeizCenter Ulm", url: "https://heizcenter.de/standorte/ulm" } };
 
 export default function GuenzbergPage() {
   return (

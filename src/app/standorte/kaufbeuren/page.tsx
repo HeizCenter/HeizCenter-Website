@@ -96,7 +96,7 @@ const localBusinessSchema = {
     latitude: 47.8809,
     longitude: 10.6225,
   },
-  telephone: "+49 821 123456",
+  telephone: "+49 8234 96659 00",
   email: "info@heizcenter.de",
   url: "https://heizcenter.de/standorte/kaufbeuren",
   priceRange: "€€",

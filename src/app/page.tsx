@@ -83,8 +83,8 @@ export default function Home() {
           </div>
           <div className="relative overflow-hidden">
             <Image
-              src="/images/HeizCenter_Sanitär_Werkzeug.png"
-              alt="Plumbing tools"
+              src="/images/HeizCenter_Badgestaltung.webp"
+              alt="Bathroom design"
               fill
               className="object-cover"
               priority

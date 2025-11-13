@@ -26,7 +26,7 @@ const faqs: FAQItem[] = [
   { question: "Kosten?", answer: "20€ Anfahrt, bei Projekten kostenlos." },
 ];
 
-const schema = { "@context": "https://schema.org", "@type": "LocalBusiness", name: "HeizCenter Erbach", address: { addressLocality: "Erbach", addressCountry: "DE" }, telephone: "+49 821 123456" };
+const schema = { "@context": "https://schema.org", "@type": "LocalBusiness", name: "HeizCenter Erbach", address: { addressLocality: "Erbach", addressCountry: "DE" }, telephone: "+49 8234 96659 00" };
 
 export default function ErbachPage() {
   return (

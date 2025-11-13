@@ -137,6 +137,7 @@ export default function WaermepumpePage() {
         benefits={benefits}
         icon={Zap}
         badge="Bis zu 40% Förderung"
+        imageSrc="/images/Waermepumpe.jpeg"
       />
 
       <FeaturesSection
@@ -145,30 +146,30 @@ export default function WaermepumpePage() {
       />
 
       {/* Kostenrechner CTA */}
-      <section className="bg-gradient-to-br from-[#0F5B78] to-[#0F5B78] text-white py-16">
+      <section className="bg-slate-100 text-slate-900 py-16">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
-            <Calculator className="h-16 w-16 mx-auto mb-6" />
+            <Calculator className="h-16 w-16 mx-auto mb-6 text-[#0F5B78]" />
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Was kostet eine Wärmepumpe für Ihr Zuhause?
             </h2>
-            <p className="text-xl text-white/90 mb-8">
+            <p className="text-xl text-slate-700 mb-8">
               Berechnen Sie in wenigen Minuten die Kosten Ihrer neuen Wärmepumpe inklusive staatlicher Förderung. Unser Rechner berücksichtigt Ihre individuelle Situation und gibt Ihnen eine realistische Kostenschätzung.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" variant="secondary" className="text-lg">
+              <Button asChild size="lg" className="text-lg bg-[#FFCA28] hover:bg-[#F5B800] text-slate-900 font-semibold">
                 <Link href="/rechner">
                   <Calculator className="h-5 w-5 mr-2" />
                   Jetzt Kosten berechnen
                 </Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="text-lg border-2 border-white text-white hover:bg-white hover:text-[#0F5B78]">
+              <Button asChild size="lg" variant="outline" className="text-lg border-2 border-[#0F5B78] text-[#0F5B78] hover:bg-[#0F5B78] hover:text-white">
                 <Link href="/kontakt">
                   Kostenloses Angebot anfragen
                 </Link>
               </Button>
             </div>
-            <p className="text-sm text-white/90 mt-6">
+            <p className="text-sm text-slate-600 mt-6">
               ✓ Kostenlos & unverbindlich  ✓ Mit BEG-Förderungsberechnung  ✓ Individuelle Beratung
             </p>
           </div>
@@ -177,59 +178,134 @@ export default function WaermepumpePage() {
 
       <section className="bg-slate-50 py-16">
         <div className="container">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8">
-              So funktioniert eine Wärmepumpe
-            </h2>
-            <div className="prose prose-slate max-w-none">
-              <p className="text-lg text-slate-700 mb-6">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                So funktioniert eine Wärmepumpe
+              </h2>
+              <p className="text-lg text-slate-700 max-w-3xl mx-auto">
                 Eine Wärmepumpe entzieht der Umgebung (Luft, Erde oder Grundwasser)
                 Wärme und hebt diese auf ein höheres Temperaturniveau an. Dieses
                 Prinzip funktioniert ähnlich wie ein Kühlschrank - nur umgekehrt.
               </p>
-              <div className="grid md:grid-cols-3 gap-6 my-8">
-                <div className="bg-white p-6 rounded-lg">
-                  <h3 className="font-bold text-xl mb-3">1. Wärme aufnehmen</h3>
-                  <p className="text-slate-600">
-                    Die Wärmepumpe entzieht der Außenluft, dem Erdreich oder dem
-                    Grundwasser Wärmeenergie.
-                  </p>
+            </div>
+
+            {/* Process Steps with Visual Flow */}
+            <div className="relative mb-16">
+              {/* Connection Line */}
+              <div className="hidden md:block absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-[#0F5B78]/20 via-[#0F5B78]/40 to-[#0F5B78]/20 transform -translate-y-1/2 z-0"></div>
+
+              <div className="grid md:grid-cols-3 gap-8 relative z-10">
+                {/* Step 1 */}
+                <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow border-2 border-[#0F5B78]/10">
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-20 h-20 bg-gradient-to-br from-[#0F5B78] to-[#14789A] rounded-full flex items-center justify-center mb-6">
+                      <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                      </svg>
+                    </div>
+                    <div className="w-12 h-12 bg-[#FFCA28] rounded-full flex items-center justify-center mb-4 font-bold text-xl text-slate-900">
+                      1
+                    </div>
+                    <h3 className="font-bold text-2xl mb-4 text-slate-900">Wärme aufnehmen</h3>
+                    <p className="text-slate-600 leading-relaxed">
+                      Die Wärmepumpe entzieht der Außenluft, dem Erdreich oder dem
+                      Grundwasser kostenlose Umweltwärme - selbst bei -20°C.
+                    </p>
+                  </div>
                 </div>
-                <div className="bg-white p-6 rounded-lg">
-                  <h3 className="font-bold text-xl mb-3">2. Temperatur erhöhen</h3>
-                  <p className="text-slate-600">
-                    Mittels Kompressor wird die aufgenommene Wärme auf ein höheres
-                    Niveau gebracht.
-                  </p>
+
+                {/* Step 2 */}
+                <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow border-2 border-[#0F5B78]/10">
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-20 h-20 bg-gradient-to-br from-[#0F5B78] to-[#14789A] rounded-full flex items-center justify-center mb-6">
+                      <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                      </svg>
+                    </div>
+                    <div className="w-12 h-12 bg-[#FFCA28] rounded-full flex items-center justify-center mb-4 font-bold text-xl text-slate-900">
+                      2
+                    </div>
+                    <h3 className="font-bold text-2xl mb-4 text-slate-900">Temperatur erhöhen</h3>
+                    <p className="text-slate-600 leading-relaxed">
+                      Der elektrische Kompressor verdichtet das Kältemittel und erhöht
+                      die Temperatur auf 50-60°C für Ihr Heizsystem.
+                    </p>
+                  </div>
                 </div>
-                <div className="bg-white p-6 rounded-lg">
-                  <h3 className="font-bold text-xl mb-3">3. Wärme abgeben</h3>
-                  <p className="text-slate-600">
-                    Die erzeugte Wärme wird an Ihr Heizsystem abgegeben und erwärmt
-                    Ihr Zuhause.
+
+                {/* Step 3 */}
+                <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow border-2 border-[#0F5B78]/10">
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-20 h-20 bg-gradient-to-br from-[#0F5B78] to-[#14789A] rounded-full flex items-center justify-center mb-6">
+                      <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                      </svg>
+                    </div>
+                    <div className="w-12 h-12 bg-[#FFCA28] rounded-full flex items-center justify-center mb-4 font-bold text-xl text-slate-900">
+                      3
+                    </div>
+                    <h3 className="font-bold text-2xl mb-4 text-slate-900">Wärme abgeben</h3>
+                    <p className="text-slate-600 leading-relaxed">
+                      Die erzeugte Wärme wird über Heizkörper oder Fußbodenheizung
+                      an Ihre Räume abgegeben. Wohlige Wärme garantiert!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Efficiency Badge */}
+            <div className="bg-gradient-to-r from-[#0F5B78] to-[#14789A] rounded-2xl p-8 text-white text-center mb-16">
+              <div className="flex items-center justify-center gap-4 flex-wrap">
+                <svg className="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <div className="text-left">
+                  <div className="text-4xl font-bold mb-1">1 kW Strom = 4-5 kW Wärme</div>
+                  <p className="text-white/90 text-lg">
+                    Durch die Nutzung von Umweltwärme erzeugen Wärmepumpen 4-5x mehr Energie als sie verbrauchen
                   </p>
                 </div>
               </div>
-              <h3 className="text-2xl font-bold mt-12 mb-4">
+            </div>
+
+            {/* Heat Pump Systems */}
+            <div>
+              <h3 className="text-2xl md:text-3xl font-bold mb-8 text-center">
                 Unsere Wärmepumpen-Systeme
               </h3>
-              <ul className="space-y-4">
-                <li>
-                  <strong>Luft-Wasser-Wärmepumpe:</strong> Am weitesten verbreitet
-                  und einfach zu installieren. Nutzt die Außenluft als Wärmequelle.
-                  Ideal für Neubauten und sanierte Bestandsgebäude.
-                </li>
-                <li>
-                  <strong>Sole-Wasser-Wärmepumpe (Erdwärme):</strong> Sehr
-                  effizient durch konstante Erdtemperatur. Benötigt Erdbohrung oder
-                  Erdkollektor. Höchste Effizienz, besonders im Winter.
-                </li>
-                <li>
-                  <strong>Wasser-Wasser-Wärmepumpe:</strong> Nutzt Grundwasser als
-                  Wärmequelle. Höchste Effizienz, aber nicht überall möglich.
-                  Erfordert Brunnenbohrung und Genehmigung.
-                </li>
-              </ul>
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow border-l-4 border-[#0F5B78]">
+                  <h4 className="font-bold text-xl mb-3 text-[#0F5B78]">Luft-Wasser-Wärmepumpe</h4>
+                  <p className="text-slate-600 mb-3">
+                    Am weitesten verbreitet und einfach zu installieren. Nutzt die Außenluft als Wärmequelle.
+                  </p>
+                  <p className="text-sm text-slate-500 italic">
+                    ✓ Ideal für Neubauten und sanierte Bestandsgebäude
+                  </p>
+                </div>
+
+                <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow border-l-4 border-[#0F5B78]">
+                  <h4 className="font-bold text-xl mb-3 text-[#0F5B78]">Sole-Wasser-Wärmepumpe</h4>
+                  <p className="text-slate-600 mb-3">
+                    Sehr effizient durch konstante Erdtemperatur. Benötigt Erdbohrung oder Erdkollektor.
+                  </p>
+                  <p className="text-sm text-slate-500 italic">
+                    ✓ Höchste Effizienz, besonders im Winter
+                  </p>
+                </div>
+
+                <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow border-l-4 border-[#0F5B78]">
+                  <h4 className="font-bold text-xl mb-3 text-[#0F5B78]">Wasser-Wasser-Wärmepumpe</h4>
+                  <p className="text-slate-600 mb-3">
+                    Nutzt Grundwasser als Wärmequelle. Höchste Effizienz, aber nicht überall möglich.
+                  </p>
+                  <p className="text-sm text-slate-500 italic">
+                    ✓ Erfordert Brunnenbohrung und Genehmigung
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

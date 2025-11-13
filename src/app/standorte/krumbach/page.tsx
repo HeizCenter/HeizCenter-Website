@@ -26,7 +26,7 @@ const faqs: FAQItem[] = [
   { question: "Anfahrtskosten?", answer: "25€ Pauschale. Bei größeren Projekten entfällt die Anfahrt." },
 ];
 
-const schema = { "@context": "https://schema.org", "@type": "LocalBusiness", name: "HeizCenter Service Krumbach", address: { addressLocality: "Krumbach", addressCountry: "DE" }, geo: { latitude: 48.2397, longitude: 10.3625 }, telephone: "+49 821 123456", parentOrganization: { name: "HeizCenter Ulm" } };
+const schema = { "@context": "https://schema.org", "@type": "LocalBusiness", name: "HeizCenter Service Krumbach", address: { addressLocality: "Krumbach", addressCountry: "DE" }, geo: { latitude: 48.2397, longitude: 10.3625 }, telephone: "+49 8234 96659 00", parentOrganization: { name: "HeizCenter Ulm" } };
 
 export default function KrumbachPage() {
   return (

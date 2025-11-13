@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
+import Image from "next/image";
 import { LucideIcon } from "lucide-react";
 
 interface ServiceHeroProps {
@@ -9,6 +10,7 @@ interface ServiceHeroProps {
   benefits: string[];
   icon: LucideIcon;
   badge?: string;
+  imageSrc?: string;
 }
 
 export function ServiceHero({
@@ -17,6 +19,7 @@ export function ServiceHero({
   benefits,
   icon: Icon,
   badge,
+  imageSrc,
 }: ServiceHeroProps) {
   return (
     <section className="bg-gradient-to-br from-[#0F5B78]/5 to-slate-50 py-16 md:py-24">
@@ -60,14 +63,26 @@ export function ServiceHero({
                 <Link href="/kontakt">Kostenlose Beratung</Link>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <Link href="tel:+4982112345">0821 123456</Link>
+                <Link href="tel:+4982349665900">+49 8234 96659 00</Link>
               </Button>
             </div>
           </div>
           <div className="relative">
-            <div className="aspect-square bg-gradient-to-br from-[#0F5B78]/10 to-[#0F5B78]/20 rounded-3xl flex items-center justify-center">
-              <Icon className="h-64 w-64 text-[#0F5B78]/20" />
-            </div>
+            {imageSrc ? (
+              <div className="relative aspect-square rounded-3xl overflow-hidden">
+                <Image
+                  src={imageSrc}
+                  alt={title}
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
+            ) : (
+              <div className="aspect-square bg-gradient-to-br from-[#0F5B78]/10 to-[#0F5B78]/20 rounded-3xl flex items-center justify-center">
+                <Icon className="h-64 w-64 text-[#0F5B78]/20" />
+              </div>
+            )}
           </div>
         </div>
       </div>

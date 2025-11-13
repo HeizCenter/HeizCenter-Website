@@ -103,11 +103,11 @@ export default function NotFound() {
               <strong>Notfall?</strong> Wir sind 24/7 für Sie da:
             </p>
             <a
-              href="tel:+49821123456"
+              href="tel:+4982349665900"
               className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-bold px-6 py-3 rounded-lg transition-colors"
             >
               <Phone className="h-5 w-5" />
-              +49 821 123456
+              +49 8234 96659 00
             </a>
           </div>
         </div>

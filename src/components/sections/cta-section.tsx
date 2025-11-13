@@ -16,23 +16,23 @@ export function CTASection({
 }: CTASectionProps) {
   if (variant === "gradient") {
     return (
-      <section className="bg-gradient-to-r from-[#0F5B78] to-[#0F5B78] text-white py-16">
+      <section className="bg-slate-100 text-slate-900 py-16">
         <div className="container text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">{title}</h2>
-          <p className="text-xl mb-8 opacity-90">{description}</p>
+          <p className="text-xl mb-8 text-slate-700">{description}</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" variant="secondary" className="text-lg">
+            <Button asChild size="lg" className="text-lg bg-[#FFCA28] hover:bg-[#F5B800] text-slate-900 font-semibold">
               <Link href="/kontakt">Beratungstermin vereinbaren</Link>
             </Button>
             <Button
               asChild
               size="lg"
               variant="outline"
-              className="text-lg bg-transparent border-white text-white hover:bg-white/10"
+              className="text-lg border-2 border-[#0F5B78] text-[#0F5B78] hover:bg-[#0F5B78] hover:text-white"
             >
-              <Link href="tel:+4982112345">
+              <Link href="tel:+4982349665900">
                 <Phone className="mr-2 h-5 w-5" />
-                0821 123456
+                +49 8234 96659 00
               </Link>
             </Button>
           </div>
@@ -50,11 +50,11 @@ export function CTASection({
             <p className="text-xl text-slate-600 mb-8">{description}</p>
             <div className="grid md:grid-cols-3 gap-6 mb-8">
               <a
-                href="tel:+4982112345"
+                href="tel:+4982349665900"
                 className="flex flex-col items-center gap-2 p-4 rounded-lg hover:bg-slate-50 transition-colors"
               >
                 <Phone className="h-8 w-8 text-[#0F5B78]" />
-                <span className="font-semibold">0821 123456</span>
+                <span className="font-semibold">+49 8234 96659 00</span>
                 <span className="text-sm text-slate-600">Anrufen</span>
               </a>
               <a

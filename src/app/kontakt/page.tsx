@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, MessageSquare, FileText, AlertCircle } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ContactForm } from "@/components/forms/contact-form";
 import { QuoteForm } from "@/components/forms/quote-form";
@@ -136,21 +136,40 @@ export default function ContactPage() {
       {/* Forms Section */}
       <section className="container py-12">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-8">
+          <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">
               Wählen Sie Ihr Kontaktformular
             </h2>
-            <p className="text-slate-600">
+            <p className="text-slate-600 text-lg">
               Je nach Anliegen wählen Sie bitte das passende Formular aus.
             </p>
           </div>
 
           <Tabs defaultValue="contact" className="w-full">
-            <TabsList className="grid w-full grid-cols-3 mb-8">
-              <TabsTrigger value="contact">Kontakt</TabsTrigger>
-              <TabsTrigger value="quote">Angebot</TabsTrigger>
-              <TabsTrigger value="emergency" className="text-red-600">
-                Notfall
+            <TabsList className="grid w-full grid-cols-3 mb-10 bg-slate-100 p-2 rounded-xl h-auto">
+              <TabsTrigger
+                value="contact"
+                className="flex flex-col items-center gap-2 py-4 px-6 data-[state=active]:bg-white data-[state=active]:shadow-md rounded-lg transition-all"
+              >
+                <MessageSquare className="h-6 w-6 text-[#0F5B78]" />
+                <span className="font-semibold">Kontakt</span>
+                <span className="text-xs text-slate-500 hidden sm:block">Allgemeine Anfrage</span>
+              </TabsTrigger>
+              <TabsTrigger
+                value="quote"
+                className="flex flex-col items-center gap-2 py-4 px-6 data-[state=active]:bg-white data-[state=active]:shadow-md rounded-lg transition-all"
+              >
+                <FileText className="h-6 w-6 text-[#0F5B78]" />
+                <span className="font-semibold">Angebot</span>
+                <span className="text-xs text-slate-500 hidden sm:block">Kostenlos anfragen</span>
+              </TabsTrigger>
+              <TabsTrigger
+                value="emergency"
+                className="flex flex-col items-center gap-2 py-4 px-6 data-[state=active]:bg-white data-[state=active]:shadow-md rounded-lg transition-all"
+              >
+                <AlertCircle className="h-6 w-6 text-[#0F5B78]" />
+                <span className="font-semibold">Notfall</span>
+                <span className="text-xs text-slate-500 hidden sm:block">24/7 Notdienst</span>
               </TabsTrigger>
             </TabsList>
 

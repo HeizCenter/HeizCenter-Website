@@ -125,6 +125,7 @@ export default function SanitaerPage() {
         benefits={benefits}
         icon={Droplet}
         badge="Festpreisgarantie"
+        imageSrc="/images/HeizCenter_Badgestaltung.webp"
       />
 
       <FeaturesSection

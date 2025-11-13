@@ -99,7 +99,7 @@ const localBusinessSchema = {
     latitude: 48.3705,
     longitude: 10.8978,
   },
-  telephone: "+49 821 123456",
+  telephone: "+49 8234 96659 00",
   email: "augsburg@heizcenter.de",
   url: "https://heizcenter.de/standorte/augsburg",
   openingHoursSpecification: [

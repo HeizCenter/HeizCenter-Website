@@ -181,7 +181,7 @@ export function QuoteForm(props: QuoteFormProps) {
           id="phone"
           type="tel"
           {...register("phone")}
-          placeholder="+49 821 12345678"
+          placeholder="+49 8234 96659 0078"
           className={errors.phone ? "border-red-500" : ""}
         />
         {errors.phone && (

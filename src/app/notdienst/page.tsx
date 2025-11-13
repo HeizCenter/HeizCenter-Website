@@ -6,7 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 export const metadata: Metadata = {
   title: "24/7 Heizungsnotdienst | HeizCenter Bobingen & Gutenzell-Hürbel",
   description:
-    "Heizungsnotdienst rund um die Uhr. Schnelle Hilfe bei Heizungsausfall, Rohrbruch und anderen Notfällen. ☎ +49 821 123456-999",
+    "Heizungsnotdienst rund um die Uhr. Schnelle Hilfe bei Heizungsausfall, Rohrbruch und anderen Notfällen. ☎ +49 8234 96659 00-999",
   keywords: ["Notdienst", "Heizungsnotdienst", "24/7", "Bobingen", "Gutenzell-Hürbel", "Augsburg", "Ulm", "Memmingen"],
 };
 
@@ -29,8 +29,8 @@ export default function NotdienstPage() {
                 <Phone className="h-10 w-10" />
                 <div className="text-left">
                   <div className="text-sm font-semibold">Notruf 24/7</div>
-                  <a href="tel:+49821123456999" className="text-3xl font-bold hover:underline">
-                    +49 821 123456-999
+                  <a href="tel:+4982349665900999" className="text-3xl font-bold hover:underline">
+                    +49 8234 96659 00-999
                   </a>
                 </div>
               </div>
@@ -146,9 +146,9 @@ export default function NotdienstPage() {
             Rufen Sie uns jetzt an - unser Notdienst-Team ist rund um die Uhr für Sie erreichbar.
           </p>
           <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-red-600 text-2xl px-12 py-8">
-            <a href="tel:+49821123456999">
+            <a href="tel:+4982349665900999">
               <Phone className="mr-3 h-8 w-8" />
-              +49 821 123456-999
+              +49 8234 96659 00-999
             </a>
           </Button>
         </div>

@@ -130,6 +130,7 @@ export default function KlimaanlagePage() {
         benefits={benefits}
         icon={Wind}
         badge="Kühlen & Heizen"
+        imageSrc="/images/klima.jpeg"
       />
 
       <FeaturesSection

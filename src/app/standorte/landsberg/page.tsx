@@ -98,7 +98,7 @@ const localBusinessSchema = {
     latitude: 48.0502,
     longitude: 10.8744,
   },
-  telephone: "+49 821 123456",
+  telephone: "+49 8234 96659 00",
   email: "info@heizcenter.de",
   url: "https://heizcenter.de/standorte/landsberg",
   priceRange: "€€",

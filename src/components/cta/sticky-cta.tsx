@@ -35,19 +35,19 @@ export function StickyCta({
       bg: "bg-[#0F5B78] hover:bg-[#0F5B78]",
       icon: <Phone className="h-5 w-5" />,
       text: "Jetzt anrufen",
-      href: "tel:+49821123456",
+      href: "tel:+4982349665900",
     },
     whatsapp: {
       bg: "bg-green-600 hover:bg-green-700",
       icon: <MessageCircle className="h-5 w-5" />,
       text: "WhatsApp",
-      href: "https://wa.me/49821123456",
+      href: "https://wa.me/4982349665900",
     },
     emergency: {
       bg: "bg-red-600 hover:bg-red-700",
       icon: <Phone className="h-5 w-5" />,
       text: "Notfall: 24/7",
-      href: "tel:+49821123456",
+      href: "tel:+4982349665900",
     },
   };
 

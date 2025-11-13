@@ -113,6 +113,7 @@ export default function HeizungPage() {
         benefits={benefits}
         icon={Flame}
         badge="24/7 Notdienst"
+        imageSrc="/images/HeizCenter_Heizung.webp"
       />
 
       <FeaturesSection

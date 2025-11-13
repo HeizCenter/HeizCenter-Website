@@ -11,13 +11,13 @@ export function FloatingActionButton() {
     {
       icon: <Phone className="h-5 w-5" />,
       label: "Anrufen",
-      href: "tel:+49821123456",
+      href: "tel:+4982349665900",
       color: "bg-[#0F5B78] hover:bg-[#0F5B78]",
     },
     {
       icon: <MessageCircle className="h-5 w-5" />,
       label: "WhatsApp",
-      href: "https://wa.me/49821123456",
+      href: "https://wa.me/4982349665900",
       color: "bg-green-600 hover:bg-green-700",
     },
     {

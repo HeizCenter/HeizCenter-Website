@@ -26,7 +26,7 @@ const faqs: FAQItem[] = [
   { question: "Anfahrtskosten?", answer: "30€, bei Projekten entfällt Anfahrt." },
 ];
 
-const schema = { "@context": "https://schema.org", "@type": "LocalBusiness", name: "HeizCenter Bad Wurzach", address: { addressLocality: "Bad Wurzach", addressCountry: "DE" }, telephone: "+49 821 123456" };
+const schema = { "@context": "https://schema.org", "@type": "LocalBusiness", name: "HeizCenter Bad Wurzach", address: { addressLocality: "Bad Wurzach", addressCountry: "DE" }, telephone: "+49 8234 96659 00" };
 
 export default function BadWurzachPage() {
   return (

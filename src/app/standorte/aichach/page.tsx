@@ -26,7 +26,7 @@ const faqs: FAQItem[] = [
   { question: "Anfahrt kostenpflichtig?", answer: "20€ Pauschale, bei Großaufträgen kostenlos." },
 ];
 
-const schema = { "@context": "https://schema.org", "@type": "LocalBusiness", name: "HeizCenter Aichach", address: { addressLocality: "Aichach", addressCountry: "DE" }, geo: { latitude: 48.4595, longitude: 11.1310 }, telephone: "+49 821 123456" };
+const schema = { "@context": "https://schema.org", "@type": "LocalBusiness", name: "HeizCenter Aichach", address: { addressLocality: "Aichach", addressCountry: "DE" }, geo: { latitude: 48.4595, longitude: 11.1310 }, telephone: "+49 8234 96659 00" };
 
 export default function AichachPage() {
   return (
