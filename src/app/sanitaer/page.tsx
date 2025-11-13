@@ -16,9 +16,9 @@ import { FAQSchema } from "@/components/schema/faq-schema";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
 
 export const metadata: Metadata = {
-  title: "Sanitär & Badsanierung in Bobingen & Gutenzell-Hürbel | HeizCenter",
+  title: "Sanitär & Badsanierung Augsburg, Ulm & Memmingen | HeizCenter",
   description:
-    "Professionelle Badsanierung und Sanitärinstallationen. Von der Planung bis zur Umsetzung. Barrierefreie Bäder, moderne Armaturen, Notdienst. Jetzt beraten lassen!",
+    "Professionelle Badsanierung und Sanitärinstallationen in Augsburg, Ulm und Memmingen. Von der Planung bis zur Umsetzung. Barrierefreie Bäder, moderne Armaturen, Notdienst.",
   keywords: [
     "Badsanierung",
     "Sanitär",
@@ -134,8 +134,8 @@ export default function SanitaerPage() {
       <FAQSchema faqs={faqs} />
 
       <ServiceHero
-        title="Sanitär & Badsanierung"
-        description="Verwandeln Sie Ihr Badezimmer in eine Wohlfühloase. Professionelle Planung und Umsetzung durch erfahrene Fachbetriebe. Von modern bis barrierefrei."
+        title="Sanitär & Badsanierung in Augsburg, Ulm & Memmingen"
+        description="Verwandeln Sie Ihr Badezimmer in eine Wohlfühloase. Professionelle Planung und Umsetzung durch erfahrene Fachbetriebe in der Region. Von modern bis barrierefrei."
         benefits={benefits}
         icon={Droplet}
         badge="Festpreisgarantie"

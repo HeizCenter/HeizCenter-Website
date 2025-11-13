@@ -16,9 +16,9 @@ import { FAQSchema } from "@/components/schema/faq-schema";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
 
 export const metadata: Metadata = {
-  title: "Klimaanlage Installation in Bobingen & Gutenzell-Hürbel | HeizCenter",
+  title: "Klimaanlage Augsburg, Ulm & Memmingen - Installation & Wartung | HeizCenter",
   description:
-    "Professionelle Klimaanlagen für Wohnungen, Häuser und Gewerbe. Split-Klimaanlagen, Multi-Split-Systeme. Kühlen und Heizen mit einem Gerät. Jetzt beraten lassen!",
+    "Professionelle Klimaanlagen für Wohnungen, Häuser und Gewerbe in Augsburg, Ulm und Memmingen. Split-Klimaanlagen, Multi-Split-Systeme. Kühlen und Heizen mit einem Gerät.",
   keywords: [
     "Klimaanlage",
     "Klimaanlage Augsburg",
@@ -139,7 +139,7 @@ export default function KlimaanlagePage() {
       <FAQSchema faqs={faqs} />
 
       <ServiceHero
-        title="Klimaanlage Installation"
+        title="Klimaanlage in Augsburg, Ulm & Memmingen"
         description="Angenehme Raumtemperatur das ganze Jahr. Moderne Split-Klimaanlagen kühlen im Sommer und heizen im Winter. Energieeffizient und flüsterleise."
         benefits={benefits}
         icon={Wind}

@@ -20,9 +20,9 @@ import { FAQSchema } from "@/components/schema/faq-schema";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
 
 export const metadata: Metadata = {
-  title: "Wärmepumpe Installation in Bobingen & Gutenzell-Hürbel | HeizCenter",
+  title: "Wärmepumpe Augsburg, Ulm & Memmingen - Bis 40% Förderung | HeizCenter",
   description:
-    "Moderne Wärmepumpen vom Experten. Bis zu 70% Energiekosten sparen. BEG-Förderung bis 40%. Kostenlose Beratung in Bobingen und Gutenzell-Hürbel.",
+    "Moderne Wärmepumpen vom Experten in Augsburg, Ulm und Memmingen. Bis zu 70% Energiekosten sparen. BEG-Förderung bis 40%. Kostenlose Beratung.",
   keywords: [
     "Wärmepumpe",
     "Wärmepumpe Augsburg",
@@ -147,7 +147,7 @@ export default function WaermepumpePage() {
       <FAQSchema faqs={faqs} />
 
       <ServiceHero
-        title="Wärmepumpe Installation"
+        title="Wärmepumpe in Augsburg, Ulm & Memmingen"
         description="Zukunftssicher heizen mit erneuerbarer Energie. Profitieren Sie von bis zu 40% staatlicher Förderung und sparen Sie bis zu 70% Ihrer Heizkosten."
         benefits={benefits}
         icon={Zap}

@@ -11,9 +11,9 @@ import { FAQSchema } from "@/components/schema/faq-schema";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
 
 export const metadata: Metadata = {
-  title: "Heizung Installation & Wartung in Bobingen & Gutenzell-Hürbel",
+  title: "Heizung Augsburg, Ulm & Memmingen - Installation & Wartung | HeizCenter",
   description:
-    "Moderne Heizungsanlagen vom Fachbetrieb. Gas, Öl, Pellets oder Hybrid. Wartung, Reparatur und Notdienst. Über 20 Jahre Erfahrung.",
+    "Moderne Heizungsanlagen vom Fachbetrieb in Augsburg, Ulm und Memmingen. Gas, Öl, Pellets oder Hybrid. Wartung, Reparatur und Notdienst. Über 20 Jahre Erfahrung.",
   keywords: [
     "Heizung",
     "Heizungsinstallation",
@@ -124,8 +124,8 @@ export default function HeizungPage() {
       <FAQSchema faqs={faqs} />
 
       <ServiceHero
-        title="Heizungsinstallation & Wartung"
-        description="Von der Planung über die Installation bis zur Wartung - Ihr Heizungsexperte mit über 20 Jahren Erfahrung in Bobingen und Gutenzell-Hürbel."
+        title="Heizung in Augsburg, Ulm & Memmingen"
+        description="Von der Planung über die Installation bis zur Wartung - Ihr Heizungsexperte mit über 20 Jahren Erfahrung in der Region Augsburg, Ulm und Memmingen."
         benefits={benefits}
         icon={Flame}
         badge="24/7 Notdienst"

@@ -128,7 +128,7 @@ export default function Home() {
               Ihr Experte für moderne Heizungslösungen
             </h1>
             <p className="text-xl md:text-2xl mb-10 text-white/95">
-              Wärmepumpen, Heizung, Sanitär & Klimaanlagen in Bobingen und Gutenzell-Hürbel. Über 20 Jahre Erfahrung.
+              Wärmepumpen, Heizung, Sanitär & Klimaanlagen in Augsburg, Ulm und Memmingen Region. Über 20 Jahre Erfahrung.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-[#FFCA28] hover:bg-[#F5B800] text-slate-900 font-semibold">
