@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import { PriceCalculator } from "@/components/calculator/price-calculator";
 import { Calculator, CheckCircle, Info } from "lucide-react";
 
@@ -12,8 +13,20 @@ export default function RechnerPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#0F5B78] to-[#0F5B78] text-white py-20">
-        <div className="container">
+      <section className="relative bg-gradient-to-br from-[#0F5B78] to-[#0F5B78] text-white py-20">
+        {/* Background Image */}
+        <div className="absolute inset-0 opacity-20">
+          <Image
+            src="/images/Heizung_Modernisierung.webp"
+            alt="Heizung Modernisierung"
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
+        <div className="absolute inset-0 bg-[#0F5B78]/60"></div>
+
+        <div className="container relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <Calculator className="h-16 w-16 mx-auto mb-6" />
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
