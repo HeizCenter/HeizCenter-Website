@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import { Phone, Clock, AlertCircle, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -14,8 +15,20 @@ export default function NotdienstPage() {
   return (
     <>
       {/* Hero / Emergency Header */}
-      <section className="bg-gradient-to-br from-red-600 to-red-700 text-white py-20">
-        <div className="container">
+      <section className="relative bg-gradient-to-br from-[#0F5B78] to-[#0D4A5E] text-white py-20">
+        {/* Background Image */}
+        <div className="absolute inset-0 opacity-20">
+          <Image
+            src="/images/notdienst.png"
+            alt="Heizungsnotdienst"
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
+        <div className="absolute inset-0 bg-[#0F5B78]/60"></div>
+
+        <div className="container relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <AlertCircle className="h-20 w-20 mx-auto mb-6" />
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
@@ -24,7 +37,7 @@ export default function NotdienstPage() {
             <p className="text-2xl mb-8">
               Schnelle Hilfe bei Heizungsausfall, Rohrbruch und anderen Notfällen
             </p>
-            <div className="bg-white text-red-600 inline-block px-8 py-6 rounded-xl shadow-2xl">
+            <div className="bg-white text-[#0F5B78] inline-block px-8 py-6 rounded-xl shadow-2xl">
               <div className="flex items-center gap-4">
                 <Phone className="h-10 w-10" />
                 <div className="text-left">
@@ -52,8 +65,8 @@ export default function NotdienstPage() {
               "Wasser läuft nicht ab",
               "Keine Warmwasserversorgung",
             ].map((item, i) => (
-              <div key={i} className="flex items-start gap-3 bg-red-50 p-4 rounded-lg">
-                <AlertCircle className="h-6 w-6 text-red-600 flex-shrink-0 mt-1" />
+              <div key={i} className="flex items-start gap-3 bg-[#0F5B78]/5 p-4 rounded-lg border border-[#0F5B78]/20">
+                <AlertCircle className="h-6 w-6 text-[#0F5B78] flex-shrink-0 mt-1" />
                 <span className="font-medium">{item}</span>
               </div>
             ))}
@@ -139,13 +152,13 @@ export default function NotdienstPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-red-600 text-white py-16">
+      <section className="bg-[#0F5B78] text-white py-16">
         <div className="container text-center">
           <h2 className="text-3xl font-bold mb-6">Notfall? Wir sind für Sie da!</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Rufen Sie uns jetzt an - unser Notdienst-Team ist rund um die Uhr für Sie erreichbar.
           </p>
-          <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-red-600 text-2xl px-12 py-8">
+          <Button asChild size="lg" className="bg-[#FFCA28] hover:bg-[#F5B800] text-slate-900 text-2xl px-12 py-8 font-semibold">
             <a href="tel:+4982349665900999">
               <Phone className="mr-3 h-8 w-8" />
               +49 8234 96659 00-999
