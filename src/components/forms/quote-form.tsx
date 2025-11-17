@@ -39,12 +39,16 @@ export function QuoteForm(props: QuoteFormProps) {
     formState: { errors },
     reset,
     setValue,
+    watch,
   } = useForm<QuoteFormData>({
     resolver: zodResolver(quoteFormSchema),
     defaultValues: {
       serviceType: (defaultService as QuoteFormData["serviceType"]) || undefined,
     },
   });
+
+  // Watch serviceType to sync with Select component
+  const selectedService = watch("serviceType");
 
   // Pre-fill form from URL parameters (from calculator or other sources)
   useEffect(() => {
@@ -240,10 +244,10 @@ export function QuoteForm(props: QuoteFormProps) {
       <div>
         <Label htmlFor="serviceType">Gewünschte Leistung *</Label>
         <Select
+          value={selectedService}
           onValueChange={(value) => {
             setValue("serviceType", value as QuoteFormData["serviceType"]);
           }}
-          defaultValue={defaultService}
         >
           <SelectTrigger className={errors.serviceType ? "border-red-500" : ""}>
             <SelectValue placeholder="Bitte wählen..." />
