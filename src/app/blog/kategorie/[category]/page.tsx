@@ -8,6 +8,15 @@ import { Button } from "@/components/ui/button";
 import { getBlogPostsByCategory, getAllCategories } from "@/lib/api/blog";
 import { PostCard } from "@/components/blog/post-card";
 
+const allCategories = [
+  { name: "Alle", slug: null },
+  { name: "Wärmepumpe", slug: "waermepumpe" },
+  { name: "Heizung", slug: "heizung" },
+  { name: "Sanitär", slug: "sanitaer" },
+  { name: "Klimaanlage", slug: "klimaanlage" },
+  { name: "Förderung", slug: "foerderung" },
+];
+
 
 interface CategoryPageProps {
   params: {
@@ -65,7 +74,36 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               {category.name} Ratgeber
             </h1>
-            <p className="text-xl text-slate-600">{category.description}</p>
+            <p className="text-xl text-slate-600 mb-8">{category.description}</p>
+
+            {/* Category Filter */}
+            <div className="flex flex-wrap gap-3">
+              {allCategories.map((cat) => (
+                cat.slug ? (
+                  <Link key={cat.slug} href={`/blog/kategorie/${cat.slug}`}>
+                    <Badge
+                      variant={cat.slug === params.category ? "default" : "outline"}
+                      className={`cursor-pointer transition-colors px-4 py-2 text-sm ${
+                        cat.slug === params.category
+                          ? "bg-[#0F5B78] hover:bg-[#0D4A5E]"
+                          : "hover:bg-[#0F5B78] hover:text-white"
+                      }`}
+                    >
+                      {cat.name}
+                    </Badge>
+                  </Link>
+                ) : (
+                  <Link key="alle" href="/blog">
+                    <Badge
+                      variant="outline"
+                      className="cursor-pointer hover:bg-[#0F5B78] hover:text-white transition-colors px-4 py-2 text-sm"
+                    >
+                      {cat.name}
+                    </Badge>
+                  </Link>
+                )
+              ))}
+            </div>
           </div>
         </div>
       </section>

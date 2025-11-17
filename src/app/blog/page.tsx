@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { PostCard } from "@/components/blog/post-card";
 import { getAllBlogPosts } from "@/lib/api/blog";
@@ -18,12 +19,12 @@ export const metadata: Metadata = {
 
 
 const categories = [
-  "Alle",
-  "Wärmepumpe",
-  "Heizung",
-  "Sanitär",
-  "Klimaanlage",
-  "Förderung",
+  { name: "Alle", slug: null },
+  { name: "Wärmepumpe", slug: "waermepumpe" },
+  { name: "Heizung", slug: "heizung" },
+  { name: "Sanitär", slug: "sanitaer" },
+  { name: "Klimaanlage", slug: "klimaanlage" },
+  { name: "Förderung", slug: "foerderung" },
 ];
 
 export default async function BlogPage() {
@@ -51,13 +52,25 @@ export default async function BlogPage() {
       <section className="container py-8">
         <div className="flex flex-wrap gap-3 justify-center">
           {categories.map((category) => (
-            <Badge
-              key={category}
-              variant={category === "Alle" ? "default" : "outline"}
-              className="cursor-pointer hover:bg-[#0F5B78] hover:text-white transition-colors px-4 py-2 text-sm"
-            >
-              {category}
-            </Badge>
+            category.slug ? (
+              <Link key={category.slug} href={`/blog/kategorie/${category.slug}`}>
+                <Badge
+                  variant="outline"
+                  className="cursor-pointer hover:bg-[#0F5B78] hover:text-white transition-colors px-4 py-2 text-sm"
+                >
+                  {category.name}
+                </Badge>
+              </Link>
+            ) : (
+              <Link key="alle" href="/blog">
+                <Badge
+                  variant="default"
+                  className="cursor-pointer bg-[#0F5B78] hover:bg-[#0D4A5E] px-4 py-2 text-sm"
+                >
+                  {category.name}
+                </Badge>
+              </Link>
+            )
           ))}
         </div>
       </section>
