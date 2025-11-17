@@ -185,8 +185,8 @@ export default function SolarPage() {
 
           <div className="grid gap-8 md:grid-cols-3">
             {/* Warmwasser System */}
-            <Card className="border-2 border-slate-200 transition-all hover:border-primary hover:shadow-lg">
-              <CardContent className="p-6">
+            <Card className="border-2 border-slate-200 transition-all hover:border-primary hover:shadow-lg flex flex-col">
+              <CardContent className="p-6 flex flex-col flex-1">
                 <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-blue-100">
                   <Home className="h-6 w-6 text-blue-600" />
                 </div>
@@ -219,18 +219,20 @@ export default function SolarPage() {
                     Nach 30% Förderung: <span className="font-semibold text-green-600">3.500 - 7.000 €</span>
                   </div>
                 </div>
-                <Link href="/anfrage">
-                  <Button className="w-full">Jetzt beraten lassen</Button>
-                </Link>
+                <div className="mt-auto">
+                  <Link href="/kontakt?tab=quote&message=Ich interessiere mich für ein Warmwasser-Solarthermie-System. Bitte kontaktieren Sie mich für eine kostenlose Beratung.">
+                    <Button className="w-full">Jetzt beraten lassen</Button>
+                  </Link>
+                </div>
               </CardContent>
             </Card>
 
             {/* Kombi System */}
-            <Card className="border-2 border-primary shadow-lg">
+            <Card className="border-2 border-primary shadow-lg flex flex-col">
               <div className="bg-primary px-4 py-2 text-center text-sm font-semibold text-white">
                 Empfohlen
               </div>
-              <CardContent className="p-6">
+              <CardContent className="p-6 flex flex-col flex-1">
                 <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
                   <ThermometerSun className="h-6 w-6 text-primary" />
                 </div>
@@ -263,15 +265,17 @@ export default function SolarPage() {
                     Nach 70% Förderung: <span className="font-semibold text-green-600">2.400 - 5.400 €</span>
                   </div>
                 </div>
-                <Link href="/anfrage">
-                  <Button className="w-full">Jetzt beraten lassen</Button>
-                </Link>
+                <div className="mt-auto">
+                  <Link href="/kontakt?tab=quote&message=Ich interessiere mich für ein Kombi-Solarthermie-System (Warmwasser + Heizungsunterstützung). Bitte kontaktieren Sie mich für eine kostenlose Beratung.">
+                    <Button className="w-full">Jetzt beraten lassen</Button>
+                  </Link>
+                </div>
               </CardContent>
             </Card>
 
             {/* Hybrid System */}
-            <Card className="border-2 border-slate-200 transition-all hover:border-primary hover:shadow-lg">
-              <CardContent className="p-6">
+            <Card className="border-2 border-slate-200 transition-all hover:border-primary hover:shadow-lg flex flex-col">
+              <CardContent className="p-6 flex flex-col flex-1">
                 <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-green-100">
                   <Zap className="h-6 w-6 text-green-600" />
                 </div>
@@ -304,9 +308,11 @@ export default function SolarPage() {
                     Individuelle Planung erforderlich
                   </div>
                 </div>
-                <Link href="/anfrage">
-                  <Button className="w-full" variant="outline">Jetzt beraten lassen</Button>
-                </Link>
+                <div className="mt-auto">
+                  <Link href="/kontakt?tab=quote&message=Ich interessiere mich für ein Hybrid-System (Solarthermie + Wärmepumpe). Bitte kontaktieren Sie mich für eine kostenlose Beratung.">
+                    <Button className="w-full" variant="outline">Jetzt beraten lassen</Button>
+                  </Link>
+                </div>
               </CardContent>
             </Card>
           </div>

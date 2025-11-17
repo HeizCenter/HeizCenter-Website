@@ -46,7 +46,7 @@ export function QuoteForm(props: QuoteFormProps) {
     },
   });
 
-  // Pre-fill form from URL parameters (from calculator)
+  // Pre-fill form from URL parameters (from calculator or other sources)
   useEffect(() => {
     const service = searchParams.get("service");
     const houseSize = searchParams.get("houseSize");
@@ -57,6 +57,7 @@ export function QuoteForm(props: QuoteFormProps) {
     const heatingSurface = searchParams.get("heatingSurface");
     const residents = searchParams.get("residents");
     const estimatedCost = searchParams.get("estimatedCost");
+    const message = searchParams.get("message");
 
     if (houseSize || pumpType) {
       setHasCalculatorData(true);
@@ -71,6 +72,7 @@ export function QuoteForm(props: QuoteFormProps) {
     if (heatingSurface) setValue("heatingSurface", heatingSurface as QuoteFormData["heatingSurface"]);
     if (residents) setValue("residents", residents);
     if (estimatedCost) setValue("estimatedCost", estimatedCost);
+    if (message) setValue("message", message);
   }, [searchParams, setValue]);
 
   const onSubmit = async (data: QuoteFormData) => {
