@@ -38,7 +38,6 @@ export function QuoteForm(props: QuoteFormProps) {
     handleSubmit,
     formState: { errors },
     reset,
-    setValue,
     control,
   } = useForm<QuoteFormData>({
     resolver: zodResolver(quoteFormSchema),
@@ -67,18 +66,26 @@ export function QuoteForm(props: QuoteFormProps) {
       setHasCalculatorData(true);
     }
 
-    if (service) setValue("serviceType", service as QuoteFormData["serviceType"]);
-    if (propertyType) setValue("propertyType", propertyType as QuoteFormData["propertyType"]);
-    if (houseSize) setValue("heatingArea", houseSize);
-    if (pumpType) setValue("pumpType", pumpType as QuoteFormData["pumpType"]);
-    if (heatingType) setValue("currentHeating", heatingType as QuoteFormData["currentHeating"]);
-    if (insulation) setValue("insulation", insulation as QuoteFormData["insulation"]);
-    if (buildingYear) setValue("buildingYear", buildingYear as QuoteFormData["buildingYear"]);
-    if (heatingSurface) setValue("heatingSurface", heatingSurface as QuoteFormData["heatingSurface"]);
-    if (residents) setValue("residents", residents);
-    if (estimatedCost) setValue("estimatedCost", estimatedCost);
-    if (message) setValue("message", message);
-  }, [searchParams, setValue, defaultService]);
+    // Use reset to set all initial values at once to avoid validation issues
+    const initialValues: Partial<QuoteFormData> = {};
+
+    if (service) initialValues.serviceType = service as QuoteFormData["serviceType"];
+    if (propertyType) initialValues.propertyType = propertyType as QuoteFormData["propertyType"];
+    if (houseSize) initialValues.heatingArea = houseSize;
+    if (pumpType) initialValues.pumpType = pumpType as QuoteFormData["pumpType"];
+    if (heatingType) initialValues.currentHeating = heatingType as QuoteFormData["currentHeating"];
+    if (insulation) initialValues.insulation = insulation as QuoteFormData["insulation"];
+    if (buildingYear) initialValues.buildingYear = buildingYear as QuoteFormData["buildingYear"];
+    if (heatingSurface) initialValues.heatingSurface = heatingSurface as QuoteFormData["heatingSurface"];
+    if (residents) initialValues.residents = residents;
+    if (estimatedCost) initialValues.estimatedCost = estimatedCost;
+    if (message) initialValues.message = message;
+
+    // Only reset if we have values to set
+    if (Object.keys(initialValues).length > 0) {
+      reset(initialValues as QuoteFormData);
+    }
+  }, [searchParams, reset, defaultService]);
 
   const onSubmit = async (data: QuoteFormData) => {
     setIsSubmitting(true);
