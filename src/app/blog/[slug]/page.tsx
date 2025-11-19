@@ -107,22 +107,19 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               <div
                 className="prose prose-slate prose-lg max-w-none mb-8
                   prose-headings:font-bold prose-headings:tracking-tight
-                  prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6 prose-h2:leading-tight
-                  prose-h3:text-2xl prose-h3:mt-10 prose-h3:mb-4 prose-h3:leading-snug
-                  prose-h4:text-xl prose-h4:mt-8 prose-h4:mb-3
+                  prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6 prose-h2:leading-tight prose-h2:scroll-mt-20
+                  prose-h3:text-2xl prose-h3:mt-10 prose-h3:mb-4 prose-h3:leading-snug prose-h3:scroll-mt-20
+                  prose-h4:text-xl prose-h4:mt-8 prose-h4:mb-3 prose-h4:scroll-mt-20
                   prose-p:text-lg prose-p:leading-relaxed prose-p:text-slate-700 prose-p:mb-6
-                  prose-li:text-lg prose-li:leading-relaxed prose-li:text-slate-700 prose-li:mb-2
+                  prose-li:text-lg prose-li:leading-relaxed prose-li:text-slate-700 prose-li:mb-2 prose-li:marker:text-[#0F5B78]
                   prose-strong:text-slate-900 prose-strong:font-semibold
-                  prose-a:text-[#0F5B78] prose-a:font-medium prose-a:no-underline hover:prose-a:underline
-                  prose-blockquote:border-l-4 prose-blockquote:border-[#0F5B78] prose-blockquote:bg-slate-50
-                  prose-blockquote:py-4 prose-blockquote:px-6 prose-blockquote:italic prose-blockquote:text-slate-600
-                  prose-blockquote:not-italic prose-blockquote:font-medium prose-blockquote:my-8
+                  prose-a:text-[#0F5B78] prose-a:font-medium prose-a:no-underline hover:prose-a:underline hover:prose-a:text-[#0D4A5F]
                   prose-img:rounded-xl prose-img:shadow-lg prose-img:my-8
-                  prose-code:bg-slate-100 prose-code:text-slate-800 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded
+                  prose-code:bg-slate-100 prose-code:text-slate-800 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-base
                   prose-pre:bg-slate-900 prose-pre:text-slate-100
-                  prose-hr:border-slate-200 prose-hr:my-12
                   prose-ul:my-6 prose-ol:my-6
-                  prose-table:text-base"
+                  prose-table:text-base
+                  [&_.callout]:not-prose [&_blockquote]:not-prose"
                 dangerouslySetInnerHTML={{ __html: post.content }}
               />
 

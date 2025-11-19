@@ -49,38 +49,35 @@ function calculateReadingTime(content: string): number {
  * Adds visual breaks, callouts, and improved spacing
  */
 function enhanceBlogContent(htmlContent: string): string {
-  let enhanced = htmlContent;
+  console.log('[Blog Enhancement] Starting enhancement...');
+  let enhanced = htmlContent.trim();
 
   // Add horizontal rules between major sections (before H2 headings, but not the first one)
-  enhanced = enhanced.replace(/(<h2(?![^>]*class))/g, (match, p1, offset) => {
-    // Don't add HR before the very first H2
-    if (offset < 100) return match;
-    return `<hr />${match}`;
+  let h2Count = 0;
+  enhanced = enhanced.replace(/<h2>/g, (match) => {
+    h2Count++;
+    if (h2Count === 1) return match;
+    return `<hr class="my-12 border-slate-200" />\n${match}`;
   });
+  console.log(`[Blog Enhancement] Added ${h2Count - 1} horizontal rules`);
 
-  // Wrap important paragraphs with <strong>Wichtig:</strong> or <strong>Hinweis:</strong> in callout divs
+  // Wrap important paragraphs with <strong>Wichtig:</strong> or <strong>Hinweis:</strong> in callout boxes
   enhanced = enhanced.replace(
-    /<p><strong>(Wichtig|Hinweis|Tipp|Achtung):<\/strong>([^<]+(?:<[^>]+>[^<]*<\/[^>]+>)*[^<]*)<\/p>/gi,
-    '<div class="callout callout-$1">$&</div>'
+    /<p><strong>(Wichtig|Hinweis|Tipp|Achtung):<\/strong>([^<]*(?:<[^\/p][^>]*>.*?<\/[^>]+>)*[^<]*)<\/p>/gi,
+    '<div class="my-6 p-4 bg-blue-50 border-l-4 border-blue-500 rounded-r"><p class="font-semibold text-blue-900">$1:</p><p class="text-slate-700">$2</p></div>'
   );
 
   // Add visual spacing after lists
   enhanced = enhanced.replace(/<\/ul>/g, '</ul>\n\n');
   enhanced = enhanced.replace(/<\/ol>/g, '</ol>\n\n');
 
-  // Convert key statistics/numbers into highlighted spans
-  enhanced = enhanced.replace(/(\d+\.?\d*)\s*(%|€|Euro|Prozent)/g, '<strong class="highlight-stat">$1 $2</strong>');
-
-  // Add blockquote styling to summary paragraphs (paragraphs with "Zusammenfassung" or "Fazit")
+  // Wrap key takeaways/summaries in styled blockquotes
   enhanced = enhanced.replace(
-    /<p><strong>(Zusammenfassung|Fazit):<\/strong>/gi,
-    '<blockquote><p><strong>$1:</strong>'
-  );
-  enhanced = enhanced.replace(
-    /(<blockquote><p><strong>(?:Zusammenfassung|Fazit):<\/strong>[^<]+(?:<[^>]+>[^<]*<\/[^>]+>)*[^<]*)<\/p>/gi,
-    '$1</p></blockquote>'
+    /<p><strong>(Zusammenfassung|Fazit):<\/strong>([^<]*)<\/p>/gi,
+    '<blockquote class="my-8 p-6 bg-slate-50 border-l-4 border-[#0F5B78] rounded-r"><p class="font-semibold text-lg mb-2">$1</p><p class="text-slate-700">$2</p></blockquote>'
   );
 
+  console.log('[Blog Enhancement] Enhancement complete. Content length:', enhanced.length);
   return enhanced;
 }
 
