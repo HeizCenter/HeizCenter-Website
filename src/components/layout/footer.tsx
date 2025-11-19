@@ -107,7 +107,12 @@ export function Footer() {
                     <div>
                       <div className="font-medium text-white">HeizCenter GmbH</div>
                       <div className="text-xs">{location.address}</div>
-                      <div className="text-xs mt-1">{location.phone}</div>
+                      <a
+                        href={`tel:${location.phone.replace(/\s/g, '')}`}
+                        className="text-xs mt-1 block hover:text-white transition-colors"
+                      >
+                        {location.phone}
+                      </a>
                       <div className="text-xs">Mo-Fr 08:00-17:00</div>
                     </div>
                   </div>
