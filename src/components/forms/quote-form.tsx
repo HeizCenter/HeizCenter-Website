@@ -69,8 +69,8 @@ export function QuoteForm(props: QuoteFormProps) {
       setHasCalculatorData(true);
     }
 
-    if (service) setValue("serviceType", service as QuoteFormData["serviceType"]);
-    if (propertyType) setValue("propertyType", propertyType as QuoteFormData["propertyType"]);
+    if (service) setValue("serviceType", service as QuoteFormData["serviceType"], { shouldValidate: true });
+    if (propertyType) setValue("propertyType", propertyType as QuoteFormData["propertyType"], { shouldValidate: true });
     if (houseSize) setValue("heatingArea", houseSize);
     if (pumpType) setValue("pumpType", pumpType as QuoteFormData["pumpType"]);
     if (heatingType) setValue("currentHeating", heatingType as QuoteFormData["currentHeating"]);
@@ -247,9 +247,9 @@ export function QuoteForm(props: QuoteFormProps) {
       <div>
         <Label htmlFor="serviceType">Gewünschte Leistung *</Label>
         <Select
-          value={selectedService}
+          value={selectedService || ""}
           onValueChange={(value) => {
-            setValue("serviceType", value as QuoteFormData["serviceType"]);
+            setValue("serviceType", value as QuoteFormData["serviceType"], { shouldValidate: true });
           }}
         >
           <SelectTrigger className={errors.serviceType ? "border-red-500" : ""}>
@@ -274,9 +274,9 @@ export function QuoteForm(props: QuoteFormProps) {
       <div>
         <Label htmlFor="propertyType">Objektart *</Label>
         <Select
-          value={selectedPropertyType}
+          value={selectedPropertyType || ""}
           onValueChange={(value) => {
-            setValue("propertyType", value as QuoteFormData["propertyType"]);
+            setValue("propertyType", value as QuoteFormData["propertyType"], { shouldValidate: true });
           }}
         >
           <SelectTrigger className={errors.propertyType ? "border-red-500" : ""}>
