@@ -218,7 +218,7 @@ export default function UeberUnsPage() {
             <span className="text-[#0F5B78] font-semibold text-sm uppercase tracking-wider">Unser Antrieb</span>
             <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4">Unsere Mission</h2>
           </div>
-          <div className="relative">
+          <div className="relative mb-12">
             <div className="absolute -inset-4 bg-gradient-to-r from-[#0F5B78] via-[#0D4A61] to-[#0A3A4D] rounded-3xl blur-2xl opacity-20"></div>
             <div className="relative bg-gradient-to-br from-[#0F5B78] via-[#0D4A61] to-[#0A3A4D] text-white p-12 rounded-2xl border border-white/10">
               <div className="flex items-start gap-4 mb-6">
@@ -235,10 +235,38 @@ export default function UeberUnsPage() {
                 </div>
                 <div>
                   <p className="text-white font-bold text-lg">
-                    Michael Bauer
+                    Andrej Voisnis
                   </p>
                   <p className="text-blue-200 text-sm">
                     Geschäftsführer HeizCenter GmbH
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Second Testimonial */}
+          <div className="relative">
+            <div className="absolute -inset-4 bg-gradient-to-r from-green-500 via-emerald-600 to-teal-600 rounded-3xl blur-2xl opacity-20"></div>
+            <div className="relative bg-gradient-to-br from-green-600 via-emerald-700 to-teal-700 text-white p-12 rounded-2xl border border-white/10">
+              <div className="flex items-start gap-4 mb-6">
+                <div className="w-1 h-20 bg-gradient-to-b from-green-300 to-transparent rounded-full"></div>
+                <p className="text-2xl md:text-3xl font-medium leading-relaxed">
+                  "Qualität und Kundenzufriedenheit stehen bei uns an erster Stelle. Unser Team arbeitet
+                  jeden Tag daran, die besten Lösungen für nachhaltige und effiziente Heizsysteme zu
+                  realisieren."
+                </p>
+              </div>
+              <div className="flex items-center gap-4 mt-8 pt-6 border-t border-white/20">
+                <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center">
+                  <Award className="h-8 w-8 text-green-200" />
+                </div>
+                <div>
+                  <p className="text-white font-bold text-lg">
+                    Alexander Gellert
+                  </p>
+                  <p className="text-green-200 text-sm">
+                    Technischer Leiter HeizCenter GmbH
                   </p>
                 </div>
               </div>
