@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { Users, Award, Heart, TrendingUp, Target, Sparkles, CheckCircle2, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -19,31 +20,43 @@ export default function UeberUnsPage() {
       <OrganizationSchema />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-[#0F5B78] via-[#0D4A61] to-[#0A3A4D] text-white py-24">
-        <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10"></div>
+      <section className="relative bg-gradient-to-br from-[#0F5B78] via-[#0D4A61] to-[#0A3A4D] text-white py-24 overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <Image
+            src="/images/team.png"
+            alt="HeizCenter Team"
+            fill
+            className="object-cover opacity-20"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-[#0F5B78]/90 via-[#0D4A61]/85 to-[#0A3A4D]/90"></div>
+        </div>
+        <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-5"></div>
+
         <div className="container relative">
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
               <Sparkles className="h-4 w-4" />
               <span className="text-sm font-medium">Seit über 20 Jahren Ihr Partner</span>
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent drop-shadow-lg">
               Über HeizCenter
             </h1>
-            <p className="text-xl text-blue-50 mb-8 leading-relaxed">
+            <p className="text-xl text-blue-50 mb-8 leading-relaxed drop-shadow-md">
               Ihr verlässlicher Experte für moderne Heiztechnik, Wärmepumpen,
               Sanitärinstallationen und Klimaanlagen in der Region Bobingen und Gutenzell-Hürbel.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
-              <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">
+              <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg border border-white/20">
                 <CheckCircle2 className="h-5 w-5 text-green-400" />
                 <span>50+ Mitarbeiter</span>
               </div>
-              <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">
+              <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg border border-white/20">
                 <CheckCircle2 className="h-5 w-5 text-green-400" />
                 <span>5000+ Projekte</span>
               </div>
-              <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">
+              <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg border border-white/20">
                 <CheckCircle2 className="h-5 w-5 text-green-400" />
                 <span>BEG-zertifiziert</span>
               </div>
