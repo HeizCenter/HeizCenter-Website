@@ -9737,6 +9737,13 @@ function getMockCategories(): BlogCategory[] {
     },
     {
       id: 5,
+      slug: 'solar',
+      name: 'Solar',
+      description: 'Ratgeber zu Solarthermie, Photovoltaik, PVT-Hybrid-Systemen, Dimensionierung und Förderung. Expertenwissen zu solarer Energie für Warmwasser und Heizung.',
+      count: 6,
+    },
+    {
+      id: 6,
       slug: 'foerderung',
       name: 'Förderung',
       description: 'Aktuelle Förderprogramme, BEG, KfW-Kredite und Zuschüsse für Ihre Sanierung.',

@@ -26,6 +26,7 @@ const categories = [
   { name: "Heizung", slug: "heizung" },
   { name: "Sanitär", slug: "sanitaer" },
   { name: "Klimaanlage", slug: "klimaanlage" },
+  { name: "Solar", slug: "solar" },
   { name: "Förderung", slug: "foerderung" },
 ];
 
