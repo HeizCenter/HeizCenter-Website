@@ -8366,6 +8366,1342 @@ function getMockBlogPosts(): BlogPost[] {
       tags: ['Hybrid-Heizung', 'Wärmepumpe', 'Solarthermie', 'Heizung Kombination', 'Effizienz', 'Heizkosten sparen', 'Förderung'],
       featured: true,
     },
+    {
+      id: 23,
+      slug: 'solarthermie-kosten-wirtschaftlichkeit-2025',
+      title: 'Solarthermie Kosten und Wirtschaftlichkeit 2025: Lohnt sich die Investition?',
+      excerpt: 'Detaillierte Kostenanalyse für Solarthermieanlagen 2025: Anschaffungskosten, Förderungen, Betriebskosten, Amortisation und Renditeberechnung. Mit konkreten Beispielen für verschiedene Haushaltsgrößen.',
+      content: `
+        <p>Eine Solarthermieanlage ist eine Investition in die Zukunft – aber lohnt sie sich wirtschaftlich? In diesem umfassenden Ratgeber erfahren Sie alles über Kosten, Fördermöglichkeiten, Einsparungen und die Amortisationszeit von Solarthermieanlagen im Jahr 2025. Mit konkreten Rechenbeispielen für verschiedene Systemgrößen und Haushaltstypen.</p>
+
+        <h2>Anschaffungskosten im Überblick</h2>
+
+        <h3>Warmwasser-Anlagen (4-6 m²)</h3>
+        <p><strong>Flachkollektoren-System:</strong></p>
+        <ul>
+          <li>Kollektoren (4-6 m²): 2.000-3.500 €</li>
+          <li>Warmwasserspeicher (300 L): 1.200-1.800 €</li>
+          <li>Solarstation (Pumpe, Regelung): 800-1.200 €</li>
+          <li>Verrohrung und Zubehör: 500-800 €</li>
+          <li>Montage und Installation: 1.500-2.500 €</li>
+          <li><strong>Gesamtkosten: 6.000-9.800 €</strong></li>
+        </ul>
+
+        <p><strong>Röhrenkollektoren-System:</strong></p>
+        <ul>
+          <li>Kollektoren (4-6 m²): 3.000-4.500 €</li>
+          <li>Warmwasserspeicher (300 L): 1.200-1.800 €</li>
+          <li>Solarstation (Pumpe, Regelung): 800-1.200 €</li>
+          <li>Verrohrung und Zubehör: 500-800 €</li>
+          <li>Montage und Installation: 1.500-2.500 €</li>
+          <li><strong>Gesamtkosten: 7.000-10.800 €</strong></li>
+        </ul>
+
+        <h3>Kombi-Anlagen mit Heizungsunterstützung (10-15 m²)</h3>
+        <p><strong>Flachkollektoren-System:</strong></p>
+        <ul>
+          <li>Kollektoren (12 m²): 5.000-7.000 €</li>
+          <li>Pufferspeicher (800-1.000 L): 3.000-4.500 €</li>
+          <li>Solarstation und Hydraulik: 1.500-2.500 €</li>
+          <li>Regelung und Steuerung: 800-1.500 €</li>
+          <li>Verrohrung, Dämmung, Zubehör: 1.000-1.500 €</li>
+          <li>Montage und Inbetriebnahme: 3.000-4.500 €</li>
+          <li><strong>Gesamtkosten: 14.300-21.500 €</strong></li>
+        </ul>
+
+        <p><strong>Röhrenkollektoren-System:</strong></p>
+        <ul>
+          <li>Kollektoren (12 m²): 7.000-9.000 €</li>
+          <li>Pufferspeicher (800-1.000 L): 3.000-4.500 €</li>
+          <li>Solarstation und Hydraulik: 1.500-2.500 €</li>
+          <li>Regelung und Steuerung: 800-1.500 €</li>
+          <li>Verrohrung, Dämmung, Zubehör: 1.000-1.500 €</li>
+          <li>Montage und Inbetriebnahme: 3.000-4.500 €</li>
+          <li><strong>Gesamtkosten: 16.300-23.500 €</strong></li>
+        </ul>
+
+        <div class="my-6 p-4 bg-blue-50 border-l-4 border-blue-500 rounded-r"><p class="font-semibold text-blue-900">Wichtig:</p><p class="text-slate-700">Die Preise variieren je nach Region, Dachbeschaffenheit, Montageaufwand und gewähltem Hersteller. Holen Sie immer mehrere Angebote ein!</p></div>
+
+        <h2>Staatliche Förderung 2025</h2>
+
+        <h3>BAFA-Förderung für Solarthermie</h3>
+        <p>Die Bundesförderung für effiziente Gebäude (BEG) macht Solarthermie deutlich günstiger:</p>
+
+        <p><strong>Fördersätze:</strong></p>
+        <ul>
+          <li>Basis-Förderung: 30% der förderfähigen Kosten</li>
+          <li>Geschwindigkeitsbonus: +20% bei Heizungstausch (Öl, Gas 20+ Jahre)</li>
+          <li>Einkommensbonus: +30% bei Einkommen unter 40.000 €/Jahr</li>
+          <li>Maximum: 70% Förderung möglich</li>
+          <li>Förderhöchstgrenze: 60.000 € pro Wohneinheit</li>
+        </ul>
+
+        <h3>Förderbeispiele</h3>
+
+        <p><strong>Beispiel 1: Warmwasser-Anlage (8.000 €)</strong></p>
+        <ul>
+          <li>Gesamtkosten: 8.000 €</li>
+          <li>Basis-Förderung 30%: 2.400 €</li>
+          <li>Eigenanteil: 5.600 €</li>
+        </ul>
+
+        <p><strong>Beispiel 2: Kombi-Anlage mit Heizungstausch (18.000 €)</strong></p>
+        <ul>
+          <li>Gesamtkosten: 18.000 €</li>
+          <li>Förderung 50% (30% + 20% Geschwindigkeit): 9.000 €</li>
+          <li>Eigenanteil: 9.000 €</li>
+        </ul>
+
+        <p><strong>Beispiel 3: Maximale Förderung (16.000 €)</strong></p>
+        <ul>
+          <li>Gesamtkosten: 16.000 €</li>
+          <li>Förderung 70% (alle Boni): 11.200 €</li>
+          <li>Eigenanteil: 4.800 €</li>
+        </ul>
+
+        <h2>Laufende Betriebskosten</h2>
+
+        <h3>Wartung und Instandhaltung</h3>
+        <p><strong>Jährliche Wartung (empfohlen):</strong></p>
+        <ul>
+          <li>Sichtprüfung der Kollektoren: 50-80 €</li>
+          <li>Kontrolle Solarflüssigkeit: 30-50 €</li>
+          <li>Druckprüfung: 20-30 €</li>
+          <li>Funktionsprüfung Pumpe und Regelung: 40-60 €</li>
+          <li><strong>Gesamt: 140-220 € pro Jahr</strong></li>
+        </ul>
+
+        <p><strong>Größere Wartungsarbeiten (alle 5-10 Jahre):</strong></p>
+        <ul>
+          <li>Solarflüssigkeitswechsel: 200-400 €</li>
+          <li>Membrantausch Ausdehnungsgefäß: 100-200 €</li>
+          <li>Pumpenaustausch (nach 10-15 Jahren): 200-400 €</li>
+        </ul>
+
+        <h3>Stromkosten</h3>
+        <p>Für die Solarpumpe und Regelung:</p>
+        <ul>
+          <li>Stromverbrauch: 50-80 kWh/Jahr</li>
+          <li>Kosten bei 0,30 €/kWh: 15-24 €/Jahr</li>
+        </ul>
+
+        <p><strong>Gesamte Betriebskosten: ca. 155-245 € pro Jahr</strong></p>
+
+        <h2>Einsparungen und Erträge</h2>
+
+        <h3>Warmwasser-Anlage (4-Personen-Haushalt)</h3>
+        <p><strong>Ausgangssituation:</strong></p>
+        <ul>
+          <li>Warmwasserbedarf: 3.000 kWh/Jahr</li>
+          <li>Bisherige Erzeugung: Gasheizung</li>
+          <li>Gaskosten: 10 Cent/kWh → 300 €/Jahr</li>
+        </ul>
+
+        <p><strong>Mit Solarthermie:</strong></p>
+        <ul>
+          <li>Solare Deckung: 60% (1.800 kWh)</li>
+          <li>Einsparung Gas: 180 € (1.800 kWh × 0,10 €)</li>
+          <li>Restkosten Gas: 120 € (1.200 kWh × 0,10 €)</li>
+          <li>Betriebskosten Solar: -20 €</li>
+          <li><strong>Netto-Einsparung: 160 €/Jahr</strong></li>
+        </ul>
+
+        <p><strong>Bei Ölheizung (15 Cent/kWh):</strong></p>
+        <ul>
+          <li>Bisherige Kosten: 450 €/Jahr</li>
+          <li>Einsparung: 270 €/Jahr (60%)</li>
+          <li>Netto-Einsparung: 250 €/Jahr</li>
+        </ul>
+
+        <h3>Kombi-Anlage mit Heizungsunterstützung (Einfamilienhaus 150 m²)</h3>
+        <p><strong>Ausgangssituation:</strong></p>
+        <ul>
+          <li>Gesamtwärmebedarf: 18.000 kWh/Jahr</li>
+          <li>Warmwasser: 3.000 kWh</li>
+          <li>Heizung: 15.000 kWh</li>
+          <li>Gaskosten: 10 Cent/kWh → 1.800 €/Jahr</li>
+        </ul>
+
+        <p><strong>Mit Solarthermie:</strong></p>
+        <ul>
+          <li>Solare Deckung Warmwasser: 60% (1.800 kWh)</li>
+          <li>Solare Deckung Heizung: 20% (3.000 kWh)</li>
+          <li>Gesamt solar: 4.800 kWh (27%)</li>
+          <li>Einsparung Gas: 480 €/Jahr</li>
+          <li>Betriebskosten Solar: -200 €</li>
+          <li><strong>Netto-Einsparung: 280 €/Jahr</strong></li>
+        </ul>
+
+        <p><strong>Bei Ölheizung (15 Cent/kWh):</strong></p>
+        <ul>
+          <li>Bisherige Kosten: 2.700 €/Jahr</li>
+          <li>Einsparung: 720 €/Jahr</li>
+          <li>Netto-Einsparung: 520 €/Jahr</li>
+        </ul>
+
+        <div class="my-6 p-4 bg-blue-50 border-l-4 border-blue-500 rounded-r"><p class="font-semibold text-blue-900">Tipp:</p><p class="text-slate-700">Die Einsparungen steigen mit den Energiepreisen. Bei aktuellen Preissteigerungen erhöht sich die Wirtschaftlichkeit deutlich!</p></div>
+
+        <h2>Amortisationszeit</h2>
+
+        <h3>Warmwasser-Anlage</h3>
+
+        <p><strong>Szenario 1: Basis-Förderung 30%, Gasheizung</strong></p>
+        <ul>
+          <li>Investition: 8.000 €</li>
+          <li>Förderung: -2.400 €</li>
+          <li>Eigenanteil: 5.600 €</li>
+          <li>Jährliche Einsparung: 160 €</li>
+          <li><strong>Amortisation: 35 Jahre</strong></li>
+        </ul>
+
+        <p><strong>Szenario 2: Basis-Förderung 30%, Ölheizung</strong></p>
+        <ul>
+          <li>Investition: 8.000 €</li>
+          <li>Förderung: -2.400 €</li>
+          <li>Eigenanteil: 5.600 €</li>
+          <li>Jährliche Einsparung: 250 €</li>
+          <li><strong>Amortisation: 22 Jahre</strong></li>
+        </ul>
+
+        <p><strong>Szenario 3: 50% Förderung, Ölheizung</strong></p>
+        <ul>
+          <li>Investition: 8.000 €</li>
+          <li>Förderung: -4.000 €</li>
+          <li>Eigenanteil: 4.000 €</li>
+          <li>Jährliche Einsparung: 250 €</li>
+          <li><strong>Amortisation: 16 Jahre</strong></li>
+        </ul>
+
+        <h3>Kombi-Anlage mit Heizungsunterstützung</h3>
+
+        <p><strong>Szenario 1: Basis-Förderung 30%, Gasheizung</strong></p>
+        <ul>
+          <li>Investition: 18.000 €</li>
+          <li>Förderung: -5.400 €</li>
+          <li>Eigenanteil: 12.600 €</li>
+          <li>Jährliche Einsparung: 280 €</li>
+          <li><strong>Amortisation: 45 Jahre</strong></li>
+        </ul>
+
+        <p><strong>Szenario 2: 50% Förderung, Ölheizung</strong></p>
+        <ul>
+          <li>Investition: 18.000 €</li>
+          <li>Förderung: -9.000 €</li>
+          <li>Eigenanteil: 9.000 €</li>
+          <li>Jährliche Einsparung: 520 €</li>
+          <li><strong>Amortisation: 17 Jahre</strong></li>
+        </ul>
+
+        <p><strong>Szenario 3: 70% Förderung, Ölheizung</strong></p>
+        <ul>
+          <li>Investition: 18.000 €</li>
+          <li>Förderung: -12.600 €</li>
+          <li>Eigenanteil: 5.400 €</li>
+          <li>Jährliche Einsparung: 520 €</li>
+          <li><strong>Amortisation: 10 Jahre</strong></li>
+        </ul>
+
+        <h2>Renditeberechnung über 25 Jahre</h2>
+
+        <h3>Beispiel: Kombi-Anlage mit 50% Förderung, Ölheizung</h3>
+
+        <p><strong>Cashflow-Analyse:</strong></p>
+        <ul>
+          <li>Eigenanteil: -9.000 €</li>
+          <li>Jährliche Einsparung: +520 €</li>
+          <li>Wartungskosten (25 Jahre): -5.000 €</li>
+          <li>Gesamtertrag nach 25 Jahren: +13.000 € - 5.000 € = +8.000 €</li>
+          <li>Rendite: +8.000 € auf 9.000 € = 89% über 25 Jahre</li>
+          <li><strong>Jährliche Rendite: ca. 2,6% p.a.</strong></li>
+        </ul>
+
+        <p><strong>Mit Preissteigerung (3% p.a. für Öl):</strong></p>
+        <ul>
+          <li>Jährliche Einsparung steigt auf durchschnittlich 650 €</li>
+          <li>Gesamtertrag nach 25 Jahren: ca. 16.250 €</li>
+          <li>Abzüglich Wartung: 11.250 € Gewinn</li>
+          <li><strong>Jährliche Rendite: ca. 4,2% p.a.</strong></li>
+        </ul>
+
+        <h2>Wertsteigerung der Immobilie</h2>
+
+        <p>Solarthermieanlagen erhöhen den Wert Ihrer Immobilie:</p>
+        <ul>
+          <li><strong>Energieausweis:</strong> Bessere Energieeffizienzklasse</li>
+          <li><strong>Verkaufswert:</strong> +2-5% Wertsteigerung</li>
+          <li><strong>Vermietung:</strong> Höhere Miete durch niedrige Nebenkosten</li>
+          <li><strong>Attraktivität:</strong> Umweltbewusste Käufer zahlen mehr</li>
+        </ul>
+
+        <p><strong>Beispiel Einfamilienhaus (Wert 400.000 €):</strong></p>
+        <ul>
+          <li>Wertsteigerung 3%: +12.000 €</li>
+          <li>Investition Solarthermie (nach Förderung): -9.000 €</li>
+          <li>Netto-Wertsteigerung: +3.000 €</li>
+        </ul>
+
+        <h2>Vergleich: Solarthermie vs. Photovoltaik</h2>
+
+        <h3>Wirtschaftlichkeit im Vergleich</h3>
+
+        <p><strong>Solarthermie (Kombi-Anlage 12 m²):</strong></p>
+        <ul>
+          <li>Investition (nach 50% Förderung): 9.000 €</li>
+          <li>Jährliche Einsparung: 520 €</li>
+          <li>Amortisation: 17 Jahre</li>
+          <li>Rendite: 2,6-4,2% p.a.</li>
+        </ul>
+
+        <p><strong>Photovoltaik (5 kWp ohne Speicher):</strong></p>
+        <ul>
+          <li>Investition (0% MwSt.): 10.000 €</li>
+          <li>Jährlicher Ertrag: 800-1.000 €</li>
+          <li>Amortisation: 10-13 Jahre</li>
+          <li>Rendite: 5-8% p.a.</li>
+        </ul>
+
+        <p><strong>Fazit:</strong> Photovoltaik ist wirtschaftlich attraktiver, aber Solarthermie punktet bei:</p>
+        <ul>
+          <li>Direkter Wärmenutzung (kein Umwandlungsverlust)</li>
+          <li>Höherer BAFA-Förderung (bis 70% vs. keine PV-Förderung)</li>
+          <li>Geringerer Flächenbedarf für Warmwasser</li>
+          <li>Kombination mit Wärmepumpe für optimale Effizienz</li>
+        </ul>
+
+        <h2>Faktoren für optimale Wirtschaftlichkeit</h2>
+
+        <h3>Was die Rentabilität erhöht</h3>
+        <ol>
+          <li><strong>Hohe Förderung nutzen:</strong> Geschwindigkeitsbonus durch Heizungstausch</li>
+          <li><strong>Alte Ölheizung ersetzen:</strong> Höchste Einsparungen</li>
+          <li><strong>Optimale Auslegung:</strong> Nicht über-, nicht unterdimensionieren</li>
+          <li><strong>Gute Südausrichtung:</strong> Maximaler Ertrag</li>
+          <li><strong>Kombination mit Wärmepumpe:</strong> Synergieeffekte nutzen</li>
+          <li><strong>Eigenleistung:</strong> Bis zu 20% Kostenersparnis</li>
+          <li><strong>Langfristige Nutzung:</strong> Mindestens 20-25 Jahre betreiben</li>
+        </ol>
+
+        <h3>Was die Rentabilität senkt</h3>
+        <ol>
+          <li><strong>Niedrige Energiepreise:</strong> Geringe Einsparungen</li>
+          <li><strong>Schlechte Dachausrichtung:</strong> Nord- oder Ostdach</li>
+          <li><strong>Verschattung:</strong> Bäume, Nachbargebäude</li>
+          <li><strong>Überdimensionierung:</strong> Zu große Anlage</li>
+          <li><strong>Fehlende Wartung:</strong> Effizienz sinkt, Defekte</li>
+          <li><strong>Falsche Systemwahl:</strong> Kombi-Anlage bei geringem Heizbedarf</li>
+        </ol>
+
+        <h2>Zukunftsperspektive: Preisentwicklung</h2>
+
+        <h3>Erwartete Trends bis 2030</h3>
+
+        <p><strong>Anschaffungskosten:</strong></p>
+        <ul>
+          <li>Kollektoren: -10 bis -15% (Skaleneffekte, Wettbewerb)</li>
+          <li>Speicher: -5 bis -10% (bessere Dämmung, Materialien)</li>
+          <li>Installation: +5 bis +10% (Fachkräftemangel, Lohnkosten)</li>
+          <li><strong>Gesamt: -5 bis -10% günstiger</strong></li>
+        </ul>
+
+        <p><strong>Energiepreise:</strong></p>
+        <ul>
+          <li>Gas: +3-5% p.a. (CO₂-Preis steigt)</li>
+          <li>Öl: +4-6% p.a. (Knappheit, CO₂-Preis)</li>
+          <li>Strom: +2-4% p.a. (Netzausbau, Transformation)</li>
+        </ul>
+
+        <p><strong>Auswirkung auf Wirtschaftlichkeit:</strong></p>
+        <ul>
+          <li>Amortisationszeit sinkt um 2-4 Jahre</li>
+          <li>Rendite steigt auf 4-6% p.a.</li>
+          <li>Solarthermie wird deutlich attraktiver</li>
+        </ul>
+
+        <h3>Förderentwicklung</h3>
+        <ul>
+          <li>Basis-Förderung 30%: Bleibt voraussichtlich bis 2030</li>
+          <li>Geschwindigkeitsbonus: Läuft 2028 aus (dann nur noch 17%, ab 2030 nur 14%)</li>
+          <li>Einkommensbonus: Voraussichtlich bis 2030 verfügbar</li>
+          <li><strong>Empfehlung: Jetzt investieren und maximale Förderung sichern!</strong></li>
+        </ul>
+
+        <blockquote class="my-8 p-6 bg-slate-50 border-l-4 border-[#0F5B78] rounded-r"><p class="font-semibold text-lg mb-2">Fazit</p><p class="text-slate-700">Solarthermieanlagen rechnen sich 2025 vor allem beim Austausch alter Öl- oder Gasheizungen mit hoher BAFA-Förderung. Die Amortisationszeit liegt je nach Szenario zwischen 10 und 25 Jahren. Mit Förderungen von bis zu 70% und steigenden Energiepreisen verbessert sich die Wirtschaftlichkeit kontinuierlich. Besonders lohnend: Kombi-Anlagen mit Heizungsunterstützung beim Heizungstausch oder in Kombination mit Wärmepumpen. Die Investition sichert langfristig niedrige Energiekosten, erhöht den Immobilienwert und leistet einen wichtigen Beitrag zum Klimaschutz.</p></blockquote>
+
+        <h2>Entscheidungshilfe: Wann lohnt sich Solarthermie?</h2>
+
+        <h3>Solarthermie lohnt sich besonders, wenn:</h3>
+        <ul>
+          <li>✅ Sie eine alte Öl- oder Gasheizung (20+ Jahre) ersetzen</li>
+          <li>✅ Sie die 50-70% BAFA-Förderung nutzen können</li>
+          <li>✅ Ihr Dach nach Süden ausgerichtet ist (±30°)</li>
+          <li>✅ Sie eine Wärmepumpe installieren (Hybrid-System)</li>
+          <li>✅ Sie langfristig (25+ Jahre) in der Immobilie bleiben</li>
+          <li>✅ Ihre Energiekosten aktuell hoch sind (Öl, alter Gaskessel)</li>
+          <li>✅ Sie Wert auf Umweltschutz und Unabhängigkeit legen</li>
+        </ul>
+
+        <h3>Alternativen prüfen, wenn:</h3>
+        <ul>
+          <li>❌ Ihr Dach stark verschattet oder nach Norden ausgerichtet ist</li>
+          <li>❌ Sie nur Basis-Förderung 30% erhalten (Amortisation >25 Jahre)</li>
+          <li>❌ Ihr Wärmebedarf sehr gering ist (Niedrigenergiehaus)</li>
+          <li>❌ Sie bereits eine effiziente Brennwertheizung haben</li>
+          <li>❌ Ihre Dachfläche für PV besser geeignet ist (höhere Rendite)</li>
+        </ul>
+
+        <h2>Nächste Schritte zur Investitionsentscheidung</h2>
+        <ol>
+          <li><strong>Energieverbrauch analysieren:</strong> Warmwasser- und Heizkosten der letzten 3 Jahre</li>
+          <li><strong>Förderfähigkeit prüfen:</strong> Welche Boni stehen Ihnen zu?</li>
+          <li><strong>Angebote einholen:</strong> Mindestens 3 Fachbetriebe vergleichen</li>
+          <li><strong>Wirtschaftlichkeit berechnen:</strong> Mit Ihren konkreten Daten</li>
+          <li><strong>Alternativen vergleichen:</strong> PV, Wärmepumpe, Kombination</li>
+          <li><strong>Langfristigkeit einplanen:</strong> Mindestens 20 Jahre Nutzungsdauer</li>
+          <li><strong>BAFA-Antrag vorbereiten:</strong> VOR Beauftragung stellen</li>
+        </ol>
+
+        <p>Benötigen Sie eine detaillierte Wirtschaftlichkeitsberechnung für Ihr Projekt? Unsere Energieberater erstellen Ihnen kostenlos eine individuelle Kosten-Nutzen-Analyse – inklusive aktueller Förderungen, Einsparungspotenzial und Amortisationsrechnung.</p>
+      `,
+      category: 'Solar',
+      author: 'Thomas Weber',
+      authorBio: 'Energieberater und Solartechnik-Spezialist mit 16 Jahren Erfahrung. Experte für Photovoltaik, Solarthermie und hybride Energiesysteme. Zertifizierter BAFA-Energieberater.',
+      date: '2025-01-12',
+      readingTime: 19,
+      image: '/images/HeizCenter_Solar.webp',
+      tags: ['Solarthermie Kosten', 'Wirtschaftlichkeit', 'Amortisation', 'Rendite', 'Förderung', 'ROI', 'Investition'],
+      featured: true,
+    },
+    {
+      id: 24,
+      slug: 'pvt-kollektoren-photovoltaik-thermie-hybrid-2025',
+      title: 'PVT-Kollektoren 2025: Photovoltaik und Solarthermie in einem System',
+      excerpt: 'PVT-Hybridkollektoren kombinieren Stromerzeugung und Wärmegewinnung auf einer Fläche. Marktüberblick, Technologie, Kosten, Effizienz und praktische Einsatzszenarien für die innovative Solartechnologie.',
+      content: `
+        <div class="article-content">
+          <p class="lead">
+            PVT-Kollektoren (Photovoltaik-Thermie) vereinen zwei Technologien in einem Modul: Sie erzeugen gleichzeitig Strom und Wärme. Mit 46 neuen Anbietern allein in 2024 und Deutschland als Top-3-Markt erlebt diese Hybrid-Technologie einen Boom. Doch für wen lohnt sich die Investition?
+          </p>
+
+          <h2>Was sind PVT-Kollektoren?</h2>
+
+          <h3>Technologie-Prinzip</h3>
+          <p>
+            PVT-Hybridkollektoren kombinieren auf einer Modulfläche:
+          </p>
+          <ul>
+            <li><strong>Photovoltaik-Zellen:</strong> Erzeugen elektrischen Strom aus Sonnenlicht</li>
+            <li><strong>Wärmetauscher:</strong> Nutzen die Abwärme der PV-Zellen für Warmwasser/Heizung</li>
+            <li><strong>Kühlsystem:</strong> Erhöht durch Wärmeabfuhr den elektrischen Wirkungsgrad</li>
+          </ul>
+
+          <div class="bg-blue-50 border-l-4 border-blue-500 p-6 my-8">
+            <h4 class="text-lg font-semibold text-blue-900 mb-3">💡 Kernvorteil</h4>
+            <p class="text-blue-800 mb-0">
+              <strong>Dreifacher Nutzen:</strong> PVT-Module erzeugen bis zu 3-mal mehr Energie pro m² als reine PV-Anlagen (Strom + Wärme kombiniert). Die Kühlung der PV-Zellen steigert zudem deren elektrischen Wirkungsgrad um 5-15%.
+            </p>
+          </div>
+
+          <h3>Aufbau und Komponenten</h3>
+          <p>
+            Ein typisches PVT-System besteht aus:
+          </p>
+          <ul>
+            <li><strong>PVT-Module:</strong> Hybrid-Kollektoren mit PV-Zellen und Wärmetauscher</li>
+            <li><strong>Hydraulik-System:</strong> Kreislauf für Wärmeträgerflüssigkeit</li>
+            <li><strong>Wärmespeicher:</strong> 300-1000 Liter für Warmwasser/Heizung</li>
+            <li><strong>Wechselrichter:</strong> Wandelt PV-Strom in Netzstrom um</li>
+            <li><strong>Regelungstechnik:</strong> Steuert Wärme- und Stromfluss optimal</li>
+            <li><strong>Optional Wärmepumpe:</strong> Hebt Temperaturniveau für Heizung an</li>
+          </ul>
+
+          <h2>Marktentwicklung 2024/2025</h2>
+
+          <h3>Anbieter und Verfügbarkeit</h3>
+          <p>
+            Der PVT-Markt wächst rasant:
+          </p>
+          <ul>
+            <li><strong>46 neue Anbieter</strong> sind 2024 in den Markt eingestiegen</li>
+            <li><strong>Deutschland ist Top-3-Markt</strong> weltweit für PVT-Technologie</li>
+            <li><strong>Preisentwicklung:</strong> Durch Wettbewerb -15% gegenüber 2023</li>
+            <li><strong>Produktvielfalt:</strong> Aufdach, Indach und Freiflächenlösungen</li>
+          </ul>
+
+          <h3>Technologische Fortschritte</h3>
+          <div class="overflow-x-auto my-6">
+            <table class="min-w-full border-collapse">
+              <thead>
+                <tr class="bg-slate-100">
+                  <th class="border border-slate-300 px-4 py-3 text-left font-semibold">Entwicklung</th>
+                  <th class="border border-slate-300 px-4 py-3 text-left font-semibold">2023</th>
+                  <th class="border border-slate-300 px-4 py-3 text-left font-semibold">2025</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="border border-slate-300 px-4 py-3">Elektrischer Wirkungsgrad</td>
+                  <td class="border border-slate-300 px-4 py-3">18-20%</td>
+                  <td class="border border-slate-300 px-4 py-3">20-23%</td>
+                </tr>
+                <tr class="bg-slate-50">
+                  <td class="border border-slate-300 px-4 py-3">Thermischer Wirkungsgrad</td>
+                  <td class="border border-slate-300 px-4 py-3">55-65%</td>
+                  <td class="border border-slate-300 px-4 py-3">60-70%</td>
+                </tr>
+                <tr>
+                  <td class="border border-slate-300 px-4 py-3">Gesamtwirkungsgrad</td>
+                  <td class="border border-slate-300 px-4 py-3">73-85%</td>
+                  <td class="border border-slate-300 px-4 py-3">80-93%</td>
+                </tr>
+                <tr class="bg-slate-50">
+                  <td class="border border-slate-300 px-4 py-3">Preis pro m²</td>
+                  <td class="border border-slate-300 px-4 py-3">€650-850</td>
+                  <td class="border border-slate-300 px-4 py-3">€550-750</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2>Kosten und Wirtschaftlichkeit</h2>
+
+          <h3>Investitionskosten</h3>
+          <p>
+            <strong>Einfamilienhaus (20 m² PVT-Fläche):</strong>
+          </p>
+          <ul>
+            <li>PVT-Module (20 m²): €11.000 - €15.000</li>
+            <li>Wärmespeicher (500 L): €2.000 - €3.500</li>
+            <li>Hydraulik und Regelung: €2.500 - €4.000</li>
+            <li>Wechselrichter: €1.500 - €2.500</li>
+            <li>Montage und Installation: €3.000 - €5.000</li>
+            <li><strong>Gesamt: €20.000 - €30.000</strong></li>
+          </ul>
+
+          <h3>Kostenvergleich: PVT vs. separate Systeme</h3>
+          <div class="overflow-x-auto my-6">
+            <table class="min-w-full border-collapse">
+              <thead>
+                <tr class="bg-slate-100">
+                  <th class="border border-slate-300 px-4 py-3 text-left font-semibold">System</th>
+                  <th class="border border-slate-300 px-4 py-3 text-left font-semibold">Kosten</th>
+                  <th class="border border-slate-300 px-4 py-3 text-left font-semibold">Dachfläche</th>
+                  <th class="border border-slate-300 px-4 py-3 text-left font-semibold">Energieertrag</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="border border-slate-300 px-4 py-3"><strong>PVT-Hybrid</strong></td>
+                  <td class="border border-slate-300 px-4 py-3">€20.000 - €30.000</td>
+                  <td class="border border-slate-300 px-4 py-3">20 m²</td>
+                  <td class="border border-slate-300 px-4 py-3">4.000 kWh Strom<br>6.000 kWh Wärme</td>
+                </tr>
+                <tr class="bg-slate-50">
+                  <td class="border border-slate-300 px-4 py-3"><strong>PV + Solarthermie</strong></td>
+                  <td class="border border-slate-300 px-4 py-3">€17.000 - €25.000</td>
+                  <td class="border border-slate-300 px-4 py-3">30 m²<br>(15 m² PV + 15 m² ST)</td>
+                  <td class="border border-slate-300 px-4 py-3">3.000 kWh Strom<br>7.500 kWh Wärme</td>
+                </tr>
+                <tr>
+                  <td class="border border-slate-300 px-4 py-3"><strong>Nur PV</strong></td>
+                  <td class="border border-slate-300 px-4 py-3">€12.000 - €18.000</td>
+                  <td class="border border-slate-300 px-4 py-3">20 m²</td>
+                  <td class="border border-slate-300 px-4 py-3">4.000 kWh Strom</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <blockquote class="border-l-4 border-[#0F5B78] pl-6 my-8 italic text-slate-700">
+            <strong>Preis-Aufschlag:</strong> PVT-Systeme kosten 15-25% mehr als separate PV- und Solarthermieanlagen, benötigen aber 33% weniger Dachfläche und erzeugen mehr Gesamtenergie pro m².
+          </blockquote>
+
+          <h3>Förderung und Finanzierung</h3>
+          <p>
+            <strong>BAFA-Förderung für PVT-Anlagen:</strong>
+          </p>
+          <ul>
+            <li><strong>Solarthermie-Anteil:</strong> 30% Basisförderung + 5% Effizienzbonus = 35%</li>
+            <li><strong>Geschwindigkeitsbonus:</strong> +20% bei Ölheizungsaustausch bis 31.12.2028</li>
+            <li><strong>Einkommensbonus:</strong> +30% bei Haushaltseinkommen unter €40.000</li>
+            <li><strong>Max. Förderung:</strong> Bis zu 70% der förderfähigen Kosten (thermischer Teil)</li>
+          </ul>
+
+          <div class="bg-amber-50 border-l-4 border-amber-500 p-6 my-8">
+            <h4 class="text-lg font-semibold text-amber-900 mb-3">⚠️ Förder-Hinweis</h4>
+            <p class="text-amber-800 mb-0">
+              <strong>Nur thermischer Anteil förderfähig:</strong> Die BAFA-Förderung gilt nur für die Solarthermie-Komponente der PVT-Anlage (ca. 40-50% der Gesamtkosten). Der PV-Anteil ist nicht förderfähig, profitiert aber von der Einspeisevergütung nach EEG.
+            </p>
+          </div>
+
+          <h2>Effizienz und Leistungsdaten</h2>
+
+          <h3>Energieerträge pro m²</h3>
+          <div class="overflow-x-auto my-6">
+            <table class="min-w-full border-collapse">
+              <thead>
+                <tr class="bg-slate-100">
+                  <th class="border border-slate-300 px-4 py-3 text-left font-semibold">Technologie</th>
+                  <th class="border border-slate-300 px-4 py-3 text-left font-semibold">Elektrisch</th>
+                  <th class="border border-slate-300 px-4 py-3 text-left font-semibold">Thermisch</th>
+                  <th class="border border-slate-300 px-4 py-3 text-left font-semibold">Gesamt</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="border border-slate-300 px-4 py-3"><strong>PVT-Kollektor</strong></td>
+                  <td class="border border-slate-300 px-4 py-3">180-220 kWh/m²</td>
+                  <td class="border border-slate-300 px-4 py-3">300-400 kWh/m²</td>
+                  <td class="border border-slate-300 px-4 py-3">480-620 kWh/m²</td>
+                </tr>
+                <tr class="bg-slate-50">
+                  <td class="border border-slate-300 px-4 py-3"><strong>PV-Modul</strong></td>
+                  <td class="border border-slate-300 px-4 py-3">180-200 kWh/m²</td>
+                  <td class="border border-slate-300 px-4 py-3">—</td>
+                  <td class="border border-slate-300 px-4 py-3">180-200 kWh/m²</td>
+                </tr>
+                <tr>
+                  <td class="border border-slate-300 px-4 py-3"><strong>Solarthermie</strong></td>
+                  <td class="border border-slate-300 px-4 py-3">—</td>
+                  <td class="border border-slate-300 px-4 py-3">400-550 kWh/m²</td>
+                  <td class="border border-slate-300 px-4 py-3">400-550 kWh/m²</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>Kühleffekt und PV-Effizienzsteigerung</h3>
+          <p>
+            Durch die Wärmeabfuhr aus den PV-Zellen sinkt deren Betriebstemperatur:
+          </p>
+          <ul>
+            <li><strong>Standard-PV:</strong> 60-75°C Modultemperatur im Sommer</li>
+            <li><strong>PVT mit Kühlung:</strong> 35-45°C Modultemperatur</li>
+            <li><strong>Effizienzgewinn:</strong> +5-15% elektrischer Ertrag durch niedrigere Temperatur</li>
+            <li><strong>Jahresertrag:</strong> +200-600 kWh zusätzlicher Strom bei 20 m² Anlage</li>
+          </ul>
+
+          <h2>Einsatzszenarien und Anwendungen</h2>
+
+          <h3>Optimal für PVT-Systeme</h3>
+          <div class="bg-green-50 border-l-4 border-green-500 p-6 my-8">
+            <h4 class="text-lg font-semibold text-green-900 mb-3">✅ Ideale Bedingungen</h4>
+            <ul class="text-green-800 space-y-2 mb-0">
+              <li><strong>Begrenzte Dachfläche:</strong> Maximale Energieausbeute pro m² erforderlich</li>
+              <li><strong>Ganzjähriger Wärmebedarf:</strong> Warmwasser + Heizungsunterstützung</li>
+              <li><strong>Kombination mit Wärmepumpe:</strong> Synergieeffekt durch Quellentemperatur-Anhebung</li>
+              <li><strong>Hoher Eigenverbrauch:</strong> Sowohl Strom als auch Wärme werden direkt genutzt</li>
+              <li><strong>Neubau/Sanierung:</strong> Integrierte Planung von Anfang an</li>
+            </ul>
+          </div>
+
+          <h3>Weniger geeignet</h3>
+          <div class="bg-red-50 border-l-4 border-red-500 p-6 my-8">
+            <h4 class="text-lg font-semibold text-red-900 mb-3">❌ Ungünstige Bedingungen</h4>
+            <ul class="text-red-800 space-y-2 mb-0">
+              <li><strong>Ausreichend Dachfläche:</strong> Separate Systeme oft günstiger und flexibler</li>
+              <li><strong>Nur Warmwasserbedarf:</strong> Reine Solarthermie effizienter und preiswerter</li>
+              <li><strong>Nur Strombedarf:</strong> Reine PV-Anlage mit höherer Fläche wirtschaftlicher</li>
+              <li><strong>Keine Heizungsintegration:</strong> Thermischer Anteil kann nicht optimal genutzt werden</li>
+              <li><strong>Altbau ohne Sanierung:</strong> Hohe Vorlauftemperaturen reduzieren thermischen Ertrag</li>
+            </ul>
+          </div>
+
+          <h3>Praxisbeispiele</h3>
+          <p>
+            <strong>Szenario 1: Einfamilienhaus Neubau (140 m² Wohnfläche)</strong>
+          </p>
+          <ul>
+            <li>PVT-Anlage: 20 m² (4 kWp elektrisch)</li>
+            <li>Wärmepumpe: 8 kW (nutzt PVT-Wärme als Quelle)</li>
+            <li>Elektrischer Ertrag: 4.000 kWh/Jahr</li>
+            <li>Thermischer Ertrag: 6.000 kWh/Jahr</li>
+            <li>Eigenverbrauch: 70% Strom, 90% Wärme</li>
+            <li>Jahresersparnis: ca. €1.200</li>
+            <li>Amortisation: 16-20 Jahre</li>
+          </ul>
+
+          <p>
+            <strong>Szenario 2: Mehrfamilienhaus (6 Wohneinheiten)</strong>
+          </p>
+          <ul>
+            <li>PVT-Anlage: 60 m² (12 kWp elektrisch)</li>
+            <li>Zentraler Wärmespeicher: 1.500 Liter</li>
+            <li>Elektrischer Ertrag: 12.000 kWh/Jahr</li>
+            <li>Thermischer Ertrag: 18.000 kWh/Jahr</li>
+            <li>Mieterstrom-Modell + zentrale Warmwasser-Versorgung</li>
+            <li>Jahresersparnis: ca. €3.800</li>
+            <li>Amortisation: 12-15 Jahre</li>
+          </ul>
+
+          <h2>Installation und Integration</h2>
+
+          <h3>Planungsschritte</h3>
+          <ol>
+            <li><strong>Bedarfsanalyse:</strong> Strom- und Wärmebedarf ermitteln</li>
+            <li><strong>Dachprüfung:</strong> Statik, Ausrichtung, Verschattung, Neigung</li>
+            <li><strong>Systemauslegung:</strong> PVT-Fläche, Speichergröße, Hydraulik</li>
+            <li><strong>Heizungsintegration:</strong> Anbindung an bestehende/neue Heizung</li>
+            <li><strong>Förderantrag:</strong> BAFA-Antrag vor Auftragserteilung</li>
+            <li><strong>Installation:</strong> Fachbetrieb für PV und Solarthermie</li>
+            <li><strong>Inbetriebnahme:</strong> Hydraulischer Abgleich, Regelung optimieren</li>
+          </ol>
+
+          <h3>Technische Anforderungen</h3>
+          <ul>
+            <li><strong>Dachneigung:</strong> Optimal 30-45°, möglich 15-60°</li>
+            <li><strong>Ausrichtung:</strong> Südost bis Südwest (±45°)</li>
+            <li><strong>Verschattung:</strong> Möglichst frei, besonders vormittags-nachmittags</li>
+            <li><strong>Statik:</strong> Dachlast ca. 25-30 kg/m² (inkl. Montagesystem)</li>
+            <li><strong>Leitungswege:</strong> Hydraulik und Elektrik zum Speicher/Wechselrichter</li>
+            <li><strong>Speicherplatz:</strong> 1-2 m² Grundfläche für Wärmespeicher</li>
+          </ul>
+
+          <h2>Wartung und Betrieb</h2>
+
+          <h3>Wartungskosten</h3>
+          <ul>
+            <li><strong>Jährliche Inspektion:</strong> €180-280 (PV + Hydraulik kombiniert)</li>
+            <li><strong>Anlagendruckprüfung:</strong> Alle 2 Jahre enthalten</li>
+            <li><strong>Glykol-Wechsel:</strong> Alle 5-7 Jahre, ca. €200-350</li>
+            <li><strong>Wechselrichter-Austausch:</strong> Nach 12-15 Jahren, ca. €1.500-2.500</li>
+            <li><strong>Versicherung:</strong> €60-100/Jahr (über Gebäudeversicherung)</li>
+          </ul>
+
+          <h3>Überwachung und Optimierung</h3>
+          <p>
+            Moderne PVT-Systeme bieten:
+          </p>
+          <ul>
+            <li><strong>Monitoring-App:</strong> Echtzeit-Daten zu Strom- und Wärmeertrag</li>
+            <li><strong>Fehlerdiagnose:</strong> Automatische Meldung bei Störungen</li>
+            <li><strong>Ertragsprognose:</strong> Wetterbasierte Vorhersage für nächste Tage</li>
+            <li><strong>Optimierungsvorschläge:</strong> KI-gestützte Betriebsoptimierung</li>
+          </ul>
+
+          <h2>Zukunftsausblick</h2>
+
+          <h3>Technologische Entwicklungen</h3>
+          <ul>
+            <li><strong>Wirkungsgrad-Steigerung:</strong> Neue Zelltypen erreichen 24-26% elektrisch</li>
+            <li><strong>Bifaziale PVT:</strong> Module nutzen auch Rückseiten-Reflexion</li>
+            <li><strong>Integrierte Speicher:</strong> PVT-Module mit direktem Warmwasser-Speicher</li>
+            <li><strong>Building Integration:</strong> PVT-Fassaden und Dachziegel-Lösungen</li>
+            <li><strong>Preisentwicklung:</strong> Weitere -20% bis 2027 durch Skaleneffekte erwartet</li>
+          </ul>
+
+          <h3>Marktprognose</h3>
+          <p>
+            Experten erwarten für Deutschland:
+          </p>
+          <ul>
+            <li><strong>2025:</strong> 35.000-45.000 installierte PVT-Systeme</li>
+            <li><strong>2027:</strong> 80.000-100.000 jährliche Neuinstallationen</li>
+            <li><strong>2030:</strong> PVT-Anteil von 15-20% bei Neubauten</li>
+            <li><strong>Trend:</strong> Kombination mit Wärmepumpen wird Standard</li>
+          </ul>
+
+          <h2>Entscheidungshilfe: PVT ja oder nein?</h2>
+
+          <div class="bg-slate-50 border border-slate-200 rounded-lg p-8 my-8">
+            <h3 class="text-xl font-bold mb-6">PVT lohnt sich besonders, wenn:</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3">
+                <span class="text-green-600 font-bold text-xl">✓</span>
+                <span>Dachfläche begrenzt ist (unter 40 m² verfügbar)</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-green-600 font-bold text-xl">✓</span>
+                <span>Hoher Warmwasser- UND Strombedarf besteht</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-green-600 font-bold text-xl">✓</span>
+                <span>Kombination mit Wärmepumpe geplant ist</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-green-600 font-bold text-xl">✓</span>
+                <span>Ganzjährige Wärmenutzung möglich ist (z.B. Fußbodenheizung)</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-green-600 font-bold text-xl">✓</span>
+                <span>Neubau oder umfassende Sanierung ansteht</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-green-600 font-bold text-xl">✓</span>
+                <span>Maximale Autarkie angestrebt wird</span>
+              </li>
+            </ul>
+
+            <h3 class="text-xl font-bold mt-8 mb-6">Separate Systeme sind besser, wenn:</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3">
+                <span class="text-red-600 font-bold text-xl">✗</span>
+                <span>Ausreichend Dachfläche vorhanden ist (über 40 m²)</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-red-600 font-bold text-xl">✗</span>
+                <span>Nur Strom ODER nur Wärme benötigt wird</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-red-600 font-bold text-xl">✗</span>
+                <span>Wärmebedarf nur im Sommer besteht (nur Warmwasser)</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-red-600 font-bold text-xl">✗</span>
+                <span>Budget knapp ist (separate Systeme 15-25% günstiger)</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-red-600 font-bold text-xl">✗</span>
+                <span>Maximale Flexibilität gewünscht ist (Systeme unabhängig)</span>
+              </li>
+            </ul>
+          </div>
+
+          <h2>Fazit</h2>
+          <p>
+            PVT-Kollektoren sind eine innovative Lösung für Gebäude mit begrenzter Dachfläche und hohem Energie-Gesamtbedarf. Die Technologie vereint die Vorteile von Photovoltaik und Solarthermie und erzeugt bis zu 3-mal mehr Energie pro m² als reine PV-Anlagen.
+          </p>
+          <p>
+            Der Markt wächst stark: Mit 46 neuen Anbietern in 2024 und Deutschland als Top-3-Markt sind die Preise um 15% gesunken, während die Effizienz weiter steigt. Die Kombination mit Wärmepumpen erschließt zusätzliche Synergien.
+          </p>
+          <p>
+            <strong>Die Entscheidung für PVT lohnt sich besonders bei:</strong>
+          </p>
+          <ul>
+            <li>Begrenzter Dachfläche (unter 40 m²)</li>
+            <li>Ganzjährigem Wärme- UND Strombedarf</li>
+            <li>Kombination mit Wärmepumpe</li>
+            <li>Neubauten mit integrierter Planung</li>
+          </ul>
+          <p>
+            Bei ausreichend Dachfläche und nur einem Energiebedarf (Strom ODER Wärme) sind separate Systeme meist wirtschaftlicher. Eine detaillierte Bedarfsanalyse durch einen Fachbetrieb ist vor der Entscheidung unerlässlich.
+          </p>
+        </div>
+      `,
+      category: 'Solar',
+      author: 'Thomas Weber',
+      authorBio: 'Energieberater und Solartechnik-Spezialist mit 16 Jahren Erfahrung. Experte für Photovoltaik, Solarthermie und hybride Energiesysteme. Zertifizierter BAFA-Energieberater.',
+      date: '2025-01-13',
+      readingTime: 17,
+      image: '/images/HeizCenter_Solar.webp',
+      tags: ['PVT', 'Photovoltaik', 'Solarthermie', 'Hybrid', 'Wärmepumpe', 'Innovation', 'Effizienz'],
+      featured: true,
+    },
+    {
+      id: 25,
+      slug: 'solarthermie-dimensionierung-planung-2025',
+      title: 'Solarthermie richtig dimensionieren und planen: Der komplette Leitfaden 2025',
+      excerpt: 'Professionelle Anleitung zur Auslegung von Solarthermieanlagen: Kollektorfläche berechnen, Speicher dimensionieren, Standort optimieren. Mit Formeln, Beispielen und Checklisten für maximale Effizienz.',
+      content: `
+        <div class="article-content">
+          <p class="lead">
+            Die richtige Dimensionierung entscheidet über Effizienz und Wirtschaftlichkeit einer Solarthermieanlage. Zu kleine Anlagen schöpfen das Potenzial nicht aus, zu große verursachen unnötige Kosten und Stillstandsprobleme. Dieser Leitfaden zeigt Ihnen, wie Sie Ihre Anlage optimal auslegen.
+          </p>
+
+          <h2>Grundlagen der Dimensionierung</h2>
+
+          <h3>Einflussfaktoren auf die Anlagengröße</h3>
+          <p>
+            Die optimale Größe einer Solarthermieanlage hängt von mehreren Faktoren ab:
+          </p>
+          <ul>
+            <li><strong>Wärmebedarf:</strong> Warmwasser und/oder Heizungsunterstützung</li>
+            <li><strong>Personenzahl:</strong> Anzahl der Bewohner im Haushalt</li>
+            <li><strong>Nutzungsverhalten:</strong> Warmwasserverbrauch pro Person und Tag</li>
+            <li><strong>Dachfläche:</strong> Verfügbare, geeignete Fläche</li>
+            <li><strong>Dachausrichtung:</strong> Südausrichtung optimal, Ost/West möglich</li>
+            <li><strong>Dachneigung:</strong> 30-45° ideal für Deutschland</li>
+            <li><strong>Standort:</strong> Solare Einstrahlung in Ihrer Region</li>
+            <li><strong>Gebäudedämmung:</strong> Heizwärmebedarf des Gebäudes</li>
+          </ul>
+
+          <div class="bg-blue-50 border-l-4 border-blue-500 p-6 my-8">
+            <h4 class="text-lg font-semibold text-blue-900 mb-3">💡 Grundprinzip</h4>
+            <p class="text-blue-800 mb-0">
+              <strong>Faustregel Warmwasser:</strong> Pro Person werden ca. 0,8-1,5 m² Flachkollektorfläche benötigt. Für Heizungsunterstützung zusätzlich 0,06-0,08 m² pro m² Wohnfläche. Die Speichergröße sollte 50-100 Liter pro m² Kollektorfläche betragen.
+            </p>
+          </div>
+
+          <h2>Dimensionierung für Warmwasser</h2>
+
+          <h3>Kollektorfläche berechnen</h3>
+          <p>
+            <strong>Methode 1: Nach Personenzahl (Standardansatz)</strong>
+          </p>
+          <div class="overflow-x-auto my-6">
+            <table class="min-w-full border-collapse">
+              <thead>
+                <tr class="bg-slate-100">
+                  <th class="border border-slate-300 px-4 py-3 text-left font-semibold">Personenzahl</th>
+                  <th class="border border-slate-300 px-4 py-3 text-left font-semibold">Flachkollektor</th>
+                  <th class="border border-slate-300 px-4 py-3 text-left font-semibold">Röhrenkollektor</th>
+                  <th class="border border-slate-300 px-4 py-3 text-left font-semibold">Speichergröße</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="border border-slate-300 px-4 py-3">1-2 Personen</td>
+                  <td class="border border-slate-300 px-4 py-3">3-5 m²</td>
+                  <td class="border border-slate-300 px-4 py-3">2-3 m²</td>
+                  <td class="border border-slate-300 px-4 py-3">200-300 L</td>
+                </tr>
+                <tr class="bg-slate-50">
+                  <td class="border border-slate-300 px-4 py-3">3-4 Personen</td>
+                  <td class="border border-slate-300 px-4 py-3">5-7 m²</td>
+                  <td class="border border-slate-300 px-4 py-3">3-5 m²</td>
+                  <td class="border border-slate-300 px-4 py-3">300-400 L</td>
+                </tr>
+                <tr>
+                  <td class="border border-slate-300 px-4 py-3">5-6 Personen</td>
+                  <td class="border border-slate-300 px-4 py-3">8-10 m²</td>
+                  <td class="border border-slate-300 px-4 py-3">5-7 m²</td>
+                  <td class="border border-slate-300 px-4 py-3">400-500 L</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>
+            <strong>Methode 2: Nach Warmwasserbedarf (detailliert)</strong>
+          </p>
+          <ol>
+            <li><strong>Tagesbedarf ermitteln:</strong> 30-50 Liter Warmwasser (60°C) pro Person/Tag</li>
+            <li><strong>Energiebedarf berechnen:</strong> Tagesbedarf × 0,058 kWh/L = kWh/Tag</li>
+            <li><strong>Kollektorfläche ermitteln:</strong> Energiebedarf ÷ spezifischer Ertrag (350-450 kWh/m²/Jahr für Flachkollektoren)</li>
+          </ol>
+
+          <blockquote class="border-l-4 border-[#0F5B78] pl-6 my-8 italic text-slate-700">
+            <strong>Rechenbeispiel 4-Personen-Haushalt:</strong><br>
+            Tagesbedarf: 4 × 40 L = 160 L<br>
+            Energiebedarf: 160 L × 0,058 kWh/L = 9,28 kWh/Tag = 3.387 kWh/Jahr<br>
+            Kollektorfläche: 3.387 kWh ÷ 400 kWh/m² = 8,5 m² (abgerundet: 6-8 m² wegen Sommerüberschuss)
+          </blockquote>
+
+          <h3>Speicherdimensionierung für Warmwasser</h3>
+          <p>
+            <strong>Verhältnis Kollektorfläche zu Speichervolumen:</strong>
+          </p>
+          <ul>
+            <li><strong>Standardauslegung:</strong> 50-80 Liter pro m² Kollektorfläche</li>
+            <li><strong>Komfortauslegung:</strong> 80-100 Liter pro m² Kollektorfläche</li>
+            <li><strong>Mindestgröße:</strong> 200 Liter (auch für kleine Haushalte)</li>
+            <li><strong>Maximalgröße:</strong> Nicht mehr als 100 L/m² (Stagnationsgefahr)</li>
+          </ul>
+
+          <div class="bg-amber-50 border-l-4 border-amber-500 p-6 my-8">
+            <h4 class="text-lg font-semibold text-amber-900 mb-3">⚠️ Wichtig</h4>
+            <p class="text-amber-800 mb-0">
+              <strong>Nicht zu groß dimensionieren:</strong> Zu große Speicher kühlen schneller aus und verursachen höhere Wärmeverluste. Zu große Kollektorflächen führen im Sommer zu Stillstandszeiten mit hohen Temperaturen, die die Anlage belasten.
+            </p>
+          </div>
+
+          <h2>Dimensionierung für Kombi-Anlagen (Warmwasser + Heizung)</h2>
+
+          <h3>Kollektorfläche für Heizungsunterstützung</h3>
+          <p>
+            <strong>Formel nach Wohnfläche:</strong>
+          </p>
+          <ul>
+            <li><strong>Neubau (KfW-Standard):</strong> 0,04-0,06 m² Kollektorfläche pro m² Wohnfläche</li>
+            <li><strong>Saniert (EnEV-Standard):</strong> 0,06-0,08 m² Kollektorfläche pro m² Wohnfläche</li>
+            <li><strong>Altbau (unsaniert):</strong> 0,08-0,12 m² Kollektorfläche pro m² Wohnfläche</li>
+          </ul>
+
+          <p>
+            <strong>Beispielrechnung Einfamilienhaus 140 m² (saniert):</strong>
+          </p>
+          <ul>
+            <li>Wohnfläche: 140 m²</li>
+            <li>Faktor saniert: 0,07 m²/m²</li>
+            <li><strong>Kollektorfläche Heizung:</strong> 140 × 0,07 = 9,8 m²</li>
+            <li>Plus Warmwasser (4 Personen): +6 m²</li>
+            <li><strong>Gesamt-Kollektorfläche:</strong> 15-16 m² Flachkollektoren</li>
+          </ul>
+
+          <h3>Kombi-Speicher dimensionieren</h3>
+          <div class="overflow-x-auto my-6">
+            <table class="min-w-full border-collapse">
+              <thead>
+                <tr class="bg-slate-100">
+                  <th class="border border-slate-300 px-4 py-3 text-left font-semibold">Wohnfläche</th>
+                  <th class="border border-slate-300 px-4 py-3 text-left font-semibold">Kollektorfläche</th>
+                  <th class="border border-slate-300 px-4 py-3 text-left font-semibold">Speichergröße</th>
+                  <th class="border border-slate-300 px-4 py-3 text-left font-semibold">Typ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="border border-slate-300 px-4 py-3">100-120 m²</td>
+                  <td class="border border-slate-300 px-4 py-3">10-12 m²</td>
+                  <td class="border border-slate-300 px-4 py-3">600-800 L</td>
+                  <td class="border border-slate-300 px-4 py-3">Schichtenspeicher</td>
+                </tr>
+                <tr class="bg-slate-50">
+                  <td class="border border-slate-300 px-4 py-3">130-150 m²</td>
+                  <td class="border border-slate-300 px-4 py-3">13-16 m²</td>
+                  <td class="border border-slate-300 px-4 py-3">800-1000 L</td>
+                  <td class="border border-slate-300 px-4 py-3">Schichtenspeicher</td>
+                </tr>
+                <tr>
+                  <td class="border border-slate-300 px-4 py-3">160-180 m²</td>
+                  <td class="border border-slate-300 px-4 py-3">17-20 m²</td>
+                  <td class="border border-slate-300 px-4 py-3">1000-1200 L</td>
+                  <td class="border border-slate-300 px-4 py-3">Pufferspeicher</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>Solare Deckungsrate</h3>
+          <p>
+            Die solare Deckungsrate gibt an, wie viel Prozent des Wärmebedarfs durch Solarthermie gedeckt werden:
+          </p>
+          <ul>
+            <li><strong>Warmwasser:</strong> 50-65% Deckung (Standardauslegung)</li>
+            <li><strong>Warmwasser:</strong> 70-80% Deckung (Komfortauslegung, größere Anlage)</li>
+            <li><strong>Heizungsunterstützung:</strong> 15-30% Deckung des Gesamtwärmebedarfs</li>
+            <li><strong>100% solar:</strong> Nicht wirtschaftlich! Überdimensionierung führt zu Stillstand</li>
+          </ul>
+
+          <h2>Standortfaktoren und Ausrichtung</h2>
+
+          <h3>Dachausrichtung optimieren</h3>
+          <div class="overflow-x-auto my-6">
+            <table class="min-w-full border-collapse">
+              <thead>
+                <tr class="bg-slate-100">
+                  <th class="border border-slate-300 px-4 py-3 text-left font-semibold">Ausrichtung</th>
+                  <th class="border border-slate-300 px-4 py-3 text-left font-semibold">Ertrag</th>
+                  <th class="border border-slate-300 px-4 py-3 text-left font-semibold">Empfehlung</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="border border-slate-300 px-4 py-3">Süd (±15°)</td>
+                  <td class="border border-slate-300 px-4 py-3">100%</td>
+                  <td class="border border-slate-300 px-4 py-3">✅ Optimal</td>
+                </tr>
+                <tr class="bg-slate-50">
+                  <td class="border border-slate-300 px-4 py-3">Südwest/Südost (±45°)</td>
+                  <td class="border border-slate-300 px-4 py-3">90-95%</td>
+                  <td class="border border-slate-300 px-4 py-3">✅ Sehr gut</td>
+                </tr>
+                <tr>
+                  <td class="border border-slate-300 px-4 py-3">West/Ost (±75°)</td>
+                  <td class="border border-slate-300 px-4 py-3">70-85%</td>
+                  <td class="border border-slate-300 px-4 py-3">⚠️ Bedingt geeignet</td>
+                </tr>
+                <tr class="bg-slate-50">
+                  <td class="border border-slate-300 px-4 py-3">Nord</td>
+                  <td class="border border-slate-300 px-4 py-3">40-60%</td>
+                  <td class="border border-slate-300 px-4 py-3">❌ Nicht empfohlen</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>Dachneigung optimieren</h3>
+          <ul>
+            <li><strong>Warmwasser:</strong> 30-45° optimal (höhere Sommererträge)</li>
+            <li><strong>Heizungsunterstützung:</strong> 45-60° optimal (bessere Wintererträge)</li>
+            <li><strong>Kompromiss Kombi-Anlage:</strong> 40-50° (ganzjährig ausgewogen)</li>
+          </ul>
+
+          <h3>Verschattungsanalyse</h3>
+          <p>
+            Vermeiden Sie Verschattungen durch:
+          </p>
+          <ul>
+            <li>Bäume, Sträucher (Wachstum beachten!)</li>
+            <li>Nachbargebäude</li>
+            <li>Schornsteine, Antennen, Gauben</li>
+            <li>Dachaufbauten (Klimaanlagen, etc.)</li>
+          </ul>
+
+          <div class="bg-blue-50 border-l-4 border-blue-500 p-6 my-8">
+            <h4 class="text-lg font-semibold text-blue-900 mb-3">💡 Verschattungsregel</h4>
+            <p class="text-blue-800 mb-0">
+              <strong>Kritische Zeiten:</strong> März-Oktober, 9:00-15:00 Uhr. Bereits 10% Teilverschattung können den Ertrag um 30-40% reduzieren! Eine professionelle Verschattungsanalyse (z.B. mit Solarpathfinder) ist empfehlenswert.
+            </p>
+          </div>
+
+          <h2>Regionale Unterschiede</h2>
+
+          <h3>Solare Einstrahlung in Deutschland</h3>
+          <div class="overflow-x-auto my-6">
+            <table class="min-w-full border-collapse">
+              <thead>
+                <tr class="bg-slate-100">
+                  <th class="border border-slate-300 px-4 py-3 text-left font-semibold">Region</th>
+                  <th class="border border-slate-300 px-4 py-3 text-left font-semibold">Einstrahlung</th>
+                  <th class="border border-slate-300 px-4 py-3 text-left font-semibold">Korrekturfaktor</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="border border-slate-300 px-4 py-3">Süddeutschland (Bayern, BaWü)</td>
+                  <td class="border border-slate-300 px-4 py-3">1.100-1.200 kWh/m²</td>
+                  <td class="border border-slate-300 px-4 py-3">1,0 (Basis)</td>
+                </tr>
+                <tr class="bg-slate-50">
+                  <td class="border border-slate-300 px-4 py-3">Mitteldeutschland (Hessen, Thüringen)</td>
+                  <td class="border border-slate-300 px-4 py-3">1.000-1.100 kWh/m²</td>
+                  <td class="border border-slate-300 px-4 py-3">0,95</td>
+                </tr>
+                <tr>
+                  <td class="border border-slate-300 px-4 py-3">Norddeutschland (Küstenregion)</td>
+                  <td class="border border-slate-300 px-4 py-3">950-1.050 kWh/m²</td>
+                  <td class="border border-slate-300 px-4 py-3">0,90</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2>Hydraulik und Systemintegration</h2>
+
+          <h3>Rohrdimensionierung</h3>
+          <p>
+            <strong>Richtwerte für Kupferrohre (Vorlauf/Rücklauf):</strong>
+          </p>
+          <ul>
+            <li><strong>Bis 10 m² Kollektorfläche:</strong> DN 15 (18×1 mm)</li>
+            <li><strong>10-20 m² Kollektorfläche:</strong> DN 18 (22×1 mm)</li>
+            <li><strong>20-30 m² Kollektorfläche:</strong> DN 22 (28×1,5 mm)</li>
+            <li><strong>Über 30 m² Kollektorfläche:</strong> DN 28 (35×1,5 mm)</li>
+          </ul>
+
+          <h3>Solarflüssigkeit</h3>
+          <ul>
+            <li><strong>Mischverhältnis:</strong> 40-50% Glykol (frostsicher bis -25°C bis -35°C)</li>
+            <li><strong>Menge:</strong> Ca. 1-1,5 Liter pro m² Kollektorfläche</li>
+            <li><strong>Lebensdauer:</strong> 5-7 Jahre, dann Austausch</li>
+          </ul>
+
+          <h3>Pumpenauslegung</h3>
+          <p>
+            <strong>Hocheffizienzpumpe (Klasse A) dimensionieren:</strong>
+          </p>
+          <ul>
+            <li><strong>Fördermenge:</strong> 30-50 Liter/Stunde pro m² Kollektorfläche</li>
+            <li><strong>Förderhöhe:</strong> Höhenunterschied + Druckverlust (ca. 2-4 m Wassersäule)</li>
+            <li><strong>Leistung:</strong> Typisch 25-60 Watt (drehzahlgeregelt)</li>
+          </ul>
+
+          <h2>Planungsschritte in der Praxis</h2>
+
+          <h3>Schritt-für-Schritt Anleitung</h3>
+          <ol>
+            <li>
+              <strong>Bedarfsermittlung</strong>
+              <ul>
+                <li>Warmwasserverbrauch ermitteln (Personen × 40 L/Tag)</li>
+                <li>Heizwärmebedarf bestimmen (aus Energieausweis)</li>
+                <li>Gewünschte solare Deckungsrate festlegen</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Standortanalyse</strong>
+              <ul>
+                <li>Dachfläche vermessen (verfügbare Fläche)</li>
+                <li>Ausrichtung und Neigung prüfen</li>
+                <li>Verschattungen dokumentieren (Fotos, Skizzen)</li>
+                <li>Statik prüfen (Dachlast 25-35 kg/m²)</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Kollektorfläche berechnen</strong>
+              <ul>
+                <li>Nach Personenzahl (Warmwasser) oder Wohnfläche (Kombi)</li>
+                <li>Mit regionalem Korrekturfaktor anpassen</li>
+                <li>Ausrichtungs-/Neigungsverluste einrechnen</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Speicher dimensionieren</strong>
+              <ul>
+                <li>Verhältnis 50-80 L pro m² Kollektorfläche</li>
+                <li>Mindestens 200 L, maximal 100 L/m²</li>
+                <li>Platzbedarf prüfen (Höhe, Durchgänge)</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Hydraulik planen</strong>
+              <ul>
+                <li>Rohrdurchmesser festlegen</li>
+                <li>Leitungswege planen (kurz = effizient)</li>
+                <li>Pumpe und Ausdehnungsgefäß dimensionieren</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Integration Heizung</strong>
+              <ul>
+                <li>Anbindung an bestehende Heizung klären</li>
+                <li>Regelungstechnik abstimmen</li>
+                <li>Hydraulischen Abgleich einplanen</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Wirtschaftlichkeit prüfen</strong>
+              <ul>
+                <li>Kosten kalkulieren (mit Förderung)</li>
+                <li>Ertragsprognose erstellen</li>
+                <li>Amortisation berechnen</li>
+              </ul>
+            </li>
+          </ol>
+
+          <h2>Häufige Dimensionierungsfehler</h2>
+
+          <div class="bg-red-50 border-l-4 border-red-500 p-6 my-8">
+            <h4 class="text-lg font-semibold text-red-900 mb-3">❌ Typische Fehler vermeiden</h4>
+            <ul class="text-red-800 space-y-2 mb-0">
+              <li><strong>Zu große Kollektorfläche:</strong> Führt zu Stillstand im Sommer, belastet Komponenten</li>
+              <li><strong>Zu kleiner Speicher:</strong> Ertrag kann nicht gespeichert werden, Wirkungsgrad sinkt</li>
+              <li><strong>Zu großer Speicher:</strong> Hohe Wärmeverluste, erreicht selten Solltemperatur</li>
+              <li><strong>Falsche Rohrdimension:</strong> Zu dünn = hohe Verluste, zu dick = träge Reaktion</li>
+              <li><strong>Verschattung ignoriert:</strong> 10% Schatten = 30-40% Ertragsverlust</li>
+              <li><strong>Ost-West-Dach unterschätzt:</strong> Bei guter Neigung oft nur 15-20% Verlust</li>
+              <li><strong>Nord-Süd-Giebeldach:</strong> Nur Süddach nutzen, Norddach vermeiden</li>
+            </ul>
+          </div>
+
+          <h2>Planungstools und Simulationssoftware</h2>
+
+          <h3>Kostenlose Tools</h3>
+          <ul>
+            <li><strong>Solarrechner BAFA:</strong> Grobe Erstauslegung, Förderprüfung</li>
+            <li><strong>Solarpathfinder:</strong> Verschattungsanalyse (Hardware, Verleih bei Fachbetrieben)</li>
+            <li><strong>PVGIS:</strong> EU-Tool für solare Einstrahlung (auch Solarthermie nutzbar)</li>
+          </ul>
+
+          <h3>Professionelle Software (Fachbetriebe)</h3>
+          <ul>
+            <li><strong>Polysun:</strong> Detaillierte Systemsimulation, Wirtschaftlichkeit</li>
+            <li><strong>T*SOL:</strong> Komplexe Anlagenplanung, Ertragsprognose</li>
+            <li><strong>Valentin Software:</strong> PV-SOL/T-SOL für Hybrid-Systeme</li>
+          </ul>
+
+          <h2>Checkliste Dimensionierung</h2>
+
+          <div class="bg-slate-50 border border-slate-200 rounded-lg p-8 my-8">
+            <h3 class="text-xl font-bold mb-6">Planungs-Checkliste (zum Abhaken)</h3>
+
+            <h4 class="font-semibold mt-6 mb-3">Bedarfsanalyse</h4>
+            <ul class="space-y-2">
+              <li class="flex items-start gap-3">
+                <span class="text-slate-400 font-bold">☐</span>
+                <span>Personenzahl und Warmwasserverbrauch ermittelt</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-slate-400 font-bold">☐</span>
+                <span>Heizwärmebedarf bekannt (aus Energieausweis)</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-slate-400 font-bold">☐</span>
+                <span>Gewünschte solare Deckungsrate festgelegt</span>
+              </li>
+            </ul>
+
+            <h4 class="font-semibold mt-6 mb-3">Standort und Dach</h4>
+            <ul class="space-y-2">
+              <li class="flex items-start gap-3">
+                <span class="text-slate-400 font-bold">☐</span>
+                <span>Verfügbare Dachfläche vermessen</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-slate-400 font-bold">☐</span>
+                <span>Ausrichtung und Neigung dokumentiert</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-slate-400 font-bold">☐</span>
+                <span>Verschattungsanalyse durchgeführt (9-15 Uhr, März-Okt)</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-slate-400 font-bold">☐</span>
+                <span>Dachstatik geprüft (25-35 kg/m² Zusatzlast)</span>
+              </li>
+            </ul>
+
+            <h4 class="font-semibold mt-6 mb-3">Komponenten</h4>
+            <ul class="space-y-2">
+              <li class="flex items-start gap-3">
+                <span class="text-slate-400 font-bold">☐</span>
+                <span>Kollektorfläche berechnet (mit Formeln aus diesem Artikel)</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-slate-400 font-bold">☐</span>
+                <span>Speichergröße festgelegt (50-80 L pro m² Kollektor)</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-slate-400 font-bold">☐</span>
+                <span>Speicher-Platzbedarf geprüft (Keller-Zugang ausreichend?)</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-slate-400 font-bold">☐</span>
+                <span>Rohrdimensionen geplant</span>
+              </li>
+            </ul>
+
+            <h4 class="font-semibold mt-6 mb-3">Wirtschaftlichkeit</h4>
+            <ul class="space-y-2">
+              <li class="flex items-start gap-3">
+                <span class="text-slate-400 font-bold">☐</span>
+                <span>Ertragsprognose erstellt (kWh/Jahr)</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-slate-400 font-bold">☐</span>
+                <span>Kosten kalkuliert (inkl. BAFA-Förderung)</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-slate-400 font-bold">☐</span>
+                <span>Amortisationszeit berechnet</span>
+              </li>
+            </ul>
+
+            <h4 class="font-semibold mt-6 mb-3">Umsetzung</h4>
+            <ul class="space-y-2">
+              <li class="flex items-start gap-3">
+                <span class="text-slate-400 font-bold">☐</span>
+                <span>Angebote von 2-3 Fachbetrieben eingeholt</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-slate-400 font-bold">☐</span>
+                <span>BAFA-Förderantrag VOR Auftragserteilung gestellt</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-slate-400 font-bold">☐</span>
+                <span>Hydraulischer Abgleich eingeplant</span>
+              </li>
+            </ul>
+          </div>
+
+          <h2>Fazit und Empfehlungen</h2>
+          <p>
+            Die richtige Dimensionierung ist entscheidend für Effizienz und Wirtschaftlichkeit einer Solarthermieanlage. Überdimensionierung führt zu unnötigen Kosten und Stillstandsproblemen, Unterdimensionierung verschenkt Potenzial.
+          </p>
+          <p>
+            <strong>Wichtigste Erkenntnisse:</strong>
+          </p>
+          <ul>
+            <li><strong>Warmwasser:</strong> 0,8-1,5 m² Kollektorfläche pro Person, Speicher 50-80 L/m²</li>
+            <li><strong>Heizungsunterstützung:</strong> Zusätzlich 0,06-0,08 m²/m² Wohnfläche (sanierte Gebäude)</li>
+            <li><strong>Ausrichtung:</strong> Süd optimal, Südwest/Südost sehr gut (-5 bis -10% Ertrag)</li>
+            <li><strong>Verschattung:</strong> Kritischer als Ausrichtung! 10% Schatten = 30-40% Verlust</li>
+            <li><strong>Solare Deckung:</strong> 60% Warmwasser und 20% Heizung sind wirtschaftlich optimal</li>
+          </ul>
+          <p>
+            Eine professionelle Planung durch einen Fachbetrieb mit Simulationssoftware ist empfehlenswert. Die Investition in eine präzise Dimensionierung zahlt sich über die 20-25-jährige Lebensdauer der Anlage vielfach aus.
+          </p>
+        </div>
+      `,
+      category: 'Solar',
+      author: 'Thomas Weber',
+      authorBio: 'Energieberater und Solartechnik-Spezialist mit 16 Jahren Erfahrung. Experte für Photovoltaik, Solarthermie und hybride Energiesysteme. Zertifizierter BAFA-Energieberater.',
+      date: '2025-01-14',
+      readingTime: 16,
+      image: '/images/HeizCenter_Solar.webp',
+      tags: ['Solarthermie Planung', 'Dimensionierung', 'Auslegung', 'Kollektorfläche', 'Speichergröße', 'Berechnung', 'Anlagenplanung'],
+      featured: true,
+    },
   ];
 }
 
