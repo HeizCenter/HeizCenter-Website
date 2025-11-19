@@ -190,8 +190,8 @@ export default function SolarPage() {
                 {/* Badge Area - Fixed Height */}
                 <div className="h-8 mb-4"></div>
 
-                {/* Title - Fixed Height */}
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-blue-100">
+                {/* Icon - Fixed Height, Centered */}
+                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-blue-100 mx-auto">
                   <Home className="h-6 w-6 text-blue-600" />
                 </div>
                 <h3 className="mb-2 text-xl font-bold h-14 flex items-center">Warmwasser-System</h3>
@@ -247,8 +247,8 @@ export default function SolarPage() {
                   </span>
                 </div>
 
-                {/* Title - Fixed Height */}
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
+                {/* Icon - Fixed Height, Centered */}
+                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 mx-auto">
                   <ThermometerSun className="h-6 w-6 text-primary" />
                 </div>
                 <h3 className="mb-2 text-xl font-bold h-14 flex items-center">Kombi-System</h3>
@@ -300,8 +300,8 @@ export default function SolarPage() {
                 {/* Badge Area - Fixed Height */}
                 <div className="h-8 mb-4"></div>
 
-                {/* Title - Fixed Height */}
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-green-100">
+                {/* Icon - Fixed Height, Centered */}
+                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-green-100 mx-auto">
                   <Zap className="h-6 w-6 text-green-600" />
                 </div>
                 <h3 className="mb-2 text-xl font-bold h-14 flex items-center">Hybrid-System</h3>
@@ -339,7 +339,7 @@ export default function SolarPage() {
                 </div>
 
                 {/* CTA Button - Fixed at Bottom */}
-                <Button asChild className="w-full mt-auto" variant="outline">
+                <Button asChild className="w-full mt-auto">
                   <Link href="/kontakt?tab=quote&service=solar&message=Ich interessiere mich für ein Hybrid-System (Solarthermie + Wärmepumpe). Bitte kontaktieren Sie mich für eine kostenlose Beratung.">
                     Jetzt beraten lassen
                   </Link>
