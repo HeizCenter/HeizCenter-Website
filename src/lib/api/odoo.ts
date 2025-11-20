@@ -111,6 +111,10 @@ class OdooClient {
 
       console.log('✅ Odoo authentication successful. UID:', this.uid);
 
+      if (this.uid === null) {
+        throw new Error('Authentication failed: Invalid UID');
+      }
+
       return this.uid;
     } catch (error) {
       console.error('❌ Odoo authentication error:', error);
@@ -123,11 +127,15 @@ class OdooClient {
   /**
    * Execute Odoo model method via JSON-RPC
    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   private async executeKw(
     model: string,
     method: string,
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     args: any[] = [],
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     kwargs: Record<string, any> = {}
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   ): Promise<any> {
     await this.authenticate();
     const executeUrl = `${this.config.url}/web/dataset/call_kw`;
@@ -204,6 +212,7 @@ class OdooClient {
   }> {
     try {
       // Set default values
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const data: any = {
         type: 'lead',
         priority: '1',
@@ -325,6 +334,7 @@ class OdooClient {
   /**
    * Get blog posts from Odoo (optional - future feature)
    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   async getBlogPosts(limit: number = 10): Promise<any[]> {
     try {
       const posts = await this.executeKw(

@@ -291,7 +291,7 @@ export async function subscribeNewsletter(data: {
  * 2. External email service (SendGrid, Mailgun, etc.)
  * 3. Automated actions in Odoo (simplest - no code needed)
  */
-async function sendConfirmationEmail(
+async function _sendConfirmationEmail(
   email: string,
   name: string,
   type: 'contact' | 'quote' | 'emergency' | 'newsletter'
