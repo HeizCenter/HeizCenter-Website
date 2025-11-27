@@ -107,7 +107,7 @@ export default function LandsbergPage() {
       <LocationHero
         name="Landsberg am Lech"
         address="Lechallee 28, 86399 Bobingen"
-        phone="+49 8234 966590"
+        phone="+49 8234 9665900"
         email="service@heizcenter.de"
         description="HeizCenter Service für Landsberg am Lech und Umgebung. Schneller Service aus Augsburg für Wärmepumpen, Heizung, Sanitär und Klimaanlagen. Professionelle Beratung und Installation."
         mainLocation="Bobingen"

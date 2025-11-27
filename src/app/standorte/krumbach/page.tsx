@@ -51,7 +51,7 @@ export default function KrumbachPage() {
         longitude={data.longitude}
         serviceCities={data.serviceCities}
       />
-      <LocationHero name="Krumbach (Schwaben)" address="Schlüsselbergstraße 5, 88484 Gutenzell-Hürbel" phone="+49 8234 966590" email="service@heizcenter.de" description="HeizCenter Service für Krumbach. Wärmepumpen, Heizung und Sanitär mit professionellem Service."
+      <LocationHero name="Krumbach (Schwaben)" address="Schlüsselbergstraße 5, 88484 Gutenzell-Hürbel" phone="+49 8234 9665900" email="service@heizcenter.de" description="HeizCenter Service für Krumbach. Wärmepumpen, Heizung und Sanitär mit professionellem Service."
         mainLocation="Gutenzell-Hürbel" />
       <LocationServices services={services} title="Unsere Leistungen in Krumbach" />
       <section className="container py-16">

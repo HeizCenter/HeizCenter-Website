@@ -55,21 +55,24 @@ export default function DatenschutzPage() {
 
         <section id="section-2" className="mb-12">
           <h2 className="text-3xl font-bold mb-6">2. Hosting</h2>
-          
+
           <p className="mb-4">Wir hosten die Inhalte unserer Website bei folgendem Anbieter:</p>
 
-          <h3 className="text-2xl font-bold mb-4">Odoo</h3>
+          <h3 className="text-2xl font-bold mb-4">Vercel</h3>
           <p className="mb-4">
-            Anbieter ist die Odoo S.A., Chaussée de Namur 40, 1367 Grand Rosière, Belgium (nachfolgend Odoo). Wenn Sie unsere Website besuchen, erfasst Odoo verschiedene Logfiles inklusive Ihrer IP-Adressen.
+            Diese Website wird gehostet bei Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, USA.
           </p>
           <p className="mb-4">
-            Details entnehmen Sie der Datenschutzerklärung von Odoo:{" "}
-            <a href="https://www.odoo.com/de_DE/privacy" target="_blank" rel="noopener noreferrer" className="text-[#0F5B78] hover:underline">
-              https://www.odoo.com/de_DE/privacy
+            Vercel ist ein Cloud-Hosting-Dienst für statische Websites und Serverless Functions. Bei Aufruf dieser Website werden automatisch Informationen (z.B. IP-Adresse, Browsertyp, Betriebssystem, Zugriffszeit) in Serverlogfiles gespeichert.
+          </p>
+          <p className="mb-4">
+            <strong>Datenübermittlung in die USA:</strong> Vercel Inc. hat seinen Sitz in den USA. Die Datenübermittlung erfolgt auf Grundlage von Art. 49 Abs. 1 lit. a DSGVO (Einwilligung) bzw. auf Grundlage der EU-Standardvertragsklauseln. Weitere Informationen finden Sie in der Datenschutzerklärung von Vercel:{" "}
+            <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-[#0F5B78] hover:underline">
+              https://vercel.com/legal/privacy-policy
             </a>
           </p>
           <p className="mb-4">
-            Die Verwendung von Odoo erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Wir haben ein berechtigtes Interesse an einer möglichst zuverlässigen Darstellung unserer Website.
+            Die Nutzung erfolgt auf Grundlage unserer berechtigten Interessen (Art. 6 Abs. 1 lit. f DSGVO) an einer sicheren und effizienten Bereitstellung unseres Onlineangebots.
           </p>
 
           <h4 className="text-xl font-bold mb-3 mt-6">Auftragsverarbeitung</h4>
@@ -89,7 +92,7 @@ export default function DatenschutzPage() {
           <h3 className="text-2xl font-bold mb-4 mt-8">Hinweis zur verantwortlichen Stelle</h3>
           <p className="mb-4">Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:</p>
           <div className="bg-slate-50 p-4 rounded-lg mb-4">
-            <p className="font-bold">HeizCenter UG</p>
+            <p className="font-bold">HeizCenter GmbH</p>
             <p>Lechallee 28</p>
             <p>86399 Bobingen</p>
             <p className="mt-2">+49 8234 9665900</p>

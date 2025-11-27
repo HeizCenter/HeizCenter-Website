@@ -81,6 +81,17 @@ export default function ImpressumPage() {
         </section>
 
         <section className="mb-8">
+          <h3 className="text-xl font-bold mb-4">Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h3>
+          <p className="mb-2">
+            Alexander Gellert
+            <br />
+            Lechallee 28
+            <br />
+            86399 Bobingen
+          </p>
+        </section>
+
+        <section className="mb-8">
           <h3 className="text-xl font-bold mb-4">EU-Streitschlichtung</h3>
           <p className="mb-4">
             Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:{" "}

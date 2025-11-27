@@ -31,7 +31,7 @@ const locations: Location[] = [
     name: "Bobingen",
     href: "/standorte/bobingen",
     region: "Raum Augsburg",
-    phone: "+49 8234 966590",
+    phone: "+49 8234 9665900",
     isMain: true,
     subLocations: [
       "Augsburg",
@@ -49,7 +49,7 @@ const locations: Location[] = [
     name: "Gutenzell-Hürbel",
     href: "/standorte/gutenzell-huerbel",
     region: "Raum Ulm / Memmingen",
-    phone: "+49 8234 966590",
+    phone: "+49 8234 9665900",
     isMain: true,
     subLocations: [
       "Ulm",

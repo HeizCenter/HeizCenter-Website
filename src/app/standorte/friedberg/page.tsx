@@ -74,7 +74,7 @@ export default function FriedbergPage() {
         subLocation="Friedberg"
         mainLocation="Bobingen"
         mainLocationHref="/standorte/bobingen"
-        phone="+49 8234 966590"
+        phone="+49 8234 9665900"
         description="Ihr zuverlässiger Partner für Wärmepumpen, Heizung, Sanitär und Klimaanlagen in Friedberg. Schneller Service vom HeizCenter Bobingen für die historische Herzogsstadt."
       />
 

@@ -51,7 +51,7 @@ export default function ErbachPage() {
         longitude={data.longitude}
         serviceCities={data.serviceCities}
       />
-      <LocationHero name="Erbach (Donau)" address="Schlüsselbergstraße 5, 88484 Gutenzell-Hürbel" phone="+49 8234 966590" email="service@heizcenter.de" description="HeizCenter Service für Erbach an der Donau."
+      <LocationHero name="Erbach (Donau)" address="Schlüsselbergstraße 5, 88484 Gutenzell-Hürbel" phone="+49 8234 9665900" email="service@heizcenter.de" description="HeizCenter Service für Erbach an der Donau."
         mainLocation="Gutenzell-Hürbel" />
       <LocationServices services={services} title="Unsere Leistungen in Erbach" />
       <section className="container py-16">

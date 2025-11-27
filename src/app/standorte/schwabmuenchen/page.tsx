@@ -51,7 +51,7 @@ export default function SchwabmuenchenPage() {
         longitude={data.longitude}
         serviceCities={data.serviceCities}
       />
-      <LocationHero name="Schwabmünchen" address="Lechallee 28, 86399 Bobingen" phone="+49 8234 966590" email="service@heizcenter.de" description="HeizCenter Service Schwabmünchen. Wärmepumpen, Heizung, Sanitär."
+      <LocationHero name="Schwabmünchen" address="Lechallee 28, 86399 Bobingen" phone="+49 8234 9665900" email="service@heizcenter.de" description="HeizCenter Service Schwabmünchen. Wärmepumpen, Heizung, Sanitär."
         mainLocation="Bobingen" />
       <LocationServices services={services} title="Unsere Leistungen in Schwabmünchen" />
       <section className="container py-16">

@@ -46,8 +46,8 @@ const services = [
 ];
 
 const locations = [
-  { name: "Bobingen", phone: "+49 8234 966590" },
-  { name: "Gutenzell-Hürbel", phone: "+49 8234 966590" },
+  { name: "Bobingen", phone: "+49 8234 9665900" },
+  { name: "Gutenzell-Hürbel", phone: "+49 8234 9665900" },
 ];
 
 const stats = [

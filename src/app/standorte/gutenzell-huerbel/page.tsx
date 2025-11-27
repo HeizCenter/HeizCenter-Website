@@ -112,7 +112,7 @@ export default function GutenzellHuerbelPage() {
       <LocationHero
         name="Gutenzell-Hürbel"
         address="Schlüsselbergstraße 5, 88484 Gutenzell-Hürbel"
-        phone="+49 8234 966590"
+        phone="+49 8234 9665900"
         email="service@heizcenter.de"
         description="Unser Hauptstandort in Gutenzell-Hürbel - Ihr zuverlässiger Partner für Wärmepumpen, Heizung, Sanitär und Klimaanlagen in der Region Ulm und Memmingen. Über 20 Jahre Erfahrung, schneller Service und faire Preise."
       />

@@ -107,7 +107,7 @@ export default function KaufbeurenPage() {
       <LocationHero
         name="Kaufbeuren"
         address="Schlüsselbergstraße 5, 88484 Gutenzell-Hürbel"
-        phone="+49 8234 966590"
+        phone="+49 8234 9665900"
         email="service@heizcenter.de"
         description="HeizCenter Service für Kaufbeuren und das Ostallgäu. Schneller Service aus Memmingen für Wärmepumpen, Heizung, Sanitär und Klimaanlagen. Professionelle Beratung und Installation."
         mainLocation="Gutenzell-Hürbel"

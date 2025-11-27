@@ -107,7 +107,7 @@ export default function AugsburgPage() {
       <LocationHero
         name="Augsburg"
         address="Lechallee 28, 86399 Bobingen"
-        phone="+49 8234 966590"
+        phone="+49 8234 9665900"
         email="service@heizcenter.de"
         description="Ihr zuverlässiger Partner für Wärmepumpen, Heizung, Sanitär und Klimaanlagen in Augsburg und Umgebung. Über 20 Jahre Erfahrung, schneller Service und faire Preise."
         mainLocation="Bobingen"

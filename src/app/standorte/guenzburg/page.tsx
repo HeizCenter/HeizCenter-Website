@@ -51,7 +51,7 @@ export default function GuenzbergPage() {
         longitude={data.longitude}
         serviceCities={data.serviceCities}
       />
-      <LocationHero name="Günzburg" address="Schlüsselbergstraße 5, 88484 Gutenzell-Hürbel" phone="+49 8234 966590" email="service@heizcenter.de" description="HeizCenter Service für Günzburg und Umgebung. Wärmepumpen, Heizung, Sanitär und Klimaanlagen mit professioneller Beratung."
+      <LocationHero name="Günzburg" address="Schlüsselbergstraße 5, 88484 Gutenzell-Hürbel" phone="+49 8234 9665900" email="service@heizcenter.de" description="HeizCenter Service für Günzburg und Umgebung. Wärmepumpen, Heizung, Sanitär und Klimaanlagen mit professioneller Beratung."
         mainLocation="Gutenzell-Hürbel" />
       <LocationServices services={services} title="Unsere Leistungen in Günzburg" />
       <section className="container py-16">

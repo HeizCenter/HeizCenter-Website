@@ -74,7 +74,7 @@ export default function GersthofenPage() {
         subLocation="Gersthofen"
         mainLocation="Bobingen"
         mainLocationHref="/standorte/bobingen"
-        phone="+49 8234 966590"
+        phone="+49 8234 9665900"
         description="Ihr zuverlässiger Partner für Wärmepumpen, Heizung, Sanitär und Klimaanlagen in Gersthofen. Schneller Service vom HeizCenter Bobingen - in 20 Minuten vor Ort."
       />
 

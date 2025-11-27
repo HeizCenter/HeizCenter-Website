@@ -51,7 +51,7 @@ export default function AichachPage() {
         longitude={data.longitude}
         serviceCities={data.serviceCities}
       />
-      <LocationHero name="Aichach" address="Lechallee 28, 86399 Bobingen" phone="+49 8234 966590" email="service@heizcenter.de" description="HeizCenter Service Aichach. Wärmepumpen, Heizung, Sanitär mit schnellem Service."
+      <LocationHero name="Aichach" address="Lechallee 28, 86399 Bobingen" phone="+49 8234 9665900" email="service@heizcenter.de" description="HeizCenter Service Aichach. Wärmepumpen, Heizung, Sanitär mit schnellem Service."
         mainLocation="Bobingen" />
       <LocationServices services={services} title="Unsere Leistungen in Aichach" />
       <section className="container py-16">

@@ -107,7 +107,7 @@ export default function MemmingenPage() {
       <LocationHero
         name="Memmingen"
         address="Schlüsselbergstraße 5, 88484 Gutenzell-Hürbel"
-        phone="+49 8234 966590"
+        phone="+49 8234 9665900"
         email="service@heizcenter.de"
         description="Ihr zuverlässiger Partner für Wärmepumpen, Heizung, Sanitär und Klimaanlagen in Memmingen und Unterallgäu. Über 20 Jahre Erfahrung, schneller Service und faire Preise."
         mainLocation="Gutenzell-Hürbel"

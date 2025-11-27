@@ -51,7 +51,7 @@ export default function LeutkírchPage() {
         longitude={data.longitude}
         serviceCities={data.serviceCities}
       />
-      <LocationHero name="Leutkirch im Allgäu" address="Schlüsselbergstraße 5, 88484 Gutenzell-Hürbel" phone="+49 8234 966590" email="service@heizcenter.de" description="HeizCenter Service für Leutkirch im Allgäu."
+      <LocationHero name="Leutkirch im Allgäu" address="Schlüsselbergstraße 5, 88484 Gutenzell-Hürbel" phone="+49 8234 9665900" email="service@heizcenter.de" description="HeizCenter Service für Leutkirch im Allgäu."
         mainLocation="Gutenzell-Hürbel" />
       <LocationServices services={services} title="Unsere Leistungen in Leutkirch" />
       <section className="container py-16">

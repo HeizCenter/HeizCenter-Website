@@ -74,7 +74,7 @@ export default function StadtbergenPage() {
         subLocation="Stadtbergen"
         mainLocation="Bobingen"
         mainLocationHref="/standorte/bobingen"
-        phone="+49 8234 966590"
+        phone="+49 8234 9665900"
         description="Ihr zuverlässiger Partner für Wärmepumpen, Heizung, Sanitär und Klimaanlagen in Stadtbergen. Schneller Service vom HeizCenter Bobingen - direkt nebenan."
       />
 
