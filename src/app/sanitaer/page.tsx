@@ -70,7 +70,7 @@ const features = [
   {
     title: "Barrierefrei",
     description:
-      "Barrierefreie Bäder nach DIN 18040. Bodengleiche Duschen, unterfahrbare Waschtische und mehr. Zuschüsse bis 4.000€ möglich.",
+      "Barrierefreie Bäder nach DIN 18040. Bodengleiche Duschen, unterfahrbare Waschtische und mehr. KfW-Zuschuss bis 6.250€ möglich.",
     icon: Shield,
   },
   {
@@ -100,7 +100,7 @@ const faqs: FAQItem[] = [
   {
     question: "Welche Förderung gibt es für barrierefreie Bäder?",
     answer:
-      "Die KfW fördert barrierefreie Umbauten mit bis zu 4.000€ Zuschuss (KfW 455-B). Auch die Pflegekasse übernimmt bis zu 4.000€ bei anerkanntem Pflegegrad. In Summe sind also bis zu 8.000€ Zuschuss möglich. Wir beraten Sie gerne zu den Fördermöglichkeiten.",
+      "Die KfW fördert barrierefreie Umbauten mit bis zu 6.250€ Zuschuss (KfW 455-B: 12,5% von max. 50.000€). Auch die Pflegekasse übernimmt bis zu 4.000€ bei anerkanntem Pflegegrad. In Summe sind also bis zu 10.250€ Zuschuss möglich. Wir beraten Sie gerne zu den Fördermöglichkeiten.",
   },
   {
     question: "Was gehört zu einer Badsanierung?",

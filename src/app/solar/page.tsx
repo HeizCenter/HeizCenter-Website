@@ -21,9 +21,9 @@ import { FAQSchema } from "@/components/schema/faq-schema";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
 
 export const metadata: Metadata = {
-  title: "Solarthermie Augsburg, Ulm & Memmingen - Bis 70% BAFA Förderung | HeizCenter",
+  title: "Solarthermie Augsburg, Ulm & Memmingen - Bis 70% KfW Förderung | HeizCenter",
   description:
-    "Solarthermie-Anlagen vom Experten in Augsburg, Ulm und Memmingen. Bis zu 70% BAFA-Förderung. Warmwasser & Heizungsunterstützung. Kostenlose Beratung.",
+    "Solarthermie-Anlagen vom Experten in Augsburg, Ulm und Memmingen. Bis zu 70% staatliche Förderung. Warmwasser & Heizungsunterstützung. Kostenlose Beratung.",
   keywords: [
     "Solarthermie",
     "Solarthermie Augsburg",
@@ -33,19 +33,19 @@ export const metadata: Metadata = {
     "Solarthermie Kosten",
     "Warmwasser Solar",
     "Heizungsunterstützung Solar",
-    "BAFA Förderung",
+    "KfW Förderung",
   ],
   openGraph: {
     title: "Solarthermie Installation | HeizCenter",
     description:
-      "Moderne Solarthermie-Anlagen mit bis zu 70% BAFA-Förderung. Professionelle Installation für Warmwasser und Heizung.",
+      "Moderne Solarthermie-Anlagen mit bis zu 70% staatlicher Förderung. Professionelle Installation für Warmwasser und Heizung.",
   },
 };
 
 export const dynamic = 'force-dynamic';
 
 const benefits = [
-  "Bis zu 70% BAFA-Förderung für Ihre Solarthermie-Anlage",
+  "Bis zu 70% staatliche Förderung für Ihre Solarthermie-Anlage (bis Ende 2028)",
   "60% Ihres Warmwasserbedarfs durch kostenlose Sonnenenergie",
   "Bis zu 30% Heizkosten sparen mit Heizungsunterstützung",
   "Umweltfreundlich und CO2-neutral Warmwasser bereiten",
@@ -63,7 +63,7 @@ const features = [
   {
     title: "Bis zu 70% Förderung",
     description:
-      "Profitieren Sie von der BAFA-Förderung: 30% Basisförderung + 20% Klimageschwindigkeitsbonus + 30% Einkommensbonus. Maximal 70% Zuschuss möglich.",
+      "Profitieren Sie von der KfW-Förderung: 30% Basisförderung + 20% Klimageschwindigkeitsbonus + 30% Einkommensbonus. Maximal 70% Zuschuss möglich (bis Ende 2028).",
     icon: Award,
   },
   {
@@ -99,14 +99,14 @@ const faqs: FAQItem[] = [
       "Solarthermie wandelt Sonnenlicht direkt in Wärmeenergie um. Solarkollektoren auf Ihrem Dach erwärmen eine Wärmeträgerflüssigkeit, die die Wärme an einen Speicher überträgt. Von dort wird die Wärme zur Warmwasserbereitung und/oder Heizungsunterstützung genutzt. Im Gegensatz zu Photovoltaik (die Strom erzeugt) produziert Solarthermie direkt Wärme mit 60-80% Wirkungsgrad.",
   },
   {
-    question: "Wie hoch ist die BAFA-Förderung für Solarthermie 2025?",
+    question: "Wie hoch ist die KfW-Förderung für Solarthermie 2025?",
     answer:
-      "Die BAFA fördert Solarthermie-Anlagen über die Bundesförderung für effiziente Gebäude (BEG). Basisförderung: 30% der Investitionskosten. Klimageschwindigkeitsbonus: +20% beim Austausch alter Öl- oder Gasheizungen. Einkommensbonus: +30% bei zu versteuerndem Haushaltseinkommen unter 40.000€. Maximal 70% Förderung möglich. Wir unterstützen Sie bei der Antragstellung.",
+      "Die KfW fördert Solarthermie-Anlagen über die Bundesförderung für effiziente Gebäude (BEG). Basisförderung: 30% der Investitionskosten. Klimageschwindigkeitsbonus: +20% beim Austausch alter Öl- oder Gasheizungen (in voller Höhe bis Ende 2028). Einkommensbonus: +30% bei zu versteuerndem Haushaltseinkommen unter 40.000€. Maximal 70% Förderung möglich. Wir unterstützen Sie bei der Antragstellung.",
   },
   {
     question: "Was kostet eine Solarthermie-Anlage?",
     answer:
-      "Warmwasser-System (4-Personen-Haushalt): 5.000-10.000€ inklusive Installation. Nach 30% BAFA-Förderung: 3.500-7.000€. Kombi-System mit Heizungsunterstützung: 8.000-18.000€ inklusive Installation. Nach maximaler 70% Förderung: 2.400-5.400€. Die Kosten hängen von Kollektorfläche, Speichergröße und Dachbeschaffenheit ab.",
+      "Warmwasser-System (4-Personen-Haushalt): 5.000-10.000€ inklusive Installation. Nach 30% KfW-Förderung: 3.500-7.000€. Kombi-System mit Heizungsunterstützung: 8.000-18.000€ inklusive Installation. Nach maximaler 70% Förderung: 2.400-5.400€. Die Kosten hängen von Kollektorfläche, Speichergröße und Dachbeschaffenheit ab.",
   },
   {
     question: "Wie viel Warmwasser kann ich mit Solarthermie erzeugen?",
@@ -116,7 +116,7 @@ const faqs: FAQItem[] = [
   {
     question: "Lohnt sich Solarthermie mit Heizungsunterstützung?",
     answer:
-      "Ja, besonders in der Übergangszeit (Frühling/Herbst) entlastet eine Kombi-Anlage Ihre Heizung deutlich. Sie deckt 20-30% Ihres jährlichen Heizbedarfs und 60-70% des Warmwassers. Für ein Einfamilienhaus (150 m²) benötigen Sie 12-15 m² Kollektorfläche. Mit 70% BAFA-Förderung amortisiert sich die Anlage in 6-10 Jahren bei einer Lebensdauer von 30-40 Jahren.",
+      "Ja, besonders in der Übergangszeit (Frühling/Herbst) entlastet eine Kombi-Anlage Ihre Heizung deutlich. Sie deckt 20-30% Ihres jährlichen Heizbedarfs und 60-70% des Warmwassers. Für ein Einfamilienhaus (150 m²) benötigen Sie 12-15 m² Kollektorfläche. Mit 70% KfW-Förderung amortisiert sich die Anlage in 6-10 Jahren bei einer Lebensdauer von 30-40 Jahren.",
   },
   {
     question: "Solarthermie oder Photovoltaik - was ist besser?",
@@ -126,7 +126,7 @@ const faqs: FAQItem[] = [
   {
     question: "Kann ich Solarthermie mit einer Wärmepumpe kombinieren?",
     answer:
-      "Ja, diese Kombination ist sehr effizient! Die Solarthermie übernimmt die Warmwasserbereitung im Sommer komplett und unterstützt im Frühling/Herbst die Heizung. Dadurch reduziert sich der Stromverbrauch Ihrer Wärmepumpe erheblich. Beide Systeme sind separat BAFA-förderfähig. Wir planen gerne eine optimale Hybrid-Lösung für Sie.",
+      "Ja, diese Kombination ist sehr effizient! Die Solarthermie übernimmt die Warmwasserbereitung im Sommer komplett und unterstützt im Frühling/Herbst die Heizung. Dadurch reduziert sich der Stromverbrauch Ihrer Wärmepumpe erheblich. Beide Systeme sind separat KfW-förderfähig. Wir planen gerne eine optimale Hybrid-Lösung für Sie.",
   },
   {
     question: "Wie lange hält eine Solarthermie-Anlage?",
@@ -161,10 +161,10 @@ export default function SolarPage() {
 
       <ServiceHero
         title="Solarthermie in Augsburg, Ulm & Memmingen"
-        description="Nutzen Sie die Kraft der Sonne! Mit einer Solarthermie-Anlage senken Sie Ihre Heizkosten um bis zu 30% und profitieren von bis zu 70% BAFA-Förderung. Kostenlose Sonnenenergie für Warmwasser und Heizung."
+        description="Nutzen Sie die Kraft der Sonne! Mit einer Solarthermie-Anlage senken Sie Ihre Heizkosten um bis zu 30% und profitieren von bis zu 70% KfW-Förderung. Kostenlose Sonnenenergie für Warmwasser und Heizung."
         benefits={benefits}
         icon={Sun}
-        badge="Bis zu 70% BAFA-Förderung"
+        badge="Bis zu 70% KfW-Förderung"
         imageSrc="/images/Solaranlage.webp"
       />
 
@@ -325,7 +325,7 @@ export default function SolarPage() {
                   </li>
                   <li className="flex items-start">
                     <span className="mr-2 text-green-600">✓</span>
-                    <span>Kombinierte BAFA-Förderung</span>
+                    <span>Kombinierte KfW-Förderung</span>
                   </li>
                 </ul>
 
@@ -386,7 +386,7 @@ export default function SolarPage() {
                   <td className="border border-slate-300 p-4">8.000 - 15.000 €</td>
                 </tr>
                 <tr className="bg-slate-50">
-                  <td className="border border-slate-300 p-4 font-medium">BAFA-Förderung</td>
+                  <td className="border border-slate-300 p-4 font-medium">KfW-Förderung</td>
                   <td className="border border-slate-300 p-4"><span className="font-semibold text-green-600">Bis zu 70%</span></td>
                   <td className="border border-slate-300 p-4">Steuerbefreit, keine direkte Förderung</td>
                 </tr>
@@ -415,19 +415,19 @@ export default function SolarPage() {
             <p className="text-slate-700">
               Die ideale Lösung: <span className="font-semibold">Solarthermie für Warmwasser/Heizung + Wärmepumpe</span> als Hauptheizung.
               Die Solarthermie übernimmt im Sommer komplett das Warmwasser und unterstützt in Übergangszeiten die Heizung.
-              Dadurch sinkt der Stromverbrauch Ihrer Wärmepumpe erheblich. Beide Systeme sind separat BAFA-förderfähig!
+              Dadurch sinkt der Stromverbrauch Ihrer Wärmepumpe erheblich. Beide Systeme sind separat KfW-förderfähig!
             </p>
           </div>
         </div>
       </section>
 
-      {/* BAFA Förderung 2025 Section */}
+      {/* KfW Förderung 2025 Section */}
       <section className="bg-gradient-to-br from-primary to-primary/80 py-16 text-white">
         <div className="container">
           <div className="mb-12 text-center">
-            <h2 className="mb-4 text-3xl font-bold">BAFA-Förderung 2025: Bis zu 70% Zuschuss</h2>
+            <h2 className="mb-4 text-3xl font-bold">KfW-Förderung 2025: Bis zu 70% Zuschuss</h2>
             <p className="mx-auto max-w-2xl text-lg text-white/90">
-              Nutzen Sie die staatliche Förderung für Ihre Solarthermie-Anlage
+              Nutzen Sie die staatliche Förderung für Ihre Solarthermie-Anlage (Klimabonus in voller Höhe bis Ende 2028)
             </p>
           </div>
 
@@ -557,7 +557,7 @@ export default function SolarPage() {
 
       <CTASection
         title="Bereit für kostenlose Sonnenenergie?"
-        description="Lassen Sie sich jetzt kostenlos beraten und profitieren Sie von bis zu 70% BAFA-Förderung für Ihre Solarthermie-Anlage."
+        description="Lassen Sie sich jetzt kostenlos beraten und profitieren Sie von bis zu 70% KfW-Förderung für Ihre Solarthermie-Anlage."
       />
     </>
   );

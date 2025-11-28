@@ -20,9 +20,9 @@ import { FAQSchema } from "@/components/schema/faq-schema";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
 
 export const metadata: Metadata = {
-  title: "Wärmepumpe Augsburg, Ulm & Memmingen - Bis 40% Förderung | HeizCenter",
+  title: "Wärmepumpe Augsburg, Ulm & Memmingen - Bis 70% Förderung | HeizCenter",
   description:
-    "Moderne Wärmepumpen vom Experten in Augsburg, Ulm und Memmingen. Bis zu 70% Energiekosten sparen. BEG-Förderung bis 40%. Kostenlose Beratung.",
+    "Moderne Wärmepumpen vom Experten in Augsburg, Ulm und Memmingen. Bis zu 70% Energiekosten sparen. BEG-Förderung bis 70%. Kostenlose Beratung.",
   keywords: [
     "Wärmepumpe",
     "Wärmepumpe Augsburg",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Wärmepumpe Installation | HeizCenter",
     description:
-      "Moderne Wärmepumpen mit bis zu 40% Förderung. Professionelle Installation und Wartung.",
+      "Moderne Wärmepumpen mit bis zu 70% Förderung. Professionelle Installation und Wartung.",
   },
 };
 
@@ -43,7 +43,7 @@ export const dynamic = 'force-dynamic';
 
 const benefits = [
   "Bis zu 70% niedrigere Energiekosten im Vergleich zur Gasheizung",
-  "BEG-Förderung bis zu 40% der Investitionskosten",
+  "BEG-Förderung bis zu 70% der Investitionskosten (bis Ende 2028)",
   "Umweltfreundlich und CO2-neutral heizen",
   "Heizen und Kühlen mit einem System",
   "Unabhängig von Öl und Gas",
@@ -66,7 +66,7 @@ const features = [
   {
     title: "Staatliche Förderung",
     description:
-      "Profitieren Sie von der BEG-Förderung: bis zu 40% Zuschuss für den Heizungstausch. Wir unterstützen Sie bei der Antragstellung.",
+      "Profitieren Sie von der BEG-Förderung: bis zu 70% Zuschuss für den Heizungstausch (30% Basis + 20% Klimabonus + 20% Einkommensbonus). Wir unterstützen Sie bei der Antragstellung.",
     icon: Award,
   },
   {
@@ -93,12 +93,12 @@ const faqs: FAQItem[] = [
   {
     question: "Wie hoch sind die Kosten für eine Wärmepumpe?",
     answer:
-      "Die Kosten für eine Wärmepumpe liegen je nach System zwischen 20.000€ und 35.000€ inklusive Installation. Luft-Wasser-Wärmepumpen sind günstiger (ca. 20.000-25.000€), Erdwärmepumpen etwas teurer (ca. 25.000-35.000€). Dank BEG-Förderung von bis zu 40% reduzieren sich Ihre Nettokosten erheblich. Wir erstellen Ihnen ein individuelles Angebot.",
+      "Die Kosten für eine Wärmepumpe liegen je nach System zwischen 20.000€ und 35.000€ inklusive Installation. Luft-Wasser-Wärmepumpen sind günstiger (ca. 20.000-25.000€), Erdwärmepumpen etwas teurer (ca. 25.000-35.000€). Dank BEG-Förderung von bis zu 70% reduzieren sich Ihre Nettokosten erheblich. Wir erstellen Ihnen ein individuelles Angebot.",
   },
   {
     question: "Welche Förderung gibt es für Wärmepumpen?",
     answer:
-      "Die Bundesförderung für effiziente Gebäude (BEG) fördert Wärmepumpen mit bis zu 40% der Investitionskosten. Die Basisförderung beträgt 30%, weitere 5% gibt es beim Austausch einer alten Öl-, Gas- oder Nachtspeicherheizung, und zusätzliche 5% wenn Ihr Haushaltseinkommen unter 40.000€ liegt. Wir unterstützen Sie gerne bei der Antragstellung.",
+      "Die Bundesförderung für effiziente Gebäude (BEG) fördert Wärmepumpen mit bis zu 70% der Investitionskosten. Die Basisförderung beträgt 30%, weitere 20% gibt es beim Austausch einer alten Öl-, Gas- oder Nachtspeicherheizung (Klimageschwindigkeitsbonus - in voller Höhe bis Ende 2028), und zusätzliche 30% wenn Ihr Haushaltseinkommen unter 40.000€ liegt. Wir unterstützen Sie gerne bei der Antragstellung.",
   },
   {
     question: "Eignet sich eine Wärmepumpe für mein Altbau?",
@@ -128,7 +128,7 @@ const faqs: FAQItem[] = [
   {
     question: "Wie hoch sind die Betriebskosten?",
     answer:
-      "Wärmepumpen sind im Betrieb sehr günstig. Bei einem durchschnittlichen Einfamilienhaus liegen die Stromkosten bei etwa 800-1.200€ pro Jahr - deutlich weniger als bei Gas oder Öl. Dank Wärmepumpentarif und hoher Jahresarbeitszahl (JAZ 4-5) heizen Sie äußerst kostengünstig. Die Investition amortisiert sich nach 10-15 Jahren.",
+      "Wärmepumpen sind im Betrieb sehr günstig. Bei einem durchschnittlichen Einfamilienhaus liegen die Stromkosten bei etwa 800-1.200€ pro Jahr - deutlich weniger als bei Gas oder Öl. Dank Wärmepumpentarif und hoher Jahresarbeitszahl (JAZ 3,5-4,5 bei Luft-Wasser, bis 5,0 bei Sole-Wasser) heizen Sie äußerst kostengünstig. Die Investition amortisiert sich nach 10-15 Jahren.",
   },
 ];
 
@@ -148,10 +148,10 @@ export default function WaermepumpePage() {
 
       <ServiceHero
         title="Wärmepumpe in Augsburg, Ulm & Memmingen"
-        description="Zukunftssicher heizen mit erneuerbarer Energie. Profitieren Sie von bis zu 40% staatlicher Förderung und sparen Sie bis zu 70% Ihrer Heizkosten."
+        description="Zukunftssicher heizen mit erneuerbarer Energie. Profitieren Sie von bis zu 70% staatlicher Förderung und sparen Sie bis zu 70% Ihrer Heizkosten."
         benefits={benefits}
         icon={Zap}
-        badge="Bis zu 40% Förderung"
+        badge="Bis zu 70% Förderung"
         imageSrc="/images/Waermepumpe.jpeg"
       />
 
@@ -277,9 +277,9 @@ export default function WaermepumpePage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
                 <div className="text-left">
-                  <div className="text-4xl font-bold mb-1">1 kW Strom = 4-5 kW Wärme</div>
+                  <div className="text-4xl font-bold mb-1">1 kW Strom = 3,5-5 kW Wärme</div>
                   <p className="text-white/90 text-lg">
-                    Durch die Nutzung von Umweltwärme erzeugen Wärmepumpen 4-5x mehr Energie als sie verbrauchen
+                    Durch die Nutzung von Umweltwärme erzeugen Wärmepumpen 3,5-5x mehr Energie als sie verbrauchen (JAZ)
                   </p>
                 </div>
               </div>
@@ -349,7 +349,7 @@ export default function WaermepumpePage() {
                 <ul className="space-y-2 text-white/90">
                   <li>✓ Bis zu 30% weniger Stromverbrauch der Wärmepumpe</li>
                   <li>✓ 60% Warmwasser-Deckung durch kostenlose Sonnenenergie</li>
-                  <li>✓ Kombinierte BAFA-Förderung möglich</li>
+                  <li>✓ Kombinierte KfW-Förderung möglich</li>
                   <li>✓ Maximale Energieunabhängigkeit</li>
                 </ul>
               </div>
@@ -359,7 +359,7 @@ export default function WaermepumpePage() {
                   Solarthermie-System: €8.000 - €18.000
                   <br />
                   <span className="text-[#FFCA28] font-semibold">
-                    Nach 70% BAFA-Förderung: nur €2.400 - €5.400
+                    Nach 70% KfW-Förderung: nur €2.400 - €5.400
                   </span>
                 </p>
                 <p className="text-sm text-white/80">

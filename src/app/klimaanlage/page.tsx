@@ -35,7 +35,7 @@ export const dynamic = 'force-dynamic';
 
 const benefits = [
   "Angenehme Raumtemperatur auch an heißen Sommertagen",
-  "Moderne Split-Klimaanlagen mit A+++-Energieeffizienz",
+  "Moderne Split-Klimaanlagen mit höchster Energieeffizienzklasse",
   "Heizen und Kühlen mit einem Gerät",
   "Flüsterleiser Betrieb ab 19 dB(A)",
   "Professionelle Installation durch Kältetechniker",
@@ -52,7 +52,7 @@ const features = [
   {
     title: "Energieeffizient",
     description:
-      "A+++-Geräte mit SEER-Werten bis 8,5. Deutlich effizienter als mobile Klimageräte. Niedrige Betriebskosten.",
+      "Geräte der höchsten Effizienzklasse A mit SEER-Werten bis 8,5. Deutlich effizienter als mobile Klimageräte. Niedrige Betriebskosten.",
     icon: Zap,
   },
   {
@@ -105,7 +105,7 @@ const faqs: FAQItem[] = [
   {
     question: "Wie hoch sind die Stromkosten?",
     answer:
-      "Eine effiziente Split-Klimaanlage (A+++) verbraucht pro Stunde etwa 0,3-0,9 kWh je nach Leistung. Bei 8 Stunden Betrieb am Tag und 90 Sommertagen entstehen Kosten von ca. 70-200€ pro Sommer. Deutlich günstiger als mobile Klimageräte!",
+      "Eine effiziente Split-Klimaanlage (Energieeffizienzklasse A) verbraucht pro Stunde etwa 0,3-0,9 kWh je nach Leistung. Bei 8 Stunden Betrieb am Tag und 90 Sommertagen entstehen Kosten von ca. 70-200€ pro Sommer. Deutlich günstiger als mobile Klimageräte!",
   },
   {
     question: "Wie lange dauert die Installation?",
