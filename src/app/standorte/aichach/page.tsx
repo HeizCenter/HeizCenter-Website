@@ -59,7 +59,7 @@ export default function AichachPage() {
           <h2 className="text-3xl font-bold mb-6">Service in Aichach</h2>
           <p className="text-lg mb-4">Von Augsburg betreuen wir Kunden in Aichach mit vollem Service.</p>
           <h3 className="text-2xl font-bold mb-3">Wärmepumpen</h3>
-          <p className="mb-4">Moderne Wärmepumpen mit Förderung bis 40%.</p>
+          <p className="mb-4">Moderne Wärmepumpen mit Förderung bis 70%.</p>
           <div className="bg-[#0F5B78]/5 p-6 rounded-lg mt-6">
             <p><strong>Abdeckung:</strong> Aichach, Kühbach, Pöttmes, Schiltberg, Inchenhofen</p>
           </div>

@@ -293,7 +293,7 @@ export default function HeizungPage() {
                   🌞 60% Warmwasser-Deckung durch Sonne
                 </p>
                 <p className="font-semibold text-[#0F5B78]">
-                  🎁 Bis zu 70% BAFA-Förderung
+                  🎁 Bis zu 70% KfW-Förderung
                 </p>
               </div>
             </div>

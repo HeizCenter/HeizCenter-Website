@@ -36,7 +36,7 @@ const services: LocationService[] = [
   {
     title: "Wärmepumpe",
     description:
-      "Moderne Wärmepumpen für Augsburg. BEG-Förderung bis 40%. Energieeffizient und umweltfreundlich heizen.",
+      "Moderne Wärmepumpen für Augsburg. BEG-Förderung bis 70%. Energieeffizient und umweltfreundlich heizen.",
     icon: Zap,
     href: "/waermepumpe",
   },
@@ -144,7 +144,7 @@ export default function AugsburgPage() {
           <ul className="list-disc list-inside space-y-2 text-slate-700 mb-6">
             <li>Kostenlose Vor-Ort-Beratung und Wirtschaftlichkeitsberechnung</li>
             <li>Fachgerechte Installation durch zertifizierte Techniker</li>
-            <li>Unterstützung bei BEG-Förderanträgen (bis 40% Zuschuss)</li>
+            <li>Unterstützung bei BEG-Förderanträgen (bis 70% Zuschuss)</li>
             <li>Hydraulischer Abgleich für maximale Effizienz</li>
             <li>Wartung und Kundendienst aus einer Hand</li>
           </ul>

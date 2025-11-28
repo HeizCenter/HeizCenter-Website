@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 const services: LocationService[] = [
   {
     title: "Wärmepumpe",
-    description: "Moderne Wärmepumpen für Bad Wörishofen. BEG-Förderung bis 40%.",
+    description: "Moderne Wärmepumpen für Bad Wörishofen. BEG-Förderung bis 70%.",
     icon: Zap,
     href: "/waermepumpe",
   },
@@ -104,7 +104,7 @@ export default function BadWoerishofenPage() {
           <p className="text-slate-700 mb-6">
             <strong>Wärmepumpen in Bad Wörishofen:</strong> Wir installieren
             Wärmepumpen für Privathaushalte, Hotels und Gewerbebetriebe.
-            BEG-Förderung bis 40% macht den Umstieg attraktiv. Besonders für
+            BEG-Förderung bis 70% macht den Umstieg attraktiv. Besonders für
             Hotels interessant: Wärmepumpen können gleichzeitig heizen, kühlen und
             Warmwasser bereiten. Bei größeren Objekten planen wir Kaskadensysteme
             mit mehreren Wärmepumpen.

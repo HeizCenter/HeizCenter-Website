@@ -441,7 +441,7 @@ export function ServiceSchema({ serviceType }: ServiceSchemaProps) {
     serviceType: "Solarthermie-Installation",
     name: "Solarthermie-Installation & Beratung",
     description:
-      "Professionelle Solarthermie-Anlagen für Warmwasser und Heizungsunterstützung. Bis zu 70% BAFA-Förderung. Installation von Flach- und Vakuumröhrenkollektoren in Augsburg, Ulm und Memmingen.",
+      "Professionelle Solarthermie-Anlagen für Warmwasser und Heizungsunterstützung. Bis zu 70% KfW-Förderung. Installation von Flach- und Vakuumröhrenkollektoren in Augsburg, Ulm und Memmingen.",
     provider: {
       "@type": "PlumbingHeatingContractor",
       name: "HeizCenter GmbH",
@@ -467,7 +467,7 @@ export function ServiceSchema({ serviceType }: ServiceSchemaProps) {
               highPrice: "10000",
               eligibleQuantity: {
                 "@type": "QuantitativeValue",
-                value: "Nach 30% BAFA-Förderung: 3500-7000 EUR",
+                value: "Nach 30% KfW-Förderung: 3500-7000 EUR",
               },
             },
           },
@@ -486,7 +486,7 @@ export function ServiceSchema({ serviceType }: ServiceSchemaProps) {
               highPrice: "18000",
               eligibleQuantity: {
                 "@type": "QuantitativeValue",
-                value: "Nach 70% BAFA-Förderung: 2400-5400 EUR",
+                value: "Nach 70% KfW-Förderung: 2400-5400 EUR",
               },
             },
           },
@@ -543,16 +543,16 @@ export function ServiceSchema({ serviceType }: ServiceSchemaProps) {
             "@type": "Service",
             name: "Hybrid-System (Solarthermie + Wärmepumpe)",
             description:
-              "Optimale Kombination aus Solarthermie und Wärmepumpe. Maximale Energieeffizienz und separate BAFA-Förderung möglich.",
+              "Optimale Kombination aus Solarthermie und Wärmepumpe. Maximale Energieeffizienz und separate KfW-Förderung möglich.",
           },
         },
         {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
-            name: "BAFA-Förderberatung Solarthermie",
+            name: "KfW-Förderberatung Solarthermie",
             description:
-              "Kostenlose Beratung zur BAFA-Förderung. Bis zu 70% Zuschuss: 30% Basis + 20% Klimabonus + 30% Einkommensbonus.",
+              "Kostenlose Beratung zur KfW-Förderung. Bis zu 70% Zuschuss: 30% Basis + 20% Klimabonus + 30% Einkommensbonus.",
           },
         },
       ],

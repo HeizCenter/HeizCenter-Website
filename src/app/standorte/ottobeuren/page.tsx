@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 const services: LocationService[] = [
   {
     title: "Wärmepumpe",
-    description: "Moderne Wärmepumpen für Ottobeuren. BEG-Förderung bis 40%.",
+    description: "Moderne Wärmepumpen für Ottobeuren. BEG-Förderung bis 70%.",
     icon: Zap,
     href: "/waermepumpe",
   },
@@ -109,7 +109,7 @@ export default function OttobeurenPage() {
             größeren Grundstücken empfehlen wir Erdwärmepumpen mit
             Erdkollektoren oder Erdsonden - die hohe Effizienz amortisiert die
             Investition schnell. Für kleinere Grundstücke sind moderne
-            Luft-Wasser-Wärmepumpen die beste Wahl. BEG-Förderung bis 40% macht
+            Luft-Wasser-Wärmepumpen die beste Wahl. BEG-Förderung bis 70% macht
             den Umstieg besonders attraktiv. Auch in historischen Gebäuden im
             Ortskern können Wärmepumpen mit der richtigen Planung installiert
             werden.

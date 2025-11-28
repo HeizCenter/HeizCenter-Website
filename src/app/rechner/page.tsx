@@ -176,7 +176,7 @@ export default function RechnerPage() {
           <p className="text-sm text-slate-500 text-center">
             <strong>Hinweis:</strong> Die berechneten Kosten sind Richtwerte und können je nach individuellen Gegebenheiten variieren.
             Für ein verbindliches Angebot kontaktieren Sie uns bitte direkt. Förderinformationen ohne Gewähr,
-            bitte prüfen Sie die aktuellen Förderbedingungen beim BAFA.
+            bitte prüfen Sie die aktuellen Förderbedingungen bei der KfW.
           </p>
         </div>
       </section>

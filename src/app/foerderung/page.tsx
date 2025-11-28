@@ -44,7 +44,7 @@ export default function FoerderungPage() {
                 <CardTitle>Wärmepumpe</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="text-4xl font-bold text-[#0F5B78] mb-4">bis 40%</div>
+                <div className="text-4xl font-bold text-[#0F5B78] mb-4">bis 70%</div>
                 <ul className="space-y-2 text-slate-600">
                   <li>✓ Grundförderung: 25%</li>
                   <li>✓ Geschwindigkeitsbonus: +20%</li>

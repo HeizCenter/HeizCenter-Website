@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 const services: LocationService[] = [
   {
     title: "Wärmepumpe",
-    description: "Moderne Wärmepumpen für Gersthofen. BEG-Förderung bis 40%.",
+    description: "Moderne Wärmepumpen für Gersthofen. BEG-Förderung bis 70%.",
     icon: Zap,
     href: "/waermepumpe",
   },
@@ -106,7 +106,7 @@ export default function GersthofenPage() {
             <strong>Wärmepumpen-Expertise in Gersthofen:</strong> Wir haben
             Erfahrung mit der Installation von Wärmepumpen in gewerblichen
             Objekten (Bürogebäude, Werkstätten, Lagerhallen) und privaten
-            Wohnhäusern. BEG-Förderung bis 40% macht den Umstieg attraktiv - auch
+            Wohnhäusern. BEG-Förderung bis 70% macht den Umstieg attraktiv - auch
             für Unternehmen. Bei größeren Objekten beraten wir zu
             Multi-Split-Systemen und Kaskadenlösungen.
           </p>

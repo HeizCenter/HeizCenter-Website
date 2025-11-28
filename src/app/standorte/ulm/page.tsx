@@ -36,7 +36,7 @@ const services: LocationService[] = [
   {
     title: "Wärmepumpe",
     description:
-      "Moderne Wärmepumpen für Ulm und Neu-Ulm. BEG-Förderung bis 40%. Energieeffizient heizen.",
+      "Moderne Wärmepumpen für Ulm und Neu-Ulm. BEG-Förderung bis 70%. Energieeffizient heizen.",
     icon: Zap,
     href: "/waermepumpe",
   },

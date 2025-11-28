@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 const services: LocationService[] = [
   {
     title: "Wärmepumpe",
-    description: "Moderne Wärmepumpen für Königsbrunn. BEG-Förderung bis 40%.",
+    description: "Moderne Wärmepumpen für Königsbrunn. BEG-Förderung bis 70%.",
     icon: Zap,
     href: "/waermepumpe",
   },

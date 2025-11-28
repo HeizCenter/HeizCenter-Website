@@ -36,7 +36,7 @@ const services: LocationService[] = [
   {
     title: "Wärmepumpe",
     description:
-      "Moderne Wärmepumpen für Memmingen und Unterallgäu. BEG-Förderung bis 40%. Effizient heizen.",
+      "Moderne Wärmepumpen für Memmingen und Unterallgäu. BEG-Förderung bis 70%. Effizient heizen.",
     icon: Zap,
     href: "/waermepumpe",
   },
@@ -147,7 +147,7 @@ export default function MemmingenPage() {
             <li>Luft-Wasser-Wärmepumpen: Ideal für Memminger Klimabedingungen</li>
             <li>Erdwärmepumpen: Perfekt bei großen Grundstücken im Allgäu</li>
             <li>Grundwasser-Wärmepumpen: Höchste Effizienz (mit Genehmigung)</li>
-            <li>BEG-Förderung bis 40%: Wir helfen bei der Antragstellung</li>
+            <li>BEG-Förderung bis 70%: Wir helfen bei der Antragstellung</li>
             <li>Kombination mit bestehenden Heizsystemen (Hybrid)</li>
           </ul>
           <p className="text-slate-700 mb-6">

@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 const services: LocationService[] = [
   {
     title: "Wärmepumpe",
-    description: "Moderne Wärmepumpen für Mindelheim. BEG-Förderung bis 40%.",
+    description: "Moderne Wärmepumpen für Mindelheim. BEG-Förderung bis 70%.",
     icon: Zap,
     href: "/waermepumpe",
   },
@@ -106,7 +106,7 @@ export default function MindelheimPage() {
             empfehlen wir Luft-Wasser-Wärmepumpen mit hoher Effizienz. Bei größeren
             Grundstücken bieten sich Erdwärmepumpen an. In der Altstadt planen wir
             Wärmepumpen mit Innenaufstellung, um die historischen Fassaden zu
-            erhalten. BEG-Förderung bis 40% macht den Umstieg attraktiv. Wir
+            erhalten. BEG-Förderung bis 70% macht den Umstieg attraktiv. Wir
             beraten Sie kostenlos zur optimalen Lösung für Ihr Gebäude.
           </p>
 
