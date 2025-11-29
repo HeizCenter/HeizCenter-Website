@@ -59,7 +59,7 @@ export default function KrumbachPage() {
           <h2 className="text-3xl font-bold mb-6">HeizCenter in Krumbach</h2>
           <p className="text-lg mb-6">Service für Krumbach und die Umgebung mit allen Leistungen rund um Heizung und Sanitär.</p>
           <h3 className="text-2xl font-bold mb-4">Wärmepumpen Krumbach</h3>
-          <p>Installation moderner Wärmepumpen mit bis zu 40% Förderung. Energieeffizient und umweltfreundlich.</p>
+          <p>Installation moderner Wärmepumpen mit bis zu 70% Förderung. Energieeffizient und umweltfreundlich.</p>
           <div className="bg-[#0F5B78]/5 p-6 rounded-lg mt-8">
             <p className="font-bold">Service-Radius: Krumbach, Breitenthal, Waltenhausen, Neuburg a.d. Kammel</p>
           </div>

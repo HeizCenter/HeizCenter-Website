@@ -149,7 +149,7 @@ export default function AugsburgPage() {
             <li>Wartung und Kundendienst aus einer Hand</li>
           </ul>
           <p className="text-slate-700 mb-6">
-            Dank der staatlichen BEG-Förderung von bis zu 40% wird der Umstieg
+            Dank der staatlichen BEG-Förderung von bis zu 70% wird der Umstieg
             auf eine Wärmepumpe in Augsburg besonders attraktiv. Wir helfen
             Ihnen bei der Antragstellung und sorgen dafür, dass Sie alle
             verfügbaren Förderungen optimal nutzen können.

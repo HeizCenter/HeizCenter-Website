@@ -427,7 +427,7 @@ export default function SolarPage() {
           <div className="mb-12 text-center">
             <h2 className="mb-4 text-3xl font-bold">KfW-Förderung 2025: Bis zu 70% Zuschuss</h2>
             <p className="mx-auto max-w-2xl text-lg text-white/90">
-              Nutzen Sie die staatliche Förderung für Ihre Solarthermie-Anlage (Klimabonus in voller Höhe bis Ende 2028)
+              Nutzen Sie die staatliche Förderung für Ihre Solarthermie-Anlage (Geschwindigkeitsbonus in voller Höhe bis Ende 2028)
             </p>
           </div>
 

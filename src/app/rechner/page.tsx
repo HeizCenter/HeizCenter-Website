@@ -135,7 +135,7 @@ export default function RechnerPage() {
               </div>
             </div>
             <p className="text-sm text-green-700">
-              <strong>Hinweis:</strong> Der Rechner berücksichtigt die Standard-BEG-Förderung von 40% (Grundförderung + Geschwindigkeitsbonus).
+              <strong>Hinweis:</strong> Der Rechner berücksichtigt die Standard-BEG-Förderung von 50% (30% Grundförderung + 20% Geschwindigkeitsbonus).
               Mit Einkommensbonus sind bis zu 70% möglich. Wir beraten Sie gerne zu allen Fördermöglichkeiten.
             </p>
           </div>

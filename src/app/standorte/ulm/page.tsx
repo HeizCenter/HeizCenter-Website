@@ -141,7 +141,7 @@ export default function UlmPage() {
           <ul className="list-disc list-inside space-y-2 text-slate-700 mb-6">
             <li>Spezialisierung auf Luft-Wasser-Wärmepumpen für Ulmer Stadtklima</li>
             <li>Erdwärmepumpen mit behördlicher Genehmigung</li>
-            <li>BEG-Förderberatung: Bis zu 40% staatlicher Zuschuss</li>
+            <li>BEG-Förderberatung: Bis zu 70% staatlicher Zuschuss</li>
             <li>Kombination mit Photovoltaik für maximale Unabhängigkeit</li>
             <li>Wartungsverträge für dauerhaft effizienten Betrieb</li>
           </ul>

@@ -180,7 +180,7 @@ export default function MindelheimPage() {
                 <p className="text-slate-700">Projekte in historischen Gebäuden</p>
               </div>
               <div className="bg-white p-6 rounded-lg text-center">
-                <div className="text-4xl font-bold text-[#0F5B78] mb-2">40%</div>
+                <div className="text-4xl font-bold text-[#0F5B78] mb-2">70%</div>
                 <p className="text-slate-700">BEG-Förderung für neue Heizungen</p>
               </div>
             </div>

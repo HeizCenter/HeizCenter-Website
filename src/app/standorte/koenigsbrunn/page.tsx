@@ -104,7 +104,7 @@ export default function KoenigsbrunnPage() {
             <strong>Wärmepumpen-Installation in Königsbrunn:</strong> Wir
             installieren moderne Luft-Wasser-Wärmepumpen, die perfekt zu den
             Neubaustandards in Königsbrunn passen. Dank BEG-Förderung von bis zu
-            40% wird die Investition besonders attraktiv. Bei größeren Grundstücken
+            70% wird die Investition besonders attraktiv. Bei größeren Grundstücken
             bieten sich auch Erdwärmepumpen an - wir beraten Sie kostenlos.
           </p>
 

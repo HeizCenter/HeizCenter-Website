@@ -105,7 +105,7 @@ export default function LaupheimPage() {
             <strong>Wärmepumpen-Expertise für Laupheim:</strong> Wir installieren
             Luft-Wasser-Wärmepumpen für einfache Installation und
             Erdwärmepumpen für maximale Effizienz bei größeren Grundstücken.
-            BEG-Förderung von bis zu 40% reduziert die Investitionskosten
+            BEG-Förderung von bis zu 70% reduziert die Investitionskosten
             erheblich. Auch für Gewerbeobjekte in Laupheim bieten wir
             maßgeschneiderte Wärmepumpen-Lösungen an.
           </p>

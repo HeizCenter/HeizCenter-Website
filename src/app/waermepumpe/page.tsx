@@ -66,7 +66,7 @@ const features = [
   {
     title: "Staatliche Förderung",
     description:
-      "Profitieren Sie von der BEG-Förderung: bis zu 70% Zuschuss für den Heizungstausch (30% Basis + 20% Klimabonus + 30% Einkommensbonus). Wir unterstützen Sie bei der Antragstellung.",
+      "Profitieren Sie von der BEG-Förderung: bis zu 70% Zuschuss für den Heizungstausch (30% Basis + 20% Geschwindigkeitsbonus + 30% Einkommensbonus). Wir unterstützen Sie bei der Antragstellung.",
     icon: Award,
   },
   {

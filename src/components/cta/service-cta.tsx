@@ -9,8 +9,8 @@ const serviceConfig = {
   waermepumpe: {
     title: "Wärmepumpe installieren lassen",
     benefits: [
-      "Bis zu 40% Energiekostenersparnis",
-      "BEG-Förderung bis zu 40%",
+      "Bis zu 70% Energiekostenersparnis",
+      "BEG-Förderung bis zu 70%",
       "Umweltfreundlich & zukunftssicher",
     ],
     cta: "Kostenlose Beratung anfragen",

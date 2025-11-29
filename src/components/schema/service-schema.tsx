@@ -552,7 +552,7 @@ export function ServiceSchema({ serviceType }: ServiceSchemaProps) {
             "@type": "Service",
             name: "KfW-Förderberatung Solarthermie",
             description:
-              "Kostenlose Beratung zur KfW-Förderung. Bis zu 70% Zuschuss: 30% Basis + 20% Klimabonus + 30% Einkommensbonus.",
+              "Kostenlose Beratung zur KfW-Förderung. Bis zu 70% Zuschuss: 30% Basis + 20% Geschwindigkeitsbonus + 30% Einkommensbonus.",
           },
         },
       ],

@@ -30,7 +30,7 @@ export function UrgencyBanner({ variant = "limited-slots" }: UrgencyBannerProps)
     trending: {
       icon: <TrendingUp className="h-5 w-5" />,
       text: "Aktuell stark nachgefragt: Wärmepumpen-Installation",
-      subtext: "Profitieren Sie von bis zu 40% BEG-Förderung",
+      subtext: "Profitieren Sie von bis zu 70% BEG-Förderung",
       bg: "bg-green-100",
       border: "border-green-300",
       textColor: "text-green-900",

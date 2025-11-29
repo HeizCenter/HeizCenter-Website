@@ -95,7 +95,7 @@ const faqs: FAQItem[] = [
   {
     question: "Gibt es Förderung für neue Heizungen?",
     answer:
-      "Ja! Die BEG-Förderung unterstützt den Heizungstausch mit bis zu 40%. Besonders gefördert werden Wärmepumpen, Pelletheizungen und Hybrid-Systeme. Auch Gas-Brennwertkessel in Kombination mit erneuerbaren Energien werden gefördert. Wir helfen bei der Antragstellung.",
+      "Ja! Die BEG-Förderung unterstützt den Heizungstausch mit bis zu 70% für Wärmepumpen (30% Basis + 20% Geschwindigkeitsbonus + 30% Einkommensbonus). Für Pelletheizungen max. 50% (kein Einkommensbonus für Biomasse). Wir helfen bei der Antragstellung.",
   },
   {
     question: "Wie lange dauert der Heizungstausch?",

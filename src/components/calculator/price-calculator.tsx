@@ -112,24 +112,17 @@ export function PriceCalculator() {
     const equipmentCost = Math.round(baseCost);
     const totalCost = equipmentCost + installationCost;
 
-    // Calculate subsidy (BEG: up to 40%)
-    let subsidyRate = 0.3; // Base 30%
+    // Calculate subsidy (BEG 2024/2025: up to 70% for Wärmepumpen)
+    // 30% Grundförderung + 20% Geschwindigkeitsbonus + 30% Einkommensbonus (optional)
+    let subsidyRate = 0.3; // Base 30% Grundförderung
 
-    // Property type affects subsidy (Einfamilienhaus gets more bonuses)
-    if (propertyType === "einfamilienhaus") {
-      // Speed bonus (Geschwindigkeitsbonus) for replacing old heating
-      if (heatingType === "oil" || heatingType === "coal") {
-        subsidyRate = 0.4; // +10% for oil/coal replacement
-      } else if (heatingType === "gas") {
-        subsidyRate = 0.35; // +5% for gas replacement
-      }
-    } else if (propertyType === "mehrfamilienhaus") {
-      // Mehrfamilienhaus: Only base subsidy (no speed bonus for landlords)
-      subsidyRate = 0.3;
-    } else if (propertyType === "gewerbe") {
-      // Commercial: 40% base subsidy
-      subsidyRate = 0.4;
+    // Geschwindigkeitsbonus (20%) for replacing old oil/gas/coal heating (until end 2028)
+    if (heatingType === "oil" || heatingType === "coal" || heatingType === "gas") {
+      subsidyRate = 0.5; // 30% Grund + 20% Geschwindigkeitsbonus
     }
+
+    // Note: Einkommensbonus (+30% for income <40.000€/year) not calculated here
+    // as it requires income verification. Total possible: up to 70% (capped)
 
     const subsidyAmount = Math.round(totalCost * subsidyRate);
     const netCost = totalCost - subsidyAmount;

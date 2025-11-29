@@ -7,7 +7,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Förderung & Zuschüsse für Wärmepumpen & Heizung 2025 | HeizCenter",
   description:
-    "Informationen zu BEG-Förderung, KfW-Zuschüssen und anderen Förderprogrammen für Wärmepumpen, Heizungsmodernisierung und Badsanierung. Bis zu 40% Förderung möglich.",
+    "Informationen zu BEG-Förderung, KfW-Zuschüssen und anderen Förderprogrammen für Wärmepumpen, Heizungsmodernisierung und Badsanierung. Bis zu 70% Förderung möglich.",
   keywords: ["BEG Förderung", "KfW", "Zuschuss", "Wärmepumpe", "Heizungsförderung", "BAFA"],
 };
 
@@ -23,7 +23,7 @@ export default function FoerderungPage() {
               Förderung & Zuschüsse 2025
             </h1>
             <p className="text-xl text-slate-600 mb-8">
-              Bis zu 40% Zuschuss für Ihre neue Heizung. Wir helfen bei der Antragstellung.
+              Bis zu 70% Zuschuss für Ihre neue Heizung. Wir helfen bei der Antragstellung.
             </p>
           </div>
         </div>
@@ -46,7 +46,7 @@ export default function FoerderungPage() {
               <CardContent>
                 <div className="text-4xl font-bold text-[#0F5B78] mb-4">bis 70%</div>
                 <ul className="space-y-2 text-slate-600">
-                  <li>✓ Grundförderung: 25%</li>
+                  <li>✓ Grundförderung: 30%</li>
                   <li>✓ Geschwindigkeitsbonus: +20%</li>
                   <li>✓ Einkommensbonus: +30%</li>
                   <li>✓ Max. 70% Gesamtförderung</li>

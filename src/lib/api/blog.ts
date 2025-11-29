@@ -828,7 +828,7 @@ function getMockBlogPosts(): BlogPost[] {
         <p>Komplett klimaneutrale Alternative mit bis zu 70% BEG-Förderung. Höhere Anfangsinvestition, aber deutlich niedrigere Betriebskosten und staatliche Unterstützung.</p>
 
         <h4>Pelletheizung</h4>
-        <p>CO₂-neutrale Biomasseheizung mit bis zu 70% BEG-Förderung. Lokaler, nachhaltiger Brennstoff, aber mehr Platzbedarf als Gasheizung.</p>
+        <p>CO₂-neutrale Biomasseheizung mit bis zu 50% BEG-Förderung. Lokaler, nachhaltiger Brennstoff, aber mehr Platzbedarf als Gasheizung.</p>
 
         <h3>Wann lohnt sich eine Gasheizung noch?</h3>
 
@@ -869,11 +869,11 @@ function getMockBlogPosts(): BlogPost[] {
       id: 5,
       slug: 'pelletheizung-kosten-2025',
       title: 'Pelletheizung Kosten 2025: Anschaffung, Betrieb & Förderung',
-      excerpt: 'Was kostet eine Pelletheizung 2025? Kompletter Überblick über Anschaffung, Betriebskosten und bis zu 70% BEG-Förderung.',
+      excerpt: 'Was kostet eine Pelletheizung 2025? Kompletter Überblick über Anschaffung, Betriebskosten und bis zu 50% BEG-Förderung.',
       content: `
         <h2>Pelletheizung Kosten 2025: Der komplette Kostenüberblick</h2>
 
-        <p>Pelletheizungen sind eine klimaneutrale Alternative zu fossilen Brennstoffen und werden 2025 mit attraktiven Zuschüssen bis zu 70% gefördert. Doch was kostet eine Pelletheizung wirklich? Dieser Ratgeber gibt Ihnen alle Informationen zu Anschaffung, Betrieb, Förderung und Wirtschaftlichkeit.</p>
+        <p>Pelletheizungen sind eine klimaneutrale Alternative zu fossilen Brennstoffen und werden 2025 mit attraktiven Zuschüssen bis zu 50% gefördert. Doch was kostet eine Pelletheizung wirklich? Dieser Ratgeber gibt Ihnen alle Informationen zu Anschaffung, Betrieb, Förderung und Wirtschaftlichkeit.</p>
 
         <h3>Anschaffungskosten: Was kostet eine neue Pelletheizung?</h3>
 
@@ -944,11 +944,12 @@ function getMockBlogPosts(): BlogPost[] {
         <ul>
           <li><strong>30% Grundförderung:</strong> Für alle Pelletheizungen als klimafreundliche Heizung</li>
           <li><strong>20% Klimageschwindigkeits-Bonus:</strong> Beim Austausch alter Öl-, Gas- oder Kohleheizungen (bis Ende 2028)</li>
-          <li><strong>30% Einkommensbonus:</strong> Für Haushalte mit zu versteuerndem Jahreseinkommen bis 40.000 €</li>
           <li><strong>2.500 € Emissionsbonus:</strong> Für besonders emissionsarme Systeme (max. 2,5 mg/m³ Feinstaub)</li>
         </ul>
 
-        <p><strong>Maximale Förderung:</strong> Bis zu 70% Zuschuss auf maximal 30.000 € förderfähige Kosten = <strong>21.000 € Förderung</strong></p>
+        <p><strong>Hinweis:</strong> Der Einkommensbonus (30%) gilt <u>nicht</u> für Biomasse-Heizungen wie Pelletheizungen - nur für Wärmepumpen!</p>
+
+        <p><strong>Maximale Förderung:</strong> Bis zu 50% Zuschuss auf maximal 30.000 € förderfähige Kosten = <strong>15.000 € Förderung</strong></p>
 
         <h4>Fördervoraussetzungen:</h4>
 
@@ -967,8 +968,8 @@ function getMockBlogPosts(): BlogPost[] {
         <h4>Beispiel 1: Standard-Förderung (50%)</h4>
         <p>Pelletheizung: 30.000 € × 50% Förderung (Grundförderung + Geschwindigkeitsbonus) = <strong>15.000 € Eigenanteil</strong></p>
 
-        <h4>Beispiel 2: Maximale Förderung (70%)</h4>
-        <p>Pelletheizung: 30.000 € × 70% Förderung (alle Boni) = <strong>9.000 € Eigenanteil</strong></p>
+        <h4>Beispiel 2: Maximale Förderung (50%) + Emissionsbonus</h4>
+        <p>Pelletheizung: 30.000 € × 50% Förderung + 2.500 € Emissionsbonus = <strong>12.500 € Eigenanteil</strong></p>
 
         <h4>Beispiel 3: Mit Solarthermie-Kombination</h4>
         <p>Pelletheizung + Solarthermie: 38.000 € × 50% Förderung = <strong>19.000 € Eigenanteil</strong></p>
@@ -1085,7 +1086,7 @@ function getMockBlogPosts(): BlogPost[] {
 
         <h3>Fazit: Pelletheizung als nachhaltige Investition</h3>
 
-        <p>Pelletheizungen sind 2025 eine wirtschaftlich attraktive und klimafreundliche Alternative zu fossilen Heizungen. Mit bis zu 70% BEG-Förderung sinken die Anschaffungskosten auf 9.000-15.000 €. Die niedrigen Betriebskosten und stabile Pelletpreise sorgen für langfristige Planungssicherheit.</p>
+        <p>Pelletheizungen sind 2025 eine wirtschaftlich attraktive und klimafreundliche Alternative zu fossilen Heizungen. Mit bis zu 50% BEG-Förderung sinken die Anschaffungskosten auf 12.500-17.500 €. Die niedrigen Betriebskosten und stabile Pelletpreise sorgen für langfristige Planungssicherheit.</p>
 
         <p><strong>Wichtig:</strong> Prüfen Sie die Platzverhältnisse für die Lagerung und beachten Sie die Fördervoraussetzung zur erneuerbaren Warmwasserbereitung. Lassen Sie sich umfassend beraten und holen Sie mehrere Angebote ein.</p>
 
@@ -1729,7 +1730,7 @@ function getMockBlogPosts(): BlogPost[] {
           <li><strong>Voraussetzung:</strong> Mindest-JAZ 3,5, Smart-Meter-Gateway, Geräuschemission 5 dB unter EU-Grenzwert</li>
         </ul>
 
-        <h4>2. Biomasseheizungen (30-70% Förderung + 2.500 € Bonus):</h4>
+        <h4>2. Biomasseheizungen (30-50% Förderung + 2.500 € Emissionsbonus):</h4>
 
         <ul>
           <li><strong>Pelletheizung:</strong> Mit Solarthermie/PV/Wärmepumpe für Warmwasser kombiniert</li>
@@ -3348,7 +3349,7 @@ function getMockBlogPosts(): BlogPost[] {
           <ul style="margin-bottom: 0;">
             <li><strong>Günstigste Betriebskosten:</strong> Wärmepumpe (715 €/Jahr) & Pellets (740 €/Jahr)</li>
             <li><strong>Teuerste Betriebskosten:</strong> Fernwärme (1.245 €/Jahr) & Gas (1.180 €/Jahr)</li>
-            <li><strong>Höchste Förderung:</strong> Bis zu 70% für Wärmepumpe & Pellets (max. 21.000 €)</li>
+            <li><strong>Höchste Förderung:</strong> Bis zu 70% für Wärmepumpe, bis zu 50% für Pellets</li>
             <li><strong>Keine Förderung:</strong> Gas & Öl (Auslaufmodelle)</li>
             <li><strong>20-Jahre-Gesamtkosten:</strong> Wärmepumpe 45.000 € vs. Gas 65.000 €</li>
           </ul>
@@ -3464,7 +3465,7 @@ function getMockBlogPosts(): BlogPost[] {
           </tbody>
         </table>
 
-        <p><strong>Wichtig:</strong> Die 70% Förderung setzt sich zusammen aus: 30% Grundförderung + 20% Geschwindigkeitsbonus (bis Ende 2028) + 30% Einkommensbonus (bei Einkommen <40.000 €/Jahr) + 5% Effizienzbonus.</p>
+        <p><strong>Wichtig:</strong> Die 70% Förderung für Wärmepumpen setzt sich zusammen aus: 30% Grundförderung + 20% Geschwindigkeitsbonus (bis Ende 2028) + 30% Einkommensbonus (bei Einkommen <40.000 €/Jahr). Diese addieren sich auf max. 80%, sind aber auf 70% gedeckelt.</p>
 
         <h2>🔥 Betriebskosten pro Jahr: Der entscheidende Faktor</h2>
 
@@ -4017,8 +4018,8 @@ function getMockBlogPosts(): BlogPost[] {
         <td style="padding: 12px;"><strong>25.000–40.000 €</strong></td>
       </tr>
       <tr>
-        <td style="padding: 12px;">Mit BEG-Förderung (40%)</td>
-        <td style="padding: 12px;"><strong>15.000–24.000 €</strong></td>
+        <td style="padding: 12px;">Mit BEG-Förderung (bis zu 70%)</td>
+        <td style="padding: 12px;"><strong>7.500–12.000 €</strong></td>
       </tr>
       <tr style="background-color: #f9f9f9;">
         <td style="padding: 12px;">Jährliche Heizkosten</td>
@@ -4084,7 +4085,7 @@ function getMockBlogPosts(): BlogPost[] {
     <h3>5. 🌍 Sole-Wasser-Wärmepumpe (Erdwärme)</h3>
     <ul>
       <li><strong>Kosten:</strong> 35.000–50.000 € (inkl. Erdarbeiten)</li>
-      <li><strong>Mit BEG-Förderung (40%):</strong> 21.000–30.000 €</li>
+      <li><strong>Mit BEG-Förderung (bis zu 70%):</strong> 10.500–15.000 €</li>
       <li><strong>Jährliche Heizkosten:</strong> 900–1.000 € (JAZ 4,5–5,0)</li>
       <li><strong>Effizienz:</strong> Höchste JAZ aller Systeme</li>
     </ul>
@@ -4310,7 +4311,7 @@ function getMockBlogPosts(): BlogPost[] {
     <p>Im Durchschnitt <strong>1.780 € pro Jahr</strong> bei einem 150 m²-Haus (Nachtspeicher: 2.880 €/Jahr vs. Wärmepumpe: 1.100 €/Jahr). Über 20 Jahre sind das <strong>35.600 € Ersparnis</strong>.</p>
 
     <h3>Welche Förderung gibt es 2025?</h3>
-    <p>Für Wärmepumpen: <strong>30% Grundförderung + 20% Geschwindigkeitsbonus + ggf. 30% Einkommensbonus = bis 70%</strong> (max. 21.000 €). Für Pelletheizungen: 30% Grundförderung.</p>
+    <p>Für Wärmepumpen: <strong>30% Grundförderung + 20% Geschwindigkeitsbonus + ggf. 30% Einkommensbonus = bis 70%</strong> (max. 21.000 €). Für Pelletheizungen: 30% Grundförderung + 20% Geschwindigkeitsbonus = max. 50% (kein Einkommensbonus für Biomasse).</p>
 
     <h3>Ist eine Wärmepumpe auch im Altbau sinnvoll?</h3>
     <p><strong>Ja</strong>, wenn das Gebäude mindestens eine Dachbodendämmung hat (U-Wert < 0,24 W/m²K). Bei sehr schlechter Dämmung sollte zuerst die Gebäudehülle verbessert werden. Erdwärmepumpen funktionieren auch bei höheren Vorlauftemperaturen gut.</p>
@@ -4787,18 +4788,18 @@ function getMockBlogPosts(): BlogPost[] {
           <td style="text-align: right;"><strong>40.500 €</strong></td>
         </tr>
         <tr>
-          <td>BEG-Förderung (40%: 30% Basis + 10% Effizienz-Bonus):</td>
-          <td style="text-align: right;"><strong>- 16.200 €</strong></td>
+          <td>BEG-Förderung (50%: 30% Basis + 20% Geschwindigkeitsbonus):</td>
+          <td style="text-align: right;"><strong>- 20.250 €</strong></td>
         </tr>
         <tr style="border-top: 2px solid #28a745; background-color: #28a745; color: white;">
           <td><strong>Eigenanteil:</strong></td>
-          <td style="text-align: right;"><strong>24.300 €</strong></td>
+          <td style="text-align: right;"><strong>20.250 €</strong></td>
         </tr>
         <tr>
           <td colspan="2" style="padding-top: 15px;"><strong>Jährliche Heizkosten:</strong> 950 €/Jahr (vs. 1.650 € Gas-Heizkörper)</td>
         </tr>
         <tr>
-          <td colspan="2"><strong>Ersparnis:</strong> 700 €/Jahr = <strong>Amortisation in 12 Jahren</strong> (nur Mehrkosten Fußbodenheizung bereits nach 5 Jahren)</td>
+          <td colspan="2"><strong>Ersparnis:</strong> 700 €/Jahr = <strong>Amortisation in 10 Jahren</strong></td>
         </tr>
       </table>
     </div>
@@ -5390,24 +5391,24 @@ function getMockBlogPosts(): BlogPost[] {
           <tr style="background-color: #0F5B78; color: white;">
             <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Wärmepumpen-Typ</th>
             <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Gerät + Installation</th>
-            <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Mit BEG-Förderung (40%)</th>
+            <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Mit BEG-Förderung (bis zu 70%)</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td style="padding: 10px; border: 1px solid #ddd;">Luft-Wasser-Wärmepumpe</td>
             <td style="padding: 10px; border: 1px solid #ddd;">20.000–30.000 €</td>
-            <td style="padding: 10px; border: 1px solid #ddd;">12.000–18.000 €</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">6.000–9.000 €</td>
           </tr>
           <tr style="background-color: #f9f9f9;">
             <td style="padding: 10px; border: 1px solid #ddd;">Sole-Wasser-Wärmepumpe</td>
             <td style="padding: 10px; border: 1px solid #ddd;">25.000–40.000 €</td>
-            <td style="padding: 10px; border: 1px solid #ddd;">15.000–24.000 €</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">7.500–12.000 €</td>
           </tr>
           <tr>
             <td style="padding: 10px; border: 1px solid #ddd;">Wasser-Wasser-Wärmepumpe</td>
             <td style="padding: 10px; border: 1px solid #ddd;">30.000–45.000 €</td>
-            <td style="padding: 10px; border: 1px solid #ddd;">18.000–27.000 €</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">9.000–13.500 €</td>
           </tr>
         </tbody>
       </table>
@@ -5843,7 +5844,7 @@ function getMockBlogPosts(): BlogPost[] {
             <tr style="background-color: #f9f9f9;">
               <td style="padding: 10px; border: 1px solid #ddd;"><strong>Förderung (max.)</strong></td>
               <td style="padding: 10px; border: 1px solid #ddd;">Bis 70%</td>
-              <td style="padding: 10px; border: 1px solid #ddd;">Bis 40%</td>
+              <td style="padding: 10px; border: 1px solid #ddd;">Bis 50%</td>
             </tr>
             <tr>
               <td style="padding: 10px; border: 1px solid #ddd;"><strong>Betriebskosten/Jahr</strong></td>
@@ -5933,8 +5934,8 @@ function getMockBlogPosts(): BlogPost[] {
             <td style="padding: 10px; border: 1px solid #ddd;"><strong>15.000–28.500 €</strong></td>
           </tr>
           <tr>
-            <td style="padding: 10px; border: 1px solid #ddd;">Mit Förderung (40%)</td>
-            <td style="padding: 10px; border: 1px solid #ddd;">9.000–17.100 €</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Mit Förderung (50%)</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">7.500–14.250 €</td>
           </tr>
         </tbody>
       </table>
@@ -6034,13 +6035,14 @@ function getMockBlogPosts(): BlogPost[] {
 
       <h3>BEG-Förderung Pelletheizung</h3>
       <ul>
-        <li><strong>Grundförderung:</strong> 10% für Biomasse-Heizungen (ab 2024 reduziert)</li>
-        <li><strong>Emissionsbonus:</strong> +2,5% bei Feinstaubgrenzwert <2,5 mg/m³</li>
-        <li><strong>Maximal:</strong> 40% (mit allen Boni, begrenzt auf 60.000 € förderfähige Kosten)</li>
+        <li><strong>Grundförderung:</strong> 30% für Biomasse-Heizungen</li>
+        <li><strong>Klimageschwindigkeitsbonus:</strong> +20% beim Austausch alter Öl-/Gas-Heizungen</li>
+        <li><strong>Emissionsbonus:</strong> +2.500 € bei Feinstaubgrenzwert unter 2,5 mg/m³</li>
+        <li><strong>Maximal:</strong> 50% (kein Einkommensbonus für Biomasse!)</li>
       </ul>
 
       <div style="background-color: #d4edda; padding: 15px; border-left: 4px solid #28a745; margin: 20px 0;">
-        <p style="margin: 0;"><strong>💰 Förder-Vorteil Wärmepumpe:</strong> Bis zu 30 Prozentpunkte mehr Förderung! Bei 25.000 € Kosten → 17.500 € Förderung (WP) vs. 10.000 € (Pellets).</p>
+        <p style="margin: 0;"><strong>💰 Förder-Vorteil Wärmepumpe:</strong> Bis zu 20 Prozentpunkte mehr Förderung! Bei 25.000 € Kosten → 17.500 € Förderung (WP, max. 70%) vs. 12.500 € (Pellets, max. 50%).</p>
       </div>
 
       <h2>4. Platzbedarf & Lagerung</h2>
@@ -6167,7 +6169,7 @@ function getMockBlogPosts(): BlogPost[] {
         <li><strong>Ascheentsorgung:</strong> ~150 kg/Jahr</li>
         <li><strong>Feinstaubemissionen:</strong> 50–200 g/Jahr</li>
         <li><strong>Schornsteinfeger:</strong> Pflicht + Kosten (120–180 €/Jahr)</li>
-        <li><strong>Geringere Förderung:</strong> Nur bis 40% (vs. 70% bei WP)</li>
+        <li><strong>Geringere Förderung:</strong> Nur bis 50% (vs. 70% bei WP)</li>
         <li><strong>Pelletpreis volatil:</strong> 250–400 €/Tonne</li>
       </ul>
 
@@ -6214,7 +6216,7 @@ function getMockBlogPosts(): BlogPost[] {
             <td style="padding: 10px; border: 1px solid #ddd;">20.000 €</td>
           </tr>
           <tr style="background-color: #f9f9f9;">
-            <td style="padding: 10px; border: 1px solid #ddd;">Förderung (50% vs. 40%)</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Förderung (70% vs. 50%)</td>
             <td style="padding: 10px; border: 1px solid #ddd;">-12.500 €</td>
             <td style="padding: 10px; border: 1px solid #ddd;">-8.000 €</td>
           </tr>
@@ -6264,7 +6266,7 @@ function getMockBlogPosts(): BlogPost[] {
           <li>✅ Höherer Komfort (vollautomatisch)</li>
           <li>✅ Weniger Wartung (0 vs. 30 h/Jahr)</li>
           <li>✅ Weniger Platzbedarf (2 vs. 10 m²)</li>
-          <li>✅ Höhere Förderung (70% vs. 40%)</li>
+          <li>✅ Höhere Förderung (70% vs. 50%)</li>
           <li>✅ Niedrigere Gesamtkosten (20 Jahre: -13.500 €)</li>
           <li>✅ Kein Feinstaub</li>
           <li>✅ Zukunftssicherer (GEG-konform)</li>
@@ -7937,7 +7939,7 @@ function getMockBlogPosts(): BlogPost[] {
       date: '2025-01-14',
       readingTime: 16,
       image: '/images/HeizCenter_Solar.webp',
-      tags: ['BAFA Förderung', 'Solarthermie', 'Zuschuss', 'BEG', 'Förderung Heizung', 'Klimabonus', 'Antragstellung'],
+      tags: ['BAFA Förderung', 'Solarthermie', 'Zuschuss', 'BEG', 'Förderung Heizung', 'Geschwindigkeitsbonus', 'Antragstellung'],
       featured: true,
     },
     {
