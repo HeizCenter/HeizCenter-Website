@@ -64,9 +64,9 @@ const features = [
     icon: Leaf,
   },
   {
-    title: "Staatliche Förderung",
+    title: "Staatliche Förderung (KfW 458)",
     description:
-      "Profitieren Sie von der BEG-Förderung: bis zu 70% Zuschuss für den Heizungstausch (30% Basis + 20% Geschwindigkeitsbonus + 30% Einkommensbonus). Wir unterstützen Sie bei der Antragstellung.",
+      "Profitieren Sie von der BEG-Förderung: bis zu 70% Zuschuss für den Heizungstausch (30% Basis + 20% Klimageschwindigkeitsbonus + 30% Einkommensbonus). Alternativ: Steuerbonus nach § 35c EStG. Wir unterstützen Sie bei der Antragstellung.",
     icon: Award,
   },
   {
@@ -98,7 +98,7 @@ const faqs: FAQItem[] = [
   {
     question: "Welche Förderung gibt es für Wärmepumpen?",
     answer:
-      "Die Bundesförderung für effiziente Gebäude (BEG) fördert Wärmepumpen mit bis zu 70% der Investitionskosten. Die Basisförderung beträgt 30%, weitere 20% gibt es beim Austausch einer alten Öl-, Gas- oder Nachtspeicherheizung (Klimageschwindigkeitsbonus - in voller Höhe bis Ende 2028), und zusätzliche 30% wenn Ihr Haushaltseinkommen unter 40.000€ liegt. Wir unterstützen Sie gerne bei der Antragstellung.",
+      "Die Bundesförderung für effiziente Gebäude (BEG) fördert Wärmepumpen über das KfW-Programm 458 mit bis zu 70% der Investitionskosten. Die Basisförderung beträgt 30%, weitere 20% gibt es beim Austausch einer alten Öl-, Gas- oder Nachtspeicherheizung (Klimageschwindigkeitsbonus - in voller Höhe bis Ende 2028), und zusätzliche 30% wenn Ihr Haushaltseinkommen unter 40.000€ liegt (Einkommensbonus). Alternativ können Sie die steuerliche Förderung nach § 35c EStG nutzen (20% über 3 Jahre). Wir unterstützen Sie gerne bei der Antragstellung. Aktuelle Infos: kfw.de/458",
   },
   {
     question: "Eignet sich eine Wärmepumpe für mein Altbau?",

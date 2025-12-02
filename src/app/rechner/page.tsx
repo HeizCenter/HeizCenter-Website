@@ -115,10 +115,19 @@ export default function RechnerPage() {
         <div className="max-w-4xl mx-auto">
           <div className="bg-green-50 p-8 rounded-lg border-2 border-green-200">
             <h2 className="text-2xl font-bold mb-4 text-green-900">
-              BEG-Förderung: Bis zu 70% Zuschuss möglich
+              KfW 458: Bis zu 70% Zuschuss möglich
             </h2>
             <p className="text-green-800 mb-6">
-              Die Bundesförderung für effiziente Gebäude (BEG) unterstützt Sie beim Umstieg auf eine Wärmepumpe mit attraktiven Zuschüssen:
+              Die Bundesförderung für effiziente Gebäude (BEG) über das{" "}
+              <a
+                href="https://www.kfw.de/inlandsfoerderung/Privatpersonen/Bestehende-Immobilie/F%C3%B6rderprodukte/Heizungsf%C3%B6rderung-f%C3%BCr-Privatpersonen-(458)/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-green-900"
+              >
+                KfW-Programm 458
+              </a>{" "}
+              unterstützt Sie beim Umstieg auf eine Wärmepumpe mit attraktiven Zuschüssen:
             </p>
             <div className="grid md:grid-cols-3 gap-4 mb-6">
               <div className="bg-white p-4 rounded-lg">
@@ -127,16 +136,31 @@ export default function RechnerPage() {
               </div>
               <div className="bg-white p-4 rounded-lg">
                 <div className="text-3xl font-bold text-green-600 mb-2">+20%</div>
-                <div className="text-sm text-slate-600">Geschwindigkeitsbonus (bis Ende 2028)</div>
+                <div className="text-sm text-slate-600">Klimageschwindigkeitsbonus (bis Ende 2028)</div>
               </div>
               <div className="bg-white p-4 rounded-lg">
                 <div className="text-3xl font-bold text-green-600 mb-2">+30%</div>
-                <div className="text-sm text-slate-600">Einkommensbonus (bis 40.000¬/Jahr)</div>
+                <div className="text-sm text-slate-600">Einkommensbonus (bis 40.000€/Jahr)</div>
               </div>
             </div>
-            <p className="text-sm text-green-700">
-              <strong>Hinweis:</strong> Der Rechner berücksichtigt die Standard-BEG-Förderung von 50% (30% Grundförderung + 20% Geschwindigkeitsbonus).
-              Mit Einkommensbonus sind bis zu 70% möglich. Wir beraten Sie gerne zu allen Fördermöglichkeiten.
+            <p className="text-sm text-green-700 mb-3">
+              <strong>Hinweis:</strong> Der Rechner berücksichtigt die Standard-BEG-Förderung von 50% (30% Grundförderung + 20% Klimageschwindigkeitsbonus).
+              Mit Einkommensbonus sind bis zu 70% möglich. Alternativ: Steuerbonus nach{" "}
+              <a
+                href="https://www.gesetze-im-internet.de/estg/__35c.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-green-900"
+              >
+                § 35c EStG
+              </a>{" "}
+              (20% über 3 Jahre).
+            </p>
+            <p className="text-xs text-green-600">
+              Quellen:{" "}
+              <a href="https://www.kfw.de" target="_blank" rel="noopener noreferrer" className="underline">KfW</a>,{" "}
+              <a href="https://www.bafa.de" target="_blank" rel="noopener noreferrer" className="underline">BAFA</a>{" "}
+              | Stand: Januar 2025
             </p>
           </div>
         </div>
@@ -173,11 +197,20 @@ export default function RechnerPage() {
       {/* Disclaimer */}
       <section className="container py-8">
         <div className="max-w-4xl mx-auto">
-          <p className="text-sm text-slate-500 text-center">
-            <strong>Hinweis:</strong> Die berechneten Kosten sind Richtwerte und können je nach individuellen Gegebenheiten variieren.
-            Für ein verbindliches Angebot kontaktieren Sie uns bitte direkt. Förderinformationen ohne Gewähr,
-            bitte prüfen Sie die aktuellen Förderbedingungen bei der KfW.
-          </p>
+          <div className="bg-slate-100 p-4 rounded-lg">
+            <p className="text-sm text-slate-600 text-center mb-2">
+              <strong>Rechtlicher Hinweis:</strong> Die berechneten Kosten sind unverbindliche Richtwerte und können je nach individuellen Gegebenheiten variieren.
+              Für ein verbindliches Angebot kontaktieren Sie uns bitte direkt.
+            </p>
+            <p className="text-xs text-slate-500 text-center">
+              Förderinformationen ohne Gewähr. Bitte prüfen Sie die aktuellen Förderbedingungen bei der{" "}
+              <a href="https://www.kfw.de" target="_blank" rel="noopener noreferrer" className="text-[#0F5B78] hover:underline">KfW</a> und{" "}
+              <a href="https://www.bafa.de" target="_blank" rel="noopener noreferrer" className="text-[#0F5B78] hover:underline">BAFA</a>.
+              Rechtsgrundlagen: BEG-Förderrichtlinie,{" "}
+              <a href="https://www.gesetze-im-internet.de/estg/__35c.html" target="_blank" rel="noopener noreferrer" className="text-[#0F5B78] hover:underline">§ 35c EStG</a>.
+              Stand: Januar 2025.
+            </p>
+          </div>
         </div>
       </section>
     </>
