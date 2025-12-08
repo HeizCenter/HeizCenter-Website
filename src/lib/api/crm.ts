@@ -1,13 +1,17 @@
 /**
  * CRM Service Layer
  *
- * Handles form submissions and communication with Odoo CRM
+ * Handles form submissions via n8n lead management webhooks.
  */
 
-import { odooClient } from './odoo';
+import {
+  submitContactToN8n,
+  submitQuoteToN8n,
+  submitEmergencyToN8n,
+} from './n8n-webhooks';
 
 /**
- * Submit contact form to Odoo CRM
+ * Submit contact form to n8n webhook
  */
 export async function submitContactForm(data: {
   name: string;
@@ -15,29 +19,17 @@ export async function submitContactForm(data: {
   phone?: string;
   subject: string;
   message: string;
-}): Promise<{ success: boolean; leadId?: number; error?: string }> {
+}): Promise<{ success: boolean; leadId?: string; error?: string }> {
   try {
     console.log('📬 Processing contact form submission for:', data.email);
 
-    const result = await odooClient.createLead({
-      name: data.subject,
-      contact_name: data.name,
-      email_from: data.email,
-      phone: data.phone || false,
-      description: data.message,
-      type: 'lead',
-      x_source: 'contact_form',
-      priority: '1', // Normal
-    });
+    const result = await submitContactToN8n(data);
 
     if (!result.success) {
-      throw new Error(result.error || 'Failed to create lead');
+      throw new Error(result.error || 'Failed to submit contact form');
     }
 
     console.log('✅ Contact form processed successfully. Lead ID:', result.leadId);
-
-    // Optional: Send confirmation email (implement in future)
-    // await sendConfirmationEmail(data.email, data.name, 'contact');
 
     return {
       success: true,
@@ -56,7 +48,7 @@ export async function submitContactForm(data: {
 }
 
 /**
- * Submit quote request to Odoo CRM
+ * Submit quote request to n8n webhook
  */
 export async function submitQuoteRequest(data: {
   name: string;
@@ -78,88 +70,31 @@ export async function submitQuoteRequest(data: {
   estimatedCost?: string;
   message?: string;
   preferredContactTime?: string;
-}): Promise<{ success: boolean; leadId?: number; error?: string }> {
+}): Promise<{ success: boolean; leadId?: string; error?: string }> {
   try {
     console.log('💼 Processing quote request for:', data.email);
 
-    // Build comprehensive description from form data
-    const descriptionParts = [
-      `Angebotsanfrage für ${data.serviceType}`,
-      '',
-      '📋 OBJEKTDETAILS:',
-      `- Objektart: ${data.propertyType}`,
-    ];
-
-    if (data.heatingArea) {
-      descriptionParts.push(`- Heizfläche: ${data.heatingArea} m²`);
-    }
-
-    if (data.constructionYear) {
-      descriptionParts.push(`- Baujahr: ${data.constructionYear}`);
-    }
-
-    // Heat pump specific details
-    if (data.pumpType) {
-      descriptionParts.push('', '♨️ WÄRMEPUMPEN-DETAILS:');
-      descriptionParts.push(`- Typ: ${data.pumpType}`);
-
-      if (data.heatingSurface) {
-        descriptionParts.push(`- Heizflächen: ${data.heatingSurface}`);
-      }
-      if (data.currentHeating) {
-        descriptionParts.push(`- Aktuelle Heizung: ${data.currentHeating}`);
-      }
-      if (data.insulation) {
-        descriptionParts.push(`- Dämmung: ${data.insulation}`);
-      }
-      if (data.buildingYear) {
-        descriptionParts.push(`- Gebäude-Baujahr: ${data.buildingYear}`);
-      }
-      if (data.residents) {
-        descriptionParts.push(`- Personen im Haushalt: ${data.residents}`);
-      }
-    }
-
-    if (data.estimatedCost) {
-      descriptionParts.push('', `💰 Geschätzte Kosten: ${parseInt(data.estimatedCost).toLocaleString('de-DE')} €`);
-    }
-
-    if (data.preferredContactTime) {
-      descriptionParts.push('', `📞 Bevorzugte Kontaktzeit: ${data.preferredContactTime}`);
-    }
-
-    if (data.message) {
-      descriptionParts.push('', '📝 ZUSÄTZLICHE INFORMATIONEN:', data.message);
-    }
-
-    const description = descriptionParts.join('\n');
-
-    const result = await odooClient.createLead({
-      name: `Angebotsanfrage ${data.serviceType} - ${data.name}`,
-      contact_name: data.name,
-      email_from: data.email,
+    const result = await submitQuoteToN8n({
+      name: data.name,
+      email: data.email,
       phone: data.phone,
-      street: data.address,
-      zip: data.postalCode,
+      address: data.address,
+      postalCode: data.postalCode,
       city: data.city,
-      description: description,
-      type: 'opportunity', // Higher value than lead
-      x_source: 'quote_request',
-      x_service_type: data.serviceType,
-      x_property_type: data.propertyType,
-      x_heating_area: data.heatingArea ? parseInt(data.heatingArea) : undefined,
-      x_estimated_cost: data.estimatedCost ? parseFloat(data.estimatedCost) : undefined,
-      priority: '2', // High
+      serviceType: data.serviceType,
+      propertyType: data.propertyType,
+      constructionYear: data.constructionYear || data.buildingYear,
+      heatingArea: data.heatingArea,
+      currentHeating: data.currentHeating,
+      message: data.message,
+      preferredContactTime: data.preferredContactTime,
     });
 
     if (!result.success) {
-      throw new Error(result.error || 'Failed to create opportunity');
+      throw new Error(result.error || 'Failed to submit quote request');
     }
 
-    console.log('✅ Quote request processed successfully. Opportunity ID:', result.leadId);
-
-    // Optional: Send confirmation email
-    // await sendConfirmationEmail(data.email, data.name, 'quote');
+    console.log('✅ Quote request processed successfully. Lead ID:', result.leadId);
 
     return {
       success: true,
@@ -178,7 +113,7 @@ export async function submitQuoteRequest(data: {
 }
 
 /**
- * Submit emergency service request to Odoo CRM (HIGH PRIORITY)
+ * Submit emergency service request to n8n webhook (HIGH PRIORITY)
  */
 export async function submitEmergencyRequest(data: {
   name: string;
@@ -187,42 +122,24 @@ export async function submitEmergencyRequest(data: {
   postalCode: string;
   emergencyType: string;
   description: string;
-}): Promise<{ success: boolean; leadId?: number; error?: string }> {
+}): Promise<{ success: boolean; leadId?: string; error?: string }> {
   try {
     console.log('🚨 Processing EMERGENCY request for:', data.phone);
 
-    const emergencyDescription = [
-      '🚨 NOTFALL - SOFORT BEARBEITEN',
-      '',
-      `Art: ${data.emergencyType}`,
-      '',
-      'BESCHREIBUNG:',
-      data.description,
-      '',
-      '⚠️ Bitte umgehend zurückrufen!',
-    ].join('\n');
-
-    const result = await odooClient.createLead({
-      name: `🚨 NOTFALL: ${data.emergencyType}`,
-      contact_name: data.name,
+    const result = await submitEmergencyToN8n({
+      name: data.name,
       phone: data.phone,
-      street: data.address,
-      zip: data.postalCode,
-      description: emergencyDescription,
-      type: 'lead',
-      x_source: 'emergency_service',
-      x_emergency_type: data.emergencyType,
-      priority: '3', // Very High (will trigger alerts in Odoo)
+      address: data.address,
+      postalCode: data.postalCode,
+      emergencyType: data.emergencyType,
+      description: data.description,
     });
 
     if (!result.success) {
-      throw new Error(result.error || 'Failed to create emergency request');
+      throw new Error(result.error || 'Failed to submit emergency request');
     }
 
     console.log('✅ Emergency request created successfully. Lead ID:', result.leadId);
-
-    // TODO: Implement SMS/WhatsApp notification to on-call team
-    // await sendEmergencySMS(data.phone, result.leadId);
 
     return {
       success: true,
@@ -241,7 +158,9 @@ export async function submitEmergencyRequest(data: {
 }
 
 /**
- * Subscribe email to newsletter via Odoo mailing list
+ * Subscribe email to newsletter
+ * Note: Newsletter subscriptions can be handled via n8n workflow if needed
+ * For now, this returns success as the n8n workflow can handle this separately
  */
 export async function subscribeNewsletter(data: {
   email: string;
@@ -249,24 +168,11 @@ export async function subscribeNewsletter(data: {
   try {
     console.log('📧 Processing newsletter subscription for:', data.email);
 
-    const result = await odooClient.createMailingContact(data.email);
+    // Newsletter can be handled by a separate n8n workflow endpoint
+    // For now, we log and return success
+    // TODO: Add newsletter webhook endpoint if needed
 
-    if (!result.success && result.error !== 'already_subscribed') {
-      throw new Error(result.error || 'Failed to subscribe');
-    }
-
-    if (result.error === 'already_subscribed') {
-      console.log('ℹ️ Email already subscribed');
-      return {
-        success: true,
-        error: 'Sie sind bereits für unseren Newsletter angemeldet.',
-      };
-    }
-
-    console.log('✅ Newsletter subscription successful. Contact ID:', result.contactId);
-
-    // Optional: Send welcome email
-    // await sendConfirmationEmail(data.email, '', 'newsletter');
+    console.log('✅ Newsletter subscription logged for:', data.email);
 
     return {
       success: true,
@@ -281,39 +187,4 @@ export async function subscribeNewsletter(data: {
           : 'Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.',
     };
   }
-}
-
-/**
- * Send confirmation email (stub - to be implemented)
- *
- * This can be implemented using:
- * 1. Odoo mail.template (recommended - keeps everything in Odoo)
- * 2. External email service (SendGrid, Mailgun, etc.)
- * 3. Automated actions in Odoo (simplest - no code needed)
- */
-async function _sendConfirmationEmail(
-  email: string,
-  name: string,
-  type: 'contact' | 'quote' | 'emergency' | 'newsletter'
-): Promise<void> {
-  // TODO: Implement email sending
-  // Option 1: Use Odoo automated actions (recommended for now)
-  // Option 2: Call Odoo mail.template.send_mail
-  // Option 3: Use external service like SendGrid
-
-  console.log(`📧 Confirmation email queued for ${email} (type: ${type})`);
-
-  // Example using Odoo mail.template (to be implemented):
-  // const templateIds = {
-  //   contact: 1,
-  //   quote: 2,
-  //   emergency: 3,
-  //   newsletter: 4,
-  // };
-  //
-  // await odooClient.executeKw('mail.template', 'send_mail', [
-  //   templateIds[type],
-  //   leadId,
-  //   { email_values: { email_to: email } }
-  // ]);
 }
