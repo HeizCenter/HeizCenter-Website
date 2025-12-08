@@ -25,9 +25,9 @@ interface N8nWebhookResponse {
 /**
  * Generic webhook submission helper
  */
-async function submitToWebhook<T extends Record<string, unknown>>(
+async function submitToWebhook(
   endpoint: string,
-  data: T
+  data: Record<string, unknown>
 ): Promise<N8nWebhookResponse> {
   try {
     console.log(`📤 Sending to n8n webhook: ${endpoint}`);
@@ -97,7 +97,7 @@ export async function submitContactToN8n(data: {
     ...(data.phone && { phone: data.phone }),
   };
 
-  const result = await submitToWebhook(WEBHOOK_ENDPOINTS.contact, payload);
+  const result = await submitToWebhook(WEBHOOK_ENDPOINTS.contact, payload as unknown as Record<string, unknown>);
 
   return {
     success: result.success,
@@ -196,7 +196,7 @@ export async function submitQuoteToN8n(data: {
     ...(data.message && { message: data.message }),
   };
 
-  const result = await submitToWebhook(WEBHOOK_ENDPOINTS.quote, payload);
+  const result = await submitToWebhook(WEBHOOK_ENDPOINTS.quote, payload as unknown as Record<string, unknown>);
 
   return {
     success: result.success,
@@ -256,7 +256,7 @@ export async function submitEmergencyToN8n(data: {
     ...(data.description && { description: data.description }),
   };
 
-  const result = await submitToWebhook(WEBHOOK_ENDPOINTS.emergency, payload);
+  const result = await submitToWebhook(WEBHOOK_ENDPOINTS.emergency, payload as unknown as Record<string, unknown>);
 
   return {
     success: result.success,
