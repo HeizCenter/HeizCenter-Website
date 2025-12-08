@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { useForm } from "react-hook-form";
+import { useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import {
   emergencyFormSchema,
@@ -34,8 +34,13 @@ export function EmergencyForm() {
     formState: { errors },
     reset,
     setValue,
+    control,
   } = useForm<EmergencyFormData>({
     resolver: zodResolver(emergencyFormSchema),
+    defaultValues: {
+      gdprConsent: false,
+      honeypot: "",
+    },
   });
 
   const onSubmit = async (data: EmergencyFormData) => {
@@ -224,7 +229,17 @@ export function EmergencyForm() {
 
         {/* GDPR Consent */}
         <div className="flex items-start gap-2">
-          <Checkbox id="gdprConsent" {...register("gdprConsent")} />
+          <Controller
+            name="gdprConsent"
+            control={control}
+            render={({ field }) => (
+              <Checkbox
+                id="gdprConsent"
+                checked={field.value}
+                onCheckedChange={field.onChange}
+              />
+            )}
+          />
           <Label htmlFor="gdprConsent" className="text-sm leading-relaxed">
             Ich akzeptiere die{" "}
             <a href="/datenschutz" className="text-[#0F5B78] hover:underline">

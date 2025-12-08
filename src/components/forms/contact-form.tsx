@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useForm } from "react-hook-form";
+import { useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { contactFormSchema, ContactFormData } from "@/lib/validations/contact";
 import { Button } from "@/components/ui/button";
@@ -29,8 +29,13 @@ export function ContactForm({ initialMessage = "", initialSubject = "" }: Contac
     formState: { errors },
     reset,
     setValue,
+    control,
   } = useForm<ContactFormData>({
     resolver: zodResolver(contactFormSchema),
+    defaultValues: {
+      gdprConsent: false,
+      honeypot: "",
+    },
   });
 
   // Pre-fill subject and message from props
@@ -174,7 +179,17 @@ export function ContactForm({ initialMessage = "", initialSubject = "" }: Contac
 
       {/* GDPR Consent */}
       <div className="flex items-start gap-2">
-        <Checkbox id="gdprConsent" {...register("gdprConsent")} />
+        <Controller
+          name="gdprConsent"
+          control={control}
+          render={({ field }) => (
+            <Checkbox
+              id="gdprConsent"
+              checked={field.value}
+              onCheckedChange={field.onChange}
+            />
+          )}
+        />
         <Label htmlFor="gdprConsent" className="text-sm leading-relaxed">
           Ich akzeptiere die{" "}
           <a href="/datenschutz" className="text-[#0F5B78] hover:underline">

@@ -66,6 +66,8 @@ export function QuoteForm(props: QuoteFormProps) {
       residents: residents || "",
       estimatedCost: estimatedCost || "",
       message: message || "",
+      gdprConsent: false,
+      honeypot: "",
     },
   });
 
@@ -502,7 +504,17 @@ export function QuoteForm(props: QuoteFormProps) {
 
       {/* GDPR Consent */}
       <div className="flex items-start gap-2">
-        <Checkbox id="gdprConsent" {...register("gdprConsent")} />
+        <Controller
+          name="gdprConsent"
+          control={control}
+          render={({ field }) => (
+            <Checkbox
+              id="gdprConsent"
+              checked={field.value}
+              onCheckedChange={field.onChange}
+            />
+          )}
+        />
         <Label htmlFor="gdprConsent" className="text-sm leading-relaxed">
           Ich akzeptiere die{" "}
           <a href="/datenschutz" className="text-[#0F5B78] hover:underline">
