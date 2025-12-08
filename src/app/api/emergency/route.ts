@@ -17,7 +17,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Submit to Odoo CRM with high priority
+    // Submit to n8n webhook with high priority
     const result = await submitEmergencyRequest({
       name: validatedData.name,
       phone: validatedData.phone,
@@ -28,8 +28,13 @@ export async function POST(request: NextRequest) {
     });
 
     if (!result.success) {
+      // Log technical error for debugging, show friendly message to user
+      console.error("Emergency form CRM error:", result.error);
       return NextResponse.json(
-        { success: false, error: result.error },
+        {
+          success: false,
+          error: "Es gab einen Fehler beim Senden Ihrer Notfallanfrage. Bitte rufen Sie uns direkt an: +49 8234 9665900"
+        },
         { status: 500 }
       );
     }

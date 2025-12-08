@@ -17,7 +17,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Submit to Odoo CRM
+    // Submit to n8n webhook
     const result = await submitContactForm({
       name: validatedData.name,
       email: validatedData.email,
@@ -27,8 +27,13 @@ export async function POST(request: NextRequest) {
     });
 
     if (!result.success) {
+      // Log technical error for debugging, show friendly message to user
+      console.error("Contact form CRM error:", result.error);
       return NextResponse.json(
-        { success: false, error: result.error },
+        {
+          success: false,
+          error: "Es gab einen Fehler beim Senden Ihrer Nachricht. Bitte versuchen Sie es später erneut oder rufen Sie uns an."
+        },
         { status: 500 }
       );
     }
