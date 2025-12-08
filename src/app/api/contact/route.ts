@@ -1,9 +1,31 @@
 import { NextRequest, NextResponse } from "next/server";
 import { contactFormSchema } from "@/lib/validations/contact";
 import { submitContactForm } from "@/lib/api/crm";
+import { checkRateLimit, getClientIp, RATE_LIMITS } from "@/lib/rate-limit";
 
 export async function POST(request: NextRequest) {
   try {
+    // Rate limiting
+    const clientIp = getClientIp(request);
+    const rateLimit = checkRateLimit(clientIp, "contact", RATE_LIMITS.contact);
+
+    if (!rateLimit.success) {
+      return NextResponse.json(
+        {
+          success: false,
+          error: `Zu viele Anfragen. Bitte warten Sie ${Math.ceil(rateLimit.resetIn / 60)} Minuten.`,
+        },
+        {
+          status: 429,
+          headers: {
+            "Retry-After": String(rateLimit.resetIn),
+            "X-RateLimit-Remaining": "0",
+            "X-RateLimit-Reset": String(rateLimit.resetIn),
+          },
+        }
+      );
+    }
+
     const body = await request.json();
 
     // Validate input

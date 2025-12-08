@@ -1,9 +1,31 @@
 import { NextRequest, NextResponse } from "next/server";
 import { emergencyFormSchema } from "@/lib/validations/contact";
 import { submitEmergencyRequest } from "@/lib/api/crm";
+import { checkRateLimit, getClientIp, RATE_LIMITS } from "@/lib/rate-limit";
 
 export async function POST(request: NextRequest) {
   try {
+    // Rate limiting (more lenient for emergencies)
+    const clientIp = getClientIp(request);
+    const rateLimit = checkRateLimit(clientIp, "emergency", RATE_LIMITS.emergency);
+
+    if (!rateLimit.success) {
+      return NextResponse.json(
+        {
+          success: false,
+          error: `Zu viele Anfragen. Bitte rufen Sie uns direkt an: +49 8234 9665900`,
+        },
+        {
+          status: 429,
+          headers: {
+            "Retry-After": String(rateLimit.resetIn),
+            "X-RateLimit-Remaining": "0",
+            "X-RateLimit-Reset": String(rateLimit.resetIn),
+          },
+        }
+      );
+    }
+
     const body = await request.json();
 
     // Validate input
