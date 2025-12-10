@@ -27,7 +27,7 @@ export const contactFormSchema = z.object({
     .refine((val) => val === true, {
       message: "Bitte akzeptieren Sie die Datenschutzerklärung",
     }),
-  honeypot: z.string().max(0).optional().default(""), // Anti-spam field
+  honeypot: z.string().max(0).default(""), // Anti-spam field (always present, default empty)
 });
 
 export type ContactFormData = z.infer<typeof contactFormSchema>;
@@ -55,12 +55,10 @@ export const quoteFormSchema = z.object({
     "solar",
     "sonstiges",
   ], {
-    required_error: "Bitte wählen Sie eine Leistung aus",
-    invalid_type_error: "Bitte wählen Sie eine Leistung aus",
+    message: "Bitte wählen Sie eine Leistung aus",
   }),
   propertyType: z.enum(["einfamilienhaus", "mehrfamilienhaus", "gewerbe"], {
-    required_error: "Bitte wählen Sie eine Objektart aus",
-    invalid_type_error: "Bitte wählen Sie eine Objektart aus",
+    message: "Bitte wählen Sie eine Objektart aus",
   }),
   constructionYear: z
     .string()

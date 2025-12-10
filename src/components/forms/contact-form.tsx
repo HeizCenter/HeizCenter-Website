@@ -30,7 +30,7 @@ export function ContactForm({ initialMessage = "", initialSubject = "" }: Contac
     reset,
     setValue,
     control,
-  } = useForm<ContactFormData>({
+  } = useForm({
     resolver: zodResolver(contactFormSchema),
     defaultValues: {
       name: "",

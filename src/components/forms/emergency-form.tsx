@@ -35,7 +35,7 @@ export function EmergencyForm() {
     reset,
     setValue,
     control,
-  } = useForm<EmergencyFormData>({
+  } = useForm({
     resolver: zodResolver(emergencyFormSchema),
     defaultValues: {
       name: "",
