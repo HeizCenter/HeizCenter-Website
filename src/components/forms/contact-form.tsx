@@ -33,6 +33,11 @@ export function ContactForm({ initialMessage = "", initialSubject = "" }: Contac
   } = useForm<ContactFormData>({
     resolver: zodResolver(contactFormSchema),
     defaultValues: {
+      name: "",
+      email: "",
+      phone: "",
+      subject: initialSubject,
+      message: initialMessage,
       gdprConsent: false,
       honeypot: "",
     },
