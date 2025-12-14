@@ -484,7 +484,7 @@ function getMockBlogPosts(): BlogPost[] {
             <li class="flex gap-3"><span class="flex-shrink-0 w-6 h-6 bg-[#0F5B78] text-white rounded-full flex items-center justify-center text-sm font-bold">3</span><span><strong>Entscheidung</strong> – Sie entscheiden in Ruhe – ohne Verkaufsdruck</span></li>
           </ol>
           <div class="flex flex-col sm:flex-row gap-3">
-            <a href="tel:+498234908970" class="inline-flex items-center justify-center gap-2 bg-[#0F5B78] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#0D4A5F] transition-colors">📞 Jetzt Termin vereinbaren</a>
+            <a href="tel:+4982349665900" class="inline-flex items-center justify-center gap-2 bg-[#0F5B78] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#0D4A5F] transition-colors">📞 Jetzt Termin vereinbaren</a>
             <a href="/kontakt" class="inline-flex items-center justify-center gap-2 bg-white border border-slate-300 text-slate-700 px-6 py-3 rounded-lg font-medium hover:bg-slate-50 transition-colors">Online anfragen →</a>
           </div>
           <p class="text-sm text-slate-600 mt-4">✓ Die Beratung bleibt kostenlos – auch wenn Sie sich gegen eine Wärmepumpe entscheiden.</p>
@@ -717,7 +717,7 @@ function getMockBlogPosts(): BlogPost[] {
           <div class="bg-amber-50 border border-amber-200 rounded-lg p-4">
             <p class="font-bold text-amber-900 mb-2">Heizung über 25 Jahre</p>
             <p class="text-sm text-amber-800 mb-3">Handeln Sie proaktiv. Ein geplanter Austausch ist immer besser als ein Notfall im Januar.</p>
-            <a href="tel:+498234908970" class="text-sm text-amber-900 font-medium hover:underline">📞 Jetzt anrufen →</a>
+            <a href="tel:+4982349665900" class="text-sm text-amber-900 font-medium hover:underline">📞 Jetzt anrufen →</a>
           </div>
         </div>
 
@@ -738,7 +738,7 @@ function getMockBlogPosts(): BlogPost[] {
             <li class="flex items-start gap-2">✓ <span>Welche Heizung passt zu Ihrem Haus?</span></li>
           </ul>
           <div class="flex flex-col sm:flex-row gap-3">
-            <a href="tel:+498234908970" class="inline-flex items-center justify-center gap-2 bg-[#0F5B78] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#0D4A5F] transition-colors">📞 Jetzt anrufen</a>
+            <a href="tel:+4982349665900" class="inline-flex items-center justify-center gap-2 bg-[#0F5B78] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#0D4A5F] transition-colors">📞 Jetzt anrufen</a>
             <a href="/kontakt" class="inline-flex items-center justify-center gap-2 bg-white border border-slate-300 text-slate-700 px-6 py-3 rounded-lg font-medium hover:bg-slate-50 transition-colors">Online-Termin vereinbaren →</a>
           </div>
           <p class="text-sm text-slate-500 mt-4">Kostenlose Beratung – auch wenn Sie sich gegen eine neue Heizung entscheiden.</p>
@@ -968,7 +968,7 @@ function getMockBlogPosts(): BlogPost[] {
             <li class="flex items-start gap-2">✓ <span>Hilfe beim KfW-Portal</span></li>
           </ul>
           <div class="flex flex-col sm:flex-row gap-3">
-            <a href="tel:+498234908970" class="inline-flex items-center justify-center gap-2 bg-[#0F5B78] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#0D4A5F] transition-colors">📞 Jetzt anrufen</a>
+            <a href="tel:+4982349665900" class="inline-flex items-center justify-center gap-2 bg-[#0F5B78] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#0D4A5F] transition-colors">📞 Jetzt anrufen</a>
             <a href="/kontakt" class="inline-flex items-center justify-center gap-2 bg-white border border-slate-300 text-slate-700 px-6 py-3 rounded-lg font-medium hover:bg-slate-50 transition-colors">Kostenlose Beratung anfragen →</a>
           </div>
           <p class="text-sm text-slate-500 mt-4">Die Erstberatung ist kostenlos – auch wenn Sie sich danach gegen einen Wechsel entscheiden.</p>
@@ -1267,7 +1267,7 @@ function getMockBlogPosts(): BlogPost[] {
           </div>
 
           <div class="flex flex-col sm:flex-row gap-3">
-            <a href="tel:+4982349679750" class="inline-flex items-center justify-center gap-2 bg-white text-[#0F5B78] font-semibold px-5 py-3 rounded-lg hover:bg-slate-100 transition-colors">
+            <a href="tel:+4982349665900" class="inline-flex items-center justify-center gap-2 bg-white text-[#0F5B78] font-semibold px-5 py-3 rounded-lg hover:bg-slate-100 transition-colors">
               <span>📞</span> 08234 / 967 975 0
             </a>
             <a href="/kontakt" class="inline-flex items-center justify-center gap-2 bg-white/10 text-white font-semibold px-5 py-3 rounded-lg border border-white/30 hover:bg-white/20 transition-colors">
@@ -1584,7 +1584,7 @@ function getMockBlogPosts(): BlogPost[] {
           <p class="text-white/90 mb-4">Wir beraten Sie ehrlich, welches System zu Ihrem Haus passt – Pellet, Wärmepumpe oder Hybrid. Kostenlose Vor-Ort-Beratung inkl. Förderberechnung.</p>
 
           <div class="flex flex-col sm:flex-row gap-3">
-            <a href="tel:+4982349679750" class="inline-flex items-center justify-center gap-2 bg-white text-[#0F5B78] font-semibold px-5 py-3 rounded-lg hover:bg-slate-100 transition-colors">
+            <a href="tel:+4982349665900" class="inline-flex items-center justify-center gap-2 bg-white text-[#0F5B78] font-semibold px-5 py-3 rounded-lg hover:bg-slate-100 transition-colors">
               <span>📞</span> 08234 / 967 975 0
             </a>
             <a href="/kontakt" class="inline-flex items-center justify-center gap-2 bg-white/10 text-white font-semibold px-5 py-3 rounded-lg border border-white/30 hover:bg-white/20 transition-colors">
@@ -1907,7 +1907,7 @@ function getMockBlogPosts(): BlogPost[] {
           <p class="text-white/90 mb-4">Wir schauen uns Ihr Dach an und sagen Ihnen ehrlich, ob Solarthermie bei Ihnen Sinn macht – oder ob PV die bessere Wahl ist.</p>
 
           <div class="flex flex-col sm:flex-row gap-3">
-            <a href="tel:+4982349679750" class="inline-flex items-center justify-center gap-2 bg-white text-[#0F5B78] font-semibold px-5 py-3 rounded-lg hover:bg-slate-100 transition-colors">
+            <a href="tel:+4982349665900" class="inline-flex items-center justify-center gap-2 bg-white text-[#0F5B78] font-semibold px-5 py-3 rounded-lg hover:bg-slate-100 transition-colors">
               <span>📞</span> 08234 / 967 975 0
             </a>
             <a href="/kontakt" class="inline-flex items-center justify-center gap-2 bg-white/10 text-white font-semibold px-5 py-3 rounded-lg border border-white/30 hover:bg-white/20 transition-colors">
@@ -2217,7 +2217,7 @@ function getMockBlogPosts(): BlogPost[] {
             <a href="/kontakt" class="inline-flex items-center gap-2 bg-white text-[#0F5B78] px-5 py-2.5 rounded-lg font-medium hover:bg-slate-100 transition-colors">
               Beratungstermin vereinbaren
             </a>
-            <a href="tel:+498234908970" class="inline-flex items-center gap-2 border border-white/30 text-white px-5 py-2.5 rounded-lg font-medium hover:bg-white/10 transition-colors">
+            <a href="tel:+4982349665900" class="inline-flex items-center gap-2 border border-white/30 text-white px-5 py-2.5 rounded-lg font-medium hover:bg-white/10 transition-colors">
               08234 / 90 89 70
             </a>
           </div>
@@ -2543,7 +2543,7 @@ function getMockBlogPosts(): BlogPost[] {
             <a href="/kontakt" class="inline-flex items-center gap-2 bg-white text-[#0F5B78] px-5 py-2.5 rounded-lg font-medium hover:bg-slate-100 transition-colors">
               Beratungstermin buchen
             </a>
-            <a href="tel:+498234908970" class="inline-flex items-center gap-2 border border-white/30 text-white px-5 py-2.5 rounded-lg font-medium hover:bg-white/10 transition-colors">
+            <a href="tel:+4982349665900" class="inline-flex items-center gap-2 border border-white/30 text-white px-5 py-2.5 rounded-lg font-medium hover:bg-white/10 transition-colors">
               08234 / 90 89 70
             </a>
           </div>
