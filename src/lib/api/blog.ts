@@ -223,106 +223,259 @@ function getMockBlogPosts(): BlogPost[] {
       title: 'Wärmepumpe Kosten 2025: Kompletter Überblick',
       excerpt: 'Was kostet eine Wärmepumpe 2025 wirklich? Alle Kosten, Förderungen und versteckte Ausgaben im Detail erklärt.',
       content: `
-        <h2>Wärmepumpe Kosten 2025: Der komplette Überblick</h2>
+        <p class="text-xl leading-relaxed text-slate-600 mb-8">Sie überlegen, Ihre alte Heizung gegen eine Wärmepumpe zu tauschen? Verständlich – mit bis zu 70% Förderung war der Zeitpunkt nie besser. Aber bevor Sie loslegen: Hier erfahren Sie, was eine Wärmepumpe 2025 <em>wirklich</em> kostet.</p>
 
-        <p>Die Entscheidung für eine Wärmepumpe ist eine Investition in die Zukunft. Doch was kostet eine Wärmepumpe 2025 wirklich? In diesem umfassenden Ratgeber erfahren Sie alle Details zu Anschaffungskosten, Installation, Betrieb und staatlicher Förderung.</p>
+        <div class="highlight-quote">
+          Durchschnittliche Gesamtkosten für eine Wärmepumpe 2025: zwischen 27.000 und 50.000 Euro. Nach Förderung oft nur 9.000 bis 18.000 Euro.
+        </div>
 
-        <h3>Anschaffungs- und Installationskosten im Detail</h3>
+        <h2>Die ehrliche Kostenaufstellung</h2>
 
-        <p>Die Gesamtkosten für eine Wärmepumpe inklusive Installation liegen 2025 zwischen <strong>27.000 und 50.000 Euro</strong>. Eine aktuelle Studie mit 160 Angeboten in Rheinland-Pfalz ergab einen durchschnittlichen Mittelwert von 36.300 Euro.</p>
+        <p>Fangen wir mit den Fakten an. Eine aktuelle Studie der Verbraucherzentrale Rheinland-Pfalz hat 160 echte Angebote ausgewertet. Der Durchschnitt: <strong>36.300 Euro</strong> für eine komplett installierte Luft-Wasser-Wärmepumpe.</p>
 
-        <h4>Kosten nach Wärmepumpen-Typ:</h4>
+        <p>Klingt viel? Warten Sie ab – nach der Förderung sieht das ganz anders aus.</p>
+
+        <table class="cost-table">
+          <thead>
+            <tr>
+              <th>Wärmepumpen-Typ</th>
+              <th>Kosten inkl. Installation</th>
+              <th>Besonderheit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Luft-Wasser</strong></td>
+              <td class="price">27.000 – 40.000 €</td>
+              <td>Am beliebtesten, keine Erdarbeiten</td>
+            </tr>
+            <tr>
+              <td><strong>Sole-Wasser (Erdwärme)</strong></td>
+              <td class="price">40.000 – 50.000 €</td>
+              <td>Inkl. Bohrung, höchste Effizienz</td>
+            </tr>
+            <tr>
+              <td><strong>Wasser-Wasser</strong></td>
+              <td class="price">40.000 – 50.000 €</td>
+              <td>Inkl. Brunnenbohrung, selten</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Was ist im Preis drin?</h3>
+
+        <p>Ein seriöses Angebot enthält alles, was Sie für eine funktionierende Anlage brauchen:</p>
 
         <ul>
-          <li><strong>Luft-Wasser-Wärmepumpe:</strong> 27.000 - 40.000 € (am häufigsten installiert, keine Erdarbeiten nötig)</li>
-          <li><strong>Sole-Wasser-Wärmepumpe (Erdwärme):</strong> 40.000 - 50.000 € (inkl. Erdbohrung oder Erdkollektoren)</li>
-          <li><strong>Wasser-Wasser-Wärmepumpe:</strong> 40.000 - 50.000 € (inkl. Brunnenbohrung)</li>
-        </ul>
-
-        <h3>Was ist in den Kosten enthalten?</h3>
-
-        <p>Die Gesamtkosten setzen sich aus mehreren Komponenten zusammen:</p>
-
-        <ul>
-          <li>Wärmepumpen-Gerät (Außen- und Inneneinheit)</li>
-          <li>Professionelle Installation durch zertifizierte Fachbetriebe</li>
-          <li>Hydraulischer Abgleich des Heizsystems</li>
-          <li>Demontage und fachgerechte Entsorgung der alten Heizung</li>
+          <li>Das Gerät selbst (Außen- und Inneneinheit)</li>
+          <li>Montage durch zertifizierte Fachleute</li>
+          <li>Hydraulischer Abgleich – Pflicht für die Förderung</li>
+          <li>Abbau und Entsorgung der alten Heizung</li>
           <li>Inbetriebnahme und Einweisung</li>
-          <li>Warmwasserspeicher (falls erforderlich)</li>
         </ul>
 
-        <h3>BEG Förderung 2025: Bis zu 70% Zuschuss</h3>
+        <div class="callout callout-warning">
+          <span class="callout-icon">⚠️</span>
+          <div class="callout-title">Achtung bei Billigangeboten</div>
+          <div class="callout-content">
+            <p>Wenn ein Angebot deutlich unter 25.000 Euro liegt, fehlt oft etwas Wichtiges – zum Beispiel der hydraulische Abgleich, die Demontage oder ein ordentlicher Warmwasserspeicher. Fragen Sie genau nach!</p>
+          </div>
+        </div>
 
-        <p>Die Bundesförderung für effiziente Gebäude (BEG) macht Wärmepumpen deutlich erschwinglicher. Die Förderung wird über die KfW beantragt.</p>
+        <h2>Die Förderung macht's möglich</h2>
 
-        <h4>Fördersätze im Detail:</h4>
+        <p>Hier wird es spannend. Der Staat will, dass Sie auf erneuerbare Energien umsteigen – und zahlt dafür ordentlich mit. Bis zu <strong>70% der Kosten</strong> übernimmt die KfW.</p>
+
+        <table class="cost-table">
+          <thead>
+            <tr>
+              <th>Förderung</th>
+              <th>Höhe</th>
+              <th>Voraussetzung</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Grundförderung</strong></td>
+              <td class="price">30%</td>
+              <td>Alte Heizung ist mind. 2 Jahre alt</td>
+            </tr>
+            <tr>
+              <td><strong>Klimageschwindigkeits-Bonus</strong></td>
+              <td class="price">+20%</td>
+              <td>Austausch von Öl-/Gas-/Kohleheizung</td>
+            </tr>
+            <tr>
+              <td><strong>Einkommensbonus</strong></td>
+              <td class="price">+30%</td>
+              <td>Zu versteuerndes Einkommen unter 40.000 €</td>
+            </tr>
+            <tr>
+              <td><strong>Effizienzbonus</strong></td>
+              <td class="price">+5%</td>
+              <td>Wärmepumpe mit natürlichem Kältemittel</td>
+            </tr>
+            <tr class="highlight-row">
+              <td><strong>Maximum</strong></td>
+              <td class="price">70%</td>
+              <td>Gedeckelt bei 21.000 € Zuschuss</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Rechenbeispiel: Familie Müller aus Augsburg</h3>
+
+        <p>Die Müllers tauschen ihre 25 Jahre alte Gasheizung gegen eine Luft-Wasser-Wärmepumpe für 32.000 Euro. Beide arbeiten, das zu versteuernde Haushaltseinkommen liegt bei 65.000 Euro.</p>
+
+        <div class="comparison-grid">
+          <div class="comparison-card">
+            <div class="comparison-card-title">Ohne Förderung</div>
+            <div class="comparison-card-price">32.000 € <span>Eigenanteil</span></div>
+            <p style="color: #64748b; font-size: 0.9rem;">Voller Betrag aus eigener Tasche</p>
+          </div>
+          <div class="comparison-card recommended">
+            <div class="comparison-card-title">Mit 50% Förderung</div>
+            <div class="comparison-card-price">16.000 € <span>Eigenanteil</span></div>
+            <p style="color: #64748b; font-size: 0.9rem;">30% Basis + 20% Geschwindigkeitsbonus</p>
+          </div>
+        </div>
+
+        <p>Hätten die Müllers ein Einkommen unter 40.000 Euro, käme der Einkommensbonus dazu – dann wären es nur noch <strong>9.600 Euro</strong> Eigenanteil für eine komplett neue Heizungsanlage.</p>
+
+        <div class="callout callout-info">
+          <span class="callout-icon">ℹ️</span>
+          <div class="callout-title">Der Geschwindigkeitsbonus läuft aus</div>
+          <div class="callout-content">
+            <p>Die 20% Klimageschwindigkeits-Bonus gibt es nur noch bis Ende 2028. Danach reduziert er sich schrittweise. Wer wechseln will, sollte nicht zu lange warten.</p>
+          </div>
+        </div>
+
+        <h2>Laufende Kosten: Was kommt danach?</h2>
+
+        <p>Die Anschaffung ist das eine – aber was kostet der Betrieb? Hier überrascht die Wärmepumpe positiv.</p>
+
+        <table class="cost-table">
+          <thead>
+            <tr>
+              <th>Kostenart</th>
+              <th>Jährliche Kosten</th>
+              <th>Anmerkung</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Strom</strong></td>
+              <td class="price">ca. 1.200 – 1.800 €</td>
+              <td>Abhängig von Hausgröße und Dämmung</td>
+            </tr>
+            <tr>
+              <td><strong>Wartung</strong></td>
+              <td class="price">150 – 300 €</td>
+              <td>Deutlich weniger als Gasheizung</td>
+            </tr>
+            <tr>
+              <td><strong>Schornsteinfeger</strong></td>
+              <td class="price">0 €</td>
+              <td>Entfällt komplett</td>
+            </tr>
+            <tr class="highlight-row">
+              <td><strong>Gesamt</strong></td>
+              <td class="price">ca. 1.500 – 2.100 €</td>
+              <td>Oft 30-50% günstiger als Gas</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>Der Clou: Bei einer guten Wärmepumpe (Jahresarbeitszahl 3,5 oder höher) kostet Sie eine Kilowattstunde Wärme etwa <strong>5-6 Cent</strong>. Zum Vergleich: Gas liegt bei 10-12 Cent, Öl bei 12-15 Cent pro kWh.</p>
+
+        <h2>Versteckte Kosten – darauf sollten Sie achten</h2>
+
+        <p>Ein Punkt, bei dem viele böse Überraschungen erleben: Nicht alles ist im Standardangebot enthalten.</p>
+
+        <table class="cost-table">
+          <thead>
+            <tr>
+              <th>Mögliche Zusatzkosten</th>
+              <th>Preisspanne</th>
+              <th>Wann nötig?</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Starkstromanschluss</strong></td>
+              <td class="price">500 – 2.000 €</td>
+              <td>Wenn nicht vorhanden oder zu schwach</td>
+            </tr>
+            <tr>
+              <td><strong>Größere Heizkörper</strong></td>
+              <td class="price">2.000 – 5.000 €</td>
+              <td>Bei sehr kleinen Altbau-Heizkörpern</td>
+            </tr>
+            <tr>
+              <td><strong>Neuer Warmwasserspeicher</strong></td>
+              <td class="price">1.000 – 3.000 €</td>
+              <td>Wenn alter Speicher nicht passt</td>
+            </tr>
+            <tr>
+              <td><strong>Fundamentarbeiten</strong></td>
+              <td class="price">500 – 1.500 €</td>
+              <td>Für das Außengerät</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="callout callout-tip">
+          <span class="callout-icon">💡</span>
+          <div class="callout-title">Unser Tipp</div>
+          <div class="callout-content">
+            <p>Lassen Sie sich ein Angebot geben, das <em>alle</em> notwendigen Arbeiten enthält. Seriöse Betriebe wie HeizCenter machen eine gründliche Vor-Ort-Besichtigung und sagen Ihnen ehrlich, was bei Ihrem Haus anfällt – bevor Sie unterschreiben.</p>
+          </div>
+        </div>
+
+        <h2>Lohnt sich das überhaupt?</h2>
+
+        <p>Jetzt mal Butter bei die Fische: Rechnet sich eine Wärmepumpe?</p>
+
+        <div class="pro-con-list">
+          <div class="pro-list">
+            <div class="pro-list-title">✓ Dafür spricht</div>
+            <ul>
+              <li>Bis zu 70% Förderung vom Staat</li>
+              <li>30-50% niedrigere Heizkosten</li>
+              <li>Keine Abhängigkeit von Gas-/Ölpreisen</li>
+              <li>Wertsteigerung der Immobilie</li>
+              <li>Erfüllt alle Anforderungen des GEG</li>
+              <li>Kaum Wartungskosten</li>
+            </ul>
+          </div>
+          <div class="con-list">
+            <div class="con-list-title">✗ Bedenken Sie</div>
+            <ul>
+              <li>Hohe Anfangsinvestition</li>
+              <li>Bei schlecht gedämmten Häusern weniger effizient</li>
+              <li>Außengerät braucht Platz</li>
+              <li>Planungsvorlauf von 2-4 Monaten</li>
+            </ul>
+          </div>
+        </div>
+
+        <p><strong>Die Kurzversion:</strong> Mit der aktuellen Förderung amortisiert sich eine Wärmepumpe typischerweise in 8-12 Jahren. Bei einer Lebensdauer von 20+ Jahren heizen Sie dann 10 Jahre lang quasi umsonst – zumindest was die Anschaffung betrifft.</p>
+
+        <h2>Wie geht's weiter?</h2>
+
+        <p>Sie wollen wissen, was eine Wärmepumpe <em>bei Ihnen</em> konkret kostet? Dann lassen Sie sich beraten. Bei HeizCenter machen wir das kostenlos und unverbindlich.</p>
+
+        <p>Was Sie bekommen:</p>
 
         <ul>
-          <li><strong>30% Grundförderung:</strong> Für jeden, der eine mindestens 2 Jahre alte Heizung gegen eine Wärmepumpe tauscht</li>
-          <li><strong>20% Klimageschwindigkeits-Bonus:</strong> Für selbstnutzende Eigentümer beim Austausch von Öl-, Gasetagen-, Kohle- und Nachtspeicheröfen sowie 20 Jahre alten Gas- und Biomasseheizungen (bis Ende 2028)</li>
-          <li><strong>30% Einkommensbonus:</strong> Für selbstnutzende Eigentümer mit zu versteuerndem Jahreseinkommen bis 40.000 Euro</li>
-          <li><strong>5% Effizienzbonus:</strong> Für Wärmepumpen mit natürlichem Kältemittel</li>
+          <li>Vor-Ort-Besichtigung durch einen Fachmann</li>
+          <li>Ehrliche Einschätzung, ob eine Wärmepumpe für Ihr Haus sinnvoll ist</li>
+          <li>Individuelles Angebot mit allen Kosten – ohne versteckte Extras</li>
+          <li>Berechnung Ihrer persönlichen Förderung</li>
+          <li>Unterstützung beim KfW-Antrag</li>
         </ul>
 
-        <p><strong>Maximale Förderung:</strong> Bis zu 70% der Investitionskosten, maximal 21.000 Euro (bei förderfähigen Kosten von 30.000 Euro).</p>
-
-        <h3>Kosten nach Förderung: Praxisbeispiele</h3>
-
-        <p>Mit der BEG-Förderung reduzieren sich die Netto-Kosten erheblich:</p>
-
-        <ul>
-          <li><strong>Beispiel 1:</strong> Luft-Wasser-Wärmepumpe für 30.000 € mit 40% Förderung (Grundförderung + Geschwindigkeitsbonus) = <strong>18.000 € Eigenanteil</strong></li>
-          <li><strong>Beispiel 2:</strong> Gleiche Wärmepumpe mit 70% Förderung (alle Boni) = <strong>9.000 € Eigenanteil</strong></li>
-        </ul>
-
-        <h3>Betriebskosten: Was kommt laufend auf Sie zu?</h3>
-
-        <p>Neben den Anschaffungskosten sind die Betriebskosten entscheidend:</p>
-
-        <ul>
-          <li><strong>Stromkosten:</strong> Ca. 1.800 € pro Jahr für eine vierköpfige Familie im Einfamilienhaus</li>
-          <li><strong>Wartung:</strong> 150-300 € jährlich (deutlich günstiger als bei Gas-/Ölheizungen)</li>
-          <li><strong>Schornsteinfeger:</strong> Entfällt komplett</li>
-        </ul>
-
-        <p>Bei einem Strompreis von 30 Cent/kWh und einer Jahresarbeitszahl (JAZ) von 3,5 ergeben sich Heizkosten von etwa 5-6 Cent pro kWh Wärme – deutlich günstiger als Gas (10-12 Cent/kWh) oder Öl (12-15 Cent/kWh).</p>
-
-        <h3>Versteckte Kosten, die Sie einplanen sollten</h3>
-
-        <p>Folgende Zusatzkosten können anfallen:</p>
-
-        <ul>
-          <li><strong>Starkstromanschluss:</strong> 500-2.000 € (falls nicht vorhanden)</li>
-          <li><strong>Optimierung des Heizsystems:</strong> 2.000-5.000 € (z.B. größere Heizkörper für Niedertemperaturbetrieb)</li>
-          <li><strong>Dämmungsmaßnahmen:</strong> Bei Altbauten für optimale Effizienz empfohlen</li>
-          <li><strong>Warmwasserspeicher:</strong> 1.000-3.000 € (falls Ersatz nötig)</li>
-          <li><strong>Smart Home Integration:</strong> 500-1.500 € (optional, aber sinnvoll)</li>
-        </ul>
-
-        <h3>Langfristige Einsparungen und Wirtschaftlichkeit</h3>
-
-        <p>Trotz höherer Anschaffungskosten amortisiert sich eine Wärmepumpe durch:</p>
-
-        <ul>
-          <li>Niedrigere Heizkosten (50-70% Ersparnis gegenüber Öl/Gas)</li>
-          <li>Minimale Wartungskosten</li>
-          <li>Keine Brennstoffkosten oder Preisschwankungen</li>
-          <li>Wertsteigerung der Immobilie</li>
-          <li>Zukunftssicherheit durch Erfüllung des GEG</li>
-        </ul>
-
-        <p><strong>Amortisationszeit:</strong> Mit Förderung in der Regel 8-12 Jahre, ohne Förderung 15-20 Jahre.</p>
-
-        <h3>Fazit: Lohnt sich eine Wärmepumpe 2025?</h3>
-
-        <p>Mit der aktuellen BEG-Förderung von bis zu 70% sind Wärmepumpen 2025 so attraktiv wie nie zuvor. Die Kombination aus hoher Förderung, niedrigen Betriebskosten und steigenden Preisen für fossile Brennstoffe macht die Investition wirtschaftlich sinnvoll.</p>
-
-        <p><strong>Wichtig:</strong> Die Förderung läuft 2025 weiter, doch politische Diskussionen über mögliche Kürzungen machen schnelles Handeln ratsam. Der Klimageschwindigkeits-Bonus läuft Ende 2028 aus.</p>
-
-        <h3>Nächste Schritte</h3>
-
-        <p>Lassen Sie sich von HeizCenter kostenlos und unverbindlich beraten. Wir erstellen Ihnen ein individuelles Angebot und unterstützen Sie bei der Förderantragstellung – für maximale Kostentransparenz von Anfang an.</p>
+        <p>Die Beratung ist wirklich kostenlos – auch wenn Sie sich danach gegen eine Wärmepumpe entscheiden. Wir finden: Nur eine informierte Entscheidung ist eine gute Entscheidung.</p>
       `,
       category: 'Wärmepumpe',
       author: 'HeizCenter Redaktion',

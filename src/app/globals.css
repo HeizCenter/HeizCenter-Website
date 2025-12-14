@@ -214,3 +214,383 @@
   opacity: 0.02;
   pointer-events: none;
 }
+
+/* ===== Blog Article Custom Components ===== */
+
+/* Info Callout Box - for tips and important info */
+.callout {
+  position: relative;
+  padding: 1.25rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 0.75rem;
+  border-left: 4px solid;
+}
+
+.callout-info {
+  background: linear-gradient(135deg, hsl(194 78% 95%) 0%, hsl(194 78% 98%) 100%);
+  border-color: hsl(194 78% 26%);
+}
+
+.callout-warning {
+  background: linear-gradient(135deg, hsl(45 100% 95%) 0%, hsl(45 100% 98%) 100%);
+  border-color: hsl(45 100% 48%);
+}
+
+.callout-success {
+  background: linear-gradient(135deg, hsl(151 55% 94%) 0%, hsl(151 55% 97%) 100%);
+  border-color: hsl(151 55% 40%);
+}
+
+.callout-tip {
+  background: linear-gradient(135deg, hsl(270 60% 96%) 0%, hsl(270 60% 98%) 100%);
+  border-color: hsl(270 60% 50%);
+}
+
+.callout-icon {
+  position: absolute;
+  top: -0.75rem;
+  left: 1rem;
+  width: 1.75rem;
+  height: 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+}
+
+.callout-info .callout-icon {
+  background: hsl(194 78% 26%);
+  color: white;
+}
+
+.callout-warning .callout-icon {
+  background: hsl(45 100% 48%);
+  color: hsl(0 0% 10%);
+}
+
+.callout-success .callout-icon {
+  background: hsl(151 55% 40%);
+  color: white;
+}
+
+.callout-tip .callout-icon {
+  background: hsl(270 60% 50%);
+  color: white;
+}
+
+.callout-title {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: hsl(0 0% 10%);
+}
+
+.callout-content {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: hsl(0 0% 29%);
+}
+
+.callout-content p {
+  margin: 0;
+}
+
+/* Cost/Price Table Styling */
+.cost-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 1.5rem 0;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.cost-table thead {
+  background: linear-gradient(135deg, hsl(194 78% 26%) 0%, hsl(194 78% 32%) 100%);
+}
+
+.cost-table th {
+  padding: 1rem 1.25rem;
+  text-align: left;
+  font-weight: 600;
+  color: white;
+  font-size: 0.9375rem;
+}
+
+.cost-table tbody tr {
+  background: white;
+  transition: background-color 0.15s ease;
+}
+
+.cost-table tbody tr:nth-child(even) {
+  background: hsl(0 0% 98%);
+}
+
+.cost-table tbody tr:hover {
+  background: hsl(194 78% 97%);
+}
+
+.cost-table td {
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid hsl(0 0% 91%);
+  font-size: 0.9375rem;
+}
+
+.cost-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.cost-table .price {
+  font-weight: 700;
+  color: hsl(194 78% 26%);
+}
+
+.cost-table .highlight-row {
+  background: hsl(151 55% 94%) !important;
+}
+
+.cost-table .highlight-row td {
+  font-weight: 600;
+}
+
+/* Comparison Cards */
+.comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.comparison-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.comparison-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.comparison-card.recommended {
+  border-color: hsl(194 78% 26%);
+  position: relative;
+}
+
+.comparison-card.recommended::before {
+  content: 'Empfohlen';
+  position: absolute;
+  top: -0.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: hsl(194 78% 26%);
+  color: white;
+  padding: 0.25rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.comparison-card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: hsl(0 0% 10%);
+}
+
+.comparison-card-price {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: hsl(194 78% 26%);
+  margin-bottom: 1rem;
+}
+
+.comparison-card-price span {
+  font-size: 1rem;
+  font-weight: 400;
+  color: hsl(0 0% 50%);
+}
+
+/* Key Figure / Stat Highlight */
+.key-figure {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, hsl(194 78% 95%) 0%, hsl(194 78% 90%) 100%);
+  border-radius: 0.5rem;
+  margin: 0.25rem 0;
+}
+
+.key-figure-value {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: hsl(194 78% 26%);
+}
+
+.key-figure-label {
+  font-size: 0.875rem;
+  color: hsl(0 0% 29%);
+}
+
+/* Timeline / Process Steps in Articles */
+.article-timeline {
+  position: relative;
+  padding-left: 2rem;
+  margin: 2rem 0;
+}
+
+.article-timeline::before {
+  content: '';
+  position: absolute;
+  left: 0.5rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, hsl(194 78% 26%), hsl(151 55% 40%));
+  border-radius: 1px;
+}
+
+.timeline-step {
+  position: relative;
+  padding-bottom: 1.5rem;
+}
+
+.timeline-step::before {
+  content: attr(data-step);
+  position: absolute;
+  left: -2rem;
+  top: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: hsl(194 78% 26%);
+  color: white;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.timeline-step-title {
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: hsl(0 0% 10%);
+  margin-bottom: 0.5rem;
+}
+
+.timeline-step-content {
+  color: hsl(0 0% 29%);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+/* Quote/Highlight Block */
+.highlight-quote {
+  position: relative;
+  padding: 2rem 2.5rem;
+  margin: 2rem 0;
+  background: linear-gradient(135deg, hsl(0 0% 98%) 0%, hsl(0 0% 96%) 100%);
+  border-radius: 1rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: hsl(0 0% 20%);
+  line-height: 1.6;
+  font-style: italic;
+}
+
+.highlight-quote::before {
+  content: '"';
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem;
+  font-size: 4rem;
+  font-family: Georgia, serif;
+  color: hsl(194 78% 26%);
+  opacity: 0.3;
+  line-height: 1;
+}
+
+/* Pro/Con List */
+.pro-con-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+@media (max-width: 640px) {
+  .pro-con-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.pro-list, .con-list {
+  padding: 1.25rem;
+  border-radius: 0.75rem;
+}
+
+.pro-list {
+  background: hsl(151 55% 96%);
+  border: 1px solid hsl(151 55% 85%);
+}
+
+.con-list {
+  background: hsl(0 70% 97%);
+  border: 1px solid hsl(0 70% 90%);
+}
+
+.pro-list-title, .con-list-title {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pro-list-title {
+  color: hsl(151 55% 30%);
+}
+
+.con-list-title {
+  color: hsl(0 70% 40%);
+}
+
+.pro-list ul, .con-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pro-list li, .con-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+
+.pro-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: hsl(151 55% 40%);
+  font-weight: 700;
+}
+
+.con-list li::before {
+  content: '✗';
+  position: absolute;
+  left: 0;
+  color: hsl(0 70% 50%);
+  font-weight: 700;
+}
