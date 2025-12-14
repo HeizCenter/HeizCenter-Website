@@ -2880,21 +2880,24 @@ function getMockBlogPosts(): BlogPost[] {
       id: 10,
       slug: 'waermepumpe-vorteile-nachteile-2025',
       title: 'Wärmepumpe Vorteile und Nachteile 2025: Der komplette Überblick',
-      excerpt: 'Alle Vorteile und Nachteile von Wärmepumpen 2025 im Detail. Mit konkreten Zahlen, Kosten, Effizienz und Entscheidungshilfen für Neubau und Altbau.',
+      excerpt: 'Lohnt sich eine Wärmepumpe? 41% günstiger als Gas, bis 70% Förderung, aber auch echte Nachteile. Hier die Fakten für Ihre Entscheidung.',
       content: `
-        <h2>Wärmepumpe Vorteile und Nachteile 2025: Umfassender Überblick</h2>
+        <h2>Lohnt sich eine Wärmepumpe? Die ehrliche Antwort</h2>
 
-        <p>Wärmepumpen entwickeln sich in Deutschland zur Standardtechnologie fürs Heizen. Im ersten Quartal 2025 erreichte ihr Marktanteil ein <strong>Allzeithoch von 42%</strong> bei den Heizungsabsätzen, während Gasheizungen um 48% und Ölheizungen um 81% zurückgingen. Diese Entwicklung spiegelt sowohl technische Fortschritte als auch veränderte wirtschaftliche Rahmenbedingungen wider.</p>
+        <p>„Lohnt sich eine Wärmepumpe für mich?" – Diese Frage bekommen wir täglich. Die ehrliche Antwort: <strong>Für die meisten ja, aber nicht für jeden.</strong> Hier sind die Fakten – ohne Marketing-Floskeln, dafür mit echten Zahlen aus unserer Region.</p>
 
-        <div style="background-color: #e8f4f8; padding: 20px; border-left: 4px solid #0F5B78; margin: 20px 0;">
-          <h3 style="margin-top: 0;">📊 Schnellübersicht: Wärmepumpe 2025</h3>
-          <ul style="margin-bottom: 0;">
-            <li><strong>Marktanteil:</strong> 42% (Q1 2025)</li>
-            <li><strong>CO₂-Einsparung:</strong> 2.620 kg/Jahr vs. Gas/Öl</li>
-            <li><strong>Betriebskosten:</strong> 41% günstiger als Gasheizung</li>
-            <li><strong>Förderung:</strong> Bis zu 70% (max. 21.000 €)</li>
-            <li><strong>JAZ:</strong> 3,2-4,5 (je nach Typ)</li>
-          </ul>
+        <div class="callout callout-info">
+          <span class="callout-icon">📊</span>
+          <div class="callout-title">Die wichtigsten Zahlen auf einen Blick</div>
+          <div class="callout-content">
+            <ul>
+              <li><strong>Marktanteil 2025:</strong> 42% aller neuen Heizungen</li>
+              <li><strong>CO₂-Einsparung:</strong> 2.620 kg pro Jahr vs. Gas/Öl</li>
+              <li><strong>Betriebskosten:</strong> 41% günstiger als Gasheizung</li>
+              <li><strong>Förderung:</strong> Bis zu 70% (max. 21.000 €)</li>
+              <li><strong>JAZ:</strong> 3,2–4,5 je nach Typ</li>
+            </ul>
+          </div>
         </div>
 
         <h3>Technische Grundlagen: So funktioniert eine Wärmepumpe</h3>
@@ -2929,33 +2932,33 @@ function getMockBlogPosts(): BlogPost[] {
 
         <p>Die Betriebskosten moderner Wärmepumpen fallen <strong>41% günstiger aus</strong> als bei Gasheizungen (Verivox-Analyse 2025).</p>
 
-        <table style="width:100%; border-collapse: collapse; margin: 20px 0;">
+        <table class="cost-table">
           <thead>
-            <tr style="background-color: #0F5B78; color: white;">
-              <th style="padding: 12px; text-align: left;">Heizsystem</th>
-              <th style="padding: 12px; text-align: left;">Verbrauch</th>
-              <th style="padding: 12px; text-align: right;">Kosten/Jahr</th>
+            <tr>
+              <th>Heizsystem</th>
+              <th>Verbrauch</th>
+              <th>Kosten/Jahr</th>
             </tr>
           </thead>
           <tbody>
-            <tr style="background-color: #f9f9f9;">
-              <td style="padding: 10px;">Gasheizung</td>
-              <td style="padding: 10px;">20.000 kWh Gas</td>
-              <td style="padding: 10px; text-align: right;"><strong>2.262 €</strong></td>
+            <tr>
+              <td>Gasheizung</td>
+              <td>20.000 kWh Gas</td>
+              <td class="price">2.262 €</td>
             </tr>
             <tr>
-              <td style="padding: 10px;">WP (JAZ 4,0)</td>
-              <td style="padding: 10px;">5.000 kWh Strom</td>
-              <td style="padding: 10px; text-align: right;"><strong>1.337 €</strong></td>
+              <td>WP (JAZ 4,0)</td>
+              <td>5.000 kWh Strom</td>
+              <td class="price">1.337 €</td>
             </tr>
-            <tr style="background-color: #f9f9f9;">
-              <td style="padding: 10px;">WP (JAZ 2,7)</td>
-              <td style="padding: 10px;">7.500 kWh Strom</td>
-              <td style="padding: 10px; text-align: right;"><strong>1.978 €</strong></td>
+            <tr>
+              <td>WP (JAZ 2,7)</td>
+              <td>7.500 kWh Strom</td>
+              <td class="price">1.978 €</td>
             </tr>
-            <tr style="background-color: #d4edda;">
-              <td style="padding: 10px;" colspan="2"><strong>Ersparnis (JAZ 4,0)</strong></td>
-              <td style="padding: 10px; text-align: right;"><strong>925 € (41%)</strong></td>
+            <tr class="highlight-row">
+              <td colspan="2"><strong>Ersparnis (JAZ 4,0)</strong></td>
+              <td class="price">925 € (41%)</td>
             </tr>
           </tbody>
         </table>
@@ -3068,29 +3071,29 @@ function getMockBlogPosts(): BlogPost[] {
 
         <p>Der offensichtlichste Nachteil sind die initialen Investitionskosten:</p>
 
-        <table style="width:100%; border-collapse: collapse; margin: 20px 0;">
+        <table class="cost-table">
           <thead>
-            <tr style="background-color: #0F5B78; color: white;">
-              <th style="padding: 12px; text-align: left;">Wärmepumpentyp</th>
-              <th style="padding: 12px; text-align: right;">Kosten (inkl. Einbau)</th>
+            <tr>
+              <th>Wärmepumpentyp</th>
+              <th>Kosten (inkl. Einbau)</th>
             </tr>
           </thead>
           <tbody>
-            <tr style="background-color: #f9f9f9;">
-              <td style="padding: 10px;">Luft-Wasser-WP</td>
-              <td style="padding: 10px; text-align: right;">27.000 - 40.000 €</td>
+            <tr>
+              <td>Luft-Wasser-WP</td>
+              <td class="price">27.000–40.000 €</td>
             </tr>
             <tr>
-              <td style="padding: 10px;">Sole-Wasser-WP (Erdwärme)</td>
-              <td style="padding: 10px; text-align: right;">30.000 - 40.000 €</td>
-            </tr>
-            <tr style="background-color: #f9f9f9;">
-              <td style="padding: 10px;">Wasser-Wasser-WP</td>
-              <td style="padding: 10px; text-align: right;">22.000 - 45.000 €</td>
+              <td>Sole-Wasser-WP (Erdwärme)</td>
+              <td class="price">30.000–40.000 €</td>
             </tr>
             <tr>
-              <td style="padding: 10px;"><strong>Zum Vergleich: Gasheizung</strong></td>
-              <td style="padding: 10px; text-align: right;"><strong>8.000 - 12.000 €</strong></td>
+              <td>Wasser-Wasser-WP</td>
+              <td class="price">22.000–45.000 €</td>
+            </tr>
+            <tr>
+              <td><strong>Zum Vergleich: Gasheizung</strong></td>
+              <td class="price">8.000–12.000 €</td>
             </tr>
           </tbody>
         </table>
@@ -3139,24 +3142,24 @@ function getMockBlogPosts(): BlogPost[] {
 
         <p>Außeneinheiten erzeugen Betriebsgeräusche:</p>
 
-        <table style="width:100%; border-collapse: collapse; margin: 20px 0;">
+        <table class="cost-table">
           <thead>
-            <tr style="background-color: #0F5B78; color: white;">
-              <th style="padding: 12px; text-align: left;">Lautstärke</th>
-              <th style="padding: 12px; text-align: left;">dB(A)</th>
-              <th style="padding: 12px; text-align: left;">Vergleich</th>
+            <tr>
+              <th>Lautstärke</th>
+              <th>dB(A)</th>
+              <th>Vergleich</th>
             </tr>
           </thead>
           <tbody>
-            <tr style="background-color: #f9f9f9;">
-              <td style="padding: 10px;">Moderne Luft-WP (1m)</td>
-              <td style="padding: 10px;">45-65</td>
-              <td style="padding: 10px;">Kühlschrank bis TV</td>
+            <tr>
+              <td>Moderne Luft-WP (1m)</td>
+              <td>45–65</td>
+              <td>Kühlschrank bis TV</td>
             </tr>
             <tr>
-              <td style="padding: 10px;">Erdwärmepumpe (innen)</td>
-              <td style="padding: 10px;">30-45</td>
-              <td style="padding: 10px;">Flüstern bis leise Musik</td>
+              <td>Erdwärmepumpe (innen)</td>
+              <td>30–45</td>
+              <td>Flüstern bis leise Musik</td>
             </tr>
           </tbody>
         </table>
@@ -3301,48 +3304,48 @@ function getMockBlogPosts(): BlogPost[] {
 
         <h3>Beispiel: Einfamilienhaus 150 m² (20.000 kWh Wärmebedarf)</h3>
 
-        <table style="width:100%; border-collapse: collapse; margin: 20px 0;">
+        <table class="cost-table">
           <thead>
-            <tr style="background-color: #0F5B78; color: white;">
-              <th style="padding: 12px; text-align: left;">Position</th>
-              <th style="padding: 12px; text-align: right;">Gasheizung</th>
-              <th style="padding: 12px; text-align: right;">Wärmepumpe</th>
+            <tr>
+              <th>Position</th>
+              <th>Gasheizung</th>
+              <th>Wärmepumpe</th>
             </tr>
           </thead>
           <tbody>
-            <tr style="background-color: #f9f9f9;">
-              <td style="padding: 10px;">Anschaffung</td>
-              <td style="padding: 10px; text-align: right;">10.000 €</td>
-              <td style="padding: 10px; text-align: right;">32.000 €</td>
+            <tr>
+              <td>Anschaffung</td>
+              <td>10.000 €</td>
+              <td>32.000 €</td>
             </tr>
             <tr>
-              <td style="padding: 10px;">Förderung (55%)</td>
-              <td style="padding: 10px; text-align: right;">0 €</td>
-              <td style="padding: 10px; text-align: right;">-17.600 €</td>
-            </tr>
-            <tr style="background-color: #f9f9f9;">
-              <td style="padding: 10px;"><strong>Eigenanteil</strong></td>
-              <td style="padding: 10px; text-align: right;"><strong>10.000 €</strong></td>
-              <td style="padding: 10px; text-align: right;"><strong>14.400 €</strong></td>
+              <td>Förderung (55%)</td>
+              <td>0 €</td>
+              <td class="price">−17.600 €</td>
             </tr>
             <tr>
-              <td style="padding: 10px;">Betriebskosten/Jahr</td>
-              <td style="padding: 10px; text-align: right;">2.262 €</td>
-              <td style="padding: 10px; text-align: right;">1.337 €</td>
+              <td><strong>Eigenanteil</strong></td>
+              <td><strong>10.000 €</strong></td>
+              <td><strong>14.400 €</strong></td>
             </tr>
-            <tr style="background-color: #f9f9f9;">
-              <td style="padding: 10px;">CO₂-Kosten/Jahr</td>
-              <td style="padding: 10px; text-align: right;">520 €</td>
-              <td style="padding: 10px; text-align: right;">0 €</td>
+            <tr>
+              <td>Betriebskosten/Jahr</td>
+              <td>2.262 €</td>
+              <td class="price">1.337 €</td>
             </tr>
-            <tr style="background-color: #d4edda;">
-              <td style="padding: 10px;"><strong>15-Jahres-Gesamtkosten</strong></td>
-              <td style="padding: 10px; text-align: right;"><strong>51.730 €</strong></td>
-              <td style="padding: 10px; text-align: right;"><strong>34.455 €</strong></td>
+            <tr>
+              <td>CO₂-Kosten/Jahr</td>
+              <td>520 €</td>
+              <td class="price">0 €</td>
             </tr>
-            <tr style="background-color: #FFCA28;">
-              <td style="padding: 10px;" colspan="2"><strong>ERSPARNIS ÜBER 15 JAHRE:</strong></td>
-              <td style="padding: 10px; text-align: right;"><strong>17.275 €</strong></td>
+            <tr class="highlight-row">
+              <td><strong>15-Jahres-Gesamtkosten</strong></td>
+              <td><strong>51.730 €</strong></td>
+              <td class="price"><strong>34.455 €</strong></td>
+            </tr>
+            <tr class="highlight-row">
+              <td colspan="2"><strong>ERSPARNIS ÜBER 15 JAHRE:</strong></td>
+              <td class="price"><strong>17.275 €</strong></td>
             </tr>
           </tbody>
         </table>
