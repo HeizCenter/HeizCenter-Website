@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Kontakt - HeizCenter | Heizung, Sanitär & Wärmepumpen",
   description:
-    "Kontaktieren Sie HeizCenter für Heizung, Sanitär, Wärmepumpen und Klimaanlagen in Bobingen und Gutenzell-Hürbel. Angebot anfragen oder Notdienst 24/7.",
+    "Kontaktieren Sie HeizCenter für Heizung, Sanitär, Wärmepumpen und Klimaanlagen in Bobingen, Klosterlechfeld und Gutenzell-Hürbel. Angebot anfragen oder Notdienst 24/7.",
   openGraph: {
     title: "Kontakt - HeizCenter",
     description:

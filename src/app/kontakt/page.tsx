@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { Suspense } from "react";
-import { Phone, Mail, MapPin, Clock, MessageSquare, FileText, AlertCircle, MessageCircle } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, MessageSquare, FileText, AlertCircle, MessageCircle, Building2 } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ContactForm } from "@/components/forms/contact-form";
 import { QuoteForm } from "@/components/forms/quote-form";
@@ -99,8 +99,9 @@ function ContactTabs() {
 export default function ContactPage() {
   return (
     <>
-      {/* Schema.org Structured Data for both locations */}
+      {/* Schema.org Structured Data for all locations */}
       <LocalBusinessSchema location="bobingen" includeServices={true} />
+      <LocalBusinessSchema location="klosterlechfeld" includeServices={false} />
       <LocalBusinessSchema location="gutenzell" includeServices={false} />
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-[#0F5B78] to-[#0F5B78] text-white py-16">
@@ -156,7 +157,7 @@ export default function ContactPage() {
 
       {/* Contact Info Cards */}
       <section className="container py-12">
-        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto -mt-16 relative z-10">
+        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto -mt-16 relative z-10">
           {/* Bobingen */}
           <div className="bg-white rounded-xl shadow-lg p-6 border-t-4 border-[#0F5B78]">
             <MapPin className="h-8 w-8 text-[#0F5B78] mb-3" />
@@ -165,6 +166,51 @@ export default function ContactPage() {
               Lechallee 28
               <br />
               86399 Bobingen
+            </p>
+            <div className="flex items-start gap-2 text-sm text-slate-600 mb-2">
+              <Phone className="h-4 w-4 mt-0.5 flex-shrink-0" />
+              <a
+                href="tel:+4982349665900"
+                className="hover:text-[#0F5B78] transition-colors"
+              >
+                +49 8234 9665900
+              </a>
+            </div>
+            <div className="flex items-start gap-2 text-sm text-slate-600 mb-2">
+              <Mail className="h-4 w-4 mt-0.5 flex-shrink-0" />
+              <a
+                href="mailto:service@heizcenter.de"
+                className="hover:text-[#0F5B78] transition-colors"
+              >
+                service@heizcenter.de
+              </a>
+            </div>
+            <div className="flex items-start gap-2 text-sm text-slate-600">
+              <Clock className="h-4 w-4 mt-0.5 flex-shrink-0" />
+              <div>
+                <p>Mo-Fr: 08:00 - 17:00 Uhr</p>
+                <p>Sa: 09:00 - 13:00 Uhr</p>
+                <p className="text-red-600 font-semibold mt-1">
+                  24/7 Notdienst verfügbar
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Klosterlechfeld */}
+          <div className="bg-white rounded-xl shadow-lg p-6 border-t-4 border-[#FFCA28]">
+            <div className="flex items-start justify-between mb-3">
+              <MapPin className="h-8 w-8 text-[#0F5B78]" />
+              <div className="inline-flex items-center gap-1 px-2 py-1 bg-[#FFCA28]/20 text-[#0F5B78] text-xs font-semibold rounded-full border border-[#FFCA28]/40">
+                <Building2 className="h-3 w-3" />
+                <span>Besucherbüro</span>
+              </div>
+            </div>
+            <h3 className="font-bold text-xl mb-2">HeizCenter Klosterlechfeld</h3>
+            <p className="text-slate-600 mb-4">
+              Schulstraße 40
+              <br />
+              86836 Klosterlechfeld
             </p>
             <div className="flex items-start gap-2 text-sm text-slate-600 mb-2">
               <Phone className="h-4 w-4 mt-0.5 flex-shrink-0" />
@@ -338,6 +384,13 @@ export default function ContactPage() {
                   streetAddress: "Lechallee 28",
                   addressLocality: "Bobingen",
                   postalCode: "86399",
+                  addressCountry: "DE",
+                },
+                {
+                  "@type": "PostalAddress",
+                  streetAddress: "Schulstraße 40",
+                  addressLocality: "Klosterlechfeld",
+                  postalCode: "86836",
                   addressCountry: "DE",
                 },
                 {

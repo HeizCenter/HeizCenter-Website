@@ -18,13 +18,14 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "HeizCenter - Wärmepumpen, Heizung & Sanitär in Bayern",
   description:
-    "Ihr Experte für Wärmepumpen, Heizungsinstallation, Sanitär und Klimaanlagen in Bobingen und Gutenzell-Hürbel. Über 20 Jahre Erfahrung. Jetzt beraten lassen!",
+    "Ihr Experte für Wärmepumpen, Heizungsinstallation, Sanitär und Klimaanlagen in Bobingen, Klosterlechfeld und Gutenzell-Hürbel. Über 20 Jahre Erfahrung. Jetzt beraten lassen!",
   keywords: [
     "Wärmepumpe",
     "Heizung",
     "Sanitär",
     "Klimaanlage",
     "Bobingen",
+    "Klosterlechfeld",
     "Gutenzell-Hürbel",
     "Augsburg",
     "Ulm",

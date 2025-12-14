@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { MapPin, Clock, Phone } from "lucide-react";
+import { MapPin, Clock, Phone, Building2 } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Standorte - HeizCenter Bayern | Wärmepumpe, Heizung, Sanitär",
@@ -24,6 +24,7 @@ interface Location {
   region: string;
   phone: string;
   isMain: boolean;
+  isVisitorOffice?: boolean;
   subLocations?: string[];
 }
 
@@ -50,6 +51,7 @@ const locations: Location[] = [
     region: "Raum Landsberg am Lech",
     phone: "+49 8234 9665900",
     isMain: true,
+    isVisitorOffice: true,
     subLocations: [
       "Landsberg am Lech",
       "Schwabmünchen",
@@ -167,7 +169,7 @@ export default function StandortePage() {
               <Link
                 key={location.name}
                 href={location.href}
-                className="group bg-white border border-slate-200 rounded-lg p-6 hover:shadow-xl transition-shadow"
+                className="group bg-white border border-slate-200 rounded-lg p-6 hover:shadow-xl transition-shadow flex flex-col h-full"
               >
                 <div className="flex items-start justify-between mb-4">
                   <div>
@@ -175,6 +177,12 @@ export default function StandortePage() {
                       {location.name}
                     </h3>
                     <p className="text-slate-600">{location.region}</p>
+                    {location.isVisitorOffice && (
+                      <div className="inline-flex items-center gap-1.5 mt-2 px-2.5 py-1 bg-[#FFCA28]/20 text-[#0F5B78] text-xs font-semibold rounded-full border border-[#FFCA28]/40">
+                        <Building2 className="h-3.5 w-3.5" />
+                        <span>Kundenempfang & Besucherbüro</span>
+                      </div>
+                    )}
                   </div>
                   <MapPin className="h-8 w-8 text-[#0F5B78]" />
                 </div>
@@ -187,7 +195,7 @@ export default function StandortePage() {
                 </div>
 
                 {location.subLocations && location.subLocations.length > 0 && (
-                  <div className="pt-4 border-t border-slate-200">
+                  <div className="pt-4 border-t border-slate-200 flex-grow">
                     <p className="text-sm text-slate-600 mb-2 font-medium">
                       Weitere Serviceorte:
                     </p>
@@ -204,7 +212,7 @@ export default function StandortePage() {
                   </div>
                 )}
 
-                <div className="mt-6">
+                <div className="mt-auto pt-6">
                   <span className="text-[#0F5B78] font-medium group-hover:underline">
                     Mehr erfahren →
                   </span>

@@ -9,7 +9,7 @@ import { OrganizationSchema } from "@/components/schema/organization-schema";
 export const metadata: Metadata = {
   title: "Über uns - HeizCenter | Ihr regionaler Experte für Wärmepumpen & Heizung",
   description:
-    "Lernen Sie HeizCenter kennen. Seit über 20 Jahren Ihr Partner für Wärmepumpen, Heizung, Sanitär und Klimaanlagen in Bobingen und Gutenzell-Hürbel.",
+    "Lernen Sie HeizCenter kennen. Seit über 20 Jahren Ihr Partner für Wärmepumpen, Heizung, Sanitär und Klimaanlagen in Bobingen, Klosterlechfeld und Gutenzell-Hürbel.",
   keywords: ["HeizCenter", "Über uns", "Team", "Unternehmen", "Augsburg", "Wärmepumpen"],
 };
 
@@ -45,16 +45,16 @@ export default function UeberUnsPage() {
             </h1>
             <p className="text-xl text-blue-50 mb-8 leading-relaxed drop-shadow-md">
               Ihr verlässlicher Experte für moderne Heiztechnik, Wärmepumpen,
-              Sanitärinstallationen und Klimaanlagen in der Region Bobingen und Gutenzell-Hürbel.
+              Sanitärinstallationen und Klimaanlagen in der Region Bobingen, Klosterlechfeld und Gutenzell-Hürbel.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg border border-white/20">
                 <CheckCircle2 className="h-5 w-5 text-green-400" />
-                <span>50+ Mitarbeiter</span>
+                <span>15+ Mitarbeiter</span>
               </div>
               <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg border border-white/20">
                 <CheckCircle2 className="h-5 w-5 text-green-400" />
-                <span>5000+ Projekte</span>
+                <span>800+ Projekte</span>
               </div>
               <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg border border-white/20">
                 <CheckCircle2 className="h-5 w-5 text-green-400" />
@@ -78,7 +78,7 @@ export default function UeberUnsPage() {
                 <p className="text-lg mb-6 text-slate-700 leading-relaxed">
                   HeizCenter wurde mit der Vision gegründet, modernes Heizen und Sanitär für jeden
                   zugänglich zu machen. Was als kleiner Handwerksbetrieb in Augsburg begann, ist heute
-                  ein etabliertes Unternehmen mit über 50 Mitarbeitern und zwei Standorten in
+                  ein etabliertes Unternehmen mit über 15 Mitarbeitern und drei Standorten in
                   Süddeutschland.
                 </p>
                 <p className="text-lg text-slate-700 leading-relaxed">
@@ -172,7 +172,7 @@ export default function UeberUnsPage() {
                 </div>
                 <h3 className="text-xl font-bold mb-3">Team</h3>
                 <p className="text-slate-600 leading-relaxed">
-                  Über 50 qualifizierte Mitarbeiter mit Leidenschaft für ihr Handwerk
+                  Über 15 qualifizierte Mitarbeiter mit Leidenschaft für ihr Handwerk
                 </p>
               </CardContent>
             </Card>
@@ -193,15 +193,15 @@ export default function UeberUnsPage() {
               <div className="text-blue-100 font-medium">Jahre Erfahrung</div>
             </div>
             <div className="bg-gradient-to-br from-green-500 to-emerald-600 p-8 rounded-2xl text-white text-center hover:scale-105 transition-transform">
-              <div className="text-5xl md:text-6xl font-bold mb-2">50+</div>
+              <div className="text-5xl md:text-6xl font-bold mb-2">15+</div>
               <div className="text-green-100 font-medium">Mitarbeiter</div>
             </div>
             <div className="bg-gradient-to-br from-purple-500 to-indigo-600 p-8 rounded-2xl text-white text-center hover:scale-105 transition-transform">
-              <div className="text-5xl md:text-6xl font-bold mb-2">2</div>
+              <div className="text-5xl md:text-6xl font-bold mb-2">3</div>
               <div className="text-purple-100 font-medium">Standorte</div>
             </div>
             <div className="bg-gradient-to-br from-orange-500 to-red-600 p-8 rounded-2xl text-white text-center hover:scale-105 transition-transform">
-              <div className="text-5xl md:text-6xl font-bold mb-2">5000+</div>
+              <div className="text-5xl md:text-6xl font-bold mb-2">800+</div>
               <div className="text-orange-100 font-medium">Zufriedene Kunden</div>
             </div>
           </div>

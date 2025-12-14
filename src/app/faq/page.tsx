@@ -44,7 +44,7 @@ const klimaanlageFAQs: FAQItem[] = [
 ];
 
 const serviceFAQs: FAQItem[] = [
-  { question: "In welchen Regionen sind Sie tätig?", answer: "Hauptstandorte: Bobingen und Gutenzell-Hürbel. Service-Gebiet: Raum Augsburg, Ulm, Memmingen und Umgebung. Radius 50 km inkl. Landkreise Aichach-Friedberg, Donau-Ries, Neu-Ulm, Günzburg, Unterallgäu." },
+  { question: "In welchen Regionen sind Sie tätig?", answer: "Hauptstandorte: Bobingen, Klosterlechfeld und Gutenzell-Hürbel. Service-Gebiet: Raum Augsburg, Landsberg am Lech, Ulm, Memmingen und Umgebung. Radius 50 km inkl. Landkreise Aichach-Friedberg, Donau-Ries, Neu-Ulm, Günzburg, Unterallgäu." },
   { question: "Bieten Sie Notdienst an?", answer: "Ja, 24/7-Heizungsnotdienst unter +49 8234 9665900. Auch an Wochenenden und Feiertagen. Schnelle Reaktionszeit im gesamten Service-Gebiet." },
   { question: "Wie schnell bekommen wir einen Termin?", answer: "Beratungstermin meist innerhalb 1 Woche. Installationstermine nach Verfügbarkeit, oft 2-4 Wochen. Notfälle: sofort bzw. innerhalb 24h." },
   { question: "Übernehmen Sie die Förderanträge?", answer: "Ja, vollständig. Wir erstellen alle erforderlichen Unterlagen für BEG, KfW und andere Programme. Service inklusive bei Beauftragung." },

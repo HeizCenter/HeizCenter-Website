@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Building2 } from "lucide-react";
 import Link from "next/link";
 
 interface LocationHeroProps {
@@ -11,6 +11,7 @@ interface LocationHeroProps {
   description: string;
   openingHours?: string[];
   mainLocation?: string;
+  badge?: string;
 }
 
 export function LocationHero({
@@ -25,6 +26,7 @@ export function LocationHero({
     "So: Geschlossen",
   ],
   mainLocation,
+  badge,
 }: LocationHeroProps) {
   return (
     <section className="bg-gradient-to-b from-[#0F5B78]/5 to-white py-20">
@@ -37,6 +39,12 @@ export function LocationHero({
                 HeizCenter {name}
               </h1>
             </div>
+            {badge && (
+              <div className="inline-flex items-center gap-2 mb-4 px-3 py-1.5 bg-[#FFCA28]/20 text-[#0F5B78] text-sm font-semibold rounded-full border border-[#FFCA28]/40">
+                <Building2 className="h-4 w-4" />
+                <span>{badge}</span>
+              </div>
+            )}
             {mainLocation && (
               <p className="text-sm text-slate-500 mb-4">
                 Service von HeizCenter {mainLocation}
@@ -107,9 +115,7 @@ export function LocationHero({
               <div className="mt-6 pt-6 border-t">
                 <Button asChild className="w-full" variant="outline">
                   <a
-                    href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-                      address
-                    )}`}
+                    href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                   >

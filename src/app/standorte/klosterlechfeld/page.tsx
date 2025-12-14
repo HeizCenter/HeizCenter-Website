@@ -6,16 +6,16 @@ import {
 } from "@/components/sections/location-services";
 import { LocationCoverage } from "@/components/sections/location-coverage";
 import { CTASection } from "@/components/sections/cta-section";
-import { Zap, Flame, Droplet, Wind } from "lucide-react";
+import { Zap, Flame, Droplet, Wind, Building2 } from "lucide-react";
 import { LocationPageSchema } from "@/components/schema/local-business-schema";
 import { locationData } from "@/lib/location-data";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
 
 export const metadata: Metadata = {
   title:
-    "HeizCenter Klosterlechfeld - Standort | Wärmepumpe, Heizung, Sanitär & Klimaanlage",
+    "HeizCenter Klosterlechfeld - Kundenempfang & Besucherbüro | Wärmepumpe, Heizung, Sanitär & Klimaanlage",
   description:
-    "Unser Standort in Klosterlechfeld. Fachbetrieb für Wärmepumpen, Heizungsinstallation, Badsanierung und Klimaanlagen. Kostenlose Beratung, schneller Service, faire Preise.",
+    "Unser Standort in Klosterlechfeld - Kundenempfang und Besucherbüro. Fachbetrieb für Wärmepumpen, Heizungsinstallation, Badsanierung und Klimaanlagen. Kostenlose Beratung, schneller Service, faire Preise.",
   keywords: [
     "Wärmepumpe Klosterlechfeld",
     "Heizung Klosterlechfeld",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     "Wärmepumpe Schwabmünchen",
   ],
   openGraph: {
-    title: "HeizCenter Klosterlechfeld - Standort für Wärmepumpen & Heizung",
+    title: "HeizCenter Klosterlechfeld - Kundenempfang & Besucherbüro",
     description:
       "Professionelle Installation und Wartung von Wärmepumpen, Heizungen und Klimaanlagen in Klosterlechfeld und Umgebung.",
   },
@@ -112,12 +112,21 @@ export default function KlosterlechfeldPage() {
         phone="+49 8234 9665900"
         email="service@heizcenter.de"
         description="Unser Standort in Klosterlechfeld - Ihr zuverlässiger Partner für Wärmepumpen, Heizung, Sanitär und Klimaanlagen in der Region zwischen Augsburg und Landsberg am Lech. Über 20 Jahre Erfahrung, schneller Service und faire Preise."
+        badge="Kundenempfang & Besucherbüro"
       />
 
       <LocationServices services={services} title="Unsere Leistungen in Klosterlechfeld" />
 
       <section className="container py-16">
         <div className="max-w-4xl mx-auto prose prose-slate">
+          {/* Special Badge */}
+          <div className="not-prose mb-8">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#FFCA28]/20 text-[#0F5B78] text-sm font-semibold rounded-full border border-[#FFCA28]/40">
+              <Building2 className="h-4 w-4" />
+              <span>Kundenempfang und Besucherbüro</span>
+            </div>
+          </div>
+
           <h2 className="text-3xl font-bold mb-6">
             HeizCenter Klosterlechfeld - Ihr Standort zwischen Augsburg und Landsberg
           </h2>
@@ -127,6 +136,20 @@ export default function KlosterlechfeldPage() {
             Ansprechpartner für alle Fragen rund um Heizung, Sanitär und Klimatechnik. Von hier
             aus betreuen wir die gesamte Region mit kurzen Anfahrtswegen und schnellem Service.
           </p>
+
+          <div className="not-prose bg-[#0F5B78]/5 p-6 rounded-xl mb-8 border border-[#0F5B78]/20">
+            <div className="flex items-start gap-3">
+              <Building2 className="h-6 w-6 text-[#0F5B78] flex-shrink-0 mt-1" />
+              <div>
+                <h3 className="text-lg font-bold text-slate-900 mb-2">Kundenempfang und Besucherbüro</h3>
+                <p className="text-slate-700">
+                  Unser Standort in Klosterlechfeld dient als zentraler Kundenempfang und Besucherbüro.
+                  Hier können Sie uns persönlich besuchen, sich beraten lassen und unsere Ausstellung
+                  moderner Heiztechnik besichtigen. Vereinbaren Sie gerne einen Termin!
+                </p>
+              </div>
+            </div>
+          </div>
 
           <h3 className="text-2xl font-bold mb-4 mt-8">
             Wärmepumpen in Klosterlechfeld - Die Heizung der Zukunft

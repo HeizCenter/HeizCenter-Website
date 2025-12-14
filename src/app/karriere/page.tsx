@@ -7,7 +7,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Karriere bei HeizCenter | Jobs & Ausbildung",
   description:
-    "Werde Teil des HeizCenter Teams! Ausbildungsplätze, Jobs für Installateure, Heizungsbauer und Servicetechniker in Bobingen und Gutenzell-Hürbel.",
+    "Werde Teil des HeizCenter Teams! Ausbildungsplätze, Jobs für Installateure, Heizungsbauer und Servicetechniker in Bobingen, Klosterlechfeld und Gutenzell-Hürbel.",
   keywords: ["Karriere", "Jobs", "Ausbildung", "Installateur", "Heizungsbauer", "Augsburg"],
 };
 
