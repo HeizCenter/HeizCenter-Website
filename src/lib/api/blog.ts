@@ -2846,14 +2846,8 @@ function getMockBlogPosts(): BlogPost[] {
           <li>✅ 5 Jahre Garantie auf alle Arbeiten</li>
         </ul>
 
-        <p><strong>Unsere Standorte:</strong></p>
-        <ul>
-          <li>HeizCenter Bobingen (Augsburg Region)</li>
-          <li>HeizCenter Gutenzell-Hürbel (Raum Ulm/Memmingen)</li>
-          <li>HeizCenter Klosterlechfeld (Kundenempfang und Besucherbüro)</li>
-        </ul>
-
         <div class="cta-box">
+          <p class="cta-locations">📍 <strong>Unsere Standorte:</strong> Bobingen (Augsburg) · Gutenzell-Hürbel (Ulm/Memmingen) · Klosterlechfeld</p>
           <h4>Jetzt barrierefreies Bad planen lassen!</h4>
           <p>Vereinbaren Sie einen kostenlosen Beratungstermin. Wir prüfen Ihre Fördermöglichkeiten und erstellen ein individuelles Konzept für Ihr barrierefreies Badezimmer.</p>
           <p>
@@ -3364,14 +3358,8 @@ function getMockBlogPosts(): BlogPost[] {
           <li>✅ <strong>5 Jahre Garantie</strong> auf alle Arbeiten</li>
         </ul>
 
-        <p><strong>Unsere Standorte:</strong></p>
-        <ul>
-          <li>HeizCenter Bobingen (Region Augsburg)</li>
-          <li>HeizCenter Gutenzell-Hürbel (Raum Ulm/Memmingen)</li>
-          <li>HeizCenter Klosterlechfeld (Kundenempfang und Besucherbüro)</li>
-        </ul>
-
         <div class="cta-box">
+          <p class="cta-locations">📍 <strong>Unsere Standorte:</strong> Bobingen (Augsburg) · Gutenzell-Hürbel (Ulm/Memmingen) · Klosterlechfeld</p>
           <h4>Jetzt kostenlose Wärmepumpen-Beratung anfragen!</h4>
           <p>Lassen Sie sich von unseren Experten beraten und erhalten Sie ein individuelles Angebot – inkl. Förderberatung und Wirtschaftlichkeitsberechnung!</p>
           <p>
@@ -3774,14 +3762,8 @@ function getMockBlogPosts(): BlogPost[] {
 
         <p>Wer jetzt handelt, profitiert von hohen Förderungen, sinkenden Betriebskosten und steigender Unabhängigkeit von fossilen Energiepreisen.</p>
 
-        <p><strong>Unsere Standorte:</strong></p>
-        <ul>
-          <li>HeizCenter Bobingen (Region Augsburg)</li>
-          <li>HeizCenter Gutenzell-Hürbel (Raum Ulm/Memmingen)</li>
-          <li>HeizCenter Klosterlechfeld (Kundenempfang und Besucherbüro)</li>
-        </ul>
-
         <div class="cta-box">
+          <p class="cta-locations">📍 <strong>Unsere Standorte:</strong> Bobingen (Augsburg) · Gutenzell-Hürbel (Ulm/Memmingen) · Klosterlechfeld</p>
           <h4>Persönliche Beratung bei HeizCenter</h4>
           <p>Sie sind unsicher, welche Heizung die richtige für Ihr Haus ist? Unsere Experten beraten Sie kostenlos und unverbindlich zu allen Optionen, Förderungen und der konkreten Umsetzung in Ihrem Gebäude.</p>
           <p>
@@ -4350,14 +4332,8 @@ function getMockBlogPosts(): BlogPost[] {
 
         <p><strong>Die optimale Lösung: Wärmepumpe + Photovoltaik</strong> – maximale Unabhängigkeit, minimale Kosten, 0 Emissionen, Wertsteigerung der Immobilie.</p>
 
-        <p><strong>Unsere Standorte:</strong></p>
-        <ul>
-          <li>HeizCenter Bobingen (Region Augsburg)</li>
-          <li>HeizCenter Gutenzell-Hürbel (Raum Ulm/Memmingen)</li>
-          <li>HeizCenter Klosterlechfeld (Kundenempfang und Besucherbüro)</li>
-        </ul>
-
         <div class="cta-box">
+          <p class="cta-locations">📍 <strong>Unsere Standorte:</strong> Bobingen (Augsburg) · Gutenzell-Hürbel (Ulm/Memmingen) · Klosterlechfeld</p>
           <h4>Kostenlose Heizungsberatung bei HeizCenter</h4>
           <p>Unsere Experten analysieren Ihr Gebäude, berechnen die genauen Kosten für alle Systeme und unterstützen Sie bei der Förderbeantragung. Profitieren Sie von unserer langjährigen Erfahrung.</p>
           <p>
@@ -4764,14 +4740,8 @@ function getMockBlogPosts(): BlogPost[] {
       <li><strong>NICHT empfohlen:</strong> Infrarot als Hauptheizsystem (nur als Ergänzung)</li>
     </ol>
 
-    <p><strong>Unsere Standorte:</strong></p>
-    <ul>
-      <li>HeizCenter Bobingen (Region Augsburg)</li>
-      <li>HeizCenter Gutenzell-Hürbel (Raum Ulm/Memmingen)</li>
-      <li>HeizCenter Klosterlechfeld (Kundenempfang und Besucherbüro)</li>
-    </ul>
-
     <div class="cta-box">
+      <p class="cta-locations">📍 <strong>Unsere Standorte:</strong> Bobingen (Augsburg) · Gutenzell-Hürbel (Ulm/Memmingen) · Klosterlechfeld</p>
       <h4>Sie möchten Ihre Nachtspeicherheizung ersetzen?</h4>
       <p>Wir beraten Sie kostenlos zu den besten Alternativen, kalkulieren Ihre Förderung und erstellen ein maßgeschneidertes Angebot.</p>
       <p>
@@ -5364,14 +5334,8 @@ function getMockBlogPosts(): BlogPost[] {
       <li><strong>Teilsanierung:</strong> Niedertemperatur-Heizkörper als Alternative</li>
     </ol>
 
-    <p><strong>Unsere Standorte:</strong></p>
-    <ul>
-      <li>HeizCenter Bobingen (Region Augsburg)</li>
-      <li>HeizCenter Gutenzell-Hürbel (Raum Ulm/Memmingen)</li>
-      <li>HeizCenter Klosterlechfeld (Kundenempfang und Besucherbüro)</li>
-    </ul>
-
     <div class="cta-box">
+      <p class="cta-locations">📍 <strong>Unsere Standorte:</strong> Bobingen (Augsburg) · Gutenzell-Hürbel (Ulm/Memmingen) · Klosterlechfeld</p>
       <h4>Fußbodenheizung perfekt mit Wärmepumpe kombinieren?</h4>
       <p>Wir planen Ihre ideale Heizlösung – von der Beratung über Förderantrag bis zur Installation. Profitieren Sie von bis zu 70% BEG-Förderung!</p>
       <p>
@@ -5767,14 +5731,8 @@ function getMockBlogPosts(): BlogPost[] {
       </ul>
     </div>
 
-    <p><strong>Unsere Standorte:</strong></p>
-    <ul>
-      <li>HeizCenter Bobingen (Region Augsburg)</li>
-      <li>HeizCenter Gutenzell-Hürbel (Raum Ulm/Memmingen)</li>
-      <li>HeizCenter Klosterlechfeld (Kundenempfang und Besucherbüro)</li>
-    </ul>
-
     <div class="cta-box">
+      <p class="cta-locations">📍 <strong>Unsere Standorte:</strong> Bobingen (Augsburg) · Gutenzell-Hürbel (Ulm/Memmingen) · Klosterlechfeld</p>
       <h4>Probleme mit Ihrer Heizung?</h4>
       <p>Unsere Heizungsexperten helfen bei hartnäckigen Problemen, Wartung und Optimierung Ihres Heizsystems.</p>
       <p>
@@ -6285,14 +6243,8 @@ function getMockBlogPosts(): BlogPost[] {
 
       <p>Sie sind unsicher, welches System für Ihr Haus ideal ist? Unsere Heizungsexperten analysieren Ihre Immobilie und erstellen ein individuelles Angebot – inklusive Förderberatung.</p>
 
-      <p><strong>Unsere Standorte:</strong></p>
-      <ul>
-        <li>HeizCenter Bobingen (Region Augsburg)</li>
-        <li>HeizCenter Gutenzell-Hürbel (Raum Ulm/Memmingen)</li>
-        <li>HeizCenter Klosterlechfeld (Kundenempfang und Besucherbüro)</li>
-      </ul>
-
       <div class="cta-box">
+        <p class="cta-locations">📍 <strong>Unsere Standorte:</strong> Bobingen (Augsburg) · Gutenzell-Hürbel (Ulm/Memmingen) · Klosterlechfeld</p>
         <h4>Kostenlose Beratung vereinbaren</h4>
         <p>Unsere Heizungs-Experten beraten Sie herstellerunabhängig zu Wärmepumpen, Hybridlösungen und Förderung.</p>
         <p>
@@ -6778,14 +6730,8 @@ function getMockBlogPosts(): BlogPost[] {
 
       <p>Unsicher, welches System für Ihr Gebäude ideal ist? Wir analysieren Ihre Situation und erstellen ein maßgeschneidertes Angebot – mit Förderberatung.</p>
 
-      <p><strong>Unsere Standorte:</strong></p>
-      <ul>
-        <li>HeizCenter Bobingen (Region Augsburg)</li>
-        <li>HeizCenter Gutenzell-Hürbel (Raum Ulm/Memmingen)</li>
-        <li>HeizCenter Klosterlechfeld (Kundenempfang und Besucherbüro)</li>
-      </ul>
-
       <div class="cta-box">
+        <p class="cta-locations">📍 <strong>Unsere Standorte:</strong> Bobingen (Augsburg) · Gutenzell-Hürbel (Ulm/Memmingen) · Klosterlechfeld</p>
         <h4>Kostenlose Beratung vereinbaren</h4>
         <p>Unsere Experten beraten Sie herstellerunabhängig zu Wärmepumpen, Pelletheizungen und Hybrid-Lösungen.</p>
         <p>
@@ -7177,14 +7123,8 @@ function getMockBlogPosts(): BlogPost[] {
 
       <p>Sie möchten eine Klimaanlage installieren? Wir beraten Sie herstellerunabhängig und erstellen ein individuelles Angebot.</p>
 
-      <p><strong>Unsere Standorte:</strong></p>
-      <ul>
-        <li>HeizCenter Bobingen (Region Augsburg)</li>
-        <li>HeizCenter Gutenzell-Hürbel (Raum Ulm/Memmingen)</li>
-        <li>HeizCenter Klosterlechfeld (Kundenempfang und Besucherbüro)</li>
-      </ul>
-
       <div class="cta-box">
+        <p class="cta-locations">📍 <strong>Unsere Standorte:</strong> Bobingen (Augsburg) · Gutenzell-Hürbel (Ulm/Memmingen) · Klosterlechfeld</p>
         <h4>Kostenlose Beratung vereinbaren</h4>
         <p>Unsere Klimatechnik-Experten beraten Sie zu Split-, Multisplit- und VRF-Systemen.</p>
         <p>
@@ -7715,14 +7655,8 @@ function getMockBlogPosts(): BlogPost[] {
       <li><strong>Erfahrene Fachbetriebe</strong> mit DIN 18040-2 Know-how</li>
     </ul>
 
-    <p><strong>Unsere Standorte:</strong></p>
-    <ul>
-      <li>HeizCenter Bobingen (Region Augsburg)</li>
-      <li>HeizCenter Gutenzell-Hürbel (Raum Ulm/Memmingen)</li>
-      <li>HeizCenter Klosterlechfeld (Kundenempfang und Besucherbüro)</li>
-    </ul>
-
     <div class="cta-box">
+      <p class="cta-locations">📍 <strong>Unsere Standorte:</strong> Bobingen (Augsburg) · Gutenzell-Hürbel (Ulm/Memmingen) · Klosterlechfeld</p>
       <h4>Jetzt kostenlose Beratung vereinbaren</h4>
       <p>Unsere Sanitär-Experten planen Ihr barrierefreies Traumbad – inklusive Fördermittelcheck.</p>
       <p>
@@ -8415,14 +8349,8 @@ function getMockBlogPosts(): BlogPost[] {
 
         <p>Benötigen Sie Unterstützung bei Planung und Antragstellung? Unsere BAFA-zertifizierten Energieberater helfen Ihnen bei der Maximierung Ihrer Förderung und begleiten Sie durch den gesamten Prozess.</p>
 
-        <p><strong>Unsere Standorte:</strong></p>
-        <ul>
-          <li>HeizCenter Bobingen (Region Augsburg)</li>
-          <li>HeizCenter Gutenzell-Hürbel (Raum Ulm/Memmingen)</li>
-          <li>HeizCenter Klosterlechfeld (Kundenempfang und Besucherbüro)</li>
-        </ul>
-
         <div class="cta-box">
+          <p class="cta-locations">📍 <strong>Unsere Standorte:</strong> Bobingen (Augsburg) · Gutenzell-Hürbel (Ulm/Memmingen) · Klosterlechfeld</p>
           <h4>Kostenlose Förderberatung</h4>
           <p>Wir prüfen Ihre Fördermöglichkeiten und begleiten Sie von der Planung bis zur Auszahlung.</p>
           <p>
@@ -8859,14 +8787,8 @@ function getMockBlogPosts(): BlogPost[] {
 
         <p>Benötigen Sie professionelle Beratung für Ihre Hybrid-Heizung? Unsere Experten planen Ihre optimale Kombination aus Wärmepumpe und Solarthermie – inklusive Heizlastberechnung, Fördermittelberatung und hydraulischem Abgleich.</p>
 
-        <p><strong>Unsere Standorte:</strong></p>
-        <ul>
-          <li>HeizCenter Bobingen (Region Augsburg)</li>
-          <li>HeizCenter Gutenzell-Hürbel (Raum Ulm/Memmingen)</li>
-          <li>HeizCenter Klosterlechfeld (Kundenempfang und Besucherbüro)</li>
-        </ul>
-
         <div class="cta-box">
+          <p class="cta-locations">📍 <strong>Unsere Standorte:</strong> Bobingen (Augsburg) · Gutenzell-Hürbel (Ulm/Memmingen) · Klosterlechfeld</p>
           <h4>Kostenlose Hybrid-Beratung</h4>
           <p>Wir berechnen Ihre ideale Kombination aus Wärmepumpe und Solarthermie und maximieren Ihre Förderung.</p>
           <p>
@@ -9285,14 +9207,8 @@ function getMockBlogPosts(): BlogPost[] {
 
         <p>Benötigen Sie eine detaillierte Wirtschaftlichkeitsberechnung für Ihr Projekt? Unsere Energieberater erstellen Ihnen kostenlos eine individuelle Kosten-Nutzen-Analyse – inklusive aktueller Förderungen, Einsparungspotenzial und Amortisationsrechnung.</p>
 
-        <p><strong>Unsere Standorte:</strong></p>
-        <ul>
-          <li>HeizCenter Bobingen (Region Augsburg)</li>
-          <li>HeizCenter Gutenzell-Hürbel (Raum Ulm/Memmingen)</li>
-          <li>HeizCenter Klosterlechfeld (Kundenempfang und Besucherbüro)</li>
-        </ul>
-
         <div class="cta-box">
+          <p class="cta-locations">📍 <strong>Unsere Standorte:</strong> Bobingen (Augsburg) · Gutenzell-Hürbel (Ulm/Memmingen) · Klosterlechfeld</p>
           <h4>Kostenlose Wirtschaftlichkeitsberechnung</h4>
           <p>Wir berechnen Ihre persönliche Amortisation und maximieren Ihre Förderung – unverbindlich und herstellerunabhängig.</p>
           <p>
@@ -9714,14 +9630,8 @@ function getMockBlogPosts(): BlogPost[] {
             Bei ausreichend Dachfläche und nur einem Energiebedarf (Strom ODER Wärme) sind separate Systeme meist wirtschaftlicher. Eine detaillierte Bedarfsanalyse durch einen Fachbetrieb ist vor der Entscheidung unerlässlich.
           </p>
 
-          <p><strong>Unsere Standorte:</strong></p>
-          <ul>
-            <li>HeizCenter Bobingen (Region Augsburg)</li>
-            <li>HeizCenter Gutenzell-Hürbel (Raum Ulm/Memmingen)</li>
-            <li>HeizCenter Klosterlechfeld (Kundenempfang und Besucherbüro)</li>
-          </ul>
-
           <div class="cta-box">
+            <p class="cta-locations">📍 <strong>Unsere Standorte:</strong> Bobingen (Augsburg) · Gutenzell-Hürbel (Ulm/Memmingen) · Klosterlechfeld</p>
             <h4>Kostenlose PVT-Beratung</h4>
             <p>Wir prüfen, ob PVT-Kollektoren für Ihr Projekt geeignet sind und berechnen Ihren Ertrag.</p>
             <p>
@@ -10245,14 +10155,8 @@ function getMockBlogPosts(): BlogPost[] {
             Eine professionelle Planung durch einen Fachbetrieb mit Simulationssoftware ist empfehlenswert. Die Investition in eine präzise Dimensionierung zahlt sich über die 20-25-jährige Lebensdauer der Anlage vielfach aus.
           </p>
 
-          <p><strong>Unsere Standorte:</strong></p>
-          <ul>
-            <li>HeizCenter Bobingen (Region Augsburg)</li>
-            <li>HeizCenter Gutenzell-Hürbel (Raum Ulm/Memmingen)</li>
-            <li>HeizCenter Klosterlechfeld (Kundenempfang und Besucherbüro)</li>
-          </ul>
-
           <div class="cta-box">
+            <p class="cta-locations">📍 <strong>Unsere Standorte:</strong> Bobingen (Augsburg) · Gutenzell-Hürbel (Ulm/Memmingen) · Klosterlechfeld</p>
             <h4>Kostenlose Anlagenplanung</h4>
             <p>Wir dimensionieren Ihre Solarthermie-Anlage optimal und berechnen Ihren Solarertrag mit professioneller Simulationssoftware.</p>
             <p>

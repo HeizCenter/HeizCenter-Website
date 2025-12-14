@@ -594,3 +594,43 @@
   color: hsl(0 70% 50%);
   font-weight: 700;
 }
+
+/* CTA Box - Call to Action Section */
+.cta-box {
+  background: linear-gradient(135deg, hsl(194 78% 26%) 0%, hsl(194 78% 22%) 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin: 2rem 0;
+}
+
+.cta-box h4 {
+  font-size: 1.375rem;
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+  color: white;
+}
+
+.cta-box p {
+  margin: 0.75rem 0;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.cta-box a {
+  color: white;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.cta-box a:hover {
+  color: hsl(45 100% 70%);
+}
+
+.cta-locations {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 1rem !important;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
