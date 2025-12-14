@@ -19,6 +19,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ServiceSchema } from "@/components/schema/service-schema";
 import { FAQSchema } from "@/components/schema/faq-schema";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
+import { AnimatedProcess } from "@/components/sections/animated-process";
 
 export const metadata: Metadata = {
   title: "Solarthermie Augsburg, Ulm & Memmingen - Bis 70% KfW Förderung | HeizCenter",
@@ -554,59 +555,8 @@ export default function SolarPage() {
         </div>
       </section>
 
-      {/* Process Section */}
-      <section className="py-16">
-        <div className="container">
-          <div className="mb-12 text-center">
-            <h2 className="mb-4 text-3xl font-bold">In 4 Schritten zu Ihrer Solarthermie-Anlage</h2>
-            <p className="mx-auto max-w-2xl text-lg text-slate-600">
-              Vom Erstgespräch bis zur Inbetriebnahme
-            </p>
-          </div>
-
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-            <div className="text-center">
-              <div className="mb-4 flex h-16 w-16 mx-auto items-center justify-center rounded-full bg-primary text-2xl font-bold text-white">
-                1
-              </div>
-              <h3 className="mb-2 text-xl font-bold">Kostenlose Beratung</h3>
-              <p className="text-slate-600">
-                Wir prüfen die Eignung Ihres Daches und ermitteln Ihren Wärmebedarf
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="mb-4 flex h-16 w-16 mx-auto items-center justify-center rounded-full bg-primary text-2xl font-bold text-white">
-                2
-              </div>
-              <h3 className="mb-2 text-xl font-bold">Angebot & Förderung</h3>
-              <p className="text-slate-600">
-                Sie erhalten ein detailliertes Angebot inkl. Förderberechnung
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="mb-4 flex h-16 w-16 mx-auto items-center justify-center rounded-full bg-primary text-2xl font-bold text-white">
-                3
-              </div>
-              <h3 className="mb-2 text-xl font-bold">Installation</h3>
-              <p className="text-slate-600">
-                Professionelle Montage der Kollektoren und Integration in Ihr Heizsystem
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="mb-4 flex h-16 w-16 mx-auto items-center justify-center rounded-full bg-primary text-2xl font-bold text-white">
-                4
-              </div>
-              <h3 className="mb-2 text-xl font-bold">Inbetriebnahme</h3>
-              <p className="text-slate-600">
-                Einweisung, Systemoptimierung und Übergabe der Dokumentation
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Animated Process Section */}
+      <AnimatedProcess />
 
       <FAQSection
         title="Häufig gestellte Fragen zu Solarthermie"
