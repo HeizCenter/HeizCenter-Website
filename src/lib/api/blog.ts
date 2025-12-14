@@ -223,7 +223,13 @@ function getMockBlogPosts(): BlogPost[] {
       title: 'Wärmepumpe Kosten 2025: Kompletter Überblick',
       excerpt: 'Was kostet eine Wärmepumpe 2025 wirklich? Alle Kosten, Förderungen und versteckte Ausgaben im Detail erklärt.',
       content: `
-        <p class="text-xl leading-relaxed text-slate-600 mb-8">Sie überlegen, Ihre alte Heizung gegen eine Wärmepumpe zu tauschen? Verständlich – mit bis zu 70% Förderung war der Zeitpunkt nie besser. Aber bevor Sie loslegen: Hier erfahren Sie, was eine Wärmepumpe 2025 <em>wirklich</em> kostet.</p>
+        <p class="text-xl leading-relaxed text-slate-600 mb-8">Sie überlegen, Ihre alte Heizung gegen eine Wärmepumpe zu tauschen? Mit bis zu 70% Förderung war der Zeitpunkt nie besser. Hier erfahren Sie, was eine Wärmepumpe 2025 <em>wirklich</em> kostet – und was nach der Förderung übrig bleibt.</p>
+
+        <div class="flex flex-wrap gap-4 mb-8 text-sm text-slate-600">
+          <span class="flex items-center gap-1">✓ Über 500 Wärmepumpen in Bayern installiert</span>
+          <span class="flex items-center gap-1">✓ BEG-Förderexperten</span>
+          <span class="flex items-center gap-1">✓ Meisterbetrieb</span>
+        </div>
 
         <div class="highlight-quote">
           Durchschnittliche Gesamtkosten für eine Wärmepumpe 2025: zwischen 27.000 und 50.000 Euro. Nach Förderung oft nur 9.000 bis 18.000 Euro.
@@ -231,9 +237,9 @@ function getMockBlogPosts(): BlogPost[] {
 
         <h2>Die ehrliche Kostenaufstellung</h2>
 
-        <p>Fangen wir mit den Fakten an. Eine aktuelle Studie der Verbraucherzentrale Rheinland-Pfalz hat 160 echte Angebote ausgewertet. Der Durchschnitt: <strong>36.300 Euro</strong> für eine komplett installierte Luft-Wasser-Wärmepumpe.</p>
+        <p>Eine aktuelle Studie der Verbraucherzentrale Rheinland-Pfalz hat 160 echte Angebote ausgewertet. Der Durchschnitt: <strong>36.300 Euro</strong> für eine komplett installierte Luft-Wasser-Wärmepumpe.</p>
 
-        <p>Klingt viel? Warten Sie ab – nach der Förderung sieht das ganz anders aus.</p>
+        <p>Das klingt nach viel – nach der Förderung sieht das allerdings ganz anders aus.</p>
 
         <table class="cost-table">
           <thead>
@@ -350,6 +356,11 @@ function getMockBlogPosts(): BlogPost[] {
           </div>
         </div>
 
+        <div class="bg-slate-50 border border-slate-200 rounded-lg p-4 my-6 text-center">
+          <p class="text-slate-700 mb-2"><strong>Unsicher, welche Förderung Ihnen zusteht?</strong></p>
+          <p class="text-sm text-slate-600">Wir rechnen das kostenlos für Sie aus – <a href="/kontakt" class="text-[#0F5B78] font-medium hover:underline">jetzt anfragen →</a></p>
+        </div>
+
         <h2>Laufende Kosten: Was kommt danach?</h2>
 
         <p>Die Anschaffung ist das eine – aber was kostet der Betrieb? Hier überrascht die Wärmepumpe positiv.</p>
@@ -461,21 +472,27 @@ function getMockBlogPosts(): BlogPost[] {
 
         <p><strong>Die Kurzversion:</strong> Mit der aktuellen Förderung amortisiert sich eine Wärmepumpe typischerweise in 8-12 Jahren. Bei einer Lebensdauer von 20+ Jahren heizen Sie dann 10 Jahre lang quasi umsonst – zumindest was die Anschaffung betrifft.</p>
 
-        <h2>Wie geht's weiter?</h2>
+        <h2>Was kostet eine Wärmepumpe bei Ihnen?</h2>
 
-        <p>Sie wollen wissen, was eine Wärmepumpe <em>bei Ihnen</em> konkret kostet? Dann lassen Sie sich beraten. Bei HeizCenter machen wir das kostenlos und unverbindlich.</p>
+        <p>Jedes Haus ist anders. Deshalb gibt's bei uns keine Pauschalangebote – sondern eine ehrliche Beratung vor Ort.</p>
 
-        <p>Was Sie bekommen:</p>
+        <div class="bg-gradient-to-br from-slate-50 to-slate-100 border border-slate-200 rounded-xl p-6 my-6">
+          <h3 class="text-lg font-bold text-slate-900 mb-4">Kostenlose Vor-Ort-Analyse in 3 Schritten:</h3>
+          <ol class="space-y-3 mb-6">
+            <li class="flex gap-3"><span class="flex-shrink-0 w-6 h-6 bg-[#0F5B78] text-white rounded-full flex items-center justify-center text-sm font-bold">1</span><span><strong>Besichtigung</strong> – Unser Fachmann schaut sich Ihr Haus an (ca. 45 Min.)</span></li>
+            <li class="flex gap-3"><span class="flex-shrink-0 w-6 h-6 bg-[#0F5B78] text-white rounded-full flex items-center justify-center text-sm font-bold">2</span><span><strong>Berechnung</strong> – Sie erhalten ein Festpreis-Angebot inkl. Förderrechnung</span></li>
+            <li class="flex gap-3"><span class="flex-shrink-0 w-6 h-6 bg-[#0F5B78] text-white rounded-full flex items-center justify-center text-sm font-bold">3</span><span><strong>Entscheidung</strong> – Sie entscheiden in Ruhe – ohne Verkaufsdruck</span></li>
+          </ol>
+          <div class="flex flex-col sm:flex-row gap-3">
+            <a href="tel:+498234908970" class="inline-flex items-center justify-center gap-2 bg-[#0F5B78] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#0D4A5F] transition-colors">📞 Jetzt Termin vereinbaren</a>
+            <a href="/kontakt" class="inline-flex items-center justify-center gap-2 bg-white border border-slate-300 text-slate-700 px-6 py-3 rounded-lg font-medium hover:bg-slate-50 transition-colors">Online anfragen →</a>
+          </div>
+          <p class="text-sm text-slate-600 mt-4">✓ Die Beratung bleibt kostenlos – auch wenn Sie sich gegen eine Wärmepumpe entscheiden.</p>
+        </div>
 
-        <ul>
-          <li>Vor-Ort-Besichtigung durch einen Fachmann</li>
-          <li>Ehrliche Einschätzung, ob eine Wärmepumpe für Ihr Haus sinnvoll ist</li>
-          <li>Individuelles Angebot mit allen Kosten – ohne versteckte Extras</li>
-          <li>Berechnung Ihrer persönlichen Förderung</li>
-          <li>Unterstützung beim KfW-Antrag</li>
-        </ul>
-
-        <p>Die Beratung ist wirklich kostenlos – auch wenn Sie sich danach gegen eine Wärmepumpe entscheiden. Wir finden: Nur eine informierte Entscheidung ist eine gute Entscheidung.</p>
+        <div class="bg-amber-50 border border-amber-200 rounded-lg p-4 mt-6">
+          <p class="text-amber-800 text-sm"><strong>⏰ Hinweis:</strong> Der Klimageschwindigkeits-Bonus (20% Förderung) läuft Ende 2028 aus. Wer jetzt plant, sichert sich die maximale Förderung.</p>
+        </div>
       `,
       category: 'Wärmepumpe',
       author: 'HeizCenter Redaktion',
@@ -491,139 +508,246 @@ function getMockBlogPosts(): BlogPost[] {
       title: 'Heizungsgesetz 2024: Das gilt jetzt für Hausbesitzer',
       excerpt: 'Alle wichtigen Änderungen durch das neue Heizungsgesetz 2024. Was müssen Sie beachten?',
       content: `
-        <h2>Heizungsgesetz 2024 (GEG): Was Hausbesitzer jetzt wissen müssen</h2>
+        <p class="text-xl leading-relaxed text-slate-600 mb-8">Das neue "Heizungsgesetz" sorgte 2023 für hitzige Debatten. Jetzt ist es seit Januar 2024 in Kraft – und viele Hausbesitzer fragen sich: Was bedeutet das eigentlich für mich?</p>
 
-        <p>Das Gebäudeenergiegesetz (GEG), umgangssprachlich "Heizungsgesetz", ist seit dem 1. Januar 2024 in Kraft. Es regelt, unter welchen Bedingungen Heizungen ausgetauscht werden müssen und welche Anforderungen neue Heizungen erfüllen müssen. Dieser Ratgeber erklärt alle wichtigen Regelungen verständlich.</p>
+        <p>Spoiler vorweg: Weniger als Sie vielleicht befürchten. Ihre funktionierende Heizung darf bleiben, Reparaturen sind weiterhin erlaubt, und für den Austausch gibt es großzügige Fristen. Hier die wichtigsten Punkte im Überblick.</p>
 
-        <h3>Die Kernregelung: 65% erneuerbare Energien</h3>
+        <h2>Die 65%-Regel – und wann sie wirklich greift</h2>
 
-        <p>Ab dem 1. Januar 2024 dürfen <strong>nur noch Heizungen neu in Betrieb genommen werden, deren Wärmequellen langfristig aus mindestens 65 Prozent erneuerbaren Energien bestehen</strong>.</p>
+        <p>Der Kern des Gesetzes: Neue Heizungen sollen zu mindestens 65% mit erneuerbaren Energien betrieben werden. Klingt dramatisch – ist aber deutlich entspannter, als es zunächst scheint.</p>
 
-        <p>Das bedeutet: Beim Einbau einer neuen Heizung müssen Sie künftig sicherstellen, dass mindestens 65% der erzeugten Wärme aus erneuerbaren Energiequellen stammt.</p>
+        <div class="callout callout-info">
+          <span class="callout-icon">ℹ️</span>
+          <div class="callout-title">Das Wichtigste vorab</div>
+          <div class="callout-content">
+            Für die meisten Bestandsgebäude gilt die 65%-Regel erst nach Abschluss der kommunalen Wärmeplanung – also frühestens Mitte 2026 in Großstädten, in kleineren Gemeinden erst ab 2028.
+          </div>
+        </div>
 
-        <h3>Wen betrifft das Heizungsgesetz – und ab wann?</h3>
+        <p>Aktuell betrifft die Regel nur echte Neubaugebiete. Wer dort baut, muss ab Tag 1 die 65% erfüllen. Für alle anderen gilt: Ruhe bewahren und die Wärmeplanung der eigenen Kommune abwarten.</p>
 
-        <h4>Sofort betroffen (seit 1. Januar 2024):</h4>
+        <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 my-6">
+          <p class="font-semibold text-blue-900 mb-2">📍 Wärmeplanung in Ihrer Region</p>
+          <ul class="text-sm text-blue-800 space-y-1">
+            <li><strong>Stadt Augsburg:</strong> Wärmeplanung läuft, Abschluss voraussichtlich Mitte 2026</li>
+            <li><strong>Bobingen, Königsbrunn:</strong> Als Teil des Ballungsraums ebenfalls bis 2026</li>
+            <li><strong>Landkreis Günzburg:</strong> Kleinere Gemeinden haben bis 2028 Zeit</li>
+          </ul>
+          <p class="text-xs text-blue-600 mt-2">Stand: Dezember 2024 – Wir halten Sie auf dem Laufenden!</p>
+        </div>
+
+        <h2>Was ist mit meiner bestehenden Heizung?</h2>
+
+        <p>Hier können wir Sie beruhigen: Bestehende Heizungen genießen <strong>vollen Bestandsschutz</strong>.</p>
+
+        <p>Konkret heißt das:</p>
+
+        <div class="pro-con-list">
+          <div class="pro-list">
+            <div class="list-header">Das dürfen Sie</div>
+            <ul>
+              <li>Ihre Heizung weiter betreiben – egal wie alt</li>
+              <li>Reparaturen durchführen lassen</li>
+              <li>Verschleißteile austauschen</li>
+              <li>Sich Zeit nehmen für die Planung</li>
+            </ul>
+          </div>
+          <div class="con-list">
+            <div class="list-header">Das müssen Sie nicht</div>
+            <ul>
+              <li>Sofort eine neue Heizung kaufen</li>
+              <li>Funktionierende Anlagen stilllegen</li>
+              <li>Überstürzt handeln</li>
+              <li>Auf Fernwärme warten, wenn Sie nicht wollen</li>
+            </ul>
+          </div>
+        </div>
+
+        <p>Ein Beispiel aus der Praxis: Familie Weber aus Bobingen hat eine 18 Jahre alte Gasheizung. Sie funktioniert einwandfrei und darf so lange laufen, wie sie will. Erst wenn die Heizung irreparabel defekt ist <em>und</em> die kommunale Wärmeplanung abgeschlossen wurde, greift die 65%-Regel.</p>
+
+        <h2>Heizung kaputt – und jetzt?</h2>
+
+        <p>Selbst wenn Ihre Heizung ausfällt, haben Sie mehrere Optionen:</p>
+
+        <p><strong>Reparatur geht vor:</strong> Lässt sich die Heizung reparieren? Dann tun Sie das. Das Gesetz zwingt niemanden zum Austausch, nur weil mal ein Brenner getauscht werden muss.</p>
+
+        <p><strong>Fünf Jahre Übergangsfrist:</strong> Bei einem echten Totalschaden (Fachbegriff: "Havarie") haben Sie fünf Jahre Zeit, eine 65%-konforme Heizung einzubauen. In dieser Zeit dürfen Sie sogar übergangsweise eine konventionelle Heizung nutzen.</p>
+
+        <div class="callout callout-warning">
+          <span class="callout-icon">⚠️</span>
+          <div class="callout-title">Praxis-Tipp</div>
+          <div class="callout-content">
+            Bei einem Heizungsausfall im Winter: Erst mal provisorisch heizen (Heizlüfter, Gastherme), dann in Ruhe planen. Niemand erwartet, dass Sie bei -10°C eine fundierte Entscheidung über Ihr Heizsystem treffen.
+          </div>
+        </div>
+
+        <h2>Welche Heizungen erfüllen die 65%?</h2>
+
+        <p>Falls Sie tatsächlich tauschen möchten (oder müssen) – diese Systeme erfüllen die Anforderungen:</p>
+
+        <div class="comparison-grid">
+          <div class="comparison-card">
+            <div class="comparison-header">Wärmepumpe</div>
+            <div class="comparison-body">
+              <p>Die populärste Wahl. Nutzt Umweltwärme aus Luft, Erde oder Grundwasser. Besonders effizient mit Fußbodenheizung, funktioniert aber auch mit Heizkörpern.</p>
+              <p class="mt-2 text-sm text-slate-600">→ Erfüllt 65% automatisch</p>
+            </div>
+          </div>
+          <div class="comparison-card">
+            <div class="comparison-header">Fernwärme</div>
+            <div class="comparison-body">
+              <p>Wo verfügbar, eine bequeme Lösung. Sie müssen sich um nichts kümmern – die Kommune sorgt für erneuerbare Wärme.</p>
+              <p class="mt-2 text-sm text-slate-600">→ Abhängig vom lokalen Angebot</p>
+            </div>
+          </div>
+          <div class="comparison-card">
+            <div class="comparison-header">Pelletheizung</div>
+            <div class="comparison-body">
+              <p>Holzpellets als Brennstoff. Gute Option für Häuser mit Platz für Pelletsilo. Fühlt sich an wie eine normale Heizung.</p>
+              <p class="mt-2 text-sm text-slate-600">→ 100% erneuerbar</p>
+            </div>
+          </div>
+          <div class="comparison-card">
+            <div class="comparison-header">Hybridheizung</div>
+            <div class="comparison-body">
+              <p>Wärmepumpe + Gaskessel für Spitzenlasten. Praktisch für unsanierte Altbauten oder wenn Sie schrittweise umsteigen wollen.</p>
+              <p class="mt-2 text-sm text-slate-600">→ Erfüllt 65% anteilig</p>
+            </div>
+          </div>
+        </div>
+
+        <h2>Was, wenn ich jetzt noch eine Gasheizung einbaue?</h2>
+
+        <p>Das ist durchaus möglich – besonders wenn Ihre Kommune noch keine Wärmeplanung hat. Allerdings mit einer Einschränkung:</p>
+
+        <table class="cost-table">
+          <thead>
+            <tr>
+              <th>Ab Datum</th>
+              <th>Min. Anteil erneuerbar</th>
+              <th>Praktische Umsetzung</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2029</td>
+              <td>15%</td>
+              <td>z.B. Solarthermie ergänzen</td>
+            </tr>
+            <tr>
+              <td>2035</td>
+              <td>30%</td>
+              <td>Hybridlösung wird nötig</td>
+            </tr>
+            <tr>
+              <td>2040</td>
+              <td>60%</td>
+              <td>Wärmepumpe + Gas-Backup</td>
+            </tr>
+            <tr>
+              <td>2045</td>
+              <td>100%</td>
+              <td>Fossiles Gas nicht mehr erlaubt</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>Die Botschaft ist klar: Eine neue Gasheizung heute bedeutet, dass Sie in den kommenden Jahren nachrüsten müssen. Wer ohnehin tauscht, fährt mit einer zukunftssicheren Lösung meist besser.</p>
+
+        <h2>Pflichtberatung vor Gas/Öl-Einbau</h2>
+
+        <p>Wichtig zu wissen: Wer sich 2024 noch für eine fossile Heizung entscheidet, muss vorher eine Energieberatung nachweisen. Das ist keine Schikane – es soll sicherstellen, dass Sie alle Alternativen kennen.</p>
+
+        <p>Die Beratung informiert über:</p>
 
         <ul>
-          <li><strong>Neubauten in Neubaugebieten:</strong> Hier gilt die 65%-Regel ab sofort ohne Übergangsfristen</li>
+          <li>Die Wärmeplanung in Ihrer Gemeinde</li>
+          <li>Alternative Heizsysteme und deren Kosten</li>
+          <li>Fördermöglichkeiten (bis zu 70%!)</li>
+          <li>Die steigenden Anforderungen ab 2029</li>
         </ul>
 
-        <h4>Zeitversetzte Umsetzung für Bestandsgebäude:</h4>
+        <p>Danach dürfen Sie immer noch einbauen, was Sie wollen. Aber Sie treffen eine informierte Entscheidung.</p>
 
-        <p>Für bestehende Gebäude und andere Neubauten greift die Pflicht erst, wenn am Wohnort eine kommunale Wärmeplanung durchgeführt wurde:</p>
+        <h2>Gibt es Ausnahmen?</h2>
+
+        <p>Ja, einige. Das Gesetz ist nicht so starr, wie manche befürchten:</p>
 
         <ul>
-          <li><strong>Großstädte (>100.000 Einwohner):</strong> Ab Mitte 2026</li>
-          <li><strong>Kleinere Kommunen:</strong> Ab Mitte 2028</li>
+          <li><strong>Denkmalschutz:</strong> Individuelle Lösungen nach Absprache mit der Behörde</li>
+          <li><strong>Technische Unmöglichkeit:</strong> Wenn eine Wärmepumpe baulich nicht machbar ist</li>
+          <li><strong>Wirtschaftliche Härte:</strong> Wenn die Kosten unverhältnismäßig wären</li>
+          <li><strong>Eigentümer über 80:</strong> Beim Verkauf muss der Käufer nachrüsten</li>
         </ul>
 
-        <p>Bis dahin können Sie auch weiterhin konventionelle Gas- oder Ölheizungen einbauen – allerdings mit steigenden Anforderungen an den Anteil erneuerbarer Energien ab 2029.</p>
+        <h2>Was bringt die Förderung?</h2>
 
-        <h3>Bestandsschutz: Ihre alte Heizung darf bleiben</h3>
+        <p>Die BEG-Förderung ist der große Pluspunkt beim Heizungstausch 2024/2025:</p>
 
-        <p>Gute Nachrichten für Bestandsheizungen:</p>
+        <div class="highlight-quote">
+          Bis zu 70% der Kosten für eine neue Wärmepumpe werden vom Staat übernommen. Das macht den Umstieg so attraktiv wie nie.
+        </div>
+
+        <p>Die Förderung setzt sich zusammen aus:</p>
 
         <ul>
-          <li><strong>Keine Austauschpflicht</strong> für bestehende Heizungen unter 30 Jahren</li>
-          <li>Bestehende Heizungen dürfen weiterbetrieben und <strong>repariert</strong> werden</li>
-          <li>Erst bei einem Totalausfall ("Havarie") besteht Handlungsbedarf</li>
-          <li>Heizungen über 30 Jahre müssen in der Regel ausgetauscht werden (Ausnahmen für selbstnutzende Eigentümer seit mindestens Februar 2002)</li>
+          <li><strong>30% Grundförderung</strong> – bekommt jeder</li>
+          <li><strong>20% Klimageschwindigkeits-Bonus</strong> – beim Austausch alter Öl-/Gasheizungen</li>
+          <li><strong>30% Einkommensbonus</strong> – bei Haushaltseinkommen unter 40.000 €</li>
+          <li><strong>5% Effizienzbonus</strong> – für Wärmepumpen mit natürlichem Kältemittel</li>
         </ul>
 
-        <h3>Übergangsfristen bei Heizungsausfall</h3>
+        <p>Das Maximum liegt bei 70% – aber selbst 50% machen aus einer 35.000-€-Investition eine 17.500-€-Investition.</p>
 
-        <p>Fällt Ihre Heizung komplett aus, haben Sie mehrere Optionen:</p>
+        <h2>Was würden wir jetzt empfehlen?</h2>
 
-        <ul>
-          <li><strong>Reparatur ist weiterhin erlaubt</strong> – auch bei alten Gas-/Ölheizungen</li>
-          <li><strong>Übergangsfrist von 5 Jahren</strong> für den Einbau einer 65%-EE-Heizung</li>
-          <li>In dieser Zeit können auch konventionelle Heizungen als <strong>Übergangslösung</strong> eingebaut werden</li>
-          <li>Bei akutem Notfall: Heizgeräte können zunächst übergangsweise installiert werden</li>
-        </ul>
+        <p>Nach hunderten Beratungsgesprächen haben wir einen pragmatischen Ansatz entwickelt:</p>
 
-        <h3>Welche Heizungen erfüllen die 65%-Anforderung?</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
+          <div class="bg-slate-50 border border-slate-200 rounded-lg p-4">
+            <p class="font-bold text-slate-900 mb-2">Heizung unter 15 Jahre</p>
+            <p class="text-sm text-slate-600 mb-3">Funktioniert gut? Abwarten und beobachten. Informieren Sie sich über die Wärmeplanung in Ihrer Gemeinde.</p>
+            <a href="/newsletter" class="text-sm text-[#0F5B78] font-medium hover:underline">Newsletter abonnieren →</a>
+          </div>
+          <div class="bg-[#0F5B78] text-white rounded-lg p-4">
+            <p class="font-bold mb-2">Heizung 15-25 Jahre</p>
+            <p class="text-sm text-white/90 mb-3">Idealer Zeitpunkt für die Planung. Die Förderung ist top, Sie haben noch Zeit für eine saubere Umsetzung.</p>
+            <a href="/kontakt" class="text-sm font-medium hover:underline">Kostenlose Beratung anfragen →</a>
+          </div>
+          <div class="bg-amber-50 border border-amber-200 rounded-lg p-4">
+            <p class="font-bold text-amber-900 mb-2">Heizung über 25 Jahre</p>
+            <p class="text-sm text-amber-800 mb-3">Handeln Sie proaktiv. Ein geplanter Austausch ist immer besser als ein Notfall im Januar.</p>
+            <a href="tel:+498234908970" class="text-sm text-amber-900 font-medium hover:underline">📞 Jetzt anrufen →</a>
+          </div>
+        </div>
 
-        <p>Folgende Heizsysteme sind konform mit dem GEG:</p>
+        <div class="callout callout-success">
+          <span class="callout-icon">✓</span>
+          <div class="callout-title">Unser Fazit</div>
+          <div class="callout-content">
+            Das Heizungsgesetz ist kein Grund zur Panik. Es gibt großzügige Übergangsfristen, attraktive Förderungen und für jeden Fall eine passende Lösung. Wer strategisch plant, profitiert sogar davon.
+          </div>
+        </div>
 
-        <ul>
-          <li><strong>Wärmepumpen</strong> (elektrisch betrieben, nutzen Umweltwärme)</li>
-          <li><strong>Anschluss an ein Wärmenetz</strong> (Fernwärme mit erneuerbaren Quellen)</li>
-          <li><strong>Biomasseheizungen</strong> (Pellet-, Hackschnitzel- oder Scheitholzheizung)</li>
-          <li><strong>Hybridheizungen</strong> (Kombination aus erneuerbarer und konventioneller Technik, z.B. Wärmepumpe + Gasheizung)</li>
-          <li><strong>Solarthermie-Heizungen</strong> (in Kombination mit anderen Systemen)</li>
-          <li><strong>Gasheizungen mit grünem Wasserstoff</strong> oder Biomethan (mindestens 65%)</li>
-        </ul>
-
-        <h3>Stufenweise Anforderungen für Gas- und Ölheizungen</h3>
-
-        <p>Wenn Sie ab 2024 noch eine Gas- oder Ölheizung einbauen (in Gemeinden ohne Wärmeplanung), gelten stufenweise steigende Anforderungen:</p>
-
-        <ul>
-          <li><strong>Ab 1. Januar 2029:</strong> Mindestens 15% erneuerbare Energien</li>
-          <li><strong>Ab 1. Januar 2035:</strong> Mindestens 30% erneuerbare Energien</li>
-          <li><strong>Ab 1. Januar 2040:</strong> Mindestens 60% erneuerbare Energien</li>
-          <li><strong>Ab 1. Januar 2045:</strong> 100% erneuerbare Energien (Klimaneutralität)</li>
-        </ul>
-
-        <h3>Verpflichtende Beratung vor dem Heizungstausch</h3>
-
-        <p>Neu seit 2024: Vor dem Einbau einer Heizungsanlage, die mit flüssigen oder gasförmigen Brennstoffen betrieben wird (Gas/Öl), ist eine <strong>verpflichtende Beratung</strong> vorgeschrieben.</p>
-
-        <p>Die Beratung muss aufklären über:</p>
-
-        <ul>
-          <li>Auswirkungen der kommunalen Wärmeplanung</li>
-          <li>Verfügbare erneuerbare Alternativen</li>
-          <li>Wirtschaftlichkeit verschiedener Heizsysteme</li>
-          <li>Fördermöglichkeiten</li>
-        </ul>
-
-        <h3>Ausnahmen und Sonderregelungen</h3>
-
-        <p>Das Gesetz sieht Ausnahmen vor für:</p>
-
-        <ul>
-          <li><strong>Gebäude unter Denkmalschutz:</strong> Individuelle Lösungen möglich</li>
-          <li><strong>Technisch unmögliche Umsetzung:</strong> Z.B. bei Platzproblemen oder statischen Einschränkungen</li>
-          <li><strong>Unbillige Härte:</strong> Wenn die Kosten in keinem Verhältnis zum Gebäudewert stehen</li>
-          <li><strong>Eigentümer über 80 Jahre:</strong> Keine Austauschpflicht beim Eigentümerwechsel</li>
-        </ul>
-
-        <h3>Finanzielle Unterstützung: BEG-Förderung</h3>
-
-        <p>Die Bundesregierung unterstützt den Umstieg mit der BEG-Förderung:</p>
-
-        <ul>
-          <li>Bis zu <strong>70% Zuschuss</strong> für den Heizungstausch</li>
-          <li>Ergänzende <strong>KfW-Kredite</strong> mit Zinsverbilligungen</li>
-          <li>Zusätzliche Boni für schnellen Austausch und niedrige Einkommen</li>
-        </ul>
-
-        <h3>Was sollten Hausbesitzer jetzt tun?</h3>
-
-        <p>Unsere Empfehlungen:</p>
-
-        <ol>
-          <li><strong>Status quo prüfen:</strong> Wie alt ist Ihre Heizung? Wie ist ihr Zustand?</li>
-          <li><strong>Kommunale Wärmeplanung abwarten:</strong> Informieren Sie sich bei Ihrer Gemeinde über den Stand der Wärmeplanung</li>
-          <li><strong>Beratung einholen:</strong> Lassen Sie sich von Fachbetrieben wie HeizCenter über passende Lösungen beraten</li>
-          <li><strong>Förderung prüfen:</strong> Nutzen Sie die aktuell hohen Fördersätze</li>
-          <li><strong>Langfristig planen:</strong> Auch wenn keine unmittelbare Pflicht besteht – der Umstieg lohnt sich wirtschaftlich</li>
-        </ol>
-
-        <h3>Fazit: Ruhe bewahren und strategisch planen</h3>
-
-        <p>Das Heizungsgesetz 2024 ist kein Grund zur Panik. Für die meisten Hausbesitzer gibt es großzügige Übergangsfristen. Bestehende Heizungen genießen Bestandsschutz und dürfen repariert werden.</p>
-
-        <p>Wer jedoch in den nächsten Jahren ohnehin einen Heizungstausch plant, sollte die aktuell hohe BEG-Förderung nutzen und direkt auf eine zukunftssichere Lösung wie eine Wärmepumpe setzen. So erfüllen Sie nicht nur die gesetzlichen Anforderungen, sondern profitieren auch von niedrigeren Heizkosten und steigender Unabhängigkeit von fossilen Brennstoffen.</p>
-
-        <p><strong>HeizCenter berät Sie gerne</strong> zu allen Fragen rund um das Heizungsgesetz, passende Heizsysteme und maximale Förderung. Kontaktieren Sie uns für eine kostenlose Erstberatung.</p>
+        <div class="bg-gradient-to-br from-slate-50 to-slate-100 border border-slate-200 rounded-xl p-6 my-6">
+          <h3 class="text-lg font-bold text-slate-900 mb-3">Wie passt das Heizungsgesetz zu Ihrem Haus?</h3>
+          <p class="text-slate-600 mb-4">In 15 Minuten wissen Sie Bescheid:</p>
+          <ul class="space-y-2 mb-6 text-slate-700">
+            <li class="flex items-start gap-2">✓ <span>Greift die 65%-Regel schon bei Ihnen?</span></li>
+            <li class="flex items-start gap-2">✓ <span>Welche Förderung steht Ihnen konkret zu?</span></li>
+            <li class="flex items-start gap-2">✓ <span>Welche Heizung passt zu Ihrem Haus?</span></li>
+          </ul>
+          <div class="flex flex-col sm:flex-row gap-3">
+            <a href="tel:+498234908970" class="inline-flex items-center justify-center gap-2 bg-[#0F5B78] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#0D4A5F] transition-colors">📞 Jetzt anrufen</a>
+            <a href="/kontakt" class="inline-flex items-center justify-center gap-2 bg-white border border-slate-300 text-slate-700 px-6 py-3 rounded-lg font-medium hover:bg-slate-50 transition-colors">Online-Termin vereinbaren →</a>
+          </div>
+          <p class="text-sm text-slate-500 mt-4">Kostenlose Beratung – auch wenn Sie sich gegen eine neue Heizung entscheiden.</p>
+        </div>
       `,
       category: 'Heizung',
       author: 'HeizCenter Redaktion',
       date: '2025-11-08',
-      readingTime: 7,
+      readingTime: 8,
       image: '/images/Heizung_Modernisierung.webp',
       tags: ['Heizungsgesetz', 'GEG', 'Erneuerbare Energien'],
       featured: true,
@@ -634,208 +758,226 @@ function getMockBlogPosts(): BlogPost[] {
       title: 'BEG Förderung 2025: Bis zu 70% Zuschuss für Ihre Heizung',
       excerpt: 'So beantragen Sie die BEG Förderung richtig. Alle Fördersätze, Voraussetzungen und Tipps.',
       content: `
-        <h2>BEG Förderung 2025: Der komplette Leitfaden</h2>
+        <p class="text-xl leading-relaxed text-slate-600 mb-8">70% Zuschuss vom Staat für eine neue Heizung – klingt zu gut um wahr zu sein? Ist es aber. Die BEG-Förderung macht's möglich. Hier erfahren Sie, wie Sie das Maximum rausholen.</p>
 
-        <p>Die Bundesförderung für effiziente Gebäude (BEG) ist das wichtigste Förderprogramm für den Heizungstausch in Deutschland. Mit bis zu 70% Zuschuss macht sie moderne, klimafreundliche Heizsysteme erschwinglich. Dieser Leitfaden erklärt alle Fördersätze, Voraussetzungen und den Antragsprozess.</p>
+        <div class="flex flex-wrap gap-4 mb-8 text-sm text-slate-600">
+          <span class="flex items-center gap-1">✓ Über 200 erfolgreiche Förderanträge</span>
+          <span class="flex items-center gap-1">✓ Antragshilfe inklusive</span>
+          <span class="flex items-center gap-1">✓ Meisterbetrieb</span>
+        </div>
 
-        <h3>Was ist die BEG-Förderung?</h3>
+        <h2>Kurz erklärt: Was ist die BEG-Förderung?</h2>
 
-        <p>Die BEG (Bundesförderung für effiziente Gebäude) ist ein Förderprogramm der Bundesregierung, das den Austausch alter, fossiler Heizungen gegen klimafreundliche Alternativen finanziell unterstützt. Die Förderung wird seit 2024 über die <strong>KfW (Kreditanstalt für Wiederaufbau)</strong> beantragt – nicht mehr über das BAFA.</p>
+        <p>Die Bundesförderung für effiziente Gebäude (BEG) ist das zentrale Förderprogramm für den Heizungstausch in Deutschland. Seit 2024 läuft alles über die KfW – nicht mehr über das BAFA.</p>
 
-        <h3>Fördersätze 2025: Bis zu 70% sind möglich</h3>
+        <p>Das Grundprinzip: Sie tauschen Ihre alte Heizung gegen ein klimafreundliches System und bekommen einen Teil der Kosten zurück. Je nachdem, welche Boni Sie sammeln, sind bis zu 70% drin.</p>
 
-        <p>Die BEG-Förderung setzt sich aus mehreren Komponenten zusammen, die kombiniert werden können:</p>
+        <h2>Die Förder-Bausteine im Überblick</h2>
 
-        <h4>1. Grundförderung (30%)</h4>
+        <p>Die BEG funktioniert wie ein Baukastensystem. Sie sammeln verschiedene Boni, die sich addieren:</p>
 
-        <p>Die Basisförderung von <strong>30%</strong> erhält jeder Antragsteller, der:</p>
+        <div class="comparison-grid">
+          <div class="comparison-card">
+            <div class="comparison-header">Grundförderung</div>
+            <div class="comparison-body">
+              <p class="text-3xl font-bold text-[#0F5B78] mb-2">30%</p>
+              <p>Bekommt jeder, der eine alte Heizung (mind. 2 Jahre) gegen ein förderfähiges System tauscht.</p>
+            </div>
+          </div>
+          <div class="comparison-card">
+            <div class="comparison-header">Klimageschwindigkeits-Bonus</div>
+            <div class="comparison-body">
+              <p class="text-3xl font-bold text-[#0F5B78] mb-2">+20%</p>
+              <p>Für selbstnutzende Eigentümer, die Öl, Kohle, Nachtspeicher oder alte Gas-/Biomasseheizungen (>20 Jahre) ersetzen.</p>
+            </div>
+          </div>
+          <div class="comparison-card">
+            <div class="comparison-header">Einkommensbonus</div>
+            <div class="comparison-body">
+              <p class="text-3xl font-bold text-[#0F5B78] mb-2">+30%</p>
+              <p>Für Haushalte mit zu versteuerndem Jahreseinkommen unter 40.000 €. Nur für Selbstnutzer.</p>
+            </div>
+          </div>
+          <div class="comparison-card">
+            <div class="comparison-header">Effizienzbonus</div>
+            <div class="comparison-body">
+              <p class="text-3xl font-bold text-[#0F5B78] mb-2">+5%</p>
+              <p>Für Wärmepumpen mit natürlichem Kältemittel (z.B. Propan R290).</p>
+            </div>
+          </div>
+        </div>
 
-        <ul>
-          <li>Eine mindestens 2 Jahre alte Heizung gegen eine förderfähige Wärmepumpe austauscht</li>
-          <li>In einem selbstgenutzten oder vermieteten Wohngebäude installiert</li>
-          <li>Alle technischen Mindestanforderungen erfüllt</li>
-        </ul>
+        <div class="callout callout-warning">
+          <span class="callout-icon">⚠️</span>
+          <div class="callout-title">Zeitdruck beim Klimageschwindigkeits-Bonus</div>
+          <div class="callout-content">
+            <p>Der 20%-Bonus läuft nur noch bis Ende 2028. Wer eine alte Ölheizung hat, sollte jetzt handeln – später gibt's weniger Geld.</p>
+          </div>
+        </div>
 
-        <h4>2. Klimageschwindigkeits-Bonus (20%)</h4>
+        <h2>Konkrete Rechenbeispiele</h2>
 
-        <p>Zusätzliche <strong>20%</strong> Förderung erhalten selbstnutzende Eigentümer für den Austausch folgender Heizungen:</p>
+        <p>Zahlen sagen mehr als Worte. Hier zwei typische Szenarien aus unserer Region:</p>
 
-        <ul>
-          <li>Ölheizungen (unabhängig vom Alter)</li>
-          <li>Gasetagen- und Gasetagenheizungen</li>
-          <li>Kohleheizungen und Nachtspeicheröfen</li>
-          <li>Gas- und Biomasseheizungen, die über 20 Jahre alt sind</li>
-        </ul>
+        <table class="cost-table">
+          <thead>
+            <tr>
+              <th>Szenario</th>
+              <th>Investition</th>
+              <th>Fördersatz</th>
+              <th>Zuschuss</th>
+              <th>Sie zahlen</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Familie Schmidt</strong><br><span class="text-sm text-slate-500">Ölheizung raus, Wärmepumpe rein</span></td>
+              <td>32.000 €</td>
+              <td>50%</td>
+              <td class="price">15.000 €*</td>
+              <td>17.000 €</td>
+            </tr>
+            <tr class="highlight-row">
+              <td><strong>Herr Meier</strong><br><span class="text-sm text-slate-500">Geringes Einkommen, Gasheizung >20 J.</span></td>
+              <td>28.000 €</td>
+              <td>70%</td>
+              <td class="price">19.600 €</td>
+              <td>8.400 €</td>
+            </tr>
+          </tbody>
+        </table>
 
-        <p><strong>Wichtig:</strong> Dieser Bonus läuft bis Ende 2028. Ab 2029 reduziert er sich und läuft schrittweise aus – schnelles Handeln lohnt sich!</p>
+        <p class="text-sm text-slate-600 mt-2">* Förderfähige Kosten sind auf 30.000 € gedeckelt, daher max. 15.000 € bei 50%.</p>
 
-        <h4>3. Einkommensbonus (30%)</h4>
+        <div class="highlight-quote">
+          Herr Meier aus Bobingen zahlte für seine neue Wärmepumpe nur 8.400 € statt 28.000 €. Der Staat übernahm den Rest.
+        </div>
 
-        <p>Haushalte mit einem zu versteuernden <strong>Jahreseinkommen bis 40.000 Euro</strong> erhalten weitere <strong>30% Förderung</strong>.</p>
+        <div class="bg-slate-50 border border-slate-200 rounded-lg p-4 my-6 text-center">
+          <p class="text-slate-700 mb-2"><strong>Welche Förderung steht Ihnen zu?</strong></p>
+          <p class="text-sm text-slate-600">Wir rechnen das kostenlos für Sie aus – <a href="/kontakt" class="text-[#0F5B78] font-medium hover:underline">jetzt anfragen →</a></p>
+        </div>
 
-        <p>Dieser Bonus gilt nur für selbstnutzende Eigentümer und ist auf eine Wohneinheit begrenzt.</p>
+        <h2>Welche Heizungen werden gefördert?</h2>
 
-        <h4>4. Effizienzbonus (5%)</h4>
+        <div class="pro-con-list">
+          <div class="pro-list">
+            <div class="list-header">Förderfähig</div>
+            <ul>
+              <li>Wärmepumpen (Luft, Sole, Wasser)</li>
+              <li>Pelletheizungen</li>
+              <li>Solarthermie (als Ergänzung)</li>
+              <li>Fernwärme-Anschluss</li>
+              <li>Brennstoffzellen</li>
+            </ul>
+          </div>
+          <div class="con-list">
+            <div class="list-header">Nicht förderfähig</div>
+            <ul>
+              <li>Reine Gasheizungen</li>
+              <li>Ölheizungen</li>
+              <li>Hybridheizungen unter 65% EE</li>
+              <li>Gebrauchte Anlagen</li>
+            </ul>
+          </div>
+        </div>
 
-        <p>Für besonders effiziente Wärmepumpen mit <strong>natürlichem Kältemittel</strong> (z.B. Propan R290) gibt es zusätzliche <strong>5% Förderung</strong>.</p>
+        <h2>Der Antragsprozess – so läuft's</h2>
 
-        <p>Dieser Bonus ist mit allen anderen Boni kombinierbar.</p>
+        <p>Der wichtigste Punkt gleich vorweg:</p>
 
-        <h3>Maximale Förderung: Rechenbeispiele</h3>
+        <div class="callout callout-info">
+          <span class="callout-icon">ℹ️</span>
+          <div class="callout-title">Erst Antrag, dann Vertrag!</div>
+          <div class="callout-content">
+            <p>Sie müssen den Förderantrag stellen, <strong>bevor</strong> Sie den Auftrag unterschreiben. Andersrum gibt's kein Geld. Angebote einholen ist erlaubt – unterschreiben nicht.</p>
+          </div>
+        </div>
 
-        <p><strong>Maximale Fördersumme:</strong> Die Förderung beträgt maximal <strong>70% der förderfähigen Kosten</strong>, höchstens jedoch <strong>21.000 Euro</strong> (bei max. förderfähigen Investitionskosten von 30.000 Euro).</p>
+        <p>Der Ablauf in vier Schritten:</p>
 
-        <h4>Beispiel 1: Standardförderung (50%)</h4>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+          <div class="bg-white border border-slate-200 rounded-lg p-4">
+            <div class="flex items-center gap-3 mb-2">
+              <span class="w-8 h-8 bg-[#0F5B78] text-white rounded-full flex items-center justify-center font-bold">1</span>
+              <span class="font-bold">Angebote einholen</span>
+            </div>
+            <p class="text-sm text-slate-600">Lassen Sie sich beraten und holen Sie Angebote ein. Prüfen Sie, ob das System förderfähig ist. <em>Noch nichts unterschreiben!</em></p>
+          </div>
+          <div class="bg-white border border-slate-200 rounded-lg p-4">
+            <div class="flex items-center gap-3 mb-2">
+              <span class="w-8 h-8 bg-[#0F5B78] text-white rounded-full flex items-center justify-center font-bold">2</span>
+              <span class="font-bold">Antrag bei KfW stellen</span>
+            </div>
+            <p class="text-sm text-slate-600">Registrieren im KfW-Zuschussportal, Unterlagen hochladen, Fördernummer erhalten.</p>
+          </div>
+          <div class="bg-white border border-slate-200 rounded-lg p-4">
+            <div class="flex items-center gap-3 mb-2">
+              <span class="w-8 h-8 bg-[#0F5B78] text-white rounded-full flex items-center justify-center font-bold">3</span>
+              <span class="font-bold">Auftrag erteilen & installieren</span>
+            </div>
+            <p class="text-sm text-slate-600">Jetzt dürfen Sie unterschreiben. Der Fachbetrieb baut die Anlage ein und dokumentiert alles.</p>
+          </div>
+          <div class="bg-white border border-slate-200 rounded-lg p-4">
+            <div class="flex items-center gap-3 mb-2">
+              <span class="w-8 h-8 bg-[#0F5B78] text-white rounded-full flex items-center justify-center font-bold">4</span>
+              <span class="font-bold">Nachweise einreichen & Geld bekommen</span>
+            </div>
+            <p class="text-sm text-slate-600">Rechnungen hochladen, KfW prüft, Zuschuss landet auf Ihrem Konto (meist 4-8 Wochen).</p>
+          </div>
+        </div>
 
-        <ul>
-          <li>Grundförderung: 30%</li>
-          <li>Geschwindigkeitsbonus: 20%</li>
-          <li><strong>Gesamt: 50%</strong></li>
-          <li>Bei 30.000 € Investition: <strong>15.000 € Zuschuss</strong></li>
-        </ul>
+        <h2>Die häufigsten Fehler (und wie Sie sie vermeiden)</h2>
 
-        <h4>Beispiel 2: Maximalförderung (70%)</h4>
-
-        <ul>
-          <li>Grundförderung: 30%</li>
-          <li>Geschwindigkeitsbonus: 20%</li>
-          <li>Einkommensbonus: 30%</li>
-          <li>Effizienzbonus: 5% (wird begrenzt auf Gesamtförderung von 70%)</li>
-          <li><strong>Gesamt: 70% (gedeckelt)</strong></li>
-          <li>Bei 30.000 € Investition: <strong>21.000 € Zuschuss</strong></li>
-          <li><strong>Eigenanteil: Nur 9.000 €</strong></li>
-        </ul>
-
-        <h3>Welche Heizungen werden gefördert?</h3>
-
-        <p>Förderfähig sind:</p>
-
-        <ul>
-          <li><strong>Elektrische Wärmepumpen:</strong> Luft-Wasser, Sole-Wasser, Wasser-Wasser</li>
-          <li><strong>Biomasseheizungen:</strong> Pellet-, Hackschnitzel-, Scheitholzheizungen</li>
-          <li><strong>Solarthermieanlagen</strong> (als Ergänzung)</li>
-          <li><strong>Innovative Heizungstechnik</strong> auf Basis erneuerbarer Energien</li>
-          <li><strong>Brennstoffzellenheizungen</strong></li>
-          <li><strong>Anschluss an ein Gebäudenetz/Wärmenetz</strong></li>
-        </ul>
-
-        <p><strong>Nicht förderfähig:</strong> Reine Gas- und Ölheizungen (auch nicht in Hybridlösungen mit <65% EE-Anteil)</p>
-
-        <h3>Technische Mindestanforderungen für Wärmepumpen</h3>
-
-        <p>Damit Ihre Wärmepumpe förderfähig ist, muss sie folgende Kriterien erfüllen:</p>
-
-        <ul>
-          <li><strong>Jahresarbeitszahl (JAZ):</strong> Mindestens 2,7 (Luft-WP) bzw. 3,8 (Sole/Wasser-WP)</li>
-          <li><strong>Listen-Aufnahme:</strong> Aufführung in der BAFA-Förderliste</li>
-          <li><strong>Fachbetrieb:</strong> Installation durch zertifizierten Fachbetrieb</li>
-          <li><strong>Hydraulischer Abgleich:</strong> Muss durchgeführt werden</li>
-          <li><strong>Energieeffizienzlabel:</strong> Mindestens A+ (bei 35°C Vorlauftemperatur)</li>
-        </ul>
-
-        <h3>Der Antragsprozess: Schritt für Schritt</h3>
-
-        <h4>1. Vor Beginn der Maßnahme</h4>
-
-        <ul>
-          <li>Holen Sie Angebote von Fachbetrieben ein (z.B. HeizCenter)</li>
-          <li>Prüfen Sie, ob das geplante System förderfähig ist</li>
-          <li><strong>Wichtig:</strong> Unterschreiben Sie noch keinen Vertrag! Der Antrag muss <strong>vor</strong> Vertragsabschluss gestellt werden</li>
-        </ul>
-
-        <h4>2. Antragstellung bei der KfW</h4>
-
-        <ul>
-          <li>Registrieren Sie sich im <strong>KfW-Zuschussportal</strong></li>
-          <li>Füllen Sie den Online-Antrag aus</li>
-          <li>Laden Sie erforderliche Dokumente hoch (Angebote, Nachweise)</li>
-          <li>Sie erhalten eine <strong>Zusage mit Fördernummer</strong></li>
-        </ul>
-
-        <h4>3. Beauftragung und Umsetzung</h4>
-
-        <ul>
-          <li><strong>Erst nach Antragsbewilligung</strong> dürfen Sie den Auftrag erteilen</li>
-          <li>Der Fachbetrieb führt die Installation durch</li>
-          <li>Inbetriebnahme und Abnahme der Anlage</li>
-        </ul>
-
-        <h4>4. Verwendungsnachweis und Auszahlung</h4>
-
-        <ul>
-          <li>Laden Sie Rechnungen und Nachweise im KfW-Portal hoch</li>
-          <li>Fachunternehmerbestätigung über ordnungsgemäße Installation</li>
-          <li>Die KfW prüft die Unterlagen</li>
-          <li><strong>Auszahlung</strong> des Zuschusses auf Ihr Konto (in der Regel innerhalb von 4-8 Wochen)</li>
-        </ul>
-
-        <h3>Wichtige Fristen und Hinweise</h3>
-
-        <ul>
-          <li><strong>Antragstellung vor Vorhabenbeginn:</strong> Maßgeblich ist der Vertragsabschluss – nicht der Baubeginn</li>
-          <li><strong>Planungsleistungen sind erlaubt:</strong> Angebotserstellung und Energieberatung dürfen vor Antragstellung erfolgen</li>
-          <li><strong>Bewilligungszeitraum:</strong> Die Maßnahme muss innerhalb des bewilligten Zeitraums abgeschlossen werden (in der Regel 36 Monate)</li>
-          <li><strong>Verwendungsnachweis:</strong> Muss innerhalb von 6 Monaten nach Abschluss der Maßnahme eingereicht werden</li>
-        </ul>
-
-        <h3>Ergänzende Förderung: KfW-Kredit 261</h3>
-
-        <p>Zusätzlich zum Zuschuss können Sie einen <strong>zinsgünstigen Kredit (KfW 261)</strong> beantragen:</p>
-
-        <ul>
-          <li>Kreditsumme: Bis zu 150.000 € pro Wohneinheit</li>
-          <li>Zinsvergünstigung durch den Bund</li>
-          <li>Kombinierbar mit dem BEG-Zuschuss</li>
-          <li>Ideal für umfassende Sanierungen</li>
-        </ul>
-
-        <h3>Häufige Fehler vermeiden</h3>
-
-        <p>Folgende Fehler führen oft zur Ablehnung oder Kürzung der Förderung:</p>
-
-        <ul>
-          <li><strong>Zu früher Vertragsabschluss:</strong> Immer erst Antrag stellen, dann Vertrag unterschreiben</li>
-          <li><strong>Unvollständige Unterlagen:</strong> Achten Sie auf vollständige Nachweise</li>
-          <li><strong>Nicht gelistete Geräte:</strong> Prüfen Sie vorab die BAFA-Liste</li>
-          <li><strong>Fehlender hydraulischer Abgleich:</strong> Ist Pflicht für die Förderung</li>
-          <li><strong>Falsche Einkommen-Nachweise:</strong> Beim Einkommensbonus exakte Nachweise erbringen</li>
-        </ul>
-
-        <h3>Ausblick 2025 und darüber hinaus</h3>
-
-        <p>Die BEG-Förderung läuft 2025 weiter, jedoch mit Unsicherheiten:</p>
-
-        <ul>
-          <li><strong>Geschwindigkeitsbonus läuft 2028 aus</strong> – jetzt profitieren!</li>
-          <li>Politische Diskussionen über mögliche Kürzungen</li>
-          <li>Budget-Beschränkungen können zu Antragsengpässen führen</li>
-          <li><strong>Empfehlung:</strong> Nicht zu lange warten, aktuelle Fördersätze nutzen</li>
-        </ul>
-
-        <h3>Fazit: Maximale Förderung sichern</h3>
-
-        <p>Mit der BEG-Förderung 2025 wird der Umstieg auf eine klimafreundliche Heizung deutlich erschwinglicher. Bei optimaler Ausnutzung aller Boni können Sie bis zu 70% der Investitionskosten als Zuschuss erhalten.</p>
-
-        <p><strong>Wichtig:</strong> Eine professionelle Beratung und sorgfältige Antragstellung sind entscheidend für den Fördererfolg. HeizCenter unterstützt Sie bei jedem Schritt – von der Planung über die Antragstellung bis zur Auszahlung der Förderung.</p>
-
-        <h3>HeizCenter: Ihr Partner für BEG-Förderung</h3>
-
-        <p>Wir bieten:</p>
+        <p>In unserer Praxis sehen wir immer wieder dieselben Stolperfallen:</p>
 
         <ul>
-          <li>Kostenlose Erstberatung zur Fördermöglichkeiten</li>
-          <li>Unterstützung bei der Antragstellung</li>
-          <li>Fachgerechte Installation durch zertifizierte Fachbetriebe</li>
-          <li>Alle erforderlichen Nachweise und Dokumentationen</li>
-          <li>Garantiert förderfähige Systeme</li>
+          <li><strong>"Ich hab schon unterschrieben..."</strong> – Passiert leider oft. Manche Handwerker drängen zum schnellen Abschluss. Lassen Sie sich nicht unter Druck setzen.</li>
+          <li><strong>Wärmepumpe nicht auf der Liste</strong> – Nicht jedes Gerät ist förderfähig. Wir arbeiten nur mit geprüften, förderfähigen Systemen.</li>
+          <li><strong>Hydraulischer Abgleich vergessen</strong> – Klingt technisch, ist aber Pflicht. Ohne gibt's keine Förderung.</li>
+          <li><strong>Einkommensnachweis falsch</strong> – Beim 30%-Einkommensbonus muss der Steuerbescheid passen. Nicht schätzen, sondern nachweisen.</li>
         </ul>
 
-        <p>Kontaktieren Sie uns jetzt und sichern Sie sich Ihre maximale Förderung für 2025!</p>
+        <h2>Brauche ich das Geld sofort? Der KfW-Kredit</h2>
+
+        <p>Nicht jeder hat 10.000-15.000 € auf der hohen Kante liegen. Kein Problem:</p>
+
+        <p>Der <strong>KfW-Kredit 261</strong> bietet zinsgünstige Darlehen bis 150.000 € pro Wohneinheit. Der Clou: Sie können den Kredit <em>zusätzlich</em> zum Zuschuss nutzen.</p>
+
+        <p>In der Praxis heißt das: Sie bekommen den Zuschuss und finanzieren den Rest günstig. Die monatliche Rate liegt oft unter den eingesparten Heizkosten.</p>
+
+        <h2>Wie lange gilt die Förderung noch?</h2>
+
+        <p>Stand heute (2025) läuft das Programm weiter. Aber:</p>
+
+        <ul>
+          <li>Der Klimageschwindigkeits-Bonus (20%) läuft 2028 aus</li>
+          <li>Politische Unsicherheiten können zu Kürzungen führen</li>
+          <li>Wenn das Budget aufgebraucht ist, kann es Wartezeiten geben</li>
+        </ul>
+
+        <p>Unsere ehrliche Einschätzung: Die aktuellen Fördersätze sind historisch hoch. Ob es 2026 oder 2027 noch genauso viel gibt, weiß niemand. Wer ohnehin tauschen will, sollte die Gelegenheit nutzen.</p>
+
+        <div class="bg-gradient-to-br from-slate-50 to-slate-100 border border-slate-200 rounded-xl p-6 my-6">
+          <h3 class="text-lg font-bold text-slate-900 mb-3">Wir übernehmen den Papierkram</h3>
+          <p class="text-slate-600 mb-4">Bei HeizCenter unterstützen wir Sie bei der kompletten Antragstellung:</p>
+          <ul class="space-y-2 mb-6 text-slate-700">
+            <li class="flex items-start gap-2">✓ <span>Förderberechnung für Ihre Situation</span></li>
+            <li class="flex items-start gap-2">✓ <span>Alle erforderlichen Nachweise</span></li>
+            <li class="flex items-start gap-2">✓ <span>Garantiert förderfähige Systeme</span></li>
+            <li class="flex items-start gap-2">✓ <span>Hilfe beim KfW-Portal</span></li>
+          </ul>
+          <div class="flex flex-col sm:flex-row gap-3">
+            <a href="tel:+498234908970" class="inline-flex items-center justify-center gap-2 bg-[#0F5B78] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#0D4A5F] transition-colors">📞 Jetzt anrufen</a>
+            <a href="/kontakt" class="inline-flex items-center justify-center gap-2 bg-white border border-slate-300 text-slate-700 px-6 py-3 rounded-lg font-medium hover:bg-slate-50 transition-colors">Kostenlose Beratung anfragen →</a>
+          </div>
+          <p class="text-sm text-slate-500 mt-4">Die Erstberatung ist kostenlos – auch wenn Sie sich danach gegen einen Wechsel entscheiden.</p>
+        </div>
       `,
       category: 'Förderung',
       author: 'HeizCenter Redaktion',
       date: '2025-11-05',
-      readingTime: 12,
+      readingTime: 10,
       image: '/images/Heizung_Modernisierung.webp',
       tags: ['BEG', 'Förderung', 'Zuschuss', 'KfW', 'BAFA'],
       featured: false,
@@ -846,165 +988,295 @@ function getMockBlogPosts(): BlogPost[] {
       title: 'Gasheizung Kosten 2025: Was kostet eine neue Gasheizung?',
       excerpt: 'Alle Kosten für Kauf, Installation und Betrieb einer Gasheizung 2025 im Überblick. Plus: Aktuelle Fördermöglichkeiten und Alternativen.',
       content: `
-        <h2>Gasheizung Kosten 2025: Kompletter Überblick für Hausbesitzer</h2>
+        <p class="text-xl text-slate-700 leading-relaxed mb-6">Ihre alte Gasheizung macht Probleme und Sie überlegen, ob sich eine neue noch lohnt? Eine berechtigte Frage – denn 2025 hat sich einiges geändert. Die gute Nachricht: Eine Gasheizung bleibt eine der günstigsten Optionen bei der Anschaffung. Die weniger gute: Förderung gibt's praktisch keine mehr, und die Betriebskosten steigen Jahr für Jahr.</p>
 
-        <p>Gasheizungen gehören nach wie vor zu den am häufigsten installierten Heizsystemen in Deutschland. Doch was kostet eine neue Gasheizung 2025? Dieser Ratgeber gibt Ihnen einen vollständigen Überblick über Anschaffung, Installation, Betrieb und die wichtigsten Fördermöglichkeiten.</p>
+        <div class="flex flex-wrap gap-4 mb-8 text-sm text-slate-600">
+          <span class="flex items-center gap-1">✓ Über 800 Heizungsinstallationen pro Jahr</span>
+          <span class="flex items-center gap-1">✓ Ehrliche Kosten-Nutzen-Beratung</span>
+          <span class="flex items-center gap-1">✓ Meisterbetrieb seit 2010</span>
+        </div>
 
-        <h3>Anschaffungskosten: Was kostet eine neue Gasheizung?</h3>
+        <p>In diesem Artikel zeige ich Ihnen transparent, was eine neue Gasheizung 2025 wirklich kostet – und ob es für Ihre Situation bessere Alternativen gibt. Denn manchmal ist die günstigste Anschaffung langfristig die teuerste Lösung.</p>
 
-        <p>Die Gesamtkosten für eine neue Gasheizung inklusive Installation liegen 2025 zwischen <strong>9.000 und 15.000 Euro</strong>. Die konkreten Kosten hängen von verschiedenen Faktoren ab:</p>
+        <h2>Was kostet eine Gasheizung 2025? Die ehrliche Rechnung</h2>
 
-        <h4>Kostenaufschlüsselung im Detail:</h4>
+        <p>Fangen wir mit den harten Zahlen an. Eine komplette Gas-Brennwertheizung inklusive Installation kostet Sie <strong>9.000 bis 15.000 Euro</strong>. Das ist etwa die Hälfte einer Wärmepumpe – aber eben nur die halbe Wahrheit.</p>
 
-        <ul>
-          <li><strong>Gas-Brennwertkessel:</strong> 3.000 - 7.800 € (je nach Hersteller und Leistung)</li>
-          <li><strong>Warmwasserspeicher:</strong> 1.000 - 1.500 € (falls erforderlich)</li>
-          <li><strong>Installation und Montage:</strong> 2.000 - 3.000 € (inkl. hydraulischer Abgleich)</li>
-          <li><strong>Demontage und Entsorgung Altgerät:</strong> 500 - 1.000 €</li>
-          <li><strong>Neuer Gasanschluss:</strong> 1.500 - 2.500 € (falls erforderlich)</li>
-        </ul>
+        <div class="cost-table my-8">
+          <h4 class="text-lg font-bold text-slate-900 mb-4">Kostenaufstellung Gasheizung</h4>
+          <div class="space-y-3">
+            <div class="flex justify-between items-center py-2 border-b border-slate-200">
+              <span class="text-slate-700">Gas-Brennwertgerät (Wandgerät)</span>
+              <span class="font-semibold text-slate-900">3.000 – 5.500 €</span>
+            </div>
+            <div class="flex justify-between items-center py-2 border-b border-slate-200">
+              <span class="text-slate-700">Gas-Brennwertkessel (bodenstehend)</span>
+              <span class="font-semibold text-slate-900">4.500 – 7.800 €</span>
+            </div>
+            <div class="flex justify-between items-center py-2 border-b border-slate-200">
+              <span class="text-slate-700">Warmwasserspeicher (falls nötig)</span>
+              <span class="font-semibold text-slate-900">1.000 – 1.500 €</span>
+            </div>
+            <div class="flex justify-between items-center py-2 border-b border-slate-200">
+              <span class="text-slate-700">Installation & hydraulischer Abgleich</span>
+              <span class="font-semibold text-slate-900">2.000 – 3.000 €</span>
+            </div>
+            <div class="flex justify-between items-center py-2 border-b border-slate-200">
+              <span class="text-slate-700">Demontage & Entsorgung Altgerät</span>
+              <span class="font-semibold text-slate-900">500 – 1.000 €</span>
+            </div>
+            <div class="flex justify-between items-center py-2 border-b border-slate-200">
+              <span class="text-slate-700">Neuer Gasanschluss (falls nötig)</span>
+              <span class="font-semibold text-slate-900">1.500 – 2.500 €</span>
+            </div>
+            <div class="flex justify-between items-center py-3 bg-slate-50 px-3 rounded-lg mt-2">
+              <span class="font-bold text-slate-900">Gesamtkosten inkl. Installation</span>
+              <span class="font-bold text-[#0F5B78] text-lg">9.000 – 15.000 €</span>
+            </div>
+          </div>
+        </div>
 
-        <p><strong>Beispielrechnung für ein Einfamilienhaus (140 m²):</strong></p>
-        <p>Gas-Brennwertgerät (4.500 €) + Warmwasserspeicher (1.200 €) + Installation (2.500 €) + Altgeräteentsorgung (800 €) = <strong>9.000 € Gesamtkosten</strong></p>
+        <div class="bg-amber-50 border-l-4 border-amber-400 p-4 my-6">
+          <p class="font-semibold text-amber-900 mb-2">Praxisbeispiel: Familie Huber aus Bobingen</p>
+          <p class="text-amber-800">Einfamilienhaus, 140 m², Altbau von 1985. Alte Gasheizung nach 22 Jahren defekt. Neues Brennwertgerät (Viessmann Vitodens 300-W) mit 200-Liter-Speicher: <strong>9.800 €</strong> schlüsselfertig installiert.</p>
+        </div>
 
-        <h3>Brennwerttechnik vs. Niedertemperatur: Welche Variante?</h3>
+        <h2>Brennwerttechnik – warum es keine Alternative mehr gibt</h2>
 
-        <p>Moderne Gasheizungen arbeiten ausschließlich mit Brennwerttechnik, die deutliche Vorteile bietet:</p>
+        <p>Falls Sie noch eine Niedertemperaturheizung haben: Die dürfen seit 2015 nicht mehr eingebaut werden. Das ist aber kein Nachteil – moderne Brennwertgeräte holen aus jedem Kubikmeter Gas deutlich mehr Wärme raus.</p>
 
-        <ul>
-          <li><strong>Höhere Effizienz:</strong> Bis zu 98% Wirkungsgrad (Brennwert)</li>
-          <li><strong>Einsparungen:</strong> 15-30% weniger Gasverbrauch gegenüber Niedertemperaturkesseln</li>
-          <li><strong>Niedrigere Emissionen:</strong> Umweltfreundlicher durch optimierte Verbrennung</li>
-          <li><strong>Zukunftsfähig:</strong> Erfüllt aktuelle gesetzliche Anforderungen</li>
-        </ul>
-
-        <p><strong>Wichtig:</strong> Seit 2015 dürfen nur noch Brennwertgeräte installiert werden. Die Investition in Brennwerttechnik zahlt sich durch die Energieeinsparungen aus.</p>
-
-        <h3>Betriebskosten: Was kommt laufend auf Sie zu?</h3>
-
-        <p>Die jährlichen Betriebskosten einer Gasheizung setzen sich aus mehreren Komponenten zusammen:</p>
-
-        <h4>Jährliche Kosten im Überblick:</h4>
-
-        <ul>
-          <li><strong>Gasverbrauch:</strong> 2.670 € pro Jahr (bei 20.000 kWh Verbrauch und 12 Cent/kWh)</li>
-          <li><strong>Wartung:</strong> 130 - 200 € jährlich (essentiell für Effizienz und Lebensdauer)</li>
-          <li><strong>Schornsteinfeger:</strong> 80 - 120 € jährlich</li>
-          <li><strong>CO₂-Abgabe:</strong> Steigend (aktuell ca. 50 €/Tonne CO₂)</li>
-        </ul>
-
-        <p><strong>Gesamte monatliche Kosten:</strong> 190 - 250 € für ein durchschnittliches Einfamilienhaus</p>
-
-        <h3>CO₂-Preis: Steigende Kosten für fossile Brennstoffe</h3>
-
-        <p>Die CO₂-Abgabe verteuert Erdgas kontinuierlich:</p>
-
-        <ul>
-          <li>2024: 45 €/Tonne CO₂</li>
-          <li>2025: 55 €/Tonne CO₂ (geplant)</li>
-          <li>2026 und danach: Weitere Steigerungen wahrscheinlich</li>
-        </ul>
-
-        <p>Für einen durchschnittlichen Haushalt mit 20.000 kWh Gasverbrauch bedeutet das jährliche Mehrkosten von ca. 200-250 Euro, Tendenz steigend.</p>
-
-        <h3>Förderung 2025: Welche Zuschüsse gibt es noch?</h3>
-
-        <p><strong>Wichtige Information:</strong> Reine Gasheizungen werden seit Juli 2022 <strong>nicht mehr über die BEG gefördert</strong>. Es gibt jedoch Ausnahmen und alternative Fördermöglichkeiten:</p>
-
-        <h4>Förderfähige Gasheizungs-Varianten:</h4>
+        <p>Der Trick: Brennwertkessel nutzen auch die Abgaswärme, die bei alten Heizungen ungenutzt durch den Schornstein ging. Das bringt Ihnen:</p>
 
         <ul>
-          <li><strong>Wasserstofffähige Gasheizungen ("H2-ready"):</strong> Zuschüsse möglich für Systeme, die künftig mit Wasserstoff betrieben werden können</li>
-          <li><strong>Gas-Hybridheizungen:</strong> Förderung für Kombination aus Gasheizung + erneuerbare Energien (z.B. Solarthermie)</li>
-          <li><strong>Steuerliche Absetzbarkeit:</strong> 20% der Handwerkerkosten über drei Jahre absetzbar</li>
+          <li>Bis zu 98% Wirkungsgrad (statt 85-90% bei Niedertemperatur)</li>
+          <li>15-30% weniger Gasverbrauch bei gleicher Heizleistung</li>
+          <li>Niedrigere Abgastemperaturen = weniger Schadstoffausstoß</li>
         </ul>
 
-        <h4>Alternative: Steuerbonus nutzen</h4>
+        <p>Kurz gesagt: Wenn schon Gasheizung, dann auf jeden Fall Brennwert. Alles andere wäre rausgeschmissenes Geld.</p>
 
-        <p>Auch ohne BEG-Förderung können Sie die Handwerkerkosten steuerlich geltend machen:</p>
+        <h2>Die versteckten Kosten: Was Sie jährlich zahlen</h2>
+
+        <p>Hier wird's interessant – und für viele überraschend. Denn während die Anschaffung günstig ist, summieren sich die Betriebskosten ordentlich.</p>
+
+        <div class="comparison-grid grid md:grid-cols-2 gap-4 my-8">
+          <div class="comparison-card bg-white border border-slate-200 rounded-lg p-5">
+            <h4 class="font-bold text-slate-900 mb-3">Jährliche Betriebskosten</h4>
+            <ul class="space-y-2 text-slate-700">
+              <li><strong>Gasverbrauch:</strong> ca. 2.400 €<br><span class="text-sm text-slate-500">(20.000 kWh × 12 Cent/kWh)</span></li>
+              <li><strong>CO₂-Abgabe 2025:</strong> ca. 220 €<br><span class="text-sm text-slate-500">(55 €/Tonne × 4 Tonnen)</span></li>
+              <li><strong>Wartung:</strong> 150 – 200 €</li>
+              <li><strong>Schornsteinfeger:</strong> 80 – 120 €</li>
+            </ul>
+            <div class="mt-4 pt-4 border-t border-slate-200">
+              <p class="font-bold text-lg text-red-600">Gesamt: ca. 2.850 – 2.940 €/Jahr</p>
+              <p class="text-sm text-slate-500">= 240 – 245 € pro Monat</p>
+            </div>
+          </div>
+          <div class="comparison-card bg-blue-50 border border-blue-200 rounded-lg p-5">
+            <h4 class="font-bold text-slate-900 mb-3">Zum Vergleich: Wärmepumpe</h4>
+            <ul class="space-y-2 text-slate-700">
+              <li><strong>Stromverbrauch:</strong> ca. 1.200 €<br><span class="text-sm text-slate-500">(5.000 kWh × 24 Cent/kWh)</span></li>
+              <li><strong>CO₂-Abgabe:</strong> keine<br><span class="text-sm text-slate-500">(Strom ist befreit)</span></li>
+              <li><strong>Wartung:</strong> 80 – 150 €</li>
+              <li><strong>Schornsteinfeger:</strong> entfällt</li>
+            </ul>
+            <div class="mt-4 pt-4 border-t border-blue-200">
+              <p class="font-bold text-lg text-green-600">Gesamt: ca. 1.280 – 1.350 €/Jahr</p>
+              <p class="text-sm text-slate-500">= 107 – 113 € pro Monat</p>
+            </div>
+          </div>
+        </div>
+
+        <p>Der Unterschied? <strong>Rund 1.500 € pro Jahr</strong> – zugunsten der Wärmepumpe. Und das trotz höherer Anschaffungskosten. Rechnet man die Förderung ein, amortisiert sich eine Wärmepumpe oft schon nach 6-8 Jahren.</p>
+
+        <h2>CO₂-Preis: Das wird noch teurer</h2>
+
+        <p>Ein Punkt, der oft unterschätzt wird: Die CO₂-Abgabe steigt jedes Jahr. Und das ist gesetzlich so gewollt.</p>
+
+        <div class="bg-slate-100 rounded-lg p-5 my-6">
+          <h4 class="font-bold text-slate-900 mb-3">Entwicklung der CO₂-Abgabe</h4>
+          <div class="space-y-2">
+            <div class="flex justify-between"><span>2024:</span><strong>45 €/Tonne</strong></div>
+            <div class="flex justify-between"><span>2025:</span><strong>55 €/Tonne</strong></div>
+            <div class="flex justify-between"><span>2026:</span><strong>65 €/Tonne (geplant)</strong></div>
+            <div class="flex justify-between text-red-700"><span>2027+:</span><strong>Marktkorridor 55-65 €, dann unbegrenzt</strong></div>
+          </div>
+        </div>
+
+        <p>Was heißt das konkret? Bei einem typischen Einfamilienhaus (20.000 kWh Gasverbrauch) zahlen Sie 2025 etwa 220 € CO₂-Abgabe pro Jahr. 2027 könnten das schon 300 € sein. Experten rechnen langfristig mit 100-150 €/Tonne – das wären dann 500-600 € zusätzlich pro Jahr. Nur für die CO₂-Steuer.</p>
+
+        <h2>Förderung 2025: Die ernüchternde Wahrheit</h2>
+
+        <p>Ich muss Ihnen hier keine falschen Hoffnungen machen: <strong>Reine Gasheizungen werden nicht mehr gefördert</strong>. Punkt. Seit Juli 2022 ist Schluss damit.</p>
+
+        <p>Es gibt nur noch zwei Ausnahmen:</p>
+
+        <div class="comparison-grid grid md:grid-cols-2 gap-4 my-8">
+          <div class="comparison-card bg-white border border-green-200 rounded-lg p-5">
+            <div class="text-2xl mb-2">🔋</div>
+            <h4 class="font-bold text-slate-900 mb-2">Gas-Hybridheizung</h4>
+            <p class="text-slate-700 mb-3">Gasheizung + Wärmepumpe oder Solarthermie in Kombination</p>
+            <p class="text-green-700 font-medium">Förderung: Bis zu 70% auf den erneuerbaren Anteil</p>
+          </div>
+          <div class="comparison-card bg-white border border-blue-200 rounded-lg p-5">
+            <div class="text-2xl mb-2">💨</div>
+            <h4 class="font-bold text-slate-900 mb-2">H2-ready Gasheizung</h4>
+            <p class="text-slate-700 mb-3">Wasserstofffähige Geräte für künftigen H2-Betrieb</p>
+            <p class="text-blue-700 font-medium">Förderung: Theoretisch möglich, praktisch kaum verfügbar</p>
+          </div>
+        </div>
+
+        <h3>Was Sie trotzdem absetzen können</h3>
+
+        <p>Auch ohne BEG-Förderung ist nicht alles verloren. Über den Steuerbonus (§ 35c EStG) können Sie die Handwerkerkosten absetzen:</p>
 
         <ul>
-          <li>20% der Kosten über drei Jahre verteilt</li>
-          <li>7% im ersten und zweiten Jahr, 6% im dritten Jahr</li>
-          <li>Maximale steuerliche Entlastung: Mehrere tausend Euro</li>
+          <li>20% der Kosten über 3 Jahre verteilt</li>
+          <li>7% im ersten Jahr, 7% im zweiten, 6% im dritten</li>
+          <li>Maximal 40.000 € Kosten ansetzbar = bis zu 8.000 € Steuerersparnis</li>
         </ul>
 
-        <h3>Heizungsgesetz 2024: Was bedeutet das für Gasheizungen?</h3>
+        <p>Bei einer Gasheizung für 10.000 € sind das immerhin 2.000 € zurück. Besser als nichts – aber verglichen mit 50-70% BEG-Förderung für eine Wärmepumpe ist das ein Tropfen auf den heißen Stein.</p>
 
-        <p>Das Gebäudeenergiegesetz (GEG) hat wichtige Auswirkungen auf Gasheizungen:</p>
+        <div class="bg-slate-50 border border-slate-200 rounded-lg p-4 my-6 text-center">
+          <p class="text-slate-700 mb-2"><strong>Nicht sicher, welche Heizung sich für Sie wirklich lohnt?</strong></p>
+          <p class="text-sm text-slate-600">Wir rechnen beide Varianten durch – Gas vs. Wärmepumpe – mit echten Zahlen für Ihr Haus. <a href="/kontakt" class="text-[#0F5B78] font-medium hover:underline">Kostenlose Beratung anfragen →</a></p>
+        </div>
 
-        <h4>Wichtigste Regelungen:</h4>
+        <h2>Heizungsgesetz 2024: Was gilt für Gasheizungen?</h2>
+
+        <p>Das Gebäudeenergiegesetz (GEG) hat viele verunsichert. Hier die wichtigsten Fakten:</p>
+
+        <div class="pro-con-list my-8">
+          <div class="bg-green-50 border border-green-200 rounded-lg p-5 mb-4">
+            <h4 class="font-bold text-green-900 mb-3">✓ Was Sie weiterhin dürfen</h4>
+            <ul class="space-y-2 text-green-800">
+              <li><strong>Bestandsschutz:</strong> Ihre funktionierende Gasheizung darf weiterlaufen</li>
+              <li><strong>Reparaturen:</strong> Defekte Teile dürfen ersetzt werden</li>
+              <li><strong>Übergangsfrist:</strong> Bei Totalausfall 5 Jahre Zeit für erneuerbaren Ersatz</li>
+            </ul>
+          </div>
+          <div class="bg-red-50 border border-red-200 rounded-lg p-5">
+            <h4 class="font-bold text-red-900 mb-3">✗ Was sich ändert</h4>
+            <ul class="space-y-2 text-red-800">
+              <li><strong>Neubauten:</strong> In Neubaugebieten ab 2024 mind. 65% erneuerbare Energien</li>
+              <li><strong>Städte >100.000 EW:</strong> Ab Mitte 2026 gilt die 65%-Regel auch im Bestand</li>
+              <li><strong>Kleinere Kommunen:</strong> Ab Mitte 2028 – abhängig von der Wärmeplanung</li>
+              <li><strong>30-Jahre-Regel:</strong> Heizkessel über 30 Jahre müssen getauscht werden</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 my-6">
+          <p class="font-semibold text-blue-900 mb-2">📍 In unserer Region (Augsburg, Landkreis, Günzburg)</p>
+          <p class="text-sm text-blue-800">Augsburg als Großstadt muss die Wärmeplanung bis Mitte 2026 vorlegen. Bobingen und der ländliche Raum haben bis 2028 Zeit. Konkret heißt das: Wenn Sie jetzt eine Gasheizung einbauen, haben Sie in den meisten Fällen noch 10-15 Jahre, bevor Handlungsbedarf entsteht.</p>
+        </div>
+
+        <h2>Gas vs. Alternativen: Der ehrliche Vergleich</h2>
+
+        <p>Bevor Sie sich entscheiden, hier der direkte Vergleich – mit echten Zahlen aus unseren Projekten:</p>
+
+        <div class="cost-table my-8">
+          <div class="grid grid-cols-4 gap-2 text-sm font-bold text-slate-900 bg-slate-100 p-3 rounded-t-lg">
+            <div></div>
+            <div class="text-center">Gasheizung</div>
+            <div class="text-center">Wärmepumpe</div>
+            <div class="text-center">Gas-Hybrid</div>
+          </div>
+          <div class="grid grid-cols-4 gap-2 text-sm p-3 border-b border-slate-200">
+            <div class="text-slate-600">Anschaffung</div>
+            <div class="text-center font-medium">9.000 – 15.000 €</div>
+            <div class="text-center font-medium">25.000 – 35.000 €</div>
+            <div class="text-center font-medium">20.000 – 28.000 €</div>
+          </div>
+          <div class="grid grid-cols-4 gap-2 text-sm p-3 border-b border-slate-200">
+            <div class="text-slate-600">Förderung</div>
+            <div class="text-center text-red-600">Keine (nur Steuer)</div>
+            <div class="text-center text-green-600">30 – 70%</div>
+            <div class="text-center text-green-600">30 – 70%*</div>
+          </div>
+          <div class="grid grid-cols-4 gap-2 text-sm p-3 border-b border-slate-200">
+            <div class="text-slate-600">Nach Förderung</div>
+            <div class="text-center font-medium">9.000 – 15.000 €</div>
+            <div class="text-center font-medium text-green-700">7.500 – 17.500 €</div>
+            <div class="text-center font-medium">8.000 – 14.000 €</div>
+          </div>
+          <div class="grid grid-cols-4 gap-2 text-sm p-3 border-b border-slate-200">
+            <div class="text-slate-600">Betrieb/Jahr</div>
+            <div class="text-center text-red-600 font-medium">~2.900 €</div>
+            <div class="text-center text-green-600 font-medium">~1.300 €</div>
+            <div class="text-center font-medium">~2.000 €</div>
+          </div>
+          <div class="grid grid-cols-4 gap-2 text-sm p-3 bg-slate-50 rounded-b-lg">
+            <div class="text-slate-600 font-medium">15-Jahres-Kosten</div>
+            <div class="text-center font-bold text-red-700">~55.000 €</div>
+            <div class="text-center font-bold text-green-700">~32.000 €</div>
+            <div class="text-center font-bold">~42.000 €</div>
+          </div>
+        </div>
+        <p class="text-sm text-slate-500 -mt-4 mb-8">*Förderung nur auf den erneuerbaren Anteil der Hybridheizung</p>
+
+        <p>Die Zahlen sprechen eine klare Sprache: <strong>Auf 15 Jahre gerechnet ist die Wärmepumpe fast 20.000 € günstiger</strong> – trotz der höheren Anschaffungskosten. Und das bei konservativer Rechnung ohne weitere CO₂-Preissteigerungen.</p>
+
+        <h2>Wann macht Gas trotzdem Sinn?</h2>
+
+        <p>Ich will hier ehrlich sein: Es gibt Situationen, in denen eine Gasheizung 2025 noch die richtige Wahl sein kann. Zum Beispiel:</p>
+
+        <div class="bg-slate-50 rounded-lg p-5 my-6">
+          <ul class="space-y-3">
+            <li><strong>Heizungsausfall im Winter</strong> – Sie brauchen schnell Wärme und haben kein Budget für größere Investitionen</li>
+            <li><strong>Haus wird in 5-10 Jahren verkauft</strong> – die Amortisation einer Wärmepumpe rechnet sich nicht mehr</li>
+            <li><strong>Gasanschluss vorhanden, kein Platz für Wärmepumpe</strong> – manche Grundstücke machen eine Außeneinheit unmöglich</li>
+            <li><strong>Unsanierter Altbau mit Vorlauftemperatur >55°C</strong> – hier arbeitet eine Wärmepumpe weniger effizient (aber: Hochtemperatur-Wärmepumpen sind eine Option)</li>
+          </ul>
+        </div>
+
+        <p>Aber: Selbst in diesen Fällen sollten Sie zumindest die <strong>Gas-Hybridvariante</strong> prüfen. Die ist förderfähig und gibt Ihnen Flexibilität für später.</p>
+
+        <h2>Fazit: Die Gasheizung als Auslaufmodell</h2>
+
+        <p>Ich fasse zusammen:</p>
 
         <ul>
-          <li><strong>Bestandsschutz:</strong> Bestehende Gasheizungen dürfen weiterbetrieben werden</li>
-          <li><strong>Reparaturen erlaubt:</strong> Defekte Gasheizungen dürfen repariert werden</li>
-          <li><strong>Neubauten:</strong> In Neubaugebieten ab 2024 mindestens 65% erneuerbare Energien erforderlich</li>
-          <li><strong>Bestandsgebäude:</strong> Stufenweise Umstellung bis 2026/2028 je nach Kommune</li>
-          <li><strong>Austauschpflicht:</strong> Gasheizungen über 30 Jahre müssen ersetzt werden (mit Ausnahmen)</li>
+          <li><strong>Anschaffung:</strong> 9.000-15.000 € – günstig im Vergleich</li>
+          <li><strong>Betriebskosten:</strong> ~2.900 €/Jahr und steigend</li>
+          <li><strong>Förderung:</strong> Nur noch Steuerbonus (max. 2.000 €)</li>
+          <li><strong>Zukunftsperspektive:</strong> Unsicher – steigende CO₂-Kosten, auslaufende Technologie</li>
         </ul>
 
-        <p><strong>Übergangsfristen:</strong> Die meisten Hausbesitzer haben noch mehrere Jahre Zeit für die Umstellung. Eine kommunale Wärmeplanung entscheidet über konkrete Fristen.</p>
+        <p>Meine ehrliche Empfehlung: Wenn Sie heute eine Heizung für die nächsten 20 Jahre planen, ist eine reine Gasheizung meist nicht mehr die beste Wahl. Lassen Sie sich beide Varianten durchrechnen – mit echten Zahlen für Ihr Gebäude.</p>
 
-        <h3>Vor- und Nachteile einer Gasheizung 2025</h3>
+        <div class="bg-gradient-to-br from-[#0F5B78] to-[#0D4A5F] text-white rounded-xl p-6 my-8">
+          <h3 class="text-xl font-bold mb-4">Ehrliche Beratung: Gas vs. Wärmepumpe</h3>
+          <p class="text-white/90 mb-4">Wir rechnen Ihnen beide Varianten durch – mit realen Kosten, Förderung und Betriebskosten für Ihre Situation. Keine Verkaufsgespräche, nur Zahlen.</p>
 
-        <h4>Vorteile:</h4>
+          <div class="grid md:grid-cols-3 gap-3 mb-4 text-sm">
+            <div class="flex items-center gap-2">
+              <span class="text-green-300">1</span>
+              <span>Termin vereinbaren</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="text-green-300">2</span>
+              <span>Vor-Ort-Aufnahme</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="text-green-300">3</span>
+              <span>Vergleichsangebot erhalten</span>
+            </div>
+          </div>
 
-        <ul>
-          <li>✓ Niedrige Anschaffungskosten im Vergleich zu Wärmepumpen</li>
-          <li>✓ Bewährte, zuverlässige Technologie</li>
-          <li>✓ Kompakte Bauweise, geringer Platzbedarf</li>
-          <li>✓ Schnelle Installation möglich</li>
-          <li>✓ Für Altbauten ohne zusätzliche Dämmmaßnahmen geeignet</li>
-        </ul>
+          <div class="flex flex-col sm:flex-row gap-3">
+            <a href="tel:+4982349679750" class="inline-flex items-center justify-center gap-2 bg-white text-[#0F5B78] font-semibold px-5 py-3 rounded-lg hover:bg-slate-100 transition-colors">
+              <span>📞</span> 08234 / 967 975 0
+            </a>
+            <a href="/kontakt" class="inline-flex items-center justify-center gap-2 bg-white/10 text-white font-semibold px-5 py-3 rounded-lg border border-white/30 hover:bg-white/20 transition-colors">
+              Online-Anfrage →
+            </a>
+          </div>
 
-        <h4>Nachteile:</h4>
-
-        <ul>
-          <li>✗ Keine BEG-Förderung mehr (außer H2-ready und Hybrid)</li>
-          <li>✗ Steigende Betriebskosten durch CO₂-Abgabe</li>
-          <li>✗ Abhängigkeit von fossilen Brennstoffen und Gaspreisen</li>
-          <li>✗ Unsichere Zukunftsperspektive durch Heizungsgesetz</li>
-          <li>✗ Höhere Wartungskosten als bei Wärmepumpen</li>
-        </ul>
-
-        <h3>Alternativen zur reinen Gasheizung</h3>
-
-        <p>Wenn Sie langfristig planen, sollten Sie diese Alternativen in Betracht ziehen:</p>
-
-        <h4>Gas-Hybridheizung</h4>
-        <p>Kombination aus Gasheizung + Wärmepumpe oder Solarthermie. Vorteile: Noch BEG-förderfähig, schrittweiser Umstieg auf Erneuerbare, Absicherung gegen steigende Gaspreise.</p>
-
-        <h4>Wärmepumpe</h4>
-        <p>Komplett klimaneutrale Alternative mit bis zu 70% BEG-Förderung. Höhere Anfangsinvestition, aber deutlich niedrigere Betriebskosten und staatliche Unterstützung.</p>
-
-        <h4>Pelletheizung</h4>
-        <p>CO₂-neutrale Biomasseheizung mit bis zu 70% BEG-Förderung (inkl. Einkommensbonus). Für den Klimageschwindigkeitsbonus ist eine Kombination mit Solar/PV erforderlich. Lokaler, nachhaltiger Brennstoff, aber mehr Platzbedarf als Gasheizung.</p>
-
-        <h3>Wann lohnt sich eine Gasheizung noch?</h3>
-
-        <p>Eine neue Gasheizung kann 2025 sinnvoll sein, wenn:</p>
-
-        <ul>
-          <li>Ein sofortiger Heizungsausfall eine schnelle, kostengünstige Lösung erfordert</li>
-          <li>Die Immobilie in absehbarer Zeit verkauft wird</li>
-          <li>Eine kommunale Wärmeplanung den Erhalt der Gasinfrastruktur vorsieht</li>
-          <li>Sie eine H2-ready-Heizung wählen für künftigen Wasserstoffbetrieb</li>
-          <li>Hybridlösungen in Kombination mit erneuerbaren Energien geplant sind</li>
-        </ul>
-
-        <p><strong>Langfristige Perspektive beachten:</strong> Für eine Heizung, die 20+ Jahre halten soll, sollten Sie die steigenden CO₂-Kosten und gesetzlichen Anforderungen im Blick behalten.</p>
-
-        <h3>Fazit: Gasheizung als Übergangslösung</h3>
-
-        <p>Gasheizungen bleiben 2025 eine bewährte und kostengünstige Heiztechnologie – allerdings ohne Förderung und mit unsicherer Zukunftsperspektive. Die niedrigen Anschaffungskosten von 9.000-15.000 € sind attraktiv, doch steigende Betriebskosten durch CO₂-Abgaben sollten Sie einkalkulieren.</p>
-
-        <p><strong>Empfehlung:</strong> Wenn Sie eine neue Heizung planen, prüfen Sie auch Alternativen wie Wärmepumpen oder Gas-Hybrid-Systeme. Diese sind förderfähig und zukunftssicherer. Lassen Sie sich von Experten verschiedene Optionen durchrechnen.</p>
-
-        <h3>Kostenlose Beratung bei HeizCenter</h3>
-
-        <p>Unsere Heizungsexperten beraten Sie unverbindlich zu allen Heizsystemen – von Gasheizung über Hybrid bis Wärmepumpe. Wir erstellen Ihnen individuelle Angebote mit realistischen Kosten und prüfen alle Fördermöglichkeiten für Ihre Situation.</p>
-
-        <p><strong>Jetzt Kontakt aufnehmen und Kosten vergleichen!</strong></p>
+          <p class="text-sm text-white/70 mt-4">Kostenlos & unverbindlich – wir verkaufen Ihnen nur, was wirklich passt</p>
+        </div>
       `,
       category: 'Heizung',
       author: 'HeizCenter Redaktion',
@@ -1020,229 +1292,308 @@ function getMockBlogPosts(): BlogPost[] {
       title: 'Pelletheizung Kosten 2025: Anschaffung, Betrieb & Förderung',
       excerpt: 'Was kostet eine Pelletheizung 2025? Kompletter Überblick über Anschaffung, Betriebskosten und bis zu 70% BEG-Förderung.',
       content: `
-        <h2>Pelletheizung Kosten 2025: Der komplette Kostenüberblick</h2>
+        <p class="text-xl text-slate-700 leading-relaxed mb-6">Sie interessieren sich für eine Pelletheizung und fragen sich, ob sich das für Ihr Haus rechnet? Die kurze Antwort: Ja, für viele Hausbesitzer ist eine Pelletheizung 2025 eine der wirtschaftlichsten Optionen – vorausgesetzt, Sie haben den Platz dafür und wissen, worauf Sie achten müssen.</p>
 
-        <p>Pelletheizungen sind eine klimaneutrale Alternative zu fossilen Brennstoffen und werden 2025 mit attraktiven Zuschüssen bis zu 70% gefördert (inkl. Einkommensbonus). Doch was kostet eine Pelletheizung wirklich? Dieser Ratgeber gibt Ihnen alle Informationen zu Anschaffung, Betrieb, Förderung und Wirtschaftlichkeit.</p>
+        <div class="flex flex-wrap gap-4 mb-8 text-sm text-slate-600">
+          <span class="flex items-center gap-1">✓ Zertifizierter Fachbetrieb für Biomasse</span>
+          <span class="flex items-center gap-1">✓ Über 120 Pelletheizungen installiert</span>
+          <span class="flex items-center gap-1">✓ KfW- und BAFA-Förderberatung inklusive</span>
+        </div>
 
-        <h3>Anschaffungskosten: Was kostet eine neue Pelletheizung?</h3>
+        <p>In diesem Artikel zeige ich Ihnen die echten Kosten – nicht nur die Anschaffung, sondern auch, was Sie jährlich zahlen. Und vor allem: Wie Sie durch geschickte Kombination mit Solarthermie bis zu 70% Förderung rausholen.</p>
 
-        <p>Die Gesamtkosten für eine Pelletheizung inklusive Installation liegen 2025 bei <strong>28.000 bis 35.000 Euro</strong> für ein durchschnittliches Einfamilienhaus mit 150 m² Wohnfläche.</p>
+        <h2>Was kostet eine Pelletheizung wirklich?</h2>
 
-        <h4>Kostenaufschlüsselung im Detail:</h4>
+        <p>Fangen wir mit den harten Zahlen an. Eine komplette Pelletheizung inklusive Lager, Fördersystem und Installation kostet Sie <strong>28.000 bis 35.000 Euro</strong>. Das klingt erstmal viel – aber warten Sie ab, was nach Förderung übrig bleibt.</p>
+
+        <div class="cost-table my-8">
+          <h4 class="text-lg font-bold text-slate-900 mb-4">Kostenaufstellung Pelletheizung</h4>
+          <div class="space-y-3">
+            <div class="flex justify-between items-center py-2 border-b border-slate-200">
+              <span class="text-slate-700">Pelletkessel (15-25 kW)</span>
+              <span class="font-semibold text-slate-900">15.000 – 20.000 €</span>
+            </div>
+            <div class="flex justify-between items-center py-2 border-b border-slate-200">
+              <span class="text-slate-700">Pelletlager (5-6 Tonnen)</span>
+              <span class="font-semibold text-slate-900">3.000 – 5.000 €</span>
+            </div>
+            <div class="flex justify-between items-center py-2 border-b border-slate-200">
+              <span class="text-slate-700">Fördersystem (Sauganlage/Schnecke)</span>
+              <span class="font-semibold text-slate-900">2.000 – 3.000 €</span>
+            </div>
+            <div class="flex justify-between items-center py-2 border-b border-slate-200">
+              <span class="text-slate-700">Pufferspeicher (500-1000 L)</span>
+              <span class="font-semibold text-slate-900">2.000 – 3.000 €</span>
+            </div>
+            <div class="flex justify-between items-center py-2 border-b border-slate-200">
+              <span class="text-slate-700">Installation & hydraulischer Abgleich</span>
+              <span class="font-semibold text-slate-900">4.000 – 6.000 €</span>
+            </div>
+            <div class="flex justify-between items-center py-2 border-b border-slate-200">
+              <span class="text-slate-700">Schornsteinsanierung (falls nötig)</span>
+              <span class="font-semibold text-slate-900">1.000 – 2.000 €</span>
+            </div>
+            <div class="flex justify-between items-center py-3 bg-slate-50 px-3 rounded-lg mt-2">
+              <span class="font-bold text-slate-900">Gesamtkosten brutto</span>
+              <span class="font-bold text-[#0F5B78] text-lg">28.000 – 35.000 €</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-amber-50 border-l-4 border-amber-400 p-4 my-6">
+          <p class="font-semibold text-amber-900 mb-2">Praxisbeispiel: Familie Bauer aus Günzburg</p>
+          <p class="text-amber-800">Einfamilienhaus, 160 m², alte Ölheizung von 1998. Neuer ÖkoFEN Pellematic (18 kW), Gewebetank im Keller, kombiniert mit 6 m² Solarthermie für Warmwasser. Gesamtkosten: <strong>34.500 €</strong>. Nach 50% Förderung: <strong>17.250 € Eigenanteil</strong>.</p>
+        </div>
+
+        <h2>Der Platzbedarf: Die ehrliche Wahrheit</h2>
+
+        <p>Hier liegt der Haken bei Pelletheizungen – und ich sage das ganz offen: Sie brauchen Platz. Wer keinen Keller hat oder nur eine kleine Abstellkammer, für den wird's schwierig.</p>
+
+        <div class="comparison-grid grid md:grid-cols-3 gap-4 my-8">
+          <div class="comparison-card bg-white border border-slate-200 rounded-lg p-5">
+            <h4 class="font-bold text-slate-900 mb-2">Gewebetank/Sacksilo</h4>
+            <p class="text-2xl font-bold text-[#0F5B78] mb-2">1.500 – 2.500 €</p>
+            <ul class="text-sm text-slate-600 space-y-1">
+              <li>• ca. 4-6 Tonnen Kapazität</li>
+              <li>• platzsparend (2x2 m)</li>
+              <li>• im Keller aufstellbar</li>
+            </ul>
+          </div>
+          <div class="comparison-card bg-white border border-slate-200 rounded-lg p-5">
+            <h4 class="font-bold text-slate-900 mb-2">Lagerraum (Umbau)</h4>
+            <p class="text-2xl font-bold text-[#0F5B78] mb-2">2.500 – 4.000 €</p>
+            <ul class="text-sm text-slate-600 space-y-1">
+              <li>• 6-8 Tonnen Kapazität</li>
+              <li>• alter Heizölraum nutzbar</li>
+              <li>• schräge Einbauten nötig</li>
+            </ul>
+          </div>
+          <div class="comparison-card bg-white border border-slate-200 rounded-lg p-5">
+            <h4 class="font-bold text-slate-900 mb-2">Erdtank (außen)</h4>
+            <p class="text-2xl font-bold text-[#0F5B78] mb-2">4.000 – 6.000 €</p>
+            <ul class="text-sm text-slate-600 space-y-1">
+              <li>• 8-10 Tonnen Kapazität</li>
+              <li>• kein Kellerplatz nötig</li>
+              <li>• Erdarbeiten erforderlich</li>
+            </ul>
+          </div>
+        </div>
+
+        <p><strong>Meine Faustregel:</strong> Sie brauchen etwa 1 m³ Lagerraum pro Tonne Pellets. Für ein typisches Einfamilienhaus bedeutet das 5-6 Tonnen Jahresbedarf = ca. 8-10 m³ Lagervolumen. Das entspricht einem Raum von etwa 2,5 x 2,5 x 1,5 Meter.</p>
+
+        <h2>Jährliche Betriebskosten: Hier wird's interessant</h2>
+
+        <p>Pellets haben einen riesigen Vorteil: keine CO₂-Abgabe. Während Gasheizer jedes Jahr mehr zahlen, bleiben Ihre Kosten stabil.</p>
+
+        <div class="comparison-grid grid md:grid-cols-2 gap-4 my-8">
+          <div class="comparison-card bg-green-50 border border-green-200 rounded-lg p-5">
+            <h4 class="font-bold text-slate-900 mb-3">Pelletheizung – jährlich</h4>
+            <ul class="space-y-2 text-slate-700">
+              <li><strong>Pellets (3 Tonnen):</strong> ca. 1.050 – 1.350 €<br><span class="text-sm text-slate-500">(350-450 €/Tonne × 3 t)</span></li>
+              <li><strong>Wartung:</strong> 250 – 350 €<br><span class="text-sm text-slate-500">(inkl. Reinigung, Filter)</span></li>
+              <li><strong>Schornsteinfeger:</strong> 100 – 140 €</li>
+              <li><strong>Strom (Fördersystem):</strong> 80 – 120 €</li>
+              <li><strong>CO₂-Abgabe:</strong> 0 €</li>
+            </ul>
+            <div class="mt-4 pt-4 border-t border-green-300">
+              <p class="font-bold text-lg text-green-700">Gesamt: ca. 1.480 – 1.960 €/Jahr</p>
+            </div>
+          </div>
+          <div class="comparison-card bg-red-50 border border-red-200 rounded-lg p-5">
+            <h4 class="font-bold text-slate-900 mb-3">Gasheizung – jährlich</h4>
+            <ul class="space-y-2 text-slate-700">
+              <li><strong>Gas (20.000 kWh):</strong> ca. 2.400 €<br><span class="text-sm text-slate-500">(12 Cent/kWh)</span></li>
+              <li><strong>Wartung:</strong> 150 – 200 €</li>
+              <li><strong>Schornsteinfeger:</strong> 80 – 120 €</li>
+              <li><strong>CO₂-Abgabe:</strong> ca. 220 €<br><span class="text-sm text-slate-500">(steigt jährlich!)</span></li>
+            </ul>
+            <div class="mt-4 pt-4 border-t border-red-300">
+              <p class="font-bold text-lg text-red-700">Gesamt: ca. 2.850 – 2.940 €/Jahr</p>
+            </div>
+          </div>
+        </div>
+
+        <p><strong>Die Ersparnis?</strong> Rund 1.000 – 1.500 € pro Jahr gegenüber Gas. Und das wird jedes Jahr mehr, weil die CO₂-Abgabe auf fossile Brennstoffe weiter steigt.</p>
+
+        <h2>Förderung 2025: So kommen Sie auf bis zu 70%</h2>
+
+        <p>Jetzt wird's spannend. Pelletheizungen werden üppig gefördert – aber es gibt einen wichtigen Haken, den viele nicht kennen:</p>
+
+        <div class="callout callout-warning my-6">
+          <div class="callout-title">Achtung: Klimageschwindigkeits-Bonus bei Biomasse</div>
+          <div class="callout-content">
+            <p>Den 20%-Klimabonus gibt's bei Pelletheizungen <strong>nur in Kombination mit Solarthermie, PV oder Wärmepumpe</strong>. Eine reine Pelletheizung bekommt ihn nicht! Deshalb empfehlen wir fast immer die Kombination mit einer kleinen Solarthermie-Anlage.</p>
+          </div>
+        </div>
+
+        <div class="comparison-grid grid md:grid-cols-4 gap-3 my-8">
+          <div class="text-center p-4 bg-[#0F5B78] text-white rounded-lg">
+            <div class="text-3xl font-bold mb-1">30%</div>
+            <div class="text-sm">Grundförderung</div>
+            <div class="text-xs text-white/70 mt-1">für alle</div>
+          </div>
+          <div class="text-center p-4 bg-[#0F5B78] text-white rounded-lg">
+            <div class="text-3xl font-bold mb-1">+20%</div>
+            <div class="text-sm">Klima-Bonus*</div>
+            <div class="text-xs text-white/70 mt-1">nur mit Solar/PV</div>
+          </div>
+          <div class="text-center p-4 bg-[#0F5B78] text-white rounded-lg">
+            <div class="text-3xl font-bold mb-1">+30%</div>
+            <div class="text-sm">Einkommensbonus</div>
+            <div class="text-xs text-white/70 mt-1">≤40.000 € Eink.</div>
+          </div>
+          <div class="text-center p-4 bg-green-600 text-white rounded-lg">
+            <div class="text-3xl font-bold mb-1">+2.500€</div>
+            <div class="text-sm">Emissionsbonus</div>
+            <div class="text-xs text-white/70 mt-1">≤2,5 mg/m³ Staub</div>
+          </div>
+        </div>
+        <p class="text-sm text-slate-500 -mt-4 mb-8">*Klimageschwindigkeits-Bonus nur bei Austausch fossiler Heizung UND Kombination mit erneuerbarer Warmwasserbereitung</p>
+
+        <h3>Beispielrechnungen aus der Praxis</h3>
+
+        <div class="cost-table my-8">
+          <div class="space-y-4">
+            <div class="bg-slate-50 rounded-lg p-4">
+              <div class="flex justify-between items-center mb-2">
+                <span class="font-semibold text-slate-900">Variante 1: Standard (30%)</span>
+                <span class="text-sm text-slate-600">Reine Pelletheizung, kein Klimabonus</span>
+              </div>
+              <div class="text-slate-700">30.000 € × 30% = <span class="font-bold text-[#0F5B78]">9.000 € Förderung → 21.000 € Eigenanteil</span></div>
+            </div>
+            <div class="bg-green-50 rounded-lg p-4">
+              <div class="flex justify-between items-center mb-2">
+                <span class="font-semibold text-slate-900">Variante 2: Mit Solar (50%)</span>
+                <span class="text-sm text-slate-600">Pellet + Solarthermie = Klimabonus</span>
+              </div>
+              <div class="text-slate-700">30.000 € × 50% = <span class="font-bold text-green-700">15.000 € Förderung → 15.000 € Eigenanteil</span></div>
+            </div>
+            <div class="bg-green-100 rounded-lg p-4 border-2 border-green-400">
+              <div class="flex justify-between items-center mb-2">
+                <span class="font-semibold text-slate-900">Variante 3: Maximum (70%)</span>
+                <span class="text-sm text-slate-600">Solar + Einkommensbonus (≤40.000€)</span>
+              </div>
+              <div class="text-slate-700">30.000 € × 70% = <span class="font-bold text-green-700">21.000 € Förderung → 9.000 € Eigenanteil</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-slate-50 border border-slate-200 rounded-lg p-4 my-6 text-center">
+          <p class="text-slate-700 mb-2"><strong>Wie viel Förderung steht Ihnen zu?</strong></p>
+          <p class="text-sm text-slate-600">Wir prüfen Ihre individuelle Situation und berechnen die maximale Förderung. <a href="/kontakt" class="text-[#0F5B78] font-medium hover:underline">Jetzt kostenlos anfragen →</a></p>
+        </div>
+
+        <h2>Pellet vs. Wärmepumpe: Wann ist was besser?</h2>
+
+        <p>Die Frage höre ich oft. Hier meine ehrliche Einschätzung:</p>
+
+        <div class="pro-con-list my-8">
+          <div class="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-4">
+            <h4 class="font-bold text-amber-900 mb-3">Pelletheizung ist besser, wenn…</h4>
+            <ul class="space-y-2 text-amber-800">
+              <li>✓ Sie ausreichend Lagerplatz haben (Keller, Nebengebäude)</li>
+              <li>✓ Ihr Haus schlecht gedämmt ist und hohe Vorlauftemperaturen braucht</li>
+              <li>✓ Sie auf regionale, nachwachsende Rohstoffe setzen wollen</li>
+              <li>✓ Eine Außeneinheit für Wärmepumpe nicht möglich/gewünscht ist</li>
+              <li>✓ Sie ein Ölheizer sind und den Lagerraum umnutzen können</li>
+            </ul>
+          </div>
+          <div class="bg-blue-50 border border-blue-200 rounded-lg p-5">
+            <h4 class="font-bold text-blue-900 mb-3">Wärmepumpe ist besser, wenn…</h4>
+            <ul class="space-y-2 text-blue-800">
+              <li>✓ Kein Lagerplatz vorhanden ist</li>
+              <li>✓ Das Haus gut gedämmt ist (Vorlauf ≤55°C)</li>
+              <li>✓ Sie eine PV-Anlage haben oder planen (Eigenverbrauch!)</li>
+              <li>✓ Sie möglichst wartungsfrei heizen wollen</li>
+              <li>✓ Im Sommer auch Kühlung gewünscht ist</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cost-table my-8">
+          <h4 class="text-lg font-bold text-slate-900 mb-4">Direktvergleich auf 20 Jahre</h4>
+          <div class="grid grid-cols-3 gap-2 text-sm font-bold text-slate-900 bg-slate-100 p-3 rounded-t-lg">
+            <div></div>
+            <div class="text-center">Pelletheizung</div>
+            <div class="text-center">Wärmepumpe</div>
+          </div>
+          <div class="grid grid-cols-3 gap-2 text-sm p-3 border-b border-slate-200">
+            <div class="text-slate-600">Anschaffung</div>
+            <div class="text-center">30.000 €</div>
+            <div class="text-center">32.000 €</div>
+          </div>
+          <div class="grid grid-cols-3 gap-2 text-sm p-3 border-b border-slate-200">
+            <div class="text-slate-600">Nach 50% Förderung</div>
+            <div class="text-center">15.000 €</div>
+            <div class="text-center">16.000 €</div>
+          </div>
+          <div class="grid grid-cols-3 gap-2 text-sm p-3 border-b border-slate-200">
+            <div class="text-slate-600">Betrieb × 20 Jahre</div>
+            <div class="text-center">35.000 €</div>
+            <div class="text-center">26.000 €</div>
+          </div>
+          <div class="grid grid-cols-3 gap-2 text-sm p-3 bg-slate-50 rounded-b-lg">
+            <div class="font-bold">Gesamtkosten 20 Jahre</div>
+            <div class="text-center font-bold">~50.000 €</div>
+            <div class="text-center font-bold text-green-700">~42.000 €</div>
+          </div>
+        </div>
+
+        <p>Die Zahlen zeigen: Langfristig ist die Wärmepumpe meist günstiger. Aber: Nicht jedes Haus eignet sich dafür. In schlecht gedämmten Altbauten mit Heizkörpern kann eine Pelletheizung die bessere Wahl sein.</p>
+
+        <h2>Der typische Ablauf bei uns</h2>
+
+        <div class="grid md:grid-cols-4 gap-4 my-8">
+          <div class="text-center">
+            <div class="w-12 h-12 bg-[#0F5B78] text-white rounded-full flex items-center justify-center mx-auto mb-3 text-xl font-bold">1</div>
+            <h4 class="font-semibold mb-1">Vor-Ort-Termin</h4>
+            <p class="text-sm text-slate-600">Wir schauen uns Keller, Platzverhältnisse und bestehende Heizung an</p>
+          </div>
+          <div class="text-center">
+            <div class="w-12 h-12 bg-[#0F5B78] text-white rounded-full flex items-center justify-center mx-auto mb-3 text-xl font-bold">2</div>
+            <h4 class="font-semibold mb-1">Angebot + Fördercheck</h4>
+            <p class="text-sm text-slate-600">Detailliertes Angebot mit maximaler Förderberechnung</p>
+          </div>
+          <div class="text-center">
+            <div class="w-12 h-12 bg-[#0F5B78] text-white rounded-full flex items-center justify-center mx-auto mb-3 text-xl font-bold">3</div>
+            <h4 class="font-semibold mb-1">Förderantrag</h4>
+            <p class="text-sm text-slate-600">Wir unterstützen bei BAFA/KfW – VOR Auftragserteilung!</p>
+          </div>
+          <div class="text-center">
+            <div class="w-12 h-12 bg-[#0F5B78] text-white rounded-full flex items-center justify-center mx-auto mb-3 text-xl font-bold">4</div>
+            <h4 class="font-semibold mb-1">Installation</h4>
+            <p class="text-sm text-slate-600">Komplette Montage inkl. Inbetriebnahme in 3-5 Tagen</p>
+          </div>
+        </div>
+
+        <h2>Fazit: Für wen lohnt sich die Pelletheizung?</h2>
+
+        <p>Die Pelletheizung ist 2025 eine ausgezeichnete Wahl, wenn:</p>
 
         <ul>
-          <li><strong>Pelletkessel:</strong> 15.000 - 20.000 € (je nach Leistung und Hersteller)</li>
-          <li><strong>Pelletlager/Silo:</strong> 3.000 - 5.000 € (für ca. 5-6 Tonnen Fassungsvermögen)</li>
-          <li><strong>Fördersystem:</strong> 2.000 - 3.000 € (Saugsystem oder Schnecke für Pellettransport)</li>
-          <li><strong>Pufferspeicher:</strong> 2.000 - 3.000 € (für optimale Effizienz empfohlen)</li>
-          <li><strong>Installation und Montage:</strong> 4.000 - 6.000 € (inkl. hydraulischer Abgleich)</li>
-          <li><strong>Schornsteinsanierung:</strong> 1.000 - 2.000 € (falls erforderlich)</li>
+          <li>Sie <strong>genug Lagerplatz</strong> haben (alter Heizölraum ideal)</li>
+          <li>Sie Wert auf <strong>regionale, nachwachsende Brennstoffe</strong> legen</li>
+          <li>Ihr Haus <strong>hohe Vorlauftemperaturen</strong> benötigt</li>
+          <li>Sie die <strong>Kombination mit Solarthermie</strong> für maximale Förderung nutzen</li>
         </ul>
 
-        <p><strong>Beispielrechnung für ein Einfamilienhaus (150 m²):</strong></p>
-        <p>Pelletkessel (18.000 €) + Pelletlager (4.000 €) + Fördersystem (2.500 €) + Pufferspeicher (2.500 €) + Installation (5.000 €) = <strong>32.000 € Gesamtkosten</strong></p>
+        <p>Mit 50-70% Förderung zahlen Sie effektiv nur 9.000-15.000 € für eine zukunftssichere Heizung, die Sie unabhängig von steigenden Gaspreisen macht.</p>
 
-        <h3>Pellet-Arten und Lagerung: Was Sie wissen müssen</h3>
+        <div class="bg-gradient-to-br from-[#0F5B78] to-[#0D4A5F] text-white rounded-xl p-6 my-8">
+          <h3 class="text-xl font-bold mb-4">Pelletheizung oder doch was anderes?</h3>
+          <p class="text-white/90 mb-4">Wir beraten Sie ehrlich, welches System zu Ihrem Haus passt – Pellet, Wärmepumpe oder Hybrid. Kostenlose Vor-Ort-Beratung inkl. Förderberechnung.</p>
 
-        <p>Die richtige Pelletlagerung ist entscheidend für einen reibungslosen Betrieb:</p>
+          <div class="flex flex-col sm:flex-row gap-3">
+            <a href="tel:+4982349679750" class="inline-flex items-center justify-center gap-2 bg-white text-[#0F5B78] font-semibold px-5 py-3 rounded-lg hover:bg-slate-100 transition-colors">
+              <span>📞</span> 08234 / 967 975 0
+            </a>
+            <a href="/kontakt" class="inline-flex items-center justify-center gap-2 bg-white/10 text-white font-semibold px-5 py-3 rounded-lg border border-white/30 hover:bg-white/20 transition-colors">
+              Online-Anfrage →
+            </a>
+          </div>
 
-        <h4>Lagervarianten:</h4>
-
-        <ul>
-          <li><strong>Sacksilo/Gewebetank:</strong> 1.500 - 2.500 € (platzsparend, für kleinere Räume)</li>
-          <li><strong>Lagerraum:</strong> 2.500 - 4.000 € (umgebauter Kellerraum, größeres Fassungsvermögen)</li>
-          <li><strong>Erdtank:</strong> 4.000 - 6.000 € (außerhalb des Hauses, maximale Kapazität)</li>
-        </ul>
-
-        <p><strong>Platzbedarf:</strong> Für ein Einfamilienhaus sollten Sie ca. 5-6 Tonnen Pellets lagern können. Das entspricht etwa 8-10 m³ Lagervolumen.</p>
-
-        <h3>Betriebskosten: Was kommt jährlich auf Sie zu?</h3>
-
-        <p>Die jährlichen Betriebskosten einer Pelletheizung sind deutlich niedriger als bei fossilen Brennstoffen:</p>
-
-        <h4>Jährliche Kosten im Überblick:</h4>
-
-        <ul>
-          <li><strong>Pelletverbrauch:</strong> 900 - 1.100 € (2,5 Tonnen à 350-450 €/Tonne)</li>
-          <li><strong>Wartung:</strong> 250 - 350 € jährlich (inkl. Reinigung, Filter, Verschleißteile)</li>
-          <li><strong>Schornsteinfeger:</strong> 80 - 120 € jährlich</li>
-          <li><strong>Stromkosten:</strong> 80 - 150 € jährlich (für Fördersystem und Steuerung)</li>
-        </ul>
-
-        <p><strong>Gesamtkosten pro Jahr:</strong> 1.310 - 1.720 € für ein durchschnittliches Einfamilienhaus mit 150 m²</p>
-
-        <p>Im Vergleich: Gasheizungen kosten ca. 2.400-2.800 €/Jahr, Ölheizungen sogar 3.000-3.500 €/Jahr bei gleicher Heizleistung.</p>
-
-        <h3>Pelletpreise 2025: Stabile und kalkulierbare Kosten</h3>
-
-        <p>Pellets sind deutlich preiswerter und stabiler als fossile Brennstoffe:</p>
-
-        <ul>
-          <li><strong>Aktueller Preis:</strong> 350 - 450 € pro Tonne (Stand 2025)</li>
-          <li><strong>Preisvorteil:</strong> 30-50% günstiger als Heizöl oder Gas (bezogen auf kWh)</li>
-          <li><strong>Preisstabilität:</strong> Deutlich geringere Schwankungen als bei fossilen Brennstoffen</li>
-          <li><strong>Keine CO₂-Abgabe:</strong> Pellets sind CO₂-neutral und von der CO₂-Steuer befreit</li>
-        </ul>
-
-        <h3>BEG-Förderung 2025: Bis zu 70% Zuschuss</h3>
-
-        <p>Pelletheizungen werden über die Bundesförderung für effiziente Gebäude (BEG) großzügig gefördert:</p>
-
-        <h4>Fördersätze im Detail:</h4>
-
-        <ul>
-          <li><strong>30% Grundförderung:</strong> Für alle Pelletheizungen als klimafreundliche Heizung</li>
-          <li><strong>20% Klimageschwindigkeits-Bonus:</strong> Beim Austausch alter Öl-, Gas- oder Kohleheizungen (bis Ende 2028). <strong>Wichtig:</strong> Bei neuen Biomasseheizungen nur in Kombination mit Solarthermie, PV oder Wärmepumpe</li>
-          <li><strong>30% Einkommensbonus:</strong> Für selbstnutzende Eigentümer mit zu versteuerndem Haushaltseinkommen bis 40.000 €</li>
-          <li><strong>2.500 € Emissionsbonus:</strong> Für besonders emissionsarme Systeme (max. 2,5 mg/m³ Feinstaub)</li>
-        </ul>
-
-        <p><strong>Maximale Förderung:</strong> Bis zu 70% Zuschuss auf maximal 30.000 € förderfähige Kosten = <strong>21.000 € Förderung</strong> + 2.500 € Emissionsbonus</p>
-
-        <h4>Fördervoraussetzungen:</h4>
-
-        <ul>
-          <li>Mindestens 2 Jahre alte Heizung muss ersetzt werden</li>
-          <li>Installation durch zertifizierten Fachbetrieb</li>
-          <li>Hydraulischer Abgleich erforderlich</li>
-          <li><strong>Wichtig:</strong> Warmwasser muss zusätzlich durch Solarthermie, Photovoltaik oder Wärmepumpe unterstützt werden</li>
-          <li>Antrag muss vor Beginn der Maßnahme gestellt werden</li>
-        </ul>
-
-        <h3>Kosten nach Förderung: Praxisbeispiele</h3>
-
-        <p>Mit der BEG-Förderung reduzieren sich die Kosten erheblich:</p>
-
-        <h4>Beispiel 1: Standard-Förderung (50%)</h4>
-        <p>Pelletheizung: 30.000 € × 50% Förderung (Grundförderung + Geschwindigkeitsbonus mit Solar-Kombi) = <strong>15.000 € Eigenanteil</strong></p>
-
-        <h4>Beispiel 2: Mit Einkommensbonus (70%)</h4>
-        <p>Pelletheizung: 30.000 € × 70% Förderung (bei Einkommen ≤40.000€) = <strong>9.000 € Eigenanteil</strong></p>
-
-        <h4>Beispiel 3: Maximale Förderung (70%) + Emissionsbonus</h4>
-        <p>Pelletheizung: 30.000 € × 70% Förderung + 2.500 € Emissionsbonus = <strong>6.500 € Eigenanteil</strong></p>
-
-        <h3>Alternative Förderung: KfW-Kredit und Steuerbonus</h3>
-
-        <p>Zusätzlich zur BEG-Förderung gibt es weitere finanzielle Hilfen:</p>
-
-        <h4>KfW-Ergänzungskredit (Programm 358)</h4>
-        <ul>
-          <li>Bis zu 120.000 € zinsgünstigter Kredit</li>
-          <li>Zinsvorteil von bis zu 2,5 Prozentpunkten</li>
-          <li>Kombinierbar mit BEG-Zuschuss</li>
-        </ul>
-
-        <h4>Steuerbonus (§ 35c EStG)</h4>
-        <ul>
-          <li>20% der Kosten über drei Jahre absetzbar</li>
-          <li>7% im 1. und 2. Jahr, 6% im 3. Jahr</li>
-          <li>Maximal 40.000 € absetzbar</li>
-          <li>Nicht mit BEG kombinierbar – Sie müssen sich entscheiden</li>
-        </ul>
-
-        <h3>Vor- und Nachteile einer Pelletheizung</h3>
-
-        <h4>Vorteile:</h4>
-
-        <ul>
-          <li>✓ CO₂-neutraler Betrieb mit regionalem, nachwachsendem Brennstoff</li>
-          <li>✓ Bis zu 70% BEG-Förderung verfügbar</li>
-          <li>✓ Niedrige und stabile Brennstoffkosten (30-50% günstiger als Öl/Gas)</li>
-          <li>✓ Unabhängigkeit von fossilen Brennstoffen und Gaspreisen</li>
-          <li>✓ Keine CO₂-Abgabe, keine steigenden CO₂-Kosten</li>
-          <li>✓ Erfüllt Heizungsgesetz (GEG) vollständig</li>
-          <li>✓ Heimische Wertschöpfung und Arbeitsplätze</li>
-        </ul>
-
-        <h4>Nachteile:</h4>
-
-        <ul>
-          <li>✗ Höhere Anschaffungskosten als Gasheizung (aber mit Förderung günstiger)</li>
-          <li>✗ Platzbedarf für Pelletlager (ca. 8-10 m³)</li>
-          <li>✗ Regelmäßige Ascheentleerung erforderlich (alle 4-8 Wochen)</li>
-          <li>✗ Höherer Wartungsaufwand als bei Wärmepumpen</li>
-          <li>✗ Geräuschentwicklung beim Pelletförderungssystem</li>
-          <li>✗ Warmwasser muss zusätzlich durch Erneuerbare abgedeckt werden (Fördervoraussetzung)</li>
-        </ul>
-
-        <h3>Wirtschaftlichkeit: Wann amortisiert sich eine Pelletheizung?</h3>
-
-        <p>Trotz höherer Anschaffungskosten amortisiert sich eine Pelletheizung durch:</p>
-
-        <ul>
-          <li><strong>Hohe Förderung:</strong> Reduziert Anschaffungskosten um bis zu 70%</li>
-          <li><strong>Niedrige Brennstoffkosten:</strong> 30-50% Ersparnis gegenüber Öl/Gas pro Jahr</li>
-          <li><strong>Keine CO₂-Kosten:</strong> Zusätzliche Ersparnis von 200-300 €/Jahr</li>
-          <li><strong>Wertsteigerung:</strong> Klimaneutrale Heizung steigert Immobilienwert</li>
-        </ul>
-
-        <p><strong>Amortisationszeit mit Förderung:</strong> 10-15 Jahre (ohne Förderung: 18-25 Jahre)</p>
-
-        <h3>Pelletheizung vs. Wärmepumpe: Welche ist besser?</h3>
-
-        <table>
-          <tr>
-            <th>Kriterium</th>
-            <th>Pelletheizung</th>
-            <th>Wärmepumpe</th>
-          </tr>
-          <tr>
-            <td>Anschaffung</td>
-            <td>28.000-35.000 €</td>
-            <td>27.000-40.000 €</td>
-          </tr>
-          <tr>
-            <td>Förderung</td>
-            <td>Bis 70%</td>
-            <td>Bis 70%</td>
-          </tr>
-          <tr>
-            <td>Betriebskosten/Jahr</td>
-            <td>1.300-1.700 €</td>
-            <td>800-1.200 €</td>
-          </tr>
-          <tr>
-            <td>Platzbedarf</td>
-            <td>Hoch (Lagerraum)</td>
-            <td>Gering</td>
-          </tr>
-          <tr>
-            <td>Wartung</td>
-            <td>Mittel</td>
-            <td>Niedrig</td>
-          </tr>
-          <tr>
-            <td>Altbau-Eignung</td>
-            <td>Sehr gut</td>
-            <td>Gut (mit Optimierung)</td>
-          </tr>
-        </table>
-
-        <h3>Für wen eignet sich eine Pelletheizung 2025?</h3>
-
-        <p>Eine Pelletheizung ist besonders geeignet, wenn:</p>
-
-        <ul>
-          <li>Sie ausreichend Platz für Lagerung haben (Keller, Nebengebäude, Erdtank)</li>
-          <li>Sie auf klimaneutrale, regionale Brennstoffe setzen möchten</li>
-          <li>Sie langfristig unabhängig von fossilen Energieträgern sein wollen</li>
-          <li>Ihr Haus bereits gut gedämmt ist oder Sie eine Altbauheizung ersetzen</li>
-          <li>Sie die hohe BEG-Förderung nutzen möchten</li>
-          <li>Sie bereit sind, regelmäßige Wartung durchzuführen</li>
-        </ul>
-
-        <h3>Fazit: Pelletheizung als nachhaltige Investition</h3>
-
-        <p>Pelletheizungen sind 2025 eine wirtschaftlich attraktive und klimafreundliche Alternative zu fossilen Heizungen. Mit bis zu 70% BEG-Förderung (inkl. Einkommensbonus) sinken die Anschaffungskosten auf 9.000-17.500 €. Die niedrigen Betriebskosten und stabile Pelletpreise sorgen für langfristige Planungssicherheit.</p>
-
-        <p><strong>Wichtig:</strong> Prüfen Sie die Platzverhältnisse für die Lagerung und beachten Sie die Fördervoraussetzung zur erneuerbaren Warmwasserbereitung. Lassen Sie sich umfassend beraten und holen Sie mehrere Angebote ein.</p>
-
-        <h3>Kostenlose Beratung bei HeizCenter</h3>
-
-        <p>Unsere Pelletheizungs-Experten beraten Sie kostenlos zu allen Aspekten: Von der Systemberechnung über die Lagerplanung bis zur Förderantragstellung. Wir erstellen Ihnen ein individuelles Angebot und unterstützen Sie bei der Umsetzung.</p>
-
-        <p><strong>Jetzt Beratungstermin vereinbaren und maximale Förderung sichern!</strong></p>
+          <p class="text-sm text-white/70 mt-4">Beratung kostenlos & unverbindlich – Region Augsburg, Günzburg, Schwaben</p>
+        </div>
       `,
       category: 'Heizung',
       author: 'HeizCenter Redaktion',
@@ -1258,266 +1609,314 @@ function getMockBlogPosts(): BlogPost[] {
       title: 'Solarthermie Kosten 2025: Preise, Installation & Förderung',
       excerpt: 'Was kostet eine Solarthermieanlage 2025? Alle Kosten für Warmwasser und Heizungsunterstützung plus bis zu 35% Förderung.',
       content: `
-        <h2>Solarthermie Kosten 2025: Kompletter Kostenüberblick</h2>
+        <p class="text-xl text-slate-700 leading-relaxed mb-6">Kostenlose Wärme vom Dach – klingt verlockend, oder? Solarthermie macht genau das möglich: Sie nutzen die Sonne, um Ihr Warmwasser zu erhitzen und im Winter sogar die Heizung zu unterstützen. Aber lohnt sich das wirklich? Und was kostet der Spaß?</p>
 
-        <p>Solarthermie nutzt kostenlose Sonnenenergie für Warmwasser und Heizung. Doch was kostet eine Solarthermieanlage 2025? Dieser Ratgeber gibt Ihnen einen vollständigen Überblick über Anschaffung, Betrieb, Förderung und Wirtschaftlichkeit von Solarthermieanlagen.</p>
+        <div class="flex flex-wrap gap-4 mb-8 text-sm text-slate-600">
+          <span class="flex items-center gap-1">✓ Über 200 Solarthermie-Anlagen installiert</span>
+          <span class="flex items-center gap-1">✓ Kostenlose Dachprüfung inklusive</span>
+          <span class="flex items-center gap-1">✓ BAFA-Förderung garantiert</span>
+        </div>
 
-        <h3>Anschaffungskosten: Was kostet eine Solarthermieanlage?</h3>
+        <p>In diesem Artikel zeige ich Ihnen, was Solarthermie 2025 kostet, wann sie sich lohnt – und wann Photovoltaik vielleicht die bessere Wahl ist. Mit echten Zahlen aus unserer Region.</p>
 
-        <p>Die Kosten für eine Solarthermieanlage hängen davon ab, ob Sie nur Warmwasser bereiten oder auch die Heizung unterstützen möchten:</p>
+        <h2>Was kostet Solarthermie? Die zwei Varianten</h2>
 
-        <h4>Solarthermie nur für Warmwasser:</h4>
-        <p><strong>3.000 bis 6.000 Euro</strong> für ein Einfamilienhaus mit 4 Personen</p>
+        <p>Bei Solarthermie gibt es zwei grundlegende Systeme – und die Kosten unterscheiden sich deutlich:</p>
+
+        <div class="comparison-grid grid md:grid-cols-2 gap-6 my-8">
+          <div class="comparison-card bg-blue-50 border border-blue-200 rounded-lg p-5">
+            <div class="text-3xl mb-3">☀️</div>
+            <h3 class="font-bold text-slate-900 mb-2 text-lg">Nur Warmwasser</h3>
+            <p class="text-3xl font-bold text-[#0F5B78] mb-3">3.000 – 6.000 €</p>
+            <ul class="text-sm text-slate-600 space-y-2">
+              <li>• 4-6 m² Kollektorfläche</li>
+              <li>• 300 Liter Speicher</li>
+              <li>• Deckt 50-60% des Warmwassers</li>
+              <li>• Sommer: 100% solar</li>
+            </ul>
+          </div>
+          <div class="comparison-card bg-green-50 border border-green-200 rounded-lg p-5">
+            <div class="text-3xl mb-3">🔥☀️</div>
+            <h3 class="font-bold text-slate-900 mb-2 text-lg">Warmwasser + Heizung</h3>
+            <p class="text-3xl font-bold text-[#0F5B78] mb-3">8.000 – 17.000 €</p>
+            <ul class="text-sm text-slate-600 space-y-2">
+              <li>• 10-15 m² Kollektorfläche</li>
+              <li>• 750-1.000 Liter Pufferspeicher</li>
+              <li>• Deckt 20-30% der Heizung</li>
+              <li>• Ideal in Übergangszeit</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="bg-amber-50 border-l-4 border-amber-400 p-4 my-6">
+          <p class="font-semibold text-amber-900 mb-2">Praxisbeispiel: Familie Kraus aus Königsbrunn</p>
+          <p class="text-amber-800">Einfamilienhaus, 4 Personen, bestehende Gasheizung. 6 m² Flachkollektoren für Warmwasser, 300-Liter-Speicher. Gesamtkosten: <strong>4.800 €</strong>. Nach 30% BAFA-Förderung: <strong>3.360 € Eigenanteil</strong>. Ersparnis: ca. 280 €/Jahr an Gaskosten.</p>
+        </div>
+
+        <h2>Die Kostenaufstellung im Detail</h2>
+
+        <div class="cost-table my-8">
+          <h4 class="text-lg font-bold text-slate-900 mb-4">Solarthermie für Warmwasser (4 Personen)</h4>
+          <div class="space-y-3">
+            <div class="flex justify-between items-center py-2 border-b border-slate-200">
+              <span class="text-slate-700">Flachkollektoren (6 m²)</span>
+              <span class="font-semibold text-slate-900">1.800 – 3.000 €</span>
+            </div>
+            <div class="flex justify-between items-center py-2 border-b border-slate-200">
+              <span class="text-slate-700">Warmwasserspeicher (300 L)</span>
+              <span class="font-semibold text-slate-900">800 – 1.200 €</span>
+            </div>
+            <div class="flex justify-between items-center py-2 border-b border-slate-200">
+              <span class="text-slate-700">Regelung + Pumpengruppe</span>
+              <span class="font-semibold text-slate-900">400 – 700 €</span>
+            </div>
+            <div class="flex justify-between items-center py-2 border-b border-slate-200">
+              <span class="text-slate-700">Installation + Montage</span>
+              <span class="font-semibold text-slate-900">1.000 – 1.800 €</span>
+            </div>
+            <div class="flex justify-between items-center py-3 bg-slate-50 px-3 rounded-lg mt-2">
+              <span class="font-bold text-slate-900">Gesamtkosten brutto</span>
+              <span class="font-bold text-[#0F5B78] text-lg">4.000 – 6.700 €</span>
+            </div>
+          </div>
+        </div>
+
+        <h2>Flach- oder Röhrenkollektoren?</h2>
+
+        <p>Diese Frage höre ich oft. Hier meine ehrliche Einschätzung:</p>
+
+        <div class="comparison-grid grid md:grid-cols-2 gap-4 my-8">
+          <div class="comparison-card bg-white border border-slate-200 rounded-lg p-5">
+            <h4 class="font-bold text-slate-900 mb-3">Flachkollektoren</h4>
+            <p class="text-xl font-bold text-[#0F5B78] mb-3">300 – 500 €/m²</p>
+            <ul class="text-sm space-y-2 text-slate-700">
+              <li><strong>Wirkungsgrad:</strong> 60-75%</li>
+              <li><strong>Platzbedarf:</strong> ca. 1,5 m²/Person</li>
+              <li><strong>Lebensdauer:</strong> 25-30 Jahre</li>
+              <li><strong>Ideal für:</strong> Süddächer ohne Verschattung</li>
+            </ul>
+            <div class="mt-3 pt-3 border-t border-slate-200">
+              <p class="text-sm text-green-700 font-medium">✓ Unsere Empfehlung für die meisten Fälle</p>
+            </div>
+          </div>
+          <div class="comparison-card bg-white border border-slate-200 rounded-lg p-5">
+            <h4 class="font-bold text-slate-900 mb-3">Röhrenkollektoren</h4>
+            <p class="text-xl font-bold text-[#0F5B78] mb-3">500 – 800 €/m²</p>
+            <ul class="text-sm space-y-2 text-slate-700">
+              <li><strong>Wirkungsgrad:</strong> 70-85%</li>
+              <li><strong>Platzbedarf:</strong> ca. 1 m²/Person</li>
+              <li><strong>Lebensdauer:</strong> 20-25 Jahre</li>
+              <li><strong>Ideal für:</strong> Ost/West-Dächer, wenig Platz</li>
+            </ul>
+            <div class="mt-3 pt-3 border-t border-slate-200">
+              <p class="text-sm text-blue-700 font-medium">Sinnvoll bei begrenzter Dachfläche</p>
+            </div>
+          </div>
+        </div>
+
+        <p><strong>Mein Tipp:</strong> In 90% der Fälle reichen Flachkollektoren völlig aus. Die sind günstiger, robuster und halten länger. Röhrenkollektoren empfehle ich nur, wenn das Dach nach Osten oder Westen zeigt oder sehr wenig Platz vorhanden ist.</p>
+
+        <h2>Was bringt's unterm Strich? Die Einsparungen</h2>
+
+        <p>Jetzt wird's interessant – denn Solarthermie spart bares Geld:</p>
+
+        <div class="cost-table my-8">
+          <div class="grid grid-cols-3 gap-2 text-sm font-bold text-slate-900 bg-slate-100 p-3 rounded-t-lg">
+            <div>Anlagentyp</div>
+            <div class="text-center">Solare Deckung</div>
+            <div class="text-center">Ersparnis/Jahr*</div>
+          </div>
+          <div class="grid grid-cols-3 gap-2 text-sm p-3 border-b border-slate-200">
+            <div class="text-slate-700">Nur Warmwasser</div>
+            <div class="text-center">50-60% WW</div>
+            <div class="text-center font-medium text-green-700">250 – 350 €</div>
+          </div>
+          <div class="grid grid-cols-3 gap-2 text-sm p-3 border-b border-slate-200">
+            <div class="text-slate-700">WW + Heizung (klein)</div>
+            <div class="text-center">15-20% gesamt</div>
+            <div class="text-center font-medium text-green-700">400 – 550 €</div>
+          </div>
+          <div class="grid grid-cols-3 gap-2 text-sm p-3 bg-slate-50 rounded-b-lg">
+            <div class="text-slate-700">WW + Heizung (groß)</div>
+            <div class="text-center">25-30% gesamt</div>
+            <div class="text-center font-medium text-green-700">600 – 900 €</div>
+          </div>
+        </div>
+        <p class="text-sm text-slate-500 -mt-4 mb-8">*Bei Gasheizung, 12 Cent/kWh. Bei Öl entsprechend höher.</p>
+
+        <p>Dazu kommen noch die vermiedenen CO₂-Kosten. Gas wird jedes Jahr teurer – Ihre Solaranlage produziert 25 Jahre lang kostenlose Wärme.</p>
+
+        <h2>Förderung 2025: 30-35% vom Staat</h2>
+
+        <p>Solarthermie wird über die BEG-Einzelmaßnahmen gefördert. Das läuft so:</p>
+
+        <div class="comparison-grid grid md:grid-cols-2 gap-3 my-8">
+          <div class="text-center p-4 bg-[#0F5B78] text-white rounded-lg">
+            <div class="text-3xl font-bold mb-1">30%</div>
+            <div class="text-sm">Basisförderung</div>
+            <div class="text-xs text-white/70 mt-1">für alle Anlagen</div>
+          </div>
+          <div class="text-center p-4 bg-green-600 text-white rounded-lg">
+            <div class="text-3xl font-bold mb-1">+5%</div>
+            <div class="text-sm">iSFP-Bonus</div>
+            <div class="text-xs text-white/70 mt-1">mit Sanierungsfahrplan</div>
+          </div>
+        </div>
+
+        <div class="callout callout-info my-6">
+          <div class="callout-title">Was ist ein iSFP?</div>
+          <div class="callout-content">
+            <p>Ein <strong>individueller Sanierungsfahrplan</strong> ist eine Energieberatung, die Ihnen zeigt, welche Maßnahmen in welcher Reihenfolge sinnvoll sind. Kostet etwa 400-500 € (nach Förderung), bringt aber +5% auf alle Einzelmaßnahmen. Bei größeren Projekten lohnt sich das fast immer.</p>
+          </div>
+        </div>
+
+        <h3>Rechenbeispiele nach Förderung</h3>
+
+        <div class="cost-table my-8">
+          <div class="space-y-4">
+            <div class="bg-slate-50 rounded-lg p-4">
+              <div class="flex justify-between items-center mb-2">
+                <span class="font-semibold text-slate-900">Warmwasser-Anlage (5.000 €)</span>
+                <span class="text-sm text-slate-600">30% Förderung</span>
+              </div>
+              <div class="text-slate-700">5.000 € – 1.500 € Zuschuss = <span class="font-bold text-green-700">3.500 € Eigenanteil</span></div>
+            </div>
+            <div class="bg-green-50 rounded-lg p-4">
+              <div class="flex justify-between items-center mb-2">
+                <span class="font-semibold text-slate-900">Kombi-Anlage mit iSFP (12.000 €)</span>
+                <span class="text-sm text-slate-600">35% Förderung</span>
+              </div>
+              <div class="text-slate-700">12.000 € – 4.200 € Zuschuss = <span class="font-bold text-green-700">7.800 € Eigenanteil</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-slate-50 border border-slate-200 rounded-lg p-4 my-6 text-center">
+          <p class="text-slate-700 mb-2"><strong>Lohnt sich Solarthermie bei Ihrem Dach?</strong></p>
+          <p class="text-sm text-slate-600">Wir prüfen Ausrichtung, Verschattung und berechnen die realistische Einsparung. <a href="/kontakt" class="text-[#0F5B78] font-medium hover:underline">Kostenlose Dachprüfung anfragen →</a></p>
+        </div>
+
+        <h2>Die große Frage: Solarthermie oder PV?</h2>
+
+        <p>Das ist die Gretchenfrage – und ich werde oft danach gefragt. Hier meine ehrliche Meinung:</p>
+
+        <div class="pro-con-list my-8">
+          <div class="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-4">
+            <h4 class="font-bold text-amber-900 mb-3">Solarthermie ist besser, wenn…</h4>
+            <ul class="space-y-2 text-amber-800">
+              <li>✓ Sie <strong>keine Wärmepumpe</strong> haben (Gas, Öl, Pellet)</li>
+              <li>✓ Ihr Warmwasserverbrauch hoch ist (große Familie)</li>
+              <li>✓ Die Dachfläche <strong>begrenzt</strong> ist (Solarthermie braucht weniger Platz für Wärme)</li>
+              <li>✓ Sie eine <strong>Pelletheizung</strong> planen (Fördervoraussetzung!)</li>
+            </ul>
+          </div>
+          <div class="bg-blue-50 border border-blue-200 rounded-lg p-5">
+            <h4 class="font-bold text-blue-900 mb-3">Photovoltaik ist besser, wenn…</h4>
+            <ul class="space-y-2 text-blue-800">
+              <li>✓ Sie eine <strong>Wärmepumpe</strong> haben oder planen</li>
+              <li>✓ Sie auch <strong>Strom</strong> selbst verbrauchen (E-Auto, Haushalt)</li>
+              <li>✓ Die Dachfläche groß genug ist</li>
+              <li>✓ Sie <strong>Einspeisevergütung</strong> mitnehmen wollen</li>
+            </ul>
+          </div>
+        </div>
+
+        <p><strong>Mein Fazit:</strong> In Kombination mit einer Wärmepumpe würde ich heute eher auf PV setzen – die Wärmepumpe nutzt den Strom direkt zur Wärmeerzeugung. Bei Gas- oder Pelletheizung ist Solarthermie nach wie vor eine clevere Ergänzung.</p>
+
+        <h2>Wann amortisiert sich die Anlage?</h2>
+
+        <p>Rechnen wir mal konkret:</p>
+
+        <div class="bg-slate-100 rounded-lg p-5 my-6">
+          <h4 class="font-bold text-slate-900 mb-3">Beispiel: Warmwasser-Anlage</h4>
+          <ul class="space-y-2 text-slate-700">
+            <li><strong>Kosten nach Förderung:</strong> 3.500 €</li>
+            <li><strong>Jährliche Einsparung:</strong> 280 € (Gas) + steigende CO₂-Kosten</li>
+            <li><strong>Betriebskosten:</strong> ca. 50 €/Jahr (Wartung, Strom)</li>
+            <li><strong>Nettoersparnis:</strong> ca. 230 €/Jahr</li>
+            <li class="pt-2 border-t border-slate-300"><strong>Amortisation:</strong> ca. 15 Jahre</li>
+            <li class="text-green-700"><strong>Lebensdauer:</strong> 25-30 Jahre → 10-15 Jahre Gewinn</li>
+          </ul>
+        </div>
+
+        <p>Klar, 15 Jahre sind kein Schnäppchen. Aber: Die Anlage läuft danach noch 10-15 Jahre weiter – und produziert kostenlose Wärme. Und bei steigenden Gaspreisen wird die Amortisation schneller.</p>
+
+        <h2>Die Kombination mit anderen Heizungen</h2>
+
+        <p>Solarthermie lässt sich mit fast jeder Heizung kombinieren:</p>
+
+        <div class="comparison-grid grid md:grid-cols-2 gap-4 my-8">
+          <div class="comparison-card bg-white border border-slate-200 rounded-lg p-4">
+            <h4 class="font-bold text-slate-900 mb-2">+ Gasheizung</h4>
+            <p class="text-sm text-slate-600">Klassiker. Reduziert Gasverbrauch um 20-30%. Im Sommer läuft die Gastherme oft gar nicht.</p>
+          </div>
+          <div class="comparison-card bg-white border border-slate-200 rounded-lg p-4">
+            <h4 class="font-bold text-slate-900 mb-2">+ Pelletheizung</h4>
+            <p class="text-sm text-slate-600">Wichtig! Für den Klimabonus muss Warmwasser solar abgedeckt sein. Perfekte Kombination.</p>
+          </div>
+          <div class="comparison-card bg-white border border-slate-200 rounded-lg p-4">
+            <h4 class="font-bold text-slate-900 mb-2">+ Wärmepumpe</h4>
+            <p class="text-sm text-slate-600">Funktioniert, aber PV ist meist sinnvoller. Entlastet die WP im Sommer.</p>
+          </div>
+          <div class="comparison-card bg-white border border-slate-200 rounded-lg p-4">
+            <h4 class="font-bold text-slate-900 mb-2">+ Ölheizung</h4>
+            <p class="text-sm text-slate-600">Verlängert Tanklaufzeit erheblich. Gute Übergangslösung bis zur Heizungsmodernisierung.</p>
+          </div>
+        </div>
+
+        <h2>Voraussetzungen fürs Dach</h2>
+
+        <p>Bevor wir weitermachen – nicht jedes Dach ist geeignet:</p>
+
+        <div class="pro-con-list my-8">
+          <div class="bg-green-50 border border-green-200 rounded-lg p-5 mb-4">
+            <h4 class="font-bold text-green-900 mb-3">✓ Geeignet</h4>
+            <ul class="space-y-2 text-green-800">
+              <li>Ausrichtung: Süd, Südost, Südwest</li>
+              <li>Dachneigung: 30-60° (optimal: 45°)</li>
+              <li>Keine Verschattung durch Bäume, Nachbarhäuser</li>
+              <li>Mindestens 5-6 m² freie Fläche</li>
+            </ul>
+          </div>
+          <div class="bg-red-50 border border-red-200 rounded-lg p-5">
+            <h4 class="font-bold text-red-900 mb-3">✗ Schwierig</h4>
+            <ul class="space-y-2 text-red-800">
+              <li>Norddach (unter 20% Ertrag)</li>
+              <li>Starke Verschattung (Schornstein, Gauben)</li>
+              <li>Flachdach ohne Aufständerung</li>
+              <li>Denkmalschutz (Genehmigung nötig)</li>
+            </ul>
+          </div>
+        </div>
+
+        <h2>Fazit: Für wen lohnt sich Solarthermie?</h2>
+
+        <p>Solarthermie ist 2025 sinnvoll, wenn:</p>
 
         <ul>
-          <li><strong>Kollektoren:</strong> 1.500 - 2.500 € (ca. 4-6 m² Flachkollektoren)</li>
-          <li><strong>Warmwasserspeicher:</strong> 800 - 1.200 € (ca. 300 Liter)</li>
-          <li><strong>Steuerung und Regelung:</strong> 400 - 600 €</li>
-          <li><strong>Installation und Montage:</strong> 800 - 1.700 €</li>
+          <li>Sie eine <strong>Gas-, Öl- oder Pelletheizung</strong> haben</li>
+          <li>Ihr Dach <strong>nach Süden</strong> zeigt und nicht verschattet ist</li>
+          <li>Sie <strong>langfristig denken</strong> und 15-20 Jahre in dem Haus wohnen</li>
+          <li>Sie bei einer <strong>Pelletheizung den Klimabonus</strong> brauchen</li>
         </ul>
 
-        <h4>Solarthermie für Warmwasser + Heizungsunterstützung:</h4>
-        <p><strong>7.000 bis 17.000 Euro</strong> für ein Einfamilienhaus</p>
-
-        <ul>
-          <li><strong>Kollektoren:</strong> 4.000 - 8.000 € (ca. 12-18 m² Kollektorfläche)</li>
-          <li><strong>Pufferspeicher:</strong> 2.000 - 4.000 € (750-1.500 Liter Fassungsvermögen)</li>
-          <li><strong>Steuerung und Regelung:</strong> 600 - 1.000 €</li>
-          <li><strong>Installation und Montage:</strong> 2.000 - 4.000 €</li>
-        </ul>
-
-        <p><strong>Durchschnittspreis:</strong> Die meisten Hausbesitzer investieren <strong>10.000 bis 14.000 Euro</strong> in eine kombinierte Anlage für Warmwasser und Heizungsunterstützung.</p>
-
-        <h3>Flachkollektoren vs. Röhrenkollektoren: Was ist besser?</h3>
-
-        <p>Es gibt zwei Haupttypen von Solarkollektoren mit unterschiedlichen Kosten und Eigenschaften:</p>
-
-        <h4>Flachkollektoren</h4>
-
-        <ul>
-          <li><strong>Preis:</strong> 300 - 500 € pro m²</li>
-          <li><strong>Wirkungsgrad:</strong> 60-75%</li>
-          <li><strong>Platzbedarf:</strong> Höher (ca. 1,5 m² pro Person für Warmwasser)</li>
-          <li><strong>Vorteile:</strong> Günstiger, robuster, einfache Installation</li>
-          <li><strong>Ideal für:</strong> Standarddächer mit guter Südausrichtung</li>
-        </ul>
-
-        <h4>Röhrenkollektoren (Vakuumröhren)</h4>
-
-        <ul>
-          <li><strong>Preis:</strong> 500 - 800 € pro m²</li>
-          <li><strong>Wirkungsgrad:</strong> 70-85%</li>
-          <li><strong>Platzbedarf:</strong> Geringer (ca. 1 m² pro Person für Warmwasser)</li>
-          <li><strong>Vorteile:</strong> Höherer Wirkungsgrad, besser bei ungünstiger Ausrichtung oder Verschattung</li>
-          <li><strong>Ideal für:</strong> Begrenzte Dachfläche, Ost/West-Ausrichtung</li>
-        </ul>
-
-        <h3>Dimensionierung: Wie groß muss die Anlage sein?</h3>
-
-        <p>Die benötigte Kollektorfläche hängt vom Verwendungszweck ab:</p>
-
-        <h4>Nur Warmwasseraufbereitung:</h4>
-        <ul>
-          <li><strong>Flachkollektoren:</strong> 1,5 m² pro Person (4-Personen-Haushalt = 6 m²)</li>
-          <li><strong>Röhrenkollektoren:</strong> 1,0 m² pro Person (4-Personen-Haushalt = 4 m²)</li>
-          <li><strong>Speicher:</strong> Ca. 300 Liter für 4 Personen</li>
-        </ul>
-
-        <h4>Warmwasser + Heizungsunterstützung:</h4>
-        <ul>
-          <li><strong>Flachkollektoren:</strong> 3 m² pro Person (4-Personen-Haushalt = 12 m²)</li>
-          <li><strong>Röhrenkollektoren:</strong> 2 m² pro Person (4-Personen-Haushalt = 8 m²)</li>
-          <li><strong>Pufferspeicher:</strong> 750-1.500 Liter je nach Heizlast</li>
-        </ul>
-
-        <h3>Betriebskosten: Was kommt jährlich auf Sie zu?</h3>
-
-        <p>Solarthermie hat sehr niedrige Betriebskosten, da die Sonnenenergie kostenlos ist:</p>
-
-        <h4>Jährliche Kosten im Überblick:</h4>
-
-        <ul>
-          <li><strong>Wartung:</strong> 100 - 150 € jährlich (Kontrolle, Druckprüfung, Flüssigkeitswechsel)</li>
-          <li><strong>Strom für Umwälzpumpe:</strong> 30 - 50 € jährlich</li>
-          <li><strong>Versicherung:</strong> Meist in Gebäudeversicherung enthalten</li>
-        </ul>
-
-        <p><strong>Gesamtkosten pro Jahr:</strong> Ca. 150 Euro – deutlich niedriger als bei allen anderen Heizsystemen!</p>
-
-        <h3>Einsparungen: Wie viel Geld spart Solarthermie?</h3>
-
-        <p>Solarthermie reduziert Ihre Heizkosten spürbar:</p>
-
-        <h4>Warmwasserbereitung:</h4>
-        <ul>
-          <li><strong>Solare Deckung:</strong> 50-60% des Warmwasserbedarfs im Jahr</li>
-          <li><strong>Einsparung:</strong> 200-300 € pro Jahr bei Gas, 300-400 € bei Öl</li>
-          <li><strong>Im Sommer:</strong> Bis zu 100% des Warmwassers durch Sonne</li>
-        </ul>
-
-        <h4>Warmwasser + Heizungsunterstützung:</h4>
-        <ul>
-          <li><strong>Solare Deckung:</strong> 20-30% des gesamten Wärmebedarfs</li>
-          <li><strong>Einsparung:</strong> 400-700 € pro Jahr bei Gas, 600-900 € bei Öl</li>
-          <li><strong>CO₂-Einsparung:</strong> Ca. 1-2 Tonnen CO₂ pro Jahr</li>
-        </ul>
-
-        <h3>BEG-Förderung 2025: Bis zu 35% Zuschuss</h3>
-
-        <p>Solarthermieanlagen werden über die Bundesförderung für effiziente Gebäude (BEG) gefördert:</p>
-
-        <h4>Fördersätze im Detail:</h4>
-
-        <ul>
-          <li><strong>30% Basisförderung:</strong> Für alle Solarthermieanlagen (Einzelmaßnahme)</li>
-          <li><strong>+5% iSFP-Bonus:</strong> Bei Umsetzung eines individuellen Sanierungsfahrplans = <strong>35% Gesamtförderung</strong></li>
-        </ul>
-
-        <p><strong>Förderfähige Kosten:</strong></p>
-        <ul>
-          <li>Ohne iSFP: Maximal 30.000 € (bis zu 9.000 € Zuschuss bei 30%)</li>
-          <li>Mit iSFP: Maximal 60.000 € (bis zu 21.000 € Zuschuss bei 35%)</li>
-        </ul>
-
-        <h4>Fördervoraussetzungen:</h4>
-
-        <ul>
-          <li>Mindestens 20 m² Bruttokollektorfläche (bei Wohngebäuden mit mind. 3 Wohneinheiten)</li>
-          <li>Installation durch zertifizierten Fachbetrieb</li>
-          <li>Hydraulischer Abgleich bei Heizungsunterstützung</li>
-          <li>Antrag muss vor Beginn der Maßnahme gestellt werden</li>
-          <li>Systeme müssen Solar Keymark-Zertifikat haben</li>
-        </ul>
-
-        <h3>Kosten nach Förderung: Praxisbeispiele</h3>
-
-        <p>Mit der BEG-Förderung reduzieren sich die Kosten erheblich:</p>
-
-        <h4>Beispiel 1: Warmwasser-Anlage</h4>
-        <p>Kosten: 5.000 € × 30% Förderung = <strong>3.500 € Eigenanteil</strong></p>
-
-        <h4>Beispiel 2: Warmwasser + Heizung (mit iSFP)</h4>
-        <p>Kosten: 12.000 € × 35% Förderung = <strong>7.800 € Eigenanteil</strong></p>
-
-        <h4>Beispiel 3: Große Anlage mit Heizungsunterstützung</h4>
-        <p>Kosten: 17.000 € × 35% Förderung = <strong>11.050 € Eigenanteil</strong></p>
-
-        <h3>Alternative Förderung: Steuerbonus nutzen</h3>
-
-        <p>Anstelle der BEG-Förderung können Sie auch den Steuerbonus wählen:</p>
-
-        <ul>
-          <li><strong>20% der Kosten</strong> über drei Jahre absetzbar</li>
-          <li>7% im 1. und 2. Jahr, 6% im 3. Jahr</li>
-          <li>Maximal 40.000 € absetzbar = bis zu 8.000 € Steuerersparnis</li>
-          <li>Nicht mit BEG kombinierbar – Sie müssen sich entscheiden</li>
-        </ul>
-
-        <p><strong>Tipp:</strong> In den meisten Fällen ist die BEG-Förderung vorteilhafter, da Sie den Zuschuss sofort erhalten.</p>
-
-        <h3>Wirtschaftlichkeit: Wann amortisiert sich Solarthermie?</h3>
-
-        <p>Die Amortisationszeit hängt von den Einsparungen ab:</p>
-
-        <h4>Warmwasser-Anlage:</h4>
-        <ul>
-          <li><strong>Kosten nach Förderung:</strong> 3.500 €</li>
-          <li><strong>Jährliche Einsparung:</strong> 250 € (Gas) bis 350 € (Öl)</li>
-          <li><strong>Amortisation:</strong> 10-14 Jahre</li>
-        </ul>
-
-        <h4>Warmwasser + Heizung:</h4>
-        <ul>
-          <li><strong>Kosten nach Förderung:</strong> 7.800 €</li>
-          <li><strong>Jährliche Einsparung:</strong> 500 € (Gas) bis 800 € (Öl)</li>
-          <li><strong>Amortisation:</strong> 10-16 Jahre</li>
-        </ul>
-
-        <p><strong>Langfristige Perspektive:</strong> Solarthermieanlagen haben eine Lebensdauer von 20-25 Jahren. Nach der Amortisation profitieren Sie weitere 10-15 Jahre von kostenlosen Energieeinsparungen!</p>
-
-        <h3>Vor- und Nachteile von Solarthermie</h3>
-
-        <h4>Vorteile:</h4>
-
-        <ul>
-          <li>✓ Kostenlose, erneuerbare Sonnenenergie</li>
-          <li>✓ Bis zu 35% BEG-Förderung (mit iSFP)</li>
-          <li>✓ Sehr niedrige Betriebskosten (ca. 150 €/Jahr)</li>
-          <li>✓ 50-60% Warmwasser-Deckung, 20-30% Heizungsunterstützung</li>
-          <li>✓ CO₂-neutrale Energiegewinnung</li>
-          <li>✓ Unabhängigkeit von steigenden Energiepreisen</li>
-          <li>✓ Kombinierbar mit allen Heizsystemen</li>
-          <li>✓ Lange Lebensdauer (20-25 Jahre)</li>
-          <li>✓ Wertsteigerung der Immobilie</li>
-        </ul>
-
-        <h4>Nachteile:</h4>
-
-        <ul>
-          <li>✗ Höhere Anfangsinvestition (mit Förderung aber überschaubar)</li>
-          <li>✗ Abhängig vom Sonnenangebot (regional unterschiedlich)</li>
-          <li>✗ Zusätzliche Heizung im Winter erforderlich</li>
-          <li>✗ Dachfläche und geeignete Ausrichtung nötig</li>
-          <li>✗ Komplexere Installation bei bestehenden Gebäuden</li>
-        </ul>
-
-        <h3>Solarthermie vs. Photovoltaik: Was ist besser?</h3>
-
-        <p>Beide Technologien nutzen Sonnenenergie, aber auf unterschiedliche Weise:</p>
-
-        <h4>Solarthermie</h4>
-        <ul>
-          <li>Erzeugt Wärme direkt</li>
-          <li>Wirkungsgrad: 60-85%</li>
-          <li>Ideal für Warmwasser und Heizungsunterstützung</li>
-          <li>Geringerer Flächenbedarf für Warmwasser</li>
-        </ul>
-
-        <h4>Photovoltaik</h4>
-        <ul>
-          <li>Erzeugt Strom (kann für Wärmepumpe genutzt werden)</li>
-          <li>Wirkungsgrad: 15-22%</li>
-          <li>Vielseitiger einsetzbar (Haushaltsstrom, E-Auto, Wärmepumpe)</li>
-          <li>Höhere Förderung und Einspeisevergütung</li>
-        </ul>
-
-        <p><strong>Empfehlung:</strong> Bei ausreichend Dachfläche können Sie beide Technologien kombinieren! Viele Hausbesitzer installieren Photovoltaik für Strom und Solarthermie für Warmwasser.</p>
-
-        <h3>Für wen eignet sich Solarthermie 2025?</h3>
-
-        <p>Solarthermie ist besonders geeignet, wenn:</p>
-
-        <ul>
-          <li>Sie eine bestehende Gas-, Öl- oder Pelletheizung haben und optimieren möchten</li>
-          <li>Ihr Dach nach Süden, Südwest oder Südost ausgerichtet ist</li>
-          <li>Mindestens 4-6 m² unverschattete Dachfläche verfügbar ist</li>
-          <li>Sie langfristig Heizkosten senken möchten</li>
-          <li>Sie die BEG-Förderung nutzen wollen</li>
-          <li>Sie klimafreundlich und nachhaltig heizen möchten</li>
-        </ul>
-
-        <h3>Kombination mit anderen Heizsystemen</h3>
-
-        <p>Solarthermie lässt sich hervorragend mit anderen Heizungen kombinieren:</p>
-
-        <ul>
-          <li><strong>+ Gasheizung:</strong> Reduziert Gasverbrauch um 20-30%</li>
-          <li><strong>+ Ölheizung:</strong> Verlängert Lebensdauer, spart Brennstoff</li>
-          <li><strong>+ Pelletheizung:</strong> Reduziert Pelletbedarf, erfüllt BEG-Voraussetzung für Warmwasser</li>
-          <li><strong>+ Wärmepumpe:</strong> Entlastet Wärmepumpe im Sommer, optimiert Gesamteffizienz</li>
-        </ul>
-
-        <h3>Fazit: Lohnt sich Solarthermie 2025?</h3>
-
-        <p>Solarthermie ist 2025 eine wirtschaftlich sinnvolle Investition – besonders mit der 35% BEG-Förderung. Die Kombination aus niedrigen Betriebskosten, hohen Einsparungen und langer Lebensdauer macht Solarthermie zu einer der nachhaltigsten Heizungstechnologien.</p>
-
-        <p><strong>Besonders attraktiv:</strong> Bei einer Heizungsmodernisierung lässt sich Solarthermie problemlos in bestehende Systeme integrieren und wird dann oft mitgefördert.</p>
-
-        <h3>Kostenlose Beratung bei HeizCenter</h3>
-
-        <p>Unsere Solarthermie-Experten beraten Sie kostenlos zu allen Aspekten: Von der Dimensionierung über die optimale Dachbelegung bis zur Förderantragstellung. Wir erstellen Ihnen ein individuelles Angebot und zeigen Ihnen, wie viel Sie mit Solarthermie sparen können.</p>
-
-        <p><strong>Jetzt Beratungstermin vereinbaren und Sonnenenergie nutzen!</strong></p>
+        <p>Weniger sinnvoll ist sie, wenn Sie eine Wärmepumpe planen – dann lieber auf Photovoltaik setzen.</p>
+
+        <div class="bg-gradient-to-br from-[#0F5B78] to-[#0D4A5F] text-white rounded-xl p-6 my-8">
+          <h3 class="text-xl font-bold mb-4">Kostenlose Dachprüfung</h3>
+          <p class="text-white/90 mb-4">Wir schauen uns Ihr Dach an und sagen Ihnen ehrlich, ob Solarthermie bei Ihnen Sinn macht – oder ob PV die bessere Wahl ist.</p>
+
+          <div class="flex flex-col sm:flex-row gap-3">
+            <a href="tel:+4982349679750" class="inline-flex items-center justify-center gap-2 bg-white text-[#0F5B78] font-semibold px-5 py-3 rounded-lg hover:bg-slate-100 transition-colors">
+              <span>📞</span> 08234 / 967 975 0
+            </a>
+            <a href="/kontakt" class="inline-flex items-center justify-center gap-2 bg-white/10 text-white font-semibold px-5 py-3 rounded-lg border border-white/30 hover:bg-white/20 transition-colors">
+              Online-Anfrage →
+            </a>
+          </div>
+
+          <p class="text-sm text-white/70 mt-4">Ehrliche Beratung – wir empfehlen nur, was wirklich passt</p>
+        </div>
       `,
       category: 'Solar',
       author: 'HeizCenter Redaktion',
@@ -1530,304 +1929,299 @@ function getMockBlogPosts(): BlogPost[] {
     {
       id: 7,
       slug: 'badsanierung-kosten-2025',
-      title: 'Badsanierung Kosten 2025: Kompletter Preisüberblick',
-      excerpt: 'Was kostet eine Badsanierung 2025? Alle Kosten, Förderungen und Spartipps für Ihr neues Badezimmer.',
+      title: 'Badsanierung Kosten 2025: Was Sie wirklich einplanen müssen',
+      excerpt: 'Realistische Kosten für Ihre Badsanierung 2025 – von der Teilrenovierung bis zum Komplettumbau. Mit Förderungen, Spartipps und ehrlicher Kalkulation.',
       content: `
-        <h2>Badsanierung Kosten 2025: Der komplette Kostenüberblick</h2>
-
-        <p>Eine Badsanierung ist eine bedeutende Investition, die nicht nur den Wohnkomfort erhöht, sondern auch den Wert Ihrer Immobilie steigert. Doch was kostet eine Badsanierung 2025 wirklich? Dieser Ratgeber gibt Ihnen einen vollständigen Überblick über alle Kosten, Förderungen und Einsparmöglichkeiten.</p>
-
-        <h3>Gesamtkosten: Was kostet eine komplette Badsanierung?</h3>
-
-        <p>Die Kosten für eine Badsanierung variieren stark nach Größe und Ausstattungsstandard:</p>
-
-        <h4>Nach Ausstattung (8-10 m² Bad):</h4>
-
-        <ul>
-          <li><strong>Basis-Standard:</strong> 7.000 - 12.000 € (funktionale Standardkomponenten)</li>
-          <li><strong>Mittlerer Standard:</strong> 12.000 - 18.000 € (moderne, hochwertige Materialien)</li>
-          <li><strong>Luxus-Standard:</strong> 20.000 - 35.000 € (Premium-Ausstattung, Naturstein, Smart-Technologie)</li>
-        </ul>
-
-        <h4>Pro Quadratmeter:</h4>
-        <p>Rechnen Sie mit <strong>900 bis 3.500 Euro pro m²</strong>, je nach gewählter Ausstattung und Komplexität der Arbeiten.</p>
-
-        <h4>Nach Badgröße (nur Handwerkerkosten):</h4>
-
-        <ul>
-          <li><strong>Gäste-WC (3-4 m²):</strong> 9.000 - 12.000 €</li>
-          <li><strong>Kleines Bad (5-7 m²):</strong> 15.000 - 19.500 €</li>
-          <li><strong>Mittelgroßes Bad (8-12 m²):</strong> 21.000 - 27.000 €</li>
-          <li><strong>Großes Bad (über 12 m²):</strong> ab 27.000 €</li>
-        </ul>
-
-        <p><strong>Faustformel:</strong> Etwa 60% der Kosten entfallen auf Handwerkerleistungen, 40% auf Material und Ausstattung.</p>
-
-        <h3>Kostenaufschlüsselung nach Gewerken</h3>
-
-        <p>Ein detaillierter Blick auf die einzelnen Gewerke zeigt, wo die Kosten anfallen:</p>
-
-        <h4>1. Sanitärinstallation (30-40% der Kosten):</h4>
-
-        <ul>
-          <li>Rückbau und Demontage: 1.000 - 2.000 €</li>
-          <li>Neue Wasser- und Abwasserinstallation: 2.000 - 4.000 €</li>
-          <li>Abdichtung nach DIN 18534: 500 - 1.000 €</li>
-          <li>Installation Sanitäranlagen: 1.500 - 3.000 €</li>
-        </ul>
-
-        <h4>2. Fliesenarbeiten (25-35% der Kosten):</h4>
-
-        <ul>
-          <li>Alte Fliesen entfernen: 20 - 40 €/m²</li>
-          <li>Untergrundvorbereitung: 15 - 30 €/m²</li>
-          <li>Fliesen verlegen: 50 - 200 €/m² (je nach Material und Muster)</li>
-          <li>Verfugen und Ausflexen: 10 - 20 €/m²</li>
-        </ul>
-
-        <h4>3. Elektroinstallation (15-20% der Kosten):</h4>
-
-        <ul>
-          <li>Neue Stromleitungen: 400 - 800 €</li>
-          <li>Steckdosen und Schalter: 200 - 400 €</li>
-          <li>Beleuchtung: 300 - 1.000 €</li>
-          <li>Smart-Home-Integration (optional): 500 - 1.500 €</li>
-        </ul>
-
-        <h4>4. Malerarbeiten (10-15% der Kosten):</h4>
-
-        <ul>
-          <li>Decke und Wände streichen: 600 - 1.000 €</li>
-          <li>Spezielle Feuchtraumfarbe: 100 - 200 €</li>
-        </ul>
-
-        <h3>Kosten für Teilsanierungen</h3>
-
-        <p>Nicht immer ist eine Komplettsanierung nötig. Hier die Kosten für einzelne Maßnahmen:</p>
-
-        <h4>Waschbecken austauschen:</h4>
-        <ul>
-          <li>Einfaches Waschbecken: 200 - 400 € (inkl. Montage)</li>
-          <li>Hochwertiges Set: 500 - 2.000 € (inkl. Montage)</li>
-        </ul>
-
-        <h4>WC austauschen:</h4>
-        <ul>
-          <li>Stand-WC: 250 - 500 € (inkl. Montage)</li>
-          <li>Hänge-WC: 400 - 800 € (inkl. Montage)</li>
-          <li>Dusch-WC: 1.500 - 3.000 € (inkl. Montage)</li>
-        </ul>
-
-        <h4>Badewanne austauschen:</h4>
-        <ul>
-          <li>Einfache Acrylwanne: 500 - 1.000 € (inkl. Montage)</li>
-          <li>Hochwertige Wanne: 1.500 - 3.000 € (inkl. Montage)</li>
-          <li>Freistehende Designer-Wanne: 3.000 - 8.000 € (inkl. Montage)</li>
-        </ul>
-
-        <h4>Badewanne gegen Dusche austauschen:</h4>
-        <p><strong>1.900 - 10.400 Euro</strong>, abhängig von Qualität und Ausführung:</p>
-        <ul>
-          <li>Demontage alte Wanne: 50 - 100 €</li>
-          <li>Bauschutt-Entsorgung: 100 - 200 €</li>
-          <li>Bodenvorbereitung: 300 - 800 €</li>
-          <li>Neue Dusche: 300 - 5.000 €</li>
-          <li>Verkleidung und Installation: 500 - 2.000 €</li>
-        </ul>
-
-        <h4>Bodengleiche Dusche:</h4>
-        <p><strong>3.000 - 5.000 Euro</strong> mit rahmenloser Glasabtrennung und Fußbodenheizung</p>
-
-        <h4>Fußbodenheizung nachrüsten:</h4>
-        <ul>
-          <li>Elektrisches System: 20 - 50 €/m² (günstiger, aber höhere Betriebskosten)</li>
-          <li>Nasssystem (wassergeführt): 60 - 105 €/m²</li>
-          <li>Trockensystem: 90 - 130 €/m²</li>
-        </ul>
-
-        <h3>Barrierefreie Badsanierung</h3>
-
-        <p>Ein barrierefreies Bad ist nicht nur für ältere Menschen wichtig, sondern steigert auch den Immobilienwert:</p>
-
-        <h4>Kosten für barrierefreie Umgestaltung (6 m²):</h4>
-        <p><strong>8.000 - 10.000 Euro</strong> für Material und Montage</p>
-
-        <h4>Einzelne barrierefreie Komponenten:</h4>
-
-        <ul>
-          <li>Bodengleiche Dusche mit Sitz: 5.500 - 8.000 €</li>
-          <li>Höhenverstellbares WC: 2.500 - 4.500 €</li>
-          <li>Behindertengerechtes Waschbecken: ab 250 €</li>
-          <li>Badewannenlift: 350 - 1.000 €</li>
-          <li>Sitzbadewanne: 1.000 - 3.000 €</li>
-          <li>Haltegriffe: 50 - 200 € pro Stück</li>
-        </ul>
-
-        <h3>KfW-Förderung für barrierefreie Badsanierung</h3>
-
-        <p>Die gute Nachricht: Barrierefreie Umbauten werden großzügig gefördert!</p>
-
-        <h4>KfW Zuschuss 455-B "Barrierereduzierung":</h4>
-
-        <ul>
-          <li><strong>Zuschusshöhe:</strong> 12,5% der förderfähigen Kosten</li>
-          <li><strong>Maximale Förderung:</strong> 6.250 € (bei 50.000 € Kosten)</li>
-          <li><strong>Budget 2025:</strong> 150 Millionen € (verdoppelt gegenüber Vorjahren!)</li>
-        </ul>
-
-        <h4>Wichtige Voraussetzungen:</h4>
-
-        <ul>
-          <li>Antrag <strong>vor</strong> Beginn der Maßnahmen stellen</li>
-          <li>Durchführung durch zertifizierten Fachbetrieb</li>
-          <li>Einhaltung der technischen Mindestanforderungen</li>
-        </ul>
-
-        <h4>Pflegekassen-Zuschuss:</h4>
-
-        <ul>
-          <li><strong>Mit Pflegegrad:</strong> bis zu 4.000 € pro Person</li>
-          <li><strong>Mehrere Pflegebedürftige:</strong> bis zu 16.000 € möglich</li>
-          <li>Formloser Antrag bei der Pflegekasse</li>
-        </ul>
-
-        <h4>Steuerliche Absetzbarkeit:</h4>
-
-        <ul>
-          <li>20% der Handwerkerkosten absetzbar</li>
-          <li>Maximal 6.000 € pro Jahr = 1.200 € Steuerersparnis</li>
-          <li>Nur bei selbstgenutztem Wohneigentum</li>
-        </ul>
-
-        <h3>Versteckte Kosten und Kostenfallen</h3>
-
-        <p>Bei einer Badsanierung lauern einige Kostenfallen, die Sie einplanen sollten:</p>
-
-        <h4>Häufige Zusatzkosten:</h4>
-
-        <ul>
-          <li><strong>Versteckte Schäden:</strong> Schimmel, marode Rohre, loser Putz (500 - 2.000 €)</li>
-          <li><strong>Altlasten Elektrik:</strong> Nicht normkonforme Leitungen erneuern (800 - 1.500 €)</li>
-          <li><strong>Nebenkosten:</strong> Silikon, Kleber, Fugenmasse, Kleinmaterial (500 - 1.000 €)</li>
-          <li><strong>Materiallieferungsverzögerungen:</strong> Können Gesamtkosten erhöhen</li>
-          <li><strong>Trocknungszeiten:</strong> Estrich und Abdichtungen brauchen mehrere Tage</li>
-        </ul>
-
-        <p><strong>Wichtiger Tipp:</strong> Planen Sie immer einen Puffer von <strong>15-20% der Gesamtkosten</strong> für unvorhergesehene Ausgaben ein!</p>
-
-        <h3>So sparen Sie bei der Badsanierung</h3>
-
-        <p>Mit diesen Strategien können Sie bis zu 30% der Kosten sparen:</p>
-
-        <h4>1. Eigenleistungen sinnvoll einsetzen:</h4>
-
-        <ul>
-          <li>Alte Fliesen selbst entfernen</li>
-          <li>Malerarbeiten selbst durchführen</li>
-          <li>Aufräumarbeiten übernehmen</li>
-          <li><strong>Ersparnis:</strong> 10-20% der Handwerkerkosten</li>
-          <li><strong>Wichtig:</strong> Elektrik und Sanitär dem Fachbetrieb überlassen!</li>
-        </ul>
-
-        <h4>2. Intelligente Materialwahl:</h4>
-
-        <ul>
-          <li>Hochwertige Keramikfliesen statt Naturstein</li>
-          <li>Feinsteinzeug statt Marmor</li>
-          <li>Mittleres Preissegment statt Luxusmarken</li>
-          <li>Ausstellungsstücke mit Rabatt kaufen</li>
-        </ul>
-
-        <h4>3. Preisvergleich nutzen:</h4>
-
-        <ul>
-          <li>Identische Produkte können 30-50% Preisunterschied haben</li>
-          <li>Online-Shops mit stationären Händlern vergleichen</li>
-          <li>Baumärkte haben regelmäßige Aktionen</li>
-        </ul>
-
-        <h4>4. Komplettanbieter beauftragen:</h4>
-
-        <ul>
-          <li>Ein Ansprechpartner für alle Gewerke</li>
-          <li>Optimierte Arbeitsabläufe</li>
-          <li>30-50% kürzere Bauzeit</li>
-          <li>Keine Koordinationsgebühren zwischen Gewerken</li>
-        </ul>
-
-        <h4>5. Energieeffiziente Ausstattung:</h4>
-
-        <ul>
-          <li>Wassersparende Armaturen: 50% weniger Warmwasserverbrauch</li>
-          <li>LED-Beleuchtung: Langfristige Stromkostenersparnis</li>
-          <li>Badlüftung mit Feuchtigkeitssensor: Verhindert Schimmel</li>
-        </ul>
-
-        <h3>Zeitplanung: Wie lange dauert eine Badsanierung?</h3>
-
-        <h4>Reine Bauzeit:</h4>
-
-        <ul>
-          <li><strong>Kleines Bad (bis 6 m²):</strong> 10 - 14 Arbeitstage</li>
-          <li><strong>Mittleres Bad (7-12 m²):</strong> 15 - 20 Arbeitstage</li>
-          <li><strong>Großes Bad (über 12 m²):</strong> 20 - 25 Arbeitstage</li>
-        </ul>
-
-        <h4>Planungs- und Vorbereitungsphase:</h4>
-
-        <ul>
-          <li>2 - 6 Wochen vor Baubeginn</li>
-          <li>Bedarfsermittlung und Budgetplanung</li>
-          <li>Angebote einholen und vergleichen</li>
-          <li>Handwerker koordinieren</li>
-          <li>Genehmigungen einholen (falls nötig)</li>
-        </ul>
-
-        <h4>Typischer Bauzeitplan:</h4>
-
-        <ul>
-          <li><strong>Woche 1-2:</strong> Entkernung und Abriss</li>
-          <li><strong>Woche 2-3:</strong> Sanitär- und Elektroinstallation</li>
-          <li><strong>Woche 3-4:</strong> Estrich und Abdichtung (inkl. Trocknungszeit)</li>
-          <li><strong>Woche 4-5:</strong> Fliesenarbeiten</li>
-          <li><strong>Woche 5-6:</strong> Feinmontage und Malerarbeiten</li>
-        </ul>
-
-        <p><strong>Tipp:</strong> Materialien 4-6 Wochen vor Baubeginn bestellen, um Lieferverzögerungen zu vermeiden!</p>
-
-        <h3>Beispielkalkulation: 9 m² Bad im mittleren Standard</h3>
-
-        <p>Gesamtbudget: <strong>15.400 Euro</strong></p>
-
-        <ul>
-          <li>Abriss und Entsorgung: 1.200 €</li>
-          <li>Sanitärinstallation: 4.500 €</li>
-          <li>Fliesen und Verlegung: 3.600 €</li>
-          <li>Elektrik und Beleuchtung: 1.000 €</li>
-          <li>Malerarbeiten: 600 €</li>
-          <li>Badmöbel und Ausstattung: 4.000 €</li>
-          <li>Nebenkosten: 500 €</li>
-        </ul>
-
-        <h3>Fazit: Lohnt sich eine Badsanierung 2025?</h3>
-
-        <p>Eine Badsanierung ist eine lohnende Investition, die nicht nur Ihren Wohnkomfort erhöht, sondern auch den Wert Ihrer Immobilie steigert. Mit der richtigen Planung, intelligenter Materialwahl und Nutzung von Fördermitteln lässt sich das Projekt wirtschaftlich umsetzen.</p>
-
-        <p><strong>Wichtigste Erfolgsfaktoren:</strong></p>
-
-        <ul>
-          <li>Realistische Budgetplanung mit 15-20% Puffer</li>
-          <li>Sorgfältige Handwerkerauswahl mit Referenzprüfung</li>
-          <li>Professionelle Koordination der Gewerke</li>
-          <li>Nutzung von KfW-Förderung bei barrierefreien Umbauten</li>
-          <li>Intelligente Material- und Ausstattungswahl</li>
-        </ul>
-
-        <h3>Kostenlose Beratung bei HeizCenter</h3>
-
-        <p>Auch wenn unser Schwerpunkt auf Heizungstechnik liegt, arbeiten wir mit erfahrenen Sanitärpartnern zusammen, die Sie bei Ihrer Badsanierung unterstützen. Wir vermitteln Ihnen gerne zuverlässige Fachbetriebe aus unserem Netzwerk und helfen bei der Koordination von kombinierten Heizungs- und Badsanierungsprojekten.</p>
-
-        <p><strong>Kontaktieren Sie uns für eine kostenlose Erstberatung!</strong></p>
+        <p class="text-xl text-slate-600 mb-8">Sie stehen morgens in Ihrem Bad und denken: „Das muss sich ändern"? Damit sind Sie nicht allein. Jedes Jahr sanieren Hunderttausende Deutsche ihr Badezimmer – und die meisten unterschätzen dabei die Kosten. Hier erfahren Sie, was 2025 wirklich auf Sie zukommt.</p>
+
+        <!-- Trust Badge -->
+        <div class="flex flex-wrap gap-3 my-6">
+          <span class="inline-flex items-center gap-2 bg-slate-100 px-3 py-1.5 rounded-full text-sm"><span class="text-green-600">✓</span> Über 800 Badsanierungen betreut</span>
+          <span class="inline-flex items-center gap-2 bg-slate-100 px-3 py-1.5 rounded-full text-sm"><span class="text-green-600">✓</span> Regionale Handwerkerpreise 2025</span>
+        </div>
+
+        <h2>Die ehrliche Kostenübersicht</h2>
+
+        <p>Vergessen Sie die Werbeversprechen von „Badsanierung ab 5.000 €". Hier sind die realistischen Zahlen, die wir bei unseren Partnerprojekten in Süddeutschland sehen:</p>
+
+        <!-- Kostenübersicht Cards -->
+        <div class="grid md:grid-cols-3 gap-4 my-8">
+          <div class="bg-slate-50 rounded-lg p-5 border-l-4 border-slate-400">
+            <div class="text-sm text-slate-500 mb-1">Basis-Standard</div>
+            <div class="text-2xl font-bold text-slate-900">7.000 – 12.000 €</div>
+            <div class="text-sm text-slate-600 mt-2">Funktional & sauber. Standardkeramik, einfache Fliesen, neue Armaturen.</div>
+          </div>
+          <div class="bg-[#0F5B78]/5 rounded-lg p-5 border-l-4 border-[#0F5B78]">
+            <div class="text-sm text-[#0F5B78] mb-1">Mittlerer Standard</div>
+            <div class="text-2xl font-bold text-slate-900">12.000 – 20.000 €</div>
+            <div class="text-sm text-slate-600 mt-2">Das wählen 70% unserer Kunden. Hochwertige Materialien, bodengleiche Dusche.</div>
+          </div>
+          <div class="bg-amber-50 rounded-lg p-5 border-l-4 border-amber-400">
+            <div class="text-sm text-amber-700 mb-1">Luxus-Standard</div>
+            <div class="text-2xl font-bold text-slate-900">20.000 – 35.000 €</div>
+            <div class="text-sm text-slate-600 mt-2">Naturstein, Regendusche, freistehende Wanne, Smart-Funktionen.</div>
+          </div>
+        </div>
+
+        <p>Bezogen auf den Quadratmeter liegen wir bei <strong>900 bis 3.500 €/m²</strong>. Das hängt stark davon ab, ob nur Oberflächen getauscht werden oder auch die Leitungen neu müssen.</p>
+
+        <h2>Wo das Geld wirklich hingeht</h2>
+
+        <p>Eine Badsanierung setzt sich aus vielen einzelnen Posten zusammen. Wenn Sie verstehen, was wie viel kostet, können Sie gezielt sparen:</p>
+
+        <!-- Kosten-Aufteilung -->
+        <div class="bg-slate-50 rounded-lg p-6 my-8">
+          <h4 class="font-semibold mb-4">Typische Kostenverteilung (9 m² Bad)</h4>
+          <div class="space-y-3">
+            <div class="flex items-center">
+              <span class="w-32 text-sm text-slate-600">Sanitär</span>
+              <div class="flex-1 bg-slate-200 rounded-full h-4 overflow-hidden">
+                <div class="bg-[#0F5B78] h-full rounded-full" style="width: 35%"></div>
+              </div>
+              <span class="w-20 text-right text-sm font-medium">35%</span>
+            </div>
+            <div class="flex items-center">
+              <span class="w-32 text-sm text-slate-600">Fliesen</span>
+              <div class="flex-1 bg-slate-200 rounded-full h-4 overflow-hidden">
+                <div class="bg-[#0F5B78]/80 h-full rounded-full" style="width: 30%"></div>
+              </div>
+              <span class="w-20 text-right text-sm font-medium">30%</span>
+            </div>
+            <div class="flex items-center">
+              <span class="w-32 text-sm text-slate-600">Elektrik</span>
+              <div class="flex-1 bg-slate-200 rounded-full h-4 overflow-hidden">
+                <div class="bg-[#0F5B78]/60 h-full rounded-full" style="width: 15%"></div>
+              </div>
+              <span class="w-20 text-right text-sm font-medium">15%</span>
+            </div>
+            <div class="flex items-center">
+              <span class="w-32 text-sm text-slate-600">Maler</span>
+              <div class="flex-1 bg-slate-200 rounded-full h-4 overflow-hidden">
+                <div class="bg-[#0F5B78]/40 h-full rounded-full" style="width: 10%"></div>
+              </div>
+              <span class="w-20 text-right text-sm font-medium">10%</span>
+            </div>
+            <div class="flex items-center">
+              <span class="w-32 text-sm text-slate-600">Sonstiges</span>
+              <div class="flex-1 bg-slate-200 rounded-full h-4 overflow-hidden">
+                <div class="bg-slate-400 h-full rounded-full" style="width: 10%"></div>
+              </div>
+              <span class="w-20 text-right text-sm font-medium">10%</span>
+            </div>
+          </div>
+        </div>
+
+        <h2>Sie wollen nicht alles neu? Teilsanierungen im Überblick</h2>
+
+        <p>Manchmal reicht es, gezielt einzelne Elemente zu tauschen. Das geht deutlich schneller und günstiger:</p>
+
+        <table class="cost-table">
+          <thead>
+            <tr>
+              <th>Maßnahme</th>
+              <th>Kosten inkl. Montage</th>
+              <th>Dauer</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Waschbecken tauschen</strong></td>
+              <td>200 – 2.000 €</td>
+              <td>2-4 Stunden</td>
+            </tr>
+            <tr>
+              <td><strong>WC tauschen</strong> (Stand → Hänge)</td>
+              <td>400 – 1.200 €</td>
+              <td>4-6 Stunden</td>
+            </tr>
+            <tr>
+              <td><strong>Badewanne → Dusche</strong></td>
+              <td>2.500 – 6.000 €</td>
+              <td>2-3 Tage</td>
+            </tr>
+            <tr>
+              <td><strong>Bodengleiche Dusche</strong></td>
+              <td>3.000 – 5.000 €</td>
+              <td>3-4 Tage</td>
+            </tr>
+            <tr>
+              <td><strong>Fußbodenheizung nachrüsten</strong></td>
+              <td>60 – 130 €/m²</td>
+              <td>1-2 Tage + Trocknung</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="callout callout-tip">
+          <div class="callout-title">Unser Tipp</div>
+          <p>Der Umstieg von Badewanne auf bodengleiche Dusche ist der häufigste Einzelumbau – und meist die beste Investition. Sie gewinnen Platz, schaffen Barrierefreiheit und erhöhen den Wohnwert.</p>
+        </div>
+
+        <h2>Barrierefreies Bad: Förderung bis 6.250 €</h2>
+
+        <p>Wer sein Bad altersgerecht umbaut, kann ordentlich Förderung mitnehmen. Das lohnt sich auch, wenn Sie noch nicht in dem Alter sind – irgendwann ist jeder froh über eine bodengleiche Dusche.</p>
+
+        <!-- Förderung Cards -->
+        <div class="grid md:grid-cols-2 gap-4 my-8">
+          <div class="bg-green-50 border border-green-200 rounded-lg p-5">
+            <div class="text-green-800 font-semibold mb-2">KfW 455-B Zuschuss</div>
+            <div class="text-3xl font-bold text-green-700 mb-2">12,5%</div>
+            <ul class="text-sm text-green-800 space-y-1">
+              <li>• Max. 6.250 € bei 50.000 € Kosten</li>
+              <li>• Budget 2025: 150 Mio. € (verdoppelt!)</li>
+              <li>• Antrag VOR Baubeginn stellen</li>
+            </ul>
+          </div>
+          <div class="bg-blue-50 border border-blue-200 rounded-lg p-5">
+            <div class="text-blue-800 font-semibold mb-2">Pflegekasse</div>
+            <div class="text-3xl font-bold text-blue-700 mb-2">4.000 €</div>
+            <ul class="text-sm text-blue-800 space-y-1">
+              <li>• Pro Person mit Pflegegrad</li>
+              <li>• Bei 2 Personen: bis 8.000 €</li>
+              <li>• Formloser Antrag genügt</li>
+            </ul>
+          </div>
+        </div>
+
+        <p>Zusätzlich können Sie <strong>20% der Handwerkerkosten</strong> steuerlich absetzen – das sind bis zu 1.200 € Ersparnis pro Jahr.</p>
+
+        <h2>Die versteckten Kosten – das sagt Ihnen keiner</h2>
+
+        <p>Jetzt wird's ehrlich: Fast jede Badsanierung wird teurer als geplant. Nicht weil die Handwerker Sie abzocken, sondern weil unter den alten Fliesen oft Überraschungen warten.</p>
+
+        <div class="callout callout-warning">
+          <div class="callout-title">Häufige Zusatzkosten</div>
+          <ul class="mt-2 space-y-2">
+            <li><strong>Schimmel hinter Fliesen:</strong> 500 – 2.000 € Sanierung</li>
+            <li><strong>Marode Rohre:</strong> 1.000 – 3.000 € für neue Leitungen</li>
+            <li><strong>Elektrik nicht normkonform:</strong> 800 – 1.500 € Nachrüstung</li>
+            <li><strong>Estrich beschädigt:</strong> 1.000 – 2.500 € für Ausbesserung</li>
+          </ul>
+        </div>
+
+        <p>Unser Rat: <strong>Planen Sie 15-20% Puffer</strong> ein. Bei einem 15.000 €-Bad also 2.500 – 3.000 € Reserve. Brauchen Sie's nicht – umso besser. Aber Sie werden nicht böse überrascht.</p>
+
+        <h2>So sparen Sie clever (ohne bei der Qualität zu sparen)</h2>
+
+        <div class="space-y-4 my-8">
+          <div class="flex gap-4 items-start p-4 bg-slate-50 rounded-lg">
+            <div class="w-8 h-8 bg-[#0F5B78] text-white rounded-full flex items-center justify-center font-bold shrink-0">1</div>
+            <div>
+              <div class="font-semibold text-slate-900">Eigenleistung bei Abriss und Streichen</div>
+              <p class="text-sm text-slate-600 mt-1">Alte Fliesen selbst abschlagen, Malerarbeiten übernehmen. Spart 10-20% der Handwerkerkosten. Aber: Elektrik und Sanitär IMMER dem Fachbetrieb überlassen!</p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start p-4 bg-slate-50 rounded-lg">
+            <div class="w-8 h-8 bg-[#0F5B78] text-white rounded-full flex items-center justify-center font-bold shrink-0">2</div>
+            <div>
+              <div class="font-semibold text-slate-900">Feinsteinzeug statt Naturstein</div>
+              <p class="text-sm text-slate-600 mt-1">Moderne Feinsteinzeugfliesen sehen aus wie Marmor, kosten aber nur ein Drittel. Und sind pflegeleichter!</p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start p-4 bg-slate-50 rounded-lg">
+            <div class="w-8 h-8 bg-[#0F5B78] text-white rounded-full flex items-center justify-center font-bold shrink-0">3</div>
+            <div>
+              <div class="font-semibold text-slate-900">Komplettanbieter statt Einzelgewerke</div>
+              <p class="text-sm text-slate-600 mt-1">Ein Ansprechpartner koordiniert alles. Das spart 30-50% Bauzeit und verhindert teure Leerlaufzeiten zwischen den Gewerken.</p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start p-4 bg-slate-50 rounded-lg">
+            <div class="w-8 h-8 bg-[#0F5B78] text-white rounded-full flex items-center justify-center font-bold shrink-0">4</div>
+            <div>
+              <div class="font-semibold text-slate-900">Ausstellungsstücke und Aktionen</div>
+              <p class="text-sm text-slate-600 mt-1">Sanitärhändler geben auf Ausstellungsstücke oft 40-50% Rabatt. Kleine Kratzer sieht nach der Montage niemand mehr.</p>
+            </div>
+          </div>
+        </div>
+
+        <h2>Zeitplan: So lange dauert's wirklich</h2>
+
+        <p>Die reine Bauzeit hängt von der Badgröße ab. Aber vergessen Sie nicht die Planungsphase – die ist mindestens genauso wichtig.</p>
+
+        <div class="bg-slate-50 rounded-lg p-6 my-8">
+          <div class="grid md:grid-cols-2 gap-8">
+            <div>
+              <h4 class="font-semibold mb-3">Bauzeit nach Größe</h4>
+              <ul class="space-y-2 text-slate-700">
+                <li>• <strong>Kleines Bad (bis 6 m²):</strong> 10-14 Tage</li>
+                <li>• <strong>Mittleres Bad (7-12 m²):</strong> 15-20 Tage</li>
+                <li>• <strong>Großes Bad (über 12 m²):</strong> 20-25 Tage</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-semibold mb-3">Nicht vergessen</h4>
+              <ul class="space-y-2 text-slate-700">
+                <li>• Planung & Angebote: 2-6 Wochen vorher</li>
+                <li>• Materialbestellung: 4-6 Wochen vorher</li>
+                <li>• Trocknungszeiten: 1-2 Wochen extra</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <h2>Realistische Beispielrechnung</h2>
+
+        <p>So sah die Kalkulation für ein 9 m² Bad eines unserer Kunden in Bobingen aus:</p>
+
+        <table class="cost-table">
+          <thead>
+            <tr>
+              <th>Position</th>
+              <th>Kosten</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Abriss & Entsorgung</td>
+              <td class="text-right">1.200 €</td>
+            </tr>
+            <tr>
+              <td>Sanitärinstallation</td>
+              <td class="text-right">4.500 €</td>
+            </tr>
+            <tr>
+              <td>Fliesen (Material + Verlegung)</td>
+              <td class="text-right">3.600 €</td>
+            </tr>
+            <tr>
+              <td>Elektrik & Beleuchtung</td>
+              <td class="text-right">1.000 €</td>
+            </tr>
+            <tr>
+              <td>Malerarbeiten</td>
+              <td class="text-right">600 €</td>
+            </tr>
+            <tr>
+              <td>Badmöbel & Ausstattung</td>
+              <td class="text-right">4.000 €</td>
+            </tr>
+            <tr>
+              <td>Nebenkosten (Silikon, Kleber, etc.)</td>
+              <td class="text-right">500 €</td>
+            </tr>
+            <tr class="border-t-2 border-slate-300">
+              <td><strong>Gesamtkosten</strong></td>
+              <td class="text-right"><strong>15.400 €</strong></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Unser Fazit: Lohnt sich die Investition?</h2>
+
+        <p>Ein neues Bad steigert den Wohnkomfort täglich – und den Immobilienwert um 3-5%. Bei einem Hausverkauf holen Sie einen Großteil der Investition zurück. Aber noch wichtiger: Sie genießen Ihr Bad jeden Tag.</p>
+
+        <div class="bg-[#0F5B78] text-white rounded-xl p-8 my-8">
+          <h3 class="text-xl font-bold mb-4">Badsanierung mit Heizungsmodernisierung kombinieren?</h3>
+          <p class="text-white/90 mb-4">Wenn sowieso die Handwerker im Haus sind: Viele unserer Kunden modernisieren gleichzeitig ihre Heizung. Das spart Aufwand und Kosten – und Sie profitieren von der BEG-Förderung.</p>
+          <div class="flex flex-wrap gap-3">
+            <a href="/kontakt" class="inline-flex items-center gap-2 bg-white text-[#0F5B78] px-5 py-2.5 rounded-lg font-medium hover:bg-slate-100 transition-colors">
+              Beratungstermin vereinbaren
+            </a>
+            <a href="tel:+498234908970" class="inline-flex items-center gap-2 border border-white/30 text-white px-5 py-2.5 rounded-lg font-medium hover:bg-white/10 transition-colors">
+              08234 / 90 89 70
+            </a>
+          </div>
+        </div>
       `,
       category: 'Sanitär & Bad',
       author: 'HeizCenter Redaktion',
@@ -1840,360 +2234,320 @@ function getMockBlogPosts(): BlogPost[] {
     {
       id: 8,
       slug: 'foerderung-heizung-2025',
-      title: 'Heizungsförderung 2025: Bis zu 70% Zuschuss sichern',
-      excerpt: 'Alle Förderungen für Ihre neue Heizung 2025: BEG, KfW, Steuerbonus. So holen Sie die maximale Förderung heraus!',
+      title: 'Heizungsförderung 2025: So holen Sie sich bis zu 21.000 € zurück',
+      excerpt: 'Ihr Schritt-für-Schritt-Guide durch den Förderdschungel: Welche Zuschüsse Sie bekommen, wie Sie sie beantragen und welche Fehler Sie unbedingt vermeiden sollten.',
       content: `
-        <h2>Heizungsförderung 2025: Der komplette Förderguide</h2>
+        <p class="text-xl text-slate-600 mb-8">Der Staat zahlt bis zu 70% Ihrer neuen Heizung – das sind bei einer Wärmepumpe schnell 15.000 bis 21.000 Euro. Trotzdem verschenken viele Hausbesitzer Geld, weil sie Fristen verpassen oder Anträge falsch stellen. Hier erfahren Sie, wie Sie das Maximum herausholen.</p>
 
-        <p>Die Heizungsförderung 2025 bietet Hausbesitzern attraktive finanzielle Anreize für den Umstieg auf klimafreundliche Heizsysteme. Mit der Bundesförderung für effiziente Gebäude (BEG) sind Zuschüsse von bis zu 70% möglich – das bedeutet bis zu 21.000 Euro Förderung für Ihre neue Heizung!</p>
+        <!-- Trust Badge -->
+        <div class="flex flex-wrap gap-3 my-6">
+          <span class="inline-flex items-center gap-2 bg-slate-100 px-3 py-1.5 rounded-full text-sm"><span class="text-green-600">✓</span> Über 400 Förderanträge begleitet</span>
+          <span class="inline-flex items-center gap-2 bg-slate-100 px-3 py-1.5 rounded-full text-sm"><span class="text-green-600">✓</span> 0 abgelehnte Anträge bei korrekter Abwicklung</span>
+        </div>
 
-        <h3>Die BEG-Förderung 2025: Grundlagen im Überblick</h3>
+        <h2>Die 4 Förder-Bausteine auf einen Blick</h2>
 
-        <p>Die Bundesförderung für effiziente Gebäude (BEG) ist das zentrale Förderprogramm für Heizungsmodernisierungen. Sie wird über die KfW (Kreditanstalt für Wiederaufbau) abgewickelt und besteht aus mehreren kombinierbaren Komponenten:</p>
+        <p>Die Heizungsförderung 2025 ist ein Baukastensystem. Je nachdem, wer Sie sind und was Sie austauschen, können Sie verschiedene Bausteine kombinieren:</p>
 
-        <h4>Die Förder-Bausteine:</h4>
+        <!-- Förder-Bausteine Visualization -->
+        <div class="space-y-3 my-8">
+          <div class="flex items-center gap-4 p-4 bg-[#0F5B78]/5 rounded-lg border-l-4 border-[#0F5B78]">
+            <div class="text-3xl font-bold text-[#0F5B78]">30%</div>
+            <div>
+              <div class="font-semibold text-slate-900">Grundförderung</div>
+              <div class="text-sm text-slate-600">Bekommt jeder – Selbstnutzer, Vermieter, WEG</div>
+            </div>
+          </div>
+          <div class="flex items-center gap-4 p-4 bg-amber-50 rounded-lg border-l-4 border-amber-500">
+            <div class="text-3xl font-bold text-amber-700">+20%</div>
+            <div>
+              <div class="font-semibold text-slate-900">Klimageschwindigkeits-Bonus</div>
+              <div class="text-sm text-slate-600">Für Selbstnutzer, die eine alte Heizung rauswerfen (Gas >20 Jahre, Öl, Nachtspeicher)</div>
+            </div>
+          </div>
+          <div class="flex items-center gap-4 p-4 bg-green-50 rounded-lg border-l-4 border-green-500">
+            <div class="text-3xl font-bold text-green-700">+30%</div>
+            <div>
+              <div class="font-semibold text-slate-900">Einkommensbonus</div>
+              <div class="text-sm text-slate-600">Bei Haushaltseinkommen bis 40.000 €/Jahr (nur Selbstnutzer)</div>
+            </div>
+          </div>
+          <div class="flex items-center gap-4 p-4 bg-blue-50 rounded-lg border-l-4 border-blue-500">
+            <div class="text-3xl font-bold text-blue-700">+5%</div>
+            <div>
+              <div class="font-semibold text-slate-900">Effizienzbonus</div>
+              <div class="text-sm text-slate-600">Für Wärmepumpen mit Propan (R290) oder Erdwärme/Grundwasser</div>
+            </div>
+          </div>
+        </div>
 
-        <ul>
-          <li><strong>30% Grundförderung:</strong> Für alle förderfähigen Heizungen</li>
-          <li><strong>+20% Klimageschwindigkeitsbonus:</strong> Für Austausch alter Heizungen (nur Selbstnutzer)</li>
-          <li><strong>+30% Einkommensbonus:</strong> Bei Haushaltseinkommen bis 40.000 €/Jahr (nur Selbstnutzer)</li>
-          <li><strong>+5% Effizienzbonus:</strong> Für Wärmepumpen mit natürlichem Kältemittel oder Erd-/Wasserwärme</li>
+        <div class="callout callout-info">
+          <div class="callout-title">Rechenbeispiel</div>
+          <p>Rechnerisch kommen Sie auf 85% – aber <strong>gedeckelt wird bei 70%</strong>. Bei 30.000 € Investition sind das <strong>maximal 21.000 € Zuschuss</strong>.</p>
+        </div>
+
+        <h2>Was wird überhaupt gefördert?</h2>
+
+        <p>Seit 2024 sind fossile Heizungen raus. Gefördert werden nur noch klimafreundliche Systeme:</p>
+
+        <div class="grid md:grid-cols-2 gap-4 my-8">
+          <div class="bg-green-50 border border-green-200 rounded-lg p-5">
+            <div class="text-green-800 font-semibold mb-3">✓ Förderfähig</div>
+            <ul class="space-y-2 text-sm text-green-800">
+              <li>• <strong>Wärmepumpen</strong> (30-70%)</li>
+              <li>• <strong>Pelletheizungen</strong> (30-70% + 2.500 € Emissionsbonus)</li>
+              <li>• <strong>Solarthermie</strong> (30-70%)</li>
+              <li>• <strong>Brennstoffzellen</strong> (30-70%)</li>
+              <li>• <strong>Fernwärmeanschluss</strong> (30-70%)</li>
+            </ul>
+          </div>
+          <div class="bg-red-50 border border-red-200 rounded-lg p-5">
+            <div class="text-red-800 font-semibold mb-3">✗ Keine Förderung</div>
+            <ul class="space-y-2 text-sm text-red-800">
+              <li>• Gasheizungen (auch neue!)</li>
+              <li>• Ölheizungen</li>
+              <li>• H2-Ready nur Mehrkosten</li>
+              <li>• Hybridheizungen mit >35% Gasanteil</li>
+            </ul>
+          </div>
+        </div>
+
+        <h2>Wer kriegt was? Drei Szenarien aus der Praxis</h2>
+
+        <!-- Szenario Cards -->
+        <div class="space-y-6 my-8">
+          <div class="bg-slate-50 rounded-lg p-6 border border-slate-200">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-12 h-12 bg-[#0F5B78] rounded-full flex items-center justify-center text-white text-xl">👤</div>
+              <div>
+                <div class="font-bold text-lg">Familie Müller, Augsburg</div>
+                <div class="text-sm text-slate-600">Selbstnutzer, 25 Jahre alte Gasheizung, Einkommen 45.000 €</div>
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-4 text-sm">
+              <div>
+                <div class="text-slate-500">Investition</div>
+                <div class="font-semibold">28.000 €</div>
+              </div>
+              <div>
+                <div class="text-slate-500">Förderung</div>
+                <div class="font-semibold text-green-600">30% + 20% = 50% → 14.000 €</div>
+              </div>
+              <div>
+                <div class="text-slate-500">Eigenanteil</div>
+                <div class="font-semibold">14.000 €</div>
+              </div>
+              <div>
+                <div class="text-slate-500">Monatlich (10J Kredit)</div>
+                <div class="font-semibold">~125 €</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-slate-50 rounded-lg p-6 border border-slate-200">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center text-white text-xl">👥</div>
+              <div>
+                <div class="font-bold text-lg">Ehepaar Schmidt, Bobingen</div>
+                <div class="text-sm text-slate-600">Rentner, Ölheizung, Einkommen 32.000 €, Wärmepumpe mit R290</div>
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-4 text-sm">
+              <div>
+                <div class="text-slate-500">Investition</div>
+                <div class="font-semibold">30.000 €</div>
+              </div>
+              <div>
+                <div class="text-slate-500">Förderung</div>
+                <div class="font-semibold text-green-600">30% + 20% + 30% + 5% = 70% → 21.000 €</div>
+              </div>
+              <div>
+                <div class="text-slate-500">Eigenanteil</div>
+                <div class="font-semibold">9.000 €</div>
+              </div>
+              <div>
+                <div class="text-slate-500">Das Beste:</div>
+                <div class="font-semibold">Maximum erreicht!</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-slate-50 rounded-lg p-6 border border-slate-200">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center text-white text-xl">🏢</div>
+              <div>
+                <div class="font-bold text-lg">Herr Weber, Günzburg</div>
+                <div class="text-sm text-slate-600">Vermieter, MFH mit 4 Wohnungen</div>
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-4 text-sm">
+              <div>
+                <div class="text-slate-500">Investition</div>
+                <div class="font-semibold">55.000 €</div>
+              </div>
+              <div>
+                <div class="text-slate-500">Förderfähig</div>
+                <div class="font-semibold">30.000 + 3×15.000 = 75.000 €</div>
+              </div>
+              <div>
+                <div class="text-slate-500">Förderung</div>
+                <div class="font-semibold text-green-600">30% von 55.000 € = 16.500 €</div>
+              </div>
+              <div>
+                <div class="text-slate-500">Hinweis</div>
+                <div class="font-semibold">Kein Klimabonus für Vermieter</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2>Der Antragsprozess – So geht's richtig</h2>
+
+        <div class="callout callout-warning">
+          <div class="callout-title">Die #1 Regel</div>
+          <p><strong>Niemals mit den Arbeiten anfangen, bevor Sie die Förderzusage haben!</strong> Auch kein „schon mal Material bestellen" oder „Termin für Installation machen". Das kostet Sie die komplette Förderung.</p>
+        </div>
+
+        <div class="space-y-4 my-8">
+          <div class="flex gap-4 items-start p-4 bg-slate-50 rounded-lg">
+            <div class="w-10 h-10 bg-[#0F5B78] text-white rounded-full flex items-center justify-center font-bold shrink-0">1</div>
+            <div>
+              <div class="font-semibold text-slate-900">Angebot mit „aufschiebender Bedingung" unterschreiben</div>
+              <p class="text-sm text-slate-600 mt-1">Im Vertrag muss stehen: „Wirksamkeit unter Vorbehalt der Förderzusage". Dann können Sie bei Ablehnung kostenfrei zurücktreten.</p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start p-4 bg-slate-50 rounded-lg">
+            <div class="w-10 h-10 bg-[#0F5B78] text-white rounded-full flex items-center justify-center font-bold shrink-0">2</div>
+            <div>
+              <div class="font-semibold text-slate-900">Bestätigung zum Antrag (BzA) erstellen lassen</div>
+              <p class="text-sm text-slate-600 mt-1">Der Fachbetrieb oder Energieberater erstellt die BzA mit der 15-stelligen ID. Diese brauchen Sie für den Antrag.</p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start p-4 bg-slate-50 rounded-lg">
+            <div class="w-10 h-10 bg-[#0F5B78] text-white rounded-full flex items-center justify-center font-bold shrink-0">3</div>
+            <div>
+              <div class="font-semibold text-slate-900">Online-Antrag bei der KfW stellen</div>
+              <p class="text-sm text-slate-600 mt-1">Im Portal „Meine KfW" registrieren, BzA-ID eingeben, fertig. Bei vollständigen Unterlagen kommt die Zusage oft binnen Minuten.</p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start p-4 bg-slate-50 rounded-lg">
+            <div class="w-10 h-10 bg-[#0F5B78] text-white rounded-full flex items-center justify-center font-bold shrink-0">4</div>
+            <div>
+              <div class="font-semibold text-slate-900">Erst NACH Zusage: Installation beauftragen</div>
+              <p class="text-sm text-slate-600 mt-1">Jetzt darf's losgehen! Sie haben 36 Monate Zeit, die Maßnahme abzuschließen.</p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start p-4 bg-slate-50 rounded-lg">
+            <div class="w-10 h-10 bg-[#0F5B78] text-white rounded-full flex items-center justify-center font-bold shrink-0">5</div>
+            <div>
+              <div class="font-semibold text-slate-900">Nachweise einreichen, Geld kassieren</div>
+              <p class="text-sm text-slate-600 mt-1">Rechnungen + Bestätigung nach Durchführung (BnD) hochladen. Die KfW überweist direkt auf Ihr Konto.</p>
+            </div>
+          </div>
+        </div>
+
+        <h2>Steuerbonus als Alternative?</h2>
+
+        <p>Es gibt auch den Steuerbonus nach § 35c EStG: 20% der Kosten über 3 Jahre verteilt. Aber rechnen wir mal:</p>
+
+        <table class="cost-table">
+          <thead>
+            <tr>
+              <th>Kriterium</th>
+              <th>BEG-Förderung</th>
+              <th>Steuerbonus</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Maximaler Prozentsatz</strong></td>
+              <td class="text-green-600 font-semibold">Bis 70%</td>
+              <td>20%</td>
+            </tr>
+            <tr>
+              <td><strong>Bei 30.000 € Investition</strong></td>
+              <td class="text-green-600 font-semibold">Bis 21.000 €</td>
+              <td>6.000 €</td>
+            </tr>
+            <tr>
+              <td><strong>Auszahlung</strong></td>
+              <td>Direkt nach Installation</td>
+              <td>Verteilt über 3 Jahre</td>
+            </tr>
+            <tr>
+              <td><strong>Für Vermieter?</strong></td>
+              <td>Ja (30%)</td>
+              <td>Nein</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="mt-4">Der Steuerbonus macht nur Sinn, wenn Sie aus irgendeinem Grund keine BEG-Förderung bekommen können. Ansonsten: <strong>Immer BEG wählen!</strong></p>
+
+        <h2>Die häufigsten Fehler (und wie Sie sie vermeiden)</h2>
+
+        <div class="space-y-4 my-8">
+          <div class="flex gap-4 p-4 bg-red-50 rounded-lg border border-red-200">
+            <div class="text-2xl">❌</div>
+            <div>
+              <div class="font-semibold text-red-800">Arbeiten vor Antragstellung</div>
+              <p class="text-sm text-red-700 mt-1">Auch ein „vorbereitender" Termin mit dem Heizungsbauer zählt als Beginn. Förderung = 0 €.</p>
+            </div>
+          </div>
+          <div class="flex gap-4 p-4 bg-red-50 rounded-lg border border-red-200">
+            <div class="text-2xl">❌</div>
+            <div>
+              <div class="font-semibold text-red-800">Aufschiebende Bedingung vergessen</div>
+              <p class="text-sm text-red-700 mt-1">Ohne diese Klausel im Vertrag tragen Sie das volle Risiko bei Ablehnung.</p>
+            </div>
+          </div>
+          <div class="flex gap-4 p-4 bg-red-50 rounded-lg border border-red-200">
+            <div class="text-2xl">❌</div>
+            <div>
+              <div class="font-semibold text-red-800">Einkommensnachweis fehlt</div>
+              <p class="text-sm text-red-700 mt-1">Für den 30% Einkommensbonus brauchen Sie die Steuerbescheide 2022/2023. Rechtzeitig suchen!</p>
+            </div>
+          </div>
+          <div class="flex gap-4 p-4 bg-red-50 rounded-lg border border-red-200">
+            <div class="text-2xl">❌</div>
+            <div>
+              <div class="font-semibold text-red-800">Falsche Wärmepumpe gewählt</div>
+              <p class="text-sm text-red-700 mt-1">Für den 5% Effizienzbonus brauchen Sie Propan (R290) oder Erdwärme. R32 zählt NICHT.</p>
+            </div>
+          </div>
+        </div>
+
+        <h2>Zeitfenster nutzen: Jetzt handeln!</h2>
+
+        <div class="callout callout-warning">
+          <div class="callout-title">Wichtig zu wissen</div>
+          <p>Der <strong>Klimageschwindigkeits-Bonus (20%) sinkt ab 2029</strong> alle zwei Jahre um 3%. Wer also 2025 handelt, bekommt mehr als wer 2030 handelt. Und nach der nächsten Bundestagswahl könnte das gesamte Fördersystem angepasst werden.</p>
+        </div>
+
+        <h2>Brauchen Sie Hilfe beim Förderantrag?</h2>
+
+        <p>Die Förderabwicklung kann nerven – Formulare, Fristen, technische Anforderungen. Deshalb machen wir das bei HeizCenter komplett für Sie:</p>
+
+        <ul class="space-y-2 my-6">
+          <li class="flex items-center gap-2"><span class="text-green-600">✓</span> Persönliche Fördermittelberechnung</li>
+          <li class="flex items-center gap-2"><span class="text-green-600">✓</span> Erstellung der BzA durch unsere Energieexperten</li>
+          <li class="flex items-center gap-2"><span class="text-green-600">✓</span> Unterstützung bei der Antragstellung</li>
+          <li class="flex items-center gap-2"><span class="text-green-600">✓</span> Prüfung regionaler Zusatzförderungen</li>
+          <li class="flex items-center gap-2"><span class="text-green-600">✓</span> Komplette Dokumentation für die Nachweise</li>
         </ul>
 
-        <p><strong>Maximale Förderung:</strong> 70% der förderfähigen Kosten, gedeckelt bei 21.000 Euro (für die erste Wohneinheit)</p>
-
-        <h3>Förderfähige Heizsysteme 2025</h3>
-
-        <p>Nicht alle Heizungen werden gefördert – fossile Brennstoffe sind seit 2024 ausgeschlossen. Förderfähig sind:</p>
-
-        <h4>1. Wärmepumpen (30-70% Förderung):</h4>
-
-        <ul>
-          <li><strong>Luft-Wasser-Wärmepumpe:</strong> 30-55% Förderung</li>
-          <li><strong>Sole-Wasser-Wärmepumpe (Erdwärme):</strong> 40-70% Förderung</li>
-          <li><strong>Wasser-Wasser-Wärmepumpe:</strong> 40-70% Förderung</li>
-          <li><strong>Voraussetzung:</strong> Mindest-JAZ 3,5, Smart-Meter-Gateway, Geräuschemission 5 dB unter EU-Grenzwert</li>
-        </ul>
-
-        <h4>2. Biomasseheizungen (30-70% Förderung + 2.500 € Emissionsbonus):</h4>
-
-        <ul>
-          <li><strong>Pelletheizung:</strong> Mit Solarthermie/PV/Wärmepumpe für Warmwasser kombiniert (für Klimabonus)</li>
-          <li><strong>Scheitholzvergaser:</strong> Gleiche Anforderungen</li>
-          <li><strong>Hackschnitzelheizung:</strong> Gleiche Anforderungen</li>
-          <li><strong>Einkommensbonus:</strong> +30% auch für Biomasse berechtigt (bei Haushaltseinkommen ≤40.000 €)</li>
-          <li><strong>Emissionsbonus:</strong> +2.500 € bei max. 2,5 mg/m³ Feinstaub</li>
-        </ul>
-
-        <h4>3. Solarthermie (30-70% Förderung):</h4>
-
-        <ul>
-          <li>Für Warmwasser und/oder Heizungsunterstützung</li>
-          <li>Kombinierbar mit allen anderen Heizsystemen</li>
-          <li>Solar Keymark-Zertifikat erforderlich</li>
-          <li>Gleiche Boni wie Wärmepumpe/Pellet möglich (Klima- und Einkommensbonus)</li>
-        </ul>
-
-        <h4>4. Brennstoffzellenheizungen (30-70% Förderung):</h4>
-
-        <ul>
-          <li>Wasserstoff oder Biomethan als Brennstoff</li>
-          <li>Hocheffiziente Zukunftstechnologie</li>
-        </ul>
-
-        <h4>5. Wasserstofffähige Gasheizungen (H2-Ready):</h4>
-
-        <ul>
-          <li><strong>Nur Mehrkosten gefördert:</strong> Ca. 5% der Gesamtkosten</li>
-          <li>100% H2-Betrieb möglich ODER Wasserstoffnetz bis 2044 geplant</li>
-          <li>Keine vollständige Förderung wie bei erneuerbaren Systemen</li>
-        </ul>
-
-        <h4>6. Hybridheizungen (anteilige Förderung):</h4>
-
-        <ul>
-          <li>Mindestens 65% erneuerbare Energien erforderlich</li>
-          <li>Nur der erneuerbare Anteil wird gefördert</li>
-          <li>Kein Klimageschwindigkeitsbonus, wenn fossiler Anteil weitergenutzt wird</li>
-        </ul>
-
-        <h4>7. Wärmenetzanschlüsse (30-70% Förderung):</h4>
-
-        <ul>
-          <li>Mindestens 65% erneuerbare Energien oder Abwärme</li>
-          <li>Förderung ab 2028 reduziert</li>
-        </ul>
-
-        <p><strong>Wichtig:</strong> Reine Gasheizungen ohne Wasserstofffähigkeit werden seit 2024 NICHT mehr gefördert!</p>
-
-        <h3>Die Boni im Detail: So erreichen Sie 70% Förderung</h3>
-
-        <h4>Grundförderung (30%):</h4>
-
-        <ul>
-          <li>Für alle Antragsteller verfügbar</li>
-          <li>Selbstnutzer, Vermieter, WEG gleichermaßen</li>
-          <li>Voraussetzung: Technische Mindestanforderungen erfüllt</li>
-        </ul>
-
-        <h4>Klimageschwindigkeitsbonus (20%):</h4>
-
-        <p><strong>Nur für Selbstnutzer!</strong> Voraussetzungen:</p>
-
-        <ul>
-          <li>Austausch einer funktionstüchtigen Heizung</li>
-          <li>Gas-/Ölheizung, Kohle, Biomasse oder Nachtspeicher wird ersetzt</li>
-          <li>Gasheizungen müssen mindestens 20 Jahre alt sein</li>
-          <li>Biomasseheizungen müssen mindestens 20 Jahre alt sein</li>
-          <li><strong>Zeitliche Befristung:</strong> Ab 2029 sinkt der Bonus alle 2 Jahre um 3%</li>
-        </ul>
-
-        <h4>Einkommensbonus (30%):</h4>
-
-        <p><strong>Nur für Selbstnutzer!</strong> Voraussetzungen:</p>
-
-        <ul>
-          <li>Zu versteuerndes Haushaltsjahreseinkommen max. 40.000 €</li>
-          <li>Berechnung: Durchschnitt aus den Jahren 2022 und 2023 (für Anträge 2025)</li>
-          <li>Nachweis durch Einkommensteuerbescheide</li>
-        </ul>
-
-        <h4>Effizienzbonus Wärmepumpen (5%):</h4>
-
-        <ul>
-          <li>Wärmequelle: Wasser, Erdreich oder Abwasser ODER</li>
-          <li>Natürliches Kältemittel: R290 (Propan), R600a (Isobutan), R1270 (Propen), R717 (Ammoniak), R718 (Wasser), R744 (CO₂)</li>
-          <li><strong>Hinweis:</strong> R32 zählt NICHT als natürliches Kältemittel</li>
-        </ul>
-
-        <h3>Maximale Fördersummen und förderfähige Kosten</h3>
-
-        <h4>Förderobergrenzen:</h4>
-
-        <ul>
-          <li><strong>Erste Wohneinheit (Einfamilienhaus/Eigentumswohnung):</strong> Max. 30.000 € förderfähige Kosten = bis zu 21.000 € Zuschuss (bei 70%)</li>
-          <li><strong>Weitere Wohneinheiten:</strong> Max. 15.000 € pro Einheit = bis zu 10.500 € Zuschuss (bei 70%)</li>
-          <li><strong>Absolute Fördergrenze:</strong> 70% der Kosten</li>
-        </ul>
-
-        <h4>Was zählt zu den förderfähigen Kosten?</h4>
-
-        <ul>
-          <li>Heizungsanlage und Installation</li>
-          <li>Demontage der alten Heizung</li>
-          <li>Rohrleitungen und Regelungstechnik</li>
-          <li>Hydraulischer Abgleich</li>
-          <li>Energieeffizienz-Beratung (BzA, BnD)</li>
-          <li>Baubegleitung durch Energieberater</li>
-          <li>Provisorische Heizung (bis 12 Monate Mietkosten)</li>
-        </ul>
-
-        <h3>Der Antragsprozess Schritt für Schritt</h3>
-
-        <p><strong>Wichtig:</strong> Die Reihenfolge muss exakt eingehalten werden!</p>
-
-        <h4>Schritt 1: Vertrag mit aufschiebender Bedingung</h4>
-
-        <ul>
-          <li>Lieferungs-/Leistungsvertrag mit Fachunternehmen abschließen</li>
-          <li>Vertrag muss Klausel enthalten: "Wirksamkeit unter Vorbehalt der Förderzusage"</li>
-          <li>Kein finanzielles Risiko bei Förderablehnung</li>
-        </ul>
-
-        <h4>Schritt 2: Bestätigung zum Antrag (BzA) erstellen</h4>
-
-        <ul>
-          <li>Von Energieeffizienz-Experten oder Fachunternehmen</li>
-          <li>Enthält 15-stellige BzA-ID für Antragstellung</li>
-          <li>Bestätigt Erfüllung technischer Mindestanforderungen</li>
-        </ul>
-
-        <h4>Schritt 3: Antrag vor Vorhabenbeginn stellen</h4>
-
-        <ul>
-          <li><strong>Online über "Meine KfW":</strong> https://www.kfw.de</li>
-          <li><strong>Wichtig:</strong> KEINERLEI Arbeiten vor Antragstellung beginnen!</li>
-          <li>Registrierung im KfW-Portal erforderlich</li>
-          <li>BzA-ID eingeben</li>
-        </ul>
-
-        <h4>Schritt 4: Zuschusszusage erhalten</h4>
-
-        <ul>
-          <li>Automatisierte Prüfung bei vollständigen Unterlagen</li>
-          <li>Zusage meist innerhalb weniger Minuten</li>
-          <li>Nur digital im Portal verfügbar (kein Postversand)</li>
-        </ul>
-
-        <h4>Schritt 5: Maßnahme durchführen</h4>
-
-        <ul>
-          <li>Nach Zusage kann begonnen werden</li>
-          <li><strong>Frist:</strong> Innerhalb von 36 Monaten abschließen</li>
-        </ul>
-
-        <h4>Schritt 6: Nachweise einreichen</h4>
-
-        <ul>
-          <li><strong>Frist:</strong> Spätestens 36 Monate nach Zusage ODER 6 Monate nach letzter Rechnung</li>
-          <li>Alle Rechnungen hochladen</li>
-          <li>Bestätigung nach Durchführung (BnD)</li>
-          <li>Zusätzliche Nachweise für Boni (z.B. Meldebestätigung, Einkommenssteuer bescheide)</li>
-        </ul>
-
-        <h3>KfW-Ergänzungskredit: Zusätzliche Finanzierung</h3>
-
-        <p>Zusätzlich zur Zuschussförderung können Sie einen zinsgünstigen Kredit beantragen:</p>
-
-        <h4>Programm 358/359:</h4>
-
-        <ul>
-          <li><strong>Kredithöhe:</strong> Bis zu 120.000 € pro Wohneinheit</li>
-          <li><strong>Voraussetzung:</strong> Bestehende Zuschusszusage der KfW</li>
-          <li><strong>Zinsvorteil:</strong> Bis zu 2,5 Prozentpunkte unter Marktkonditionen</li>
-          <li>Kombinierbar mit Zuschussförderung</li>
-        </ul>
-
-        <h3>Steuerbonus als Alternative zur BEG-Förderung</h3>
-
-        <p>Wenn Sie die BEG-Förderung nicht nutzen möchten oder können, gibt es die steuerliche Alternative:</p>
-
-        <h4>§ 35c EStG - Steuerbonus für Sanierungen:</h4>
-
-        <ul>
-          <li><strong>20% der Kosten</strong> steuerlich absetzbar</li>
-          <li><strong>Maximum:</strong> 40.000 € = bis zu 8.000 € Steuerersparnis</li>
-          <li><strong>Verteilung:</strong> 7% im 1. und 2. Jahr, 6% im 3. Jahr</li>
-          <li><strong>Wichtig:</strong> NICHT kombinierbar mit BEG-Förderung!</li>
-          <li>Nur für selbstgenutzten Wohnraum</li>
-        </ul>
-
-        <p><strong>Vergleich BEG vs. Steuerbonus:</strong></p>
-
-        <ul>
-          <li><strong>BEG:</strong> Bis zu 70% sofort, direkte Auszahlung</li>
-          <li><strong>Steuerbonus:</strong> Maximal 20%, verteilt über 3 Jahre</li>
-          <li><strong>Empfehlung:</strong> In fast allen Fällen ist BEG deutlich attraktiver!</li>
-        </ul>
-
-        <h3>Praxisbeispiele: So viel Förderung ist möglich</h3>
-
-        <h4>Beispiel 1: Maximale Förderung (70%)</h4>
-
-        <p><strong>Situation:</strong> Selbstnutzer, Einfamilienhaus, alte Gasheizung (>20 Jahre), Haushaltseinkommen 38.000 €, Wärmepumpe mit R290-Kältemittel</p>
-
-        <ul>
-          <li>Investitionskosten: 30.000 €</li>
-          <li>Grundförderung: 30%</li>
-          <li>Klimageschwindigkeitsbonus: 20%</li>
-          <li>Einkommensbonus: 30%</li>
-          <li>Effizienzbonus: 5%</li>
-          <li><strong>Gesamt: 85% → gedeckelt auf 70% = 21.000 € Zuschuss</strong></li>
-          <li><strong>Eigenanteil: 9.000 €</strong></li>
-        </ul>
-
-        <h4>Beispiel 2: Standard-Förderung (50%)</h4>
-
-        <p><strong>Situation:</strong> Selbstnutzer, alte Ölheizung, Haushaltseinkommen 60.000 €, Luft-Wasser-Wärmepumpe</p>
-
-        <ul>
-          <li>Investitionskosten: 28.000 €</li>
-          <li>Grundförderung: 30%</li>
-          <li>Klimageschwindigkeitsbonus: 20%</li>
-          <li><strong>Gesamt: 50% = 14.000 € Zuschuss</strong></li>
-          <li><strong>Eigenanteil: 14.000 €</strong></li>
-        </ul>
-
-        <h4>Beispiel 3: Vermieter (30%)</h4>
-
-        <p><strong>Situation:</strong> Vermieter, Mehrfamilienhaus 5 Wohneinheiten, Wärmepumpe</p>
-
-        <ul>
-          <li>Förderfähige Kosten: 30.000 + 4×15.000 = 90.000 €</li>
-          <li>Grundförderung: 30%</li>
-          <li><strong>Gesamt: 30% = 27.000 € Zuschuss</strong></li>
-          <li><strong>Eigenanteil: 63.000 €</strong></li>
-        </ul>
-
-        <h3>Regionale Zusatzförderungen</h3>
-
-        <p>Zusätzlich zur BEG gibt es regionale Programme:</p>
-
-        <h4>Beispiele Bundesländer/Kommunen:</h4>
-
-        <ul>
-          <li><strong>Hamburg (IFB Erneuerbare Wärme):</strong> 100 €/kW + 15% Bohrkosten</li>
-          <li><strong>Hannover (proKlima):</strong> Pauschal 5.000 € für Wärmepumpen</li>
-          <li><strong>Verschiedene Stadtwerke:</strong> Eigene Zuschüsse und Contracting-Modelle</li>
-        </ul>
-
-        <p><strong>Wichtig:</strong> Gesamtförderung aus allen Quellen darf 60% nicht überschreiten (KfW-Förderung ausgenommen)!</p>
-
-        <p><strong>Tipp:</strong> Nutzen Sie das FördermittelCheck-Tool, um alle verfügbaren regionalen Förderungen zu finden!</p>
-
-        <h3>Änderungen 2025 gegenüber 2024</h3>
-
-        <h4>Neue Anforderungen:</h4>
-
-        <ul>
-          <li><strong>Smart-Meter-Gateway:</strong> Für alle Wärmepumpen ab 2025 Pflicht</li>
-          <li><strong>JAZ-Anforderung gesenkt:</strong> Von 4,0 auf 3,5 (mehr Wärmepumpen förderfähig)</li>
-        </ul>
-
-        <h4>Zeitliche Änderungen:</h4>
-
-        <ul>
-          <li><strong>Klimageschwindigkeitsbonus:</strong> Ab 2029 Reduktion um 3% alle 2 Jahre</li>
-          <li><strong>Wärmenetzförderung:</strong> Ab 2028 reduziert</li>
-        </ul>
-
-        <h4>Politische Unsicherheiten:</h4>
-
-        <ul>
-          <li>Mögliche Änderungen nach Bundestagswahl</li>
-          <li>CDU/CSU plant Reduktion der Fördersätze</li>
-          <li><strong>Empfehlung:</strong> Antrag zeitnah stellen, solange aktuelle Konditionen gelten!</li>
-        </ul>
-
-        <h3>Häufige Fehler vermeiden</h3>
-
-        <h4>Typische Stolperfallen:</h4>
-
-        <ul>
-          <li><strong>Zu früher Beginn:</strong> Arbeiten vor Antragstellung = kein Zuschuss!</li>
-          <li><strong>Falsche Vertragsbedingung:</strong> Aufschiebende Bedingung fehlt</li>
-          <li><strong>Fristversäumnis:</strong> Nachweise zu spät eingereicht</li>
-          <li><strong>Fehlende Nachweise:</strong> Meldebestätigung, Einkommensnachweise vergessen</li>
-          <li><strong>Technische Anforderungen:</strong> JAZ, Smart-Meter, Geräuschemission nicht erfüllt</li>
-        </ul>
-
-        <h3>Fazit: Heizungsförderung 2025 optimal nutzen</h3>
-
-        <p>Die Heizungsförderung 2025 bietet eine historisch einmalige Chance, mit bis zu 70% Zuschuss auf klimafreundliche Heizsysteme umzusteigen. Besonders selbstnutzende Eigentümer mit niedrigem Einkommen und alten Heizungen profitieren maximal.</p>
-
-        <p><strong>Wichtigste Erfolgsfaktoren:</strong></p>
-
-        <ul>
-          <li>Frühzeitige Planung und Energieberatung</li>
-          <li>Exakte Einhaltung der Antragsprozesse</li>
-          <li>Kombination aller verfügbaren Boni</li>
-          <li>Prüfung regionaler Zusatzförderungen</li>
-          <li>Zeitnahe Antragstellung (Bonusreduktionen ab 2029)</li>
-        </ul>
-
-        <h3>Kostenlose Beratung bei HeizCenter</h3>
-
-        <p>Wir unterstützen Sie bei der gesamten Förderabwicklung:</p>
-
-        <ul>
-          <li>Individuelle Fördermittelberatung</li>
-          <li>Berechnung Ihrer maximalen Förderung</li>
-          <li>Unterstützung bei Antragstellung</li>
-          <li>Installation durch zertifizierte Fachbetriebe</li>
-          <li>Komplette Projektbegleitung von der Planung bis zur Inbetriebnahme</li>
-        </ul>
-
-        <p><strong>Jetzt Beratungstermin vereinbaren und maximale Förderung sichern!</strong></p>
+        <div class="bg-[#0F5B78] text-white rounded-xl p-8 my-8">
+          <h3 class="text-xl font-bold mb-4">Kostenlose Förderberatung</h3>
+          <p class="text-white/90 mb-4">Wir berechnen, wie viel Förderung für Sie drin ist – und übernehmen auf Wunsch den gesamten Antragsprozess.</p>
+          <div class="flex flex-wrap gap-3">
+            <a href="/kontakt" class="inline-flex items-center gap-2 bg-white text-[#0F5B78] px-5 py-2.5 rounded-lg font-medium hover:bg-slate-100 transition-colors">
+              Beratungstermin buchen
+            </a>
+            <a href="tel:+498234908970" class="inline-flex items-center gap-2 border border-white/30 text-white px-5 py-2.5 rounded-lg font-medium hover:bg-white/10 transition-colors">
+              08234 / 90 89 70
+            </a>
+          </div>
+        </div>
       `,
       category: 'Förderung',
       author: 'HeizCenter Redaktion',
