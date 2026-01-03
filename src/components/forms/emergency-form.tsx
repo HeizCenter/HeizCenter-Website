@@ -19,7 +19,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { CheckCircle2, AlertCircle, Loader2, AlertTriangle } from "lucide-react";
+import { CheckCircle2, AlertCircle, Loader2, AlertTriangle, ShieldCheck } from "lucide-react";
+import Link from "next/link";
 
 export function EmergencyForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -104,6 +105,25 @@ export function EmergencyForm() {
           >
             +49 8234 9665900
           </a>
+        </div>
+      </div>
+
+      {/* Wartungsvertrag Requirement Notice */}
+      <div className="bg-amber-50 border border-amber-300 rounded-lg p-4 mb-6 flex items-start gap-3">
+        <ShieldCheck className="h-5 w-5 text-amber-600 flex-shrink-0 mt-0.5" />
+        <div>
+          <h3 className="font-bold text-amber-800 mb-1">Wichtiger Hinweis</h3>
+          <p className="text-sm text-amber-700 mb-2">
+            Unser 24/7-Notdienst steht <strong>nur Kunden mit einem gültigen Wartungsvertrag</strong> zur Verfügung.
+            Ohne bestehenden Wartungsvertrag können wir keinen Notdiensteinsatz übernehmen.
+          </p>
+          <Link
+            href="/wartungsvertrag"
+            className="inline-flex items-center gap-2 text-sm font-medium text-amber-800 hover:text-amber-900 underline"
+          >
+            <ShieldCheck className="h-4 w-4" />
+            Wartungsvertrag abschließen
+          </Link>
         </div>
       </div>
 
