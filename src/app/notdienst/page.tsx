@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { Phone, Clock, AlertCircle, Check, ShieldCheck, FileText } from "lucide-react";
+import { Phone, Clock, AlertCircle, Check, ShieldCheck, FileText, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -160,16 +160,34 @@ export default function NotdienstPage() {
 
               <Card className="border-2 border-[#0F5B78]/20">
                 <CardContent className="p-8">
-                  <h3 className="text-2xl font-bold mb-4">Service-Gebiete</h3>
-                  <p className="mb-4 text-slate-600">
+                  <div className="flex items-center gap-3 mb-4">
+                    <MapPin className="h-10 w-10 text-[#0F5B78]" />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-2">Service-Gebiete</h3>
+                  <p className="text-sm text-slate-600 mb-4">
                     Unser 24/7-Notdienst ist verfügbar für:
                   </p>
-                  <ul className="space-y-2">
-                    <li>• Augsburg und Umgebung</li>
-                    <li>• Ulm und Neu-Ulm</li>
-                    <li>• Memmingen und Allgäu</li>
-                    <li>• Landkreis Aichach-Friedberg</li>
-                    <li>• Landkreis Donau-Ries</li>
+                  <ul className="space-y-3">
+                    <li className="flex items-center gap-3">
+                      <Check className="h-5 w-5 text-green-600" />
+                      <span>Augsburg und Umgebung</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <Check className="h-5 w-5 text-green-600" />
+                      <span>Ulm und Neu-Ulm</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <Check className="h-5 w-5 text-green-600" />
+                      <span>Memmingen und Allgäu</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <Check className="h-5 w-5 text-green-600" />
+                      <span>Landkreis Aichach-Friedberg</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <Check className="h-5 w-5 text-green-600" />
+                      <span>Landkreis Donau-Ries</span>
+                    </li>
                   </ul>
                 </CardContent>
               </Card>
@@ -222,7 +240,7 @@ export default function NotdienstPage() {
                 +49 8234 9665900
               </a>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-2 border-white !text-white hover:bg-white hover:!text-[#0F5B78] text-lg px-8 py-6">
+            <Button asChild size="lg" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#0F5B78] text-lg px-8 py-6">
               <Link href="/wartungsvertrag">
                 <ShieldCheck className="mr-2 h-5 w-5" />
                 Wartungsvertrag abschließen
