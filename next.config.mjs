@@ -22,6 +22,9 @@ const nextConfig = {
     optimizePackageImports: ["lucide-react", "@radix-ui/react-icons"],
   },
 
+  // Transpile only for modern browsers
+  transpilePackages: [],
+
   // Headers for security and caching
   async headers() {
     return [

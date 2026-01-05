@@ -2,6 +2,15 @@
   "name": "heizcenter-website",
   "version": "0.1.0",
   "private": true,
+  "browserslist": [
+    "Chrome >= 90",
+    "Firefox >= 90",
+    "Safari >= 14",
+    "Edge >= 90",
+    "iOS >= 14",
+    "not dead",
+    "not op_mini all"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
