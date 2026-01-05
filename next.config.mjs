@@ -20,6 +20,8 @@ const nextConfig = {
   // Experimental features
   experimental: {
     optimizePackageImports: ["lucide-react", "@radix-ui/react-icons"],
+    // Optimize CSS loading - extract critical CSS inline
+    optimizeCss: true,
   },
 
   // Transpile only for modern browsers
