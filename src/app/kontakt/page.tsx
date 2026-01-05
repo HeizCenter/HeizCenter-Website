@@ -2,13 +2,36 @@
 
 import Image from "next/image";
 import { Suspense } from "react";
-import { Phone, Mail, MapPin, Clock, MessageSquare, FileText, AlertCircle, MessageCircle, Building2 } from "lucide-react";
+import dynamic from "next/dynamic";
+import { Phone, Mail, MapPin, Clock, MessageSquare, FileText, AlertCircle, MessageCircle, Building2, Loader2 } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ContactForm } from "@/components/forms/contact-form";
-import { QuoteForm } from "@/components/forms/quote-form";
-import { EmergencyForm } from "@/components/forms/emergency-form";
 import { LocalBusinessSchema } from "@/components/schema/local-business-schema";
 import { useSearchParams } from "next/navigation";
+
+// Lazy load forms to reduce initial bundle size
+const ContactForm = dynamic(
+  () => import("@/components/forms/contact-form").then(mod => ({ default: mod.ContactForm })),
+  {
+    loading: () => <div className="flex items-center justify-center py-12"><Loader2 className="h-8 w-8 animate-spin text-[#0F5B78]" /></div>,
+    ssr: false
+  }
+);
+
+const QuoteForm = dynamic(
+  () => import("@/components/forms/quote-form").then(mod => ({ default: mod.QuoteForm })),
+  {
+    loading: () => <div className="flex items-center justify-center py-12"><Loader2 className="h-8 w-8 animate-spin text-[#0F5B78]" /></div>,
+    ssr: false
+  }
+);
+
+const EmergencyForm = dynamic(
+  () => import("@/components/forms/emergency-form").then(mod => ({ default: mod.EmergencyForm })),
+  {
+    loading: () => <div className="flex items-center justify-center py-12"><Loader2 className="h-8 w-8 animate-spin text-[#0F5B78]" /></div>,
+    ssr: false
+  }
+);
 
 function ContactTabs() {
   const searchParams = useSearchParams();
