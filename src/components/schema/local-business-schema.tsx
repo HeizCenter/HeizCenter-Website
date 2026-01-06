@@ -10,7 +10,8 @@ export function LocalBusinessSchema({
 }: LocalBusinessSchemaProps) {
   const bobingenSchema = {
     "@context": "https://schema.org",
-    "@type": "PlumbingHeatingContractor",
+    "@type": "LocalBusiness",
+    additionalType: "https://schema.org/PlumbingHeatingContractor",
     name: "HeizCenter GmbH",
     image: "https://heizcenter.de/images/logo.png",
     "@id": "https://heizcenter.de/#bobingen",
@@ -101,7 +102,8 @@ export function LocalBusinessSchema({
 
   const gutenzellSchema = {
     "@context": "https://schema.org",
-    "@type": "PlumbingHeatingContractor",
+    "@type": "LocalBusiness",
+    additionalType: "https://schema.org/PlumbingHeatingContractor",
     name: "HeizCenter GmbH - Gutenzell-Hürbel",
     image: "https://heizcenter.de/images/logo.png",
     "@id": "https://heizcenter.de/#gutenzell",
@@ -144,7 +146,8 @@ export function LocalBusinessSchema({
 
   const klosterlechfeldSchema = {
     "@context": "https://schema.org",
-    "@type": "PlumbingHeatingContractor",
+    "@type": "LocalBusiness",
+    additionalType: "https://schema.org/PlumbingHeatingContractor",
     name: "HeizCenter GmbH - Klosterlechfeld",
     image: "https://heizcenter.de/images/logo.png",
     "@id": "https://heizcenter.de/#klosterlechfeld",
@@ -227,7 +230,8 @@ export function LocationPageSchema({
   
   const schema = {
     "@context": "https://schema.org",
-    "@type": "PlumbingHeatingContractor",
+    "@type": "LocalBusiness",
+    additionalType: "https://schema.org/PlumbingHeatingContractor",
     name: "HeizCenter GmbH - " + cityName,
     image: "https://heizcenter.de/images/logo.png",
     "@id": "https://heizcenter.de/standorte/" + citySlug,
