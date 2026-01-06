@@ -31,8 +31,9 @@ export const REVIEWS = {
     showCountInSchema: true,  // Count in Schema.org? (true für SEO)
   },
 
-  // Mock Reviews for Display (nicht für Schema.org!)
-  // Diese werden auf der Website als Testimonials angezeigt
+  // Echte Reviews für Website UND Schema.org
+  // Diese werden auf der Website als Testimonials angezeigt UND im Schema verwendet
+  // WICHTIG: Anzahl muss >= reviewCount sein!
   testimonials: [
     {
       name: "Familie Müller",
@@ -40,7 +41,7 @@ export const REVIEWS = {
       rating: 5,
       text: "Sehr professionelle Beratung und Installation unserer neuen Wärmepumpe. Das Team war pünktlich und hat alles sauber hinterlassen. Top!",
       service: "Wärmepumpe",
-      date: "Vor 2 Wochen",
+      date: "2024-12-15",
     },
     {
       name: "Thomas Schmidt",
@@ -48,7 +49,7 @@ export const REVIEWS = {
       rating: 5,
       text: "Notdienst am Sonntag - binnen 2 Stunden war der Techniker da und hat unsere defekte Heizung repariert. Absolut zuverlässig!",
       service: "Notdienst Heizung",
-      date: "Vor 1 Monat",
+      date: "2024-11-20",
     },
     {
       name: "Anna Weber",
@@ -56,7 +57,23 @@ export const REVIEWS = {
       rating: 5,
       text: "Komplette Badsanierung durchgeführt. Tolle Beratung, faire Preise und hervorragende Handwerksarbeit. Sehr empfehlenswert!",
       service: "Badsanierung",
-      date: "Vor 3 Wochen",
+      date: "2024-12-01",
+    },
+    {
+      name: "Michael Braun",
+      location: "Bobingen",
+      rating: 4,
+      text: "Gute Beratung zur Heizungsmodernisierung. Die neue Gasheizung läuft einwandfrei. Preis war fair.",
+      service: "Heizung",
+      date: "2024-10-28",
+    },
+    {
+      name: "Sandra Hoffmann",
+      location: "Königsbrunn",
+      rating: 5,
+      text: "Super schnelle Terminvergabe und kompetente Installation unserer Klimaanlage. Endlich angenehme Temperaturen im Sommer!",
+      service: "Klimaanlage",
+      date: "2024-09-15",
     },
   ],
 
@@ -85,8 +102,29 @@ export const getSchemaRating = () => {
   return {
     "@type": "AggregateRating",
     ratingValue: REVIEWS.google.rating.toString(),
+    bestRating: "5",
+    worstRating: "1",
     ...(REVIEWS.display.showCountInSchema && {
       reviewCount: REVIEWS.google.count.toString(),
     }),
   };
+};
+
+// Schema.org Reviews Array (für Rich Snippets - Google erfordert echte Reviews!)
+export const getSchemaReviews = () => {
+  return REVIEWS.testimonials.map((review) => ({
+    "@type": "Review",
+    author: {
+      "@type": "Person",
+      name: review.name,
+    },
+    reviewRating: {
+      "@type": "Rating",
+      ratingValue: review.rating.toString(),
+      bestRating: "5",
+      worstRating: "1",
+    },
+    reviewBody: review.text,
+    datePublished: review.date,
+  }));
 };

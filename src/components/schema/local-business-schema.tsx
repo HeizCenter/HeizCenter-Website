@@ -1,4 +1,4 @@
-import { getSchemaRating } from "@/lib/config/reviews";
+import { getSchemaRating, getSchemaReviews } from "@/lib/config/reviews";
 interface LocalBusinessSchemaProps {
   location: "bobingen" | "gutenzell" | "klosterlechfeld";
   includeServices?: boolean;
@@ -44,6 +44,7 @@ export function LocalBusinessSchema({
       "https://www.linkedin.com/company/heizcenter/",
     ],
     aggregateRating: getSchemaRating(),
+    review: getSchemaReviews(),
     areaServed: [
       { "@type": "City", name: "Augsburg" },
       { "@type": "City", name: "Bobingen" },
@@ -124,6 +125,7 @@ export function LocalBusinessSchema({
       url: "https://heizcenter.de",
     },
     aggregateRating: getSchemaRating(),
+    review: getSchemaReviews(),
     areaServed: [
       { "@type": "City", name: "Ulm" },
       { "@type": "City", name: "Memmingen" },
@@ -175,6 +177,7 @@ export function LocalBusinessSchema({
       url: "https://heizcenter.de",
     },
     aggregateRating: getSchemaRating(),
+    review: getSchemaReviews(),
     areaServed: [
       { "@type": "City", name: "Klosterlechfeld" },
       { "@type": "City", name: "Augsburg" },
@@ -248,6 +251,7 @@ export function LocationPageSchema({
       url: "https://heizcenter.de",
     },
     aggregateRating: getSchemaRating(),
+    review: getSchemaReviews(),
     areaServed: serviceCities.map((city) => ({
       "@type": "City",
       name: city,

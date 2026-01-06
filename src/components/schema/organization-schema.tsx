@@ -1,4 +1,4 @@
-import { getSchemaRating } from "@/lib/config/reviews";
+import { getSchemaRating, getSchemaReviews } from "@/lib/config/reviews";
 
 export function OrganizationSchema() {
   const schema = {
@@ -137,12 +137,9 @@ export function OrganizationSchema() {
       },
     ],
 
-    // Ratings
-    aggregateRating: {
-      ...getSchemaRating(),
-      bestRating: "5",
-      worstRating: "1",
-    },
+    // Ratings & Reviews
+    aggregateRating: getSchemaRating(),
+    review: getSchemaReviews(),
 
     // Services Offered
     hasOfferCatalog: {
