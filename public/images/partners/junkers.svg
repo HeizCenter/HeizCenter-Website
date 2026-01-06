@@ -1,5 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" viewBox="0 0 200 60">
-  <rect width="200" height="60" fill="#EA0016" rx="4"/>
-  <text x="100" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">JUNKERS</text>
-  <text x="100" y="48" font-family="Arial, sans-serif" font-size="16" font-weight="normal" fill="white" text-anchor="middle">BOSCH</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50">
+  <defs>
+    <linearGradient id="junkers-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B00"/>
+      <stop offset="100%" style="stop-color:#E55A00"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="50" fill="url(#junkers-grad)" rx="3"/>
+  <text x="100" y="26" font-family="'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="700" fill="white" text-anchor="middle" letter-spacing="1">JUNKERS</text>
+  <text x="100" y="42" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="500" fill="white" text-anchor="middle" letter-spacing="1">BOSCH GROUP</text>
 </svg>

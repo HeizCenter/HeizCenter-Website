@@ -1,4 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" viewBox="0 0 200 60">
-  <rect width="200" height="60" fill="#E30613" rx="4"/>
-  <text x="100" y="35" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white" text-anchor="middle">VIESSMANN</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50">
+  <defs>
+    <linearGradient id="viessmann-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#E30613"/>
+      <stop offset="100%" style="stop-color:#C00510"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="50" fill="url(#viessmann-grad)" rx="3"/>
+  <text x="100" y="33" font-family="'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" fill="white" text-anchor="middle" letter-spacing="2">VIESSMANN</text>
 </svg>

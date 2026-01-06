@@ -1,4 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" viewBox="0 0 200 60">
-  <rect width="200" height="60" fill="#EA0016" rx="4"/>
-  <text x="100" y="38" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="white" text-anchor="middle">BOSCH</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50">
+  <defs>
+    <linearGradient id="bosch-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#E20015"/>
+      <stop offset="100%" style="stop-color:#B8000F"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="50" fill="url(#bosch-grad)" rx="3"/>
+  <!-- Bosch spark plug icon simplified -->
+  <g transform="translate(35, 12) scale(0.45)">
+    <circle cx="30" cy="30" r="28" fill="none" stroke="white" stroke-width="4"/>
+    <path d="M20 20 L30 35 L40 20" fill="none" stroke="white" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="30" cy="42" r="4" fill="white"/>
+  </g>
+  <text x="120" y="33" font-family="'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="white" text-anchor="middle" letter-spacing="2">BOSCH</text>
 </svg>
