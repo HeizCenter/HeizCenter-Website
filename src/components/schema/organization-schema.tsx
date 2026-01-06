@@ -1,5 +1,3 @@
-import { getSchemaRating, getSchemaReviews } from "@/lib/config/reviews";
-
 export function OrganizationSchema() {
   const schema = {
     "@context": "https://schema.org",
@@ -137,9 +135,8 @@ export function OrganizationSchema() {
       },
     ],
 
-    // Ratings & Reviews
-    aggregateRating: getSchemaRating(),
-    review: getSchemaReviews(),
+    // Note: aggregateRating and review are NOT supported on Organization type
+    // by Google Rich Results. These are only on LocalBusinessSchema.
 
     // Services Offered
     hasOfferCatalog: {
