@@ -24,6 +24,8 @@ export default function robots(): MetadataRoute.Robots {
           "/odoo",
           "/contactus",
           "/website/",
+          "/slides",
+          "/test_website_sitemap",
         ],
       },
     ],
