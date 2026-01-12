@@ -15,7 +15,7 @@ export function BreadcrumbSchema({ items }: BreadcrumbSchemaProps) {
       "@type": "ListItem",
       position: index + 1,
       name: item.name,
-      item: `https://heizcenter.de${item.url}`,
+      item: `https://www.heizcenter.de${item.url}`,
     })),
   };
 

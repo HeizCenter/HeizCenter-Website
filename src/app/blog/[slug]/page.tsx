@@ -123,7 +123,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
               {/* Social Share */}
               <SocialShare
-                url={`https://heizcenter.de/blog/${post.slug}`}
+                url={`https://www.heizcenter.de/blog/${post.slug}`}
                 title={post.title}
                 description={post.excerpt}
               />

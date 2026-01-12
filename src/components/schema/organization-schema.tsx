@@ -4,8 +4,8 @@ export function OrganizationSchema() {
     "@type": "Organization",
     name: "HeizCenter GmbH",
     alternateName: "HeizCenter",
-    url: "https://heizcenter.de",
-    logo: "https://heizcenter.de/images/logo.png",
+    url: "https://www.heizcenter.de",
+    logo: "https://www.heizcenter.de/images/logo.png",
     foundingDate: "2015",
     description:
       "HeizCenter GmbH ist Ihr kompetenter Partner für Wärmepumpen, Heizung, Sanitär und Klimaanlagen in Bayern und Baden-Württemberg. Mit über 8 Jahren Erfahrung bieten wir professionelle Installation, Wartung und Notdienst.",

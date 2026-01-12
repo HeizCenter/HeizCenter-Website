@@ -33,27 +33,27 @@ export function BlogPostingSchema({
     "@type": "BlogPosting",
     headline: title,
     image: image
-      ? `https://heizcenter.de${image}`
-      : "https://heizcenter.de/images/logo.png",
+      ? `https://www.heizcenter.de${image}`
+      : "https://www.heizcenter.de/images/logo.png",
     author: {
       "@type": "Organization",
       name: "HeizCenter Redaktion",
-      url: "https://heizcenter.de",
+      url: "https://www.heizcenter.de",
     },
     publisher: {
       "@type": "Organization",
       name: "HeizCenter GmbH",
-      url: "https://heizcenter.de",
+      url: "https://www.heizcenter.de",
       logo: {
         "@type": "ImageObject",
-        url: "https://heizcenter.de/images/logo.png",
+        url: "https://www.heizcenter.de/images/logo.png",
       },
     },
     datePublished: date,
     dateModified: date,
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://heizcenter.de/blog/${slug}`,
+      "@id": `https://www.heizcenter.de/blog/${slug}`,
     },
     description: excerpt,
     articleBody: articleBodyPreview,

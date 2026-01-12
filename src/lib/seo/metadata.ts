@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 
-const baseUrl = "https://heizcenter.de";
+const baseUrl = "https://www.heizcenter.de";
 const siteName = "HeizCenter";
 const defaultTitle = "HeizCenter - Heizung, Sanitär & Wärmepumpen in Augsburg, Ulm & Memmingen";
 const defaultDescription =

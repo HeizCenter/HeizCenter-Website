@@ -27,7 +27,7 @@ export const CONTACT = {
   EMAIL_INFO: "info@heizcenter.de",
 
   // Website
-  WEBSITE: "https://heizcenter.de",
+  WEBSITE: "https://www.heizcenter.de",
 
   // Bobingen Location
   BOBINGEN: {

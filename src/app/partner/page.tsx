@@ -306,7 +306,7 @@ export default function PartnerPage() {
                 "@type": "Brand",
                 name: partner.name,
                 description: partner.description,
-                url: `https://heizcenter.de/partner/${partner.slug}`,
+                url: `https://www.heizcenter.de/partner/${partner.slug}`,
               },
             })),
           }),

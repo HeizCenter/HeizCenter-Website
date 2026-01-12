@@ -36,7 +36,7 @@ export function ServiceSchema({ serviceType }: ServiceSchemaProps) {
     provider: {
       "@type": "PlumbingHeatingContractor",
       name: "HeizCenter GmbH",
-      url: "https://heizcenter.de",
+      url: "https://www.heizcenter.de",
       telephone: "+4982349665900",
     },
     areaServed: serviceCities,
@@ -115,15 +115,15 @@ export function ServiceSchema({ serviceType }: ServiceSchemaProps) {
         },
       ],
     },
-    termsOfService: "https://heizcenter.de/agb",
-    url: "https://heizcenter.de/waermepumpe",
+    termsOfService: "https://www.heizcenter.de/agb",
+    url: "https://www.heizcenter.de/waermepumpe",
     audience: {
       "@type": "Audience",
       audienceType: "Hausbesitzer, Bauherren, Immobilienbesitzer",
     },
     availableChannel: {
       "@type": "ServiceChannel",
-      serviceUrl: "https://heizcenter.de/kontakt",
+      serviceUrl: "https://www.heizcenter.de/kontakt",
       servicePhone: "+4982349665900",
     },
   };
@@ -138,7 +138,7 @@ export function ServiceSchema({ serviceType }: ServiceSchemaProps) {
     provider: {
       "@type": "PlumbingHeatingContractor",
       name: "HeizCenter GmbH",
-      url: "https://heizcenter.de",
+      url: "https://www.heizcenter.de",
       telephone: "+4982349665900",
     },
     areaServed: serviceCities,
@@ -226,15 +226,15 @@ export function ServiceSchema({ serviceType }: ServiceSchemaProps) {
         },
       ],
     },
-    termsOfService: "https://heizcenter.de/agb",
-    url: "https://heizcenter.de/heizung",
+    termsOfService: "https://www.heizcenter.de/agb",
+    url: "https://www.heizcenter.de/heizung",
     audience: {
       "@type": "Audience",
       audienceType: "Hausbesitzer, Bauherren, Immobilienbesitzer",
     },
     availableChannel: {
       "@type": "ServiceChannel",
-      serviceUrl: "https://heizcenter.de/kontakt",
+      serviceUrl: "https://www.heizcenter.de/kontakt",
       servicePhone: "+4982349665900",
     },
   };
@@ -249,7 +249,7 @@ export function ServiceSchema({ serviceType }: ServiceSchemaProps) {
     provider: {
       "@type": "PlumbingHeatingContractor",
       name: "HeizCenter GmbH",
-      url: "https://heizcenter.de",
+      url: "https://www.heizcenter.de",
       telephone: "+4982349665900",
     },
     areaServed: serviceCities,
@@ -313,15 +313,15 @@ export function ServiceSchema({ serviceType }: ServiceSchemaProps) {
         },
       ],
     },
-    termsOfService: "https://heizcenter.de/agb",
-    url: "https://heizcenter.de/sanitaer",
+    termsOfService: "https://www.heizcenter.de/agb",
+    url: "https://www.heizcenter.de/sanitaer",
     audience: {
       "@type": "Audience",
       audienceType: "Hausbesitzer, Bauherren, Immobilienbesitzer",
     },
     availableChannel: {
       "@type": "ServiceChannel",
-      serviceUrl: "https://heizcenter.de/kontakt",
+      serviceUrl: "https://www.heizcenter.de/kontakt",
       servicePhone: "+4982349665900",
     },
   };
@@ -336,7 +336,7 @@ export function ServiceSchema({ serviceType }: ServiceSchemaProps) {
     provider: {
       "@type": "PlumbingHeatingContractor",
       name: "HeizCenter GmbH",
-      url: "https://heizcenter.de",
+      url: "https://www.heizcenter.de",
       telephone: "+4982349665900",
     },
     areaServed: serviceCities,
@@ -422,15 +422,15 @@ export function ServiceSchema({ serviceType }: ServiceSchemaProps) {
         },
       ],
     },
-    termsOfService: "https://heizcenter.de/agb",
-    url: "https://heizcenter.de/klimaanlage",
+    termsOfService: "https://www.heizcenter.de/agb",
+    url: "https://www.heizcenter.de/klimaanlage",
     audience: {
       "@type": "Audience",
       audienceType: "Hausbesitzer, Bauherren, Gewerbetreibende",
     },
     availableChannel: {
       "@type": "ServiceChannel",
-      serviceUrl: "https://heizcenter.de/kontakt",
+      serviceUrl: "https://www.heizcenter.de/kontakt",
       servicePhone: "+4982349665900",
     },
   };
@@ -445,7 +445,7 @@ export function ServiceSchema({ serviceType }: ServiceSchemaProps) {
     provider: {
       "@type": "PlumbingHeatingContractor",
       name: "HeizCenter GmbH",
-      url: "https://heizcenter.de",
+      url: "https://www.heizcenter.de",
       telephone: "+4982349665900",
     },
     areaServed: serviceCities,
@@ -557,15 +557,15 @@ export function ServiceSchema({ serviceType }: ServiceSchemaProps) {
         },
       ],
     },
-    termsOfService: "https://heizcenter.de/agb",
-    url: "https://heizcenter.de/solar",
+    termsOfService: "https://www.heizcenter.de/agb",
+    url: "https://www.heizcenter.de/solar",
     audience: {
       "@type": "Audience",
       audienceType: "Hausbesitzer, Bauherren, Immobilienbesitzer",
     },
     availableChannel: {
       "@type": "ServiceChannel",
-      serviceUrl: "https://heizcenter.de/kontakt",
+      serviceUrl: "https://www.heizcenter.de/kontakt",
       servicePhone: "+4982349665900",
     },
   };
