@@ -117,6 +117,11 @@ const nextConfig = {
         destination: "/datenschutz",
         permanent: true,
       },
+      {
+        source: "/jobs",
+        destination: "/karriere",
+        permanent: true,
+      },
     ];
   },
 };
