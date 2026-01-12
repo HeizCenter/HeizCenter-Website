@@ -60,6 +60,63 @@ const nextConfig = {
         destination: "/",
         permanent: true,
       },
+      // Umlaut redirects for SEO
+      {
+        source: "/standorte/g%C3%BCnzburg",
+        destination: "/standorte/guenzburg",
+        permanent: true,
+      },
+      {
+        source: "/standorte/günzburg",
+        destination: "/standorte/guenzburg",
+        permanent: true,
+      },
+      {
+        source: "/standorte/k%C3%B6nigsbrunn",
+        destination: "/standorte/koenigsbrunn",
+        permanent: true,
+      },
+      {
+        source: "/standorte/königsbrunn",
+        destination: "/standorte/koenigsbrunn",
+        permanent: true,
+      },
+      {
+        source: "/standorte/bad-w%C3%B6rishofen",
+        destination: "/standorte/bad-woerishofen",
+        permanent: true,
+      },
+      {
+        source: "/standorte/bad-wörishofen",
+        destination: "/standorte/bad-woerishofen",
+        permanent: true,
+      },
+      {
+        source: "/standorte/neus%C3%A4%C3%9F",
+        destination: "/standorte/neusaess",
+        permanent: true,
+      },
+      {
+        source: "/standorte/neusäß",
+        destination: "/standorte/neusaess",
+        permanent: true,
+      },
+      {
+        source: "/standorte/schwabm%C3%BCnchen",
+        destination: "/standorte/schwabmuenchen",
+        permanent: true,
+      },
+      {
+        source: "/standorte/schwabmünchen",
+        destination: "/standorte/schwabmuenchen",
+        permanent: true,
+      },
+      // Legacy URL redirects
+      {
+        source: "/datenschutzerklaerung",
+        destination: "/datenschutz",
+        permanent: true,
+      },
     ];
   },
 };
