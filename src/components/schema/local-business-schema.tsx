@@ -13,10 +13,13 @@ export function LocalBusinessSchema({
     "@type": "LocalBusiness",
     additionalType: "https://schema.org/PlumbingHeatingContractor",
     name: "HeizCenter GmbH",
+    description: "Ihr Fachbetrieb für Wärmepumpen, Heizung, Sanitär und Klimaanlagen in Bobingen und der Region Augsburg. Professionelle Installation, Wartung und 24/7 Notdienst.",
     image: "https://www.heizcenter.de/images/logo.png",
+    logo: "https://www.heizcenter.de/images/logo.png",
     "@id": "https://www.heizcenter.de/#bobingen",
     url: "https://www.heizcenter.de",
     telephone: "+4982349665900",
+    email: "service@heizcenter.de",
     priceRange: "€€",
     address: {
       "@type": "PostalAddress",
@@ -37,6 +40,12 @@ export function LocalBusinessSchema({
         dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
         opens: "08:00",
         closes: "17:00",
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: "Saturday",
+        opens: "09:00",
+        closes: "13:00",
       },
     ],
     sameAs: [
@@ -66,9 +75,9 @@ export function LocalBusinessSchema({
             "@type": "Offer",
             itemOffered: {
               "@type": "Service",
-              name: "Wärmepumpe Installation",
-              description:
-                "Professionelle Wärmepumpen-Installation mit BEG-Förderung",
+              name: "Wärmepumpen-Installation",
+              description: "Professionelle Wärmepumpen-Installation mit BEG-Förderung bis zu 70%",
+              url: "https://www.heizcenter.de/waermepumpe",
             },
           },
           {
@@ -76,15 +85,17 @@ export function LocalBusinessSchema({
             itemOffered: {
               "@type": "Service",
               name: "Heizungsinstallation",
-              description: "Installation moderner Heizsysteme",
+              description: "Installation und Wartung moderner Heizsysteme",
+              url: "https://www.heizcenter.de/heizung",
             },
           },
           {
             "@type": "Offer",
             itemOffered: {
               "@type": "Service",
-              name: "Sanitärinstallation",
-              description: "Komplette Sanitär- und Badinstallationen",
+              name: "Sanitär & Badsanierung",
+              description: "Komplette Sanitär- und Badinstallationen mit 3D-Planung",
+              url: "https://www.heizcenter.de/sanitaer",
             },
           },
           {
@@ -92,7 +103,8 @@ export function LocalBusinessSchema({
             itemOffered: {
               "@type": "Service",
               name: "Klimaanlagen-Installation",
-              description: "Installation von Klimaanlagen und Lüftungssystemen",
+              description: "Installation von Split-Klimaanlagen und Lüftungssystemen",
+              url: "https://www.heizcenter.de/klimaanlage",
             },
           },
         ],
@@ -105,10 +117,14 @@ export function LocalBusinessSchema({
     "@type": "LocalBusiness",
     additionalType: "https://schema.org/PlumbingHeatingContractor",
     name: "HeizCenter GmbH - Gutenzell-Hürbel",
+    description: "Ihr Fachbetrieb für Wärmepumpen, Heizung, Sanitär und Klimaanlagen in Gutenzell-Hürbel und der Region Ulm/Memmingen. Professionelle Installation, Wartung und 24/7 Notdienst.",
     image: "https://www.heizcenter.de/images/logo.png",
+    logo: "https://www.heizcenter.de/images/logo.png",
     "@id": "https://www.heizcenter.de/#gutenzell",
     url: "https://www.heizcenter.de/standorte/gutenzell-huerbel",
     telephone: "+4982349665900",
+    email: "service@heizcenter.de",
+    priceRange: "€€",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Gutenzell-Hürbel",
@@ -121,8 +137,23 @@ export function LocalBusinessSchema({
       latitude: 48.0667,
       longitude: 9.95,
     },
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "08:00",
+        closes: "17:00",
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: "Saturday",
+        opens: "09:00",
+        closes: "13:00",
+      },
+    ],
     parentOrganization: {
       "@type": "Organization",
+      "@id": "https://www.heizcenter.de/#organization",
       name: "HeizCenter GmbH",
       url: "https://www.heizcenter.de",
     },
@@ -142,6 +173,53 @@ export function LocalBusinessSchema({
       { "@type": "City", name: "Bad Wurzach" },
       { "@type": "City", name: "Leutkirch im Allgäu" },
     ],
+    sameAs: [
+      "https://www.facebook.com/heizcenter",
+      "https://www.instagram.com/heizcentermb/",
+      "https://www.linkedin.com/company/heizcenter/",
+    ],
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Dienstleistungen",
+      itemListElement: [
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Wärmepumpen-Installation",
+            description: "Professionelle Wärmepumpen-Installation mit BEG-Förderung bis zu 70%",
+            url: "https://www.heizcenter.de/waermepumpe",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Heizungsinstallation",
+            description: "Installation und Wartung moderner Heizsysteme",
+            url: "https://www.heizcenter.de/heizung",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Sanitär & Badsanierung",
+            description: "Komplette Sanitär- und Badinstallationen mit 3D-Planung",
+            url: "https://www.heizcenter.de/sanitaer",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Klimaanlagen-Installation",
+            description: "Installation von Split-Klimaanlagen und Lüftungssystemen",
+            url: "https://www.heizcenter.de/klimaanlage",
+          },
+        },
+      ],
+    },
   };
 
   const klosterlechfeldSchema = {
@@ -149,10 +227,14 @@ export function LocalBusinessSchema({
     "@type": "LocalBusiness",
     additionalType: "https://schema.org/PlumbingHeatingContractor",
     name: "HeizCenter GmbH - Klosterlechfeld",
+    description: "Ihr Fachbetrieb für Wärmepumpen, Heizung, Sanitär und Klimaanlagen in Klosterlechfeld und der Region Landsberg/Augsburg. Professionelle Installation, Wartung und 24/7 Notdienst.",
     image: "https://www.heizcenter.de/images/logo.png",
+    logo: "https://www.heizcenter.de/images/logo.png",
     "@id": "https://www.heizcenter.de/#klosterlechfeld",
     url: "https://www.heizcenter.de/standorte/klosterlechfeld",
     telephone: "+4982349665900",
+    email: "service@heizcenter.de",
+    priceRange: "€€",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Schulstraße 40",
@@ -173,9 +255,16 @@ export function LocalBusinessSchema({
         opens: "08:00",
         closes: "17:00",
       },
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: "Saturday",
+        opens: "09:00",
+        closes: "13:00",
+      },
     ],
     parentOrganization: {
       "@type": "Organization",
+      "@id": "https://www.heizcenter.de/#organization",
       name: "HeizCenter GmbH",
       url: "https://www.heizcenter.de",
     },
@@ -191,6 +280,53 @@ export function LocalBusinessSchema({
       { "@type": "City", name: "Königsbrunn" },
       { "@type": "City", name: "Bobingen" },
     ],
+    sameAs: [
+      "https://www.facebook.com/heizcenter",
+      "https://www.instagram.com/heizcentermb/",
+      "https://www.linkedin.com/company/heizcenter/",
+    ],
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Dienstleistungen",
+      itemListElement: [
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Wärmepumpen-Installation",
+            description: "Professionelle Wärmepumpen-Installation mit BEG-Förderung bis zu 70%",
+            url: "https://www.heizcenter.de/waermepumpe",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Heizungsinstallation",
+            description: "Installation und Wartung moderner Heizsysteme",
+            url: "https://www.heizcenter.de/heizung",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Sanitär & Badsanierung",
+            description: "Komplette Sanitär- und Badinstallationen mit 3D-Planung",
+            url: "https://www.heizcenter.de/sanitaer",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Klimaanlagen-Installation",
+            description: "Installation von Split-Klimaanlagen und Lüftungssystemen",
+            url: "https://www.heizcenter.de/klimaanlage",
+          },
+        },
+      ],
+    },
   };
 
   const schemaMap = {
@@ -226,17 +362,21 @@ export function LocationPageSchema({
   longitude,
   serviceCities,
 }: LocationPageSchemaProps) {
-  const citySlug = cityName.toLowerCase().replace(/\s+/g, "-");
-  
+  const citySlug = cityName.toLowerCase().replace(/\s+/g, "-").replace(/ä/g, "ae").replace(/ö/g, "oe").replace(/ü/g, "ue").replace(/ß/g, "ss");
+
   const schema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     additionalType: "https://schema.org/PlumbingHeatingContractor",
     name: "HeizCenter GmbH - " + cityName,
+    description: `Ihr Fachbetrieb für Wärmepumpen, Heizung, Sanitär und Klimaanlagen in ${cityName}. Professionelle Installation, Wartung und 24/7 Notdienst.`,
     image: "https://www.heizcenter.de/images/logo.png",
-    "@id": "https://www.heizcenter.de/standorte/" + citySlug,
+    logo: "https://www.heizcenter.de/images/logo.png",
+    "@id": "https://www.heizcenter.de/standorte/" + citySlug + "#business",
     url: "https://www.heizcenter.de/standorte/" + citySlug,
     telephone: "+4982349665900",
+    email: "service@heizcenter.de",
+    priceRange: "€€",
     address: {
       "@type": "PostalAddress",
       addressLocality: cityName,
@@ -249,8 +389,23 @@ export function LocationPageSchema({
       latitude: latitude,
       longitude: longitude,
     },
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "08:00",
+        closes: "17:00",
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: "Saturday",
+        opens: "09:00",
+        closes: "13:00",
+      },
+    ],
     parentOrganization: {
       "@type": "Organization",
+      "@id": "https://www.heizcenter.de/#organization",
       name: "HeizCenter GmbH",
       url: "https://www.heizcenter.de",
     },
@@ -260,6 +415,11 @@ export function LocationPageSchema({
       "@type": "City",
       name: city,
     })),
+    sameAs: [
+      "https://www.facebook.com/heizcenter",
+      "https://www.instagram.com/heizcentermb/",
+      "https://www.linkedin.com/company/heizcenter/",
+    ],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "Dienstleistungen",
@@ -268,9 +428,9 @@ export function LocationPageSchema({
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
-            name: "Wärmepumpe Installation",
-            description:
-              "Professionelle Wärmepumpen-Installation mit BEG-Förderung",
+            name: "Wärmepumpen-Installation",
+            description: "Professionelle Wärmepumpen-Installation mit BEG-Förderung bis zu 70%",
+            url: "https://www.heizcenter.de/waermepumpe",
           },
         },
         {
@@ -278,15 +438,17 @@ export function LocationPageSchema({
           itemOffered: {
             "@type": "Service",
             name: "Heizungsinstallation",
-            description: "Installation moderner Heizsysteme",
+            description: "Installation und Wartung moderner Heizsysteme",
+            url: "https://www.heizcenter.de/heizung",
           },
         },
         {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
-            name: "Sanitärinstallation",
-            description: "Komplette Sanitär- und Badinstallationen",
+            name: "Sanitär & Badsanierung",
+            description: "Komplette Sanitär- und Badinstallationen mit 3D-Planung",
+            url: "https://www.heizcenter.de/sanitaer",
           },
         },
         {
@@ -294,7 +456,8 @@ export function LocationPageSchema({
           itemOffered: {
             "@type": "Service",
             name: "Klimaanlagen-Installation",
-            description: "Installation von Klimaanlagen und Lüftungssystemen",
+            description: "Installation von Split-Klimaanlagen und Lüftungssystemen",
+            url: "https://www.heizcenter.de/klimaanlage",
           },
         },
       ],
