@@ -16,7 +16,6 @@ import {
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ServiceSchema } from "@/components/schema/service-schema";
-import { FAQSchema } from "@/components/schema/faq-schema";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
 import { getCanonicalUrl } from "@/lib/seo";
 
@@ -148,7 +147,6 @@ export default function WaermepumpePage() {
       />
       {/* Schema.org Service Structured Data */}
       <ServiceSchema serviceType="waermepumpe" />
-      <FAQSchema faqs={faqs} />
 
       <ServiceHero
         title="Wärmepumpe in Augsburg, Ulm & Memmingen"

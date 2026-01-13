@@ -17,7 +17,6 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ServiceSchema } from "@/components/schema/service-schema";
-import { FAQSchema } from "@/components/schema/faq-schema";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
 import { SolarProcessSection } from "@/components/sections/solar-process-section";
 import { SolarComparisonSection } from "@/components/sections/solar-comparison";
@@ -163,7 +162,6 @@ export default function SolarPage() {
       />
       {/* Schema.org Service Structured Data */}
       <ServiceSchema serviceType="solar" />
-      <FAQSchema faqs={faqs} />
 
       <ServiceHero
         title="Solarthermie in Augsburg, Ulm & Memmingen"

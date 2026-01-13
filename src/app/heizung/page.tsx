@@ -7,7 +7,6 @@ import { Flame, Clock, Euro, Wrench, Shield, Thermometer, Sun, Check } from "luc
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ServiceSchema } from "@/components/schema/service-schema";
-import { FAQSchema } from "@/components/schema/faq-schema";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
 import { getCanonicalUrl } from "@/lib/seo";
 
@@ -125,7 +124,6 @@ export default function HeizungPage() {
       />
       {/* Schema.org Service Structured Data */}
       <ServiceSchema serviceType="heizung" />
-      <FAQSchema faqs={faqs} />
 
       <ServiceHero
         title="Heizung in Augsburg, Ulm & Memmingen"

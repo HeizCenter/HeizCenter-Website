@@ -12,7 +12,6 @@ import {
   Shield,
 } from "lucide-react";
 import { ServiceSchema } from "@/components/schema/service-schema";
-import { FAQSchema } from "@/components/schema/faq-schema";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
 import { getCanonicalUrl } from "@/lib/seo";
 
@@ -135,7 +134,6 @@ export default function SanitaerPage() {
       />
       {/* Schema.org Service Structured Data */}
       <ServiceSchema serviceType="sanitaer" />
-      <FAQSchema faqs={faqs} />
 
       <ServiceHero
         title="Sanitär & Badsanierung in Augsburg, Ulm & Memmingen"
