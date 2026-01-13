@@ -13,11 +13,15 @@ import {
   CheckCircle2,
 } from "lucide-react";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
+import { getCanonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Wolf Wärmepumpen & Heizungen | HeizCenter Partner",
   description:
     "Wolf CHA Monoblock Wärmepumpen - Kompakt, effizient, zuverlässig. Modulierende Inverter-Technologie. Premium Heizungssysteme Made in Germany. Augsburg & Ulm.",
+  alternates: {
+    canonical: getCanonicalUrl("/partner/wolf"),
+  },
   keywords: [
     "Wolf",
     "CHA",

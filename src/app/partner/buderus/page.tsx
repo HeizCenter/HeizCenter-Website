@@ -13,11 +13,15 @@ import {
   CheckCircle2,
 } from "lucide-react";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
+import { getCanonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Buderus Wärmepumpen & Heizungen | HeizCenter Partner",
   description:
     "Buderus Logatherm Wärmepumpen Testsieger 2024. Unerhört leise, höchste Effizienz. Premium Heizungssysteme Made in Germany. Installation in Augsburg & Ulm.",
+  alternates: {
+    canonical: getCanonicalUrl("/partner/buderus"),
+  },
   keywords: [
     "Buderus",
     "Logatherm",

@@ -3,11 +3,15 @@ import Link from "next/link";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Award, CheckCircle2, Star } from "lucide-react";
+import { getCanonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Unsere Premium-Partner | Viessmann, Vaillant, Buderus & mehr",
   description: "HeizCenter arbeitet mit den führenden Herstellern zusammen: Viessmann, Vaillant, Buderus, Wolf, Stiebel Eltron, Junkers, Bosch, Daikin. Testsieger-Qualität.",
   keywords: ["Hersteller", "Partner", "Viessmann", "Vaillant", "Buderus", "Wolf", "Stiebel Eltron", "Daikin"],
+  alternates: {
+    canonical: getCanonicalUrl("/partner"),
+  },
 };
 
 export const dynamic = "force-dynamic";

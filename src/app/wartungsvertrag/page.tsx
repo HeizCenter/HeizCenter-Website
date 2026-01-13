@@ -3,11 +3,15 @@ import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Check, Shield } from "lucide-react";
+import { getCanonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Wartungsvertrag Augsburg, Ulm & Memmingen - Heizung & Wärmepumpe | HeizCenter",
   description: "Sorglos-Wartungsverträge für Ihre Heizung in Augsburg, Ulm und Memmingen. Regelmäßige Wartung, Priorität im Notfall und verlängerte Garantie.",
   keywords: ["Wartungsvertrag", "Heizungswartung", "Wärmepumpe Wartung", "Service", "Augsburg", "Ulm", "Memmingen"],
+  alternates: {
+    canonical: getCanonicalUrl("/wartungsvertrag"),
+  },
 };
 
 export default function WartungsvertragPage() {

@@ -6,11 +6,15 @@ import { CTASection } from "@/components/sections/cta-section";
 import Link from "next/link";
 import { Award, Zap, Shield, Thermometer, Settings, CheckCircle2 } from "lucide-react";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
+import { getCanonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Junkers Bosch Wärmepumpen & Heizungen | HeizCenter",
   description: "Junkers Bosch Supraeco, Compress Wärmepumpen. Teil der Bosch Thermotechnik Gruppe. Zuverlässig, effizient, bewährt. Installation Augsburg & Ulm.",
   keywords: ["Junkers", "Bosch", "Supraeco", "Compress", "Wärmepumpe", "Heizung", "Augsburg"],
+  alternates: {
+    canonical: getCanonicalUrl("/partner/junkers"),
+  },
 };
 
 export const dynamic = "force-dynamic";

@@ -10,6 +10,7 @@ import { Zap, Flame, Droplet, Wind } from "lucide-react";
 import { LocationPageSchema } from "@/components/schema/local-business-schema";
 import { locationData } from "@/lib/location-data";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
+import { getCanonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title:
@@ -25,6 +26,9 @@ export const metadata: Metadata = {
     "Heizungsnotdienst Memmingen",
     "HeizCenter Memmingen",
   ],
+  alternates: {
+    canonical: getCanonicalUrl("/standorte/memmingen"),
+  },
   openGraph: {
     title: "HeizCenter Memmingen - Ihr Experte für Wärmepumpen & Heizung",
     description:

@@ -3,12 +3,16 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Euro, FileText, CheckCircle, Info, ExternalLink, Scale } from "lucide-react";
 import Link from "next/link";
+import { getCanonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Förderung & Zuschüsse für Wärmepumpen & Heizung 2025 | HeizCenter",
   description:
     "Informationen zu BEG-Förderung, KfW-Zuschüssen und anderen Förderprogrammen für Wärmepumpen, Heizungsmodernisierung und Badsanierung. Bis zu 70% Förderung möglich.",
   keywords: ["BEG Förderung", "KfW", "Zuschuss", "Wärmepumpe", "Heizungsförderung", "BAFA", "§ 35c EStG"],
+  alternates: {
+    canonical: getCanonicalUrl("/foerderung"),
+  },
 };
 
 export default function FoerderungPage() {

@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
+import { SITE_URL } from "@/lib/seo";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -21,6 +22,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "HeizCenter - Wärmepumpen, Heizung & Sanitär in Bayern",
   description:
     "Ihr Experte für Wärmepumpen, Heizungsinstallation, Sanitär und Klimaanlagen in Bobingen, Klosterlechfeld und Gutenzell-Hürbel. Über 20 Jahre Erfahrung. Jetzt beraten lassen!",

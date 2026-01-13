@@ -5,6 +5,7 @@ import { PostCard } from "@/components/blog/post-card";
 import { getAllBlogPosts } from "@/lib/api/blog";
 import { Button } from "@/components/ui/button";
 import { HelpCircle } from "lucide-react";
+import { getCanonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Ratgeber - HeizCenter Bayern | Wärmepumpe, Heizung & mehr",
@@ -17,6 +18,9 @@ export const metadata: Metadata = {
     "Heizungsgesetz",
     "Badsanierung Tipps",
   ],
+  alternates: {
+    canonical: getCanonicalUrl("/blog"),
+  },
 };
 
 

@@ -18,6 +18,7 @@ import { Button } from "@/components/ui/button";
 import { ServiceSchema } from "@/components/schema/service-schema";
 import { FAQSchema } from "@/components/schema/faq-schema";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
+import { getCanonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Wärmepumpe Augsburg, Ulm & Memmingen - Bis 70% Förderung | HeizCenter",
@@ -32,6 +33,9 @@ export const metadata: Metadata = {
     "BEG Förderung",
     "Heizkosten sparen",
   ],
+  alternates: {
+    canonical: getCanonicalUrl("/waermepumpe"),
+  },
   openGraph: {
     title: "Wärmepumpe Installation | HeizCenter",
     description:

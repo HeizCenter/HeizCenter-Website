@@ -10,6 +10,7 @@ import { Zap, Flame, Droplet, Wind } from "lucide-react";
 import { LocationPageSchema } from "@/components/schema/local-business-schema";
 import { locationData } from "@/lib/location-data";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
+import { getCanonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title:
@@ -25,6 +26,9 @@ export const metadata: Metadata = {
     "Heizungsnotdienst Ulm",
     "HeizCenter Ulm",
   ],
+  alternates: {
+    canonical: getCanonicalUrl("/standorte/ulm"),
+  },
   openGraph: {
     title: "HeizCenter Ulm - Ihr Experte für Wärmepumpen & Heizung",
     description:

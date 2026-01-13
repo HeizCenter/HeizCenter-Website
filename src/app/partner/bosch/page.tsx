@@ -5,11 +5,15 @@ import { FAQSection, FAQItem } from "@/components/sections/faq-section";
 import { CTASection } from "@/components/sections/cta-section";
 import Link from "next/link";
 import { Award, Zap, Shield, Thermometer, Settings, CheckCircle2 } from "lucide-react";
+import { getCanonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Bosch Thermotechnik Wärmepumpen | HeizCenter Partner",
   description: "Bosch Compress Wärmepumpen - Weltkonzern-Qualität. Teil der Bosch Gruppe. Zuverlässig, effizient, innovativ. Installation Augsburg & Ulm.",
   keywords: ["Bosch", "Compress", "Wärmepumpe", "Thermotechnik", "Augsburg", "Ulm"],
+  alternates: {
+    canonical: getCanonicalUrl("/partner/bosch"),
+  },
 };
 
 export const dynamic = "force-dynamic";

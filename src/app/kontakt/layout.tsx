@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { getCanonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Kontakt - HeizCenter | Heizung, Sanitär & Wärmepumpen",
@@ -8,6 +9,9 @@ export const metadata: Metadata = {
     title: "Kontakt - HeizCenter",
     description:
       "Kontaktieren Sie uns für Beratung, Angebote oder Notdienst. Wir sind für Sie da!",
+  },
+  alternates: {
+    canonical: getCanonicalUrl("/kontakt"),
   },
 };
 

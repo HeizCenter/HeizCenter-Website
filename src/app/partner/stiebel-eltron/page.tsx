@@ -6,11 +6,15 @@ import { CTASection } from "@/components/sections/cta-section";
 import Link from "next/link";
 import { Award, Zap, Shield, Thermometer, Snowflake, CheckCircle2 } from "lucide-react";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
+import { getCanonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Stiebel Eltron Wärmepumpen | HeizCenter Partner",
   description: "Stiebel Eltron WPL Wärmepumpen - Testsieger, Made in Germany. Premium Cold Climate Heat Pumps. Zuverlässig bis -25°C. Installation Augsburg & Ulm.",
   keywords: ["Stiebel Eltron", "WPL", "Wärmepumpe", "Cold Climate", "Testsieger", "Augsburg", "Ulm"],
+  alternates: {
+    canonical: getCanonicalUrl("/partner/stiebel-eltron"),
+  },
 };
 
 export const dynamic = "force-dynamic";

@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { ServiceSchema } from "@/components/schema/service-schema";
 import { FAQSchema } from "@/components/schema/faq-schema";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
+import { getCanonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Heizung Augsburg, Ulm & Memmingen - Installation & Wartung | HeizCenter",
@@ -24,6 +25,9 @@ export const metadata: Metadata = {
     "Heizungsnotdienst",
     "Augsburg",
   ],
+  alternates: {
+    canonical: getCanonicalUrl("/heizung"),
+  },
 };
 
 export const dynamic = 'force-dynamic';

@@ -3,11 +3,15 @@ import Image from "next/image";
 import { Suspense } from "react";
 import { PriceCalculator } from "@/components/calculator/price-calculator";
 import { Calculator, CheckCircle, Info, Loader2 } from "lucide-react";
+import { getCanonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Wärmepumpen-Kostenrechner | HeizCenter",
   description: "Berechnen Sie die Kosten Ihrer neuen Wärmepumpe inkl. Förderung. Kostenloser Online-Rechner mit detaillierter Aufschlüsselung.",
   keywords: ["Wärmepumpe Kosten", "Kostenrechner", "BEG Förderung", "Heizung Rechner"],
+  alternates: {
+    canonical: getCanonicalUrl("/rechner"),
+  },
 };
 
 export default function RechnerPage() {

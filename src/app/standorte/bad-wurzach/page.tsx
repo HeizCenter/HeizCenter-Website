@@ -7,11 +7,15 @@ import { Zap, Flame, Droplet, Wind } from "lucide-react";
 import { LocationPageSchema } from "@/components/schema/local-business-schema";
 import { locationData } from "@/lib/location-data";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
+import { getCanonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "HeizCenter Bad Wurzach - Wärmepumpe & Heizung",
   description: "HeizCenter Service Bad Wurzach. Wärmepumpen, Heizung. Service aus Memmingen - 40 km.",
   keywords: ["Wärmepumpe Bad Wurzach", "Heizung Bad Wurzach"],
+  alternates: {
+    canonical: getCanonicalUrl("/standorte/bad-wurzach"),
+  },
 };
 
 export const dynamic = 'force-dynamic';

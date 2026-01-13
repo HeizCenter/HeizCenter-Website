@@ -5,12 +5,16 @@ import { Users, Award, Heart, TrendingUp, Target, Sparkles, CheckCircle2, Phone 
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { OrganizationSchema } from "@/components/schema/organization-schema";
+import { getCanonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Über uns - HeizCenter | Ihr regionaler Experte für Wärmepumpen & Heizung",
   description:
     "Lernen Sie HeizCenter kennen. Seit über 20 Jahren Ihr Partner für Wärmepumpen, Heizung, Sanitär und Klimaanlagen in Bobingen, Klosterlechfeld und Gutenzell-Hürbel.",
   keywords: ["HeizCenter", "Über uns", "Team", "Unternehmen", "Augsburg", "Wärmepumpen"],
+  alternates: {
+    canonical: getCanonicalUrl("/ueber-uns"),
+  },
 };
 
 export default function UeberUnsPage() {

@@ -21,6 +21,7 @@ import { FAQSchema } from "@/components/schema/faq-schema";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
 import { SolarProcessSection } from "@/components/sections/solar-process-section";
 import { SolarComparisonSection } from "@/components/sections/solar-comparison";
+import { getCanonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Solarthermie Augsburg, Ulm & Memmingen - Bis 70% KfW Förderung | HeizCenter",
@@ -41,6 +42,9 @@ export const metadata: Metadata = {
     title: "Solarthermie Installation | HeizCenter",
     description:
       "Moderne Solarthermie-Anlagen mit bis zu 70% staatlicher Förderung. Professionelle Installation für Warmwasser und Heizung.",
+  },
+  alternates: {
+    canonical: getCanonicalUrl("/solar"),
   },
 };
 

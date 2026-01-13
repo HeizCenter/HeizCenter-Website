@@ -7,11 +7,15 @@ import { Zap, Flame, Droplet, Wind } from "lucide-react";
 import { LocationPageSchema } from "@/components/schema/local-business-schema";
 import { locationData } from "@/lib/location-data";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
+import { getCanonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "HeizCenter Günzburg - Wärmepumpe, Heizung & Sanitär | Service vor Ort",
   description: "HeizCenter Service in Günzburg. Wärmepumpen, Heizung, Sanitär und Klimaanlagen. Schneller Service aus Ulm - nur 30 km entfernt. Jetzt anfragen!",
   keywords: ["Wärmepumpe Günzburg", "Heizung Günzburg", "Sanitär Günzburg", "Klimaanlage Günzburg"],
+  alternates: {
+    canonical: getCanonicalUrl("/standorte/guenzburg"),
+  },
 };
 
 export const dynamic = 'force-dynamic';

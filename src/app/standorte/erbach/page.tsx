@@ -7,11 +7,15 @@ import { Zap, Flame, Droplet, Wind } from "lucide-react";
 import { LocationPageSchema } from "@/components/schema/local-business-schema";
 import { locationData } from "@/lib/location-data";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
+import { getCanonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "HeizCenter Erbach (Donau) - Wärmepumpe & Heizung",
   description: "HeizCenter Service Erbach. Wärmepumpen, Heizung, Sanitär. Service aus Ulm - 20 km.",
   keywords: ["Wärmepumpe Erbach", "Heizung Erbach Donau"],
+  alternates: {
+    canonical: getCanonicalUrl("/standorte/erbach"),
+  },
 };
 
 export const dynamic = 'force-dynamic';

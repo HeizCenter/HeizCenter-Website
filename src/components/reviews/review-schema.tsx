@@ -26,6 +26,7 @@ export function ReviewSchema({
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: aggregateRating.ratingValue,
+      ratingCount: aggregateRating.reviewCount,
       reviewCount: aggregateRating.reviewCount,
       bestRating: 5,
       worstRating: 1,
@@ -44,6 +45,10 @@ export function ReviewSchema({
       },
       reviewBody: review.text,
       datePublished: review.date,
+      itemReviewed: {
+        "@type": "LocalBusiness",
+        name: businessName,
+      },
     })),
   };
 
@@ -99,6 +104,7 @@ export function ProductReviewSchema({
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: aggregateRating.ratingValue,
+      ratingCount: aggregateRating.reviewCount,
       reviewCount: aggregateRating.reviewCount,
       bestRating: 5,
       worstRating: 1,
@@ -117,6 +123,10 @@ export function ProductReviewSchema({
       },
       reviewBody: review.text,
       datePublished: review.date,
+      itemReviewed: {
+        "@type": "Product",
+        name: productName,
+      },
     })),
   };
 
@@ -164,6 +174,7 @@ export function ServiceReviewSchema({
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: aggregateRating.ratingValue,
+      ratingCount: aggregateRating.reviewCount,
       reviewCount: aggregateRating.reviewCount,
       bestRating: 5,
       worstRating: 1,
@@ -182,6 +193,10 @@ export function ServiceReviewSchema({
       },
       reviewBody: review.text,
       datePublished: review.date,
+      itemReviewed: {
+        "@type": "Service",
+        name: serviceName,
+      },
     })),
   };
 

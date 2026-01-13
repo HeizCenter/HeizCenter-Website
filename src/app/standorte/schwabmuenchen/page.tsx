@@ -7,11 +7,15 @@ import { Zap, Flame, Droplet, Wind } from "lucide-react";
 import { LocationPageSchema } from "@/components/schema/local-business-schema";
 import { locationData } from "@/lib/location-data";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
+import { getCanonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "HeizCenter Schwabmünchen - Wärmepumpe & Heizung",
   description: "HeizCenter Service Schwabmünchen. Wärmepumpen, Heizung. Service aus Augsburg - 20 km.",
   keywords: ["Wärmepumpe Schwabmünchen", "Heizung Schwabmünchen"],
+  alternates: {
+    canonical: getCanonicalUrl("/standorte/schwabmuenchen"),
+  },
 };
 
 export const dynamic = 'force-dynamic';

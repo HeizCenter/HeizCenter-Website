@@ -2,11 +2,15 @@ import { Metadata } from "next";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Download, CheckSquare } from "lucide-react";
+import { getCanonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Checklisten & Downloads | HeizCenter",
   description: "Kostenlose Checklisten für Heizungskauf, Badsanierung und Wartung. Hilfreiche Downloads für Hausbesitzer.",
   keywords: ["Checkliste", "Download", "Heizung", "Wartung", "Badsanierung"],
+  alternates: {
+    canonical: getCanonicalUrl("/checklisten"),
+  },
 };
 
 export default function ChecklistenPage() {

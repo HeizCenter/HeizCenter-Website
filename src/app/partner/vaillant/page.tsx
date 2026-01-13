@@ -13,11 +13,15 @@ import {
   CheckCircle2,
 } from "lucide-react";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
+import { getCanonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Vaillant Wärmepumpen & Heizungen | HeizCenter Partner",
   description:
     "Premium Vaillant Wärmepumpen aroTHERM Serie. Effiziente Heizungssysteme ecoTEC. Marktführer mit über 150 Jahren Erfahrung. Installation in Augsburg & Ulm.",
+  alternates: {
+    canonical: getCanonicalUrl("/partner/vaillant"),
+  },
   keywords: [
     "Vaillant",
     "aroTHERM",

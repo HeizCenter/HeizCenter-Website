@@ -3,11 +3,15 @@ import { FAQSection, FAQItem } from "@/components/sections/faq-section";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { HelpCircle, Zap, Flame, Droplet, Wind, Wrench, Phone } from "lucide-react";
 import Link from "next/link";
+import { getCanonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Häufig gestellte Fragen (FAQ) | HeizCenter",
   description: "Antworten auf die häufigsten Fragen zu Wärmepumpen, Heizung, Sanitär, Klimaanlage und unserem Service.",
   keywords: ["FAQ", "Häufige Fragen", "Wärmepumpe FAQ", "Heizung FAQ", "Sanitär FAQ"],
+  alternates: {
+    canonical: getCanonicalUrl("/faq"),
+  },
 };
 
 export const dynamic = 'force-dynamic';

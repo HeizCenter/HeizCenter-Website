@@ -7,6 +7,7 @@ import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { getBlogPostsByCategory, getAllCategories } from "@/lib/api/blog";
 import { PostCard } from "@/components/blog/post-card";
+import { getCanonicalUrl } from "@/lib/seo";
 
 const allCategories = [
   { name: "Alle", slug: null },
@@ -40,6 +41,9 @@ export async function generateMetadata({
   return {
     title: `${category.name} Ratgeber - HeizCenter Bayern`,
     description: category.description,
+    alternates: {
+      canonical: getCanonicalUrl(`/blog/kategorie/${params.category}`),
+    },
   };
 }
 

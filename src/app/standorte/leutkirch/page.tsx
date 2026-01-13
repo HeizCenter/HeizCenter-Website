@@ -7,11 +7,15 @@ import { Zap, Flame, Droplet, Wind } from "lucide-react";
 import { LocationPageSchema } from "@/components/schema/local-business-schema";
 import { locationData } from "@/lib/location-data";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
+import { getCanonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "HeizCenter Leutkirch - Wärmepumpe & Heizung",
   description: "HeizCenter Service Leutkirch. Wärmepumpen, Heizung. Service aus Memmingen - 35 km.",
   keywords: ["Wärmepumpe Leutkirch", "Heizung Leutkirch"],
+  alternates: {
+    canonical: getCanonicalUrl("/standorte/leutkirch"),
+  },
 };
 
 export const dynamic = 'force-dynamic';

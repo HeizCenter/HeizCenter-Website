@@ -10,6 +10,7 @@ import { Zap, Flame, Droplet, Wind } from "lucide-react";
 import { LocationPageSchema } from "@/components/schema/local-business-schema";
 import { locationData } from "@/lib/location-data";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
+import { getCanonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title:
@@ -27,6 +28,9 @@ export const metadata: Metadata = {
     "Heizung Ulm",
     "Heizung Memmingen",
   ],
+  alternates: {
+    canonical: getCanonicalUrl("/standorte/gutenzell-huerbel"),
+  },
   openGraph: {
     title: "HeizCenter Gutenzell-Hürbel - Hauptstandort für Wärmepumpen & Heizung",
     description:

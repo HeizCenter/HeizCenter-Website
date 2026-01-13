@@ -14,6 +14,7 @@ import {
 import { ServiceSchema } from "@/components/schema/service-schema";
 import { FAQSchema } from "@/components/schema/faq-schema";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
+import { getCanonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Klimaanlage Augsburg, Ulm & Memmingen - Installation & Wartung | HeizCenter",
@@ -29,6 +30,9 @@ export const metadata: Metadata = {
     "Augsburg",
     "Ulm",
   ],
+  alternates: {
+    canonical: getCanonicalUrl("/klimaanlage"),
+  },
 };
 
 export const dynamic = 'force-dynamic';

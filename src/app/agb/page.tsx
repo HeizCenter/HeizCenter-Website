@@ -1,11 +1,15 @@
 import { Metadata } from "next";
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
+import { getCanonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "AGB – Allgemeine Geschäftsbedingungen | HeizCenter",
   description: "AGB als PDF-Download",
   robots: "noindex, nofollow",
+  alternates: {
+    canonical: getCanonicalUrl("/agb"),
+  },
 };
 
 export default function AGBPage() {

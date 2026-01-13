@@ -5,11 +5,15 @@ import { FAQSection, FAQItem } from "@/components/sections/faq-section";
 import { CTASection } from "@/components/sections/cta-section";
 import Link from "next/link";
 import { Award, Zap, Wind, Thermometer, Snowflake, CheckCircle2 } from "lucide-react";
+import { getCanonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Daikin Altherma Wärmepumpen & Klimaanlagen | HeizCenter",
   description: "Daikin Altherma Wärmepumpen - Weltmarktführer Klimatechnik. Heizen, Kühlen, Lüften in einem System. VRV & Multi-Split Systeme. Installation Augsburg.",
   keywords: ["Daikin", "Altherma", "Klimaanlage", "Wärmepumpe", "VRV", "Augsburg", "Ulm"],
+  alternates: {
+    canonical: getCanonicalUrl("/partner/daikin"),
+  },
 };
 
 export const dynamic = "force-dynamic";

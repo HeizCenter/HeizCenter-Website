@@ -3,12 +3,16 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Briefcase, Heart, TrendingUp, Users, MapPin } from "lucide-react";
 import Link from "next/link";
+import { getCanonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Karriere bei HeizCenter | Jobs & Ausbildung",
   description:
     "Werde Teil des HeizCenter Teams! Ausbildungsplätze, Jobs für Installateure, Heizungsbauer und Servicetechniker in Bobingen, Klosterlechfeld und Gutenzell-Hürbel.",
   keywords: ["Karriere", "Jobs", "Ausbildung", "Installateur", "Heizungsbauer", "Augsburg"],
+  alternates: {
+    canonical: getCanonicalUrl("/karriere"),
+  },
 };
 
 export default function KarrierePage() {

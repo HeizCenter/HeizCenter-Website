@@ -11,6 +11,7 @@ import { RelatedPosts } from "@/components/blog/related-posts";
 import { TableOfContents } from "@/components/blog/table-of-contents";
 import { BlogPostingSchema } from "@/components/schema/blog-posting-schema";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
+import { getCanonicalUrl } from "@/lib/seo";
 
 interface BlogPostPageProps {
   params: {
@@ -33,6 +34,9 @@ export async function generateMetadata({
     title: `${post.title} - HeizCenter Ratgeber`,
     description: post.excerpt,
     keywords: post.tags,
+    alternates: {
+      canonical: getCanonicalUrl(`/blog/${post.slug}`),
+    },
     openGraph: {
       title: post.title,
       description: post.excerpt,

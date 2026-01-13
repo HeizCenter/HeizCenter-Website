@@ -6,6 +6,7 @@ import { Zap, Flame, Droplet, Wind } from "lucide-react";
 import { LocationPageSchema } from "@/components/schema/local-business-schema";
 import { locationData } from "@/lib/location-data";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
+import { getCanonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Wärmepumpe & Heizung Neusäß - HeizCenter | Ihr Fachbetrieb vor Ort",
@@ -18,6 +19,9 @@ export const metadata: Metadata = {
     "Klimaanlage Neusäß",
     "HeizCenter Neusäß",
   ],
+  alternates: {
+    canonical: getCanonicalUrl("/standorte/neusaess"),
+  },
 };
 
 const services: LocationService[] = [

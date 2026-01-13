@@ -98,19 +98,20 @@ export const shouldShowReviewCount = () => {
 };
 
 // Schema.org Format (für SEO)
+// Google erfordert BEIDE: ratingCount UND reviewCount für Rich Snippets
 export const getSchemaRating = () => {
   return {
     "@type": "AggregateRating",
     ratingValue: REVIEWS.google.rating.toString(),
     bestRating: "5",
     worstRating: "1",
-    ...(REVIEWS.display.showCountInSchema && {
-      reviewCount: REVIEWS.google.count.toString(),
-    }),
+    ratingCount: REVIEWS.google.count.toString(),
+    reviewCount: REVIEWS.google.count.toString(),
   };
 };
 
 // Schema.org Reviews Array (für Rich Snippets - Google erfordert echte Reviews!)
+// itemReviewed verweist auf das LocalBusiness für korrekte Schema-Zuordnung
 export const getSchemaReviews = () => {
   return REVIEWS.testimonials.map((review) => ({
     "@type": "Review",
@@ -126,5 +127,9 @@ export const getSchemaReviews = () => {
     },
     reviewBody: review.text,
     datePublished: review.date,
+    itemReviewed: {
+      "@type": "LocalBusiness",
+      name: "HeizCenter GmbH",
+    },
   }));
 };

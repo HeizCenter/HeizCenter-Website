@@ -1,7 +1,24 @@
 import { Metadata } from "next";
 
-const baseUrl = "https://www.heizcenter.de";
+export const SITE_URL = "https://www.heizcenter.de";
+const baseUrl = SITE_URL;
 const siteName = "HeizCenter";
+
+/**
+ * Generate a canonical URL for a given path
+ * @param path - The path to generate the canonical URL for (e.g., "/waermepumpe" or "/standorte/memmingen")
+ * @returns The full canonical URL (e.g., "https://www.heizcenter.de/waermepumpe")
+ */
+export function getCanonicalUrl(path: string): string {
+  // Homepage special case - no trailing path
+  if (path === "/" || path === "") {
+    return baseUrl;
+  }
+  // Remove trailing slash and ensure path starts with /
+  const cleanPath = path.startsWith("/") ? path : `/${path}`;
+  const normalizedPath = cleanPath.replace(/\/$/, "");
+  return `${baseUrl}${normalizedPath}`;
+}
 const defaultTitle = "HeizCenter - Heizung, Sanitär & Wärmepumpen in Augsburg, Ulm & Memmingen";
 const defaultDescription =
   "Ihr Experte für Wärmepumpen, Heizung, Sanitär & Klimaanlagen in Augsburg, Ulm und Memmingen. BEG-Förderung, Meisterbetrieb, 24/7 Notdienst. Jetzt beraten lassen!";
@@ -164,6 +181,7 @@ export function generateLocalBusinessSchema(location: {
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: "4.9",
+      ratingCount: "60",
       reviewCount: "60",
       bestRating: "5",
       worstRating: "1",

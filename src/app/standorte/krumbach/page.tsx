@@ -7,11 +7,15 @@ import { Zap, Flame, Droplet, Wind } from "lucide-react";
 import { LocationPageSchema } from "@/components/schema/local-business-schema";
 import { locationData } from "@/lib/location-data";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
+import { getCanonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "HeizCenter Krumbach - Wärmepumpe, Heizung & Sanitär",
   description: "HeizCenter Service in Krumbach. Wärmepumpen, Heizung, Sanitär. Service aus Ulm - 35 km entfernt.",
   keywords: ["Wärmepumpe Krumbach", "Heizung Krumbach", "Sanitär Krumbach"],
+  alternates: {
+    canonical: getCanonicalUrl("/standorte/krumbach"),
+  },
 };
 
 export const dynamic = 'force-dynamic';

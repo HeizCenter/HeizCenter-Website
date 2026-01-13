@@ -14,6 +14,7 @@ import {
 import { ServiceSchema } from "@/components/schema/service-schema";
 import { FAQSchema } from "@/components/schema/faq-schema";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
+import { getCanonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Sanitär & Badsanierung Augsburg, Ulm & Memmingen | HeizCenter",
@@ -29,6 +30,9 @@ export const metadata: Metadata = {
     "Ulm",
     "Memmingen",
   ],
+  alternates: {
+    canonical: getCanonicalUrl("/sanitaer"),
+  },
 };
 
 export const dynamic = 'force-dynamic';

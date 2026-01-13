@@ -4,12 +4,16 @@ import Link from "next/link";
 import { Phone, Clock, AlertCircle, Check, ShieldCheck, FileText, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { getCanonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "24/7 Heizungsnotdienst für Wartungskunden | HeizCenter",
   description:
     "24/7 Heizungsnotdienst exklusiv für Kunden mit Wartungsvertrag. Schnelle Hilfe bei Heizungsausfall, Rohrbruch und Notfällen. ☎ +49 8234 9665900",
   keywords: ["Notdienst", "Heizungsnotdienst", "24/7", "Wartungsvertrag", "Bobingen", "Gutenzell-Hürbel", "Augsburg"],
+  alternates: {
+    canonical: getCanonicalUrl("/notdienst"),
+  },
 };
 
 export default function NotdienstPage() {

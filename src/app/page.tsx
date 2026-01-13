@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
@@ -6,6 +7,16 @@ import { Badge } from "@/components/ui/badge";
 import { Flame, Droplet, Wind, Zap, Sun, Star, Award, Users } from "lucide-react";
 import { LocalBusinessSchema } from "@/components/schema/local-business-schema";
 import { OrganizationSchema } from "@/components/schema/organization-schema";
+import { getCanonicalUrl } from "@/lib/seo";
+
+export const metadata: Metadata = {
+  title: "HeizCenter - Wärmepumpen, Heizung & Sanitär in Bayern",
+  description:
+    "Ihr Experte für Wärmepumpen, Heizungsinstallation, Sanitär und Klimaanlagen in Bobingen, Klosterlechfeld und Gutenzell-Hürbel. Über 20 Jahre Erfahrung. Jetzt beraten lassen!",
+  alternates: {
+    canonical: getCanonicalUrl("/"),
+  },
+};
 
 const services = [
   {

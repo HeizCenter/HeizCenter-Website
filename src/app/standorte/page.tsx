@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { MapPin, Clock, Phone, Building2 } from "lucide-react";
+import { getCanonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Standorte - HeizCenter Bayern | Wärmepumpe, Heizung, Sanitär",
@@ -16,6 +17,9 @@ export const metadata: Metadata = {
     "Klosterlechfeld",
     "Gutenzell-Hürbel",
   ],
+  alternates: {
+    canonical: getCanonicalUrl("/standorte"),
+  },
 };
 
 interface Location {
