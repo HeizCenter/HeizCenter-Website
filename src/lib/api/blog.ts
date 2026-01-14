@@ -10183,8 +10183,8 @@ function getMockBlogPosts(): BlogPost[] {
           </thead>
           <tbody>
             <tr>
-              <td>Wärmepumpe + Installation</td>
-              <td class="price">25.000 – 35.000 €</td>
+              <td>Wärmepumpe + Installation (inkl. Pufferspeicher)</td>
+              <td class="price">30.000 – 45.000 €</td>
             </tr>
             <tr>
               <td>Ggf. Heizkörpertausch (einzelne Räume)</td>
@@ -10200,10 +10200,15 @@ function getMockBlogPosts(): BlogPost[] {
             </tr>
             <tr>
               <td><strong>Gesamt vor Förderung</strong></td>
-              <td class="price"><strong>28.000 – 42.000 €</strong></td>
+              <td class="price"><strong>33.000 – 52.500 €</strong></td>
             </tr>
           </tbody>
         </table>
+
+        <div class="bg-amber-50 border-l-4 border-amber-400 p-4 my-6">
+          <p class="font-semibold text-amber-900 mb-2">💡 Praxisbeispiel: Familie Maier aus Gutenzell-Hürbel</p>
+          <p class="text-amber-800">Altbau von 1978, 160 m², Heizung bisher mit Öl. Neue Luft-Wasser-Wärmepumpe (Hochtemperatur) mit Pufferspeicher. Gesamtkosten: 42.000 €. Mit 50% Förderung (auf 30.000 € gedeckelt): <strong>15.000 € Zuschuss → Eigenanteil 27.000 €</strong>. Ersparnis gegenüber Öl: ca. 1.400 €/Jahr.</p>
+        </div>
 
         <h3>Betriebskosten im Vergleich</h3>
 
@@ -10253,7 +10258,7 @@ function getMockBlogPosts(): BlogPost[] {
               <td class="price">+20%</td>
             </tr>
             <tr>
-              <td>Einkommensbonus (unter 40.000 € zu versteuerndes Einkommen)</td>
+              <td><strong>ODER</strong> Einkommensbonus (unter 40.000 € zvE)</td>
               <td class="price">+30%</td>
             </tr>
             <tr>
@@ -10261,11 +10266,19 @@ function getMockBlogPosts(): BlogPost[] {
               <td class="price">+5%</td>
             </tr>
             <tr>
-              <td><strong>Maximal</strong></td>
-              <td class="price"><strong>70%</strong></td>
+              <td><strong>Realistisch erreichbar</strong></td>
+              <td class="price"><strong>50–65%</strong></td>
             </tr>
           </tbody>
         </table>
+
+        <div class="callout callout-warning">
+          <span class="callout-icon">⚠️</span>
+          <div class="callout-title">Wichtig: Förderhöchstgrenze beachten</div>
+          <div class="callout-content">
+            <p>Die förderfähigen Kosten sind auf <strong>30.000 €</strong> gedeckelt (selbstgenutztes EFH). Klimabonus und Einkommensbonus sind <strong>nicht kombinierbar</strong> – Sie erhalten entweder den einen oder den anderen!</p>
+          </div>
+        </div>
 
         <h3>Rechenbeispiel</h3>
 
@@ -10273,17 +10286,18 @@ function getMockBlogPosts(): BlogPost[] {
           <span class="callout-icon">📊</span>
           <div class="callout-title">Beispielrechnung: Altbau mit Gasheizung</div>
           <div class="callout-content">
-            <p><strong>Gesamtkosten:</strong> 35.000 €<br>
-            <strong>Grundförderung (30%):</strong> -10.500 €<br>
-            <strong>Klimabonus (20%):</strong> -7.000 €<br>
-            <strong>= Eigenanteil:</strong> 17.500 €</p>
+            <p><strong>Gesamtkosten:</strong> 38.000 €<br>
+            <strong>Förderfähige Kosten (max.):</strong> 30.000 €<br>
+            <strong>Förderung 50% (30% Grund + 20% Klimabonus):</strong> -15.000 €<br>
+            <strong>= Eigenanteil:</strong> 23.000 €</p>
+            <p class="text-sm mt-2">Bei Einkommensbonus statt Klimabonus: 60% von 30.000 € = 18.000 € Förderung → 20.000 € Eigenanteil</p>
           </div>
         </div>
 
         <h2>So gehen Sie vor: Schritt für Schritt</h2>
 
         <h3>Schritt 1: Energieberater konsultieren</h3>
-        <p>Ein zertifizierter Energieberater prüft Ihr Haus und berechnet die Heizlast. Die Kosten (ca. 300–500 €) werden zu 80% gefördert.</p>
+        <p>Ein zertifizierter Energieberater prüft Ihr Haus und berechnet die Heizlast. Die Kosten (500–1.500 €) werden mit 50% gefördert (max. 1.300 € Zuschuss über die Bundesförderung für Energieberatung).</p>
 
         <h3>Schritt 2: Angebote einholen</h3>
         <p>Lassen Sie sich von qualifizierten Fachbetrieben Angebote erstellen. Achten Sie auf Referenzen im Altbau-Bereich.</p>
@@ -10299,8 +10313,13 @@ function getMockBlogPosts(): BlogPost[] {
         <p>Mit der richtigen Planung und den aktuellen Förderungen ist die Wärmepumpe auch im Altbau eine wirtschaftlich und ökologisch sinnvolle Investition. Die Technik ist ausgereift, die Förderung so hoch wie nie.</p>
 
         <div class="cta-box">
-          <h4>Kostenlose Altbau-Beratung</h4>
-          <p>Unsere Experten prüfen Ihr Haus und sagen Ihnen ehrlich, ob eine Wärmepumpe für Sie sinnvoll ist. Kostenlos und unverbindlich.</p>
+          <h4>Ist Ihr Altbau wärmepumpen-geeignet? Kostenlose Prüfung vor Ort</h4>
+          <p>Unsere Altbau-Spezialisten prüfen bei Ihnen vor Ort, ob und wie eine Wärmepumpe funktioniert. Mit Heizlastberechnung und Förderberatung – kostenlos und unverbindlich.</p>
+          <p>
+            <strong>✓</strong> Über 200 Altbau-Projekte erfolgreich umgesetzt<br>
+            <strong>✓</strong> BEG-Förderantrag inklusive<br>
+            <strong>✓</strong> Ehrliche Beratung – auch wenn es sich nicht lohnt
+          </p>
           <p>
             <strong>Telefon:</strong> <a href="tel:+4982349665900">+49 8234 9665900</a><br>
             <strong>E-Mail:</strong> <a href="mailto:service@heizcenter.de">service@heizcenter.de</a>
@@ -10312,7 +10331,7 @@ function getMockBlogPosts(): BlogPost[] {
       date: '2025-01-14',
       readingTime: 12,
       image: '/images/HeizCenter_Waermepumpe.webp',
-      tags: ['Wärmepumpe Altbau', 'Nachrüsten', 'Sanierung', 'Förderung', 'Kosten', 'Voraussetzungen'],
+      tags: ['Wärmepumpe Altbau', 'Nachrüsten', 'Sanierung', 'Förderung', 'BEG', 'Kosten', 'Voraussetzungen'],
       featured: false,
     },
     {
@@ -10338,7 +10357,7 @@ function getMockBlogPosts(): BlogPost[] {
         <p>Die regelmäßige Wartung Ihrer Heizung bringt gleich mehrere Vorteile:</p>
 
         <h3>1. Effizienz erhalten</h3>
-        <p>Verschmutzte Brenner und Wärmetauscher verbrauchen mehr Energie. Eine Wartung kann <strong>bis zu 10% Heizkosten</strong> einsparen – das sind bei einem Einfamilienhaus schnell 200–300 € pro Jahr.</p>
+        <p>Verschmutzte Brenner und Wärmetauscher verbrauchen mehr Energie. Eine Wartung kann <strong>bis zu 10% Heizkosten</strong> einsparen – besonders bei älteren oder länger nicht gewarteten Anlagen. Bei gut gepflegten Systemen sind 2–5% realistisch. Das sind bei einem Einfamilienhaus schnell 100–300 € pro Jahr.</p>
 
         <h3>2. Ausfälle vermeiden</h3>
         <p>Die meisten Heizungsausfälle passieren im Winter – genau dann, wenn Sie die Heizung am dringendsten brauchen. Bei einer Wartung werden Verschleißteile erkannt und vorsorglich getauscht.</p>
@@ -10366,7 +10385,9 @@ function getMockBlogPosts(): BlogPost[] {
         <p>Eine allgemeine Wartungspflicht gibt es nicht. Allerdings schreibt die Bundes-Immissionsschutzverordnung (BImSchV) regelmäßige Abgasmessungen durch den Schornsteinfeger vor:</p>
 
         <ul>
-          <li><strong>Gasheizung:</strong> Alle 2 Jahre (bei Heizwert) bzw. jährlich (bei Brennwert über 11 kW)</li>
+          <li><strong>Gasheizung (Heizwertgeräte):</strong> Alle 1–2 Jahre je nach Leistung</li>
+          <li><strong>Gasheizung (Brennwert 4–25 kW):</strong> Alle 2 Jahre</li>
+          <li><strong>Gasheizung (Brennwert über 25 kW):</strong> Jährlich</li>
           <li><strong>Ölheizung:</strong> Jährlich</li>
         </ul>
 
@@ -10456,6 +10477,11 @@ function getMockBlogPosts(): BlogPost[] {
           </div>
         </div>
 
+        <div class="bg-green-50 border-l-4 border-green-400 p-4 my-6">
+          <p class="font-semibold text-green-900 mb-2">💰 Wartung zahlt sich aus: Beispiel aus Bobingen</p>
+          <p class="text-green-800">Nach der Wartung einer 15 Jahre alten Gasheizung sank der Gasverbrauch eines Kunden um 8%. Bei 20.000 kWh Jahresverbrauch (ca. 2.400 €) entspricht das einer Ersparnis von <strong>ca. 190 € pro Jahr</strong>. Wartungskosten: 159 €. Die Wartung hat sich also im ersten Jahr bereits bezahlt gemacht.</p>
+        </div>
+
         <h2>Wartungsvertrag: Lohnt sich das?</h2>
 
         <p>Ein Wartungsvertrag bietet mehrere Vorteile:</p>
@@ -10501,8 +10527,13 @@ function getMockBlogPosts(): BlogPost[] {
         <p>Die jährliche Heizungswartung ist eine kleine Investition, die sich mehrfach auszahlt: durch niedrigere Heizkosten, vermiedene Reparaturen und die Sicherheit, dass Ihre Heizung im Winter zuverlässig läuft.</p>
 
         <div class="cta-box">
-          <h4>Wartungstermin vereinbaren</h4>
-          <p>Wir warten alle Heizungstypen – schnell, zuverlässig und zu fairen Preisen. Fragen Sie auch nach unserem Wartungsvertrag mit 24/7 Notdienst.</p>
+          <h4>Wartung jetzt buchen – Festpreis ohne Überraschungen</h4>
+          <p>Wir warten alle Heizungstypen: Gasheizung ab 139 €, Wärmepumpe ab 189 €. Wartungsvertrag mit 24/7 Notdienst auf Wunsch inklusive.</p>
+          <p>
+            <strong>✓</strong> Alle Marken und Heizungstypen<br>
+            <strong>✓</strong> Termine auch am Wochenende<br>
+            <strong>✓</strong> Vollständiges Wartungsprotokoll
+          </p>
           <p>
             <strong>Telefon:</strong> <a href="tel:+4982349665900">+49 8234 9665900</a><br>
             <strong>E-Mail:</strong> <a href="mailto:service@heizcenter.de">service@heizcenter.de</a>
