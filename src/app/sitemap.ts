@@ -1,6 +1,7 @@
 import { MetadataRoute } from "next";
+import { getAllBlogPosts, getAllCategories } from "@/lib/api/blog";
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = "https://www.heizcenter.de";
 
   // Main pages
@@ -192,35 +193,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  // Blog categories
-  const blogCategories = [
-    "waermepumpe",
-    "heizung",
-    "sanitaer",
-    "klimaanlage",
-    "foerderung",
-  ];
-
-  const categoryPages = blogCategories.map((category) => ({
-    url: `${baseUrl}/blog/kategorie/${category}`,
+  // Blog categories - dynamically from API
+  const categories = await getAllCategories();
+  const categoryPages = categories.map((category) => ({
+    url: `${baseUrl}/blog/kategorie/${category.slug}`,
     lastModified: new Date(),
-    changeFrequency: "daily" as const,
+    changeFrequency: "weekly" as const,
     priority: 0.7,
   }));
 
-  // TODO: Add dynamic blog posts from Odoo CMS
-  // For now, we'll add placeholder URLs
-  const blogPosts = [
-    "waermepumpe-kosten-2025",
-    "heizungsgesetz-2024",
-    "beg-foerderung-2025",
-    "waermepumpe-altbau",
-    "heizung-wartung",
-  ].map((slug) => ({
-    url: `${baseUrl}/blog/${slug}`,
-    lastModified: new Date(),
+  // Blog posts - dynamically from API (only existing posts)
+  const posts = await getAllBlogPosts();
+  const blogPosts = posts.map((post) => ({
+    url: `${baseUrl}/blog/${post.slug}`,
+    lastModified: new Date(post.date),
     changeFrequency: "monthly" as const,
-    priority: 0.6,
+    priority: 0.7,
   }));
 
   return [

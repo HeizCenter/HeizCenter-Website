@@ -10084,6 +10084,439 @@ function getMockBlogPosts(): BlogPost[] {
       tags: ['Solarthermie Planung', 'Dimensionierung', 'Auslegung', 'Kollektorfläche', 'Speichergröße', 'Berechnung', 'Anlagenplanung'],
       featured: true,
     },
+    {
+      id: 26,
+      slug: 'waermepumpe-altbau',
+      title: 'Wärmepumpe im Altbau: Lohnt sich das? Kosten, Voraussetzungen & Tipps',
+      excerpt: 'Wärmepumpe im Altbau nachrüsten? Erfahren Sie, wann es sich lohnt, welche Voraussetzungen nötig sind und wie Sie bis zu 70% Förderung erhalten.',
+      content: `
+        <p class="text-xl leading-relaxed text-slate-600 mb-8">Wärmepumpen galten lange als Technologie nur für Neubauten. Das stimmt heute nicht mehr. Mit moderner Technik und attraktiven Förderungen von bis zu 70% ist die Wärmepumpe auch im Altbau eine wirtschaftlich sinnvolle Lösung – wenn die Voraussetzungen stimmen.</p>
+
+        <div class="flex flex-wrap gap-4 mb-8 text-sm text-slate-600">
+          <span class="flex items-center gap-1">✓ Über 200 Altbau-Projekte realisiert</span>
+          <span class="flex items-center gap-1">✓ BEG-Förderexperten</span>
+          <span class="flex items-center gap-1">✓ Kostenlose Vor-Ort-Beratung</span>
+        </div>
+
+        <div class="highlight-quote">
+          Mit bis zu 70% Förderung und modernen Hochtemperatur-Wärmepumpen ist der Altbau kein Hindernis mehr. Die Amortisation liegt oft bei nur 8–12 Jahren.
+        </div>
+
+        <h2>Funktioniert eine Wärmepumpe im Altbau?</h2>
+
+        <p>Die klare Antwort: <strong>Ja, in den meisten Fällen</strong>. Entscheidend ist nicht das Baujahr Ihres Hauses, sondern die Heizlast und die mögliche Vorlauftemperatur.</p>
+
+        <p>Moderne Luft-Wasser-Wärmepumpen erreichen Vorlauftemperaturen von bis zu 70°C – das reicht für viele Altbauten völlig aus. Auch wenn Ihre Heizkörper nicht die neuesten sind, kann eine Wärmepumpe funktionieren.</p>
+
+        <h3>Der entscheidende Faktor: Vorlauftemperatur</h3>
+
+        <p>Je niedriger die benötigte Vorlauftemperatur, desto effizienter arbeitet die Wärmepumpe:</p>
+
+        <ul>
+          <li><strong>Fußbodenheizung:</strong> 30–35°C – ideal für Wärmepumpen</li>
+          <li><strong>Moderne Flachheizkörper:</strong> 45–55°C – gut geeignet</li>
+          <li><strong>Alte Rippenheizkörper:</strong> 55–70°C – möglich mit Hochtemperatur-Wärmepumpe</li>
+        </ul>
+
+        <div class="callout callout-info">
+          <span class="callout-icon">💡</span>
+          <div class="callout-title">Tipp vom Experten</div>
+          <div class="callout-content">
+            <p>Testen Sie Ihre Heizkörper: Drehen Sie an einem kalten Tag den Heizungsvorlauf auf 50°C. Werden alle Räume warm? Dann ist eine Wärmepumpe sehr wahrscheinlich möglich.</p>
+          </div>
+        </div>
+
+        <h2>Voraussetzungen prüfen</h2>
+
+        <p>Bevor Sie eine Wärmepumpe im Altbau installieren, sollten folgende Punkte geprüft werden:</p>
+
+        <h3>1. Heizlast des Gebäudes</h3>
+
+        <p>Die Heizlast gibt an, wie viel Wärme Ihr Haus benötigt. Ein Energieberater berechnet diese genau. Als Faustregel gilt:</p>
+
+        <ul>
+          <li><strong>Unsanierter Altbau (vor 1980):</strong> 100–150 W/m²</li>
+          <li><strong>Teilsaniert (Fenster + Dach):</strong> 60–100 W/m²</li>
+          <li><strong>Gut saniert:</strong> 40–60 W/m²</li>
+        </ul>
+
+        <h3>2. Vorhandene Heizkörper</h3>
+
+        <p>Große Heizkörper sind vorteilhaft – sie können mit niedrigeren Vorlauftemperaturen arbeiten. Oft ist ein Heizkörpertausch gar nicht nötig oder nur in einzelnen Räumen sinnvoll.</p>
+
+        <h3>3. Dämmstandard</h3>
+
+        <p>Eine Wärmepumpe funktioniert auch ohne perfekte Dämmung. Allerdings verbessert jede Dämmmaßnahme die Effizienz. Sinnvolle Reihenfolge:</p>
+
+        <ol>
+          <li>Oberste Geschossdecke / Dach (oft günstig und wirkungsvoll)</li>
+          <li>Kellerdecke</li>
+          <li>Fenster (falls noch Einfachverglasung)</li>
+          <li>Fassade (aufwändig, aber großer Effekt)</li>
+        </ol>
+
+        <h3>4. Aufstellort für Außeneinheit</h3>
+
+        <p>Die Außeneinheit einer Luft-Wasser-Wärmepumpe benötigt:</p>
+
+        <ul>
+          <li>Mindestabstand zum Nachbarn (Schallschutz)</li>
+          <li>Freie Luftzirkulation</li>
+          <li>Fundament oder Wandhalterung</li>
+          <li>Kondensat-Ableitung</li>
+        </ul>
+
+        <h3>5. Elektroanschluss</h3>
+
+        <p>Die meisten Wärmepumpen benötigen einen 400V-Drehstromanschluss. Dieser ist in den meisten Häusern vorhanden oder kann nachgerüstet werden.</p>
+
+        <h2>Kosten einer Wärmepumpe im Altbau</h2>
+
+        <p>Im Altbau liegen die Gesamtkosten etwas höher als im Neubau – aber die Förderung gleicht das mehr als aus.</p>
+
+        <table class="cost-table">
+          <thead>
+            <tr>
+              <th>Kostenposition</th>
+              <th>Kosten</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Wärmepumpe + Installation</td>
+              <td class="price">25.000 – 35.000 €</td>
+            </tr>
+            <tr>
+              <td>Ggf. Heizkörpertausch (einzelne Räume)</td>
+              <td class="price">2.000 – 5.000 €</td>
+            </tr>
+            <tr>
+              <td>Ggf. Elektroanpassung</td>
+              <td class="price">500 – 1.500 €</td>
+            </tr>
+            <tr>
+              <td>Hydraulischer Abgleich</td>
+              <td class="price">500 – 1.000 €</td>
+            </tr>
+            <tr>
+              <td><strong>Gesamt vor Förderung</strong></td>
+              <td class="price"><strong>28.000 – 42.000 €</strong></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Betriebskosten im Vergleich</h3>
+
+        <p>Für ein durchschnittliches Einfamilienhaus mit 150 m² und 20.000 kWh Wärmebedarf:</p>
+
+        <table class="cost-table">
+          <thead>
+            <tr>
+              <th>Heizungsart</th>
+              <th>Jährliche Kosten</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Gasheizung</td>
+              <td class="price">ca. 2.400 €</td>
+            </tr>
+            <tr>
+              <td>Ölheizung</td>
+              <td class="price">ca. 2.800 €</td>
+            </tr>
+            <tr>
+              <td>Wärmepumpe (JAZ 3,5)</td>
+              <td class="price">ca. 1.700 €</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Förderung 2025: Bis zu 70% Zuschuss</h2>
+
+        <p>Der Staat fördert den Umstieg auf erneuerbare Energien großzügig. Gerade im Altbau ist die Förderung besonders attraktiv:</p>
+
+        <table class="cost-table">
+          <thead>
+            <tr>
+              <th>Förderung</th>
+              <th>Höhe</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Grundförderung</td>
+              <td class="price">30%</td>
+            </tr>
+            <tr>
+              <td>Klimageschwindigkeitsbonus (bei Austausch fossiler Heizung)</td>
+              <td class="price">+20%</td>
+            </tr>
+            <tr>
+              <td>Einkommensbonus (unter 40.000 € zu versteuerndes Einkommen)</td>
+              <td class="price">+30%</td>
+            </tr>
+            <tr>
+              <td>Effizienzbonus (natürliches Kältemittel oder Erdwärme)</td>
+              <td class="price">+5%</td>
+            </tr>
+            <tr>
+              <td><strong>Maximal</strong></td>
+              <td class="price"><strong>70%</strong></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Rechenbeispiel</h3>
+
+        <div class="callout callout-info">
+          <span class="callout-icon">📊</span>
+          <div class="callout-title">Beispielrechnung: Altbau mit Gasheizung</div>
+          <div class="callout-content">
+            <p><strong>Gesamtkosten:</strong> 35.000 €<br>
+            <strong>Grundförderung (30%):</strong> -10.500 €<br>
+            <strong>Klimabonus (20%):</strong> -7.000 €<br>
+            <strong>= Eigenanteil:</strong> 17.500 €</p>
+          </div>
+        </div>
+
+        <h2>So gehen Sie vor: Schritt für Schritt</h2>
+
+        <h3>Schritt 1: Energieberater konsultieren</h3>
+        <p>Ein zertifizierter Energieberater prüft Ihr Haus und berechnet die Heizlast. Die Kosten (ca. 300–500 €) werden zu 80% gefördert.</p>
+
+        <h3>Schritt 2: Angebote einholen</h3>
+        <p>Lassen Sie sich von qualifizierten Fachbetrieben Angebote erstellen. Achten Sie auf Referenzen im Altbau-Bereich.</p>
+
+        <h3>Schritt 3: Förderantrag stellen</h3>
+        <p><strong>Wichtig:</strong> Der Antrag muss VOR der Auftragserteilung bei der KfW eingereicht werden!</p>
+
+        <h3>Schritt 4: Installation</h3>
+        <p>Nach dem Zuwendungsbescheid können Sie den Auftrag erteilen. Die Installation dauert in der Regel 2–4 Tage.</p>
+
+        <h2>Fazit: Wärmepumpe im Altbau lohnt sich</h2>
+
+        <p>Mit der richtigen Planung und den aktuellen Förderungen ist die Wärmepumpe auch im Altbau eine wirtschaftlich und ökologisch sinnvolle Investition. Die Technik ist ausgereift, die Förderung so hoch wie nie.</p>
+
+        <div class="cta-box">
+          <h4>Kostenlose Altbau-Beratung</h4>
+          <p>Unsere Experten prüfen Ihr Haus und sagen Ihnen ehrlich, ob eine Wärmepumpe für Sie sinnvoll ist. Kostenlos und unverbindlich.</p>
+          <p>
+            <strong>Telefon:</strong> <a href="tel:+4982349665900">+49 8234 9665900</a><br>
+            <strong>E-Mail:</strong> <a href="mailto:service@heizcenter.de">service@heizcenter.de</a>
+          </p>
+        </div>
+      `,
+      category: 'Wärmepumpe',
+      author: 'HeizCenter Redaktion',
+      date: '2025-01-14',
+      readingTime: 12,
+      image: '/images/HeizCenter_Waermepumpe.webp',
+      tags: ['Wärmepumpe Altbau', 'Nachrüsten', 'Sanierung', 'Förderung', 'Kosten', 'Voraussetzungen'],
+      featured: false,
+    },
+    {
+      id: 27,
+      slug: 'heizung-wartung',
+      title: 'Heizungswartung: Kosten, Ablauf & warum sie so wichtig ist',
+      excerpt: 'Heizungswartung: Was kostet sie, wie oft ist sie nötig und was passiert dabei? Alle Infos zu Pflicht, Ablauf und Wartungsvertrag.',
+      content: `
+        <p class="text-xl leading-relaxed text-slate-600 mb-8">Eine regelmäßige Heizungswartung spart Geld, verhindert Ausfälle im Winter und verlängert die Lebensdauer Ihrer Anlage. Hier erfahren Sie alles Wichtige zu Kosten, Ablauf und wann eine Wartung wirklich nötig ist.</p>
+
+        <div class="flex flex-wrap gap-4 mb-8 text-sm text-slate-600">
+          <span class="flex items-center gap-1">✓ Wartung aller Heizungstypen</span>
+          <span class="flex items-center gap-1">✓ Faire Festpreise</span>
+          <span class="flex items-center gap-1">✓ 24/7 Notdienst für Wartungskunden</span>
+        </div>
+
+        <div class="highlight-quote">
+          Eine jährliche Heizungswartung kostet 120–300 € – und spart bis zu 10% Heizkosten. Das macht die Wartung zur lohnenden Investition.
+        </div>
+
+        <h2>Warum Heizungswartung wichtig ist</h2>
+
+        <p>Die regelmäßige Wartung Ihrer Heizung bringt gleich mehrere Vorteile:</p>
+
+        <h3>1. Effizienz erhalten</h3>
+        <p>Verschmutzte Brenner und Wärmetauscher verbrauchen mehr Energie. Eine Wartung kann <strong>bis zu 10% Heizkosten</strong> einsparen – das sind bei einem Einfamilienhaus schnell 200–300 € pro Jahr.</p>
+
+        <h3>2. Ausfälle vermeiden</h3>
+        <p>Die meisten Heizungsausfälle passieren im Winter – genau dann, wenn Sie die Heizung am dringendsten brauchen. Bei einer Wartung werden Verschleißteile erkannt und vorsorglich getauscht.</p>
+
+        <h3>3. Sicherheit gewährleisten</h3>
+        <p>Eine defekte Gasheizung kann gefährliches Kohlenmonoxid (CO) freisetzen. Bei der Wartung werden Abgaswerte und Dichtigkeit geprüft – das schützt Ihre Familie.</p>
+
+        <h3>4. Garantie erhalten</h3>
+        <p>Die meisten Hersteller verlangen eine jährliche Wartung als Garantiebedingung. Ohne Wartungsnachweis kann die Garantie verfallen.</p>
+
+        <div class="callout callout-warning">
+          <span class="callout-icon">⚠️</span>
+          <div class="callout-title">Wichtig für Vermieter</div>
+          <div class="callout-content">
+            <p>Als Vermieter sind Sie verpflichtet, die Heizung in einwandfreiem Zustand zu halten. Regelmäßige Wartung ist Teil dieser Pflicht und schützt Sie vor Haftungsansprüchen.</p>
+          </div>
+        </div>
+
+        <h2>Wie oft muss die Heizung gewartet werden?</h2>
+
+        <p>Die Empfehlung lautet: <strong>einmal jährlich</strong>. Der beste Zeitpunkt ist im Frühjahr oder Sommer – dann haben die Fachbetriebe mehr Kapazitäten und Sie sind für den Winter vorbereitet.</p>
+
+        <h3>Gesetzliche Pflicht?</h3>
+
+        <p>Eine allgemeine Wartungspflicht gibt es nicht. Allerdings schreibt die Bundes-Immissionsschutzverordnung (BImSchV) regelmäßige Abgasmessungen durch den Schornsteinfeger vor:</p>
+
+        <ul>
+          <li><strong>Gasheizung:</strong> Alle 2 Jahre (bei Heizwert) bzw. jährlich (bei Brennwert über 11 kW)</li>
+          <li><strong>Ölheizung:</strong> Jährlich</li>
+        </ul>
+
+        <p>Die Schornsteinfegermessung ist aber keine vollständige Wartung!</p>
+
+        <h2>Was wird bei der Wartung gemacht?</h2>
+
+        <p>Eine professionelle Heizungswartung umfasst folgende Arbeiten:</p>
+
+        <h3>1. Sichtprüfung</h3>
+        <ul>
+          <li>Kontrolle auf Undichtigkeiten</li>
+          <li>Prüfung der Anschlüsse</li>
+          <li>Zustand der Isolierung</li>
+        </ul>
+
+        <h3>2. Reinigung</h3>
+        <ul>
+          <li>Brenner reinigen</li>
+          <li>Wärmetauscher säubern</li>
+          <li>Kondensatablauf prüfen (bei Brennwertgeräten)</li>
+        </ul>
+
+        <h3>3. Verschleißteile prüfen</h3>
+        <ul>
+          <li>Dichtungen kontrollieren</li>
+          <li>Zündelektrode prüfen</li>
+          <li>Ausdehnungsgefäß kontrollieren</li>
+        </ul>
+
+        <h3>4. Messungen</h3>
+        <ul>
+          <li>Abgaswerte messen</li>
+          <li>CO-Gehalt prüfen</li>
+          <li>Brennereinstellung optimieren</li>
+        </ul>
+
+        <h3>5. Dichtheitsprüfung</h3>
+        <ul>
+          <li>Gasführende Teile auf Dichtheit prüfen</li>
+          <li>Sicherheitsventile testen</li>
+        </ul>
+
+        <h3>6. Protokoll</h3>
+        <p>Sie erhalten ein Wartungsprotokoll mit allen Messwerten und durchgeführten Arbeiten – wichtig für die Garantie und als Nachweis.</p>
+
+        <h2>Kosten der Heizungswartung</h2>
+
+        <p>Die Kosten variieren je nach Heizungstyp und Aufwand:</p>
+
+        <table class="cost-table">
+          <thead>
+            <tr>
+              <th>Heizungstyp</th>
+              <th>Wartungskosten</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Gasheizung (Brennwert)</td>
+              <td class="price">120 – 180 €</td>
+            </tr>
+            <tr>
+              <td>Gasheizung (Heizwert/alt)</td>
+              <td class="price">100 – 150 €</td>
+            </tr>
+            <tr>
+              <td>Ölheizung</td>
+              <td class="price">150 – 250 €</td>
+            </tr>
+            <tr>
+              <td>Wärmepumpe</td>
+              <td class="price">150 – 300 €</td>
+            </tr>
+            <tr>
+              <td>Pelletheizung</td>
+              <td class="price">200 – 350 €</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="callout callout-info">
+          <span class="callout-icon">💡</span>
+          <div class="callout-title">Hinweis</div>
+          <div class="callout-content">
+            <p>Die Kosten beinhalten in der Regel nur die Standard-Wartung. Ersatzteile werden separat berechnet.</p>
+          </div>
+        </div>
+
+        <h2>Wartungsvertrag: Lohnt sich das?</h2>
+
+        <p>Ein Wartungsvertrag bietet mehrere Vorteile:</p>
+
+        <h3>Vorteile eines Wartungsvertrags</h3>
+
+        <ul>
+          <li><strong>Festpreis:</strong> Sie wissen genau, was die Wartung kostet</li>
+          <li><strong>Automatische Erinnerung:</strong> Sie müssen nicht selbst dran denken</li>
+          <li><strong>Priorität bei Störungen:</strong> Wartungskunden werden bevorzugt behandelt</li>
+          <li><strong>Oft günstiger:</strong> Viele Betriebe gewähren Rabatt auf Ersatzteile</li>
+          <li><strong>24/7 Notdienst:</strong> Oft im Vertrag enthalten</li>
+        </ul>
+
+        <h3>Für wen lohnt sich ein Wartungsvertrag?</h3>
+
+        <p>Besonders sinnvoll ist ein Wartungsvertrag, wenn:</p>
+
+        <ul>
+          <li>Ihre Heizung älter als 10 Jahre ist</li>
+          <li>Sie eine komplexe Anlage haben (z.B. mit Solarthermie)</li>
+          <li>Sie die Sicherheit eines Notdienstes schätzen</li>
+          <li>Sie die Wartung sonst vergessen würden</li>
+        </ul>
+
+        <h2>Heizungswartung: Checkliste</h2>
+
+        <p>Diese Punkte sollte Ihre Wartung mindestens umfassen:</p>
+
+        <ul>
+          <li>☐ Brenner gereinigt</li>
+          <li>☐ Wärmetauscher gereinigt</li>
+          <li>☐ Abgaswerte gemessen und dokumentiert</li>
+          <li>☐ Dichtheitsprüfung durchgeführt</li>
+          <li>☐ Ausdehnungsgefäß geprüft</li>
+          <li>☐ Sicherheitseinrichtungen getestet</li>
+          <li>☐ Brennereinstellung optimiert</li>
+          <li>☐ Wartungsprotokoll ausgehändigt</li>
+        </ul>
+
+        <h2>Fazit</h2>
+
+        <p>Die jährliche Heizungswartung ist eine kleine Investition, die sich mehrfach auszahlt: durch niedrigere Heizkosten, vermiedene Reparaturen und die Sicherheit, dass Ihre Heizung im Winter zuverlässig läuft.</p>
+
+        <div class="cta-box">
+          <h4>Wartungstermin vereinbaren</h4>
+          <p>Wir warten alle Heizungstypen – schnell, zuverlässig und zu fairen Preisen. Fragen Sie auch nach unserem Wartungsvertrag mit 24/7 Notdienst.</p>
+          <p>
+            <strong>Telefon:</strong> <a href="tel:+4982349665900">+49 8234 9665900</a><br>
+            <strong>E-Mail:</strong> <a href="mailto:service@heizcenter.de">service@heizcenter.de</a>
+          </p>
+        </div>
+      `,
+      category: 'Heizung',
+      author: 'HeizCenter Redaktion',
+      date: '2025-01-14',
+      readingTime: 10,
+      image: '/images/HeizCenter_Heizung.webp',
+      tags: ['Heizungswartung', 'Wartung', 'Kosten', 'Wartungsvertrag', 'Heizung', 'Instandhaltung'],
+      featured: false,
+    },
   ];
 }
 
