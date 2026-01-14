@@ -118,6 +118,16 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/cookie-policy",
+        destination: "/cookie-hinweis",
+        permanent: true,
+      },
+      {
+        source: "/cookie-richtlinie",
+        destination: "/cookie-hinweis",
+        permanent: true,
+      },
+      {
         source: "/jobs",
         destination: "/karriere",
         permanent: true,
