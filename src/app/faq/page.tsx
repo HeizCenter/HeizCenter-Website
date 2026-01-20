@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import { FAQSection, FAQItem } from "@/components/sections/faq-section";
+import { FAQSchema } from "@/components/schema/faq-schema";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { HelpCircle, Zap, Flame, Droplet, Wind, Wrench, Phone } from "lucide-react";
 import Link from "next/link";
@@ -56,8 +57,20 @@ const serviceFAQs: FAQItem[] = [
 ];
 
 export default function FAQPage() {
+  // Combine all FAQs for single schema
+  const allFaqs = [
+    ...waermepumpeFAQs,
+    ...heizungFAQs,
+    ...sanitaerFAQs,
+    ...klimaanlageFAQs,
+    ...serviceFAQs,
+  ];
+
   return (
     <>
+      {/* Single FAQPage Schema for all FAQs */}
+      <FAQSchema faqs={allFaqs} />
+
       {/* Hero */}
       <section className="bg-gradient-to-br from-[#0F5B78] to-[#0F5B78] text-white py-20">
         <div className="container">
@@ -106,7 +119,7 @@ export default function FAQPage() {
             <h2 className="text-3xl font-bold">Wärmepumpe</h2>
           </div>
         </div>
-        <FAQSection title="" faqs={waermepumpeFAQs} />
+        <FAQSection title="" faqs={waermepumpeFAQs} includeSchema={false} />
       </section>
 
       {/* Heizung FAQs */}
@@ -117,7 +130,7 @@ export default function FAQPage() {
             <h2 className="text-3xl font-bold">Heizung</h2>
           </div>
         </div>
-        <FAQSection title="" faqs={heizungFAQs} />
+        <FAQSection title="" faqs={heizungFAQs} includeSchema={false} />
       </section>
 
       {/* Sanitär FAQs */}
@@ -128,7 +141,7 @@ export default function FAQPage() {
             <h2 className="text-3xl font-bold">Sanitär & Badsanierung</h2>
           </div>
         </div>
-        <FAQSection title="" faqs={sanitaerFAQs} />
+        <FAQSection title="" faqs={sanitaerFAQs} includeSchema={false} />
       </section>
 
       {/* Klimaanlage FAQs */}
@@ -139,7 +152,7 @@ export default function FAQPage() {
             <h2 className="text-3xl font-bold">Klimaanlage</h2>
           </div>
         </div>
-        <FAQSection title="" faqs={klimaanlageFAQs} />
+        <FAQSection title="" faqs={klimaanlageFAQs} includeSchema={false} />
       </section>
 
       {/* Service FAQs */}
@@ -150,7 +163,7 @@ export default function FAQPage() {
             <h2 className="text-3xl font-bold">Service & Allgemeines</h2>
           </div>
         </div>
-        <FAQSection title="" faqs={serviceFAQs} />
+        <FAQSection title="" faqs={serviceFAQs} includeSchema={false} />
       </section>
 
       {/* Notdienst Info */}
