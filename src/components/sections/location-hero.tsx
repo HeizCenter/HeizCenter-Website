@@ -21,9 +21,9 @@ export function LocationHero({
   email,
   description,
   openingHours = [
-    "Mo-Fr: 08:00 - 17:00 Uhr",
-    "Sa: 09:00 - 13:00 Uhr",
-    "So: Geschlossen",
+    "Mo-Do: 08:00 - 17:00 Uhr",
+    "Fr: 08:00 - 14:00 Uhr",
+    "Sa-So: Geschlossen",
   ],
   mainLocation,
   badge,

@@ -37,15 +37,15 @@ export function LocalBusinessSchema({
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
-        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday"],
         opens: "08:00",
         closes: "17:00",
       },
       {
         "@type": "OpeningHoursSpecification",
-        dayOfWeek: "Saturday",
-        opens: "09:00",
-        closes: "13:00",
+        dayOfWeek: "Friday",
+        opens: "08:00",
+        closes: "14:00",
       },
     ],
     sameAs: [
@@ -140,15 +140,15 @@ export function LocalBusinessSchema({
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
-        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday"],
         opens: "08:00",
         closes: "17:00",
       },
       {
         "@type": "OpeningHoursSpecification",
-        dayOfWeek: "Saturday",
-        opens: "09:00",
-        closes: "13:00",
+        dayOfWeek: "Friday",
+        opens: "08:00",
+        closes: "14:00",
       },
     ],
     parentOrganization: {
@@ -251,15 +251,15 @@ export function LocalBusinessSchema({
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
-        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday"],
         opens: "08:00",
         closes: "17:00",
       },
       {
         "@type": "OpeningHoursSpecification",
-        dayOfWeek: "Saturday",
-        opens: "09:00",
-        closes: "13:00",
+        dayOfWeek: "Friday",
+        opens: "08:00",
+        closes: "14:00",
       },
     ],
     parentOrganization: {
@@ -392,15 +392,15 @@ export function LocationPageSchema({
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
-        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday"],
         opens: "08:00",
         closes: "17:00",
       },
       {
         "@type": "OpeningHoursSpecification",
-        dayOfWeek: "Saturday",
-        opens: "09:00",
-        closes: "13:00",
+        dayOfWeek: "Friday",
+        opens: "08:00",
+        closes: "14:00",
       },
     ],
     parentOrganization: {

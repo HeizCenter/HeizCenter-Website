@@ -211,8 +211,8 @@ export default function ContactPage() {
             <div className="flex items-start gap-2 text-sm text-slate-600">
               <Clock className="h-4 w-4 mt-0.5 flex-shrink-0" />
               <div>
-                <p>Mo-Fr: 08:00 - 17:00 Uhr</p>
-                <p>Sa: 09:00 - 13:00 Uhr</p>
+                <p>Mo-Do: 08:00 - 17:00 Uhr</p>
+                <p>Fr: 08:00 - 14:00 Uhr</p>
                 <p className="text-red-600 font-semibold mt-1">
                   24/7 Notdienst verfügbar
                 </p>
@@ -256,8 +256,8 @@ export default function ContactPage() {
             <div className="flex items-start gap-2 text-sm text-slate-600">
               <Clock className="h-4 w-4 mt-0.5 flex-shrink-0" />
               <div>
-                <p>Mo-Fr: 08:00 - 17:00 Uhr</p>
-                <p>Sa: 09:00 - 13:00 Uhr</p>
+                <p>Mo-Do: 08:00 - 17:00 Uhr</p>
+                <p>Fr: 08:00 - 14:00 Uhr</p>
                 <p className="text-red-600 font-semibold mt-1">
                   24/7 Notdienst verfügbar
                 </p>
@@ -295,8 +295,8 @@ export default function ContactPage() {
             <div className="flex items-start gap-2 text-sm text-slate-600">
               <Clock className="h-4 w-4 mt-0.5 flex-shrink-0" />
               <div>
-                <p>Mo-Fr: 08:00 - 17:00 Uhr</p>
-                <p>Sa: 09:00 - 13:00 Uhr</p>
+                <p>Mo-Do: 08:00 - 17:00 Uhr</p>
+                <p>Fr: 08:00 - 14:00 Uhr</p>
                 <p className="text-red-600 font-semibold mt-1">
                   24/7 Notdienst verfügbar
                 </p>
@@ -427,15 +427,15 @@ export default function ContactPage() {
               openingHoursSpecification: [
                 {
                   "@type": "OpeningHoursSpecification",
-                  dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                  dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday"],
                   opens: "08:00",
                   closes: "17:00",
                 },
                 {
                   "@type": "OpeningHoursSpecification",
-                  dayOfWeek: "Saturday",
-                  opens: "09:00",
-                  closes: "13:00",
+                  dayOfWeek: "Friday",
+                  opens: "08:00",
+                  closes: "14:00",
                 },
               ],
             },

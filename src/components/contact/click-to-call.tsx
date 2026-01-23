@@ -150,7 +150,7 @@ export function LocationPhone({ location, variant = "compact" }: LocationPhonePr
           <Phone className="h-5 w-5" />
           {phone}
         </a>
-        <p className="text-xs text-slate-500 mt-2">Mo-Fr: 8:00 - 17:00 Uhr</p>
+        <p className="text-xs text-slate-500 mt-2">Mo-Do: 8-17 Uhr, Fr: 8-14 Uhr</p>
       </div>
     );
   }

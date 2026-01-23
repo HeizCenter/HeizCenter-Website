@@ -75,13 +75,13 @@ export const CONTACT = {
     }
   },
 
-  // Business Hours
+  // Business Hours (matching Google Business Profile)
   HOURS: {
-    monday: "07:30 - 17:00",
-    tuesday: "07:30 - 17:00",
-    wednesday: "07:30 - 17:00",
-    thursday: "07:30 - 17:00",
-    friday: "07:30 - 17:00",
+    monday: "08:00 - 17:00",
+    tuesday: "08:00 - 17:00",
+    wednesday: "08:00 - 17:00",
+    thursday: "08:00 - 17:00",
+    friday: "08:00 - 14:00",
     saturday: "Geschlossen",
     sunday: "Geschlossen",
     emergency: "24/7 Notdienst verfügbar"

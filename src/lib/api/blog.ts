@@ -3200,7 +3200,7 @@ function getMockBlogPosts(): BlogPost[] {
           <h4>Kostenlose Machbarkeits-Prüfung für Ihr Haus</h4>
           <p>Unsicher, ob eine Wärmepumpe bei Ihnen funktioniert? Wir kommen vorbei, prüfen alles vor Ort und beraten Sie ehrlich – auch wenn das Ergebnis „Wärmepumpe macht hier keinen Sinn" lautet. Kostenfrei und unverbindlich.</p>
           <p>
-            <strong>Telefon:</strong> <a href="tel:+4982349665900">+49 8234 9665900</a> (Mo-Fr 8-17 Uhr)<br>
+            <strong>Telefon:</strong> <a href="tel:+4982349665900">+49 8234 9665900</a> (Mo-Do 8-17 Uhr, Fr 8-14 Uhr)<br>
             <strong>E-Mail:</strong> <a href="mailto:service@heizcenter.de">service@heizcenter.de</a>
           </p>
           <p class="cta-locations">📍 <strong>Unsere Standorte:</strong> Bobingen (Augsburg) · Gutenzell-Hürbel (Ulm/Memmingen) · Klosterlechfeld</p>
@@ -3387,7 +3387,7 @@ function getMockBlogPosts(): BlogPost[] {
           <p><strong>Kein Kleingedrucktes. Keine versteckten Kosten. Nur klare Ansagen.</strong></p>
 
           <p>
-            <strong>Telefon:</strong> <a href="tel:+4982349665900">+49 8234 9665900</a> (Mo-Fr 8-17 Uhr)<br>
+            <strong>Telefon:</strong> <a href="tel:+4982349665900">+49 8234 9665900</a> (Mo-Do 8-17 Uhr, Fr 8-14 Uhr)<br>
             <strong>E-Mail:</strong> <a href="mailto:service@heizcenter.de">service@heizcenter.de</a>
           </p>
           <p class="cta-locations">📍 <strong>Standorte:</strong> Bobingen (Augsburg) · Gutenzell-Hürbel (Ulm/Memmingen) · Klosterlechfeld</p>

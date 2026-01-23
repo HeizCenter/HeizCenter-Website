@@ -113,7 +113,7 @@ export function Footer() {
                       >
                         {location.phone}
                       </a>
-                      <div className="text-xs">Mo-Fr 08:00-17:00</div>
+                      <div className="text-xs">Mo-Do 08:00-17:00, Fr 08:00-14:00</div>
                     </div>
                   </div>
                 </li>
