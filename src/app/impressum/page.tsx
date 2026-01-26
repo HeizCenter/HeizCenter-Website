@@ -18,14 +18,14 @@ export default function ImpressumPage() {
         <section className="mb-8">
           <h3 className="text-xl font-bold mb-4">Anschrift</h3>
           <p className="mb-4">
-            <strong>HeizCenter GmbH</strong> (ehemals UG)
+            <strong>HeizCenter GmbH</strong>
             <br />
             Lechallee 28
             <br />
             86399 Bobingen
           </p>
           <p className="mb-4">
-            <strong>HeizCenter GmbH</strong> (ehemals UG)
+            <strong>HeizCenter GmbH</strong>
             <br />
             Schlüsselbergstraße 5
             <br />
