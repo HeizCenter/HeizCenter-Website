@@ -227,7 +227,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-slate-800">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-400">
-            <p>© 2025 HeizCenter GmbH. Alle Rechte vorbehalten.</p>
+            <p>© 2026 HeizCenter GmbH. Alle Rechte vorbehalten.</p>
             <p className="text-xs">
               Entwickelt mit ❤️ von{" "}
               <a
