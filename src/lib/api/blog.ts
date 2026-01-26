@@ -329,7 +329,7 @@ function getMockBlogPosts(): BlogPost[] {
           </tbody>
         </table>
 
-        <h3>Rechenbeispiel: Familie Müller aus Augsburg</h3>
+        <h3>Rechenbeispiel: Familie Müller aus <a href="/standorte/augsburg" class="text-[#0F5B78] font-medium hover:underline">Augsburg</a></h3>
 
         <p>Die Müllers tauschen ihre 25 Jahre alte Gasheizung gegen eine Luft-Wasser-Wärmepumpe für 32.000 Euro. Beide arbeiten, das zu versteuernde Haushaltseinkommen liegt bei 65.000 Euro.</p>
 
@@ -474,7 +474,7 @@ function getMockBlogPosts(): BlogPost[] {
 
         <h2>Was kostet eine Wärmepumpe bei Ihnen?</h2>
 
-        <p>Jedes Haus ist anders. Deshalb gibt's bei uns keine Pauschalangebote – sondern eine ehrliche Beratung vor Ort.</p>
+        <p>Jedes Haus ist anders. Deshalb gibt's bei uns keine Pauschalangebote – sondern eine ehrliche Beratung vor Ort. Wir sind Ihr regionaler Partner in <a href="/standorte/augsburg" class="text-[#0F5B78] font-medium hover:underline">Augsburg</a>, <a href="/standorte/ulm" class="text-[#0F5B78] font-medium hover:underline">Ulm</a> und <a href="/standorte/memmingen" class="text-[#0F5B78] font-medium hover:underline">Memmingen</a>.</p>
 
         <div class="bg-gradient-to-br from-slate-50 to-slate-100 border border-slate-200 rounded-xl p-6 my-6">
           <h3 class="text-lg font-bold text-slate-900 mb-4">Kostenlose Vor-Ort-Analyse in 3 Schritten:</h3>
@@ -1942,7 +1942,7 @@ function getMockBlogPosts(): BlogPost[] {
 
         <h2>Die ehrliche Kostenübersicht</h2>
 
-        <p>Vergessen Sie die Werbeversprechen von „Badsanierung ab 5.000 €". Hier sind die realistischen Zahlen, die wir bei unseren Partnerprojekten in Süddeutschland sehen:</p>
+        <p>Vergessen Sie die Werbeversprechen von „Badsanierung ab 5.000 €". Hier sind die realistischen Zahlen, die wir bei unseren Projekten in <a href="/standorte/augsburg" class="text-[#0F5B78] font-medium hover:underline">Augsburg</a>, <a href="/standorte/ulm" class="text-[#0F5B78] font-medium hover:underline">Ulm</a> und der Region sehen:</p>
 
         <!-- Kostenübersicht Cards -->
         <div class="grid md:grid-cols-3 gap-4 my-8">
@@ -4299,12 +4299,12 @@ function getMockBlogPosts(): BlogPost[] {
 
         <p><strong>Gasheizungen sind 2025 eine Kostenfalle:</strong> Keine Förderung, steigende CO₂-Steuer, ab 2029 teure Biogas-Pflicht, höchste 20-Jahres-Kosten. Selbst die niedrigen Anschaffungskosten können die enormen Betriebskosten nicht ausgleichen.</p>
 
-        <p><strong>Pelletheizungen sind die Alternative</strong> für Haushalte mit Platz und regionaler Pellet-Verfügbarkeit – ähnlich günstig wie Wärmepumpen, CO₂-neutral und mit hoher Förderung.</p>
+        <p><strong>Pelletheizungen sind die Alternative</strong> für Haushalte mit Platz und regionaler Pellet-Verfügbarkeit – besonders beliebt im ländlichen Raum wie dem <a href="/standorte/memmingen" class="text-[#0F5B78] font-medium hover:underline">Allgäu rund um Memmingen</a>. Ähnlich günstig wie Wärmepumpen, CO₂-neutral und mit hoher Förderung.</p>
 
         <p><strong>Die optimale Lösung: Wärmepumpe + Photovoltaik</strong> – maximale Unabhängigkeit, minimale Kosten, 0 Emissionen, Wertsteigerung der Immobilie.</p>
 
         <div class="cta-box">
-          <p class="cta-locations">📍 <strong>Unsere Standorte:</strong> Bobingen (Augsburg) · Gutenzell-Hürbel (Ulm/Memmingen) · Klosterlechfeld</p>
+          <p class="cta-locations">📍 <strong>Unsere Standorte:</strong> <a href="/standorte/bobingen" class="text-[#0F5B78] font-medium hover:underline">Bobingen</a> (<a href="/standorte/augsburg" class="text-[#0F5B78] font-medium hover:underline">Augsburg</a>) · <a href="/standorte/gutenzell-huerbel" class="text-[#0F5B78] font-medium hover:underline">Gutenzell-Hürbel</a> (<a href="/standorte/ulm" class="text-[#0F5B78] font-medium hover:underline">Ulm</a>/<a href="/standorte/memmingen" class="text-[#0F5B78] font-medium hover:underline">Memmingen</a>) · <a href="/standorte/klosterlechfeld" class="text-[#0F5B78] font-medium hover:underline">Klosterlechfeld</a></p>
           <h4>Kostenlose Heizungsberatung bei HeizCenter</h4>
           <p>Unsere Experten analysieren Ihr Gebäude, berechnen die genauen Kosten für alle Systeme und unterstützen Sie bei der Förderbeantragung. Profitieren Sie von unserer langjährigen Erfahrung.</p>
           <p>
@@ -5245,7 +5245,7 @@ function getMockBlogPosts(): BlogPost[] {
     </ol>
 
     <div class="cta-box">
-      <p class="cta-locations">📍 <strong>Unsere Standorte:</strong> Bobingen (Augsburg) · Gutenzell-Hürbel (Ulm/Memmingen) · Klosterlechfeld</p>
+      <p class="cta-locations">📍 <strong>Unsere Standorte:</strong> <a href="/standorte/bobingen" class="text-[#0F5B78] font-medium hover:underline">Bobingen</a> (<a href="/standorte/augsburg" class="text-[#0F5B78] font-medium hover:underline">Augsburg</a>) · <a href="/standorte/gutenzell-huerbel" class="text-[#0F5B78] font-medium hover:underline">Gutenzell-Hürbel</a> (<a href="/standorte/ulm" class="text-[#0F5B78] font-medium hover:underline">Ulm</a>/<a href="/standorte/memmingen" class="text-[#0F5B78] font-medium hover:underline">Memmingen</a>) · <a href="/standorte/klosterlechfeld" class="text-[#0F5B78] font-medium hover:underline">Klosterlechfeld</a></p>
       <h4>Fußbodenheizung perfekt mit Wärmepumpe kombinieren?</h4>
       <p>Wir planen Ihre ideale Heizlösung – von der Beratung über Förderantrag bis zur Installation. Profitieren Sie von bis zu 70% BEG-Förderung!</p>
       <p>
