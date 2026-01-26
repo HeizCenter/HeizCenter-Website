@@ -156,7 +156,6 @@ interface ServiceReviewSchemaProps {
     ratingValue: number;
     reviewCount: number;
   };
-  provider?: string;
   areaServed?: string[];
 }
 
@@ -165,7 +164,6 @@ export function ServiceReviewSchema({
   serviceType,
   reviews,
   aggregateRating,
-  provider = "HeizCenter",
   areaServed = ["Augsburg", "Ulm", "Memmingen"],
 }: ServiceReviewSchemaProps) {
   const schema = {
