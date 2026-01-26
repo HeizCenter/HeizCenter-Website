@@ -136,6 +136,7 @@ export default function BobingenPage() {
         latitude={data.latitude}
         longitude={data.longitude}
         serviceCities={data.serviceCities}
+        streetAddress={data.streetAddress}
       />
 
       <LocationHero

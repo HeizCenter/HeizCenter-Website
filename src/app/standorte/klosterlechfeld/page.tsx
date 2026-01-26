@@ -108,6 +108,7 @@ export default function KlosterlechfeldPage() {
         latitude={data.latitude}
         longitude={data.longitude}
         serviceCities={data.serviceCities}
+        streetAddress={data.streetAddress}
       />
 
       <LocationHero

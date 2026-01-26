@@ -127,6 +127,7 @@ export function LocalBusinessSchema({
     priceRange: "€€",
     address: {
       "@type": "PostalAddress",
+      streetAddress: "Schlüsselbergstraße 5",
       addressLocality: "Gutenzell-Hürbel",
       postalCode: "88484",
       addressCountry: "DE",
@@ -352,6 +353,7 @@ interface LocationPageSchemaProps {
   latitude: number;
   longitude: number;
   serviceCities: string[];
+  streetAddress?: string;
 }
 
 export function LocationPageSchema({
@@ -361,6 +363,7 @@ export function LocationPageSchema({
   latitude,
   longitude,
   serviceCities,
+  streetAddress,
 }: LocationPageSchemaProps) {
   const citySlug = cityName.toLowerCase().replace(/\s+/g, "-").replace(/ä/g, "ae").replace(/ö/g, "oe").replace(/ü/g, "ue").replace(/ß/g, "ss");
 
@@ -379,6 +382,7 @@ export function LocationPageSchema({
     priceRange: "€€",
     address: {
       "@type": "PostalAddress",
+      ...(streetAddress && { streetAddress }),
       addressLocality: cityName,
       postalCode: postalCode,
       addressCountry: "DE",

@@ -5,6 +5,7 @@ export interface LocationData {
   latitude: number;
   longitude: number;
   serviceCities: string[];
+  streetAddress?: string; // Optional - nur für Hauptstandorte mit physischer Adresse
 }
 
 export const locationData: Record<string, LocationData> = {
@@ -29,6 +30,7 @@ export const locationData: Record<string, LocationData> = {
     region: "Bayern",
     latitude: 48.2744,
     longitude: 10.8369,
+    streetAddress: "Lechallee 28",
     serviceCities: [
       "Bobingen",
       "Augsburg",
@@ -43,6 +45,7 @@ export const locationData: Record<string, LocationData> = {
     region: "Bayern",
     latitude: 48.1547,
     longitude: 10.8308,
+    streetAddress: "Schulstraße 40",
     serviceCities: [
       "Klosterlechfeld",
       "Augsburg",
@@ -194,6 +197,7 @@ export const locationData: Record<string, LocationData> = {
     region: "Baden-Württemberg",
     latitude: 48.0667,
     longitude: 9.9500,
+    streetAddress: "Schlüsselbergstraße 5",
     serviceCities: [
       "Gutenzell-Hürbel",
       "Ulm",

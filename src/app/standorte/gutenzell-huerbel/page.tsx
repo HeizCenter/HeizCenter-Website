@@ -140,6 +140,7 @@ export default function GutenzellHuerbelPage() {
         latitude={data.latitude}
         longitude={data.longitude}
         serviceCities={data.serviceCities}
+        streetAddress={data.streetAddress}
       />
 
       <LocationHero
