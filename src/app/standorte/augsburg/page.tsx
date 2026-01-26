@@ -5,6 +5,7 @@ import {
   LocationService,
 } from "@/components/sections/location-services";
 import { LocationCoverage } from "@/components/sections/location-coverage";
+import { FAQSection, FAQItem } from "@/components/sections/faq-section";
 import { CTASection } from "@/components/sections/cta-section";
 import { Zap, Flame, Droplet, Wind } from "lucide-react";
 import { LocationPageSchema } from "@/components/schema/local-business-schema";
@@ -83,6 +84,34 @@ const coverageAreas = [
   "Schwabmünchen",
   "Meitingen",
   "Aichach",
+];
+
+const faqs: FAQItem[] = [
+  {
+    question: "Was kostet eine Wärmepumpe in Augsburg?",
+    answer:
+      "Die Kosten für eine Wärmepumpe in Augsburg liegen zwischen 15.000 und 35.000 Euro inkl. Installation. Dank BEG-Förderung erhalten Sie bis zu 70% Zuschuss, sodass Ihre Investition oft unter 15.000 Euro liegt. Wir erstellen Ihnen ein kostenloses Angebot mit genauer Berechnung.",
+  },
+  {
+    question: "Gibt es Förderung für Heizungstausch in Bayern?",
+    answer:
+      "Ja, in Bayern profitieren Sie von der BEG-Förderung des Bundes mit bis zu 70% Zuschuss beim Umstieg auf eine Wärmepumpe. Zusätzlich gibt es kommunale Förderprogramme. Wir unterstützen Sie bei der Antragstellung und sorgen dafür, dass Sie alle verfügbaren Förderungen optimal nutzen.",
+  },
+  {
+    question: "Wie schnell ist der Notdienst in Augsburg vor Ort?",
+    answer:
+      "Unser 24/7 Heizungsnotdienst ist in Augsburg und Umgebung in der Regel innerhalb von 60-90 Minuten bei Ihnen. Bei Heizungsausfall, Rohrbruch oder Gasgeruch erreichen Sie uns rund um die Uhr unter +49 8234 9665900.",
+  },
+  {
+    question: "Welche Wärmepumpen-Marken installieren Sie in Augsburg?",
+    answer:
+      "Wir installieren Wärmepumpen führender Hersteller wie Viessmann, Vaillant, Stiebel Eltron, Daikin und Bosch. Alle Marken bieten höchste Effizienz und sind perfekt für die klimatischen Bedingungen in Augsburg und Schwaben geeignet.",
+  },
+  {
+    question: "Wie lange dauert eine Badsanierung in Augsburg?",
+    answer:
+      "Eine komplette Badsanierung in Augsburg dauert in der Regel 2-3 Wochen. Wir koordinieren alle Gewerke (Sanitär, Fliesen, Elektro) und sorgen für einen reibungslosen Ablauf. Dank unserer 3D-Planung wissen Sie vorab genau, wie Ihr neues Bad aussehen wird.",
+  },
 ];
 
 export default function AugsburgPage() {
@@ -230,6 +259,8 @@ export default function AugsburgPage() {
       </section>
 
       <LocationCoverage mainCity="Augsburg" coverageAreas={coverageAreas} />
+
+      <FAQSection faqs={faqs} title="Häufige Fragen zu Heizung & Wärmepumpe in Augsburg" />
 
       <CTASection variant="gradient" />
     </>

@@ -5,6 +5,7 @@ import {
   LocationService,
 } from "@/components/sections/location-services";
 import { LocationCoverage } from "@/components/sections/location-coverage";
+import { FAQSection, FAQItem } from "@/components/sections/faq-section";
 import { CTASection } from "@/components/sections/cta-section";
 import { Zap, Flame, Droplet, Wind } from "lucide-react";
 import { LocationPageSchema } from "@/components/schema/local-business-schema";
@@ -83,6 +84,34 @@ const coverageAreas = [
   "Erkheim",
   "Legau",
   "Buxheim",
+];
+
+const faqs: FAQItem[] = [
+  {
+    question: "Was kostet eine Wärmepumpe im Allgäu?",
+    answer:
+      "Eine Wärmepumpe im Raum Memmingen kostet zwischen 15.000 und 35.000 Euro inkl. Installation. Bei großen Grundstücken im Allgäu ist oft eine Erdwärmepumpe sinnvoll. Mit der BEG-Förderung von bis zu 70% reduzieren sich Ihre Kosten erheblich. Wir beraten Sie kostenlos vor Ort.",
+  },
+  {
+    question: "Lohnt sich eine Pelletheizung in Memmingen?",
+    answer:
+      "Ja, besonders im ländlichen Raum um Memmingen sind Pelletheizungen beliebt. Sie heizen CO2-neutral und sind unabhängig von Öl- und Gaspreisen. Die BEG-Förderung macht Pelletheizungen besonders attraktiv. Viele unserer Kunden im Allgäu haben bereits erfolgreich umgestellt.",
+  },
+  {
+    question: "Wie schnell ist der Notdienst in Memmingen vor Ort?",
+    answer:
+      "Unser 24/7 Heizungsnotdienst erreicht Sie in Memmingen und dem Unterallgäu in der Regel innerhalb von 60-90 Minuten. Bei Heizungsausfall im kalten Allgäu-Winter sind wir rund um die Uhr unter +49 8234 9665900 erreichbar.",
+  },
+  {
+    question: "Gibt es Förderung für Heizungstausch in Bayern?",
+    answer:
+      "Ja, in Bayern profitieren Sie von der BEG-Förderung mit bis zu 70% Zuschuss beim Umstieg auf Wärmepumpe oder Pelletheizung. Zusätzlich gibt es das bayerische Programm 10.000-Häuser und kommunale Förderungen. Wir helfen Ihnen bei der Antragstellung.",
+  },
+  {
+    question: "Welche Heizung empfehlen Sie bei fehlendem Gasanschluss?",
+    answer:
+      "Im ländlichen Allgäu ohne Gasanschluss empfehlen wir Wärmepumpen oder Pelletheizungen. Beide sind förderfähig und zukunftssicher. Bei großen Grundstücken ist eine Erdwärmepumpe ideal, ansonsten eine moderne Luft-Wasser-Wärmepumpe. Wir beraten Sie individuell.",
+  },
 ];
 
 export default function MemmingenPage() {
@@ -245,6 +274,8 @@ export default function MemmingenPage() {
       </section>
 
       <LocationCoverage mainCity="Memmingen" coverageAreas={coverageAreas} />
+
+      <FAQSection faqs={faqs} title="Häufige Fragen zu Heizung & Wärmepumpe in Memmingen" />
 
       <CTASection variant="gradient" />
     </>

@@ -5,6 +5,7 @@ import {
   LocationService,
 } from "@/components/sections/location-services";
 import { LocationCoverage } from "@/components/sections/location-coverage";
+import { FAQSection, FAQItem } from "@/components/sections/faq-section";
 import { CTASection } from "@/components/sections/cta-section";
 import { Zap, Flame, Droplet, Wind } from "lucide-react";
 import { LocationPageSchema } from "@/components/schema/local-business-schema";
@@ -88,6 +89,34 @@ const coverageAreas = [
   "Illertissen",
   "Senden",
   "Weißenhorn",
+];
+
+const faqs: FAQItem[] = [
+  {
+    question: "Wo ist der HeizCenter Standort Gutenzell-Hürbel?",
+    answer:
+      "Unser Standort befindet sich in der Schlüsselbergstraße 5, 88484 Gutenzell-Hürbel. Von hier aus betreuen wir Ulm, Memmingen und die gesamte Region mit kurzen Anfahrtswegen. Sie erreichen uns unter +49 8234 9665900.",
+  },
+  {
+    question: "Betreuen Sie auch Ulm und Neu-Ulm?",
+    answer:
+      "Ja, wir betreuen selbstverständlich Ulm, Neu-Ulm und das gesamte Grenzgebiet zwischen Baden-Württemberg und Bayern. Ob Ulm in Baden-Württemberg oder Neu-Ulm in Bayern - wir sind Ihr regionaler Partner für Heizung, Sanitär und Klimatechnik.",
+  },
+  {
+    question: "Was kostet eine Wärmepumpe im Raum Ulm/Memmingen?",
+    answer:
+      "Die Kosten für eine Wärmepumpe liegen zwischen 15.000 und 35.000 Euro inkl. Installation. In Baden-Württemberg und Bayern profitieren Sie von der BEG-Förderung mit bis zu 70% Zuschuss. Wir erstellen Ihnen ein kostenloses Angebot mit Förderberechnung.",
+  },
+  {
+    question: "Wie schnell ist der Notdienst in Ulm und Memmingen vor Ort?",
+    answer:
+      "Unser 24/7 Heizungsnotdienst erreicht Sie in Ulm, Memmingen und Umgebung in der Regel innerhalb von 60-90 Minuten. Bei Heizungsausfall, Rohrbruch oder Gasgeruch sind wir rund um die Uhr unter +49 8234 9665900 erreichbar.",
+  },
+  {
+    question: "Welche Förderungen gibt es für Heizungstausch in der Region?",
+    answer:
+      "In unserer Region profitieren Sie von der BEG-Förderung des Bundes mit bis zu 70% Zuschuss. Zusätzlich gibt es in Baden-Württemberg das Programm 'Klimaschutz-Plus' und in Bayern das '10.000-Häuser-Programm'. Wir beraten Sie zu allen Fördermöglichkeiten.",
+  },
 ];
 
 export default function GutenzellHuerbelPage() {
@@ -233,6 +262,8 @@ export default function GutenzellHuerbelPage() {
       </section>
 
       <LocationCoverage mainCity="Gutenzell-Hürbel" coverageAreas={coverageAreas} />
+
+      <FAQSection faqs={faqs} title="Häufige Fragen zu HeizCenter Gutenzell-Hürbel" />
 
       <CTASection variant="gradient" />
     </>

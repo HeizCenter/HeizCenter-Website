@@ -5,6 +5,7 @@ import {
   LocationService,
 } from "@/components/sections/location-services";
 import { LocationCoverage } from "@/components/sections/location-coverage";
+import { FAQSection, FAQItem } from "@/components/sections/faq-section";
 import { CTASection } from "@/components/sections/cta-section";
 import { Zap, Flame, Droplet, Wind } from "lucide-react";
 import { LocationPageSchema } from "@/components/schema/local-business-schema";
@@ -84,6 +85,34 @@ const coverageAreas = [
   "Kissing",
   "Wehringen",
   "Schwabmünchen",
+];
+
+const faqs: FAQItem[] = [
+  {
+    question: "Wo ist der HeizCenter Hauptstandort?",
+    answer:
+      "Unser Hauptstandort befindet sich in der Lechallee 28, 86399 Bobingen. Von hier aus betreuen wir Augsburg und die gesamte Region mit kurzen Anfahrtswegen. Sie erreichen uns telefonisch unter +49 8234 9665900 oder per E-Mail an service@heizcenter.de.",
+  },
+  {
+    question: "Was kostet eine Wärmepumpe in Bobingen?",
+    answer:
+      "Die Kosten für eine Wärmepumpe in Bobingen liegen zwischen 15.000 und 35.000 Euro inkl. Installation. Dank BEG-Förderung erhalten Sie bis zu 70% Zuschuss. Wir erstellen Ihnen ein kostenloses Angebot mit genauer Förderberechnung nach einer Vor-Ort-Besichtigung.",
+  },
+  {
+    question: "Wie schnell ist der Notdienst in Bobingen vor Ort?",
+    answer:
+      "Unser 24/7 Heizungsnotdienst ist von unserem Hauptstandort in Bobingen besonders schnell bei Ihnen - in der Regel innerhalb von 30-60 Minuten. Bei Heizungsausfall, Rohrbruch oder Gasgeruch erreichen Sie uns rund um die Uhr unter +49 8234 9665900.",
+  },
+  {
+    question: "Bieten Sie Wartungsverträge für Heizungen an?",
+    answer:
+      "Ja, wir bieten Wartungsverträge für alle Heizungsarten an. Regelmäßige Wartung spart Energie, verlängert die Lebensdauer Ihrer Heizung und ist Voraussetzung für die Herstellergarantie. Unsere Wartungsverträge beinhalten auch bevorzugte Terminvergabe im Notfall.",
+  },
+  {
+    question: "Wie lange dauert eine Badsanierung in Bobingen?",
+    answer:
+      "Eine komplette Badsanierung dauert bei uns 2-3 Wochen. Wir koordinieren alle Gewerke (Sanitär, Fliesen, Elektro) und sorgen für einen reibungslosen Ablauf. Dank unserer 3D-Planung wissen Sie vorab genau, wie Ihr neues Bad aussehen wird.",
+  },
 ];
 
 export default function BobingenPage() {
@@ -224,6 +253,8 @@ export default function BobingenPage() {
       </section>
 
       <LocationCoverage mainCity="Bobingen" coverageAreas={coverageAreas} />
+
+      <FAQSection faqs={faqs} title="Häufige Fragen zu HeizCenter Bobingen" />
 
       <CTASection variant="gradient" />
     </>

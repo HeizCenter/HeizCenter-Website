@@ -5,6 +5,7 @@ import {
   LocationService,
 } from "@/components/sections/location-services";
 import { LocationCoverage } from "@/components/sections/location-coverage";
+import { FAQSection, FAQItem } from "@/components/sections/faq-section";
 import { CTASection } from "@/components/sections/cta-section";
 import { Zap, Flame, Droplet, Wind } from "lucide-react";
 import { LocationPageSchema } from "@/components/schema/local-business-schema";
@@ -83,6 +84,34 @@ const coverageAreas = [
   "Illertissen",
   "Weißenhorn",
   "Senden",
+];
+
+const faqs: FAQItem[] = [
+  {
+    question: "Wie schnell ist der Notdienst in Ulm vor Ort?",
+    answer:
+      "Unser 24/7 Heizungsnotdienst erreicht Sie in Ulm und Neu-Ulm in der Regel innerhalb von 60-90 Minuten. Bei Heizungsausfall, Rohrbruch oder Gasgeruch sind wir rund um die Uhr unter +49 8234 9665900 für Sie erreichbar.",
+  },
+  {
+    question: "Welche Förderungen gibt es für Heizungstausch in Baden-Württemberg?",
+    answer:
+      "In Baden-Württemberg profitieren Sie von der BEG-Förderung des Bundes mit bis zu 70% Zuschuss beim Umstieg auf eine Wärmepumpe. Zusätzlich gibt es das Landesprogramm 'Klimaschutz-Plus' und kommunale Förderprogramme der Stadt Ulm. Wir beraten Sie zu allen Fördermöglichkeiten.",
+  },
+  {
+    question: "Bieten Sie Service auch in Neu-Ulm an?",
+    answer:
+      "Ja, wir betreuen selbstverständlich auch Neu-Ulm und das gesamte bayerisch-schwäbische Grenzgebiet. Ob Ulm in Baden-Württemberg oder Neu-Ulm in Bayern - wir sind Ihr regionaler Partner für Heizung, Sanitär und Klimatechnik.",
+  },
+  {
+    question: "Was kostet eine Wärmepumpe in Ulm?",
+    answer:
+      "Eine Wärmepumpe in Ulm kostet zwischen 15.000 und 35.000 Euro inkl. Installation. Mit der BEG-Förderung von bis zu 70% reduzieren sich Ihre Kosten erheblich. Wir erstellen Ihnen ein kostenloses Angebot mit exakter Förderberechnung für Ihr Projekt.",
+  },
+  {
+    question: "Installieren Sie auch in historischen Gebäuden in der Ulmer Altstadt?",
+    answer:
+      "Ja, wir haben Erfahrung mit Heizungs- und Sanitärinstallationen in denkmalgeschützten Gebäuden. In der Ulmer Altstadt berücksichtigen wir alle Auflagen und arbeiten eng mit den Behörden zusammen, um optimale Lösungen zu finden.",
+  },
 ];
 
 export default function UlmPage() {
@@ -227,6 +256,8 @@ export default function UlmPage() {
       </section>
 
       <LocationCoverage mainCity="Ulm" coverageAreas={coverageAreas} />
+
+      <FAQSection faqs={faqs} title="Häufige Fragen zu Heizung & Wärmepumpe in Ulm" />
 
       <CTASection variant="gradient" />
     </>
