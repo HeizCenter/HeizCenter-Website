@@ -15,7 +15,7 @@ interface ReviewSchemaProps {
 }
 
 export function ReviewSchema({
-  businessName = "HeizCenter",
+  businessName = "HeizCenter GmbH",
   reviews,
   aggregateRating = { ratingValue: 4.9, reviewCount: 60 },
 }: ReviewSchemaProps) {
@@ -24,6 +24,16 @@ export function ReviewSchema({
     "@type": "LocalBusiness",
     "@id": "https://www.heizcenter.de/#organization",
     name: businessName,
+    image: "https://www.heizcenter.de/images/logo.png",
+    telephone: "+4982349665900",
+    priceRange: "€€",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Lechallee 28",
+      addressLocality: "Bobingen",
+      postalCode: "86399",
+      addressCountry: "DE",
+    },
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: aggregateRating.ratingValue,
