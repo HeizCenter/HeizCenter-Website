@@ -22,6 +22,7 @@ export function ReviewSchema({
   const schema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
+    "@id": "https://www.heizcenter.de/#organization",
     name: businessName,
     aggregateRating: {
       "@type": "AggregateRating",
@@ -46,8 +47,7 @@ export function ReviewSchema({
       reviewBody: review.text,
       datePublished: review.date,
       itemReviewed: {
-        "@type": "LocalBusiness",
-        name: businessName,
+        "@id": "https://www.heizcenter.de/#organization",
       },
     })),
   };
@@ -164,8 +164,7 @@ export function ServiceReviewSchema({
     name: serviceName,
     serviceType: serviceType,
     provider: {
-      "@type": "LocalBusiness",
-      name: provider,
+      "@id": "https://www.heizcenter.de/#organization",
     },
     areaServed: areaServed.map((area) => ({
       "@type": "City",

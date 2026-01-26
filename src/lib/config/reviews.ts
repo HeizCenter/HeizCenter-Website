@@ -111,7 +111,7 @@ export const getSchemaRating = () => {
 };
 
 // Schema.org Reviews Array (für Rich Snippets - Google erfordert echte Reviews!)
-// itemReviewed verweist auf das LocalBusiness für korrekte Schema-Zuordnung
+// itemReviewed verweist via @id auf das Haupt-LocalBusiness um Duplikate zu vermeiden
 export const getSchemaReviews = () => {
   return REVIEWS.testimonials.map((review) => ({
     "@type": "Review",
@@ -127,9 +127,9 @@ export const getSchemaReviews = () => {
     },
     reviewBody: review.text,
     datePublished: review.date,
+    // Verwende @id Referenz statt neues LocalBusiness Entity (vermeidet "address fehlt" Fehler)
     itemReviewed: {
-      "@type": "LocalBusiness",
-      name: "HeizCenter GmbH",
+      "@id": "https://www.heizcenter.de/#organization",
     },
   }));
 };
