@@ -4,7 +4,6 @@ import { getCanonicalUrl } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "Datenschutzerklärung | HeizCenter",
   description: "Datenschutzerklärung von HeizCenter - Informationen zur Verarbeitung personenbezogener Daten gemäß DSGVO.",
-  robots: "noindex, nofollow",
   alternates: {
     canonical: getCanonicalUrl("/datenschutz"),
   },

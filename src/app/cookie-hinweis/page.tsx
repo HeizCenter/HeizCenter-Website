@@ -4,7 +4,6 @@ import { getCanonicalUrl } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "Cookie-Richtlinien | HeizCenter",
   description: "Informationen zur Verwendung von Cookies auf der HeizCenter Website.",
-  robots: "noindex, nofollow",
   alternates: {
     canonical: getCanonicalUrl("/cookie-hinweis"),
   },

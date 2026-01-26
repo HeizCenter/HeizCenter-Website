@@ -5,8 +5,7 @@ import { getCanonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "AGB – Allgemeine Geschäftsbedingungen | HeizCenter",
-  description: "AGB als PDF-Download",
-  robots: "noindex, nofollow",
+  description: "Allgemeine Geschäftsbedingungen der HeizCenter GmbH für Heizung, Sanitär und Klimaanlagen.",
   alternates: {
     canonical: getCanonicalUrl("/agb"),
   },

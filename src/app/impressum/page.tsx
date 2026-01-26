@@ -4,7 +4,6 @@ import { getCanonicalUrl } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "Impressum | HeizCenter",
   description: "Impressum und Kontaktdaten von HeizCenter - Ihr Experte für Wärmepumpen, Heizung, Sanitär und Klimaanlagen.",
-  robots: "noindex, nofollow",
   alternates: {
     canonical: getCanonicalUrl("/impressum"),
   },
