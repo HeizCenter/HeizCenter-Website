@@ -94,6 +94,7 @@ export function QuoteForm(props: QuoteFormProps) {
     watch,
   } = useForm({
     resolver: zodResolver(quoteFormSchema),
+    mode: "onBlur", // Validate on blur for better UX - shows consent error before submit
     defaultValues: {
       name: "",
       email: "",
@@ -567,7 +568,13 @@ export function QuoteForm(props: QuoteFormProps) {
         />
         <Label htmlFor="gdprConsent" className="text-sm leading-relaxed">
           Ich akzeptiere die{" "}
-          <a href="/datenschutz" className="text-[#0F5B78] hover:underline">
+          <a
+            href="/datenschutz"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#0F5B78] hover:underline"
+            onClick={(e) => e.stopPropagation()} // Prevent checkbox toggle when clicking link
+          >
             Datenschutzerklärung
           </a>{" "}
           und stimme zu, dass meine Daten zur Bearbeitung meiner Anfrage
