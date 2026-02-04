@@ -81,6 +81,7 @@
 ## Letzte Git-Commits
 
 ```
+00f2592 feat(standorte): add Solarthermie service to all 26 location pages
 2e1b985 feat(partner): replace placeholder logos with official brand logos
 69d175f fix(forms): prevent data loss and improve GDPR consent UX
 8dd8415 feat: Add HeizCenter favicon and apple-icon
@@ -97,11 +98,16 @@ a417b73 fix(seo): Korrigiere Öffnungszeiten
 
 ## Offene Punkte
 
-- [ ] Aktuelle SEO-Rankings dokumentieren
+- [x] SEO-Audit durchgeführt (2026-02-04)
+- [x] FAQSchema auf Service-Seiten aktiviert
+- [ ] ~~Aktuelle SEO-Rankings dokumentieren~~ → SEO_AUDIT_REPORT.md
 - [ ] Google Search Console Analyse
 - [ ] Performance-Audit (Core Web Vitals)
 - [ ] Odoo-Integration Status prüfen
 - [ ] Blog-Content-Plan für 2026
+- [ ] Title-Tags auf 60 Zeichen kürzen (SEO Quick Win)
+- [ ] OG-Images für Service-Seiten erstellen (SEO Quick Win)
+- [ ] Alt-Texte optimieren (SEO Quick Win)
 
 ---
 
@@ -141,12 +147,54 @@ git log --oneline -10
 | [QA_CHECKLIST.md](QA_CHECKLIST.md) | QA-Checkliste |
 | [SCHEMA_IMPLEMENTATION_SUMMARY.md](SCHEMA_IMPLEMENTATION_SUMMARY.md) | Schema.org Übersicht |
 | [ODOO_INTEGRATION_PLAN.md](ODOO_INTEGRATION_PLAN.md) | Odoo Backend-Plan |
+| [SEO_AUDIT_REPORT.md](SEO_AUDIT_REPORT.md) | SEO-Audit Februar 2026 |
 
 ---
 
 ## Session-Archiv
 
+### Session 2026-02-04 (SEO-Audit & FAQSchema)
+
+#### Completed
+- [x] **Umfassendes SEO-Audit** durchgeführt (Bewertung: 7.5/10)
+  - Schema.org Markup: 9/10 (exzellent)
+  - Local SEO: 9/10 (24 Stadt-Landingpages)
+  - Technisches SEO: 8/10 (robots.txt, sitemap, canonical)
+  - Agents: `seo-specialist`
+
+- [x] **FAQSchema auf Service-Seiten aktiviert**
+  - 5 Seiten aktualisiert: waermepumpe, heizung, sanitaer, klimaanlage, solar
+  - 39 FAQ-Einträge mit Schema.org Markup
+  - Build erfolgreich verifiziert
+  - Agents: `frontend-dev`
+
+#### Geänderte Dateien
+| Datei | Änderung |
+|-------|----------|
+| `src/app/waermepumpe/page.tsx` | +FAQSchema Import, includeSchema=false |
+| `src/app/heizung/page.tsx` | +FAQSchema Import, includeSchema=false |
+| `src/app/sanitaer/page.tsx` | +FAQSchema Import, includeSchema=false |
+| `src/app/klimaanlage/page.tsx` | +FAQSchema Import, includeSchema=false |
+| `src/app/solar/page.tsx` | +FAQSchema Import, includeSchema=false |
+
+#### SEO Quick Wins identifiziert
+| Issue | Impact | Status |
+|-------|--------|--------|
+| FAQSchema aktivieren | FAQ Rich Results | ✅ Erledigt |
+| Title-Tags kürzen | Nicht abgeschnitten | ⏳ Offen |
+| OG-Images erstellen | Social Sharing | ⏳ Offen |
+| Alt-Texte optimieren | Bilder-SEO | ⏳ Offen |
+
+#### Nächste Schritte
+1. Änderungen committen und deployen
+2. Nach 1-2 Wochen: Google Rich Results Test validieren
+3. Weitere Quick Wins umsetzen
+
+---
+
 ### Session 2026-02-04 (Solarthermie Standort-Seiten)
+
+**Commit:** `00f2592 feat(standorte): add Solarthermie service to all 26 location pages`
 
 #### Problem
 - **Solarthermie** fehlte als Service auf **allen 26 Standort-Seiten**

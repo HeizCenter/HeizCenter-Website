@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import { ServiceSchema } from "@/components/schema/service-schema";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
+import { FAQSchema } from "@/components/schema/faq-schema";
 import { getCanonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
@@ -263,7 +264,8 @@ export default function SanitaerPage() {
         </div>
       </section>
 
-      <FAQSection faqs={faqs} />
+      <FAQSection faqs={faqs} includeSchema={false} />
+      <FAQSchema faqs={faqs} />
 
       <CTASection
         variant="gradient"

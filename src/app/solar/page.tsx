@@ -18,6 +18,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ServiceSchema } from "@/components/schema/service-schema";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
+import { FAQSchema } from "@/components/schema/faq-schema";
 import { SolarProcessSection } from "@/components/sections/solar-process-section";
 import { SolarComparisonSection } from "@/components/sections/solar-comparison";
 import { getCanonicalUrl } from "@/lib/seo";
@@ -438,7 +439,9 @@ export default function SolarPage() {
       <FAQSection
         title="Häufig gestellte Fragen zu Solarthermie"
         faqs={faqs}
+        includeSchema={false}
       />
+      <FAQSchema faqs={faqs} />
 
       <CTASection
         title="Bereit für kostenlose Sonnenenergie?"
