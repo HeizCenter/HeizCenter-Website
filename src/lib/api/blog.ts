@@ -8719,408 +8719,193 @@ function getMockBlogPosts(): BlogPost[] {
       id: 23,
       slug: 'solarthermie-kosten-wirtschaftlichkeit-2025',
       title: 'Solarthermie Kosten und Wirtschaftlichkeit 2025: Lohnt sich die Investition?',
-      excerpt: 'Was kostet Solarthermie wirklich? Anschaffung, Montage, Wartung – und ab wann Sie im Plus sind. Mit konkreten Zahlen für 2025.',
+      excerpt: 'Komplette Kostenaufstellung für Solarthermie-Anlagen mit aktuellen Förderungen, realistischen Amortisationszeiten und einer ehrlichen Einschätzung.',
       content: `
-        <p>Solarthermie für 8.000 €? Oder doch 20.000 €? Die Preisspanne ist riesig – und genau das verunsichert viele Hausbesitzer. Hier finden Sie echte Preise aus unserer Region, ehrliche Amortisationsrechnungen und eine klare Antwort: <strong>Wann lohnt sich Solarthermie – und wann nicht?</strong></p>
-
-        <h2>Anschaffungskosten im Überblick</h2>
-
-        <h3>Warmwasser-Anlagen (4-6 m²)</h3>
-        <p><strong>Flachkollektoren-System:</strong></p>
-        <ul>
-          <li>Kollektoren (4-6 m²): 2.000-3.500 €</li>
-          <li>Warmwasserspeicher (300 L): 1.200-1.800 €</li>
-          <li>Solarstation (Pumpe, Regelung): 800-1.200 €</li>
-          <li>Verrohrung und Zubehör: 500-800 €</li>
-          <li>Montage und Installation: 1.500-2.500 €</li>
-          <li><strong>Gesamtkosten: 6.000-9.800 €</strong></li>
-        </ul>
-
-        <p><strong>Röhrenkollektoren-System:</strong></p>
-        <ul>
-          <li>Kollektoren (4-6 m²): 3.000-4.500 €</li>
-          <li>Warmwasserspeicher (300 L): 1.200-1.800 €</li>
-          <li>Solarstation (Pumpe, Regelung): 800-1.200 €</li>
-          <li>Verrohrung und Zubehör: 500-800 €</li>
-          <li>Montage und Installation: 1.500-2.500 €</li>
-          <li><strong>Gesamtkosten: 7.000-10.800 €</strong></li>
-        </ul>
-
-        <h3>Kombi-Anlagen mit Heizungsunterstützung (10-15 m²)</h3>
-        <p><strong>Flachkollektoren-System:</strong></p>
-        <ul>
-          <li>Kollektoren (12 m²): 5.000-7.000 €</li>
-          <li>Pufferspeicher (800-1.000 L): 3.000-4.500 €</li>
-          <li>Solarstation und Hydraulik: 1.500-2.500 €</li>
-          <li>Regelung und Steuerung: 800-1.500 €</li>
-          <li>Verrohrung, Dämmung, Zubehör: 1.000-1.500 €</li>
-          <li>Montage und Inbetriebnahme: 3.000-4.500 €</li>
-          <li><strong>Gesamtkosten: 14.300-21.500 €</strong></li>
-        </ul>
-
-        <p><strong>Röhrenkollektoren-System:</strong></p>
-        <ul>
-          <li>Kollektoren (12 m²): 7.000-9.000 €</li>
-          <li>Pufferspeicher (800-1.000 L): 3.000-4.500 €</li>
-          <li>Solarstation und Hydraulik: 1.500-2.500 €</li>
-          <li>Regelung und Steuerung: 800-1.500 €</li>
-          <li>Verrohrung, Dämmung, Zubehör: 1.000-1.500 €</li>
-          <li>Montage und Inbetriebnahme: 3.000-4.500 €</li>
-          <li><strong>Gesamtkosten: 16.300-23.500 €</strong></li>
-        </ul>
-
-        <div class="my-6 p-4 bg-blue-50 border-l-4 border-blue-500 rounded-r"><p class="font-semibold text-blue-900">Wichtig:</p><p class="text-slate-700">Die Preise variieren je nach Region, Dachbeschaffenheit, Montageaufwand und gewähltem Hersteller. Holen Sie immer mehrere Angebote ein!</p></div>
-
-        <h2>Staatliche Förderung 2025</h2>
-
-        <h3>BAFA-Förderung für Solarthermie</h3>
-        <p>Die Bundesförderung für effiziente Gebäude (BEG) unterstützt Solarthermie – allerdings mit wichtigen Einschränkungen:</p>
-
-        <div class="my-6 p-4 bg-amber-50 border-l-4 border-amber-500 rounded-r"><p class="font-semibold text-amber-900">⚠️ Wichtig seit 2024:</p><p class="text-slate-700"><strong>Solarthermie allein</strong> (ohne Heizungstausch) erhält <strong>keine Basisförderung</strong> mehr. Die volle Förderung gibt es nur in Kombination mit einer neuen Heizung (z.B. Wärmepumpe) oder beim Heizungstausch.</p></div>
-
-        <p><strong>Fördersätze bei Heizungstausch (z.B. mit Wärmepumpe):</strong></p>
-        <ul>
-          <li>Basis-Förderung: 30% der förderfähigen Kosten</li>
-          <li>Geschwindigkeitsbonus: +20% bei Heizungstausch (Öl, Gas 20+ Jahre)</li>
-          <li>Einkommensbonus: +30% bei Einkommen unter 40.000 €/Jahr</li>
-          <li>Maximum: 70% Förderung möglich</li>
-          <li>Förderhöchstgrenze: 30.000 € pro Wohneinheit</li>
-        </ul>
-
-        <p><strong>Solarthermie als Einzelmaßnahme (ohne Heizungstausch):</strong></p>
-        <ul>
-          <li>Keine Basisförderung (0%)</li>
-          <li>Alternative: Steuerbonus nach §35c EStG (20% über 3 Jahre)</li>
-          <li>Alternativ: KfW-Kredit 261/262 mit Tilgungszuschuss</li>
-        </ul>
-
-        <h3>Förderbeispiele</h3>
-
-        <p><strong>Beispiel 1: Warmwasser-Anlage als Einzelmaßnahme (8.000 €)</strong></p>
-        <ul>
-          <li>Gesamtkosten: 8.000 €</li>
-          <li>BAFA-Förderung: 0 € (Einzelmaßnahme ohne Heizungstausch)</li>
-          <li>Alternative: Steuerbonus §35c (20% = 1.600 €)</li>
-          <li>Eigenanteil nach Steuerbonus: 6.400 €</li>
-        </ul>
-
-        <p><strong>Beispiel 2: Solarthermie + Wärmepumpe (18.000 € + 22.000 € = 40.000 €)</strong></p>
-        <ul>
-          <li>Gesamtkosten Paket: 40.000 €</li>
-          <li>Förderung 50% (30% + 20% Geschwindigkeit): 20.000 €</li>
-          <li>Eigenanteil: 20.000 €</li>
-        </ul>
-
-        <p><strong>Beispiel 3: Maximale Förderung mit Heizungstausch (35.000 €)</strong></p>
-        <ul>
-          <li>Gesamtkosten: 35.000 €</li>
-          <li>Förderung 70% rechnerisch: 24.500 €</li>
-          <li>Förderobergrenze: 30.000 € (nicht überschritten)</li>
-          <li>Eigenanteil: 10.500 €</li>
-        </ul>
-
-        <h2>Laufende Betriebskosten</h2>
-
-        <h3>Wartung und Instandhaltung</h3>
-        <p><strong>Jährliche Wartung (empfohlen):</strong></p>
-        <ul>
-          <li>Sichtprüfung der Kollektoren: 50-80 €</li>
-          <li>Kontrolle Solarflüssigkeit: 30-50 €</li>
-          <li>Druckprüfung: 20-30 €</li>
-          <li>Funktionsprüfung Pumpe und Regelung: 40-60 €</li>
-          <li><strong>Gesamt: 140-220 € pro Jahr</strong></li>
-        </ul>
-
-        <p><strong>Größere Wartungsarbeiten (alle 5-10 Jahre):</strong></p>
-        <ul>
-          <li>Solarflüssigkeitswechsel: 200-400 €</li>
-          <li>Membrantausch Ausdehnungsgefäß: 100-200 €</li>
-          <li>Pumpenaustausch (nach 10-15 Jahren): 200-400 €</li>
-        </ul>
-
-        <h3>Stromkosten</h3>
-        <p>Für die Solarpumpe und Regelung:</p>
-        <ul>
-          <li>Stromverbrauch: 50-80 kWh/Jahr</li>
-          <li>Kosten bei 0,30 €/kWh: 15-24 €/Jahr</li>
-        </ul>
-
-        <p><strong>Gesamte Betriebskosten: ca. 155-245 € pro Jahr</strong></p>
-
-        <h2>Einsparungen und Erträge</h2>
-
-        <h3>Warmwasser-Anlage (4-Personen-Haushalt)</h3>
-        <p><strong>Ausgangssituation:</strong></p>
-        <ul>
-          <li>Warmwasserbedarf: 3.000 kWh/Jahr</li>
-          <li>Bisherige Erzeugung: Gasheizung</li>
-          <li>Gaskosten: 10 Cent/kWh → 300 €/Jahr</li>
-        </ul>
-
-        <p><strong>Mit Solarthermie:</strong></p>
-        <ul>
-          <li>Solare Deckung: 60% (1.800 kWh)</li>
-          <li>Einsparung Gas: 180 € (1.800 kWh × 0,10 €)</li>
-          <li>Restkosten Gas: 120 € (1.200 kWh × 0,10 €)</li>
-          <li>Betriebskosten Solar: -20 €</li>
-          <li><strong>Netto-Einsparung: 160 €/Jahr</strong></li>
-        </ul>
-
-        <p><strong>Bei Ölheizung (15 Cent/kWh):</strong></p>
-        <ul>
-          <li>Bisherige Kosten: 450 €/Jahr</li>
-          <li>Einsparung: 270 €/Jahr (60%)</li>
-          <li>Netto-Einsparung: 250 €/Jahr</li>
-        </ul>
-
-        <h3>Kombi-Anlage mit Heizungsunterstützung (Einfamilienhaus 150 m²)</h3>
-        <p><strong>Ausgangssituation:</strong></p>
-        <ul>
-          <li>Gesamtwärmebedarf: 18.000 kWh/Jahr</li>
-          <li>Warmwasser: 3.000 kWh</li>
-          <li>Heizung: 15.000 kWh</li>
-          <li>Gaskosten: 10 Cent/kWh → 1.800 €/Jahr</li>
-        </ul>
-
-        <p><strong>Mit Solarthermie:</strong></p>
-        <ul>
-          <li>Solare Deckung Warmwasser: 60% (1.800 kWh)</li>
-          <li>Solare Deckung Heizung: 20% (3.000 kWh)</li>
-          <li>Gesamt solar: 4.800 kWh (27%)</li>
-          <li>Einsparung Gas: 480 €/Jahr</li>
-          <li>Betriebskosten Solar: -200 €</li>
-          <li><strong>Netto-Einsparung: 280 €/Jahr</strong></li>
-        </ul>
-
-        <p><strong>Bei Ölheizung (15 Cent/kWh):</strong></p>
-        <ul>
-          <li>Bisherige Kosten: 2.700 €/Jahr</li>
-          <li>Einsparung: 720 €/Jahr</li>
-          <li>Netto-Einsparung: 520 €/Jahr</li>
-        </ul>
-
-        <div class="my-6 p-4 bg-blue-50 border-l-4 border-blue-500 rounded-r"><p class="font-semibold text-blue-900">Tipp:</p><p class="text-slate-700">Die Einsparungen steigen mit den Energiepreisen. Bei aktuellen Preissteigerungen erhöht sich die Wirtschaftlichkeit deutlich!</p></div>
-
-        <h2>Amortisationszeit</h2>
-
-        <h3>Warmwasser-Anlage (Einzelmaßnahme, ohne Heizungstausch)</h3>
-
-        <p><strong>Szenario 1: Keine BAFA-Förderung, Gasheizung</strong></p>
-        <ul>
-          <li>Investition: 8.000 €</li>
-          <li>BAFA-Förderung: 0 € (Einzelmaßnahme)</li>
-          <li>Steuerbonus §35c: -1.600 € (über 3 Jahre)</li>
-          <li>Eigenanteil: 6.400 €</li>
-          <li>Jährliche Einsparung: 160 €</li>
-          <li><strong>Amortisation: 40 Jahre</strong></li>
-        </ul>
-
-        <p><strong>Szenario 2: Keine BAFA-Förderung, Ölheizung</strong></p>
-        <ul>
-          <li>Investition: 8.000 €</li>
-          <li>Steuerbonus §35c: -1.600 €</li>
-          <li>Eigenanteil: 6.400 €</li>
-          <li>Jährliche Einsparung: 250 €</li>
-          <li><strong>Amortisation: 26 Jahre</strong></li>
-        </ul>
-
-        <div class="my-6 p-4 bg-green-50 border-l-4 border-green-500 rounded-r"><p class="font-semibold text-green-900">💡 Empfehlung:</p><p class="text-slate-700">Solarthermie lohnt sich wirtschaftlich besonders in Kombination mit einem Heizungstausch. Dann profitieren Sie von der vollen BEG-Förderung bis 70%!</p></div>
-
-        <h3>Solarthermie + Wärmepumpe (Heizungstausch)</h3>
-
-        <p><strong>Szenario 1: 50% Förderung (Basis + Geschwindigkeit)</strong></p>
-        <ul>
-          <li>Investition Paket: 40.000 € (Solar 18.000 € + WP 22.000 €)</li>
-          <li>BAFA-Förderung 50%: -20.000 €</li>
-          <li>Eigenanteil: 20.000 €</li>
-          <li>Jährliche Einsparung vs. Öl: 1.800 €</li>
-          <li><strong>Amortisation: 11 Jahre</strong></li>
-        </ul>
-
-        <p><strong>Szenario 2: 70% Förderung (alle Boni)</strong></p>
-        <ul>
-          <li>Investition Paket: 40.000 €</li>
-          <li>BAFA-Förderung 70%: -28.000 €</li>
-          <li>Eigenanteil: 12.000 €</li>
-          <li>Jährliche Einsparung: 1.800 €</li>
-          <li><strong>Amortisation: 7 Jahre</strong></li>
-        </ul>
-
-        <p><strong>Szenario 3: Großes System an Förderobergrenze (50.000 €)</strong></p>
-        <ul>
-          <li>Investition: 50.000 €</li>
-          <li>Rechnerisch 70%: 35.000 €</li>
-          <li>Förderobergrenze: <strong>30.000 €</strong> (gedeckelt!)</li>
-          <li>Eigenanteil: 20.000 €</li>
-          <li>Jährliche Einsparung: 2.200 €</li>
-          <li><strong>Amortisation: 9 Jahre</strong></li>
-        </ul>
-
-        <h2>Renditeberechnung über 25 Jahre</h2>
-
-        <h3>Beispiel: Solarthermie + Wärmepumpe, 50% Förderung</h3>
-
-        <p><strong>Cashflow-Analyse:</strong></p>
-        <ul>
-          <li>Eigenanteil: -20.000 €</li>
-          <li>Jährliche Einsparung vs. Ölheizung: +1.800 €</li>
-          <li>Wartungskosten (25 Jahre): -6.000 €</li>
-          <li>Gesamtertrag nach 25 Jahren: +45.000 € - 6.000 € = +39.000 €</li>
-          <li>Rendite: +39.000 € auf 20.000 € = 195% über 25 Jahre</li>
-          <li><strong>Jährliche Rendite: ca. 5,5% p.a.</strong></li>
-        </ul>
-
-        <p><strong>Mit Preissteigerung (3% p.a. für Öl/Strom):</strong></p>
-        <ul>
-          <li>Jährliche Einsparung steigt auf durchschnittlich 2.400 €</li>
-          <li>Gesamtertrag nach 25 Jahren: ca. 60.000 €</li>
-          <li>Abzüglich Wartung: 54.000 € Gewinn</li>
-          <li><strong>Jährliche Rendite: ca. 7,5% p.a.</strong></li>
-        </ul>
-
-        <h2>Wertsteigerung der Immobilie</h2>
-
-        <p>Solarthermieanlagen erhöhen den Wert Ihrer Immobilie:</p>
-        <ul>
-          <li><strong>Energieausweis:</strong> Bessere Energieeffizienzklasse</li>
-          <li><strong>Verkaufswert:</strong> +2-5% Wertsteigerung</li>
-          <li><strong>Vermietung:</strong> Höhere Miete durch niedrige Nebenkosten</li>
-          <li><strong>Attraktivität:</strong> Umweltbewusste Käufer zahlen mehr</li>
-        </ul>
-
-        <p><strong>Beispiel Einfamilienhaus (Wert 400.000 €):</strong></p>
-        <ul>
-          <li>Wertsteigerung 3%: +12.000 €</li>
-          <li>Investition Solarthermie+WP (nach 50% Förderung): -20.000 €</li>
-          <li>Zusätzlich Betriebskosten-Einsparung über Nutzungsdauer</li>
-        </ul>
-
-        <h2>Vergleich: Solarthermie vs. Photovoltaik</h2>
-
-        <h3>Wirtschaftlichkeit im Vergleich</h3>
-
-        <p><strong>Solarthermie (Kombi-Anlage 12 m²):</strong></p>
-        <ul>
-          <li>Investition (nach 50% Förderung): 9.000 €</li>
-          <li>Jährliche Einsparung: 520 €</li>
-          <li>Amortisation: 17 Jahre</li>
-          <li>Rendite: 2,6-4,2% p.a.</li>
-        </ul>
-
-        <p><strong>Photovoltaik (5 kWp ohne Speicher):</strong></p>
-        <ul>
-          <li>Investition (0% MwSt.): 10.000 €</li>
-          <li>Jährlicher Ertrag: 800-1.000 €</li>
-          <li>Amortisation: 10-13 Jahre</li>
-          <li>Rendite: 5-8% p.a.</li>
-        </ul>
-
-        <p><strong>Fazit:</strong> Photovoltaik ist wirtschaftlich attraktiver, aber Solarthermie punktet bei:</p>
-        <ul>
-          <li>Direkter Wärmenutzung (kein Umwandlungsverlust)</li>
-          <li>Höherer BAFA-Förderung (bis 70% vs. keine PV-Förderung)</li>
-          <li>Geringerer Flächenbedarf für Warmwasser</li>
-          <li>Kombination mit Wärmepumpe für optimale Effizienz</li>
-        </ul>
-
-        <h2>Faktoren für optimale Wirtschaftlichkeit</h2>
-
-        <h3>Was die Rentabilität erhöht</h3>
-        <ol>
-          <li><strong>Hohe Förderung nutzen:</strong> Geschwindigkeitsbonus durch Heizungstausch</li>
-          <li><strong>Alte Ölheizung ersetzen:</strong> Höchste Einsparungen</li>
-          <li><strong>Optimale Auslegung:</strong> Nicht über-, nicht unterdimensionieren</li>
-          <li><strong>Gute Südausrichtung:</strong> Maximaler Ertrag</li>
-          <li><strong>Kombination mit Wärmepumpe:</strong> Synergieeffekte nutzen</li>
-          <li><strong>Eigenleistung:</strong> Bis zu 20% Kostenersparnis</li>
-          <li><strong>Langfristige Nutzung:</strong> Mindestens 20-25 Jahre betreiben</li>
-        </ol>
-
-        <h3>Was die Rentabilität senkt</h3>
-        <ol>
-          <li><strong>Niedrige Energiepreise:</strong> Geringe Einsparungen</li>
-          <li><strong>Schlechte Dachausrichtung:</strong> Nord- oder Ostdach</li>
-          <li><strong>Verschattung:</strong> Bäume, Nachbargebäude</li>
-          <li><strong>Überdimensionierung:</strong> Zu große Anlage</li>
-          <li><strong>Fehlende Wartung:</strong> Effizienz sinkt, Defekte</li>
-          <li><strong>Falsche Systemwahl:</strong> Kombi-Anlage bei geringem Heizbedarf</li>
-        </ol>
-
-        <h2>Zukunftsperspektive: Preisentwicklung</h2>
-
-        <h3>Erwartete Trends bis 2030</h3>
-
-        <p><strong>Anschaffungskosten:</strong></p>
-        <ul>
-          <li>Kollektoren: -10 bis -15% (Skaleneffekte, Wettbewerb)</li>
-          <li>Speicher: -5 bis -10% (bessere Dämmung, Materialien)</li>
-          <li>Installation: +5 bis +10% (Fachkräftemangel, Lohnkosten)</li>
-          <li><strong>Gesamt: -5 bis -10% günstiger</strong></li>
-        </ul>
-
-        <p><strong>Energiepreise:</strong></p>
-        <ul>
-          <li>Gas: +3-5% p.a. (CO₂-Preis steigt)</li>
-          <li>Öl: +4-6% p.a. (Knappheit, CO₂-Preis)</li>
-          <li>Strom: +2-4% p.a. (Netzausbau, Transformation)</li>
-        </ul>
-
-        <p><strong>Auswirkung auf Wirtschaftlichkeit:</strong></p>
-        <ul>
-          <li>Amortisationszeit sinkt um 2-4 Jahre</li>
-          <li>Rendite steigt auf 4-6% p.a.</li>
-          <li>Solarthermie wird deutlich attraktiver</li>
-        </ul>
-
-        <h3>Förderentwicklung</h3>
-        <ul>
-          <li>Basis-Förderung 30%: Bleibt voraussichtlich bis 2030</li>
-          <li>Geschwindigkeitsbonus: Läuft 2028 aus (dann nur noch 17%, ab 2030 nur 14%)</li>
-          <li>Einkommensbonus: Voraussichtlich bis 2030 verfügbar</li>
-          <li><strong>Empfehlung: Jetzt investieren und maximale Förderung sichern!</strong></li>
-        </ul>
-
-        <blockquote class="my-8 p-6 bg-slate-50 border-l-4 border-[#0F5B78] rounded-r"><p class="font-semibold text-lg mb-2">Fazit</p><p class="text-slate-700">Solarthermieanlagen rechnen sich 2025 vor allem beim Austausch alter Öl- oder Gasheizungen mit hoher BAFA-Förderung. Die Amortisationszeit liegt je nach Szenario zwischen 10 und 25 Jahren. Mit Förderungen von bis zu 70% und steigenden Energiepreisen verbessert sich die Wirtschaftlichkeit kontinuierlich. Besonders lohnend: Kombi-Anlagen mit Heizungsunterstützung beim Heizungstausch oder in Kombination mit Wärmepumpen. Die Investition sichert langfristig niedrige Energiekosten, erhöht den Immobilienwert und leistet einen wichtigen Beitrag zum Klimaschutz.</p></blockquote>
-
-        <h2>Entscheidungshilfe: Wann lohnt sich Solarthermie?</h2>
-
-        <h3>Solarthermie lohnt sich besonders, wenn:</h3>
-        <ul>
-          <li>✅ Sie eine alte Öl- oder Gasheizung (20+ Jahre) ersetzen</li>
-          <li>✅ Sie die 50-70% BAFA-Förderung nutzen können</li>
-          <li>✅ Ihr Dach nach Süden ausgerichtet ist (±30°)</li>
-          <li>✅ Sie eine Wärmepumpe installieren (Hybrid-System)</li>
-          <li>✅ Sie langfristig (25+ Jahre) in der Immobilie bleiben</li>
-          <li>✅ Ihre Energiekosten aktuell hoch sind (Öl, alter Gaskessel)</li>
-          <li>✅ Sie Wert auf Umweltschutz und Unabhängigkeit legen</li>
-        </ul>
-
-        <h3>Alternativen prüfen, wenn:</h3>
-        <ul>
-          <li>❌ Ihr Dach stark verschattet oder nach Norden ausgerichtet ist</li>
-          <li>❌ Sie nur Basis-Förderung 30% erhalten (Amortisation >25 Jahre)</li>
-          <li>❌ Ihr Wärmebedarf sehr gering ist (Niedrigenergiehaus)</li>
-          <li>❌ Sie bereits eine effiziente Brennwertheizung haben</li>
-          <li>❌ Ihre Dachfläche für PV besser geeignet ist (höhere Rendite)</li>
-        </ul>
-
-        <h2>Nächste Schritte zur Investitionsentscheidung</h2>
-        <ol>
-          <li><strong>Energieverbrauch analysieren:</strong> Warmwasser- und Heizkosten der letzten 3 Jahre</li>
-          <li><strong>Förderfähigkeit prüfen:</strong> Welche Boni stehen Ihnen zu?</li>
-          <li><strong>Angebote einholen:</strong> Mindestens 3 Fachbetriebe vergleichen</li>
-          <li><strong>Wirtschaftlichkeit berechnen:</strong> Mit Ihren konkreten Daten</li>
-          <li><strong>Alternativen vergleichen:</strong> PV, Wärmepumpe, Kombination</li>
-          <li><strong>Langfristigkeit einplanen:</strong> Mindestens 20 Jahre Nutzungsdauer</li>
-          <li><strong>BAFA-Antrag vorbereiten:</strong> VOR Beauftragung stellen</li>
-        </ol>
-
-        <p>Benötigen Sie eine detaillierte Wirtschaftlichkeitsberechnung für Ihr Projekt? Unsere Energieberater erstellen Ihnen kostenlos eine individuelle Kosten-Nutzen-Analyse – inklusive aktueller Förderungen, Einsparungspotenzial und Amortisationsrechnung.</p>
+        <p>Zwischen 5.000 und 18.000 Euro kostet eine Solarthermie-Anlage – je nach Größe und Einsatzzweck. Diese Preisspanne verunsichert viele Hausbesitzer. In diesem Artikel finden Sie konkrete Zahlen aus der Praxis, die aktuelle Fördersituation und eine ehrliche Einschätzung, wann sich die Investition rechnet.</p>
+
+        <h2>Was kostet eine Solarthermie-Anlage?</h2>
+
+        <p>Die Kosten hängen davon ab, ob Sie nur Warmwasser erzeugen oder auch die Heizung unterstützen möchten. Hier die aktuellen Preise inklusive Montage:</p>
+
+        <h3>Reine Warmwasserbereitung</h3>
+        <p>Für einen Vier-Personen-Haushalt benötigen Sie etwa 4 bis 6 Quadratmeter Kollektorfläche und einen 300-Liter-Speicher. Mit Flachkollektoren liegen die Gesamtkosten zwischen <strong>5.000 und 10.000 Euro</strong>. Vakuumröhrenkollektoren sind effizienter, kosten aber etwa 1.500 Euro mehr.</p>
+
+        <p>Im Einzelnen setzen sich die Kosten zusammen aus: Kollektoren (1.500–3.500 Euro), Speicher (1.000–2.000 Euro), Regelungstechnik und Verrohrung (1.000–2.500 Euro) sowie der Montage (1.500–2.500 Euro).</p>
+
+        <h3>Warmwasser plus Heizungsunterstützung</h3>
+        <p>Wenn die Anlage auch die Heizung unterstützen soll, brauchen Sie mehr Fläche: 10 bis 15 Quadratmeter Kollektoren und einen größeren Pufferspeicher mit 600 bis 1.000 Litern. Die Gesamtkosten liegen dann zwischen <strong>8.000 und 18.000 Euro</strong>.</p>
+
+        <p>Als Faustregel können Sie mit 500 bis 750 Euro pro Quadratmeter Kollektorfläche rechnen – inklusive aller Komponenten und der Installation.</p>
+
+        <div class="my-6 p-4 bg-slate-50 border-l-4 border-slate-400 rounded-r">
+          <p class="font-semibold text-slate-900">Hinweis zur Mindestgröße</p>
+          <p class="text-slate-700">Für die KfW-Förderung gilt: Flachkollektoren müssen mindestens 9 m² groß sein, Vakuumröhrenkollektoren mindestens 7 m². Kleinere Anlagen erhalten keine staatliche Förderung.</p>
+        </div>
+
+        <h2>Die Förderung 2025: So viel zahlt der Staat</h2>
+
+        <p>Seit Januar 2024 läuft die Heizungsförderung über die KfW statt über das BAFA. Die Fördersätze sind attraktiv – aber an Bedingungen geknüpft.</p>
+
+        <h3>Fördersätze im Überblick</h3>
+        <p>Die <strong>Grundförderung beträgt 30 Prozent</strong> der förderfähigen Kosten. Dazu kommen zwei mögliche Boni:</p>
+
+        <p>Der <strong>Klimageschwindigkeitsbonus</strong> bringt zusätzliche 20 Prozent, wenn Sie eine alte Öl- oder Gasheizung ersetzen. Der <strong>Einkommensbonus</strong> von 30 Prozent steht Haushalten mit einem zu versteuernden Jahreseinkommen unter 40.000 Euro zu.</p>
+
+        <p>Theoretisch ergibt das 80 Prozent – die KfW deckelt aber bei <strong>maximal 70 Prozent</strong>. Die förderfähigen Kosten sind auf 30.000 Euro begrenzt (60.000 Euro, wenn ein individueller Sanierungsfahrplan vorliegt).</p>
+
+        <h3>Was das in der Praxis bedeutet</h3>
+
+        <div class="overflow-x-auto my-6">
+          <table class="min-w-full border-collapse">
+            <thead>
+              <tr class="bg-slate-100">
+                <th class="border border-slate-300 px-4 py-3 text-left font-semibold">Anlage</th>
+                <th class="border border-slate-300 px-4 py-3 text-left font-semibold">Kosten</th>
+                <th class="border border-slate-300 px-4 py-3 text-left font-semibold">30% Förderung</th>
+                <th class="border border-slate-300 px-4 py-3 text-left font-semibold">70% Förderung</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border border-slate-300 px-4 py-3">Warmwasser (klein)</td>
+                <td class="border border-slate-300 px-4 py-3">8.000 Euro</td>
+                <td class="border border-slate-300 px-4 py-3">5.600 Euro Eigenanteil</td>
+                <td class="border border-slate-300 px-4 py-3">2.400 Euro Eigenanteil</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="border border-slate-300 px-4 py-3">Kombi-Anlage</td>
+                <td class="border border-slate-300 px-4 py-3">14.000 Euro</td>
+                <td class="border border-slate-300 px-4 py-3">9.800 Euro Eigenanteil</td>
+                <td class="border border-slate-300 px-4 py-3">4.200 Euro Eigenanteil</td>
+              </tr>
+              <tr>
+                <td class="border border-slate-300 px-4 py-3">Premium-System</td>
+                <td class="border border-slate-300 px-4 py-3">18.000 Euro</td>
+                <td class="border border-slate-300 px-4 py-3">12.600 Euro Eigenanteil</td>
+                <td class="border border-slate-300 px-4 py-3">5.400 Euro Eigenanteil</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="my-6 p-4 bg-amber-50 border-l-4 border-amber-500 rounded-r">
+          <p class="font-semibold text-amber-900">Wichtig: Antrag vor Vertragsabschluss</p>
+          <p class="text-slate-700">Sie müssen den KfW-Antrag stellen, bevor Sie den Installateur beauftragen. Nachträgliche Anträge werden ohne Prüfung abgelehnt. Der Bewilligungszeitraum beträgt 36 Monate.</p>
+        </div>
+
+        <h3>Alternative: Steuerbonus</h3>
+        <p>Wer die KfW-Förderung nicht nutzen kann oder möchte, kann die Kosten steuerlich absetzen. Nach §35c EStG sind bis zu 20 Prozent der Investition absetzbar, verteilt auf drei Jahre. Das ist weniger als die KfW-Förderung, aber ohne Vorab-Antrag möglich.</p>
+
+        <h2>Laufende Kosten: Weniger als gedacht</h2>
+
+        <p>Solarthermie-Anlagen sind wartungsarm. Die jährlichen Betriebskosten liegen bei etwa <strong>150 Euro</strong>.</p>
+
+        <p>Darin enthalten sind die Stromkosten für die Umwälzpumpe (15–25 Euro für 50–80 kWh) und die empfohlene jährliche Wartung (100–150 Euro). Diese umfasst die Sichtprüfung der Kollektoren, Kontrolle des Anlagendrucks und der Solarflüssigkeit sowie eine Funktionsprüfung der Regelung.</p>
+
+        <p>Alle fünf bis zehn Jahre steht ein Wechsel der Solarflüssigkeit an (200–400 Euro). Nach 10 bis 15 Jahren kann ein Pumpentausch nötig werden (200–400 Euro). Diese Kosten fallen aber nicht regelmäßig an.</p>
+
+        <h2>Wirtschaftlichkeit: Die ehrliche Rechnung</h2>
+
+        <p>Hier wird es interessant – und hier trennt sich auch die Spreu vom Weizen. Die Wirtschaftlichkeit hängt stark davon ab, welche Heizung Sie aktuell haben und welche Förderung Sie erhalten.</p>
+
+        <h3>Warmwasser-Anlage: Einsparungen</h3>
+        <p>Eine Solarthermie-Anlage deckt etwa 60 Prozent des Warmwasserbedarfs – von Mai bis September sogar nahezu komplett, im Winter nur 20 bis 30 Prozent.</p>
+
+        <p>Bei einem Vier-Personen-Haushalt mit Gasheizung (Warmwasserbedarf 3.000 kWh, Gaspreis 10 Cent/kWh) sparen Sie rund 180 Euro Gaskosten pro Jahr. Abzüglich der Betriebskosten bleiben etwa <strong>150 Euro netto</strong>.</p>
+
+        <p>Mit einer Ölheizung (15 Cent/kWh) sind es rund 250 Euro netto pro Jahr.</p>
+
+        <h3>Kombi-Anlage: Einsparungen</h3>
+        <p>Eine Kombi-Anlage deckt zusätzlich etwa 20 bis 30 Prozent des Heizwärmebedarfs. Bei einem Einfamilienhaus mit 18.000 kWh Gesamtverbrauch (Gasheizung) ergibt das eine Einsparung von rund 480 Euro brutto. Nach Abzug der höheren Wartungskosten bleiben etwa <strong>280 Euro netto</strong> pro Jahr.</p>
+
+        <h3>Amortisationszeit: Realistische Zahlen</h3>
+
+        <p>Hier liegt der Knackpunkt. Ohne die maximale Förderung rechnet sich Solarthermie nur über sehr lange Zeiträume:</p>
+
+        <div class="overflow-x-auto my-6">
+          <table class="min-w-full border-collapse">
+            <thead>
+              <tr class="bg-slate-100">
+                <th class="border border-slate-300 px-4 py-3 text-left font-semibold">Szenario</th>
+                <th class="border border-slate-300 px-4 py-3 text-left font-semibold">Eigenanteil</th>
+                <th class="border border-slate-300 px-4 py-3 text-left font-semibold">Ersparnis/Jahr</th>
+                <th class="border border-slate-300 px-4 py-3 text-left font-semibold">Amortisation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border border-slate-300 px-4 py-3">Warmwasser, 30% Förderung, Gas</td>
+                <td class="border border-slate-300 px-4 py-3">5.600 Euro</td>
+                <td class="border border-slate-300 px-4 py-3">150 Euro</td>
+                <td class="border border-slate-300 px-4 py-3">37 Jahre</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="border border-slate-300 px-4 py-3">Warmwasser, 70% Förderung, Öl</td>
+                <td class="border border-slate-300 px-4 py-3">2.400 Euro</td>
+                <td class="border border-slate-300 px-4 py-3">250 Euro</td>
+                <td class="border border-slate-300 px-4 py-3">10 Jahre</td>
+              </tr>
+              <tr>
+                <td class="border border-slate-300 px-4 py-3">Kombi + Wärmepumpe, 50% Förderung</td>
+                <td class="border border-slate-300 px-4 py-3">20.000 Euro</td>
+                <td class="border border-slate-300 px-4 py-3">1.800 Euro</td>
+                <td class="border border-slate-300 px-4 py-3">11 Jahre</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="border border-slate-300 px-4 py-3">Kombi + Wärmepumpe, 70% Förderung</td>
+                <td class="border border-slate-300 px-4 py-3">12.000 Euro</td>
+                <td class="border border-slate-300 px-4 py-3">1.800 Euro</td>
+                <td class="border border-slate-300 px-4 py-3">7 Jahre</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>Die Lebensdauer einer Solarthermie-Anlage liegt bei 25 bis 30 Jahren. Bei günstigen Rahmenbedingungen (hohe Förderung, teure bestehende Heizung) arbeitet die Anlage also 15 bis 20 Jahre im Plus.</p>
+
+        <h2>Für wen lohnt sich Solarthermie?</h2>
+
+        <p>Nach dieser Analyse lässt sich klar sagen, in welchen Fällen Solarthermie wirtschaftlich sinnvoll ist – und in welchen nicht.</p>
+
+        <h3>Solarthermie ist sinnvoll, wenn:</h3>
+        <p>Sie eine alte Öl- oder Gasheizung (älter als 20 Jahre) ersetzen und damit den Klimageschwindigkeitsbonus erhalten. Die Kombination mit einer neuen Wärmepumpe ist der wirtschaftlich beste Fall.</p>
+
+        <p>Ihr Dach nach Süden ausgerichtet ist (Abweichung bis 30 Grad ist akzeptabel) und keine Verschattung durch Bäume oder Nachbargebäude vorliegt.</p>
+
+        <p>Sie langfristig in der Immobilie bleiben – mindestens 15 bis 20 Jahre, um die Investition zu amortisieren.</p>
+
+        <h3>Solarthermie ist weniger sinnvoll, wenn:</h3>
+        <p>Sie nur die Grundförderung von 30 Prozent erhalten. Die Amortisationszeiten von über 30 Jahren sind dann zu lang.</p>
+
+        <p>Ihr Dach nach Norden ausgerichtet oder stark verschattet ist. Der Ertrag sinkt dann so weit, dass sich die Investition nicht rechnet.</p>
+
+        <p>Sie bereits eine moderne Brennwertheizung haben und keinen Heizungstausch planen. Die zusätzliche Förderung entfällt, und die Einsparungen sind zu gering.</p>
+
+        <p>Die verfügbare Dachfläche begrenzt ist. In diesem Fall ist Photovoltaik oft die bessere Wahl, weil der erzeugte Strom vielseitiger nutzbar ist.</p>
+
+        <h3>Vergleich mit Photovoltaik</h3>
+        <p>Photovoltaik erreicht typischerweise eine Rendite von 5 bis 8 Prozent pro Jahr und amortisiert sich in 10 bis 13 Jahren – ohne Förderung. Solarthermie kommt selbst mit Förderung nur auf 2 bis 5 Prozent Rendite.</p>
+
+        <p>Der Vorteil von Solarthermie: Sie nutzt die Sonnenenergie effizienter für Wärme (60–80 Prozent Wirkungsgrad gegenüber 15–22 Prozent bei PV) und erhält höhere Förderungen. Bei begrenzter Dachfläche und hohem Wärmebedarf kann Solarthermie daher die bessere Wahl sein.</p>
+
+        <h2>Fazit</h2>
+
+        <p>Solarthermie rechnet sich 2025 vor allem in einem Fall: beim Austausch einer alten fossilen Heizung gegen eine Wärmepumpe mit Solarthermie-Unterstützung. Dann greifen die hohen Förderungen von bis zu 70 Prozent, und die Amortisation liegt bei 7 bis 11 Jahren.</p>
+
+        <p>Als Einzelmaßnahme mit nur 30 Prozent Förderung ist Solarthermie wirtschaftlich grenzwertig. Die Amortisationszeiten von 25 bis 40 Jahren übersteigen oft die Lebensdauer der Anlage.</p>
+
+        <p>Wer Solarthermie aus Überzeugung für den Klimaschutz installieren möchte, macht nichts falsch – die Technik ist ausgereift und langlebig. Wer rein nach Rendite entscheidet, sollte die Fördervoraussetzungen genau prüfen und gegebenenfalls Photovoltaik als Alternative in Betracht ziehen.</p>
+
+        <h2>Nächste Schritte</h2>
+
+        <p>Prüfen Sie zunächst Ihre Förderfähigkeit: Haben Sie Anspruch auf den Klimageschwindigkeitsbonus oder den Einkommensbonus? Dann holen Sie mindestens drei Angebote von Fachbetrieben ein und vergleichen Sie die Wirtschaftlichkeitsberechnungen.</p>
+
+        <p>Denken Sie daran: Der KfW-Antrag muss vor der Beauftragung gestellt werden. Planen Sie dafür ausreichend Vorlauf ein.</p>
 
         <div class="cta-box">
-          <p class="cta-locations">📍 <strong>Unsere Standorte:</strong> Bobingen (Augsburg) · Gutenzell-Hürbel (Ulm/Memmingen) · Klosterlechfeld</p>
-          <h4>Kostenlose Wirtschaftlichkeitsberechnung</h4>
-          <p>Wir berechnen Ihre persönliche Amortisation und maximieren Ihre Förderung – unverbindlich und herstellerunabhängig.</p>
+          <p><strong>Standorte:</strong> Bobingen (Augsburg), Gutenzell-Hürbel (Ulm/Memmingen), Klosterlechfeld</p>
+          <h4>Kostenlose Beratung zur Solarthermie</h4>
+          <p>Wir berechnen Ihre individuelle Wirtschaftlichkeit und prüfen Ihre Fördermöglichkeiten – unverbindlich und herstellerunabhängig.</p>
           <p>
             <strong>Telefon:</strong> <a href="tel:+4982349665900">+49 8234 9665900</a><br>
             <strong>E-Mail:</strong> <a href="mailto:service@heizcenter.de">service@heizcenter.de</a>
@@ -9129,8 +8914,8 @@ function getMockBlogPosts(): BlogPost[] {
       `,
       category: 'Solar',
       author: 'HeizCenter Redaktion',
-      date: '2025-01-12',
-      readingTime: 19,
+      date: '2026-02-04',
+      readingTime: 11,
       image: '/images/HeizCenter_Solar.webp',
       tags: ['Solarthermie Kosten', 'Wirtschaftlichkeit', 'Amortisation', 'Rendite', 'Förderung', 'ROI', 'Investition'],
       featured: true,
