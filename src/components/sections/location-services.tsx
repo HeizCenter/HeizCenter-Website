@@ -22,7 +22,7 @@ export function LocationServices({
   return (
     <section className="container py-16">
       <h2 className="text-3xl font-bold text-center mb-12">{title}</h2>
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
         {services.map((service, index) => {
           const Icon = service.icon;
           return (
