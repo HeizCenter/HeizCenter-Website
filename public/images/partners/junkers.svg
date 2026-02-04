@@ -1,11 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50">
-  <defs>
-    <linearGradient id="junkers-grad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#FF6B00"/>
-      <stop offset="100%" style="stop-color:#E55A00"/>
-    </linearGradient>
-  </defs>
-  <rect width="200" height="50" fill="url(#junkers-grad)" rx="3"/>
-  <text x="100" y="26" font-family="'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="700" fill="white" text-anchor="middle" letter-spacing="1">JUNKERS</text>
-  <text x="100" y="42" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="500" fill="white" text-anchor="middle" letter-spacing="1">BOSCH GROUP</text>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 45" width="180" height="45">
+  <!-- Junkers Heating Brand Logo (now part of Bosch) -->
+  <text x="8" y="32" font-family="'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="700" fill="#005691" letter-spacing="1">Junkers</text>
+  <text x="130" y="40" font-family="'Helvetica Neue', Arial, sans-serif" font-size="8" fill="#666666">BOSCH</text>
 </svg>
