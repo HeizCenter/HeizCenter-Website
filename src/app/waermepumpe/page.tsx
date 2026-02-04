@@ -156,6 +156,7 @@ export default function WaermepumpePage() {
         icon={Zap}
         badge="Bis zu 70% Förderung"
         imageSrc="/images/Waermepumpe.jpeg"
+        imageAlt="Moderne Luft-Wasser-Wärmepumpe vor Einfamilienhaus - Bis 70% BEG-Förderung mit HeizCenter Bayern"
       />
 
       <FeaturesSection

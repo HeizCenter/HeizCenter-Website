@@ -171,6 +171,7 @@ export default function SolarPage() {
         icon={Sun}
         badge="Bis zu 70% KfW-Förderung"
         imageSrc="/images/Solaranlage.webp"
+        imageAlt="Solarthermie Flachkollektoren auf Hausdach - 70% KfW-Förderung mit HeizCenter"
       />
 
       <FeaturesSection

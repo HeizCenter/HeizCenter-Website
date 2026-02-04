@@ -85,7 +85,7 @@ export default function Home() {
           <div className="relative overflow-hidden">
             <Image
               src="/images/Solaranlage.webp"
-              alt="Solar installation"
+              alt="Solarthermie-Anlage auf Einfamilienhaus in Bayern - HeizCenter Installation mit KfW-Förderung"
               fill
               className="object-cover"
               priority
@@ -94,7 +94,7 @@ export default function Home() {
           <div className="relative overflow-hidden">
             <Image
               src="/images/Waermepumpe.jpeg"
-              alt="Heat pump"
+              alt="Luft-Wasser-Wärmepumpe Installation in Augsburg - HeizCenter Fachbetrieb für Heizsysteme"
               fill
               className="object-cover"
               priority
@@ -103,7 +103,7 @@ export default function Home() {
           <div className="relative overflow-hidden">
             <Image
               src="/images/HeizCenter_Heizung.webp"
-              alt="Heating system"
+              alt="Moderne Gasbrennwertheizung mit Viessmann Technik - HeizCenter Installation Bayern"
               fill
               className="object-cover"
               priority
@@ -112,7 +112,7 @@ export default function Home() {
           <div className="relative overflow-hidden">
             <Image
               src="/images/HeizCenter_Badgestaltung.webp"
-              alt="Bathroom design"
+              alt="Moderne Badsanierung mit bodengleicher Dusche - HeizCenter Komplettservice Augsburg"
               fill
               className="object-cover"
               priority

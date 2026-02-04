@@ -11,6 +11,7 @@ interface ServiceHeroProps {
   icon: LucideIcon;
   badge?: string;
   imageSrc?: string;
+  imageAlt?: string;
   logoSrc?: string;
 }
 
@@ -21,6 +22,7 @@ export function ServiceHero({
   icon: Icon,
   badge,
   imageSrc,
+  imageAlt,
   logoSrc,
 }: ServiceHeroProps) {
   return (
@@ -88,7 +90,7 @@ export function ServiceHero({
               <div className="relative aspect-square rounded-3xl overflow-hidden">
                 <Image
                   src={imageSrc}
-                  alt={title}
+                  alt={imageAlt || title}
                   fill
                   className="object-cover"
                   priority

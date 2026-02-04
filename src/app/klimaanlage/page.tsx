@@ -148,6 +148,7 @@ export default function KlimaanlagePage() {
         icon={Wind}
         badge="Kühlen & Heizen"
         imageSrc="/images/klima.jpeg"
+        imageAlt="Split-Klimaanlage Außengerät Installation - HeizCenter Kältetechniker für Klimasysteme"
       />
 
       <FeaturesSection

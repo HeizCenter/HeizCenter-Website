@@ -143,6 +143,7 @@ export default function SanitaerPage() {
         icon={Droplet}
         badge="Festpreisgarantie"
         imageSrc="/images/HeizCenter_Badgestaltung.webp"
+        imageAlt="Komplette Badsanierung mit bodengleicher Dusche - HeizCenter 3D-Badplanung Bayern"
       />
 
       <FeaturesSection

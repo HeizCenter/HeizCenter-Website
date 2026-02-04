@@ -133,6 +133,7 @@ export default function HeizungPage() {
         icon={Flame}
         badge="24/7 Notdienst"
         imageSrc="/images/HeizCenter_Heizung.webp"
+        imageAlt="Gasbrennwertheizung Installation - HeizCenter für moderne Heizsysteme in Augsburg und Ulm"
       />
 
       <FeaturesSection
