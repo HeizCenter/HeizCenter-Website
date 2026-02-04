@@ -3,7 +3,7 @@ import { LocationHero } from "@/components/sections/location-hero";
 import { LocationServices, LocationService } from "@/components/sections/location-services";
 import { FAQSection, FAQItem } from "@/components/sections/faq-section";
 import { CTASection } from "@/components/sections/cta-section";
-import { Zap, Flame, Droplet, Wind } from "lucide-react";
+import { Zap, Flame, Droplet, Wind, Sun } from "lucide-react";
 import { LocationPageSchema } from "@/components/schema/local-business-schema";
 import { locationData } from "@/lib/location-data";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
@@ -12,7 +12,7 @@ import { getCanonicalUrl } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "HeizCenter Krumbach - Wärmepumpe, Heizung & Sanitär",
   description: "HeizCenter Service in Krumbach. Wärmepumpen, Heizung, Sanitär. Service aus Ulm - 35 km entfernt.",
-  keywords: ["Wärmepumpe Krumbach", "Heizung Krumbach", "Sanitär Krumbach"],
+  keywords: ["Wärmepumpe Krumbach", "Heizung Krumbach", "Sanitär Krumbach", "Solarthermie Krumbach"],
   alternates: {
     canonical: getCanonicalUrl("/standorte/krumbach"),
   },
@@ -25,6 +25,7 @@ const services: LocationService[] = [
   { title: "Heizung", description: "Installation und 24/7 Notdienst", icon: Flame, href: "/heizung" },
   { title: "Sanitär", description: "Badsanierung und Festpreisgarantie", icon: Droplet, href: "/sanitaer" },
   { title: "Klimaanlage", description: "Split-Klimaanlagen Installation", icon: Wind, href: "/klimaanlage" },
+  { title: "Solarthermie", description: "Solarthermie bis 70% Förderung", icon: Sun, href: "/solar" },
 ];
 
 const faqs: FAQItem[] = [

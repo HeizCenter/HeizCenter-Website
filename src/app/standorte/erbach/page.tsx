@@ -3,7 +3,7 @@ import { LocationHero } from "@/components/sections/location-hero";
 import { LocationServices, LocationService } from "@/components/sections/location-services";
 import { FAQSection, FAQItem } from "@/components/sections/faq-section";
 import { CTASection } from "@/components/sections/cta-section";
-import { Zap, Flame, Droplet, Wind } from "lucide-react";
+import { Zap, Flame, Droplet, Wind, Sun } from "lucide-react";
 import { LocationPageSchema } from "@/components/schema/local-business-schema";
 import { locationData } from "@/lib/location-data";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
@@ -12,7 +12,7 @@ import { getCanonicalUrl } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "HeizCenter Erbach (Donau) - Wärmepumpe & Heizung",
   description: "HeizCenter Service Erbach. Wärmepumpen, Heizung, Sanitär. Service aus Ulm - 20 km.",
-  keywords: ["Wärmepumpe Erbach", "Heizung Erbach Donau"],
+  keywords: ["Wärmepumpe Erbach", "Heizung Erbach Donau", "Solarthermie Erbach"],
   alternates: {
     canonical: getCanonicalUrl("/standorte/erbach"),
   },
@@ -25,6 +25,7 @@ const services: LocationService[] = [
   { title: "Heizung", description: "Heizung & Notdienst", icon: Flame, href: "/heizung" },
   { title: "Sanitär", description: "Badsanierung", icon: Droplet, href: "/sanitaer" },
   { title: "Klimaanlage", description: "Klimatechnik", icon: Wind, href: "/klimaanlage" },
+  { title: "Solarthermie", description: "Solarthermie-Anlagen", icon: Sun, href: "/solar" },
 ];
 
 const faqs: FAQItem[] = [

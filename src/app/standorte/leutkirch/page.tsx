@@ -3,7 +3,7 @@ import { LocationHero } from "@/components/sections/location-hero";
 import { LocationServices, LocationService } from "@/components/sections/location-services";
 import { FAQSection, FAQItem } from "@/components/sections/faq-section";
 import { CTASection } from "@/components/sections/cta-section";
-import { Zap, Flame, Droplet, Wind } from "lucide-react";
+import { Zap, Flame, Droplet, Wind, Sun } from "lucide-react";
 import { LocationPageSchema } from "@/components/schema/local-business-schema";
 import { locationData } from "@/lib/location-data";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
@@ -12,7 +12,7 @@ import { getCanonicalUrl } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "HeizCenter Leutkirch - Wärmepumpe & Heizung",
   description: "HeizCenter Service Leutkirch. Wärmepumpen, Heizung. Service aus Memmingen - 35 km.",
-  keywords: ["Wärmepumpe Leutkirch", "Heizung Leutkirch"],
+  keywords: ["Wärmepumpe Leutkirch", "Heizung Leutkirch", "Solarthermie Leutkirch"],
   alternates: {
     canonical: getCanonicalUrl("/standorte/leutkirch"),
   },
@@ -25,6 +25,7 @@ const services: LocationService[] = [
   { title: "Heizung", description: "Heizungsservice", icon: Flame, href: "/heizung" },
   { title: "Sanitär", description: "Badsanierung", icon: Droplet, href: "/sanitaer" },
   { title: "Klimaanlage", description: "Klimaanlagen", icon: Wind, href: "/klimaanlage" },
+  { title: "Solarthermie", description: "Solarthermie-Anlagen", icon: Sun, href: "/solar" },
 ];
 
 const faqs: FAQItem[] = [

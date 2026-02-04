@@ -3,7 +3,7 @@ import { LocationHero } from "@/components/sections/location-hero";
 import { LocationServices, LocationService } from "@/components/sections/location-services";
 import { FAQSection, FAQItem } from "@/components/sections/faq-section";
 import { CTASection } from "@/components/sections/cta-section";
-import { Zap, Flame, Droplet, Wind } from "lucide-react";
+import { Zap, Flame, Droplet, Wind, Sun } from "lucide-react";
 import { LocationPageSchema } from "@/components/schema/local-business-schema";
 import { locationData } from "@/lib/location-data";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
@@ -12,7 +12,7 @@ import { getCanonicalUrl } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "HeizCenter Aichach - Wärmepumpe, Heizung & Sanitär",
   description: "HeizCenter Service in Aichach. Wärmepumpen, Heizung, Sanitär. Service aus Augsburg - 25 km.",
-  keywords: ["Wärmepumpe Aichach", "Heizung Aichach", "Sanitär Aichach"],
+  keywords: ["Wärmepumpe Aichach", "Heizung Aichach", "Sanitär Aichach", "Solarthermie Aichach"],
   alternates: {
     canonical: getCanonicalUrl("/standorte/aichach"),
   },
@@ -25,6 +25,7 @@ const services: LocationService[] = [
   { title: "Heizung", description: "Heizungsservice & Notdienst", icon: Flame, href: "/heizung" },
   { title: "Sanitär", description: "Badsanierung komplett", icon: Droplet, href: "/sanitaer" },
   { title: "Klimaanlage", description: "Klimaanlagen-Installation", icon: Wind, href: "/klimaanlage" },
+  { title: "Solarthermie", description: "Solarthermie-Anlagen", icon: Sun, href: "/solar" },
 ];
 
 const faqs: FAQItem[] = [

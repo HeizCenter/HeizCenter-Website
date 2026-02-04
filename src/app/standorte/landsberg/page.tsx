@@ -6,7 +6,7 @@ import {
 } from "@/components/sections/location-services";
 import { FAQSection, FAQItem } from "@/components/sections/faq-section";
 import { CTASection } from "@/components/sections/cta-section";
-import { Zap, Flame, Droplet, Wind } from "lucide-react";
+import { Zap, Flame, Droplet, Wind, Sun } from "lucide-react";
 import { LocationPageSchema } from "@/components/schema/local-business-schema";
 import { locationData } from "@/lib/location-data";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     "Heizung Landsberg",
     "Sanitär Landsberg",
     "Klimaanlage Landsberg",
+    "Solarthermie Landsberg",
     "HeizCenter Landsberg am Lech",
   ],
   alternates: {
@@ -59,6 +60,13 @@ const services: LocationService[] = [
       "Split-Klimaanlagen für perfektes Raumklima. Kühlen und Heizen in einem System.",
     icon: Wind,
     href: "/klimaanlage",
+  },
+  {
+    title: "Solarthermie",
+    description:
+      "Solarthermie-Anlagen für Landsberg. Bis 70% KfW-Förderung. Warmwasser mit Sonnenenergie.",
+    icon: Sun,
+    href: "/solar",
   },
 ];
 

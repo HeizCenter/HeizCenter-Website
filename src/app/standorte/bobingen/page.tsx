@@ -7,7 +7,7 @@ import {
 import { LocationCoverage } from "@/components/sections/location-coverage";
 import { FAQSection, FAQItem } from "@/components/sections/faq-section";
 import { CTASection } from "@/components/sections/cta-section";
-import { Zap, Flame, Droplet, Wind } from "lucide-react";
+import { Zap, Flame, Droplet, Wind, Sun } from "lucide-react";
 import { LocationPageSchema } from "@/components/schema/local-business-schema";
 import { locationData } from "@/lib/location-data";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
@@ -23,6 +23,7 @@ export const metadata: Metadata = {
     "Heizung Bobingen",
     "Sanitär Bobingen",
     "Klimaanlage Bobingen",
+    "Solarthermie Bobingen",
     "Badsanierung Bobingen",
     "Heizungsnotdienst Bobingen",
     "HeizCenter Bobingen",
@@ -66,6 +67,13 @@ const services: LocationService[] = [
       "Split-Klimaanlagen für angenehme Temperaturen. Heizen und Kühlen mit einem Gerät.",
     icon: Wind,
     href: "/klimaanlage",
+  },
+  {
+    title: "Solarthermie",
+    description:
+      "Solarthermie-Anlagen für Bobingen. Bis 70% KfW-Förderung. Warmwasser und Heizungsunterstützung mit Sonnenenergie.",
+    icon: Sun,
+    href: "/solar",
   },
 ];
 

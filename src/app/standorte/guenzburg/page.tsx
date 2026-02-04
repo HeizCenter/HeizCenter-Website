@@ -3,7 +3,7 @@ import { LocationHero } from "@/components/sections/location-hero";
 import { LocationServices, LocationService } from "@/components/sections/location-services";
 import { FAQSection, FAQItem } from "@/components/sections/faq-section";
 import { CTASection } from "@/components/sections/cta-section";
-import { Zap, Flame, Droplet, Wind } from "lucide-react";
+import { Zap, Flame, Droplet, Wind, Sun } from "lucide-react";
 import { LocationPageSchema } from "@/components/schema/local-business-schema";
 import { locationData } from "@/lib/location-data";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
@@ -12,7 +12,7 @@ import { getCanonicalUrl } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "HeizCenter Günzburg - Wärmepumpe, Heizung & Sanitär | Service vor Ort",
   description: "HeizCenter Service in Günzburg. Wärmepumpen, Heizung, Sanitär und Klimaanlagen. Schneller Service aus Ulm - nur 30 km entfernt. Jetzt anfragen!",
-  keywords: ["Wärmepumpe Günzburg", "Heizung Günzburg", "Sanitär Günzburg", "Klimaanlage Günzburg"],
+  keywords: ["Wärmepumpe Günzburg", "Heizung Günzburg", "Sanitär Günzburg", "Klimaanlage Günzburg", "Solarthermie Günzburg"],
   alternates: {
     canonical: getCanonicalUrl("/standorte/guenzburg"),
   },
@@ -25,6 +25,7 @@ const services: LocationService[] = [
   { title: "Heizung", description: "Heizungsinstallation und Wartung. 24/7 Notdienst verfügbar.", icon: Flame, href: "/heizung" },
   { title: "Sanitär & Bad", description: "Badsanierung mit Festpreisgarantie und 3D-Planung.", icon: Droplet, href: "/sanitaer" },
   { title: "Klimaanlage", description: "Split-Klimaanlagen für perfektes Raumklima.", icon: Wind, href: "/klimaanlage" },
+  { title: "Solarthermie", description: "Solarthermie-Anlagen für Günzburg. Bis 70% KfW-Förderung.", icon: Sun, href: "/solar" },
 ];
 
 const faqs: FAQItem[] = [

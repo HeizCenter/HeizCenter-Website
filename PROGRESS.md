@@ -73,11 +73,15 @@
 - [x] UG Rechtsform-Referenz entfernt
 - [x] Partner-Logos: Echte Marken-Logos von Wikimedia Commons integriert
 
+### Standort-Seiten
+- [x] **Solarthermie** zu allen 26 Standort-Seiten hinzugefügt (fehlte komplett!)
+
 ---
 
 ## Letzte Git-Commits
 
 ```
+2e1b985 feat(partner): replace placeholder logos with official brand logos
 69d175f fix(forms): prevent data loss and improve GDPR consent UX
 8dd8415 feat: Add HeizCenter favicon and apple-icon
 d0e05d8 fix: Remove outdated UG legal form reference
@@ -142,13 +146,93 @@ git log --oneline -10
 
 ## Session-Archiv
 
+### Session 2026-02-04 (Solarthermie Standort-Seiten)
+
+#### Problem
+- **Solarthermie** fehlte als Service auf **allen 26 Standort-Seiten**
+- Aktuelle Services: Wärmepumpe, Heizung, Sanitär, Klimaanlage (nur 4 statt 5)
+- Solarthermie existierte aber auf `/solar` Seite und anderen Bereichen
+
+#### Completed
+- [x] Alle 26 Standort-Seiten mit Solarthermie-Service aktualisiert
+- [x] Sun-Icon aus lucide-react importiert
+- [x] SEO-Keywords "Solarthermie [Stadt]" hinzugefügt
+- [x] Build und Lint erfolgreich verifiziert
+
+#### Geänderte Dateien (26)
+
+**Hauptstandorte:**
+| Datei | Änderung |
+|-------|----------|
+| `src/app/standorte/bobingen/page.tsx` | +Solarthermie Service, +Keyword |
+| `src/app/standorte/gutenzell-huerbel/page.tsx` | +Solarthermie Service, +Keyword |
+
+**Service-Städte:**
+- augsburg, ulm, memmingen, neu-ulm, kaufbeuren, guenzburg
+- friedberg, schwabmuenchen, koenigsbrunn, gersthofen, neusaess, stadtbergen
+- aichach, landsberg, mindelheim, bad-woerishofen, ottobeuren, leutkirch
+- bad-wurzach, laupheim, blaustein, erbach, krumbach, klosterlechfeld
+
+#### Service-Eintrag (Pattern)
+```typescript
+{
+  title: "Solarthermie",
+  description: "Solarthermie-Anlagen für [Stadt]. Bis 70% KfW-Förderung.",
+  icon: Sun,
+  href: "/solar",
+}
+```
+
+---
+
 ### Session 2026-02-04 (Partner Logos)
-- [x] Partner-Seite analysiert - Placeholder-Logos identifiziert
-- [x] Echte Partner-Logos von Wikimedia Commons heruntergeladen:
-  - Viessmann, Vaillant, Buderus, Wolf, Stiebel Eltron, Bosch, Daikin
-  - Junkers: Text-Logo erstellt (Marke 2019 in Bosch integriert)
+
+**Commit:** `2e1b985 feat(partner): replace placeholder logos with official brand logos`
+
+#### Completed
+- [x] Partner-Seite analysiert - Placeholder-Logos (Text auf Rechtecken) identifiziert
+- [x] Echte Partner-Logos von Wikimedia Commons heruntergeladen
 - [x] Build erfolgreich verifiziert
-- **Dateien:** `public/images/partners/*.svg` (8 Logos aktualisiert)
+- [x] Änderungen auf GitHub gepusht
+
+#### Logo-Quellen (Wikimedia Commons)
+| Partner | Datei | Quelle |
+|---------|-------|--------|
+| Viessmann | viessmann.svg | Viessmann-logo.svg |
+| Vaillant | vaillant.svg | Vaillant-logo-2021.svg (mit Hasen-Maskottchen) |
+| Buderus | buderus.svg | Buderus-logo.svg |
+| Wolf | wolf.svg | Wolf_Logo.svg |
+| Stiebel Eltron | stiebel-eltron.svg | Stiebel_Eltron_logo.svg |
+| Bosch | bosch.svg | Bosch-Logo.svg (rot) |
+| Daikin | daikin.svg | DAIKIN_logo.svg |
+| Junkers | junkers.svg | Eigenes Text-Logo (Marke 2019 eingestellt) |
+
+#### Geänderte Dateien
+| Datei | Änderung |
+|-------|----------|
+| `public/images/partners/viessmann.svg` | Echtes Viessmann-Logo (rot) |
+| `public/images/partners/vaillant.svg` | Echtes Vaillant-Logo mit Hase |
+| `public/images/partners/buderus.svg` | Echtes Buderus-Logo |
+| `public/images/partners/wolf.svg` | Echtes Wolf-Logo |
+| `public/images/partners/stiebel-eltron.svg` | Echtes Stiebel Eltron-Logo |
+| `public/images/partners/bosch.svg` | Echtes BOSCH-Logo (rot) |
+| `public/images/partners/daikin.svg` | Echtes Daikin-Logo |
+| `public/images/partners/junkers.svg` | Text-basiertes "Junkers by BOSCH" |
+
+#### Betroffene Seiten
+- `/partner` - Logo-Grid zeigt alle 8 Logos
+- `/partner/viessmann` - Hero-Section mit Viessmann-Logo
+- `/partner/vaillant` - Hero-Section mit Vaillant-Logo
+- `/partner/buderus` - Hero-Section mit Buderus-Logo
+- `/partner/wolf` - Hero-Section mit Wolf-Logo
+- `/partner/stiebel-eltron` - Hero-Section mit Stiebel-Logo
+- `/partner/junkers` - Hero-Section mit Junkers-Logo
+- `/partner/bosch` - Hero-Section mit Bosch-Logo
+- `/partner/daikin` - Hero-Section mit Daikin-Logo
+
+#### Hinweise
+- Backup der alten Placeholder-Logos in `public/images/partners/backup/`
+- Junkers-Marke wurde 2019 in Bosch Home Comfort integriert
 
 ### Session 2026-02-04 (Initial)
 - [x] PROGRESS.md erstellt und initial befüllt

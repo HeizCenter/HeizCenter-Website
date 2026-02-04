@@ -6,7 +6,7 @@ import {
 } from "@/components/sections/location-services";
 import { LocationCoverage } from "@/components/sections/location-coverage";
 import { CTASection } from "@/components/sections/cta-section";
-import { Zap, Flame, Droplet, Wind, Building2 } from "lucide-react";
+import { Zap, Flame, Droplet, Wind, Sun, Building2 } from "lucide-react";
 import { LocationPageSchema } from "@/components/schema/local-business-schema";
 import { locationData } from "@/lib/location-data";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     "Heizung Klosterlechfeld",
     "Sanitär Klosterlechfeld",
     "Klimaanlage Klosterlechfeld",
+    "Solarthermie Klosterlechfeld",
     "Badsanierung Klosterlechfeld",
     "Heizungsnotdienst Klosterlechfeld",
     "HeizCenter Klosterlechfeld",
@@ -66,6 +67,13 @@ const services: LocationService[] = [
       "Split-Klimaanlagen für angenehme Temperaturen. Heizen und Kühlen mit einem Gerät.",
     icon: Wind,
     href: "/klimaanlage",
+  },
+  {
+    title: "Solarthermie",
+    description:
+      "Solarthermie-Anlagen für Klosterlechfeld. Bis 70% KfW-Förderung. Warmwasser und Heizungsunterstützung.",
+    icon: Sun,
+    href: "/solar",
   },
 ];
 
