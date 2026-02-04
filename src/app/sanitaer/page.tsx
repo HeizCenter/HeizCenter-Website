@@ -17,7 +17,7 @@ import { FAQSchema } from "@/components/schema/faq-schema";
 import { getCanonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Sanitär & Badsanierung Augsburg, Ulm & Memmingen | HeizCenter",
+  title: "Sanitär & Bad Augsburg, Ulm & Memmingen | HeizCenter",
   description:
     "Professionelle Badsanierung und Sanitärinstallationen in Augsburg, Ulm und Memmingen. Von der Planung bis zur Umsetzung. Barrierefreie Bäder, moderne Armaturen, Notdienst.",
   keywords: [

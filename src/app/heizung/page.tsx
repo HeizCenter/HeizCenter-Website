@@ -12,7 +12,7 @@ import { FAQSchema } from "@/components/schema/faq-schema";
 import { getCanonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Heizung Augsburg, Ulm & Memmingen - Installation & Wartung | HeizCenter",
+  title: "Heizung Augsburg, Ulm - Installation & Wartung | HeizCenter",
   description:
     "Moderne Heizungsanlagen vom Fachbetrieb in Augsburg, Ulm und Memmingen. Gas, Öl, Pellets oder Hybrid. Wartung, Reparatur und Notdienst. Über 20 Jahre Erfahrung.",
   keywords: [

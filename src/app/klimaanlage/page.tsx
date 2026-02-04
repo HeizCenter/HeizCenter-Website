@@ -17,7 +17,7 @@ import { FAQSchema } from "@/components/schema/faq-schema";
 import { getCanonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Klimaanlage Augsburg, Ulm & Memmingen - Installation & Wartung | HeizCenter",
+  title: "Klimaanlage Augsburg, Ulm - Installation | HeizCenter",
   description:
     "Professionelle Klimaanlagen für Wohnungen, Häuser und Gewerbe in Augsburg, Ulm und Memmingen. Split-Klimaanlagen, Multi-Split-Systeme. Kühlen und Heizen mit einem Gerät.",
   keywords: [

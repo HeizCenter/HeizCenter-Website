@@ -21,7 +21,7 @@ import { FAQSchema } from "@/components/schema/faq-schema";
 import { getCanonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Wärmepumpe Augsburg, Ulm & Memmingen - Bis 70% Förderung | HeizCenter",
+  title: "Wärmepumpe Augsburg, Ulm - Bis 70% Förderung | HeizCenter",
   description:
     "Moderne Wärmepumpen vom Experten in Augsburg, Ulm und Memmingen. Bis zu 70% Energiekosten sparen. BEG-Förderung bis 70%. Kostenlose Beratung.",
   keywords: [

@@ -6,7 +6,7 @@ import Link from "next/link";
 import { getCanonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Förderung & Zuschüsse für Wärmepumpen & Heizung 2025 | HeizCenter",
+  title: "Förderung Wärmepumpen & Heizung 2026 | HeizCenter",
   description:
     "Informationen zu BEG-Förderung, KfW-Zuschüssen und anderen Förderprogrammen für Wärmepumpen, Heizungsmodernisierung und Badsanierung. Bis zu 70% Förderung möglich.",
   keywords: ["BEG Förderung", "KfW", "Zuschuss", "Wärmepumpe", "Heizungsförderung", "BAFA", "§ 35c EStG"],

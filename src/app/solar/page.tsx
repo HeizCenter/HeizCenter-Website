@@ -24,7 +24,7 @@ import { SolarComparisonSection } from "@/components/sections/solar-comparison";
 import { getCanonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Solarthermie Augsburg, Ulm & Memmingen - Bis 70% KfW Förderung | HeizCenter",
+  title: "Solarthermie Augsburg, Ulm - 70% KfW Förderung | HeizCenter",
   description:
     "Solarthermie-Anlagen vom Experten in Augsburg, Ulm und Memmingen. Bis zu 70% staatliche Förderung. Warmwasser & Heizungsunterstützung. Kostenlose Beratung.",
   keywords: [

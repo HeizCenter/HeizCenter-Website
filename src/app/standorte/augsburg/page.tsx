@@ -15,7 +15,7 @@ import { getCanonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title:
-    "HeizCenter Augsburg - Wärmepumpe, Heizung, Sanitär & Klimaanlage | Ihr Experte vor Ort",
+    "HeizCenter Augsburg - Wärmepumpe, Heizung & Sanitär",
   description:
     "Ihr Fachbetrieb für Wärmepumpen, Heizungsinstallation, Badsanierung und Klimaanlagen in Augsburg. Kostenlose Beratung, schneller Service, faire Preise. Jetzt kontaktieren!",
   keywords: [

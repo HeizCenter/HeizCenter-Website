@@ -15,7 +15,7 @@ import { getCanonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title:
-    "HeizCenter Bobingen - Hauptstandort | Wärmepumpe, Heizung, Sanitär & Klimaanlage",
+    "HeizCenter Bobingen - Wärmepumpe & Heizung Bayern",
   description:
     "Unser Hauptstandort in Bobingen. Fachbetrieb für Wärmepumpen, Heizungsinstallation, Badsanierung und Klimaanlagen. Kostenlose Beratung, schneller Service, faire Preise.",
   keywords: [

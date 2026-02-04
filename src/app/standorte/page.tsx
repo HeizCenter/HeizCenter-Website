@@ -5,7 +5,7 @@ import { MapPin, Clock, Phone, Building2 } from "lucide-react";
 import { getCanonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Standorte - HeizCenter Bayern | Wärmepumpe, Heizung, Sanitär",
+  title: "Standorte Bayern - HeizCenter | Wärmepumpe & Heizung",
   description:
     "HeizCenter Standorte in Bayern: Bobingen, Klosterlechfeld und Gutenzell-Hürbel. Wir betreuen Städte und Gemeinden in Schwaben und Allgäu. Kostenlose Beratung vor Ort.",
   keywords: [
