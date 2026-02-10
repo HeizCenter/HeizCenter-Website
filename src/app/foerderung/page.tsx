@@ -37,10 +37,29 @@ export default function FoerderungPage() {
       <section className="container py-16">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-bold mb-4">BEG - Bundesförderung für effiziente Gebäude</h2>
-          <p className="text-lg text-slate-700 mb-8">
+          <p className="text-lg text-slate-700 mb-6">
             Die BEG ist das wichtigste Förderprogramm für den Heizungstausch und energetische
             Sanierungen. Sie erhalten einen direkten Zuschuss auf die Investitionskosten.
           </p>
+
+          {/* Budget-Hinweis 2026 */}
+          <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-5 mb-8">
+            <h3 className="font-bold text-blue-900 mb-2">BEG-Budget 2026: Was Sie wissen sollten</h3>
+            <p className="text-slate-700 text-sm mb-3">
+              Das Gesamtbudget für die BEG-Förderung sinkt 2026 auf rund 12 Mrd. Euro (2025: 15,3 Mrd. Euro). Für Hausbesitzer gibt es aber eine gute Nachricht:
+            </p>
+            <ul className="text-sm text-slate-700 space-y-1 mb-3">
+              <li>
+                <strong className="text-green-700">Heizungstausch (BEG-EM):</strong> Budget sogar erhöht auf 7,7 Mrd. Euro (+600 Mio.)
+              </li>
+              <li>
+                <strong className="text-amber-700">Vollsanierung (BEG-WG):</strong> Budget auf 2,0 Mrd. Euro reduziert (2025: 4,9 Mrd.)
+              </li>
+            </ul>
+            <p className="text-sm text-slate-600">
+              <strong>Fazit:</strong> Die Heizungsförderung (bis 70% Zuschuss) ist 2026 in vollem Umfang verfügbar. Bei Vollsanierungen zum Effizienzhaus empfehlen wir eine frühzeitige Antragstellung.
+            </p>
+          </div>
 
           {/* KfW Heizungsförderung */}
           <h3 className="text-2xl font-bold mb-6">Heizungsförderung (KfW)</h3>

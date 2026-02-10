@@ -114,7 +114,7 @@ const faqs: FAQItem[] = [
   {
     question: "Wie laut ist eine Wärmepumpe?",
     answer:
-      "Moderne Luft-Wasser-Wärmepumpen sind mit 35-45 dB(A) vergleichbar mit einem Kühlschrank. Bei fachgerechter Planung und Installation sind sie kaum hörbar. Wichtig ist der richtige Aufstellungsort und ggf. Schallschutzmaßnahmen. Erdwärmepumpen sind noch leiser, da sie keine Außeneinheit benötigen.",
+      "Moderne Luft-Wasser-Wärmepumpen sind mit 35-45 dB(A) vergleichbar mit einem Kühlschrank. Wichtig seit 2026: Für die BEG-Förderung gelten verschärfte Schallgrenzwerte – förderfähige Geräte müssen 10 dB(A) unter den EU-Ökodesign-Grenzwerten liegen (z. B. ≤ 60 dB(A) bei 6-12 kW Nennwärmeleistung). Die meisten aktuellen Markengeräte erfüllen diese Anforderung bereits. Erdwärmepumpen sind noch leiser, da sie keine Außeneinheit benötigen.",
   },
   {
     question: "Wie lange dauert die Installation?",
@@ -328,6 +328,59 @@ export default function WaermepumpePage() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Neue Schallgrenzwerte 2026 */}
+      <section className="container py-16">
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-amber-50 border-l-4 border-amber-500 rounded-r-lg p-6 md:p-8">
+            <h3 className="text-xl font-bold mb-3 text-amber-900">
+              Neue Schallgrenzwerte für Wärmepumpen-Förderung ab 2026
+            </h3>
+            <p className="text-slate-700 mb-4">
+              Seit Januar 2026 gelten strengere Schallanforderungen für die BEG-Förderung. Förderfähige Luft-Wärmepumpen müssen mindestens 10 dB(A) unter den EU-Ökodesign-Grenzwerten liegen (vorher 5 dB).
+            </p>
+            <div className="overflow-x-auto mb-4">
+              <table className="w-full text-sm border-collapse">
+                <thead>
+                  <tr className="bg-amber-100">
+                    <th className="text-left p-2 border border-amber-200">Nennwärmeleistung</th>
+                    <th className="text-left p-2 border border-amber-200">Bis 2025</th>
+                    <th className="text-left p-2 border border-amber-200 font-bold">Ab 2026</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="p-2 border border-amber-200">&lt; 6 kW</td>
+                    <td className="p-2 border border-amber-200">≤ 60 dB(A)</td>
+                    <td className="p-2 border border-amber-200 font-semibold">≤ 55 dB(A)</td>
+                  </tr>
+                  <tr className="bg-amber-50/50">
+                    <td className="p-2 border border-amber-200">6 – 12 kW</td>
+                    <td className="p-2 border border-amber-200">≤ 65 dB(A)</td>
+                    <td className="p-2 border border-amber-200 font-semibold">≤ 60 dB(A)</td>
+                  </tr>
+                  <tr>
+                    <td className="p-2 border border-amber-200">12 – 30 kW</td>
+                    <td className="p-2 border border-amber-200">≤ 73 dB(A)</td>
+                    <td className="p-2 border border-amber-200 font-semibold">≤ 68 dB(A)</td>
+                  </tr>
+                  <tr className="bg-amber-50/50">
+                    <td className="p-2 border border-amber-200">30 – 70 kW</td>
+                    <td className="p-2 border border-amber-200">≤ 83 dB(A)</td>
+                    <td className="p-2 border border-amber-200 font-semibold">≤ 78 dB(A)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="text-sm text-slate-600">
+              <strong>Gut zu wissen:</strong> Die meisten aktuellen Markengeräte erfüllen die neuen Grenzwerte bereits. Die Anforderungen sind reine Fördervoraussetzungen – die TA-Lärm-Grenzwerte bleiben unverändert. Ab 2028 werden zusätzlich natürliche Kältemittel (z. B. Propan R290) für die Förderung vorausgesetzt.
+            </p>
+            <p className="text-xs text-slate-500 mt-2">
+              Rechtsgrundlage: BEG-EM-Richtlinie vom 21.12.2023
+            </p>
           </div>
         </div>
       </section>

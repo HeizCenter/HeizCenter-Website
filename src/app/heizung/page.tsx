@@ -161,6 +161,11 @@ export default function HeizungPage() {
                   <li>Kompakte Bauweise</li>
                   <li>Kombination mit erneuerbaren Energien möglich</li>
                 </ul>
+                <div className="mt-4 bg-slate-50 border-l-4 border-[#0F5B78] rounded-r p-4">
+                  <p className="text-sm text-slate-700">
+                    <strong>GEG-Hinweis:</strong> Für bestehende Gas- und Ölheizungen gilt ab 2029 eine stufenweise steigende Beimischungspflicht erneuerbarer Brennstoffe (15% ab 2029, 30% ab 2035, bis 100% ab 2045). Die Bundesregierung plant zudem eine Überarbeitung des GEG zum Gebäudemodernisierungsgesetz (GMG) mit technologieoffeneren Vorgaben – der Gesetzentwurf befindet sich noch in der Abstimmung. Wir beraten Sie gerne zu zukunftssicheren Lösungen.
+                  </p>
+                </div>
               </div>
 
               <div className="bg-white p-8 rounded-lg">

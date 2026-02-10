@@ -119,3 +119,47 @@ Ursache: Kontaktdaten waren in 66+ Dateien hardcoded statt aus `contact.ts` impo
 | 22 | Blog-Datum 2025→2026 — Separate Session (25 Artikel + URL-Impact) |
 | 23 | "20 Jahre Erfahrung" — Externe Verifizierung nötig (HRB 39683) |
 | 24 | Blog-Datum — Teil von Issue 22 |
+
+---
+
+# Content Validation Report - 2026-02-10 (Content-Updates: Schall, BEG, GMG)
+
+## Geprüfte Änderungen
+
+| Datei | Was wurde geändert |
+|-------|-------------------|
+| `src/app/waermepumpe/page.tsx` | FAQ Lautstärke aktualisiert + neuer Info-Block: Schallgrenzwerte 2026 mit Tabelle |
+| `src/app/foerderung/page.tsx` | Neuer Info-Block: BEG-Budget 2026 (Kürzung Gesamt, Erhöhung BEG-EM) |
+| `src/app/heizung/page.tsx` | GEG-Hinweis im Gasheizung-Abschnitt: Beimischungspflicht ab 2029 + GMG-Ausblick |
+
+## Gate 1: Fachliche Prüfung
+
+- **Prüfer:** hvac-content
+- **Status:** APPROVED (nach Korrektur)
+- **Anmerkungen:**
+  - Änderung 1 (Schallgrenzwerte): APPROVED — Tabellenwerte korrekt, Rechtsgrundlage verifiziert
+  - Änderung 2 (BEG-Budget): APPROVED — Zahlen durch Bundeshaushalt-Quellen gedeckt
+  - Änderung 3 (GEG/GMG): Initial REJECTED — Vermischung von 65%-Regel (Neuheizungen) und 15%-Beimischungspflicht (Bestandsheizungen). Korrektur durchgeführt: Jetzt klar auf Beimischungspflicht für bestehende Gas-/Ölheizungen fokussiert (15% ab 2029, 30% ab 2035, 100% ab 2045). Nach Korrektur APPROVED.
+
+## Gate 2: Kontaktdaten-Validierung
+
+- **Prüfer 1:** Orchestrator — Alle Änderungen enthalten keine Kontaktdaten
+- **Prüfer 2:** security-reviewer — Unabhängige Gegenprüfung aller 3 Dateien
+- **Gefundene Kontaktdaten:** Keine (alle Kontakt-Links gehen über /kontakt mit Query-Parametern)
+- **Übereinstimmung mit contact.ts:** N/A (keine Kontaktdaten in geänderten Dateien)
+- **Status:** APPROVED
+
+## Quellen der Content-Updates
+
+| Thema | Quellen |
+|-------|---------|
+| Schallgrenzwerte 2026 | energie-experten.org, cci-dialog.de, elektro.net, haustec.de |
+| BEG-Budget 2026 | enter.de/blog/bundeshaushalt, t-online.de, sparkasse.de |
+| GEG/GMG | energie-experten.org, energiezukunft.eu, ee-experten.de |
+
+## Build-Verifizierung
+- `npm run build` — ERFOLGREICH (2x: nach Implementierung + nach Korrektur)
+
+## Ergebnis
+
+**COMMIT FREIGEGEBEN**

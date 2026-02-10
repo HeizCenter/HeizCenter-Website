@@ -92,14 +92,14 @@
 ## Letzte Git-Commits
 
 ```
+5bb9556 feat(blog): migrate 22 articles from 2025 to 2026
+bf53fb7 fix(content): correct misleading claims on landing pages (8 issues)
 f97de4f fix(contact): add WhatsApp mobile number to contact.ts
 7530726 refactor: centralize all contact data via CONTACT imports
 1252033 fix(content): remove 5 more hallucinated phone numbers
 59d0f83 fix(content): replace hallucinated phone number in solar CTA
 e8cf09a fix(content): replace hallucinated phone numbers with correct contact
 4f75e99 feat(seo): add internal linking, FAQ schema, and 301 redirects
-66a8201 fix(seo): optimize image alt texts with German keywords
-8381d16 fix(seo): shorten title tags to max 60 characters
 ```
 
 ---
@@ -122,9 +122,10 @@ e8cf09a fix(content): replace hallucinated phone numbers with correct contact
 - [x] Kontaktdaten zentralisiert: 67 Dateien auf CONTACT.* Import umgestellt ✅ 2026-02-10
 - [x] Quality Gates in CLAUDE.md verankert (4-Augen-Prinzip, VALIDATION_REPORT) ✅ 2026-02-10
 - [x] Content-Audit: Blog-Datum 2025→2026 (22 Artikel, 21 Slug-Changes, 22 Redirects) ✅ 2026-02-10
-- [ ] Content-Update: WP-Schallgrenzwerte 10 dB(A) ab 2026 auf /waermepumpe (HIGH)
-- [ ] Content-Update: BEG-Budget Kürzung ~12 Mrd. auf /foerderung (MEDIUM)
-- [ ] Content-Update: GEG-Reform → GMG Hinweis auf /heizung (MEDIUM)
+- [x] Content-Audit: 8 irreführende Claims auf Landing Pages korrigiert (bf53fb7) ✅ 2026-02-10
+- [x] Content-Update: WP-Schallgrenzwerte 10 dB(A) ab 2026 auf /waermepumpe (HIGH) ✅ 2026-02-10
+- [x] Content-Update: BEG-Budget Kürzung ~12 Mrd. auf /foerderung (MEDIUM) ✅ 2026-02-10
+- [x] Content-Update: GEG-Reform → GMG Hinweis auf /heizung (MEDIUM) ✅ 2026-02-10
 - [ ] Content-Audit: "20 Jahre Erfahrung" extern verifizieren (HRB 39683)
 - [ ] OG-Images für Service-Seiten erstellen (SEO Quick Win)
 - [ ] Alt-Texte optimieren (SEO Quick Win)
@@ -174,6 +175,205 @@ git log --oneline -10
 ---
 
 ## Session-Archiv
+
+### Session 2026-02-10 (Content-Updates: Schallgrenzwerte, BEG-Budget, GMG)
+
+#### Ziel
+3 offene Content-Updates umsetzen: WP-Schallgrenzwerte 2026 (HIGH), BEG-Budget Kürzung (MEDIUM), GEG→GMG Hinweis (MEDIUM). Alle Fakten per Web-Recherche verifiziert.
+
+#### Completed
+
+**#1 /waermepumpe — Schallgrenzwerte 2026 (HIGH):**
+- [x] FAQ "Wie laut ist eine Wärmepumpe?" aktualisiert mit 2026-Förderanforderungen
+- [x] Neuer Info-Block mit Tabelle aller Grenzwerte nach Leistungsklasse (< 6 kW bis 70 kW)
+- [x] Hinweis auf 2028-Verschärfung (natürliche Kältemittel R290)
+- [x] Rechtsgrundlage: BEG-EM-Richtlinie 21.12.2023
+
+**#2 /foerderung — BEG-Budget 2026 (MEDIUM):**
+- [x] Neuer Info-Block: Gesamtbudget sinkt auf ~12 Mrd. (von 15,3 Mrd.)
+- [x] BEG-EM (Heizungstausch) sogar erhöht: 7,7 Mrd. (+600 Mio.)
+- [x] BEG-WG (Vollsanierung) drastisch gekürzt: 4,9 → 2,0 Mrd.
+
+**#3 /heizung — GEG/GMG Hinweis (MEDIUM):**
+- [x] Beimischungspflicht für bestehende Gas-/Ölheizungen ab 2029 (15% → 100% bis 2045)
+- [x] GMG-Ausblick (Gesetzentwurf noch in Abstimmung)
+- [x] Initial REJECTED durch hvac-content (Vermischung 65%-Regel/Beimischungspflicht), nach Korrektur APPROVED
+
+**Quality Gates:**
+- [x] Gate 1: hvac-content — APPROVED (nach Korrektur #3)
+- [x] Gate 2: security-reviewer — APPROVED (keine Kontaktdaten)
+- [x] Gate 3: VALIDATION_REPORT.md aktualisiert
+- [x] Build 2x erfolgreich verifiziert
+
+#### Geänderte Dateien
+| Datei | Änderung |
+|-------|----------|
+| `src/app/waermepumpe/page.tsx` | FAQ + Schallgrenzwerte-Tabelle (Info-Block) |
+| `src/app/foerderung/page.tsx` | BEG-Budget 2026 Info-Block |
+| `src/app/heizung/page.tsx` | GEG/GMG Hinweis im Gasheizung-Abschnitt |
+| `VALIDATION_REPORT.md` | Gate 1-3 Dokumentation |
+| `PROGRESS.md` | Session-Update |
+
+#### Quellen
+| Thema | Quellen |
+|-------|---------|
+| Schallgrenzwerte | energie-experten.org, cci-dialog.de, elektro.net, haustec.de |
+| BEG-Budget | enter.de/blog/bundeshaushalt, t-online.de, sparkasse.de |
+| GEG/GMG | energie-experten.org, energiezukunft.eu, ee-experten.de |
+
+---
+
+### Session 2026-02-10 (Blog-Datum 2025→2026 Migration)
+
+#### Ziel
+25 Blog-Artikel von 2025 auf 2026 aktualisieren: URL-Slugs, Titel, Excerpts, Daten, Content-Überschriften, FAQ-Fragen und Cross-Links. BAFA→KfW Slug-Umbenennung. 301-Redirects für SEO. Daten verteilt über Jan-Feb 2026 für frisches Content-Signal an Google.
+
+#### Completed
+
+**Blog.ts — 22 Artikel aktualisiert:**
+- [x] 20 Slug-Änderungen (2025→2026)
+- [x] 1 Slug-Umbenennung: `bafa-foerderung-solarthermie-2025` → `kfw-foerderung-solarthermie-2026`
+- [x] 2 Titel-only Updates (barrierefreies-bad-planen-ratgeber, hybrid-heizung-waermepumpe-solarthermie)
+- [x] Alle Titel, Excerpts, Daten aktualisiert
+- [x] Content-Überschriften: "Was kostet X 2025?" → "2026" (~25 manuelle Edits)
+- [x] FAQ-Fragen: "Lohnt sich X 2025?" → "2026"
+- [x] Cross-Links: Alle `href="/blog/xxx-2025"` → `xxx-2026` in HTML-Content
+- [x] 79 "2025"-Referenzen bewusst beibehalten (CO₂-Zeitreihen, historische Policy-Daten, "Heizspiegel 2025")
+
+**next.config.mjs — 22 neue 301-Redirects:**
+- [x] 20 Standard-Redirects (2025→2026)
+- [x] 1 BAFA→KfW Redirect: `/blog/bafa-foerderung-solarthermie-2025` → `/blog/kfw-foerderung-solarthermie-2026`
+- [x] 1 Catch-Redirect: `/blog/bafa-foerderung-solarthermie-2026` → `/blog/kfw-foerderung-solarthermie-2026`
+
+**Service- & Standort-Seiten — 9 Dateien:**
+- [x] 6 Service-Seiten: waermepumpe, heizung, sanitaer, klimaanlage, solar, foerderung
+- [x] 3 Standort-Seiten: augsburg, ulm, memmingen
+- [x] BAFA→KfW Text-Updates auf solar + foerderung
+
+**Verifizierung:**
+- [x] `npm run build` erfolgreich
+- [x] `grep "/blog/.*-2025" src/app/` → 0 Treffer
+- [x] `grep "slug.*2025" src/lib/api/blog.ts` → 0 Treffer
+
+#### Git-Commits
+```
+5bb9556 feat(blog): migrate 22 articles from 2025 to 2026
+bf53fb7 fix(content): correct misleading claims on landing pages (8 issues)
+```
+Note: bf53fb7 enthielt die Redirect- und Page-Link-Änderungen (im vorherigen Context committed).
+
+#### Geänderte Dateien
+| Datei | Änderung |
+|-------|----------|
+| `src/lib/api/blog.ts` | 22 Artikel: Slugs, Titel, Excerpts, Daten, Content, Cross-Links, FAQs |
+| `next.config.mjs` | +22 neue 301-Redirects (Blog year migration 2025→2026) |
+| `src/app/waermepumpe/page.tsx` | 2 Blog-Links aktualisiert |
+| `src/app/heizung/page.tsx` | 3 Blog-Links aktualisiert |
+| `src/app/sanitaer/page.tsx` | 2 Blog-Links aktualisiert |
+| `src/app/klimaanlage/page.tsx` | 3 Blog-Links aktualisiert |
+| `src/app/solar/page.tsx` | 3 Blog-Links + BAFA→KfW Text |
+| `src/app/foerderung/page.tsx` | 3 Blog-Links + BAFA→KfW Text |
+| `src/app/standorte/augsburg/page.tsx` | 3 Blog-Links + Titel |
+| `src/app/standorte/ulm/page.tsx` | 3 Blog-Links + Titel |
+| `src/app/standorte/memmingen/page.tsx` | 1 Blog-Link + Titel |
+| `PROGRESS.md` | Session-Dokumentation |
+
+#### Slug-Mapping (Referenz)
+| Alt | Neu | Datum |
+|-----|-----|-------|
+| waermepumpe-kosten-2025 | waermepumpe-kosten-2026 | 2026-02-10 |
+| gasheizung-verbot-2025-geg | gasheizung-verbot-2026-geg | 2026-02-09 |
+| gasheizung-kosten-2025 | gasheizung-kosten-2026 | 2026-02-08 |
+| pelletheizung-kosten-2025 | pelletheizung-kosten-2026 | 2026-02-07 |
+| beg-foerderung-2025 | beg-foerderung-2026 | 2026-02-06 |
+| badsanierung-kosten-2025 | badsanierung-kosten-2026 | 2026-02-05 |
+| foerderung-heizung-2025 | foerderung-heizung-2026 | 2026-02-04 |
+| heizung-vergleich-2025-... | heizung-vergleich-2026-... | 2026-02-03 |
+| solarthermie-vs-photovoltaik-2025-... | solarthermie-vs-photovoltaik-2026-... | 2026-01-28 |
+| nachtspeicherheizung-ersetzen-2025 | nachtspeicherheizung-ersetzen-2026 | 2026-01-25 |
+| fussbodenheizung-kosten-vorteile-2025 | fussbodenheizung-kosten-vorteile-2026 | 2026-01-22 |
+| waermepumpe-vorteile-nachteile-2025 | waermepumpe-vorteile-nachteile-2026 | 2026-01-20 |
+| heizung-entlueften-anleitung-2025 | heizung-entlueften-anleitung-2026 | 2026-01-18 |
+| bafa-foerderung-solarthermie-2025 | **kfw-foerderung-solarthermie-2026** | 2026-01-16 |
+| waermepumpe-vs-gasheizung-vergleich-2025 | waermepumpe-vs-gasheizung-vergleich-2026 | 2026-01-15 |
+| pvt-kollektoren-...-2025 | pvt-kollektoren-...-2026 | 2026-01-14 |
+| waermepumpe-vs-pelletheizung-vergleich-2025 | waermepumpe-vs-pelletheizung-vergleich-2026 | 2026-01-12 |
+| klimaanlage-kosten-2025-... | klimaanlage-kosten-2026-... | 2026-01-10 |
+| barrierefreies-bad-kosten-...-2025 | barrierefreies-bad-kosten-...-2026 | 2026-01-08 |
+| solarthermie-dimensionierung-planung-2025 | solarthermie-dimensionierung-planung-2026 | 2026-01-05 |
+
+#### Nächste Schritte (Follow-up Content)
+- [ ] WP-Schallgrenzwerte 10 dB(A) ab 2026 auf /waermepumpe (HIGH)
+- [ ] BEG-Budget Kürzung ~12 Mrd. auf /foerderung (MEDIUM)
+- [ ] GEG-Reform → GMG Hinweis auf /heizung (MEDIUM)
+- [ ] Nach Deployment: Redirects mit `curl -I` testen
+- [ ] Google Search Console: Indexierung der neuen URLs beobachten
+
+---
+
+### Session 2026-02-10 (Landing Page Content Fixes — 8 Issues)
+
+#### Ziel
+8 irreführende/falsche Claims auf Landing Pages korrigieren, basierend auf User-Audit mit Quellen (Verivox, Thermondo, Viessmann, ÖKO-TEST, energie-experten.org).
+
+#### Completed
+
+**Fix #1: Wärmepumpe Energiekosten-Ersparnis**
+- [x] `/waermepumpe` — "70% niedrigere Energiekosten" → "40-45% niedrigere Heizkosten" (3 Stellen: metadata, benefits, hero)
+
+**Fix #2: Solarthermie+WP Stromersparnis**
+- [x] `/waermepumpe` — "30% weniger Stromverbrauch" → "20%" (2 Stellen: Text + Bullet)
+
+**Fix #3: Solarthermie Förder-Claim**
+- [x] `/waermepumpe` — "Nach 70% KfW-Förderung: nur €2.400-€5.400" → Differenzierung: 70% nur bei Heizungstausch, Einzelmaßnahme 30% Basis
+
+**Fix #4: Solar Wirkungsgrad**
+- [x] `/solar` — "60-80% Wirkungsgrad" → "Optischer Kollektorwirkungsgrad bis 80%, im Jahresmittel ca. 50% Nutzungsgrad" (features + 4 FAQs)
+
+**Fix #5: Solar Einkommensbonus**
+- [x] `/solar` — "Einkommensbonus 20%" → "30%, auf 20% gekappt wegen 70%-Deckelung"
+
+**Fix #6: Solar Jahreszahl**
+- [x] `/solar` — "KfW-Förderung 2025" → "2026" (Heading + FAQ)
+
+**Fix #7: KfW 455-B auf Standortseiten (15 Seiten!)**
+- [x] "Förderung bis 8.000€" → "Pflegekasse bis 4.000€ pro Person, KfW-Programm in Neuauflage" auf **allen 15 betroffenen Standortseiten**
+- Betroffen: augsburg, memmingen, bobingen, gutenzell-huerbel, klosterlechfeld, ottobeuren, mindelheim, stadtbergen, neu-ulm, bad-woerishofen, blaustein, friedberg, neusaess, gersthofen, laupheim
+- Agent: `frontend-dev` für 13 Batch-Fixes
+
+**Fix #8: Solar Heizkosten-Ersparnis**
+- [x] `/solar` — "30% Heizkosten sparen" → "25%" (benefits, hero, FAQ "20-30%" → "15-25%")
+
+**Quality Gates:**
+- [x] Gate 1: hvac-content — Initial REJECTED (Fix #7 nur 2/15 Seiten), nach Korrektur APPROVED
+- [x] Gate 2: Keine neuen Kontaktdaten eingeführt
+- [x] Gate 3: VALIDATION_REPORT.md aktualisiert
+- [x] Build erfolgreich verifiziert (2x)
+- [x] Grep: 0 verbleibende "8.000.*Förder" in /standorte
+
+#### Git
+```
+bf53fb7 fix(content): correct misleading claims on landing pages (8 issues)
+```
+26 Dateien, 354 Insertions, 131 Deletions. Pushed to `origin/main`.
+
+#### Geänderte Dateien
+| Datei | Änderung |
+|-------|----------|
+| `src/app/waermepumpe/page.tsx` | Fix #1 (3x), Fix #2 (2x), Fix #3 |
+| `src/app/solar/page.tsx` | Fix #4, Fix #5, Fix #6, Fix #8 |
+| `src/app/standorte/**/*.tsx` (15 Seiten) | Fix #7: KfW 455-B → Pflegekasse + Neuauflage |
+| + diverse Service/Standort-Seiten | Blog-Link Slugs 2025→2026 (Linter) |
+| `PROGRESS.md` | Session-Update |
+| `VALIDATION_REPORT.md` | Quality Gate Report |
+
+#### Nächste Schritte
+- [ ] Vercel Deployment verifizieren
+- [ ] Content-Update: WP-Schallgrenzwerte 10 dB(A) ab 2026 (HIGH)
+- [ ] Content-Update: BEG-Budget Kürzung ~12 Mrd. (MEDIUM)
+- [ ] Content-Update: GEG-Reform → GMG Hinweis (MEDIUM)
+
+---
 
 ### Session 2026-02-10 (Kontaktdaten-Zentralisierung)
 
