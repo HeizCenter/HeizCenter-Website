@@ -217,6 +217,7 @@ export default function FoerderungPage() {
               <li>• Auszahlung nach Fertigstellung und Verwendungsnachweis</li>
               <li>• Kombination mit KfW-Kredit möglich</li>
               <li>• Einkommensbonus bei zu versteuerndem Haushaltseinkommen bis 40.000€/Jahr</li>
+              <li>• <strong>Ab 2026:</strong> Luft-Wärmepumpen müssen 10 dB(A) unter dem EU-Ökodesign-Grenzwert liegen (vorher 5 dB) — prüfen Sie vor dem Kauf die Schallwerte</li>
             </ul>
           </div>
         </div>
@@ -294,20 +295,51 @@ export default function FoerderungPage() {
         <div className="container">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-3xl font-bold mb-8">KfW-Kreditprogramme</h2>
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-3 gap-6">
+              <Card className="border-2 border-[#0F5B78]">
+                <CardHeader className="bg-[#0F5B78]/5">
+                  <CardTitle className="flex items-center gap-2">
+                    <span className="bg-[#0F5B78] text-white text-xs px-2 py-1 rounded">KfW 358/359</span>
+                    Ergänzungskredit
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="pt-4">
+                  <p className="mb-4 text-sm">
+                    Zinsgünstiger Kredit ergänzend zum KfW-458-Zuschuss für Heizungstausch und Einzelmaßnahmen
+                  </p>
+                  <ul className="space-y-2 text-sm">
+                    <li>• Bis 120.000€ pro Wohneinheit</li>
+                    <li>• <strong>358:</strong> Zinsen ab 0,01% (Einkommen ≤90.000€)</li>
+                    <li>• <strong>359:</strong> Für Unternehmen und höhere Einkommen</li>
+                    <li>• Laufzeit: 4–35 Jahre</li>
+                  </ul>
+                  <p className="mt-3 text-xs text-slate-500">
+                    Voraussetzung: Förderzusage für KfW 458/459 oder BAFA-Einzelmaßnahme
+                  </p>
+                  <a
+                    href="https://www.kfw.de/inlandsfoerderung/Privatpersonen/Bestehende-Immobilie/F%C3%B6rderprodukte/Erg%C3%A4nzungskredit-%E2%80%93-Wohngeb%C3%A4ude-(358-359)/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-3 inline-flex items-center gap-1 text-xs text-[#0F5B78] hover:underline"
+                  >
+                    KfW 358/359 Details <ExternalLink className="h-3 w-3" />
+                  </a>
+                </CardContent>
+              </Card>
+
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
-                    <span className="bg-[#0F5B78] text-white text-xs px-2 py-1 rounded">KfW 261</span>
+                    <span className="bg-slate-600 text-white text-xs px-2 py-1 rounded">KfW 261</span>
                     Wohngebäude Kredit
                   </CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <p className="mb-4">
+                <CardContent className="pt-4">
+                  <p className="mb-4 text-sm">
                     Zinsgünstiger Kredit für Sanierung zum Effizienzhaus
                   </p>
-                  <ul className="space-y-2">
-                    <li>• Bis 150.000€ Kreditbetrag pro Wohneinheit</li>
+                  <ul className="space-y-2 text-sm">
+                    <li>• Bis 150.000€ pro Wohneinheit</li>
                     <li>• Tilgungszuschuss: 5% bis 45%</li>
                     <li>• Kombinierbar mit BEG-Zuschuss</li>
                   </ul>
@@ -315,7 +347,7 @@ export default function FoerderungPage() {
                     href="https://www.kfw.de/inlandsfoerderung/Privatpersonen/Bestehende-Immobilie/F%C3%B6rderprodukte/Bundesf%C3%B6rderung-f%C3%BCr-effiziente-Geb%C3%A4ude-Wohngeb%C3%A4ude-Kredit-(261)/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-4 inline-flex items-center gap-1 text-sm text-[#0F5B78] hover:underline"
+                    className="mt-4 inline-flex items-center gap-1 text-xs text-[#0F5B78] hover:underline"
                   >
                     KfW 261 Details <ExternalLink className="h-3 w-3" />
                   </a>
@@ -325,16 +357,16 @@ export default function FoerderungPage() {
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
-                    <span className="bg-[#0F5B78] text-white text-xs px-2 py-1 rounded">KfW 297/298</span>
+                    <span className="bg-slate-600 text-white text-xs px-2 py-1 rounded">KfW 297/298</span>
                     Klimafreundlicher Neubau
                   </CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <p className="mb-4">
+                <CardContent className="pt-4">
+                  <p className="mb-4 text-sm">
                     Kredit für den klimafreundlichen Neubau von Wohngebäuden
                   </p>
-                  <ul className="space-y-2">
-                    <li>• Bis 150.000€ Kreditbetrag pro Wohneinheit</li>
+                  <ul className="space-y-2 text-sm">
+                    <li>• Bis 150.000€ pro Wohneinheit</li>
                     <li>• Zinsvergünstigung für Effizienzhaus 40</li>
                     <li>• Nachhaltigkeitsklasse mit QNG-Siegel</li>
                   </ul>
@@ -342,7 +374,7 @@ export default function FoerderungPage() {
                     href="https://www.kfw.de/inlandsfoerderung/Privatpersonen/Neubau/F%C3%B6rderprodukte/Klimafreundlicher-Neubau-Wohngeb%C3%A4ude-(297-298)/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-4 inline-flex items-center gap-1 text-sm text-[#0F5B78] hover:underline"
+                    className="mt-4 inline-flex items-center gap-1 text-xs text-[#0F5B78] hover:underline"
                   >
                     KfW 297/298 Details <ExternalLink className="h-3 w-3" />
                   </a>
@@ -468,6 +500,21 @@ export default function FoerderungPage() {
         </div>
       </section>
 
+      {/* Regulatorischer Ausblick */}
+      <section className="container py-8">
+        <div className="max-w-5xl mx-auto">
+          <div className="bg-amber-50 border-l-4 border-amber-500 rounded-r-lg p-5">
+            <h3 className="font-bold text-amber-900 mb-2">Ausblick: Vom GEG zum Gebäudemodernisierungsgesetz (GMG)</h3>
+            <p className="text-slate-700 text-sm mb-2">
+              Das Gebäudeenergiegesetz (GEG) soll zum <strong>Gebäudemodernisierungsgesetz (GMG)</strong> weiterentwickelt werden. Der Gesetzentwurf befindet sich aktuell in der politischen Abstimmung. Ziel ist es, Sanierungsanreize zu stärken und bürokratische Hürden abzubauen.
+            </p>
+            <p className="text-slate-700 text-sm">
+              <strong>Für Hausbesitzer bedeutet das:</strong> Die bestehenden BEG-Förderprogramme bleiben bis auf Weiteres gültig. Wer jetzt einen Heizungstausch plant, kann die aktuelle Förderung nutzen — unabhängig von der Gesetzesreform.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Quellen & Disclaimer */}
       <section className="container py-16">
         <div className="max-w-5xl mx-auto space-y-6">
@@ -486,6 +533,11 @@ export default function FoerderungPage() {
                   <li>
                     <a href="https://www.bafa.de/DE/Energie/Effiziente_Gebaeude/effiziente_gebaeude_node.html" target="_blank" rel="noopener noreferrer" className="text-[#0F5B78] hover:underline inline-flex items-center gap-1">
                       BAFA BEG Einzelmaßnahmen <ExternalLink className="h-3 w-3" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.kfw.de/inlandsfoerderung/Privatpersonen/Bestehende-Immobilie/F%C3%B6rderprodukte/Erg%C3%A4nzungskredit-%E2%80%93-Wohngeb%C3%A4ude-(358-359)/" target="_blank" rel="noopener noreferrer" className="text-[#0F5B78] hover:underline inline-flex items-center gap-1">
+                      KfW 358/359 Ergänzungskredit <ExternalLink className="h-3 w-3" />
                     </a>
                   </li>
                   <li>
