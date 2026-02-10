@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import { LocationHero } from "@/components/sections/location-hero";
 import {
   LocationServices,
@@ -7,7 +8,7 @@ import {
 import { LocationCoverage } from "@/components/sections/location-coverage";
 import { FAQSection, FAQItem } from "@/components/sections/faq-section";
 import { CTASection } from "@/components/sections/cta-section";
-import { Zap, Flame, Droplet, Wind, Sun } from "lucide-react";
+import { Zap, Flame, Droplet, Wind, Sun, BookOpen } from "lucide-react";
 import { LocationPageSchema } from "@/components/schema/local-business-schema";
 import { locationData } from "@/lib/location-data";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
@@ -132,7 +133,7 @@ export default function MemmingenPage() {
         items={[
           { name: "Startseite", url: "" },
           { name: "Standorte", url: "/standorte" },
-          { name: "memmingen", url: "/standorte/memmingen" },
+          { name: "Memmingen", url: "/standorte/memmingen" },
         ]}
       />
       {/* Schema.org LocalBusiness Structured Data */}
@@ -176,7 +177,7 @@ export default function MemmingenPage() {
             Wärmepumpen im Allgäu - Perfekt für die Region
           </h3>
           <p className="text-slate-700 mb-4">
-            Das Unterallgäu ist ideal für Wärmepumpen: Viele Einfamilienhäuser,
+            Das Unterallgäu ist ideal für <Link href="/waermepumpe" className="text-[#0F5B78] font-medium hover:underline">Wärmepumpen</Link>: Viele Einfamilienhäuser,
             große Grundstücke und das Bewusstsein für nachhaltige
             Energielösungen. Als Wärmepumpen-Spezialist in Memmingen haben wir
             bereits zahlreiche Projekte im Allgäu erfolgreich umgesetzt.
@@ -202,7 +203,7 @@ export default function MemmingenPage() {
             Heizungsservice in Memmingen und Umgebung
           </h3>
           <p className="text-slate-700 mb-4">
-            Ob Gasheizung, Ölheizung oder Pelletheizung - im Allgäu sind alle
+            Ob Gasheizung, Ölheizung oder <Link href="/heizung" className="text-[#0F5B78] font-medium hover:underline">Pelletheizung</Link> - im Allgäu sind alle
             Heizungsarten vertreten. Wir sind Ihr Ansprechpartner für
             Installation, Wartung und Reparatur. Unser 24/7 Notdienst ist
             besonders im kalten Allgäu-Winter wichtig.
@@ -220,7 +221,7 @@ export default function MemmingenPage() {
           </h3>
           <p className="text-slate-700 mb-4">
             Ob historisches Stadthaus in der Memminger Altstadt oder modernes
-            Einfamilienhaus in Amendingen - wir sanieren Badezimmer in allen
+            Einfamilienhaus in Amendingen - wir sanieren <Link href="/sanitaer" className="text-[#0F5B78] font-medium hover:underline">Badezimmer</Link> in allen
             Gebäudetypen. Mit unserer 3D-Planung können Sie Ihr neues Bad vorab
             visualisieren.
           </p>
@@ -240,7 +241,7 @@ export default function MemmingenPage() {
           </h3>
           <p className="text-slate-700 mb-4">
             Auch im Allgäu wird es im Sommer immer heißer. Eine moderne
-            Klimaanlage sorgt für angenehme Temperaturen in Wohn- und
+            <Link href="/klimaanlage" className="text-[#0F5B78] font-medium hover:underline"> Klimaanlage</Link> sorgt für angenehme Temperaturen in Wohn- und
             Schlafräumen. Besonders in Dachgeschossen ist eine Klimaanlage eine
             lohnende Investition.
           </p>
@@ -282,6 +283,35 @@ export default function MemmingenPage() {
       </section>
 
       <LocationCoverage mainCity="Memmingen" coverageAreas={coverageAreas} />
+
+      {/* Ratgeber für Hausbesitzer */}
+      <section className="py-16 bg-slate-50">
+        <div className="container">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 bg-[#0F5B78]/10 text-[#0F5B78] px-4 py-2 rounded-full text-sm font-medium mb-4">
+              <BookOpen className="h-4 w-4" />
+              Ratgeber
+            </div>
+            <h2 className="text-3xl font-bold text-slate-900">
+              Ratgeber für Hausbesitzer in Memmingen
+            </h2>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <Link href="/blog/waermepumpe-altbau" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
+              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Wärmepumpe im Altbau</h3>
+              <p className="text-slate-600 text-sm">Voraussetzungen und Tipps für Wärmepumpen im Bestandsgebäude.</p>
+            </Link>
+            <Link href="/blog/foerderung-heizung-2025" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
+              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Förderung Heizungstausch 2025</h3>
+              <p className="text-slate-600 text-sm">BEG-Förderung bis 70% – alle Details und Antragsschritte.</p>
+            </Link>
+            <Link href="/blog/barrierefreies-bad-planen-ratgeber" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
+              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Barrierefreies Bad planen</h3>
+              <p className="text-slate-600 text-sm">DIN-Normen, Ausstattung und Planungstipps.</p>
+            </Link>
+          </div>
+        </div>
+      </section>
 
       <FAQSection faqs={faqs} title="Häufige Fragen zu Heizung & Wärmepumpe in Memmingen" />
 

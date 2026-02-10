@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import { LocationHero } from "@/components/sections/location-hero";
 import {
   LocationServices,
@@ -7,7 +8,7 @@ import {
 import { LocationCoverage } from "@/components/sections/location-coverage";
 import { FAQSection, FAQItem } from "@/components/sections/faq-section";
 import { CTASection } from "@/components/sections/cta-section";
-import { Zap, Flame, Droplet, Wind, Sun } from "lucide-react";
+import { Zap, Flame, Droplet, Wind, Sun, BookOpen } from "lucide-react";
 import { LocationPageSchema } from "@/components/schema/local-business-schema";
 import { locationData } from "@/lib/location-data";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
@@ -173,7 +174,7 @@ export default function AugsburgPage() {
             Wärmepumpen in Augsburg - Die Heizung der Zukunft
           </h3>
           <p className="text-slate-700 mb-4">
-            Augsburg setzt auf Klimaschutz, und Wärmepumpen sind dabei ein
+            Augsburg setzt auf Klimaschutz, und <Link href="/waermepumpe" className="text-[#0F5B78] font-medium hover:underline">Wärmepumpen</Link> sind dabei ein
             wichtiger Baustein. Als einer der führenden Wärmepumpen-Experten in
             Augsburg installieren wir moderne Luft-Wasser-Wärmepumpen und
             Erdwärmepumpen, die perfekt auf die klimatischen Bedingungen in
@@ -201,8 +202,7 @@ export default function AugsburgPage() {
           </h3>
           <p className="text-slate-700 mb-4">
             Von der klassischen Gasheizung über Pelletheizungen bis hin zu
-            modernen Hybrid-Systemen - wir installieren und warten alle gängigen
-            Heizungssysteme in Augsburg. Unser 24/7-Notdienst ist für Sie da,
+            modernen Hybrid-Systemen - wir installieren und warten alle gängigen <Link href="/heizung" className="text-[#0F5B78] font-medium hover:underline">Heizungssysteme</Link> in Augsburg. Unser 24/7-Notdienst ist für Sie da,
             wenn die Heizung ausfällt.
           </p>
           <p className="text-slate-700 mb-6">
@@ -217,7 +217,7 @@ export default function AugsburgPage() {
             Badsanierung in Augsburg - Modern und barrierefrei
           </h3>
           <p className="text-slate-700 mb-4">
-            Träumen Sie von einem neuen Badezimmer? Wir setzen Ihre
+            Träumen Sie von einem neuen <Link href="/sanitaer" className="text-[#0F5B78] font-medium hover:underline">Badezimmer</Link>? Wir setzen Ihre
             Badezimmer-Träume in Augsburg in die Realität um. Mit unserer
             3D-Badplanung können Sie Ihr neues Bad bereits vor Baubeginn
             visualisieren.
@@ -238,7 +238,7 @@ export default function AugsburgPage() {
           </h3>
           <p className="text-slate-700 mb-4">
             Die Sommer in Augsburg werden immer heißer. Eine moderne
-            Split-Klimaanlage sorgt für angenehme Temperaturen in Ihrem Zuhause
+            <Link href="/klimaanlage" className="text-[#0F5B78] font-medium hover:underline"> Split-Klimaanlage</Link> sorgt für angenehme Temperaturen in Ihrem Zuhause
             oder Büro. Und das Beste: Im Winter können Sie damit auch heizen!
           </p>
           <p className="text-slate-700 mb-6">
@@ -267,6 +267,35 @@ export default function AugsburgPage() {
       </section>
 
       <LocationCoverage mainCity="Augsburg" coverageAreas={coverageAreas} />
+
+      {/* Ratgeber für Hausbesitzer */}
+      <section className="py-16 bg-slate-50">
+        <div className="container">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 bg-[#0F5B78]/10 text-[#0F5B78] px-4 py-2 rounded-full text-sm font-medium mb-4">
+              <BookOpen className="h-4 w-4" />
+              Ratgeber
+            </div>
+            <h2 className="text-3xl font-bold text-slate-900">
+              Ratgeber für Hausbesitzer in Augsburg
+            </h2>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <Link href="/blog/waermepumpe-kosten-2025" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
+              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Wärmepumpe: Kosten & Förderung 2025</h3>
+              <p className="text-slate-600 text-sm">Aktuelle Preise und bis zu 70% BEG-Förderung.</p>
+            </Link>
+            <Link href="/blog/foerderung-heizung-2025" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
+              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Förderung Heizungstausch 2025</h3>
+              <p className="text-slate-600 text-sm">Alle BEG-Boni und Antragsschritte im Detail.</p>
+            </Link>
+            <Link href="/blog/badsanierung-kosten-2025" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
+              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Badsanierung: Was kostet ein neues Bad?</h3>
+              <p className="text-slate-600 text-sm">Preise, Spartipps und Förderung für Ihre Badsanierung.</p>
+            </Link>
+          </div>
+        </div>
+      </section>
 
       <FAQSection faqs={faqs} title="Häufige Fragen zu Heizung & Wärmepumpe in Augsburg" />
 

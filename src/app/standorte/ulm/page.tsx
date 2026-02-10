@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import { LocationHero } from "@/components/sections/location-hero";
 import {
   LocationServices,
@@ -7,7 +8,7 @@ import {
 import { LocationCoverage } from "@/components/sections/location-coverage";
 import { FAQSection, FAQItem } from "@/components/sections/faq-section";
 import { CTASection } from "@/components/sections/cta-section";
-import { Zap, Flame, Droplet, Wind, Sun } from "lucide-react";
+import { Zap, Flame, Droplet, Wind, Sun, BookOpen } from "lucide-react";
 import { LocationPageSchema } from "@/components/schema/local-business-schema";
 import { locationData } from "@/lib/location-data";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
@@ -132,7 +133,7 @@ export default function UlmPage() {
         items={[
           { name: "Startseite", url: "" },
           { name: "Standorte", url: "/standorte" },
-          { name: "ulm", url: "/standorte/ulm" },
+          { name: "Ulm", url: "/standorte/ulm" },
         ]}
       />
       {/* Schema.org LocalBusiness Structured Data */}
@@ -172,7 +173,7 @@ export default function UlmPage() {
           </h3>
           <p className="text-slate-700 mb-4">
             Ulm zählt zu den modernsten Städten Deutschlands und setzt auf
-            nachhaltige Energielösungen. Wärmepumpen sind dabei die perfekte
+            nachhaltige Energielösungen. <Link href="/waermepumpe" className="text-[#0F5B78] font-medium hover:underline">Wärmepumpen</Link> sind dabei die perfekte
             Wahl für zukunftssicheres Heizen. Dank der milden Temperaturen an der
             Donau arbeiten Wärmepumpen in Ulm besonders effizient.
           </p>
@@ -197,7 +198,7 @@ export default function UlmPage() {
             Heizungsservice in Ulm und Neu-Ulm
           </h3>
           <p className="text-slate-700 mb-4">
-            Ob Gasheizung, Ölheizung, Pelletheizung oder Hybrid-System - wir
+            Ob Gasheizung, Ölheizung, Pelletheizung oder <Link href="/heizung" className="text-[#0F5B78] font-medium hover:underline">Hybrid-System</Link> - wir
             sind Ihr Ansprechpartner für alle Heizungsarten in Ulm. Unser 24/7
             Notdienst ist besonders im Winter für Sie da, wenn die Heizung
             ausfällt.
@@ -214,7 +215,7 @@ export default function UlmPage() {
           </h3>
           <p className="text-slate-700 mb-4">
             Ulm ist bekannt für seine Mischung aus historischer Architektur und
-            modernem Design. Das spiegelt sich auch in unseren Badsanierungen
+            modernem Design. Das spiegelt sich auch in unseren <Link href="/sanitaer" className="text-[#0F5B78] font-medium hover:underline">Badsanierungen</Link>
             wider. Ob Altbausanierung in der Ulmer Altstadt oder modernes Bad in
             Wiblingen - wir setzen Ihre Wünsche um.
           </p>
@@ -234,7 +235,7 @@ export default function UlmPage() {
           </h3>
           <p className="text-slate-700 mb-4">
             Die Sommer in Ulm können heiß werden - besonders in den oberen
-            Stockwerken und Dachgeschossen. Eine moderne Split-Klimaanlage sorgt
+            Stockwerken und Dachgeschossen. Eine moderne <Link href="/klimaanlage" className="text-[#0F5B78] font-medium hover:underline">Split-Klimaanlage</Link> sorgt
             für angenehme Temperaturen und kann im Winter auch als
             Zusatzheizung genutzt werden.
           </p>
@@ -264,6 +265,35 @@ export default function UlmPage() {
       </section>
 
       <LocationCoverage mainCity="Ulm" coverageAreas={coverageAreas} />
+
+      {/* Ratgeber für Hausbesitzer */}
+      <section className="py-16 bg-slate-50">
+        <div className="container">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 bg-[#0F5B78]/10 text-[#0F5B78] px-4 py-2 rounded-full text-sm font-medium mb-4">
+              <BookOpen className="h-4 w-4" />
+              Ratgeber
+            </div>
+            <h2 className="text-3xl font-bold text-slate-900">
+              Ratgeber für Hausbesitzer in Ulm
+            </h2>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <Link href="/blog/waermepumpe-kosten-2025" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
+              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Wärmepumpe: Kosten & Förderung 2025</h3>
+              <p className="text-slate-600 text-sm">Was kostet eine Wärmepumpe in Ulm? Alle Preise und Förderungen.</p>
+            </Link>
+            <Link href="/blog/heizung-vergleich-2025-waermepumpe-gas-oel-pellets" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
+              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Heizungsvergleich 2025</h3>
+              <p className="text-slate-600 text-sm">Wärmepumpe, Gas, Öl oder Pellets – welche Heizung passt?</p>
+            </Link>
+            <Link href="/blog/badsanierung-kosten-2025" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
+              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Badsanierung: Was kostet ein neues Bad?</h3>
+              <p className="text-slate-600 text-sm">Kosten und Spartipps für die Badsanierung in Ulm.</p>
+            </Link>
+          </div>
+        </div>
+      </section>
 
       <FAQSection faqs={faqs} title="Häufige Fragen zu Heizung & Wärmepumpe in Ulm" />
 

@@ -61,6 +61,7 @@
 - [x] streetAddress in Schemas ergänzt
 - [x] Internal Links von Blog zu Location Pages
 - [x] Legal Pages indexierbar (TMG §5 / DSGVO)
+- [x] **Interne Verlinkung massiv ausgebaut** (12 Blog-Artikel + 6 Service-Seiten + 3 Location-Seiten)
 
 ### Forms & UX
 - [x] GDPR Consent UX verbessert
@@ -76,22 +77,23 @@
 ### Standort-Seiten
 - [x] **Solarthermie** zu allen 26 Standort-Seiten hinzugefügt (fehlte komplett!)
 
+### Blog-Content
+- [x] **Solarthermie-Artikel** komplett überarbeitet (KI-Stil → professionelles Copywriting)
+- [x] **Solarthermie-Duplikat bereinigt** — 2 Artikel zu 1 zusammengeführt, 301-Redirects
+
 ---
 
 ## Letzte Git-Commits
 
 ```
+8381d16 fix(seo): shorten title tags to max 60 characters
+cbba8ce refactor(blog): rewrite Solarthermie article for readability
+23b192e feat(seo): activate FAQSchema on all service pages
+75f72cf fix(layout): adjust services grid for 5 columns
 00f2592 feat(standorte): add Solarthermie service to all 26 location pages
 2e1b985 feat(partner): replace placeholder logos with official brand logos
 69d175f fix(forms): prevent data loss and improve GDPR consent UX
 8dd8415 feat: Add HeizCenter favicon and apple-icon
-d0e05d8 fix: Remove outdated UG legal form reference
-38acdf4 fix: Update footer copyright year to 2026
-0215721 fix(legal): remove noindex from legal pages
-923f0de feat(seo): add internal links blog → location pages
-83da32a fix: add streetAddress to LocalBusiness schemas
-cb82593 feat(seo): FAQPage Schema zu Hauptstandorten
-a417b73 fix(seo): Korrigiere Öffnungszeiten
 ```
 
 ---
@@ -105,9 +107,13 @@ a417b73 fix(seo): Korrigiere Öffnungszeiten
 - [ ] Performance-Audit (Core Web Vitals)
 - [ ] Odoo-Integration Status prüfen
 - [ ] Blog-Content-Plan für 2026
-- [ ] Title-Tags auf 60 Zeichen kürzen (SEO Quick Win)
+- [x] Title-Tags auf 60 Zeichen kürzen (SEO Quick Win) ✅ 2026-02-04
+- [x] Solarthermie-Duplikat bereinigen (Content Cannibalization) ✅ 2026-02-10
+- [x] FAQPage Schema für Blog-Artikel implementieren (blog/[slug]/page.tsx) ✅ 2026-02-10
+- [x] Interne Verlinkung stärken (6 Aufgaben, alle erledigt) ✅ 2026-02-10
 - [ ] OG-Images für Service-Seiten erstellen (SEO Quick Win)
 - [ ] Alt-Texte optimieren (SEO Quick Win)
+- [ ] Nach Deployment: Interne Links mit Screaming Frog / Sitebulb validieren
 
 ---
 
@@ -153,6 +159,178 @@ git log --oneline -10
 
 ## Session-Archiv
 
+### Session 2026-02-10 (Interne Verlinkung stärken)
+
+#### Ziel
+Robuste interne Link-Architektur aufbauen: Jede wichtige Seite erhält 3-5 kontextuelle interne Links, thematische Cluster für Google signalisieren.
+
+#### Completed
+
+**Aufgabe 1+2+6: Blog-Artikel (12 Stück)**
+- [x] Alle 12 Blog-Artikel mit Service-Links (min 2), Standort-Links (min 1) und Cross-Links (2-3) versehen
+- [x] Link-Stil: `class="text-[#0F5B78] font-medium hover:underline"` (Brand-Teal)
+- [x] Artikel: waermepumpe-kosten, gasheizung-kosten, badsanierung-kosten, foerderung-heizung, barrierefreies-bad-planen, gasheizung-verbot, heizung-vergleich, fussbodenheizung-kosten, heizung-entlueften, barrierefreies-bad-kosten, bafa-foerderung-solarthermie, waermepumpe-altbau
+
+**Aufgabe 3+4: Service-Seiten (6 Stück)**
+- [x] "Ratgeber & Tipps" Section mit 3 Blog-Cards (BookOpen Icon)
+- [x] "[Service] in Ihrer Nähe" Section mit 3 Standort-Cards (MapPin Icon)
+- [x] Seiten: waermepumpe, heizung, sanitaer, klimaanlage, solar, foerderung
+
+**Aufgabe 5: Standort-Seiten (3 Hauptseiten)**
+- [x] "Ratgeber für Hausbesitzer" Section mit 3 Blog-Cards
+- [x] Inline-Links zu /waermepumpe, /heizung, /sanitaer, /klimaanlage im Prosa-Content
+- [x] Breadcrumb-Fix: "memmingen" → "Memmingen", "ulm" → "Ulm"
+- [x] Seiten: augsburg, ulm, memmingen
+
+**Build-Verifizierung**
+- [x] `npm run build` erfolgreich (ein Fix: fehlender Link-Import in sanitaer/page.tsx)
+
+#### Geänderte Dateien
+| Datei | Änderung |
+|-------|----------|
+| `src/lib/api/blog.ts` | +~60 interne Links in 12 Blog-Artikeln (Service, Standort, Cross-Links) |
+| `src/app/waermepumpe/page.tsx` | +BookOpen, MapPin Imports; +Ratgeber & Standort Sections |
+| `src/app/heizung/page.tsx` | +BookOpen, MapPin Imports; +Ratgeber & Standort Sections |
+| `src/app/sanitaer/page.tsx` | +Link, BookOpen, MapPin Imports; +Ratgeber & Standort Sections |
+| `src/app/klimaanlage/page.tsx` | +BookOpen, MapPin Imports; +Ratgeber & Standort Sections |
+| `src/app/solar/page.tsx` | +BookOpen, MapPin Imports; +Ratgeber & Standort Sections |
+| `src/app/foerderung/page.tsx` | +BookOpen, MapPin Imports; +Ratgeber & Standort Sections |
+| `src/app/standorte/augsburg/page.tsx` | +Link, BookOpen Imports; +Ratgeber Section; +4 Inline-Links |
+| `src/app/standorte/ulm/page.tsx` | +Link, BookOpen Imports; +Ratgeber Section; +4 Inline-Links; Breadcrumb-Fix |
+| `src/app/standorte/memmingen/page.tsx` | +Link, BookOpen Imports; +Ratgeber Section; +4 Inline-Links; Breadcrumb-Fix |
+
+#### Nächste Schritte
+- [ ] Änderungen committen und deployen
+- [ ] Nach Deployment: Interne Links mit Screaming Frog validieren
+- [ ] Restliche 23 Standort-Seiten optional mit Ratgeber-Section versehen
+
+---
+
+### Session 2026-02-10 (FAQPage Schema für alle Blog-Artikel)
+
+#### Completed
+- [x] **FAQPage Schema auf allen 24 Blog-Artikeln implementiert**
+  - `BlogPost` Interface um optionales `faqs`-Feld erweitert
+  - `blog/[slug]/page.tsx` rendert `<FAQSchema>` konditionell
+  - Build erfolgreich verifiziert
+  - Agents: `frontend-dev` (3 Batches)
+
+- [x] **Phase 1: Schema für 7 Posts mit existierenden FAQ-Sektionen** (IDs 13-19)
+  - FAQ-Daten aus HTML-Content extrahiert (plain text, HTML-Tags entfernt)
+  - 52 FAQ-Einträge
+
+- [x] **Phase 2: FAQ-Sektionen + Schema für alle 17 verbleibenden Posts** (IDs 1-5, 7-12, 20-25)
+  - Neue FAQ HTML-Sektionen geschrieben (deutsch, fachlich korrekt)
+  - FAQ-Daten als `faqs` Array hinzugefügt
+  - ~115 zusätzliche FAQ-Einträge
+
+#### Blog-Artikel mit FAQ-Schema (~167 FAQs total)
+| Batch | Post IDs | FAQs |
+|-------|----------|------|
+| Existierend | 13, 14, 15, 16, 17, 18, 19 | ~52 |
+| Batch 1 | 1, 2, 3, 4, 5, 7 | ~48 (8 pro Post) |
+| Batch 2 | 8, 9, 10, 11, 12 | ~34 (6-8 pro Post) |
+| Batch 3 | 20, 21, 22, 23, 24, 25 | ~36 (6 pro Post) |
+
+#### Geänderte Dateien
+| Datei | Änderung |
+|-------|----------|
+| `src/lib/api/blog.ts` | +`faqs` Feld in Interface, +~167 FAQ-Einträge auf 24 Posts, +17 HTML FAQ-Sektionen |
+| `src/app/blog/[slug]/page.tsx` | +FAQSchema Import, konditionelles Rendering |
+
+#### Nächste Schritte
+- [ ] Nach Deployment: Google Rich Results Test validieren
+- [ ] In 2-4 Wochen: FAQ Rich Snippets in Google Search Console prüfen
+
+---
+
+### Session 2026-02-10 (Solarthermie-Duplikat bereinigt)
+
+#### Problem
+- Zwei Blog-Artikel zum Thema Solarthermie-Kosten kannibalisierten sich gegenseitig
+- `/blog/solarthermie-kosten-2025` (ID 6, Nov 2025) — praxisnah, aber BAFA-veraltet
+- `/blog/solarthermie-kosten-wirtschaftlichkeit-2025` (ID 23, Feb 2026) — analytisch, KfW-korrekt
+- Keiner der beiden war bei Google indexiert ("Gefunden – zurzeit nicht indexiert")
+
+#### Completed
+- [x] **Beide Artikel zu einem zusammengeführt** → `/blog/solarthermie-kosten-2026`
+  - Einzigartige Inhalte aus Artikel 6 in Artikel 23 integriert:
+    - Praxisbeispiel "Familie Kraus aus Königsbrunn" (lokaler E-E-A-T Bezug)
+    - Flachkollektor vs. Röhrenkollektor Vergleich mit Preistabelle
+    - "Mein Tipp" Empfehlung (First-Person-Stimme)
+    - Voraussetzungen fürs Dach (Geeignet/Schwierig Check)
+    - Solarthermie vs. Photovoltaik Entscheidungshilfe
+    - Heizungskombinationen (+Gas, +Pellet, +Wärmepumpe, +Öl)
+  - Lesezeit: 14 Min. (11 + 10 → 14 durch Zusammenführung)
+  - Agents: `frontend-dev`, `seo-specialist`
+
+- [x] **Alle BAFA-Referenzen auf KfW aktualisiert** (seit Jan 2024 über KfW)
+- [x] **Jahreszahl durchgehend auf 2026** aktualisiert
+- [x] **Artikel 6 komplett entfernt** aus blog.ts
+- [x] **301-Redirects** für beide alte URLs eingerichtet
+- [x] **Meta-Title auf 57 Zeichen** optimiert (inkl. "- HeizCenter Ratgeber" Suffix)
+- [x] **Build erfolgreich** verifiziert
+
+#### Geänderte Dateien
+| Datei | Änderung |
+|-------|----------|
+| `src/lib/api/blog.ts` | Artikel 23 → zusammengeführter Artikel, Artikel 6 entfernt |
+| `next.config.mjs` | +2 Redirect-Einträge (301) |
+
+#### Neue URL-Struktur
+| Alt | Neu | Status |
+|-----|-----|--------|
+| `/blog/solarthermie-kosten-2025` | `/blog/solarthermie-kosten-2026` | 301 Redirect |
+| `/blog/solarthermie-kosten-wirtschaftlichkeit-2025` | `/blog/solarthermie-kosten-2026` | 301 Redirect |
+
+#### Offene Punkte aus dieser Session
+- [ ] FAQPage Schema für Blog-Seiten implementieren (`blog/[slug]/page.tsx` unterstützt es nicht)
+- [ ] Nach Deployment: Google Rich Results Test validieren
+- [ ] Nach 2-4 Wochen: Indexierungsstatus in Google Search Console prüfen
+
+---
+
+### Session 2026-02-04 (Blog Artikel Rewrite)
+
+**Commit:** `cbba8ce refactor(blog): rewrite Solarthermie article for readability`
+
+#### Problem
+- Blog-Artikel "Solarthermie Kosten und Wirtschaftlichkeit 2025" war unlesbar
+- KI-Stil mit 90% Bullet-Listen
+- 6 Emojis im Text (✅❌📍💡⚠️)
+- 19 Minuten Lesezeit (zu lang)
+- Veraltete Fakten zur Förderung
+
+#### Completed
+- [x] **Komplette Neuschreibung** des Artikels
+  - Professioneller Fließtext statt Listen-Overload
+  - Alle Emojis entfernt
+  - Lesezeit von 19 auf 11 Minuten reduziert (-42%)
+  - Fakten aktualisiert (KfW statt BAFA seit Jan 2024)
+  - Strategische Tabellen für Kosten/Amortisation beibehalten
+
+#### Änderungen
+| Aspekt | Vorher | Nachher |
+|--------|--------|---------|
+| Lesezeit | 19 Min | 11 Min |
+| Emojis | 6 Stück | 0 |
+| Stil | Bullet-Listen | Fließtext |
+| Zeilen | 353 | 138 (-215) |
+| Datum | 2025-01-12 | 2026-02-04 |
+
+#### Geänderte Dateien
+| Datei | Änderung |
+|-------|----------|
+| `src/lib/api/blog.ts` | Artikel ID 23 komplett neu geschrieben |
+
+#### Verifizierte Fakten
+- KfW-Förderung: 30% Basis, bis 70% max
+- Mindestflächen: 9m² Flachkollektoren, 7m² Röhrenkollektoren
+- Antrag vor Vertragsabschluss erforderlich
+- Steuerbonus §35c als Alternative (20% über 3 Jahre)
+
+---
+
 ### Session 2026-02-04 (SEO-Audit & FAQSchema)
 
 #### Completed
@@ -186,9 +364,36 @@ git log --oneline -10
 | Alt-Texte optimieren | Bilder-SEO | ⏳ Offen |
 
 #### Nächste Schritte
-1. Änderungen committen und deployen
+1. ~~Änderungen committen und deployen~~ ✅
 2. Nach 1-2 Wochen: Google Rich Results Test validieren
-3. Weitere Quick Wins umsetzen
+3. ~~Weitere Quick Wins umsetzen~~ ✅ Title-Tags
+
+---
+
+### Session 2026-02-04 (Title-Tags optimiert)
+
+**Commit:** `8381d16 fix(seo): shorten title tags to max 60 characters`
+
+#### Completed
+- [x] **10 Title-Tags optimiert** (alle unter 60 Zeichen)
+  - Service-Seiten: waermepumpe, heizung, sanitaer, klimaanlage, solar
+  - Info-Seiten: ueber-uns, foerderung, standorte
+  - Location-Seiten: augsburg, bobingen
+  - Agents: `seo-specialist`, `frontend-dev`
+
+#### Änderungen
+| Seite | Vorher | Nachher |
+|-------|--------|---------|
+| Wärmepumpe | 73 → 60 | "& Memmingen" entfernt |
+| Heizung | 74 → 60 | "& Memmingen" entfernt |
+| Sanitär | 67 → 60 | "Badsanierung" → "Bad" |
+| Klimaanlage | 81 → 57 | "& Wartung" entfernt |
+| Solar | 82 → 60 | "Bis" entfernt |
+| Über uns | 75 → 60 | "Ihr regionaler" entfernt |
+| Förderung | 70 → 55 | Jahr → 2026 |
+| Standorte | 63 → 56 | Umstrukturiert |
+| Augsburg | 89 → 53 | "Klimaanlage + Experte" entfernt |
+| Bobingen | 83 → 52 | "Hauptstandort + Klimaanlage" entfernt |
 
 ---
 

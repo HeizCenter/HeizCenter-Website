@@ -11,6 +11,7 @@ import { RelatedPosts } from "@/components/blog/related-posts";
 import { TableOfContents } from "@/components/blog/table-of-contents";
 import { BlogPostingSchema } from "@/components/schema/blog-posting-schema";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
+import { FAQSchema } from "@/components/schema/faq-schema";
 import { getCanonicalUrl } from "@/lib/seo";
 
 interface BlogPostPageProps {
@@ -77,6 +78,10 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         tags={post.tags}
         category={post.category}
       />
+      {/* Schema.org FAQPage Structured Data */}
+      {post.faqs && post.faqs.length > 0 && (
+        <FAQSchema faqs={post.faqs} />
+      )}
 
       {/* Back Button */}
       <div className="bg-slate-50 py-4">

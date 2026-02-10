@@ -111,6 +111,17 @@ const nextConfig = {
         destination: "/standorte/schwabmuenchen",
         permanent: true,
       },
+      // Blog article consolidation redirects
+      {
+        source: "/blog/solarthermie-kosten-2025",
+        destination: "/blog/solarthermie-kosten-2026",
+        permanent: true,
+      },
+      {
+        source: "/blog/solarthermie-kosten-wirtschaftlichkeit-2025",
+        destination: "/blog/solarthermie-kosten-2026",
+        permanent: true,
+      },
       // Legacy URL redirects
       {
         source: "/datenschutzerklaerung",

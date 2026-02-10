@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Euro, FileText, CheckCircle, Info, ExternalLink, Scale } from "lucide-react";
+import { Euro, FileText, CheckCircle, Info, ExternalLink, Scale, BookOpen, MapPin } from "lucide-react";
 import Link from "next/link";
 import { getCanonicalUrl } from "@/lib/seo";
 
@@ -353,6 +353,67 @@ export default function FoerderungPage() {
                 <p className="text-sm text-slate-600">{item.desc}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Ratgeber & Tipps Section */}
+      <section className="py-16 bg-slate-50">
+        <div className="container">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 bg-[#0F5B78]/10 text-[#0F5B78] px-4 py-2 rounded-full text-sm font-medium mb-4">
+              <BookOpen className="h-4 w-4" />
+              Ratgeber & Tipps
+            </div>
+            <h2 className="text-3xl font-bold text-slate-900">
+              Förderratgeber & Spartipps
+            </h2>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <Link href="/blog/foerderung-heizung-2025" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
+              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Förderung Heizungstausch 2025</h3>
+              <p className="text-slate-600 text-sm">Alle BEG-Boni, Antragsschritte und Rechenbeispiele im Detail.</p>
+            </Link>
+            <Link href="/blog/waermepumpe-kosten-2025" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
+              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Wärmepumpe: Kosten & Förderung</h3>
+              <p className="text-slate-600 text-sm">Aktuelle Preise und wie Sie bis zu 70% Zuschuss erhalten.</p>
+            </Link>
+            <Link href="/blog/bafa-foerderung-solarthermie-2025" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
+              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">BAFA-Förderung Solarthermie</h3>
+              <p className="text-slate-600 text-sm">Solarthermie-Förderung: Voraussetzungen, Höhe und Antragstellung.</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Förderberatung in Ihrer Nähe */}
+      <section className="py-16">
+        <div className="container">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 bg-[#0F5B78]/10 text-[#0F5B78] px-4 py-2 rounded-full text-sm font-medium mb-4">
+              <MapPin className="h-4 w-4" />
+              Standorte
+            </div>
+            <h2 className="text-3xl font-bold text-slate-900">
+              Förderberatung in Ihrer Nähe
+            </h2>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <Link href="/standorte/augsburg" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100 text-center">
+              <MapPin className="h-8 w-8 text-[#0F5B78] mx-auto mb-3" />
+              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-1">Augsburg</h3>
+              <p className="text-slate-600 text-sm">Förderberatung für Hausbesitzer in Augsburg</p>
+            </Link>
+            <Link href="/standorte/ulm" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100 text-center">
+              <MapPin className="h-8 w-8 text-[#0F5B78] mx-auto mb-3" />
+              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-1">Ulm</h3>
+              <p className="text-slate-600 text-sm">Heizungsförderung in Ulm und Neu-Ulm</p>
+            </Link>
+            <Link href="/standorte/memmingen" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100 text-center">
+              <MapPin className="h-8 w-8 text-[#0F5B78] mx-auto mb-3" />
+              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-1">Memmingen</h3>
+              <p className="text-slate-600 text-sm">BEG-Förderberatung in Memmingen und Allgäu</p>
+            </Link>
           </div>
         </div>
       </section>

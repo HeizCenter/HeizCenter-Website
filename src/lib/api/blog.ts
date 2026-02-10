@@ -21,6 +21,7 @@ export interface BlogPost {
   image?: string;
   tags: string[];
   featured?: boolean;
+  faqs?: { question: string; answer: string }[];
 }
 
 export interface BlogCategory {
@@ -290,7 +291,7 @@ function getMockBlogPosts(): BlogPost[] {
 
         <h2>Die Förderung macht's möglich</h2>
 
-        <p>Hier wird es spannend. Der Staat will, dass Sie auf erneuerbare Energien umsteigen – und zahlt dafür ordentlich mit. Bis zu <strong>70% der Kosten</strong> übernimmt die KfW.</p>
+        <p>Hier wird es spannend. Der Staat will, dass Sie auf erneuerbare Energien umsteigen – und zahlt dafür ordentlich mit. Bis zu <strong>70% der Kosten</strong> übernimmt die KfW. In unserem <a href="/blog/foerderung-heizung-2025" class="text-[#0F5B78] font-medium hover:underline">Ratgeber zur Heizungsförderung 2025</a> erklären wir alle Förderbausteine im Detail.</p>
 
         <table class="cost-table">
           <thead>
@@ -470,7 +471,7 @@ function getMockBlogPosts(): BlogPost[] {
           </div>
         </div>
 
-        <p><strong>Die Kurzversion:</strong> Mit der aktuellen Förderung amortisiert sich eine Wärmepumpe typischerweise in 8-12 Jahren. Bei einer Lebensdauer von 20+ Jahren heizen Sie dann 10 Jahre lang quasi umsonst – zumindest was die Anschaffung betrifft.</p>
+        <p><strong>Die Kurzversion:</strong> Mit der <a href="/foerderung" class="text-[#0F5B78] font-medium hover:underline">aktuellen Förderung</a> amortisiert sich eine Wärmepumpe typischerweise in 8-12 Jahren. Bei einer Lebensdauer von 20+ Jahren heizen Sie dann 10 Jahre lang quasi umsonst – zumindest was die Anschaffung betrifft.</p>
 
         <h2>Was kostet eine Wärmepumpe bei Ihnen?</h2>
 
@@ -493,6 +494,32 @@ function getMockBlogPosts(): BlogPost[] {
         <div class="bg-amber-50 border border-amber-200 rounded-lg p-4 mt-6">
           <p class="text-amber-800 text-sm"><strong>⏰ Hinweis:</strong> Der Klimageschwindigkeits-Bonus (20% Förderung) läuft Ende 2028 aus. Wer jetzt plant, sichert sich die maximale Förderung.</p>
         </div>
+
+        <h2>Häufig gestellte Fragen (FAQ)</h2>
+
+        <h3>Was kostet eine Wärmepumpe 2025 insgesamt mit Einbau?</h3>
+        <p>Eine komplett installierte Wärmepumpe kostet zwischen <strong>27.000 und 50.000 Euro</strong>, je nach Typ. Luft-Wasser-Wärmepumpen liegen bei 27.000-40.000 Euro, während Erdwärme- und Wasser-Wasser-Wärmepumpen aufgrund der Bohrkosten 40.000-50.000 Euro kosten. Im Preis enthalten sind Gerät, Installation, hydraulischer Abgleich und Inbetriebnahme.</p>
+
+        <h3>Wie viel Förderung bekomme ich für eine Wärmepumpe?</h3>
+        <p>Sie erhalten mindestens <strong>30% Grundförderung</strong> über die KfW. Mit dem Klimageschwindigkeits-Bonus (20% beim Austausch von Öl/Gas/Kohle) kommen Sie auf 50%. Der Einkommensbonus (30% bei Einkommen unter 40.000 Euro) und der Effizienzbonus (5% für natürliche Kältemittel) ermöglichen maximal <strong>70% Förderung</strong>, gedeckelt bei 21.000 Euro Zuschuss.</p>
+
+        <h3>Was kostet eine Wärmepumpe im laufenden Betrieb pro Jahr?</h3>
+        <p>Die jährlichen Betriebskosten liegen bei <strong>1.500 bis 2.100 Euro</strong>. Davon entfallen 1.200-1.800 Euro auf Stromkosten und 150-300 Euro auf Wartung. Der Schornsteinfeger entfällt komplett. Im Vergleich zu Gas- oder Ölheizungen sparen Sie etwa 30-50% der laufenden Kosten.</p>
+
+        <h3>Wann rechnet sich eine Wärmepumpe finanziell?</h3>
+        <p>Mit der aktuellen Förderung amortisiert sich eine Wärmepumpe typischerweise in <strong>8-12 Jahren</strong>. Bei einer Lebensdauer von über 20 Jahren profitieren Sie danach 10+ Jahre von niedrigeren Heizkosten. Die Amortisationszeit verkürzt sich bei höherer Förderung, besserer Dämmung und steigenden Gas-/Ölpreisen.</p>
+
+        <h3>Welche Wärmepumpe eignet sich am besten für Altbau?</h3>
+        <p>Für Altbauten eignen sich <strong>Luft-Wasser-Wärmepumpen</strong> am besten, da sie keine aufwendigen Erdarbeiten benötigen. Mehr dazu in unserem <a href="/blog/waermepumpe-altbau" class="text-[#0F5B78] font-medium hover:underline">Ratgeber: Wärmepumpe im Altbau</a>. Wichtig ist eine ausreichende Vorlauftemperatur (55-60°C) für die vorhandenen Heizkörper. Bei sehr schlecht gedämmten Häusern sollten Sie entweder die Dämmung verbessern oder größere Heizkörper einplanen. Ein hydraulischer Abgleich ist in jedem Fall Pflicht.</p>
+
+        <h3>Wie lange dauert der Einbau einer Wärmepumpe?</h3>
+        <p>Die reine Installation dauert <strong>2-5 Tage</strong>, je nach Komplexität. Von der ersten Beratung bis zur fertigen Anlage sollten Sie einen Planungsvorlauf von <strong>2-4 Monaten</strong> einrechnen. Das beinhaltet Vor-Ort-Besichtigung, Angebotserstellung, Förderantrag bei der KfW, Materialbeschaffung und Terminkoordination.</p>
+
+        <h3>Welche versteckten Kosten kommen bei einer Wärmepumpe hinzu?</h3>
+        <p>Häufige Zusatzkosten sind: <strong>Starkstromanschluss</strong> (500-2.000 Euro), größere Heizkörper bei sehr kleinen Altbau-Radiatoren (2.000-5.000 Euro), neuer Warmwasserspeicher (1.000-3.000 Euro) und Fundamentarbeiten für das Außengerät (500-1.500 Euro). Seriöse Anbieter klären diese Punkte bei der Vor-Ort-Besichtigung und kalkulieren sie direkt ins Angebot ein.</p>
+
+        <h3>Kann ich die Förderung auch nachträglich beantragen?</h3>
+        <p><strong>Nein</strong>, der Förderantrag muss zwingend <strong>vor Auftragsvergabe</strong> bei der KfW gestellt werden. Wer zuerst unterschreibt und dann die Förderung beantragt, verliert den Anspruch komplett. Lassen Sie den Antrag daher von einem erfahrenen Fachbetrieb begleiten oder nutzen Sie einen Energieberater.</p>
       `,
       category: 'Wärmepumpe',
       author: 'HeizCenter Redaktion',
@@ -501,6 +528,16 @@ function getMockBlogPosts(): BlogPost[] {
       image: '/images/Waermepumpe.jpeg',
       tags: ['Wärmepumpe', 'Kosten', 'Förderung', 'BEG'],
       featured: true,
+      faqs: [
+        { question: 'Was kostet eine Wärmepumpe 2025 insgesamt mit Einbau?', answer: 'Eine komplett installierte Wärmepumpe kostet zwischen 27.000 und 50.000 Euro, je nach Typ. Luft-Wasser-Wärmepumpen liegen bei 27.000-40.000 Euro, während Erdwärme- und Wasser-Wasser-Wärmepumpen aufgrund der Bohrkosten 40.000-50.000 Euro kosten. Im Preis enthalten sind Gerät, Installation, hydraulischer Abgleich und Inbetriebnahme.' },
+        { question: 'Wie viel Förderung bekomme ich für eine Wärmepumpe?', answer: 'Sie erhalten mindestens 30% Grundförderung über die KfW. Mit dem Klimageschwindigkeits-Bonus (20% beim Austausch von Öl/Gas/Kohle) kommen Sie auf 50%. Der Einkommensbonus (30% bei Einkommen unter 40.000 Euro) und der Effizienzbonus (5% für natürliche Kältemittel) ermöglichen maximal 70% Förderung, gedeckelt bei 21.000 Euro Zuschuss.' },
+        { question: 'Was kostet eine Wärmepumpe im laufenden Betrieb pro Jahr?', answer: 'Die jährlichen Betriebskosten liegen bei 1.500 bis 2.100 Euro. Davon entfallen 1.200-1.800 Euro auf Stromkosten und 150-300 Euro auf Wartung. Der Schornsteinfeger entfällt komplett. Im Vergleich zu Gas- oder Ölheizungen sparen Sie etwa 30-50% der laufenden Kosten.' },
+        { question: 'Wann rechnet sich eine Wärmepumpe finanziell?', answer: 'Mit der aktuellen Förderung amortisiert sich eine Wärmepumpe typischerweise in 8-12 Jahren. Bei einer Lebensdauer von über 20 Jahren profitieren Sie danach 10+ Jahre von niedrigeren Heizkosten. Die Amortisationszeit verkürzt sich bei höherer Förderung, besserer Dämmung und steigenden Gas-/Ölpreisen.' },
+        { question: 'Welche Wärmepumpe eignet sich am besten für Altbau?', answer: 'Für Altbauten eignen sich Luft-Wasser-Wärmepumpen am besten, da sie keine aufwendigen Erdarbeiten benötigen. Wichtig ist eine ausreichende Vorlauftemperatur (55-60°C) für die vorhandenen Heizkörper. Bei sehr schlecht gedämmten Häusern sollten Sie entweder die Dämmung verbessern oder größere Heizkörper einplanen. Ein hydraulischer Abgleich ist in jedem Fall Pflicht.' },
+        { question: 'Wie lange dauert der Einbau einer Wärmepumpe?', answer: 'Die reine Installation dauert 2-5 Tage, je nach Komplexität. Von der ersten Beratung bis zur fertigen Anlage sollten Sie einen Planungsvorlauf von 2-4 Monaten einrechnen. Das beinhaltet Vor-Ort-Besichtigung, Angebotserstellung, Förderantrag bei der KfW, Materialbeschaffung und Terminkoordination.' },
+        { question: 'Welche versteckten Kosten kommen bei einer Wärmepumpe hinzu?', answer: 'Häufige Zusatzkosten sind: Starkstromanschluss (500-2.000 Euro), größere Heizkörper bei sehr kleinen Altbau-Radiatoren (2.000-5.000 Euro), neuer Warmwasserspeicher (1.000-3.000 Euro) und Fundamentarbeiten für das Außengerät (500-1.500 Euro). Seriöse Anbieter klären diese Punkte bei der Vor-Ort-Besichtigung und kalkulieren sie direkt ins Angebot ein.' },
+        { question: 'Kann ich die Förderung auch nachträglich beantragen?', answer: 'Nein, der Förderantrag muss zwingend vor Auftragsvergabe bei der KfW gestellt werden. Wer zuerst unterschreibt und dann die Förderung beantragt, verliert den Anspruch komplett. Lassen Sie den Antrag daher von einem erfahrenen Fachbetrieb begleiten oder nutzen Sie einen Energieberater.' },
+      ],
     },
     {
       id: 2,
@@ -743,6 +780,32 @@ function getMockBlogPosts(): BlogPost[] {
           </div>
           <p class="text-sm text-slate-500 mt-4">Kostenlose Beratung – auch wenn Sie sich gegen eine neue Heizung entscheiden.</p>
         </div>
+
+        <h2>Häufig gestellte Fragen (FAQ)</h2>
+
+        <h3>Ab wann gilt das Heizungsgesetz 2024 für mich?</h3>
+        <p>Für Bestandsgebäude gilt die 65%-Regel erst nach Abschluss der <strong>kommunalen Wärmeplanung</strong>. Großstädte (über 100.000 Einwohner) haben bis Mitte 2026 Zeit, kleinere Gemeinden bis Mitte 2028. Nur in Neubaugebieten greift die Regel bereits jetzt. Ihre bestehende Heizung hat vollen Bestandsschutz und darf weiterlaufen.</p>
+
+        <h3>Darf ich meine Gasheizung behalten und weiter nutzen?</h3>
+        <p><strong>Ja, ohne Einschränkung.</strong> Alle bestehenden Heizungen genießen Bestandsschutz – egal wie alt. Sie dürfen Ihre Gasheizung reparieren lassen, Verschleißteile tauschen und so lange betreiben, wie sie funktioniert. Niemand zwingt Sie zum Austausch einer funktionierenden Anlage.</p>
+
+        <h3>Was passiert mit meiner Ölheizung?</h3>
+        <p>Ihre Ölheizung darf ebenfalls weiterlaufen. Bei einem irreparablen Totalschaden haben Sie <strong>fünf Jahre Übergangsfrist</strong>, um eine 65%-konforme Heizung einzubauen. In dieser Zeit dürfen Sie sogar übergangsweise eine konventionelle Heizung installieren. Die pauschale Angst vor einem Ölheizungsverbot ist unbegründet.</p>
+
+        <h3>Bis wann muss ich meine Heizung austauschen?</h3>
+        <p>Es gibt <strong>keine generelle Austauschpflicht</strong>. Die 65%-Regel greift nur bei Neubauten oder nach Abschluss der Wärmeplanung in Ihrer Kommune – und auch dann nur, wenn Sie die Heizung <em>freiwillig</em> tauschen. Ausnahme: Heizkessel, die älter als 30 Jahre sind, müssen ausgetauscht werden (gilt aber nicht für Brennwert- und Niedertemperaturkessel).</p>
+
+        <h3>Welche Strafen drohen bei Nichteinhaltung?</h3>
+        <p>Für Bestandsgebäude gibt es aktuell <strong>keine Strafen</strong>, solange Ihre Heizung funktioniert. Wenn Sie nach Inkrafttreten der Wärmeplanung eine neue Heizung einbauen und dabei die 65%-Regel missachten, können theoretisch Bußgelder verhängt werden. In der Praxis betrifft das nur Neuinstallationen nach den Stichtagen – nicht bestehende Anlagen.</p>
+
+        <h3>Welche Heizungen erfüllen die 65%-Anforderung?</h3>
+        <p>Diese Systeme erfüllen die Vorgabe: <strong>Wärmepumpen</strong> jeder Art (Luft, Sole, Wasser), <strong>Pelletheizungen</strong>, <strong>Fernwärme</strong> (wo verfügbar), <strong>Hybridheizungen</strong> (Wärmepumpe + Gas), Solarthermie in Kombination mit anderen Systemen und Gasheizungen, die H2-ready sind und perspektivisch mit Wasserstoff betrieben werden können.</p>
+
+        <h3>Kann ich 2025 noch eine neue Gasheizung einbauen?</h3>
+        <p><strong>Ja</strong>, besonders wenn Ihre Kommune noch keine Wärmeplanung abgeschlossen hat. Allerdings müssen Sie vorher eine <strong>Energieberatung</strong> nachweisen. Zudem gilt: Ab 2029 muss die Gasheizung zu 15% mit erneuerbaren Energien betrieben werden, ab 2035 zu 30%, ab 2045 zu 100%. Wer jetzt noch Gas einbaut, muss also schrittweise nachrüsten.</p>
+
+        <h3>Gibt es Ausnahmen vom Heizungsgesetz?</h3>
+        <p>Ja. Ausnahmen gelten bei <strong>Denkmalschutz</strong>, technischer Unmöglichkeit (z.B. wenn eine Wärmepumpe baulich nicht machbar ist), wirtschaftlicher Härte (unverhältnismäßige Kosten) und für <strong>Eigentümer über 80 Jahre</strong> (beim Verkauf muss der Käufer nachrüsten). Die Behörden entscheiden im Einzelfall pragmatisch.</p>
       `,
       category: 'Heizung',
       author: 'HeizCenter Redaktion',
@@ -751,6 +814,16 @@ function getMockBlogPosts(): BlogPost[] {
       image: '/images/Heizung_Modernisierung.webp',
       tags: ['Heizungsgesetz', 'GEG', 'Erneuerbare Energien'],
       featured: true,
+      faqs: [
+        { question: 'Ab wann gilt das Heizungsgesetz 2024 für mich?', answer: 'Für Bestandsgebäude gilt die 65%-Regel erst nach Abschluss der kommunalen Wärmeplanung. Großstädte (über 100.000 Einwohner) haben bis Mitte 2026 Zeit, kleinere Gemeinden bis Mitte 2028. Nur in Neubaugebieten greift die Regel bereits jetzt. Ihre bestehende Heizung hat vollen Bestandsschutz und darf weiterlaufen.' },
+        { question: 'Darf ich meine Gasheizung behalten und weiter nutzen?', answer: 'Ja, ohne Einschränkung. Alle bestehenden Heizungen genießen Bestandsschutz – egal wie alt. Sie dürfen Ihre Gasheizung reparieren lassen, Verschleißteile tauschen und so lange betreiben, wie sie funktioniert. Niemand zwingt Sie zum Austausch einer funktionierenden Anlage.' },
+        { question: 'Was passiert mit meiner Ölheizung?', answer: 'Ihre Ölheizung darf ebenfalls weiterlaufen. Bei einem irreparablen Totalschaden haben Sie fünf Jahre Übergangsfrist, um eine 65%-konforme Heizung einzubauen. In dieser Zeit dürfen Sie sogar übergangsweise eine konventionelle Heizung installieren. Die pauschale Angst vor einem Ölheizungsverbot ist unbegründet.' },
+        { question: 'Bis wann muss ich meine Heizung austauschen?', answer: 'Es gibt keine generelle Austauschpflicht. Die 65%-Regel greift nur bei Neubauten oder nach Abschluss der Wärmeplanung in Ihrer Kommune – und auch dann nur, wenn Sie die Heizung freiwillig tauschen. Ausnahme: Heizkessel, die älter als 30 Jahre sind, müssen ausgetauscht werden (gilt aber nicht für Brennwert- und Niedertemperaturkessel).' },
+        { question: 'Welche Strafen drohen bei Nichteinhaltung?', answer: 'Für Bestandsgebäude gibt es aktuell keine Strafen, solange Ihre Heizung funktioniert. Wenn Sie nach Inkrafttreten der Wärmeplanung eine neue Heizung einbauen und dabei die 65%-Regel missachten, können theoretisch Bußgelder verhängt werden. In der Praxis betrifft das nur Neuinstallationen nach den Stichtagen – nicht bestehende Anlagen.' },
+        { question: 'Welche Heizungen erfüllen die 65%-Anforderung?', answer: 'Diese Systeme erfüllen die Vorgabe: Wärmepumpen jeder Art (Luft, Sole, Wasser), Pelletheizungen, Fernwärme (wo verfügbar), Hybridheizungen (Wärmepumpe + Gas), Solarthermie in Kombination mit anderen Systemen und Gasheizungen, die H2-ready sind und perspektivlich mit Wasserstoff betrieben werden können.' },
+        { question: 'Kann ich 2025 noch eine neue Gasheizung einbauen?', answer: 'Ja, besonders wenn Ihre Kommune noch keine Wärmeplanung abgeschlossen hat. Allerdings müssen Sie vorher eine Energieberatung nachweisen. Zudem gilt: Ab 2029 muss die Gasheizung zu 15% mit erneuerbaren Energien betrieben werden, ab 2035 zu 30%, ab 2045 zu 100%. Wer jetzt noch Gas einbaut, muss also schrittweise nachrüsten.' },
+        { question: 'Gibt es Ausnahmen vom Heizungsgesetz?', answer: 'Ja. Ausnahmen gelten bei Denkmalschutz, technischer Unmöglichkeit (z.B. wenn eine Wärmepumpe baulich nicht machbar ist), wirtschaftlicher Härte (unverhältnismäßige Kosten) und für Eigentümer über 80 Jahre (beim Verkauf muss der Käufer nachrüsten). Die Behörden entscheiden im Einzelfall pragmatisch.' },
+      ],
     },
     {
       id: 3,
@@ -973,6 +1046,32 @@ function getMockBlogPosts(): BlogPost[] {
           </div>
           <p class="text-sm text-slate-500 mt-4">Die Erstberatung ist kostenlos – auch wenn Sie sich danach gegen einen Wechsel entscheiden.</p>
         </div>
+
+        <h2>Häufig gestellte Fragen (FAQ)</h2>
+
+        <h3>Wie stelle ich den BEG-Förderantrag richtig?</h3>
+        <p>Der Antrag muss <strong>vor Auftragsvergabe</strong> im KfW-Zuschussportal gestellt werden. Sie registrieren sich online, laden alle Unterlagen hoch (Angebot, Energieausweis, ggf. Einkommensnachweis) und erhalten eine Fördernummer. Erst danach dürfen Sie den Auftrag unterschreiben. Nach Installation reichen Sie Rechnungen und technische Nachweise ein, die KfW prüft und überweist den Zuschuss.</p>
+
+        <h3>Wer ist antragsberechtigt für die BEG-Förderung?</h3>
+        <p><strong>Eigentümer und Mieter</strong> von Wohngebäuden können die Förderung beantragen. Auch Wohnungseigentümergemeinschaften (WEG), Kommunen und gemeinnützige Organisationen sind antragsberechtigt. Der Einkommensbonus (30%) steht nur selbstnutzenden Eigentümern zu. Bei vermieteten Objekten entfällt dieser Bonus, die Grundförderung (30%) und der Klimageschwindigkeits-Bonus (20%) sind aber möglich.</p>
+
+        <h3>Kann ich mehrere Boni miteinander kombinieren?</h3>
+        <p><strong>Ja</strong>, die Boni sind kombinierbar. Die Grundförderung (30%) können alle erhalten. Der Klimageschwindigkeits-Bonus (20%) kommt beim Austausch alter Öl-/Gasheizungen hinzu. Der Einkommensbonus (30%) gilt zusätzlich bei Einkommen unter 40.000 Euro. Der Effizienzbonus (5%) für natürliche Kältemittel addiert sich ebenfalls. Maximal sind <strong>70% Förderung</strong> möglich, gedeckelt bei 21.000 Euro Zuschuss.</p>
+
+        <h3>Wie lange dauert es, bis ich die Förderung erhalte?</h3>
+        <p>Nach Einreichung der vollständigen Verwendungsnachweise (Rechnungen, technische Dokumentation) prüft die KfW die Unterlagen. Die Bearbeitungszeit liegt in der Regel bei <strong>4-8 Wochen</strong>. Bei Rückfragen kann es länger dauern. Der Zuschuss wird direkt auf Ihr Konto überwiesen. Planen Sie also ein, dass Sie die Rechnung zunächst selbst bezahlen müssen.</p>
+
+        <h3>Welche Heizungssysteme werden 2025 gefördert?</h3>
+        <p>Gefördert werden <strong>Wärmepumpen</strong> (Luft, Sole, Wasser), <strong>Pelletheizungen</strong>, <strong>Solarthermie</strong> (als Ergänzung), <strong>Fernwärmeanschlüsse</strong> und <strong>Brennstoffzellen</strong>. Hybridheizungen sind förderfähig, wenn sie mindestens 65% erneuerbare Energien nutzen. Reine Gas- oder Ölheizungen sind nicht förderfähig. Das System muss auf der KfW-Liste förderfähiger Geräte stehen.</p>
+
+        <h3>Was ist der maximale Förderbetrag bei der BEG?</h3>
+        <p>Die förderfähigen Kosten sind auf <strong>30.000 Euro</strong> pro Wohneinheit gedeckelt. Bei 70% Förderung ergibt das einen maximalen Zuschuss von <strong>21.000 Euro</strong>. Bei 50% Förderung sind es maximal 15.000 Euro Zuschuss. Wenn Ihre Investition höher liegt (z.B. 40.000 Euro), werden nur die ersten 30.000 Euro für die Förderberechnung herangezogen.</p>
+
+        <h3>Kann ich die BEG-Förderung mit einem KfW-Kredit kombinieren?</h3>
+        <p><strong>Ja</strong>, das ist möglich. Sie können den BEG-Zuschuss mit dem zinsgünstigen KfW-Kredit 261 (bis zu 150.000 Euro) kombinieren. Der Zuschuss reduziert Ihre Investition, den Rest finanzieren Sie günstig. In der Praxis bedeutet das: Sie zahlen weniger Eigenkapital und die monatlichen Raten liegen oft unter den eingesparten Heizkosten.</p>
+
+        <h3>Was passiert, wenn ich den Antrag erst nach Auftragsvergabe stelle?</h3>
+        <p><strong>Dann verfällt der Förderanspruch komplett.</strong> Die KfW zahlt keinen Cent, wenn Sie den Vertrag vor Antragstellung unterschrieben haben. Angebote einholen ist erlaubt, aber unterschreiben Sie nichts, bevor die Fördernummer da ist. Lassen Sie sich von keinem Handwerker unter Druck setzen. Seriöse Fachbetriebe kennen diese Regel und halten sich daran.</p>
       `,
       category: 'Förderung',
       author: 'HeizCenter Redaktion',
@@ -981,6 +1080,16 @@ function getMockBlogPosts(): BlogPost[] {
       image: '/images/Heizung_Modernisierung.webp',
       tags: ['BEG', 'Förderung', 'Zuschuss', 'KfW', 'BAFA'],
       featured: false,
+      faqs: [
+        { question: 'Wie stelle ich den BEG-Förderantrag richtig?', answer: 'Der Antrag muss vor Auftragsvergabe im KfW-Zuschussportal gestellt werden. Sie registrieren sich online, laden alle Unterlagen hoch (Angebot, Energieausweis, ggf. Einkommensnachweis) und erhalten eine Fördernummer. Erst danach dürfen Sie den Auftrag unterschreiben. Nach Installation reichen Sie Rechnungen und technische Nachweise ein, die KfW prüft und überweist den Zuschuss.' },
+        { question: 'Wer ist antragsberechtigt für die BEG-Förderung?', answer: 'Eigentümer und Mieter von Wohngebäuden können die Förderung beantragen. Auch Wohnungseigentümergemeinschaften (WEG), Kommunen und gemeinnützige Organisationen sind antragsberechtigt. Der Einkommensbonus (30%) steht nur selbstnutzenden Eigentümern zu. Bei vermieteten Objekten entfällt dieser Bonus, die Grundförderung (30%) und der Klimageschwindigkeits-Bonus (20%) sind aber möglich.' },
+        { question: 'Kann ich mehrere Boni miteinander kombinieren?', answer: 'Ja, die Boni sind kombinierbar. Die Grundförderung (30%) können alle erhalten. Der Klimageschwindigkeits-Bonus (20%) kommt beim Austausch alter Öl-/Gasheizungen hinzu. Der Einkommensbonus (30%) gilt zusätzlich bei Einkommen unter 40.000 Euro. Der Effizienzbonus (5%) für natürliche Kältemittel addiert sich ebenfalls. Maximal sind 70% Förderung möglich, gedeckelt bei 21.000 Euro Zuschuss.' },
+        { question: 'Wie lange dauert es, bis ich die Förderung erhalte?', answer: 'Nach Einreichung der vollständigen Verwendungsnachweise (Rechnungen, technische Dokumentation) prüft die KfW die Unterlagen. Die Bearbeitungszeit liegt in der Regel bei 4-8 Wochen. Bei Rückfragen kann es länger dauern. Der Zuschuss wird direkt auf Ihr Konto überwiesen. Planen Sie also ein, dass Sie die Rechnung zunächst selbst bezahlen müssen.' },
+        { question: 'Welche Heizungssysteme werden 2025 gefördert?', answer: 'Gefördert werden Wärmepumpen (Luft, Sole, Wasser), Pelletheizungen, Solarthermie (als Ergänzung), Fernwärmeanschlüsse und Brennstoffzellen. Hybridheizungen sind förderfähig, wenn sie mindestens 65% erneuerbare Energien nutzen. Reine Gas- oder Ölheizungen sind nicht förderfähig. Das System muss auf der KfW-Liste förderfähiger Geräte stehen.' },
+        { question: 'Was ist der maximale Förderbetrag bei der BEG?', answer: 'Die förderfähigen Kosten sind auf 30.000 Euro pro Wohneinheit gedeckelt. Bei 70% Förderung ergibt das einen maximalen Zuschuss von 21.000 Euro. Bei 50% Förderung sind es maximal 15.000 Euro Zuschuss. Wenn Ihre Investition höher liegt (z.B. 40.000 Euro), werden nur die ersten 30.000 Euro für die Förderberechnung herangezogen.' },
+        { question: 'Kann ich die BEG-Förderung mit einem KfW-Kredit kombinieren?', answer: 'Ja, das ist möglich. Sie können den BEG-Zuschuss mit dem zinsgünstigen KfW-Kredit 261 (bis zu 150.000 Euro) kombinieren. Der Zuschuss reduziert Ihre Investition, den Rest finanzieren Sie günstig. In der Praxis bedeutet das: Sie zahlen weniger Eigenkapital und die monatlichen Raten liegen oft unter den eingesparten Heizkosten.' },
+        { question: 'Was passiert, wenn ich den Antrag erst nach Auftragsvergabe stelle?', answer: 'Dann verfällt der Förderanspruch komplett. Die KfW zahlt keinen Cent, wenn Sie den Vertrag vor Antragstellung unterschrieben haben. Angebote einholen ist erlaubt, aber unterschreiben Sie nichts, bevor die Fördernummer da ist. Lassen Sie sich von keinem Handwerker unter Druck setzen. Seriöse Fachbetriebe kennen diese Regel und halten sich daran.' },
+      ],
     },
     {
       id: 4,
@@ -1088,7 +1197,7 @@ function getMockBlogPosts(): BlogPost[] {
           </div>
         </div>
 
-        <p>Der Unterschied? <strong>Rund 1.500 € pro Jahr</strong> – zugunsten der Wärmepumpe. Und das trotz höherer Anschaffungskosten. Rechnet man die Förderung ein, amortisiert sich eine Wärmepumpe oft schon nach 6-8 Jahren.</p>
+        <p>Der Unterschied? <strong>Rund 1.500 € pro Jahr</strong> – zugunsten der <a href="/waermepumpe" class="text-[#0F5B78] font-medium hover:underline">Wärmepumpe</a>. Und das trotz höherer Anschaffungskosten. Rechnet man die <a href="/foerderung" class="text-[#0F5B78] font-medium hover:underline">Heizungsförderung</a> ein, amortisiert sich eine Wärmepumpe oft schon nach 6-8 Jahren.</p>
 
         <h2>CO₂-Preis: Das wird noch teurer</h2>
 
@@ -1146,7 +1255,7 @@ function getMockBlogPosts(): BlogPost[] {
 
         <h2>Heizungsgesetz 2024: Was gilt für Gasheizungen?</h2>
 
-        <p>Das Gebäudeenergiegesetz (GEG) hat viele verunsichert. Hier die wichtigsten Fakten:</p>
+        <p>Das Gebäudeenergiegesetz (GEG) hat viele verunsichert. In unserem <a href="/blog/gasheizung-verbot-2025-geg" class="text-[#0F5B78] font-medium hover:underline">ausführlichen GEG-Ratgeber</a> erklären wir alle Details. Hier die wichtigsten Fakten:</p>
 
         <div class="pro-con-list my-8">
           <div class="bg-green-50 border border-green-200 rounded-lg p-5 mb-4">
@@ -1217,7 +1326,7 @@ function getMockBlogPosts(): BlogPost[] {
         </div>
         <p class="text-sm text-slate-500 -mt-4 mb-8">*Förderung nur auf den erneuerbaren Anteil der Hybridheizung</p>
 
-        <p>Die Zahlen sprechen eine klare Sprache: <strong>Auf 15 Jahre gerechnet ist die Wärmepumpe fast 20.000 € günstiger</strong> – trotz der höheren Anschaffungskosten. Und das bei konservativer Rechnung ohne weitere CO₂-Preissteigerungen.</p>
+        <p>Die Zahlen sprechen eine klare Sprache: <strong>Auf 15 Jahre gerechnet ist die Wärmepumpe fast 20.000 € günstiger</strong> – trotz der höheren Anschaffungskosten. Einen noch detaillierteren Vergleich finden Sie in unserem <a href="/blog/heizung-vergleich-2025-waermepumpe-gas-oel-pellets" class="text-[#0F5B78] font-medium hover:underline">großen Heizungsvergleich 2025</a>.</p>
 
         <h2>Wann macht Gas trotzdem Sinn?</h2>
 
@@ -1245,7 +1354,9 @@ function getMockBlogPosts(): BlogPost[] {
           <li><strong>Zukunftsperspektive:</strong> Unsicher – steigende CO₂-Kosten, auslaufende Technologie</li>
         </ul>
 
-        <p>Meine ehrliche Empfehlung: Wenn Sie heute eine Heizung für die nächsten 20 Jahre planen, ist eine reine Gasheizung meist nicht mehr die beste Wahl. Lassen Sie sich beide Varianten durchrechnen – mit echten Zahlen für Ihr Gebäude.</p>
+        <p>Meine ehrliche Empfehlung: Wenn Sie heute eine <a href="/heizung" class="text-[#0F5B78] font-medium hover:underline">neue Heizung</a> für die nächsten 20 Jahre planen, ist eine reine Gasheizung meist nicht mehr die beste Wahl. Lassen Sie sich beide Varianten durchrechnen – mit echten Zahlen für Ihr Gebäude.</p>
+
+        <p>Als Meisterbetrieb mit Standorten in <a href="/standorte/augsburg" class="text-[#0F5B78] font-medium hover:underline">Augsburg</a>, <a href="/standorte/ulm" class="text-[#0F5B78] font-medium hover:underline">Ulm</a> und <a href="/standorte/memmingen" class="text-[#0F5B78] font-medium hover:underline">Memmingen</a> beraten wir Sie gerne persönlich zum Thema Heizungstausch. Rufen Sie uns an oder <a href="/kontakt" class="text-[#0F5B78] font-medium hover:underline">schreiben Sie uns</a>.</p>
 
         <div class="bg-gradient-to-br from-[#0F5B78] to-[#0D4A5F] text-white rounded-xl p-6 my-8">
           <h3 class="text-xl font-bold mb-4">Ehrliche Beratung: Gas vs. Wärmepumpe</h3>
@@ -1277,6 +1388,32 @@ function getMockBlogPosts(): BlogPost[] {
 
           <p class="text-sm text-white/70 mt-4">Kostenlos & unverbindlich – wir verkaufen Ihnen nur, was wirklich passt</p>
         </div>
+
+        <h2>Häufig gestellte Fragen (FAQ)</h2>
+
+        <h3>Was kostet eine neue Gasheizung 2025 komplett mit Einbau?</h3>
+        <p>Eine komplette Gas-Brennwertheizung inklusive Installation kostet <strong>9.000 bis 15.000 Euro</strong>. Im Preis enthalten sind Brennwertgerät (3.000-7.800 Euro), Warmwasserspeicher falls nötig (1.000-1.500 Euro), Installation mit hydraulischem Abgleich (2.000-3.000 Euro) und Demontage der Altanlage (500-1.000 Euro). Ein neuer Gasanschluss kostet zusätzlich 1.500-2.500 Euro.</p>
+
+        <h3>Was kostet eine Gasheizung im laufenden Betrieb pro Jahr?</h3>
+        <p>Die jährlichen Betriebskosten liegen bei etwa <strong>2.850 bis 2.940 Euro</strong> für ein typisches Einfamilienhaus. Das setzt sich zusammen aus Gasverbrauch (ca. 2.400 Euro), CO₂-Abgabe 2025 (ca. 220 Euro), Wartung (150-200 Euro) und Schornsteinfeger (80-120 Euro). Das entspricht etwa 240-245 Euro pro Monat.</p>
+
+        <h3>Lohnt sich eine Gasheizung 2025 noch?</h3>
+        <p>Das hängt von Ihrer Situation ab. Eine Gasheizung hat <strong>niedrige Anschaffungskosten</strong>, aber hohe Betriebskosten (ca. 1.500 Euro mehr pro Jahr als eine Wärmepumpe). Es gibt praktisch <strong>keine Förderung</strong> mehr, nur einen Steuerbonus (max. 2.000 Euro). Auf 15 Jahre gerechnet ist eine Wärmepumpe trotz höherer Anschaffungskosten oft 20.000 Euro günstiger. Gas kann sinnvoll sein bei Notfällen, kurzfristigem Verkauf oder extremen Platzbeschränkungen.</p>
+
+        <h3>Welche Förderung gibt es 2025 für Gasheizungen?</h3>
+        <p>Reine Gasheizungen werden <strong>nicht mehr gefördert</strong> über die BEG. Nur <strong>Gas-Hybridheizungen</strong> (Gas + Wärmepumpe/Solarthermie) erhalten bis zu 70% Förderung auf den erneuerbaren Anteil. Alternativ können Sie über den Steuerbonus (§ 35c EStG) 20% der Handwerkerkosten über 3 Jahre absetzen, maximal 8.000 Euro Steuerersparnis bei 40.000 Euro Investition.</p>
+
+        <h3>Was sagt das Heizungsgesetz 2024 zu Gasheizungen?</h3>
+        <p>Bestehende Gasheizungen haben <strong>vollen Bestandsschutz</strong> und dürfen weiterlaufen. Reparaturen sind erlaubt. Die 65%-Regel für erneuerbare Energien gilt aktuell nur in Neubaugebieten. Im Bestand greift sie erst nach Abschluss der kommunalen Wärmeplanung: in Großstädten ab Mitte 2026, in kleineren Gemeinden ab Mitte 2028. Bei Totalausfall gibt es fünf Jahre Übergangsfrist.</p>
+
+        <h3>Welche Alternative zur Gasheizung ist am besten?</h3>
+        <p>Die <strong>Wärmepumpe</strong> ist für die meisten Hausbesitzer 2025 die wirtschaftlichste Alternative. Anschaffung 25.000-35.000 Euro, aber mit 30-70% BEG-Förderung. Betriebskosten nur ca. 1.300 Euro pro Jahr (statt 2.900 Euro bei Gas). Auf 15 Jahre gerechnet etwa 20.000 Euro günstiger. Alternativen: Gas-Hybrid (Kombination aus beiden), Pelletheizung (wenn Platz vorhanden) oder Fernwärme (wo verfügbar).</p>
+
+        <h3>Was ist eine H2-ready Gasheizung?</h3>
+        <p>Eine <strong>wasserstofffähige Gasheizung</strong>, die später auf Wasserstoff umgerüstet werden kann. Die Idee: Heute mit Erdgas heizen, künftig mit grünem Wasserstoff. In der Praxis sind diese Geräte 2025 kaum verfügbar und es ist völlig unklar, ob und wann flächendeckend Wasserstoff verfügbar sein wird. Experten raten eher zu bewährten erneuerbaren Lösungen wie Wärmepumpen.</p>
+
+        <h3>Wie entwickelt sich die CO₂-Abgabe für Gas?</h3>
+        <p>Die CO₂-Abgabe steigt kontinuierlich: <strong>2025: 55 Euro pro Tonne</strong>, 2026: 65 Euro, ab 2027 im Marktkorridor 55-65 Euro, danach unbegrenzt. Experten rechnen langfristig mit 100-150 Euro pro Tonne. Bei 20.000 kWh Gasverbrauch zahlen Sie 2025 etwa 220 Euro CO₂-Steuer pro Jahr, bei 100 Euro/Tonne wären das 500-600 Euro zusätzlich.</p>
       `,
       category: 'Heizung',
       author: 'HeizCenter Redaktion',
@@ -1285,6 +1422,16 @@ function getMockBlogPosts(): BlogPost[] {
       image: '/images/HeizCenter_Heizung.webp',
       tags: ['Gasheizung', 'Kosten', 'Brennwertkessel', 'Förderung'],
       featured: false,
+      faqs: [
+        { question: 'Was kostet eine neue Gasheizung 2025 komplett mit Einbau?', answer: 'Eine komplette Gas-Brennwertheizung inklusive Installation kostet 9.000 bis 15.000 Euro. Im Preis enthalten sind Brennwertgerät (3.000-7.800 Euro), Warmwasserspeicher falls nötig (1.000-1.500 Euro), Installation mit hydraulischem Abgleich (2.000-3.000 Euro) und Demontage der Altanlage (500-1.000 Euro). Ein neuer Gasanschluss kostet zusätzlich 1.500-2.500 Euro.' },
+        { question: 'Was kostet eine Gasheizung im laufenden Betrieb pro Jahr?', answer: 'Die jährlichen Betriebskosten liegen bei etwa 2.850 bis 2.940 Euro für ein typisches Einfamilienhaus. Das setzt sich zusammen aus Gasverbrauch (ca. 2.400 Euro), CO₂-Abgabe 2025 (ca. 220 Euro), Wartung (150-200 Euro) und Schornsteinfeger (80-120 Euro). Das entspricht etwa 240-245 Euro pro Monat.' },
+        { question: 'Lohnt sich eine Gasheizung 2025 noch?', answer: 'Das hängt von Ihrer Situation ab. Eine Gasheizung hat niedrige Anschaffungskosten, aber hohe Betriebskosten (ca. 1.500 Euro mehr pro Jahr als eine Wärmepumpe). Es gibt praktisch keine Förderung mehr, nur einen Steuerbonus (max. 2.000 Euro). Auf 15 Jahre gerechnet ist eine Wärmepumpe trotz höherer Anschaffungskosten oft 20.000 Euro günstiger. Gas kann sinnvoll sein bei Notfällen, kurzfristigem Verkauf oder extremen Platzbeschränkungen.' },
+        { question: 'Welche Förderung gibt es 2025 für Gasheizungen?', answer: 'Reine Gasheizungen werden nicht mehr gefördert über die BEG. Nur Gas-Hybridheizungen (Gas + Wärmepumpe/Solarthermie) erhalten bis zu 70% Förderung auf den erneuerbaren Anteil. Alternativ können Sie über den Steuerbonus (§ 35c EStG) 20% der Handwerkerkosten über 3 Jahre absetzen, maximal 8.000 Euro Steuerersparnis bei 40.000 Euro Investition.' },
+        { question: 'Was sagt das Heizungsgesetz 2024 zu Gasheizungen?', answer: 'Bestehende Gasheizungen haben vollen Bestandsschutz und dürfen weiterlaufen. Reparaturen sind erlaubt. Die 65%-Regel für erneuerbare Energien gilt aktuell nur in Neubaugebieten. Im Bestand greift sie erst nach Abschluss der kommunalen Wärmeplanung: in Großstädten ab Mitte 2026, in kleineren Gemeinden ab Mitte 2028. Bei Totalausfall gibt es fünf Jahre Übergangsfrist.' },
+        { question: 'Welche Alternative zur Gasheizung ist am besten?', answer: 'Die Wärmepumpe ist für die meisten Hausbesitzer 2025 die wirtschaftlichste Alternative. Anschaffung 25.000-35.000 Euro, aber mit 30-70% BEG-Förderung. Betriebskosten nur ca. 1.300 Euro pro Jahr (statt 2.900 Euro bei Gas). Auf 15 Jahre gerechnet etwa 20.000 Euro günstiger. Alternativen: Gas-Hybrid (Kombination aus beiden), Pelletheizung (wenn Platz vorhanden) oder Fernwärme (wo verfügbar).' },
+        { question: 'Was ist eine H2-ready Gasheizung?', answer: 'Eine wasserstofffähige Gasheizung, die später auf Wasserstoff umgerüstet werden kann. Die Idee: Heute mit Erdgas heizen, künftig mit grünem Wasserstoff. In der Praxis sind diese Geräte 2025 kaum verfügbar und es ist völlig unklar, ob und wann flächendeckend Wasserstoff verfügbar sein wird. Experten raten eher zu bewährten erneuerbaren Lösungen wie Wärmepumpen.' },
+        { question: 'Wie entwickelt sich die CO₂-Abgabe für Gas?', answer: 'Die CO₂-Abgabe steigt kontinuierlich: 2025: 55 Euro pro Tonne, 2026: 65 Euro, ab 2027 im Marktkorridor 55-65 Euro, danach unbegrenzt. Experten rechnen langfristig mit 100-150 Euro pro Tonne. Bei 20.000 kWh Gasverbrauch zahlen Sie 2025 etwa 220 Euro CO₂-Steuer pro Jahr, bei 100 Euro/Tonne wären das 500-600 Euro zusätzlich.' },
+      ],
     },
     {
       id: 5,
@@ -1594,6 +1741,32 @@ function getMockBlogPosts(): BlogPost[] {
 
           <p class="text-sm text-white/70 mt-4">Beratung kostenlos & unverbindlich – Region Augsburg, Günzburg, Schwaben</p>
         </div>
+
+        <h2>Häufig gestellte Fragen (FAQ)</h2>
+
+        <h3>Was kostet eine Pelletheizung 2025 komplett installiert?</h3>
+        <p>Eine komplette Pelletheizung inklusive Lager, Fördersystem und Installation kostet <strong>28.000 bis 35.000 Euro</strong>. Darin enthalten sind Pelletkessel (15.000-20.000 Euro), Pelletlager (3.000-5.000 Euro), Fördersystem (2.000-3.000 Euro), Pufferspeicher (2.000-3.000 Euro) und Installation mit hydraulischem Abgleich (4.000-6.000 Euro). Eine eventuelle Schornsteinsanierung kostet zusätzlich 1.000-2.000 Euro.</p>
+
+        <h3>Wie viel kosten Pellets aktuell pro Tonne?</h3>
+        <p>Der aktuelle Pelletpreis liegt bei <strong>350 bis 450 Euro pro Tonne</strong> (Stand 2025). Ein typisches Einfamilienhaus verbraucht etwa 3 Tonnen pro Jahr, was Brennstoffkosten von 1.050-1.350 Euro entspricht. Der Preis schwankt saisonal – am günstigsten ist eine Bestellung im Frühsommer. Pellets sind deutlich günstiger und preislich stabiler als Gas oder Öl.</p>
+
+        <h3>Wie viel Platz braucht eine Pelletheizung im Keller?</h3>
+        <p>Als Faustregel gilt: <strong>1 m³ Lagerraum pro Tonne Pellets</strong>. Für ein Einfamilienhaus mit 5-6 Tonnen Jahresbedarf benötigen Sie etwa 8-10 m³ Lagervolumen, entsprechend einem Raum von ca. 2,5 x 2,5 x 1,5 Meter. Ein Gewebetank (Sacksilo) ist die platzsparendste Lösung mit nur 2x2 Metern Grundfläche. Ein alter Heizölraum lässt sich ideal umnutzen.</p>
+
+        <h3>Wie viel BEG-Förderung gibt es für Pelletheizungen?</h3>
+        <p>Die Grundförderung beträgt <strong>30%</strong>. Den Klimageschwindigkeits-Bonus (20%) erhalten Sie nur bei Kombination mit Solarthermie, PV oder Wärmepumpe. Der Einkommensbonus (30% bei Einkommen unter 40.000 Euro) ist zusätzlich möglich. Insgesamt sind bis zu <strong>70% Förderung</strong> möglich, maximal 21.000 Euro Zuschuss. Eine Pelletheizung mit Solarthermie erhält in der Regel 50% Förderung.</p>
+
+        <h3>Pelletheizung oder Wärmepumpe - was ist besser?</h3>
+        <p>Das hängt von Ihrem Haus ab. <strong>Pelletheizung ist besser</strong>, wenn Sie Lagerplatz haben, hohe Vorlauftemperaturen benötigen (schlecht gedämmter Altbau) und auf regionale Brennstoffe setzen wollen. <strong>Wärmepumpe ist besser</strong>, wenn kein Lagerplatz vorhanden ist, das Haus gut gedämmt ist, Sie eine PV-Anlage haben und wartungsfrei heizen möchten. Auf 20 Jahre ist die Wärmepumpe etwa 8.000 Euro günstiger, aber beide Systeme sind förderfähig.</p>
+
+        <h3>Was kostet eine Pelletheizung im Betrieb pro Jahr?</h3>
+        <p>Die jährlichen Betriebskosten liegen bei <strong>1.480 bis 1.960 Euro</strong>. Das setzt sich zusammen aus Pellets (1.050-1.350 Euro), Wartung inkl. Reinigung (250-350 Euro), Schornsteinfeger (100-140 Euro) und Strom für das Fördersystem (80-120 Euro). Eine CO₂-Abgabe entfällt komplett. Im Vergleich zu Gasheizungen (ca. 2.900 Euro/Jahr) sparen Sie etwa 1.000-1.500 Euro jährlich.</p>
+
+        <h3>Wie wartungsintensiv ist eine Pelletheizung?</h3>
+        <p>Pelletheizungen benötigen <strong>mehr Wartung</strong> als Gas oder Wärmepumpe. Einmal jährlich ist eine Vollwartung mit Reinigung des Kessels, Brennraums und Wärmetauschers nötig (250-350 Euro). Die Aschebox müssen Sie 2-4 Mal pro Jahr selbst leeren (je nach Modell). Moderne Kessel verfügen über automatische Reinigungssysteme, die den Aufwand minimieren. Der Wartungsaufwand ist deutlich höher als bei einer Wärmepumpe.</p>
+
+        <h3>Kann ich meinen alten Heizölraum für Pellets nutzen?</h3>
+        <p><strong>Ja, ideal!</strong> Ein alter Heizölraum lässt sich perfekt zum Pelletlager umbauen. Sie benötigen schräge Einbauten für den Pelletabzug und ggf. eine Staubschutztür. Die Kosten für den Umbau liegen bei 2.500-4.000 Euro. Die Kapazität hängt von der Raumgröße ab, meist passen 6-8 Tonnen hinein. Das ist eine der wirtschaftlichsten Lösungen, da Sie vorhandenen Raum nutzen.</p>
       `,
       category: 'Heizung',
       author: 'HeizCenter Redaktion',
@@ -1602,329 +1775,16 @@ function getMockBlogPosts(): BlogPost[] {
       image: '/images/Heizung_Modernisierung.webp',
       tags: ['Pelletheizung', 'Kosten', 'Förderung', 'BEG', 'Biomasse'],
       featured: false,
-    },
-    {
-      id: 6,
-      slug: 'solarthermie-kosten-2025',
-      title: 'Solarthermie Kosten 2025: Preise, Installation & Förderung',
-      excerpt: 'Was kostet eine Solarthermieanlage 2025? Alle Kosten für Warmwasser und Heizungsunterstützung plus bis zu 35% Förderung.',
-      content: `
-        <p class="text-xl text-slate-700 leading-relaxed mb-6">Kostenlose Wärme vom Dach – klingt verlockend, oder? Solarthermie macht genau das möglich: Sie nutzen die Sonne, um Ihr Warmwasser zu erhitzen und im Winter sogar die Heizung zu unterstützen. Aber lohnt sich das wirklich? Und was kostet der Spaß?</p>
-
-        <div class="flex flex-wrap gap-4 mb-8 text-sm text-slate-600">
-          <span class="flex items-center gap-1">✓ Über 200 Solarthermie-Anlagen installiert</span>
-          <span class="flex items-center gap-1">✓ Kostenlose Dachprüfung inklusive</span>
-          <span class="flex items-center gap-1">✓ BAFA-Förderung garantiert</span>
-        </div>
-
-        <p>In diesem Artikel zeige ich Ihnen, was Solarthermie 2025 kostet, wann sie sich lohnt – und wann Photovoltaik vielleicht die bessere Wahl ist. Mit echten Zahlen aus unserer Region.</p>
-
-        <h2>Was kostet Solarthermie? Die zwei Varianten</h2>
-
-        <p>Bei Solarthermie gibt es zwei grundlegende Systeme – und die Kosten unterscheiden sich deutlich:</p>
-
-        <div class="comparison-grid grid md:grid-cols-2 gap-6 my-8">
-          <div class="comparison-card bg-blue-50 border border-blue-200 rounded-lg p-5">
-            <div class="text-3xl mb-3">☀️</div>
-            <h3 class="font-bold text-slate-900 mb-2 text-lg">Nur Warmwasser</h3>
-            <p class="text-3xl font-bold text-[#0F5B78] mb-3">3.000 – 6.000 €</p>
-            <ul class="text-sm text-slate-600 space-y-2">
-              <li>• 4-6 m² Kollektorfläche</li>
-              <li>• 300 Liter Speicher</li>
-              <li>• Deckt 50-60% des Warmwassers</li>
-              <li>• Sommer: 100% solar</li>
-            </ul>
-          </div>
-          <div class="comparison-card bg-green-50 border border-green-200 rounded-lg p-5">
-            <div class="text-3xl mb-3">🔥☀️</div>
-            <h3 class="font-bold text-slate-900 mb-2 text-lg">Warmwasser + Heizung</h3>
-            <p class="text-3xl font-bold text-[#0F5B78] mb-3">8.000 – 17.000 €</p>
-            <ul class="text-sm text-slate-600 space-y-2">
-              <li>• 10-15 m² Kollektorfläche</li>
-              <li>• 750-1.000 Liter Pufferspeicher</li>
-              <li>• Deckt 20-30% der Heizung</li>
-              <li>• Ideal in Übergangszeit</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="bg-amber-50 border-l-4 border-amber-400 p-4 my-6">
-          <p class="font-semibold text-amber-900 mb-2">Praxisbeispiel: Familie Kraus aus Königsbrunn</p>
-          <p class="text-amber-800">Einfamilienhaus, 4 Personen, bestehende Gasheizung. 6 m² Flachkollektoren für Warmwasser, 300-Liter-Speicher. Gesamtkosten: <strong>4.800 €</strong>. Nach 30% BAFA-Förderung: <strong>3.360 € Eigenanteil</strong>. Ersparnis: ca. 280 €/Jahr an Gaskosten.</p>
-        </div>
-
-        <h2>Die Kostenaufstellung im Detail</h2>
-
-        <div class="cost-table my-8">
-          <h4 class="text-lg font-bold text-slate-900 mb-4">Solarthermie für Warmwasser (4 Personen)</h4>
-          <div class="space-y-3">
-            <div class="flex justify-between items-center py-2 border-b border-slate-200">
-              <span class="text-slate-700">Flachkollektoren (6 m²)</span>
-              <span class="font-semibold text-slate-900">1.800 – 3.000 €</span>
-            </div>
-            <div class="flex justify-between items-center py-2 border-b border-slate-200">
-              <span class="text-slate-700">Warmwasserspeicher (300 L)</span>
-              <span class="font-semibold text-slate-900">800 – 1.200 €</span>
-            </div>
-            <div class="flex justify-between items-center py-2 border-b border-slate-200">
-              <span class="text-slate-700">Regelung + Pumpengruppe</span>
-              <span class="font-semibold text-slate-900">400 – 700 €</span>
-            </div>
-            <div class="flex justify-between items-center py-2 border-b border-slate-200">
-              <span class="text-slate-700">Installation + Montage</span>
-              <span class="font-semibold text-slate-900">1.000 – 1.800 €</span>
-            </div>
-            <div class="flex justify-between items-center py-3 bg-slate-50 px-3 rounded-lg mt-2">
-              <span class="font-bold text-slate-900">Gesamtkosten brutto</span>
-              <span class="font-bold text-[#0F5B78] text-lg">4.000 – 6.700 €</span>
-            </div>
-          </div>
-        </div>
-
-        <h2>Flach- oder Röhrenkollektoren?</h2>
-
-        <p>Diese Frage höre ich oft. Hier meine ehrliche Einschätzung:</p>
-
-        <div class="comparison-grid grid md:grid-cols-2 gap-4 my-8">
-          <div class="comparison-card bg-white border border-slate-200 rounded-lg p-5">
-            <h4 class="font-bold text-slate-900 mb-3">Flachkollektoren</h4>
-            <p class="text-xl font-bold text-[#0F5B78] mb-3">300 – 500 €/m²</p>
-            <ul class="text-sm space-y-2 text-slate-700">
-              <li><strong>Wirkungsgrad:</strong> 60-75%</li>
-              <li><strong>Platzbedarf:</strong> ca. 1,5 m²/Person</li>
-              <li><strong>Lebensdauer:</strong> 25-30 Jahre</li>
-              <li><strong>Ideal für:</strong> Süddächer ohne Verschattung</li>
-            </ul>
-            <div class="mt-3 pt-3 border-t border-slate-200">
-              <p class="text-sm text-green-700 font-medium">✓ Unsere Empfehlung für die meisten Fälle</p>
-            </div>
-          </div>
-          <div class="comparison-card bg-white border border-slate-200 rounded-lg p-5">
-            <h4 class="font-bold text-slate-900 mb-3">Röhrenkollektoren</h4>
-            <p class="text-xl font-bold text-[#0F5B78] mb-3">500 – 800 €/m²</p>
-            <ul class="text-sm space-y-2 text-slate-700">
-              <li><strong>Wirkungsgrad:</strong> 70-85%</li>
-              <li><strong>Platzbedarf:</strong> ca. 1 m²/Person</li>
-              <li><strong>Lebensdauer:</strong> 20-25 Jahre</li>
-              <li><strong>Ideal für:</strong> Ost/West-Dächer, wenig Platz</li>
-            </ul>
-            <div class="mt-3 pt-3 border-t border-slate-200">
-              <p class="text-sm text-blue-700 font-medium">Sinnvoll bei begrenzter Dachfläche</p>
-            </div>
-          </div>
-        </div>
-
-        <p><strong>Mein Tipp:</strong> In 90% der Fälle reichen Flachkollektoren völlig aus. Die sind günstiger, robuster und halten länger. Röhrenkollektoren empfehle ich nur, wenn das Dach nach Osten oder Westen zeigt oder sehr wenig Platz vorhanden ist.</p>
-
-        <h2>Was bringt's unterm Strich? Die Einsparungen</h2>
-
-        <p>Jetzt wird's interessant – denn Solarthermie spart bares Geld:</p>
-
-        <div class="cost-table my-8">
-          <div class="grid grid-cols-3 gap-2 text-sm font-bold text-slate-900 bg-slate-100 p-3 rounded-t-lg">
-            <div>Anlagentyp</div>
-            <div class="text-center">Solare Deckung</div>
-            <div class="text-center">Ersparnis/Jahr*</div>
-          </div>
-          <div class="grid grid-cols-3 gap-2 text-sm p-3 border-b border-slate-200">
-            <div class="text-slate-700">Nur Warmwasser</div>
-            <div class="text-center">50-60% WW</div>
-            <div class="text-center font-medium text-green-700">250 – 350 €</div>
-          </div>
-          <div class="grid grid-cols-3 gap-2 text-sm p-3 border-b border-slate-200">
-            <div class="text-slate-700">WW + Heizung (klein)</div>
-            <div class="text-center">15-20% gesamt</div>
-            <div class="text-center font-medium text-green-700">400 – 550 €</div>
-          </div>
-          <div class="grid grid-cols-3 gap-2 text-sm p-3 bg-slate-50 rounded-b-lg">
-            <div class="text-slate-700">WW + Heizung (groß)</div>
-            <div class="text-center">25-30% gesamt</div>
-            <div class="text-center font-medium text-green-700">600 – 900 €</div>
-          </div>
-        </div>
-        <p class="text-sm text-slate-500 -mt-4 mb-8">*Bei Gasheizung, 12 Cent/kWh. Bei Öl entsprechend höher.</p>
-
-        <p>Dazu kommen noch die vermiedenen CO₂-Kosten. Gas wird jedes Jahr teurer – Ihre Solaranlage produziert 25 Jahre lang kostenlose Wärme.</p>
-
-        <h2>Förderung 2025: 30-35% vom Staat</h2>
-
-        <p>Solarthermie wird über die BEG-Einzelmaßnahmen gefördert. Das läuft so:</p>
-
-        <div class="comparison-grid grid md:grid-cols-2 gap-3 my-8">
-          <div class="text-center p-4 bg-[#0F5B78] text-white rounded-lg">
-            <div class="text-3xl font-bold mb-1">30%</div>
-            <div class="text-sm">Basisförderung</div>
-            <div class="text-xs text-white/70 mt-1">für alle Anlagen</div>
-          </div>
-          <div class="text-center p-4 bg-green-600 text-white rounded-lg">
-            <div class="text-3xl font-bold mb-1">+5%</div>
-            <div class="text-sm">iSFP-Bonus</div>
-            <div class="text-xs text-white/70 mt-1">mit Sanierungsfahrplan</div>
-          </div>
-        </div>
-
-        <div class="callout callout-info my-6">
-          <div class="callout-title">Was ist ein iSFP?</div>
-          <div class="callout-content">
-            <p>Ein <strong>individueller Sanierungsfahrplan</strong> ist eine Energieberatung, die Ihnen zeigt, welche Maßnahmen in welcher Reihenfolge sinnvoll sind. Kostet etwa 400-500 € (nach Förderung), bringt aber +5% auf alle Einzelmaßnahmen. Bei größeren Projekten lohnt sich das fast immer.</p>
-          </div>
-        </div>
-
-        <h3>Rechenbeispiele nach Förderung</h3>
-
-        <div class="cost-table my-8">
-          <div class="space-y-4">
-            <div class="bg-slate-50 rounded-lg p-4">
-              <div class="flex justify-between items-center mb-2">
-                <span class="font-semibold text-slate-900">Warmwasser-Anlage (5.000 €)</span>
-                <span class="text-sm text-slate-600">30% Förderung</span>
-              </div>
-              <div class="text-slate-700">5.000 € – 1.500 € Zuschuss = <span class="font-bold text-green-700">3.500 € Eigenanteil</span></div>
-            </div>
-            <div class="bg-green-50 rounded-lg p-4">
-              <div class="flex justify-between items-center mb-2">
-                <span class="font-semibold text-slate-900">Kombi-Anlage mit iSFP (12.000 €)</span>
-                <span class="text-sm text-slate-600">35% Förderung</span>
-              </div>
-              <div class="text-slate-700">12.000 € – 4.200 € Zuschuss = <span class="font-bold text-green-700">7.800 € Eigenanteil</span></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-slate-50 border border-slate-200 rounded-lg p-4 my-6 text-center">
-          <p class="text-slate-700 mb-2"><strong>Lohnt sich Solarthermie bei Ihrem Dach?</strong></p>
-          <p class="text-sm text-slate-600">Wir prüfen Ausrichtung, Verschattung und berechnen die realistische Einsparung. <a href="/kontakt" class="text-[#0F5B78] font-medium hover:underline">Kostenlose Dachprüfung anfragen →</a></p>
-        </div>
-
-        <h2>Die große Frage: Solarthermie oder PV?</h2>
-
-        <p>Das ist die Gretchenfrage – und ich werde oft danach gefragt. Hier meine ehrliche Meinung:</p>
-
-        <div class="pro-con-list my-8">
-          <div class="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-4">
-            <h4 class="font-bold text-amber-900 mb-3">Solarthermie ist besser, wenn…</h4>
-            <ul class="space-y-2 text-amber-800">
-              <li>✓ Sie <strong>keine Wärmepumpe</strong> haben (Gas, Öl, Pellet)</li>
-              <li>✓ Ihr Warmwasserverbrauch hoch ist (große Familie)</li>
-              <li>✓ Die Dachfläche <strong>begrenzt</strong> ist (Solarthermie braucht weniger Platz für Wärme)</li>
-              <li>✓ Sie eine <strong>Pelletheizung</strong> planen (Fördervoraussetzung!)</li>
-            </ul>
-          </div>
-          <div class="bg-blue-50 border border-blue-200 rounded-lg p-5">
-            <h4 class="font-bold text-blue-900 mb-3">Photovoltaik ist besser, wenn…</h4>
-            <ul class="space-y-2 text-blue-800">
-              <li>✓ Sie eine <strong>Wärmepumpe</strong> haben oder planen</li>
-              <li>✓ Sie auch <strong>Strom</strong> selbst verbrauchen (E-Auto, Haushalt)</li>
-              <li>✓ Die Dachfläche groß genug ist</li>
-              <li>✓ Sie <strong>Einspeisevergütung</strong> mitnehmen wollen</li>
-            </ul>
-          </div>
-        </div>
-
-        <p><strong>Mein Fazit:</strong> In Kombination mit einer Wärmepumpe würde ich heute eher auf PV setzen – die Wärmepumpe nutzt den Strom direkt zur Wärmeerzeugung. Bei Gas- oder Pelletheizung ist Solarthermie nach wie vor eine clevere Ergänzung.</p>
-
-        <h2>Wann amortisiert sich die Anlage?</h2>
-
-        <p>Rechnen wir mal konkret:</p>
-
-        <div class="bg-slate-100 rounded-lg p-5 my-6">
-          <h4 class="font-bold text-slate-900 mb-3">Beispiel: Warmwasser-Anlage</h4>
-          <ul class="space-y-2 text-slate-700">
-            <li><strong>Kosten nach Förderung:</strong> 3.500 €</li>
-            <li><strong>Jährliche Einsparung:</strong> 280 € (Gas) + steigende CO₂-Kosten</li>
-            <li><strong>Betriebskosten:</strong> ca. 50 €/Jahr (Wartung, Strom)</li>
-            <li><strong>Nettoersparnis:</strong> ca. 230 €/Jahr</li>
-            <li class="pt-2 border-t border-slate-300"><strong>Amortisation:</strong> ca. 15 Jahre</li>
-            <li class="text-green-700"><strong>Lebensdauer:</strong> 25-30 Jahre → 10-15 Jahre Gewinn</li>
-          </ul>
-        </div>
-
-        <p>Klar, 15 Jahre sind kein Schnäppchen. Aber: Die Anlage läuft danach noch 10-15 Jahre weiter – und produziert kostenlose Wärme. Und bei steigenden Gaspreisen wird die Amortisation schneller.</p>
-
-        <h2>Die Kombination mit anderen Heizungen</h2>
-
-        <p>Solarthermie lässt sich mit fast jeder Heizung kombinieren:</p>
-
-        <div class="comparison-grid grid md:grid-cols-2 gap-4 my-8">
-          <div class="comparison-card bg-white border border-slate-200 rounded-lg p-4">
-            <h4 class="font-bold text-slate-900 mb-2">+ Gasheizung</h4>
-            <p class="text-sm text-slate-600">Klassiker. Reduziert Gasverbrauch um 20-30%. Im Sommer läuft die Gastherme oft gar nicht.</p>
-          </div>
-          <div class="comparison-card bg-white border border-slate-200 rounded-lg p-4">
-            <h4 class="font-bold text-slate-900 mb-2">+ Pelletheizung</h4>
-            <p class="text-sm text-slate-600">Wichtig! Für den Klimabonus muss Warmwasser solar abgedeckt sein. Perfekte Kombination.</p>
-          </div>
-          <div class="comparison-card bg-white border border-slate-200 rounded-lg p-4">
-            <h4 class="font-bold text-slate-900 mb-2">+ Wärmepumpe</h4>
-            <p class="text-sm text-slate-600">Funktioniert, aber PV ist meist sinnvoller. Entlastet die WP im Sommer.</p>
-          </div>
-          <div class="comparison-card bg-white border border-slate-200 rounded-lg p-4">
-            <h4 class="font-bold text-slate-900 mb-2">+ Ölheizung</h4>
-            <p class="text-sm text-slate-600">Verlängert Tanklaufzeit erheblich. Gute Übergangslösung bis zur Heizungsmodernisierung.</p>
-          </div>
-        </div>
-
-        <h2>Voraussetzungen fürs Dach</h2>
-
-        <p>Bevor wir weitermachen – nicht jedes Dach ist geeignet:</p>
-
-        <div class="pro-con-list my-8">
-          <div class="bg-green-50 border border-green-200 rounded-lg p-5 mb-4">
-            <h4 class="font-bold text-green-900 mb-3">✓ Geeignet</h4>
-            <ul class="space-y-2 text-green-800">
-              <li>Ausrichtung: Süd, Südost, Südwest</li>
-              <li>Dachneigung: 30-60° (optimal: 45°)</li>
-              <li>Keine Verschattung durch Bäume, Nachbarhäuser</li>
-              <li>Mindestens 5-6 m² freie Fläche</li>
-            </ul>
-          </div>
-          <div class="bg-red-50 border border-red-200 rounded-lg p-5">
-            <h4 class="font-bold text-red-900 mb-3">✗ Schwierig</h4>
-            <ul class="space-y-2 text-red-800">
-              <li>Norddach (unter 20% Ertrag)</li>
-              <li>Starke Verschattung (Schornstein, Gauben)</li>
-              <li>Flachdach ohne Aufständerung</li>
-              <li>Denkmalschutz (Genehmigung nötig)</li>
-            </ul>
-          </div>
-        </div>
-
-        <h2>Fazit: Für wen lohnt sich Solarthermie?</h2>
-
-        <p>Solarthermie ist 2025 sinnvoll, wenn:</p>
-
-        <ul>
-          <li>Sie eine <strong>Gas-, Öl- oder Pelletheizung</strong> haben</li>
-          <li>Ihr Dach <strong>nach Süden</strong> zeigt und nicht verschattet ist</li>
-          <li>Sie <strong>langfristig denken</strong> und 15-20 Jahre in dem Haus wohnen</li>
-          <li>Sie bei einer <strong>Pelletheizung den Klimabonus</strong> brauchen</li>
-        </ul>
-
-        <p>Weniger sinnvoll ist sie, wenn Sie eine Wärmepumpe planen – dann lieber auf Photovoltaik setzen.</p>
-
-        <div class="bg-gradient-to-br from-[#0F5B78] to-[#0D4A5F] text-white rounded-xl p-6 my-8">
-          <h3 class="text-xl font-bold mb-4">Kostenlose Dachprüfung</h3>
-          <p class="text-white/90 mb-4">Wir schauen uns Ihr Dach an und sagen Ihnen ehrlich, ob Solarthermie bei Ihnen Sinn macht – oder ob PV die bessere Wahl ist.</p>
-
-          <div class="flex flex-col sm:flex-row gap-3">
-            <a href="tel:+49 8234 9665900" class="inline-flex items-center justify-center gap-2 bg-white text-[#0F5B78] font-semibold px-5 py-3 rounded-lg hover:bg-slate-100 transition-colors">
-              <span>📞</span> 08234 / 967 975 0
-            </a>
-            <a href="/kontakt" class="inline-flex items-center justify-center gap-2 bg-white/10 text-white font-semibold px-5 py-3 rounded-lg border border-white/30 hover:bg-white/20 transition-colors">
-              Online-Anfrage →
-            </a>
-          </div>
-
-          <p class="text-sm text-white/70 mt-4">Ehrliche Beratung – wir empfehlen nur, was wirklich passt</p>
-        </div>
-      `,
-      category: 'Solar',
-      author: 'HeizCenter Redaktion',
-      date: '2025-11-06',
-      readingTime: 10,
-      image: '/images/Solaranlage.webp',
-      tags: ['Solarthermie', 'Kosten', 'Förderung', 'BEG', 'Warmwasser', 'Heizung'],
-      featured: false,
+      faqs: [
+        { question: 'Was kostet eine Pelletheizung 2025 komplett installiert?', answer: 'Eine komplette Pelletheizung inklusive Lager, Fördersystem und Installation kostet 28.000 bis 35.000 Euro. Darin enthalten sind Pelletkessel (15.000-20.000 Euro), Pelletlager (3.000-5.000 Euro), Fördersystem (2.000-3.000 Euro), Pufferspeicher (2.000-3.000 Euro) und Installation mit hydraulischem Abgleich (4.000-6.000 Euro). Eine eventuelle Schornsteinsanierung kostet zusätzlich 1.000-2.000 Euro.' },
+        { question: 'Wie viel kosten Pellets aktuell pro Tonne?', answer: 'Der aktuelle Pelletpreis liegt bei 350 bis 450 Euro pro Tonne (Stand 2025). Ein typisches Einfamilienhaus verbraucht etwa 3 Tonnen pro Jahr, was Brennstoffkosten von 1.050-1.350 Euro entspricht. Der Preis schwankt saisonal – am günstigsten ist eine Bestellung im Frühsommer. Pellets sind deutlich günstiger und preislich stabiler als Gas oder Öl.' },
+        { question: 'Wie viel Platz braucht eine Pelletheizung im Keller?', answer: 'Als Faustregel gilt: 1 m³ Lagerraum pro Tonne Pellets. Für ein Einfamilienhaus mit 5-6 Tonnen Jahresbedarf benötigen Sie etwa 8-10 m³ Lagervolumen, entsprechend einem Raum von ca. 2,5 x 2,5 x 1,5 Meter. Ein Gewebetank (Sacksilo) ist die platzsparendste Lösung mit nur 2x2 Metern Grundfläche. Ein alter Heizölraum lässt sich ideal umnutzen.' },
+        { question: 'Wie viel BEG-Förderung gibt es für Pelletheizungen?', answer: 'Die Grundförderung beträgt 30%. Den Klimageschwindigkeits-Bonus (20%) erhalten Sie nur bei Kombination mit Solarthermie, PV oder Wärmepumpe. Der Einkommensbonus (30% bei Einkommen unter 40.000 Euro) ist zusätzlich möglich. Insgesamt sind bis zu 70% Förderung möglich, maximal 21.000 Euro Zuschuss. Eine Pelletheizung mit Solarthermie erhält in der Regel 50% Förderung.' },
+        { question: 'Pelletheizung oder Wärmepumpe - was ist besser?', answer: 'Das hängt von Ihrem Haus ab. Pelletheizung ist besser, wenn Sie Lagerplatz haben, hohe Vorlauftemperaturen benötigen (schlecht gedämmter Altbau) und auf regionale Brennstoffe setzen wollen. Wärmepumpe ist besser, wenn kein Lagerplatz vorhanden ist, das Haus gut gedämmt ist, Sie eine PV-Anlage haben und wartungsfrei heizen möchten. Auf 20 Jahre ist die Wärmepumpe etwa 8.000 Euro günstiger, aber beide Systeme sind förderfähig.' },
+        { question: 'Was kostet eine Pelletheizung im Betrieb pro Jahr?', answer: 'Die jährlichen Betriebskosten liegen bei 1.480 bis 1.960 Euro. Das setzt sich zusammen aus Pellets (1.050-1.350 Euro), Wartung inkl. Reinigung (250-350 Euro), Schornsteinfeger (100-140 Euro) und Strom für das Fördersystem (80-120 Euro). Eine CO₂-Abgabe entfällt komplett. Im Vergleich zu Gasheizungen (ca. 2.900 Euro/Jahr) sparen Sie etwa 1.000-1.500 Euro jährlich.' },
+        { question: 'Wie wartungsintensiv ist eine Pelletheizung?', answer: 'Pelletheizungen benötigen mehr Wartung als Gas oder Wärmepumpe. Einmal jährlich ist eine Vollwartung mit Reinigung des Kessels, Brennraums und Wärmetauschers nötig (250-350 Euro). Die Aschebox müssen Sie 2-4 Mal pro Jahr selbst leeren (je nach Modell). Moderne Kessel verfügen über automatische Reinigungssysteme, die den Aufwand minimieren. Der Wartungsaufwand ist deutlich höher als bei einer Wärmepumpe.' },
+        { question: 'Kann ich meinen alten Heizölraum für Pellets nutzen?', answer: 'Ja, ideal! Ein alter Heizölraum lässt sich perfekt zum Pelletlager umbauen. Sie benötigen schräge Einbauten für den Pelletabzug und ggf. eine Staubschutztür. Die Kosten für den Umbau liegen bei 2.500-4.000 Euro. Die Kapazität hängt von der Raumgröße ab, meist passen 6-8 Tonnen hinein. Das ist eine der wirtschaftlichsten Lösungen, da Sie vorhandenen Raum nutzen.' },
+      ],
     },
     {
       id: 7,
@@ -2059,7 +1919,7 @@ function getMockBlogPosts(): BlogPost[] {
 
         <h2>Barrierefreies Bad: Förderung bis 6.250 €</h2>
 
-        <p>Wer sein Bad altersgerecht umbaut, kann ordentlich Förderung mitnehmen. Das lohnt sich auch, wenn Sie noch nicht in dem Alter sind – irgendwann ist jeder froh über eine bodengleiche Dusche.</p>
+        <p>Wer sein Bad altersgerecht umbaut, kann ordentlich <a href="/foerderung" class="text-[#0F5B78] font-medium hover:underline">Förderung</a> mitnehmen. Alle Details dazu finden Sie in unserem <a href="/blog/barrierefreies-bad-kosten-planung-foerderung-2025" class="text-[#0F5B78] font-medium hover:underline">Ratgeber Barrierefreies Bad: Kosten & Förderung</a>. Das lohnt sich auch, wenn Sie noch nicht in dem Alter sind – irgendwann ist jeder froh über eine bodengleiche Dusche.</p>
 
         <!-- Förderung Cards -->
         <div class="grid md:grid-cols-2 gap-4 my-8">
@@ -2208,7 +2068,7 @@ function getMockBlogPosts(): BlogPost[] {
 
         <h2>Unser Fazit: Lohnt sich die Investition?</h2>
 
-        <p>Ein neues Bad steigert den Wohnkomfort täglich – und den Immobilienwert um 3-5%. Bei einem Hausverkauf holen Sie einen Großteil der Investition zurück. Aber noch wichtiger: Sie genießen Ihr Bad jeden Tag.</p>
+        <p>Ein neues Bad steigert den Wohnkomfort täglich – und den Immobilienwert um 3-5%. Als <a href="/sanitaer" class="text-[#0F5B78] font-medium hover:underline">Sanitär-Fachbetrieb</a> übernehmen wir die komplette Koordination Ihrer Badsanierung. Tipps zur Planung finden Sie auch in unserem <a href="/blog/barrierefreies-bad-planen-ratgeber" class="text-[#0F5B78] font-medium hover:underline">Ratgeber: Barrierefreies Bad planen</a>.</p>
 
         <div class="bg-[#0F5B78] text-white rounded-xl p-8 my-8">
           <h3 class="text-xl font-bold mb-4">Badsanierung mit Heizungsmodernisierung kombinieren?</h3>
@@ -2222,6 +2082,32 @@ function getMockBlogPosts(): BlogPost[] {
             </a>
           </div>
         </div>
+
+        <h2>Häufig gestellte Fragen (FAQ)</h2>
+
+        <h3>Was kostet eine Badsanierung 2025 pro Quadratmeter?</h3>
+        <p>Die Kosten liegen zwischen <strong>900 und 3.500 Euro pro m²</strong>, je nach Ausstattung und Umfang. Basis-Standard (funktional, einfache Materialien) kostet 900-1.300 Euro/m², mittlerer Standard mit hochwertigen Fliesen und bodengleicher Dusche 1.300-2.200 Euro/m², Luxus-Standard mit Naturstein und Smart-Funktionen 2.200-3.500 Euro/m². Wichtig: Wenn Leitungen erneuert werden müssen, wird es teurer.</p>
+
+        <h3>Wie lange dauert eine Badsanierung?</h3>
+        <p>Die reine Bauzeit beträgt <strong>10-25 Tage</strong> je nach Größe: Kleines Bad bis 6 m² dauert 10-14 Tage, mittlere Bäder (7-12 m²) 15-20 Tage, große Bäder über 12 m² etwa 20-25 Tage. Hinzu kommen Planungszeit (2-6 Wochen), Materialbestellung (4-6 Wochen) und Trocknungszeiten (1-2 Wochen). Planen Sie insgesamt 2-3 Monate von der ersten Planung bis zur Fertigstellung ein.</p>
+
+        <h3>Kann ich während der Sanierung im Haus wohnen bleiben?</h3>
+        <p><strong>Ja</strong>, bei einem Einfamilienhaus mit zweitem WC ist das problemlos möglich. Bei nur einem Bad ist es unbequem, aber machbar – viele nutzen eine Camping-Dusche oder Nachbarn helfen aus. Die Handwerker arbeiten meist von 7-16 Uhr, danach haben Sie Ruhe. Staub und Lärm sind unvermeidbar, aber mit guter Abdeckung der Durchgänge bleibt der Rest des Hauses relativ sauber.</p>
+
+        <h3>Welche Förderung gibt es für Badsanierung?</h3>
+        <p>Bei <strong>barrierefreiem Umbau</strong> erhalten Sie den KfW 455-B Zuschuss: <strong>12,5% der Kosten</strong>, maximal 6.250 Euro bei 50.000 Euro Investition. Das Budget 2025 wurde auf 150 Millionen Euro verdoppelt. Bei Pflegegrad zahlt die <strong>Pflegekasse bis zu 4.000 Euro</strong> pro Person (bei zwei Personen bis 8.000 Euro). Zusätzlich können Sie 20% der Handwerkerkosten steuerlich absetzen (max. 1.200 Euro/Jahr).</p>
+
+        <h3>Was steigert den Immobilienwert am meisten?</h3>
+        <p>Eine <strong>bodengleiche Dusche</strong> ist die beste Investition – sie macht das Bad modern, barrierefrei und größer wirkend. Auch wichtig: hochwertige Armaturen (fallen sofort auf), gute Beleuchtung und ein großzügiger Waschtisch. Ein neues Bad steigert den Immobilienwert um <strong>3-5%</strong>. Bei einem 300.000-Euro-Haus sind das 9.000-15.000 Euro – ein Großteil der Investition wird also zurückgeholt.</p>
+
+        <h3>Welche Fliesen sind 2025 am besten?</h3>
+        <p><strong>Feinsteinzeug in Holz- oder Natursteinoptik</strong> ist der aktuelle Standard. Es sieht aus wie Marmor oder Parkett, kostet aber nur ein Drittel und ist deutlich pflegeleichter. Großformate (60x120 cm oder größer) sind modern und reduzieren Fugen. Empfehlung: Rutschfeste Fliesen mit R10 oder R11 für Dusche und Boden. Fliesen mit 30x60 cm kosten ab 20 Euro/m², Großformate ab 40 Euro/m².</p>
+
+        <h3>Was sind versteckte Kosten bei Badsanierung?</h3>
+        <p>Häufige Zusatzkosten, die erst beim Abriss sichtbar werden: <strong>Schimmel hinter Fliesen</strong> (500-2.000 Euro Sanierung), marode Rohre (1.000-3.000 Euro für neue Leitungen), nicht normkonforme Elektrik (800-1.500 Euro Nachrüstung) und beschädigter Estrich (1.000-2.500 Euro). Planen Sie daher <strong>15-20% Puffer</strong> ein. Bei einem 15.000-Euro-Bad also 2.500-3.000 Euro Reserve.</p>
+
+        <h3>Lohnt sich eine Kombination mit Heizungstausch?</h3>
+        <p><strong>Absolut</strong>, wenn die Heizung ohnehin ansteht. Sie sparen Anfahrtskosten, Baustelleneinrichtung und Koordinationsaufwand. Zudem gibt es für Heizungstausch die BEG-Förderung (30-70%), die Sie mit der KfW-Barrierefreiheit kombinieren können. Besonders sinnvoll: Fußbodenheizung im Bad mit neuer Wärmepumpe kombinieren. Viele unserer Kunden nutzen die Gelegenheit für beide Maßnahmen gleichzeitig.</p>
       `,
       category: 'Sanitär & Bad',
       author: 'HeizCenter Redaktion',
@@ -2230,6 +2116,16 @@ function getMockBlogPosts(): BlogPost[] {
       image: '/images/HeizCenter_Badgestaltung.webp',
       tags: ['Badsanierung', 'Kosten', 'Barrierefreiheit', 'KfW', 'Förderung'],
       featured: false,
+      faqs: [
+        { question: 'Was kostet eine Badsanierung 2025 pro Quadratmeter?', answer: 'Die Kosten liegen zwischen 900 und 3.500 Euro pro m², je nach Ausstattung und Umfang. Basis-Standard (funktional, einfache Materialien) kostet 900-1.300 Euro/m², mittlerer Standard mit hochwertigen Fliesen und bodengleicher Dusche 1.300-2.200 Euro/m², Luxus-Standard mit Naturstein und Smart-Funktionen 2.200-3.500 Euro/m². Wichtig: Wenn Leitungen erneuert werden müssen, wird es teurer.' },
+        { question: 'Wie lange dauert eine Badsanierung?', answer: 'Die reine Bauzeit beträgt 10-25 Tage je nach Größe: Kleines Bad bis 6 m² dauert 10-14 Tage, mittlere Bäder (7-12 m²) 15-20 Tage, große Bäder über 12 m² etwa 20-25 Tage. Hinzu kommen Planungszeit (2-6 Wochen), Materialbestellung (4-6 Wochen) und Trocknungszeiten (1-2 Wochen). Planen Sie insgesamt 2-3 Monate von der ersten Planung bis zur Fertigstellung ein.' },
+        { question: 'Kann ich während der Sanierung im Haus wohnen bleiben?', answer: 'Ja, bei einem Einfamilienhaus mit zweitem WC ist das problemlos möglich. Bei nur einem Bad ist es unbequem, aber machbar – viele nutzen eine Camping-Dusche oder Nachbarn helfen aus. Die Handwerker arbeiten meist von 7-16 Uhr, danach haben Sie Ruhe. Staub und Lärm sind unvermeidbar, aber mit guter Abdeckung der Durchgänge bleibt der Rest des Hauses relativ sauber.' },
+        { question: 'Welche Förderung gibt es für Badsanierung?', answer: 'Bei barrierefreiem Umbau erhalten Sie den KfW 455-B Zuschuss: 12,5% der Kosten, maximal 6.250 Euro bei 50.000 Euro Investition. Das Budget 2025 wurde auf 150 Millionen Euro verdoppelt. Bei Pflegegrad zahlt die Pflegekasse bis zu 4.000 Euro pro Person (bei zwei Personen bis 8.000 Euro). Zusätzlich können Sie 20% der Handwerkerkosten steuerlich absetzen (max. 1.200 Euro/Jahr).' },
+        { question: 'Was steigert den Immobilienwert am meisten?', answer: 'Eine bodengleiche Dusche ist die beste Investition – sie macht das Bad modern, barrierefrei und größer wirkend. Auch wichtig: hochwertige Armaturen (fallen sofort auf), gute Beleuchtung und ein großzügiger Waschtisch. Ein neues Bad steigert den Immobilienwert um 3-5%. Bei einem 300.000-Euro-Haus sind das 9.000-15.000 Euro – ein Großteil der Investition wird also zurückgeholt.' },
+        { question: 'Welche Fliesen sind 2025 am besten?', answer: 'Feinsteinzeug in Holz- oder Natursteinoptik ist der aktuelle Standard. Es sieht aus wie Marmor oder Parkett, kostet aber nur ein Drittel und ist deutlich pflegeleichter. Großformate (60x120 cm oder größer) sind modern und reduzieren Fugen. Empfehlung: Rutschfeste Fliesen mit R10 oder R11 für Dusche und Boden. Fliesen mit 30x60 cm kosten ab 20 Euro/m², Großformate ab 40 Euro/m².' },
+        { question: 'Was sind versteckte Kosten bei Badsanierung?', answer: 'Häufige Zusatzkosten, die erst beim Abriss sichtbar werden: Schimmel hinter Fliesen (500-2.000 Euro Sanierung), marode Rohre (1.000-3.000 Euro für neue Leitungen), nicht normkonforme Elektrik (800-1.500 Euro Nachrüstung) und beschädigter Estrich (1.000-2.500 Euro). Planen Sie daher 15-20% Puffer ein. Bei einem 15.000-Euro-Bad also 2.500-3.000 Euro Reserve.' },
+        { question: 'Lohnt sich eine Kombination mit Heizungstausch?', answer: 'Absolut, wenn die Heizung ohnehin ansteht. Sie sparen Anfahrtskosten, Baustelleneinrichtung und Koordinationsaufwand. Zudem gibt es für Heizungstausch die BEG-Förderung (30-70%), die Sie mit der KfW-Barrierefreiheit kombinieren können. Besonders sinnvoll: Fußbodenheizung im Bad mit neuer Wärmepumpe kombinieren. Viele unserer Kunden nutzen die Gelegenheit für beide Maßnahmen gleichzeitig.' },
+      ],
     },
     {
       id: 8,
@@ -2294,9 +2190,9 @@ function getMockBlogPosts(): BlogPost[] {
           <div class="bg-green-50 border border-green-200 rounded-lg p-5">
             <div class="text-green-800 font-semibold mb-3">✓ Förderfähig</div>
             <ul class="space-y-2 text-sm text-green-800">
-              <li>• <strong>Wärmepumpen</strong> (30-70%)</li>
+              <li>• <strong><a href="/waermepumpe" class="text-[#0F5B78] font-medium hover:underline">Wärmepumpen</a></strong> (30-70%)</li>
               <li>• <strong>Pelletheizungen</strong> (30-60% + 2.500 € Emissionsbonus)</li>
-              <li>• <strong>Solarthermie</strong> (30-70%)</li>
+              <li>• <strong><a href="/solar" class="text-[#0F5B78] font-medium hover:underline">Solarthermie</a></strong> (30-70%)</li>
               <li>• <strong>Brennstoffzellen</strong> (30-70%)</li>
               <li>• <strong>Fernwärmeanschluss</strong> (30-70%)</li>
             </ul>
@@ -2526,7 +2422,7 @@ function getMockBlogPosts(): BlogPost[] {
 
         <h2>Brauchen Sie Hilfe beim Förderantrag?</h2>
 
-        <p>Die Förderabwicklung kann nerven – Formulare, Fristen, technische Anforderungen. Deshalb machen wir das bei HeizCenter komplett für Sie:</p>
+        <p>Die Förderabwicklung kann nerven – Formulare, Fristen, technische Anforderungen. Deshalb machen wir das bei HeizCenter komplett für Sie – ob in <a href="/standorte/augsburg" class="text-[#0F5B78] font-medium hover:underline">Augsburg</a>, <a href="/standorte/ulm" class="text-[#0F5B78] font-medium hover:underline">Ulm</a> oder <a href="/standorte/memmingen" class="text-[#0F5B78] font-medium hover:underline">Memmingen</a>:</p>
 
         <ul class="space-y-2 my-6">
           <li class="flex items-center gap-2"><span class="text-green-600">✓</span> Persönliche Fördermittelberechnung</li>
@@ -2548,6 +2444,31 @@ function getMockBlogPosts(): BlogPost[] {
             </a>
           </div>
         </div>
+
+        <p class="text-slate-700 mb-6">Erfahren Sie in unserem Ratgeber, <a href="/blog/waermepumpe-kosten-2025" class="text-[#0F5B78] font-medium hover:underline">was eine Wärmepumpe 2025 tatsächlich kostet</a> – inklusive Förderberechnung. Oder informieren Sie sich über die <a href="/blog/bafa-foerderung-solarthermie-2025" class="text-[#0F5B78] font-medium hover:underline">BAFA-Förderung für Solarthermie-Anlagen</a>, die sich besonders gut mit einer neuen <a href="/heizung" class="text-[#0F5B78] font-medium hover:underline">Heizungsanlage</a> kombinieren lässt.</p>
+
+        <h2>Häufig gestellte Fragen (FAQ)</h2>
+
+        <h3>Wie hoch ist die maximale Förderung für eine Heizung 2025?</h3>
+        <p>Die maximale Förderung beträgt <strong>70% der förderfähigen Kosten</strong>, gedeckelt bei <strong>21.000 Euro Zuschuss</strong>. Das erreichen Sie, wenn Sie alle vier Förderbausteine kombinieren: 30% Grundförderung + 20% Klimageschwindigkeits-Bonus + 30% Einkommensbonus + 5% Effizienzbonus. Bei 30.000 Euro Investition erhalten Sie maximal 21.000 Euro zurück.</p>
+
+        <h3>Wer kann die Heizungsförderung beantragen?</h3>
+        <p>Antragsberechtigt sind Selbstnutzer, Vermieter und Wohnungseigentümergemeinschaften für bestehende Wohngebäude. Voraussetzung ist ein Gebäude, das vor dem 1. Januar 2024 gebaut wurde. Die 30% Grundförderung steht allen offen, während Klimabonus und Einkommensbonus nur Selbstnutzern vorbehalten sind.</p>
+
+        <h3>Welche Einkommensgrenze gilt für den 30% Einkommensbonus?</h3>
+        <p>Der Einkommensbonus von 30% wird gewährt, wenn Ihr zu versteuerndes Haushaltseinkommen <strong>maximal 40.000 Euro pro Jahr</strong> beträgt. Maßgeblich ist der Durchschnitt der Steuerbescheide der letzten zwei Jahre. Bei einem Paar zählt das gemeinsame Einkommen beider Partner.</p>
+
+        <h3>Muss ich den Förderantrag vor oder nach dem Einbau stellen?</h3>
+        <p>Zwingend <strong>vor Beginn jeglicher Arbeiten</strong>. Auch Vertragsunterzeichnung oder Materialbestellung gelten als Maßnahmenbeginn und führen zum Förderverlust. Unterschreiben Sie Verträge nur mit aufschiebender Bedingung und stellen Sie den Antrag erst nach Erhalt der KfW-Zusage los. Erst nach Förderzusage darf installiert werden.</p>
+
+        <h3>Wie lange dauert es, bis die Förderung ausgezahlt wird?</h3>
+        <p>Nach vollständiger Antragsstellung erhalten Sie oft <strong>innerhalb von Minuten</strong> eine Zusage bei automatisierter Prüfung. Nach Abschluss der Arbeiten reichen Sie Rechnungen und Bestätigung nach Durchführung ein. Die Auszahlung erfolgt dann in der Regel <strong>binnen 4-8 Wochen</strong> direkt auf Ihr Konto.</p>
+
+        <h3>Kann ich als Mieter auch Förderung für eine neue Heizung bekommen?</h3>
+        <p>Nein, als Mieter sind Sie nicht antragsberechtigt. Die Förderung steht nur Eigentümern zu – also Ihrem Vermieter. Er kann die Förderung beantragen, wenn er die Heizung modernisiert. Als Mieter haben Sie aber nach dem Heizungsgesetz ein Recht darauf, dass Ihr Vermieter die Heizung auf dem Stand der Technik hält.</p>
+
+        <h3>Welches KfW-Programm ist für die Heizungsförderung zuständig?</h3>
+        <p>Seit dem 1. Januar 2024 läuft die Heizungsförderung über die <strong>KfW-Förderung 458</strong> (Zuschuss Heizungsoptimierung) in Kombination mit der <strong>BEG-Einzelmaßnahme</strong>. Früher war die BAFA zuständig – diese Zuständigkeit wurde zur KfW verlagert. Förderanträge stellen Sie online im Portal „Meine KfW".</p>
       `,
       category: 'Förderung',
       author: 'HeizCenter Redaktion',
@@ -2556,6 +2477,15 @@ function getMockBlogPosts(): BlogPost[] {
       image: '/images/Heizung_Modernisierung.webp',
       tags: ['Förderung', 'BEG', 'KfW', 'Wärmepumpe', 'Zuschuss', 'Steuerbonus'],
       featured: true,
+      faqs: [
+        { question: 'Wie hoch ist die maximale Förderung für eine Heizung 2025?', answer: 'Die maximale Förderung beträgt 70% der förderfähigen Kosten, gedeckelt bei 21.000 Euro Zuschuss. Das erreichen Sie, wenn Sie alle vier Förderbausteine kombinieren: 30% Grundförderung + 20% Klimageschwindigkeits-Bonus + 30% Einkommensbonus + 5% Effizienzbonus. Bei 30.000 Euro Investition erhalten Sie maximal 21.000 Euro zurück.' },
+        { question: 'Wer kann die Heizungsförderung beantragen?', answer: 'Antragsberechtigt sind Selbstnutzer, Vermieter und Wohnungseigentümergemeinschaften für bestehende Wohngebäude. Voraussetzung ist ein Gebäude, das vor dem 1. Januar 2024 gebaut wurde. Die 30% Grundförderung steht allen offen, während Klimabonus und Einkommensbonus nur Selbstnutzern vorbehalten sind.' },
+        { question: 'Welche Einkommensgrenze gilt für den 30% Einkommensbonus?', answer: 'Der Einkommensbonus von 30% wird gewährt, wenn Ihr zu versteuerndes Haushaltseinkommen maximal 40.000 Euro pro Jahr beträgt. Maßgeblich ist der Durchschnitt der Steuerbescheide der letzten zwei Jahre. Bei einem Paar zählt das gemeinsame Einkommen beider Partner.' },
+        { question: 'Muss ich den Förderantrag vor oder nach dem Einbau stellen?', answer: 'Zwingend vor Beginn jeglicher Arbeiten. Auch Vertragsunterzeichnung oder Materialbestellung gelten als Maßnahmenbeginn und führen zum Förderverlust. Unterschreiben Sie Verträge nur mit aufschiebender Bedingung und stellen Sie den Antrag erst nach Erhalt der KfW-Zusage los. Erst nach Förderzusage darf installiert werden.' },
+        { question: 'Wie lange dauert es, bis die Förderung ausgezahlt wird?', answer: 'Nach vollständiger Antragsstellung erhalten Sie oft innerhalb von Minuten eine Zusage bei automatisierter Prüfung. Nach Abschluss der Arbeiten reichen Sie Rechnungen und Bestätigung nach Durchführung ein. Die Auszahlung erfolgt dann in der Regel binnen 4-8 Wochen direkt auf Ihr Konto.' },
+        { question: 'Kann ich als Mieter auch Förderung für eine neue Heizung bekommen?', answer: 'Nein, als Mieter sind Sie nicht antragsberechtigt. Die Förderung steht nur Eigentümern zu – also Ihrem Vermieter. Er kann die Förderung beantragen, wenn er die Heizung modernisiert. Als Mieter haben Sie aber nach dem Heizungsgesetz ein Recht darauf, dass Ihr Vermieter die Heizung auf dem Stand der Technik hält.' },
+        { question: 'Welches KfW-Programm ist für die Heizungsförderung zuständig?', answer: 'Seit dem 1. Januar 2024 läuft die Heizungsförderung über die KfW-Förderung 458 (Zuschuss Heizungsoptimierung) in Kombination mit der BEG-Einzelmaßnahme. Früher war die BAFA zuständig – diese Zuständigkeit wurde zur KfW verlagert. Förderanträge stellen Sie online im Portal „Meine KfW".' },
+      ],
     },
     {
       id: 9,
@@ -2833,9 +2763,24 @@ function getMockBlogPosts(): BlogPost[] {
         <h4>Was ist der Unterschied zwischen barrierefrei und behindertengerecht?</h4>
         <p>"Barrierefrei" nach DIN 18040-2 ist der allgemeine Standard für eingeschränkte Mobilität. "Rollstuhlgerecht" (R-Standard) geht darüber hinaus und erfüllt alle Anforderungen für Rollstuhlnutzer. Der Begriff "behindertengerecht" ist veraltet und sollte vermieden werden.</p>
 
+        <h4>Welche DIN-Normen gelten für barrierefreie Bäder?</h4>
+        <p>Für barrierefreie Bäder im Wohnungsbau gilt die <strong>DIN 18040-2</strong>. Diese definiert zwei Ausbaustufen: barrierefrei (Bewegungsfläche 120 × 120 cm) und rollstuhlgerecht (R-Standard mit 150 × 150 cm). Zusätzlich relevant sind DIN 51097 für Rutschsicherheit und VDI 6000 für Lüftung im Bad.</p>
+
+        <h4>Was kostet ein barrierefreier Badumbau durchschnittlich?</h4>
+        <p>Ein einfacher Umbau mit bodengleicher Dusche, Haltegriffen und erhöhtem WC kostet <strong>8.000 bis 18.000 Euro</strong>. Eine Komplettsanierung nach DIN 18040-2 liegt bei 18.000 bis 35.000 Euro. Rollstuhlgerechte Bäder (R-Standard) können 25.000 bis 50.000 Euro kosten, je nach Größe und Ausstattung.</p>
+
+        <h4>Welche Förderungen gibt es 2025 für barrierefreie Bäder?</h4>
+        <p>Hauptförderung ist die Pflegekasse mit <strong>bis zu 4.180 Euro</strong> bei Pflegegrad 1-5. Die KfW bietet den Kredit 159 (bis 50.000 Euro zu günstigen Zinsen). Der KfW-Zuschuss 455-B wurde zum 01.01.2025 eingestellt. Regional gibt es Landesprogramme wie „Bayern barrierefrei". Zudem sind 20% der Handwerkerkosten steuerlich absetzbar (max. 1.200 Euro/Jahr).</p>
+
+        <h4>Wie viel Platz braucht man für ein barrierefreies Bad mindestens?</h4>
+        <p>Für ein barrierefreies Bad nach DIN 18040-2 benötigen Sie mindestens <strong>5-6 m² Grundfläche</strong>. Vor jedem Sanitärobjekt muss eine Bewegungsfläche von 120 × 120 cm frei bleiben. Für rollstuhlgerechte Bäder (R-Standard) sind mindestens 8-9 m² erforderlich, da die Bewegungsflächen 150 × 150 cm betragen müssen.</p>
+
+        <h4>Wirkt ein barrierefreies Bad unästhetisch oder „nach Altenheim"?</h4>
+        <p>Absolut nicht mehr! Moderne barrierefreie Bäder sind von normalen Bädern kaum zu unterscheiden. Bodengleiche Duschen sind heute Standard auch in Design-Bädern. Haltegriffe gibt es in Edelstahl, Schwarz-Matt oder farbig passend zur Einrichtung. Hochwertige unterfahrbare Waschtische sehen aus wie normale Möbelwaschtische. Der Begriff „Altenheim-Optik" ist längst überholt.</p>
+
         <h3>HeizCenter: Ihr Partner für barrierefreie Bäder</h3>
 
-        <p>Bei HeizCenter planen und realisieren wir barrierefreie Bäder nach DIN 18040-2 – von der ersten Beratung bis zur schlüsselfertigen Übergabe. Unsere Leistungen:</p>
+        <p>Bei HeizCenter planen und realisieren wir als <a href="/sanitaer" class="text-[#0F5B78] font-medium hover:underline">erfahrener Sanitärfachbetrieb</a> barrierefreie Bäder nach DIN 18040-2 – von der ersten Beratung bis zur schlüsselfertigen Übergabe in <a href="/standorte/augsburg" class="text-[#0F5B78] font-medium hover:underline">Augsburg</a>, <a href="/standorte/ulm" class="text-[#0F5B78] font-medium hover:underline">Ulm</a> und <a href="/standorte/memmingen" class="text-[#0F5B78] font-medium hover:underline">Memmingen</a>. Unsere Leistungen:</p>
 
         <ul>
           <li>✅ Kostenlose Vor-Ort-Beratung mit Aufmaß</li>
@@ -2858,7 +2803,7 @@ function getMockBlogPosts(): BlogPost[] {
 
         <h3>Fazit</h3>
 
-        <p>Ein barrierefreies Bad ist eine <strong>Investition in Sicherheit, Komfort und Zukunftsfähigkeit</strong>. Die Kosten von 8.000 - 35.000 € für einen Umbau können durch Förderungen deutlich reduziert werden. Wichtig ist die frühzeitige Planung – idealerweise schon bei einer "normalen" Sanierung werden Wandverstärkungen und ausreichende Bewegungsflächen berücksichtigt.</p>
+        <p>Ein barrierefreies Bad ist eine <strong>Investition in Sicherheit, Komfort und Zukunftsfähigkeit</strong>. Die Kosten von 8.000 - 35.000 € für einen Umbau können durch <a href="/foerderung" class="text-[#0F5B78] font-medium hover:underline">staatliche Förderungen</a> deutlich reduziert werden. Lesen Sie dazu auch unseren ausführlichen Ratgeber zu <a href="/blog/barrierefreies-bad-kosten-planung-foerderung-2025" class="text-[#0F5B78] font-medium hover:underline">Kosten, Planung und Förderung für barrierefreie Bäder</a>. Wichtig ist die frühzeitige Planung – idealerweise schon bei einer <a href="/blog/badsanierung-kosten-2025" class="text-[#0F5B78] font-medium hover:underline">regulären Badsanierung</a> werden Wandverstärkungen und ausreichende Bewegungsflächen berücksichtigt.</p>
 
         <p>Lassen Sie sich von unseren Experten beraten, welche Maßnahmen für Ihre Situation sinnvoll sind und welche Förderungen Sie nutzen können. <strong>Je früher Sie planen, desto besser!</strong></p>
       `,
@@ -2869,6 +2814,16 @@ function getMockBlogPosts(): BlogPost[] {
       image: '/images/HeizCenter_Badgestaltung.webp',
       tags: ['Barrierefreies Bad', 'DIN 18040-2', 'Badsanierung', 'Förderung', 'Pflegekasse', 'Altersgerecht'],
       featured: false,
+      faqs: [
+        { question: 'Welche DIN-Normen gelten für barrierefreie Bäder?', answer: 'Für barrierefreie Bäder im Wohnungsbau gilt die DIN 18040-2. Diese definiert zwei Ausbaustufen: barrierefrei (Bewegungsfläche 120 × 120 cm) und rollstuhlgerecht (R-Standard mit 150 × 150 cm). Zusätzlich relevant sind DIN 51097 für Rutschsicherheit und VDI 6000 für Lüftung im Bad.' },
+        { question: 'Was kostet ein barrierefreier Badumbau durchschnittlich?', answer: 'Ein einfacher Umbau mit bodengleicher Dusche, Haltegriffen und erhöhtem WC kostet 8.000 bis 18.000 Euro. Eine Komplettsanierung nach DIN 18040-2 liegt bei 18.000 bis 35.000 Euro. Rollstuhlgerechte Bäder (R-Standard) können 25.000 bis 50.000 Euro kosten, je nach Größe und Ausstattung.' },
+        { question: 'Welche Förderungen gibt es 2025 für barrierefreie Bäder?', answer: 'Hauptförderung ist die Pflegekasse mit bis zu 4.180 Euro bei Pflegegrad 1-5. Die KfW bietet den Kredit 159 (bis 50.000 Euro zu günstigen Zinsen). Der KfW-Zuschuss 455-B wurde zum 01.01.2025 eingestellt. Regional gibt es Landesprogramme wie „Bayern barrierefrei". Zudem sind 20% der Handwerkerkosten steuerlich absetzbar (max. 1.200 Euro/Jahr).' },
+        { question: 'Wie viel Platz braucht man für ein barrierefreies Bad mindestens?', answer: 'Für ein barrierefreies Bad nach DIN 18040-2 benötigen Sie mindestens 5-6 m² Grundfläche. Vor jedem Sanitärobjekt muss eine Bewegungsfläche von 120 × 120 cm frei bleiben. Für rollstuhlgerechte Bäder (R-Standard) sind mindestens 8-9 m² erforderlich, da die Bewegungsflächen 150 × 150 cm betragen müssen.' },
+        { question: 'Wirkt ein barrierefreies Bad unästhetisch oder „nach Altenheim"?', answer: 'Absolut nicht mehr! Moderne barrierefreie Bäder sind von normalen Bädern kaum zu unterscheiden. Bodengleiche Duschen sind heute Standard auch in Design-Bädern. Haltegriffe gibt es in Edelstahl, Schwarz-Matt oder farbig passend zur Einrichtung. Hochwertige unterfahrbare Waschtische sehen aus wie normale Möbelwaschtische. Der Begriff „Altenheim-Optik" ist längst überholt.' },
+        { question: 'Kann ich auch zur Miete barrierefrei umbauen?', answer: 'Ja, als Mieter haben Sie nach § 554a BGB das Recht auf barrierefreien Umbau. Der Vermieter muss zustimmen, kann aber eine Rückbau-Vereinbarung verlangen. Die Kosten tragen Sie in der Regel selbst, können aber Förderungen beantragen. Bei Pflegegrad übernimmt die Pflegekasse bis zu 4.180 Euro.' },
+        { question: 'Wie lange dauert ein barrierefreier Badumbau?', answer: 'Je nach Umfang 1-4 Wochen reine Bauzeit. Bei einer Komplettsanierung mit bodengleicher Dusche müssen Sie mit 2-3 Wochen rechnen. Planen Sie zusätzlich 4-8 Wochen für Planung, Angebotseinholung und Förderanträge ein. Eine gute Planung im Vorfeld verkürzt die eigentliche Bauphase erheblich.' },
+        { question: 'Was ist der Unterschied zwischen barrierefrei und rollstuhlgerecht?', answer: 'Barrierefrei nach DIN 18040-2 ist der allgemeine Standard für eingeschränkte Mobilität mit Bewegungsflächen von 120 × 120 cm. Rollstuhlgerecht (R-Standard) geht darüber hinaus und erfordert 150 × 150 cm Bewegungsflächen, breitere Türen (90 cm) und mehr seitlichen Abstand am WC. Der R-Standard erfüllt alle Anforderungen für Rollstuhlnutzer.' },
+      ],
     },
     {
       id: 10,
@@ -3428,6 +3383,29 @@ function getMockBlogPosts(): BlogPost[] {
             <p>Wir kommen vorbei, schauen uns Ihr Haus an und sagen Ihnen ehrlich, was Sinn macht. Versprochen.</p>
           </div>
         </div>
+
+        <h2>Häufig gestellte Fragen (FAQ)</h2>
+
+        <h3>Funktioniert eine Wärmepumpe auch in unsanierten Altbauten?</h3>
+        <p>Ja, aber mit Einschränkungen. Fraunhofer-Feldtests zeigen, dass auch <strong>teilsanierte Altbauten von 15-170 Jahren</strong> Jahresarbeitszahlen von 3,4-4,3 erreichen. Eine Vollsanierung ist nicht zwingend erforderlich. Oft reichen kleine Maßnahmen wie Dämmung der obersten Geschossdecke (2.000-4.000 Euro) und größere Heizkörper in 2-3 Räumen, um die Effizienz deutlich zu steigern.</p>
+
+        <h3>Wie laut ist eine Wärmepumpe wirklich?</h3>
+        <p>Moderne Luftwärmepumpen erzeugen in 1 Meter Entfernung <strong>45-65 dB(A)</strong>, vergleichbar mit einem Kühlschrank bis normalem Fernseher. Gesetzliche Grenzwerte liegen bei 55 dB(A) tags und 40 dB(A) nachts – aktuelle Geräte halten das problemlos ein. Im Nachtmodus arbeiten sie noch leiser. Erdwärmepumpen im Keller sind nahezu geräuschlos (30-45 dB). In 95% der Fälle gibt es keine Probleme mit Nachbarn.</p>
+
+        <h3>Was kostet der Betrieb einer Wärmepumpe pro Jahr?</h3>
+        <p>Bei einer JAZ von 4,0 und 20.000 kWh Wärmebedarf benötigen Sie <strong>5.000 kWh Strom pro Jahr</strong>. Mit Wärmepumpen-Stromtarif (27 ct/kWh) ergeben sich <strong>Jahreskosten von 1.337 Euro</strong>. Das ist 41% günstiger als Gas (2.262 Euro) und spart Ihnen 925 Euro pro Jahr. Mit eigener Photovoltaik-Anlage sinken die Kosten auf bis zu 720 Euro jährlich.</p>
+
+        <h3>Funktioniert eine Wärmepumpe auch bei minus 20 Grad?</h3>
+        <p>Ja, problemlos! Moderne Wärmepumpen sind für den deutschen Winter ausgelegt und funktionieren bis <strong>-20°C</strong> zuverlässig. Selbst bei -10°C erreichen sie noch eine JAZ von 2,5-3,0. Der Notfall-Heizstab springt nur bei extremer Kälte ein und wird fast nie gebraucht. Erdwärmepumpen sind noch unempfindlicher, da die Bodentemperatur konstant bei 8-12°C liegt – unabhängig von der Außentemperatur.</p>
+
+        <h3>Kann ich eine Wärmepumpe mit Solar kombinieren?</h3>
+        <p>Absolut, das ist sogar die ideale Kombination! Tagsüber produziert Ihre PV-Anlage kostenlosen Strom, den die Wärmepumpe nutzt. Resultat: <strong>60-70% weniger Energiekosten</strong> als mit fossilen Heizungen. Ein Praxisbeispiel aus Bobingen zeigt: Mit 12 kWp PV + Speicher + Wärmepumpe sinken die Energiekosten von 2.800 Euro (Gas) auf nur 720 Euro pro Jahr – eine Ersparnis von 2.080 Euro jährlich bei 78% Eigenversorgung.</p>
+
+        <h3>Wie lange hält eine Wärmepumpe und was muss gewartet werden?</h3>
+        <p>Hochwertige Wärmepumpen haben eine Lebensdauer von <strong>15-20 Jahren</strong>, Premium-Modelle sogar bis 25+ Jahre. Wartung wird alle 1-2 Jahre empfohlen (keine Pflicht), kostet 150-300 Euro. Im Gegensatz zu Öl- und Gasheizungen entfallen Schornsteinfeger, Abgasmessung und Kaminreinigung komplett. Moderne Anlagen melden Probleme selbst per App und sind deutlich weniger störanfällig als Brennwertkessel.</p>
+
+        <h3>Was sind die niedrigsten Betriebskosten: Wärmepumpe oder Gas?</h3>
+        <p>Wärmepumpen sind klar günstiger. Bei 20.000 kWh Wärmebedarf zahlen Sie mit Gas <strong>2.262 Euro/Jahr</strong>, mit Wärmepumpe (JAZ 4,0) nur <strong>1.337 Euro/Jahr</strong>. Das sind 925 Euro Ersparnis jährlich (41% günstiger). Über 15 Jahre summiert sich das auf 26.000 Euro Gesamtersparnis. Mit Photovoltaik-Kombination erhöht sich die Ersparnis sogar auf bis zu 2.080 Euro pro Jahr.</p>
       `,
       category: 'Wärmepumpe',
       author: 'HeizCenter Redaktion',
@@ -3436,6 +3414,15 @@ function getMockBlogPosts(): BlogPost[] {
       image: '/images/Waermepumpe.jpeg',
       tags: ['Wärmepumpe', 'Vorteile', 'Nachteile', 'Effizienz', 'JAZ', 'Förderung', 'Altbau'],
       featured: true,
+      faqs: [
+        { question: 'Funktioniert eine Wärmepumpe auch in unsanierten Altbauten?', answer: 'Ja, aber mit Einschränkungen. Fraunhofer-Feldtests zeigen, dass auch teilsanierte Altbauten von 15-170 Jahren Jahresarbeitszahlen von 3,4-4,3 erreichen. Eine Vollsanierung ist nicht zwingend erforderlich. Oft reichen kleine Maßnahmen wie Dämmung der obersten Geschossdecke (2.000-4.000 Euro) und größere Heizkörper in 2-3 Räumen, um die Effizienz deutlich zu steigern.' },
+        { question: 'Wie laut ist eine Wärmepumpe wirklich?', answer: 'Moderne Luftwärmepumpen erzeugen in 1 Meter Entfernung 45-65 dB(A), vergleichbar mit einem Kühlschrank bis normalem Fernseher. Gesetzliche Grenzwerte liegen bei 55 dB(A) tags und 40 dB(A) nachts – aktuelle Geräte halten das problemlos ein. Im Nachtmodus arbeiten sie noch leiser. Erdwärmepumpen im Keller sind nahezu geräuschlos (30-45 dB). In 95% der Fälle gibt es keine Probleme mit Nachbarn.' },
+        { question: 'Was kostet der Betrieb einer Wärmepumpe pro Jahr?', answer: 'Bei einer JAZ von 4,0 und 20.000 kWh Wärmebedarf benötigen Sie 5.000 kWh Strom pro Jahr. Mit Wärmepumpen-Stromtarif (27 ct/kWh) ergeben sich Jahreskosten von 1.337 Euro. Das ist 41% günstiger als Gas (2.262 Euro) und spart Ihnen 925 Euro pro Jahr. Mit eigener Photovoltaik-Anlage sinken die Kosten auf bis zu 720 Euro jährlich.' },
+        { question: 'Funktioniert eine Wärmepumpe auch bei minus 20 Grad?', answer: 'Ja, problemlos! Moderne Wärmepumpen sind für den deutschen Winter ausgelegt und funktionieren bis -20°C zuverlässig. Selbst bei -10°C erreichen sie noch eine JAZ von 2,5-3,0. Der Notfall-Heizstab springt nur bei extremer Kälte ein und wird fast nie gebraucht. Erdwärmepumpen sind noch unempfindlicher, da die Bodentemperatur konstant bei 8-12°C liegt – unabhängig von der Außentemperatur.' },
+        { question: 'Kann ich eine Wärmepumpe mit Solar kombinieren?', answer: 'Absolut, das ist sogar die ideale Kombination! Tagsüber produziert Ihre PV-Anlage kostenlosen Strom, den die Wärmepumpe nutzt. Resultat: 60-70% weniger Energiekosten als mit fossilen Heizungen. Ein Praxisbeispiel aus Bobingen zeigt: Mit 12 kWp PV + Speicher + Wärmepumpe sinken die Energiekosten von 2.800 Euro (Gas) auf nur 720 Euro pro Jahr – eine Ersparnis von 2.080 Euro jährlich bei 78% Eigenversorgung.' },
+        { question: 'Wie lange hält eine Wärmepumpe und was muss gewartet werden?', answer: 'Hochwertige Wärmepumpen haben eine Lebensdauer von 15-20 Jahren, Premium-Modelle sogar bis 25+ Jahre. Wartung wird alle 1-2 Jahre empfohlen (keine Pflicht), kostet 150-300 Euro. Im Gegensatz zu Öl- und Gasheizungen entfallen Schornsteinfeger, Abgasmessung und Kaminreinigung komplett. Moderne Anlagen melden Probleme selbst per App und sind deutlich weniger störanfällig als Brennwertkessel.' },
+        { question: 'Was sind die niedrigsten Betriebskosten: Wärmepumpe oder Gas?', answer: 'Wärmepumpen sind klar günstiger. Bei 20.000 kWh Wärmebedarf zahlen Sie mit Gas 2.262 Euro/Jahr, mit Wärmepumpe (JAZ 4,0) nur 1.337 Euro/Jahr. Das sind 925 Euro Ersparnis jährlich (41% günstiger). Über 15 Jahre summiert sich das auf 26.000 Euro Gesamtersparnis. Mit Photovoltaik-Kombination erhöht sich die Ersparnis sogar auf bis zu 2.080 Euro pro Jahr.' },
+      ],
     },
     {
       id: 11,
@@ -3579,11 +3566,11 @@ function getMockBlogPosts(): BlogPost[] {
 
         <p>Das GEG ist <strong>technologieneutral</strong> – Sie können aus mehreren Erfüllungsoptionen wählen:</p>
 
-        <h3>Wärmepumpe – die häufigste Lösung</h3>
+        <h3><a href="/waermepumpe" class="text-[#0F5B78] font-medium hover:underline">Wärmepumpe</a> – die häufigste Lösung</h3>
 
         <ul>
           <li><strong>Funktion:</strong> Nutzt Umweltwärme aus Luft, Erde oder Wasser</li>
-          <li><strong>Kosten:</strong> 25.000–40.000 € vor Förderung, <strong>11.000–20.000 € nach Förderung</strong></li>
+          <li><strong>Kosten:</strong> 25.000–40.000 € vor Förderung, <strong>11.000–20.000 € nach <a href="/foerderung" class="text-[#0F5B78] font-medium hover:underline">Förderung</a></strong></li>
           <li><strong>Betriebskosten:</strong> Ca. 1.250 €/Jahr (vs. 1.620 € Gas)</li>
           <li><strong>CO₂-Einsparung:</strong> Bis zu 2.620 kg/Jahr</li>
           <li><strong>Förderung:</strong> Bis zu 70% (Grundförderung 30% + Geschwindigkeitsbonus 20% + Einkommensbonus 30%)</li>
@@ -3738,7 +3725,7 @@ function getMockBlogPosts(): BlogPost[] {
 
         <p><strong>Die wichtigsten Eckpunkte:</strong> Keine Austauschpflicht für funktionierende Heizungen (außer Konstanttemperaturkessel über 30 Jahre). Die 65%-Regel greift erst 2026/2028 nach kommunaler Wärmeplanung. Bis zu 70% staatliche Förderung für Wärmepumpen und Co. sind verfügbar. Sie haben mehrere Erfüllungsoptionen: Wärmepumpe, Pellets, Fernwärme oder Hybrid. Der vollständige Umstieg ist erst bis 2045 erforderlich.</p>
 
-        <p>Wer jetzt handelt, profitiert von hohen Förderungen, sinkenden Betriebskosten und steigender Unabhängigkeit von fossilen Energiepreisen.</p>
+        <p>Wer jetzt handelt, profitiert von hohen Förderungen, sinkenden Betriebskosten und steigender Unabhängigkeit von fossilen Energiepreisen. Lesen Sie dazu auch unseren <a href="/blog/heizung-vergleich-2025-waermepumpe-gas-oel-pellets" class="text-[#0F5B78] font-medium hover:underline">umfassenden Heizungsvergleich 2025</a> und informieren Sie sich über die <a href="/blog/gasheizung-kosten-2025" class="text-[#0F5B78] font-medium hover:underline">tatsächlichen Kosten einer Gasheizung</a>. Wir beraten Sie persönlich in <a href="/standorte/augsburg" class="text-[#0F5B78] font-medium hover:underline">Augsburg</a>, <a href="/standorte/ulm" class="text-[#0F5B78] font-medium hover:underline">Ulm</a> und <a href="/standorte/memmingen" class="text-[#0F5B78] font-medium hover:underline">Memmingen</a>.</p>
 
         <div class="cta-box">
           <p class="cta-locations">📍 <strong>Unsere Standorte:</strong> Bobingen (Augsburg) · Gutenzell-Hürbel (Ulm/Memmingen) · Klosterlechfeld</p>
@@ -3751,6 +3738,26 @@ function getMockBlogPosts(): BlogPost[] {
         </div>
 
         <p><strong>Jetzt informieren, Förderung sichern und langfristig sparen!</strong></p>
+
+        <h2>Häufig gestellte Fragen (FAQ)</h2>
+
+        <h3>Ist die Gasheizung ab 2025 wirklich verboten?</h3>
+        <p>Nein, es gibt <strong>kein pauschales Verbot</strong>. Bestehende Gasheizungen dürfen weiterlaufen, so lange sie funktionieren. Auch Reparaturen sind erlaubt. Nur bei <strong>Neuinstallationen</strong> nach Inkrafttreten der kommunalen Wärmeplanung (Großstädte bis Mitte 2026, kleinere Gemeinden bis Mitte 2028) muss die neue Heizung zu 65% mit erneuerbaren Energien betrieben werden. Bis dahin können Sie sogar noch neue Gasheizungen einbauen – mit Beratungspflicht.</p>
+
+        <h3>Wann muss ich meine Gasheizung spätestens austauschen?</h3>
+        <p>Eine generelle Austauschpflicht gibt es nicht. Ausnahme: <strong>Konstanttemperaturkessel über 30 Jahre</strong> müssen ausgetauscht werden (gilt nicht für Brennwert- und Niedertemperaturkessel). Bei einem irreparablen Totalschaden haben Sie 5 Jahre Übergangsfrist, um eine 65%-konforme Heizung einzubauen. Bis 2045 muss jede Heizung schrittweise auf 100% erneuerbare Energien umgestellt sein.</p>
+
+        <h3>Was passiert, wenn meine Gasheizung kaputt geht?</h3>
+        <p>Bei einem Totalschaden haben Sie drei Optionen: 1) <strong>5 Jahre Übergangsfrist</strong> – Sie dürfen übergangsweise eine konventionelle Heizung installieren. 2) <strong>Gebrauchte/gemietete Heizung</strong> als Überbrückung. 3) <strong>Direkter Umstieg</strong> auf Wärmepumpe/Pellets mit bis zu 70% Förderung. Eine Reparatur ist immer erlaubt, solange technisch möglich. Handlungsdruck entsteht nur, wenn eine Reparatur nicht mehr wirtschaftlich ist.</p>
+
+        <h3>Bekomme ich noch Förderung für eine H2-ready Gasheizung?</h3>
+        <p>H2-ready Gasheizungen erhalten <strong>keine direkte BEG-Förderung</strong> mehr. Gefördert werden nur die Mehrkosten gegenüber einer normalen Gasheizung (ca. 1.000-2.000 Euro). Experten raten zur Vorsicht: Die Verfügbarkeit von grünem Wasserstoff ist ungewiss und die Kosten werden vermutlich hoch sein. H2-ready lohnt sich nur, wenn Ihre Kommune ein konkretes Wasserstoff-Netz plant.</p>
+
+        <h3>Welche Alternativen zur Gasheizung werden gefördert?</h3>
+        <p>Gefördert werden: <strong>Wärmepumpen</strong> (bis 70%), <strong>Pelletheizungen</strong> (bis 70% + 2.500 Euro Emissionsbonus), <strong>Solarthermie</strong> (30-70%), <strong>Fernwärmeanschluss</strong> (30-70%), <strong>Brennstoffzellen</strong> (30-70%) und <strong>Hybridheizungen</strong> mit mindestens 65% erneuerbaren Energien. Die höchste Förderung erhalten Selbstnutzer mit Einkommensbonus (unter 40.000 Euro/Jahr) beim Austausch einer Öl-/Gasheizung.</p>
+
+        <h3>Was bedeutet die kommunale Wärmeplanung für mich?</h3>
+        <p>Die kommunale Wärmeplanung legt fest, in welchen Gebieten Fernwärme, Wasserstoffnetze oder dezentrale Lösungen (Wärmepumpen) zum Einsatz kommen. <strong>Großstädte</strong> (über 100.000 Einwohner) müssen bis Mitte 2026 fertig sein, <strong>kleinere Gemeinden bis Mitte 2028</strong>. Erst nach Abschluss der Wärmeplanung greift die 65%-Regel bei Neuinstallationen. Bis dahin können Sie Ihre Heizung frei wählen – mit Beratungspflicht bei Gas/Öl.</p>
       `,
       category: 'Heizung',
       author: 'HeizCenter Redaktion',
@@ -3759,6 +3766,14 @@ function getMockBlogPosts(): BlogPost[] {
       image: '/images/HeizCenter_Heizung.webp',
       tags: ['GEG', 'Gasheizung', 'Heizungsgesetz', 'Förderung', 'Wärmepumpe', 'BEG', 'Verbot'],
       featured: true,
+      faqs: [
+        { question: 'Ist die Gasheizung ab 2025 wirklich verboten?', answer: 'Nein, es gibt kein pauschales Verbot. Bestehende Gasheizungen dürfen weiterlaufen, so lange sie funktionieren. Auch Reparaturen sind erlaubt. Nur bei Neuinstallationen nach Inkrafttreten der kommunalen Wärmeplanung (Großstädte bis Mitte 2026, kleinere Gemeinden bis Mitte 2028) muss die neue Heizung zu 65% mit erneuerbaren Energien betrieben werden. Bis dahin können Sie sogar noch neue Gasheizungen einbauen – mit Beratungspflicht.' },
+        { question: 'Wann muss ich meine Gasheizung spätestens austauschen?', answer: 'Eine generelle Austauschpflicht gibt es nicht. Ausnahme: Konstanttemperaturkessel über 30 Jahre müssen ausgetauscht werden (gilt nicht für Brennwert- und Niedertemperaturkessel). Bei einem irreparablen Totalschaden haben Sie 5 Jahre Übergangsfrist, um eine 65%-konforme Heizung einzubauen. Bis 2045 muss jede Heizung schrittweise auf 100% erneuerbare Energien umgestellt sein.' },
+        { question: 'Was passiert, wenn meine Gasheizung kaputt geht?', answer: 'Bei einem Totalschaden haben Sie drei Optionen: 1) 5 Jahre Übergangsfrist – Sie dürfen übergangsweise eine konventionelle Heizung installieren. 2) Gebrauchte/gemietete Heizung als Überbrückung. 3) Direkter Umstieg auf Wärmepumpe/Pellets mit bis zu 70% Förderung. Eine Reparatur ist immer erlaubt, solange technisch möglich. Handlungsdruck entsteht nur, wenn eine Reparatur nicht mehr wirtschaftlich ist.' },
+        { question: 'Bekomme ich noch Förderung für eine H2-ready Gasheizung?', answer: 'H2-ready Gasheizungen erhalten keine direkte BEG-Förderung mehr. Gefördert werden nur die Mehrkosten gegenüber einer normalen Gasheizung (ca. 1.000-2.000 Euro). Experten raten zur Vorsicht: Die Verfügbarkeit von grünem Wasserstoff ist ungewiss und die Kosten werden vermutlich hoch sein. H2-ready lohnt sich nur, wenn Ihre Kommune ein konkretes Wasserstoff-Netz plant.' },
+        { question: 'Welche Alternativen zur Gasheizung werden gefördert?', answer: 'Gefördert werden: Wärmepumpen (bis 70%), Pelletheizungen (bis 70% + 2.500 Euro Emissionsbonus), Solarthermie (30-70%), Fernwärmeanschluss (30-70%), Brennstoffzellen (30-70%) und Hybridheizungen mit mindestens 65% erneuerbaren Energien. Die höchste Förderung erhalten Selbstnutzer mit Einkommensbonus (unter 40.000 Euro/Jahr) beim Austausch einer Öl-/Gasheizung.' },
+        { question: 'Was bedeutet die kommunale Wärmeplanung für mich?', answer: 'Die kommunale Wärmeplanung legt fest, in welchen Gebieten Fernwärme, Wasserstoffnetze oder dezentrale Lösungen (Wärmepumpen) zum Einsatz kommen. Großstädte (über 100.000 Einwohner) müssen bis Mitte 2026 fertig sein, kleinere Gemeinden bis Mitte 2028. Erst nach Abschluss der Wärmeplanung greift die 65%-Regel bei Neuinstallationen. Bis dahin können Sie Ihre Heizung frei wählen – mit Beratungspflicht bei Gas/Öl.' },
+      ],
     },
     {
       id: 12,
@@ -3768,7 +3783,7 @@ function getMockBlogPosts(): BlogPost[] {
       content: `
         <h2>Heizung Vergleich 2025: Der ultimative Guide für Ihre Heizungsentscheidung</h2>
 
-        <p>Die Wahl der richtigen Heizung ist 2025 eine der wichtigsten finanziellen und ökologischen Entscheidungen für Hausbesitzer. Mit dem Gebäudeenergiegesetz (GEG), steigenden CO₂-Preisen und staatlichen Förderungen von bis zu 70% hat sich die Landschaft dramatisch verändert. <strong>Die gute Nachricht: Wärmepumpen sind seit 2022 günstiger als Gasheizungen</strong> – sowohl in den Gesamtkosten als auch langfristig. Dieser umfassende Vergleich zeigt Ihnen alle Heizsysteme im Detail.</p>
+        <p>Die Wahl der richtigen <a href="/heizung" class="text-[#0F5B78] font-medium hover:underline">Heizung</a> ist 2025 eine der wichtigsten finanziellen und ökologischen Entscheidungen für Hausbesitzer. Mit dem Gebäudeenergiegesetz (GEG), steigenden CO₂-Preisen und <a href="/foerderung" class="text-[#0F5B78] font-medium hover:underline">staatlichen Förderungen von bis zu 70%</a> hat sich die Landschaft dramatisch verändert. <strong>Die gute Nachricht: Wärmepumpen sind seit 2022 günstiger als Gasheizungen</strong> – sowohl in den Gesamtkosten als auch langfristig. Dieser umfassende Vergleich zeigt Ihnen alle Heizsysteme im Detail.</p>
 
         <div style="background-color: #e8f4f8; padding: 20px; border-left: 4px solid #0F5B78; margin: 20px 0;">
           <h3 style="margin-top: 0;">🔍 Schnellüberblick: Die Systeme im Vergleich</h3>
@@ -4313,7 +4328,27 @@ function getMockBlogPosts(): BlogPost[] {
           </p>
         </div>
 
-        <p><strong>Handeln Sie jetzt und sichern Sie sich die 70% Förderung – der Geschwindigkeitsbonus läuft bis Ende 2028!</strong></p>
+        <p><strong>Handeln Sie jetzt und sichern Sie sich die 70% Förderung – der Geschwindigkeitsbonus läuft bis Ende 2028!</strong> Mehr Details finden Sie in unseren spezialisierten Ratgebern: <a href="/blog/waermepumpe-kosten-2025" class="text-[#0F5B78] font-medium hover:underline">Was kostet eine Wärmepumpe 2025?</a>, <a href="/blog/gasheizung-kosten-2025" class="text-[#0F5B78] font-medium hover:underline">Gasheizung Kosten 2025</a> und <a href="/blog/foerderung-heizung-2025" class="text-[#0F5B78] font-medium hover:underline">Heizungsförderung 2025: So holen Sie sich bis zu 21.000 € zurück</a>.</p>
+
+        <h2>Häufig gestellte Fragen (FAQ)</h2>
+
+        <h3>Welche Heizung ist auf lange Sicht am günstigsten?</h3>
+        <p>Die <strong>Wärmepumpe hat die niedrigsten Gesamtkosten über 20 Jahre</strong> mit nur 45.300 Euro (inkl. Förderung). Pelletheizungen liegen mit 43.300 Euro sogar leicht darunter, erfordern aber Platz für Lager und regelmäßiges Befüllen. Gas kommt auf 65.200 Euro, Öl auf 68.200 Euro. Mit Photovoltaik-Kombination sinken die Wärmepumpen-Kosten auf nur 38.000-42.000 Euro – unschlagbar günstig bei gleichzeitig niedrigsten Betriebskosten.</p>
+
+        <h3>Welche Heizung ist die beste für einen Altbau?</h3>
+        <p>Für Altbauten eignen sich <strong>Luft-Wasser-Wärmepumpen</strong> am besten, da sie keine aufwendigen Erdarbeiten benötigen und auch bei höheren Vorlauftemperaturen (55-60°C) effizient arbeiten. Fraunhofer-Feldtests zeigen: Selbst teilsanierte Altbauten von 15-170 Jahren erreichen JAZ-Werte von 3,4-4,3. Wichtig ist ein hydraulischer Abgleich und eventuell größere Heizkörper in 2-3 Räumen (günstiger als Fußbodenheizung). Bei sehr schlechter Dämmung sind Pelletheizungen eine gute Alternative.</p>
+
+        <h3>Welche Heizung hat die beste Förderung 2025?</h3>
+        <p>Wärmepumpen und Pelletheizungen erhalten mit <strong>bis zu 70% Förderung</strong> die höchste Unterstützung. Das entspricht maximal 21.000 Euro Zuschuss bei 30.000 Euro Investition. Die Bausteine: 30% Grundförderung + 20% Klimageschwindigkeits-Bonus + 30% Einkommensbonus (unter 40.000 Euro Einkommen) + 5% Effizienzbonus (natürliches Kältemittel). Gasheizungen erhalten seit 2024 keine Förderung mehr, Ölheizungen ebenfalls nicht.</p>
+
+        <h3>Welche Heizung ist am zukunftssichersten?</h3>
+        <p>Wärmepumpen und Pelletheizungen sind zu <strong>100% GEG-konform bis 2045</strong> und erfordern keine teuren Nachrüstungen. Gasheizungen müssen ab 2029 schrittweise auf Biogas umgestellt werden (15%, ab 2035: 30%, ab 2040: 60%, ab 2045: 100%). Das wird sehr teuer. Ölheizungen sind Auslaufmodelle ohne Zukunftsperspektive. Wer jetzt eine neue Gas- oder Ölheizung einbaut, riskiert hohe Folgekosten in wenigen Jahren.</p>
+
+        <h3>Kann ich verschiedene Heizsysteme kombinieren?</h3>
+        <p>Ja, Hybridheizungen kombinieren mehrere Systeme. Beliebt sind: <strong>Wärmepumpe + Gasheizung</strong> (Gas nur für Spitzenlast), <strong>Wärmepumpe + Solarthermie</strong> (maximale Effizienz) oder <strong>Pellets + Solar</strong> (100% erneuerbar). Wichtig für die Förderung: Die Wärmepumpe muss mindestens 65% der Jahreswärme liefern. Hybridlösungen eignen sich besonders für Altbauten mit hohem Wärmebedarf, kosten aber mehr (30.000-45.000 Euro).</p>
+
+        <h3>Welche Heizung hat die niedrigsten Betriebskosten?</h3>
+        <p>Wärmepumpen mit PV-Anlage haben die niedrigsten laufenden Kosten mit nur <strong>720 Euro/Jahr</strong> bei 70% Eigenversorgung. Ohne PV liegen Wärmepumpen bei 1.337 Euro/Jahr, Pellets bei 1.215 Euro/Jahr. Gas kommt auf 2.262 Euro/Jahr, Öl auf 2.414 Euro/Jahr. Die Ersparnis von Wärmepumpe gegenüber Gas beträgt 925 Euro pro Jahr – über 20 Jahre sind das 18.500 Euro Unterschied nur bei den Betriebskosten.</p>
       `,
       category: 'Heizung',
       author: 'HeizCenter Redaktion',
@@ -4322,6 +4357,14 @@ function getMockBlogPosts(): BlogPost[] {
       image: '/images/Heizung_Modernisierung.webp',
       tags: ['Heizung', 'Vergleich', 'Wärmepumpe', 'Gas', 'Pellets', 'Kosten', 'Förderung', 'TCO'],
       featured: true,
+      faqs: [
+        { question: 'Welche Heizung ist auf lange Sicht am günstigsten?', answer: 'Die Wärmepumpe hat die niedrigsten Gesamtkosten über 20 Jahre mit nur 45.300 Euro (inkl. Förderung). Pelletheizungen liegen mit 43.300 Euro sogar leicht darunter, erfordern aber Platz für Lager und regelmäßiges Befüllen. Gas kommt auf 65.200 Euro, Öl auf 68.200 Euro. Mit Photovoltaik-Kombination sinken die Wärmepumpen-Kosten auf nur 38.000-42.000 Euro – unschlagbar günstig bei gleichzeitig niedrigsten Betriebskosten.' },
+        { question: 'Welche Heizung ist die beste für einen Altbau?', answer: 'Für Altbauten eignen sich Luft-Wasser-Wärmepumpen am besten, da sie keine aufwendigen Erdarbeiten benötigen und auch bei höheren Vorlauftemperaturen (55-60°C) effizient arbeiten. Fraunhofer-Feldtests zeigen: Selbst teilsanierte Altbauten von 15-170 Jahren erreichen JAZ-Werte von 3,4-4,3. Wichtig ist ein hydraulischer Abgleich und eventuell größere Heizkörper in 2-3 Räumen (günstiger als Fußbodenheizung). Bei sehr schlechter Dämmung sind Pelletheizungen eine gute Alternative.' },
+        { question: 'Welche Heizung hat die beste Förderung 2025?', answer: 'Wärmepumpen und Pelletheizungen erhalten mit bis zu 70% Förderung die höchste Unterstützung. Das entspricht maximal 21.000 Euro Zuschuss bei 30.000 Euro Investition. Die Bausteine: 30% Grundförderung + 20% Klimageschwindigkeits-Bonus + 30% Einkommensbonus (unter 40.000 Euro Einkommen) + 5% Effizienzbonus (natürliches Kältemittel). Gasheizungen erhalten seit 2024 keine Förderung mehr, Ölheizungen ebenfalls nicht.' },
+        { question: 'Welche Heizung ist am zukunftssichersten?', answer: 'Wärmepumpen und Pelletheizungen sind zu 100% GEG-konform bis 2045 und erfordern keine teuren Nachrüstungen. Gasheizungen müssen ab 2029 schrittweise auf Biogas umgestellt werden (15%, ab 2035: 30%, ab 2040: 60%, ab 2045: 100%). Das wird sehr teuer. Ölheizungen sind Auslaufmodelle ohne Zukunftsperspektive. Wer jetzt eine neue Gas- oder Ölheizung einbaut, riskiert hohe Folgekosten in wenigen Jahren.' },
+        { question: 'Kann ich verschiedene Heizsysteme kombinieren?', answer: 'Ja, Hybridheizungen kombinieren mehrere Systeme. Beliebt sind: Wärmepumpe + Gasheizung (Gas nur für Spitzenlast), Wärmepumpe + Solarthermie (maximale Effizienz) oder Pellets + Solar (100% erneuerbar). Wichtig für die Förderung: Die Wärmepumpe muss mindestens 65% der Jahreswärme liefern. Hybridlösungen eignen sich besonders für Altbauten mit hohem Wärmebedarf, kosten aber mehr (30.000-45.000 Euro).' },
+        { question: 'Welche Heizung hat die niedrigsten Betriebskosten?', answer: 'Wärmepumpen mit PV-Anlage haben die niedrigsten laufenden Kosten mit nur 720 Euro/Jahr bei 70% Eigenversorgung. Ohne PV liegen Wärmepumpen bei 1.337 Euro/Jahr, Pellets bei 1.215 Euro/Jahr. Gas kommt auf 2.262 Euro/Jahr, Öl auf 2.414 Euro/Jahr. Die Ersparnis von Wärmepumpe gegenüber Gas beträgt 925 Euro pro Jahr – über 20 Jahre sind das 18.500 Euro Unterschied nur bei den Betriebskosten.' },
+      ],
     },
     {
       id: 13,
@@ -4737,6 +4780,40 @@ function getMockBlogPosts(): BlogPost[] {
       image: '/images/HeizCenter_Heizung.webp',
       tags: ['Nachtspeicherheizung', 'Heizungstausch', 'Wärmepumpe', 'Förderung', 'Kosten', 'Altbau', 'Wirtschaftlichkeit'],
       featured: true,
+      faqs: [
+        {
+          question: 'Muss ich meine Nachtspeicherheizung gesetzlich ersetzen?',
+          answer: 'Nein. Es gibt kein generelles Austauschverbot für Nachtspeicherheizungen. Sie dürfen funktionierende Geräte weiterbetrieben. Nur bei Neuinstallation gilt die 65%-Erneuerbare-Pflicht nach GEG 2024.',
+        },
+        {
+          question: 'Wie viel spare ich mit einer Wärmepumpe?',
+          answer: 'Im Durchschnitt 1.780 Euro pro Jahr bei einem 150 m²-Haus (Nachtspeicher: 2.880 Euro/Jahr vs. Wärmepumpe: 1.100 Euro/Jahr). Über 20 Jahre sind das 35.600 Euro Ersparnis.',
+        },
+        {
+          question: 'Welche Förderung gibt es 2025?',
+          answer: 'Für Wärmepumpen: 30% Grundförderung + 20% Geschwindigkeitsbonus + 5% Effizienzbonus + 30% Einkommensbonus = bis 70% (max. 21.000 Euro). Für Pelletheizungen max. 60% (kein Effizienzbonus). Bei Biomasse erfordert der Klimabonus eine Kombination mit Solar/PV.',
+        },
+        {
+          question: 'Ist eine Wärmepumpe auch im Altbau sinnvoll?',
+          answer: 'Ja, wenn das Gebäude mindestens eine Dachbodendämmung hat (U-Wert < 0,24 W/m²K). Bei sehr schlechter Dämmung sollte zuerst die Gebäudehülle verbessert werden. Erdwärmepumpen funktionieren auch bei höheren Vorlauftemperaturen gut.',
+        },
+        {
+          question: 'Wie lange dauert die Installation?',
+          answer: 'Demontage der Nachtspeicher + Installation einer Wärmepumpe: 1–3 Wochen (inkl. Elektroarbeiten, Rohrleitungen, hydraulischer Abgleich).',
+        },
+        {
+          question: 'Ist Infrarotheizung eine gute Alternative?',
+          answer: 'Nur bedingt. Infrarotheizungen haben fast genauso hohe Betriebskosten wie Nachtspeicher (2.100–2.500 Euro/Jahr) und erhalten keine BEG-Förderung. Sie eignen sich nur als Zusatz- oder Übergangsheizung, nicht als Hauptheizsystem.',
+        },
+        {
+          question: 'Kann ich die Förderung auch als Mieter beantragen?',
+          answer: 'Nein, nur der Eigentümer kann die BEG-Förderung beantragen. Allerdings darf der Vermieter maximal 10% der Kosten (nach Förderung) auf die Miete umlegen – oft wird dies durch niedrigere Heizkosten kompensiert.',
+        },
+        {
+          question: 'Was kostet die Entsorgung alter Nachtspeicher?',
+          answer: 'Fachgerechte Entsorgung: 50–150 Euro pro Gerät (asbesthaltige Geräte vor 1984: 200–400 Euro). Dies ist im Installationspreis meist enthalten.',
+        },
+      ],
     },
     {
       id: 14,
@@ -4845,7 +4922,7 @@ function getMockBlogPosts(): BlogPost[] {
     </ul>
 
     <h3>Perfekte Kombination mit Wärmepumpen</h3>
-    <p>Fußbodenheizungen sind <strong>die ideale Ergänzung zu Wärmepumpen</strong>:</p>
+    <p>Fußbodenheizungen sind <strong>die ideale Ergänzung zu <a href="/waermepumpe" class="text-[#0F5B78] font-medium hover:underline">Wärmepumpen</a></strong>:</p>
     <ul>
       <li><strong>JAZ-Steigerung:</strong> Mit Fußbodenheizung JAZ 4,5–5,0 (vs. 3,5–4,0 mit Heizkörpern)</li>
       <li><strong>20–30% niedrigere Stromkosten:</strong> Durch optimale Vorlauftemperatur</li>
@@ -5254,6 +5331,8 @@ function getMockBlogPosts(): BlogPost[] {
       </p>
     </div>
 
+    <p><strong>Weiterlesen:</strong> Erfahren Sie mehr über <a href="/blog/waermepumpe-kosten-2025" class="text-[#0F5B78] font-medium hover:underline">Wärmepumpen-Kosten und Förderung 2025</a> oder lesen Sie unseren Ratgeber zur <a href="/blog/waermepumpe-altbau" class="text-[#0F5B78] font-medium hover:underline">Wärmepumpe im Altbau</a>. Alle Infos zur <a href="/foerderung" class="text-[#0F5B78] font-medium hover:underline">BEG-Förderung für Ihre neue Heizung</a> finden Sie auf unserer Förderseite.</p>
+
     <h2>Häufig gestellte Fragen (FAQ)</h2>
 
     <h3>Was kostet eine Fußbodenheizung pro m²?</h3>
@@ -5287,6 +5366,40 @@ function getMockBlogPosts(): BlogPost[] {
       image: '/images/Heizung_Modernisierung.webp',
       tags: ['Fußbodenheizung', 'Flächenheizung', 'Kosten', 'Nachrüstung', 'Wärmepumpe', 'Altbau', 'Energieeffizienz'],
       featured: true,
+      faqs: [
+        {
+          question: 'Was kostet eine Fußbodenheizung pro m²?',
+          answer: 'Neubau: 40–70 Euro/m² (Nass-System). Altbau-Nachrüstung: 80–150 Euro/m² (Dünnschicht-/Trockensystem). Für ein 150 m²-Haus: 6.000–10.500 Euro (Neubau) bzw. 12.000–22.500 Euro (Nachrüstung).',
+        },
+        {
+          question: 'Spart Fußbodenheizung wirklich Energie?',
+          answer: 'Ja, 10–15% Einsparung gegenüber Heizkörpern durch niedrigere Vorlauftemperatur (28–35°C vs. 55–75°C). Bei Kombination mit Wärmepumpe: 200–300 Euro/Jahr weniger Stromkosten.',
+        },
+        {
+          question: 'Welcher Bodenbelag ist ideal für Fußbodenheizung?',
+          answer: 'Beste Wahl: Fliesen, Naturstein (hervorragende Wärmeleitfähigkeit). Sehr gut: Vinyl, spezielles Laminat. Kritisch: Echtholz-Parkett (max. 28°C Vorlauf, Fugenbildung möglich). Nicht empfohlen: Dicker Teppich (isolierend).',
+        },
+        {
+          question: 'Kann ich Fußbodenheizung im Altbau nachrüsten?',
+          answer: 'Ja, mit Dünnschicht- (2–4 cm Aufbau) oder Trockensystemen (4–8 cm). Kosten: 80–150 Euro/m². Voraussetzungen: Raumhöhe > 2,30 m, ausreichende Statik, gute Dämmung (U-Wert < 0,35 W/m²K).',
+        },
+        {
+          question: 'Wie lange dauert es, bis eine Fußbodenheizung warm wird?',
+          answer: 'Aufheizphase: 2–4 Stunden (vs. 20–30 Min. Heizkörper). Deshalb: Kontinuierlichen Betrieb mit Nachtabsenkung (1–2°C) fahren, nicht komplett abschalten.',
+        },
+        {
+          question: 'Passt Fußbodenheizung zu jeder Heizung?',
+          answer: 'Ideal: Wärmepumpen (JAZ 4,5–5,0 durch niedrige Vorlauftemperatur). Sehr gut: Gasheizung, Pelletheizung, Solarthermie. Nicht empfohlen: Alte Ölheizung (hohe Betriebskosten, keine Förderung).',
+        },
+        {
+          question: 'Gibt es Förderung für Fußbodenheizung?',
+          answer: 'Direkte Förderung: Nein. ABER: In Kombination mit Wärmepumpe bis zu 70% BEG-Förderung (30% Basis + 20% Geschwindigkeitsbonus + ggf. 30% Einkommensbonus) auf die Gesamtkosten (Wärmepumpe + Fußbodenheizung), max. 21.000 Euro.',
+        },
+        {
+          question: 'Was passiert bei einem Rohrbruch?',
+          answer: 'Moderne PE-Xa/PE-RT-Rohre sind sehr robust (Lebensdauer 30–50 Jahre). Bei Leckage: Leckage-Ortung per Thermografie (500–1.500 Euro), Reparatur durch punktuelles Öffnen des Estrichs (1.000–3.000 Euro). Vorbeugung: Nur zertifizierte Fachbetriebe beauftragen!',
+        },
+      ],
     },
     {
       id: 15,
@@ -5641,6 +5754,8 @@ function getMockBlogPosts(): BlogPost[] {
       </ul>
     </div>
 
+    <p><strong>Weiterlesen:</strong> Informieren Sie sich über unsere <a href="/heizung" class="text-[#0F5B78] font-medium hover:underline">Heizungsservices und Wartungsangebote</a>. Falls ein Heizungstausch ansteht, lesen Sie unseren <a href="/blog/heizung-vergleich-2025-waermepumpe-gas-oel-pellets" class="text-[#0F5B78] font-medium hover:underline">großen Heizungsvergleich 2025</a>. HeizCenter ist Ihr regionaler Ansprechpartner in <a href="/standorte/augsburg" class="text-[#0F5B78] font-medium hover:underline">Augsburg</a>, <a href="/standorte/ulm" class="text-[#0F5B78] font-medium hover:underline">Ulm</a> und <a href="/standorte/memmingen" class="text-[#0F5B78] font-medium hover:underline">Memmingen</a>.</p>
+
     <div class="cta-box">
       <p class="cta-locations">📍 <strong>Unsere Standorte:</strong> Bobingen (Augsburg) · Gutenzell-Hürbel (Ulm/Memmingen) · Klosterlechfeld</p>
       <h4>Probleme mit Ihrer Heizung?</h4>
@@ -5684,6 +5799,40 @@ function getMockBlogPosts(): BlogPost[] {
       image: '/images/HeizCenter_Heizung.webp',
       tags: ['Heizung entlüften', 'Wartung', 'DIY', 'Heizkosten sparen', 'Anleitung', 'Heizungsprobleme'],
       featured: false,
+      faqs: [
+        {
+          question: 'Wie oft muss ich meine Heizung entlüften?',
+          answer: 'Mindestens 1x pro Jahr vor Beginn der Heizsaison (September/Oktober). Bei neuen Anlagen 2–3x im ersten Jahr. Sofort bei Störgeräuschen (Gluckern) oder kalten Heizkörpern.',
+        },
+        {
+          question: 'Was kostet das Entlüften der Heizung?',
+          answer: 'DIY: 0 Euro (nur Entlüftungsschlüssel 2–5 Euro einmalig). Fachmann: 50–100 Euro für alle Heizkörper inkl. Systemcheck und Wasser nachfüllen.',
+        },
+        {
+          question: 'Kann ich die Heizung selbst entlüften?',
+          answer: 'Ja! Es ist sehr einfach und erfordert keine Vorkenntnisse. Werkzeug: Entlüftungsschlüssel, Auffangbehälter, Lappen. Dauer: 5–10 Minuten pro Heizkörper. Anleitung siehe oben.',
+        },
+        {
+          question: 'Warum gluckert meine Heizung?',
+          answer: 'Gluckern/Blubbern entsteht durch Luft im Heizkörper. Das Wasser kann nicht richtig zirkulieren → reduzierte Heizleistung. Lösung: Heizung entlüften.',
+        },
+        {
+          question: 'Heizkörper wird oben nicht warm – was tun?',
+          answer: 'Ursache: Luft sammelt sich oben im Heizkörper und verdrängt das warme Wasser. Lösung: Entlüften Sie den Heizkörper (siehe Anleitung oben). Falls Problem bleibt: Thermostatventil klemmt → Fachmann rufen.',
+        },
+        {
+          question: 'Wie viel Wasser sollte beim Entlüften austreten?',
+          answer: 'Es sollte nur wenig Wasser austreten (50–200 ml pro Heizkörper). Sobald ein gleichmäßiger Wasserstrahl ohne Luftblasen kommt, sofort schließen. Bei viel Wasser (> 500 ml): Systemdruck zu hoch oder Ventil zu weit geöffnet.',
+        },
+        {
+          question: 'Muss ich nach dem Entlüften Wasser nachfüllen?',
+          answer: 'Meistens ja. Nach dem Entlüften sinkt der Systemdruck um 0,1–0,5 bar. Prüfen Sie das Manometer: < 1,0 bar → Wasser nachfüllen. Optimal: 1,5–2,0 bar (Einfamilienhaus).',
+        },
+        {
+          question: 'Kann ich meine Wärmepumpe selbst entlüften?',
+          answer: 'Technisch ja, aber Vorsicht: Wärmepumpen-Systeme nutzen oft entsalztes/demineralisiertes Wasser. Das Nachfüllen mit Leitungswasser kann Kalkablagerungen verursachen (JAZ sinkt). Empfehlung: Fachmann beauftragen oder destilliertes Wasser verwenden.',
+        },
+      ],
     },
     {
       id: 16,
@@ -6170,6 +6319,40 @@ function getMockBlogPosts(): BlogPost[] {
       image: '/images/Waermepumpe.jpeg',
       tags: ['Wärmepumpe', 'Gasheizung', 'Heizungsvergleich', 'BEG-Förderung', 'Heizkosten', 'Effizienz', 'GEG 2024'],
       featured: true,
+      faqs: [
+        {
+          question: 'Funktioniert eine Wärmepumpe auch im Altbau?',
+          answer: 'Ja, aber die Effizienz hängt von der Dämmung und den Heizkörpern ab. Ideal sind Vorlauftemperaturen ≤55°C. Bei schlechter Dämmung kann ein Hybrid-System (WP + Gas-Spitzenlast) sinnvoll sein. Eine energetische Sanierung erhöht die Wirtschaftlichkeit deutlich.',
+        },
+        {
+          question: 'Wie laut ist eine Wärmepumpe?',
+          answer: 'Moderne Luft-Wärmepumpen erzeugen 30–50 dB (vergleichbar mit leisem Gespräch). Durch richtige Positionierung (Mindestabstand 3 m zur Grundstücksgrenze) und Schallschutzmaßnahmen sind Konflikte mit Nachbarn vermeidbar. Erdwärmepumpen sind nahezu geräuschlos.',
+        },
+        {
+          question: 'Was passiert bei einem Stromausfall?',
+          answer: 'Wärmepumpen benötigen Strom und funktionieren nicht bei Stromausfall. Gasheizungen (mit elektrischer Zündung) ebenfalls nicht. Bei kritischer Infrastruktur kann ein Notstromaggregat sinnvoll sein.',
+        },
+        {
+          question: 'Kann ich meine alte Gasheizung behalten?',
+          answer: 'Ja, bestehende Gasheizungen dürfen weiterlaufen und repariert werden. Erst bei einem Komplettausfall oder Neubau greifen die GEG-Vorgaben (65% erneuerbare Energien). Bis 2045 müssen aber alle fossilen Heizungen ersetzt werden.',
+        },
+        {
+          question: 'Lohnt sich eine Wärmepumpe trotz hoher Strompreise?',
+          answer: 'Ja, dank JAZ von 3,5–4,5 ist Wärmepumpen-Strom selbst bei 30 ct/kWh günstiger als Gas (10 ct/kWh). Mit Wärmepumpen-Tarifen (20 ct/kWh) oder PV-Anlage wird die Ersparnis noch größer.',
+        },
+        {
+          question: 'Wie lange dauert die Installation?',
+          answer: 'Wärmepumpe: 3–7 Tage (abhängig von Typ und Vorarbeiten). Gasheizung: 1–3 Tage (bei vorhandenem Gasanschluss).',
+        },
+        {
+          question: 'Brauche ich einen neuen Stromzähler?',
+          answer: 'Für vergünstigte Wärmepumpen-Tarife ist ein separater Zähler erforderlich. Installation durch Netzbetreiber (ca. 200–500 Euro), amortisiert sich aber schnell durch niedrigere kWh-Preise.',
+        },
+        {
+          question: 'Gibt es Förderung für Gas-Hybridheizungen?',
+          answer: 'Ja, wenn der erneuerbare Anteil (z. B. Wärmepumpe) mindestens 65% der Heizlast deckt. Gefördert wird aber nur der EE-Anteil, nicht die Gastherme.',
+        },
+      ],
     },
     {
       id: 17,
@@ -6657,6 +6840,28 @@ function getMockBlogPosts(): BlogPost[] {
       image: '/images/Waermepumpe.jpeg',
       tags: ['Wärmepumpe', 'Pelletheizung', 'Heizungsvergleich', 'Förderung', 'Biomasse', 'Heizkosten'],
       featured: true,
+      faqs: [
+        {
+          question: 'Kann ich eine Pelletheizung mit Wärmepumpe kombinieren?',
+          answer: 'Ja, ein Hybrid-System ist möglich. Die Pelletheizung übernimmt dann die Spitzenlast bei sehr kalten Tagen, die Wärmepumpe den Grundbedarf. Dies kombiniert die Vorteile beider Systeme, ist aber deutlich teurer (35.000–50.000 Euro).',
+        },
+        {
+          question: 'Wie viel Platz braucht ein Pelletlager?',
+          answer: 'Für ein Einfamilienhaus (4–5 Tonnen Jahresbedarf) werden 6–10 m² trockener Lagerraum benötigt. Bei einem Gewebetank sind es ca. 6 m², bei Sackware mehr. Zugang für Befüllschlauch (max. 30 m) erforderlich.',
+        },
+        {
+          question: 'Sind Pellets wirklich klimaneutral?',
+          answer: 'Theoretisch ja: Bäume binden beim Wachstum CO₂, das bei Verbrennung wieder freigesetzt wird. Praktisch entstehen jedoch Emissionen durch Transport, Trocknung und Pelletierung (ca. 10–20% der Gesamtbilanz). Zudem entsteht Feinstaub.',
+        },
+        {
+          question: 'Welches System ist zukunftssicherer?',
+          answer: 'Wärmepumpen sind GEG-konform und werden langfristig stärker gefördert. Pelletheizungen gelten zwar als erneuerbar, aber Feinstaubgrenzwerte könnten künftig verschärft werden. Bei steigendem Strommix-Anteil erneuerbarer Energien wird die Wärmepumpe noch klimafreundlicher.',
+        },
+        {
+          question: 'Kann eine Wärmepumpe auch bei -15°C heizen?',
+          answer: 'Ja! Moderne Luft-Wärmepumpen arbeiten bis -20°C (teilweise -25°C). Die Effizienz (JAZ) sinkt bei Kälte, aber die Heizleistung bleibt ausreichend. Bei extrem kalten Regionen kann ein Heizstab als Backup dienen.',
+        },
+      ],
     },
     {
       id: 18,
@@ -7050,6 +7255,32 @@ function getMockBlogPosts(): BlogPost[] {
       image: '/images/HeizCenter_Klimaanlage.webp',
       tags: ['Klimaanlage', 'Kosten', 'Split-Klimaanlage', 'Betriebskosten', 'Installation', 'Energieeffizienz'],
       featured: false,
+      faqs: [
+        {
+          question: 'Was kostet eine Klimaanlage für 3 Räume?',
+          answer: 'Ein Multisplit-System für 3 Räume kostet 5.000–7.000 Euro (inkl. Installation). Betriebskosten: ca. 200–300 Euro/Jahr.',
+        },
+        {
+          question: 'Lohnt sich eine mobile Klimaanlage?',
+          answer: 'Nur für kurzzeitige Nutzung (z. B. Mietwohnung, Urlaubshaus). Bei regelmäßigem Einsatz sind Split-Geräte trotz höherer Anschaffung durch niedrige Betriebskosten wirtschaftlicher.',
+        },
+        {
+          question: 'Wie viel Strom verbraucht eine Klimaanlage?',
+          answer: 'Split-Gerät (2,5 kW, Inverter): ca. 0,6 kW/h im Betrieb → ca. 10 kWh/Tag (6 h) → ca. 3 Euro Stromkosten/Tag (30 ct/kWh). Mobile Klimaanlage: Doppelt so viel!',
+        },
+        {
+          question: 'Kann ich die Klimaanlage selbst installieren?',
+          answer: 'Nein! Seit 2023 ist die Installation nur durch zertifizierte Fachbetriebe (Kälteanlagenbauer mit Kategorie-I-Zertifikat) erlaubt. DIY-Montage ist illegal und führt zu Garantieverlust.',
+        },
+        {
+          question: 'Welche Klimaanlage ist am günstigsten im Betrieb?',
+          answer: 'Inverter-Split-Geräte mit hohem SEER (≥ 7,0). Diese passen die Leistung dynamisch an und verbrauchen 30–50% weniger Strom als On/Off-Geräte oder mobile Klimaanlagen.',
+        },
+        {
+          question: 'Brauche ich eine Klimaanlage mit Heizfunktion?',
+          answer: 'Empfehlenswert! Reversible Geräte (Heizen + Kühlen) kosten nur ca. 10% mehr, sparen aber Heizkosten in Übergangszeiten (Frühling/Herbst) und sind effizienter als elektrische Heizlüfter.',
+        },
+      ],
     },
     {
       id: 19,
@@ -7550,10 +7781,12 @@ function getMockBlogPosts(): BlogPost[] {
       </ul>
     </div>
 
+    <p><strong>Weiterlesen:</strong> Unser Ratgeber zur <a href="/blog/barrierefreies-bad-planen-ratgeber" class="text-[#0F5B78] font-medium hover:underline">Planung eines barrierefreien Bades</a> zeigt alle Details zu DIN-Normen und Ausstattung. Alle Infos zu <a href="/blog/badsanierung-kosten-2025" class="text-[#0F5B78] font-medium hover:underline">Badsanierung-Kosten 2025</a> finden Sie in unserem Kostenratgeber. Mehr über unsere <a href="/sanitaer" class="text-[#0F5B78] font-medium hover:underline">Sanitär- und Badleistungen</a> erfahren Sie auf unserer Serviceseite.</p>
+
     <h2>HeizCenter berät Sie gerne – auch zu barrierefreien Bädern!</h2>
 
     <p>
-      Sie planen ein <strong>barrierefreies Bad</strong> in Bobingen, Gutenzell-Hürbel oder Umgebung? HeizCenter
+      Sie planen ein <strong>barrierefreies Bad</strong> in <a href="/standorte/augsburg" class="text-[#0F5B78] font-medium hover:underline">Augsburg</a>, <a href="/standorte/ulm" class="text-[#0F5B78] font-medium hover:underline">Ulm</a>, <a href="/standorte/memmingen" class="text-[#0F5B78] font-medium hover:underline">Memmingen</a> oder Umgebung? HeizCenter
       unterstützt Sie mit:
     </p>
 
@@ -7584,6 +7817,40 @@ function getMockBlogPosts(): BlogPost[] {
       image: '/images/HeizCenter_Badgestaltung.webp',
       tags: ['Barrierefreies Bad', 'Badsanierung', 'Altersgerecht', 'KfW Förderung', 'DIN 18040-2', 'Bodengleiche Dusche', 'Pflegekasse'],
       featured: false,
+      faqs: [
+        {
+          question: 'Muss ein barrierefreies Bad zwingend nach DIN 18040-2 gebaut werden?',
+          answer: 'Nein, außer bei Neubauten mit öffentlicher Förderung oder Mietwohnungen. Für private Eigenheimbesitzer ist die DIN 18040-2 eine Empfehlung, aber keine Pflicht. Für die Förderung durch die Pflegekasse ist keine DIN-Konformität erforderlich – es reicht, wenn die Maßnahme die Selbstständigkeit im Alltag verbessert. Sprechen Sie mit Ihrem Sanitärfachbetrieb über altersgerechte vs. barrierefreie Lösungen.',
+        },
+        {
+          question: 'Reichen 6 m² Badgröße für ein barrierefreies Bad?',
+          answer: 'Schwierig, aber mit Abstrichen möglich. Nach DIN 18040-2 werden ca. 8–10 m² empfohlen (für 150 cm Wendekreis + alle Sanitärobjekte). Bei 6 m² können Sie ein barrierereduziertes Bad umsetzen: Bodengleiche Dusche (120×90 cm), unterfahrbarer Waschtisch, erhöhtes WC. Rollstuhlwendekreis ist dann meist nicht möglich – reicht aber oft für Rollator-Nutzer oder präventive Maßnahmen.',
+        },
+        {
+          question: 'Wie lange dauert der Umbau zu einem barrierefreien Bad?',
+          answer: '2–4 Wochen je nach Umfang. Zeitplan: Teilumbau (nur Dusche): 5–10 Arbeitstage. Mittlerer Umbau (Dusche + WC + Waschtisch): 10–15 Arbeitstage. Komplettsanierung (inkl. Estrich, Fliesen, Elektrik): 15–25 Arbeitstage. Tipp: Organisieren Sie für diese Zeit ein Ausweich-WC (Nachbarschaft, Camping-Toilette) und planen Sie 1 Woche Puffer für unvorhergesehene Probleme (Wasserschäden, Rohrleitungen) ein.',
+        },
+        {
+          question: 'Kann ich die Pflegekassen-Förderung auch nachträglich beantragen?',
+          answer: 'Ja, bei der Pflegekasse ist das möglich. Anders als bei früheren KfW-Programmen können Sie bei der Pflegekasse (§40 SGB XI) auch nach Abschluss des Umbaus einen Antrag auf Kostenerstattung stellen. Allerdings erhöht ein Antrag VOR Umbaubeginn die Erfolgschancen deutlich, da die Pflegekasse vorab prüfen kann, ob die Maßnahme förderfähig ist. Reichen Sie dazu Kostenvoranschlag + Begründung (ärztliche Bescheinigung oder Pflegedienst) ein.',
+        },
+        {
+          question: 'Was kostet eine bodengleiche Dusche?',
+          answer: '2.500–7.000 Euro je nach Größe und Ausstattung. Detailkosten: Einfache Dusche 120×120 cm (Fliesen-Duschboden, Wandfliesen, Glaswand): 2.500–4.000 Euro. Komfort-Dusche 150×150 cm (Designfliesen, Walk-In-Glas, Regendusche): 4.000–7.000 Euro. Zusatzkosten bei Bestandsumbau: Estricharbeiten (500–1.200 Euro), Bodenablauf verlegen (300–600 Euro).',
+        },
+        {
+          question: 'Benötige ich einen Pflegegrad für die Förderung durch die Pflegekasse?',
+          answer: 'Ja, aber bereits Pflegegrad 1 reicht aus. Die Pflegekasse zahlt bis zu 4.000 Euro für wohnumfeldverbessernde Maßnahmen (§40 SGB XI) bei jedem Pflegegrad (1–5). Der Antrag sollte VOR Umbaubeginn gestellt werden (Formular + Kostenvoranschlag + Begründung durch Pflegedienst oder Arzt). Tipp: Bei 2 Personen mit Pflegegrad im Haushalt können bis zu 8.000 Euro beantragt werden (2× 4.000 Euro).',
+        },
+        {
+          question: 'Sind bodengleiche Duschen dichter als herkömmliche Duschwannen?',
+          answer: 'Ja, wenn fachgerecht ausgeführt. Entscheidend sind: Professionelle Abdichtung nach DIN 18534 (Verbundabdichtung unter Fliesen). Ausreichendes Gefälle (2% = 2 cm auf 1 m Länge) zum Bodenablauf. Hochwertiger Bodenablauf (z.B. Viega Advantix, Geberit Cleanline). Seitliche Dichtbänder an Wandanschlüssen. Beauftragen Sie einen Fachbetrieb mit Erfahrung in bodengleichen Duschen – Pfusch hier führt zu Wasserschäden im Estrich!',
+        },
+        {
+          question: 'Kann ich ein barrierefreies Bad auch in einer Mietwohnung umsetzen?',
+          answer: 'Ja, mit Zustimmung des Vermieters. Nach §554a BGB haben Mieter mit berechtigtem Interesse (Pflegegrad, Behinderung, hohes Alter) Anspruch auf bauliche Veränderungen – der Vermieter muss zustimmen, wenn keine überwiegenden Interessen dagegensprechen. Kosten trägt der Mieter, Rückbauverpflichtung bei Auszug kann vereinbart werden. Tipp: Vermieter profitiert durch Wertsteigerung – oft übernimmt er 50% der Kosten bei längerer Mietbindung.',
+        },
+      ],
     },
     {
       id: 20,
@@ -7908,6 +8175,26 @@ function getMockBlogPosts(): BlogPost[] {
         </ol>
 
         <p>Benötigen Sie professionelle Unterstützung bei der Planung? Unsere Experten beraten Sie kostenlos zu Solarthermie, Photovoltaik und Hybrid-Lösungen – inklusive Förderberatung und Wirtschaftlichkeitsberechnung.</p>
+
+        <h2>Häufig gestellte Fragen (FAQ)</h2>
+
+        <h3>Welches System ist besser für Warmwasserbereitung geeignet?</h3>
+        <p>Für reine Warmwasserbereitung ist <strong>Solarthermie effizienter</strong>: Mit 60-80% Wirkungsgrad wandelt sie Sonnenlicht direkt in Wärme um. Eine 4-6 m² Anlage deckt 60-70% des Jahresbedarfs ab. Photovoltaik mit Heizstab erreicht nur 18-22% Wirkungsgrad und benötigt die dreifache Dachfläche für denselben Wärmeertrag.</p>
+
+        <h3>Was spart mehr Stromkosten – PV oder Solarthermie?</h3>
+        <p><strong>Photovoltaik spart deutlich mehr:</strong> Eine 10 kWp PV-Anlage spart bei 40% Eigenverbrauch rund 1.200 €/Jahr an Stromkosten. Solarthermie reduziert nur die Gas-/Ölkosten für Warmwasser um 200-400 €/Jahr. Mit PV können Sie zusätzlich Elektroauto, Wärmepumpe und Haushaltsgeräte versorgen.</p>
+
+        <h3>Kann ich beide Systeme gleichzeitig installieren?</h3>
+        <p>Ja, bei <strong>ausreichend Dachfläche (min. 40-50 m²)</strong> ist die Kombination sinnvoll: PV für Strom und Elektroauto, Solarthermie für effiziente Warmwasserbereitung. Die Systeme stören sich nicht, da sie unterschiedliche Energieformen erzeugen. Alternativ prüfen Sie PVT-Hybridkollektoren, die beides auf einer Fläche kombinieren.</p>
+
+        <h3>Wie unterscheiden sich die Investitionskosten?</h3>
+        <p>Solarthermie für Warmwasser kostet <strong>5.000-8.000 €</strong> (mit 30-70% BAFA-Förderung). Eine vergleichbare 5 kWp PV-Anlage kostet <strong>10.500-13.500 €</strong> (0% MwSt., keine Direktförderung). PV amortisiert sich jedoch schneller (8-12 Jahre) als Solarthermie (10-15 Jahre mit Förderung).</p>
+
+        <h3>Welche Förderung ist höher – BAFA oder KfW?</h3>
+        <p><strong>BAFA-Förderung für Solarthermie ist höher:</strong> Bis zu 70% Direktzuschuss (30% Basis + 20% Geschwindigkeitsbonus + 30% Einkommensbonus). Photovoltaik erhält nur zinsgünstige KfW-Kredite (Programm 270) und indirekte Vorteile durch 0% MwSt. sowie EEG-Einspeisevergütung von 7,9 Cent/kWh.</p>
+
+        <h3>Benötige ich für beide Systeme viel Dachfläche?</h3>
+        <p><strong>Solarthermie braucht weniger Platz:</strong> 4-6 m² für Warmwasser, 10-15 m² mit Heizungsunterstützung. Photovoltaik benötigt für vergleichbaren Energieertrag 25-50 m² (5-10 kWp). Für kleine Dächer unter 20 m² ist Solarthermie platzsparender, bei großen Dächern ab 40 m² lohnt sich PV mehr.</p>
       `,
       category: 'Solar',
       author: 'HeizCenter Redaktion',
@@ -7916,6 +8203,14 @@ function getMockBlogPosts(): BlogPost[] {
       image: '/images/HeizCenter_Solar.webp',
       tags: ['Solarthermie', 'Photovoltaik', 'Solar Vergleich', 'BAFA Förderung', 'PV-Anlage', 'Solarenergie', 'Wirtschaftlichkeit'],
       featured: true,
+      faqs: [
+        { question: 'Welches System ist besser für Warmwasserbereitung geeignet?', answer: 'Für reine Warmwasserbereitung ist Solarthermie effizienter: Mit 60-80% Wirkungsgrad wandelt sie Sonnenlicht direkt in Wärme um. Eine 4-6 m² Anlage deckt 60-70% des Jahresbedarfs ab. Photovoltaik mit Heizstab erreicht nur 18-22% Wirkungsgrad und benötigt die dreifache Dachfläche für denselben Wärmeertrag.' },
+        { question: 'Was spart mehr Stromkosten – PV oder Solarthermie?', answer: 'Photovoltaik spart deutlich mehr: Eine 10 kWp PV-Anlage spart bei 40% Eigenverbrauch rund 1.200 €/Jahr an Stromkosten. Solarthermie reduziert nur die Gas-/Ölkosten für Warmwasser um 200-400 €/Jahr. Mit PV können Sie zusätzlich Elektroauto, Wärmepumpe und Haushaltsgeräte versorgen.' },
+        { question: 'Kann ich beide Systeme gleichzeitig installieren?', answer: 'Ja, bei ausreichend Dachfläche (min. 40-50 m²) ist die Kombination sinnvoll: PV für Strom und Elektroauto, Solarthermie für effiziente Warmwasserbereitung. Die Systeme stören sich nicht, da sie unterschiedliche Energieformen erzeugen. Alternativ prüfen Sie PVT-Hybridkollektoren, die beides auf einer Fläche kombinieren.' },
+        { question: 'Wie unterscheiden sich die Investitionskosten?', answer: 'Solarthermie für Warmwasser kostet 5.000-8.000 € (mit 30-70% BAFA-Förderung). Eine vergleichbare 5 kWp PV-Anlage kostet 10.500-13.500 € (0% MwSt., keine Direktförderung). PV amortisiert sich jedoch schneller (8-12 Jahre) als Solarthermie (10-15 Jahre mit Förderung).' },
+        { question: 'Welche Förderung ist höher – BAFA oder KfW?', answer: 'BAFA-Förderung für Solarthermie ist höher: Bis zu 70% Direktzuschuss (30% Basis + 20% Geschwindigkeitsbonus + 30% Einkommensbonus). Photovoltaik erhält nur zinsgünstige KfW-Kredite (Programm 270) und indirekte Vorteile durch 0% MwSt. sowie EEG-Einspeisevergütung von 7,9 Cent/kWh.' },
+        { question: 'Benötige ich für beide Systeme viel Dachfläche?', answer: 'Solarthermie braucht weniger Platz: 4-6 m² für Warmwasser, 10-15 m² mit Heizungsunterstützung. Photovoltaik benötigt für vergleichbaren Energieertrag 25-50 m² (5-10 kWp). Für kleine Dächer unter 20 m² ist Solarthermie platzsparender, bei großen Dächern ab 40 m² lohnt sich PV mehr.' },
+      ],
     },
     {
       id: 21,
@@ -8257,7 +8552,9 @@ function getMockBlogPosts(): BlogPost[] {
           <li><strong>Umsetzung:</strong> Nach Bewilligung starten</li>
         </ol>
 
-        <p>Benötigen Sie Unterstützung bei Planung und Antragstellung? Unsere BAFA-zertifizierten Energieberater helfen Ihnen bei der Maximierung Ihrer Förderung und begleiten Sie durch den gesamten Prozess.</p>
+        <p>Benötigen Sie Unterstützung bei Planung und Antragstellung? Unsere BAFA-zertifizierten Energieberater helfen Ihnen bei der Maximierung Ihrer Förderung und begleiten Sie durch den gesamten Prozess. Mehr über unsere <a href="/solar" class="text-[#0F5B78] font-medium hover:underline">Solarthermie-Leistungen</a> und die <a href="/foerderung" class="text-[#0F5B78] font-medium hover:underline">aktuelle Heizungsförderung 2025</a> erfahren Sie auf unseren Serviceseiten.</p>
+
+        <p><strong>Weiterlesen:</strong> Unser umfassender <a href="/blog/foerderung-heizung-2025" class="text-[#0F5B78] font-medium hover:underline">Förderratgeber für Heizungstausch 2025</a> erklärt alle BEG-Boni im Detail. Planen Sie eine Wärmepumpe? Dann lesen Sie auch unseren <a href="/blog/waermepumpe-kosten-2025" class="text-[#0F5B78] font-medium hover:underline">Wärmepumpen-Kostenratgeber</a>. HeizCenter berät Sie vor Ort in <a href="/standorte/augsburg" class="text-[#0F5B78] font-medium hover:underline">Augsburg</a>, <a href="/standorte/ulm" class="text-[#0F5B78] font-medium hover:underline">Ulm</a> und <a href="/standorte/memmingen" class="text-[#0F5B78] font-medium hover:underline">Memmingen</a>.</p>
 
         <div class="cta-box">
           <p class="cta-locations">📍 <strong>Unsere Standorte:</strong> Bobingen (Augsburg) · Gutenzell-Hürbel (Ulm/Memmingen) · Klosterlechfeld</p>
@@ -8268,6 +8565,26 @@ function getMockBlogPosts(): BlogPost[] {
             <strong>E-Mail:</strong> <a href="mailto:service@heizcenter.de">service@heizcenter.de</a>
           </p>
         </div>
+
+        <h2>Häufig gestellte Fragen (FAQ)</h2>
+
+        <h3>Wie viel Förderung bekomme ich für Solarthermie 2025?</h3>
+        <p>Die Basis-Förderung beträgt <strong>30% der förderfähigen Kosten</strong>. Mit Klima-Geschwindigkeitsbonus (20% bei Öl-/Gasheizungstausch) und Einkommensbonus (30% bei Einkommen unter 40.000 €) sind bis zu <strong>70% Zuschuss</strong> möglich. Maximal werden 60.000 € Investitionskosten pro Wohneinheit gefördert.</p>
+
+        <h3>Wie beantrage ich die KfW-Förderung für Solarthermie?</h3>
+        <p>Seit Januar 2024 läuft die Heizungsförderung über die <strong>KfW (BEG-Programm 458)</strong>, nicht mehr über BAFA. Antrag online über das <strong>KfW-Zuschussportal</strong> stellen – zwingend VOR Vertragsabschluss mit Fachbetrieb. Nach Bewilligung haben Sie 36 Monate Zeit für Umsetzung und Verwendungsnachweis.</p>
+
+        <h3>Gibt es eine Frist für die Antragstellung?</h3>
+        <p>Der Antrag muss <strong>vor Vertragsabschluss</strong> bei der KfW eingereicht werden. Nach Bewilligung haben Sie <strong>36 Monate</strong> Zeit für Installation und Verwendungsnachweis. Der Geschwindigkeitsbonus (20%) läuft 2028 aus – danach sinkt die Förderung schrittweise auf 30% Basis.</p>
+
+        <h3>Kann ich mehrere Förderungen kombinieren?</h3>
+        <p>Ja, aber eingeschränkt: KfW BEG-Einzelmaßnahmen (458) lassen sich mit KfW-Effizienzhausförderung kombinieren, sofern keine <strong>Doppelförderung derselben Maßnahme</strong> erfolgt. Regionale Programme (z.B. Bayern 10.000-Häuser-Programm, L-Bank) sind zusätzlich möglich. Energieberatung wird separat mit 80% gefördert.</p>
+
+        <h3>Welche Solarthermieanlagen sind förderfähig?</h3>
+        <p>Förderfähig sind Anlagen mit <strong>Solar-Keymark-Zertifikat</strong> und Mindestkollektorfläche von 7 m² (Bestandsgebäude) bzw. 20 m² (Neubau). Warmwasseranlagen benötigen mindestens <strong>20% solare Deckung</strong>, Kombianlagen mindestens 50 kWh/m² Jahresertrag. Nur Fachbetriebe aus der Energieeffizienz-Expertenliste dürfen installieren.</p>
+
+        <h3>Wie lange dauert es bis zur Förderauszahlung?</h3>
+        <p>Nach Antragstellung: <strong>4-8 Wochen Bearbeitungszeit</strong> für Bewilligung. Nach Installation und Verwendungsnachweis: <strong>6-12 Wochen</strong> bis zur Auszahlung. Planen Sie insgesamt 3-6 Monate vom Antrag bis zum Geldeingang ein. Bei unvollständigen Unterlagen verlängert sich die Frist erheblich.</p>
       `,
       category: 'Solar',
       author: 'HeizCenter Redaktion',
@@ -8276,6 +8593,14 @@ function getMockBlogPosts(): BlogPost[] {
       image: '/images/HeizCenter_Solar.webp',
       tags: ['BAFA Förderung', 'Solarthermie', 'Zuschuss', 'BEG', 'Förderung Heizung', 'Geschwindigkeitsbonus', 'Antragstellung'],
       featured: true,
+      faqs: [
+        { question: 'Wie viel Förderung bekomme ich für Solarthermie 2025?', answer: 'Die Basis-Förderung beträgt 30% der förderfähigen Kosten. Mit Klima-Geschwindigkeitsbonus (20% bei Öl-/Gasheizungstausch) und Einkommensbonus (30% bei Einkommen unter 40.000 €) sind bis zu 70% Zuschuss möglich. Maximal werden 60.000 € Investitionskosten pro Wohneinheit gefördert.' },
+        { question: 'Wie beantrage ich die KfW-Förderung für Solarthermie?', answer: 'Seit Januar 2024 läuft die Heizungsförderung über die KfW (BEG-Programm 458), nicht mehr über BAFA. Antrag online über das KfW-Zuschussportal stellen – zwingend VOR Vertragsabschluss mit Fachbetrieb. Nach Bewilligung haben Sie 36 Monate Zeit für Umsetzung und Verwendungsnachweis.' },
+        { question: 'Gibt es eine Frist für die Antragstellung?', answer: 'Der Antrag muss vor Vertragsabschluss bei der KfW eingereicht werden. Nach Bewilligung haben Sie 36 Monate Zeit für Installation und Verwendungsnachweis. Der Geschwindigkeitsbonus (20%) läuft 2028 aus – danach sinkt die Förderung schrittweise auf 30% Basis.' },
+        { question: 'Kann ich mehrere Förderungen kombinieren?', answer: 'Ja, aber eingeschränkt: KfW BEG-Einzelmaßnahmen (458) lassen sich mit KfW-Effizienzhausförderung kombinieren, sofern keine Doppelförderung derselben Maßnahme erfolgt. Regionale Programme (z.B. Bayern 10.000-Häuser-Programm, L-Bank) sind zusätzlich möglich. Energieberatung wird separat mit 80% gefördert.' },
+        { question: 'Welche Solarthermieanlagen sind förderfähig?', answer: 'Förderfähig sind Anlagen mit Solar-Keymark-Zertifikat und Mindestkollektorfläche von 7 m² (Bestandsgebäude) bzw. 20 m² (Neubau). Warmwasseranlagen benötigen mindestens 20% solare Deckung, Kombianlagen mindestens 50 kWh/m² Jahresertrag. Nur Fachbetriebe aus der Energieeffizienz-Expertenliste dürfen installieren.' },
+        { question: 'Wie lange dauert es bis zur Förderauszahlung?', answer: 'Nach Antragstellung: 4-8 Wochen Bearbeitungszeit für Bewilligung. Nach Installation und Verwendungsnachweis: 6-12 Wochen bis zur Auszahlung. Planen Sie insgesamt 3-6 Monate vom Antrag bis zum Geldeingang ein. Bei unvollständigen Unterlagen verlängert sich die Frist erheblich.' },
+      ],
     },
     {
       id: 22,
@@ -8706,6 +9031,26 @@ function getMockBlogPosts(): BlogPost[] {
             <strong>E-Mail:</strong> <a href="mailto:service@heizcenter.de">service@heizcenter.de</a>
           </p>
         </div>
+
+        <h2>Häufig gestellte Fragen (FAQ)</h2>
+
+        <h3>Was kostet eine Hybrid-Heizung mit Wärmepumpe und Solarthermie?</h3>
+        <p>Die Gesamtkosten liegen bei <strong>34.000-45.000 €</strong> je nach Systemgröße: Luft-Wärmepumpe 20.000-28.000 €, Solarthermie (8-15 m²) 8.000-12.000 €, Pufferspeicher (800-1.000 L) 2.000-3.000 €, plus Hydraulik und Montage 4.000-6.000 €. Mit 50-70% KfW-Förderung reduziert sich der Eigenanteil auf 10.200-22.500 €.</p>
+
+        <h3>Wie viel Energie spare ich gegenüber einer reinen Wärmepumpe?</h3>
+        <p>Ein Hybrid-System spart <strong>20-30% Stromkosten</strong> gegenüber einer reinen Wärmepumpe. Bei 15.000 kWh Wärmebedarf verbraucht eine reine Luft-WP 4.286 kWh Strom (1.286 € bei 0,30 €/kWh), während das Hybrid-System nur 2.625 kWh benötigt (788 €/Jahr). Das entspricht einer jährlichen Ersparnis von 498 €.</p>
+
+        <h3>Lohnt sich die Kombination auch im Altbau?</h3>
+        <p>Ja, besonders im <strong>teilsanierten Altbau</strong> ist die Kombination sinnvoll. Solarthermie übernimmt Mai-September komplett die Warmwasserbereitung und entlastet die Wärmepumpe in der Übergangszeit. Bei höheren Vorlauftemperaturen (45-55 °C) profitiert die Wärmepumpe überproportional von der solaren Vorwärmung. Die JAZ steigt von 3,2-3,5 auf 3,8-4,2.</p>
+
+        <h3>Welche Förderung gibt es für Hybrid-Systeme?</h3>
+        <p>Sie erhalten <strong>50-70% KfW-Zuschuss</strong> (BEG 458): 30% Basis + 20% Geschwindigkeitsbonus (Öl-/Gasheizungstausch bis 2028) + optional 30% Einkommensbonus (Einkommen unter 40.000 €) + 5% Effizienzbonus (natürliches Kältemittel). Maximal 60.000 € förderfähige Kosten, also bis zu 42.000 € Zuschuss möglich.</p>
+
+        <h3>Funktioniert das System auch bei Ost-West-Dach?</h3>
+        <p>Ja, aber mit <strong>10-15% geringeren Erträgen</strong> als bei Süddach. Ost-West-Dächer liefern morgens und abends Wärme, was gut zum Verbrauchsprofil passt. Empfehlung: Kollektorfläche um 20-30% vergrößern (statt 10 m² dann 12-13 m²), um die Ertragsminderung auszugleichen. Nordausrichtung ist ungeeignet (nur 40-50% Ertrag).</p>
+
+        <h3>Brauche ich einen speziellen Pufferspeicher?</h3>
+        <p>Ja, ein <strong>Schichtenspeicher oder Kombispeicher</strong> (800-1.000 L) ist optimal. Er verfügt über zwei Wärmetauscher: einen für Solarthermie (unten/mitte) und einen für die Wärmepumpe (oben). Alternativ: Frischwasserstation für hygienisches Trinkwasser im Durchlaufprinzip. Kosten: 2.000-3.500 € je nach Größe und Ausstattung.</p>
       `,
       category: 'Solar',
       author: 'HeizCenter Redaktion',
@@ -8714,46 +9059,174 @@ function getMockBlogPosts(): BlogPost[] {
       image: '/images/HeizCenter_Solar.webp',
       tags: ['Hybrid-Heizung', 'Wärmepumpe', 'Solarthermie', 'Heizung Kombination', 'Effizienz', 'Heizkosten sparen', 'Förderung'],
       featured: true,
+      faqs: [
+        { question: 'Was kostet eine Hybrid-Heizung mit Wärmepumpe und Solarthermie?', answer: 'Die Gesamtkosten liegen bei 34.000-45.000 € je nach Systemgröße: Luft-Wärmepumpe 20.000-28.000 €, Solarthermie (8-15 m²) 8.000-12.000 €, Pufferspeicher (800-1.000 L) 2.000-3.000 €, plus Hydraulik und Montage 4.000-6.000 €. Mit 50-70% KfW-Förderung reduziert sich der Eigenanteil auf 10.200-22.500 €.' },
+        { question: 'Wie viel Energie spare ich gegenüber einer reinen Wärmepumpe?', answer: 'Ein Hybrid-System spart 20-30% Stromkosten gegenüber einer reinen Wärmepumpe. Bei 15.000 kWh Wärmebedarf verbraucht eine reine Luft-WP 4.286 kWh Strom (1.286 € bei 0,30 €/kWh), während das Hybrid-System nur 2.625 kWh benötigt (788 €/Jahr). Das entspricht einer jährlichen Ersparnis von 498 €.' },
+        { question: 'Lohnt sich die Kombination auch im Altbau?', answer: 'Ja, besonders im teilsanierten Altbau ist die Kombination sinnvoll. Solarthermie übernimmt Mai-September komplett die Warmwasserbereitung und entlastet die Wärmepumpe in der Übergangszeit. Bei höheren Vorlauftemperaturen (45-55 °C) profitiert die Wärmepumpe überproportional von der solaren Vorwärmung. Die JAZ steigt von 3,2-3,5 auf 3,8-4,2.' },
+        { question: 'Welche Förderung gibt es für Hybrid-Systeme?', answer: 'Sie erhalten 50-70% KfW-Zuschuss (BEG 458): 30% Basis + 20% Geschwindigkeitsbonus (Öl-/Gasheizungstausch bis 2028) + optional 30% Einkommensbonus (Einkommen unter 40.000 €) + 5% Effizienzbonus (natürliches Kältemittel). Maximal 60.000 € förderfähige Kosten, also bis zu 42.000 € Zuschuss möglich.' },
+        { question: 'Funktioniert das System auch bei Ost-West-Dach?', answer: 'Ja, aber mit 10-15% geringeren Erträgen als bei Süddach. Ost-West-Dächer liefern morgens und abends Wärme, was gut zum Verbrauchsprofil passt. Empfehlung: Kollektorfläche um 20-30% vergrößern (statt 10 m² dann 12-13 m²), um die Ertragsminderung auszugleichen. Nordausrichtung ist ungeeignet (nur 40-50% Ertrag).' },
+        { question: 'Brauche ich einen speziellen Pufferspeicher?', answer: 'Ja, ein Schichtenspeicher oder Kombispeicher (800-1.000 L) ist optimal. Er verfügt über zwei Wärmetauscher: einen für Solarthermie (unten/mitte) und einen für die Wärmepumpe (oben). Alternativ: Frischwasserstation für hygienisches Trinkwasser im Durchlaufprinzip. Kosten: 2.000-3.500 € je nach Größe und Ausstattung.' },
+      ],
     },
     {
       id: 23,
-      slug: 'solarthermie-kosten-wirtschaftlichkeit-2025',
-      title: 'Solarthermie Kosten und Wirtschaftlichkeit 2025: Lohnt sich die Investition?',
-      excerpt: 'Komplette Kostenaufstellung für Solarthermie-Anlagen mit aktuellen Förderungen, realistischen Amortisationszeiten und einer ehrlichen Einschätzung.',
+      slug: 'solarthermie-kosten-2026',
+      title: 'Solarthermie Kosten 2026: Förderung',
+      excerpt: 'Was kostet Solarthermie 2026? Preise ab 5.000€, bis 70% KfW-Förderung, Amortisation berechnen. Flach- vs. Röhrenkollektor im Vergleich.',
       content: `
-        <p>Zwischen 5.000 und 18.000 Euro kostet eine Solarthermie-Anlage – je nach Größe und Einsatzzweck. Diese Preisspanne verunsichert viele Hausbesitzer. In diesem Artikel finden Sie konkrete Zahlen aus der Praxis, die aktuelle Fördersituation und eine ehrliche Einschätzung, wann sich die Investition rechnet.</p>
+        <p class="text-xl text-slate-700 leading-relaxed mb-6">Kostenlose Wärme vom Dach – klingt verlockend, oder? Solarthermie macht genau das möglich: Sie nutzen die Sonne, um Ihr Warmwasser zu erhitzen und im Winter sogar die Heizung zu unterstützen. Aber lohnt sich das wirklich? Und was kostet der Spaß?</p>
+
+        <div class="flex flex-wrap gap-4 mb-8 text-sm text-slate-600">
+          <span class="flex items-center gap-1">✓ Über 200 Solarthermie-Anlagen installiert</span>
+          <span class="flex items-center gap-1">✓ Kostenlose Dachprüfung inklusive</span>
+          <span class="flex items-center gap-1">✓ KfW-Förderung garantiert</span>
+        </div>
+
+        <p>In diesem Artikel zeige ich Ihnen, was Solarthermie 2026 kostet, wann sie sich lohnt – und wann Photovoltaik vielleicht die bessere Wahl ist. Mit echten Zahlen aus unserer Region.</p>
 
         <h2>Was kostet eine Solarthermie-Anlage?</h2>
 
         <p>Die Kosten hängen davon ab, ob Sie nur Warmwasser erzeugen oder auch die Heizung unterstützen möchten. Hier die aktuellen Preise inklusive Montage:</p>
 
-        <h3>Reine Warmwasserbereitung</h3>
-        <p>Für einen Vier-Personen-Haushalt benötigen Sie etwa 4 bis 6 Quadratmeter Kollektorfläche und einen 300-Liter-Speicher. Mit Flachkollektoren liegen die Gesamtkosten zwischen <strong>5.000 und 10.000 Euro</strong>. Vakuumröhrenkollektoren sind effizienter, kosten aber etwa 1.500 Euro mehr.</p>
-
-        <p>Im Einzelnen setzen sich die Kosten zusammen aus: Kollektoren (1.500–3.500 Euro), Speicher (1.000–2.000 Euro), Regelungstechnik und Verrohrung (1.000–2.500 Euro) sowie der Montage (1.500–2.500 Euro).</p>
-
-        <h3>Warmwasser plus Heizungsunterstützung</h3>
-        <p>Wenn die Anlage auch die Heizung unterstützen soll, brauchen Sie mehr Fläche: 10 bis 15 Quadratmeter Kollektoren und einen größeren Pufferspeicher mit 600 bis 1.000 Litern. Die Gesamtkosten liegen dann zwischen <strong>8.000 und 18.000 Euro</strong>.</p>
+        <div class="comparison-grid grid md:grid-cols-2 gap-6 my-8">
+          <div class="comparison-card bg-blue-50 border border-blue-200 rounded-lg p-5">
+            <div class="text-3xl mb-3">☀️</div>
+            <h3 class="font-bold text-slate-900 mb-2 text-lg">Nur Warmwasser</h3>
+            <p class="text-3xl font-bold text-[#0F5B78] mb-3">3.000 – 6.000 €</p>
+            <ul class="text-sm text-slate-600 space-y-2">
+              <li>• 4-6 m² Kollektorfläche</li>
+              <li>• 300 Liter Speicher</li>
+              <li>• Deckt 50-60% des Warmwassers</li>
+              <li>• Sommer: 100% solar</li>
+            </ul>
+          </div>
+          <div class="comparison-card bg-green-50 border border-green-200 rounded-lg p-5">
+            <div class="text-3xl mb-3">🔥☀️</div>
+            <h3 class="font-bold text-slate-900 mb-2 text-lg">Warmwasser + Heizung</h3>
+            <p class="text-3xl font-bold text-[#0F5B78] mb-3">8.000 – 17.000 €</p>
+            <ul class="text-sm text-slate-600 space-y-2">
+              <li>• 10-15 m² Kollektorfläche</li>
+              <li>• 750-1.000 Liter Pufferspeicher</li>
+              <li>• Deckt 20-30% der Heizung</li>
+              <li>• Ideal in Übergangszeit</li>
+            </ul>
+          </div>
+        </div>
 
         <p>Als Faustregel können Sie mit 500 bis 750 Euro pro Quadratmeter Kollektorfläche rechnen – inklusive aller Komponenten und der Installation.</p>
+
+        <div class="bg-amber-50 border-l-4 border-amber-400 p-4 my-6">
+          <p class="font-semibold text-amber-900 mb-2">Praxisbeispiel: Familie Kraus aus Königsbrunn</p>
+          <p class="text-amber-800">Einfamilienhaus, 4 Personen, bestehende Gasheizung. 6 m² Flachkollektoren für Warmwasser, 300-Liter-Speicher. Gesamtkosten: <strong>4.800 €</strong>. Nach 30% KfW-Förderung: <strong>3.360 € Eigenanteil</strong>. Ersparnis: ca. 280 €/Jahr an Gaskosten.</p>
+        </div>
 
         <div class="my-6 p-4 bg-slate-50 border-l-4 border-slate-400 rounded-r">
           <p class="font-semibold text-slate-900">Hinweis zur Mindestgröße</p>
           <p class="text-slate-700">Für die KfW-Förderung gilt: Flachkollektoren müssen mindestens 9 m² groß sein, Vakuumröhrenkollektoren mindestens 7 m². Kleinere Anlagen erhalten keine staatliche Förderung.</p>
         </div>
 
-        <h2>Die Förderung 2025: So viel zahlt der Staat</h2>
+        <h2>Kostenaufstellung im Detail</h2>
+
+        <div class="cost-table my-8">
+          <h4 class="text-lg font-bold text-slate-900 mb-4">Solarthermie für Warmwasser (4 Personen)</h4>
+          <div class="space-y-3">
+            <div class="flex justify-between items-center py-2 border-b border-slate-200">
+              <span class="text-slate-700">Flachkollektoren (6 m²)</span>
+              <span class="font-semibold text-slate-900">1.800 – 3.000 €</span>
+            </div>
+            <div class="flex justify-between items-center py-2 border-b border-slate-200">
+              <span class="text-slate-700">Warmwasserspeicher (300 L)</span>
+              <span class="font-semibold text-slate-900">800 – 1.200 €</span>
+            </div>
+            <div class="flex justify-between items-center py-2 border-b border-slate-200">
+              <span class="text-slate-700">Regelung + Pumpengruppe</span>
+              <span class="font-semibold text-slate-900">400 – 700 €</span>
+            </div>
+            <div class="flex justify-between items-center py-2 border-b border-slate-200">
+              <span class="text-slate-700">Installation + Montage</span>
+              <span class="font-semibold text-slate-900">1.000 – 1.800 €</span>
+            </div>
+            <div class="flex justify-between items-center py-3 bg-slate-50 px-3 rounded-lg mt-2">
+              <span class="font-bold text-slate-900">Gesamtkosten brutto</span>
+              <span class="font-bold text-[#0F5B78] text-lg">4.000 – 6.700 €</span>
+            </div>
+          </div>
+        </div>
+
+        <h2>Flachkollektoren vs. Röhrenkollektoren</h2>
+
+        <p>Diese Frage höre ich oft. Hier meine ehrliche Einschätzung:</p>
+
+        <div class="comparison-grid grid md:grid-cols-2 gap-4 my-8">
+          <div class="comparison-card bg-white border border-slate-200 rounded-lg p-5">
+            <h4 class="font-bold text-slate-900 mb-3">Flachkollektoren</h4>
+            <p class="text-xl font-bold text-[#0F5B78] mb-3">300 – 500 €/m²</p>
+            <ul class="text-sm space-y-2 text-slate-700">
+              <li><strong>Wirkungsgrad:</strong> 60-75%</li>
+              <li><strong>Platzbedarf:</strong> ca. 1,5 m²/Person</li>
+              <li><strong>Lebensdauer:</strong> 25-30 Jahre</li>
+              <li><strong>Ideal für:</strong> Süddächer ohne Verschattung</li>
+            </ul>
+            <div class="mt-3 pt-3 border-t border-slate-200">
+              <p class="text-sm text-green-700 font-medium">✓ Unsere Empfehlung für die meisten Fälle</p>
+            </div>
+          </div>
+          <div class="comparison-card bg-white border border-slate-200 rounded-lg p-5">
+            <h4 class="font-bold text-slate-900 mb-3">Röhrenkollektoren</h4>
+            <p class="text-xl font-bold text-[#0F5B78] mb-3">500 – 800 €/m²</p>
+            <ul class="text-sm space-y-2 text-slate-700">
+              <li><strong>Wirkungsgrad:</strong> 70-85%</li>
+              <li><strong>Platzbedarf:</strong> ca. 1 m²/Person</li>
+              <li><strong>Lebensdauer:</strong> 20-25 Jahre</li>
+              <li><strong>Ideal für:</strong> Ost/West-Dächer, wenig Platz</li>
+            </ul>
+            <div class="mt-3 pt-3 border-t border-slate-200">
+              <p class="text-sm text-blue-700 font-medium">Sinnvoll bei begrenzter Dachfläche</p>
+            </div>
+          </div>
+        </div>
+
+        <p><strong>Mein Tipp:</strong> In 90% der Fälle reichen Flachkollektoren völlig aus. Die sind günstiger, robuster und halten länger. Röhrenkollektoren empfehle ich nur, wenn das Dach nach Osten oder Westen zeigt oder sehr wenig Platz vorhanden ist.</p>
+
+        <h2>Voraussetzungen fürs Dach</h2>
+
+        <p>Bevor wir weitermachen – nicht jedes Dach ist geeignet:</p>
+
+        <div class="pro-con-list my-8">
+          <div class="bg-green-50 border border-green-200 rounded-lg p-5 mb-4">
+            <h4 class="font-bold text-green-900 mb-3">✓ Geeignet</h4>
+            <ul class="space-y-2 text-green-800">
+              <li>Ausrichtung: Süd, Südost, Südwest</li>
+              <li>Dachneigung: 30-60° (optimal: 45°)</li>
+              <li>Keine Verschattung durch Bäume, Nachbarhäuser</li>
+              <li>Mindestens 5-6 m² freie Fläche</li>
+            </ul>
+          </div>
+          <div class="bg-red-50 border border-red-200 rounded-lg p-5">
+            <h4 class="font-bold text-red-900 mb-3">✗ Schwierig</h4>
+            <ul class="space-y-2 text-red-800">
+              <li>Norddach (unter 20% Ertrag)</li>
+              <li>Starke Verschattung (Schornstein, Gauben)</li>
+              <li>Flachdach ohne Aufständerung</li>
+              <li>Denkmalschutz (Genehmigung nötig)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="bg-slate-50 border border-slate-200 rounded-lg p-4 my-6 text-center">
+          <p class="text-slate-700 mb-2"><strong>Lohnt sich Solarthermie bei Ihrem Dach?</strong></p>
+          <p class="text-sm text-slate-600">Wir prüfen Ausrichtung, Verschattung und berechnen die realistische Einsparung. <a href="/kontakt" class="text-[#0F5B78] font-medium hover:underline">Kostenlose Dachprüfung anfragen →</a></p>
+        </div>
+
+        <h2>Förderung 2026: Bis zu 70% vom Staat</h2>
 
         <p>Seit Januar 2024 läuft die Heizungsförderung über die KfW statt über das BAFA. Die Fördersätze sind attraktiv – aber an Bedingungen geknüpft.</p>
 
-        <h3>Fördersätze im Überblick</h3>
         <p>Die <strong>Grundförderung beträgt 30 Prozent</strong> der förderfähigen Kosten. Dazu kommen zwei mögliche Boni:</p>
 
         <p>Der <strong>Klimageschwindigkeitsbonus</strong> bringt zusätzliche 20 Prozent, wenn Sie eine alte Öl- oder Gasheizung ersetzen. Der <strong>Einkommensbonus</strong> von 30 Prozent steht Haushalten mit einem zu versteuernden Jahreseinkommen unter 40.000 Euro zu.</p>
 
         <p>Theoretisch ergibt das 80 Prozent – die KfW deckelt aber bei <strong>maximal 70 Prozent</strong>. Die förderfähigen Kosten sind auf 30.000 Euro begrenzt (60.000 Euro, wenn ein individueller Sanierungsfahrplan vorliegt).</p>
-
-        <h3>Was das in der Praxis bedeutet</h3>
 
         <div class="overflow-x-auto my-6">
           <table class="min-w-full border-collapse">
@@ -8793,10 +9266,10 @@ function getMockBlogPosts(): BlogPost[] {
           <p class="text-slate-700">Sie müssen den KfW-Antrag stellen, bevor Sie den Installateur beauftragen. Nachträgliche Anträge werden ohne Prüfung abgelehnt. Der Bewilligungszeitraum beträgt 36 Monate.</p>
         </div>
 
-        <h3>Alternative: Steuerbonus</h3>
+        <h3>Alternative: Steuerbonus §35c</h3>
         <p>Wer die KfW-Förderung nicht nutzen kann oder möchte, kann die Kosten steuerlich absetzen. Nach §35c EStG sind bis zu 20 Prozent der Investition absetzbar, verteilt auf drei Jahre. Das ist weniger als die KfW-Förderung, aber ohne Vorab-Antrag möglich.</p>
 
-        <h2>Laufende Kosten: Weniger als gedacht</h2>
+        <h2>Laufende Kosten</h2>
 
         <p>Solarthermie-Anlagen sind wartungsarm. Die jährlichen Betriebskosten liegen bei etwa <strong>150 Euro</strong>.</p>
 
@@ -8863,6 +9336,56 @@ function getMockBlogPosts(): BlogPost[] {
 
         <p>Die Lebensdauer einer Solarthermie-Anlage liegt bei 25 bis 30 Jahren. Bei günstigen Rahmenbedingungen (hohe Förderung, teure bestehende Heizung) arbeitet die Anlage also 15 bis 20 Jahre im Plus.</p>
 
+        <h2>Solarthermie oder Photovoltaik?</h2>
+
+        <p>Das ist die Gretchenfrage – und ich werde oft danach gefragt. Hier meine ehrliche Meinung:</p>
+
+        <div class="pro-con-list my-8">
+          <div class="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-4">
+            <h4 class="font-bold text-amber-900 mb-3">Solarthermie ist besser, wenn…</h4>
+            <ul class="space-y-2 text-amber-800">
+              <li>✓ Sie <strong>keine Wärmepumpe</strong> haben (Gas, Öl, Pellet)</li>
+              <li>✓ Ihr Warmwasserverbrauch hoch ist (große Familie)</li>
+              <li>✓ Die Dachfläche <strong>begrenzt</strong> ist (Solarthermie braucht weniger Platz für Wärme)</li>
+              <li>✓ Sie eine <strong>Pelletheizung</strong> planen (Fördervoraussetzung!)</li>
+            </ul>
+          </div>
+          <div class="bg-blue-50 border border-blue-200 rounded-lg p-5">
+            <h4 class="font-bold text-blue-900 mb-3">Photovoltaik ist besser, wenn…</h4>
+            <ul class="space-y-2 text-blue-800">
+              <li>✓ Sie eine <strong>Wärmepumpe</strong> haben oder planen</li>
+              <li>✓ Sie auch <strong>Strom</strong> selbst verbrauchen (E-Auto, Haushalt)</li>
+              <li>✓ Die Dachfläche groß genug ist</li>
+              <li>✓ Sie <strong>Einspeisevergütung</strong> mitnehmen wollen</li>
+            </ul>
+          </div>
+        </div>
+
+        <p><strong>Mein Fazit:</strong> In Kombination mit einer Wärmepumpe würde ich heute eher auf PV setzen – die Wärmepumpe nutzt den Strom direkt zur Wärmeerzeugung. Bei Gas- oder Pelletheizung ist Solarthermie nach wie vor eine clevere Ergänzung.</p>
+
+        <h2>Kombination mit anderen Heizungen</h2>
+
+        <p>Solarthermie lässt sich mit fast jeder Heizung kombinieren:</p>
+
+        <div class="comparison-grid grid md:grid-cols-2 gap-4 my-8">
+          <div class="comparison-card bg-white border border-slate-200 rounded-lg p-4">
+            <h4 class="font-bold text-slate-900 mb-2">+ Gasheizung</h4>
+            <p class="text-sm text-slate-600">Klassiker. Reduziert Gasverbrauch um 20-30%. Im Sommer läuft die Gastherme oft gar nicht.</p>
+          </div>
+          <div class="comparison-card bg-white border border-slate-200 rounded-lg p-4">
+            <h4 class="font-bold text-slate-900 mb-2">+ Pelletheizung</h4>
+            <p class="text-sm text-slate-600">Wichtig! Für den Klimabonus muss Warmwasser solar abgedeckt sein. Perfekte Kombination.</p>
+          </div>
+          <div class="comparison-card bg-white border border-slate-200 rounded-lg p-4">
+            <h4 class="font-bold text-slate-900 mb-2">+ Wärmepumpe</h4>
+            <p class="text-sm text-slate-600">Funktioniert, aber PV ist meist sinnvoller. Entlastet die WP im Sommer.</p>
+          </div>
+          <div class="comparison-card bg-white border border-slate-200 rounded-lg p-4">
+            <h4 class="font-bold text-slate-900 mb-2">+ Ölheizung</h4>
+            <p class="text-sm text-slate-600">Verlängert Tanklaufzeit erheblich. Gute Übergangslösung bis zur Heizungsmodernisierung.</p>
+          </div>
+        </div>
+
         <h2>Für wen lohnt sich Solarthermie?</h2>
 
         <p>Nach dieser Analyse lässt sich klar sagen, in welchen Fällen Solarthermie wirtschaftlich sinnvoll ist – und in welchen nicht.</p>
@@ -8883,42 +9406,37 @@ function getMockBlogPosts(): BlogPost[] {
 
         <p>Die verfügbare Dachfläche begrenzt ist. In diesem Fall ist Photovoltaik oft die bessere Wahl, weil der erzeugte Strom vielseitiger nutzbar ist.</p>
 
-        <h3>Vergleich mit Photovoltaik</h3>
-        <p>Photovoltaik erreicht typischerweise eine Rendite von 5 bis 8 Prozent pro Jahr und amortisiert sich in 10 bis 13 Jahren – ohne Förderung. Solarthermie kommt selbst mit Förderung nur auf 2 bis 5 Prozent Rendite.</p>
+        <div class="bg-gradient-to-br from-[#0F5B78] to-[#0D4A5F] text-white rounded-xl p-6 my-8">
+          <h3 class="text-xl font-bold mb-4">Kostenlose Dachprüfung</h3>
+          <p class="text-white/90 mb-4">Wir schauen uns Ihr Dach an und sagen Ihnen ehrlich, ob Solarthermie bei Ihnen Sinn macht – oder ob PV die bessere Wahl ist.</p>
 
-        <p>Der Vorteil von Solarthermie: Sie nutzt die Sonnenenergie effizienter für Wärme (60–80 Prozent Wirkungsgrad gegenüber 15–22 Prozent bei PV) und erhält höhere Förderungen. Bei begrenzter Dachfläche und hohem Wärmebedarf kann Solarthermie daher die bessere Wahl sein.</p>
+          <div class="flex flex-col sm:flex-row gap-3">
+            <a href="tel:+4982349665900" class="inline-flex items-center justify-center gap-2 bg-white text-[#0F5B78] font-semibold px-5 py-3 rounded-lg hover:bg-slate-100 transition-colors">
+              <span>📞</span> 08234 / 967 975 0
+            </a>
+            <a href="/kontakt" class="inline-flex items-center justify-center gap-2 bg-white/10 text-white font-semibold px-5 py-3 rounded-lg border border-white/30 hover:bg-white/20 transition-colors">
+              Online-Anfrage →
+            </a>
+          </div>
 
-        <h2>Fazit</h2>
-
-        <p>Solarthermie rechnet sich 2025 vor allem in einem Fall: beim Austausch einer alten fossilen Heizung gegen eine Wärmepumpe mit Solarthermie-Unterstützung. Dann greifen die hohen Förderungen von bis zu 70 Prozent, und die Amortisation liegt bei 7 bis 11 Jahren.</p>
-
-        <p>Als Einzelmaßnahme mit nur 30 Prozent Förderung ist Solarthermie wirtschaftlich grenzwertig. Die Amortisationszeiten von 25 bis 40 Jahren übersteigen oft die Lebensdauer der Anlage.</p>
-
-        <p>Wer Solarthermie aus Überzeugung für den Klimaschutz installieren möchte, macht nichts falsch – die Technik ist ausgereift und langlebig. Wer rein nach Rendite entscheidet, sollte die Fördervoraussetzungen genau prüfen und gegebenenfalls Photovoltaik als Alternative in Betracht ziehen.</p>
-
-        <h2>Nächste Schritte</h2>
-
-        <p>Prüfen Sie zunächst Ihre Förderfähigkeit: Haben Sie Anspruch auf den Klimageschwindigkeitsbonus oder den Einkommensbonus? Dann holen Sie mindestens drei Angebote von Fachbetrieben ein und vergleichen Sie die Wirtschaftlichkeitsberechnungen.</p>
-
-        <p>Denken Sie daran: Der KfW-Antrag muss vor der Beauftragung gestellt werden. Planen Sie dafür ausreichend Vorlauf ein.</p>
-
-        <div class="cta-box">
-          <p><strong>Standorte:</strong> Bobingen (Augsburg), Gutenzell-Hürbel (Ulm/Memmingen), Klosterlechfeld</p>
-          <h4>Kostenlose Beratung zur Solarthermie</h4>
-          <p>Wir berechnen Ihre individuelle Wirtschaftlichkeit und prüfen Ihre Fördermöglichkeiten – unverbindlich und herstellerunabhängig.</p>
-          <p>
-            <strong>Telefon:</strong> <a href="tel:+4982349665900">+49 8234 9665900</a><br>
-            <strong>E-Mail:</strong> <a href="mailto:service@heizcenter.de">service@heizcenter.de</a>
-          </p>
+          <p class="text-sm text-white/70 mt-4">Ehrliche Beratung – wir empfehlen nur, was wirklich passt</p>
         </div>
       `,
       category: 'Solar',
       author: 'HeizCenter Redaktion',
-      date: '2026-02-04',
-      readingTime: 11,
+      date: '2026-02-10',
+      readingTime: 14,
       image: '/images/HeizCenter_Solar.webp',
-      tags: ['Solarthermie Kosten', 'Wirtschaftlichkeit', 'Amortisation', 'Rendite', 'Förderung', 'ROI', 'Investition'],
+      tags: ['Solarthermie', 'Kosten', 'Förderung', 'Wirtschaftlichkeit', 'Amortisation', 'KfW', 'Warmwasser', 'Heizung'],
       featured: true,
+      faqs: [
+        { question: 'Was kostet eine Solarthermie-Anlage 2026 komplett?', answer: 'Eine Warmwasser-Anlage (4-6 m²) kostet 5.000-8.000 € komplett installiert. Eine Kombi-Anlage mit Heizungsunterstützung (10-15 m²) liegt bei 12.000-18.000 €. Enthalten sind Kollektoren, Speicher, Rohrleitungen, Regelung und Montage. Mit 30-70% KfW-Förderung reduziert sich der Eigenanteil auf 2.400-12.600 €.' },
+        { question: 'Wie hoch sind die laufenden Kosten?', answer: 'Die jährlichen Betriebskosten betragen 30-100 €: Strom für Regelung und Pumpe (30-50 €), Wartung alle 2-3 Jahre (100-150 €, umgerechnet 33-50 €/Jahr). Nach 5-10 Jahren steht ein Solarflüssigkeitswechsel an (200-400 €), nach 10-15 Jahren eventuell ein Pumpentausch (200-400 €).' },
+        { question: 'Wann amortisiert sich die Investition?', answer: 'Mit 70% Förderung (Öl-Heizungstausch, Einkommensbonus): 7-10 Jahre. Mit 50% Förderung (nur Geschwindigkeitsbonus): 10-15 Jahre. Mit 30% Basis-Förderung: 18-37 Jahre (nur bei hohen Energiepreisen sinnvoll). Lebensdauer der Anlage: 25-30 Jahre, danach arbeitet sie viele Jahre im Plus.' },
+        { question: 'Flachkollektor oder Röhrenkollektor – was ist besser?', answer: 'Flachkollektoren (400-600 €/m²) sind Standard für Warmwasser und Süddächer. Röhrenkollektoren (600-900 €/m²) lohnen sich bei Ost-/West-Ausrichtung, Heizungsunterstützung oder begrenzter Dachfläche. Sie liefern 20-30% mehr Ertrag, kosten aber 50% mehr. Faustformel: Bei weniger als 8 m² Dachfläche Röhrenkollektoren wählen.' },
+        { question: 'Brauche ich mindestens eine bestimmte Dachfläche?', answer: 'Für Warmwasser: Minimum 4 m² (1 Person), optimal 5-6 m² (4-Personen-Haushalt). Für Heizungsunterstützung: Minimum 10 m², optimal 12-15 m² für Einfamilienhäuser mit 120-150 m² Wohnfläche. Maximale Fläche: 20 m² (größer führt zu Stillstandsproblemen im Sommer).' },
+        { question: 'Kann ich Solarthermie mit Wärmepumpe kombinieren?', answer: 'Ja, und das ist sehr sinnvoll. Solar übernimmt Mai-September die komplette Warmwasserbereitung, die Wärmepumpe spart 20-30% Stromkosten. Kosten: 34.000-45.000 € komplett, mit 50-70% Förderung. Vorteil: Höhere JAZ (bis 4,2 statt 3,5), geringere Wärmepumpen-Verschleiß, optimale Ausnutzung beider Systeme.' },
+      ],
     },
     {
       id: 24,
@@ -9335,6 +9853,26 @@ function getMockBlogPosts(): BlogPost[] {
             </p>
           </div>
         </div>
+
+        <h2>Häufig gestellte Fragen (FAQ)</h2>
+
+        <h3>Wie funktionieren PVT-Kollektoren genau?</h3>
+        <p>PVT-Kollektoren (Photovoltaik-Thermie) kombinieren <strong>Stromerzeugung und Wärmegewinnung</strong> in einem Modul. Photovoltaik-Zellen erzeugen Strom aus Sonnenlicht, während ein Wärmetauscher auf der Rückseite die Abwärme der PV-Zellen nutzt. Diese Kühlung erhöht den elektrischen Wirkungsgrad um 5-10% und liefert gleichzeitig nutzbare Wärme für Warmwasser oder Heizungsunterstützung.</p>
+
+        <h3>Was kosten PVT-Kollektoren im Vergleich zu getrennten Systemen?</h3>
+        <p>Ein PVT-System (8-12 Module, ca. 25-35 m²) kostet <strong>25.000-35.000 € komplett installiert</strong>. Getrennte Systeme (10 kWp PV + 10 m² Solarthermie) kosten zusammen 30.000-40.000 €. PVT spart 10-15% Kosten und <strong>50% Dachfläche</strong>. Der Preis pro m² liegt bei 800-1.200 €, etwa 30-50% über reiner PV.</p>
+
+        <h3>Ist die Effizienz höher als bei getrennten Systemen?</h3>
+        <p><strong>Gesamtenergieertr ag ja, einzelne Wirkungsgrade nein.</strong> PVT liefert 50-80% mehr Gesamtenergie pro m² als reine PV. Elektrisch: 15-18% (vs. 20-22% bei reiner PV). Thermisch: 40-60% (vs. 60-80% bei reiner Solarthermie). Vorteil: Auf begrenzter Dachfläche maximaler kombinierter Ertrag – ideal für kleine Dächer unter 30 m².</p>
+
+        <h3>Gibt es Förderung für PVT-Kollektoren?</h3>
+        <p>Ja, über <strong>KfW BEG 458 (Heizungstechnik)</strong> für den thermischen Teil: 30% Basis + optional 20% Geschwindigkeitsbonus + 30% Einkommensbonus = bis zu 70% auf die Wärmekomponente. Der PV-Teil erhält keine Direktförderung, profitiert aber von 0% MwSt. und EEG-Einspeisevergütung (7,9 Cent/kWh). Gesamtförderquote: typisch 35-45%.</p>
+
+        <h3>Für wen lohnt sich PVT?</h3>
+        <p>PVT ist ideal bei <strong>begrenzter Dachfläche</strong> (unter 40 m²), wo Sie Strom UND Wärme benötigen. Optimal: Kombination mit Wärmepumpe (PVT liefert Strom für WP und Wärme fürs Warmwasser). Weniger sinnvoll: Bei großen Dächern ab 50 m² – dort sind getrennte optimierte Systeme effizienter und günstiger.</p>
+
+        <h3>Wie lang ist die Lebensdauer von PVT-Modulen?</h3>
+        <p>Die Lebensdauer liegt bei <strong>20-25 Jahren</strong> für die PV-Komponente (mit 80-85% Leistungsgarantie nach 25 Jahren) und <strong>25-30 Jahren</strong> für die thermische Komponente. Wichtig: Regelmäßige Wartung alle 2-3 Jahre (150-250 €), um Frostschutz und Wärmetauscher zu prüfen. Nach 20 Jahren: PV-Module austauschen, Thermik weiterlaufen lassen.</p>
       `,
       category: 'Solar',
       author: 'HeizCenter Redaktion',
@@ -9343,6 +9881,14 @@ function getMockBlogPosts(): BlogPost[] {
       image: '/images/HeizCenter_Solar.webp',
       tags: ['PVT', 'Photovoltaik', 'Solarthermie', 'Hybrid', 'Wärmepumpe', 'Innovation', 'Effizienz'],
       featured: true,
+      faqs: [
+        { question: 'Wie funktionieren PVT-Kollektoren genau?', answer: 'PVT-Kollektoren (Photovoltaik-Thermie) kombinieren Stromerzeugung und Wärmegewinnung in einem Modul. Photovoltaik-Zellen erzeugen Strom aus Sonnenlicht, während ein Wärmetauscher auf der Rückseite die Abwärme der PV-Zellen nutzt. Diese Kühlung erhöht den elektrischen Wirkungsgrad um 5-10% und liefert gleichzeitig nutzbare Wärme für Warmwasser oder Heizungsunterstützung.' },
+        { question: 'Was kosten PVT-Kollektoren im Vergleich zu getrennten Systemen?', answer: 'Ein PVT-System (8-12 Module, ca. 25-35 m²) kostet 25.000-35.000 € komplett installiert. Getrennte Systeme (10 kWp PV + 10 m² Solarthermie) kosten zusammen 30.000-40.000 €. PVT spart 10-15% Kosten und 50% Dachfläche. Der Preis pro m² liegt bei 800-1.200 €, etwa 30-50% über reiner PV.' },
+        { question: 'Ist die Effizienz höher als bei getrennten Systemen?', answer: 'Gesamtenergieertrag ja, einzelne Wirkungsgrade nein. PVT liefert 50-80% mehr Gesamtenergie pro m² als reine PV. Elektrisch: 15-18% (vs. 20-22% bei reiner PV). Thermisch: 40-60% (vs. 60-80% bei reiner Solarthermie). Vorteil: Auf begrenzter Dachfläche maximaler kombinierter Ertrag – ideal für kleine Dächer unter 30 m².' },
+        { question: 'Gibt es Förderung für PVT-Kollektoren?', answer: 'Ja, über KfW BEG 458 (Heizungstechnik) für den thermischen Teil: 30% Basis + optional 20% Geschwindigkeitsbonus + 30% Einkommensbonus = bis zu 70% auf die Wärmekomponente. Der PV-Teil erhält keine Direktförderung, profitiert aber von 0% MwSt. und EEG-Einspeisevergütung (7,9 Cent/kWh). Gesamtförderquote: typisch 35-45%.' },
+        { question: 'Für wen lohnt sich PVT?', answer: 'PVT ist ideal bei begrenzter Dachfläche (unter 40 m²), wo Sie Strom UND Wärme benötigen. Optimal: Kombination mit Wärmepumpe (PVT liefert Strom für WP und Wärme fürs Warmwasser). Weniger sinnvoll: Bei großen Dächern ab 50 m² – dort sind getrennte optimierte Systeme effizienter und günstiger.' },
+        { question: 'Wie lang ist die Lebensdauer von PVT-Modulen?', answer: 'Die Lebensdauer liegt bei 20-25 Jahren für die PV-Komponente (mit 80-85% Leistungsgarantie nach 25 Jahren) und 25-30 Jahren für die thermische Komponente. Wichtig: Regelmäßige Wartung alle 2-3 Jahre (150-250 €), um Frostschutz und Wärmetauscher zu prüfen. Nach 20 Jahren: PV-Module austauschen, Thermik weiterlaufen lassen.' },
+      ],
     },
     {
       id: 25,
@@ -9860,6 +10406,26 @@ function getMockBlogPosts(): BlogPost[] {
             </p>
           </div>
         </div>
+
+        <h2>Häufig gestellte Fragen (FAQ)</h2>
+
+        <h3>Wie berechne ich die richtige Kollektorfläche für Warmwasser?</h3>
+        <p>Faustformel: <strong>0,8-1,5 m² pro Person</strong> bei Flachkollektoren, 0,6-1,0 m² bei Röhrenkollektoren. Für einen 4-Personen-Haushalt: 4-6 m² Flach- oder 3-4 m² Röhrenkollektoren. Genauer: Warmwasserbedarf (Liter/Tag) × 1,5 ÷ Solarertrag (kWh/m²/Jahr) × 1.000. Beispiel: 160 L/Tag × 1,5 ÷ 400 kWh/m² = 6 m².</p>
+
+        <h3>Welche Dachausrichtung ist optimal?</h3>
+        <p><strong>Süd (180°) ist ideal</strong>, aber nicht zwingend. Süd-Ost (135°) bis Süd-West (225°) funktionieren gut mit nur 5-10% Ertragseinbußen. Ost (90°) oder West (270°): 15-25% weniger Ertrag, Fläche um 20-30% vergrößern. Nord: nicht geeignet (unter 50% Ertrag). Dachneigung optimal: 30-45°, aber 20-60° noch akzeptabel.</p>
+
+        <h3>Wie groß sollte der Speicher sein?</h3>
+        <p>Für <strong>Warmwasser</strong>: 50-100 Liter pro m² Kollektorfläche. Bei 6 m² Kollektoren: 300-600 L Speicher (optimal 400 L). Für <strong>Heizungsunterstützung</strong>: 50-80 L/m² Wohnfläche + 100 L/m² Kollektorfläche. Bei 120 m² Wohnfläche + 12 m² Kollektoren: 800-1.200 L Pufferspeicher (optimal 1.000 L).</p>
+
+        <h3>Was passiert, wenn mein Dach nach Ost oder West zeigt?</h3>
+        <p>Ost-/West-Dächer liefern <strong>15-20% weniger Ertrag</strong> als Süddächer. Lösung: Kollektorfläche um 20-30% vergrößern ODER Röhrenkollektoren wählen (höherer Wirkungsgrad). Vorteil Ost-West: Ertrag verteilt sich über den Tag (morgens + abends), was gut zum Verbrauchsprofil passt. Ost-West-Pultdach: Kollektoren auf beiden Seiten verteilen.</p>
+
+        <h3>Gibt es eine Mindest- oder Maximalgröße für Solarthermieanlagen?</h3>
+        <p><strong>Minimum</strong>: 4 m² Kollektorfläche (1-2 Personen Warmwasser), darunter unwirtschaftlich. <strong>Maximum</strong>: 20 m² für Einfamilienhäuser – größere Anlagen führen zu Stillstandsproblemen im Sommer (Überhitzung, Stagnation). Bei mehr als 15 m²: Hochtemperaturspeicher und Stagnationskühlung vorsehen. Optimum: 10-15 m² für Heizungsunterstützung, 5-6 m² für reine Warmwasserbereitung.</p>
+
+        <h3>Wie lange dauert die Planung einer Solarthermieanlage?</h3>
+        <p>Professionelle Planung dauert <strong>2-4 Wochen</strong>: Vor-Ort-Termin (1-2 Std.), Dachanalyse und Verschattungsberechnung (2-3 Tage), Dimensionierung und Simulation (3-5 Tage), Angebotserstellung (1-2 Tage). Bei komplexen Projekten mit Heizungsumstellung: 4-6 Wochen. Installation: 2-3 Tage. KfW-Antrag: 4-8 Wochen Bearbeitungszeit vor Baubeginn einplanen.</p>
       `,
       category: 'Solar',
       author: 'HeizCenter Redaktion',
@@ -9868,6 +10434,14 @@ function getMockBlogPosts(): BlogPost[] {
       image: '/images/HeizCenter_Solar.webp',
       tags: ['Solarthermie Planung', 'Dimensionierung', 'Auslegung', 'Kollektorfläche', 'Speichergröße', 'Berechnung', 'Anlagenplanung'],
       featured: true,
+      faqs: [
+        { question: 'Wie berechne ich die richtige Kollektorfläche für Warmwasser?', answer: 'Faustformel: 0,8-1,5 m² pro Person bei Flachkollektoren, 0,6-1,0 m² bei Röhrenkollektoren. Für einen 4-Personen-Haushalt: 4-6 m² Flach- oder 3-4 m² Röhrenkollektoren. Genauer: Warmwasserbedarf (Liter/Tag) × 1,5 ÷ Solarertrag (kWh/m²/Jahr) × 1.000. Beispiel: 160 L/Tag × 1,5 ÷ 400 kWh/m² = 6 m².' },
+        { question: 'Welche Dachausrichtung ist optimal?', answer: 'Süd (180°) ist ideal, aber nicht zwingend. Süd-Ost (135°) bis Süd-West (225°) funktionieren gut mit nur 5-10% Ertragseinbußen. Ost (90°) oder West (270°): 15-25% weniger Ertrag, Fläche um 20-30% vergrößern. Nord: nicht geeignet (unter 50% Ertrag). Dachneigung optimal: 30-45°, aber 20-60° noch akzeptabel.' },
+        { question: 'Wie groß sollte der Speicher sein?', answer: 'Für Warmwasser: 50-100 Liter pro m² Kollektorfläche. Bei 6 m² Kollektoren: 300-600 L Speicher (optimal 400 L). Für Heizungsunterstützung: 50-80 L/m² Wohnfläche + 100 L/m² Kollektorfläche. Bei 120 m² Wohnfläche + 12 m² Kollektoren: 800-1.200 L Pufferspeicher (optimal 1.000 L).' },
+        { question: 'Was passiert, wenn mein Dach nach Ost oder West zeigt?', answer: 'Ost-/West-Dächer liefern 15-20% weniger Ertrag als Süddächer. Lösung: Kollektorfläche um 20-30% vergrößern ODER Röhrenkollektoren wählen (höherer Wirkungsgrad). Vorteil Ost-West: Ertrag verteilt sich über den Tag (morgens + abends), was gut zum Verbrauchsprofil passt. Ost-West-Pultdach: Kollektoren auf beiden Seiten verteilen.' },
+        { question: 'Gibt es eine Mindest- oder Maximalgröße für Solarthermieanlagen?', answer: 'Minimum: 4 m² Kollektorfläche (1-2 Personen Warmwasser), darunter unwirtschaftlich. Maximum: 20 m² für Einfamilienhäuser – größere Anlagen führen zu Stillstandsproblemen im Sommer (Überhitzung, Stagnation). Bei mehr als 15 m²: Hochtemperaturspeicher und Stagnationskühlung vorsehen. Optimum: 10-15 m² für Heizungsunterstützung, 5-6 m² für reine Warmwasserbereitung.' },
+        { question: 'Wie lange dauert die Planung einer Solarthermieanlage?', answer: 'Professionelle Planung dauert 2-4 Wochen: Vor-Ort-Termin (1-2 Std.), Dachanalyse und Verschattungsberechnung (2-3 Tage), Dimensionierung und Simulation (3-5 Tage), Angebotserstellung (1-2 Tage). Bei komplexen Projekten mit Heizungsumstellung: 4-6 Wochen. Installation: 2-3 Tage. KfW-Antrag: 4-8 Wochen Bearbeitungszeit vor Baubeginn einplanen.' },
+      ],
     },
     {
       id: 26,
@@ -10095,7 +10669,9 @@ function getMockBlogPosts(): BlogPost[] {
 
         <h2>Fazit: Wärmepumpe im Altbau lohnt sich</h2>
 
-        <p>Mit der richtigen Planung und den aktuellen Förderungen ist die Wärmepumpe auch im Altbau eine wirtschaftlich und ökologisch sinnvolle Investition. Die Technik ist ausgereift, die Förderung so hoch wie nie.</p>
+        <p>Mit der richtigen Planung und den aktuellen <a href="/foerderung" class="text-[#0F5B78] font-medium hover:underline">Förderungen</a> ist die <a href="/waermepumpe" class="text-[#0F5B78] font-medium hover:underline">Wärmepumpe</a> auch im Altbau eine wirtschaftlich und ökologisch sinnvolle Investition. Die Technik ist ausgereift, die Förderung so hoch wie nie.</p>
+
+        <p><strong>Weiterlesen:</strong> Alle Details zu <a href="/blog/waermepumpe-kosten-2025" class="text-[#0F5B78] font-medium hover:underline">Wärmepumpen-Kosten und Förderung 2025</a> finden Sie in unserem Kostenratgeber. Unser <a href="/blog/foerderung-heizung-2025" class="text-[#0F5B78] font-medium hover:underline">Förderratgeber für Heizungstausch</a> erklärt alle BEG-Boni im Detail. HeizCenter berät Sie vor Ort in <a href="/standorte/augsburg" class="text-[#0F5B78] font-medium hover:underline">Augsburg</a>, <a href="/standorte/ulm" class="text-[#0F5B78] font-medium hover:underline">Ulm</a> und <a href="/standorte/memmingen" class="text-[#0F5B78] font-medium hover:underline">Memmingen</a>.</p>
 
         <div class="cta-box">
           <h4>Ist Ihr Altbau wärmepumpen-geeignet? Kostenlose Prüfung vor Ort</h4>

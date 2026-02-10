@@ -3,7 +3,7 @@ import { ServiceHero } from "@/components/sections/service-hero";
 import { FeaturesSection } from "@/components/sections/features-section";
 import { FAQSection, FAQItem } from "@/components/sections/faq-section";
 import { CTASection } from "@/components/sections/cta-section";
-import { Flame, Clock, Euro, Wrench, Shield, Thermometer, Sun, Check } from "lucide-react";
+import { Flame, Clock, Euro, Wrench, Shield, Thermometer, Sun, Check, BookOpen, MapPin } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ServiceSchema } from "@/components/schema/service-schema";
@@ -314,6 +314,67 @@ export default function HeizungPage() {
                 </Link>
               </Button>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Ratgeber & Tipps Section */}
+      <section className="py-16 bg-slate-50">
+        <div className="container">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 bg-[#0F5B78]/10 text-[#0F5B78] px-4 py-2 rounded-full text-sm font-medium mb-4">
+              <BookOpen className="h-4 w-4" />
+              Ratgeber & Tipps
+            </div>
+            <h2 className="text-3xl font-bold text-slate-900">
+              Ratgeber rund um Heizung & Heizsysteme
+            </h2>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <Link href="/blog/heizung-vergleich-2025-waermepumpe-gas-oel-pellets" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
+              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Heizungsvergleich 2025</h3>
+              <p className="text-slate-600 text-sm">Wärmepumpe vs. Gas vs. Öl vs. Pellets – alle Systeme im Vergleich.</p>
+            </Link>
+            <Link href="/blog/foerderung-heizung-2025" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
+              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Förderung Heizungstausch 2025</h3>
+              <p className="text-slate-600 text-sm">Bis zu 70% BEG-Förderung – alle Boni und Antragsschritte.</p>
+            </Link>
+            <Link href="/blog/heizung-entlueften-anleitung-2025" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
+              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Heizung entlüften: Anleitung</h3>
+              <p className="text-slate-600 text-sm">Schritt-für-Schritt Anleitung für optimale Heizleistung.</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Heizungsservice in Ihrer Nähe */}
+      <section className="py-16">
+        <div className="container">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 bg-[#0F5B78]/10 text-[#0F5B78] px-4 py-2 rounded-full text-sm font-medium mb-4">
+              <MapPin className="h-4 w-4" />
+              Standorte
+            </div>
+            <h2 className="text-3xl font-bold text-slate-900">
+              Heizungsservice in Ihrer Nähe
+            </h2>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <Link href="/standorte/augsburg" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100 text-center">
+              <MapPin className="h-8 w-8 text-[#0F5B78] mx-auto mb-3" />
+              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-1">Augsburg</h3>
+              <p className="text-slate-600 text-sm">Heizungsinstallation und Notdienst in Augsburg</p>
+            </Link>
+            <Link href="/standorte/ulm" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100 text-center">
+              <MapPin className="h-8 w-8 text-[#0F5B78] mx-auto mb-3" />
+              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-1">Ulm</h3>
+              <p className="text-slate-600 text-sm">Heizungsservice in Ulm und Neu-Ulm</p>
+            </Link>
+            <Link href="/standorte/memmingen" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100 text-center">
+              <MapPin className="h-8 w-8 text-[#0F5B78] mx-auto mb-3" />
+              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-1">Memmingen</h3>
+              <p className="text-slate-600 text-sm">Heizungsfachbetrieb in Memmingen und Allgäu</p>
+            </Link>
           </div>
         </div>
       </section>

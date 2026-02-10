@@ -10,7 +10,10 @@ import {
   Wrench,
   Clock,
   Shield,
+  BookOpen,
+  MapPin,
 } from "lucide-react";
+import Link from "next/link";
 import { ServiceSchema } from "@/components/schema/service-schema";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
 import { FAQSchema } from "@/components/schema/faq-schema";
@@ -261,6 +264,67 @@ export default function SanitaerPage() {
                 </li>
               </ol>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Ratgeber & Tipps Section */}
+      <section className="py-16 bg-slate-50">
+        <div className="container">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 bg-[#0F5B78]/10 text-[#0F5B78] px-4 py-2 rounded-full text-sm font-medium mb-4">
+              <BookOpen className="h-4 w-4" />
+              Ratgeber & Tipps
+            </div>
+            <h2 className="text-3xl font-bold text-slate-900">
+              Ratgeber rund um Bad & Sanitär
+            </h2>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <Link href="/blog/badsanierung-kosten-2025" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
+              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Badsanierung: Kosten 2025</h3>
+              <p className="text-slate-600 text-sm">Was kostet ein neues Bad? Preise, Spartipps und Förderung.</p>
+            </Link>
+            <Link href="/blog/barrierefreies-bad-planen-ratgeber" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
+              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Barrierefreies Bad planen</h3>
+              <p className="text-slate-600 text-sm">DIN-Normen, Ausstattung und Planungstipps für altersgerechte Bäder.</p>
+            </Link>
+            <Link href="/blog/barrierefreies-bad-kosten-planung-foerderung-2025" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
+              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Barrierefreies Bad: Kosten & Förderung</h3>
+              <p className="text-slate-600 text-sm">Alle Kosten und Fördermöglichkeiten für den barrierefreien Umbau.</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Sanitär-Service in Ihrer Nähe */}
+      <section className="py-16">
+        <div className="container">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 bg-[#0F5B78]/10 text-[#0F5B78] px-4 py-2 rounded-full text-sm font-medium mb-4">
+              <MapPin className="h-4 w-4" />
+              Standorte
+            </div>
+            <h2 className="text-3xl font-bold text-slate-900">
+              Sanitär-Service in Ihrer Nähe
+            </h2>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <Link href="/standorte/augsburg" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100 text-center">
+              <MapPin className="h-8 w-8 text-[#0F5B78] mx-auto mb-3" />
+              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-1">Augsburg</h3>
+              <p className="text-slate-600 text-sm">Badsanierung und Sanitär in Augsburg</p>
+            </Link>
+            <Link href="/standorte/ulm" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100 text-center">
+              <MapPin className="h-8 w-8 text-[#0F5B78] mx-auto mb-3" />
+              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-1">Ulm</h3>
+              <p className="text-slate-600 text-sm">Sanitärinstallation in Ulm und Neu-Ulm</p>
+            </Link>
+            <Link href="/standorte/memmingen" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100 text-center">
+              <MapPin className="h-8 w-8 text-[#0F5B78] mx-auto mb-3" />
+              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-1">Memmingen</h3>
+              <p className="text-slate-600 text-sm">Bad- und Sanitärexperte in Memmingen</p>
+            </Link>
           </div>
         </div>
       </section>

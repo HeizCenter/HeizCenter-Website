@@ -12,6 +12,8 @@ import {
   Wrench,
   Calculator,
   Sun,
+  BookOpen,
+  MapPin,
 } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -385,6 +387,67 @@ export default function WaermepumpePage() {
                 </Link>
               </Button>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Ratgeber & Tipps Section */}
+      <section className="py-16 bg-slate-50">
+        <div className="container">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 bg-[#0F5B78]/10 text-[#0F5B78] px-4 py-2 rounded-full text-sm font-medium mb-4">
+              <BookOpen className="h-4 w-4" />
+              Ratgeber & Tipps
+            </div>
+            <h2 className="text-3xl font-bold text-slate-900">
+              Wissenswertes rund um Wärmepumpen
+            </h2>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <Link href="/blog/waermepumpe-kosten-2025" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
+              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Wärmepumpe: Kosten & Förderung 2025</h3>
+              <p className="text-slate-600 text-sm">Aktuelle Preise, Fördermöglichkeiten und Wirtschaftlichkeitsberechnung.</p>
+            </Link>
+            <Link href="/blog/waermepumpe-altbau" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
+              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Wärmepumpe im Altbau</h3>
+              <p className="text-slate-600 text-sm">Voraussetzungen, Kosten und Tipps für die Nachrüstung.</p>
+            </Link>
+            <Link href="/blog/fussbodenheizung-kosten-vorteile-2025" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
+              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Fußbodenheizung: Das perfekte Duo</h3>
+              <p className="text-slate-600 text-sm">Warum Fußbodenheizung und Wärmepumpe ideal zusammenpassen.</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Wärmepumpe in Ihrer Nähe */}
+      <section className="py-16">
+        <div className="container">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 bg-[#0F5B78]/10 text-[#0F5B78] px-4 py-2 rounded-full text-sm font-medium mb-4">
+              <MapPin className="h-4 w-4" />
+              Standorte
+            </div>
+            <h2 className="text-3xl font-bold text-slate-900">
+              Wärmepumpe in Ihrer Nähe
+            </h2>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <Link href="/standorte/augsburg" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100 text-center">
+              <MapPin className="h-8 w-8 text-[#0F5B78] mx-auto mb-3" />
+              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-1">Augsburg</h3>
+              <p className="text-slate-600 text-sm">Wärmepumpen-Experte in Augsburg und Umgebung</p>
+            </Link>
+            <Link href="/standorte/ulm" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100 text-center">
+              <MapPin className="h-8 w-8 text-[#0F5B78] mx-auto mb-3" />
+              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-1">Ulm</h3>
+              <p className="text-slate-600 text-sm">Wärmepumpen-Service in Ulm und Neu-Ulm</p>
+            </Link>
+            <Link href="/standorte/memmingen" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100 text-center">
+              <MapPin className="h-8 w-8 text-[#0F5B78] mx-auto mb-3" />
+              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-1">Memmingen</h3>
+              <p className="text-slate-600 text-sm">Wärmepumpen im Allgäu und Unterallgäu</p>
+            </Link>
           </div>
         </div>
       </section>
