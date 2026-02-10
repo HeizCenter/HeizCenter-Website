@@ -132,8 +132,8 @@ interface LocationPhoneProps {
 export function LocationPhone({ location, variant = "compact" }: LocationPhoneProps) {
   const phones = {
     Augsburg: "+49 8234 9665900",
-    Ulm: "+49 731 234567",
-    Memmingen: "+49 8331 45678",
+    Ulm: "+49 8234 9665900",
+    Memmingen: "+49 8234 9665900",
   };
 
   const phone = phones[location];

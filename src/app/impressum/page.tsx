@@ -45,8 +45,8 @@ export default function ImpressumPage() {
         <section className="mb-8">
           <h3 className="text-xl font-bold mb-4">WhatsApp</h3>
           <p className="mb-2">
-            <a href="https://wa.me/4982349665901" className="text-[#0F5B78] hover:underline">
-              +49 823 49 665 901
+            <a href="https://wa.me/4982349665900" className="text-[#0F5B78] hover:underline">
+              +49 8234 9665900
             </a>
           </p>
         </section>

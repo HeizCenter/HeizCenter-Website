@@ -146,7 +146,7 @@ export function ContactForm({ initialMessage = "", initialSubject = "" }: Contac
           id="phone"
           type="tel"
           {...register("phone")}
-          placeholder="+49 8234 966590078"
+          placeholder="+49 8234 9665900"
           className={errors.phone ? "border-red-500" : ""}
         />
         {errors.phone && (
