@@ -1,3 +1,5 @@
+import { CONTACT } from '@/lib/config/contact';
+
 interface Review {
   author: string;
   rating: number;
@@ -25,7 +27,7 @@ export function ReviewSchema({
     "@id": "https://www.heizcenter.de/#organization",
     name: businessName,
     image: "https://www.heizcenter.de/images/logo.png",
-    telephone: "+4982349665900",
+    telephone: CONTACT.PHONE_SCHEMA,
     priceRange: "€€",
     address: {
       "@type": "PostalAddress",

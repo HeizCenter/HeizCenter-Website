@@ -7,6 +7,7 @@ import { Phone, Mail, MapPin, Clock, MessageSquare, FileText, AlertCircle, Messa
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { LocalBusinessSchema } from "@/components/schema/local-business-schema";
 import { useSearchParams } from "next/navigation";
+import { CONTACT } from "@/lib/config/contact";
 
 // Lazy load forms to reduce initial bundle size
 const ContactForm = dynamic(
@@ -151,11 +152,11 @@ export default function ContactPage() {
             </p>
             <div className="flex flex-wrap gap-4">
               <a
-                href="tel:+4982349665900"
+                href={`tel:${CONTACT.PHONE_LINK}`}
                 className="inline-flex items-center gap-2 bg-white text-[#0F5B78] px-6 py-3 rounded-lg font-bold hover:bg-[#FFCA28] hover:text-slate-900 transition-colors"
               >
                 <Phone className="h-5 w-5" />
-                +49 8234 9665900
+                {CONTACT.PHONE_DISPLAY}
               </a>
               <a
                 href="https://wa.me/4915111100331"
@@ -167,11 +168,11 @@ export default function ContactPage() {
                 WhatsApp
               </a>
               <a
-                href="mailto:service@heizcenter.de"
+                href={`mailto:${CONTACT.EMAIL}`}
                 className="inline-flex items-center gap-2 bg-white/20 text-white px-6 py-3 rounded-lg font-bold hover:bg-white/30 transition-colors border border-white/40"
               >
                 <Mail className="h-5 w-5" />
-                service@heizcenter.de
+                {CONTACT.EMAIL}
               </a>
             </div>
           </div>
@@ -193,19 +194,19 @@ export default function ContactPage() {
             <div className="flex items-start gap-2 text-sm text-slate-600 mb-2">
               <Phone className="h-4 w-4 mt-0.5 flex-shrink-0" />
               <a
-                href="tel:+4982349665900"
+                href={`tel:${CONTACT.PHONE_LINK}`}
                 className="hover:text-[#0F5B78] transition-colors"
               >
-                +49 8234 9665900
+                {CONTACT.PHONE_DISPLAY}
               </a>
             </div>
             <div className="flex items-start gap-2 text-sm text-slate-600 mb-2">
               <Mail className="h-4 w-4 mt-0.5 flex-shrink-0" />
               <a
-                href="mailto:service@heizcenter.de"
+                href={`mailto:${CONTACT.EMAIL}`}
                 className="hover:text-[#0F5B78] transition-colors"
               >
-                service@heizcenter.de
+                {CONTACT.EMAIL}
               </a>
             </div>
             <div className="flex items-start gap-2 text-sm text-slate-600">
@@ -238,19 +239,19 @@ export default function ContactPage() {
             <div className="flex items-start gap-2 text-sm text-slate-600 mb-2">
               <Phone className="h-4 w-4 mt-0.5 flex-shrink-0" />
               <a
-                href="tel:+4982349665900"
+                href={`tel:${CONTACT.PHONE_LINK}`}
                 className="hover:text-[#0F5B78] transition-colors"
               >
-                +49 8234 9665900
+                {CONTACT.PHONE_DISPLAY}
               </a>
             </div>
             <div className="flex items-start gap-2 text-sm text-slate-600 mb-2">
               <Mail className="h-4 w-4 mt-0.5 flex-shrink-0" />
               <a
-                href="mailto:service@heizcenter.de"
+                href={`mailto:${CONTACT.EMAIL}`}
                 className="hover:text-[#0F5B78] transition-colors"
               >
-                service@heizcenter.de
+                {CONTACT.EMAIL}
               </a>
             </div>
             <div className="flex items-start gap-2 text-sm text-slate-600">
@@ -277,19 +278,19 @@ export default function ContactPage() {
             <div className="flex items-start gap-2 text-sm text-slate-600 mb-2">
               <Phone className="h-4 w-4 mt-0.5 flex-shrink-0" />
               <a
-                href="tel:+4982349665900"
+                href={`tel:${CONTACT.PHONE_LINK}`}
                 className="hover:text-[#0F5B78] transition-colors"
               >
-                +49 8234 9665900
+                {CONTACT.PHONE_DISPLAY}
               </a>
             </div>
             <div className="flex items-start gap-2 text-sm text-slate-600 mb-2">
               <Mail className="h-4 w-4 mt-0.5 flex-shrink-0" />
               <a
-                href="mailto:service@heizcenter.de"
+                href={`mailto:${CONTACT.EMAIL}`}
                 className="hover:text-[#0F5B78] transition-colors"
               >
-                service@heizcenter.de
+                {CONTACT.EMAIL}
               </a>
             </div>
             <div className="flex items-start gap-2 text-sm text-slate-600">
@@ -399,8 +400,8 @@ export default function ContactPage() {
             provider: {
               "@type": "LocalBusiness",
               name: "HeizCenter GmbH",
-              telephone: "+49 8234 9665900",
-              email: "service@heizcenter.de",
+              telephone: CONTACT.PHONE_SCHEMA,
+              email: CONTACT.EMAIL,
               address: [
                 {
                   "@type": "PostalAddress",

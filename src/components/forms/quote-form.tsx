@@ -19,6 +19,7 @@ import {
 } from "@/components/ui/select";
 import { CheckCircle2, AlertCircle, Loader2, Calculator, ArrowRight, Pencil } from "lucide-react";
 import Link from "next/link";
+import { CONTACT } from "@/lib/config/contact";
 
 // Helper functions to map technical values to German labels
 const PUMP_TYPE_LABELS: Record<string, string> = {
@@ -266,7 +267,7 @@ export function QuoteForm(props: QuoteFormProps) {
           id="phone"
           type="tel"
           {...register("phone")}
-          placeholder="+49 8234 9665900"
+          placeholder={CONTACT.PHONE_DISPLAY}
           className={errors.phone ? "border-red-500" : ""}
         />
         {errors.phone && (

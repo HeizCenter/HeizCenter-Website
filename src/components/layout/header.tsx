@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, Phone, MessageCircle } from "lucide-react";
+import { CONTACT, getPhoneLink } from "@/lib/config/contact";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -44,9 +45,9 @@ export function Header() {
 
         {/* CTA Buttons - Right Side */}
         <div className="hidden md:flex items-center space-x-3 lg:space-x-4 ml-auto">
-          <a href="tel:+4982349665900" className="flex items-center gap-1.5 text-sm hover:text-[#0F5B78] transition-colors">
+          <a href={getPhoneLink()} className="flex items-center gap-1.5 text-sm hover:text-[#0F5B78] transition-colors">
             <Phone className="h-4 w-4" />
-            <span className="font-medium whitespace-nowrap">+49 8234 9665900</span>
+            <span className="font-medium whitespace-nowrap">{CONTACT.PHONE_DISPLAY}</span>
           </a>
           <a
             href="https://wa.me/4915111100331"
@@ -88,11 +89,11 @@ export function Header() {
                 ))}
                 <div className="pt-4 border-t">
                   <a
-                    href="tel:+4982349665900"
+                    href={getPhoneLink()}
                     className="flex items-center gap-2 text-lg font-medium mb-3"
                   >
                     <Phone className="h-5 w-5" />
-                    <span>+49 8234 9665900</span>
+                    <span>{CONTACT.PHONE_DISPLAY}</span>
                   </a>
                   <a
                     href="https://wa.me/4915111100331"

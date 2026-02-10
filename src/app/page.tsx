@@ -8,6 +8,7 @@ import { Flame, Droplet, Wind, Zap, Sun, Star, Award, Users } from "lucide-react
 import { LocalBusinessSchema } from "@/components/schema/local-business-schema";
 import { OrganizationSchema } from "@/components/schema/organization-schema";
 import { getCanonicalUrl } from "@/lib/seo";
+import { CONTACT } from "@/lib/config/contact";
 
 export const metadata: Metadata = {
   title: "HeizCenter - Wärmepumpen, Heizung & Sanitär in Bayern",
@@ -57,9 +58,9 @@ const services = [
 ];
 
 const locations = [
-  { name: "Bobingen", phone: "+49 8234 9665900" },
-  { name: "Klosterlechfeld", phone: "+49 8234 9665900" },
-  { name: "Gutenzell-Hürbel", phone: "+49 8234 9665900" },
+  { name: "Bobingen", phone: CONTACT.PHONE_DISPLAY },
+  { name: "Klosterlechfeld", phone: CONTACT.PHONE_DISPLAY },
+  { name: "Gutenzell-Hürbel", phone: CONTACT.PHONE_DISPLAY },
 ];
 
 const stats = [
@@ -218,7 +219,7 @@ export default function Home() {
                     {location.name}
                   </h3>
                   <a
-                    href={`tel:${location.phone}`}
+                    href={`tel:${CONTACT.PHONE_LINK}`}
                     className="text-[#0F5B78] hover:underline"
                   >
                     {location.phone}

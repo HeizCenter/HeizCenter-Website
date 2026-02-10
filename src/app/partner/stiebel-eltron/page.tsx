@@ -7,6 +7,7 @@ import Link from "next/link";
 import { Award, Zap, Shield, Thermometer, Snowflake, CheckCircle2 } from "lucide-react";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
 import { getCanonicalUrl } from "@/lib/seo";
+import { CONTACT } from "@/lib/config/contact";
 
 export const metadata: Metadata = {
   title: "Stiebel Eltron Wärmepumpen | HeizCenter Partner",
@@ -214,7 +215,7 @@ export default function StiebElEltronPage() {
         </div>
       </section>
 
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "Product", name: "Stiebel Eltron WPL Wärmepumpe", brand: { "@type": "Brand", name: "Stiebel Eltron" }, description: "Premium Wärmepumpen von Stiebel Eltron. Testsieger. Made in Germany. Installation durch HeizCenter.", category: "Wärmepumpe", offers: { "@type": "AggregateOffer", priceCurrency: "EUR", lowPrice: "21000", highPrice: "32000", availability: "https://schema.org/InStock", seller: { "@type": "LocalBusiness", name: "HeizCenter GmbH", telephone: "+49 8234 9665900" } }, aggregateRating: { "@type": "AggregateRating", ratingValue: "4.8", reviewCount: "60" }, manufacturer: { "@type": "Organization", name: "Stiebel Eltron GmbH & Co. KG", url: "https://www.stiebel-eltron.de" } }) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "Product", name: "Stiebel Eltron WPL Wärmepumpe", brand: { "@type": "Brand", name: "Stiebel Eltron" }, description: "Premium Wärmepumpen von Stiebel Eltron. Testsieger. Made in Germany. Installation durch HeizCenter.", category: "Wärmepumpe", offers: { "@type": "AggregateOffer", priceCurrency: "EUR", lowPrice: "21000", highPrice: "32000", availability: "https://schema.org/InStock", seller: { "@type": "LocalBusiness", name: "HeizCenter GmbH", telephone: CONTACT.PHONE_SCHEMA } }, aggregateRating: { "@type": "AggregateRating", ratingValue: "4.8", reviewCount: "60" }, manufacturer: { "@type": "Organization", name: "Stiebel Eltron GmbH & Co. KG", url: "https://www.stiebel-eltron.de" } }) }} />
     </>
   );
 }

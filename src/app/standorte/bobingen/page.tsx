@@ -12,6 +12,7 @@ import { LocationPageSchema } from "@/components/schema/local-business-schema";
 import { locationData } from "@/lib/location-data";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
 import { getCanonicalUrl } from "@/lib/seo";
+import { CONTACT } from '@/lib/config/contact';
 
 export const metadata: Metadata = {
   title:
@@ -99,7 +100,7 @@ const faqs: FAQItem[] = [
   {
     question: "Wo ist der HeizCenter Hauptstandort?",
     answer:
-      "Unser Hauptstandort befindet sich in der Lechallee 28, 86399 Bobingen. Von hier aus betreuen wir Augsburg und die gesamte Region mit kurzen Anfahrtswegen. Sie erreichen uns telefonisch unter +49 8234 9665900 oder per E-Mail an service@heizcenter.de.",
+      `Unser Hauptstandort befindet sich in der Lechallee 28, 86399 Bobingen. Von hier aus betreuen wir Augsburg und die gesamte Region mit kurzen Anfahrtswegen. Sie erreichen uns telefonisch unter ${CONTACT.PHONE_DISPLAY} oder per E-Mail an ${CONTACT.EMAIL}.`,
   },
   {
     question: "Was kostet eine Wärmepumpe in Bobingen?",
@@ -109,7 +110,7 @@ const faqs: FAQItem[] = [
   {
     question: "Wie schnell ist der Notdienst in Bobingen vor Ort?",
     answer:
-      "Unser 24/7 Heizungsnotdienst ist von unserem Hauptstandort in Bobingen besonders schnell bei Ihnen - in der Regel innerhalb von 30-60 Minuten. Bei Heizungsausfall, Rohrbruch oder Gasgeruch erreichen Sie uns rund um die Uhr unter +49 8234 9665900.",
+      `Unser 24/7 Heizungsnotdienst ist von unserem Hauptstandort in Bobingen besonders schnell bei Ihnen - in der Regel innerhalb von 30-60 Minuten. Bei Heizungsausfall, Rohrbruch oder Gasgeruch erreichen Sie uns rund um die Uhr unter ${CONTACT.PHONE_DISPLAY}.`,
   },
   {
     question: "Bieten Sie Wartungsverträge für Heizungen an?",
@@ -150,8 +151,8 @@ export default function BobingenPage() {
       <LocationHero
         name="Bobingen"
         address="Lechallee 28, 86399 Bobingen"
-        phone="+49 8234 9665900"
-        email="service@heizcenter.de"
+        phone={CONTACT.PHONE_DISPLAY}
+        email={CONTACT.EMAIL}
         description="Unser Hauptstandort in Bobingen - Ihr zuverlässiger Partner für Wärmepumpen, Heizung, Sanitär und Klimaanlagen in der Region Augsburg. Über 20 Jahre Erfahrung, schneller Service und faire Preise."
       />
 

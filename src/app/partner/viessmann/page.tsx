@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
 import { getCanonicalUrl } from "@/lib/seo";
+import { CONTACT } from "@/lib/config/contact";
 
 export const metadata: Metadata = {
   title: "Viessmann Wärmepumpen & Heizungen | HeizCenter Partner",
@@ -481,7 +482,7 @@ export default function ViessmannPage() {
               seller: {
                 "@type": "LocalBusiness",
                 name: "HeizCenter GmbH",
-                telephone: "+49 8234 9665900",
+                telephone: CONTACT.PHONE_SCHEMA,
               },
             },
             aggregateRating: {

@@ -8,6 +8,7 @@ import { LocationPageSchema } from "@/components/schema/local-business-schema";
 import { locationData } from "@/lib/location-data";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
 import { getCanonicalUrl } from "@/lib/seo";
+import { CONTACT } from '@/lib/config/contact';
 
 export const metadata: Metadata = {
   title: "HeizCenter Leutkirch - Wärmepumpe & Heizung",
@@ -56,7 +57,7 @@ export default function LeutkírchPage() {
         longitude={data.longitude}
         serviceCities={data.serviceCities}
       />
-      <LocationHero name="Leutkirch im Allgäu" address="Schlüsselbergstraße 5, 88484 Gutenzell-Hürbel" phone="+49 8234 9665900" email="service@heizcenter.de" description="HeizCenter Service für Leutkirch im Allgäu."
+      <LocationHero name="Leutkirch im Allgäu" address="Schlüsselbergstraße 5, 88484 Gutenzell-Hürbel" phone={CONTACT.PHONE_DISPLAY} email={CONTACT.EMAIL} description="HeizCenter Service für Leutkirch im Allgäu."
         mainLocation="Gutenzell-Hürbel" />
       <LocationServices services={services} title="Unsere Leistungen in Leutkirch" />
       <section className="container py-16">

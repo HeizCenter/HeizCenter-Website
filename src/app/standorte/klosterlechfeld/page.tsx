@@ -11,6 +11,7 @@ import { LocationPageSchema } from "@/components/schema/local-business-schema";
 import { locationData } from "@/lib/location-data";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
 import { getCanonicalUrl } from "@/lib/seo";
+import { CONTACT } from '@/lib/config/contact';
 
 export const metadata: Metadata = {
   title:
@@ -122,8 +123,8 @@ export default function KlosterlechfeldPage() {
       <LocationHero
         name="Klosterlechfeld"
         address="Schulstraße 40, 86836 Klosterlechfeld"
-        phone="+49 8234 9665900"
-        email="service@heizcenter.de"
+        phone={CONTACT.PHONE_DISPLAY}
+        email={CONTACT.EMAIL}
         description="Unser Standort in Klosterlechfeld - Ihr zuverlässiger Partner für Wärmepumpen, Heizung, Sanitär und Klimaanlagen in der Region zwischen Augsburg und Landsberg am Lech. Über 20 Jahre Erfahrung, schneller Service und faire Preise."
         badge="Kundenempfang & Besucherbüro"
       />

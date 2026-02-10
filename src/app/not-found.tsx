@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Home, Search, Phone } from "lucide-react";
+import { CONTACT } from "@/lib/config/contact";
 
 export default function NotFound() {
   return (
@@ -103,11 +104,11 @@ export default function NotFound() {
               <strong>Notfall?</strong> Wir sind 24/7 für Sie da:
             </p>
             <a
-              href="tel:+4982349665900"
+              href={`tel:${CONTACT.PHONE_LINK}`}
               className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-bold px-6 py-3 rounded-lg transition-colors"
             >
               <Phone className="h-5 w-5" />
-              +49 8234 9665900
+              {CONTACT.PHONE_DISPLAY}
             </a>
           </div>
         </div>

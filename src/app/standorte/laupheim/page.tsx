@@ -7,6 +7,7 @@ import { LocationPageSchema } from "@/components/schema/local-business-schema";
 import { locationData } from "@/lib/location-data";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
 import { getCanonicalUrl } from "@/lib/seo";
+import { CONTACT } from '@/lib/config/contact';
 
 export const metadata: Metadata = {
   title: "Wärmepumpe & Heizung Laupheim - HeizCenter | Ihr Fachbetrieb vor Ort",
@@ -85,7 +86,7 @@ export default function LaupheimPage() {
         subLocation="Laupheim"
         mainLocation="Gutenzell-Hürbel"
         mainLocationHref="/standorte/gutenzell-huerbel"
-        phone="+49 8234 9665900"
+        phone={CONTACT.PHONE_DISPLAY}
         description="Ihr zuverlässiger Partner für Wärmepumpen, Heizung, Sanitär und Klimaanlagen in Laupheim. Schneller Service vom HeizCenter Gutenzell-Hürbel - in 30 Minuten vor Ort."
       />
 

@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
 import { getCanonicalUrl } from "@/lib/seo";
+import { CONTACT } from "@/lib/config/contact";
 
 export const metadata: Metadata = {
   title: "AGB – Allgemeine Geschäftsbedingungen | HeizCenter",
@@ -40,8 +41,8 @@ export default function AGBPage() {
           <div className="mt-8 text-sm text-slate-600">
             <p>
               Bei Fragen zu unseren Geschäftsbedingungen kontaktieren Sie uns gerne unter{" "}
-              <a href="mailto:service@heizcenter.de" className="text-[#0F5B78] hover:underline">
-                service@heizcenter.de
+              <a href={`mailto:${CONTACT.EMAIL}`} className="text-[#0F5B78] hover:underline">
+                {CONTACT.EMAIL}
               </a>
             </p>
           </div>

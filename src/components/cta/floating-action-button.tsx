@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Phone, MessageCircle, Mail, X, Plus } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { getPhoneLink, getEmailLink, getWhatsAppLink } from "@/lib/config/contact";
 
 export function FloatingActionButton() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,19 +12,19 @@ export function FloatingActionButton() {
     {
       icon: <Phone className="h-5 w-5" />,
       label: "Anrufen",
-      href: "tel:+4982349665900",
+      href: getPhoneLink(),
       color: "bg-[#0F5B78] hover:bg-[#0F5B78]",
     },
     {
       icon: <MessageCircle className="h-5 w-5" />,
       label: "WhatsApp",
-      href: "https://wa.me/4982349665900",
+      href: getWhatsAppLink(),
       color: "bg-green-600 hover:bg-green-700",
     },
     {
       icon: <Mail className="h-5 w-5" />,
       label: "E-Mail",
-      href: "mailto:info@heizcenter.de",
+      href: getEmailLink(),
       color: "bg-orange-600 hover:bg-orange-700",
     },
   ];

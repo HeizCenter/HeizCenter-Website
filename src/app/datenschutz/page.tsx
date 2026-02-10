@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import { getCanonicalUrl } from "@/lib/seo";
+import { CONTACT } from "@/lib/config/contact";
 
 export const metadata: Metadata = {
   title: "Datenschutzerklärung | HeizCenter",
@@ -98,8 +99,8 @@ export default function DatenschutzPage() {
             <p className="font-bold">HeizCenter GmbH</p>
             <p>Lechallee 28</p>
             <p>86399 Bobingen</p>
-            <p className="mt-2">+49 8234 9665900</p>
-            <p>service@heizcenter.de</p>
+            <p className="mt-2">{CONTACT.PHONE_DISPLAY}</p>
+            <p>{CONTACT.EMAIL}</p>
           </div>
 
           <h3 className="text-2xl font-bold mb-4 mt-8">Widerruf Ihrer Einwilligung zur Datenverarbeitung</h3>

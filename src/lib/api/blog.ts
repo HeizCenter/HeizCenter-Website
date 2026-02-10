@@ -5,6 +5,8 @@
  * for use in the Next.js application.
  */
 
+import { CONTACT } from '@/lib/config/contact';
+
 // import { odooApi } from './odoo'; // TODO: Uncomment when Odoo API is ready
 
 export interface BlogPost {
@@ -485,7 +487,7 @@ function getMockBlogPosts(): BlogPost[] {
             <li class="flex gap-3"><span class="flex-shrink-0 w-6 h-6 bg-[#0F5B78] text-white rounded-full flex items-center justify-center text-sm font-bold">3</span><span><strong>Entscheidung</strong> – Sie entscheiden in Ruhe – ohne Verkaufsdruck</span></li>
           </ol>
           <div class="flex flex-col sm:flex-row gap-3">
-            <a href="tel:+49 8234 9665900" class="inline-flex items-center justify-center gap-2 bg-[#0F5B78] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#0D4A5F] transition-colors">📞 Jetzt Termin vereinbaren</a>
+            <a href="tel:${CONTACT.PHONE_LINK}" class="inline-flex items-center justify-center gap-2 bg-[#0F5B78] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#0D4A5F] transition-colors">📞 Jetzt Termin vereinbaren</a>
             <a href="/kontakt" class="inline-flex items-center justify-center gap-2 bg-white border border-slate-300 text-slate-700 px-6 py-3 rounded-lg font-medium hover:bg-slate-50 transition-colors">Online anfragen →</a>
           </div>
           <p class="text-sm text-slate-600 mt-4">✓ Die Beratung bleibt kostenlos – auch wenn Sie sich gegen eine Wärmepumpe entscheiden.</p>
@@ -754,7 +756,7 @@ function getMockBlogPosts(): BlogPost[] {
           <div class="bg-amber-50 border border-amber-200 rounded-lg p-4">
             <p class="font-bold text-amber-900 mb-2">Heizung über 25 Jahre</p>
             <p class="text-sm text-amber-800 mb-3">Handeln Sie proaktiv. Ein geplanter Austausch ist immer besser als ein Notfall im Januar.</p>
-            <a href="tel:+49 8234 9665900" class="text-sm text-amber-900 font-medium hover:underline">📞 Jetzt anrufen →</a>
+            <a href="tel:${CONTACT.PHONE_LINK}" class="text-sm text-amber-900 font-medium hover:underline">📞 Jetzt anrufen →</a>
           </div>
         </div>
 
@@ -775,7 +777,7 @@ function getMockBlogPosts(): BlogPost[] {
             <li class="flex items-start gap-2">✓ <span>Welche Heizung passt zu Ihrem Haus?</span></li>
           </ul>
           <div class="flex flex-col sm:flex-row gap-3">
-            <a href="tel:+49 8234 9665900" class="inline-flex items-center justify-center gap-2 bg-[#0F5B78] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#0D4A5F] transition-colors">📞 Jetzt anrufen</a>
+            <a href="tel:${CONTACT.PHONE_LINK}" class="inline-flex items-center justify-center gap-2 bg-[#0F5B78] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#0D4A5F] transition-colors">📞 Jetzt anrufen</a>
             <a href="/kontakt" class="inline-flex items-center justify-center gap-2 bg-white border border-slate-300 text-slate-700 px-6 py-3 rounded-lg font-medium hover:bg-slate-50 transition-colors">Online-Termin vereinbaren →</a>
           </div>
           <p class="text-sm text-slate-500 mt-4">Kostenlose Beratung – auch wenn Sie sich gegen eine neue Heizung entscheiden.</p>
@@ -1015,7 +1017,7 @@ function getMockBlogPosts(): BlogPost[] {
 
         <p>Nicht jeder hat 10.000-15.000 € auf der hohen Kante liegen. Kein Problem:</p>
 
-        <p>Der <strong>KfW-Kredit 261</strong> bietet zinsgünstige Darlehen bis 150.000 € pro Wohneinheit. Der Clou: Sie können den Kredit <em>zusätzlich</em> zum Zuschuss nutzen.</p>
+        <p>Der <strong>KfW-Ergänzungskredit 358/359</strong> bietet zinsgünstige Darlehen bis 120.000 € pro Wohneinheit für den Heizungstausch. Der Clou: Sie können den Kredit <em>zusätzlich</em> zum Zuschuss nutzen.</p>
 
         <p>In der Praxis heißt das: Sie bekommen den Zuschuss und finanzieren den Rest günstig. Die monatliche Rate liegt oft unter den eingesparten Heizkosten.</p>
 
@@ -1041,7 +1043,7 @@ function getMockBlogPosts(): BlogPost[] {
             <li class="flex items-start gap-2">✓ <span>Hilfe beim KfW-Portal</span></li>
           </ul>
           <div class="flex flex-col sm:flex-row gap-3">
-            <a href="tel:+49 8234 9665900" class="inline-flex items-center justify-center gap-2 bg-[#0F5B78] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#0D4A5F] transition-colors">📞 Jetzt anrufen</a>
+            <a href="tel:${CONTACT.PHONE_LINK}" class="inline-flex items-center justify-center gap-2 bg-[#0F5B78] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#0D4A5F] transition-colors">📞 Jetzt anrufen</a>
             <a href="/kontakt" class="inline-flex items-center justify-center gap-2 bg-white border border-slate-300 text-slate-700 px-6 py-3 rounded-lg font-medium hover:bg-slate-50 transition-colors">Kostenlose Beratung anfragen →</a>
           </div>
           <p class="text-sm text-slate-500 mt-4">Die Erstberatung ist kostenlos – auch wenn Sie sich danach gegen einen Wechsel entscheiden.</p>
@@ -1068,7 +1070,7 @@ function getMockBlogPosts(): BlogPost[] {
         <p>Die förderfähigen Kosten sind auf <strong>30.000 Euro</strong> pro Wohneinheit gedeckelt. Bei 70% Förderung ergibt das einen maximalen Zuschuss von <strong>21.000 Euro</strong>. Bei 50% Förderung sind es maximal 15.000 Euro Zuschuss. Wenn Ihre Investition höher liegt (z.B. 40.000 Euro), werden nur die ersten 30.000 Euro für die Förderberechnung herangezogen.</p>
 
         <h3>Kann ich die BEG-Förderung mit einem KfW-Kredit kombinieren?</h3>
-        <p><strong>Ja</strong>, das ist möglich. Sie können den BEG-Zuschuss mit dem zinsgünstigen KfW-Kredit 261 (bis zu 150.000 Euro) kombinieren. Der Zuschuss reduziert Ihre Investition, den Rest finanzieren Sie günstig. In der Praxis bedeutet das: Sie zahlen weniger Eigenkapital und die monatlichen Raten liegen oft unter den eingesparten Heizkosten.</p>
+        <p><strong>Ja</strong>, das ist möglich. Sie können den BEG-Zuschuss mit dem zinsgünstigen KfW-Ergänzungskredit 358/359 (bis zu 120.000 Euro pro Wohneinheit) kombinieren. Der Zuschuss reduziert Ihre Investition, den Rest finanzieren Sie günstig. In der Praxis bedeutet das: Sie zahlen weniger Eigenkapital und die monatlichen Raten liegen oft unter den eingesparten Heizkosten. Hinweis: Der KfW-Kredit 261 ist für Komplettsanierungen zum Effizienzhaus gedacht, nicht für den Einzelmaßnahmen-Heizungstausch.</p>
 
         <h3>Was passiert, wenn ich den Antrag erst nach Auftragsvergabe stelle?</h3>
         <p><strong>Dann verfällt der Förderanspruch komplett.</strong> Die KfW zahlt keinen Cent, wenn Sie den Vertrag vor Antragstellung unterschrieben haben. Angebote einholen ist erlaubt, aber unterschreiben Sie nichts, bevor die Fördernummer da ist. Lassen Sie sich von keinem Handwerker unter Druck setzen. Seriöse Fachbetriebe kennen diese Regel und halten sich daran.</p>
@@ -1378,8 +1380,8 @@ function getMockBlogPosts(): BlogPost[] {
           </div>
 
           <div class="flex flex-col sm:flex-row gap-3">
-            <a href="tel:+49 8234 9665900" class="inline-flex items-center justify-center gap-2 bg-white text-[#0F5B78] font-semibold px-5 py-3 rounded-lg hover:bg-slate-100 transition-colors">
-              <span>📞</span> +49 8234 9665900
+            <a href="tel:${CONTACT.PHONE_LINK}" class="inline-flex items-center justify-center gap-2 bg-white text-[#0F5B78] font-semibold px-5 py-3 rounded-lg hover:bg-slate-100 transition-colors">
+              <span>📞</span> ${CONTACT.PHONE_DISPLAY}
             </a>
             <a href="/kontakt" class="inline-flex items-center justify-center gap-2 bg-white/10 text-white font-semibold px-5 py-3 rounded-lg border border-white/30 hover:bg-white/20 transition-colors">
               Online-Anfrage →
@@ -1731,8 +1733,8 @@ function getMockBlogPosts(): BlogPost[] {
           <p class="text-white/90 mb-4">Wir beraten Sie ehrlich, welches System zu Ihrem Haus passt – Pellet, Wärmepumpe oder Hybrid. Kostenlose Vor-Ort-Beratung inkl. Förderberechnung.</p>
 
           <div class="flex flex-col sm:flex-row gap-3">
-            <a href="tel:+49 8234 9665900" class="inline-flex items-center justify-center gap-2 bg-white text-[#0F5B78] font-semibold px-5 py-3 rounded-lg hover:bg-slate-100 transition-colors">
-              <span>📞</span> +49 8234 9665900
+            <a href="tel:${CONTACT.PHONE_LINK}" class="inline-flex items-center justify-center gap-2 bg-white text-[#0F5B78] font-semibold px-5 py-3 rounded-lg hover:bg-slate-100 transition-colors">
+              <span>📞</span> ${CONTACT.PHONE_DISPLAY}
             </a>
             <a href="/kontakt" class="inline-flex items-center justify-center gap-2 bg-white/10 text-white font-semibold px-5 py-3 rounded-lg border border-white/30 hover:bg-white/20 transition-colors">
               Online-Anfrage →
@@ -1923,13 +1925,13 @@ function getMockBlogPosts(): BlogPost[] {
 
         <!-- Förderung Cards -->
         <div class="grid md:grid-cols-2 gap-4 my-8">
-          <div class="bg-green-50 border border-green-200 rounded-lg p-5">
-            <div class="text-green-800 font-semibold mb-2">KfW 455-B Zuschuss</div>
-            <div class="text-3xl font-bold text-green-700 mb-2">12,5%</div>
-            <ul class="text-sm text-green-800 space-y-1">
-              <li>• Max. 6.250 € bei 50.000 € Kosten</li>
-              <li>• Budget 2025: 150 Mio. € (verdoppelt!)</li>
-              <li>• Antrag VOR Baubeginn stellen</li>
+          <div class="bg-amber-50 border border-amber-200 rounded-lg p-5">
+            <div class="text-amber-800 font-semibold mb-2">KfW 455-B Zuschuss</div>
+            <div class="text-3xl font-bold text-amber-700 mb-2">Pausiert</div>
+            <ul class="text-sm text-amber-800 space-y-1">
+              <li>• Programm seit 01.01.2025 eingestellt</li>
+              <li>• Neuauflage ab Frühjahr 2026 geplant (50 Mio. € Budget)</li>
+              <li>• Aktuell: KfW-Kredit 159 (zinsgünstig, bis 50.000 €)</li>
             </ul>
           </div>
           <div class="bg-blue-50 border border-blue-200 rounded-lg p-5">
@@ -2077,8 +2079,8 @@ function getMockBlogPosts(): BlogPost[] {
             <a href="/kontakt" class="inline-flex items-center gap-2 bg-white text-[#0F5B78] px-5 py-2.5 rounded-lg font-medium hover:bg-slate-100 transition-colors">
               Beratungstermin vereinbaren
             </a>
-            <a href="tel:+49 8234 9665900" class="inline-flex items-center gap-2 border border-white/30 text-white px-5 py-2.5 rounded-lg font-medium hover:bg-white/10 transition-colors">
-              +49 8234 9665900
+            <a href="tel:${CONTACT.PHONE_LINK}" class="inline-flex items-center gap-2 border border-white/30 text-white px-5 py-2.5 rounded-lg font-medium hover:bg-white/10 transition-colors">
+              ${CONTACT.PHONE_DISPLAY}
             </a>
           </div>
         </div>
@@ -2095,7 +2097,7 @@ function getMockBlogPosts(): BlogPost[] {
         <p><strong>Ja</strong>, bei einem Einfamilienhaus mit zweitem WC ist das problemlos möglich. Bei nur einem Bad ist es unbequem, aber machbar – viele nutzen eine Camping-Dusche oder Nachbarn helfen aus. Die Handwerker arbeiten meist von 7-16 Uhr, danach haben Sie Ruhe. Staub und Lärm sind unvermeidbar, aber mit guter Abdeckung der Durchgänge bleibt der Rest des Hauses relativ sauber.</p>
 
         <h3>Welche Förderung gibt es für Badsanierung?</h3>
-        <p>Bei <strong>barrierefreiem Umbau</strong> erhalten Sie den KfW 455-B Zuschuss: <strong>12,5% der Kosten</strong>, maximal 6.250 Euro bei 50.000 Euro Investition. Das Budget 2025 wurde auf 150 Millionen Euro verdoppelt. Bei Pflegegrad zahlt die <strong>Pflegekasse bis zu 4.000 Euro</strong> pro Person (bei zwei Personen bis 8.000 Euro). Zusätzlich können Sie 20% der Handwerkerkosten steuerlich absetzen (max. 1.200 Euro/Jahr).</p>
+        <p>Das KfW-Zuschussprogramm 455-B (12,5%, max. 6.250 Euro) wurde zum 01.01.2025 eingestellt und soll ab Frühjahr 2026 mit 50 Mio. Euro Budget neu aufgelegt werden. Aktuell steht der <strong>KfW-Kredit 159</strong> (zinsgünstig, bis 50.000 Euro) für barrierefreie Umbauten zur Verfügung. Bei Pflegegrad zahlt die <strong>Pflegekasse bis zu 4.000 Euro</strong> pro Person (bei zwei Personen bis 8.000 Euro). Zusätzlich können Sie 20% der Handwerkerkosten steuerlich absetzen (max. 1.200 Euro/Jahr).</p>
 
         <h3>Was steigert den Immobilienwert am meisten?</h3>
         <p>Eine <strong>bodengleiche Dusche</strong> ist die beste Investition – sie macht das Bad modern, barrierefrei und größer wirkend. Auch wichtig: hochwertige Armaturen (fallen sofort auf), gute Beleuchtung und ein großzügiger Waschtisch. Ein neues Bad steigert den Immobilienwert um <strong>3-5%</strong>. Bei einem 300.000-Euro-Haus sind das 9.000-15.000 Euro – ein Großteil der Investition wird also zurückgeholt.</p>
@@ -2120,7 +2122,7 @@ function getMockBlogPosts(): BlogPost[] {
         { question: 'Was kostet eine Badsanierung 2025 pro Quadratmeter?', answer: 'Die Kosten liegen zwischen 900 und 3.500 Euro pro m², je nach Ausstattung und Umfang. Basis-Standard (funktional, einfache Materialien) kostet 900-1.300 Euro/m², mittlerer Standard mit hochwertigen Fliesen und bodengleicher Dusche 1.300-2.200 Euro/m², Luxus-Standard mit Naturstein und Smart-Funktionen 2.200-3.500 Euro/m². Wichtig: Wenn Leitungen erneuert werden müssen, wird es teurer.' },
         { question: 'Wie lange dauert eine Badsanierung?', answer: 'Die reine Bauzeit beträgt 10-25 Tage je nach Größe: Kleines Bad bis 6 m² dauert 10-14 Tage, mittlere Bäder (7-12 m²) 15-20 Tage, große Bäder über 12 m² etwa 20-25 Tage. Hinzu kommen Planungszeit (2-6 Wochen), Materialbestellung (4-6 Wochen) und Trocknungszeiten (1-2 Wochen). Planen Sie insgesamt 2-3 Monate von der ersten Planung bis zur Fertigstellung ein.' },
         { question: 'Kann ich während der Sanierung im Haus wohnen bleiben?', answer: 'Ja, bei einem Einfamilienhaus mit zweitem WC ist das problemlos möglich. Bei nur einem Bad ist es unbequem, aber machbar – viele nutzen eine Camping-Dusche oder Nachbarn helfen aus. Die Handwerker arbeiten meist von 7-16 Uhr, danach haben Sie Ruhe. Staub und Lärm sind unvermeidbar, aber mit guter Abdeckung der Durchgänge bleibt der Rest des Hauses relativ sauber.' },
-        { question: 'Welche Förderung gibt es für Badsanierung?', answer: 'Bei barrierefreiem Umbau erhalten Sie den KfW 455-B Zuschuss: 12,5% der Kosten, maximal 6.250 Euro bei 50.000 Euro Investition. Das Budget 2025 wurde auf 150 Millionen Euro verdoppelt. Bei Pflegegrad zahlt die Pflegekasse bis zu 4.000 Euro pro Person (bei zwei Personen bis 8.000 Euro). Zusätzlich können Sie 20% der Handwerkerkosten steuerlich absetzen (max. 1.200 Euro/Jahr).' },
+        { question: 'Welche Förderung gibt es für Badsanierung?', answer: 'Das KfW-Zuschussprogramm 455-B (12,5%, max. 6.250 Euro) wurde zum 01.01.2025 eingestellt und soll ab Frühjahr 2026 mit 50 Mio. Euro Budget neu aufgelegt werden. Aktuell steht der KfW-Kredit 159 (zinsgünstig, bis 50.000 Euro) für barrierefreie Umbauten zur Verfügung. Bei Pflegegrad zahlt die Pflegekasse bis zu 4.000 Euro pro Person (bei zwei Personen bis 8.000 Euro). Zusätzlich können Sie 20% der Handwerkerkosten steuerlich absetzen (max. 1.200 Euro/Jahr).' },
         { question: 'Was steigert den Immobilienwert am meisten?', answer: 'Eine bodengleiche Dusche ist die beste Investition – sie macht das Bad modern, barrierefrei und größer wirkend. Auch wichtig: hochwertige Armaturen (fallen sofort auf), gute Beleuchtung und ein großzügiger Waschtisch. Ein neues Bad steigert den Immobilienwert um 3-5%. Bei einem 300.000-Euro-Haus sind das 9.000-15.000 Euro – ein Großteil der Investition wird also zurückgeholt.' },
         { question: 'Welche Fliesen sind 2025 am besten?', answer: 'Feinsteinzeug in Holz- oder Natursteinoptik ist der aktuelle Standard. Es sieht aus wie Marmor oder Parkett, kostet aber nur ein Drittel und ist deutlich pflegeleichter. Großformate (60x120 cm oder größer) sind modern und reduzieren Fugen. Empfehlung: Rutschfeste Fliesen mit R10 oder R11 für Dusche und Boden. Fliesen mit 30x60 cm kosten ab 20 Euro/m², Großformate ab 40 Euro/m².' },
         { question: 'Was sind versteckte Kosten bei Badsanierung?', answer: 'Häufige Zusatzkosten, die erst beim Abriss sichtbar werden: Schimmel hinter Fliesen (500-2.000 Euro Sanierung), marode Rohre (1.000-3.000 Euro für neue Leitungen), nicht normkonforme Elektrik (800-1.500 Euro Nachrüstung) und beschädigter Estrich (1.000-2.500 Euro). Planen Sie daher 15-20% Puffer ein. Bei einem 15.000-Euro-Bad also 2.500-3.000 Euro Reserve.' },
@@ -2439,8 +2441,8 @@ function getMockBlogPosts(): BlogPost[] {
             <a href="/kontakt" class="inline-flex items-center gap-2 bg-white text-[#0F5B78] px-5 py-2.5 rounded-lg font-medium hover:bg-slate-100 transition-colors">
               Beratungstermin buchen
             </a>
-            <a href="tel:+49 8234 9665900" class="inline-flex items-center gap-2 border border-white/30 text-white px-5 py-2.5 rounded-lg font-medium hover:bg-white/10 transition-colors">
-              +49 8234 9665900
+            <a href="tel:${CONTACT.PHONE_LINK}" class="inline-flex items-center gap-2 border border-white/30 text-white px-5 py-2.5 rounded-lg font-medium hover:bg-white/10 transition-colors">
+              ${CONTACT.PHONE_DISPLAY}
             </a>
           </div>
         </div>
@@ -2796,8 +2798,8 @@ function getMockBlogPosts(): BlogPost[] {
           <h4>Jetzt barrierefreies Bad planen lassen!</h4>
           <p>Vereinbaren Sie einen kostenlosen Beratungstermin. Wir prüfen Ihre Fördermöglichkeiten und erstellen ein individuelles Konzept für Ihr barrierefreies Badezimmer.</p>
           <p>
-            <strong>☎ Telefon:</strong> <a href="tel:+4982349665900">+49 8234 9665900</a><br>
-            <strong>📧 E-Mail:</strong> <a href="mailto:service@heizcenter.de">service@heizcenter.de</a>
+            <strong>☎ Telefon:</strong> <a href="tel:${CONTACT.PHONE_LINK}">${CONTACT.PHONE_DISPLAY}</a><br>
+            <strong>📧 E-Mail:</strong> <a href="mailto:${CONTACT.EMAIL}">${CONTACT.EMAIL}</a>
           </p>
         </div>
 
@@ -3155,8 +3157,8 @@ function getMockBlogPosts(): BlogPost[] {
           <h4>Kostenlose Machbarkeits-Prüfung für Ihr Haus</h4>
           <p>Unsicher, ob eine Wärmepumpe bei Ihnen funktioniert? Wir kommen vorbei, prüfen alles vor Ort und beraten Sie ehrlich – auch wenn das Ergebnis „Wärmepumpe macht hier keinen Sinn" lautet. Kostenfrei und unverbindlich.</p>
           <p>
-            <strong>Telefon:</strong> <a href="tel:+4982349665900">+49 8234 9665900</a> (Mo-Do 8-17 Uhr, Fr 8-14 Uhr)<br>
-            <strong>E-Mail:</strong> <a href="mailto:service@heizcenter.de">service@heizcenter.de</a>
+            <strong>Telefon:</strong> <a href="tel:${CONTACT.PHONE_LINK}">${CONTACT.PHONE_DISPLAY}</a> (Mo-Do 8-17 Uhr, Fr 8-14 Uhr)<br>
+            <strong>E-Mail:</strong> <a href="mailto:${CONTACT.EMAIL}">${CONTACT.EMAIL}</a>
           </p>
           <p class="cta-locations">📍 <strong>Unsere Standorte:</strong> Bobingen (Augsburg) · Gutenzell-Hürbel (Ulm/Memmingen) · Klosterlechfeld</p>
         </div>
@@ -3342,8 +3344,8 @@ function getMockBlogPosts(): BlogPost[] {
           <p><strong>Kein Kleingedrucktes. Keine versteckten Kosten. Nur klare Ansagen.</strong></p>
 
           <p>
-            <strong>Telefon:</strong> <a href="tel:+4982349665900">+49 8234 9665900</a> (Mo-Do 8-17 Uhr, Fr 8-14 Uhr)<br>
-            <strong>E-Mail:</strong> <a href="mailto:service@heizcenter.de">service@heizcenter.de</a>
+            <strong>Telefon:</strong> <a href="tel:${CONTACT.PHONE_LINK}">${CONTACT.PHONE_DISPLAY}</a> (Mo-Do 8-17 Uhr, Fr 8-14 Uhr)<br>
+            <strong>E-Mail:</strong> <a href="mailto:${CONTACT.EMAIL}">${CONTACT.EMAIL}</a>
           </p>
           <p class="cta-locations">📍 <strong>Standorte:</strong> Bobingen (Augsburg) · Gutenzell-Hürbel (Ulm/Memmingen) · Klosterlechfeld</p>
         </div>
@@ -3378,8 +3380,8 @@ function getMockBlogPosts(): BlogPost[] {
           <span class="callout-icon">✓</span>
           <div class="callout-title">Der nächste Schritt</div>
           <div class="callout-content">
-            <p>Rufen Sie uns an: <strong><a href="tel:+4982349665900">+49 8234 9665900</a></strong></p>
-            <p>Oder schreiben Sie uns: <strong><a href="mailto:service@heizcenter.de">service@heizcenter.de</a></strong></p>
+            <p>Rufen Sie uns an: <strong><a href="tel:${CONTACT.PHONE_LINK}">${CONTACT.PHONE_DISPLAY}</a></strong></p>
+            <p>Oder schreiben Sie uns: <strong><a href="mailto:${CONTACT.EMAIL}">${CONTACT.EMAIL}</a></strong></p>
             <p>Wir kommen vorbei, schauen uns Ihr Haus an und sagen Ihnen ehrlich, was Sinn macht. Versprochen.</p>
           </div>
         </div>
@@ -3467,11 +3469,11 @@ function getMockBlogPosts(): BlogPost[] {
             </tr>
             <tr>
               <td style="padding: 10px; border: 1px solid #ddd;"><strong>Bestandsgebäude in Großstädten (>100.000 EW)</strong></td>
-              <td style="padding: 10px; border: 1px solid #ddd;">Ab 1. Juli 2026 (nach Wärmeplanung)</td>
+              <td style="padding: 10px; border: 1px solid #ddd;">Spätestens 30. Juni 2026 (nach Wärmeplanung)</td>
             </tr>
             <tr style="background-color: #f8f9fa;">
               <td style="padding: 10px; border: 1px solid #ddd;"><strong>Bestandsgebäude in kleineren Städten</strong></td>
-              <td style="padding: 10px; border: 1px solid #ddd;">Ab 1. Juli 2028 (nach Wärmeplanung)</td>
+              <td style="padding: 10px; border: 1px solid #ddd;">Spätestens 30. Juni 2028 (nach Wärmeplanung)</td>
             </tr>
             <tr>
               <td style="padding: 10px; border: 1px solid #ddd;"><strong>Neubau außerhalb Neubaugebiet</strong></td>
@@ -3732,8 +3734,8 @@ function getMockBlogPosts(): BlogPost[] {
           <h4>Persönliche Beratung bei HeizCenter</h4>
           <p>Sie sind unsicher, welche Heizung die richtige für Ihr Haus ist? Unsere Experten beraten Sie kostenlos und unverbindlich zu allen Optionen, Förderungen und der konkreten Umsetzung in Ihrem Gebäude.</p>
           <p>
-            <strong>Telefon:</strong> <a href="tel:+4982349665900">+49 8234 9665900</a><br>
-            <strong>E-Mail:</strong> <a href="mailto:service@heizcenter.de">service@heizcenter.de</a>
+            <strong>Telefon:</strong> <a href="tel:${CONTACT.PHONE_LINK}">${CONTACT.PHONE_DISPLAY}</a><br>
+            <strong>E-Mail:</strong> <a href="mailto:${CONTACT.EMAIL}">${CONTACT.EMAIL}</a>
           </p>
         </div>
 
@@ -3827,7 +3829,7 @@ function getMockBlogPosts(): BlogPost[] {
             <tr>
               <td style="padding: 10px; border: 1px solid #ddd;"><strong>Gasheizung</strong></td>
               <td style="padding: 10px; border: 1px solid #ddd;">Erdgas</td>
-              <td style="padding: 10px; border: 1px solid #ddd;">❌ Nein (nur Übergang bis 2029)</td>
+              <td style="padding: 10px; border: 1px solid #ddd;">❌ Nein (ab 2029: 15% Bio-Anteil, stufenweise bis 100% in 2045)</td>
             </tr>
             <tr style="background-color: #f8f9fa;">
               <td style="padding: 10px; border: 1px solid #ddd;"><strong>Ölheizung</strong></td>
@@ -3961,7 +3963,7 @@ function getMockBlogPosts(): BlogPost[] {
           <li>Wärmepumpe & Pellets: <strong>0 € CO₂-Steuer</strong></li>
         </ul>
 
-        <p>Ab 2026 steigt der CO₂-Preis auf 55–65 €/Tonne, ab 2027 wird er marktbasiert und könnte deutlich höher liegen – <strong>Gas wird jedes Jahr teurer!</strong></p>
+        <p>2026 und 2027 liegt der CO₂-Preis im Korridor von 55–65 €/Tonne (Versteigerung). Erst danach könnte er rein marktbasiert und deutlich höher liegen – <strong>Gas wird jedes Jahr teurer!</strong></p>
 
         <h2>⚡ Effizienz und Wirkungsgrad: Die technischen Fakten</h2>
 
@@ -3981,7 +3983,7 @@ function getMockBlogPosts(): BlogPost[] {
 
         <ul>
           <li><strong>Gasheizung (Brennwert):</strong> 98% Wirkungsgrad</li>
-          <li><strong>Ölheizung (Brennwert):</strong> 96–98% Wirkungsgrad</li>
+          <li><strong>Ölheizung (Brennwert):</strong> 90–95% Wirkungsgrad</li>
           <li><strong>Pelletheizung:</strong> 90–95% Wirkungsgrad</li>
         </ul>
 
@@ -4069,7 +4071,7 @@ function getMockBlogPosts(): BlogPost[] {
           </tbody>
         </table>
 
-        <p><strong>Vorteil Wärmepumpe:</strong> Kein Schornsteinfeger nötig (spart 50–100 €/Jahr), keine Abgasmessung, weniger mechanischer Verschleiß.</p>
+        <p><strong>Vorteil Wärmepumpe:</strong> Bei reiner Wärmepumpe kein Schornsteinfeger nötig (spart 50–100 €/Jahr), keine Abgasmessung, weniger mechanischer Verschleiß. Hinweis: Bei Hybrid-Systemen (WP + Gas) bleibt die Schornsteinfeger-Pflicht für den Gas-Anteil bestehen.</p>
 
         <h2>Vor- und Nachteile im direkten Vergleich</h2>
 
@@ -4323,8 +4325,8 @@ function getMockBlogPosts(): BlogPost[] {
           <h4>Kostenlose Heizungsberatung bei HeizCenter</h4>
           <p>Unsere Experten analysieren Ihr Gebäude, berechnen die genauen Kosten für alle Systeme und unterstützen Sie bei der Förderbeantragung. Profitieren Sie von unserer langjährigen Erfahrung.</p>
           <p>
-            <strong>Telefon:</strong> <a href="tel:+4982349665900">+49 8234 9665900</a><br>
-            <strong>E-Mail:</strong> <a href="mailto:service@heizcenter.de">service@heizcenter.de</a>
+            <strong>Telefon:</strong> <a href="tel:${CONTACT.PHONE_LINK}">${CONTACT.PHONE_DISPLAY}</a><br>
+            <strong>E-Mail:</strong> <a href="mailto:${CONTACT.EMAIL}">${CONTACT.EMAIL}</a>
           </p>
         </div>
 
@@ -4742,8 +4744,8 @@ function getMockBlogPosts(): BlogPost[] {
       <h4>Sie möchten Ihre Nachtspeicherheizung ersetzen?</h4>
       <p>Wir beraten Sie kostenlos zu den besten Alternativen, kalkulieren Ihre Förderung und erstellen ein maßgeschneidertes Angebot.</p>
       <p>
-        <strong>Telefon:</strong> <a href="tel:+4982349665900">+49 8234 9665900</a><br>
-        <strong>E-Mail:</strong> <a href="mailto:service@heizcenter.de">service@heizcenter.de</a>
+        <strong>Telefon:</strong> <a href="tel:${CONTACT.PHONE_LINK}">${CONTACT.PHONE_DISPLAY}</a><br>
+        <strong>E-Mail:</strong> <a href="mailto:${CONTACT.EMAIL}">${CONTACT.EMAIL}</a>
       </p>
     </div>
 
@@ -5326,8 +5328,8 @@ function getMockBlogPosts(): BlogPost[] {
       <h4>Fußbodenheizung perfekt mit Wärmepumpe kombinieren?</h4>
       <p>Wir planen Ihre ideale Heizlösung – von der Beratung über Förderantrag bis zur Installation. Profitieren Sie von bis zu 70% BEG-Förderung!</p>
       <p>
-        <strong>Telefon:</strong> <a href="tel:+4982349665900">+49 8234 9665900</a><br>
-        <strong>E-Mail:</strong> <a href="mailto:service@heizcenter.de">service@heizcenter.de</a>
+        <strong>Telefon:</strong> <a href="tel:${CONTACT.PHONE_LINK}">${CONTACT.PHONE_DISPLAY}</a><br>
+        <strong>E-Mail:</strong> <a href="mailto:${CONTACT.EMAIL}">${CONTACT.EMAIL}</a>
       </p>
     </div>
 
@@ -5761,8 +5763,8 @@ function getMockBlogPosts(): BlogPost[] {
       <h4>Probleme mit Ihrer Heizung?</h4>
       <p>Unsere Heizungsexperten helfen bei hartnäckigen Problemen, Wartung und Optimierung Ihres Heizsystems.</p>
       <p>
-        <strong>Telefon:</strong> <a href="tel:+4982349665900">+49 8234 9665900</a><br>
-        <strong>E-Mail:</strong> <a href="mailto:service@heizcenter.de">service@heizcenter.de</a>
+        <strong>Telefon:</strong> <a href="tel:${CONTACT.PHONE_LINK}">${CONTACT.PHONE_DISPLAY}</a><br>
+        <strong>E-Mail:</strong> <a href="mailto:${CONTACT.EMAIL}">${CONTACT.EMAIL}</a>
       </p>
     </div>
 
@@ -6307,8 +6309,8 @@ function getMockBlogPosts(): BlogPost[] {
         <h4>Kostenlose Beratung vereinbaren</h4>
         <p>Unsere Heizungs-Experten beraten Sie herstellerunabhängig zu Wärmepumpen, Hybridlösungen und Förderung.</p>
         <p>
-          <strong>Telefon:</strong> <a href="tel:+4982349665900">+49 8234 9665900</a><br>
-          <strong>E-Mail:</strong> <a href="mailto:service@heizcenter.de">service@heizcenter.de</a>
+          <strong>Telefon:</strong> <a href="tel:${CONTACT.PHONE_LINK}">${CONTACT.PHONE_DISPLAY}</a><br>
+          <strong>E-Mail:</strong> <a href="mailto:${CONTACT.EMAIL}">${CONTACT.EMAIL}</a>
         </p>
       </div>
       `,
@@ -6828,8 +6830,8 @@ function getMockBlogPosts(): BlogPost[] {
         <h4>Kostenlose Beratung vereinbaren</h4>
         <p>Unsere Experten beraten Sie herstellerunabhängig zu Wärmepumpen, Pelletheizungen und Hybrid-Lösungen.</p>
         <p>
-          <strong>Telefon:</strong> <a href="tel:+4982349665900">+49 8234 9665900</a><br>
-          <strong>E-Mail:</strong> <a href="mailto:service@heizcenter.de">service@heizcenter.de</a>
+          <strong>Telefon:</strong> <a href="tel:${CONTACT.PHONE_LINK}">${CONTACT.PHONE_DISPLAY}</a><br>
+          <strong>E-Mail:</strong> <a href="mailto:${CONTACT.EMAIL}">${CONTACT.EMAIL}</a>
         </p>
       </div>
       `,
@@ -7243,8 +7245,8 @@ function getMockBlogPosts(): BlogPost[] {
         <h4>Kostenlose Beratung vereinbaren</h4>
         <p>Unsere Klimatechnik-Experten beraten Sie zu Split-, Multisplit- und VRF-Systemen.</p>
         <p>
-          <strong>Telefon:</strong> <a href="tel:+4982349665900">+49 8234 9665900</a><br>
-          <strong>E-Mail:</strong> <a href="mailto:service@heizcenter.de">service@heizcenter.de</a>
+          <strong>Telefon:</strong> <a href="tel:${CONTACT.PHONE_LINK}">${CONTACT.PHONE_DISPLAY}</a><br>
+          <strong>E-Mail:</strong> <a href="mailto:${CONTACT.EMAIL}">${CONTACT.EMAIL}</a>
         </p>
       </div>
       `,
@@ -7803,8 +7805,8 @@ function getMockBlogPosts(): BlogPost[] {
       <h4>Jetzt kostenlose Beratung vereinbaren</h4>
       <p>Unsere Sanitär-Experten planen Ihr barrierefreies Traumbad – inklusive Fördermittelcheck.</p>
       <p>
-        <strong>Telefon:</strong> <a href="tel:+4982349665900">+49 8234 9665900</a><br>
-        <strong>E-Mail:</strong> <a href="mailto:service@heizcenter.de">service@heizcenter.de</a>
+        <strong>Telefon:</strong> <a href="tel:${CONTACT.PHONE_LINK}">${CONTACT.PHONE_DISPLAY}</a><br>
+        <strong>E-Mail:</strong> <a href="mailto:${CONTACT.EMAIL}">${CONTACT.EMAIL}</a>
       </p>
     </div>
 
@@ -8324,7 +8326,7 @@ function getMockBlogPosts(): BlogPost[] {
         <p><strong>Flachkollektoren:</strong></p>
         <ul>
           <li>Solar Keymark Zertifizierung</li>
-          <li>Mindestkollektorfläche: 7 m² Bruttokollektorfläche</li>
+          <li>Mindestkollektorfläche: 7 m² Bruttokollektorfläche (BEG EM TMA)</li>
           <li>Ausrichtung: Südwest bis Südost (Abweichung max. 45°)</li>
           <li>Neigung: 20° bis 70° zur Horizontalen</li>
         </ul>
@@ -8332,7 +8334,7 @@ function getMockBlogPosts(): BlogPost[] {
         <p><strong>Röhrenkollektoren:</strong></p>
         <ul>
           <li>Solar Keymark Zertifizierung</li>
-          <li>Mindestkollektorfläche: 5 m² Aperturfläche</li>
+          <li>Mindestkollektorfläche: 7 m² Aperturfläche (BEG EM TMA)</li>
           <li>Gleiche Ausrichtungs- und Neigungsanforderungen</li>
         </ul>
 
@@ -8365,7 +8367,7 @@ function getMockBlogPosts(): BlogPost[] {
 
         <h3>Schritt 2: Online-Antrag stellen</h3>
         <ol>
-          <li><strong>Registrierung:</strong> Auf <a href="https://www.bafa.de">www.bafa.de</a> registrieren</li>
+          <li><strong>Registrierung:</strong> Im <a href="https://www.kfw.de">KfW-Zuschussportal</a> registrieren (seit 2024 über KfW, nicht mehr BAFA)</li>
           <li><strong>Antrag ausfüllen:</strong> Alle erforderlichen Angaben eintragen</li>
           <li><strong>Dokumente hochladen:</strong>
             <ul>
@@ -8411,7 +8413,7 @@ function getMockBlogPosts(): BlogPost[] {
 
         <h3>Schritt 6: Auszahlung</h3>
         <ul>
-          <li><strong>Prüfung:</strong> BAFA prüft Verwendungsnachweis (2-6 Wochen)</li>
+          <li><strong>Prüfung:</strong> KfW prüft Verwendungsnachweis (2-6 Wochen)</li>
           <li><strong>Auszahlung:</strong> Überweisung auf angegebenes Konto</li>
           <li><strong>Abschluss:</strong> Bestätigung der Förderabwicklung</li>
         </ul>
@@ -8429,7 +8431,7 @@ function getMockBlogPosts(): BlogPost[] {
         <p><strong>Lösung:</strong> Checkliste abarbeiten, alle Dokumente vor Antrag bereitstellen</p>
 
         <h3>Fehler 3: Falsche Kollektorgröße</h3>
-        <p><strong>Problem:</strong> Unterschreitung der Mindestkollektorfläche (7 m² bzw. 5 m²)</p>
+        <p><strong>Problem:</strong> Unterschreitung der Mindestkollektorfläche (7 m² Flach bzw. 7 m² Röhren)</p>
         <p><strong>Folge:</strong> Anlage nicht förderfähig</p>
         <p><strong>Lösung:</strong> Fachbetrieb auf Mindestanforderungen hinweisen</p>
 
@@ -8440,20 +8442,20 @@ function getMockBlogPosts(): BlogPost[] {
 
         <h2>Kombination mit anderen Förderungen</h2>
 
-        <h3>BAFA + KfW kombinieren</h3>
-        <p>Die BAFA-Förderung für Einzelmaßnahmen kann mit KfW-Förderprogrammen kombiniert werden:</p>
+        <h3>KfW-Förderung kombinieren</h3>
+        <p>Die KfW-Heizungsförderung (Zuschuss) kann mit weiteren Programmen kombiniert werden:</p>
 
-        <p><strong>KfW 261/262: Wohngebäude-Kredit</strong></p>
+        <p><strong>KfW-Ergänzungskredit 358/359</strong></p>
         <ul>
-          <li>Kredit für energetische Gesamtsanierung</li>
-          <li>Kombination mit BAFA-Einzelmaßnahme möglich</li>
-          <li>Zinsvorteil statt Tilgungszuschuss bei Kombination</li>
+          <li>Zinsgünstiger Kredit bis 120.000 € pro Wohneinheit</li>
+          <li>Kombination mit KfW-Zuschuss für Heizungstausch möglich</li>
+          <li>Besonders günstig bei Haushaltseinkommen unter 90.000 €</li>
         </ul>
 
         <p><strong>Nicht kombinierbar:</strong></p>
         <ul>
-          <li>KfW 458: Zuschuss Erneuerbare Energien (wurde zum 31.12.2023 eingestellt)</li>
           <li>Doppelförderung für dieselbe Maßnahme ist ausgeschlossen</li>
+          <li>Steuerbonus §35c nicht mit KfW-Zuschuss kombinierbar</li>
         </ul>
 
         <h3>Regionale Förderprogramme</h3>
@@ -8466,7 +8468,7 @@ function getMockBlogPosts(): BlogPost[] {
 
         <p><strong>Baden-Württemberg:</strong></p>
         <ul>
-          <li>L-Bank: Ergänzungskredit zu BAFA möglich</li>
+          <li>L-Bank: Ergänzungskredit zur KfW-Förderung möglich</li>
         </ul>
 
         <p><strong>Nordrhein-Westfalen:</strong></p>
@@ -8516,7 +8518,7 @@ function getMockBlogPosts(): BlogPost[] {
           <li>Amortisation: 11,4 Jahre</li>
         </ul>
 
-        <h2>Zukunft der BAFA-Förderung</h2>
+        <h2>Zukunft der KfW-Förderung</h2>
 
         <h3>Geplante Änderungen</h3>
         <ul>
@@ -8538,7 +8540,7 @@ function getMockBlogPosts(): BlogPost[] {
 
         <p>Solarthermieanlagen haben bisher nur einen kleinen Teil dieser Mittel in Anspruch genommen, sodass ausreichend Budget verfügbar ist.</p>
 
-        <blockquote class="my-8 p-6 bg-slate-50 border-l-4 border-[#0F5B78] rounded-r"><p class="font-semibold text-lg mb-2">Fazit</p><p class="text-slate-700">Die BAFA-Förderung macht Solarthermieanlagen 2025 extrem attraktiv. Mit bis zu 70% Zuschuss amortisiert sich die Investition je nach Konstellation bereits nach 7-12 Jahren. Der Geschwindigkeitsbonus läuft 2028 aus – wer jetzt plant, profitiert maximal. Besonders lohnend ist die Kombination von Solarthermie mit Wärmepumpen beim Heizungstausch. Wichtig: Antrag immer VOR Beauftragung stellen und alle technischen Mindestanforderungen einhalten.</p></blockquote>
+        <blockquote class="my-8 p-6 bg-slate-50 border-l-4 border-[#0F5B78] rounded-r"><p class="font-semibold text-lg mb-2">Fazit</p><p class="text-slate-700">Die KfW-Förderung (seit 2024 über KfW statt BAFA) macht Solarthermieanlagen extrem attraktiv. Mit bis zu 70% Zuschuss amortisiert sich die Investition je nach Konstellation bereits nach 7-12 Jahren. Der Geschwindigkeitsbonus läuft 2028 aus – wer jetzt plant, profitiert maximal. Besonders lohnend ist die Kombination von Solarthermie mit Wärmepumpen beim Heizungstausch. Wichtig: Antrag immer VOR Beauftragung im KfW-Portal stellen und alle technischen Mindestanforderungen einhalten.</p></blockquote>
 
         <h2>Ihre nächsten Schritte</h2>
         <ol>
@@ -8547,22 +8549,22 @@ function getMockBlogPosts(): BlogPost[] {
           <li><strong>Förderquote berechnen:</strong> Welche Boni stehen Ihnen zu?</li>
           <li><strong>Energieberatung:</strong> Optional, aber empfohlen (ebenfalls gefördert)</li>
           <li><strong>Antrag vorbereiten:</strong> Alle Unterlagen zusammenstellen</li>
-          <li><strong>Antrag stellen:</strong> Online auf <a href="https://www.bafa.de">www.bafa.de</a></li>
+          <li><strong>Antrag stellen:</strong> Online im <a href="https://www.kfw.de">KfW-Zuschussportal</a></li>
           <li><strong>Bewilligung abwarten:</strong> NICHT vorher beauftragen!</li>
           <li><strong>Umsetzung:</strong> Nach Bewilligung starten</li>
         </ol>
 
-        <p>Benötigen Sie Unterstützung bei Planung und Antragstellung? Unsere BAFA-zertifizierten Energieberater helfen Ihnen bei der Maximierung Ihrer Förderung und begleiten Sie durch den gesamten Prozess. Mehr über unsere <a href="/solar" class="text-[#0F5B78] font-medium hover:underline">Solarthermie-Leistungen</a> und die <a href="/foerderung" class="text-[#0F5B78] font-medium hover:underline">aktuelle Heizungsförderung 2025</a> erfahren Sie auf unseren Serviceseiten.</p>
+        <p>Benötigen Sie Unterstützung bei Planung und Antragstellung? Unsere zertifizierten Energieberater helfen Ihnen bei der Maximierung Ihrer KfW-Förderung und begleiten Sie durch den gesamten Prozess. Mehr über unsere <a href="/solar" class="text-[#0F5B78] font-medium hover:underline">Solarthermie-Leistungen</a> und die <a href="/foerderung" class="text-[#0F5B78] font-medium hover:underline">aktuelle Heizungsförderung</a> erfahren Sie auf unseren Serviceseiten.</p>
 
-        <p><strong>Weiterlesen:</strong> Unser umfassender <a href="/blog/foerderung-heizung-2025" class="text-[#0F5B78] font-medium hover:underline">Förderratgeber für Heizungstausch 2025</a> erklärt alle BEG-Boni im Detail. Planen Sie eine Wärmepumpe? Dann lesen Sie auch unseren <a href="/blog/waermepumpe-kosten-2025" class="text-[#0F5B78] font-medium hover:underline">Wärmepumpen-Kostenratgeber</a>. HeizCenter berät Sie vor Ort in <a href="/standorte/augsburg" class="text-[#0F5B78] font-medium hover:underline">Augsburg</a>, <a href="/standorte/ulm" class="text-[#0F5B78] font-medium hover:underline">Ulm</a> und <a href="/standorte/memmingen" class="text-[#0F5B78] font-medium hover:underline">Memmingen</a>.</p>
+        <p><strong>Weiterlesen:</strong> Unser umfassender <a href="/blog/foerderung-heizung-2025" class="text-[#0F5B78] font-medium hover:underline">Förderratgeber für Heizungstausch</a> erklärt alle BEG-Boni im Detail. Planen Sie eine Wärmepumpe? Dann lesen Sie auch unseren <a href="/blog/waermepumpe-kosten-2025" class="text-[#0F5B78] font-medium hover:underline">Wärmepumpen-Kostenratgeber</a>. HeizCenter berät Sie vor Ort in <a href="/standorte/augsburg" class="text-[#0F5B78] font-medium hover:underline">Augsburg</a>, <a href="/standorte/ulm" class="text-[#0F5B78] font-medium hover:underline">Ulm</a> und <a href="/standorte/memmingen" class="text-[#0F5B78] font-medium hover:underline">Memmingen</a>.</p>
 
         <div class="cta-box">
           <p class="cta-locations">📍 <strong>Unsere Standorte:</strong> Bobingen (Augsburg) · Gutenzell-Hürbel (Ulm/Memmingen) · Klosterlechfeld</p>
           <h4>Kostenlose Förderberatung</h4>
           <p>Wir prüfen Ihre Fördermöglichkeiten und begleiten Sie von der Planung bis zur Auszahlung.</p>
           <p>
-            <strong>Telefon:</strong> <a href="tel:+4982349665900">+49 8234 9665900</a><br>
-            <strong>E-Mail:</strong> <a href="mailto:service@heizcenter.de">service@heizcenter.de</a>
+            <strong>Telefon:</strong> <a href="tel:${CONTACT.PHONE_LINK}">${CONTACT.PHONE_DISPLAY}</a><br>
+            <strong>E-Mail:</strong> <a href="mailto:${CONTACT.EMAIL}">${CONTACT.EMAIL}</a>
           </p>
         </div>
 
@@ -9027,8 +9029,8 @@ function getMockBlogPosts(): BlogPost[] {
           <h4>Kostenlose Hybrid-Beratung</h4>
           <p>Wir berechnen Ihre ideale Kombination aus Wärmepumpe und Solarthermie und maximieren Ihre Förderung.</p>
           <p>
-            <strong>Telefon:</strong> <a href="tel:+4982349665900">+49 8234 9665900</a><br>
-            <strong>E-Mail:</strong> <a href="mailto:service@heizcenter.de">service@heizcenter.de</a>
+            <strong>Telefon:</strong> <a href="tel:${CONTACT.PHONE_LINK}">${CONTACT.PHONE_DISPLAY}</a><br>
+            <strong>E-Mail:</strong> <a href="mailto:${CONTACT.EMAIL}">${CONTACT.EMAIL}</a>
           </p>
         </div>
 
@@ -9122,7 +9124,7 @@ function getMockBlogPosts(): BlogPost[] {
 
         <div class="my-6 p-4 bg-slate-50 border-l-4 border-slate-400 rounded-r">
           <p class="font-semibold text-slate-900">Hinweis zur Mindestgröße</p>
-          <p class="text-slate-700">Für die KfW-Förderung gilt: Flachkollektoren müssen mindestens 9 m² groß sein, Vakuumröhrenkollektoren mindestens 7 m². Kleinere Anlagen erhalten keine staatliche Förderung.</p>
+          <p class="text-slate-700">Für die KfW-Förderung gilt: Flachkollektoren müssen mindestens 7 m² groß sein, Vakuumröhrenkollektoren mindestens 7 m². Kleinere Anlagen erhalten keine staatliche Förderung.</p>
         </div>
 
         <h2>Kostenaufstellung im Detail</h2>
@@ -9411,8 +9413,8 @@ function getMockBlogPosts(): BlogPost[] {
           <p class="text-white/90 mb-4">Wir schauen uns Ihr Dach an und sagen Ihnen ehrlich, ob Solarthermie bei Ihnen Sinn macht – oder ob PV die bessere Wahl ist.</p>
 
           <div class="flex flex-col sm:flex-row gap-3">
-            <a href="tel:+4982349665900" class="inline-flex items-center justify-center gap-2 bg-white text-[#0F5B78] font-semibold px-5 py-3 rounded-lg hover:bg-slate-100 transition-colors">
-              <span>📞</span> +49 8234 9665900
+            <a href="tel:${CONTACT.PHONE_LINK}" class="inline-flex items-center justify-center gap-2 bg-white text-[#0F5B78] font-semibold px-5 py-3 rounded-lg hover:bg-slate-100 transition-colors">
+              <span>📞</span> ${CONTACT.PHONE_DISPLAY}
             </a>
             <a href="/kontakt" class="inline-flex items-center justify-center gap-2 bg-white/10 text-white font-semibold px-5 py-3 rounded-lg border border-white/30 hover:bg-white/20 transition-colors">
               Online-Anfrage →
@@ -9848,8 +9850,8 @@ function getMockBlogPosts(): BlogPost[] {
             <h4>Kostenlose PVT-Beratung</h4>
             <p>Wir prüfen, ob PVT-Kollektoren für Ihr Projekt geeignet sind und berechnen Ihren Ertrag.</p>
             <p>
-              <strong>Telefon:</strong> <a href="tel:+4982349665900">+49 8234 9665900</a><br>
-              <strong>E-Mail:</strong> <a href="mailto:service@heizcenter.de">service@heizcenter.de</a>
+              <strong>Telefon:</strong> <a href="tel:${CONTACT.PHONE_LINK}">${CONTACT.PHONE_DISPLAY}</a><br>
+              <strong>E-Mail:</strong> <a href="mailto:${CONTACT.EMAIL}">${CONTACT.EMAIL}</a>
             </p>
           </div>
         </div>
@@ -10401,8 +10403,8 @@ function getMockBlogPosts(): BlogPost[] {
             <h4>Kostenlose Anlagenplanung</h4>
             <p>Wir dimensionieren Ihre Solarthermie-Anlage optimal und berechnen Ihren Solarertrag mit professioneller Simulationssoftware.</p>
             <p>
-              <strong>Telefon:</strong> <a href="tel:+4982349665900">+49 8234 9665900</a><br>
-              <strong>E-Mail:</strong> <a href="mailto:service@heizcenter.de">service@heizcenter.de</a>
+              <strong>Telefon:</strong> <a href="tel:${CONTACT.PHONE_LINK}">${CONTACT.PHONE_DISPLAY}</a><br>
+              <strong>E-Mail:</strong> <a href="mailto:${CONTACT.EMAIL}">${CONTACT.EMAIL}</a>
             </p>
           </div>
         </div>
@@ -10682,8 +10684,8 @@ function getMockBlogPosts(): BlogPost[] {
             <strong>✓</strong> Ehrliche Beratung – auch wenn es sich nicht lohnt
           </p>
           <p>
-            <strong>Telefon:</strong> <a href="tel:+4982349665900">+49 8234 9665900</a><br>
-            <strong>E-Mail:</strong> <a href="mailto:service@heizcenter.de">service@heizcenter.de</a>
+            <strong>Telefon:</strong> <a href="tel:${CONTACT.PHONE_LINK}">${CONTACT.PHONE_DISPLAY}</a><br>
+            <strong>E-Mail:</strong> <a href="mailto:${CONTACT.EMAIL}">${CONTACT.EMAIL}</a>
           </p>
         </div>
       `,
@@ -10896,8 +10898,8 @@ function getMockBlogPosts(): BlogPost[] {
             <strong>✓</strong> Vollständiges Wartungsprotokoll
           </p>
           <p>
-            <strong>Telefon:</strong> <a href="tel:+4982349665900">+49 8234 9665900</a><br>
-            <strong>E-Mail:</strong> <a href="mailto:service@heizcenter.de">service@heizcenter.de</a>
+            <strong>Telefon:</strong> <a href="tel:${CONTACT.PHONE_LINK}">${CONTACT.PHONE_DISPLAY}</a><br>
+            <strong>E-Mail:</strong> <a href="mailto:${CONTACT.EMAIL}">${CONTACT.EMAIL}</a>
           </p>
         </div>
       `,

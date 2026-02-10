@@ -13,6 +13,7 @@ import { LocationPageSchema } from "@/components/schema/local-business-schema";
 import { locationData } from "@/lib/location-data";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
 import { getCanonicalUrl } from "@/lib/seo";
+import { CONTACT } from '@/lib/config/contact';
 
 export const metadata: Metadata = {
   title:
@@ -109,7 +110,7 @@ const faqs: FAQItem[] = [
   {
     question: "Wie schnell ist der Notdienst in Memmingen vor Ort?",
     answer:
-      "Unser 24/7 Heizungsnotdienst erreicht Sie in Memmingen und dem Unterallgäu in der Regel innerhalb von 60-90 Minuten. Bei Heizungsausfall im kalten Allgäu-Winter sind wir rund um die Uhr unter +49 8234 9665900 erreichbar.",
+      `Unser 24/7 Heizungsnotdienst erreicht Sie in Memmingen und dem Unterallgäu in der Regel innerhalb von 60-90 Minuten. Bei Heizungsausfall im kalten Allgäu-Winter sind wir rund um die Uhr unter ${CONTACT.PHONE_DISPLAY} erreichbar.`,
   },
   {
     question: "Gibt es Förderung für Heizungstausch in Bayern?",
@@ -149,8 +150,8 @@ export default function MemmingenPage() {
       <LocationHero
         name="Memmingen"
         address="Schlüsselbergstraße 5, 88484 Gutenzell-Hürbel"
-        phone="+49 8234 9665900"
-        email="service@heizcenter.de"
+        phone={CONTACT.PHONE_DISPLAY}
+        email={CONTACT.EMAIL}
         description="Ihr zuverlässiger Partner für Wärmepumpen, Heizung, Sanitär und Klimaanlagen in Memmingen und Unterallgäu. Über 20 Jahre Erfahrung, schneller Service und faire Preise."
         mainLocation="Gutenzell-Hürbel"
       />

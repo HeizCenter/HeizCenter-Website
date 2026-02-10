@@ -13,6 +13,7 @@ import { LocationPageSchema } from "@/components/schema/local-business-schema";
 import { locationData } from "@/lib/location-data";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
 import { getCanonicalUrl } from "@/lib/seo";
+import { CONTACT } from '@/lib/config/contact';
 
 export const metadata: Metadata = {
   title:
@@ -109,7 +110,7 @@ const faqs: FAQItem[] = [
   {
     question: "Wie schnell ist der Notdienst in Augsburg vor Ort?",
     answer:
-      "Unser 24/7 Heizungsnotdienst ist in Augsburg und Umgebung in der Regel innerhalb von 60-90 Minuten bei Ihnen. Bei Heizungsausfall, Rohrbruch oder Gasgeruch erreichen Sie uns rund um die Uhr unter +49 8234 9665900.",
+      `Unser 24/7 Heizungsnotdienst ist in Augsburg und Umgebung in der Regel innerhalb von 60-90 Minuten bei Ihnen. Bei Heizungsausfall, Rohrbruch oder Gasgeruch erreichen Sie uns rund um die Uhr unter ${CONTACT.PHONE_DISPLAY}.`,
   },
   {
     question: "Welche Wärmepumpen-Marken installieren Sie in Augsburg?",
@@ -149,8 +150,8 @@ export default function AugsburgPage() {
       <LocationHero
         name="Augsburg"
         address="Lechallee 28, 86399 Bobingen"
-        phone="+49 8234 9665900"
-        email="service@heizcenter.de"
+        phone={CONTACT.PHONE_DISPLAY}
+        email={CONTACT.EMAIL}
         description="Ihr zuverlässiger Partner für Wärmepumpen, Heizung, Sanitär und Klimaanlagen in Augsburg und Umgebung. Über 20 Jahre Erfahrung, schneller Service und faire Preise."
         mainLocation="Bobingen"
       />

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { AlertCircle, ArrowRight, Phone, Clock } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { CONTACT, getPhoneLink } from "@/lib/config/contact";
 
 interface CtaBannerProps {
   variant?: "default" | "emergency" | "limited" | "appointment";
@@ -22,8 +23,8 @@ export function CtaBanner({ variant = "default", className }: CtaBannerProps) {
       icon: <AlertCircle className="h-6 w-6" />,
       title: "Notfall? Wir sind 24/7 für Sie da!",
       description: "Heizungsausfall, Rohrbruch oder Gasgeruch",
-      cta: "Jetzt anrufen: +49 8234 9665900",
-      href: "tel:+4982349665900",
+      cta: `Jetzt anrufen: ${CONTACT.PHONE_DISPLAY}`,
+      href: getPhoneLink(),
     },
     limited: {
       bg: "bg-gradient-to-r from-orange-600 to-orange-700",

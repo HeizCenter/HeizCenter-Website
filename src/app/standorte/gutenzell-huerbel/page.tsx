@@ -12,6 +12,7 @@ import { LocationPageSchema } from "@/components/schema/local-business-schema";
 import { locationData } from "@/lib/location-data";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
 import { getCanonicalUrl } from "@/lib/seo";
+import { CONTACT } from '@/lib/config/contact';
 
 export const metadata: Metadata = {
   title:
@@ -103,7 +104,7 @@ const faqs: FAQItem[] = [
   {
     question: "Wo ist der HeizCenter Standort Gutenzell-Hürbel?",
     answer:
-      "Unser Standort befindet sich in der Schlüsselbergstraße 5, 88484 Gutenzell-Hürbel. Von hier aus betreuen wir Ulm, Memmingen und die gesamte Region mit kurzen Anfahrtswegen. Sie erreichen uns unter +49 8234 9665900.",
+      `Unser Standort befindet sich in der Schlüsselbergstraße 5, 88484 Gutenzell-Hürbel. Von hier aus betreuen wir Ulm, Memmingen und die gesamte Region mit kurzen Anfahrtswegen. Sie erreichen uns unter ${CONTACT.PHONE_DISPLAY}.`,
   },
   {
     question: "Betreuen Sie auch Ulm und Neu-Ulm?",
@@ -118,7 +119,7 @@ const faqs: FAQItem[] = [
   {
     question: "Wie schnell ist der Notdienst in Ulm und Memmingen vor Ort?",
     answer:
-      "Unser 24/7 Heizungsnotdienst erreicht Sie in Ulm, Memmingen und Umgebung in der Regel innerhalb von 60-90 Minuten. Bei Heizungsausfall, Rohrbruch oder Gasgeruch sind wir rund um die Uhr unter +49 8234 9665900 erreichbar.",
+      `Unser 24/7 Heizungsnotdienst erreicht Sie in Ulm, Memmingen und Umgebung in der Regel innerhalb von 60-90 Minuten. Bei Heizungsausfall, Rohrbruch oder Gasgeruch sind wir rund um die Uhr unter ${CONTACT.PHONE_DISPLAY} erreichbar.`,
   },
   {
     question: "Welche Förderungen gibt es für Heizungstausch in der Region?",
@@ -154,8 +155,8 @@ export default function GutenzellHuerbelPage() {
       <LocationHero
         name="Gutenzell-Hürbel"
         address="Schlüsselbergstraße 5, 88484 Gutenzell-Hürbel"
-        phone="+49 8234 9665900"
-        email="service@heizcenter.de"
+        phone={CONTACT.PHONE_DISPLAY}
+        email={CONTACT.EMAIL}
         description="Unser Hauptstandort in Gutenzell-Hürbel - Ihr zuverlässiger Partner für Wärmepumpen, Heizung, Sanitär und Klimaanlagen in der Region Ulm und Memmingen. Über 20 Jahre Erfahrung, schneller Service und faire Preise."
       />
 

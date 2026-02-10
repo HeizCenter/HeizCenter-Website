@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { emergencyFormSchema } from "@/lib/validations/contact";
 import { submitEmergencyRequest } from "@/lib/api/crm";
 import { checkRateLimit, getClientIp, RATE_LIMITS } from "@/lib/rate-limit";
+import { CONTACT } from "@/lib/config/contact";
 
 export async function POST(request: NextRequest) {
   try {
@@ -13,7 +14,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json(
         {
           success: false,
-          error: `Zu viele Anfragen. Bitte rufen Sie uns direkt an: +49 8234 9665900`,
+          error: `Zu viele Anfragen. Bitte rufen Sie uns direkt an: ${CONTACT.PHONE_DISPLAY}`,
         },
         {
           status: 429,
@@ -57,7 +58,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json(
         {
           success: false,
-          error: "Es gab einen Fehler beim Senden Ihrer Notfallanfrage. Bitte rufen Sie uns direkt an: +49 8234 9665900"
+          error: "Es gab einen Fehler beim Senden Ihrer Notfallanfrage. Bitte rufen Sie uns direkt an: ${CONTACT.PHONE_DISPLAY}"
         },
         { status: 500 }
       );

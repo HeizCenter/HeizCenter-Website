@@ -8,6 +8,7 @@ import { LocationPageSchema } from "@/components/schema/local-business-schema";
 import { locationData } from "@/lib/location-data";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
 import { getCanonicalUrl } from "@/lib/seo";
+import { CONTACT } from '@/lib/config/contact';
 
 export const metadata: Metadata = {
   title: "HeizCenter Aichach - Wärmepumpe, Heizung & Sanitär",
@@ -56,7 +57,7 @@ export default function AichachPage() {
         longitude={data.longitude}
         serviceCities={data.serviceCities}
       />
-      <LocationHero name="Aichach" address="Lechallee 28, 86399 Bobingen" phone="+49 8234 9665900" email="service@heizcenter.de" description="HeizCenter Service Aichach. Wärmepumpen, Heizung, Sanitär mit schnellem Service."
+      <LocationHero name="Aichach" address="Lechallee 28, 86399 Bobingen" phone={CONTACT.PHONE_DISPLAY} email={CONTACT.EMAIL} description="HeizCenter Service Aichach. Wärmepumpen, Heizung, Sanitär mit schnellem Service."
         mainLocation="Bobingen" />
       <LocationServices services={services} title="Unsere Leistungen in Aichach" />
       <section className="container py-16">

@@ -2,6 +2,7 @@
 
 import { MessageCircle } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { CONTACT } from "@/lib/config/contact";
 
 interface WhatsAppButtonProps {
   phoneNumber?: string;
@@ -12,7 +13,7 @@ interface WhatsAppButtonProps {
 }
 
 export function WhatsAppButton({
-  phoneNumber = "4982349665900", // Format: country code + number without +
+  phoneNumber = CONTACT.PHONE_WHATSAPP, // Format: country code + number without +
   message = "Hallo, ich interessiere mich für Ihre Dienstleistungen.",
   variant = "button",
   size = "md",
@@ -90,7 +91,7 @@ interface WhatsAppContactCardProps {
 export function WhatsAppContactCard({
   title = "Schnelle Antwort per WhatsApp",
   description = "Schreiben Sie uns direkt und erhalten Sie innerhalb weniger Minuten eine Antwort.",
-  phoneNumber = "4982349665900",
+  phoneNumber = CONTACT.PHONE_WHATSAPP,
   className,
 }: WhatsAppContactCardProps) {
   return (
@@ -121,7 +122,7 @@ interface ServiceWhatsAppProps {
 
 export function ServiceWhatsApp({
   service,
-  phoneNumber = "4982349665900",
+  phoneNumber = CONTACT.PHONE_WHATSAPP,
 }: ServiceWhatsAppProps) {
   const services = {
     waermepumpe: {

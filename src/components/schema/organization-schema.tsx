@@ -1,3 +1,5 @@
+import { CONTACT } from '@/lib/config/contact';
+
 export function OrganizationSchema() {
   const schema = {
     "@context": "https://schema.org",
@@ -12,8 +14,8 @@ export function OrganizationSchema() {
     slogan: "Ihre Experten für moderne Heizsysteme",
 
     // Contact Information
-    telephone: "+4982349665900",
-    email: "info@heizcenter.de",
+    telephone: CONTACT.PHONE_SCHEMA,
+    email: CONTACT.EMAIL,
 
     // Main Office Address (Bobingen)
     address: {
@@ -83,21 +85,21 @@ export function OrganizationSchema() {
     contactPoint: [
       {
         "@type": "ContactPoint",
-        telephone: "+4982349665900",
+        telephone: CONTACT.PHONE_SCHEMA,
         contactType: "customer service",
         areaServed: ["DE"],
         availableLanguage: ["German"],
       },
       {
         "@type": "ContactPoint",
-        telephone: "+4982349665900",
+        telephone: CONTACT.PHONE_SCHEMA,
         contactType: "sales",
         areaServed: ["DE"],
         availableLanguage: ["German"],
       },
       {
         "@type": "ContactPoint",
-        telephone: "+4982349665900",
+        telephone: CONTACT.PHONE_SCHEMA,
         contactType: "emergency",
         areaServed: ["DE"],
         availableLanguage: ["German"],

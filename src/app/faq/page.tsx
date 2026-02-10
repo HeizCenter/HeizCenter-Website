@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { HelpCircle, Zap, Flame, Droplet, Wind, Wrench, Phone } from "lucide-react";
 import Link from "next/link";
 import { getCanonicalUrl } from "@/lib/seo";
+import { CONTACT } from "@/lib/config/contact";
 
 export const metadata: Metadata = {
   title: "Häufig gestellte Fragen (FAQ) | HeizCenter",
@@ -30,7 +31,7 @@ const heizungFAQs: FAQItem[] = [
   { question: "Wann sollte ich meine Heizung austauschen?", answer: "Bei über 15 Jahren Alter, steigenden Heizkosten, häufigen Reparaturen oder vor dem 2026 Öl-/Gasheizungsverbot." },
   { question: "Was kostet eine neue Gasheizung?", answer: "Gasbrennwerttherme ab 8.000€ inkl. Installation. Hinweis: Ab 2024 65% Erneuerbare Energie Pflicht bei Neubauten, ab 2026 schrittweise für Bestand." },
   { question: "Wie oft muss die Heizung gewartet werden?", answer: "Mindestens 1x jährlich empfohlen. Verlängert Lebensdauer, senkt Energiekosten um 10-15%, erhält Garantieansprüche." },
-  { question: "Was tun bei Heizungsausfall im Winter?", answer: "Rufen Sie unseren 24/7-Notdienst: +49 8234 9665900. Schnelle Reaktionszeit, auch an Wochenenden und Feiertagen." },
+  { question: "Was tun bei Heizungsausfall im Winter?", answer: `Rufen Sie unseren 24/7-Notdienst: ${CONTACT.PHONE_DISPLAY}. Schnelle Reaktionszeit, auch an Wochenenden und Feiertagen.` },
   { question: "Welche Heizung ist zukunftssicher?", answer: "Wärmepumpen sind langfristig die beste Wahl. Alternativ: Pelletheizung oder Hybridlösungen (Gas + Wärmepumpe)." },
 ];
 
@@ -50,7 +51,7 @@ const klimaanlageFAQs: FAQItem[] = [
 
 const serviceFAQs: FAQItem[] = [
   { question: "In welchen Regionen sind Sie tätig?", answer: "Hauptstandorte: Bobingen, Klosterlechfeld und Gutenzell-Hürbel. Service-Gebiet: Raum Augsburg, Landsberg am Lech, Ulm, Memmingen und Umgebung. Radius 50 km inkl. Landkreise Aichach-Friedberg, Donau-Ries, Neu-Ulm, Günzburg, Unterallgäu." },
-  { question: "Bieten Sie Notdienst an?", answer: "Ja, 24/7-Heizungsnotdienst unter +49 8234 9665900. Auch an Wochenenden und Feiertagen. Schnelle Reaktionszeit im gesamten Service-Gebiet." },
+  { question: "Bieten Sie Notdienst an?", answer: `Ja, 24/7-Heizungsnotdienst unter ${CONTACT.PHONE_DISPLAY}. Auch an Wochenenden und Feiertagen. Schnelle Reaktionszeit im gesamten Service-Gebiet.` },
   { question: "Wie schnell bekommen wir einen Termin?", answer: "Beratungstermin meist innerhalb 1 Woche. Installationstermine nach Verfügbarkeit, oft 2-4 Wochen. Notfälle: sofort bzw. innerhalb 24h." },
   { question: "Übernehmen Sie die Förderanträge?", answer: "Ja, vollständig. Wir erstellen alle erforderlichen Unterlagen für BEG, KfW und andere Programme. Service inklusive bei Beauftragung." },
   { question: "Gibt es Garantie auf die Arbeiten?", answer: "Ja, 2 Jahre gesetzliche Gewährleistung auf Handwerksleistungen. Herstellergarantie auf Geräte (meist 2-5 Jahre, bei Wärmepumpen oft 5-10 Jahre auf Verdichter)." },
@@ -184,10 +185,10 @@ export default function FAQPage() {
                 <div className="bg-white p-6 rounded-lg border-2 border-red-600 text-center">
                   <div className="text-sm text-slate-600 mb-2">Notruf 24/7</div>
                   <a
-                    href="tel:+4982349665900"
+                    href={`tel:${CONTACT.PHONE_LINK}`}
                     className="text-4xl font-bold text-red-600 hover:underline"
                   >
-                    +49 8234 9665900
+                    {CONTACT.PHONE_DISPLAY}
                   </a>
                 </div>
                 <p className="mt-6 text-sm text-slate-600">
@@ -218,11 +219,11 @@ export default function FAQPage() {
               Kontakt aufnehmen
             </Link>
             <a
-              href="tel:+4982349665900"
+              href={`tel:${CONTACT.PHONE_LINK}`}
               className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-[#0F5B78] text-[#0F5B78] font-semibold rounded-lg hover:bg-[#0F5B78]/5 transition-colors"
             >
               <Phone className="h-5 w-5" />
-              +49 8234 9665900
+              {CONTACT.PHONE_DISPLAY}
             </a>
           </div>
         </div>

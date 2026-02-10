@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import { getCanonicalUrl } from "@/lib/seo";
+import { CONTACT } from "@/lib/config/contact";
 
 export const metadata: Metadata = {
   title: "Impressum | HeizCenter",
@@ -36,8 +37,8 @@ export default function ImpressumPage() {
         <section className="mb-8">
           <h3 className="text-xl font-bold mb-4">Telefon</h3>
           <p className="mb-2">
-            <a href="tel:+4982349665900" className="text-[#0F5B78] hover:underline">
-              +49 8234 9665900
+            <a href={`tel:${CONTACT.PHONE_LINK}`} className="text-[#0F5B78] hover:underline">
+              {CONTACT.PHONE_DISPLAY}
             </a>
           </p>
         </section>
@@ -45,8 +46,8 @@ export default function ImpressumPage() {
         <section className="mb-8">
           <h3 className="text-xl font-bold mb-4">WhatsApp</h3>
           <p className="mb-2">
-            <a href="https://wa.me/4982349665900" className="text-[#0F5B78] hover:underline">
-              +49 8234 9665900
+            <a href={`https://wa.me/${CONTACT.PHONE_WHATSAPP}`} className="text-[#0F5B78] hover:underline">
+              {CONTACT.PHONE_DISPLAY}
             </a>
           </p>
         </section>
@@ -54,8 +55,8 @@ export default function ImpressumPage() {
         <section className="mb-8">
           <h3 className="text-xl font-bold mb-4">Email</h3>
           <p className="mb-2">
-            <a href="mailto:service@heizcenter.de" className="text-[#0F5B78] hover:underline">
-              service@heizcenter.de
+            <a href={`mailto:${CONTACT.EMAIL}`} className="text-[#0F5B78] hover:underline">
+              {CONTACT.EMAIL}
             </a>
           </p>
         </section>

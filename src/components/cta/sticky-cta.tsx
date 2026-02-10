@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Phone, X, MessageCircle } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { getPhoneLink, getWhatsAppLink } from "@/lib/config/contact";
 
 interface StickyCtaProps {
   variant?: "phone" | "whatsapp" | "emergency";
@@ -35,19 +36,19 @@ export function StickyCta({
       bg: "bg-[#0F5B78] hover:bg-[#0F5B78]",
       icon: <Phone className="h-5 w-5" />,
       text: "Jetzt anrufen",
-      href: "tel:+4982349665900",
+      href: getPhoneLink(),
     },
     whatsapp: {
       bg: "bg-green-600 hover:bg-green-700",
       icon: <MessageCircle className="h-5 w-5" />,
       text: "WhatsApp",
-      href: "https://wa.me/4982349665900",
+      href: getWhatsAppLink(),
     },
     emergency: {
       bg: "bg-red-600 hover:bg-red-700",
       icon: <Phone className="h-5 w-5" />,
       text: "Notfall: 24/7",
-      href: "tel:+4982349665900",
+      href: getPhoneLink(),
     },
   };
 

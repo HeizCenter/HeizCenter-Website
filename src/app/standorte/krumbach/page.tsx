@@ -8,6 +8,7 @@ import { LocationPageSchema } from "@/components/schema/local-business-schema";
 import { locationData } from "@/lib/location-data";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
 import { getCanonicalUrl } from "@/lib/seo";
+import { CONTACT } from '@/lib/config/contact';
 
 export const metadata: Metadata = {
   title: "HeizCenter Krumbach - Wärmepumpe, Heizung & Sanitär",
@@ -56,7 +57,7 @@ export default function KrumbachPage() {
         longitude={data.longitude}
         serviceCities={data.serviceCities}
       />
-      <LocationHero name="Krumbach (Schwaben)" address="Schlüsselbergstraße 5, 88484 Gutenzell-Hürbel" phone="+49 8234 9665900" email="service@heizcenter.de" description="HeizCenter Service für Krumbach. Wärmepumpen, Heizung und Sanitär mit professionellem Service."
+      <LocationHero name="Krumbach (Schwaben)" address="Schlüsselbergstraße 5, 88484 Gutenzell-Hürbel" phone={CONTACT.PHONE_DISPLAY} email={CONTACT.EMAIL} description="HeizCenter Service für Krumbach. Wärmepumpen, Heizung und Sanitär mit professionellem Service."
         mainLocation="Gutenzell-Hürbel" />
       <LocationServices services={services} title="Unsere Leistungen in Krumbach" />
       <section className="container py-16">

@@ -4,6 +4,7 @@
  * Handles form submissions via n8n lead management webhooks.
  */
 
+import { CONTACT } from '@/lib/config/contact';
 import {
   submitContactToN8n,
   submitQuoteToN8n,
@@ -163,7 +164,7 @@ export async function submitEmergencyRequest(data: {
       error:
         error instanceof Error
           ? error.message
-          : 'Ein Fehler ist aufgetreten. Bitte rufen Sie uns direkt an: +49 8234 9665900',
+          : `Ein Fehler ist aufgetreten. Bitte rufen Sie uns direkt an: ${CONTACT.PHONE_DISPLAY}`,
     };
   }
 }

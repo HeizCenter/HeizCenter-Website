@@ -2,6 +2,7 @@
 
 import { Phone } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { CONTACT } from "@/lib/config/contact";
 
 interface ClickToCallProps {
   phoneNumber: string;
@@ -91,7 +92,7 @@ interface EmergencyHotlineProps {
 }
 
 export function EmergencyHotline({
-  phoneNumber = "+49 8234 9665900",
+  phoneNumber = CONTACT.PHONE_DISPLAY,
   className,
 }: EmergencyHotlineProps) {
   return (
@@ -131,9 +132,9 @@ interface LocationPhoneProps {
 
 export function LocationPhone({ location, variant = "compact" }: LocationPhoneProps) {
   const phones = {
-    Augsburg: "+49 8234 9665900",
-    Ulm: "+49 8234 9665900",
-    Memmingen: "+49 8234 9665900",
+    Augsburg: CONTACT.PHONE_DISPLAY,
+    Ulm: CONTACT.PHONE_DISPLAY,
+    Memmingen: CONTACT.PHONE_DISPLAY,
   };
 
   const phone = phones[location];

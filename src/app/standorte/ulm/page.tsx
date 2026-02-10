@@ -13,6 +13,7 @@ import { LocationPageSchema } from "@/components/schema/local-business-schema";
 import { locationData } from "@/lib/location-data";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
 import { getCanonicalUrl } from "@/lib/seo";
+import { CONTACT } from '@/lib/config/contact';
 
 export const metadata: Metadata = {
   title:
@@ -99,7 +100,7 @@ const faqs: FAQItem[] = [
   {
     question: "Wie schnell ist der Notdienst in Ulm vor Ort?",
     answer:
-      "Unser 24/7 Heizungsnotdienst erreicht Sie in Ulm und Neu-Ulm in der Regel innerhalb von 60-90 Minuten. Bei Heizungsausfall, Rohrbruch oder Gasgeruch sind wir rund um die Uhr unter +49 8234 9665900 für Sie erreichbar.",
+      `Unser 24/7 Heizungsnotdienst erreicht Sie in Ulm und Neu-Ulm in der Regel innerhalb von 60-90 Minuten. Bei Heizungsausfall, Rohrbruch oder Gasgeruch sind wir rund um die Uhr unter ${CONTACT.PHONE_DISPLAY} für Sie erreichbar.`,
   },
   {
     question: "Welche Förderungen gibt es für Heizungstausch in Baden-Württemberg?",
@@ -149,8 +150,8 @@ export default function UlmPage() {
       <LocationHero
         name="Ulm"
         address="Schlüsselbergstraße 5, 88484 Gutenzell-Hürbel"
-        phone="+49 8234 9665900"
-        email="service@heizcenter.de"
+        phone={CONTACT.PHONE_DISPLAY}
+        email={CONTACT.EMAIL}
         description="Ihr zuverlässiger Partner für Wärmepumpen, Heizung, Sanitär und Klimaanlagen in Ulm und Neu-Ulm. Über 20 Jahre Erfahrung, schneller Service und faire Preise."
         mainLocation="Gutenzell-Hürbel"
       />

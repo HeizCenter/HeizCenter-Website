@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowRight, Phone, FileText } from "lucide-react";
+import { CONTACT, getPhoneLink } from "@/lib/config/contact";
 
 interface InlineCtaProps {
   variant?: "contact" | "quote" | "phone";
@@ -39,8 +40,8 @@ export function InlineCta({
       icon: <Phone className="h-6 w-6" />,
       defaultTitle: "Rufen Sie uns an",
       defaultDescription: "Wir beraten Sie gerne telefonisch.",
-      cta: "+49 8234 9665900",
-      href: "tel:+4982349665900",
+      cta: CONTACT.PHONE_DISPLAY,
+      href: getPhoneLink(),
       bg: "bg-orange-600",
       hoverBg: "hover:bg-orange-700",
     },

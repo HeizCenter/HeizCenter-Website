@@ -5,11 +5,12 @@ import { Phone, Clock, AlertCircle, Check, ShieldCheck, FileText, MapPin } from 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { getCanonicalUrl } from "@/lib/seo";
+import { CONTACT } from "@/lib/config/contact";
 
 export const metadata: Metadata = {
   title: "24/7 Heizungsnotdienst für Wartungskunden | HeizCenter",
   description:
-    "24/7 Heizungsnotdienst exklusiv für Kunden mit Wartungsvertrag. Schnelle Hilfe bei Heizungsausfall, Rohrbruch und Notfällen. ☎ +49 8234 9665900",
+    `24/7 Heizungsnotdienst exklusiv für Kunden mit Wartungsvertrag. Schnelle Hilfe bei Heizungsausfall, Rohrbruch und Notfällen. ☎ ${CONTACT.PHONE_DISPLAY}`,
   keywords: ["Notdienst", "Heizungsnotdienst", "24/7", "Wartungsvertrag", "Bobingen", "Gutenzell-Hürbel", "Augsburg"],
   alternates: {
     canonical: getCanonicalUrl("/notdienst"),
@@ -53,8 +54,8 @@ export default function NotdienstPage() {
                 <Phone className="h-10 w-10" />
                 <div className="text-left">
                   <div className="text-sm font-semibold">24/7 Notdienst (nur für Wartungskunden)</div>
-                  <a href="tel:+4982349665900" className="text-3xl font-bold hover:underline">
-                    +49 8234 9665900
+                  <a href={`tel:${CONTACT.PHONE_LINK}`} className="text-3xl font-bold hover:underline">
+                    {CONTACT.PHONE_DISPLAY}
                   </a>
                 </div>
               </div>
@@ -239,9 +240,9 @@ export default function NotdienstPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button asChild size="lg" className="bg-[#FFCA28] hover:bg-[#F5B800] text-slate-900 text-xl px-10 py-6 font-semibold">
-              <a href="tel:+4982349665900">
+              <a href={`tel:${CONTACT.PHONE_LINK}`}>
                 <Phone className="mr-3 h-6 w-6" />
-                +49 8234 9665900
+                {CONTACT.PHONE_DISPLAY}
               </a>
             </Button>
             <Button asChild size="lg" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#0F5B78] text-lg px-8 py-6">

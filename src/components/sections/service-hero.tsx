@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import Image from "next/image";
 import { LucideIcon } from "lucide-react";
+import { CONTACT, getPhoneLink } from "@/lib/config/contact";
 
 interface ServiceHeroProps {
   title: string;
@@ -81,7 +82,7 @@ export function ServiceHero({
                 <Link href="/kontakt">Kostenlose Beratung</Link>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <Link href="tel:+4982349665900">+49 8234 9665900</Link>
+                <Link href={getPhoneLink()}>{CONTACT.PHONE_DISPLAY}</Link>
               </Button>
             </div>
           </div>

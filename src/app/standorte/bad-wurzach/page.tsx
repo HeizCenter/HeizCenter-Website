@@ -8,6 +8,7 @@ import { LocationPageSchema } from "@/components/schema/local-business-schema";
 import { locationData } from "@/lib/location-data";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
 import { getCanonicalUrl } from "@/lib/seo";
+import { CONTACT } from '@/lib/config/contact';
 
 export const metadata: Metadata = {
   title: "HeizCenter Bad Wurzach - Wärmepumpe & Heizung",
@@ -56,7 +57,7 @@ export default function BadWurzachPage() {
         longitude={data.longitude}
         serviceCities={data.serviceCities}
       />
-      <LocationHero name="Bad Wurzach" address="Schlüsselbergstraße 5, 88484 Gutenzell-Hürbel" phone="+49 8234 9665900" email="service@heizcenter.de" description="HeizCenter Service Bad Wurzach. Wärmepumpen und Heizung im Allgäu."
+      <LocationHero name="Bad Wurzach" address="Schlüsselbergstraße 5, 88484 Gutenzell-Hürbel" phone={CONTACT.PHONE_DISPLAY} email={CONTACT.EMAIL} description="HeizCenter Service Bad Wurzach. Wärmepumpen und Heizung im Allgäu."
         mainLocation="Gutenzell-Hürbel" />
       <LocationServices services={services} title="Unsere Leistungen in Bad Wurzach" />
       <section className="container py-16">

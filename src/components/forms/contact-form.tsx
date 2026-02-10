@@ -10,6 +10,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 import { CheckCircle2, AlertCircle, Loader2 } from "lucide-react";
+import { CONTACT } from "@/lib/config/contact";
 
 interface ContactFormProps {
   initialMessage?: string;
@@ -146,7 +147,7 @@ export function ContactForm({ initialMessage = "", initialSubject = "" }: Contac
           id="phone"
           type="tel"
           {...register("phone")}
-          placeholder="+49 8234 9665900"
+          placeholder={CONTACT.PHONE_DISPLAY}
           className={errors.phone ? "border-red-500" : ""}
         />
         {errors.phone && (

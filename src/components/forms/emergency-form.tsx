@@ -21,6 +21,7 @@ import {
 } from "@/components/ui/select";
 import { CheckCircle2, AlertCircle, Loader2, AlertTriangle, ShieldCheck } from "lucide-react";
 import Link from "next/link";
+import { CONTACT } from "@/lib/config/contact";
 
 export function EmergencyForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -82,7 +83,7 @@ export function EmergencyForm() {
       setSubmitStatus({
         type: "error",
         message:
-          "Ein Fehler ist aufgetreten. Bitte rufen Sie uns direkt an: +49 8234 9665900",
+          `Ein Fehler ist aufgetreten. Bitte rufen Sie uns direkt an: ${CONTACT.PHONE_DISPLAY}`,
       });
     } finally {
       setIsSubmitting(false);
@@ -101,10 +102,10 @@ export function EmergencyForm() {
             rufen Sie bitte sofort an:
           </p>
           <a
-            href="tel:+4982349665900"
+            href={`tel:${CONTACT.PHONE_LINK}`}
             className="inline-block bg-red-600 text-white font-bold px-4 py-2 rounded-lg hover:bg-red-700 transition-colors"
           >
-            +49 8234 9665900
+            {CONTACT.PHONE_DISPLAY}
           </a>
         </div>
       </div>
@@ -182,7 +183,7 @@ export function EmergencyForm() {
               id="phone"
               type="tel"
               {...register("phone")}
-              placeholder="+49 8234 9665900"
+              placeholder={CONTACT.PHONE_DISPLAY}
               className={errors.phone ? "border-red-500" : ""}
             />
             {errors.phone && (

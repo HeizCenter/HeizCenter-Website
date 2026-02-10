@@ -4,6 +4,7 @@ import { Suspense } from "react";
 import { PriceCalculator } from "@/components/calculator/price-calculator";
 import { Calculator, CheckCircle, Info, Loader2 } from "lucide-react";
 import { getCanonicalUrl } from "@/lib/seo";
+import { CONTACT } from "@/lib/config/contact";
 
 export const metadata: Metadata = {
   title: "Wärmepumpen-Kostenrechner | HeizCenter",
@@ -198,10 +199,10 @@ export default function RechnerPage() {
                 Genaues Angebot anfragen
               </a>
               <a
-                href="tel:+4982349665900"
+                href={`tel:${CONTACT.PHONE_LINK}`}
                 className="inline-flex items-center justify-center px-8 py-4 border-2 border-[#FFCA28] text-[#FFCA28] font-semibold rounded-lg hover:bg-[#FFCA28] hover:text-slate-900 transition-colors"
               >
-                +49 8234 9665900
+                {CONTACT.PHONE_DISPLAY}
               </a>
             </div>
           </div>

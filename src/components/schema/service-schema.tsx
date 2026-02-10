@@ -1,3 +1,5 @@
+import { CONTACT } from '@/lib/config/contact';
+
 interface ServiceSchemaProps {
   serviceType:
     | "waermepumpe"
@@ -37,7 +39,7 @@ export function ServiceSchema({ serviceType }: ServiceSchemaProps) {
       "@type": "PlumbingHeatingContractor",
       name: "HeizCenter GmbH",
       url: "https://www.heizcenter.de",
-      telephone: "+4982349665900",
+      telephone: CONTACT.PHONE_SCHEMA,
     },
     areaServed: serviceCities,
     hasOfferCatalog: {
@@ -124,7 +126,7 @@ export function ServiceSchema({ serviceType }: ServiceSchemaProps) {
     availableChannel: {
       "@type": "ServiceChannel",
       serviceUrl: "https://www.heizcenter.de/kontakt",
-      servicePhone: "+4982349665900",
+      servicePhone: CONTACT.PHONE_SCHEMA,
     },
   };
 
@@ -139,7 +141,7 @@ export function ServiceSchema({ serviceType }: ServiceSchemaProps) {
       "@type": "PlumbingHeatingContractor",
       name: "HeizCenter GmbH",
       url: "https://www.heizcenter.de",
-      telephone: "+4982349665900",
+      telephone: CONTACT.PHONE_SCHEMA,
     },
     areaServed: serviceCities,
     hasOfferCatalog: {
@@ -235,7 +237,7 @@ export function ServiceSchema({ serviceType }: ServiceSchemaProps) {
     availableChannel: {
       "@type": "ServiceChannel",
       serviceUrl: "https://www.heizcenter.de/kontakt",
-      servicePhone: "+4982349665900",
+      servicePhone: CONTACT.PHONE_SCHEMA,
     },
   };
 
@@ -250,7 +252,7 @@ export function ServiceSchema({ serviceType }: ServiceSchemaProps) {
       "@type": "PlumbingHeatingContractor",
       name: "HeizCenter GmbH",
       url: "https://www.heizcenter.de",
-      telephone: "+4982349665900",
+      telephone: CONTACT.PHONE_SCHEMA,
     },
     areaServed: serviceCities,
     hasOfferCatalog: {
@@ -322,7 +324,7 @@ export function ServiceSchema({ serviceType }: ServiceSchemaProps) {
     availableChannel: {
       "@type": "ServiceChannel",
       serviceUrl: "https://www.heizcenter.de/kontakt",
-      servicePhone: "+4982349665900",
+      servicePhone: CONTACT.PHONE_SCHEMA,
     },
   };
 
@@ -337,7 +339,7 @@ export function ServiceSchema({ serviceType }: ServiceSchemaProps) {
       "@type": "PlumbingHeatingContractor",
       name: "HeizCenter GmbH",
       url: "https://www.heizcenter.de",
-      telephone: "+4982349665900",
+      telephone: CONTACT.PHONE_SCHEMA,
     },
     areaServed: serviceCities,
     hasOfferCatalog: {
@@ -431,7 +433,7 @@ export function ServiceSchema({ serviceType }: ServiceSchemaProps) {
     availableChannel: {
       "@type": "ServiceChannel",
       serviceUrl: "https://www.heizcenter.de/kontakt",
-      servicePhone: "+4982349665900",
+      servicePhone: CONTACT.PHONE_SCHEMA,
     },
   };
 
@@ -446,7 +448,7 @@ export function ServiceSchema({ serviceType }: ServiceSchemaProps) {
       "@type": "PlumbingHeatingContractor",
       name: "HeizCenter GmbH",
       url: "https://www.heizcenter.de",
-      telephone: "+4982349665900",
+      telephone: CONTACT.PHONE_SCHEMA,
     },
     areaServed: serviceCities,
     hasOfferCatalog: {
@@ -566,7 +568,7 @@ export function ServiceSchema({ serviceType }: ServiceSchemaProps) {
     availableChannel: {
       "@type": "ServiceChannel",
       serviceUrl: "https://www.heizcenter.de/kontakt",
-      servicePhone: "+4982349665900",
+      servicePhone: CONTACT.PHONE_SCHEMA,
     },
   };
 

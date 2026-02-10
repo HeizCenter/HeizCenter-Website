@@ -7,6 +7,7 @@ import { LocationPageSchema } from "@/components/schema/local-business-schema";
 import { locationData } from "@/lib/location-data";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
 import { getCanonicalUrl } from "@/lib/seo";
+import { CONTACT } from '@/lib/config/contact';
 
 export const metadata: Metadata = {
   title: "Wärmepumpe & Heizung Gersthofen - HeizCenter | Ihr Fachbetrieb vor Ort",
@@ -85,7 +86,7 @@ export default function GersthofenPage() {
         subLocation="Gersthofen"
         mainLocation="Bobingen"
         mainLocationHref="/standorte/bobingen"
-        phone="+49 8234 9665900"
+        phone={CONTACT.PHONE_DISPLAY}
         description="Ihr zuverlässiger Partner für Wärmepumpen, Heizung, Sanitär und Klimaanlagen in Gersthofen. Schneller Service vom HeizCenter Bobingen - in 20 Minuten vor Ort."
       />
 

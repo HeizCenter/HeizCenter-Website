@@ -274,7 +274,7 @@ export default function HeizungPage() {
               </h2>
             </div>
             <p className="text-xl mb-6">
-              Reduzieren Sie Ihre Heizkosten um bis zu 30% durch die Kombination Ihrer bestehenden
+              Reduzieren Sie Ihre Heizkosten um bis zu 25% durch die Kombination Ihrer bestehenden
               oder neuen Heizung mit Solarthermie. Die kostenlose Sonnenenergie unterstützt Ihre
               Heizung bei der Warmwasserbereitung und Heizungsunterstützung.
             </p>
@@ -291,13 +291,13 @@ export default function HeizungPage() {
               <div className="bg-white/80 rounded-lg p-6 backdrop-blur-sm">
                 <h3 className="font-bold text-lg mb-3">Einsparungen & Förderung:</h3>
                 <p className="mb-2">
-                  💰 Bis zu 30% weniger Heizkosten pro Jahr
+                  💰 Bis zu 25% weniger Heizkosten pro Jahr
                 </p>
                 <p className="mb-2">
                   🌞 60% Warmwasser-Deckung durch Sonne
                 </p>
                 <p className="font-semibold text-[#0F5B78]">
-                  🎁 Bis zu 70% KfW-Förderung
+                  🎁 Bis zu 70% KfW-Förderung bei Heizungstausch
                 </p>
               </div>
             </div>

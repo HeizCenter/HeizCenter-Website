@@ -12,6 +12,7 @@ import {
   ArrowRight,
   Phone,
 } from "lucide-react";
+import { getPhoneLink } from "@/lib/config/contact";
 
 interface ProcessStep {
   number: number;
@@ -520,7 +521,7 @@ export function SolarProcessSection() {
             </div>
             <div className="flex gap-3">
               <Button asChild variant="outline" size="lg">
-                <Link href="tel:+4982349665900" className="gap-2">
+                <Link href={getPhoneLink()} className="gap-2">
                   <Phone className="w-4 h-4" />
                   Anrufen
                 </Link>

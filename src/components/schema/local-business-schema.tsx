@@ -1,4 +1,6 @@
 import { getSchemaRating, getSchemaReviews } from "@/lib/config/reviews";
+import { CONTACT } from '@/lib/config/contact';
+
 interface LocalBusinessSchemaProps {
   location: "bobingen" | "gutenzell" | "klosterlechfeld";
   includeServices?: boolean;
@@ -18,8 +20,8 @@ export function LocalBusinessSchema({
     logo: "https://www.heizcenter.de/images/logo.png",
     "@id": "https://www.heizcenter.de/#bobingen",
     url: "https://www.heizcenter.de",
-    telephone: "+4982349665900",
-    email: "service@heizcenter.de",
+    telephone: CONTACT.PHONE_SCHEMA,
+    email: CONTACT.EMAIL,
     priceRange: "€€",
     address: {
       "@type": "PostalAddress",
@@ -122,8 +124,8 @@ export function LocalBusinessSchema({
     logo: "https://www.heizcenter.de/images/logo.png",
     "@id": "https://www.heizcenter.de/#gutenzell",
     url: "https://www.heizcenter.de/standorte/gutenzell-huerbel",
-    telephone: "+4982349665900",
-    email: "service@heizcenter.de",
+    telephone: CONTACT.PHONE_SCHEMA,
+    email: CONTACT.EMAIL,
     priceRange: "€€",
     address: {
       "@type": "PostalAddress",
@@ -233,8 +235,8 @@ export function LocalBusinessSchema({
     logo: "https://www.heizcenter.de/images/logo.png",
     "@id": "https://www.heizcenter.de/#klosterlechfeld",
     url: "https://www.heizcenter.de/standorte/klosterlechfeld",
-    telephone: "+4982349665900",
-    email: "service@heizcenter.de",
+    telephone: CONTACT.PHONE_SCHEMA,
+    email: CONTACT.EMAIL,
     priceRange: "€€",
     address: {
       "@type": "PostalAddress",
@@ -377,8 +379,8 @@ export function LocationPageSchema({
     logo: "https://www.heizcenter.de/images/logo.png",
     "@id": "https://www.heizcenter.de/standorte/" + citySlug + "#business",
     url: "https://www.heizcenter.de/standorte/" + citySlug,
-    telephone: "+4982349665900",
-    email: "service@heizcenter.de",
+    telephone: CONTACT.PHONE_SCHEMA,
+    email: CONTACT.EMAIL,
     priceRange: "€€",
     address: {
       "@type": "PostalAddress",

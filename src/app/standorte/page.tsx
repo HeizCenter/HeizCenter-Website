@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { MapPin, Clock, Phone, Building2 } from "lucide-react";
 import { getCanonicalUrl } from "@/lib/seo";
+import { CONTACT } from '@/lib/config/contact';
 
 export const metadata: Metadata = {
   title: "Standorte Bayern - HeizCenter | Wärmepumpe & Heizung",
@@ -37,7 +38,7 @@ const locations: Location[] = [
     name: "Bobingen",
     href: "/standorte/bobingen",
     region: "Raum Augsburg",
-    phone: "+49 8234 9665900",
+    phone: CONTACT.PHONE_DISPLAY,
     isMain: true,
     subLocations: [
       "Augsburg",
@@ -53,7 +54,7 @@ const locations: Location[] = [
     name: "Klosterlechfeld",
     href: "/standorte/klosterlechfeld",
     region: "Raum Landsberg am Lech",
-    phone: "+49 8234 9665900",
+    phone: CONTACT.PHONE_DISPLAY,
     isMain: true,
     isVisitorOffice: true,
     subLocations: [
@@ -68,7 +69,7 @@ const locations: Location[] = [
     name: "Gutenzell-Hürbel",
     href: "/standorte/gutenzell-huerbel",
     region: "Raum Ulm / Memmingen",
-    phone: "+49 8234 9665900",
+    phone: CONTACT.PHONE_DISPLAY,
     isMain: true,
     subLocations: [
       "Ulm",

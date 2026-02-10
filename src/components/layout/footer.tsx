@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { LOCATIONS } from "@/lib/constants/locations";
 import { Phone, Mail, MapPin } from "lucide-react";
+import { CONTACT, getPhoneLink, getEmailLink } from "@/lib/config/contact";
 
 export function Footer() {
   return (
@@ -25,18 +26,18 @@ export function Footer() {
             </p>
             <div className="flex flex-col space-y-2 text-sm">
               <a
-                href="tel:+4982349665900"
+                href={getPhoneLink()}
                 className="flex items-center gap-2 text-slate-400 hover:text-white transition-colors"
               >
                 <Phone className="h-4 w-4" />
-                +49 8234 9665900
+                {CONTACT.PHONE_DISPLAY}
               </a>
               <a
-                href="mailto:service@heizcenter.de"
+                href={getEmailLink()}
                 className="flex items-center gap-2 text-slate-400 hover:text-white transition-colors"
               >
                 <Mail className="h-4 w-4" />
-                service@heizcenter.de
+                {CONTACT.EMAIL}
               </a>
             </div>
           </div>

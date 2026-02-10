@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Link from "next/link";
 import { Phone, Mail, MapPin } from "lucide-react";
+import { CONTACT, getPhoneLink, getEmailLink } from "@/lib/config/contact";
 
 interface CTASectionProps {
   title?: string;
@@ -41,9 +42,9 @@ export function CTASection({
               variant="outline"
               className="text-lg border-2 border-[#0F5B78] text-[#0F5B78] hover:bg-[#0F5B78] hover:text-white"
             >
-              <Link href="tel:+4982349665900">
+              <Link href={getPhoneLink()}>
                 <Phone className="mr-2 h-5 w-5" />
-                +49 8234 9665900
+                {CONTACT.PHONE_DISPLAY}
               </Link>
             </Button>
           </div>
@@ -61,15 +62,15 @@ export function CTASection({
             <p className="text-xl text-slate-600 mb-8">{description}</p>
             <div className="grid md:grid-cols-3 gap-6 mb-8">
               <a
-                href="tel:+4982349665900"
+                href={getPhoneLink()}
                 className="flex flex-col items-center gap-2 p-4 rounded-lg hover:bg-slate-50 transition-colors"
               >
                 <Phone className="h-8 w-8 text-[#0F5B78]" />
-                <span className="font-semibold">+49 8234 9665900</span>
+                <span className="font-semibold">{CONTACT.PHONE_DISPLAY}</span>
                 <span className="text-sm text-slate-600">Anrufen</span>
               </a>
               <a
-                href="mailto:info@heizcenter.de"
+                href={getEmailLink()}
                 className="flex flex-col items-center gap-2 p-4 rounded-lg hover:bg-slate-50 transition-colors"
               >
                 <Mail className="h-8 w-8 text-[#0F5B78]" />

@@ -24,7 +24,7 @@ export default function FoerderungPage() {
           <div className="max-w-4xl mx-auto text-center">
             <Euro className="h-20 w-20 mx-auto mb-6 text-[#0F5B78]" />
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Förderung & Zuschüsse 2025
+              Förderung & Zuschüsse 2026
             </h1>
             <p className="text-xl text-slate-600 mb-8">
               Bis zu 70% Zuschuss für Ihre neue Heizung. Wir helfen bei der Antragstellung.
@@ -511,7 +511,7 @@ export default function FoerderungPage() {
               oder Ihren Steuerberater.
             </p>
             <p className="text-slate-600 text-xs mt-3">
-              Stand der Informationen: Januar 2025. Rechtsgrundlagen: BEG-Förderrichtlinie, § 35c EStG.
+              Stand der Informationen: Februar 2026. Rechtsgrundlagen: BEG-Förderrichtlinie, § 35c EStG.
             </p>
           </div>
         </div>
