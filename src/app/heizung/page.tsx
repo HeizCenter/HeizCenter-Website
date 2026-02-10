@@ -331,15 +331,15 @@ export default function HeizungPage() {
             </h2>
           </div>
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            <Link href="/blog/heizung-vergleich-2025-waermepumpe-gas-oel-pellets" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
-              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Heizungsvergleich 2025</h3>
+            <Link href="/blog/heizung-vergleich-2026-waermepumpe-gas-oel-pellets" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
+              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Heizungsvergleich 2026</h3>
               <p className="text-slate-600 text-sm">Wärmepumpe vs. Gas vs. Öl vs. Pellets – alle Systeme im Vergleich.</p>
             </Link>
-            <Link href="/blog/foerderung-heizung-2025" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
-              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Förderung Heizungstausch 2025</h3>
+            <Link href="/blog/foerderung-heizung-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
+              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Förderung Heizungstausch 2026</h3>
               <p className="text-slate-600 text-sm">Bis zu 70% BEG-Förderung – alle Boni und Antragsschritte.</p>
             </Link>
-            <Link href="/blog/heizung-entlueften-anleitung-2025" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
+            <Link href="/blog/heizung-entlueften-anleitung-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
               <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Heizung entlüften: Anleitung</h3>
               <p className="text-slate-600 text-sm">Schritt-für-Schritt Anleitung für optimale Heizleistung.</p>
             </Link>

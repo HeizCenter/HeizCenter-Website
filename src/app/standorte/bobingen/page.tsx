@@ -224,7 +224,7 @@ export default function BobingenPage() {
           </p>
           <ul className="list-disc list-inside space-y-2 text-slate-700 mb-6">
             <li>3D-Planung und Festpreisangebot</li>
-            <li>Barrierefreie Bäder nach DIN 18040 (Förderung bis 8.000€)</li>
+            <li>Barrierefreie Bäder nach DIN 18040 (Pflegekasse bis 4.000€ pro Person)</li>
             <li>Bodengleiche Duschen und moderne Badausstattung</li>
             <li>Koordination aller Gewerke (Fliesen, Elektro, Sanitär)</li>
             <li>Fertigstellung in 2-3 Wochen</li>

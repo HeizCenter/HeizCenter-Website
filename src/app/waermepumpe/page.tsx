@@ -25,7 +25,7 @@ import { getCanonicalUrl } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "Wärmepumpe Augsburg, Ulm - Bis 70% Förderung | HeizCenter",
   description:
-    "Moderne Wärmepumpen vom Experten in Augsburg, Ulm und Memmingen. Bis zu 70% Energiekosten sparen. BEG-Förderung bis 70%. Kostenlose Beratung.",
+    "Moderne Wärmepumpen vom Experten in Augsburg, Ulm und Memmingen. Bis zu 45% Heizkosten sparen. BEG-Förderung bis 70%. Kostenlose Beratung.",
   keywords: [
     "Wärmepumpe",
     "Wärmepumpe Augsburg",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
 export const dynamic = 'force-dynamic';
 
 const benefits = [
-  "Bis zu 70% niedrigere Energiekosten im Vergleich zur Gasheizung",
+  "Bis zu 40–45% niedrigere Heizkosten im Vergleich zur Gasheizung",
   "BEG-Förderung bis zu 70% der Investitionskosten (bis Ende 2028)",
   "Umweltfreundlich und CO2-neutral heizen",
   "Heizen und Kühlen mit einem System",
@@ -153,7 +153,7 @@ export default function WaermepumpePage() {
 
       <ServiceHero
         title="Wärmepumpe in Augsburg, Ulm & Memmingen"
-        description="Zukunftssicher heizen mit erneuerbarer Energie. Profitieren Sie von bis zu 70% staatlicher Förderung und sparen Sie bis zu 70% Ihrer Heizkosten."
+        description="Zukunftssicher heizen mit erneuerbarer Energie. Profitieren Sie von bis zu 70% staatlicher Förderung und sparen Sie bis zu 45% Ihrer Heizkosten."
         benefits={benefits}
         icon={Zap}
         badge="Bis zu 70% Förderung"
@@ -347,13 +347,13 @@ export default function WaermepumpePage() {
             <p className="text-xl mb-6 text-white/95">
               Maximieren Sie Ihre Energieeffizienz durch die Kombination von Wärmepumpe und Solarthermie.
               Die Solarthermie-Anlage unterstützt Ihre Wärmepumpe direkt bei der Warmwasserbereitung
-              und reduziert den Stromverbrauch zusätzlich um bis zu 30%.
+              und reduziert den Stromverbrauch um bis zu 20%.
             </p>
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <div className="bg-white/10 rounded-lg p-6 backdrop-blur-sm">
                 <h3 className="font-bold text-lg mb-3">Ihre Vorteile:</h3>
                 <ul className="space-y-2 text-white/90">
-                  <li>✓ Bis zu 30% weniger Stromverbrauch der Wärmepumpe</li>
+                  <li>✓ Bis zu 20% weniger Stromverbrauch der Wärmepumpe</li>
                   <li>✓ 60% Warmwasser-Deckung durch kostenlose Sonnenenergie</li>
                   <li>✓ Kombinierte KfW-Förderung möglich</li>
                   <li>✓ Maximale Energieunabhängigkeit</li>
@@ -365,7 +365,11 @@ export default function WaermepumpePage() {
                   Solarthermie-System: €8.000 - €18.000
                   <br />
                   <span className="text-[#FFCA28] font-semibold">
-                    Nach 70% KfW-Förderung: nur €2.400 - €5.400
+                    Bei Heizungstausch: bis zu 70% Förderung
+                  </span>
+                  <br />
+                  <span className="text-white/70 text-sm">
+                    Als Einzelmaßnahme: 30% Basisförderung
                   </span>
                 </p>
                 <p className="text-sm text-white/80">
@@ -404,15 +408,15 @@ export default function WaermepumpePage() {
             </h2>
           </div>
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            <Link href="/blog/waermepumpe-kosten-2025" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
-              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Wärmepumpe: Kosten & Förderung 2025</h3>
+            <Link href="/blog/waermepumpe-kosten-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
+              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Wärmepumpe: Kosten & Förderung 2026</h3>
               <p className="text-slate-600 text-sm">Aktuelle Preise, Fördermöglichkeiten und Wirtschaftlichkeitsberechnung.</p>
             </Link>
             <Link href="/blog/waermepumpe-altbau" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
               <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Wärmepumpe im Altbau</h3>
               <p className="text-slate-600 text-sm">Voraussetzungen, Kosten und Tipps für die Nachrüstung.</p>
             </Link>
-            <Link href="/blog/fussbodenheizung-kosten-vorteile-2025" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
+            <Link href="/blog/fussbodenheizung-kosten-vorteile-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
               <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Fußbodenheizung: Das perfekte Duo</h3>
               <p className="text-slate-600 text-sm">Warum Fußbodenheizung und Wärmepumpe ideal zusammenpassen.</p>
             </Link>

@@ -370,16 +370,16 @@ export default function FoerderungPage() {
             </h2>
           </div>
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            <Link href="/blog/foerderung-heizung-2025" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
-              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Förderung Heizungstausch 2025</h3>
+            <Link href="/blog/foerderung-heizung-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
+              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Förderung Heizungstausch 2026</h3>
               <p className="text-slate-600 text-sm">Alle BEG-Boni, Antragsschritte und Rechenbeispiele im Detail.</p>
             </Link>
-            <Link href="/blog/waermepumpe-kosten-2025" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
+            <Link href="/blog/waermepumpe-kosten-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
               <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Wärmepumpe: Kosten & Förderung</h3>
               <p className="text-slate-600 text-sm">Aktuelle Preise und wie Sie bis zu 70% Zuschuss erhalten.</p>
             </Link>
-            <Link href="/blog/bafa-foerderung-solarthermie-2025" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
-              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">BAFA-Förderung Solarthermie</h3>
+            <Link href="/blog/kfw-foerderung-solarthermie-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
+              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">KfW-Förderung Solarthermie</h3>
               <p className="text-slate-600 text-sm">Solarthermie-Förderung: Voraussetzungen, Höhe und Antragstellung.</p>
             </Link>
           </div>

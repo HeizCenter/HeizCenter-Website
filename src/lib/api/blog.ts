@@ -222,7 +222,7 @@ function getMockBlogPosts(): BlogPost[] {
   return [
     {
       id: 1,
-      slug: 'waermepumpe-kosten-2025',
+      slug: 'waermepumpe-kosten-2026',
       title: 'Wärmepumpe Kosten 2025: Kompletter Überblick',
       excerpt: 'Was kostet eine Wärmepumpe 2025 wirklich? Alle Kosten, Förderungen und versteckte Ausgaben im Detail erklärt.',
       content: `
@@ -293,7 +293,7 @@ function getMockBlogPosts(): BlogPost[] {
 
         <h2>Die Förderung macht's möglich</h2>
 
-        <p>Hier wird es spannend. Der Staat will, dass Sie auf erneuerbare Energien umsteigen – und zahlt dafür ordentlich mit. Bis zu <strong>70% der Kosten</strong> übernimmt die KfW. In unserem <a href="/blog/foerderung-heizung-2025" class="text-[#0F5B78] font-medium hover:underline">Ratgeber zur Heizungsförderung 2025</a> erklären wir alle Förderbausteine im Detail.</p>
+        <p>Hier wird es spannend. Der Staat will, dass Sie auf erneuerbare Energien umsteigen – und zahlt dafür ordentlich mit. Bis zu <strong>70% der Kosten</strong> übernimmt die KfW. In unserem <a href="/blog/foerderung-heizung-2026" class="text-[#0F5B78] font-medium hover:underline">Ratgeber zur Heizungsförderung 2025</a> erklären wir alle Förderbausteine im Detail.</p>
 
         <table class="cost-table">
           <thead>
@@ -525,7 +525,7 @@ function getMockBlogPosts(): BlogPost[] {
       `,
       category: 'Wärmepumpe',
       author: 'HeizCenter Redaktion',
-      date: '2025-11-10',
+      date: '2026-02-10',
       readingTime: 8,
       image: '/images/Waermepumpe.jpeg',
       tags: ['Wärmepumpe', 'Kosten', 'Förderung', 'BEG'],
@@ -829,7 +829,7 @@ function getMockBlogPosts(): BlogPost[] {
     },
     {
       id: 3,
-      slug: 'beg-foerderung-2025',
+      slug: 'beg-foerderung-2026',
       title: 'BEG Förderung 2025: Bis zu 70% Zuschuss für Ihre Heizung',
       excerpt: 'So beantragen Sie die BEG Förderung richtig. Alle Fördersätze, Voraussetzungen und Tipps.',
       content: `
@@ -1095,7 +1095,7 @@ function getMockBlogPosts(): BlogPost[] {
     },
     {
       id: 4,
-      slug: 'gasheizung-kosten-2025',
+      slug: 'gasheizung-kosten-2026',
       title: 'Gasheizung Kosten 2025: Was kostet eine neue Gasheizung?',
       excerpt: 'Alle Kosten für Kauf, Installation und Betrieb einer Gasheizung 2025 im Überblick. Plus: Aktuelle Fördermöglichkeiten und Alternativen.',
       content: `
@@ -1257,7 +1257,7 @@ function getMockBlogPosts(): BlogPost[] {
 
         <h2>Heizungsgesetz 2024: Was gilt für Gasheizungen?</h2>
 
-        <p>Das Gebäudeenergiegesetz (GEG) hat viele verunsichert. In unserem <a href="/blog/gasheizung-verbot-2025-geg" class="text-[#0F5B78] font-medium hover:underline">ausführlichen GEG-Ratgeber</a> erklären wir alle Details. Hier die wichtigsten Fakten:</p>
+        <p>Das Gebäudeenergiegesetz (GEG) hat viele verunsichert. In unserem <a href="/blog/gasheizung-verbot-2026-geg" class="text-[#0F5B78] font-medium hover:underline">ausführlichen GEG-Ratgeber</a> erklären wir alle Details. Hier die wichtigsten Fakten:</p>
 
         <div class="pro-con-list my-8">
           <div class="bg-green-50 border border-green-200 rounded-lg p-5 mb-4">
@@ -1328,7 +1328,7 @@ function getMockBlogPosts(): BlogPost[] {
         </div>
         <p class="text-sm text-slate-500 -mt-4 mb-8">*Förderung nur auf den erneuerbaren Anteil der Hybridheizung</p>
 
-        <p>Die Zahlen sprechen eine klare Sprache: <strong>Auf 15 Jahre gerechnet ist die Wärmepumpe fast 20.000 € günstiger</strong> – trotz der höheren Anschaffungskosten. Einen noch detaillierteren Vergleich finden Sie in unserem <a href="/blog/heizung-vergleich-2025-waermepumpe-gas-oel-pellets" class="text-[#0F5B78] font-medium hover:underline">großen Heizungsvergleich 2025</a>.</p>
+        <p>Die Zahlen sprechen eine klare Sprache: <strong>Auf 15 Jahre gerechnet ist die Wärmepumpe fast 20.000 € günstiger</strong> – trotz der höheren Anschaffungskosten. Einen noch detaillierteren Vergleich finden Sie in unserem <a href="/blog/heizung-vergleich-2026-waermepumpe-gas-oel-pellets" class="text-[#0F5B78] font-medium hover:underline">großen Heizungsvergleich 2025</a>.</p>
 
         <h2>Wann macht Gas trotzdem Sinn?</h2>
 
@@ -1419,7 +1419,7 @@ function getMockBlogPosts(): BlogPost[] {
       `,
       category: 'Heizung',
       author: 'HeizCenter Redaktion',
-      date: '2025-11-08',
+      date: '2026-02-08',
       readingTime: 9,
       image: '/images/HeizCenter_Heizung.webp',
       tags: ['Gasheizung', 'Kosten', 'Brennwertkessel', 'Förderung'],
@@ -1437,7 +1437,7 @@ function getMockBlogPosts(): BlogPost[] {
     },
     {
       id: 5,
-      slug: 'pelletheizung-kosten-2025',
+      slug: 'pelletheizung-kosten-2026',
       title: 'Pelletheizung Kosten 2025: Anschaffung, Betrieb & Förderung',
       excerpt: 'Was kostet eine Pelletheizung 2025? Kompletter Überblick über Anschaffung, Betriebskosten und bis zu 60% BEG-Förderung.',
       content: `
@@ -1772,7 +1772,7 @@ function getMockBlogPosts(): BlogPost[] {
       `,
       category: 'Heizung',
       author: 'HeizCenter Redaktion',
-      date: '2025-11-07',
+      date: '2026-02-07',
       readingTime: 10,
       image: '/images/Heizung_Modernisierung.webp',
       tags: ['Pelletheizung', 'Kosten', 'Förderung', 'BEG', 'Biomasse'],
@@ -1790,7 +1790,7 @@ function getMockBlogPosts(): BlogPost[] {
     },
     {
       id: 7,
-      slug: 'badsanierung-kosten-2025',
+      slug: 'badsanierung-kosten-2026',
       title: 'Badsanierung Kosten 2025: Was Sie wirklich einplanen müssen',
       excerpt: 'Realistische Kosten für Ihre Badsanierung 2025 – von der Teilrenovierung bis zum Komplettumbau. Mit Förderungen, Spartipps und ehrlicher Kalkulation.',
       content: `
@@ -1921,7 +1921,7 @@ function getMockBlogPosts(): BlogPost[] {
 
         <h2>Barrierefreies Bad: Förderung bis 6.250 €</h2>
 
-        <p>Wer sein Bad altersgerecht umbaut, kann ordentlich <a href="/foerderung" class="text-[#0F5B78] font-medium hover:underline">Förderung</a> mitnehmen. Alle Details dazu finden Sie in unserem <a href="/blog/barrierefreies-bad-kosten-planung-foerderung-2025" class="text-[#0F5B78] font-medium hover:underline">Ratgeber Barrierefreies Bad: Kosten & Förderung</a>. Das lohnt sich auch, wenn Sie noch nicht in dem Alter sind – irgendwann ist jeder froh über eine bodengleiche Dusche.</p>
+        <p>Wer sein Bad altersgerecht umbaut, kann ordentlich <a href="/foerderung" class="text-[#0F5B78] font-medium hover:underline">Förderung</a> mitnehmen. Alle Details dazu finden Sie in unserem <a href="/blog/barrierefreies-bad-kosten-planung-foerderung-2026" class="text-[#0F5B78] font-medium hover:underline">Ratgeber Barrierefreies Bad: Kosten & Förderung</a>. Das lohnt sich auch, wenn Sie noch nicht in dem Alter sind – irgendwann ist jeder froh über eine bodengleiche Dusche.</p>
 
         <!-- Förderung Cards -->
         <div class="grid md:grid-cols-2 gap-4 my-8">
@@ -2113,7 +2113,7 @@ function getMockBlogPosts(): BlogPost[] {
       `,
       category: 'Sanitär & Bad',
       author: 'HeizCenter Redaktion',
-      date: '2025-11-05',
+      date: '2026-02-05',
       readingTime: 11,
       image: '/images/HeizCenter_Badgestaltung.webp',
       tags: ['Badsanierung', 'Kosten', 'Barrierefreiheit', 'KfW', 'Förderung'],
@@ -2131,7 +2131,7 @@ function getMockBlogPosts(): BlogPost[] {
     },
     {
       id: 8,
-      slug: 'foerderung-heizung-2025',
+      slug: 'foerderung-heizung-2026',
       title: 'Heizungsförderung 2025: So holen Sie sich bis zu 21.000 € zurück',
       excerpt: 'Ihr Schritt-für-Schritt-Guide durch den Förderdschungel: Welche Zuschüsse Sie bekommen, wie Sie sie beantragen und welche Fehler Sie unbedingt vermeiden sollten.',
       content: `
@@ -2447,7 +2447,7 @@ function getMockBlogPosts(): BlogPost[] {
           </div>
         </div>
 
-        <p class="text-slate-700 mb-6">Erfahren Sie in unserem Ratgeber, <a href="/blog/waermepumpe-kosten-2025" class="text-[#0F5B78] font-medium hover:underline">was eine Wärmepumpe 2025 tatsächlich kostet</a> – inklusive Förderberechnung. Oder informieren Sie sich über die <a href="/blog/bafa-foerderung-solarthermie-2025" class="text-[#0F5B78] font-medium hover:underline">BAFA-Förderung für Solarthermie-Anlagen</a>, die sich besonders gut mit einer neuen <a href="/heizung" class="text-[#0F5B78] font-medium hover:underline">Heizungsanlage</a> kombinieren lässt.</p>
+        <p class="text-slate-700 mb-6">Erfahren Sie in unserem Ratgeber, <a href="/blog/waermepumpe-kosten-2026" class="text-[#0F5B78] font-medium hover:underline">was eine Wärmepumpe 2025 tatsächlich kostet</a> – inklusive Förderberechnung. Oder informieren Sie sich über die <a href="/blog/kfw-foerderung-solarthermie-2026" class="text-[#0F5B78] font-medium hover:underline">BAFA-Förderung für Solarthermie-Anlagen</a>, die sich besonders gut mit einer neuen <a href="/heizung" class="text-[#0F5B78] font-medium hover:underline">Heizungsanlage</a> kombinieren lässt.</p>
 
         <h2>Häufig gestellte Fragen (FAQ)</h2>
 
@@ -2474,7 +2474,7 @@ function getMockBlogPosts(): BlogPost[] {
       `,
       category: 'Förderung',
       author: 'HeizCenter Redaktion',
-      date: '2025-11-04',
+      date: '2026-02-04',
       readingTime: 12,
       image: '/images/Heizung_Modernisierung.webp',
       tags: ['Förderung', 'BEG', 'KfW', 'Wärmepumpe', 'Zuschuss', 'Steuerbonus'],
@@ -2805,13 +2805,13 @@ function getMockBlogPosts(): BlogPost[] {
 
         <h3>Fazit</h3>
 
-        <p>Ein barrierefreies Bad ist eine <strong>Investition in Sicherheit, Komfort und Zukunftsfähigkeit</strong>. Die Kosten von 8.000 - 35.000 € für einen Umbau können durch <a href="/foerderung" class="text-[#0F5B78] font-medium hover:underline">staatliche Förderungen</a> deutlich reduziert werden. Lesen Sie dazu auch unseren ausführlichen Ratgeber zu <a href="/blog/barrierefreies-bad-kosten-planung-foerderung-2025" class="text-[#0F5B78] font-medium hover:underline">Kosten, Planung und Förderung für barrierefreie Bäder</a>. Wichtig ist die frühzeitige Planung – idealerweise schon bei einer <a href="/blog/badsanierung-kosten-2025" class="text-[#0F5B78] font-medium hover:underline">regulären Badsanierung</a> werden Wandverstärkungen und ausreichende Bewegungsflächen berücksichtigt.</p>
+        <p>Ein barrierefreies Bad ist eine <strong>Investition in Sicherheit, Komfort und Zukunftsfähigkeit</strong>. Die Kosten von 8.000 - 35.000 € für einen Umbau können durch <a href="/foerderung" class="text-[#0F5B78] font-medium hover:underline">staatliche Förderungen</a> deutlich reduziert werden. Lesen Sie dazu auch unseren ausführlichen Ratgeber zu <a href="/blog/barrierefreies-bad-kosten-planung-foerderung-2026" class="text-[#0F5B78] font-medium hover:underline">Kosten, Planung und Förderung für barrierefreie Bäder</a>. Wichtig ist die frühzeitige Planung – idealerweise schon bei einer <a href="/blog/badsanierung-kosten-2026" class="text-[#0F5B78] font-medium hover:underline">regulären Badsanierung</a> werden Wandverstärkungen und ausreichende Bewegungsflächen berücksichtigt.</p>
 
         <p>Lassen Sie sich von unseren Experten beraten, welche Maßnahmen für Ihre Situation sinnvoll sind und welche Förderungen Sie nutzen können. <strong>Je früher Sie planen, desto besser!</strong></p>
       `,
       category: 'Sanitär',
       author: 'HeizCenter Redaktion',
-      date: '2025-12-14',
+      date: '2026-01-30',
       readingTime: 18,
       image: '/images/HeizCenter_Badgestaltung.webp',
       tags: ['Barrierefreies Bad', 'DIN 18040-2', 'Badsanierung', 'Förderung', 'Pflegekasse', 'Altersgerecht'],
@@ -2829,7 +2829,7 @@ function getMockBlogPosts(): BlogPost[] {
     },
     {
       id: 10,
-      slug: 'waermepumpe-vorteile-nachteile-2025',
+      slug: 'waermepumpe-vorteile-nachteile-2026',
       title: 'Wärmepumpe Vorteile und Nachteile 2025: Der komplette Überblick',
       excerpt: 'Lohnt sich eine Wärmepumpe? 41% günstiger als Gas, bis 70% Förderung, aber auch echte Nachteile. Hier die Fakten für Ihre Entscheidung.',
       content: `
@@ -3411,7 +3411,7 @@ function getMockBlogPosts(): BlogPost[] {
       `,
       category: 'Wärmepumpe',
       author: 'HeizCenter Redaktion',
-      date: '2025-11-10',
+      date: '2026-01-20',
       readingTime: 16,
       image: '/images/Waermepumpe.jpeg',
       tags: ['Wärmepumpe', 'Vorteile', 'Nachteile', 'Effizienz', 'JAZ', 'Förderung', 'Altbau'],
@@ -3428,7 +3428,7 @@ function getMockBlogPosts(): BlogPost[] {
     },
     {
       id: 11,
-      slug: 'gasheizung-verbot-2025-geg',
+      slug: 'gasheizung-verbot-2026-geg',
       title: 'Gasheizung Verbot 2025: Was das GEG wirklich bedeutet',
       excerpt: 'Gasheizungsverbot Deutschland 2025: Alle Fakten zum GEG, Bestandsschutz, Fristen, Ausnahmen, Alternativen und Förderungen bis 70%. Keine Panik – wir klären auf!',
       content: `
@@ -3727,7 +3727,7 @@ function getMockBlogPosts(): BlogPost[] {
 
         <p><strong>Die wichtigsten Eckpunkte:</strong> Keine Austauschpflicht für funktionierende Heizungen (außer Konstanttemperaturkessel über 30 Jahre). Die 65%-Regel greift erst 2026/2028 nach kommunaler Wärmeplanung. Bis zu 70% staatliche Förderung für Wärmepumpen und Co. sind verfügbar. Sie haben mehrere Erfüllungsoptionen: Wärmepumpe, Pellets, Fernwärme oder Hybrid. Der vollständige Umstieg ist erst bis 2045 erforderlich.</p>
 
-        <p>Wer jetzt handelt, profitiert von hohen Förderungen, sinkenden Betriebskosten und steigender Unabhängigkeit von fossilen Energiepreisen. Lesen Sie dazu auch unseren <a href="/blog/heizung-vergleich-2025-waermepumpe-gas-oel-pellets" class="text-[#0F5B78] font-medium hover:underline">umfassenden Heizungsvergleich 2025</a> und informieren Sie sich über die <a href="/blog/gasheizung-kosten-2025" class="text-[#0F5B78] font-medium hover:underline">tatsächlichen Kosten einer Gasheizung</a>. Wir beraten Sie persönlich in <a href="/standorte/augsburg" class="text-[#0F5B78] font-medium hover:underline">Augsburg</a>, <a href="/standorte/ulm" class="text-[#0F5B78] font-medium hover:underline">Ulm</a> und <a href="/standorte/memmingen" class="text-[#0F5B78] font-medium hover:underline">Memmingen</a>.</p>
+        <p>Wer jetzt handelt, profitiert von hohen Förderungen, sinkenden Betriebskosten und steigender Unabhängigkeit von fossilen Energiepreisen. Lesen Sie dazu auch unseren <a href="/blog/heizung-vergleich-2026-waermepumpe-gas-oel-pellets" class="text-[#0F5B78] font-medium hover:underline">umfassenden Heizungsvergleich 2025</a> und informieren Sie sich über die <a href="/blog/gasheizung-kosten-2026" class="text-[#0F5B78] font-medium hover:underline">tatsächlichen Kosten einer Gasheizung</a>. Wir beraten Sie persönlich in <a href="/standorte/augsburg" class="text-[#0F5B78] font-medium hover:underline">Augsburg</a>, <a href="/standorte/ulm" class="text-[#0F5B78] font-medium hover:underline">Ulm</a> und <a href="/standorte/memmingen" class="text-[#0F5B78] font-medium hover:underline">Memmingen</a>.</p>
 
         <div class="cta-box">
           <p class="cta-locations">📍 <strong>Unsere Standorte:</strong> Bobingen (Augsburg) · Gutenzell-Hürbel (Ulm/Memmingen) · Klosterlechfeld</p>
@@ -3763,7 +3763,7 @@ function getMockBlogPosts(): BlogPost[] {
       `,
       category: 'Heizung',
       author: 'HeizCenter Redaktion',
-      date: '2025-11-12',
+      date: '2026-02-09',
       readingTime: 14,
       image: '/images/HeizCenter_Heizung.webp',
       tags: ['GEG', 'Gasheizung', 'Heizungsgesetz', 'Förderung', 'Wärmepumpe', 'BEG', 'Verbot'],
@@ -3779,7 +3779,7 @@ function getMockBlogPosts(): BlogPost[] {
     },
     {
       id: 12,
-      slug: 'heizung-vergleich-2025-waermepumpe-gas-oel-pellets',
+      slug: 'heizung-vergleich-2026-waermepumpe-gas-oel-pellets',
       title: 'Heizung Vergleich 2025: Wärmepumpe vs Gas vs Öl vs Pellets – Kosten, Effizienz & Förderung',
       excerpt: 'Kompletter Heizungsvergleich 2025: Alle Systeme (Wärmepumpe, Gas, Öl, Pellets, Fernwärme) im Detail. Mit Kosten, Betriebskosten, Förderung, CO₂-Bilanz und TCO über 20 Jahre.',
       content: `
@@ -4330,7 +4330,7 @@ function getMockBlogPosts(): BlogPost[] {
           </p>
         </div>
 
-        <p><strong>Handeln Sie jetzt und sichern Sie sich die 70% Förderung – der Geschwindigkeitsbonus läuft bis Ende 2028!</strong> Mehr Details finden Sie in unseren spezialisierten Ratgebern: <a href="/blog/waermepumpe-kosten-2025" class="text-[#0F5B78] font-medium hover:underline">Was kostet eine Wärmepumpe 2025?</a>, <a href="/blog/gasheizung-kosten-2025" class="text-[#0F5B78] font-medium hover:underline">Gasheizung Kosten 2025</a> und <a href="/blog/foerderung-heizung-2025" class="text-[#0F5B78] font-medium hover:underline">Heizungsförderung 2025: So holen Sie sich bis zu 21.000 € zurück</a>.</p>
+        <p><strong>Handeln Sie jetzt und sichern Sie sich die 70% Förderung – der Geschwindigkeitsbonus läuft bis Ende 2028!</strong> Mehr Details finden Sie in unseren spezialisierten Ratgebern: <a href="/blog/waermepumpe-kosten-2026" class="text-[#0F5B78] font-medium hover:underline">Was kostet eine Wärmepumpe 2025?</a>, <a href="/blog/gasheizung-kosten-2026" class="text-[#0F5B78] font-medium hover:underline">Gasheizung Kosten 2025</a> und <a href="/blog/foerderung-heizung-2026" class="text-[#0F5B78] font-medium hover:underline">Heizungsförderung 2025: So holen Sie sich bis zu 21.000 € zurück</a>.</p>
 
         <h2>Häufig gestellte Fragen (FAQ)</h2>
 
@@ -4354,7 +4354,7 @@ function getMockBlogPosts(): BlogPost[] {
       `,
       category: 'Heizung',
       author: 'HeizCenter Redaktion',
-      date: '2025-11-13',
+      date: '2026-02-03',
       readingTime: 18,
       image: '/images/Heizung_Modernisierung.webp',
       tags: ['Heizung', 'Vergleich', 'Wärmepumpe', 'Gas', 'Pellets', 'Kosten', 'Förderung', 'TCO'],
@@ -4370,7 +4370,7 @@ function getMockBlogPosts(): BlogPost[] {
     },
     {
       id: 13,
-      slug: 'nachtspeicherheizung-ersetzen-2025',
+      slug: 'nachtspeicherheizung-ersetzen-2026',
       title: 'Nachtspeicherheizung ersetzen 2025: Beste Alternativen & Kosten',
       excerpt: 'Nachtspeicherheizung ersetzen? Alle Alternativen 2025, Kosten mit Förderung, gesetzliche Lage nach GEG und Schritt-für-Schritt-Anleitung für den Austausch.',
       content: `
@@ -4777,7 +4777,7 @@ function getMockBlogPosts(): BlogPost[] {
       `,
       category: 'Heizung',
       author: 'HeizCenter Redaktion',
-      date: '2025-11-13',
+      date: '2026-01-25',
       readingTime: 14,
       image: '/images/HeizCenter_Heizung.webp',
       tags: ['Nachtspeicherheizung', 'Heizungstausch', 'Wärmepumpe', 'Förderung', 'Kosten', 'Altbau', 'Wirtschaftlichkeit'],
@@ -4819,7 +4819,7 @@ function getMockBlogPosts(): BlogPost[] {
     },
     {
       id: 14,
-      slug: 'fussbodenheizung-kosten-vorteile-2025',
+      slug: 'fussbodenheizung-kosten-vorteile-2026',
       title: 'Fußbodenheizung 2025: Kosten, Vorteile & Nachrüstung im Altbau',
       excerpt: 'Alles über Fußbodenheizung 2025: Kosten (40-100 €/m²), Vorteile & Nachteile, perfekte Kombination mit Wärmepumpen, Nachrüstung im Altbau und beste Bodenbeläge.',
       content: `
@@ -5333,7 +5333,7 @@ function getMockBlogPosts(): BlogPost[] {
       </p>
     </div>
 
-    <p><strong>Weiterlesen:</strong> Erfahren Sie mehr über <a href="/blog/waermepumpe-kosten-2025" class="text-[#0F5B78] font-medium hover:underline">Wärmepumpen-Kosten und Förderung 2025</a> oder lesen Sie unseren Ratgeber zur <a href="/blog/waermepumpe-altbau" class="text-[#0F5B78] font-medium hover:underline">Wärmepumpe im Altbau</a>. Alle Infos zur <a href="/foerderung" class="text-[#0F5B78] font-medium hover:underline">BEG-Förderung für Ihre neue Heizung</a> finden Sie auf unserer Förderseite.</p>
+    <p><strong>Weiterlesen:</strong> Erfahren Sie mehr über <a href="/blog/waermepumpe-kosten-2026" class="text-[#0F5B78] font-medium hover:underline">Wärmepumpen-Kosten und Förderung 2025</a> oder lesen Sie unseren Ratgeber zur <a href="/blog/waermepumpe-altbau" class="text-[#0F5B78] font-medium hover:underline">Wärmepumpe im Altbau</a>. Alle Infos zur <a href="/foerderung" class="text-[#0F5B78] font-medium hover:underline">BEG-Förderung für Ihre neue Heizung</a> finden Sie auf unserer Förderseite.</p>
 
     <h2>Häufig gestellte Fragen (FAQ)</h2>
 
@@ -5363,7 +5363,7 @@ function getMockBlogPosts(): BlogPost[] {
       `,
       category: 'Heizung',
       author: 'HeizCenter Redaktion',
-      date: '2025-11-13',
+      date: '2026-01-22',
       readingTime: 16,
       image: '/images/Heizung_Modernisierung.webp',
       tags: ['Fußbodenheizung', 'Flächenheizung', 'Kosten', 'Nachrüstung', 'Wärmepumpe', 'Altbau', 'Energieeffizienz'],
@@ -5405,7 +5405,7 @@ function getMockBlogPosts(): BlogPost[] {
     },
     {
       id: 15,
-      slug: 'heizung-entlueften-anleitung-2025',
+      slug: 'heizung-entlueften-anleitung-2026',
       title: 'Heizung entlüften 2025: Schritt-für-Schritt-Anleitung & Tipps',
       excerpt: 'Heizung richtig entlüften: Komplette Anleitung, benötigtes Werkzeug, häufige Fehler und wann Sie einen Fachmann rufen sollten. Sparen Sie bis zu 15% Heizkosten.',
       content: `
@@ -5756,7 +5756,7 @@ function getMockBlogPosts(): BlogPost[] {
       </ul>
     </div>
 
-    <p><strong>Weiterlesen:</strong> Informieren Sie sich über unsere <a href="/heizung" class="text-[#0F5B78] font-medium hover:underline">Heizungsservices und Wartungsangebote</a>. Falls ein Heizungstausch ansteht, lesen Sie unseren <a href="/blog/heizung-vergleich-2025-waermepumpe-gas-oel-pellets" class="text-[#0F5B78] font-medium hover:underline">großen Heizungsvergleich 2025</a>. HeizCenter ist Ihr regionaler Ansprechpartner in <a href="/standorte/augsburg" class="text-[#0F5B78] font-medium hover:underline">Augsburg</a>, <a href="/standorte/ulm" class="text-[#0F5B78] font-medium hover:underline">Ulm</a> und <a href="/standorte/memmingen" class="text-[#0F5B78] font-medium hover:underline">Memmingen</a>.</p>
+    <p><strong>Weiterlesen:</strong> Informieren Sie sich über unsere <a href="/heizung" class="text-[#0F5B78] font-medium hover:underline">Heizungsservices und Wartungsangebote</a>. Falls ein Heizungstausch ansteht, lesen Sie unseren <a href="/blog/heizung-vergleich-2026-waermepumpe-gas-oel-pellets" class="text-[#0F5B78] font-medium hover:underline">großen Heizungsvergleich 2025</a>. HeizCenter ist Ihr regionaler Ansprechpartner in <a href="/standorte/augsburg" class="text-[#0F5B78] font-medium hover:underline">Augsburg</a>, <a href="/standorte/ulm" class="text-[#0F5B78] font-medium hover:underline">Ulm</a> und <a href="/standorte/memmingen" class="text-[#0F5B78] font-medium hover:underline">Memmingen</a>.</p>
 
     <div class="cta-box">
       <p class="cta-locations">📍 <strong>Unsere Standorte:</strong> Bobingen (Augsburg) · Gutenzell-Hürbel (Ulm/Memmingen) · Klosterlechfeld</p>
@@ -5796,7 +5796,7 @@ function getMockBlogPosts(): BlogPost[] {
       `,
       category: 'Heizung',
       author: 'HeizCenter Redaktion',
-      date: '2025-11-14',
+      date: '2026-01-18',
       readingTime: 12,
       image: '/images/HeizCenter_Heizung.webp',
       tags: ['Heizung entlüften', 'Wartung', 'DIY', 'Heizkosten sparen', 'Anleitung', 'Heizungsprobleme'],
@@ -5838,7 +5838,7 @@ function getMockBlogPosts(): BlogPost[] {
     },
     {
       id: 16,
-      slug: 'waermepumpe-vs-gasheizung-vergleich-2025',
+      slug: 'waermepumpe-vs-gasheizung-vergleich-2026',
       title: 'Wärmepumpe vs. Gasheizung 2025: Kosten, Effizienz & Förderung im Vergleich',
       excerpt: 'Detaillierter Vergleich: Wärmepumpe oder Gasheizung? Alle Kosten, Effizienz, Förderung, Vor- und Nachteile. Plus Entscheidungshilfe für Ihre Situation.',
       content: `
@@ -6316,7 +6316,7 @@ function getMockBlogPosts(): BlogPost[] {
       `,
       category: 'Wärmepumpe',
       author: 'HeizCenter Redaktion',
-      date: '2025-11-15',
+      date: '2026-01-15',
       readingTime: 14,
       image: '/images/Waermepumpe.jpeg',
       tags: ['Wärmepumpe', 'Gasheizung', 'Heizungsvergleich', 'BEG-Förderung', 'Heizkosten', 'Effizienz', 'GEG 2024'],
@@ -6358,7 +6358,7 @@ function getMockBlogPosts(): BlogPost[] {
     },
     {
       id: 17,
-      slug: 'waermepumpe-vs-pelletheizung-vergleich-2025',
+      slug: 'waermepumpe-vs-pelletheizung-vergleich-2026',
       title: 'Wärmepumpe vs. Pelletheizung 2025: Kosten, Komfort & Nachhaltigkeit',
       excerpt: 'Wärmepumpe oder Pelletheizung? Detaillierter Vergleich der Kosten, Platzbedarf, Wartung, Förderung und Umweltbilanz. Plus Entscheidungshilfe.',
       content: `
@@ -6837,7 +6837,7 @@ function getMockBlogPosts(): BlogPost[] {
       `,
       category: 'Wärmepumpe',
       author: 'HeizCenter Redaktion',
-      date: '2025-11-16',
+      date: '2026-01-12',
       readingTime: 13,
       image: '/images/Waermepumpe.jpeg',
       tags: ['Wärmepumpe', 'Pelletheizung', 'Heizungsvergleich', 'Förderung', 'Biomasse', 'Heizkosten'],
@@ -6867,7 +6867,7 @@ function getMockBlogPosts(): BlogPost[] {
     },
     {
       id: 18,
-      slug: 'klimaanlage-kosten-2025-anschaffung-installation-betrieb',
+      slug: 'klimaanlage-kosten-2026-anschaffung-installation-betrieb',
       title: 'Klimaanlage Kosten 2025: Anschaffung, Installation & Betrieb im Überblick',
       excerpt: 'Was kostet eine Klimaanlage? Alle Kosten für Split-, Multisplit- und mobile Geräte. Plus Betriebskosten, Einsparpotenziale und Fördermöglichkeiten.',
       content: `
@@ -7252,7 +7252,7 @@ function getMockBlogPosts(): BlogPost[] {
       `,
       category: 'Klimaanlage',
       author: 'HeizCenter Redaktion',
-      date: '2025-11-17',
+      date: '2026-01-10',
       readingTime: 12,
       image: '/images/HeizCenter_Klimaanlage.webp',
       tags: ['Klimaanlage', 'Kosten', 'Split-Klimaanlage', 'Betriebskosten', 'Installation', 'Energieeffizienz'],
@@ -7286,7 +7286,7 @@ function getMockBlogPosts(): BlogPost[] {
     },
     {
       id: 19,
-      slug: 'barrierefreies-bad-kosten-planung-foerderung-2025',
+      slug: 'barrierefreies-bad-kosten-planung-foerderung-2026',
       title: 'Barrierefreies Bad 2025: Kosten, Planung, Förderung & DIN-Normen',
       excerpt: 'Barrierefreies Bad planen: Kosten, DIN 18040-2 Anforderungen, Pflegekasse bis 4.000 €, praktische Tipps für altersgerechtes Wohnen und seniorengerechte Badsanierung 2025.',
       content: `
@@ -7783,7 +7783,7 @@ function getMockBlogPosts(): BlogPost[] {
       </ul>
     </div>
 
-    <p><strong>Weiterlesen:</strong> Unser Ratgeber zur <a href="/blog/barrierefreies-bad-planen-ratgeber" class="text-[#0F5B78] font-medium hover:underline">Planung eines barrierefreien Bades</a> zeigt alle Details zu DIN-Normen und Ausstattung. Alle Infos zu <a href="/blog/badsanierung-kosten-2025" class="text-[#0F5B78] font-medium hover:underline">Badsanierung-Kosten 2025</a> finden Sie in unserem Kostenratgeber. Mehr über unsere <a href="/sanitaer" class="text-[#0F5B78] font-medium hover:underline">Sanitär- und Badleistungen</a> erfahren Sie auf unserer Serviceseite.</p>
+    <p><strong>Weiterlesen:</strong> Unser Ratgeber zur <a href="/blog/barrierefreies-bad-planen-ratgeber" class="text-[#0F5B78] font-medium hover:underline">Planung eines barrierefreien Bades</a> zeigt alle Details zu DIN-Normen und Ausstattung. Alle Infos zu <a href="/blog/badsanierung-kosten-2026" class="text-[#0F5B78] font-medium hover:underline">Badsanierung-Kosten 2025</a> finden Sie in unserem Kostenratgeber. Mehr über unsere <a href="/sanitaer" class="text-[#0F5B78] font-medium hover:underline">Sanitär- und Badleistungen</a> erfahren Sie auf unserer Serviceseite.</p>
 
     <h2>HeizCenter berät Sie gerne – auch zu barrierefreien Bädern!</h2>
 
@@ -7856,7 +7856,7 @@ function getMockBlogPosts(): BlogPost[] {
     },
     {
       id: 20,
-      slug: 'solarthermie-vs-photovoltaik-2025-vergleich',
+      slug: 'solarthermie-vs-photovoltaik-2026-vergleich',
       title: 'Solarthermie vs. Photovoltaik 2025: Der große Vergleich',
       excerpt: 'Solarthermie oder Photovoltaik? Wir vergleichen beide Technologien hinsichtlich Kosten, Förderung, Wirtschaftlichkeit und Einsatzbereichen für 2025. Mit aktuellen BAFA-Förderungen und Preisentwicklungen.',
       content: `
@@ -8216,7 +8216,7 @@ function getMockBlogPosts(): BlogPost[] {
     },
     {
       id: 21,
-      slug: 'bafa-foerderung-solarthermie-2025',
+      slug: 'kfw-foerderung-solarthermie-2026',
       title: 'BAFA Förderung für Solarthermie 2025: Bis zu 70% Zuschuss sichern',
       excerpt: 'BAFA-Förderung Solarthermie 2025: Bis 70% Zuschuss möglich. Wir zeigen Ihnen die Fördersätze, Antragsschritte und typische Fallstricke – aus unserer täglichen Praxis.',
       content: `
@@ -8556,7 +8556,7 @@ function getMockBlogPosts(): BlogPost[] {
 
         <p>Benötigen Sie Unterstützung bei Planung und Antragstellung? Unsere zertifizierten Energieberater helfen Ihnen bei der Maximierung Ihrer KfW-Förderung und begleiten Sie durch den gesamten Prozess. Mehr über unsere <a href="/solar" class="text-[#0F5B78] font-medium hover:underline">Solarthermie-Leistungen</a> und die <a href="/foerderung" class="text-[#0F5B78] font-medium hover:underline">aktuelle Heizungsförderung</a> erfahren Sie auf unseren Serviceseiten.</p>
 
-        <p><strong>Weiterlesen:</strong> Unser umfassender <a href="/blog/foerderung-heizung-2025" class="text-[#0F5B78] font-medium hover:underline">Förderratgeber für Heizungstausch</a> erklärt alle BEG-Boni im Detail. Planen Sie eine Wärmepumpe? Dann lesen Sie auch unseren <a href="/blog/waermepumpe-kosten-2025" class="text-[#0F5B78] font-medium hover:underline">Wärmepumpen-Kostenratgeber</a>. HeizCenter berät Sie vor Ort in <a href="/standorte/augsburg" class="text-[#0F5B78] font-medium hover:underline">Augsburg</a>, <a href="/standorte/ulm" class="text-[#0F5B78] font-medium hover:underline">Ulm</a> und <a href="/standorte/memmingen" class="text-[#0F5B78] font-medium hover:underline">Memmingen</a>.</p>
+        <p><strong>Weiterlesen:</strong> Unser umfassender <a href="/blog/foerderung-heizung-2026" class="text-[#0F5B78] font-medium hover:underline">Förderratgeber für Heizungstausch</a> erklärt alle BEG-Boni im Detail. Planen Sie eine Wärmepumpe? Dann lesen Sie auch unseren <a href="/blog/waermepumpe-kosten-2026" class="text-[#0F5B78] font-medium hover:underline">Wärmepumpen-Kostenratgeber</a>. HeizCenter berät Sie vor Ort in <a href="/standorte/augsburg" class="text-[#0F5B78] font-medium hover:underline">Augsburg</a>, <a href="/standorte/ulm" class="text-[#0F5B78] font-medium hover:underline">Ulm</a> und <a href="/standorte/memmingen" class="text-[#0F5B78] font-medium hover:underline">Memmingen</a>.</p>
 
         <div class="cta-box">
           <p class="cta-locations">📍 <strong>Unsere Standorte:</strong> Bobingen (Augsburg) · Gutenzell-Hürbel (Ulm/Memmingen) · Klosterlechfeld</p>
@@ -9442,7 +9442,7 @@ function getMockBlogPosts(): BlogPost[] {
     },
     {
       id: 24,
-      slug: 'pvt-kollektoren-photovoltaik-thermie-hybrid-2025',
+      slug: 'pvt-kollektoren-photovoltaik-thermie-hybrid-2026',
       title: 'PVT-Kollektoren 2025: Photovoltaik und Solarthermie in einem System',
       excerpt: 'PVT-Hybridkollektoren kombinieren Stromerzeugung und Wärmegewinnung auf einer Fläche. Marktüberblick, Technologie, Kosten, Effizienz und praktische Einsatzszenarien für die innovative Solartechnologie.',
       content: `
@@ -9894,7 +9894,7 @@ function getMockBlogPosts(): BlogPost[] {
     },
     {
       id: 25,
-      slug: 'solarthermie-dimensionierung-planung-2025',
+      slug: 'solarthermie-dimensionierung-planung-2026',
       title: 'Solarthermie richtig dimensionieren und planen: Der komplette Leitfaden 2025',
       excerpt: 'Professionelle Anleitung zur Auslegung von Solarthermieanlagen: Kollektorfläche berechnen, Speicher dimensionieren, Standort optimieren. Mit Formeln, Beispielen und Checklisten für maximale Effizienz.',
       content: `
@@ -10673,7 +10673,7 @@ function getMockBlogPosts(): BlogPost[] {
 
         <p>Mit der richtigen Planung und den aktuellen <a href="/foerderung" class="text-[#0F5B78] font-medium hover:underline">Förderungen</a> ist die <a href="/waermepumpe" class="text-[#0F5B78] font-medium hover:underline">Wärmepumpe</a> auch im Altbau eine wirtschaftlich und ökologisch sinnvolle Investition. Die Technik ist ausgereift, die Förderung so hoch wie nie.</p>
 
-        <p><strong>Weiterlesen:</strong> Alle Details zu <a href="/blog/waermepumpe-kosten-2025" class="text-[#0F5B78] font-medium hover:underline">Wärmepumpen-Kosten und Förderung 2025</a> finden Sie in unserem Kostenratgeber. Unser <a href="/blog/foerderung-heizung-2025" class="text-[#0F5B78] font-medium hover:underline">Förderratgeber für Heizungstausch</a> erklärt alle BEG-Boni im Detail. HeizCenter berät Sie vor Ort in <a href="/standorte/augsburg" class="text-[#0F5B78] font-medium hover:underline">Augsburg</a>, <a href="/standorte/ulm" class="text-[#0F5B78] font-medium hover:underline">Ulm</a> und <a href="/standorte/memmingen" class="text-[#0F5B78] font-medium hover:underline">Memmingen</a>.</p>
+        <p><strong>Weiterlesen:</strong> Alle Details zu <a href="/blog/waermepumpe-kosten-2026" class="text-[#0F5B78] font-medium hover:underline">Wärmepumpen-Kosten und Förderung 2025</a> finden Sie in unserem Kostenratgeber. Unser <a href="/blog/foerderung-heizung-2026" class="text-[#0F5B78] font-medium hover:underline">Förderratgeber für Heizungstausch</a> erklärt alle BEG-Boni im Detail. HeizCenter berät Sie vor Ort in <a href="/standorte/augsburg" class="text-[#0F5B78] font-medium hover:underline">Augsburg</a>, <a href="/standorte/ulm" class="text-[#0F5B78] font-medium hover:underline">Ulm</a> und <a href="/standorte/memmingen" class="text-[#0F5B78] font-medium hover:underline">Memmingen</a>.</p>
 
         <div class="cta-box">
           <h4>Ist Ihr Altbau wärmepumpen-geeignet? Kostenlose Prüfung vor Ort</h4>

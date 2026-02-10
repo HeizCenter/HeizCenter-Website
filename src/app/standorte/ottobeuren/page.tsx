@@ -156,7 +156,7 @@ export default function OttobeurenPage() {
             Badezimmer professionell und zuverlässig. Mit unserer 3D-Planung
             können Sie Ihr neues Bad vorab visualisieren. Besonders gefragt:
             Barrierefreie Bäder für ein selbstbestimmtes Leben im Alter.
-            Förderung bis 8.000€ möglich über die KfW. Wir koordinieren alle
+            Fördermöglichkeiten über Pflegekasse (bis 4.000€ pro Person). Wir koordinieren alle
             Gewerke - Fliesen, Elektro, Sanitär - und garantieren feste Preise
             ohne versteckte Kosten.
           </p>

@@ -148,7 +148,7 @@ export default function StadtbergenPage() {
             Jahren. Eine Badsanierung schafft modernes Wohngefühl und erhöht den
             Immobilienwert. Mit unserer 3D-Planung können Sie Ihr neues Bad vorab
             visualisieren. Besonders nachgefragt: Barrierefreie Bäder für ein
-            selbstbestimmtes Leben im Alter. Förderung bis 8.000€ möglich. Wir
+            selbstbestimmtes Leben im Alter. Fördermöglichkeiten über Pflegekasse (bis 4.000€ pro Person). Wir
             koordinieren alle Gewerke und garantieren feste Preise.
           </p>
 

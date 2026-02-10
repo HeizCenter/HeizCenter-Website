@@ -148,8 +148,7 @@ export default function FriedbergPage() {
             einen modernen Neubau ausstatten - wir haben die Erfahrung und das
             Know-how. Besonders in Friedberg gefragt: Barrierefreie
             Badsanierungen für ein selbstbestimmtes Leben im Alter. Mit unserer
-            3D-Planung visualisieren Sie Ihr neues Bad vorab. Förderung bis
-            8.000€ möglich.
+            3D-Planung visualisieren Sie Ihr neues Bad vorab. Fördermöglichkeiten über Pflegekasse (bis 4.000€ pro Person).
           </p>
 
           <h3 className="text-2xl font-bold mb-4 mt-8">

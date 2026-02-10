@@ -146,8 +146,8 @@ export default function LaupheimPage() {
             Ob Sie in einem Einfamilienhaus, einer Wohnung oder einem
             Mehrfamilienhaus in Laupheim wohnen - wir sanieren Ihr Badezimmer
             professionell und zuverlässig. Mit unserer 3D-Planung visualisieren
-            Sie Ihr neues Bad vorab. Barrierefreie Bäder mit bis zu 8.000€
-            Förderung sind besonders gefragt. Wir koordinieren alle Gewerke und
+            Sie Ihr neues Bad vorab. Barrierefreie Bäder mit Förderung durch die Pflegekasse (bis 4.000€ pro Person)
+            sind besonders gefragt. Wir koordinieren alle Gewerke und
             halten vereinbarte Termine ein.
           </p>
 

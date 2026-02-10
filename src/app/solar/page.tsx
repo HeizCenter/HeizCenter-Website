@@ -55,7 +55,7 @@ export const dynamic = 'force-dynamic';
 const benefits = [
   "Bis zu 70% staatliche Förderung für Ihre Solarthermie-Anlage (bis Ende 2028)",
   "60% Ihres Warmwasserbedarfs durch kostenlose Sonnenenergie",
-  "Bis zu 30% Heizkosten sparen mit Heizungsunterstützung",
+  "Bis zu 25% Heizkosten sparen mit Heizungsunterstützung",
   "Umweltfreundlich und CO2-neutral Warmwasser bereiten",
   "Kombination mit Wärmepumpe möglich",
   "30-40 Jahre Lebensdauer der Anlage",
@@ -65,7 +65,7 @@ const features = [
   {
     title: "Kostenlose Sonnenenergie",
     description:
-      "Nutzen Sie die Kraft der Sonne zur Warmwasserbereitung und Heizungsunterstützung. 60-80% Wirkungsgrad bei der Umwandlung von Sonnenlicht in Wärme.",
+      "Nutzen Sie die Kraft der Sonne zur Warmwasserbereitung und Heizungsunterstützung. Optischer Kollektorwirkungsgrad bis 80%, im Jahresmittel ca. 50% Nutzungsgrad.",
     icon: Sun,
   },
   {
@@ -104,17 +104,17 @@ const faqs: FAQItem[] = [
   {
     question: "Was ist Solarthermie und wie funktioniert sie?",
     answer:
-      "Solarthermie wandelt Sonnenlicht direkt in Wärmeenergie um. Solarkollektoren auf Ihrem Dach erwärmen eine Wärmeträgerflüssigkeit, die die Wärme an einen Speicher überträgt. Von dort wird die Wärme zur Warmwasserbereitung und/oder Heizungsunterstützung genutzt. Im Gegensatz zu Photovoltaik (die Strom erzeugt) produziert Solarthermie direkt Wärme mit 60-80% Wirkungsgrad.",
+      "Solarthermie wandelt Sonnenlicht direkt in Wärmeenergie um. Solarkollektoren auf Ihrem Dach erwärmen eine Wärmeträgerflüssigkeit, die die Wärme an einen Speicher überträgt. Von dort wird die Wärme zur Warmwasserbereitung und/oder Heizungsunterstützung genutzt. Im Gegensatz zu Photovoltaik (die Strom erzeugt) produziert Solarthermie direkt Wärme – mit einem optischen Kollektorwirkungsgrad bis 80% und einem Jahresnutzungsgrad von ca. 50%.",
   },
   {
-    question: "Wie hoch ist die KfW-Förderung für Solarthermie 2025?",
+    question: "Wie hoch ist die KfW-Förderung für Solarthermie 2026?",
     answer:
       "Die KfW fördert Solarthermie-Anlagen über die Bundesförderung für effiziente Gebäude (BEG). Basisförderung: 30% der Investitionskosten. Klimageschwindigkeitsbonus: +20% beim Austausch alter Öl- oder Gasheizungen (in voller Höhe bis Ende 2028). Einkommensbonus: +30% bei zu versteuerndem Haushaltseinkommen unter 40.000€. Maximal 70% Förderung möglich. Wir unterstützen Sie bei der Antragstellung.",
   },
   {
     question: "Was kostet eine Solarthermie-Anlage?",
     answer:
-      "Warmwasser-System (4-Personen-Haushalt): 5.000-10.000€ inklusive Installation. Nach 30% KfW-Förderung: 3.500-7.000€. Kombi-System mit Heizungsunterstützung: 8.000-18.000€ inklusive Installation. Nach maximaler 70% Förderung: 2.400-5.400€. Die Kosten hängen von Kollektorfläche, Speichergröße und Dachbeschaffenheit ab.",
+      "Warmwasser-System (4-Personen-Haushalt): 5.000-10.000€ inklusive Installation. Nach 30% KfW-Förderung: 3.500-7.000€. Kombi-System mit Heizungsunterstützung: 8.000-18.000€ inklusive Installation. Bei Kombination mit Heizungstausch bis zu 70% Förderung möglich, als Einzelmaßnahme 30% Basisförderung. Die Kosten hängen von Kollektorfläche, Speichergröße und Dachbeschaffenheit ab.",
   },
   {
     question: "Wie viel Warmwasser kann ich mit Solarthermie erzeugen?",
@@ -124,12 +124,12 @@ const faqs: FAQItem[] = [
   {
     question: "Lohnt sich Solarthermie mit Heizungsunterstützung?",
     answer:
-      "Ja, besonders in der Übergangszeit (Frühling/Herbst) entlastet eine Kombi-Anlage Ihre Heizung deutlich. Sie deckt 20-30% Ihres jährlichen Heizbedarfs und 60-70% des Warmwassers. Für ein Einfamilienhaus (150 m²) benötigen Sie 12-15 m² Kollektorfläche. Mit 70% KfW-Förderung amortisiert sich die Anlage in 6-10 Jahren bei einer Lebensdauer von 30-40 Jahren.",
+      "Ja, besonders in der Übergangszeit (Frühling/Herbst) entlastet eine Kombi-Anlage Ihre Heizung deutlich. Sie deckt 15-25% Ihres jährlichen Heizbedarfs und 60-70% des Warmwassers. Für ein Einfamilienhaus (150 m²) benötigen Sie 12-15 m² Kollektorfläche. Mit bis zu 70% KfW-Förderung (bei Heizungstausch) amortisiert sich die Anlage in 6-10 Jahren bei einer Lebensdauer von 30-40 Jahren.",
   },
   {
     question: "Solarthermie oder Photovoltaik - was ist besser?",
     answer:
-      "Beide Technologien haben unterschiedliche Einsatzzwecke: Solarthermie erzeugt Wärme mit 60-80% Wirkungsgrad - ideal für Warmwasser und Heizung. Photovoltaik erzeugt Strom mit 15-22% Wirkungsgrad - vielseitig einsetzbar. Am besten: Kombination beider Systeme! Solarthermie für Warmwasser/Heizung + PV für Strom + Wärmepumpe = maximale Energieunabhängigkeit.",
+      "Beide Technologien haben unterschiedliche Einsatzzwecke: Solarthermie erzeugt Wärme mit bis zu 50% Jahresnutzungsgrad (optisch bis 80%) - ideal für Warmwasser und Heizung. Photovoltaik erzeugt Strom mit 15-22% Wirkungsgrad - vielseitig einsetzbar. Am besten: Kombination beider Systeme! Solarthermie für Warmwasser/Heizung + PV für Strom + Wärmepumpe = maximale Energieunabhängigkeit.",
   },
   {
     question: "Kann ich Solarthermie mit einer Wärmepumpe kombinieren?",
@@ -149,7 +149,7 @@ const faqs: FAQItem[] = [
   {
     question: "Was ist der Unterschied zwischen Flach- und Vakuumröhrenkollektoren?",
     answer:
-      "Flachkollektoren: 60-75% Wirkungsgrad, günstiger (300-500€/m²), ideal für Warmwasser und Süddächer, bewährte Technologie. Vakuumröhrenkollektoren: 70-85% Wirkungsgrad, teurer (500-750€/m²), besser bei Ost-West-Ausrichtung und im Winter, ideal für Heizungsunterstützung. Wir empfehlen Flachkollektoren für reine Warmwasser-Systeme und Vakuumröhren für Kombi-Anlagen mit Heizungsunterstützung.",
+      "Flachkollektoren: optischer Wirkungsgrad 60-75% (Jahresnutzungsgrad ca. 40-50%), günstiger (300-500€/m²), ideal für Warmwasser und Süddächer, bewährte Technologie. Vakuumröhrenkollektoren: optischer Wirkungsgrad 70-85% (Jahresnutzungsgrad ca. 45-55%), teurer (500-750€/m²), besser bei Ost-West-Ausrichtung und im Winter, ideal für Heizungsunterstützung. Wir empfehlen Flachkollektoren für reine Warmwasser-Systeme und Vakuumröhren für Kombi-Anlagen mit Heizungsunterstützung.",
   },
 ];
 
@@ -168,7 +168,7 @@ export default function SolarPage() {
 
       <ServiceHero
         title="Solarthermie in Augsburg, Ulm & Memmingen"
-        description="Nutzen Sie die Kraft der Sonne! Mit einer Solarthermie-Anlage senken Sie Ihre Heizkosten um bis zu 30% und profitieren von bis zu 70% KfW-Förderung. Kostenlose Sonnenenergie für Warmwasser und Heizung."
+        description="Nutzen Sie die Kraft der Sonne! Mit einer Solarthermie-Anlage senken Sie Ihre Heizkosten um bis zu 25% und profitieren von bis zu 70% KfW-Förderung. Kostenlose Sonnenenergie für Warmwasser und Heizung."
         benefits={benefits}
         icon={Sun}
         badge="Bis zu 70% KfW-Förderung"
@@ -289,7 +289,9 @@ export default function SolarPage() {
                   <div className="mb-2 text-sm font-medium text-slate-600">Kosten</div>
                   <div className="text-2xl font-bold">8.000 - 18.000 €</div>
                   <div className="mt-2 text-sm text-slate-600">
-                    Nach 70% Förderung: <span className="font-semibold text-green-600">2.400 - 5.400 €</span>
+                    Bei Heizungstausch bis 70%: <span className="font-semibold text-green-600">ab 2.400 €</span>
+                    <br />
+                    <span className="text-xs">Einzelmaßnahme: 30% Basisförderung</span>
                   </div>
                 </div>
 
@@ -365,7 +367,7 @@ export default function SolarPage() {
       <section className="bg-gradient-to-br from-primary to-primary/80 py-16 text-white">
         <div className="container">
           <div className="mb-12 text-center">
-            <h2 className="mb-4 text-3xl font-bold">KfW-Förderung 2025: Bis zu 70% Zuschuss</h2>
+            <h2 className="mb-4 text-3xl font-bold">KfW-Förderung 2026: Bis zu 70% Zuschuss</h2>
             <p className="mx-auto max-w-2xl text-lg text-white/90">
               Nutzen Sie die staatliche Förderung für Ihre Solarthermie-Anlage (Geschwindigkeitsbonus in voller Höhe bis Ende 2028)
             </p>
@@ -420,7 +422,7 @@ export default function SolarPage() {
                   <span>- 2.800 €</span>
                 </div>
                 <div className="flex justify-between text-sm text-slate-600">
-                  <span>Einkommensbonus (20%, max. 70% gesamt)</span>
+                  <span>Einkommensbonus (30%, auf 20% gekappt wegen 70%-Deckelung)</span>
                   <span>- 2.800 €</span>
                 </div>
                 <div className="flex justify-between border-t-2 border-primary pt-2 text-lg">
@@ -452,16 +454,16 @@ export default function SolarPage() {
             </h2>
           </div>
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            <Link href="/blog/bafa-foerderung-solarthermie-2025" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
-              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">BAFA-Förderung Solarthermie 2025</h3>
+            <Link href="/blog/kfw-foerderung-solarthermie-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
+              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">KfW-Förderung Solarthermie 2026</h3>
               <p className="text-slate-600 text-sm">Bis zu 70% Zuschuss – alle Fördermöglichkeiten und Antragsschritte.</p>
             </Link>
-            <Link href="/blog/waermepumpe-kosten-2025" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
+            <Link href="/blog/waermepumpe-kosten-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
               <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Wärmepumpe + Solar kombinieren</h3>
               <p className="text-slate-600 text-sm">Solarthermie und Wärmepumpe als Hybrid – Kosten und Vorteile.</p>
             </Link>
-            <Link href="/blog/foerderung-heizung-2025" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
-              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Förderung Heizungstausch 2025</h3>
+            <Link href="/blog/foerderung-heizung-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
+              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Förderung Heizungstausch 2026</h3>
               <p className="text-slate-600 text-sm">BEG-Förderung für Solarthermie im Überblick.</p>
             </Link>
           </div>

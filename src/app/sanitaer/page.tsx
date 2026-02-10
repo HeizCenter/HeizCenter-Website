@@ -281,15 +281,15 @@ export default function SanitaerPage() {
             </h2>
           </div>
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            <Link href="/blog/badsanierung-kosten-2025" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
-              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Badsanierung: Kosten 2025</h3>
+            <Link href="/blog/badsanierung-kosten-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
+              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Badsanierung: Kosten 2026</h3>
               <p className="text-slate-600 text-sm">Was kostet ein neues Bad? Preise, Spartipps und Förderung.</p>
             </Link>
             <Link href="/blog/barrierefreies-bad-planen-ratgeber" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
               <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Barrierefreies Bad planen</h3>
               <p className="text-slate-600 text-sm">DIN-Normen, Ausstattung und Planungstipps für altersgerechte Bäder.</p>
             </Link>
-            <Link href="/blog/barrierefreies-bad-kosten-planung-foerderung-2025" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
+            <Link href="/blog/barrierefreies-bad-kosten-planung-foerderung-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
               <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Barrierefreies Bad: Kosten & Förderung</h3>
               <p className="text-slate-600 text-sm">Alle Kosten und Fördermöglichkeiten für den barrierefreien Umbau.</p>
             </Link>

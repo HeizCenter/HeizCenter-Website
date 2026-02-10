@@ -145,8 +145,7 @@ export default function BadWoerishofenPage() {
             Ob Hotelbad, Zimmer in einer Pension oder privates Badezimmer - wir
             sanieren Bäder in Bad Wörishofen mit höchster Qualität. Besonders
             gefragt: Barrierefreie Bäder für ältere Gäste und Patienten. Mit
-            unserer 3D-Planung können Sie das Ergebnis vorab sehen. Förderung bis
-            8.000€ möglich. Wir koordinieren alle Gewerke und garantieren feste
+            unserer 3D-Planung können Sie das Ergebnis vorab sehen. Fördermöglichkeiten über Pflegekasse (bis 4.000€ pro Person). Wir koordinieren alle Gewerke und garantieren feste
             Preise.
           </p>
 

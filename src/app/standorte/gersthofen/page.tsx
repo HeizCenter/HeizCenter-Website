@@ -147,7 +147,7 @@ export default function GersthofenPage() {
             Ob Sie in einem Einfamilienhaus oder einer Wohnung in Gersthofen
             leben - wir sanieren Ihr Badezimmer professionell und zuverlässig.
             Mit unserer 3D-Planung visualisieren Sie Ihr neues Bad vorab.
-            Barrierefreie Bäder mit bis zu 8.000€ Förderung sind besonders
+            Barrierefreie Bäder mit Förderung durch die Pflegekasse (bis 4.000€ pro Person) sind besonders
             gefragt. Wir koordinieren alle Gewerke und halten die vereinbarten
             Termine ein.
           </p>

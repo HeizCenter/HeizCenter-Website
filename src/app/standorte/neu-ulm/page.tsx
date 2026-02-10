@@ -146,7 +146,7 @@ export default function NeuUlmPage() {
             Pfuhl wohnen - wir sanieren Badezimmer in allen Stadtteilen. Mit
             unserer 3D-Planung können Sie Ihr neues Bad vorab visualisieren.
             Besonders nachgefragt: Barrierefreie Bäder mit bodengleichen Duschen.
-            Förderung bis 8.000€ möglich. Wir koordinieren alle Gewerke und
+            Fördermöglichkeiten über Pflegekasse (bis 4.000€ pro Person). Wir koordinieren alle Gewerke und
             garantieren Festpreise.
           </p>
 

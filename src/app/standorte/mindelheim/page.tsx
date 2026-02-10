@@ -147,7 +147,7 @@ export default function MindelheimPage() {
             ausstatten - wir haben die Erfahrung für beide Fälle. Mit unserer
             3D-Planung können Sie Ihr neues Bad vorab visualisieren. Besonders
             gefragt in Mindelheim: Barrierefreie Bäder für ein selbstbestimmtes
-            Leben im Alter. Förderung bis 8.000€ möglich. Wir koordinieren alle
+            Leben im Alter. Fördermöglichkeiten über Pflegekasse (bis 4.000€ pro Person). Wir koordinieren alle
             Gewerke - Fliesen, Elektro, Sanitär - und garantieren feste Preise.
           </p>
 

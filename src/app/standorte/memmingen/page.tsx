@@ -231,7 +231,7 @@ export default function MemmingenPage() {
           </p>
           <ul className="list-disc list-inside space-y-2 text-slate-700 mb-6">
             <li>3D-Badplanung für perfekte Visualisierung</li>
-            <li>Barrierefreie Bäder mit bis zu 8.000€ Förderung</li>
+            <li>Barrierefreie Bäder (Pflegekasse bis 4.000€ pro Person, KfW-Programm in Neuauflage)</li>
             <li>Sanierung in denkmalgeschützten Gebäuden</li>
             <li>Modernisierung von Bauernhäusern und Landhäusern</li>
             <li>Festpreisgarantie und koordinierte Gewerke</li>
@@ -302,8 +302,8 @@ export default function MemmingenPage() {
               <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Wärmepumpe im Altbau</h3>
               <p className="text-slate-600 text-sm">Voraussetzungen und Tipps für Wärmepumpen im Bestandsgebäude.</p>
             </Link>
-            <Link href="/blog/foerderung-heizung-2025" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
-              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Förderung Heizungstausch 2025</h3>
+            <Link href="/blog/foerderung-heizung-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
+              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Förderung Heizungstausch 2026</h3>
               <p className="text-slate-600 text-sm">BEG-Förderung bis 70% – alle Details und Antragsschritte.</p>
             </Link>
             <Link href="/blog/barrierefreies-bad-planen-ratgeber" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">

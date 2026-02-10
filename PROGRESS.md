@@ -86,14 +86,14 @@
 ## Letzte Git-Commits
 
 ```
+f97de4f fix(contact): add WhatsApp mobile number to contact.ts
+7530726 refactor: centralize all contact data via CONTACT imports
+1252033 fix(content): remove 5 more hallucinated phone numbers
+59d0f83 fix(content): replace hallucinated phone number in solar CTA
+e8cf09a fix(content): replace hallucinated phone numbers with correct contact
+4f75e99 feat(seo): add internal linking, FAQ schema, and 301 redirects
+66a8201 fix(seo): optimize image alt texts with German keywords
 8381d16 fix(seo): shorten title tags to max 60 characters
-cbba8ce refactor(blog): rewrite Solarthermie article for readability
-23b192e feat(seo): activate FAQSchema on all service pages
-75f72cf fix(layout): adjust services grid for 5 columns
-00f2592 feat(standorte): add Solarthermie service to all 26 location pages
-2e1b985 feat(partner): replace placeholder logos with official brand logos
-69d175f fix(forms): prevent data loss and improve GDPR consent UX
-8dd8415 feat: Add HeizCenter favicon and apple-icon
 ```
 
 ---
@@ -111,6 +111,12 @@ cbba8ce refactor(blog): rewrite Solarthermie article for readability
 - [x] Solarthermie-Duplikat bereinigen (Content Cannibalization) ✅ 2026-02-10
 - [x] FAQPage Schema für Blog-Artikel implementieren (blog/[slug]/page.tsx) ✅ 2026-02-10
 - [x] Interne Verlinkung stärken (6 Aufgaben, alle erledigt) ✅ 2026-02-10
+- [x] Content-Audit: 19 fachliche Korrekturen (KfW, GEG, BAFA→KfW, etc.) ✅ 2026-02-10
+- [x] Halluzinierte Telefonnummern entfernt (12 Stück) ✅ 2026-02-10
+- [x] Kontaktdaten zentralisiert: 67 Dateien auf CONTACT.* Import umgestellt ✅ 2026-02-10
+- [x] Quality Gates in CLAUDE.md verankert (4-Augen-Prinzip, VALIDATION_REPORT) ✅ 2026-02-10
+- [ ] Content-Audit: Blog-Datum 2025→2026 (Issue 22/24 — 25 Artikel, URL-Impact prüfen)
+- [ ] Content-Audit: "20 Jahre Erfahrung" extern verifizieren (HRB 39683)
 - [ ] OG-Images für Service-Seiten erstellen (SEO Quick Win)
 - [ ] Alt-Texte optimieren (SEO Quick Win)
 - [ ] Nach Deployment: Interne Links mit Screaming Frog / Sitebulb validieren
@@ -154,10 +160,133 @@ git log --oneline -10
 | [SCHEMA_IMPLEMENTATION_SUMMARY.md](SCHEMA_IMPLEMENTATION_SUMMARY.md) | Schema.org Übersicht |
 | [ODOO_INTEGRATION_PLAN.md](ODOO_INTEGRATION_PLAN.md) | Odoo Backend-Plan |
 | [SEO_AUDIT_REPORT.md](SEO_AUDIT_REPORT.md) | SEO-Audit Februar 2026 |
+| [VALIDATION_REPORT.md](VALIDATION_REPORT.md) | Content-Validierungsreport (Quality Gates) |
 
 ---
 
 ## Session-Archiv
+
+### Session 2026-02-10 (Kontaktdaten-Zentralisierung)
+
+#### Problem
+12 halluzinierte Telefonnummern in Blog-Artikeln, CTAs und Komponenten entdeckt. Ursache: `contact.ts` existierte als Source of Truth, aber **0 von 66 Dateien** importierten daraus — alle Nummern waren hardcoded.
+
+#### Completed
+
+**Phase 1: Halluzinierte Nummern entfernt (4 Commits)**
+- [x] `08234 / 967 975 0` — blog.ts (3x)
+- [x] `08234 / 90 89 70` — blog.ts (2x)
+- [x] `+4982347799620` — solar-process-section.tsx
+- [x] `+49 731 234567` — click-to-call.tsx (Ulm)
+- [x] `+49 8331 45678` — click-to-call.tsx (Memmingen)
+- [x] `4982349665901` — impressum/page.tsx (WhatsApp off-by-one)
+- [x] `+49 8234 966590078` — contact-form.tsx, quote-form.tsx (Extra-Ziffern)
+
+**Phase 2: Zentralisierung (1 großer Commit + 1 Fix)**
+- [x] **67 Dateien** refactored: Alle hardcoded Telefon/Email/WhatsApp → `CONTACT.*` Import
+- [x] 5 parallele `frontend-dev` Agents für Batch-Refactoring
+- [x] **209 Referenzen** via `CONTACT.*` über 64 Dateien
+- [x] **0 hardcoded Kontaktdaten** verbleiben außerhalb `contact.ts`
+- [x] WhatsApp-Mobilnummer `4915111100331` als `CONTACT.WHATSAPP_MOBILE` zentralisiert
+- [x] Build verifiziert (clean)
+
+**Phase 3: Quality Gates in CLAUDE.md**
+- [x] Gate 1: Fachliche Prüfung durch `hvac-content` vor jedem Content-Commit
+- [x] Gate 2: 4-Augen-Prinzip für Kontaktdaten (2 Agents gegen `contact.ts`)
+- [x] Gate 3: VALIDATION_REPORT.md Pflicht
+
+#### Git-Commits
+```
+f97de4f fix(contact): add WhatsApp mobile number to contact.ts
+7530726 refactor: centralize all contact data via CONTACT imports
+1252033 fix(content): remove 5 more hallucinated phone numbers
+59d0f83 fix(content): replace hallucinated phone number in solar CTA
+e8cf09a fix(content): replace hallucinated phone numbers with correct contact
+```
+
+#### Geänderte Dateien
+| Datei | Änderung |
+|-------|----------|
+| `CLAUDE.md` | +Quality Gates Sektion (Gate 1-3, verbindlich) |
+| `src/lib/config/contact.ts` | +WHATSAPP_MOBILE, +WHATSAPP_MOBILE_DISPLAY |
+| `src/lib/api/blog.ts` | 33x CONTACT.* Import statt hardcoded |
+| `src/components/**/*.tsx` (19 Dateien) | CONTACT.* Import für CTAs, Schema, Forms, Layout |
+| `src/app/**/*.tsx` (46 Dateien) | CONTACT.* Import für alle Pages |
+| `src/lib/**/*.ts` (3 Dateien) | CONTACT.* Import für API/Constants |
+| `VALIDATION_REPORT.md` | Erstellt |
+
+#### Kontaktdaten (Source of Truth: `contact.ts`)
+| Konstante | Wert | Verwendung |
+|-----------|------|------------|
+| `PHONE_DISPLAY` | `+49 8234 9665900` | Sichtbarer Text |
+| `PHONE_LINK` | `+4982349665900` | `tel:` href |
+| `PHONE_SCHEMA` | `+4982349665900` | Schema.org |
+| `PHONE_WHATSAPP` | `4982349665900` | wa.me Festnetz (Home CTA etc.) |
+| `WHATSAPP_MOBILE` | `4915111100331` | wa.me Mobil (Header, Kontakt, Impressum) |
+| `EMAIL` | `service@heizcenter.de` | Überall |
+
+#### Nächste Schritte
+- [ ] Vercel Deployment verifizieren (alle Nummern auf Live-Site prüfen)
+- [ ] `organization-schema.tsx`: Platzhalter-Steuer-IDs `DE123456789` durch echte ersetzen
+
+---
+
+### Session 2026-02-10 (Content-Audit: 19 fachliche Korrekturen)
+
+#### Ziel
+CSV mit 24 Content-Audit-Findings gegen Codebase validieren und bestätigte Fehler korrigieren. Schwerpunkt: Veraltete KfW/BAFA-Programmnummern, GEG-Fristen, technische Kennwerte.
+
+#### Completed
+
+**HOCH-Priorität (4 Issues):**
+- [x] **Issues 4+5:** KfW 455-B auf `/sanitaer` — Programm seit 01.01.2025 eingestellt, Feature Card + FAQ + CTA aktualisiert
+- [x] **Issue 6:** Blog Badsanierung — KfW 455-B Budget von "150 Mio. €" auf "Pausiert" korrigiert, Neuauflage Frühjahr 2026
+- [x] **Issue 14:** Blog BEG — KfW 261 → KfW 358/359, 150.000€ → 120.000€ pro Wohneinheit
+- [x] **Issue 21:** Blog Solarthermie — BAFA→KfW an 6 Stellen aktualisiert (seit Jan 2024 über KfW)
+
+**MITTEL-Priorität (7 Issues):**
+- [x] **Issue 2:** `/foerderung` H1 + Stand: 2025→2026
+- [x] **Issue 7:** Gasheizung GEG: "nur Übergang bis 2029" → "ab 2029: 15% Bio-Anteil, stufenweise bis 100% in 2045"
+- [x] **Issue 8:** CO₂-Preis: "ab 2027 marktbasiert" → "2026/27 Korridor 55-65€/t (Versteigerung)"
+- [x] **Issue 10:** GEG-Fristen: "Ab 1. Juli" → "Spätestens 30. Juni"
+- [x] **Issues 11+12:** Kollektorflächen: auf 7m²/7m² (BEG EM TMA, Bestand) korrigiert
+- [x] **Issue 20:** Ölheizung Wirkungsgrad: 96-98% → 90-95%
+
+**GERING-Priorität (3 Issues):**
+- [x] **Issue 15:** Solarthermie-Einsparung: 30% → 25%
+- [x] **Issue 16:** "70% KfW-Förderung" → "bei Heizungstausch" präzisiert
+- [x] **Issue 18:** Schornsteinfeger: Hybrid-Caveat ergänzt (WP + Gas → Pflicht bleibt)
+
+**Quality Gates:**
+- [x] Gate 1: hvac-content APPROVED (nach Kollektorflächen-Nachkorrektur 9m²→7m²)
+- [x] Gate 2: security-reviewer APPROVED (keine Kontaktdaten in Content)
+- [x] Gate 3: VALIDATION_REPORT.md aktualisiert
+- [x] Build erfolgreich verifiziert
+
+#### Geänderte Dateien
+| Datei | Änderung |
+|-------|----------|
+| `src/app/sanitaer/page.tsx` | KfW 455-B: Feature Card, FAQ, CTA aktualisiert |
+| `src/lib/api/blog.ts` | 14 Korrekturen in 4 Blog-Artikeln (Badsanierung, BEG, Heizungsvergleich, Solarthermie) |
+| `src/app/foerderung/page.tsx` | H1 + Stand 2025→2026 |
+| `src/app/heizung/page.tsx` | Solarthermie 30%→25%, Förder-Claim präzisiert |
+| `src/components/cta/floating-action-button.tsx` | Lint-Fix: Ungenutzter CONTACT-Import entfernt |
+| `VALIDATION_REPORT.md` | Gate 1-3 Report für Content-Audit |
+
+#### Nicht behoben (bewusst zurückgestellt)
+| # | Grund |
+|---|-------|
+| 22+24 | Blog-Datum 2025→2026 — betrifft ~25 Artikel + potentiell Slugs/URLs |
+| 13 | Gas-Etagenheizung Klimabonus — Geringfügig |
+| 23 | "20 Jahre Erfahrung" — Externe Verifizierung nötig (HRB 39683) |
+| 3, 9, 17, 19 | Nicht im Code bestätigt oder bereits korrekt |
+
+#### Nächste Schritte
+- [ ] Änderungen committen und deployen
+- [ ] Issue 22: Blog-Daten 2025→2026 (eigene Session, URL-Impact prüfen)
+- [ ] Issue 23: "20 Jahre Erfahrung" extern verifizieren
+
+---
 
 ### Session 2026-02-10 (Interne Verlinkung stärken)
 
@@ -325,7 +454,7 @@ Robuste interne Link-Architektur aufbauen: Jede wichtige Seite erhält 3-5 konte
 
 #### Verifizierte Fakten
 - KfW-Förderung: 30% Basis, bis 70% max
-- Mindestflächen: 9m² Flachkollektoren, 7m² Röhrenkollektoren
+- Mindestflächen: 7m² Flachkollektoren, 7m² Röhrenkollektoren (BEG EM TMA, korrigiert am 2026-02-10)
 - Antrag vor Vertragsabschluss erforderlich
 - Steuerbonus §35c als Alternative (20% über 3 Jahre)
 

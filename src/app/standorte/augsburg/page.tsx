@@ -228,7 +228,7 @@ export default function AugsburgPage() {
           </p>
           <ul className="list-disc list-inside space-y-2 text-slate-700 mb-6">
             <li>3D-Planung und Festpreisangebot</li>
-            <li>Barrierefreie Bäder nach DIN 18040 (Förderung bis 8.000€)</li>
+            <li>Barrierefreie Bäder nach DIN 18040 (Pflegekasse bis 4.000€ pro Person, KfW-Programm in Neuauflage)</li>
             <li>Bodengleiche Duschen und moderne Badausstattung</li>
             <li>Koordination aller Gewerke (Fliesen, Elektro, Sanitär)</li>
             <li>Fertigstellung in 2-3 Wochen</li>
@@ -282,15 +282,15 @@ export default function AugsburgPage() {
             </h2>
           </div>
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            <Link href="/blog/waermepumpe-kosten-2025" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
-              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Wärmepumpe: Kosten & Förderung 2025</h3>
+            <Link href="/blog/waermepumpe-kosten-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
+              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Wärmepumpe: Kosten & Förderung 2026</h3>
               <p className="text-slate-600 text-sm">Aktuelle Preise und bis zu 70% BEG-Förderung.</p>
             </Link>
-            <Link href="/blog/foerderung-heizung-2025" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
-              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Förderung Heizungstausch 2025</h3>
+            <Link href="/blog/foerderung-heizung-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
+              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Förderung Heizungstausch 2026</h3>
               <p className="text-slate-600 text-sm">Alle BEG-Boni und Antragsschritte im Detail.</p>
             </Link>
-            <Link href="/blog/badsanierung-kosten-2025" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
+            <Link href="/blog/badsanierung-kosten-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
               <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Badsanierung: Was kostet ein neues Bad?</h3>
               <p className="text-slate-600 text-sm">Preise, Spartipps und Förderung für Ihre Badsanierung.</p>
             </Link>

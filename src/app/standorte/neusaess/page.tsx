@@ -144,7 +144,7 @@ export default function NeusaessPage() {
           <p className="text-slate-700 mb-6">
             Ob in Westheim, Steppach, Täfertingen oder Hainhofen - wir sanieren
             Badezimmer in ganz Neusäß. Besonders beliebt: Barrierefreie Bäder für
-            ein selbstbestimmtes Leben im Alter. Mit bis zu 8.000€ Förderung wird
+            ein selbstbestimmtes Leben im Alter. Mit Förderung durch die Pflegekasse (bis 4.000€ pro Person) wird
             der barrierefreie Umbau bezahlbar. Wir planen in 3D, koordinieren alle
             Gewerke und garantieren feste Preise.
           </p>

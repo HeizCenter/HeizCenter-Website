@@ -146,8 +146,7 @@ export default function BlausteinPage() {
             Ob in Ehrenstein, Herrlingen, Markbronn, Klingenstein oder Wippingen -
             wir sanieren Badezimmer in ganz Blaustein. Mit unserer 3D-Planung
             können Sie Ihr neues Bad vorab visualisieren. Besonders gefragt:
-            Barrierefreie Bäder für ein selbstbestimmtes Leben im Alter. Förderung
-            bis 8.000€ möglich. Wir koordinieren alle Gewerke und garantieren
+            Barrierefreie Bäder für ein selbstbestimmtes Leben im Alter. Fördermöglichkeiten über Pflegekasse (bis 4.000€ pro Person). Wir koordinieren alle Gewerke und garantieren
             feste Preise ohne Überraschungen.
           </p>
 
