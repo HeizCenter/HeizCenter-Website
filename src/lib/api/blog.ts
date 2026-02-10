@@ -1379,7 +1379,7 @@ function getMockBlogPosts(): BlogPost[] {
 
           <div class="flex flex-col sm:flex-row gap-3">
             <a href="tel:+49 8234 9665900" class="inline-flex items-center justify-center gap-2 bg-white text-[#0F5B78] font-semibold px-5 py-3 rounded-lg hover:bg-slate-100 transition-colors">
-              <span>📞</span> 08234 / 967 975 0
+              <span>📞</span> +49 8234 9665900
             </a>
             <a href="/kontakt" class="inline-flex items-center justify-center gap-2 bg-white/10 text-white font-semibold px-5 py-3 rounded-lg border border-white/30 hover:bg-white/20 transition-colors">
               Online-Anfrage →
@@ -1732,7 +1732,7 @@ function getMockBlogPosts(): BlogPost[] {
 
           <div class="flex flex-col sm:flex-row gap-3">
             <a href="tel:+49 8234 9665900" class="inline-flex items-center justify-center gap-2 bg-white text-[#0F5B78] font-semibold px-5 py-3 rounded-lg hover:bg-slate-100 transition-colors">
-              <span>📞</span> 08234 / 967 975 0
+              <span>📞</span> +49 8234 9665900
             </a>
             <a href="/kontakt" class="inline-flex items-center justify-center gap-2 bg-white/10 text-white font-semibold px-5 py-3 rounded-lg border border-white/30 hover:bg-white/20 transition-colors">
               Online-Anfrage →
@@ -2078,7 +2078,7 @@ function getMockBlogPosts(): BlogPost[] {
               Beratungstermin vereinbaren
             </a>
             <a href="tel:+49 8234 9665900" class="inline-flex items-center gap-2 border border-white/30 text-white px-5 py-2.5 rounded-lg font-medium hover:bg-white/10 transition-colors">
-              08234 / 90 89 70
+              +49 8234 9665900
             </a>
           </div>
         </div>
@@ -2440,7 +2440,7 @@ function getMockBlogPosts(): BlogPost[] {
               Beratungstermin buchen
             </a>
             <a href="tel:+49 8234 9665900" class="inline-flex items-center gap-2 border border-white/30 text-white px-5 py-2.5 rounded-lg font-medium hover:bg-white/10 transition-colors">
-              08234 / 90 89 70
+              +49 8234 9665900
             </a>
           </div>
         </div>
@@ -9412,7 +9412,7 @@ function getMockBlogPosts(): BlogPost[] {
 
           <div class="flex flex-col sm:flex-row gap-3">
             <a href="tel:+4982349665900" class="inline-flex items-center justify-center gap-2 bg-white text-[#0F5B78] font-semibold px-5 py-3 rounded-lg hover:bg-slate-100 transition-colors">
-              <span>📞</span> 08234 / 967 975 0
+              <span>📞</span> +49 8234 9665900
             </a>
             <a href="/kontakt" class="inline-flex items-center justify-center gap-2 bg-white/10 text-white font-semibold px-5 py-3 rounded-lg border border-white/30 hover:bg-white/20 transition-colors">
               Online-Anfrage →
