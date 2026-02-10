@@ -8014,7 +8014,7 @@ function getMockBlogPosts(): BlogPost[] {
 
         <h3>Solarthermie</h3>
         <ul>
-          <li><strong>Wirkungsgrad:</strong> 60-80% (Umwandlung Sonnenlicht in Wärme)</li>
+          <li><strong>Wirkungsgrad:</strong> optisch bis 80%, Jahresnutzungsgrad ca. 50% (Umwandlung Sonnenlicht in Wärme)</li>
           <li><strong>Flächenbedarf Warmwasser:</strong> 1-1,5 m² pro Person</li>
           <li><strong>Flächenbedarf Heizung:</strong> 10-15 m² für Einfamilienhaus</li>
           <li><strong>Energieertrag:</strong> 400-600 kWh/m²/Jahr thermisch</li>
@@ -8072,9 +8072,9 @@ function getMockBlogPosts(): BlogPost[] {
         <h3>Solarthermie</h3>
         <p><strong>Vorteile:</strong></p>
         <ul>
-          <li>Hoher Wirkungsgrad (60-80%)</li>
+          <li>Hoher optischer Wirkungsgrad (bis 80%, Jahresnutzungsgrad ca. 50%)</li>
           <li>Direkter Wärmeertrag ohne Umwandlungsverluste</li>
-          <li>Hohe BAFA-Förderung bis 70%</li>
+          <li>Hohe KfW-Förderung bis 70%</li>
           <li>Ideal für Heizungsmodernisierung</li>
           <li>Geringerer Flächenbedarf für Warmwasser</li>
           <li>Einfache Integration in bestehende Heizsysteme</li>
@@ -8181,7 +8181,7 @@ function getMockBlogPosts(): BlogPost[] {
         <h2>Häufig gestellte Fragen (FAQ)</h2>
 
         <h3>Welches System ist besser für Warmwasserbereitung geeignet?</h3>
-        <p>Für reine Warmwasserbereitung ist <strong>Solarthermie effizienter</strong>: Mit 60-80% Wirkungsgrad wandelt sie Sonnenlicht direkt in Wärme um. Eine 4-6 m² Anlage deckt 60-70% des Jahresbedarfs ab. Photovoltaik mit Heizstab erreicht nur 18-22% Wirkungsgrad und benötigt die dreifache Dachfläche für denselben Wärmeertrag.</p>
+        <p>Für reine Warmwasserbereitung ist <strong>Solarthermie effizienter</strong>: Mit bis zu 80% optischem Wirkungsgrad (Jahresnutzungsgrad ca. 50%) wandelt sie Sonnenlicht direkt in Wärme um. Eine 4-6 m² Anlage deckt 60-70% des Jahresbedarfs ab. Photovoltaik mit Heizstab erreicht nur 18-22% Wirkungsgrad und benötigt die dreifache Dachfläche für denselben Wärmeertrag.</p>
 
         <h3>Was spart mehr Stromkosten – PV oder Solarthermie?</h3>
         <p><strong>Photovoltaik spart deutlich mehr:</strong> Eine 10 kWp PV-Anlage spart bei 40% Eigenverbrauch rund 1.200 €/Jahr an Stromkosten. Solarthermie reduziert nur die Gas-/Ölkosten für Warmwasser um 200-400 €/Jahr. Mit PV können Sie zusätzlich Elektroauto, Wärmepumpe und Haushaltsgeräte versorgen.</p>
@@ -8206,7 +8206,7 @@ function getMockBlogPosts(): BlogPost[] {
       tags: ['Solarthermie', 'Photovoltaik', 'Solar Vergleich', 'BAFA Förderung', 'PV-Anlage', 'Solarenergie', 'Wirtschaftlichkeit'],
       featured: true,
       faqs: [
-        { question: 'Welches System ist besser für Warmwasserbereitung geeignet?', answer: 'Für reine Warmwasserbereitung ist Solarthermie effizienter: Mit 60-80% Wirkungsgrad wandelt sie Sonnenlicht direkt in Wärme um. Eine 4-6 m² Anlage deckt 60-70% des Jahresbedarfs ab. Photovoltaik mit Heizstab erreicht nur 18-22% Wirkungsgrad und benötigt die dreifache Dachfläche für denselben Wärmeertrag.' },
+        { question: 'Welches System ist besser für Warmwasserbereitung geeignet?', answer: 'Für reine Warmwasserbereitung ist Solarthermie effizienter: Mit bis zu 80% optischem Wirkungsgrad (Jahresnutzungsgrad ca. 50%) wandelt sie Sonnenlicht direkt in Wärme um. Eine 4-6 m² Anlage deckt 60-70% des Jahresbedarfs ab. Photovoltaik mit Heizstab erreicht nur 18-22% Wirkungsgrad und benötigt die dreifache Dachfläche für denselben Wärmeertrag.' },
         { question: 'Was spart mehr Stromkosten – PV oder Solarthermie?', answer: 'Photovoltaik spart deutlich mehr: Eine 10 kWp PV-Anlage spart bei 40% Eigenverbrauch rund 1.200 €/Jahr an Stromkosten. Solarthermie reduziert nur die Gas-/Ölkosten für Warmwasser um 200-400 €/Jahr. Mit PV können Sie zusätzlich Elektroauto, Wärmepumpe und Haushaltsgeräte versorgen.' },
         { question: 'Kann ich beide Systeme gleichzeitig installieren?', answer: 'Ja, bei ausreichend Dachfläche (min. 40-50 m²) ist die Kombination sinnvoll: PV für Strom und Elektroauto, Solarthermie für effiziente Warmwasserbereitung. Die Systeme stören sich nicht, da sie unterschiedliche Energieformen erzeugen. Alternativ prüfen Sie PVT-Hybridkollektoren, die beides auf einer Fläche kombinieren.' },
         { question: 'Wie unterscheiden sich die Investitionskosten?', answer: 'Solarthermie für Warmwasser kostet 5.000-8.000 € (mit 30-70% BAFA-Förderung). Eine vergleichbare 5 kWp PV-Anlage kostet 10.500-13.500 € (0% MwSt., keine Direktförderung). PV amortisiert sich jedoch schneller (8-12 Jahre) als Solarthermie (10-15 Jahre mit Förderung).' },

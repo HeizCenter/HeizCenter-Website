@@ -23,7 +23,7 @@ interface ComparisonRow {
 const comparisonData: ComparisonRow[] = [
   {
     label: "Wirkungsgrad",
-    solarthermie: { value: "60-80%", bar: 80, highlight: true },
+    solarthermie: { value: "bis 80% (optisch)", bar: 80, highlight: true },
     photovoltaik: { value: "15-22%", bar: 22 },
   },
   {
@@ -310,8 +310,8 @@ export function SolarComparisonSection() {
                     Solarthermie gewinnt beim Wirkungsgrad
                   </h4>
                   <p className="text-slate-600 text-sm">
-                    Mit 60-80% wandelt Solarthermie Sonnenlicht <strong>3-4x effizienter</strong> in
-                    nutzbare Energie um als Photovoltaik – ideal wenn Sie Wärme benötigen.
+                    Mit bis zu 80% optischem Kollektorwirkungsgrad (Jahresnutzungsgrad ca. 50%) wandelt Solarthermie
+                    Sonnenlicht effizienter in Wärme um als PV in Strom (15-22%) – ideal wenn Sie Wärme benötigen.
                   </p>
                 </div>
               </div>
@@ -352,7 +352,7 @@ export function SolarComparisonSection() {
                     <span className="font-semibold text-primary">Solarthermie für Warmwasser & Heizung</span> +
                     <span className="font-semibold text-primary"> Wärmepumpe als Hauptheizung</span> =
                     maximale Energieunabhängigkeit. Die Solarthermie übernimmt im Sommer komplett das Warmwasser
-                    und senkt den Stromverbrauch Ihrer Wärmepumpe um bis zu <strong>40%</strong>.
+                    und senkt den Stromverbrauch Ihrer Wärmepumpe um bis zu <strong>20%</strong>.
                   </p>
                 </div>
 

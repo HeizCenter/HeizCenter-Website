@@ -36,10 +36,10 @@ const heizungFAQs: FAQItem[] = [
 ];
 
 const sanitaerFAQs: FAQItem[] = [
-  { question: "Was kostet eine Badsanierung?", answer: "Komplett-Badsanierung ab 15.000€ (Standard-Bad 8m²). Inkl. Fliesen, Sanitärobjekte, Installation. KfW-Förderung bis 6.250€ möglich." },
+  { question: "Was kostet eine Badsanierung?", answer: "Komplett-Badsanierung ab 15.000€ (Standard-Bad 8m²). Inkl. Fliesen, Sanitärobjekte, Installation. Pflegekasse bis 4.000€ pro Person bei Pflegegrad, KfW-Kredit 159 bis 50.000€." },
   { question: "Wie lange dauert eine Badsanierung?", answer: "2-3 Wochen für Standard-Bad. Planung ca. 2-3 Wochen vorher. Wir erstellen detaillierten Zeitplan mit Meilensteinen." },
   { question: "Kann ich mein Bad nutzen während der Sanierung?", answer: "Meist nicht möglich. Bei 2 Bädern können wir nacheinander sanieren. Alternativ: Gäste-WC oder mobile Lösung besprechen wir individuell." },
-  { question: "Welche Förderung gibt es für barrierefreie Bäder?", answer: "KfW 455-B: Bis zu 6.250€ Zuschuss (12,5% von max. 50.000€). Für Umbau zu barrierefreiem/altersgerechtem Bad." },
+  { question: "Welche Förderung gibt es für barrierefreie Bäder?", answer: "Das KfW-Zuschussprogramm 455-B (bis 6.250€) wurde eingestellt und soll ab Frühjahr 2026 neu aufgelegt werden. Aktuell verfügbar: KfW-Kredit 159 (bis 50.000€) und Pflegekasse bis 4.000€ pro Person bei anerkanntem Pflegegrad." },
 ];
 
 const klimaanlageFAQs: FAQItem[] = [

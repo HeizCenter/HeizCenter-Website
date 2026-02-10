@@ -156,7 +156,7 @@ export default function LandsbergPage() {
               abgestimmt sind.
             </p>
             <p className="text-slate-700 mb-6">
-              <strong>Ihre Vorteile:</strong> Bis zu 70% niedrigere Heizkosten,
+              <strong>Ihre Vorteile:</strong> Bis zu 45% niedrigere Heizkosten,
               BEG-Förderung bis 70%, unabhängig von Öl und Gas. Kostenlose Beratung
               vor Ort in Landsberg inklusive Wirtschaftlichkeitsberechnung.
             </p>

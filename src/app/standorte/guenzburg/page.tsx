@@ -65,7 +65,7 @@ export default function GuenzbergPage() {
           <h2 className="text-3xl font-bold mb-6">HeizCenter Service in Günzburg</h2>
           <p className="text-lg mb-6">Von Ulm aus betreuen wir Kunden in Günzburg mit dem kompletten Service rund um Heizung, Sanitär und Klimatechnik.</p>
           <h3 className="text-2xl font-bold mb-4">Wärmepumpen für Günzburg</h3>
-          <p className="mb-4">Moderne Wärmepumpen-Installation mit BEG-Förderung bis 70%. Bis zu 70% Heizkosten sparen.</p>
+          <p className="mb-4">Moderne Wärmepumpen-Installation mit BEG-Förderung bis 70%. Bis zu 45% Heizkosten sparen.</p>
           <h3 className="text-2xl font-bold mb-4">Heizung & Notdienst</h3>
           <p className="mb-4">Installation, Wartung und 24/7 Notdienst für alle Heizungssysteme in Günzburg.</p>
           <div className="bg-[#0F5B78]/5 p-6 rounded-lg mt-8">

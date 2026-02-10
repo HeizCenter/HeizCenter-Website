@@ -153,7 +153,7 @@ export default function KaufbeurenPage() {
               die klimatischen Bedingungen im Allgäu abgestimmt sind.
             </p>
             <p className="text-slate-700 mb-6">
-              <strong>Ihre Vorteile:</strong> Bis zu 70% niedrigere Heizkosten im
+              <strong>Ihre Vorteile:</strong> Bis zu 45% niedrigere Heizkosten im
               Vergleich zur Gasheizung, BEG-Förderung bis 70%, CO2-neutrales Heizen.
               Kostenlose Vor-Ort-Beratung in Kaufbeuren mit individueller
               Wirtschaftlichkeitsberechnung.
