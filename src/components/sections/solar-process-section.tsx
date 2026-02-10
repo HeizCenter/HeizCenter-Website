@@ -520,7 +520,7 @@ export function SolarProcessSection() {
             </div>
             <div className="flex gap-3">
               <Button asChild variant="outline" size="lg">
-                <Link href="tel:+4982347799620" className="gap-2">
+                <Link href="tel:+4982349665900" className="gap-2">
                   <Phone className="w-4 h-4" />
                   Anrufen
                 </Link>
