@@ -19,7 +19,11 @@ export const CONTACT = {
   PHONE_DISPLAY: "+49 8234 9665900",      // Für Text-Anzeige (mit Leerzeichen)
   PHONE_LINK: "+4982349665900",           // Für tel: Links (ohne Leerzeichen)
   PHONE_SCHEMA: "+4982349665900",         // Für Schema.org (ohne Leerzeichen)
-  PHONE_WHATSAPP: "4982349665900",        // Für WhatsApp (ohne +)
+  PHONE_WHATSAPP: "4982349665900",        // Für WhatsApp wa.me Links Festnetz (ohne +)
+
+  // WhatsApp Mobile
+  WHATSAPP_MOBILE: "4915111100331",           // Für wa.me Links (Mobilnummer, ohne +)
+  WHATSAPP_MOBILE_DISPLAY: "+49 151 11100331", // Für Anzeige
 
   // Email
   EMAIL: "service@heizcenter.de",

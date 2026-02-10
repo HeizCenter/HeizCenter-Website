@@ -46,8 +46,8 @@ export default function ImpressumPage() {
         <section className="mb-8">
           <h3 className="text-xl font-bold mb-4">WhatsApp</h3>
           <p className="mb-2">
-            <a href={`https://wa.me/${CONTACT.PHONE_WHATSAPP}`} className="text-[#0F5B78] hover:underline">
-              {CONTACT.PHONE_DISPLAY}
+            <a href={`https://wa.me/${CONTACT.WHATSAPP_MOBILE}`} className="text-[#0F5B78] hover:underline">
+              {CONTACT.WHATSAPP_MOBILE_DISPLAY}
             </a>
           </p>
         </section>

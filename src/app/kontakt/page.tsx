@@ -159,7 +159,7 @@ export default function ContactPage() {
                 {CONTACT.PHONE_DISPLAY}
               </a>
               <a
-                href="https://wa.me/4915111100331"
+                href={`https://wa.me/${CONTACT.WHATSAPP_MOBILE}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-white/20 text-white px-6 py-3 rounded-lg font-bold hover:bg-white/30 transition-colors border border-white/40"

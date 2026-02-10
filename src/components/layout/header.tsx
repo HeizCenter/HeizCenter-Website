@@ -50,7 +50,7 @@ export function Header() {
             <span className="font-medium whitespace-nowrap">{CONTACT.PHONE_DISPLAY}</span>
           </a>
           <a
-            href="https://wa.me/4915111100331"
+            href={`https://wa.me/${CONTACT.WHATSAPP_MOBILE}`}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 text-sm hover:text-[#0F5B78] transition-colors"
@@ -96,7 +96,7 @@ export function Header() {
                     <span>{CONTACT.PHONE_DISPLAY}</span>
                   </a>
                   <a
-                    href="https://wa.me/4915111100331"
+                    href={`https://wa.me/${CONTACT.WHATSAPP_MOBILE}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-lg font-medium transition-colors hover:text-[#0F5B78]"
