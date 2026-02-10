@@ -80,6 +80,12 @@
 ### Blog-Content
 - [x] **Solarthermie-Artikel** komplett überarbeitet (KI-Stil → professionelles Copywriting)
 - [x] **Solarthermie-Duplikat bereinigt** — 2 Artikel zu 1 zusammengeführt, 301-Redirects
+- [x] **Blog-Datum 2025→2026** — 22 Artikel aktualisiert (Slugs, Titel, Daten, Inhalte, Cross-Links, FAQs)
+  - 21 Slug-Änderungen inkl. BAFA→KfW Umbenennung
+  - 22 neue 301-Redirects in next.config.mjs
+  - 9 Service-/Standort-Seiten: Blog-Links aktualisiert
+  - Daten verteilt über Jan-Feb 2026 (SEO: frischer Content-Signal)
+  - 79 "2025"-Referenzen bewusst beibehalten (CO₂-Zeitreihen, historische Policy-Daten)
 
 ---
 
@@ -115,7 +121,10 @@ e8cf09a fix(content): replace hallucinated phone numbers with correct contact
 - [x] Halluzinierte Telefonnummern entfernt (12 Stück) ✅ 2026-02-10
 - [x] Kontaktdaten zentralisiert: 67 Dateien auf CONTACT.* Import umgestellt ✅ 2026-02-10
 - [x] Quality Gates in CLAUDE.md verankert (4-Augen-Prinzip, VALIDATION_REPORT) ✅ 2026-02-10
-- [ ] Content-Audit: Blog-Datum 2025→2026 (Issue 22/24 — 25 Artikel, URL-Impact prüfen)
+- [x] Content-Audit: Blog-Datum 2025→2026 (22 Artikel, 21 Slug-Changes, 22 Redirects) ✅ 2026-02-10
+- [ ] Content-Update: WP-Schallgrenzwerte 10 dB(A) ab 2026 auf /waermepumpe (HIGH)
+- [ ] Content-Update: BEG-Budget Kürzung ~12 Mrd. auf /foerderung (MEDIUM)
+- [ ] Content-Update: GEG-Reform → GMG Hinweis auf /heizung (MEDIUM)
 - [ ] Content-Audit: "20 Jahre Erfahrung" extern verifizieren (HRB 39683)
 - [ ] OG-Images für Service-Seiten erstellen (SEO Quick Win)
 - [ ] Alt-Texte optimieren (SEO Quick Win)

@@ -223,10 +223,10 @@ function getMockBlogPosts(): BlogPost[] {
     {
       id: 1,
       slug: 'waermepumpe-kosten-2026',
-      title: 'Wärmepumpe Kosten 2025: Kompletter Überblick',
-      excerpt: 'Was kostet eine Wärmepumpe 2025 wirklich? Alle Kosten, Förderungen und versteckte Ausgaben im Detail erklärt.',
+      title: 'Wärmepumpe Kosten 2026: Kompletter Überblick',
+      excerpt: 'Was kostet eine Wärmepumpe 2026 wirklich? Alle Kosten, Förderungen und versteckte Ausgaben im Detail erklärt.',
       content: `
-        <p class="text-xl leading-relaxed text-slate-600 mb-8">Sie überlegen, Ihre alte Heizung gegen eine Wärmepumpe zu tauschen? Mit bis zu 70% Förderung war der Zeitpunkt nie besser. Hier erfahren Sie, was eine Wärmepumpe 2025 <em>wirklich</em> kostet – und was nach der Förderung übrig bleibt.</p>
+        <p class="text-xl leading-relaxed text-slate-600 mb-8">Sie überlegen, Ihre alte Heizung gegen eine Wärmepumpe zu tauschen? Mit bis zu 70% Förderung war der Zeitpunkt nie besser. Hier erfahren Sie, was eine Wärmepumpe 2026 <em>wirklich</em> kostet – und was nach der Förderung übrig bleibt.</p>
 
         <div class="flex flex-wrap gap-4 mb-8 text-sm text-slate-600">
           <span class="flex items-center gap-1">✓ Über 500 Wärmepumpen in Bayern installiert</span>
@@ -235,7 +235,7 @@ function getMockBlogPosts(): BlogPost[] {
         </div>
 
         <div class="highlight-quote">
-          Durchschnittliche Gesamtkosten für eine Wärmepumpe 2025: zwischen 27.000 und 50.000 Euro. Nach Förderung oft nur 9.000 bis 18.000 Euro.
+          Durchschnittliche Gesamtkosten für eine Wärmepumpe 2026: zwischen 27.000 und 50.000 Euro. Nach Förderung oft nur 9.000 bis 18.000 Euro.
         </div>
 
         <h2>Die ehrliche Kostenaufstellung</h2>
@@ -293,7 +293,7 @@ function getMockBlogPosts(): BlogPost[] {
 
         <h2>Die Förderung macht's möglich</h2>
 
-        <p>Hier wird es spannend. Der Staat will, dass Sie auf erneuerbare Energien umsteigen – und zahlt dafür ordentlich mit. Bis zu <strong>70% der Kosten</strong> übernimmt die KfW. In unserem <a href="/blog/foerderung-heizung-2026" class="text-[#0F5B78] font-medium hover:underline">Ratgeber zur Heizungsförderung 2025</a> erklären wir alle Förderbausteine im Detail.</p>
+        <p>Hier wird es spannend. Der Staat will, dass Sie auf erneuerbare Energien umsteigen – und zahlt dafür ordentlich mit. Bis zu <strong>70% der Kosten</strong> übernimmt die KfW. In unserem <a href="/blog/foerderung-heizung-2026" class="text-[#0F5B78] font-medium hover:underline">Ratgeber zur Heizungsförderung 2026</a> erklären wir alle Förderbausteine im Detail.</p>
 
         <table class="cost-table">
           <thead>
@@ -499,7 +499,7 @@ function getMockBlogPosts(): BlogPost[] {
 
         <h2>Häufig gestellte Fragen (FAQ)</h2>
 
-        <h3>Was kostet eine Wärmepumpe 2025 insgesamt mit Einbau?</h3>
+        <h3>Was kostet eine Wärmepumpe 2026 insgesamt mit Einbau?</h3>
         <p>Eine komplett installierte Wärmepumpe kostet zwischen <strong>27.000 und 50.000 Euro</strong>, je nach Typ. Luft-Wasser-Wärmepumpen liegen bei 27.000-40.000 Euro, während Erdwärme- und Wasser-Wasser-Wärmepumpen aufgrund der Bohrkosten 40.000-50.000 Euro kosten. Im Preis enthalten sind Gerät, Installation, hydraulischer Abgleich und Inbetriebnahme.</p>
 
         <h3>Wie viel Förderung bekomme ich für eine Wärmepumpe?</h3>
@@ -531,7 +531,7 @@ function getMockBlogPosts(): BlogPost[] {
       tags: ['Wärmepumpe', 'Kosten', 'Förderung', 'BEG'],
       featured: true,
       faqs: [
-        { question: 'Was kostet eine Wärmepumpe 2025 insgesamt mit Einbau?', answer: 'Eine komplett installierte Wärmepumpe kostet zwischen 27.000 und 50.000 Euro, je nach Typ. Luft-Wasser-Wärmepumpen liegen bei 27.000-40.000 Euro, während Erdwärme- und Wasser-Wasser-Wärmepumpen aufgrund der Bohrkosten 40.000-50.000 Euro kosten. Im Preis enthalten sind Gerät, Installation, hydraulischer Abgleich und Inbetriebnahme.' },
+        { question: 'Was kostet eine Wärmepumpe 2026 insgesamt mit Einbau?', answer: 'Eine komplett installierte Wärmepumpe kostet zwischen 27.000 und 50.000 Euro, je nach Typ. Luft-Wasser-Wärmepumpen liegen bei 27.000-40.000 Euro, während Erdwärme- und Wasser-Wasser-Wärmepumpen aufgrund der Bohrkosten 40.000-50.000 Euro kosten. Im Preis enthalten sind Gerät, Installation, hydraulischer Abgleich und Inbetriebnahme.' },
         { question: 'Wie viel Förderung bekomme ich für eine Wärmepumpe?', answer: 'Sie erhalten mindestens 30% Grundförderung über die KfW. Mit dem Klimageschwindigkeits-Bonus (20% beim Austausch von Öl/Gas/Kohle) kommen Sie auf 50%. Der Einkommensbonus (30% bei Einkommen unter 40.000 Euro) und der Effizienzbonus (5% für natürliche Kältemittel) ermöglichen maximal 70% Förderung, gedeckelt bei 21.000 Euro Zuschuss.' },
         { question: 'Was kostet eine Wärmepumpe im laufenden Betrieb pro Jahr?', answer: 'Die jährlichen Betriebskosten liegen bei 1.500 bis 2.100 Euro. Davon entfallen 1.200-1.800 Euro auf Stromkosten und 150-300 Euro auf Wartung. Der Schornsteinfeger entfällt komplett. Im Vergleich zu Gas- oder Ölheizungen sparen Sie etwa 30-50% der laufenden Kosten.' },
         { question: 'Wann rechnet sich eine Wärmepumpe finanziell?', answer: 'Mit der aktuellen Förderung amortisiert sich eine Wärmepumpe typischerweise in 8-12 Jahren. Bei einer Lebensdauer von über 20 Jahren profitieren Sie danach 10+ Jahre von niedrigeren Heizkosten. Die Amortisationszeit verkürzt sich bei höherer Förderung, besserer Dämmung und steigenden Gas-/Ölpreisen.' },
@@ -803,7 +803,7 @@ function getMockBlogPosts(): BlogPost[] {
         <h3>Welche Heizungen erfüllen die 65%-Anforderung?</h3>
         <p>Diese Systeme erfüllen die Vorgabe: <strong>Wärmepumpen</strong> jeder Art (Luft, Sole, Wasser), <strong>Pelletheizungen</strong>, <strong>Fernwärme</strong> (wo verfügbar), <strong>Hybridheizungen</strong> (Wärmepumpe + Gas), Solarthermie in Kombination mit anderen Systemen und Gasheizungen, die H2-ready sind und perspektivisch mit Wasserstoff betrieben werden können.</p>
 
-        <h3>Kann ich 2025 noch eine neue Gasheizung einbauen?</h3>
+        <h3>Kann ich 2026 noch eine neue Gasheizung einbauen?</h3>
         <p><strong>Ja</strong>, besonders wenn Ihre Kommune noch keine Wärmeplanung abgeschlossen hat. Allerdings müssen Sie vorher eine <strong>Energieberatung</strong> nachweisen. Zudem gilt: Ab 2029 muss die Gasheizung zu 15% mit erneuerbaren Energien betrieben werden, ab 2035 zu 30%, ab 2045 zu 100%. Wer jetzt noch Gas einbaut, muss also schrittweise nachrüsten.</p>
 
         <h3>Gibt es Ausnahmen vom Heizungsgesetz?</h3>
@@ -823,14 +823,14 @@ function getMockBlogPosts(): BlogPost[] {
         { question: 'Bis wann muss ich meine Heizung austauschen?', answer: 'Es gibt keine generelle Austauschpflicht. Die 65%-Regel greift nur bei Neubauten oder nach Abschluss der Wärmeplanung in Ihrer Kommune – und auch dann nur, wenn Sie die Heizung freiwillig tauschen. Ausnahme: Heizkessel, die älter als 30 Jahre sind, müssen ausgetauscht werden (gilt aber nicht für Brennwert- und Niedertemperaturkessel).' },
         { question: 'Welche Strafen drohen bei Nichteinhaltung?', answer: 'Für Bestandsgebäude gibt es aktuell keine Strafen, solange Ihre Heizung funktioniert. Wenn Sie nach Inkrafttreten der Wärmeplanung eine neue Heizung einbauen und dabei die 65%-Regel missachten, können theoretisch Bußgelder verhängt werden. In der Praxis betrifft das nur Neuinstallationen nach den Stichtagen – nicht bestehende Anlagen.' },
         { question: 'Welche Heizungen erfüllen die 65%-Anforderung?', answer: 'Diese Systeme erfüllen die Vorgabe: Wärmepumpen jeder Art (Luft, Sole, Wasser), Pelletheizungen, Fernwärme (wo verfügbar), Hybridheizungen (Wärmepumpe + Gas), Solarthermie in Kombination mit anderen Systemen und Gasheizungen, die H2-ready sind und perspektivlich mit Wasserstoff betrieben werden können.' },
-        { question: 'Kann ich 2025 noch eine neue Gasheizung einbauen?', answer: 'Ja, besonders wenn Ihre Kommune noch keine Wärmeplanung abgeschlossen hat. Allerdings müssen Sie vorher eine Energieberatung nachweisen. Zudem gilt: Ab 2029 muss die Gasheizung zu 15% mit erneuerbaren Energien betrieben werden, ab 2035 zu 30%, ab 2045 zu 100%. Wer jetzt noch Gas einbaut, muss also schrittweise nachrüsten.' },
+        { question: 'Kann ich 2026 noch eine neue Gasheizung einbauen?', answer: 'Ja, besonders wenn Ihre Kommune noch keine Wärmeplanung abgeschlossen hat. Allerdings müssen Sie vorher eine Energieberatung nachweisen. Zudem gilt: Ab 2029 muss die Gasheizung zu 15% mit erneuerbaren Energien betrieben werden, ab 2035 zu 30%, ab 2045 zu 100%. Wer jetzt noch Gas einbaut, muss also schrittweise nachrüsten.' },
         { question: 'Gibt es Ausnahmen vom Heizungsgesetz?', answer: 'Ja. Ausnahmen gelten bei Denkmalschutz, technischer Unmöglichkeit (z.B. wenn eine Wärmepumpe baulich nicht machbar ist), wirtschaftlicher Härte (unverhältnismäßige Kosten) und für Eigentümer über 80 Jahre (beim Verkauf muss der Käufer nachrüsten). Die Behörden entscheiden im Einzelfall pragmatisch.' },
       ],
     },
     {
       id: 3,
       slug: 'beg-foerderung-2026',
-      title: 'BEG Förderung 2025: Bis zu 70% Zuschuss für Ihre Heizung',
+      title: 'BEG Förderung 2026: Bis zu 70% Zuschuss für Ihre Heizung',
       excerpt: 'So beantragen Sie die BEG Förderung richtig. Alle Fördersätze, Voraussetzungen und Tipps.',
       content: `
         <p class="text-xl leading-relaxed text-slate-600 mb-8">70% Zuschuss vom Staat für eine neue Heizung – klingt zu gut um wahr zu sein? Ist es aber. Die BEG-Förderung macht's möglich. Hier erfahren Sie, wie Sie das Maximum rausholen.</p>
@@ -1063,7 +1063,7 @@ function getMockBlogPosts(): BlogPost[] {
         <h3>Wie lange dauert es, bis ich die Förderung erhalte?</h3>
         <p>Nach Einreichung der vollständigen Verwendungsnachweise (Rechnungen, technische Dokumentation) prüft die KfW die Unterlagen. Die Bearbeitungszeit liegt in der Regel bei <strong>4-8 Wochen</strong>. Bei Rückfragen kann es länger dauern. Der Zuschuss wird direkt auf Ihr Konto überwiesen. Planen Sie also ein, dass Sie die Rechnung zunächst selbst bezahlen müssen.</p>
 
-        <h3>Welche Heizungssysteme werden 2025 gefördert?</h3>
+        <h3>Welche Heizungssysteme werden 2026 gefördert?</h3>
         <p>Gefördert werden <strong>Wärmepumpen</strong> (Luft, Sole, Wasser), <strong>Pelletheizungen</strong>, <strong>Solarthermie</strong> (als Ergänzung), <strong>Fernwärmeanschlüsse</strong> und <strong>Brennstoffzellen</strong>. Hybridheizungen sind förderfähig, wenn sie mindestens 65% erneuerbare Energien nutzen. Reine Gas- oder Ölheizungen sind nicht förderfähig. Das System muss auf der KfW-Liste förderfähiger Geräte stehen.</p>
 
         <h3>Was ist der maximale Förderbetrag bei der BEG?</h3>
@@ -1087,7 +1087,7 @@ function getMockBlogPosts(): BlogPost[] {
         { question: 'Wer ist antragsberechtigt für die BEG-Förderung?', answer: 'Eigentümer und Mieter von Wohngebäuden können die Förderung beantragen. Auch Wohnungseigentümergemeinschaften (WEG), Kommunen und gemeinnützige Organisationen sind antragsberechtigt. Der Einkommensbonus (30%) steht nur selbstnutzenden Eigentümern zu. Bei vermieteten Objekten entfällt dieser Bonus, die Grundförderung (30%) und der Klimageschwindigkeits-Bonus (20%) sind aber möglich.' },
         { question: 'Kann ich mehrere Boni miteinander kombinieren?', answer: 'Ja, die Boni sind kombinierbar. Die Grundförderung (30%) können alle erhalten. Der Klimageschwindigkeits-Bonus (20%) kommt beim Austausch alter Öl-/Gasheizungen hinzu. Der Einkommensbonus (30%) gilt zusätzlich bei Einkommen unter 40.000 Euro. Der Effizienzbonus (5%) für natürliche Kältemittel addiert sich ebenfalls. Maximal sind 70% Förderung möglich, gedeckelt bei 21.000 Euro Zuschuss.' },
         { question: 'Wie lange dauert es, bis ich die Förderung erhalte?', answer: 'Nach Einreichung der vollständigen Verwendungsnachweise (Rechnungen, technische Dokumentation) prüft die KfW die Unterlagen. Die Bearbeitungszeit liegt in der Regel bei 4-8 Wochen. Bei Rückfragen kann es länger dauern. Der Zuschuss wird direkt auf Ihr Konto überwiesen. Planen Sie also ein, dass Sie die Rechnung zunächst selbst bezahlen müssen.' },
-        { question: 'Welche Heizungssysteme werden 2025 gefördert?', answer: 'Gefördert werden Wärmepumpen (Luft, Sole, Wasser), Pelletheizungen, Solarthermie (als Ergänzung), Fernwärmeanschlüsse und Brennstoffzellen. Hybridheizungen sind förderfähig, wenn sie mindestens 65% erneuerbare Energien nutzen. Reine Gas- oder Ölheizungen sind nicht förderfähig. Das System muss auf der KfW-Liste förderfähiger Geräte stehen.' },
+        { question: 'Welche Heizungssysteme werden 2026 gefördert?', answer: 'Gefördert werden Wärmepumpen (Luft, Sole, Wasser), Pelletheizungen, Solarthermie (als Ergänzung), Fernwärmeanschlüsse und Brennstoffzellen. Hybridheizungen sind förderfähig, wenn sie mindestens 65% erneuerbare Energien nutzen. Reine Gas- oder Ölheizungen sind nicht förderfähig. Das System muss auf der KfW-Liste förderfähiger Geräte stehen.' },
         { question: 'Was ist der maximale Förderbetrag bei der BEG?', answer: 'Die förderfähigen Kosten sind auf 30.000 Euro pro Wohneinheit gedeckelt. Bei 70% Förderung ergibt das einen maximalen Zuschuss von 21.000 Euro. Bei 50% Förderung sind es maximal 15.000 Euro Zuschuss. Wenn Ihre Investition höher liegt (z.B. 40.000 Euro), werden nur die ersten 30.000 Euro für die Förderberechnung herangezogen.' },
         { question: 'Kann ich die BEG-Förderung mit einem KfW-Kredit kombinieren?', answer: 'Ja, das ist möglich. Sie können den BEG-Zuschuss mit dem zinsgünstigen KfW-Kredit 261 (bis zu 150.000 Euro) kombinieren. Der Zuschuss reduziert Ihre Investition, den Rest finanzieren Sie günstig. In der Praxis bedeutet das: Sie zahlen weniger Eigenkapital und die monatlichen Raten liegen oft unter den eingesparten Heizkosten.' },
         { question: 'Was passiert, wenn ich den Antrag erst nach Auftragsvergabe stelle?', answer: 'Dann verfällt der Förderanspruch komplett. Die KfW zahlt keinen Cent, wenn Sie den Vertrag vor Antragstellung unterschrieben haben. Angebote einholen ist erlaubt, aber unterschreiben Sie nichts, bevor die Fördernummer da ist. Lassen Sie sich von keinem Handwerker unter Druck setzen. Seriöse Fachbetriebe kennen diese Regel und halten sich daran.' },
@@ -1096,8 +1096,8 @@ function getMockBlogPosts(): BlogPost[] {
     {
       id: 4,
       slug: 'gasheizung-kosten-2026',
-      title: 'Gasheizung Kosten 2025: Was kostet eine neue Gasheizung?',
-      excerpt: 'Alle Kosten für Kauf, Installation und Betrieb einer Gasheizung 2025 im Überblick. Plus: Aktuelle Fördermöglichkeiten und Alternativen.',
+      title: 'Gasheizung Kosten 2026: Was kostet eine neue Gasheizung?',
+      excerpt: 'Alle Kosten für Kauf, Installation und Betrieb einer Gasheizung 2026 im Überblick. Plus: Aktuelle Fördermöglichkeiten und Alternativen.',
       content: `
         <p class="text-xl text-slate-700 leading-relaxed mb-6">Ihre alte Gasheizung macht Probleme und Sie überlegen, ob sich eine neue noch lohnt? Eine berechtigte Frage – denn 2025 hat sich einiges geändert. Die gute Nachricht: Eine Gasheizung bleibt eine der günstigsten Optionen bei der Anschaffung. Die weniger gute: Förderung gibt's praktisch keine mehr, und die Betriebskosten steigen Jahr für Jahr.</p>
 
@@ -1107,9 +1107,9 @@ function getMockBlogPosts(): BlogPost[] {
           <span class="flex items-center gap-1">✓ Meisterbetrieb seit 2010</span>
         </div>
 
-        <p>In diesem Artikel zeige ich Ihnen transparent, was eine neue Gasheizung 2025 wirklich kostet – und ob es für Ihre Situation bessere Alternativen gibt. Denn manchmal ist die günstigste Anschaffung langfristig die teuerste Lösung.</p>
+        <p>In diesem Artikel zeige ich Ihnen transparent, was eine neue Gasheizung 2026 wirklich kostet – und ob es für Ihre Situation bessere Alternativen gibt. Denn manchmal ist die günstigste Anschaffung langfristig die teuerste Lösung.</p>
 
-        <h2>Was kostet eine Gasheizung 2025? Die ehrliche Rechnung</h2>
+        <h2>Was kostet eine Gasheizung 2026? Die ehrliche Rechnung</h2>
 
         <p>Fangen wir mit den harten Zahlen an. Eine komplette Gas-Brennwertheizung inklusive Installation kostet Sie <strong>9.000 bis 15.000 Euro</strong>. Das ist etwa die Hälfte einer Wärmepumpe – aber eben nur die halbe Wahrheit.</p>
 
@@ -1217,7 +1217,7 @@ function getMockBlogPosts(): BlogPost[] {
 
         <p>Was heißt das konkret? Bei einem typischen Einfamilienhaus (20.000 kWh Gasverbrauch) zahlen Sie 2025 etwa 220 € CO₂-Abgabe pro Jahr. 2027 könnten das schon 300 € sein. Experten rechnen langfristig mit 100-150 €/Tonne – das wären dann 500-600 € zusätzlich pro Jahr. Nur für die CO₂-Steuer.</p>
 
-        <h2>Förderung 2025: Die ernüchternde Wahrheit</h2>
+        <h2>Förderung 2026: Die ernüchternde Wahrheit</h2>
 
         <p>Ich muss Ihnen hier keine falschen Hoffnungen machen: <strong>Reine Gasheizungen werden nicht mehr gefördert</strong>. Punkt. Seit Juli 2022 ist Schluss damit.</p>
 
@@ -1332,7 +1332,7 @@ function getMockBlogPosts(): BlogPost[] {
 
         <h2>Wann macht Gas trotzdem Sinn?</h2>
 
-        <p>Ich will hier ehrlich sein: Es gibt Situationen, in denen eine Gasheizung 2025 noch die richtige Wahl sein kann. Zum Beispiel:</p>
+        <p>Ich will hier ehrlich sein: Es gibt Situationen, in denen eine Gasheizung 2026 noch die richtige Wahl sein kann. Zum Beispiel:</p>
 
         <div class="bg-slate-50 rounded-lg p-5 my-6">
           <ul class="space-y-3">
@@ -1393,23 +1393,23 @@ function getMockBlogPosts(): BlogPost[] {
 
         <h2>Häufig gestellte Fragen (FAQ)</h2>
 
-        <h3>Was kostet eine neue Gasheizung 2025 komplett mit Einbau?</h3>
+        <h3>Was kostet eine neue Gasheizung 2026 komplett mit Einbau?</h3>
         <p>Eine komplette Gas-Brennwertheizung inklusive Installation kostet <strong>9.000 bis 15.000 Euro</strong>. Im Preis enthalten sind Brennwertgerät (3.000-7.800 Euro), Warmwasserspeicher falls nötig (1.000-1.500 Euro), Installation mit hydraulischem Abgleich (2.000-3.000 Euro) und Demontage der Altanlage (500-1.000 Euro). Ein neuer Gasanschluss kostet zusätzlich 1.500-2.500 Euro.</p>
 
         <h3>Was kostet eine Gasheizung im laufenden Betrieb pro Jahr?</h3>
         <p>Die jährlichen Betriebskosten liegen bei etwa <strong>2.850 bis 2.940 Euro</strong> für ein typisches Einfamilienhaus. Das setzt sich zusammen aus Gasverbrauch (ca. 2.400 Euro), CO₂-Abgabe 2025 (ca. 220 Euro), Wartung (150-200 Euro) und Schornsteinfeger (80-120 Euro). Das entspricht etwa 240-245 Euro pro Monat.</p>
 
-        <h3>Lohnt sich eine Gasheizung 2025 noch?</h3>
+        <h3>Lohnt sich eine Gasheizung 2026 noch?</h3>
         <p>Das hängt von Ihrer Situation ab. Eine Gasheizung hat <strong>niedrige Anschaffungskosten</strong>, aber hohe Betriebskosten (ca. 1.500 Euro mehr pro Jahr als eine Wärmepumpe). Es gibt praktisch <strong>keine Förderung</strong> mehr, nur einen Steuerbonus (max. 2.000 Euro). Auf 15 Jahre gerechnet ist eine Wärmepumpe trotz höherer Anschaffungskosten oft 20.000 Euro günstiger. Gas kann sinnvoll sein bei Notfällen, kurzfristigem Verkauf oder extremen Platzbeschränkungen.</p>
 
-        <h3>Welche Förderung gibt es 2025 für Gasheizungen?</h3>
+        <h3>Welche Förderung gibt es 2026 für Gasheizungen?</h3>
         <p>Reine Gasheizungen werden <strong>nicht mehr gefördert</strong> über die BEG. Nur <strong>Gas-Hybridheizungen</strong> (Gas + Wärmepumpe/Solarthermie) erhalten bis zu 70% Förderung auf den erneuerbaren Anteil. Alternativ können Sie über den Steuerbonus (§ 35c EStG) 20% der Handwerkerkosten über 3 Jahre absetzen, maximal 8.000 Euro Steuerersparnis bei 40.000 Euro Investition.</p>
 
         <h3>Was sagt das Heizungsgesetz 2024 zu Gasheizungen?</h3>
         <p>Bestehende Gasheizungen haben <strong>vollen Bestandsschutz</strong> und dürfen weiterlaufen. Reparaturen sind erlaubt. Die 65%-Regel für erneuerbare Energien gilt aktuell nur in Neubaugebieten. Im Bestand greift sie erst nach Abschluss der kommunalen Wärmeplanung: in Großstädten ab Mitte 2026, in kleineren Gemeinden ab Mitte 2028. Bei Totalausfall gibt es fünf Jahre Übergangsfrist.</p>
 
         <h3>Welche Alternative zur Gasheizung ist am besten?</h3>
-        <p>Die <strong>Wärmepumpe</strong> ist für die meisten Hausbesitzer 2025 die wirtschaftlichste Alternative. Anschaffung 25.000-35.000 Euro, aber mit 30-70% BEG-Förderung. Betriebskosten nur ca. 1.300 Euro pro Jahr (statt 2.900 Euro bei Gas). Auf 15 Jahre gerechnet etwa 20.000 Euro günstiger. Alternativen: Gas-Hybrid (Kombination aus beiden), Pelletheizung (wenn Platz vorhanden) oder Fernwärme (wo verfügbar).</p>
+        <p>Die <strong>Wärmepumpe</strong> ist für die meisten Hausbesitzer 2026 die wirtschaftlichste Alternative. Anschaffung 25.000-35.000 Euro, aber mit 30-70% BEG-Förderung. Betriebskosten nur ca. 1.300 Euro pro Jahr (statt 2.900 Euro bei Gas). Auf 15 Jahre gerechnet etwa 20.000 Euro günstiger. Alternativen: Gas-Hybrid (Kombination aus beiden), Pelletheizung (wenn Platz vorhanden) oder Fernwärme (wo verfügbar).</p>
 
         <h3>Was ist eine H2-ready Gasheizung?</h3>
         <p>Eine <strong>wasserstofffähige Gasheizung</strong>, die später auf Wasserstoff umgerüstet werden kann. Die Idee: Heute mit Erdgas heizen, künftig mit grünem Wasserstoff. In der Praxis sind diese Geräte 2025 kaum verfügbar und es ist völlig unklar, ob und wann flächendeckend Wasserstoff verfügbar sein wird. Experten raten eher zu bewährten erneuerbaren Lösungen wie Wärmepumpen.</p>
@@ -1425,12 +1425,12 @@ function getMockBlogPosts(): BlogPost[] {
       tags: ['Gasheizung', 'Kosten', 'Brennwertkessel', 'Förderung'],
       featured: false,
       faqs: [
-        { question: 'Was kostet eine neue Gasheizung 2025 komplett mit Einbau?', answer: 'Eine komplette Gas-Brennwertheizung inklusive Installation kostet 9.000 bis 15.000 Euro. Im Preis enthalten sind Brennwertgerät (3.000-7.800 Euro), Warmwasserspeicher falls nötig (1.000-1.500 Euro), Installation mit hydraulischem Abgleich (2.000-3.000 Euro) und Demontage der Altanlage (500-1.000 Euro). Ein neuer Gasanschluss kostet zusätzlich 1.500-2.500 Euro.' },
+        { question: 'Was kostet eine neue Gasheizung 2026 komplett mit Einbau?', answer: 'Eine komplette Gas-Brennwertheizung inklusive Installation kostet 9.000 bis 15.000 Euro. Im Preis enthalten sind Brennwertgerät (3.000-7.800 Euro), Warmwasserspeicher falls nötig (1.000-1.500 Euro), Installation mit hydraulischem Abgleich (2.000-3.000 Euro) und Demontage der Altanlage (500-1.000 Euro). Ein neuer Gasanschluss kostet zusätzlich 1.500-2.500 Euro.' },
         { question: 'Was kostet eine Gasheizung im laufenden Betrieb pro Jahr?', answer: 'Die jährlichen Betriebskosten liegen bei etwa 2.850 bis 2.940 Euro für ein typisches Einfamilienhaus. Das setzt sich zusammen aus Gasverbrauch (ca. 2.400 Euro), CO₂-Abgabe 2025 (ca. 220 Euro), Wartung (150-200 Euro) und Schornsteinfeger (80-120 Euro). Das entspricht etwa 240-245 Euro pro Monat.' },
-        { question: 'Lohnt sich eine Gasheizung 2025 noch?', answer: 'Das hängt von Ihrer Situation ab. Eine Gasheizung hat niedrige Anschaffungskosten, aber hohe Betriebskosten (ca. 1.500 Euro mehr pro Jahr als eine Wärmepumpe). Es gibt praktisch keine Förderung mehr, nur einen Steuerbonus (max. 2.000 Euro). Auf 15 Jahre gerechnet ist eine Wärmepumpe trotz höherer Anschaffungskosten oft 20.000 Euro günstiger. Gas kann sinnvoll sein bei Notfällen, kurzfristigem Verkauf oder extremen Platzbeschränkungen.' },
-        { question: 'Welche Förderung gibt es 2025 für Gasheizungen?', answer: 'Reine Gasheizungen werden nicht mehr gefördert über die BEG. Nur Gas-Hybridheizungen (Gas + Wärmepumpe/Solarthermie) erhalten bis zu 70% Förderung auf den erneuerbaren Anteil. Alternativ können Sie über den Steuerbonus (§ 35c EStG) 20% der Handwerkerkosten über 3 Jahre absetzen, maximal 8.000 Euro Steuerersparnis bei 40.000 Euro Investition.' },
+        { question: 'Lohnt sich eine Gasheizung 2026 noch?', answer: 'Das hängt von Ihrer Situation ab. Eine Gasheizung hat niedrige Anschaffungskosten, aber hohe Betriebskosten (ca. 1.500 Euro mehr pro Jahr als eine Wärmepumpe). Es gibt praktisch keine Förderung mehr, nur einen Steuerbonus (max. 2.000 Euro). Auf 15 Jahre gerechnet ist eine Wärmepumpe trotz höherer Anschaffungskosten oft 20.000 Euro günstiger. Gas kann sinnvoll sein bei Notfällen, kurzfristigem Verkauf oder extremen Platzbeschränkungen.' },
+        { question: 'Welche Förderung gibt es 2026 für Gasheizungen?', answer: 'Reine Gasheizungen werden nicht mehr gefördert über die BEG. Nur Gas-Hybridheizungen (Gas + Wärmepumpe/Solarthermie) erhalten bis zu 70% Förderung auf den erneuerbaren Anteil. Alternativ können Sie über den Steuerbonus (§ 35c EStG) 20% der Handwerkerkosten über 3 Jahre absetzen, maximal 8.000 Euro Steuerersparnis bei 40.000 Euro Investition.' },
         { question: 'Was sagt das Heizungsgesetz 2024 zu Gasheizungen?', answer: 'Bestehende Gasheizungen haben vollen Bestandsschutz und dürfen weiterlaufen. Reparaturen sind erlaubt. Die 65%-Regel für erneuerbare Energien gilt aktuell nur in Neubaugebieten. Im Bestand greift sie erst nach Abschluss der kommunalen Wärmeplanung: in Großstädten ab Mitte 2026, in kleineren Gemeinden ab Mitte 2028. Bei Totalausfall gibt es fünf Jahre Übergangsfrist.' },
-        { question: 'Welche Alternative zur Gasheizung ist am besten?', answer: 'Die Wärmepumpe ist für die meisten Hausbesitzer 2025 die wirtschaftlichste Alternative. Anschaffung 25.000-35.000 Euro, aber mit 30-70% BEG-Förderung. Betriebskosten nur ca. 1.300 Euro pro Jahr (statt 2.900 Euro bei Gas). Auf 15 Jahre gerechnet etwa 20.000 Euro günstiger. Alternativen: Gas-Hybrid (Kombination aus beiden), Pelletheizung (wenn Platz vorhanden) oder Fernwärme (wo verfügbar).' },
+        { question: 'Welche Alternative zur Gasheizung ist am besten?', answer: 'Die Wärmepumpe ist für die meisten Hausbesitzer 2026 die wirtschaftlichste Alternative. Anschaffung 25.000-35.000 Euro, aber mit 30-70% BEG-Förderung. Betriebskosten nur ca. 1.300 Euro pro Jahr (statt 2.900 Euro bei Gas). Auf 15 Jahre gerechnet etwa 20.000 Euro günstiger. Alternativen: Gas-Hybrid (Kombination aus beiden), Pelletheizung (wenn Platz vorhanden) oder Fernwärme (wo verfügbar).' },
         { question: 'Was ist eine H2-ready Gasheizung?', answer: 'Eine wasserstofffähige Gasheizung, die später auf Wasserstoff umgerüstet werden kann. Die Idee: Heute mit Erdgas heizen, künftig mit grünem Wasserstoff. In der Praxis sind diese Geräte 2025 kaum verfügbar und es ist völlig unklar, ob und wann flächendeckend Wasserstoff verfügbar sein wird. Experten raten eher zu bewährten erneuerbaren Lösungen wie Wärmepumpen.' },
         { question: 'Wie entwickelt sich die CO₂-Abgabe für Gas?', answer: 'Die CO₂-Abgabe steigt kontinuierlich: 2025: 55 Euro pro Tonne, 2026: 65 Euro, ab 2027 im Marktkorridor 55-65 Euro, danach unbegrenzt. Experten rechnen langfristig mit 100-150 Euro pro Tonne. Bei 20.000 kWh Gasverbrauch zahlen Sie 2025 etwa 220 Euro CO₂-Steuer pro Jahr, bei 100 Euro/Tonne wären das 500-600 Euro zusätzlich.' },
       ],
@@ -1438,10 +1438,10 @@ function getMockBlogPosts(): BlogPost[] {
     {
       id: 5,
       slug: 'pelletheizung-kosten-2026',
-      title: 'Pelletheizung Kosten 2025: Anschaffung, Betrieb & Förderung',
-      excerpt: 'Was kostet eine Pelletheizung 2025? Kompletter Überblick über Anschaffung, Betriebskosten und bis zu 60% BEG-Förderung.',
+      title: 'Pelletheizung Kosten 2026: Anschaffung, Betrieb & Förderung',
+      excerpt: 'Was kostet eine Pelletheizung 2026? Kompletter Überblick über Anschaffung, Betriebskosten und bis zu 60% BEG-Förderung.',
       content: `
-        <p class="text-xl text-slate-700 leading-relaxed mb-6">Sie interessieren sich für eine Pelletheizung und fragen sich, ob sich das für Ihr Haus rechnet? Die kurze Antwort: Ja, für viele Hausbesitzer ist eine Pelletheizung 2025 eine der wirtschaftlichsten Optionen – vorausgesetzt, Sie haben den Platz dafür und wissen, worauf Sie achten müssen.</p>
+        <p class="text-xl text-slate-700 leading-relaxed mb-6">Sie interessieren sich für eine Pelletheizung und fragen sich, ob sich das für Ihr Haus rechnet? Die kurze Antwort: Ja, für viele Hausbesitzer ist eine Pelletheizung 2026 eine der wirtschaftlichsten Optionen – vorausgesetzt, Sie haben den Platz dafür und wissen, worauf Sie achten müssen.</p>
 
         <div class="flex flex-wrap gap-4 mb-8 text-sm text-slate-600">
           <span class="flex items-center gap-1">✓ Zertifizierter Fachbetrieb für Biomasse</span>
@@ -1564,7 +1564,7 @@ function getMockBlogPosts(): BlogPost[] {
 
         <p><strong>Die Ersparnis?</strong> Rund 1.000 – 1.500 € pro Jahr gegenüber Gas. Und das wird jedes Jahr mehr, weil die CO₂-Abgabe auf fossile Brennstoffe weiter steigt.</p>
 
-        <h2>Förderung 2025: So kommen Sie auf bis zu 70%</h2>
+        <h2>Förderung 2026: So kommen Sie auf bis zu 70%</h2>
 
         <p>Jetzt wird's spannend. Pelletheizungen werden üppig gefördert – aber es gibt einen wichtigen Haken, den viele nicht kennen:</p>
 
@@ -1717,7 +1717,7 @@ function getMockBlogPosts(): BlogPost[] {
 
         <h2>Fazit: Für wen lohnt sich die Pelletheizung?</h2>
 
-        <p>Die Pelletheizung ist 2025 eine ausgezeichnete Wahl, wenn:</p>
+        <p>Die Pelletheizung ist 2026 eine ausgezeichnete Wahl, wenn:</p>
 
         <ul>
           <li>Sie <strong>genug Lagerplatz</strong> haben (alter Heizölraum ideal)</li>
@@ -1746,11 +1746,11 @@ function getMockBlogPosts(): BlogPost[] {
 
         <h2>Häufig gestellte Fragen (FAQ)</h2>
 
-        <h3>Was kostet eine Pelletheizung 2025 komplett installiert?</h3>
+        <h3>Was kostet eine Pelletheizung 2026 komplett installiert?</h3>
         <p>Eine komplette Pelletheizung inklusive Lager, Fördersystem und Installation kostet <strong>28.000 bis 35.000 Euro</strong>. Darin enthalten sind Pelletkessel (15.000-20.000 Euro), Pelletlager (3.000-5.000 Euro), Fördersystem (2.000-3.000 Euro), Pufferspeicher (2.000-3.000 Euro) und Installation mit hydraulischem Abgleich (4.000-6.000 Euro). Eine eventuelle Schornsteinsanierung kostet zusätzlich 1.000-2.000 Euro.</p>
 
         <h3>Wie viel kosten Pellets aktuell pro Tonne?</h3>
-        <p>Der aktuelle Pelletpreis liegt bei <strong>350 bis 450 Euro pro Tonne</strong> (Stand 2025). Ein typisches Einfamilienhaus verbraucht etwa 3 Tonnen pro Jahr, was Brennstoffkosten von 1.050-1.350 Euro entspricht. Der Preis schwankt saisonal – am günstigsten ist eine Bestellung im Frühsommer. Pellets sind deutlich günstiger und preislich stabiler als Gas oder Öl.</p>
+        <p>Der aktuelle Pelletpreis liegt bei <strong>350 bis 450 Euro pro Tonne</strong> (Stand 2026). Ein typisches Einfamilienhaus verbraucht etwa 3 Tonnen pro Jahr, was Brennstoffkosten von 1.050-1.350 Euro entspricht. Der Preis schwankt saisonal – am günstigsten ist eine Bestellung im Frühsommer. Pellets sind deutlich günstiger und preislich stabiler als Gas oder Öl.</p>
 
         <h3>Wie viel Platz braucht eine Pelletheizung im Keller?</h3>
         <p>Als Faustregel gilt: <strong>1 m³ Lagerraum pro Tonne Pellets</strong>. Für ein Einfamilienhaus mit 5-6 Tonnen Jahresbedarf benötigen Sie etwa 8-10 m³ Lagervolumen, entsprechend einem Raum von ca. 2,5 x 2,5 x 1,5 Meter. Ein Gewebetank (Sacksilo) ist die platzsparendste Lösung mit nur 2x2 Metern Grundfläche. Ein alter Heizölraum lässt sich ideal umnutzen.</p>
@@ -1778,8 +1778,8 @@ function getMockBlogPosts(): BlogPost[] {
       tags: ['Pelletheizung', 'Kosten', 'Förderung', 'BEG', 'Biomasse'],
       featured: false,
       faqs: [
-        { question: 'Was kostet eine Pelletheizung 2025 komplett installiert?', answer: 'Eine komplette Pelletheizung inklusive Lager, Fördersystem und Installation kostet 28.000 bis 35.000 Euro. Darin enthalten sind Pelletkessel (15.000-20.000 Euro), Pelletlager (3.000-5.000 Euro), Fördersystem (2.000-3.000 Euro), Pufferspeicher (2.000-3.000 Euro) und Installation mit hydraulischem Abgleich (4.000-6.000 Euro). Eine eventuelle Schornsteinsanierung kostet zusätzlich 1.000-2.000 Euro.' },
-        { question: 'Wie viel kosten Pellets aktuell pro Tonne?', answer: 'Der aktuelle Pelletpreis liegt bei 350 bis 450 Euro pro Tonne (Stand 2025). Ein typisches Einfamilienhaus verbraucht etwa 3 Tonnen pro Jahr, was Brennstoffkosten von 1.050-1.350 Euro entspricht. Der Preis schwankt saisonal – am günstigsten ist eine Bestellung im Frühsommer. Pellets sind deutlich günstiger und preislich stabiler als Gas oder Öl.' },
+        { question: 'Was kostet eine Pelletheizung 2026 komplett installiert?', answer: 'Eine komplette Pelletheizung inklusive Lager, Fördersystem und Installation kostet 28.000 bis 35.000 Euro. Darin enthalten sind Pelletkessel (15.000-20.000 Euro), Pelletlager (3.000-5.000 Euro), Fördersystem (2.000-3.000 Euro), Pufferspeicher (2.000-3.000 Euro) und Installation mit hydraulischem Abgleich (4.000-6.000 Euro). Eine eventuelle Schornsteinsanierung kostet zusätzlich 1.000-2.000 Euro.' },
+        { question: 'Wie viel kosten Pellets aktuell pro Tonne?', answer: 'Der aktuelle Pelletpreis liegt bei 350 bis 450 Euro pro Tonne (Stand 2026). Ein typisches Einfamilienhaus verbraucht etwa 3 Tonnen pro Jahr, was Brennstoffkosten von 1.050-1.350 Euro entspricht. Der Preis schwankt saisonal – am günstigsten ist eine Bestellung im Frühsommer. Pellets sind deutlich günstiger und preislich stabiler als Gas oder Öl.' },
         { question: 'Wie viel Platz braucht eine Pelletheizung im Keller?', answer: 'Als Faustregel gilt: 1 m³ Lagerraum pro Tonne Pellets. Für ein Einfamilienhaus mit 5-6 Tonnen Jahresbedarf benötigen Sie etwa 8-10 m³ Lagervolumen, entsprechend einem Raum von ca. 2,5 x 2,5 x 1,5 Meter. Ein Gewebetank (Sacksilo) ist die platzsparendste Lösung mit nur 2x2 Metern Grundfläche. Ein alter Heizölraum lässt sich ideal umnutzen.' },
         { question: 'Wie viel BEG-Förderung gibt es für Pelletheizungen?', answer: 'Die Grundförderung beträgt 30%. Den Klimageschwindigkeits-Bonus (20%) erhalten Sie nur bei Kombination mit Solarthermie, PV oder Wärmepumpe. Der Einkommensbonus (30% bei Einkommen unter 40.000 Euro) ist zusätzlich möglich. Insgesamt sind bis zu 70% Förderung möglich, maximal 21.000 Euro Zuschuss. Eine Pelletheizung mit Solarthermie erhält in der Regel 50% Förderung.' },
         { question: 'Pelletheizung oder Wärmepumpe - was ist besser?', answer: 'Das hängt von Ihrem Haus ab. Pelletheizung ist besser, wenn Sie Lagerplatz haben, hohe Vorlauftemperaturen benötigen (schlecht gedämmter Altbau) und auf regionale Brennstoffe setzen wollen. Wärmepumpe ist besser, wenn kein Lagerplatz vorhanden ist, das Haus gut gedämmt ist, Sie eine PV-Anlage haben und wartungsfrei heizen möchten. Auf 20 Jahre ist die Wärmepumpe etwa 8.000 Euro günstiger, aber beide Systeme sind förderfähig.' },
@@ -1791,15 +1791,15 @@ function getMockBlogPosts(): BlogPost[] {
     {
       id: 7,
       slug: 'badsanierung-kosten-2026',
-      title: 'Badsanierung Kosten 2025: Was Sie wirklich einplanen müssen',
-      excerpt: 'Realistische Kosten für Ihre Badsanierung 2025 – von der Teilrenovierung bis zum Komplettumbau. Mit Förderungen, Spartipps und ehrlicher Kalkulation.',
+      title: 'Badsanierung Kosten 2026: Was Sie wirklich einplanen müssen',
+      excerpt: 'Realistische Kosten für Ihre Badsanierung 2026 – von der Teilrenovierung bis zum Komplettumbau. Mit Förderungen, Spartipps und ehrlicher Kalkulation.',
       content: `
-        <p class="text-xl text-slate-600 mb-8">Sie stehen morgens in Ihrem Bad und denken: „Das muss sich ändern"? Damit sind Sie nicht allein. Jedes Jahr sanieren Hunderttausende Deutsche ihr Badezimmer – und die meisten unterschätzen dabei die Kosten. Hier erfahren Sie, was 2025 wirklich auf Sie zukommt.</p>
+        <p class="text-xl text-slate-600 mb-8">Sie stehen morgens in Ihrem Bad und denken: „Das muss sich ändern"? Damit sind Sie nicht allein. Jedes Jahr sanieren Hunderttausende Deutsche ihr Badezimmer – und die meisten unterschätzen dabei die Kosten. Hier erfahren Sie, was 2026 wirklich auf Sie zukommt.</p>
 
         <!-- Trust Badge -->
         <div class="flex flex-wrap gap-3 my-6">
           <span class="inline-flex items-center gap-2 bg-slate-100 px-3 py-1.5 rounded-full text-sm"><span class="text-green-600">✓</span> Über 800 Badsanierungen betreut</span>
-          <span class="inline-flex items-center gap-2 bg-slate-100 px-3 py-1.5 rounded-full text-sm"><span class="text-green-600">✓</span> Regionale Handwerkerpreise 2025</span>
+          <span class="inline-flex items-center gap-2 bg-slate-100 px-3 py-1.5 rounded-full text-sm"><span class="text-green-600">✓</span> Regionale Handwerkerpreise 2026</span>
         </div>
 
         <h2>Die ehrliche Kostenübersicht</h2>
@@ -2087,7 +2087,7 @@ function getMockBlogPosts(): BlogPost[] {
 
         <h2>Häufig gestellte Fragen (FAQ)</h2>
 
-        <h3>Was kostet eine Badsanierung 2025 pro Quadratmeter?</h3>
+        <h3>Was kostet eine Badsanierung 2026 pro Quadratmeter?</h3>
         <p>Die Kosten liegen zwischen <strong>900 und 3.500 Euro pro m²</strong>, je nach Ausstattung und Umfang. Basis-Standard (funktional, einfache Materialien) kostet 900-1.300 Euro/m², mittlerer Standard mit hochwertigen Fliesen und bodengleicher Dusche 1.300-2.200 Euro/m², Luxus-Standard mit Naturstein und Smart-Funktionen 2.200-3.500 Euro/m². Wichtig: Wenn Leitungen erneuert werden müssen, wird es teurer.</p>
 
         <h3>Wie lange dauert eine Badsanierung?</h3>
@@ -2102,7 +2102,7 @@ function getMockBlogPosts(): BlogPost[] {
         <h3>Was steigert den Immobilienwert am meisten?</h3>
         <p>Eine <strong>bodengleiche Dusche</strong> ist die beste Investition – sie macht das Bad modern, barrierefrei und größer wirkend. Auch wichtig: hochwertige Armaturen (fallen sofort auf), gute Beleuchtung und ein großzügiger Waschtisch. Ein neues Bad steigert den Immobilienwert um <strong>3-5%</strong>. Bei einem 300.000-Euro-Haus sind das 9.000-15.000 Euro – ein Großteil der Investition wird also zurückgeholt.</p>
 
-        <h3>Welche Fliesen sind 2025 am besten?</h3>
+        <h3>Welche Fliesen sind 2026 am besten?</h3>
         <p><strong>Feinsteinzeug in Holz- oder Natursteinoptik</strong> ist der aktuelle Standard. Es sieht aus wie Marmor oder Parkett, kostet aber nur ein Drittel und ist deutlich pflegeleichter. Großformate (60x120 cm oder größer) sind modern und reduzieren Fugen. Empfehlung: Rutschfeste Fliesen mit R10 oder R11 für Dusche und Boden. Fliesen mit 30x60 cm kosten ab 20 Euro/m², Großformate ab 40 Euro/m².</p>
 
         <h3>Was sind versteckte Kosten bei Badsanierung?</h3>
@@ -2119,12 +2119,12 @@ function getMockBlogPosts(): BlogPost[] {
       tags: ['Badsanierung', 'Kosten', 'Barrierefreiheit', 'KfW', 'Förderung'],
       featured: false,
       faqs: [
-        { question: 'Was kostet eine Badsanierung 2025 pro Quadratmeter?', answer: 'Die Kosten liegen zwischen 900 und 3.500 Euro pro m², je nach Ausstattung und Umfang. Basis-Standard (funktional, einfache Materialien) kostet 900-1.300 Euro/m², mittlerer Standard mit hochwertigen Fliesen und bodengleicher Dusche 1.300-2.200 Euro/m², Luxus-Standard mit Naturstein und Smart-Funktionen 2.200-3.500 Euro/m². Wichtig: Wenn Leitungen erneuert werden müssen, wird es teurer.' },
+        { question: 'Was kostet eine Badsanierung 2026 pro Quadratmeter?', answer: 'Die Kosten liegen zwischen 900 und 3.500 Euro pro m², je nach Ausstattung und Umfang. Basis-Standard (funktional, einfache Materialien) kostet 900-1.300 Euro/m², mittlerer Standard mit hochwertigen Fliesen und bodengleicher Dusche 1.300-2.200 Euro/m², Luxus-Standard mit Naturstein und Smart-Funktionen 2.200-3.500 Euro/m². Wichtig: Wenn Leitungen erneuert werden müssen, wird es teurer.' },
         { question: 'Wie lange dauert eine Badsanierung?', answer: 'Die reine Bauzeit beträgt 10-25 Tage je nach Größe: Kleines Bad bis 6 m² dauert 10-14 Tage, mittlere Bäder (7-12 m²) 15-20 Tage, große Bäder über 12 m² etwa 20-25 Tage. Hinzu kommen Planungszeit (2-6 Wochen), Materialbestellung (4-6 Wochen) und Trocknungszeiten (1-2 Wochen). Planen Sie insgesamt 2-3 Monate von der ersten Planung bis zur Fertigstellung ein.' },
         { question: 'Kann ich während der Sanierung im Haus wohnen bleiben?', answer: 'Ja, bei einem Einfamilienhaus mit zweitem WC ist das problemlos möglich. Bei nur einem Bad ist es unbequem, aber machbar – viele nutzen eine Camping-Dusche oder Nachbarn helfen aus. Die Handwerker arbeiten meist von 7-16 Uhr, danach haben Sie Ruhe. Staub und Lärm sind unvermeidbar, aber mit guter Abdeckung der Durchgänge bleibt der Rest des Hauses relativ sauber.' },
         { question: 'Welche Förderung gibt es für Badsanierung?', answer: 'Das KfW-Zuschussprogramm 455-B (12,5%, max. 6.250 Euro) wurde zum 01.01.2025 eingestellt und soll ab Frühjahr 2026 mit 50 Mio. Euro Budget neu aufgelegt werden. Aktuell steht der KfW-Kredit 159 (zinsgünstig, bis 50.000 Euro) für barrierefreie Umbauten zur Verfügung. Bei Pflegegrad zahlt die Pflegekasse bis zu 4.000 Euro pro Person (bei zwei Personen bis 8.000 Euro). Zusätzlich können Sie 20% der Handwerkerkosten steuerlich absetzen (max. 1.200 Euro/Jahr).' },
         { question: 'Was steigert den Immobilienwert am meisten?', answer: 'Eine bodengleiche Dusche ist die beste Investition – sie macht das Bad modern, barrierefrei und größer wirkend. Auch wichtig: hochwertige Armaturen (fallen sofort auf), gute Beleuchtung und ein großzügiger Waschtisch. Ein neues Bad steigert den Immobilienwert um 3-5%. Bei einem 300.000-Euro-Haus sind das 9.000-15.000 Euro – ein Großteil der Investition wird also zurückgeholt.' },
-        { question: 'Welche Fliesen sind 2025 am besten?', answer: 'Feinsteinzeug in Holz- oder Natursteinoptik ist der aktuelle Standard. Es sieht aus wie Marmor oder Parkett, kostet aber nur ein Drittel und ist deutlich pflegeleichter. Großformate (60x120 cm oder größer) sind modern und reduzieren Fugen. Empfehlung: Rutschfeste Fliesen mit R10 oder R11 für Dusche und Boden. Fliesen mit 30x60 cm kosten ab 20 Euro/m², Großformate ab 40 Euro/m².' },
+        { question: 'Welche Fliesen sind 2026 am besten?', answer: 'Feinsteinzeug in Holz- oder Natursteinoptik ist der aktuelle Standard. Es sieht aus wie Marmor oder Parkett, kostet aber nur ein Drittel und ist deutlich pflegeleichter. Großformate (60x120 cm oder größer) sind modern und reduzieren Fugen. Empfehlung: Rutschfeste Fliesen mit R10 oder R11 für Dusche und Boden. Fliesen mit 30x60 cm kosten ab 20 Euro/m², Großformate ab 40 Euro/m².' },
         { question: 'Was sind versteckte Kosten bei Badsanierung?', answer: 'Häufige Zusatzkosten, die erst beim Abriss sichtbar werden: Schimmel hinter Fliesen (500-2.000 Euro Sanierung), marode Rohre (1.000-3.000 Euro für neue Leitungen), nicht normkonforme Elektrik (800-1.500 Euro Nachrüstung) und beschädigter Estrich (1.000-2.500 Euro). Planen Sie daher 15-20% Puffer ein. Bei einem 15.000-Euro-Bad also 2.500-3.000 Euro Reserve.' },
         { question: 'Lohnt sich eine Kombination mit Heizungstausch?', answer: 'Absolut, wenn die Heizung ohnehin ansteht. Sie sparen Anfahrtskosten, Baustelleneinrichtung und Koordinationsaufwand. Zudem gibt es für Heizungstausch die BEG-Förderung (30-70%), die Sie mit der KfW-Barrierefreiheit kombinieren können. Besonders sinnvoll: Fußbodenheizung im Bad mit neuer Wärmepumpe kombinieren. Viele unserer Kunden nutzen die Gelegenheit für beide Maßnahmen gleichzeitig.' },
       ],
@@ -2132,7 +2132,7 @@ function getMockBlogPosts(): BlogPost[] {
     {
       id: 8,
       slug: 'foerderung-heizung-2026',
-      title: 'Heizungsförderung 2025: So holen Sie sich bis zu 21.000 € zurück',
+      title: 'Heizungsförderung 2026: So holen Sie sich bis zu 21.000 € zurück',
       excerpt: 'Ihr Schritt-für-Schritt-Guide durch den Förderdschungel: Welche Zuschüsse Sie bekommen, wie Sie sie beantragen und welche Fehler Sie unbedingt vermeiden sollten.',
       content: `
         <p class="text-xl text-slate-600 mb-8">Der Staat zahlt bis zu 70% Ihrer neuen Heizung – das sind bei einer Wärmepumpe schnell 15.000 bis 21.000 Euro. Trotzdem verschenken viele Hausbesitzer Geld, weil sie Fristen verpassen oder Anträge falsch stellen. Hier erfahren Sie, wie Sie das Maximum herausholen.</p>
@@ -2419,7 +2419,7 @@ function getMockBlogPosts(): BlogPost[] {
 
         <div class="callout callout-warning">
           <div class="callout-title">Wichtig zu wissen</div>
-          <p>Der <strong>Klimageschwindigkeits-Bonus (20%) sinkt ab 2029</strong> alle zwei Jahre um 3%. Wer also 2025 handelt, bekommt mehr als wer 2030 handelt. Und nach der nächsten Bundestagswahl könnte das gesamte Fördersystem angepasst werden.</p>
+          <p>Der <strong>Klimageschwindigkeits-Bonus (20%) sinkt ab 2029</strong> alle zwei Jahre um 3%. Wer also 2026 handelt, bekommt mehr als wer 2030 handelt. Und nach der nächsten Bundestagswahl könnte das gesamte Fördersystem angepasst werden.</p>
         </div>
 
         <h2>Brauchen Sie Hilfe beim Förderantrag?</h2>
@@ -2451,7 +2451,7 @@ function getMockBlogPosts(): BlogPost[] {
 
         <h2>Häufig gestellte Fragen (FAQ)</h2>
 
-        <h3>Wie hoch ist die maximale Förderung für eine Heizung 2025?</h3>
+        <h3>Wie hoch ist die maximale Förderung für eine Heizung 2026?</h3>
         <p>Die maximale Förderung beträgt <strong>70% der förderfähigen Kosten</strong>, gedeckelt bei <strong>21.000 Euro Zuschuss</strong>. Das erreichen Sie, wenn Sie alle vier Förderbausteine kombinieren: 30% Grundförderung + 20% Klimageschwindigkeits-Bonus + 30% Einkommensbonus + 5% Effizienzbonus. Bei 30.000 Euro Investition erhalten Sie maximal 21.000 Euro zurück.</p>
 
         <h3>Wer kann die Heizungsförderung beantragen?</h3>
@@ -2480,7 +2480,7 @@ function getMockBlogPosts(): BlogPost[] {
       tags: ['Förderung', 'BEG', 'KfW', 'Wärmepumpe', 'Zuschuss', 'Steuerbonus'],
       featured: true,
       faqs: [
-        { question: 'Wie hoch ist die maximale Förderung für eine Heizung 2025?', answer: 'Die maximale Förderung beträgt 70% der förderfähigen Kosten, gedeckelt bei 21.000 Euro Zuschuss. Das erreichen Sie, wenn Sie alle vier Förderbausteine kombinieren: 30% Grundförderung + 20% Klimageschwindigkeits-Bonus + 30% Einkommensbonus + 5% Effizienzbonus. Bei 30.000 Euro Investition erhalten Sie maximal 21.000 Euro zurück.' },
+        { question: 'Wie hoch ist die maximale Förderung für eine Heizung 2026?', answer: 'Die maximale Förderung beträgt 70% der förderfähigen Kosten, gedeckelt bei 21.000 Euro Zuschuss. Das erreichen Sie, wenn Sie alle vier Förderbausteine kombinieren: 30% Grundförderung + 20% Klimageschwindigkeits-Bonus + 30% Einkommensbonus + 5% Effizienzbonus. Bei 30.000 Euro Investition erhalten Sie maximal 21.000 Euro zurück.' },
         { question: 'Wer kann die Heizungsförderung beantragen?', answer: 'Antragsberechtigt sind Selbstnutzer, Vermieter und Wohnungseigentümergemeinschaften für bestehende Wohngebäude. Voraussetzung ist ein Gebäude, das vor dem 1. Januar 2024 gebaut wurde. Die 30% Grundförderung steht allen offen, während Klimabonus und Einkommensbonus nur Selbstnutzern vorbehalten sind.' },
         { question: 'Welche Einkommensgrenze gilt für den 30% Einkommensbonus?', answer: 'Der Einkommensbonus von 30% wird gewährt, wenn Ihr zu versteuerndes Haushaltseinkommen maximal 40.000 Euro pro Jahr beträgt. Maßgeblich ist der Durchschnitt der Steuerbescheide der letzten zwei Jahre. Bei einem Paar zählt das gemeinsame Einkommen beider Partner.' },
         { question: 'Muss ich den Förderantrag vor oder nach dem Einbau stellen?', answer: 'Zwingend vor Beginn jeglicher Arbeiten. Auch Vertragsunterzeichnung oder Materialbestellung gelten als Maßnahmenbeginn und führen zum Förderverlust. Unterschreiben Sie Verträge nur mit aufschiebender Bedingung und stellen Sie den Antrag erst nach Erhalt der KfW-Zusage los. Erst nach Förderzusage darf installiert werden.' },
@@ -2492,10 +2492,10 @@ function getMockBlogPosts(): BlogPost[] {
     {
       id: 9,
       slug: 'barrierefreies-bad-planen-ratgeber',
-      title: 'Barrierefreies Bad planen: Der komplette Ratgeber 2025',
+      title: 'Barrierefreies Bad planen: Der komplette Ratgeber 2026',
       excerpt: 'Barrierefreies Bad nach DIN 18040-2 planen: Alle Anforderungen, Maße, Kosten und Förderungen 2025. Mit Checkliste für bodengleiche Dusche, Haltegriffe und mehr.',
       content: `
-        <h2>Barrierefreies Bad planen: Der komplette Ratgeber 2025</h2>
+        <h2>Barrierefreies Bad planen: Der komplette Ratgeber 2026</h2>
 
         <p>Ein barrierefreies Badezimmer ist weit mehr als nur eine Anpassung für Menschen mit Behinderung. Es bietet <strong>Komfort für alle Generationen</strong>, erhöht die Sicherheit und steigert den Immobilienwert. Ob Sie jetzt schon vorsorgen oder akut umbauen müssen – dieser Ratgeber zeigt Ihnen alle wichtigen Anforderungen, Kosten und Fördermöglichkeiten.</p>
 
@@ -2623,7 +2623,7 @@ function getMockBlogPosts(): BlogPost[] {
           <li><strong>Siphon:</strong> Flach oder zur Seite geführt (Verbrühungsschutz!)</li>
         </ul>
 
-        <h3>Kosten für ein barrierefreies Bad 2025</h3>
+        <h3>Kosten für ein barrierefreies Bad 2026</h3>
 
         <p>Die Kosten variieren stark je nach Ausgangssituation, Badgröße und gewählter Ausstattung:</p>
 
@@ -2679,14 +2679,14 @@ function getMockBlogPosts(): BlogPost[] {
           <li><strong>Wandverstärkungen:</strong> 300 - 800 € (je nach Umfang)</li>
         </ul>
 
-        <h3>Förderungen für barrierefreies Bad 2025</h3>
+        <h3>Förderungen für barrierefreies Bad 2026</h3>
 
         <div class="callout callout-warning">
-          <h4>Wichtige Änderung 2025</h4>
+          <h4>Wichtige Änderung 2026</h4>
           <p>Die <strong>KfW-Förderung 455-B</strong> (Investitionszuschuss Barrierereduzierung) wurde zum <strong>01.01.2025 eingestellt</strong>. Es gibt keine direkten Zuschüsse mehr über dieses Programm!</p>
         </div>
 
-        <h4>Verfügbare Förderungen 2025:</h4>
+        <h4>Verfügbare Förderungen 2026:</h4>
 
         <p><strong>1. Pflegekasse (§ 40 SGB XI)</strong></p>
         <ul>
@@ -2771,7 +2771,7 @@ function getMockBlogPosts(): BlogPost[] {
         <h4>Was kostet ein barrierefreier Badumbau durchschnittlich?</h4>
         <p>Ein einfacher Umbau mit bodengleicher Dusche, Haltegriffen und erhöhtem WC kostet <strong>8.000 bis 18.000 Euro</strong>. Eine Komplettsanierung nach DIN 18040-2 liegt bei 18.000 bis 35.000 Euro. Rollstuhlgerechte Bäder (R-Standard) können 25.000 bis 50.000 Euro kosten, je nach Größe und Ausstattung.</p>
 
-        <h4>Welche Förderungen gibt es 2025 für barrierefreie Bäder?</h4>
+        <h4>Welche Förderungen gibt es 2026 für barrierefreie Bäder?</h4>
         <p>Hauptförderung ist die Pflegekasse mit <strong>bis zu 4.180 Euro</strong> bei Pflegegrad 1-5. Die KfW bietet den Kredit 159 (bis 50.000 Euro zu günstigen Zinsen). Der KfW-Zuschuss 455-B wurde zum 01.01.2025 eingestellt. Regional gibt es Landesprogramme wie „Bayern barrierefrei". Zudem sind 20% der Handwerkerkosten steuerlich absetzbar (max. 1.200 Euro/Jahr).</p>
 
         <h4>Wie viel Platz braucht man für ein barrierefreies Bad mindestens?</h4>
@@ -2819,7 +2819,7 @@ function getMockBlogPosts(): BlogPost[] {
       faqs: [
         { question: 'Welche DIN-Normen gelten für barrierefreie Bäder?', answer: 'Für barrierefreie Bäder im Wohnungsbau gilt die DIN 18040-2. Diese definiert zwei Ausbaustufen: barrierefrei (Bewegungsfläche 120 × 120 cm) und rollstuhlgerecht (R-Standard mit 150 × 150 cm). Zusätzlich relevant sind DIN 51097 für Rutschsicherheit und VDI 6000 für Lüftung im Bad.' },
         { question: 'Was kostet ein barrierefreier Badumbau durchschnittlich?', answer: 'Ein einfacher Umbau mit bodengleicher Dusche, Haltegriffen und erhöhtem WC kostet 8.000 bis 18.000 Euro. Eine Komplettsanierung nach DIN 18040-2 liegt bei 18.000 bis 35.000 Euro. Rollstuhlgerechte Bäder (R-Standard) können 25.000 bis 50.000 Euro kosten, je nach Größe und Ausstattung.' },
-        { question: 'Welche Förderungen gibt es 2025 für barrierefreie Bäder?', answer: 'Hauptförderung ist die Pflegekasse mit bis zu 4.180 Euro bei Pflegegrad 1-5. Die KfW bietet den Kredit 159 (bis 50.000 Euro zu günstigen Zinsen). Der KfW-Zuschuss 455-B wurde zum 01.01.2025 eingestellt. Regional gibt es Landesprogramme wie „Bayern barrierefrei". Zudem sind 20% der Handwerkerkosten steuerlich absetzbar (max. 1.200 Euro/Jahr).' },
+        { question: 'Welche Förderungen gibt es 2026 für barrierefreie Bäder?', answer: 'Hauptförderung ist die Pflegekasse mit bis zu 4.180 Euro bei Pflegegrad 1-5. Die KfW bietet den Kredit 159 (bis 50.000 Euro zu günstigen Zinsen). Der KfW-Zuschuss 455-B wurde zum 01.01.2025 eingestellt. Regional gibt es Landesprogramme wie „Bayern barrierefrei". Zudem sind 20% der Handwerkerkosten steuerlich absetzbar (max. 1.200 Euro/Jahr).' },
         { question: 'Wie viel Platz braucht man für ein barrierefreies Bad mindestens?', answer: 'Für ein barrierefreies Bad nach DIN 18040-2 benötigen Sie mindestens 5-6 m² Grundfläche. Vor jedem Sanitärobjekt muss eine Bewegungsfläche von 120 × 120 cm frei bleiben. Für rollstuhlgerechte Bäder (R-Standard) sind mindestens 8-9 m² erforderlich, da die Bewegungsflächen 150 × 150 cm betragen müssen.' },
         { question: 'Wirkt ein barrierefreies Bad unästhetisch oder „nach Altenheim"?', answer: 'Absolut nicht mehr! Moderne barrierefreie Bäder sind von normalen Bädern kaum zu unterscheiden. Bodengleiche Duschen sind heute Standard auch in Design-Bädern. Haltegriffe gibt es in Edelstahl, Schwarz-Matt oder farbig passend zur Einrichtung. Hochwertige unterfahrbare Waschtische sehen aus wie normale Möbelwaschtische. Der Begriff „Altenheim-Optik" ist längst überholt.' },
         { question: 'Kann ich auch zur Miete barrierefrei umbauen?', answer: 'Ja, als Mieter haben Sie nach § 554a BGB das Recht auf barrierefreien Umbau. Der Vermieter muss zustimmen, kann aber eine Rückbau-Vereinbarung verlangen. Die Kosten tragen Sie in der Regel selbst, können aber Förderungen beantragen. Bei Pflegegrad übernimmt die Pflegekasse bis zu 4.180 Euro.' },
@@ -2830,7 +2830,7 @@ function getMockBlogPosts(): BlogPost[] {
     {
       id: 10,
       slug: 'waermepumpe-vorteile-nachteile-2026',
-      title: 'Wärmepumpe Vorteile und Nachteile 2025: Der komplette Überblick',
+      title: 'Wärmepumpe Vorteile und Nachteile 2026: Der komplette Überblick',
       excerpt: 'Lohnt sich eine Wärmepumpe? 41% günstiger als Gas, bis 70% Förderung, aber auch echte Nachteile. Hier die Fakten für Ihre Entscheidung.',
       content: `
         <p class="text-xl leading-relaxed text-slate-600 mb-8">925 Euro weniger Heizkosten pro Jahr. 21.000 Euro Förderung vom Staat. Eine Entscheidung, die Ihr Haus zukunftssicher macht – und die sich bereits nach 5 Jahren auszahlt.</p>
@@ -2842,7 +2842,7 @@ function getMockBlogPosts(): BlogPost[] {
           <div class="callout-title">Die wichtigsten Zahlen auf einen Blick</div>
           <div class="callout-content">
             <ul>
-              <li><strong>Marktanteil 2025:</strong> 42% aller neuen Heizungen</li>
+              <li><strong>Marktanteil 2026:</strong> 42% aller neuen Heizungen</li>
               <li><strong>CO₂-Einsparung:</strong> 2.620 kg pro Jahr vs. Gas/Öl</li>
               <li><strong>Betriebskosten:</strong> 41% günstiger als Gasheizung</li>
               <li><strong>Förderung:</strong> Bis zu 70% (max. 21.000 €)</li>
@@ -2865,7 +2865,7 @@ function getMockBlogPosts(): BlogPost[] {
 
         <p>Selbst Altbauanlagen ohne vollständige Sanierung zeigen annehmbare Werte, wie Feldtests des Fraunhofer-Instituts belegen.</p>
 
-        <h2>9 Gründe, warum sich eine Wärmepumpe 2025 lohnt</h2>
+        <h2>9 Gründe, warum sich eine Wärmepumpe 2026 lohnt</h2>
 
         <p>Die Vorteile beginnen beim ersten Tag – mit niedrigeren Heizkosten. Und sie wachsen über die Jahre: Weniger Wartung, höherer Hauswert, vollständige Unabhängigkeit von Öl- und Gaspreisen. Hier sind die Argumente, die unsere Kunden überzeugt haben.</p>
 
@@ -2916,7 +2916,7 @@ function getMockBlogPosts(): BlogPost[] {
 
         <h3>2. Förderung: Bis zu 21.000 Euro geschenkt</h3>
 
-        <p>Ja, richtig gelesen: Der Staat übernimmt bis zu 70% Ihrer Investition. Das sind bei einer durchschnittlichen Wärmepumpe <strong>bis zu 21.000 Euro Zuschuss</strong>, die Sie nicht zurückzahlen müssen. Die KfW-Förderung 2025 macht Wärmepumpen damit oft günstiger als eine neue Gasheizung:</p>
+        <p>Ja, richtig gelesen: Der Staat übernimmt bis zu 70% Ihrer Investition. Das sind bei einer durchschnittlichen Wärmepumpe <strong>bis zu 21.000 Euro Zuschuss</strong>, die Sie nicht zurückzahlen müssen. Die KfW-Förderung 2026 macht Wärmepumpen damit oft günstiger als eine neue Gasheizung:</p>
 
         <ul>
           <li><strong>30% Basisförderung</strong> für alle Wärmepumpen</li>
@@ -3235,7 +3235,7 @@ function getMockBlogPosts(): BlogPost[] {
               <li>JAZ über 4,0 – höchste Effizienz</li>
               <li>Mit Flächenheizung: minimale Betriebskosten</li>
               <li>Amortisation in 5-6 Jahren</li>
-              <li>Standard-Lösung 2025</li>
+              <li>Standard-Lösung 2026</li>
             </ul>
           </div>
           <div class="pro-list">
@@ -3350,7 +3350,7 @@ function getMockBlogPosts(): BlogPost[] {
           <p class="cta-locations">📍 <strong>Standorte:</strong> Bobingen (Augsburg) · Gutenzell-Hürbel (Ulm/Memmingen) · Klosterlechfeld</p>
         </div>
 
-        <h2>Fazit: Lohnt sich eine Wärmepumpe 2025?</h2>
+        <h2>Fazit: Lohnt sich eine Wärmepumpe 2026?</h2>
 
         <p>Nach allem, was Sie jetzt gelesen haben, lautet die ehrliche Antwort: <strong>Ja, für die meisten. Aber nicht für jeden.</strong></p>
 
@@ -3372,7 +3372,7 @@ function getMockBlogPosts(): BlogPost[] {
           <li>43% Wertsteigerung Ihrer Immobilie</li>
         </ul>
 
-        <p>Ja, die Anschaffung kostet mehr. Ja, es braucht etwas Planung. Aber mit der richtigen Beratung und einem kompetenten Installateur ist eine Wärmepumpe 2025 die wirtschaftlich sinnvollste Entscheidung für die allermeisten Hausbesitzer.</p>
+        <p>Ja, die Anschaffung kostet mehr. Ja, es braucht etwas Planung. Aber mit der richtigen Beratung und einem kompetenten Installateur ist eine Wärmepumpe 2026 die wirtschaftlich sinnvollste Entscheidung für die allermeisten Hausbesitzer.</p>
 
         <p><strong>Unser Rat:</strong> Lassen Sie sich beraten. Kostenlos, vor Ort, ehrlich. Dann können Sie eine fundierte Entscheidung treffen – mit allen Fakten, ohne Marketing-Versprechen.</p>
 
@@ -3429,10 +3429,10 @@ function getMockBlogPosts(): BlogPost[] {
     {
       id: 11,
       slug: 'gasheizung-verbot-2026-geg',
-      title: 'Gasheizung Verbot 2025: Was das GEG wirklich bedeutet',
-      excerpt: 'Gasheizungsverbot Deutschland 2025: Alle Fakten zum GEG, Bestandsschutz, Fristen, Ausnahmen, Alternativen und Förderungen bis 70%. Keine Panik – wir klären auf!',
+      title: 'Gasheizung Verbot 2026: Was das GEG wirklich bedeutet',
+      excerpt: 'Gasheizungsverbot Deutschland 2026: Alle Fakten zum GEG, Bestandsschutz, Fristen, Ausnahmen, Alternativen und Förderungen bis 70%. Keine Panik – wir klären auf!',
       content: `
-        <h2>Gasheizung Verbot 2025: Das Gebäudeenergiegesetz (GEG) verständlich erklärt</h2>
+        <h2>Gasheizung Verbot 2026: Das Gebäudeenergiegesetz (GEG) verständlich erklärt</h2>
 
         <p>Das sogenannte "Gasheizungsverbot" sorgt seit Monaten für Verunsicherung bei Hausbesitzern in ganz Deutschland. <strong>Die gute Nachricht vorweg: Es gibt kein pauschales Verbot von Gasheizungen.</strong> Das Gebäudeenergiegesetz (GEG 2024) regelt vielmehr einen <strong>schrittweisen, geordneten Umstieg</strong> auf erneuerbare Energien bis 2045 – mit umfangreichem Bestandsschutz für bestehende Anlagen und großzügigen Übergangsfristen.</p>
 
@@ -3743,7 +3743,7 @@ function getMockBlogPosts(): BlogPost[] {
 
         <h2>Häufig gestellte Fragen (FAQ)</h2>
 
-        <h3>Ist die Gasheizung ab 2025 wirklich verboten?</h3>
+        <h3>Ist die Gasheizung ab 2026 wirklich verboten?</h3>
         <p>Nein, es gibt <strong>kein pauschales Verbot</strong>. Bestehende Gasheizungen dürfen weiterlaufen, so lange sie funktionieren. Auch Reparaturen sind erlaubt. Nur bei <strong>Neuinstallationen</strong> nach Inkrafttreten der kommunalen Wärmeplanung (Großstädte bis Mitte 2026, kleinere Gemeinden bis Mitte 2028) muss die neue Heizung zu 65% mit erneuerbaren Energien betrieben werden. Bis dahin können Sie sogar noch neue Gasheizungen einbauen – mit Beratungspflicht.</p>
 
         <h3>Wann muss ich meine Gasheizung spätestens austauschen?</h3>
@@ -3769,7 +3769,7 @@ function getMockBlogPosts(): BlogPost[] {
       tags: ['GEG', 'Gasheizung', 'Heizungsgesetz', 'Förderung', 'Wärmepumpe', 'BEG', 'Verbot'],
       featured: true,
       faqs: [
-        { question: 'Ist die Gasheizung ab 2025 wirklich verboten?', answer: 'Nein, es gibt kein pauschales Verbot. Bestehende Gasheizungen dürfen weiterlaufen, so lange sie funktionieren. Auch Reparaturen sind erlaubt. Nur bei Neuinstallationen nach Inkrafttreten der kommunalen Wärmeplanung (Großstädte bis Mitte 2026, kleinere Gemeinden bis Mitte 2028) muss die neue Heizung zu 65% mit erneuerbaren Energien betrieben werden. Bis dahin können Sie sogar noch neue Gasheizungen einbauen – mit Beratungspflicht.' },
+        { question: 'Ist die Gasheizung ab 2026 wirklich verboten?', answer: 'Nein, es gibt kein pauschales Verbot. Bestehende Gasheizungen dürfen weiterlaufen, so lange sie funktionieren. Auch Reparaturen sind erlaubt. Nur bei Neuinstallationen nach Inkrafttreten der kommunalen Wärmeplanung (Großstädte bis Mitte 2026, kleinere Gemeinden bis Mitte 2028) muss die neue Heizung zu 65% mit erneuerbaren Energien betrieben werden. Bis dahin können Sie sogar noch neue Gasheizungen einbauen – mit Beratungspflicht.' },
         { question: 'Wann muss ich meine Gasheizung spätestens austauschen?', answer: 'Eine generelle Austauschpflicht gibt es nicht. Ausnahme: Konstanttemperaturkessel über 30 Jahre müssen ausgetauscht werden (gilt nicht für Brennwert- und Niedertemperaturkessel). Bei einem irreparablen Totalschaden haben Sie 5 Jahre Übergangsfrist, um eine 65%-konforme Heizung einzubauen. Bis 2045 muss jede Heizung schrittweise auf 100% erneuerbare Energien umgestellt sein.' },
         { question: 'Was passiert, wenn meine Gasheizung kaputt geht?', answer: 'Bei einem Totalschaden haben Sie drei Optionen: 1) 5 Jahre Übergangsfrist – Sie dürfen übergangsweise eine konventionelle Heizung installieren. 2) Gebrauchte/gemietete Heizung als Überbrückung. 3) Direkter Umstieg auf Wärmepumpe/Pellets mit bis zu 70% Förderung. Eine Reparatur ist immer erlaubt, solange technisch möglich. Handlungsdruck entsteht nur, wenn eine Reparatur nicht mehr wirtschaftlich ist.' },
         { question: 'Bekomme ich noch Förderung für eine H2-ready Gasheizung?', answer: 'H2-ready Gasheizungen erhalten keine direkte BEG-Förderung mehr. Gefördert werden nur die Mehrkosten gegenüber einer normalen Gasheizung (ca. 1.000-2.000 Euro). Experten raten zur Vorsicht: Die Verfügbarkeit von grünem Wasserstoff ist ungewiss und die Kosten werden vermutlich hoch sein. H2-ready lohnt sich nur, wenn Ihre Kommune ein konkretes Wasserstoff-Netz plant.' },
@@ -3780,10 +3780,10 @@ function getMockBlogPosts(): BlogPost[] {
     {
       id: 12,
       slug: 'heizung-vergleich-2026-waermepumpe-gas-oel-pellets',
-      title: 'Heizung Vergleich 2025: Wärmepumpe vs Gas vs Öl vs Pellets – Kosten, Effizienz & Förderung',
-      excerpt: 'Kompletter Heizungsvergleich 2025: Alle Systeme (Wärmepumpe, Gas, Öl, Pellets, Fernwärme) im Detail. Mit Kosten, Betriebskosten, Förderung, CO₂-Bilanz und TCO über 20 Jahre.',
+      title: 'Heizung Vergleich 2026: Wärmepumpe vs Gas vs Öl vs Pellets – Kosten, Effizienz & Förderung',
+      excerpt: 'Kompletter Heizungsvergleich 2026: Alle Systeme (Wärmepumpe, Gas, Öl, Pellets, Fernwärme) im Detail. Mit Kosten, Betriebskosten, Förderung, CO₂-Bilanz und TCO über 20 Jahre.',
       content: `
-        <h2>Heizung Vergleich 2025: Der ultimative Guide für Ihre Heizungsentscheidung</h2>
+        <h2>Heizung Vergleich 2026: Der ultimative Guide für Ihre Heizungsentscheidung</h2>
 
         <p>Die Wahl der richtigen <a href="/heizung" class="text-[#0F5B78] font-medium hover:underline">Heizung</a> ist 2025 eine der wichtigsten finanziellen und ökologischen Entscheidungen für Hausbesitzer. Mit dem Gebäudeenergiegesetz (GEG), steigenden CO₂-Preisen und <a href="/foerderung" class="text-[#0F5B78] font-medium hover:underline">staatlichen Förderungen von bis zu 70%</a> hat sich die Landschaft dramatisch verändert. <strong>Die gute Nachricht: Wärmepumpen sind seit 2022 günstiger als Gasheizungen</strong> – sowohl in den Gesamtkosten als auch langfristig. Dieser umfassende Vergleich zeigt Ihnen alle Heizsysteme im Detail.</p>
 
@@ -3798,7 +3798,7 @@ function getMockBlogPosts(): BlogPost[] {
           </ul>
         </div>
 
-        <h2>Übersicht aller Heizsysteme 2025</h2>
+        <h2>Übersicht aller Heizsysteme 2026</h2>
 
         <p>Im Jahr 2025 stehen Hausbesitzern folgende Hauptsysteme zur Verfügung:</p>
 
@@ -3849,7 +3849,7 @@ function getMockBlogPosts(): BlogPost[] {
           </tbody>
         </table>
 
-        <h2>Anschaffungskosten 2025 im Detail</h2>
+        <h2>Anschaffungskosten 2026 im Detail</h2>
 
         <p>Die Investitionskosten unterscheiden sich erheblich – aber Förderungen ändern das Bild drastisch:</p>
 
@@ -4303,18 +4303,18 @@ function getMockBlogPosts(): BlogPost[] {
           </tbody>
         </table>
 
-        <p><strong>Warnung:</strong> Wer 2025 eine neue Gasheizung einbaut, muss ab 2029 bereits teure Umbauten vornehmen (Biogas-Anteil) – eine Kostenfalle!</p>
+        <p><strong>Warnung:</strong> Wer 2026 eine neue Gasheizung einbaut, muss ab 2029 bereits teure Umbauten vornehmen (Biogas-Anteil) – eine Kostenfalle!</p>
 
-        <h2>Fazit: Klare Empfehlung für 2025</h2>
+        <h2>Fazit: Klare Empfehlung für 2026</h2>
 
         <p>Die Zahlen sprechen eine eindeutige Sprache:</p>
 
         <div style="background-color: #d4edda; padding: 20px; border-left: 4px solid #28a745; margin: 20px 0;">
-          <h3 style="margin-top: 0; color: #155724;">Wärmepumpe ist 2025 die beste Wahl</h3>
+          <h3 style="margin-top: 0; color: #155724;">Wärmepumpe ist 2026 die beste Wahl</h3>
           <p>Mit den <strong>günstigsten Betriebskosten</strong> von nur 715 Euro pro Jahr (gegenüber 1.180 Euro bei Gas) und der <strong>höchsten Förderung</strong> bis zu 21.000 Euro Zuschuss überzeugt die Wärmepumpe auf ganzer Linie. Die 20-Jahre-Gesamtkosten liegen bei 45.000 Euro – das sind <strong>20.000 Euro Ersparnis</strong> gegenüber Gas. Mit Ökostrom entstehen 0 kg CO₂ (vs. 4.000 kg Gas). Das System ist GEG-konform bis 2045, erfordert keine teuren Umbauten und amortisiert sich bereits nach 4 bis 6 Jahren.</p>
         </div>
 
-        <p><strong>Gasheizungen sind 2025 eine Kostenfalle:</strong> Keine Förderung, steigende CO₂-Steuer, ab 2029 teure Biogas-Pflicht, höchste 20-Jahres-Kosten. Selbst die niedrigen Anschaffungskosten können die enormen Betriebskosten nicht ausgleichen.</p>
+        <p><strong>Gasheizungen sind 2026 eine Kostenfalle:</strong> Keine Förderung, steigende CO₂-Steuer, ab 2029 teure Biogas-Pflicht, höchste 20-Jahres-Kosten. Selbst die niedrigen Anschaffungskosten können die enormen Betriebskosten nicht ausgleichen.</p>
 
         <p><strong>Pelletheizungen sind die Alternative</strong> für Haushalte mit Platz und regionaler Pellet-Verfügbarkeit – besonders beliebt im ländlichen Raum wie dem <a href="/standorte/memmingen" class="text-[#0F5B78] font-medium hover:underline">Allgäu rund um Memmingen</a>. Ähnlich günstig wie Wärmepumpen, CO₂-neutral und mit hoher Förderung.</p>
 
@@ -4330,7 +4330,7 @@ function getMockBlogPosts(): BlogPost[] {
           </p>
         </div>
 
-        <p><strong>Handeln Sie jetzt und sichern Sie sich die 70% Förderung – der Geschwindigkeitsbonus läuft bis Ende 2028!</strong> Mehr Details finden Sie in unseren spezialisierten Ratgebern: <a href="/blog/waermepumpe-kosten-2026" class="text-[#0F5B78] font-medium hover:underline">Was kostet eine Wärmepumpe 2025?</a>, <a href="/blog/gasheizung-kosten-2026" class="text-[#0F5B78] font-medium hover:underline">Gasheizung Kosten 2025</a> und <a href="/blog/foerderung-heizung-2026" class="text-[#0F5B78] font-medium hover:underline">Heizungsförderung 2025: So holen Sie sich bis zu 21.000 € zurück</a>.</p>
+        <p><strong>Handeln Sie jetzt und sichern Sie sich die 70% Förderung – der Geschwindigkeitsbonus läuft bis Ende 2028!</strong> Mehr Details finden Sie in unseren spezialisierten Ratgebern: <a href="/blog/waermepumpe-kosten-2026" class="text-[#0F5B78] font-medium hover:underline">Was kostet eine Wärmepumpe 2025?</a>, <a href="/blog/gasheizung-kosten-2026" class="text-[#0F5B78] font-medium hover:underline">Gasheizung Kosten 2026</a> und <a href="/blog/foerderung-heizung-2026" class="text-[#0F5B78] font-medium hover:underline">Heizungsförderung 2025: So holen Sie sich bis zu 21.000 € zurück</a>.</p>
 
         <h2>Häufig gestellte Fragen (FAQ)</h2>
 
@@ -4340,7 +4340,7 @@ function getMockBlogPosts(): BlogPost[] {
         <h3>Welche Heizung ist die beste für einen Altbau?</h3>
         <p>Für Altbauten eignen sich <strong>Luft-Wasser-Wärmepumpen</strong> am besten, da sie keine aufwendigen Erdarbeiten benötigen und auch bei höheren Vorlauftemperaturen (55-60°C) effizient arbeiten. Fraunhofer-Feldtests zeigen: Selbst teilsanierte Altbauten von 15-170 Jahren erreichen JAZ-Werte von 3,4-4,3. Wichtig ist ein hydraulischer Abgleich und eventuell größere Heizkörper in 2-3 Räumen (günstiger als Fußbodenheizung). Bei sehr schlechter Dämmung sind Pelletheizungen eine gute Alternative.</p>
 
-        <h3>Welche Heizung hat die beste Förderung 2025?</h3>
+        <h3>Welche Heizung hat die beste Förderung 2026?</h3>
         <p>Wärmepumpen und Pelletheizungen erhalten mit <strong>bis zu 70% Förderung</strong> die höchste Unterstützung. Das entspricht maximal 21.000 Euro Zuschuss bei 30.000 Euro Investition. Die Bausteine: 30% Grundförderung + 20% Klimageschwindigkeits-Bonus + 30% Einkommensbonus (unter 40.000 Euro Einkommen) + 5% Effizienzbonus (natürliches Kältemittel). Gasheizungen erhalten seit 2024 keine Förderung mehr, Ölheizungen ebenfalls nicht.</p>
 
         <h3>Welche Heizung ist am zukunftssichersten?</h3>
@@ -4362,7 +4362,7 @@ function getMockBlogPosts(): BlogPost[] {
       faqs: [
         { question: 'Welche Heizung ist auf lange Sicht am günstigsten?', answer: 'Die Wärmepumpe hat die niedrigsten Gesamtkosten über 20 Jahre mit nur 45.300 Euro (inkl. Förderung). Pelletheizungen liegen mit 43.300 Euro sogar leicht darunter, erfordern aber Platz für Lager und regelmäßiges Befüllen. Gas kommt auf 65.200 Euro, Öl auf 68.200 Euro. Mit Photovoltaik-Kombination sinken die Wärmepumpen-Kosten auf nur 38.000-42.000 Euro – unschlagbar günstig bei gleichzeitig niedrigsten Betriebskosten.' },
         { question: 'Welche Heizung ist die beste für einen Altbau?', answer: 'Für Altbauten eignen sich Luft-Wasser-Wärmepumpen am besten, da sie keine aufwendigen Erdarbeiten benötigen und auch bei höheren Vorlauftemperaturen (55-60°C) effizient arbeiten. Fraunhofer-Feldtests zeigen: Selbst teilsanierte Altbauten von 15-170 Jahren erreichen JAZ-Werte von 3,4-4,3. Wichtig ist ein hydraulischer Abgleich und eventuell größere Heizkörper in 2-3 Räumen (günstiger als Fußbodenheizung). Bei sehr schlechter Dämmung sind Pelletheizungen eine gute Alternative.' },
-        { question: 'Welche Heizung hat die beste Förderung 2025?', answer: 'Wärmepumpen und Pelletheizungen erhalten mit bis zu 70% Förderung die höchste Unterstützung. Das entspricht maximal 21.000 Euro Zuschuss bei 30.000 Euro Investition. Die Bausteine: 30% Grundförderung + 20% Klimageschwindigkeits-Bonus + 30% Einkommensbonus (unter 40.000 Euro Einkommen) + 5% Effizienzbonus (natürliches Kältemittel). Gasheizungen erhalten seit 2024 keine Förderung mehr, Ölheizungen ebenfalls nicht.' },
+        { question: 'Welche Heizung hat die beste Förderung 2026?', answer: 'Wärmepumpen und Pelletheizungen erhalten mit bis zu 70% Förderung die höchste Unterstützung. Das entspricht maximal 21.000 Euro Zuschuss bei 30.000 Euro Investition. Die Bausteine: 30% Grundförderung + 20% Klimageschwindigkeits-Bonus + 30% Einkommensbonus (unter 40.000 Euro Einkommen) + 5% Effizienzbonus (natürliches Kältemittel). Gasheizungen erhalten seit 2024 keine Förderung mehr, Ölheizungen ebenfalls nicht.' },
         { question: 'Welche Heizung ist am zukunftssichersten?', answer: 'Wärmepumpen und Pelletheizungen sind zu 100% GEG-konform bis 2045 und erfordern keine teuren Nachrüstungen. Gasheizungen müssen ab 2029 schrittweise auf Biogas umgestellt werden (15%, ab 2035: 30%, ab 2040: 60%, ab 2045: 100%). Das wird sehr teuer. Ölheizungen sind Auslaufmodelle ohne Zukunftsperspektive. Wer jetzt eine neue Gas- oder Ölheizung einbaut, riskiert hohe Folgekosten in wenigen Jahren.' },
         { question: 'Kann ich verschiedene Heizsysteme kombinieren?', answer: 'Ja, Hybridheizungen kombinieren mehrere Systeme. Beliebt sind: Wärmepumpe + Gasheizung (Gas nur für Spitzenlast), Wärmepumpe + Solarthermie (maximale Effizienz) oder Pellets + Solar (100% erneuerbar). Wichtig für die Förderung: Die Wärmepumpe muss mindestens 65% der Jahreswärme liefern. Hybridlösungen eignen sich besonders für Altbauten mit hohem Wärmebedarf, kosten aber mehr (30.000-45.000 Euro).' },
         { question: 'Welche Heizung hat die niedrigsten Betriebskosten?', answer: 'Wärmepumpen mit PV-Anlage haben die niedrigsten laufenden Kosten mit nur 720 Euro/Jahr bei 70% Eigenversorgung. Ohne PV liegen Wärmepumpen bei 1.337 Euro/Jahr, Pellets bei 1.215 Euro/Jahr. Gas kommt auf 2.262 Euro/Jahr, Öl auf 2.414 Euro/Jahr. Die Ersparnis von Wärmepumpe gegenüber Gas beträgt 925 Euro pro Jahr – über 20 Jahre sind das 18.500 Euro Unterschied nur bei den Betriebskosten.' },
@@ -4371,19 +4371,19 @@ function getMockBlogPosts(): BlogPost[] {
     {
       id: 13,
       slug: 'nachtspeicherheizung-ersetzen-2026',
-      title: 'Nachtspeicherheizung ersetzen 2025: Beste Alternativen & Kosten',
-      excerpt: 'Nachtspeicherheizung ersetzen? Alle Alternativen 2025, Kosten mit Förderung, gesetzliche Lage nach GEG und Schritt-für-Schritt-Anleitung für den Austausch.',
+      title: 'Nachtspeicherheizung ersetzen 2026: Beste Alternativen & Kosten',
+      excerpt: 'Nachtspeicherheizung ersetzen? Alle Alternativen 2026, Kosten mit Förderung, gesetzliche Lage nach GEG und Schritt-für-Schritt-Anleitung für den Austausch.',
       content: `
-    <h2>Nachtspeicherheizung ersetzen 2025: Der umfassende Ratgeber</h2>
+    <h2>Nachtspeicherheizung ersetzen 2026: Der umfassende Ratgeber</h2>
 
     <div style="background-color: #e8f4f8; padding: 20px; border-left: 4px solid #0F5B78; margin: 20px 0;">
-      <h3 style="margin-top: 0;">Schnellübersicht: Nachtspeicherheizung 2025</h3>
+      <h3 style="margin-top: 0;">Schnellübersicht: Nachtspeicherheizung 2026</h3>
       <ul style="margin-bottom: 0;">
         <li><strong>Aktuelle Kosten:</strong> 2.500–3.600 €/Jahr (150 m²-Haus)</li>
         <li><strong>Wirkungsgrad:</strong> 30–40% (vs. Wärmepumpe 300–500%)</li>
         <li><strong>CO₂-Ausstoß:</strong> 3.500–4.500 kg/Jahr</li>
         <li><strong>Beste Alternative:</strong> Luft-Wasser-Wärmepumpe (1.100 €/Jahr Heizkosten)</li>
-        <li><strong>Förderung 2025:</strong> Bis zu 70% (max. 21.000 €) für Wärmepumpe</li>
+        <li><strong>Förderung 2026:</strong> Bis zu 70% (max. 21.000 €) für Wärmepumpe</li>
         <li><strong>Amortisation:</strong> 7–11 Jahre (mit Förderung)</li>
         <li><strong>Gesetzeslage:</strong> Kein Austauschverbot, aber 65% Erneuerbare-Pflicht ab 2024</li>
       </ul>
@@ -4447,7 +4447,7 @@ function getMockBlogPosts(): BlogPost[] {
       <li>Moderne Systeme bieten Smart-Home-Integration, App-Steuerung und Einzelraumregelung</li>
     </ul>
 
-    <h2>Gesetzliche Lage 2025: Müssen Nachtspeicherheizungen ersetzt werden?</h2>
+    <h2>Gesetzliche Lage 2026: Müssen Nachtspeicherheizungen ersetzt werden?</h2>
 
     <h3>Gibt es ein Austauschverbot? Nein.</h3>
     <p>Die wichtigsten rechtlichen Fakten:</p>
@@ -4469,7 +4469,7 @@ function getMockBlogPosts(): BlogPost[] {
       <li><strong>Denkmalschutz:</strong> Sonderregelungen möglich, Förderung auch hier verfügbar</li>
     </ul>
 
-    <h2>🔄 Die 5 besten Alternativen zur Nachtspeicherheizung 2025</h2>
+    <h2>🔄 Die 5 besten Alternativen zur Nachtspeicherheizung 2026</h2>
 
     <h3>Luft-Wasser-Wärmepumpe – unser Favorit</h3>
     <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
@@ -4538,7 +4538,7 @@ function getMockBlogPosts(): BlogPost[] {
     <h3>Gas-Brennwertheizung</h3>
     <ul>
       <li><strong>Kosten:</strong> 9.000–15.500 € (inkl. Installation)</li>
-      <li><strong>Förderung 2025:</strong> Keine BEG-Förderung mehr (nur noch "H2-ready"-Geräte gefördert)</li>
+      <li><strong>Förderung 2026:</strong> Keine BEG-Förderung mehr (nur noch "H2-ready"-Geräte gefördert)</li>
       <li><strong>Jährliche Heizkosten:</strong> 1.600–2.000 € (Gaspreis 2025: ca. 11 ct/kWh)</li>
       <li><strong>Wirkungsgrad:</strong> 96–98%</li>
     </ul>
@@ -4556,7 +4556,7 @@ function getMockBlogPosts(): BlogPost[] {
     <p><strong>Vorteile:</strong> Höchste Effizienz, sehr niedrige Betriebskosten, auch für Altbau geeignet</p>
     <p><strong>Nachteile:</strong> Sehr hohe Anfangsinvestition, Genehmigung erforderlich, Erdarbeiten nötig</p>
 
-    <h2>BEG-Förderung 2025: Bis zu 70% Zuschuss für den Heizungstausch</h2>
+    <h2>BEG-Förderung 2026: Bis zu 70% Zuschuss für den Heizungstausch</h2>
 
     <div style="background-color: #d4edda; padding: 20px; border-left: 4px solid #28a745; margin: 20px 0;">
       <h3 style="margin-top: 0;">Förderbausteine im Überblick</h3>
@@ -4727,11 +4727,11 @@ function getMockBlogPosts(): BlogPost[] {
 
     <p><strong>Fazit:</strong> Trotz höherer Anschaffungskosten ist die Wärmepumpe über 20 Jahre <strong>16.600 € günstiger</strong> als die Nachtspeicherheizung!</p>
 
-    <h2>Fazit: Nachtspeicherheizung ersetzen – lohnt sich 2025 mehr denn je</h2>
+    <h2>Fazit: Nachtspeicherheizung ersetzen – lohnt sich 2026 mehr denn je</h2>
 
     <p>Die wichtigsten Erkenntnisse auf einen Blick: Es besteht <strong>keine Austauschpflicht</strong>, der Wechsel ist aber wirtschaftlich hochgradig sinnvoll. Mit einer Wärmepumpe sparen Sie rund <strong>1.780 Euro pro Jahr</strong>. Dank <strong>bis zu 70 Prozent Förderung</strong> (maximal 21.000 Euro) erreichen Sie eine Amortisation in 7 bis 11 Jahren. Die <strong>CO₂-Einsparung</strong> beträgt 2.700 bis 3.700 kg pro Jahr – das entspricht 20.000 Kilometer Autofahrt. Infrarotheizungen sind keine echte Alternative, da sie ähnlich hohe Betriebskosten verursachen. Wichtig: Der Geschwindigkeitsbonus von 20 Prozent gilt nur noch bis Ende 2028.</p>
 
-    <h3>Unsere Empfehlung für 2025</h3>
+    <h3>Unsere Empfehlung für 2026</h3>
     <ol>
       <li><strong>Beste Wahl:</strong> Luft-Wasser-Wärmepumpe (höchste Förderung, niedrigste Betriebskosten)</li>
       <li><strong>Alternative Erdwärme:</strong> Bei gut gedämmtem Haus und ausreichend Grundstücksfläche</li>
@@ -4820,8 +4820,8 @@ function getMockBlogPosts(): BlogPost[] {
     {
       id: 14,
       slug: 'fussbodenheizung-kosten-vorteile-2026',
-      title: 'Fußbodenheizung 2025: Kosten, Vorteile & Nachrüstung im Altbau',
-      excerpt: 'Alles über Fußbodenheizung 2025: Kosten (40-100 €/m²), Vorteile & Nachteile, perfekte Kombination mit Wärmepumpen, Nachrüstung im Altbau und beste Bodenbeläge.',
+      title: 'Fußbodenheizung 2026: Kosten, Vorteile & Nachrüstung im Altbau',
+      excerpt: 'Alles über Fußbodenheizung 2026: Kosten (40-100 €/m²), Vorteile & Nachteile, perfekte Kombination mit Wärmepumpen, Nachrüstung im Altbau und beste Bodenbeläge.',
       content: `
     <h2>Fußbodenheizung 2025: Der komplette Ratgeber</h2>
 
@@ -5315,7 +5315,7 @@ function getMockBlogPosts(): BlogPost[] {
 
     <p>Die wichtigsten Erkenntnisse: Mit <strong>10–15% Energieeinsparung</strong> gegenüber Heizkörpern sparen Sie 150–300 Euro pro Jahr. <strong>Perfekt für Wärmepumpen</strong> erreichen Sie eine JAZ von 4,5–5,0 statt nur 3,5 mit Heizkörpern. Der <strong>höchste Wohnkomfort</strong> bietet gleichmäßige Wärme, keine Zugluft und ist gesünder für Allergiker. Die <strong>Wertsteigerung</strong> beträgt 3–8% des Immobilienwerts. <strong>Nachrüstung ist möglich</strong> mit Dünnschicht- oder Trockensystemen für 80–150 Euro pro Quadratmeter. Die <strong>BEG-Förderung</strong> beträgt bis zu 70% in Kombination mit Wärmepumpe (maximal 21.000 Euro). Beachten Sie jedoch: Die Investition liegt 750–1.500 Euro über Heizkörpern, die Reaktionszeit beträgt träge 2–4 Stunden, und beim Bodenbelag sind Fliesen ideal, Echtholz kritisch.</p>
 
-    <h3>Unsere Empfehlung für 2025</h3>
+    <h3>Unsere Empfehlung für 2026</h3>
     <ol>
       <li><strong>Neubau:</strong> Fußbodenheizung immer einplanen (minimale Mehrkosten, maximaler Nutzen)</li>
       <li><strong>Wärmepumpe geplant:</strong> Fußbodenheizung für optimale Effizienz (JAZ 4,5+)</li>
@@ -5333,7 +5333,7 @@ function getMockBlogPosts(): BlogPost[] {
       </p>
     </div>
 
-    <p><strong>Weiterlesen:</strong> Erfahren Sie mehr über <a href="/blog/waermepumpe-kosten-2026" class="text-[#0F5B78] font-medium hover:underline">Wärmepumpen-Kosten und Förderung 2025</a> oder lesen Sie unseren Ratgeber zur <a href="/blog/waermepumpe-altbau" class="text-[#0F5B78] font-medium hover:underline">Wärmepumpe im Altbau</a>. Alle Infos zur <a href="/foerderung" class="text-[#0F5B78] font-medium hover:underline">BEG-Förderung für Ihre neue Heizung</a> finden Sie auf unserer Förderseite.</p>
+    <p><strong>Weiterlesen:</strong> Erfahren Sie mehr über <a href="/blog/waermepumpe-kosten-2026" class="text-[#0F5B78] font-medium hover:underline">Wärmepumpen-Kosten und Förderung 2026</a> oder lesen Sie unseren Ratgeber zur <a href="/blog/waermepumpe-altbau" class="text-[#0F5B78] font-medium hover:underline">Wärmepumpe im Altbau</a>. Alle Infos zur <a href="/foerderung" class="text-[#0F5B78] font-medium hover:underline">BEG-Förderung für Ihre neue Heizung</a> finden Sie auf unserer Förderseite.</p>
 
     <h2>Häufig gestellte Fragen (FAQ)</h2>
 
@@ -5406,7 +5406,7 @@ function getMockBlogPosts(): BlogPost[] {
     {
       id: 15,
       slug: 'heizung-entlueften-anleitung-2026',
-      title: 'Heizung entlüften 2025: Schritt-für-Schritt-Anleitung & Tipps',
+      title: 'Heizung entlüften 2026: Schritt-für-Schritt-Anleitung & Tipps',
       excerpt: 'Heizung richtig entlüften: Komplette Anleitung, benötigtes Werkzeug, häufige Fehler und wann Sie einen Fachmann rufen sollten. Sparen Sie bis zu 15% Heizkosten.',
       content: `
     <h2>Heizung entlüften 2025: Der komplette Ratgeber</h2>
@@ -5839,7 +5839,7 @@ function getMockBlogPosts(): BlogPost[] {
     {
       id: 16,
       slug: 'waermepumpe-vs-gasheizung-vergleich-2026',
-      title: 'Wärmepumpe vs. Gasheizung 2025: Kosten, Effizienz & Förderung im Vergleich',
+      title: 'Wärmepumpe vs. Gasheizung 2026: Kosten, Effizienz & Förderung im Vergleich',
       excerpt: 'Detaillierter Vergleich: Wärmepumpe oder Gasheizung? Alle Kosten, Effizienz, Förderung, Vor- und Nachteile. Plus Entscheidungshilfe für Ihre Situation.',
       content: `
       <h2>Wärmepumpe vs. Gasheizung 2025: Der große Vergleich</h2>
@@ -6023,7 +6023,7 @@ function getMockBlogPosts(): BlogPost[] {
 
       <h2>3. Förderung & Wirtschaftlichkeit 2025</h2>
 
-      <h3>BEG-Förderung für Wärmepumpen (Stand 2025)</h3>
+      <h3>BEG-Förderung für Wärmepumpen (Stand 2026)</h3>
       <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
         <thead>
           <tr style="background-color: #0F5B78; color: white;">
@@ -6359,7 +6359,7 @@ function getMockBlogPosts(): BlogPost[] {
     {
       id: 17,
       slug: 'waermepumpe-vs-pelletheizung-vergleich-2026',
-      title: 'Wärmepumpe vs. Pelletheizung 2025: Kosten, Komfort & Nachhaltigkeit',
+      title: 'Wärmepumpe vs. Pelletheizung 2026: Kosten, Komfort & Nachhaltigkeit',
       excerpt: 'Wärmepumpe oder Pelletheizung? Detaillierter Vergleich der Kosten, Platzbedarf, Wartung, Förderung und Umweltbilanz. Plus Entscheidungshilfe.',
       content: `
       <h2>Wärmepumpe vs. Pelletheizung 2025: Welches System passt zu Ihnen?</h2>
@@ -6562,7 +6562,7 @@ function getMockBlogPosts(): BlogPost[] {
         </tbody>
       </table>
 
-      <h2>3. Förderung 2025</h2>
+      <h2>3. Förderung 2026</h2>
 
       <h3>BEG-Förderung Wärmepumpe</h3>
       <ul>
@@ -6868,10 +6868,10 @@ function getMockBlogPosts(): BlogPost[] {
     {
       id: 18,
       slug: 'klimaanlage-kosten-2026-anschaffung-installation-betrieb',
-      title: 'Klimaanlage Kosten 2025: Anschaffung, Installation & Betrieb im Überblick',
+      title: 'Klimaanlage Kosten 2026: Anschaffung, Installation & Betrieb im Überblick',
       excerpt: 'Was kostet eine Klimaanlage? Alle Kosten für Split-, Multisplit- und mobile Geräte. Plus Betriebskosten, Einsparpotenziale und Fördermöglichkeiten.',
       content: `
-      <h2>Klimaanlage Kosten 2025: Der komplette Kostenüberblick</h2>
+      <h2>Klimaanlage Kosten 2026: Der komplette Kostenüberblick</h2>
 
       <div style="background-color: #e8f4f8; padding: 20px; border-left: 4px solid #0F5B78; margin: 20px 0;">
         <h3 style="margin-top: 0;">Schnellübersicht: Klimaanlage Kosten</h3>
@@ -7182,7 +7182,7 @@ function getMockBlogPosts(): BlogPost[] {
 
       <h2>6. Förderung & Steuervorteile</h2>
 
-      <h3>Förderung 2025</h3>
+      <h3>Förderung 2026</h3>
       <p>Klimaanlagen sind grundsätzlich <strong>nicht förderfähig</strong>:</p>
       <ul>
         <li>❌ <strong>Luft-Luft-Wärmepumpen</strong> (Split-Klimaanlagen mit Heizfunktion) sind seit 2024 <strong>nicht mehr BEG-förderfähig</strong></li>
@@ -7287,8 +7287,8 @@ function getMockBlogPosts(): BlogPost[] {
     {
       id: 19,
       slug: 'barrierefreies-bad-kosten-planung-foerderung-2026',
-      title: 'Barrierefreies Bad 2025: Kosten, Planung, Förderung & DIN-Normen',
-      excerpt: 'Barrierefreies Bad planen: Kosten, DIN 18040-2 Anforderungen, Pflegekasse bis 4.000 €, praktische Tipps für altersgerechtes Wohnen und seniorengerechte Badsanierung 2025.',
+      title: 'Barrierefreies Bad 2026: Kosten, Planung, Förderung & DIN-Normen',
+      excerpt: 'Barrierefreies Bad planen: Kosten, DIN 18040-2 Anforderungen, Pflegekasse bis 4.000 €, praktische Tipps für altersgerechtes Wohnen und seniorengerechte Badsanierung 2026.',
       content: `
     <h2>Barrierefreies Bad 2025: Der komplette Ratgeber</h2>
 
@@ -7485,7 +7485,7 @@ function getMockBlogPosts(): BlogPost[] {
       </p>
     </div>
 
-    <h3>Pflegekasse (§ 40 Abs. 4 SGB XI) – Wichtigste Förderung 2025</h3>
+    <h3>Pflegekasse (§ 40 Abs. 4 SGB XI) – Wichtigste Förderung 2026</h3>
 
     <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
       <thead>
@@ -7783,7 +7783,7 @@ function getMockBlogPosts(): BlogPost[] {
       </ul>
     </div>
 
-    <p><strong>Weiterlesen:</strong> Unser Ratgeber zur <a href="/blog/barrierefreies-bad-planen-ratgeber" class="text-[#0F5B78] font-medium hover:underline">Planung eines barrierefreien Bades</a> zeigt alle Details zu DIN-Normen und Ausstattung. Alle Infos zu <a href="/blog/badsanierung-kosten-2026" class="text-[#0F5B78] font-medium hover:underline">Badsanierung-Kosten 2025</a> finden Sie in unserem Kostenratgeber. Mehr über unsere <a href="/sanitaer" class="text-[#0F5B78] font-medium hover:underline">Sanitär- und Badleistungen</a> erfahren Sie auf unserer Serviceseite.</p>
+    <p><strong>Weiterlesen:</strong> Unser Ratgeber zur <a href="/blog/barrierefreies-bad-planen-ratgeber" class="text-[#0F5B78] font-medium hover:underline">Planung eines barrierefreien Bades</a> zeigt alle Details zu DIN-Normen und Ausstattung. Alle Infos zu <a href="/blog/badsanierung-kosten-2026" class="text-[#0F5B78] font-medium hover:underline">Badsanierung-Kosten 2026</a> finden Sie in unserem Kostenratgeber. Mehr über unsere <a href="/sanitaer" class="text-[#0F5B78] font-medium hover:underline">Sanitär- und Badleistungen</a> erfahren Sie auf unserer Serviceseite.</p>
 
     <h2>HeizCenter berät Sie gerne – auch zu barrierefreien Bädern!</h2>
 
@@ -7814,7 +7814,7 @@ function getMockBlogPosts(): BlogPost[] {
       `,
       category: 'Sanitär',
       author: 'HeizCenter Redaktion',
-      date: '2025-11-18',
+      date: '2026-01-08',
       readingTime: 15,
       image: '/images/HeizCenter_Badgestaltung.webp',
       tags: ['Barrierefreies Bad', 'Badsanierung', 'Altersgerecht', 'KfW Förderung', 'DIN 18040-2', 'Bodengleiche Dusche', 'Pflegekasse'],
@@ -7857,8 +7857,8 @@ function getMockBlogPosts(): BlogPost[] {
     {
       id: 20,
       slug: 'solarthermie-vs-photovoltaik-2026-vergleich',
-      title: 'Solarthermie vs. Photovoltaik 2025: Der große Vergleich',
-      excerpt: 'Solarthermie oder Photovoltaik? Wir vergleichen beide Technologien hinsichtlich Kosten, Förderung, Wirtschaftlichkeit und Einsatzbereichen für 2025. Mit aktuellen BAFA-Förderungen und Preisentwicklungen.',
+      title: 'Solarthermie vs. Photovoltaik 2026: Der große Vergleich',
+      excerpt: 'Solarthermie oder Photovoltaik? Wir vergleichen beide Technologien hinsichtlich Kosten, Förderung, Wirtschaftlichkeit und Einsatzbereichen für 2026. Mit aktuellen BAFA-Förderungen und Preisentwicklungen.',
       content: `
         <p>Solarthermie oder Photovoltaik? Diese Frage stellen uns Hausbesitzer fast täglich. Beide Technologien nutzen die Sonne – aber auf völlig unterschiedliche Weise. Kurz gesagt: <strong>Solarthermie macht Wärme, Photovoltaik macht Strom.</strong> Was für Sie besser passt, hängt von Ihrem Gebäude, Ihrem Energiebedarf und Ihren Zielen ab.</p>
 
@@ -8200,7 +8200,7 @@ function getMockBlogPosts(): BlogPost[] {
       `,
       category: 'Solar',
       author: 'HeizCenter Redaktion',
-      date: '2025-01-15',
+      date: '2026-01-28',
       readingTime: 18,
       image: '/images/HeizCenter_Solar.webp',
       tags: ['Solarthermie', 'Photovoltaik', 'Solar Vergleich', 'BAFA Förderung', 'PV-Anlage', 'Solarenergie', 'Wirtschaftlichkeit'],
@@ -8217,8 +8217,8 @@ function getMockBlogPosts(): BlogPost[] {
     {
       id: 21,
       slug: 'kfw-foerderung-solarthermie-2026',
-      title: 'BAFA Förderung für Solarthermie 2025: Bis zu 70% Zuschuss sichern',
-      excerpt: 'BAFA-Förderung Solarthermie 2025: Bis 70% Zuschuss möglich. Wir zeigen Ihnen die Fördersätze, Antragsschritte und typische Fallstricke – aus unserer täglichen Praxis.',
+      title: 'KfW Förderung für Solarthermie 2026: Bis zu 70% Zuschuss sichern',
+      excerpt: 'KfW-Förderung Solarthermie 2026: Bis 70% Zuschuss möglich. Wir zeigen Ihnen die Fördersätze, Antragsschritte und typische Fallstricke – aus unserer täglichen Praxis.',
       content: `
         <p>70% Förderung für Solarthermie – klingt verlockend, oder? Die gute Nachricht: Ja, das ist 2025 tatsächlich möglich. Die weniger gute: Nicht jeder bekommt den vollen Satz. Was Sie wirklich bekommen können und wie der Antrag funktioniert, zeigen wir Ihnen hier – Schritt für Schritt.</p>
 
@@ -8590,7 +8590,7 @@ function getMockBlogPosts(): BlogPost[] {
       `,
       category: 'Solar',
       author: 'HeizCenter Redaktion',
-      date: '2025-01-14',
+      date: '2026-01-16',
       readingTime: 16,
       image: '/images/HeizCenter_Solar.webp',
       tags: ['BAFA Förderung', 'Solarthermie', 'Zuschuss', 'BEG', 'Förderung Heizung', 'Geschwindigkeitsbonus', 'Antragstellung'],
@@ -8607,7 +8607,7 @@ function getMockBlogPosts(): BlogPost[] {
     {
       id: 22,
       slug: 'hybrid-heizung-waermepumpe-solarthermie',
-      title: 'Hybrid-Heizung: Wärmepumpe + Solarthermie - Die perfekte Kombination 2025',
+      title: 'Hybrid-Heizung: Wärmepumpe + Solarthermie - Die perfekte Kombination 2026',
       excerpt: 'Wärmepumpe + Solarthermie: Weniger Stromverbrauch, mehr Förderung. Wir erklären, wann sich die Kombination wirklich lohnt – und wann nicht.',
       content: `
         <p>Eine Wärmepumpe allein ist gut. Aber in Kombination mit Solarthermie wird sie besser: Die Sonne erwärmt den Pufferspeicher vor, die Wärmepumpe muss weniger arbeiten, der Stromverbrauch sinkt. Klingt logisch – aber rechnet sich das auch? Hier sind die Zahlen.</p>
@@ -8796,7 +8796,7 @@ function getMockBlogPosts(): BlogPost[] {
           <li><strong>Gesamtkosten: 53.500 €</strong></li>
         </ul>
 
-        <h3>BAFA-Förderung 2025</h3>
+        <h3>BAFA-Förderung 2026</h3>
         <p>Die Kombination wird großzügig gefördert:</p>
 
         <p><strong>Fördersätze:</strong></p>
@@ -9056,7 +9056,7 @@ function getMockBlogPosts(): BlogPost[] {
       `,
       category: 'Solar',
       author: 'HeizCenter Redaktion',
-      date: '2025-01-13',
+      date: '2026-01-19',
       readingTime: 17,
       image: '/images/HeizCenter_Solar.webp',
       tags: ['Hybrid-Heizung', 'Wärmepumpe', 'Solarthermie', 'Heizung Kombination', 'Effizienz', 'Heizkosten sparen', 'Förderung'],
@@ -9443,7 +9443,7 @@ function getMockBlogPosts(): BlogPost[] {
     {
       id: 24,
       slug: 'pvt-kollektoren-photovoltaik-thermie-hybrid-2026',
-      title: 'PVT-Kollektoren 2025: Photovoltaik und Solarthermie in einem System',
+      title: 'PVT-Kollektoren 2026: Photovoltaik und Solarthermie in einem System',
       excerpt: 'PVT-Hybridkollektoren kombinieren Stromerzeugung und Wärmegewinnung auf einer Fläche. Marktüberblick, Technologie, Kosten, Effizienz und praktische Einsatzszenarien für die innovative Solartechnologie.',
       content: `
         <div class="article-content">
@@ -9878,7 +9878,7 @@ function getMockBlogPosts(): BlogPost[] {
       `,
       category: 'Solar',
       author: 'HeizCenter Redaktion',
-      date: '2025-01-13',
+      date: '2026-01-14',
       readingTime: 17,
       image: '/images/HeizCenter_Solar.webp',
       tags: ['PVT', 'Photovoltaik', 'Solarthermie', 'Hybrid', 'Wärmepumpe', 'Innovation', 'Effizienz'],
@@ -9895,7 +9895,7 @@ function getMockBlogPosts(): BlogPost[] {
     {
       id: 25,
       slug: 'solarthermie-dimensionierung-planung-2026',
-      title: 'Solarthermie richtig dimensionieren und planen: Der komplette Leitfaden 2025',
+      title: 'Solarthermie richtig dimensionieren und planen: Der komplette Leitfaden 2026',
       excerpt: 'Professionelle Anleitung zur Auslegung von Solarthermieanlagen: Kollektorfläche berechnen, Speicher dimensionieren, Standort optimieren. Mit Formeln, Beispielen und Checklisten für maximale Effizienz.',
       content: `
         <div class="article-content">
@@ -10431,7 +10431,7 @@ function getMockBlogPosts(): BlogPost[] {
       `,
       category: 'Solar',
       author: 'HeizCenter Redaktion',
-      date: '2025-01-14',
+      date: '2026-01-05',
       readingTime: 16,
       image: '/images/HeizCenter_Solar.webp',
       tags: ['Solarthermie Planung', 'Dimensionierung', 'Auslegung', 'Kollektorfläche', 'Speichergröße', 'Berechnung', 'Anlagenplanung'],
@@ -10598,7 +10598,7 @@ function getMockBlogPosts(): BlogPost[] {
           </tbody>
         </table>
 
-        <h2>Förderung 2025: Bis zu 70% Zuschuss</h2>
+        <h2>Förderung 2026: Bis zu 70% Zuschuss</h2>
 
         <p>Der Staat fördert den Umstieg auf erneuerbare Energien großzügig. Gerade im Altbau ist die Förderung besonders attraktiv:</p>
 
@@ -10673,7 +10673,7 @@ function getMockBlogPosts(): BlogPost[] {
 
         <p>Mit der richtigen Planung und den aktuellen <a href="/foerderung" class="text-[#0F5B78] font-medium hover:underline">Förderungen</a> ist die <a href="/waermepumpe" class="text-[#0F5B78] font-medium hover:underline">Wärmepumpe</a> auch im Altbau eine wirtschaftlich und ökologisch sinnvolle Investition. Die Technik ist ausgereift, die Förderung so hoch wie nie.</p>
 
-        <p><strong>Weiterlesen:</strong> Alle Details zu <a href="/blog/waermepumpe-kosten-2026" class="text-[#0F5B78] font-medium hover:underline">Wärmepumpen-Kosten und Förderung 2025</a> finden Sie in unserem Kostenratgeber. Unser <a href="/blog/foerderung-heizung-2026" class="text-[#0F5B78] font-medium hover:underline">Förderratgeber für Heizungstausch</a> erklärt alle BEG-Boni im Detail. HeizCenter berät Sie vor Ort in <a href="/standorte/augsburg" class="text-[#0F5B78] font-medium hover:underline">Augsburg</a>, <a href="/standorte/ulm" class="text-[#0F5B78] font-medium hover:underline">Ulm</a> und <a href="/standorte/memmingen" class="text-[#0F5B78] font-medium hover:underline">Memmingen</a>.</p>
+        <p><strong>Weiterlesen:</strong> Alle Details zu <a href="/blog/waermepumpe-kosten-2026" class="text-[#0F5B78] font-medium hover:underline">Wärmepumpen-Kosten und Förderung 2026</a> finden Sie in unserem Kostenratgeber. Unser <a href="/blog/foerderung-heizung-2026" class="text-[#0F5B78] font-medium hover:underline">Förderratgeber für Heizungstausch</a> erklärt alle BEG-Boni im Detail. HeizCenter berät Sie vor Ort in <a href="/standorte/augsburg" class="text-[#0F5B78] font-medium hover:underline">Augsburg</a>, <a href="/standorte/ulm" class="text-[#0F5B78] font-medium hover:underline">Ulm</a> und <a href="/standorte/memmingen" class="text-[#0F5B78] font-medium hover:underline">Memmingen</a>.</p>
 
         <div class="cta-box">
           <h4>Ist Ihr Altbau wärmepumpen-geeignet? Kostenlose Prüfung vor Ort</h4>
