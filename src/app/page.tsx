@@ -98,6 +98,7 @@ export default function Home() {
               alt="Luft-Wasser-Wärmepumpe Installation in Augsburg - HeizCenter Fachbetrieb für Heizsysteme"
               fill
               className="object-cover"
+              loading="eager"
             />
           </div>
           <div className="relative overflow-hidden">
@@ -106,6 +107,7 @@ export default function Home() {
               alt="Moderne Gasbrennwertheizung mit Viessmann Technik - HeizCenter Installation Bayern"
               fill
               className="object-cover"
+              priority
             />
           </div>
           <div className="relative overflow-hidden">
@@ -114,6 +116,7 @@ export default function Home() {
               alt="Moderne Badsanierung mit bodengleicher Dusche - HeizCenter Komplettservice Augsburg"
               fill
               className="object-cover"
+              loading="eager"
             />
           </div>
         </div>
