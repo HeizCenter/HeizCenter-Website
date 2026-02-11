@@ -44,7 +44,7 @@ export function Footer() {
 
           {/* Services */}
           <div>
-            <h4 className="font-semibold mb-4">Dienstleistungen</h4>
+            <p className="font-semibold mb-4">Dienstleistungen</p>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
@@ -99,7 +99,7 @@ export function Footer() {
 
           {/* Location */}
           <div>
-            <h4 className="font-semibold mb-4">Standorte</h4>
+            <p className="font-semibold mb-4">Standorte</p>
             <ul className="space-y-3 text-sm">
               {LOCATIONS.map((location) => (
                 <li key={location.id}>
@@ -124,7 +124,7 @@ export function Footer() {
 
           {/* Information */}
           <div>
-            <h4 className="font-semibold mb-4">Information</h4>
+            <p className="font-semibold mb-4">Information</p>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
@@ -187,7 +187,7 @@ export function Footer() {
 
           {/* Legal */}
           <div>
-            <h4 className="font-semibold mb-4">Rechtliches</h4>
+            <p className="font-semibold mb-4">Rechtliches</p>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
