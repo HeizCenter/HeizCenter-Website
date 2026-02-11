@@ -1328,7 +1328,7 @@ function getMockBlogPosts(): BlogPost[] {
         </div>
         <p class="text-sm text-slate-500 -mt-4 mb-8">*Förderung nur auf den erneuerbaren Anteil der Hybridheizung</p>
 
-        <p>Die Zahlen sprechen eine klare Sprache: <strong>Auf 15 Jahre gerechnet ist die Wärmepumpe fast 20.000 € günstiger</strong> – trotz der höheren Anschaffungskosten. Einen noch detaillierteren Vergleich finden Sie in unserem <a href="/blog/heizung-vergleich-2026-waermepumpe-gas-oel-pellets" class="text-[#0F5B78] font-medium hover:underline">großen Heizungsvergleich 2025</a>.</p>
+        <p>Die Zahlen sprechen eine klare Sprache: <strong>Auf 15 Jahre gerechnet ist die Wärmepumpe fast 20.000 € günstiger</strong> – trotz der höheren Anschaffungskosten. Einen noch detaillierteren Vergleich finden Sie in unserem <a href="/blog/heizung-vergleich-2026-waermepumpe-gas-oel-pellets" class="text-[#0F5B78] font-medium hover:underline">großen Heizungsvergleich 2026</a>.</p>
 
         <h2>Wann macht Gas trotzdem Sinn?</h2>
 
@@ -2447,7 +2447,7 @@ function getMockBlogPosts(): BlogPost[] {
           </div>
         </div>
 
-        <p class="text-slate-700 mb-6">Erfahren Sie in unserem Ratgeber, <a href="/blog/waermepumpe-kosten-2026" class="text-[#0F5B78] font-medium hover:underline">was eine Wärmepumpe 2025 tatsächlich kostet</a> – inklusive Förderberechnung. Oder informieren Sie sich über die <a href="/blog/kfw-foerderung-solarthermie-2026" class="text-[#0F5B78] font-medium hover:underline">BAFA-Förderung für Solarthermie-Anlagen</a>, die sich besonders gut mit einer neuen <a href="/heizung" class="text-[#0F5B78] font-medium hover:underline">Heizungsanlage</a> kombinieren lässt.</p>
+        <p class="text-slate-700 mb-6">Erfahren Sie in unserem Ratgeber, <a href="/blog/waermepumpe-kosten-2026" class="text-[#0F5B78] font-medium hover:underline">was eine Wärmepumpe 2026 tatsächlich kostet</a> – inklusive Förderberechnung. Oder informieren Sie sich über die <a href="/blog/kfw-foerderung-solarthermie-2026" class="text-[#0F5B78] font-medium hover:underline">KfW-Förderung für Solarthermie-Anlagen</a>, die sich besonders gut mit einer neuen <a href="/heizung" class="text-[#0F5B78] font-medium hover:underline">Heizungsanlage</a> kombinieren lässt.</p>
 
         <h2>Häufig gestellte Fragen (FAQ)</h2>
 
@@ -3727,7 +3727,7 @@ function getMockBlogPosts(): BlogPost[] {
 
         <p><strong>Die wichtigsten Eckpunkte:</strong> Keine Austauschpflicht für funktionierende Heizungen (außer Konstanttemperaturkessel über 30 Jahre). Die 65%-Regel greift erst 2026/2028 nach kommunaler Wärmeplanung. Bis zu 70% staatliche Förderung für Wärmepumpen und Co. sind verfügbar. Sie haben mehrere Erfüllungsoptionen: Wärmepumpe, Pellets, Fernwärme oder Hybrid. Der vollständige Umstieg ist erst bis 2045 erforderlich.</p>
 
-        <p>Wer jetzt handelt, profitiert von hohen Förderungen, sinkenden Betriebskosten und steigender Unabhängigkeit von fossilen Energiepreisen. Lesen Sie dazu auch unseren <a href="/blog/heizung-vergleich-2026-waermepumpe-gas-oel-pellets" class="text-[#0F5B78] font-medium hover:underline">umfassenden Heizungsvergleich 2025</a> und informieren Sie sich über die <a href="/blog/gasheizung-kosten-2026" class="text-[#0F5B78] font-medium hover:underline">tatsächlichen Kosten einer Gasheizung</a>. Wir beraten Sie persönlich in <a href="/standorte/augsburg" class="text-[#0F5B78] font-medium hover:underline">Augsburg</a>, <a href="/standorte/ulm" class="text-[#0F5B78] font-medium hover:underline">Ulm</a> und <a href="/standorte/memmingen" class="text-[#0F5B78] font-medium hover:underline">Memmingen</a>.</p>
+        <p>Wer jetzt handelt, profitiert von hohen Förderungen, sinkenden Betriebskosten und steigender Unabhängigkeit von fossilen Energiepreisen. Lesen Sie dazu auch unseren <a href="/blog/heizung-vergleich-2026-waermepumpe-gas-oel-pellets" class="text-[#0F5B78] font-medium hover:underline">umfassenden Heizungsvergleich 2026</a> und informieren Sie sich über die <a href="/blog/gasheizung-kosten-2026" class="text-[#0F5B78] font-medium hover:underline">tatsächlichen Kosten einer Gasheizung</a>. Wir beraten Sie persönlich in <a href="/standorte/augsburg" class="text-[#0F5B78] font-medium hover:underline">Augsburg</a>, <a href="/standorte/ulm" class="text-[#0F5B78] font-medium hover:underline">Ulm</a> und <a href="/standorte/memmingen" class="text-[#0F5B78] font-medium hover:underline">Memmingen</a>.</p>
 
         <div class="cta-box">
           <p class="cta-locations">📍 <strong>Unsere Standorte:</strong> Bobingen (Augsburg) · Gutenzell-Hürbel (Ulm/Memmingen) · Klosterlechfeld</p>
@@ -4330,7 +4330,7 @@ function getMockBlogPosts(): BlogPost[] {
           </p>
         </div>
 
-        <p><strong>Handeln Sie jetzt und sichern Sie sich die 70% Förderung – der Geschwindigkeitsbonus läuft bis Ende 2028!</strong> Mehr Details finden Sie in unseren spezialisierten Ratgebern: <a href="/blog/waermepumpe-kosten-2026" class="text-[#0F5B78] font-medium hover:underline">Was kostet eine Wärmepumpe 2025?</a>, <a href="/blog/gasheizung-kosten-2026" class="text-[#0F5B78] font-medium hover:underline">Gasheizung Kosten 2026</a> und <a href="/blog/foerderung-heizung-2026" class="text-[#0F5B78] font-medium hover:underline">Heizungsförderung 2025: So holen Sie sich bis zu 21.000 € zurück</a>.</p>
+        <p><strong>Handeln Sie jetzt und sichern Sie sich die 70% Förderung – der Geschwindigkeitsbonus läuft bis Ende 2028!</strong> Mehr Details finden Sie in unseren spezialisierten Ratgebern: <a href="/blog/waermepumpe-kosten-2026" class="text-[#0F5B78] font-medium hover:underline">Was kostet eine Wärmepumpe 2026?</a>, <a href="/blog/gasheizung-kosten-2026" class="text-[#0F5B78] font-medium hover:underline">Gasheizung Kosten 2026</a> und <a href="/blog/foerderung-heizung-2026" class="text-[#0F5B78] font-medium hover:underline">Heizungsförderung 2026: So holen Sie sich bis zu 21.000 € zurück</a>.</p>
 
         <h2>Häufig gestellte Fragen (FAQ)</h2>
 
@@ -5756,7 +5756,7 @@ function getMockBlogPosts(): BlogPost[] {
       </ul>
     </div>
 
-    <p><strong>Weiterlesen:</strong> Informieren Sie sich über unsere <a href="/heizung" class="text-[#0F5B78] font-medium hover:underline">Heizungsservices und Wartungsangebote</a>. Falls ein Heizungstausch ansteht, lesen Sie unseren <a href="/blog/heizung-vergleich-2026-waermepumpe-gas-oel-pellets" class="text-[#0F5B78] font-medium hover:underline">großen Heizungsvergleich 2025</a>. HeizCenter ist Ihr regionaler Ansprechpartner in <a href="/standorte/augsburg" class="text-[#0F5B78] font-medium hover:underline">Augsburg</a>, <a href="/standorte/ulm" class="text-[#0F5B78] font-medium hover:underline">Ulm</a> und <a href="/standorte/memmingen" class="text-[#0F5B78] font-medium hover:underline">Memmingen</a>.</p>
+    <p><strong>Weiterlesen:</strong> Informieren Sie sich über unsere <a href="/heizung" class="text-[#0F5B78] font-medium hover:underline">Heizungsservices und Wartungsangebote</a>. Falls ein Heizungstausch ansteht, lesen Sie unseren <a href="/blog/heizung-vergleich-2026-waermepumpe-gas-oel-pellets" class="text-[#0F5B78] font-medium hover:underline">großen Heizungsvergleich 2026</a>. HeizCenter ist Ihr regionaler Ansprechpartner in <a href="/standorte/augsburg" class="text-[#0F5B78] font-medium hover:underline">Augsburg</a>, <a href="/standorte/ulm" class="text-[#0F5B78] font-medium hover:underline">Ulm</a> und <a href="/standorte/memmingen" class="text-[#0F5B78] font-medium hover:underline">Memmingen</a>.</p>
 
     <div class="cta-box">
       <p class="cta-locations">📍 <strong>Unsere Standorte:</strong> Bobingen (Augsburg) · Gutenzell-Hürbel (Ulm/Memmingen) · Klosterlechfeld</p>
