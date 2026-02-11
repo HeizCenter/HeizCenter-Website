@@ -26,7 +26,7 @@ export default function NotdienstPage() {
         <div className="absolute inset-0 opacity-20">
           <Image
             src="/images/notdienst.webp"
-            alt="Heizungsnotdienst"
+            alt="HeizCenter 24/7 Heizungsnotdienst - Techniker bei Notfalleinsatz"
             fill
             className="object-cover"
             priority

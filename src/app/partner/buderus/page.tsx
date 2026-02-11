@@ -139,6 +139,7 @@ export default function BuderusPage() {
         icon={Award}
         badge="Testsieger 2024"
         imageSrc="/images/Waermepumpe.webp"
+        imageAlt="Buderus Logatherm Wärmepumpe - Leise und effizient, installiert von HeizCenter"
         logoSrc="/images/partners/buderus.svg"
       />
 

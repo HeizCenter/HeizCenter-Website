@@ -138,6 +138,7 @@ export default function VaillantPage() {
         icon={Award}
         badge="Marktführer"
         imageSrc="/images/Waermepumpe.webp"
+        imageAlt="Vaillant aroTHERM Luft-Wasser-Wärmepumpe - Installation durch HeizCenter"
         logoSrc="/images/partners/vaillant.svg"
       />
 

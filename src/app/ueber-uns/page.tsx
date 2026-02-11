@@ -29,7 +29,7 @@ export default function UeberUnsPage() {
         <div className="absolute inset-0">
           <Image
             src="/images/team.webp"
-            alt="HeizCenter Team"
+            alt="HeizCenter Montageteam bei Heizungsinstallation in Bayern"
             fill
             className="object-cover opacity-40"
             priority
@@ -97,7 +97,7 @@ export default function UeberUnsPage() {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <Image
                   src="/images/überuns.webp"
-                  alt="HeizCenter Unternehmen"
+                  alt="HeizCenter Firmengebäude und Werkstatt in Bobingen"
                   width={800}
                   height={600}
                   className="object-cover w-full h-auto"

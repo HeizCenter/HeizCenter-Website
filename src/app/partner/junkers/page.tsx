@@ -49,7 +49,7 @@ export default function JunkersPage() {
           { name: "junkers", url: "/partner/junkers" },
         ]}
       />
-      <ServiceHero title="Junkers Bosch Wärmepumpen" description="Teil der Bosch Thermotechnik Gruppe. Bewährte Qualität seit 1895. Die Compress und Supraeco Serien bieten solide Technik zu fairen Preisen." benefits={benefits} icon={Award} badge="Bosch Gruppe" imageSrc="/images/Waermepumpe.webp" logoSrc="/images/partners/junkers.svg" />
+      <ServiceHero title="Junkers Bosch Wärmepumpen" description="Teil der Bosch Thermotechnik Gruppe. Bewährte Qualität seit 1895. Die Compress und Supraeco Serien bieten solide Technik zu fairen Preisen." benefits={benefits} icon={Award} badge="Bosch Gruppe" imageSrc="/images/Waermepumpe.webp" imageAlt="Junkers Bosch Wärmepumpe - Bewährte Qualität, installiert von HeizCenter" logoSrc="/images/partners/junkers.svg" />
       <FeaturesSection title="Warum Junkers Bosch? Bewährt. Zuverlässig." features={features} />
 
       <section className="container py-16">

@@ -24,7 +24,7 @@ export default function RechnerPage() {
         <div className="absolute inset-0 opacity-20">
           <Image
             src="/images/Heizung_Modernisierung.webp"
-            alt="Heizung Modernisierung"
+            alt="Heizungsmodernisierung mit Wärmepumpe - Kostenrechner für Fördermittel"
             fill
             className="object-cover"
             priority

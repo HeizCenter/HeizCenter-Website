@@ -133,7 +133,7 @@ export default function ContactPage() {
         <div className="absolute inset-0 opacity-20">
           <Image
             src="/images/team.webp"
-            alt="HeizCenter Team"
+            alt="HeizCenter Serviceteam für Beratung und Kundenservice"
             fill
             className="object-cover"
             priority
