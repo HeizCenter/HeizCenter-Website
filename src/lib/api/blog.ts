@@ -1089,7 +1089,7 @@ function getMockBlogPosts(): BlogPost[] {
         { question: 'Wie lange dauert es, bis ich die Förderung erhalte?', answer: 'Nach Einreichung der vollständigen Verwendungsnachweise (Rechnungen, technische Dokumentation) prüft die KfW die Unterlagen. Die Bearbeitungszeit liegt in der Regel bei 4-8 Wochen. Bei Rückfragen kann es länger dauern. Der Zuschuss wird direkt auf Ihr Konto überwiesen. Planen Sie also ein, dass Sie die Rechnung zunächst selbst bezahlen müssen.' },
         { question: 'Welche Heizungssysteme werden 2026 gefördert?', answer: 'Gefördert werden Wärmepumpen (Luft, Sole, Wasser), Pelletheizungen, Solarthermie (als Ergänzung), Fernwärmeanschlüsse und Brennstoffzellen. Hybridheizungen sind förderfähig, wenn sie mindestens 65% erneuerbare Energien nutzen. Reine Gas- oder Ölheizungen sind nicht förderfähig. Das System muss auf der KfW-Liste förderfähiger Geräte stehen.' },
         { question: 'Was ist der maximale Förderbetrag bei der BEG?', answer: 'Die förderfähigen Kosten sind auf 30.000 Euro pro Wohneinheit gedeckelt. Bei 70% Förderung ergibt das einen maximalen Zuschuss von 21.000 Euro. Bei 50% Förderung sind es maximal 15.000 Euro Zuschuss. Wenn Ihre Investition höher liegt (z.B. 40.000 Euro), werden nur die ersten 30.000 Euro für die Förderberechnung herangezogen.' },
-        { question: 'Kann ich die BEG-Förderung mit einem KfW-Kredit kombinieren?', answer: 'Ja, das ist möglich. Sie können den BEG-Zuschuss mit dem zinsgünstigen KfW-Kredit 261 (bis zu 150.000 Euro) kombinieren. Der Zuschuss reduziert Ihre Investition, den Rest finanzieren Sie günstig. In der Praxis bedeutet das: Sie zahlen weniger Eigenkapital und die monatlichen Raten liegen oft unter den eingesparten Heizkosten.' },
+        { question: 'Kann ich die BEG-Förderung mit einem KfW-Kredit kombinieren?', answer: 'Ja, das ist möglich. Sie können den BEG-Zuschuss mit dem zinsgünstigen KfW-Ergänzungskredit 358/359 (bis zu 120.000 Euro pro Wohneinheit) kombinieren. Der Zuschuss reduziert Ihre Investition, den Rest finanzieren Sie günstig. In der Praxis bedeutet das: Sie zahlen weniger Eigenkapital und die monatlichen Raten liegen oft unter den eingesparten Heizkosten. Hinweis: Der KfW-Kredit 261 ist für Komplettsanierungen zum Effizienzhaus gedacht, nicht für den Einzelmaßnahmen-Heizungstausch.' },
         { question: 'Was passiert, wenn ich den Antrag erst nach Auftragsvergabe stelle?', answer: 'Dann verfällt der Förderanspruch komplett. Die KfW zahlt keinen Cent, wenn Sie den Vertrag vor Antragstellung unterschrieben haben. Angebote einholen ist erlaubt, aber unterschreiben Sie nichts, bevor die Fördernummer da ist. Lassen Sie sich von keinem Handwerker unter Druck setzen. Seriöse Fachbetriebe kennen diese Regel und halten sich daran.' },
       ],
     },
@@ -1446,7 +1446,7 @@ function getMockBlogPosts(): BlogPost[] {
         <div class="flex flex-wrap gap-4 mb-8 text-sm text-slate-600">
           <span class="flex items-center gap-1">✓ Zertifizierter Fachbetrieb für Biomasse</span>
           <span class="flex items-center gap-1">✓ Über 120 Pelletheizungen installiert</span>
-          <span class="flex items-center gap-1">✓ KfW- und BAFA-Förderberatung inklusive</span>
+          <span class="flex items-center gap-1">✓ KfW-Förderberatung inklusive</span>
         </div>
 
         <p>In diesem Artikel zeige ich Ihnen die echten Kosten – nicht nur die Anschaffung, sondern auch, was Sie jährlich zahlen. Und vor allem: Wie Sie durch geschickte Kombination mit Solarthermie bis zu 70% Förderung rausholen.</p>
@@ -1706,7 +1706,7 @@ function getMockBlogPosts(): BlogPost[] {
           <div class="text-center">
             <div class="w-12 h-12 bg-[#0F5B78] text-white rounded-full flex items-center justify-center mx-auto mb-3 text-xl font-bold">3</div>
             <h4 class="font-semibold mb-1">Förderantrag</h4>
-            <p class="text-sm text-slate-600">Wir unterstützen bei BAFA/KfW – VOR Auftragserteilung!</p>
+            <p class="text-sm text-slate-600">Wir unterstützen beim KfW-Antrag – VOR Auftragserteilung!</p>
           </div>
           <div class="text-center">
             <div class="w-12 h-12 bg-[#0F5B78] text-white rounded-full flex items-center justify-center mx-auto mb-3 text-xl font-bold">4</div>
@@ -1919,7 +1919,7 @@ function getMockBlogPosts(): BlogPost[] {
           <p>Der Umstieg von Badewanne auf bodengleiche Dusche ist der häufigste Einzelumbau – und meist die beste Investition. Sie gewinnen Platz, schaffen Barrierefreiheit und erhöhen den Wohnwert.</p>
         </div>
 
-        <h2>Barrierefreies Bad: Förderung bis 6.250 €</h2>
+        <h2>Barrierefreies Bad: Aktuelle Fördermöglichkeiten</h2>
 
         <p>Wer sein Bad altersgerecht umbaut, kann ordentlich <a href="/foerderung" class="text-[#0F5B78] font-medium hover:underline">Förderung</a> mitnehmen. Alle Details dazu finden Sie in unserem <a href="/blog/barrierefreies-bad-kosten-planung-foerderung-2026" class="text-[#0F5B78] font-medium hover:underline">Ratgeber Barrierefreies Bad: Kosten & Förderung</a>. Das lohnt sich auch, wenn Sie noch nicht in dem Alter sind – irgendwann ist jeder froh über eine bodengleiche Dusche.</p>
 
@@ -3324,7 +3324,7 @@ function getMockBlogPosts(): BlogPost[] {
             <ul>
               <li>Kostenlose Vor-Ort-Beratung mit Heizlastberechnung</li>
               <li>Ehrliche Einschätzung: Lohnt sich das bei Ihrem Haus?</li>
-              <li>Komplette Förderabwicklung (KfW, BAFA) – Sie unterschreiben nur</li>
+              <li>Komplette KfW-Förderabwicklung – Sie unterschreiben nur</li>
               <li>Professionelle Installation durch zertifizierte Techniker</li>
               <li>Hydraulischer Abgleich (Standard, nicht Optional)</li>
               <li>5 Jahre Garantie auf alle Arbeiten</li>
@@ -3469,11 +3469,11 @@ function getMockBlogPosts(): BlogPost[] {
             </tr>
             <tr>
               <td style="padding: 10px; border: 1px solid #ddd;"><strong>Bestandsgebäude in Großstädten (>100.000 EW)</strong></td>
-              <td style="padding: 10px; border: 1px solid #ddd;">Spätestens 30. Juni 2026 (nach Wärmeplanung)</td>
+              <td style="padding: 10px; border: 1px solid #ddd;">Spätestens 30. Juni 2026 (gesetzliche Frist)</td>
             </tr>
             <tr style="background-color: #f8f9fa;">
               <td style="padding: 10px; border: 1px solid #ddd;"><strong>Bestandsgebäude in kleineren Städten</strong></td>
-              <td style="padding: 10px; border: 1px solid #ddd;">Spätestens 30. Juni 2028 (nach Wärmeplanung)</td>
+              <td style="padding: 10px; border: 1px solid #ddd;">Spätestens 30. Juni 2028 (gesetzliche Frist)</td>
             </tr>
             <tr>
               <td style="padding: 10px; border: 1px solid #ddd;"><strong>Neubau außerhalb Neubaugebiet</strong></td>
@@ -3482,7 +3482,7 @@ function getMockBlogPosts(): BlogPost[] {
           </tbody>
         </table>
 
-        <p><strong>Wichtig:</strong> Die 65%-Regel greift erst, wenn die <strong>kommunale Wärmeplanung</strong> vorliegt. Diese zeigt auf, wo Wärmenetze oder Wasserstoffnetze geplant sind – wichtige Informationen für Ihre Heizungsentscheidung.</p>
+        <p><strong>Wichtig:</strong> Die 65%-Regel gilt ab den genannten Fristen <strong>unabhängig davon</strong>, ob die kommunale Wärmeplanung bereits vorliegt. Die Wärmeplanung zeigt auf, wo Wärmenetze oder Wasserstoffnetze geplant sind – wichtige Informationen für Ihre Heizungsentscheidung. Nur eine <strong>Gebietsausweisung</strong> als Wärmenetz- oder Wasserstoff-Ausbaugebiet kann die 65%-Pflicht vorzeitig auslösen (§71 Abs.8 GEG).</p>
 
         <h2>Bestandsschutz: Ihre alte Gasheizung darf bleiben</h2>
 
@@ -3698,7 +3698,7 @@ function getMockBlogPosts(): BlogPost[] {
 
         <h3>Wenn Ihre Heizung bald kaputt geht oder älter als 30 Jahre ist</h3>
 
-        <p>Beauftragen Sie eine Energieberatung (50–80% gefördert) und holen Sie Kostenvoranschläge für Wärmepumpe, Pellets und Fernwärme ein. Bereiten Sie den Förderantrag bei KfW/BAFA vor – wichtig ist, dass dieser <em>vor</em> Vertragsschluss gestellt wird. Prüfen Sie die Gebäudedämmung, denn diese macht die Wärmepumpe effizienter. Nutzen Sie den Zeitplan: Der Geschwindigkeitsbonus läuft bis Ende 2028.</p>
+        <p>Beauftragen Sie eine Energieberatung (50–80% gefördert) und holen Sie Kostenvoranschläge für Wärmepumpe, Pellets und Fernwärme ein. Bereiten Sie den Förderantrag bei der KfW vor – wichtig ist, dass dieser <em>vor</em> Vertragsschluss gestellt wird. Prüfen Sie die Gebäudedämmung, denn diese macht die Wärmepumpe effizienter. Nutzen Sie den Zeitplan: Der Geschwindigkeitsbonus läuft bis Ende 2028.</p>
 
         <h3>Wenn Ihre Heizung akut kaputt ist</h3>
 
@@ -7858,7 +7858,7 @@ function getMockBlogPosts(): BlogPost[] {
       id: 20,
       slug: 'solarthermie-vs-photovoltaik-2026-vergleich',
       title: 'Solarthermie vs. Photovoltaik 2026: Der große Vergleich',
-      excerpt: 'Solarthermie oder Photovoltaik? Wir vergleichen beide Technologien hinsichtlich Kosten, Förderung, Wirtschaftlichkeit und Einsatzbereichen für 2026. Mit aktuellen BAFA-Förderungen und Preisentwicklungen.',
+      excerpt: 'Solarthermie oder Photovoltaik? Wir vergleichen beide Technologien hinsichtlich Kosten, Förderung, Wirtschaftlichkeit und Einsatzbereichen für 2026. Mit aktuellen KfW-Förderungen und Preisentwicklungen.',
       content: `
         <p>Solarthermie oder Photovoltaik? Diese Frage stellen uns Hausbesitzer fast täglich. Beide Technologien nutzen die Sonne – aber auf völlig unterschiedliche Weise. Kurz gesagt: <strong>Solarthermie macht Wärme, Photovoltaik macht Strom.</strong> Was für Sie besser passt, hängt von Ihrem Gebäude, Ihrem Energiebedarf und Ihren Zielen ab.</p>
 
@@ -7928,8 +7928,8 @@ function getMockBlogPosts(): BlogPost[] {
 
         <h2>Staatliche Förderungen 2025</h2>
 
-        <h3>BAFA-Förderung für Solarthermie</h3>
-        <p>Die Bundesförderung für effiziente Gebäude (BEG) bietet 2025 attraktive Zuschüsse:</p>
+        <h3>KfW-Förderung für Solarthermie (BEG 458)</h3>
+        <p>Die Bundesförderung für effiziente Gebäude (BEG) bietet 2026 attraktive Zuschüsse über die KfW:</p>
 
         <p><strong>Basis-Förderung:</strong></p>
         <ul>
@@ -7986,7 +7986,7 @@ function getMockBlogPosts(): BlogPost[] {
 
         <p><strong>Amortisationszeit:</strong></p>
         <ul>
-          <li>Mit BAFA-Förderung: 10-15 Jahre</li>
+          <li>Mit KfW-Förderung: 10-15 Jahre</li>
           <li>Ohne Förderung: 15-25 Jahre</li>
         </ul>
 
@@ -8038,10 +8038,10 @@ function getMockBlogPosts(): BlogPost[] {
           <li>Solarthermie übernimmt Warmwasser im Sommer</li>
           <li>Wärmepumpe arbeitet mit höherer Effizienz (höhere Quellentemperatur)</li>
           <li>20-30% Stromersparnis bei der Wärmepumpe</li>
-          <li>BAFA fördert beide Systeme kombiniert</li>
+          <li>KfW fördert beide Systeme kombiniert (BEG 458)</li>
         </ul>
 
-        <p><strong>Kosten:</strong> 25.000-35.000 € (komplett), BAFA-Förderung bis zu 70% möglich</p>
+        <p><strong>Kosten:</strong> 25.000-35.000 € (komplett), KfW-Förderung bis zu 70% möglich</p>
 
         <h3>Photovoltaik + Wärmepumpe</h3>
         <p>Der Klassiker für energieautarke Eigenheime:</p>
@@ -8117,7 +8117,7 @@ function getMockBlogPosts(): BlogPost[] {
           <li>Ihre Heizung modernisieren (Öl/Gas-Austausch)</li>
           <li>Eine Wärmepumpe installieren möchten</li>
           <li>Begrenzte Dachfläche haben (Priorisierung Wärme)</li>
-          <li>Von der BAFA-Förderung maximal profitieren wollen</li>
+          <li>Von der KfW-Förderung maximal profitieren wollen</li>
           <li>Primär Heizkosten senken möchten</li>
         </ul>
 
@@ -8159,7 +8159,7 @@ function getMockBlogPosts(): BlogPost[] {
         <h3>Regulatorische Änderungen</h3>
         <ul>
           <li>Gebäudeenergiegesetz (GEG): 65% erneuerbare Energie ab 2024</li>
-          <li>BAFA-Förderung: Geschwindigkeitsbonus läuft 2028 aus</li>
+          <li>KfW-Förderung: Geschwindigkeitsbonus läuft 2028 aus</li>
           <li>EEG-Vergütung: Degression um 1% halbjährlich</li>
           <li>Regionale PV-Pflicht: Immer mehr Bundesländer führen sie ein</li>
         </ul>
@@ -8171,7 +8171,7 @@ function getMockBlogPosts(): BlogPost[] {
           <li><strong>Energiebedarf analysieren:</strong> Strom- und Wärmeverbrauch der letzten 2-3 Jahre prüfen</li>
           <li><strong>Dachfläche bewerten:</strong> Ausrichtung, Neigung, Verschattung, verfügbare Fläche</li>
           <li><strong>Budget festlegen:</strong> Eigenkapital und Finanzierungsmöglichkeiten klären</li>
-          <li><strong>Förderung beantragen:</strong> BAFA-Antrag VOR Vertragsschluss stellen</li>
+          <li><strong>Förderung beantragen:</strong> KfW-Antrag VOR Vertragsschluss stellen</li>
           <li><strong>Angebote einholen:</strong> Mindestens 3 Fachbetriebe vergleichen</li>
           <li><strong>Wirtschaftlichkeit rechnen:</strong> Amortisation mit Förderung durchkalkulieren</li>
         </ol>
@@ -8190,10 +8190,10 @@ function getMockBlogPosts(): BlogPost[] {
         <p>Ja, bei <strong>ausreichend Dachfläche (min. 40-50 m²)</strong> ist die Kombination sinnvoll: PV für Strom und Elektroauto, Solarthermie für effiziente Warmwasserbereitung. Die Systeme stören sich nicht, da sie unterschiedliche Energieformen erzeugen. Alternativ prüfen Sie PVT-Hybridkollektoren, die beides auf einer Fläche kombinieren.</p>
 
         <h3>Wie unterscheiden sich die Investitionskosten?</h3>
-        <p>Solarthermie für Warmwasser kostet <strong>5.000-8.000 €</strong> (mit 30-70% BAFA-Förderung). Eine vergleichbare 5 kWp PV-Anlage kostet <strong>10.500-13.500 €</strong> (0% MwSt., keine Direktförderung). PV amortisiert sich jedoch schneller (8-12 Jahre) als Solarthermie (10-15 Jahre mit Förderung).</p>
+        <p>Solarthermie für Warmwasser kostet <strong>5.000-8.000 €</strong> (mit 30-70% KfW-Förderung). Eine vergleichbare 5 kWp PV-Anlage kostet <strong>10.500-13.500 €</strong> (0% MwSt., keine Direktförderung). PV amortisiert sich jedoch schneller (8-12 Jahre) als Solarthermie (10-15 Jahre mit Förderung).</p>
 
-        <h3>Welche Förderung ist höher – BAFA oder KfW?</h3>
-        <p><strong>BAFA-Förderung für Solarthermie ist höher:</strong> Bis zu 70% Direktzuschuss (30% Basis + 20% Geschwindigkeitsbonus + 30% Einkommensbonus). Photovoltaik erhält nur zinsgünstige KfW-Kredite (Programm 270) und indirekte Vorteile durch 0% MwSt. sowie EEG-Einspeisevergütung von 7,9 Cent/kWh.</p>
+        <h3>Welche Förderung ist höher – Solarthermie oder Photovoltaik?</h3>
+        <p><strong>KfW-Förderung für Solarthermie (BEG 458) ist höher:</strong> Bis zu 70% Direktzuschuss (30% Basis + 20% Geschwindigkeitsbonus + 30% Einkommensbonus). Photovoltaik erhält nur zinsgünstige KfW-Kredite (Programm 270) und indirekte Vorteile durch 0% MwSt. sowie EEG-Einspeisevergütung von 7,9 Cent/kWh.</p>
 
         <h3>Benötige ich für beide Systeme viel Dachfläche?</h3>
         <p><strong>Solarthermie braucht weniger Platz:</strong> 4-6 m² für Warmwasser, 10-15 m² mit Heizungsunterstützung. Photovoltaik benötigt für vergleichbaren Energieertrag 25-50 m² (5-10 kWp). Für kleine Dächer unter 20 m² ist Solarthermie platzsparender, bei großen Dächern ab 40 m² lohnt sich PV mehr.</p>
@@ -8209,8 +8209,8 @@ function getMockBlogPosts(): BlogPost[] {
         { question: 'Welches System ist besser für Warmwasserbereitung geeignet?', answer: 'Für reine Warmwasserbereitung ist Solarthermie effizienter: Mit bis zu 80% optischem Wirkungsgrad (Jahresnutzungsgrad ca. 50%) wandelt sie Sonnenlicht direkt in Wärme um. Eine 4-6 m² Anlage deckt 60-70% des Jahresbedarfs ab. Photovoltaik mit Heizstab erreicht nur 18-22% Wirkungsgrad und benötigt die dreifache Dachfläche für denselben Wärmeertrag.' },
         { question: 'Was spart mehr Stromkosten – PV oder Solarthermie?', answer: 'Photovoltaik spart deutlich mehr: Eine 10 kWp PV-Anlage spart bei 40% Eigenverbrauch rund 1.200 €/Jahr an Stromkosten. Solarthermie reduziert nur die Gas-/Ölkosten für Warmwasser um 200-400 €/Jahr. Mit PV können Sie zusätzlich Elektroauto, Wärmepumpe und Haushaltsgeräte versorgen.' },
         { question: 'Kann ich beide Systeme gleichzeitig installieren?', answer: 'Ja, bei ausreichend Dachfläche (min. 40-50 m²) ist die Kombination sinnvoll: PV für Strom und Elektroauto, Solarthermie für effiziente Warmwasserbereitung. Die Systeme stören sich nicht, da sie unterschiedliche Energieformen erzeugen. Alternativ prüfen Sie PVT-Hybridkollektoren, die beides auf einer Fläche kombinieren.' },
-        { question: 'Wie unterscheiden sich die Investitionskosten?', answer: 'Solarthermie für Warmwasser kostet 5.000-8.000 € (mit 30-70% BAFA-Förderung). Eine vergleichbare 5 kWp PV-Anlage kostet 10.500-13.500 € (0% MwSt., keine Direktförderung). PV amortisiert sich jedoch schneller (8-12 Jahre) als Solarthermie (10-15 Jahre mit Förderung).' },
-        { question: 'Welche Förderung ist höher – BAFA oder KfW?', answer: 'BAFA-Förderung für Solarthermie ist höher: Bis zu 70% Direktzuschuss (30% Basis + 20% Geschwindigkeitsbonus + 30% Einkommensbonus). Photovoltaik erhält nur zinsgünstige KfW-Kredite (Programm 270) und indirekte Vorteile durch 0% MwSt. sowie EEG-Einspeisevergütung von 7,9 Cent/kWh.' },
+        { question: 'Wie unterscheiden sich die Investitionskosten?', answer: 'Solarthermie für Warmwasser kostet 5.000-8.000 € (mit 30-70% KfW-Förderung). Eine vergleichbare 5 kWp PV-Anlage kostet 10.500-13.500 € (0% MwSt., keine Direktförderung). PV amortisiert sich jedoch schneller (8-12 Jahre) als Solarthermie (10-15 Jahre mit Förderung).' },
+        { question: 'Welche Förderung ist höher – Solarthermie oder Photovoltaik?', answer: 'Die KfW-Förderung für Solarthermie (BEG 458) ist höher: Bis zu 70% Direktzuschuss (30% Basis + 20% Geschwindigkeitsbonus + 30% Einkommensbonus). Photovoltaik erhält nur zinsgünstige KfW-Kredite (Programm 270) und indirekte Vorteile durch 0% MwSt. sowie EEG-Einspeisevergütung von 7,9 Cent/kWh.' },
         { question: 'Benötige ich für beide Systeme viel Dachfläche?', answer: 'Solarthermie braucht weniger Platz: 4-6 m² für Warmwasser, 10-15 m² mit Heizungsunterstützung. Photovoltaik benötigt für vergleichbaren Energieertrag 25-50 m² (5-10 kWp). Für kleine Dächer unter 20 m² ist Solarthermie platzsparender, bei großen Dächern ab 40 m² lohnt sich PV mehr.' },
       ],
     },
@@ -8222,11 +8222,11 @@ function getMockBlogPosts(): BlogPost[] {
       content: `
         <p>70% Förderung für Solarthermie – klingt verlockend, oder? Die gute Nachricht: Ja, das ist 2025 tatsächlich möglich. Die weniger gute: Nicht jeder bekommt den vollen Satz. Was Sie wirklich bekommen können und wie der Antrag funktioniert, zeigen wir Ihnen hier – Schritt für Schritt.</p>
 
-        <h2>Übersicht: BAFA-Förderung für Solarthermie 2025</h2>
+        <h2>Übersicht: KfW-Förderung für Solarthermie 2026</h2>
 
-        <p>Die Bundesförderung für effiziente Gebäude (BEG) fördert den Einbau von Solarthermieanlagen als Teil der Energiewende im Gebäudebereich. Das Programm wird vom Bundesamt für Wirtschaft und Ausfuhrkontrolle (BAFA) verwaltet und bietet direkte Investitionszuschüsse ohne Rückzahlungspflicht.</p>
+        <p>Die Bundesförderung für effiziente Gebäude (BEG) fördert den Einbau von Solarthermieanlagen als Teil der Energiewende im Gebäudebereich. Seit 2024 wird das Programm von der <strong>KfW (Programm 458)</strong> verwaltet und bietet direkte Investitionszuschüsse ohne Rückzahlungspflicht.</p>
 
-        <h3>Wichtigste Eckdaten 2025</h3>
+        <h3>Wichtigste Eckdaten 2026</h3>
         <ul>
           <li><strong>Basis-Förderung:</strong> 30% der förderfähigen Kosten</li>
           <li><strong>Klima-Geschwindigkeitsbonus:</strong> +20% (befristet bis 2028)</li>
@@ -8637,7 +8637,7 @@ function getMockBlogPosts(): BlogPost[] {
         <h3>Wirtschaftliche Vorteile</h3>
         <ul>
           <li><strong>Geringere Betriebskosten:</strong> 20-30% weniger Stromverbrauch als reine Wärmepumpe</li>
-          <li><strong>Hohe Förderung:</strong> Bis zu 70% BAFA-Zuschuss möglich</li>
+          <li><strong>Hohe Förderung:</strong> Bis zu 70% KfW-Zuschuss möglich (BEG 458)</li>
           <li><strong>Wertsteigerung:</strong> Immobilie erfüllt höchste Energiestandards</li>
           <li><strong>Zukunftssicher:</strong> Erfüllt GEG-Anforderungen (65% erneuerbare Energie)</li>
           <li><strong>Unabhängigkeit:</strong> Reduzierte Abhängigkeit von Strompreisen</li>
@@ -8796,7 +8796,7 @@ function getMockBlogPosts(): BlogPost[] {
           <li><strong>Gesamtkosten: 53.500 €</strong></li>
         </ul>
 
-        <h3>BAFA-Förderung 2026</h3>
+        <h3>KfW-Förderung 2026 (BEG 458)</h3>
         <p>Die Kombination wird großzügig gefördert:</p>
 
         <p><strong>Fördersätze:</strong></p>
@@ -8808,7 +8808,7 @@ function getMockBlogPosts(): BlogPost[] {
           <li><strong>Förderobergrenze: 30.000 € pro Wohneinheit</strong></li>
         </ul>
 
-        <div class="my-6 p-4 bg-amber-50 border-l-4 border-amber-500 rounded-r"><p class="font-semibold text-amber-900">⚠️ Wichtig zur Förderobergrenze:</p><p class="text-slate-700">Die BAFA-Förderung ist auf maximal 30.000 € pro Wohneinheit gedeckelt. Bei 70% Fördersatz bedeutet das: Nur Investitionskosten bis 42.857 € werden voll gefördert. Bei höheren Kosten (z.B. 53.500 € für Sole-WP + Solar) bleibt der Zuschuss bei 30.000 €.</p></div>
+        <div class="my-6 p-4 bg-amber-50 border-l-4 border-amber-500 rounded-r"><p class="font-semibold text-amber-900">⚠️ Wichtig zur Förderobergrenze:</p><p class="text-slate-700">Die KfW-Förderung (BEG 458) ist auf maximal 30.000 € pro Wohneinheit gedeckelt. Bei 70% Fördersatz bedeutet das: Nur Investitionskosten bis 42.857 € werden voll gefördert. Bei höheren Kosten (z.B. 53.500 € für Sole-WP + Solar) bleibt der Zuschuss bei 30.000 €.</p></div>
 
         <p><strong>Beispielrechnung (Heizungstausch):</strong></p>
         <ul>
@@ -8853,7 +8853,7 @@ function getMockBlogPosts(): BlogPost[] {
         <p><strong>Szenario: Ölheizungstausch, 50% Förderung</strong></p>
         <ul>
           <li>Investition Hybrid-System: 34.000 €</li>
-          <li>BAFA-Förderung (50%): -17.000 €</li>
+          <li>KfW-Förderung (50%): -17.000 €</li>
           <li>Eigenanteil: 17.000 €</li>
           <li>Jährliche Ersparnis: 1.412 €</li>
           <li><strong>Amortisation: 12 Jahre</strong></li>
@@ -8959,7 +8959,7 @@ function getMockBlogPosts(): BlogPost[] {
           <li>Erfahrung mit Solarthermie</li>
           <li>Hydraulischer Abgleich-Kompetenz</li>
           <li>Referenzen für Hybrid-Systeme</li>
-          <li>BAFA-Antragserfahrung</li>
+          <li>KfW-Antragserfahrung</li>
         </ul>
 
         <div class="my-6 p-4 bg-blue-50 border-l-4 border-blue-500 rounded-r"><p class="font-semibold text-blue-900">Tipp:</p><p class="text-slate-700">Holen Sie mindestens 3 Angebote ein und vergleichen Sie nicht nur Preise, sondern auch Systemauslegung, Komponenten und Service.</p></div>
@@ -9006,7 +9006,7 @@ function getMockBlogPosts(): BlogPost[] {
           <li>Optimierungsvorschläge</li>
         </ul>
 
-        <blockquote class="my-8 p-6 bg-slate-50 border-l-4 border-[#0F5B78] rounded-r"><p class="font-semibold text-lg mb-2">Fazit</p><p class="text-slate-700">Die Kombination von Wärmepumpe und Solarthermie ist eine der intelligentesten Investitionen in moderne Heiztechnik. Mit 20-30% weniger Stromverbrauch als reine Wärmepumpen, hoher BAFA-Förderung bis 70% und Amortisationszeiten von 10-15 Jahren überzeugt das Hybrid-System wirtschaftlich. Die ideale Auslegung erreichen Sie mit 0,06-0,08 m² Kollektorfläche pro m² Wohnfläche und einem 800-1.000 L Pufferspeicher. Besonders Luft-Wärmepumpen profitieren von der solaren Unterstützung, da diese die niedrigere Quellentemperatur ausgleicht und die Jahresarbeitszahl auf über 4,0 steigert.</p></blockquote>
+        <blockquote class="my-8 p-6 bg-slate-50 border-l-4 border-[#0F5B78] rounded-r"><p class="font-semibold text-lg mb-2">Fazit</p><p class="text-slate-700">Die Kombination von Wärmepumpe und Solarthermie ist eine der intelligentesten Investitionen in moderne Heiztechnik. Mit 20-30% weniger Stromverbrauch als reine Wärmepumpen, hoher KfW-Förderung bis 70% und Amortisationszeiten von 10-15 Jahren überzeugt das Hybrid-System wirtschaftlich. Die ideale Auslegung erreichen Sie mit 0,06-0,08 m² Kollektorfläche pro m² Wohnfläche und einem 800-1.000 L Pufferspeicher. Besonders Luft-Wärmepumpen profitieren von der solaren Unterstützung, da diese die niedrigere Quellentemperatur ausgleicht und die Jahresarbeitszahl auf über 4,0 steigert.</p></blockquote>
 
         <h2>Checkliste: Ihre nächsten Schritte</h2>
         <ol>
@@ -9015,9 +9015,9 @@ function getMockBlogPosts(): BlogPost[] {
           <li><strong>Heizlast berechnen:</strong> Fachbetrieb für DIN-Berechnung beauftragen</li>
           <li><strong>System auswählen:</strong> Luft-, Sole- oder Wasserwärmepumpe?</li>
           <li><strong>Angebote einholen:</strong> Mindestens 3 qualifizierte Fachbetriebe</li>
-          <li><strong>Förderung prüfen:</strong> BAFA-Voraussetzungen und Förderhöhe ermitteln</li>
-          <li><strong>Finanzierung klären:</strong> Eigenkapital + KfW-Kredit kombinieren</li>
-          <li><strong>BAFA-Antrag stellen:</strong> VOR Beauftragung einreichen</li>
+          <li><strong>Förderung prüfen:</strong> KfW-Voraussetzungen (BEG 458) und Förderhöhe ermitteln</li>
+          <li><strong>Finanzierung klären:</strong> Eigenkapital + KfW-Ergänzungskredit 358/359 kombinieren</li>
+          <li><strong>KfW-Antrag stellen:</strong> VOR Beauftragung im KfW-Zuschussportal einreichen</li>
           <li><strong>Installation planen:</strong> Zeitfenster mit Fachbetrieb abstimmen</li>
           <li><strong>Nach Installation:</strong> Hydraulischer Abgleich und Optimierung</li>
         </ol>
@@ -9586,7 +9586,7 @@ function getMockBlogPosts(): BlogPost[] {
 
           <h3>Förderung und Finanzierung</h3>
           <p>
-            <strong>BAFA-Förderung für PVT-Anlagen:</strong>
+            <strong>KfW-Förderung für PVT-Anlagen:</strong>
           </p>
           <ul>
             <li><strong>Solarthermie-Anteil:</strong> 30% Basisförderung + 5% Effizienzbonus = 35%</li>
@@ -9598,7 +9598,7 @@ function getMockBlogPosts(): BlogPost[] {
           <div class="bg-amber-50 border-l-4 border-amber-500 p-6 my-8">
             <h4 class="text-lg font-semibold text-amber-900 mb-3">⚠️ Förder-Hinweis</h4>
             <p class="text-amber-800 mb-0">
-              <strong>Nur thermischer Anteil förderfähig:</strong> Die BAFA-Förderung gilt nur für die Solarthermie-Komponente der PVT-Anlage (ca. 40-50% der Gesamtkosten). Der PV-Anteil ist nicht förderfähig, profitiert aber von der Einspeisevergütung nach EEG.
+              <strong>Nur thermischer Anteil förderfähig:</strong> Die KfW-Förderung gilt nur für die Solarthermie-Komponente der PVT-Anlage (ca. 40-50% der Gesamtkosten). Der PV-Anteil ist nicht förderfähig, profitiert aber von der Einspeisevergütung nach EEG.
             </p>
           </div>
 
@@ -9710,7 +9710,7 @@ function getMockBlogPosts(): BlogPost[] {
             <li><strong>Dachprüfung:</strong> Statik, Ausrichtung, Verschattung, Neigung</li>
             <li><strong>Systemauslegung:</strong> PVT-Fläche, Speichergröße, Hydraulik</li>
             <li><strong>Heizungsintegration:</strong> Anbindung an bestehende/neue Heizung</li>
-            <li><strong>Förderantrag:</strong> BAFA-Antrag vor Auftragserteilung</li>
+            <li><strong>Förderantrag:</strong> KfW-Antrag vor Auftragserteilung</li>
             <li><strong>Installation:</strong> Fachbetrieb für PV und Solarthermie</li>
             <li><strong>Inbetriebnahme:</strong> Hydraulischer Abgleich, Regelung optimieren</li>
           </ol>
@@ -10355,7 +10355,7 @@ function getMockBlogPosts(): BlogPost[] {
               </li>
               <li class="flex items-start gap-3">
                 <span class="text-slate-400 font-bold">☐</span>
-                <span>Kosten kalkuliert (inkl. BAFA-Förderung)</span>
+                <span>Kosten kalkuliert (inkl. KfW-Förderung)</span>
               </li>
               <li class="flex items-start gap-3">
                 <span class="text-slate-400 font-bold">☐</span>
@@ -10371,7 +10371,7 @@ function getMockBlogPosts(): BlogPost[] {
               </li>
               <li class="flex items-start gap-3">
                 <span class="text-slate-400 font-bold">☐</span>
-                <span>BAFA-Förderantrag VOR Auftragserteilung gestellt</span>
+                <span>KfW-Förderantrag VOR Auftragserteilung gestellt</span>
               </li>
               <li class="flex items-start gap-3">
                 <span class="text-slate-400 font-bold">☐</span>
