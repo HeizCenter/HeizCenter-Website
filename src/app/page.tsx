@@ -88,6 +88,7 @@ export default function Home() {
               src="/images/Solaranlage.webp"
               alt="Solarthermie-Anlage auf Einfamilienhaus in Bayern - HeizCenter Installation mit KfW-Förderung"
               fill
+              sizes="50vw"
               className="object-cover"
               priority
             />
@@ -97,6 +98,7 @@ export default function Home() {
               src="/images/Waermepumpe.webp"
               alt="Luft-Wasser-Wärmepumpe Installation in Augsburg - HeizCenter Fachbetrieb für Heizsysteme"
               fill
+              sizes="50vw"
               className="object-cover"
               loading="eager"
             />
@@ -106,6 +108,7 @@ export default function Home() {
               src="/images/HeizCenter_Heizung.webp"
               alt="Moderne Gasbrennwertheizung mit Viessmann Technik - HeizCenter Installation Bayern"
               fill
+              sizes="50vw"
               className="object-cover"
               priority
             />
@@ -115,6 +118,7 @@ export default function Home() {
               src="/images/HeizCenter_Badgestaltung.webp"
               alt="Moderne Badsanierung mit bodengleicher Dusche - HeizCenter Komplettservice Augsburg"
               fill
+              sizes="50vw"
               className="object-cover"
               loading="eager"
             />
