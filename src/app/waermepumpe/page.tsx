@@ -45,8 +45,6 @@ export const metadata: Metadata = {
   },
 };
 
-export const dynamic = 'force-dynamic';
-
 const benefits = [
   "Bis zu 40–45% niedrigere Heizkosten im Vergleich zur Gasheizung",
   "BEG-Förderung bis zu 70% der Investitionskosten (bis Ende 2028)",
@@ -157,7 +155,7 @@ export default function WaermepumpePage() {
         benefits={benefits}
         icon={Zap}
         badge="Bis zu 70% Förderung"
-        imageSrc="/images/Waermepumpe.jpeg"
+        imageSrc="/images/Waermepumpe.webp"
         imageAlt="Moderne Luft-Wasser-Wärmepumpe vor Einfamilienhaus - Bis 70% BEG-Förderung mit HeizCenter Bayern"
       />
 

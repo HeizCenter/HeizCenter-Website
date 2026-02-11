@@ -35,8 +35,6 @@ export const metadata: Metadata = {
   ],
 };
 
-export const dynamic = "force-dynamic";
-
 const benefits = [
   "Kompakte Monoblock-Bauweise",
   "Modulierende Inverter-Technologie",
@@ -140,7 +138,7 @@ export default function WolfPage() {
         benefits={benefits}
         icon={Award}
         badge="Made in Bavaria"
-        imageSrc="/images/Waermepumpe.jpeg"
+        imageSrc="/images/Waermepumpe.webp"
         logoSrc="/images/partners/wolf.svg"
       />
 

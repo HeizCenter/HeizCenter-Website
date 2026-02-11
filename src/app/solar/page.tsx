@@ -50,8 +50,6 @@ export const metadata: Metadata = {
   },
 };
 
-export const dynamic = 'force-dynamic';
-
 const benefits = [
   "Bis zu 70% staatliche Förderung für Ihre Solarthermie-Anlage (bis Ende 2028)",
   "60% Ihres Warmwasserbedarfs durch kostenlose Sonnenenergie",

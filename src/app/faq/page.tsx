@@ -16,8 +16,6 @@ export const metadata: Metadata = {
   },
 };
 
-export const dynamic = 'force-dynamic';
-
 const waermepumpeFAQs: FAQItem[] = [
   { question: "Was kostet eine Wärmepumpe?", answer: "Komplettsystem ab 25.000€ inkl. Installation. Mit BEG-Förderung (bis 70%) reduziert sich der Eigenanteil auf ca. 7.500€." },
   { question: "Wie hoch ist die Förderung?", answer: "Bis zu 70% durch BEG-Förderung: 30% Grundförderung + 20% Klimageschwindigkeitsbonus (bis Ende 2028) + bis zu 30% Einkommensbonus. Max. 70% Gesamtförderung möglich." },

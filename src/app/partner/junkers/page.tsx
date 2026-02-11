@@ -18,8 +18,6 @@ export const metadata: Metadata = {
   },
 };
 
-export const dynamic = "force-dynamic";
-
 const benefits = ["Teil der Bosch Thermotechnik Gruppe", "Bewährte Qualität seit über 130 Jahren", "Compress und Supraeco Serien", "Bis 70°C Vorlauftemperatur", "5 Jahre Garantie", "Ausgezeichnetes Preis-Leistungs-Verhältnis"];
 const features = [
   { title: "Bosch Qualität", description: "Junkers ist Teil der Bosch Thermotechnik Gruppe. Bewährte deutsche Ingenieurskunst seit 1895.", icon: Award },
@@ -51,7 +49,7 @@ export default function JunkersPage() {
           { name: "junkers", url: "/partner/junkers" },
         ]}
       />
-      <ServiceHero title="Junkers Bosch Wärmepumpen" description="Teil der Bosch Thermotechnik Gruppe. Bewährte Qualität seit 1895. Die Compress und Supraeco Serien bieten solide Technik zu fairen Preisen." benefits={benefits} icon={Award} badge="Bosch Gruppe" imageSrc="/images/Waermepumpe.jpeg" logoSrc="/images/partners/junkers.svg" />
+      <ServiceHero title="Junkers Bosch Wärmepumpen" description="Teil der Bosch Thermotechnik Gruppe. Bewährte Qualität seit 1895. Die Compress und Supraeco Serien bieten solide Technik zu fairen Preisen." benefits={benefits} icon={Award} badge="Bosch Gruppe" imageSrc="/images/Waermepumpe.webp" logoSrc="/images/partners/junkers.svg" />
       <FeaturesSection title="Warum Junkers Bosch? Bewährt. Zuverlässig." features={features} />
 
       <section className="container py-16">

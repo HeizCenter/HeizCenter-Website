@@ -35,8 +35,6 @@ export const metadata: Metadata = {
   ],
 };
 
-export const dynamic = "force-dynamic";
-
 const benefits = [
   "Testsieger Stiftung Warentest 2024",
   "Unerhört leise - ab 32 dB(A) in 3m",
@@ -140,7 +138,7 @@ export default function BuderusPage() {
         benefits={benefits}
         icon={Award}
         badge="Testsieger 2024"
-        imageSrc="/images/Waermepumpe.jpeg"
+        imageSrc="/images/Waermepumpe.webp"
         logoSrc="/images/partners/buderus.svg"
       />
 

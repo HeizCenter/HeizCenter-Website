@@ -28,7 +28,7 @@ export default function UeberUnsPage() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
-            src="/images/team.png"
+            src="/images/team.webp"
             alt="HeizCenter Team"
             fill
             className="object-cover opacity-40"
@@ -96,7 +96,7 @@ export default function UeberUnsPage() {
             <div className="relative">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/images/überuns.jpeg"
+                  src="/images/überuns.webp"
                   alt="HeizCenter Unternehmen"
                   width={800}
                   height={600}

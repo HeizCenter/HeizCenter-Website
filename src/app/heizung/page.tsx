@@ -30,8 +30,6 @@ export const metadata: Metadata = {
   },
 };
 
-export const dynamic = 'force-dynamic';
-
 const benefits = [
   "Professionelle Installation aller Heizungssysteme",
   "Regelmäßige Wartung für maximale Effizienz",

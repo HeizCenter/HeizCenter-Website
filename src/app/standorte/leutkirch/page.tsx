@@ -19,8 +19,6 @@ export const metadata: Metadata = {
   },
 };
 
-export const dynamic = 'force-dynamic';
-
 const services: LocationService[] = [
   { title: "Wärmepumpe", description: "Wärmepumpen-Installation", icon: Zap, href: "/waermepumpe" },
   { title: "Heizung", description: "Heizungsservice", icon: Flame, href: "/heizung" },

@@ -132,7 +132,7 @@ export default function ContactPage() {
         {/* Background Image */}
         <div className="absolute inset-0 opacity-20">
           <Image
-            src="/images/team.png"
+            src="/images/team.webp"
             alt="HeizCenter Team"
             fill
             className="object-cover"

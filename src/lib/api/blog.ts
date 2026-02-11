@@ -527,7 +527,7 @@ function getMockBlogPosts(): BlogPost[] {
       author: 'HeizCenter Redaktion',
       date: '2026-02-10',
       readingTime: 8,
-      image: '/images/Waermepumpe.jpeg',
+      image: '/images/Waermepumpe.webp',
       tags: ['Wärmepumpe', 'Kosten', 'Förderung', 'BEG'],
       featured: true,
       faqs: [
@@ -3413,7 +3413,7 @@ function getMockBlogPosts(): BlogPost[] {
       author: 'HeizCenter Redaktion',
       date: '2026-01-20',
       readingTime: 16,
-      image: '/images/Waermepumpe.jpeg',
+      image: '/images/Waermepumpe.webp',
       tags: ['Wärmepumpe', 'Vorteile', 'Nachteile', 'Effizienz', 'JAZ', 'Förderung', 'Altbau'],
       featured: true,
       faqs: [
@@ -6318,7 +6318,7 @@ function getMockBlogPosts(): BlogPost[] {
       author: 'HeizCenter Redaktion',
       date: '2026-01-15',
       readingTime: 14,
-      image: '/images/Waermepumpe.jpeg',
+      image: '/images/Waermepumpe.webp',
       tags: ['Wärmepumpe', 'Gasheizung', 'Heizungsvergleich', 'BEG-Förderung', 'Heizkosten', 'Effizienz', 'GEG 2024'],
       featured: true,
       faqs: [
@@ -6839,7 +6839,7 @@ function getMockBlogPosts(): BlogPost[] {
       author: 'HeizCenter Redaktion',
       date: '2026-01-12',
       readingTime: 13,
-      image: '/images/Waermepumpe.jpeg',
+      image: '/images/Waermepumpe.webp',
       tags: ['Wärmepumpe', 'Pelletheizung', 'Heizungsvergleich', 'Förderung', 'Biomasse', 'Heizkosten'],
       featured: true,
       faqs: [

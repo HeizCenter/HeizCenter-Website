@@ -38,8 +38,6 @@ export const metadata: Metadata = {
   },
 };
 
-export const dynamic = 'force-dynamic';
-
 const benefits = [
   "Angenehme Raumtemperatur auch an heißen Sommertagen",
   "Moderne Split-Klimaanlagen mit höchster Energieeffizienzklasse",
@@ -150,7 +148,7 @@ export default function KlimaanlagePage() {
         benefits={benefits}
         icon={Wind}
         badge="Kühlen & Heizen"
-        imageSrc="/images/klima.jpeg"
+        imageSrc="/images/klima.webp"
         imageAlt="Split-Klimaanlage Außengerät Installation - HeizCenter Kältetechniker für Klimasysteme"
       />
 

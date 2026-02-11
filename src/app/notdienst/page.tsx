@@ -25,7 +25,7 @@ export default function NotdienstPage() {
         {/* Background Image */}
         <div className="absolute inset-0 opacity-20">
           <Image
-            src="/images/notdienst.png"
+            src="/images/notdienst.webp"
             alt="Heizungsnotdienst"
             fill
             className="object-cover"

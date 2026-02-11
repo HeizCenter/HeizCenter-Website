@@ -34,8 +34,6 @@ export const metadata: Metadata = {
   ],
 };
 
-export const dynamic = "force-dynamic";
-
 const benefits = [
   "Marktführer mit über 150 Jahren Erfahrung",
   "aroTHERM plus mit höchster Effizienz (SCOP bis 5,4)",
@@ -139,7 +137,7 @@ export default function VaillantPage() {
         benefits={benefits}
         icon={Award}
         badge="Marktführer"
-        imageSrc="/images/Waermepumpe.jpeg"
+        imageSrc="/images/Waermepumpe.webp"
         logoSrc="/images/partners/vaillant.svg"
       />
 

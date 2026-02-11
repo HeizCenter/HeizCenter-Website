@@ -35,8 +35,6 @@ export const metadata: Metadata = {
   },
 };
 
-export const dynamic = "force-dynamic";
-
 const benefits = [
   "Testsieger Stiftung Warentest 2024 & 2025",
   "Made in Germany - Höchste Qualitätsstandards",
@@ -140,7 +138,7 @@ export default function ViessmannPage() {
         benefits={benefits}
         icon={Award}
         badge="Testsieger 2024"
-        imageSrc="/images/Waermepumpe.jpeg"
+        imageSrc="/images/Waermepumpe.webp"
         logoSrc="/images/partners/viessmann.svg"
       />
 
