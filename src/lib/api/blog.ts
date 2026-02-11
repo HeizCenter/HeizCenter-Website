@@ -8203,7 +8203,7 @@ function getMockBlogPosts(): BlogPost[] {
       date: '2026-01-28',
       readingTime: 18,
       image: '/images/HeizCenter_Solar.webp',
-      tags: ['Solarthermie', 'Photovoltaik', 'Solar Vergleich', 'BAFA Förderung', 'PV-Anlage', 'Solarenergie', 'Wirtschaftlichkeit'],
+      tags: ['Solarthermie', 'Photovoltaik', 'Solar Vergleich', 'KfW Förderung', 'PV-Anlage', 'Solarenergie', 'Wirtschaftlichkeit'],
       featured: true,
       faqs: [
         { question: 'Welches System ist besser für Warmwasserbereitung geeignet?', answer: 'Für reine Warmwasserbereitung ist Solarthermie effizienter: Mit bis zu 80% optischem Wirkungsgrad (Jahresnutzungsgrad ca. 50%) wandelt sie Sonnenlicht direkt in Wärme um. Eine 4-6 m² Anlage deckt 60-70% des Jahresbedarfs ab. Photovoltaik mit Heizstab erreicht nur 18-22% Wirkungsgrad und benötigt die dreifache Dachfläche für denselben Wärmeertrag.' },
@@ -8570,7 +8570,7 @@ function getMockBlogPosts(): BlogPost[] {
 
         <h2>Häufig gestellte Fragen (FAQ)</h2>
 
-        <h3>Wie viel Förderung bekomme ich für Solarthermie 2025?</h3>
+        <h3>Wie viel Förderung bekomme ich für Solarthermie 2026?</h3>
         <p>Die Basis-Förderung beträgt <strong>30% der förderfähigen Kosten</strong>. Mit Klima-Geschwindigkeitsbonus (20% bei Öl-/Gasheizungstausch) und Einkommensbonus (30% bei Einkommen unter 40.000 €) sind bis zu <strong>70% Zuschuss</strong> möglich. Maximal werden 60.000 € Investitionskosten pro Wohneinheit gefördert.</p>
 
         <h3>Wie beantrage ich die KfW-Förderung für Solarthermie?</h3>
@@ -8593,10 +8593,10 @@ function getMockBlogPosts(): BlogPost[] {
       date: '2026-01-16',
       readingTime: 16,
       image: '/images/HeizCenter_Solar.webp',
-      tags: ['BAFA Förderung', 'Solarthermie', 'Zuschuss', 'BEG', 'Förderung Heizung', 'Geschwindigkeitsbonus', 'Antragstellung'],
+      tags: ['KfW Förderung', 'Solarthermie', 'Zuschuss', 'BEG', 'Förderung Heizung', 'Geschwindigkeitsbonus', 'Antragstellung'],
       featured: true,
       faqs: [
-        { question: 'Wie viel Förderung bekomme ich für Solarthermie 2025?', answer: 'Die Basis-Förderung beträgt 30% der förderfähigen Kosten. Mit Klima-Geschwindigkeitsbonus (20% bei Öl-/Gasheizungstausch) und Einkommensbonus (30% bei Einkommen unter 40.000 €) sind bis zu 70% Zuschuss möglich. Maximal werden 60.000 € Investitionskosten pro Wohneinheit gefördert.' },
+        { question: 'Wie viel Förderung bekomme ich für Solarthermie 2026?', answer: 'Die Basis-Förderung beträgt 30% der förderfähigen Kosten. Mit Klima-Geschwindigkeitsbonus (20% bei Öl-/Gasheizungstausch) und Einkommensbonus (30% bei Einkommen unter 40.000 €) sind bis zu 70% Zuschuss möglich. Maximal werden 60.000 € Investitionskosten pro Wohneinheit gefördert.' },
         { question: 'Wie beantrage ich die KfW-Förderung für Solarthermie?', answer: 'Seit Januar 2024 läuft die Heizungsförderung über die KfW (BEG-Programm 458), nicht mehr über BAFA. Antrag online über das KfW-Zuschussportal stellen – zwingend VOR Vertragsabschluss mit Fachbetrieb. Nach Bewilligung haben Sie 36 Monate Zeit für Umsetzung und Verwendungsnachweis.' },
         { question: 'Gibt es eine Frist für die Antragstellung?', answer: 'Der Antrag muss vor Vertragsabschluss bei der KfW eingereicht werden. Nach Bewilligung haben Sie 36 Monate Zeit für Installation und Verwendungsnachweis. Der Geschwindigkeitsbonus (20%) läuft 2028 aus – danach sinkt die Förderung schrittweise auf 30% Basis.' },
         { question: 'Kann ich mehrere Förderungen kombinieren?', answer: 'Ja, aber eingeschränkt: KfW BEG-Einzelmaßnahmen (458) lassen sich mit KfW-Effizienzhausförderung kombinieren, sofern keine Doppelförderung derselben Maßnahme erfolgt. Regionale Programme (z.B. Bayern 10.000-Häuser-Programm, L-Bank) sind zusätzlich möglich. Energieberatung wird separat mit 80% gefördert.' },
