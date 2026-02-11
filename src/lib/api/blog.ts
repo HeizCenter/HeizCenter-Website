@@ -506,7 +506,7 @@ function getMockBlogPosts(): BlogPost[] {
         <p>Sie erhalten mindestens <strong>30% Grundförderung</strong> über die KfW. Mit dem Klimageschwindigkeits-Bonus (20% beim Austausch von Öl/Gas/Kohle) kommen Sie auf 50%. Der Einkommensbonus (30% bei Einkommen unter 40.000 Euro) und der Effizienzbonus (5% für natürliche Kältemittel) ermöglichen maximal <strong>70% Förderung</strong>, gedeckelt bei 21.000 Euro Zuschuss.</p>
 
         <h3>Was kostet eine Wärmepumpe im laufenden Betrieb pro Jahr?</h3>
-        <p>Die jährlichen Betriebskosten liegen bei <strong>1.500 bis 2.100 Euro</strong>. Davon entfallen 1.200-1.800 Euro auf Stromkosten und 150-300 Euro auf Wartung. Der Schornsteinfeger entfällt komplett. Im Vergleich zu Gas- oder Ölheizungen sparen Sie etwa 30-50% der laufenden Kosten.</p>
+        <p>Die jährlichen Betriebskosten liegen bei <strong>1.500 bis 2.100 Euro</strong>. Davon entfallen 1.200-1.800 Euro auf Stromkosten und 150-300 Euro auf Wartung. Der Schornsteinfeger entfällt bei reiner Wärmepumpe komplett (bei Hybrid mit Gas weiterhin nötig). Im Vergleich zu Gas- oder Ölheizungen sparen Sie etwa 30-50% der laufenden Kosten.</p>
 
         <h3>Wann rechnet sich eine Wärmepumpe finanziell?</h3>
         <p>Mit der aktuellen Förderung amortisiert sich eine Wärmepumpe typischerweise in <strong>8-12 Jahren</strong>. Bei einer Lebensdauer von über 20 Jahren profitieren Sie danach 10+ Jahre von niedrigeren Heizkosten. Die Amortisationszeit verkürzt sich bei höherer Förderung, besserer Dämmung und steigenden Gas-/Ölpreisen.</p>
@@ -533,7 +533,7 @@ function getMockBlogPosts(): BlogPost[] {
       faqs: [
         { question: 'Was kostet eine Wärmepumpe 2026 insgesamt mit Einbau?', answer: 'Eine komplett installierte Wärmepumpe kostet zwischen 27.000 und 50.000 Euro, je nach Typ. Luft-Wasser-Wärmepumpen liegen bei 27.000-40.000 Euro, während Erdwärme- und Wasser-Wasser-Wärmepumpen aufgrund der Bohrkosten 40.000-50.000 Euro kosten. Im Preis enthalten sind Gerät, Installation, hydraulischer Abgleich und Inbetriebnahme.' },
         { question: 'Wie viel Förderung bekomme ich für eine Wärmepumpe?', answer: 'Sie erhalten mindestens 30% Grundförderung über die KfW. Mit dem Klimageschwindigkeits-Bonus (20% beim Austausch von Öl/Gas/Kohle) kommen Sie auf 50%. Der Einkommensbonus (30% bei Einkommen unter 40.000 Euro) und der Effizienzbonus (5% für natürliche Kältemittel) ermöglichen maximal 70% Förderung, gedeckelt bei 21.000 Euro Zuschuss.' },
-        { question: 'Was kostet eine Wärmepumpe im laufenden Betrieb pro Jahr?', answer: 'Die jährlichen Betriebskosten liegen bei 1.500 bis 2.100 Euro. Davon entfallen 1.200-1.800 Euro auf Stromkosten und 150-300 Euro auf Wartung. Der Schornsteinfeger entfällt komplett. Im Vergleich zu Gas- oder Ölheizungen sparen Sie etwa 30-50% der laufenden Kosten.' },
+        { question: 'Was kostet eine Wärmepumpe im laufenden Betrieb pro Jahr?', answer: 'Die jährlichen Betriebskosten liegen bei 1.500 bis 2.100 Euro. Davon entfallen 1.200-1.800 Euro auf Stromkosten und 150-300 Euro auf Wartung. Der Schornsteinfeger entfällt bei reiner Wärmepumpe komplett (bei Hybrid mit Gas weiterhin nötig). Im Vergleich zu Gas- oder Ölheizungen sparen Sie etwa 30-50% der laufenden Kosten.' },
         { question: 'Wann rechnet sich eine Wärmepumpe finanziell?', answer: 'Mit der aktuellen Förderung amortisiert sich eine Wärmepumpe typischerweise in 8-12 Jahren. Bei einer Lebensdauer von über 20 Jahren profitieren Sie danach 10+ Jahre von niedrigeren Heizkosten. Die Amortisationszeit verkürzt sich bei höherer Förderung, besserer Dämmung und steigenden Gas-/Ölpreisen.' },
         { question: 'Welche Wärmepumpe eignet sich am besten für Altbau?', answer: 'Für Altbauten eignen sich Luft-Wasser-Wärmepumpen am besten, da sie keine aufwendigen Erdarbeiten benötigen. Wichtig ist eine ausreichende Vorlauftemperatur (55-60°C) für die vorhandenen Heizkörper. Bei sehr schlecht gedämmten Häusern sollten Sie entweder die Dämmung verbessern oder größere Heizkörper einplanen. Ein hydraulischer Abgleich ist in jedem Fall Pflicht.' },
         { question: 'Wie lange dauert der Einbau einer Wärmepumpe?', answer: 'Die reine Installation dauert 2-5 Tage, je nach Komplexität. Von der ersten Beratung bis zur fertigen Anlage sollten Sie einen Planungsvorlauf von 2-4 Monaten einrechnen. Das beinhaltet Vor-Ort-Besichtigung, Angebotserstellung, Förderantrag bei der KfW, Materialbeschaffung und Terminkoordination.' },
@@ -863,7 +863,7 @@ function getMockBlogPosts(): BlogPost[] {
             <div class="comparison-header">Klimageschwindigkeits-Bonus</div>
             <div class="comparison-body">
               <p class="text-3xl font-bold text-[#0F5B78] mb-2">+20%</p>
-              <p>Für selbstnutzende Eigentümer, die Öl, Kohle, Nachtspeicher oder alte Gas-/Biomasseheizungen (>20 Jahre) ersetzen.</p>
+              <p>Für selbstnutzende Eigentümer, die funktionstüchtige Öl-, Kohle-, Nachtspeicher-, Gas-Etagenheizungen oder alte Gas-/Biomasseheizungen (>20 Jahre) ersetzen.</p>
             </div>
           </div>
           <div class="comparison-card">
@@ -1190,7 +1190,7 @@ function getMockBlogPosts(): BlogPost[] {
               <li><strong>Stromverbrauch:</strong> ca. 1.200 €<br><span class="text-sm text-slate-500">(5.000 kWh × 24 Cent/kWh)</span></li>
               <li><strong>CO₂-Abgabe:</strong> keine<br><span class="text-sm text-slate-500">(Strom ist befreit)</span></li>
               <li><strong>Wartung:</strong> 80 – 150 €</li>
-              <li><strong>Schornsteinfeger:</strong> entfällt</li>
+              <li><strong>Schornsteinfeger:</strong> entfällt (bei reiner WP)</li>
             </ul>
             <div class="mt-4 pt-4 border-t border-blue-200">
               <p class="font-bold text-lg text-green-600">Gesamt: ca. 1.280 – 1.350 €/Jahr</p>
@@ -1439,7 +1439,7 @@ function getMockBlogPosts(): BlogPost[] {
       id: 5,
       slug: 'pelletheizung-kosten-2026',
       title: 'Pelletheizung Kosten 2026: Anschaffung, Betrieb & Förderung',
-      excerpt: 'Was kostet eine Pelletheizung 2026? Kompletter Überblick über Anschaffung, Betriebskosten und bis zu 60% BEG-Förderung.',
+      excerpt: 'Was kostet eine Pelletheizung 2026? Kompletter Überblick über Anschaffung, Betriebskosten und bis zu 70% BEG-Förderung (mit Kombination).',
       content: `
         <p class="text-xl text-slate-700 leading-relaxed mb-6">Sie interessieren sich für eine Pelletheizung und fragen sich, ob sich das für Ihr Haus rechnet? Die kurze Antwort: Ja, für viele Hausbesitzer ist eine Pelletheizung 2026 eine der wirtschaftlichsten Optionen – vorausgesetzt, Sie haben den Platz dafür und wissen, worauf Sie achten müssen.</p>
 
@@ -4061,7 +4061,7 @@ function getMockBlogPosts(): BlogPost[] {
             <tr>
               <td style="padding: 10px; border: 1px solid #ddd;">Pellets</td>
               <td style="padding: 10px; border: 1px solid #ddd; text-align: right;">215 €</td>
-              <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">15–20 Jahre</td>
+              <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">20–25 Jahre</td>
             </tr>
             <tr style="background-color: #f8f9fa;">
               <td style="padding: 10px; border: 1px solid #ddd;">Fernwärme</td>
