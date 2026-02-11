@@ -252,7 +252,7 @@ export default function NotdienstPage() {
               </Link>
             </Button>
           </div>
-          <p className="text-xs text-white/60 mt-6">
+          <p className="text-xs text-white/80 mt-6">
             Kein Anspruch auf Notdiensteinsatz ohne Wartungsvertrag.
           </p>
         </div>

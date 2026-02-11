@@ -20,21 +20,21 @@ export function Footer() {
                 className="h-auto w-40"
               />
             </div>
-            <p className="text-slate-400 mb-4">
+            <p className="text-slate-300 mb-4">
               Ihr Experte für Wärmepumpen, Heizung, Sanitär & Klimaanlagen in
               Bobingen, Klosterlechfeld und Gutenzell-Hürbel.
             </p>
             <div className="flex flex-col space-y-2 text-sm">
               <a
                 href={getPhoneLink()}
-                className="flex items-center gap-2 text-slate-400 hover:text-white transition-colors"
+                className="flex items-center gap-2 text-slate-300 hover:text-white transition-colors"
               >
                 <Phone className="h-4 w-4" />
                 {CONTACT.PHONE_DISPLAY}
               </a>
               <a
                 href={getEmailLink()}
-                className="flex items-center gap-2 text-slate-400 hover:text-white transition-colors"
+                className="flex items-center gap-2 text-slate-300 hover:text-white transition-colors"
               >
                 <Mail className="h-4 w-4" />
                 {CONTACT.EMAIL}
@@ -49,7 +49,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/waermepumpe"
-                  className="text-slate-400 hover:text-white transition-colors"
+                  className="text-slate-300 hover:text-white transition-colors"
                 >
                   Wärmepumpe
                 </Link>
@@ -57,7 +57,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/heizung"
-                  className="text-slate-400 hover:text-white transition-colors"
+                  className="text-slate-300 hover:text-white transition-colors"
                 >
                   Heizung
                 </Link>
@@ -65,7 +65,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/sanitaer"
-                  className="text-slate-400 hover:text-white transition-colors"
+                  className="text-slate-300 hover:text-white transition-colors"
                 >
                   Sanitär & Badsanierung
                 </Link>
@@ -73,7 +73,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/klimaanlage"
-                  className="text-slate-400 hover:text-white transition-colors"
+                  className="text-slate-300 hover:text-white transition-colors"
                 >
                   Klimaanlage
                 </Link>
@@ -81,7 +81,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/solar"
-                  className="text-slate-400 hover:text-white transition-colors"
+                  className="text-slate-300 hover:text-white transition-colors"
                 >
                   Solarthermie
                 </Link>
@@ -89,7 +89,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/notdienst"
-                  className="text-slate-400 hover:text-white transition-colors"
+                  className="text-slate-300 hover:text-white transition-colors"
                 >
                   Notdienst
                 </Link>
@@ -103,7 +103,7 @@ export function Footer() {
             <ul className="space-y-3 text-sm">
               {LOCATIONS.map((location) => (
                 <li key={location.id}>
-                  <div className="text-slate-400 flex items-start gap-2">
+                  <div className="text-slate-300 flex items-start gap-2">
                     <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
                     <div>
                       <div className="font-medium text-white">HeizCenter GmbH</div>
@@ -129,7 +129,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/ueber-uns"
-                  className="text-slate-400 hover:text-white transition-colors"
+                  className="text-slate-300 hover:text-white transition-colors"
                 >
                   Über uns
                 </Link>
@@ -137,7 +137,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/blog"
-                  className="text-slate-400 hover:text-white transition-colors"
+                  className="text-slate-300 hover:text-white transition-colors"
                 >
                   Ratgeber & Blog
                 </Link>
@@ -145,7 +145,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/rechner"
-                  className="text-slate-400 hover:text-white transition-colors"
+                  className="text-slate-300 hover:text-white transition-colors"
                 >
                   Kostenrechner
                 </Link>
@@ -153,7 +153,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/faq"
-                  className="text-slate-400 hover:text-white transition-colors"
+                  className="text-slate-300 hover:text-white transition-colors"
                 >
                   FAQ
                 </Link>
@@ -161,7 +161,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/foerderung"
-                  className="text-slate-400 hover:text-white transition-colors"
+                  className="text-slate-300 hover:text-white transition-colors"
                 >
                   Förderung
                 </Link>
@@ -169,7 +169,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/wartungsvertrag"
-                  className="text-slate-400 hover:text-white transition-colors"
+                  className="text-slate-300 hover:text-white transition-colors"
                 >
                   Wartungsvertrag
                 </Link>
@@ -177,7 +177,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/karriere"
-                  className="text-slate-400 hover:text-white transition-colors"
+                  className="text-slate-300 hover:text-white transition-colors"
                 >
                   Karriere
                 </Link>
@@ -192,7 +192,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/impressum"
-                  className="text-slate-400 hover:text-white transition-colors"
+                  className="text-slate-300 hover:text-white transition-colors"
                 >
                   Impressum
                 </Link>
@@ -200,7 +200,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/datenschutz"
-                  className="text-slate-400 hover:text-white transition-colors"
+                  className="text-slate-300 hover:text-white transition-colors"
                 >
                   Datenschutz
                 </Link>
@@ -208,7 +208,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/agb"
-                  className="text-slate-400 hover:text-white transition-colors"
+                  className="text-slate-300 hover:text-white transition-colors"
                 >
                   AGB
                 </Link>
@@ -216,7 +216,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/cookie-hinweis"
-                  className="text-slate-400 hover:text-white transition-colors"
+                  className="text-slate-300 hover:text-white transition-colors"
                 >
                   Cookie-Hinweis
                 </Link>
@@ -227,7 +227,7 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-slate-800">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-400">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-300">
             <p>© 2026 HeizCenter GmbH. Alle Rechte vorbehalten.</p>
             <p className="text-xs">
               Entwickelt mit ❤️ von{" "}
