@@ -9,7 +9,7 @@ import { LocationCoverage } from "@/components/sections/location-coverage";
 import { FAQSection, FAQItem } from "@/components/sections/faq-section";
 import { CTASection } from "@/components/sections/cta-section";
 import { Zap, Flame, Droplet, Wind, Sun, BookOpen } from "lucide-react";
-import { LocationPageSchema } from "@/components/schema/local-business-schema";
+import { ServiceAreaSchema } from "@/components/schema/service-area-schema";
 import { locationData } from "@/lib/location-data";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
 import { getCanonicalUrl } from "@/lib/seo";
@@ -17,7 +17,7 @@ import { CONTACT } from '@/lib/config/contact';
 
 export const metadata: Metadata = {
   title:
-    "HeizCenter Augsburg - Wärmepumpe, Heizung & Sanitär",
+    "Wärmepumpe & Heizung in Augsburg - Service vom HeizCenter",
   description:
     "Ihr Fachbetrieb für Wärmepumpen, Heizungsinstallation, Badsanierung und Klimaanlagen in Augsburg. Kostenlose Beratung, schneller Service, faire Preise. Jetzt kontaktieren!",
   keywords: [
@@ -138,12 +138,17 @@ export default function AugsburgPage() {
         ]}
       />
       {/* Schema.org LocalBusiness Structured Data */}
-      <LocationPageSchema
+      <ServiceAreaSchema
         cityName={data.cityName}
-        postalCode={data.postalCode}
         region={data.region}
-        latitude={data.latitude}
-        longitude={data.longitude}
+        mainOffice={{
+          name: "Bobingen",
+          streetAddress: "Lechallee 28",
+          addressLocality: "Bobingen",
+          postalCode: "86399",
+          latitude: 48.2744,
+          longitude: 10.8369,
+        }}
         serviceCities={data.serviceCities}
       />
 
@@ -253,8 +258,8 @@ export default function AugsburgPage() {
             Schneller Service in ganz Augsburg
           </h3>
           <p className="text-slate-700 mb-4">
-            Von unserem Standort in Augsburg erreichen wir Sie schnell und
-            zuverlässig - egal ob Sie in der Innenstadt, Pfersee, Göggingen,
+            Von unserem Bobingen-Büro erreichen wir Sie schnell und zuverlässig in
+            Augsburg - egal ob Sie in der Innenstadt, Pfersee, Göggingen,
             Haunstetten oder Lechhausen wohnen. Auch in den Nachbargemeinden wie
             Königsbrunn, Neusäß, Stadtbergen oder Friedberg sind wir Ihr
             regionaler Partner.

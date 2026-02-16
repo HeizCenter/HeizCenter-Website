@@ -3,7 +3,7 @@ import { SubLocationHero } from "@/components/sections/sub-location-hero";
 import { LocationServices, LocationService } from "@/components/sections/location-services";
 import { CTASection } from "@/components/sections/cta-section";
 import { Zap, Flame, Droplet, Wind, Sun } from "lucide-react";
-import { LocationPageSchema } from "@/components/schema/local-business-schema";
+import { ServiceAreaSchema } from "@/components/schema/service-area-schema";
 import { locationData } from "@/lib/location-data";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
 import { getCanonicalUrl } from "@/lib/seo";
@@ -69,16 +69,21 @@ export default function BlausteinPage() {
         items={[
           { name: "Startseite", url: "" },
           { name: "Standorte", url: "/standorte" },
-          { name: "ulaustein", url: "/standorte/blaustein" },
+          { name: "Blaustein", url: "/standorte/blaustein" },
         ]}
       />
-      {/* Schema.org LocalBusiness Structured Data */}
-      <LocationPageSchema
+      {/* Schema.org Service Area Structured Data */}
+      <ServiceAreaSchema
         cityName={data.cityName}
-        postalCode={data.postalCode}
         region={data.region}
-        latitude={data.latitude}
-        longitude={data.longitude}
+        mainOffice={{
+          name: "Gutenzell-Hürbel",
+          streetAddress: "Schlüsselbergstraße 5",
+          addressLocality: "Gutenzell-Hürbel",
+          postalCode: "88484",
+          latitude: 48.0667,
+          longitude: 9.95,
+        }}
         serviceCities={data.serviceCities}
       />
 

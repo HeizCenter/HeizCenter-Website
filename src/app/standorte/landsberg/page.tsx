@@ -7,7 +7,7 @@ import {
 import { FAQSection, FAQItem } from "@/components/sections/faq-section";
 import { CTASection } from "@/components/sections/cta-section";
 import { Zap, Flame, Droplet, Wind, Sun } from "lucide-react";
-import { LocationPageSchema } from "@/components/schema/local-business-schema";
+import { ServiceAreaSchema } from "@/components/schema/service-area-schema";
 import { locationData } from "@/lib/location-data";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
 import { getCanonicalUrl } from "@/lib/seo";
@@ -73,7 +73,7 @@ const faqs: FAQItem[] = [
   {
     question: "Wie schnell können Sie in Landsberg am Lech vor Ort sein?",
     answer:
-      "Von unserem Standort in Augsburg erreichen wir Landsberg am Lech in etwa 30-40 Minuten. Bei Notfällen sind wir in der Regel innerhalb von 2-4 Stunden vor Ort. Für geplante Termine stimmen wir einen passenden Zeitpunkt mit Ihnen ab.",
+      "Von unserem Bobingen-Büro erreichen wir Landsberg am Lech in etwa 30-40 Minuten. Bei Notfällen sind wir in der Regel innerhalb von 2-4 Stunden vor Ort. Für geplante Termine stimmen wir einen passenden Zeitpunkt mit Ihnen ab.",
   },
   {
     question: "Welche Leistungen bieten Sie in Landsberg an?",
@@ -102,16 +102,21 @@ export default function LandsbergPage() {
         items={[
           { name: "Startseite", url: "" },
           { name: "Standorte", url: "/standorte" },
-          { name: "landsuerg", url: "/standorte/landsberg" },
+          { name: "Landsberg am Lech", url: "/standorte/landsberg" },
         ]}
       />
       {/* Schema.org LocalBusiness Structured Data */}
-      <LocationPageSchema
+      <ServiceAreaSchema
         cityName={data.cityName}
-        postalCode={data.postalCode}
         region={data.region}
-        latitude={data.latitude}
-        longitude={data.longitude}
+        mainOffice={{
+          name: "Bobingen",
+          streetAddress: "Lechallee 28",
+          addressLocality: "Bobingen",
+          postalCode: "86399",
+          latitude: 48.2744,
+          longitude: 10.8369,
+        }}
         serviceCities={data.serviceCities}
       />
 

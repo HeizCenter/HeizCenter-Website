@@ -3,7 +3,7 @@ import { SubLocationHero } from "@/components/sections/sub-location-hero";
 import { LocationServices, LocationService } from "@/components/sections/location-services";
 import { CTASection } from "@/components/sections/cta-section";
 import { Zap, Flame, Droplet, Wind, Sun } from "lucide-react";
-import { LocationPageSchema } from "@/components/schema/local-business-schema";
+import { ServiceAreaSchema } from "@/components/schema/service-area-schema";
 import { locationData } from "@/lib/location-data";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
 import { getCanonicalUrl } from "@/lib/seo";
@@ -73,12 +73,17 @@ export default function NeuUlmPage() {
         ]}
       />
       {/* Schema.org LocalBusiness Structured Data */}
-      <LocationPageSchema
+      <ServiceAreaSchema
         cityName={data.cityName}
-        postalCode={data.postalCode}
         region={data.region}
-        latitude={data.latitude}
-        longitude={data.longitude}
+        mainOffice={{
+          name: "Bobingen",
+          streetAddress: "Lechallee 28",
+          addressLocality: "Bobingen",
+          postalCode: "86399",
+          latitude: 48.2744,
+          longitude: 10.8369,
+        }}
         serviceCities={data.serviceCities}
       />
 
@@ -99,8 +104,8 @@ export default function NeuUlmPage() {
           </h2>
           <p className="text-lg text-slate-700 mb-6">
             Neu-Ulm, die junge Stadt auf der bayerischen Seite der Donau, ist
-            unser direktes Nachbargebiet. Von unserem Standort in Ulm erreichen
-            wir Sie in Neu-Ulm in wenigen Minuten - einfach über die Donaubrücke.
+            unser direktes Nachbargebiet. Von unserem Gutenzell-Hürbel Büro
+            erreichen wir Sie in Neu-Ulm schnell - einfach über die Donaubrücke.
             Wir betreuen sowohl Privathaushalte als auch Gewerbeobjekte.
           </p>
 
@@ -168,8 +173,8 @@ export default function NeuUlmPage() {
           <p className="text-slate-700 mb-6">
             Wir betreuen Sie in allen Stadtteilen von Neu-Ulm: Neu-Ulm Mitte,
             Offenhausen, Finningen, Burlafingen, Pfuhl, Ludwigsfeld, Steinheim
-            und Reutti. Die Nähe zu unserem Standort in Ulm ermöglicht kurze
-            Reaktionszeiten - bei Notfällen sind wir in 10 Minuten vor Ort.
+            und Reutti. Die Nähe zu unserem Gutenzell-Hürbel Büro ermöglicht
+            kurze Reaktionszeiten - bei Notfällen sind wir in 10 Minuten vor Ort.
           </p>
         </div>
       </section>

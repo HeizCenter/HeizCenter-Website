@@ -3,14 +3,14 @@ import { SubLocationHero } from "@/components/sections/sub-location-hero";
 import { LocationServices, LocationService } from "@/components/sections/location-services";
 import { CTASection } from "@/components/sections/cta-section";
 import { Zap, Flame, Droplet, Wind, Sun } from "lucide-react";
-import { LocationPageSchema } from "@/components/schema/local-business-schema";
+import { ServiceAreaSchema } from "@/components/schema/service-area-schema";
 import { locationData } from "@/lib/location-data";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
 import { getCanonicalUrl } from "@/lib/seo";
 import { CONTACT } from '@/lib/config/contact';
 
 export const metadata: Metadata = {
-  title: "Wärmepumpe & Heizung Stadtbergen - HeizCenter | Ihr Fachbetrieb vor Ort",
+  title: "Wärmepumpe & Heizung in Stadtbergen - Service vom HeizCenter",
   description:
     "Wärmepumpen, Heizung, Sanitär und Klimaanlagen in Stadtbergen. Schneller Service vom HeizCenter Augsburg. Kostenlose Beratung, faire Preise. Jetzt kontaktieren!",
   keywords: [
@@ -69,16 +69,21 @@ export default function StadtbergenPage() {
         items={[
           { name: "Startseite", url: "" },
           { name: "Standorte", url: "/standorte" },
-          { name: "stadtuergen", url: "/standorte/stadtbergen" },
+          { name: "Stadtbergen", url: "/standorte/stadtbergen" },
         ]}
       />
       {/* Schema.org LocalBusiness Structured Data */}
-      <LocationPageSchema
+      <ServiceAreaSchema
         cityName={data.cityName}
-        postalCode={data.postalCode}
         region={data.region}
-        latitude={data.latitude}
-        longitude={data.longitude}
+        mainOffice={{
+          name: "Bobingen",
+          streetAddress: "Lechallee 28",
+          addressLocality: "Bobingen",
+          postalCode: "86399",
+          latitude: 48.2744,
+          longitude: 10.8369,
+        }}
         serviceCities={data.serviceCities}
       />
 
@@ -101,7 +106,7 @@ export default function StadtbergenPage() {
             Stadtbergen grenzt direkt an Augsburg und ist mit über 18.000
             Einwohnern eine der größeren Gemeinden im Landkreis. Wir sind Ihr
             lokaler Fachbetrieb für Heizung, Sanitär und Klimatechnik - von
-            unserem Standort in Augsburg nur wenige Minuten entfernt.
+            unserem Bobingen-Büro nur wenige Minuten entfernt.
           </p>
 
           <h3 className="text-2xl font-bold mb-4 mt-8">

@@ -4,14 +4,14 @@ import { LocationServices, LocationService } from "@/components/sections/locatio
 import { FAQSection, FAQItem } from "@/components/sections/faq-section";
 import { CTASection } from "@/components/sections/cta-section";
 import { Zap, Flame, Droplet, Wind, Sun } from "lucide-react";
-import { LocationPageSchema } from "@/components/schema/local-business-schema";
+import { ServiceAreaSchema } from "@/components/schema/service-area-schema";
 import { locationData } from "@/lib/location-data";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
 import { getCanonicalUrl } from "@/lib/seo";
 import { CONTACT } from '@/lib/config/contact';
 
 export const metadata: Metadata = {
-  title: "HeizCenter Günzburg - Wärmepumpe, Heizung & Sanitär | Service vor Ort",
+  title: "Wärmepumpe & Heizung in Günzburg - Service vom HeizCenter",
   description: "HeizCenter Service in Günzburg. Wärmepumpen, Heizung, Sanitär und Klimaanlagen. Schneller Service aus Ulm - nur 30 km entfernt. Jetzt anfragen!",
   keywords: ["Wärmepumpe Günzburg", "Heizung Günzburg", "Sanitär Günzburg", "Klimaanlage Günzburg", "Solarthermie Günzburg"],
   alternates: {
@@ -43,16 +43,21 @@ export default function GuenzbergPage() {
         items={[
           { name: "Startseite", url: "" },
           { name: "Standorte", url: "/standorte" },
-          { name: "guenzuurg", url: "/standorte/guenzburg" },
+          { name: "Günzburg", url: "/standorte/guenzburg" },
         ]}
       />
       {/* Schema.org LocalBusiness Structured Data */}
-      <LocationPageSchema
+      <ServiceAreaSchema
         cityName={data.cityName}
-        postalCode={data.postalCode}
         region={data.region}
-        latitude={data.latitude}
-        longitude={data.longitude}
+        mainOffice={{
+          name: "Bobingen",
+          streetAddress: "Lechallee 28",
+          addressLocality: "Bobingen",
+          postalCode: "86399",
+          latitude: 48.2744,
+          longitude: 10.8369,
+        }}
         serviceCities={data.serviceCities}
       />
       <LocationHero name="Günzburg" address="Schlüsselbergstraße 5, 88484 Gutenzell-Hürbel" phone={CONTACT.PHONE_DISPLAY} email={CONTACT.EMAIL} description="HeizCenter Service für Günzburg und Umgebung. Wärmepumpen, Heizung, Sanitär und Klimaanlagen mit professioneller Beratung."

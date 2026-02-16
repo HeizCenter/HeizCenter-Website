@@ -4,7 +4,7 @@ import { LocationServices, LocationService } from "@/components/sections/locatio
 import { FAQSection, FAQItem } from "@/components/sections/faq-section";
 import { CTASection } from "@/components/sections/cta-section";
 import { Zap, Flame, Droplet, Wind, Sun } from "lucide-react";
-import { LocationPageSchema } from "@/components/schema/local-business-schema";
+import { ServiceAreaSchema } from "@/components/schema/service-area-schema";
 import { locationData } from "@/lib/location-data";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
 import { getCanonicalUrl } from "@/lib/seo";
@@ -46,13 +46,18 @@ export default function LeutkírchPage() {
           { name: "leutkirch", url: "/standorte/leutkirch" },
         ]}
       />
-      {/* Schema.org LocalBusiness Structured Data */}
-      <LocationPageSchema
+      {/* Schema.org Service Area Structured Data */}
+      <ServiceAreaSchema
         cityName={data.cityName}
-        postalCode={data.postalCode}
         region={data.region}
-        latitude={data.latitude}
-        longitude={data.longitude}
+        mainOffice={{
+          name: "Gutenzell-Hürbel",
+          streetAddress: "Schlüsselbergstraße 5",
+          addressLocality: "Gutenzell-Hürbel",
+          postalCode: "88484",
+          latitude: 48.0667,
+          longitude: 9.95,
+        }}
         serviceCities={data.serviceCities}
       />
       <LocationHero name="Leutkirch im Allgäu" address="Schlüsselbergstraße 5, 88484 Gutenzell-Hürbel" phone={CONTACT.PHONE_DISPLAY} email={CONTACT.EMAIL} description="HeizCenter Service für Leutkirch im Allgäu."

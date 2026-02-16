@@ -3,14 +3,14 @@ import { SubLocationHero } from "@/components/sections/sub-location-hero";
 import { LocationServices, LocationService } from "@/components/sections/location-services";
 import { CTASection } from "@/components/sections/cta-section";
 import { Zap, Flame, Droplet, Wind, Sun } from "lucide-react";
-import { LocationPageSchema } from "@/components/schema/local-business-schema";
+import { ServiceAreaSchema } from "@/components/schema/service-area-schema";
 import { locationData } from "@/lib/location-data";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
 import { getCanonicalUrl } from "@/lib/seo";
 import { CONTACT } from '@/lib/config/contact';
 
 export const metadata: Metadata = {
-  title: "Wärmepumpe & Heizung Ottobeuren - HeizCenter | Ihr Fachbetrieb vor Ort",
+  title: "Wärmepumpe & Heizung in Ottobeuren - Service vom HeizCenter",
   description:
     "Wärmepumpen, Heizung, Sanitär und Klimaanlagen in Ottobeuren. Schneller Service vom HeizCenter Memmingen. Kostenlose Beratung, faire Preise. Jetzt kontaktieren!",
   keywords: [
@@ -69,16 +69,21 @@ export default function OttobeurenPage() {
         items={[
           { name: "Startseite", url: "" },
           { name: "Standorte", url: "/standorte" },
-          { name: "ottoueuren", url: "/standorte/ottobeuren" },
+          { name: "Ottobeuren", url: "/standorte/ottobeuren" },
         ]}
       />
       {/* Schema.org LocalBusiness Structured Data */}
-      <LocationPageSchema
+      <ServiceAreaSchema
         cityName={data.cityName}
-        postalCode={data.postalCode}
         region={data.region}
-        latitude={data.latitude}
-        longitude={data.longitude}
+        mainOffice={{
+          name: "Bobingen",
+          streetAddress: "Lechallee 28",
+          addressLocality: "Bobingen",
+          postalCode: "86399",
+          latitude: 48.2744,
+          longitude: 10.8369,
+        }}
         serviceCities={data.serviceCities}
       />
 
@@ -199,7 +204,7 @@ export default function OttobeurenPage() {
             Service in Ottobeuren und Umgebung
           </h3>
           <p className="text-slate-700 mb-6">
-            Von unserem Standort in Memmingen erreichen wir Ottobeuren in etwa
+            Von unserem Gutenzell-Hürbel Büro erreichen wir Ottobeuren in etwa
             30 Minuten. Bei Notfällen sind wir schnell vor Ort. Wir betreuen Sie
             auch in den umliegenden Gemeinden und Ortsteilen. Unsere Techniker
             kennen die ländliche Umgebung des Allgäus und haben Erfahrung mit

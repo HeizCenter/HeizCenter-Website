@@ -3,14 +3,14 @@ import { SubLocationHero } from "@/components/sections/sub-location-hero";
 import { LocationServices, LocationService } from "@/components/sections/location-services";
 import { CTASection } from "@/components/sections/cta-section";
 import { Zap, Flame, Droplet, Wind, Sun } from "lucide-react";
-import { LocationPageSchema } from "@/components/schema/local-business-schema";
+import { ServiceAreaSchema } from "@/components/schema/service-area-schema";
 import { locationData } from "@/lib/location-data";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
 import { getCanonicalUrl } from "@/lib/seo";
 import { CONTACT } from '@/lib/config/contact';
 
 export const metadata: Metadata = {
-  title: "Wärmepumpe & Heizung Bad Wörishofen - HeizCenter | Ihr Fachbetrieb vor Ort",
+  title: "Wärmepumpe & Heizung in Bad Wörishofen - Service vom HeizCenter",
   description:
     "Wärmepumpen, Heizung, Sanitär und Klimaanlagen in Bad Wörishofen. Schneller Service vom HeizCenter Memmingen. Kostenlose Beratung, faire Preise. Jetzt kontaktieren!",
   keywords: [
@@ -69,16 +69,21 @@ export default function BadWoerishofenPage() {
         items={[
           { name: "Startseite", url: "" },
           { name: "Standorte", url: "/standorte" },
-          { name: "uad woerishofen", url: "/standorte/bad-woerishofen" },
+          { name: "Bad Wörishofen", url: "/standorte/bad-woerishofen" },
         ]}
       />
       {/* Schema.org LocalBusiness Structured Data */}
-      <LocationPageSchema
+      <ServiceAreaSchema
         cityName={data.cityName}
-        postalCode={data.postalCode}
         region={data.region}
-        latitude={data.latitude}
-        longitude={data.longitude}
+        mainOffice={{
+          name: "Bobingen",
+          streetAddress: "Lechallee 28",
+          addressLocality: "Bobingen",
+          postalCode: "86399",
+          latitude: 48.2744,
+          longitude: 10.8369,
+        }}
         serviceCities={data.serviceCities}
       />
 
@@ -165,7 +170,7 @@ export default function BadWoerishofenPage() {
             Schneller Service im Kurort
           </h3>
           <p className="text-slate-700 mb-6">
-            Von unserem Standort in Memmingen erreichen wir Bad Wörishofen in etwa
+            Von unserem Gutenzell-Hürbel Büro erreichen wir Bad Wörishofen in etwa
             20 Minuten. Bei Notfällen sind wir schnell vor Ort - besonders wichtig
             für Hotels und medizinische Einrichtungen. Unsere Techniker kennen die
             besonderen Anforderungen im Kurortbetrieb und arbeiten diskret und

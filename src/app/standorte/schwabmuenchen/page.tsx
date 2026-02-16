@@ -4,14 +4,14 @@ import { LocationServices, LocationService } from "@/components/sections/locatio
 import { FAQSection, FAQItem } from "@/components/sections/faq-section";
 import { CTASection } from "@/components/sections/cta-section";
 import { Zap, Flame, Droplet, Wind, Sun } from "lucide-react";
-import { LocationPageSchema } from "@/components/schema/local-business-schema";
+import { ServiceAreaSchema } from "@/components/schema/service-area-schema";
 import { locationData } from "@/lib/location-data";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
 import { getCanonicalUrl } from "@/lib/seo";
 import { CONTACT } from '@/lib/config/contact';
 
 export const metadata: Metadata = {
-  title: "HeizCenter Schwabmünchen - Wärmepumpe & Heizung",
+  title: "Wärmepumpe & Heizung in Schwabmünchen - Service vom HeizCenter",
   description: "HeizCenter Service Schwabmünchen. Wärmepumpen, Heizung. Service aus Augsburg - 20 km.",
   keywords: ["Wärmepumpe Schwabmünchen", "Heizung Schwabmünchen", "Solarthermie Schwabmünchen"],
   alternates: {
@@ -43,16 +43,21 @@ export default function SchwabmuenchenPage() {
         items={[
           { name: "Startseite", url: "" },
           { name: "Standorte", url: "/standorte" },
-          { name: "schwaumuenchen", url: "/standorte/schwabmuenchen" },
+          { name: "Schwabmünchen", url: "/standorte/schwabmuenchen" },
         ]}
       />
       {/* Schema.org LocalBusiness Structured Data */}
-      <LocationPageSchema
+      <ServiceAreaSchema
         cityName={data.cityName}
-        postalCode={data.postalCode}
         region={data.region}
-        latitude={data.latitude}
-        longitude={data.longitude}
+        mainOffice={{
+          name: "Bobingen",
+          streetAddress: "Lechallee 28",
+          addressLocality: "Bobingen",
+          postalCode: "86399",
+          latitude: 48.2744,
+          longitude: 10.8369,
+        }}
         serviceCities={data.serviceCities}
       />
       <LocationHero name="Schwabmünchen" address="Lechallee 28, 86399 Bobingen" phone={CONTACT.PHONE_DISPLAY} email={CONTACT.EMAIL} description="HeizCenter Service Schwabmünchen. Wärmepumpen, Heizung, Sanitär."

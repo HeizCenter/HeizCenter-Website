@@ -9,7 +9,7 @@ import { LocationCoverage } from "@/components/sections/location-coverage";
 import { FAQSection, FAQItem } from "@/components/sections/faq-section";
 import { CTASection } from "@/components/sections/cta-section";
 import { Zap, Flame, Droplet, Wind, Sun, BookOpen } from "lucide-react";
-import { LocationPageSchema } from "@/components/schema/local-business-schema";
+import { ServiceAreaSchema } from "@/components/schema/service-area-schema";
 import { locationData } from "@/lib/location-data";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
 import { getCanonicalUrl } from "@/lib/seo";
@@ -17,7 +17,7 @@ import { CONTACT } from '@/lib/config/contact';
 
 export const metadata: Metadata = {
   title:
-    "HeizCenter Ulm - Wärmepumpe, Heizung, Sanitär & Klimaanlage | Ihr Experte vor Ort",
+    "Wärmepumpe & Heizung in Ulm - Service vom HeizCenter",
   description:
     "Ihr Fachbetrieb für Wärmepumpen, Heizungsinstallation, Badsanierung und Klimaanlagen in Ulm. Kostenlose Beratung, schneller Service, faire Preise. Jetzt kontaktieren!",
   keywords: [
@@ -137,13 +137,18 @@ export default function UlmPage() {
           { name: "Ulm", url: "/standorte/ulm" },
         ]}
       />
-      {/* Schema.org LocalBusiness Structured Data */}
-      <LocationPageSchema
+      {/* Schema.org Service Area Structured Data */}
+      <ServiceAreaSchema
         cityName={data.cityName}
-        postalCode={data.postalCode}
         region={data.region}
-        latitude={data.latitude}
-        longitude={data.longitude}
+        mainOffice={{
+          name: "Gutenzell-Hürbel",
+          streetAddress: "Schlüsselbergstraße 5",
+          addressLocality: "Gutenzell-Hürbel",
+          postalCode: "88484",
+          latitude: 48.0667,
+          longitude: 9.95,
+        }}
         serviceCities={data.serviceCities}
       />
 
@@ -251,10 +256,10 @@ export default function UlmPage() {
             Ihr regionaler Partner in Ulm und Umgebung
           </h3>
           <p className="text-slate-700 mb-4">
-            Von unserem Standort in Ulm erreichen wir Sie schnell - ob Sie in
-            der Ulmer Innenstadt, Wiblingen, Böfingen, dem Eselsberg oder in
-            Neu-Ulm wohnen. Auch in Blaustein, Erbach, Laupheim oder Blaubeuren
-            sind wir Ihr kompetenter Partner.
+            Von unserem Gutenzell-Hürbel Büro erreichen wir Sie schnell in Ulm -
+            ob Sie in der Ulmer Innenstadt, Wiblingen, Böfingen, dem Eselsberg
+            oder in Neu-Ulm wohnen. Auch in Blaustein, Erbach, Laupheim oder
+            Blaubeuren sind wir Ihr kompetenter Partner.
           </p>
           <p className="text-slate-700 mb-6">
             <strong>Das macht uns in Ulm besonders:</strong> Kurze Wege,

@@ -3,14 +3,14 @@ import { SubLocationHero } from "@/components/sections/sub-location-hero";
 import { LocationServices, LocationService } from "@/components/sections/location-services";
 import { CTASection } from "@/components/sections/cta-section";
 import { Zap, Flame, Droplet, Wind, Sun } from "lucide-react";
-import { LocationPageSchema } from "@/components/schema/local-business-schema";
+import { ServiceAreaSchema } from "@/components/schema/service-area-schema";
 import { locationData } from "@/lib/location-data";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
 import { getCanonicalUrl } from "@/lib/seo";
 import { CONTACT } from '@/lib/config/contact';
 
 export const metadata: Metadata = {
-  title: "Wärmepumpe & Heizung Königsbrunn - HeizCenter | Ihr Fachbetrieb vor Ort",
+  title: "Wärmepumpe & Heizung in Königsbrunn - Service vom HeizCenter",
   description:
     "Wärmepumpen, Heizung, Sanitär und Klimaanlagen in Königsbrunn. Schneller Service vom HeizCenter Augsburg. Kostenlose Beratung, faire Preise. Jetzt kontaktieren!",
   keywords: [
@@ -69,16 +69,21 @@ export default function KoenigsbrunnPage() {
         items={[
           { name: "Startseite", url: "" },
           { name: "Standorte", url: "/standorte" },
-          { name: "koenigsurunn", url: "/standorte/koenigsbrunn" },
+          { name: "Königsbrunn", url: "/standorte/koenigsbrunn" },
         ]}
       />
       {/* Schema.org LocalBusiness Structured Data */}
-      <LocationPageSchema
+      <ServiceAreaSchema
         cityName={data.cityName}
-        postalCode={data.postalCode}
         region={data.region}
-        latitude={data.latitude}
-        longitude={data.longitude}
+        mainOffice={{
+          name: "Bobingen",
+          streetAddress: "Lechallee 28",
+          addressLocality: "Bobingen",
+          postalCode: "86399",
+          latitude: 48.2744,
+          longitude: 10.8369,
+        }}
         serviceCities={data.serviceCities}
       />
 
@@ -100,8 +105,8 @@ export default function KoenigsbrunnPage() {
           <p className="text-lg text-slate-700 mb-6">
             Königsbrunn ist mit über 28.000 Einwohnern die größte Gemeinde im
             Landkreis Augsburg - und wir sind Ihr lokaler Partner für alle Fragen
-            rund um Heizung, Sanitär und Klimatechnik. Von unserem Standort in
-            Augsburg erreichen wir Sie in Königsbrunn in nur 15 Minuten.
+            rund um Heizung, Sanitär und Klimatechnik. Von unserem Bobingen-Büro
+            erreichen wir Sie in Königsbrunn in nur 15 Minuten.
           </p>
 
           <h3 className="text-2xl font-bold mb-4 mt-8">
@@ -178,7 +183,7 @@ export default function KoenigsbrunnPage() {
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-white p-6 rounded-lg text-center">
                 <div className="text-4xl font-bold text-[#0F5B78] mb-2">15</div>
-                <p className="text-slate-700">Minuten Anfahrtszeit von Augsburg</p>
+                <p className="text-slate-700">Minuten Anfahrtszeit von Bobingen</p>
               </div>
               <div className="bg-white p-6 rounded-lg text-center">
                 <div className="text-4xl font-bold text-[#0F5B78] mb-2">20+</div>

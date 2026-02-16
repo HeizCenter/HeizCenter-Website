@@ -7,7 +7,7 @@ import {
 import { FAQSection, FAQItem } from "@/components/sections/faq-section";
 import { CTASection } from "@/components/sections/cta-section";
 import { Zap, Flame, Droplet, Wind, Sun } from "lucide-react";
-import { LocationPageSchema } from "@/components/schema/local-business-schema";
+import { ServiceAreaSchema } from "@/components/schema/service-area-schema";
 import { locationData } from "@/lib/location-data";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
 import { getCanonicalUrl } from "@/lib/seo";
@@ -15,7 +15,7 @@ import { CONTACT } from '@/lib/config/contact';
 
 export const metadata: Metadata = {
   title:
-    "HeizCenter Kaufbeuren - Wärmepumpe, Heizung & Sanitär | Service vor Ort",
+    "Wärmepumpe & Heizung in Kaufbeuren - Service vom HeizCenter",
   description:
     "HeizCenter Service in Kaufbeuren. Wärmepumpen, Heizung, Sanitär und Klimaanlagen. Schneller Service aus Memmingen - nur 25 km entfernt. Jetzt anfragen!",
   keywords: [
@@ -73,7 +73,7 @@ const faqs: FAQItem[] = [
   {
     question: "Wie schnell können Sie in Kaufbeuren vor Ort sein?",
     answer:
-      "Von unserem Standort in Memmingen erreichen wir Kaufbeuren in etwa 20-30 Minuten. Bei Notfällen sind wir in der Regel innerhalb von 2-3 Stunden vor Ort. Für geplante Termine stimmen wir einen passenden Zeitpunkt mit Ihnen ab.",
+      "Von unserem Gutenzell-Hürbel Büro erreichen wir Kaufbeuren in etwa 20-30 Minuten. Bei Notfällen sind wir in der Regel innerhalb von 2-3 Stunden vor Ort. Für geplante Termine stimmen wir einen passenden Zeitpunkt mit Ihnen ab.",
   },
   {
     question: "Welche Leistungen bieten Sie in Kaufbeuren an?",
@@ -102,16 +102,21 @@ export default function KaufbeurenPage() {
         items={[
           { name: "Startseite", url: "" },
           { name: "Standorte", url: "/standorte" },
-          { name: "kaufueuren", url: "/standorte/kaufbeuren" },
+          { name: "Kaufbeuren", url: "/standorte/kaufbeuren" },
         ]}
       />
       {/* Schema.org LocalBusiness Structured Data */}
-      <LocationPageSchema
+      <ServiceAreaSchema
         cityName={data.cityName}
-        postalCode={data.postalCode}
         region={data.region}
-        latitude={data.latitude}
-        longitude={data.longitude}
+        mainOffice={{
+          name: "Bobingen",
+          streetAddress: "Lechallee 28",
+          addressLocality: "Bobingen",
+          postalCode: "86399",
+          latitude: 48.2744,
+          longitude: 10.8369,
+        }}
         serviceCities={data.serviceCities}
       />
 

@@ -3,7 +3,7 @@ import { SubLocationHero } from "@/components/sections/sub-location-hero";
 import { LocationServices, LocationService } from "@/components/sections/location-services";
 import { CTASection } from "@/components/sections/cta-section";
 import { Zap, Flame, Droplet, Wind, Sun } from "lucide-react";
-import { LocationPageSchema } from "@/components/schema/local-business-schema";
+import { ServiceAreaSchema } from "@/components/schema/service-area-schema";
 import { locationData } from "@/lib/location-data";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
 import { getCanonicalUrl } from "@/lib/seo";
@@ -72,13 +72,18 @@ export default function LaupheimPage() {
           { name: "laupheim", url: "/standorte/laupheim" },
         ]}
       />
-      {/* Schema.org LocalBusiness Structured Data */}
-      <LocationPageSchema
+      {/* Schema.org Service Area Structured Data */}
+      <ServiceAreaSchema
         cityName={data.cityName}
-        postalCode={data.postalCode}
         region={data.region}
-        latitude={data.latitude}
-        longitude={data.longitude}
+        mainOffice={{
+          name: "Gutenzell-Hürbel",
+          streetAddress: "Schlüsselbergstraße 5",
+          addressLocality: "Gutenzell-Hürbel",
+          postalCode: "88484",
+          latitude: 48.0667,
+          longitude: 9.95,
+        }}
         serviceCities={data.serviceCities}
       />
 
@@ -167,10 +172,10 @@ export default function LaupheimPage() {
             Servicegebiet Laupheim und Umgebung
           </h3>
           <p className="text-slate-700 mb-6">
-            Von unserem Standort in Ulm erreichen wir Laupheim in etwa 30 Minuten.
-            Bei Notfällen sind wir schnell vor Ort. Wir betreuen Sie auch in den
-            umliegenden Gemeinden wie Schwendi, Burgrieden und Wain. Unsere
-            Techniker kennen die Region und können Sie kompetent beraten.
+            Von unserem Gutenzell-Hürbel Büro erreichen wir Laupheim in etwa 30
+            Minuten. Bei Notfällen sind wir schnell vor Ort. Wir betreuen Sie
+            auch in den umliegenden Gemeinden wie Schwendi, Burgrieden und Wain.
+            Unsere Techniker kennen die Region und können Sie kompetent beraten.
           </p>
         </div>
       </section>

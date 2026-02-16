@@ -9,7 +9,7 @@ import { LocationCoverage } from "@/components/sections/location-coverage";
 import { FAQSection, FAQItem } from "@/components/sections/faq-section";
 import { CTASection } from "@/components/sections/cta-section";
 import { Zap, Flame, Droplet, Wind, Sun, BookOpen } from "lucide-react";
-import { LocationPageSchema } from "@/components/schema/local-business-schema";
+import { ServiceAreaSchema } from "@/components/schema/service-area-schema";
 import { locationData } from "@/lib/location-data";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
 import { getCanonicalUrl } from "@/lib/seo";
@@ -17,7 +17,7 @@ import { CONTACT } from '@/lib/config/contact';
 
 export const metadata: Metadata = {
   title:
-    "HeizCenter Memmingen - Wärmepumpe, Heizung, Sanitär & Klimaanlage | Ihr Experte vor Ort",
+    "Wärmepumpe & Heizung in Memmingen - Service vom HeizCenter",
   description:
     "Ihr Fachbetrieb für Wärmepumpen, Heizungsinstallation, Badsanierung und Klimaanlagen in Memmingen. Kostenlose Beratung, schneller Service, faire Preise. Jetzt kontaktieren!",
   keywords: [
@@ -138,12 +138,17 @@ export default function MemmingenPage() {
         ]}
       />
       {/* Schema.org LocalBusiness Structured Data */}
-      <LocationPageSchema
+      <ServiceAreaSchema
         cityName={data.cityName}
-        postalCode={data.postalCode}
         region={data.region}
-        latitude={data.latitude}
-        longitude={data.longitude}
+        mainOffice={{
+          name: "Bobingen",
+          streetAddress: "Lechallee 28",
+          addressLocality: "Bobingen",
+          postalCode: "86399",
+          latitude: 48.2744,
+          longitude: 10.8369,
+        }}
         serviceCities={data.serviceCities}
       />
 
@@ -257,10 +262,10 @@ export default function MemmingenPage() {
             Ihr regionaler Partner im Unterallgäu
           </h3>
           <p className="text-slate-700 mb-4">
-            Von unserem Standort in Memmingen erreichen wir Sie schnell - ob in
-            der Memminger Innenstadt, Steinheim, Amendingen oder in den
-            umliegenden Gemeinden wie Bad Wörishofen, Ottobeuren, Mindelheim
-            oder Bad Grönenbach.
+            Von unserem Gutenzell-Hürbel Büro erreichen wir Sie schnell in
+            Memmingen - ob in der Memminger Innenstadt, Steinheim, Amendingen
+            oder in den umliegenden Gemeinden wie Bad Wörishofen, Ottobeuren,
+            Mindelheim oder Bad Grönenbach.
           </p>
           <p className="text-slate-700 mb-6">
             <strong>Das zeichnet uns im Allgäu aus:</strong> Kurze Anfahrtswege,
