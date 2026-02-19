@@ -27,25 +27,25 @@ export default function WartungsvertragPage() {
           {[
             {
               name: "Basis",
-              price: "149",
+              price: "179",
               features: ["1x jährliche Wartung", "Priorität im Notfall", "10% Rabatt auf Reparaturen"],
               subject: "Wartungsvertrag Basis",
-              message: "Ich interessiere mich für den Wartungsvertrag BASIS (149€/Jahr) mit 1x jährlicher Wartung, Priorität im Notfall und 10% Rabatt auf Reparaturen. Bitte kontaktieren Sie mich für ein unverbindliches Angebot."
+              message: "Ich interessiere mich für den Wartungsvertrag BASIS (179€/Jahr) mit 1x jährlicher Wartung, Priorität im Notfall und 10% Rabatt auf Reparaturen. Bitte kontaktieren Sie mich für ein unverbindliches Angebot."
             },
             {
               name: "Komfort",
               price: "249",
-              features: ["1x jährliche Wartung", "Bevorzugter Notdienst", "15% Rabatt auf Reparaturen", "Kostenlose Anfahrt"],
+              features: ["1x jährliche Wartung", "Bevorzugter Notdienst", "15% Rabatt auf Reparaturen"],
               highlight: true,
               subject: "Wartungsvertrag Komfort",
-              message: "Ich interessiere mich für den Wartungsvertrag KOMFORT (249€/Jahr) mit 1x jährlicher Wartung, bevorzugtem Notdienst, 15% Rabatt auf Reparaturen und kostenloser Anfahrt. Bitte kontaktieren Sie mich für ein unverbindliches Angebot."
+              message: "Ich interessiere mich für den Wartungsvertrag KOMFORT (249€/Jahr) mit 1x jährlicher Wartung, bevorzugtem Notdienst und 15% Rabatt auf Reparaturen. Bitte kontaktieren Sie mich für ein unverbindliches Angebot."
             },
             {
               name: "Premium",
               price: "399",
-              features: ["1x jährliche Wartung", "24/7 Notdienst Priorität", "20% Rabatt auf Reparaturen", "Kostenlose Anfahrt", "Ersatzteilgarantie"],
+              features: ["1x jährliche Wartung", "24/7 Notdienst Priorität", "20% Rabatt auf Reparaturen"],
               subject: "Wartungsvertrag Premium",
-              message: "Ich interessiere mich für den Wartungsvertrag PREMIUM (399€/Jahr) mit 1x jährlicher Wartung, 24/7 Notdienst Priorität, 20% Rabatt auf Reparaturen, kostenloser Anfahrt und Ersatzteilgarantie. Bitte kontaktieren Sie mich für ein unverbindliches Angebot."
+              message: "Ich interessiere mich für den Wartungsvertrag PREMIUM (399€/Jahr) mit 1x jährlicher Wartung, 24/7 Notdienst Priorität und 20% Rabatt auf Reparaturen. Bitte kontaktieren Sie mich für ein unverbindliches Angebot."
             },
           ].map((plan, i) => (
             <Card key={i} className={`${plan.highlight ? "border-2 border-[#0F5B78]" : ""} flex flex-col h-full`}>
@@ -92,6 +92,10 @@ export default function WartungsvertragPage() {
             </Card>
           ))}
         </div>
+
+        <p className="text-sm text-slate-500 text-center mb-12">
+          Alle Preise zzgl. Fahrtkosten und Ersatzteile.
+        </p>
 
         <div className="bg-[#0F5B78]/5 p-8 rounded-lg">
           <h3 className="text-2xl font-bold mb-4 flex items-center gap-3">
