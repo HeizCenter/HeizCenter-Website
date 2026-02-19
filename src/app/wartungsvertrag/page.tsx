@@ -35,17 +35,17 @@ export default function WartungsvertragPage() {
             {
               name: "Komfort",
               price: "249",
-              features: ["2x jährliche Wartung", "Bevorzugter Notdienst", "15% Rabatt auf Reparaturen", "Kostenlose Anfahrt"],
+              features: ["1x jährliche Wartung", "Bevorzugter Notdienst", "15% Rabatt auf Reparaturen", "Kostenlose Anfahrt"],
               highlight: true,
               subject: "Wartungsvertrag Komfort",
-              message: "Ich interessiere mich für den Wartungsvertrag KOMFORT (249€/Jahr) mit 2x jährlicher Wartung, bevorzugtem Notdienst, 15% Rabatt auf Reparaturen und kostenloser Anfahrt. Bitte kontaktieren Sie mich für ein unverbindliches Angebot."
+              message: "Ich interessiere mich für den Wartungsvertrag KOMFORT (249€/Jahr) mit 1x jährlicher Wartung, bevorzugtem Notdienst, 15% Rabatt auf Reparaturen und kostenloser Anfahrt. Bitte kontaktieren Sie mich für ein unverbindliches Angebot."
             },
             {
               name: "Premium",
               price: "399",
-              features: ["3x jährliche Wartung", "24/7 Notdienst Priorität", "20% Rabatt auf Reparaturen", "Kostenlose Anfahrt", "Ersatzteilgarantie"],
+              features: ["1x jährliche Wartung", "24/7 Notdienst Priorität", "20% Rabatt auf Reparaturen", "Kostenlose Anfahrt", "Ersatzteilgarantie"],
               subject: "Wartungsvertrag Premium",
-              message: "Ich interessiere mich für den Wartungsvertrag PREMIUM (399€/Jahr) mit 3x jährlicher Wartung, 24/7 Notdienst Priorität, 20% Rabatt auf Reparaturen, kostenloser Anfahrt und Ersatzteilgarantie. Bitte kontaktieren Sie mich für ein unverbindliches Angebot."
+              message: "Ich interessiere mich für den Wartungsvertrag PREMIUM (399€/Jahr) mit 1x jährlicher Wartung, 24/7 Notdienst Priorität, 20% Rabatt auf Reparaturen, kostenloser Anfahrt und Ersatzteilgarantie. Bitte kontaktieren Sie mich für ein unverbindliches Angebot."
             },
           ].map((plan, i) => (
             <Card key={i} className={`${plan.highlight ? "border-2 border-[#0F5B78]" : ""} flex flex-col h-full`}>
