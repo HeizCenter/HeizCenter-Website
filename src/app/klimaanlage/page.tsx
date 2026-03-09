@@ -266,9 +266,9 @@ export default function KlimaanlagePage() {
               <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Wärmepumpe: Kosten & Förderung</h3>
               <p className="text-slate-600 text-sm">Luft-Luft vs. Luft-Wasser – Unterschiede und Fördermöglichkeiten.</p>
             </Link>
-            <Link href="/blog/foerderung-heizung-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
-              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Förderung für Heizsysteme 2026</h3>
-              <p className="text-slate-600 text-sm">Welche Klimasysteme sind förderfähig? Alle Infos zur BEG-Förderung.</p>
+            <Link href="/blog/klimaanlage-nachruesten-2026-kosten-installation-tipps" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
+              <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Klimaanlage nachrüsten 2026</h3>
+              <p className="text-slate-600 text-sm">Kosten, Ablauf und Voraussetzungen für die Nachrüstung – mit Checkliste.</p>
             </Link>
           </div>
         </div>

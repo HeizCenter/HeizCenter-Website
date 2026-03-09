@@ -2967,7 +2967,7 @@ function getMockBlogPosts(): BlogPost[] {
 
         <h3>6. Heizen und Kühlen in einem Gerät</h3>
 
-        <p>Keine separate Klimaanlage mehr nötig: Moderne Wärmepumpen kühlen im Sommer genauso zuverlässig, wie sie im Winter heizen. Ein System für ganzjährigen Komfort – egal ob draußen -10°C oder +35°C sind.</p>
+        <p>Keine separate Klimaanlage mehr nötig: Moderne Wärmepumpen kühlen im Sommer genauso zuverlässig, wie sie im Winter heizen. Ein System für ganzjährigen Komfort – egal ob draußen -10°C oder +35°C sind. Falls Sie dennoch eine dedizierte Kühlung bevorzugen, lesen Sie unseren Ratgeber <a href="/blog/klimaanlage-nachruesten-2026-kosten-installation-tipps" class="text-[#0F5B78] font-medium hover:underline">Klimaanlage nachrüsten 2026</a>.</p>
 
         <ul>
           <li><strong>Im Winter:</strong> Wohlige Wärme in jedem Raum</li>
@@ -7238,7 +7238,7 @@ function getMockBlogPosts(): BlogPost[] {
 
       <h2>Jetzt beraten lassen</h2>
 
-      <p>Sie möchten eine Klimaanlage installieren? Wir beraten Sie herstellerunabhängig und erstellen ein individuelles Angebot.</p>
+      <p>Sie möchten eine Klimaanlage installieren? In unserem <a href="/blog/klimaanlage-nachruesten-2026-kosten-installation-tipps" class="text-[#0F5B78] font-medium hover:underline">Nachrüst-Ratgeber</a> erfahren Sie Schritt für Schritt, wie die Installation abläuft, welche Voraussetzungen Sie prüfen müssen und welche rechtlichen Anforderungen gelten. Wir beraten Sie herstellerunabhängig und erstellen ein individuelles Angebot.</p>
 
       <div class="cta-box">
         <p class="cta-locations">📍 <strong>Unsere Standorte:</strong> Bobingen (Augsburg) · Gutenzell-Hürbel (Ulm/Memmingen) · Klosterlechfeld</p>
@@ -10910,6 +10910,423 @@ function getMockBlogPosts(): BlogPost[] {
       image: '/images/HeizCenter_Heizung.webp',
       tags: ['Heizungswartung', 'Wartung', 'Kosten', 'Wartungsvertrag', 'Heizung', 'Instandhaltung'],
       featured: false,
+    },
+    {
+      id: 28,
+      slug: 'klimaanlage-nachruesten-2026-kosten-installation-tipps',
+      title: 'Klimaanlage nachrüsten: Kosten, Ablauf & Tipps 2026',
+      excerpt: 'Klimaanlage nachrüsten 2026: Kosten, Voraussetzungen und Ablauf im Überblick. Mit Checkliste, Praxisbeispiel und Expertentipps.',
+      content: `
+        <p class="text-xl leading-relaxed text-slate-600 mb-8">Früher war ein Sommer mit zehn Hitzetagen in Bayern eine Ausnahme. Heute sind es im Schnitt 8 bis 14 – in extremen Jahren sogar über 20. Wer in einem Dachgeschoss oder einem Altbau mit Südausrichtung wohnt, kennt das Gefühl: nachts kein Schlaf, tagsüber kaum arbeitsfähig. Eine Klimaanlage nachrüsten wird deshalb für immer mehr Haushalte zur ernsthaften Option. Dieser Ratgeber zeigt Ihnen, was das kostet, was Sie vorab prüfen müssen – und wo Sie Fallen vermeiden.</p>
+
+        <div class="flex flex-wrap gap-4 mb-8 text-sm text-slate-600">
+          <span class="flex items-center gap-1">✓ Über 300 Klimaanlagen installiert</span>
+          <span class="flex items-center gap-1">✓ Zertifizierte Kältetechniker (Kategorie I)</span>
+          <span class="flex items-center gap-1">✓ Augsburg, Ulm &amp; Umgebung</span>
+        </div>
+
+        <div class="highlight-quote">
+          Klimaanlage nachrüsten kostet 2026 zwischen 1.800 und 3.500 Euro (Single-Split, inkl. MwSt.) – eine professionelle Installation dauert meist einen Tag. Bei guter Wartung hält die Anlage 15 bis 20 Jahre.
+        </div>
+
+        <h2>Klimaanlage nachrüsten: Wann ist es sinnvoll?</h2>
+
+        <p>Laut Deutschem Wetterdienst (DWD) hat sich die Zahl der Hitzetage über 30 °C in Bayern in den letzten Jahrzehnten dramatisch verändert: Früher lagen wir bei 3 bis 5 solcher Tage pro Jahr. Inzwischen sind 8 bis 14 Hitzetage der neue Normalwert – und in Extremjahren werden sogar 15 bis 25 erreicht. Der Trend zeigt klar nach oben.</p>
+
+        <p>Das hat konkrete Folgen: Schlafmangel, Konzentrationsschwäche, gesundheitliche Risiken für Ältere und Kinder. Eine Klimaanlage ist in diesem Kontext kein Luxus mehr, sondern eine Investition in Gesundheit und Wohnqualität.</p>
+
+        <p>Besonders vom sommerlichen Hitzestau betroffen sind:</p>
+
+        <ul>
+          <li><strong>Dachgeschosswohnungen</strong> – die Dachfläche nimmt die Sonneneinstrahlung ungefiltert auf</li>
+          <li><strong>Gebäude mit Südausrichtung</strong> und großen Fensterflächen</li>
+          <li><strong>Altbauten mit schlechter Dämmung</strong> – die Wärme speichert sich in den Wänden</li>
+          <li><strong>Heimarbeitsplätze</strong> – wer zuhause arbeitet, ist den ganzen Tag der Hitze ausgesetzt</li>
+          <li><strong>Pflegebedürftige und ältere Personen</strong> im Haushalt</li>
+        </ul>
+
+        <div class="callout callout-info">
+          <span class="callout-icon">💡</span>
+          <div class="callout-title">Kühllast: Grober Richtwert für die Planung</div>
+          <div class="callout-content">
+            <p>Als groben Richtwert gilt: Dachgeschoss oder schlecht gedämmter Altbau benötigen etwa <strong>100 bis 140 Watt pro Quadratmeter</strong> Kühlleistung. Im Erdgeschoss oder gut gedämmten Neubau sind es eher <strong>60 bis 80 W/m²</strong>. Für ein 20-m²-Schlafzimmer im Dachgeschoss wären das also ungefähr 2.000 bis 2.800 Watt. Bitte verstehen Sie diese Angaben als ersten Anhaltspunkt – eine präzise Kühllastberechnung nach DIN EN 12831 führt nur ein Fachbetrieb durch und ist die Grundlage für die richtige Geräteauswahl.</p>
+          </div>
+        </div>
+
+        <p>Sie möchten wissen, welche Systeme es gibt? Einen vollständigen Überblick finden Sie auf unserer Seite <a href="/klimaanlage" class="text-[#0F5B78] font-medium hover:underline">Klimaanlagen-Systeme im Überblick</a>.</p>
+
+        <h2>Die richtige Anlage für die Nachrüstung</h2>
+
+        <p>Nicht jede Klimaanlage eignet sich gleich gut für den nachträglichen Einbau. Die Entscheidung hängt davon ab, wie viele Räume Sie kühlen möchten, welche Anschlüsse vorhanden sind – und wie viel Aufwand Sie bei der Installation akzeptieren.</p>
+
+        <h3>Single-Split: Die erste Wahl beim Nachrüsten</h3>
+
+        <p>Ein Single-Split-System besteht aus einem Innengerät (Wandgerät) und einem Außengerät. Es ist die mit Abstand häufigste Lösung beim Nachrüsten – weil es einfach zu installieren, kompakt und preiswert ist. Ein Kältemittelleitungspaar verbindet beide Einheiten durch eine Kernbohrung in der Außenwand.</p>
+
+        <p>Moderne Geräte erreichen einen SEER-Wert von 6,0 bis über 10,0 (saisonale Energieeffizienz im Kühlbetrieb). Budget-Geräte liegen zwischen 6,0 und 7,0, Mittelklasse bei 7,0 bis 8,5, Premium-Geräte ab 8,5 aufwärts. Je höher der SEER, desto geringer die Stromkosten – die Mehrinvestition amortisiert sich über die Betriebsjahre.</p>
+
+        <p>Geräuschpegel: Innengeräte erreichen im Betrieb 19 bis 32 dB(A) – leiser als ein Gespräch im normalen Ton. Außengeräte liegen bei 45 bis 58 dB(A), Premium-Modelle bei 43 bis 48 dB(A).</p>
+
+        <h3>Multi-Split: Ein Außengerät, mehrere Räume</h3>
+
+        <p>Wenn Sie zwei bis fünf Räume kühlen möchten, ist ein Multi-Split-System die elegante Lösung. Ein einziges Außengerät versorgt mehrere Inneneinheiten – das schont die Fassade und sieht ordentlicher aus. Der Preis steigt entsprechend, lohnt sich aber bei der Nachrüstung von ganzen Etagen oder Wohnungen.</p>
+
+        <h3>Klimaanlage mit Heizfunktion: Kühlen und Heizen in einem</h3>
+
+        <p>Fast alle modernen Split-Klimaanlagen sind reversibel – das heißt, sie können im Winter auch heizen. Sie funktionieren dann wie eine Luft-Luft-Wärmepumpe und arbeiten noch bis minus 15 °C zuverlässig (Kälteklima-Modelle sogar bis minus 25 bis minus 30 °C). Das macht sie zur interessanten Ergänzung, zum Beispiel für schlecht beheizte Zimmer oder als Übergangsheizung in der Nebensaison.</p>
+
+        <div class="callout callout-info">
+          <span class="callout-icon">💡</span>
+          <div class="callout-title">Tipp: Fangen Sie mit dem Schlafzimmer an</div>
+          <div class="callout-content">
+            <p>Wer unentschlossen ist, wie weit er investieren möchte: Ein Single-Split im Schlafzimmer kostet am wenigsten und bringt den unmittelbarsten Effekt. Schlafqualität und Erholung verbessern sich sofort – und Sie können in der nächsten Saison entscheiden, ob weitere Räume folgen sollen.</p>
+          </div>
+        </div>
+
+        <table class="cost-table">
+          <thead>
+            <tr>
+              <th>System</th>
+              <th>Kühlleistung</th>
+              <th>Kosten inkl. Installation</th>
+              <th>Ideal für</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Single-Split</strong></td>
+              <td>1,5 – 5 kW</td>
+              <td class="price">1.800 – 3.500 €</td>
+              <td>1 Raum, Nachrüstung</td>
+            </tr>
+            <tr>
+              <td><strong>Multi-Split (3 Räume)</strong></td>
+              <td>4 – 10 kW</td>
+              <td class="price">5.000 – 8.000 €</td>
+              <td>Wohnung, Büro</td>
+            </tr>
+            <tr>
+              <td><strong>Multi-Split (4–5 Räume)</strong></td>
+              <td>8 – 14 kW</td>
+              <td class="price">7.000 – 12.000 €</td>
+              <td>Mehrere Etagen</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>Einen ausführlichen Kostenvergleich mit allen Details finden Sie in unserem Artikel <a href="/blog/klimaanlage-kosten-2026-anschaffung-installation-betrieb" class="text-[#0F5B78] font-medium hover:underline">Klimaanlage Kosten 2026: Anschaffung, Installation und Betrieb</a>.</p>
+
+        <h2>Voraussetzungen prüfen: Checkliste vor der Nachrüstung</h2>
+
+        <p>Bevor Sie ein Angebot einholen, lohnt es sich, ein paar Punkte selbst zu klären. Das spart Zeit und verhindert böse Überraschungen.</p>
+
+        <h3>1. Elektrischer Anschluss</h3>
+
+        <p>Ein Single-Split-Gerät bis etwa 3,5 kW Kühlleistung kommt mit einem normalen 230-Volt-Anschluss (16A Absicherung) aus – ideal für die Nachrüstung, weil kein Starkstrom benötigt wird. Größere Anlagen oder Multi-Split-Systeme mit mehreren Innengeräten benötigen 400 Volt (Drehstrom). Ob Ihr Verteilerkasten das hergibt, klärt ein Elektriker oder Ihr Installateur im Rahmen der Bestandsaufnahme.</p>
+
+        <h3>2. Aufstellort Außengerät</h3>
+
+        <p>Das Außengerät braucht freien Luftdurchzug, einen stabilen Untergrund und ausreichend Abstand zu Nachbarn und Fenstern. Die TA Lärm schreibt für Wohngebiete nachts maximal 40 dB(A) am nächstgelegenen Fenster des Nachbarn vor. Premium-Geräte mit 43 bis 48 dB(A) Außengeräusch sind hier im Vorteil. Gute Positionen: Terrasse, Carport-Seite, Innenhof – schlechte Positionen: direkt unter dem Schlafzimmerfenster des Nachbarn oder an Brandschutzwänden ohne Abstandsmöglichkeit.</p>
+
+        <h3>3. Kernbohrung und Leitungsführung</h3>
+
+        <p>Die Verbindung zwischen Innen- und Außengerät erfolgt über ein Leitungspaar (Kältemittel, Kondensat, Strom), das durch eine Kernbohrung in der Außenwand geführt wird. Standarddurchmesser: 65 mm, bei Bedarf auch 80 bis 100 mm. In normalen Mauerwerksschichten dauert die Bohrung etwa 15 Minuten. Bei Stahlbetonwänden rechnen Sie mit 30 bis 45 Minuten. Die Bohrung ist in der Regel im Pauschalpreis enthalten; bei sehr massivem Beton oder Sondersituationen können 80 bis 200 Euro Mehrkosten anfallen.</p>
+
+        <h3>4. Genehmigungen und rechtliche Anforderungen</h3>
+
+        <p><strong>Eigentümer von Einfamilienhäusern</strong> in Bayern benötigen in der Regel keine Baugenehmigung. Art. 57 BayBO listet Split-Klimaanlagen als verfahrensfreie Vorhaben – vorausgesetzt, es gibt keine besondere Einschränkung durch:</p>
+
+        <ul>
+          <li><strong>Denkmalschutz</strong> – hier ist eine Abstimmung mit der Denkmalschutzbehörde zwingend</li>
+          <li><strong>Gestaltungssatzungen</strong> der Gemeinde – manche Kommunen schränken sichtbare Technik an Fassaden ein</li>
+          <li><strong>TA Lärm</strong> – die Anlage muss die Immissionsgrenzwerte einhalten</li>
+        </ul>
+
+        <p><strong>Eigentümergemeinschaften (WEG):</strong> Wer in einer Eigentumswohnung lebt, benötigt einen Mehrheitsbeschluss der Eigentümerversammlung gemäß § 20 WEG. Eine Klimaanlage gilt nicht als privilegierte Maßnahme – es gibt also kein automatisches Recht auf Einbau, anders als etwa bei einem barrierefreien Umbau. Planen Sie frühzeitig und stimmen Sie sich mit Ihrer Hausverwaltung ab.</p>
+
+        <p><strong>Mieter:</strong> Mieter brauchen die schriftliche Zustimmung des Vermieters. Gute Argumente: Wertsteigerung der Wohnung, Reversibilität (die Anlage lässt sich rückstandslos entfernen). Ohne Zustimmung darf die Anlage nicht installiert werden.</p>
+
+        <div class="callout callout-warning">
+          <span class="callout-icon">⚠️</span>
+          <div class="callout-title">Pflicht: Zertifizierter Fachbetrieb</div>
+          <div class="callout-content">
+            <p>Alle Arbeiten an Kälteanlagen – Befüllen, Prüfen, Warten – dürfen seit der F-Gase-Verordnung ausschließlich von Betrieben mit <strong>Kategorie-I-Zertifikat nach ChemKlimaschutzV</strong> durchgeführt werden. Das gilt nicht erst seit gestern; die Anforderung besteht seit 2015 und wurde seitdem weiterentwickelt. Heimwerker-Installationen sind illegal und gefährden die Anlage, die Garantie – und im Schadensfall auch den Versicherungsschutz. Fragen Sie Ihren Installateur aktiv nach der Zertifizierung.</p>
+          </div>
+        </div>
+
+        <h2>So läuft die Nachrüstung ab: Schritt für Schritt</h2>
+
+        <p>Eine professionelle Klimaanlage nachrüsten ist kein mehrtägiges Projekt. In der Regel ist alles an einem Tag erledigt – wenn die Vorbereitung stimmt.</p>
+
+        <ol>
+          <li>
+            <strong>Beratung und Bestandsaufnahme vor Ort</strong><br>
+            Der Fachbetrieb besichtigt die Räume, misst die Kühllast, prüft den Elektroanschluss, begutachtet die Wandstärke und bespricht den besten Standort für Innen- und Außengerät. Ergebnis: ein konkretes Festpreisangebot.
+          </li>
+          <li>
+            <strong>Gerät auswählen und bestellen</strong><br>
+            Auf Basis der Kühllastberechnung wird das passende Gerät ausgewählt. Auf Wunsch empfehlen wir das beste Preis-Leistungs-Verhältnis aus unserem Markenportfolio – herstellerunabhängig.
+          </li>
+          <li>
+            <strong>Genehmigungen einholen (wenn nötig)</strong><br>
+            Bei WEG-Objekten: Beschluss der Eigentümerversammlung. Bei Denkmalschutz: Abstimmung mit der Behörde. In den meisten Fällen ist dieser Schritt überflüssig.
+          </li>
+          <li>
+            <strong>Montagetag: Kernbohrung, Leitungsführung, Montage</strong><br>
+            Zuerst die Kernbohrung, dann das Verlegen der Leitungen, anschließend Montage von Innen- und Außengerät. Die Leitungen werden sauber verkleidet oder in Kabelkanälen geführt.
+          </li>
+          <li>
+            <strong>Befüllung mit Kältemittel und Dichtigkeitsprüfung</strong><br>
+            Nur durch zertifizierte Kältetechniker (Kategorie I). Das Kältemittel wird eingefüllt, die Anlage auf Dichtigkeit geprüft und in Betrieb genommen.
+          </li>
+          <li>
+            <strong>Einweisung und Dokumentation</strong><br>
+            Sie werden in die Bedienung eingewiesen, erhalten alle Unterlagen (Datenblatt, Wartungshinweise, Rechnung für die Steuerabsetzung) – und die Anlage läuft.
+          </li>
+        </ol>
+
+        <div class="callout callout-info">
+          <span class="callout-icon">💡</span>
+          <div class="callout-title">Zeitplan realistisch einschätzen</div>
+          <div class="callout-content">
+            <p>Die reine Installation eines Single-Split-Geräts dauert <strong>4 bis 8 Stunden</strong>. Von der ersten Anfrage bis zum Montagetermin sollten Sie in der Hauptsaison (Mai bis August) <strong>2 bis 6 Wochen</strong> einplanen – früh anfragen lohnt sich. Wir sind für Sie in der Region <a href="/standorte/augsburg" class="text-[#0F5B78] font-medium hover:underline">Augsburg</a> und <a href="/standorte/ulm" class="text-[#0F5B78] font-medium hover:underline">Ulm</a> unterwegs.</p>
+          </div>
+        </div>
+
+        <h2>Was kostet die Nachrüstung einer Klimaanlage?</h2>
+
+        <p>Transparenz ist uns wichtig. Deshalb schlüsseln wir die Kosten auf, damit Sie Angebote richtig vergleichen können.</p>
+
+        <table class="cost-table">
+          <thead>
+            <tr>
+              <th>Kostenposition</th>
+              <th>Kosten (inkl. MwSt.)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Single-Split komplett nachrüsten</strong> (Gerät + Installation + Inbetriebnahme)</td>
+              <td class="price">1.800 – 3.500 €</td>
+            </tr>
+            <tr>
+              <td><strong>Multi-Split 3 Räume</strong> (1 Außengerät, 3 Innengeräte)</td>
+              <td class="price">5.000 – 8.000 €</td>
+            </tr>
+            <tr>
+              <td><strong>Kernbohrung Massivbeton</strong> (Sonderaufwand, meist im Paket)</td>
+              <td class="price">80 – 200 € Aufpreis</td>
+            </tr>
+            <tr>
+              <td><strong>Jahreswartung</strong> (Basiswartung)</td>
+              <td class="price">80 – 100 €/Jahr</td>
+            </tr>
+            <tr>
+              <td><strong>Jahreswartung</strong> (Vollwartung inkl. Kältemittelprüfung)</td>
+              <td class="price">150 – 200 €/Jahr</td>
+            </tr>
+            <tr>
+              <td><strong>Jährliche Stromkosten</strong> (je nach Nutzungsintensität)</td>
+              <td class="price">50 – 300 €/Jahr</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="callout callout-warning">
+          <span class="callout-icon">⚠️</span>
+          <div class="callout-title">Keine BEG-Förderung für Klimaanlagen</div>
+          <div class="callout-content">
+            <p>Split-Klimaanlagen (Luft-Luft-Wärmepumpen im Kühlbetrieb) sind <strong>nicht über das BEG (Bundesförderung für effiziente Gebäude) förderfähig</strong>. Es gibt hier keine Ausnahmen. Informieren Sie sich stattdessen über die steuerliche Absetzbarkeit (siehe unten) und prüfen Sie regionale Förderprogramme Ihres Bundeslandes oder Ihrer Gemeinde. Einen Überblick über tatsächlich förderfähige Heizsysteme finden Sie auf unserer <a href="/foerderung" class="text-[#0F5B78] font-medium hover:underline">Förderseite</a>.</p>
+          </div>
+        </div>
+
+        <h3>Steuerliche Absetzbarkeit nach § 35a EStG</h3>
+
+        <p>Was viele nicht wissen: Die Arbeitskosten einer Klimaanlagen-Installation können Sie als Handwerkerleistung in der Einkommensteuererklärung geltend machen. Das Finanzamt erstattet <strong>20 % der reinen Arbeitskosten</strong> (Lohn, Fahrt, Maschineneinsatz) direkt als Steuerermäßigung – nicht als Abzug vom zu versteuernden Einkommen, sondern von der Steuerschuld. Maximum: 1.200 Euro Steuerermäßigung pro Jahr.</p>
+
+        <p>Wichtig: Materialkosten sind nicht absetzbar. Die Rechnung muss als Überweisung beglichen werden (keine Barzahlung). Bewahren Sie Rechnung und Kontoauszug auf.</p>
+
+        <h3>Praxisbeispiel: Familie Maier aus Bobingen</h3>
+
+        <p>Die Maiers wohnen im Dachgeschoss eines Altbaus, 65 m², Südausrichtung. Im Sommer 2025 haben sie ein Single-Split-Gerät der Mittelklasse nachrüsten lassen.</p>
+
+        <table class="cost-table">
+          <thead>
+            <tr>
+              <th>Position</th>
+              <th>Betrag</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Gerät (2,5 kW, SEER 7,8) inkl. Zubehör</td>
+              <td class="price">1.400 €</td>
+            </tr>
+            <tr>
+              <td>Montage, Kernbohrung, Inbetriebnahme</td>
+              <td class="price">950 €</td>
+            </tr>
+            <tr>
+              <td><strong>Gesamt</strong></td>
+              <td class="price"><strong>2.350 € inkl. MwSt.</strong></td>
+            </tr>
+            <tr>
+              <td>Steuererstattung § 35a EStG (20 % der Arbeitskosten)</td>
+              <td class="price">- 190 €</td>
+            </tr>
+            <tr>
+              <td><strong>Effektive Nettokosten</strong></td>
+              <td class="price"><strong>2.160 €</strong></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>Laufende Stromkosten: Die Maiers kühlen die Wohnung rund 60 Abende pro Jahr für je 3 bis 4 Stunden. Bei einem COP von rund 3,5 im Kühlbetrieb ergibt das Stromkosten von schätzungsweise <strong>80 bis 120 Euro pro Jahr</strong>.</p>
+
+        <h2>Klimaanlage oder Wärmepumpe mit Kühlfunktion?</h2>
+
+        <p>Wer ohnehin über eine neue Heizung nachdenkt, stellt sich oft die Frage: Lohnt es sich nicht, gleich eine Wärmepumpe zu kaufen, die auch kühlt? Die Antwort ist differenzierter als sie klingt.</p>
+
+        <h3>Passive Kühlung über die Wärmepumpe</h3>
+
+        <p>Luft-Wasser-Wärmepumpen bieten in der Regel <em>passive Kühlung</em>: Das Heizsystem läuft rückwärts und kühlt das Heizungswasser leicht ab. Das senkt die Raumtemperatur um <strong>3 bis 5 °C</strong> – spürbar, aber keine vollwertige Klimatisierung. Und es funktioniert nur mit Flächenheizungen (Fußbodenheizung, Wandheizung). Heizkörper können keine Kühlung übertragen.</p>
+
+        <h3>Aktive Kühlung über Fan Coils</h3>
+
+        <p>Wer eine Wärmepumpe mit echter aktiver Kühlung möchte, benötigt <em>Gebläsekonvektoren</em> (Fan Coils) als Wärmeübergabesystem – Geräte, die gekühltes Wasser aus der Wärmepumpe mit einem Ventilator durch den Raum blasen. Kosten pro Gerät: 500 bis 1.500 Euro, plus Installation. Das rechnet sich, wenn ohnehin eine Wärmepumpe geplant ist und die Wärmeübergabe neu gestaltet wird. Für die reine Nachrüstung ist es unverhältnismäßig teuer.</p>
+
+        <h3>Wann welche Lösung sinnvoller ist</h3>
+
+        <div class="pro-con-list">
+          <div class="pro-list">
+            <div class="pro-list-title">Split-Klimaanlage sinnvoll, wenn...</div>
+            <ul>
+              <li>Nur einzelne Räume gekühlt werden sollen</li>
+              <li>Bestehende Heizung funktioniert und bleibt</li>
+              <li>Budget unter 5.000 Euro liegt</li>
+              <li>Schnelle Installation gewünscht ist</li>
+              <li>Heizfunktion als Ergänzung willkommen ist</li>
+            </ul>
+          </div>
+          <div class="con-list">
+            <div class="con-list-title">Wärmepumpe mit Kühlung besser, wenn...</div>
+            <ul>
+              <li>Alte Heizung ohnehin getauscht werden muss</li>
+              <li>Fußbodenheizung vorhanden oder geplant ist</li>
+              <li>Mehrere Räume / gesamtes Haus gekühlt werden soll</li>
+              <li>BEG-Förderung genutzt werden kann (Heizung, nicht Kühlung)</li>
+              <li>Langfristige Gesamtlösung gesucht wird</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="callout callout-info">
+          <span class="callout-icon">💡</span>
+          <div class="callout-title">Wichtiger Hinweis zur passiven Kühlung</div>
+          <div class="callout-content">
+            <p>Passive Kühlung via Wärmepumpe senkt die Raumtemperatur um bis zu 3 bis 5 °C – nicht mehr. Bei einer Außentemperatur von 37 °C und einem aufgeheizten Dachgeschoss mit 34 °C Raumtemperatur bleibt es immer noch <strong>sehr warm</strong>. Wer echte Kühlung braucht, kommt an einer aktiven Lösung – also einer Split-Klimaanlage oder Fan Coils – nicht vorbei.</p>
+          </div>
+        </div>
+
+        <p>Einen ausführlichen Vergleich finden Sie in unserem Artikel zu <a href="/blog/waermepumpe-vorteile-nachteile-2026" class="text-[#0F5B78] font-medium hover:underline">Wärmepumpe Vorteile und Nachteile 2026</a> sowie auf unserer <a href="/waermepumpe" class="text-[#0F5B78] font-medium hover:underline">Wärmepumpen-Seite</a>.</p>
+
+        <h2>5 häufige Fehler bei der Nachrüstung</h2>
+
+        <ol>
+          <li>
+            <strong>Gerät zu klein gewählt</strong><br>
+            Wer auf 1.000 Euro spart und ein zu schwaches Gerät einbaut, läuft es im Hochsommer dauerhaft auf Volllast – das ist laut, ineffizient und verkürzt die Lebensdauer. Eine korrekte Kühllastberechnung ist die Basis für die richtige Gerätegröße.
+          </li>
+          <li>
+            <strong>Außengerät falsch platziert</strong><br>
+            Ein Außengerät in der prallen Mittagssonne oder direkt hinter einer Hecke ohne Luftdurchzug arbeitet deutlich ineffizienter und verursacht höhere Stromkosten. Der Installateur sollte den Standort aktiv empfehlen – nicht einfach dort montieren, wo es am einfachsten geht.
+          </li>
+          <li>
+            <strong>Keinen zertifizierten Betrieb beauftragt</strong><br>
+            Manche Haushalte versuchen, mit nicht zertifizierten Handwerkern Kosten zu sparen. Das ist illegal, gefährdet den Versicherungsschutz und kann bei Kältemittelleckage zu Bußgeldern führen. Bestehen Sie auf das Kategorie-I-Zertifikat.
+          </li>
+          <li>
+            <strong>In WEG ohne Beschluss installiert</strong><br>
+            Wer in einer Eigentümergemeinschaft ohne gültigen Mehrheitsbeschluss eine Klimaanlage installiert, muss sie auf eigene Kosten wieder entfernen. Das kostet mehr, als die Abstimmung vorher zu führen.
+          </li>
+          <li>
+            <strong>Wartung vernachlässigt</strong><br>
+            Filter verstopfen, Kondensatleitungen setzen sich ab, der Kältemitteldruck sinkt schleichend. Eine jährliche Wartung kostet 80 bis 200 Euro und verlängert die Lebensdauer der Anlage erheblich. Wer spart, zahlt früher für eine neue Anlage.
+          </li>
+        </ol>
+
+        <h2>Häufig gestellte Fragen (FAQ)</h2>
+
+        <h3>Was kostet es, eine Klimaanlage nachrüsten zu lassen?</h3>
+        <p>Ein Single-Split-System (ein Raum) kostet 2026 inkl. Gerät, Kernbohrung und Installation <strong>1.800 bis 3.500 Euro inkl. MwSt.</strong> Multi-Split-Systeme für drei Räume liegen bei 5.000 bis 8.000 Euro. Die Arbeitskosten können Sie zu 20 % (max. 1.200 Euro/Jahr) steuerlich absetzen (§ 35a EStG).</p>
+
+        <h3>Wie lange dauert die Nachrüstung einer Klimaanlage?</h3>
+        <p>Die reine Installation eines Single-Split-Geräts dauert in der Regel <strong>4 bis 8 Stunden</strong> – also einen Arbeitstag. Von der Anfrage bis zum Montagetermin sollten Sie in der Hochsaison (Mai bis August) 2 bis 6 Wochen Vorlaufzeit einplanen. Außerhalb der Saison geht es meist deutlich schneller.</p>
+
+        <h3>Brauche ich eine Genehmigung für eine Klimaanlage?</h3>
+        <p>In Bayern in der Regel nicht – Art. 57 BayBO stuft Split-Klimaanlagen als verfahrensfreies Vorhaben ein. Ausnahmen: Denkmalschutz, Gestaltungssatzungen der Gemeinde und die TA Lärm-Anforderungen müssen eingehalten werden. Ihr Installateur klärt das im Rahmen der Bestandsaufnahme.</p>
+
+        <h3>Kann ich eine Klimaanlage in einer Mietwohnung nachrüsten?</h3>
+        <p>Ja, aber nur mit <strong>schriftlicher Zustimmung des Vermieters</strong>. Ein Recht auf Einbau besteht nicht. Gute Argumente: Reversibilität der Installation, Wertsteigerung der Wohnung, gesundheitliche Notwendigkeit. In einer WEG ist zusätzlich ein Mehrheitsbeschluss nach § 20 WEG erforderlich.</p>
+
+        <h3>Welche Klimaanlage eignet sich am besten zum Nachrüsten?</h3>
+        <p>Ein <strong>Single-Split-Gerät mit Inverter-Technologie</strong> (230V, bis 3,5 kW) ist die häufigste und unkomplizierteste Wahl. Für mehrere Räume bietet sich Multi-Split an. Achten Sie auf einen SEER-Wert ab 7,0 (Mittelklasse) für ein gutes Verhältnis aus Anschaffungskosten und Betriebskosten.</p>
+
+        <h3>Wie hoch sind die Stromkosten einer Klimaanlage?</h3>
+        <p>Bei moderatem Einsatz (abendliches Kühlen im Sommer) liegen die Stromkosten bei <strong>50 bis 150 Euro pro Jahr</strong>. Bei intensiver ganztägiger Nutzung auch im Heizungsbetrieb können es bis zu 300 Euro werden. Ein hoher SEER-Wert reduziert die Betriebskosten spürbar über die Nutzungsdauer.</p>
+
+        <h3>Klimaanlage oder Wärmepumpe: Was ist besser zum Kühlen?</h3>
+        <p>Für die gezielte Kühlung einzelner Räume ist eine <strong>Split-Klimaanlage effizienter und günstiger</strong>. Eine Wärmepumpe mit passiver Kühlung reduziert die Temperatur nur um 3 bis 5 °C und braucht ein Flächenheizsystem. Aktive WP-Kühlung mit Fan Coils ist bei Neuinstallation sinnvoll, für reine Nachrüstung aber meist unverhältnismäßig teuer.</p>
+
+        <h3>Wie oft muss eine Klimaanlage gewartet werden?</h3>
+        <p><strong>Einmal jährlich</strong> ist die Empfehlung für private Anlagen. Die Basiswartung (Filter reinigen, Kondensatleitungen prüfen, Funktion testen) kostet 80 bis 100 Euro. Die Vollwartung inkl. Kältemittelprüfung liegt bei 150 bis 200 Euro. Regelmäßige Wartung verlängert die Lebensdauer auf 15 bis 20 Jahre.</p>
+
+        <h2>Fazit: Klimaanlage nachrüsten – lohnt es sich 2026?</h2>
+
+        <p>Wenn Sie in einem Dachgeschoss, einem schlecht gedämmten Altbau oder einem Haus mit Südausrichtung wohnen, ist die Antwort für die meisten Menschen klar: Ja. Die Investition von 1.800 bis 3.500 Euro für einen Raum amortisiert sich in Lebensqualität, Gesundheit und Schlafqualität sehr schnell – und das über eine Anlagenlebensdauer von 15 bis 20 Jahren.</p>
+
+        <p>Entscheidend ist, dass Sie einen zertifizierten Fachbetrieb beauftragen, das richtige Gerät für Ihre Raumsituation wählen und die Wartung nicht vergessen. Mit der steuerlichen Absetzbarkeit der Arbeitskosten nach § 35a EStG holen Sie außerdem einen Teil der Investition zurück.</p>
+
+        <p><strong>Weiterlesen:</strong></p>
+        <ul>
+          <li><a href="/blog/klimaanlage-kosten-2026-anschaffung-installation-betrieb" class="text-[#0F5B78] font-medium hover:underline">Klimaanlage Kosten 2026: Anschaffung, Installation und Betrieb</a></li>
+          <li><a href="/klimaanlage" class="text-[#0F5B78] font-medium hover:underline">Klimaanlagen-Systeme im Überblick</a></li>
+          <li><a href="/standorte/augsburg" class="text-[#0F5B78] font-medium hover:underline">HeizCenter Augsburg &amp; Bobingen</a></li>
+          <li><a href="/standorte/ulm" class="text-[#0F5B78] font-medium hover:underline">HeizCenter Ulm &amp; Umgebung</a></li>
+        </ul>
+
+        <div class="cta-box">
+          <p class="cta-locations">📍 <strong>Unsere Standorte:</strong> Bobingen (Augsburg) · Gutenzell-Hürbel (Ulm/Memmingen)</p>
+          <h4>Klimaanlage nachrüsten – lassen Sie uns rechnen</h4>
+          <p>Sie möchten wissen, was die Nachrüstung bei Ihnen konkret kostet? Wir kommen zur Bestandsaufnahme, berechnen die Kühllast und legen Ihnen ein transparentes Festpreisangebot vor – ohne Verkaufsdruck.</p>
+          <p>
+            <strong>✓</strong> Kategorie-I-zertifizierte Kältetechniker<br>
+            <strong>✓</strong> Festpreisangebot nach Vor-Ort-Besichtigung<br>
+            <strong>✓</strong> Schnelle Terminvergabe, auch außerhalb der Hochsaison
+          </p>
+          <p>
+            <strong>Telefon:</strong> <a href="tel:${CONTACT.PHONE_LINK}">${CONTACT.PHONE_DISPLAY}</a><br>
+            <strong>E-Mail:</strong> <a href="mailto:${CONTACT.EMAIL}">${CONTACT.EMAIL}</a>
+          </p>
+        </div>
+      `,
+      category: 'Klimaanlage',
+      author: 'HeizCenter Redaktion',
+      date: '2026-03-15',
+      readingTime: 13,
+      image: '/images/HeizCenter_Klimaanlage.webp',
+      tags: ['Klimaanlage nachrüsten', 'Split-Klimaanlage', 'Klimaanlage Kosten', 'Klimaanlage Installation', 'Klimaanlage Altbau nachrüsten', 'Klimaanlage Wohnung nachrüsten'],
+      featured: true,
+      faqs: [
+        { question: 'Was kostet es, eine Klimaanlage nachrüsten zu lassen?', answer: 'Ein Single-Split-System (ein Raum) kostet 2026 inkl. Gerät, Kernbohrung und Installation 1.800 bis 3.500 Euro inkl. MwSt. Multi-Split-Systeme für drei Räume liegen bei 5.000 bis 8.000 Euro. Die Arbeitskosten können Sie zu 20 % (max. 1.200 Euro/Jahr) steuerlich absetzen (§ 35a EStG).' },
+        { question: 'Wie lange dauert die Nachrüstung einer Klimaanlage?', answer: 'Die reine Installation eines Single-Split-Geräts dauert in der Regel 4 bis 8 Stunden – also einen Arbeitstag. Von der Anfrage bis zum Montagetermin sollten Sie in der Hochsaison (Mai bis August) 2 bis 6 Wochen Vorlaufzeit einplanen.' },
+        { question: 'Brauche ich eine Genehmigung für eine Klimaanlage?', answer: 'In Bayern in der Regel nicht – Art. 57 BayBO stuft Split-Klimaanlagen als verfahrensfreies Vorhaben ein. Ausnahmen: Denkmalschutz, Gestaltungssatzungen der Gemeinde und die TA Lärm-Anforderungen müssen eingehalten werden.' },
+        { question: 'Kann ich eine Klimaanlage in einer Mietwohnung nachrüsten?', answer: 'Ja, aber nur mit schriftlicher Zustimmung des Vermieters. Ein Recht auf Einbau besteht nicht. In einer WEG ist zusätzlich ein Mehrheitsbeschluss nach § 20 WEG erforderlich.' },
+        { question: 'Welche Klimaanlage eignet sich am besten zum Nachrüsten?', answer: 'Ein Single-Split-Gerät mit Inverter-Technologie (230V, bis 3,5 kW) ist die häufigste und unkomplizierteste Wahl. Für mehrere Räume bietet sich Multi-Split an. Achten Sie auf einen SEER-Wert ab 7,0 für ein gutes Verhältnis aus Anschaffungskosten und Betriebskosten.' },
+        { question: 'Wie hoch sind die Stromkosten einer Klimaanlage?', answer: 'Bei moderatem Einsatz liegen die Stromkosten bei 50 bis 150 Euro pro Jahr. Bei intensiver ganztägiger Nutzung können es bis zu 300 Euro werden. Ein hoher SEER-Wert reduziert die Betriebskosten spürbar über die Nutzungsdauer.' },
+        { question: 'Klimaanlage oder Wärmepumpe: Was ist besser zum Kühlen?', answer: 'Für die gezielte Kühlung einzelner Räume ist eine Split-Klimaanlage effizienter und günstiger. Eine Wärmepumpe mit passiver Kühlung reduziert die Temperatur nur um 3 bis 5 °C. Aktive WP-Kühlung mit Fan Coils ist bei Neuinstallation sinnvoll, für reine Nachrüstung aber meist unverhältnismäßig teuer.' },
+        { question: 'Wie oft muss eine Klimaanlage gewartet werden?', answer: 'Einmal jährlich ist die Empfehlung. Die Basiswartung kostet 80 bis 100 Euro, die Vollwartung inkl. Kältemittelprüfung 150 bis 200 Euro. Regelmäßige Wartung verlängert die Lebensdauer auf 15 bis 20 Jahre.' },
+      ],
     },
   ];
 }

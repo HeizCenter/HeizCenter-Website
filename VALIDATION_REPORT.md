@@ -163,3 +163,53 @@ Ursache: Kontaktdaten waren in 66+ Dateien hardcoded statt aus `contact.ts` impo
 ## Ergebnis
 
 **COMMIT FREIGEGEBEN**
+
+---
+
+# Content Validation Report - 2026-03-09 (Neuer Blog-Artikel: Klimaanlage nachrüsten 2026)
+
+## Geprüfte Änderungen
+
+| Datei | Was wurde geändert |
+|-------|-------------------|
+| `src/lib/api/blog.ts` | Neuer Artikel id:28 "Klimaanlage nachrüsten: Kosten, Ablauf & Tipps 2026" (~3.000 Wörter) |
+| `src/lib/api/blog.ts` | Backlink in Wärmepumpe-Vorteile-Artikel (~Zeile 2970) |
+| `src/lib/api/blog.ts` | Backlink in Klimaanlage-Kosten-Artikel (Fazit ~Zeile 7241) |
+
+## Gate 1: Fachliche Prüfung
+
+- **Prüfer:** hvac-content
+- **Status:** APPROVED (nach Korrekturen)
+- **Anmerkungen:**
+  - R32 als "Standard 2026" korrigiert → R290 für <3kW seit 2025 erwähnt
+  - ChemKlimaschutzV Kategorie-I-Zertifikat: "seit 2023" → korrekt "seit 2015"
+  - Passive Kühlung: "2-3°C" → "3-5°C" Absenkung
+  - Betriebskosten: "80-200€" → "50-300€/Jahr" Bandbreite
+  - Alle Korrekturen in finalen Artikel eingearbeitet → APPROVED
+
+## Gate 2: Kontaktdaten-Validierung
+
+- **Prüfer 1:** Orchestrator — grep-Abgleich mit contact.ts
+- **Prüfer 2:** security-reviewer — Unabhängige Gegenprüfung
+- **Gefundene Kontaktdaten:** Alle via Template-Literals (`${CONTACT.PHONE_LINK}`, `${CONTACT.PHONE_DISPLAY}`, `${CONTACT.EMAIL}`)
+- **Hardcoded Kontaktdaten:** Keine
+- **Halluzinierte Nummern gesucht:** KEINE gefunden
+- **Übereinstimmung mit contact.ts:** JA (ausschließlich CONTACT.* Referenzen)
+- **Status:** APPROVED
+
+## SEO-Optimierungen (seo-specialist Review)
+
+- Title: 75 Zeichen → 52 Zeichen (unter 60-Zeichen-Limit)
+- Tags: "Nachrüstung" → "Klimaanlage Wohnung nachrüsten", "Klimaanlage Altbau" → "Klimaanlage Altbau nachrüsten"
+- 8 FAQ-Fragen für PAA/Featured Snippet optimiert
+- Excerpt: 124 Zeichen (unter 155-Zeichen-Limit)
+- Slug: `klimaanlage-nachruesten-2026-kosten-installation-tipps`
+
+## Build-Verifizierung
+
+- `npm run lint` — ERFOLGREICH (keine Fehler)
+- `npm run build` — ERFOLGREICH (83 Seiten generiert, keine Build-Fehler)
+
+## Ergebnis
+
+**COMMIT FREIGEGEBEN**

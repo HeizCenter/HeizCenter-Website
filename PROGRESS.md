@@ -86,6 +86,13 @@
   - 9 Service-/Standort-Seiten: Blog-Links aktualisiert
   - Daten verteilt über Jan-Feb 2026 (SEO: frischer Content-Signal)
   - 79 "2025"-Referenzen bewusst beibehalten (CO₂-Zeitreihen, historische Policy-Daten)
+- [x] **Neuer Blog-Artikel: "Klimaanlage nachrüsten: Kosten, Ablauf & Tipps 2026"** ✅ 2026-03-09
+  - Slug: `klimaanlage-nachruesten-2026-kosten-installation-tipps` (id: 28)
+  - ~3.000 Wörter, 13 min Lesezeit, 8 H2-Sektionen, 8 FAQs
+  - Agents: hvac-content (Faktencheck), copywriter (Artikel), seo-specialist (SEO-Review), security-reviewer (Kontaktdaten)
+  - Quality Gates: Gate 1 APPROVED, Gate 2 APPROVED, Gate 3 VALIDATION_REPORT.md aktualisiert
+  - 2 Backlinks in bestehenden Artikeln ergänzt (Wärmepumpe Vorteile, Klimaanlage Kosten)
+  - Dateien: `src/lib/api/blog.ts`
 
 ---
 
@@ -116,7 +123,7 @@ fd4629e fix(content): correct 6 high-severity factual errors in blog articles
 - [ ] Google Search Console Analyse
 - [x] Performance-Audit (Core Web Vitals) ✅ 2026-02-11 — Score: 96→100/100 mobile
 - [ ] Odoo-Integration Status prüfen
-- [ ] Blog-Content-Plan für 2026
+- [x] Blog-Content-Plan für 2026 — Erster Artikel umgesetzt ✅ 2026-03-09
 - [x] Title-Tags auf 60 Zeichen kürzen (SEO Quick Win) ✅ 2026-02-04
 - [x] Solarthermie-Duplikat bereinigen (Content Cannibalization) ✅ 2026-02-10
 - [x] FAQPage Schema für Blog-Artikel implementieren (blog/[slug]/page.tsx) ✅ 2026-02-10
@@ -193,6 +200,92 @@ git log --oneline -10
 ---
 
 ## Session-Archiv
+
+### Session 2026-02-16 (Service Area Schema Migration - KRITISCHER SEO-Fix)
+
+#### Ziel
+Alle 23 Service-Städte von falschem `LocalBusinessSchema` auf korrektes `ServiceAreaSchema` migrieren, um "Fake Local Office" Signale für Google zu entfernen.
+
+#### Problem
+- **KRITISCH:** Alle 23 Service-Städte verwendeten `LocalBusinessSchema` mit Geschäftsadresse
+- Google interpretierte: "HeizCenter hat 23 Büros" (tatsächlich nur 2 Hauptbüros)
+- Risk: SEO Penalty für irreführende Geschäftsadressen
+- 16 Titles suggerierten lokale Büros ("HeizCenter [Stadt]")
+- 14 Content-Stellen mit misleading location text
+- 13 Breadcrumb-Typos
+
+#### Completed
+
+**Phase 1: Service Area Schema Komponente**
+- [x] `src/components/schema/service-area-schema.tsx` erstellt
+- [x] @type: "Service" statt "LocalBusiness"
+- [x] Provider-Referenz zu echten Büros (Bobingen/Gutenzell-Hürbel)
+- [x] areaServed Property macht Service-Gebiet klar
+
+**Phase 2: Schema Migration (23 Service-Städte)**
+- [x] **17 Bayern Städte** → ServiceAreaSchema mit Bobingen Office
+  - augsburg, neu-ulm, memmingen, landsberg, koenigsbrunn, gersthofen, neusaess, stadtbergen, schwabmuenchen, friedberg, aichach, kaufbeuren, mindelheim, bad-woerishofen, ottobeuren, guenzburg, krumbach
+- [x] **6 Baden-Württemberg Städte** → ServiceAreaSchema mit Gutenzell-Hürbel Office
+  - ulm, blaustein, laupheim, erbach, bad-wurzach, leutkirch
+
+**Phase 3: Content & Title Optimierungen**
+- [x] **16 Title-Tags optimiert**: "HeizCenter [Stadt]" → "Wärmepumpe & Heizung in [Stadt]"
+- [x] **14 Content-Issues behoben**: "Von unserem Standort in [Stadt]" → "Von unserem [Office]-Büro"
+- [x] **13 Breadcrumb-Typos korrigiert**: Stadt-Namen mit korrekten Umlauten
+
+**Phase 4: Quality Assurance**
+- [x] Build erfolgreich: 83 Seiten statisch generiert
+- [x] Lint erfolgreich: Keine Fehler
+- [x] Git committed & pushed
+
+#### Git-Commits (1)
+```
+8859ffe feat(seo): migrate 23 service cities to Service Area Schema
+```
+
+#### Geänderte Dateien
+| Datei | Änderung |
+|-------|----------|
+| `src/components/schema/service-area-schema.tsx` | NEU: Service Area Schema Komponente |
+| `src/app/standorte/**/*.tsx` (23 Seiten) | LocationPageSchema → ServiceAreaSchema |
+| `src/app/standorte/**/*.tsx` (16 Seiten) | Title-Tags optimiert |
+| `src/app/standorte/**/*.tsx` (14 Seiten) | Content-Issues behoben |
+| `src/app/standorte/**/*.tsx` (13 Seiten) | Breadcrumb-Typos korrigiert |
+
+**Gesamt:** 36 Dateien, 2.115 Insertions, 196 Deletions
+
+#### SEO Impact
+
+**Vorher:**
+```json
+{
+  "@type": "LocalBusiness",
+  "name": "HeizCenter GmbH - Augsburg",
+  "address": { "addressLocality": "Augsburg" }  // ❌ Fake Office
+}
+```
+
+**Nachher:**
+```json
+{
+  "@type": "Service",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "HeizCenter GmbH",
+    "address": { "addressLocality": "Bobingen" }  // ✅ Echtes Büro
+  },
+  "areaServed": { "@type": "City", "name": "Augsburg" }  // ✅ Service Area
+}
+```
+
+**Google's neue Interpretation:** "HeizCenter in Bobingen/Gutenzell betreut 23 Service-Städte" ✅
+
+#### Nächste Schritte
+- [ ] Nach 1-2 Tagen: Google Rich Results Test für 3-5 Service-Städte
+- [ ] Nach 2-4 Wochen: Search Console Schema-Fehler prüfen
+- [ ] Nach 4-6 Wochen: Impressions-Entwicklung in GSC analysieren
+
+---
 
 ### Session 2026-02-11 (OG Images + Alt-Texte + Accessibility 100/100)
 
