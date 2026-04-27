@@ -232,12 +232,12 @@ export function Footer() {
             <p className="text-xs">
               Entwickelt mit ❤️ von{" "}
               <a
-                href="https://jedai.solutions"
+                href="https://jevolution.de"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-white transition-colors"
               >
-                jedAI Solutions
+                Jevolution
               </a>
             </p>
           </div>
