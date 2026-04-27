@@ -11,9 +11,7 @@ export const contactFormSchema = z.object({
   email: z.string().email("Bitte geben Sie eine gültige E-Mail-Adresse ein"),
   phone: z
     .string()
-    .min(5, "Bitte geben Sie eine gültige Telefonnummer ein")
-    .optional()
-    .or(z.literal("")),
+    .min(5, "Bitte geben Sie eine gültige Telefonnummer ein"),
   subject: z
     .string()
     .min(3, "Betreff muss mindestens 3 Zeichen lang sein")
@@ -51,16 +49,19 @@ export const quoteFormSchema = z.object({
   city: z.string().min(2, "Ort ist erforderlich").max(100),
   serviceType: z.enum([
     "waermepumpe",
-    "heizung",
-    "sanitaer",
+    "heizung_neu",
+    "heizung_wartung",
     "klimaanlage",
+    "sanitaer",
+    "badsanierung",
     "solar",
-    "sonstiges",
+    "notdienst",
+    "other",
   ], {
     message: "Bitte wählen Sie eine Leistung aus",
   }),
   // Objektart optional - wird bei Bedarf im Gespräch geklärt
-  propertyType: z.enum(["einfamilienhaus", "mehrfamilienhaus", "wohnung", "gewerbe"]).optional(),
+  propertyType: z.enum(["efh", "mfh", "gewerbe", "wohnung"]).optional(),
   constructionYear: z
     .string()
     .regex(/^\d{4}$/, "Bitte geben Sie ein gültiges Jahr ein")
@@ -108,11 +109,11 @@ export const emergencyFormSchema = z.object({
     .regex(/^\d{5}$/, "Bitte geben Sie eine gültige PLZ ein"),
   city: z.string().min(2, "Ort ist erforderlich").max(100),
   emergencyType: z.enum([
-    "heizung-ausfall",
-    "rohrbruch",
+    "heizung_ausfall",
+    "wasserrohrbruch",
     "gasgeruch",
-    "warmwasser-ausfall",
-    "sonstiges",
+    "verstopfung",
+    "other",
   ]),
   description: z
     .string()

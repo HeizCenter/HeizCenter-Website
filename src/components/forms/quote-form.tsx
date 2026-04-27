@@ -21,6 +21,25 @@ import { CheckCircle2, AlertCircle, Loader2, Calculator, ArrowRight, Pencil } fr
 import Link from "next/link";
 import { CONTACT } from "@/lib/config/contact";
 
+// Map legacy URL-param values (used by older internal links/calculator) to current
+// Zod-enum tokens. Anything already a current token passes through.
+const LEGACY_SERVICE_TYPE: Record<string, string> = {
+  heizung: "heizung_neu",
+  sonstiges: "other",
+};
+const LEGACY_PROPERTY_TYPE: Record<string, string> = {
+  einfamilienhaus: "efh",
+  mehrfamilienhaus: "mfh",
+};
+function normalizeServiceType(v: string | null | undefined) {
+  if (!v) return undefined;
+  return LEGACY_SERVICE_TYPE[v] ?? v;
+}
+function normalizePropertyType(v: string | null | undefined) {
+  if (!v) return undefined;
+  return LEGACY_PROPERTY_TYPE[v] ?? v;
+}
+
 // Helper functions to map technical values to German labels
 const PUMP_TYPE_LABELS: Record<string, string> = {
   "air-water": "Luft-Wasser",
@@ -73,9 +92,14 @@ export function QuoteForm(props: QuoteFormProps) {
     message: string;
   }>({ type: null, message: "" });
 
-  // Extract URL parameters before form initialization
-  const service = searchParams.get("service") || defaultService;
-  const propertyType = searchParams.get("propertyType");
+  // Extract URL parameters before form initialization. Normalize legacy values
+  // (e.g. service=heizung → heizung_neu, propertyType=einfamilienhaus → efh)
+  // so older internal links keep working without touching every link site-wide.
+  // Keep the raw URL-param too so the "Werte anpassen" round-trip back to
+  // /rechner preserves the calculator's expected vocabulary.
+  const rawPropertyType = searchParams.get("propertyType");
+  const service = normalizeServiceType(searchParams.get("service") || defaultService);
+  const propertyType = normalizePropertyType(rawPropertyType);
   const houseSize = searchParams.get("houseSize");
   const pumpType = searchParams.get("pumpType");
   const heatingType = searchParams.get("heatingType");
@@ -159,9 +183,12 @@ export function QuoteForm(props: QuoteFormProps) {
       const result = await response.json();
 
       if (result.success) {
+        const baseMsg =
+          result.message ||
+          "Vielen Dank für Ihre Anfrage! Wir melden uns innerhalb von 24 Stunden bei Ihnen.";
         setSubmitStatus({
           type: "success",
-          message: result.message,
+          message: result.leadId ? `${baseMsg} (Anfrage-Nr. ${result.leadId})` : baseMsg,
         });
         reset();
       } else {
@@ -333,11 +360,14 @@ export function QuoteForm(props: QuoteFormProps) {
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="waermepumpe">Wärmepumpe</SelectItem>
-                <SelectItem value="heizung">Heizung</SelectItem>
-                <SelectItem value="sanitaer">Sanitär & Bad</SelectItem>
+                <SelectItem value="heizung_neu">Heizung (Neuinstallation)</SelectItem>
+                <SelectItem value="heizung_wartung">Heizung (Wartung/Reparatur)</SelectItem>
+                <SelectItem value="sanitaer">Sanitär</SelectItem>
+                <SelectItem value="badsanierung">Badsanierung</SelectItem>
                 <SelectItem value="klimaanlage">Klimaanlage</SelectItem>
                 <SelectItem value="solar">Solarthermie</SelectItem>
-                <SelectItem value="sonstiges">Sonstiges</SelectItem>
+                <SelectItem value="notdienst">Notdienst</SelectItem>
+                <SelectItem value="other">Sonstiges</SelectItem>
               </SelectContent>
             </Select>
           )}
@@ -385,8 +415,8 @@ export function QuoteForm(props: QuoteFormProps) {
                 <SelectValue placeholder="Bitte wählen..." />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="einfamilienhaus">Einfamilienhaus</SelectItem>
-                <SelectItem value="mehrfamilienhaus">Mehrfamilienhaus</SelectItem>
+                <SelectItem value="efh">Einfamilienhaus</SelectItem>
+                <SelectItem value="mfh">Mehrfamilienhaus</SelectItem>
                 <SelectItem value="wohnung">Wohnung</SelectItem>
                 <SelectItem value="gewerbe">Gewerbe</SelectItem>
               </SelectContent>
@@ -441,7 +471,7 @@ export function QuoteForm(props: QuoteFormProps) {
                 </h4>
               </div>
               <Link
-                href={`/rechner?houseSize=${houseSize || ""}&pumpType=${pumpType || ""}&heatingType=${heatingType || ""}&insulation=${insulation || ""}&buildingYear=${buildingYear || ""}&heatingSurface=${heatingSurface || ""}&residents=${residents || ""}&propertyType=${propertyType || ""}`}
+                href={`/rechner?houseSize=${houseSize || ""}&pumpType=${pumpType || ""}&heatingType=${heatingType || ""}&insulation=${insulation || ""}&buildingYear=${buildingYear || ""}&heatingSurface=${heatingSurface || ""}&residents=${residents || ""}&propertyType=${rawPropertyType || ""}`}
                 className="inline-flex items-center gap-1.5 text-sm font-medium text-[#0F5B78] hover:text-[#0F5B78]/80 transition-colors"
               >
                 <Pencil className="h-3.5 w-3.5" />

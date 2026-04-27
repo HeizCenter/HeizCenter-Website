@@ -67,9 +67,12 @@ export function EmergencyForm() {
       const result = await response.json();
 
       if (result.success) {
+        const baseMsg =
+          result.message ||
+          "Ihre Notfallanfrage wurde erfasst! Wir rufen Sie umgehend zurück.";
         setSubmitStatus({
           type: "success",
-          message: result.message,
+          message: result.leadId ? `${baseMsg} (Anfrage-Nr. ${result.leadId})` : baseMsg,
         });
         reset();
       } else {
@@ -254,13 +257,13 @@ export function EmergencyForm() {
               <SelectValue placeholder="Bitte wählen..." />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="heizung-ausfall">Heizungsausfall</SelectItem>
-              <SelectItem value="rohrbruch">Rohrbruch / Wasserschaden</SelectItem>
-              <SelectItem value="gasgeruch">Gasgeruch</SelectItem>
-              <SelectItem value="warmwasser-ausfall">
-                Warmwasserausfall
+              <SelectItem value="heizung_ausfall">Heizungsausfall</SelectItem>
+              <SelectItem value="wasserrohrbruch">
+                Rohrbruch / Wasserschaden
               </SelectItem>
-              <SelectItem value="sonstiges">Sonstiger Notfall</SelectItem>
+              <SelectItem value="gasgeruch">Gasgeruch</SelectItem>
+              <SelectItem value="verstopfung">Verstopfung / Abfluss</SelectItem>
+              <SelectItem value="other">Warmwasserausfall / Sonstiges</SelectItem>
             </SelectContent>
           </Select>
           {errors.emergencyType && (

@@ -1,65 +1,56 @@
 /**
- * n8n Webhook Service
+ * n8n Webhook Service — W-01 v2
  *
- * Handles form submissions to n8n lead management workflows.
- * Replaces direct Odoo integration with webhook-based approach.
+ * Posts website-form leads to n8n workflow `k8wSNCM2LV89ns34`.
+ * Contract:
+ *   - Backend always returns HTTP 200, even on validation/server errors.
+ *   - Frontend MUST parse the `success` field from the response body.
+ *   - Token values (service_type, property_type, urgency, emergency_type)
+ *     must match the exact strings the workflow expects (snake_case lowercase).
  */
 
-// Webhook endpoints configuration
-const N8N_BASE_URL = process.env.N8N_WEBHOOK_BASE_URL || 'https://heizcenter.app.n8n.cloud';
+import { LEAD_WEBHOOKS, WEBHOOK_BASE_URL } from "@/lib/config/webhooks";
 
-const WEBHOOK_ENDPOINTS = {
-  contact: `${N8N_BASE_URL}/webhook/leads/contact`,
-  quote: `${N8N_BASE_URL}/webhook/leads/quote`,
-  emergency: `${N8N_BASE_URL}/webhook/leads/emergency`,
-} as const;
-
-// Response types from n8n webhooks
+// Response shape from W-01 v2 (HTTP-200-always pattern)
 interface N8nWebhookResponse {
   success: boolean;
+  lead_id?: number | string;
   message?: string;
-  lead_id?: string;
   error?: string;
 }
 
 /**
- * Generic webhook submission helper
+ * Post a payload to a lead webhook and return the parsed response.
+ * Errors at the network layer surface as { success: false, error }.
  */
 async function submitToWebhook(
   endpoint: string,
   data: Record<string, unknown>
 ): Promise<N8nWebhookResponse> {
   try {
-    console.log(`📤 Sending to n8n webhook: ${endpoint}`);
-
     const response = await fetch(endpoint, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        ...data,
-        source: 'website',
-      }),
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
     });
 
-    const result = await response.json();
-
-    if (!response.ok) {
-      console.error('❌ n8n webhook error:', result);
+    let result: N8nWebhookResponse;
+    try {
+      result = (await response.json()) as N8nWebhookResponse;
+    } catch {
       return {
         success: false,
-        error: result.error || `HTTP ${response.status}: ${response.statusText}`,
+        error: `n8n returned non-JSON response (HTTP ${response.status})`,
       };
     }
 
-    console.log('✅ n8n webhook response:', result);
-    return result as N8nWebhookResponse;
+    // Trust the body's `success` flag — backend uses HTTP 200 always.
+    return result;
   } catch (error) {
-    console.error('❌ n8n webhook request failed:', error);
+    console.error("n8n webhook request failed:", error);
     return {
       success: false,
-      error: error instanceof Error ? error.message : 'Network error',
+      error: error instanceof Error ? error.message : "Network error",
     };
   }
 }
@@ -71,38 +62,38 @@ async function submitToWebhook(
 interface ContactFormPayload {
   name: string;
   email: string;
-  message: string;
-  phone?: string;
+  phone: string;
+  address?: string;
+  postal_code?: string;
+  city?: string;
+  message?: string;
+  service_type?: string;
 }
 
-/**
- * Submit contact form to n8n webhook
- */
 export async function submitContactToN8n(data: {
   name: string;
   email: string;
-  phone?: string;
-  subject: string;
+  phone: string;
+  subject?: string;
   message: string;
-}): Promise<{ success: boolean; leadId?: string; error?: string }> {
-  // Combine subject and message for n8n payload
-  const fullMessage = data.subject
-    ? `${data.subject}\n\n${data.message}`
-    : data.message;
+}): Promise<{ success: boolean; leadId?: number | string; error?: string; message?: string }> {
+  // Combine subject + message — schema only carries `message`.
+  const fullMessage = data.subject ? `${data.subject}\n\n${data.message}` : data.message;
 
   const payload: ContactFormPayload = {
     name: data.name,
     email: data.email,
+    phone: data.phone,
     message: fullMessage,
-    ...(data.phone && { phone: data.phone }),
   };
 
-  const result = await submitToWebhook(WEBHOOK_ENDPOINTS.contact, payload as unknown as Record<string, unknown>);
+  const result = await submitToWebhook(LEAD_WEBHOOKS.contact, payload as unknown as Record<string, unknown>);
 
   return {
     success: result.success,
     leadId: result.lead_id,
     error: result.error,
+    message: result.message,
   };
 }
 
@@ -110,51 +101,36 @@ export async function submitContactToN8n(data: {
 // Quote Form
 // =============================================================================
 
-// Mapping from website service types to n8n expected values
-const SERVICE_TYPE_MAP: Record<string, string> = {
-  waermepumpe: 'waermepumpe',
-  heizung: 'heizung_neu',
-  sanitaer: 'sanitaer',
-  klimaanlage: 'klimaanlage',
-  solar: 'solar',
-  sonstiges: 'other',
+// Calculator-only enums → human-readable, appended to `message` field
+// (W-01 v2 schema does not have dedicated fields for these).
+const PUMP_TYPE_LABELS: Record<string, string> = {
+  "air-water": "Luft-Wasser-Wärmepumpe",
+  "ground-water": "Sole-Wasser-Wärmepumpe (Erdwärme)",
+  "water-water": "Wasser-Wasser-Wärmepumpe",
+};
+const HEATING_SURFACE_LABELS: Record<string, string> = {
+  floor: "Fußbodenheizung",
+  radiators: "Heizkörper (Radiatoren)",
+  mixed: "Gemischt",
+};
+const INSULATION_LABELS: Record<string, string> = {
+  poor: "Schlecht (Altbau unsaniert)",
+  average: "Durchschnittlich",
+  good: "Gut (Neubau/saniert)",
+};
+const CURRENT_HEATING_LABELS: Record<string, string> = {
+  gas: "Gasheizung",
+  oil: "Ölheizung",
+  electric: "Elektroheizung",
+  coal: "Kohleheizung",
 };
 
-// Mapping from website property types to n8n expected values
-const PROPERTY_TYPE_MAP: Record<string, string> = {
-  einfamilienhaus: 'efh',
-  mehrfamilienhaus: 'mfh',
-  wohnung: 'wohnung',
-  gewerbe: 'gewerbe',
-};
-
-// Mapping from website pump types to readable values
-const PUMP_TYPE_MAP: Record<string, string> = {
-  'air-water': 'Luft-Wasser-Wärmepumpe',
-  'ground-water': 'Sole-Wasser-Wärmepumpe (Erdwärme)',
-  'water-water': 'Wasser-Wasser-Wärmepumpe',
-};
-
-// Mapping from website heating surface types to readable values
-const HEATING_SURFACE_MAP: Record<string, string> = {
-  'floor': 'Fußbodenheizung',
-  'radiators': 'Heizkörper (Radiatoren)',
-  'mixed': 'Gemischt',
-};
-
-// Mapping from website insulation types to readable values
-const INSULATION_MAP: Record<string, string> = {
-  'poor': 'Schlecht (Altbau unsaniert)',
-  'average': 'Durchschnittlich',
-  'good': 'Gut (Neubau/saniert)',
-};
-
-// Mapping from website current heating types to readable values
-const CURRENT_HEATING_MAP: Record<string, string> = {
-  'gas': 'Gasheizung',
-  'oil': 'Ölheizung',
-  'electric': 'Elektroheizung',
-  'coal': 'Kohleheizung',
+// Map preferred contact time (UI) → urgency (n8n token)
+const CONTACT_TIME_TO_URGENCY: Record<string, string> = {
+  morning: "diese_woche",
+  afternoon: "diese_woche",
+  evening: "diese_woche",
+  anytime: "flexibel",
 };
 
 interface QuoteFormPayload {
@@ -162,33 +138,24 @@ interface QuoteFormPayload {
   email: string;
   phone: string;
   service_type: string;
-  street?: string;
+  address?: string;
   postal_code?: string;
   city?: string;
   property_type?: string;
   heating_area?: string;
   current_heating?: string;
   building_year?: string;
-  urgency?: string;
+  urgency: string;
   message?: string;
-  // Calculator-specific fields for Wärmepumpe quotes
-  pump_type?: string;
-  heating_surface?: string;
-  insulation?: string;
-  residents?: string;
-  estimated_cost?: string;
 }
 
-/**
- * Submit quote request to n8n webhook
- */
 export async function submitQuoteToN8n(data: {
   name: string;
   email: string;
   phone: string;
   address?: string;
-  postalCode?: string;
-  city?: string;
+  postalCode: string;
+  city: string;
   serviceType: string;
   propertyType?: string;
   constructionYear?: string;
@@ -196,74 +163,67 @@ export async function submitQuoteToN8n(data: {
   currentHeating?: string;
   message?: string;
   preferredContactTime?: string;
-  // Calculator-specific fields
   pumpType?: string;
   heatingSurface?: string;
   insulation?: string;
+  buildingYear?: string;
   residents?: string;
   estimatedCost?: string;
-}): Promise<{ success: boolean; leadId?: string; error?: string }> {
-  // Map service type to n8n expected value
-  const mappedServiceType = SERVICE_TYPE_MAP[data.serviceType] || 'other';
+}): Promise<{ success: boolean; leadId?: number | string; error?: string; message?: string }> {
+  // Calculator-only fields are not in W-01 v2 schema → fold into message.
+  const calcParts: string[] = [];
+  if (data.pumpType) calcParts.push(`Wärmepumpentyp: ${PUMP_TYPE_LABELS[data.pumpType] || data.pumpType}`);
+  if (data.heatingSurface)
+    calcParts.push(`Heizfläche: ${HEATING_SURFACE_LABELS[data.heatingSurface] || data.heatingSurface}`);
+  if (data.insulation) calcParts.push(`Dämmung: ${INSULATION_LABELS[data.insulation] || data.insulation}`);
+  if (data.residents) calcParts.push(`Personen im Haushalt: ${data.residents}`);
+  if (data.estimatedCost)
+    calcParts.push(`Geschätzte Kosten: ${parseInt(data.estimatedCost, 10).toLocaleString("de-DE")} €`);
+  // Calculator buildingYear is an enum bucket like "before-1980" → not 4-digit, append as text instead.
+  if (!data.constructionYear && data.buildingYear) {
+    calcParts.push(`Baujahr (geschätzt): ${data.buildingYear}`);
+  }
 
-  // Map property type to n8n expected value
-  const mappedPropertyType = data.propertyType
-    ? PROPERTY_TYPE_MAP[data.propertyType] || data.propertyType
-    : undefined;
+  const combinedMessage = [data.message, calcParts.length > 0 ? calcParts.join(" | ") : undefined]
+    .filter((s): s is string => Boolean(s && s.length > 0))
+    .join("\n\n");
 
-  // Map preferred contact time to urgency
-  const urgencyMap: Record<string, string> = {
-    morning: 'diese_woche',
-    afternoon: 'diese_woche',
-    evening: 'diese_woche',
-    anytime: 'flexibel',
-  };
-  const urgency = data.preferredContactTime
-    ? urgencyMap[data.preferredContactTime] || 'flexibel'
-    : undefined;
-
-  // Map calculator-specific fields to readable values
-  const mappedPumpType = data.pumpType
-    ? PUMP_TYPE_MAP[data.pumpType] || data.pumpType
-    : undefined;
-  const mappedHeatingSurface = data.heatingSurface
-    ? HEATING_SURFACE_MAP[data.heatingSurface] || data.heatingSurface
-    : undefined;
-  const mappedInsulation = data.insulation
-    ? INSULATION_MAP[data.insulation] || data.insulation
-    : undefined;
+  // Map current_heating to readable label (n8n stores raw, but this aids the AI-Draft step).
   const mappedCurrentHeating = data.currentHeating
-    ? CURRENT_HEATING_MAP[data.currentHeating] || data.currentHeating
+    ? CURRENT_HEATING_LABELS[data.currentHeating] || data.currentHeating
     : undefined;
+
+  // Send building_year only if it looks like a 4-digit year.
+  const validYear = (data.constructionYear || "").match(/^\d{4}$/) ? data.constructionYear : undefined;
+
+  // Map preferredContactTime → urgency token. Default 'flexibel' if not set.
+  const urgency = data.preferredContactTime
+    ? CONTACT_TIME_TO_URGENCY[data.preferredContactTime] || "flexibel"
+    : "flexibel";
 
   const payload: QuoteFormPayload = {
     name: data.name,
     email: data.email,
     phone: data.phone,
-    service_type: mappedServiceType,
-    ...(data.address && { street: data.address }),
+    service_type: data.serviceType,
+    urgency,
+    ...(data.address && { address: data.address }),
     ...(data.postalCode && { postal_code: data.postalCode }),
     ...(data.city && { city: data.city }),
-    ...(mappedPropertyType && { property_type: mappedPropertyType }),
-    ...(data.heatingArea && { heating_area: `${data.heatingArea} m²` }),
+    ...(data.propertyType && { property_type: data.propertyType }),
+    ...(data.heatingArea && { heating_area: data.heatingArea }),
     ...(mappedCurrentHeating && { current_heating: mappedCurrentHeating }),
-    ...(data.constructionYear && { building_year: data.constructionYear }),
-    ...(urgency && { urgency }),
-    ...(data.message && { message: data.message }),
-    // Calculator-specific fields for Wärmepumpe quotes
-    ...(mappedPumpType && { pump_type: mappedPumpType }),
-    ...(mappedHeatingSurface && { heating_surface: mappedHeatingSurface }),
-    ...(mappedInsulation && { insulation: mappedInsulation }),
-    ...(data.residents && { residents: data.residents }),
-    ...(data.estimatedCost && { estimated_cost: `${parseInt(data.estimatedCost).toLocaleString('de-DE')} €` }),
+    ...(validYear && { building_year: validYear }),
+    ...(combinedMessage.length > 0 && { message: combinedMessage }),
   };
 
-  const result = await submitToWebhook(WEBHOOK_ENDPOINTS.quote, payload as unknown as Record<string, unknown>);
+  const result = await submitToWebhook(LEAD_WEBHOOKS.quote, payload as unknown as Record<string, unknown>);
 
   return {
     success: result.success,
     leadId: result.lead_id,
     error: result.error,
+    message: result.message,
   };
 }
 
@@ -271,29 +231,17 @@ export async function submitQuoteToN8n(data: {
 // Emergency Form
 // =============================================================================
 
-// Mapping from website emergency types to n8n expected values
-const EMERGENCY_TYPE_MAP: Record<string, string> = {
-  'heizung-ausfall': 'heizung_ausfall',
-  'rohrbruch': 'wasserrohrbruch',
-  'gasgeruch': 'gasgeruch',
-  'warmwasser-ausfall': 'heizung_ausfall', // Map to closest type
-  'sonstiges': 'other',
-};
-
 interface EmergencyFormPayload {
   name: string;
   phone: string;
   emergency_type: string;
   email?: string;
-  street?: string;
+  address?: string;
   postal_code?: string;
   city?: string;
-  description?: string;
+  message?: string;
 }
 
-/**
- * Submit emergency request to n8n webhook
- */
 export async function submitEmergencyToN8n(data: {
   name: string;
   phone: string;
@@ -303,27 +251,25 @@ export async function submitEmergencyToN8n(data: {
   city?: string;
   emergencyType: string;
   description?: string;
-}): Promise<{ success: boolean; leadId?: string; error?: string }> {
-  // Map emergency type to n8n expected value
-  const mappedEmergencyType = EMERGENCY_TYPE_MAP[data.emergencyType] || 'other';
-
+}): Promise<{ success: boolean; leadId?: number | string; error?: string; message?: string }> {
   const payload: EmergencyFormPayload = {
     name: data.name,
     phone: data.phone,
-    emergency_type: mappedEmergencyType,
+    emergency_type: data.emergencyType,
     ...(data.email && { email: data.email }),
-    ...(data.address && { street: data.address }),
+    ...(data.address && { address: data.address }),
     ...(data.postalCode && { postal_code: data.postalCode }),
     ...(data.city && { city: data.city }),
-    ...(data.description && { description: data.description }),
+    ...(data.description && { message: data.description }),
   };
 
-  const result = await submitToWebhook(WEBHOOK_ENDPOINTS.emergency, payload as unknown as Record<string, unknown>);
+  const result = await submitToWebhook(LEAD_WEBHOOKS.emergency, payload as unknown as Record<string, unknown>);
 
   return {
     success: result.success,
     leadId: result.lead_id,
     error: result.error,
+    message: result.message,
   };
 }
 
@@ -332,31 +278,21 @@ export async function submitEmergencyToN8n(data: {
 // =============================================================================
 
 /**
- * Test n8n webhook connectivity (simple ping)
+ * Lightweight reachability test for the n8n host (used by /api/health/webhooks).
+ * A 404 from the base URL is acceptable — it means TCP/TLS is up but the path is not routed.
  */
 export async function testN8nConnection(): Promise<{ success: boolean; message: string }> {
   try {
-    // Test by making a HEAD request or simple GET to base URL
-    const response = await fetch(N8N_BASE_URL, {
-      method: 'HEAD',
-    });
+    const response = await fetch(WEBHOOK_BASE_URL, { method: "HEAD" });
 
     if (response.ok || response.status === 404) {
-      // 404 is acceptable - means server is reachable but endpoint not found
-      return {
-        success: true,
-        message: `n8n server reachable at ${N8N_BASE_URL}`,
-      };
+      return { success: true, message: `n8n server reachable at ${WEBHOOK_BASE_URL}` };
     }
-
-    return {
-      success: false,
-      message: `n8n server returned status ${response.status}`,
-    };
+    return { success: false, message: `n8n server returned status ${response.status}` };
   } catch (error) {
     return {
       success: false,
-      message: error instanceof Error ? error.message : 'Connection failed',
+      message: error instanceof Error ? error.message : "Connection failed",
     };
   }
 }

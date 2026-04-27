@@ -69,9 +69,12 @@ export function ContactForm({ initialMessage = "", initialSubject = "" }: Contac
       const result = await response.json();
 
       if (result.success) {
+        const baseMsg =
+          result.message ||
+          "Vielen Dank für Ihre Nachricht! Wir melden uns in Kürze bei Ihnen.";
         setSubmitStatus({
           type: "success",
-          message: result.message,
+          message: result.leadId ? `${baseMsg} (Anfrage-Nr. ${result.leadId})` : baseMsg,
         });
         reset();
       } else {
@@ -142,7 +145,7 @@ export function ContactForm({ initialMessage = "", initialSubject = "" }: Contac
 
       {/* Phone */}
       <div>
-        <Label htmlFor="phone">Telefon (optional)</Label>
+        <Label htmlFor="phone">Telefon *</Label>
         <Input
           id="phone"
           type="tel"
