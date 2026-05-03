@@ -1400,3 +1400,34 @@ Neue Partner-Landingpage fuer ZEWOTHERM (Waermepumpe LAMBDA) auf Basis vom Herst
 
 #### Offene Punkte
 - [ ] Logo PNG → SVG vektorisieren (kein Ship-Blocker, logoExt-Override greift)
+
+### Session 2026-05-03 (Cleanup: Junkers + Stiebel Eltron entfernt)
+
+#### Ziel
+Junkers und Stiebel Eltron komplett aus der Website entfernen — sind keine HEIZcenter-Partner mehr. Saubere Bereinigung inkl. SEO-Schutz via 301-Redirects.
+
+#### Completed
+- [x] Pages geloescht: `src/app/partner/junkers/`, `src/app/partner/stiebel-eltron/`
+- [x] Logos entfernt: `public/images/partners/{junkers,stiebel-eltron}.svg` (+ backup-Kopien)
+- [x] Partner-Index: 2 Eintraege aus `partners`-Array, Metadata-`description` + `keywords` aktualisiert
+- [x] Bosch-Page: FAQ "Unterschied Bosch/Junkers" entfernt, Related-Link "Junkers Bosch" → "Buderus" (auch Bosch-Gruppe)
+- [x] Augsburg-Standort: "Stiebel Eltron" aus Hersteller-Liste in FAQ-Antwort durch "Buderus, Wolf, ZEWOTHERM" ersetzt
+- [x] `service-schema.tsx`: Stiebel Eltron aus 3x Brand-Listen entfernt (Luft-Wasser, Sole-Wasser, Wasser-Wasser); ZEWOTHERM/Buderus/Vaillant ergaenzt
+- [x] **301-Redirects** in `next.config.mjs`: `/partner/junkers` und `/partner/stiebel-eltron` → `/partner` (verhindert 404, erhaelt Backlink-Wert)
+- [x] **Verification:** Build 82 Pages (vorher 84), 7 Partner-Pages aktiv (Viessmann, Vaillant, Buderus, Wolf, Bosch, Daikin, ZEWOTHERM), beide geloeschten URLs liefern 301, keine Junkers/Stiebel-Treffer im rendered HTML
+- [x] **Commit + Push:** `3c05945 chore(partner): remove Junkers and Stiebel Eltron partner pages`
+
+#### Geaenderte Dateien
+| Datei | Aenderung |
+|---|---|
+| `src/app/partner/junkers/page.tsx` | DELETE |
+| `src/app/partner/stiebel-eltron/page.tsx` | DELETE |
+| `public/images/partners/{junkers,stiebel-eltron}.svg` | DELETE (+ backup) |
+| `src/app/partner/page.tsx` | EDIT (2 partners-Eintraege + Metadata) |
+| `src/app/partner/bosch/page.tsx` | EDIT (FAQ + Related-Link) |
+| `src/app/standorte/augsburg/page.tsx` | EDIT (FAQ-Antwort) |
+| `src/components/schema/service-schema.tsx` | EDIT (3x Brand-Listen) |
+| `next.config.mjs` | EDIT (2 Redirects ergaenzt) |
+
+#### Offene Punkte
+keine
