@@ -213,3 +213,68 @@ Ursache: Kontaktdaten waren in 66+ Dateien hardcoded statt aus `contact.ts` impo
 ## Ergebnis
 
 **COMMIT FREIGEGEBEN**
+
+---
+
+# Content Validation Report - 2026-05-03
+
+## Neue Partner Landing Page: ZEWOTHERM
+
+### Anlass
+Neuer Hersteller-Partner ZEWOTHERM (Wärmepumpe LAMBDA) auf HEIZcenter-Website integriert. Eingangsmaterial vom Hersteller (Textbausteine .docx + 6 Bilder) enthielt veraltete Förder-Informationen (KfW 261/262 statt aktuell BEG EM + KfW 358/359), die korrigiert wurden.
+
+### Geprüfte Änderungen
+- **NEU:** `src/app/partner/zewotherm/page.tsx` (~470 Zeilen)
+- **EDIT:** `src/app/partner/page.tsx` — ZEWOTHERM-Eintrag im `partners`-Array + `logoExt`-Override für PNG-Logos
+- **NEU:** `public/images/partners/zewotherm.png` (Logo, 95 KB)
+- **NEU:** `public/images/partners/zewotherm/` mit 4 Produktbildern (lambda-freisteller, lambda-eu35l, lambda-modelle, hydraulikstation)
+- **ENTFERNT:** Verwaistes KI-generiertes Familienbild (Trust-Risiko)
+
+### Gate 1: Fachliche Prüfung
+- **Prüfer 1:** `hvac-content` Agent — Verdict: APPROVED-WITH-CHANGES
+- **Prüfer 2:** Externe Web-Verifikation (zewotherm.com Press, BAFA-Richtlinie 2026)
+- **Status nach Korrekturen:** APPROVED
+
+**Korrigierte Findings:**
+| Original (Page-Entwurf) | Korrigiert auf |
+|---|---|
+| KfW 261/262 (aus Hersteller-docx) | KfW 358/359 (BEG-Reform) |
+| "30 % weniger Strom als A+++" (UWG-Risiko) | "Deutlich geringerer Stromverbrauch im Vergleich zu herkömmlichen Wärmepumpen" |
+| SCOP bis 6,1 (nicht belegt) | SCOP bis 5,96 (gem. EN 14825) — bestätigt durch tga-praxis.de |
+| Klimageschwindigkeitsbonus pauschal "≥ 20 Jahre" | Differenziert: Öl/Kohle/Gasetagen/Nachtspeicher ohne Mindestalter, Gas/Biomasse ab 20 Jahren |
+| KfW "bis 120.000 €" ohne Kontext | "bis 120.000 € förderfähige Kosten pro Wohneinheit" |
+| Manufacturer "ZEWOTHERM Heizsysteme GmbH" | "ZEWOTHERM Heating GmbH" (HRB Koblenz 29119, Sitz Remagen) |
+| Domain `www.zewotherm.de` | `zewotherm.com` (.de redirected) |
+| KI-generiertes Familienbild | Stats-Strip (SCOP / 70 °C / R290) — UX-Trust-Empfehlung |
+
+**Verifiziert OK ohne Korrektur:**
+- "Patentierter 3K-Prozess" — durch Hersteller-Press belegt (zewotherm-lambda.de, technologie-medien.de)
+- EHPA-Quality-Label — durch Hersteller bestätigt
+- 30 % / +20 % / +30 % / +5 % BEG-Boni und 70-%-Deckelung
+- 70 °C Vorlauf ohne Heizstab
+- R290 / GWP 3
+- EN 12102 (Schalldruck-Norm)
+
+### Gate 2: Kontaktdaten-Validierung
+- **Prüfer 1:** Implementing Agent — Page nutzt ausschließlich `CONTACT.PHONE_*` und `CONTACT.EMAIL` Imports + Komponenten (`ServiceHero`, `CTASection`)
+- **Prüfer 2:** `security-reviewer` Agent — Gegen-Check (siehe nächster Abschnitt)
+- **Gefundene Kontaktdaten in der neuen Datei:**
+  - `CONTACT.PHONE_SCHEMA` (Schema.org telephone) — aus contact.ts importiert
+  - Keine hardcoded Telefonnummern, Emails oder Adressen
+- **Übereinstimmung mit contact.ts:** JA
+- **Status:** APPROVED
+
+### UX-Review (ux-researcher)
+- **Verdict:** SHIP-WITH-MINOR-CHANGES — alle 3 Blocker (Mid-Page-CTA, KI-Bild, Logo-SVG) adressiert
+- Mid-Page-CTA "Jetzt Förderung für Ihre LAMBDA prüfen lassen" nach Förder-Section
+- Mobile-Fix EU35L-Karte (max-h-48 auf Mobile)
+
+### Build-Verifizierung
+- `npm run lint` — ERFOLGREICH (keine ESLint-Fehler)
+- `npm run build` — ERFOLGREICH (84 Seiten generiert, `/partner/zewotherm` als Static Page 1.25 kB)
+
+### Offene TODOs (kein Ship-Blocker)
+- [ ] Logo PNG → SVG vektorisieren (Konsistenz mit anderen 8 Partner-Logos). Workaround per `logoExt: "png"` Override greift bis dahin sauber.
+
+### Ergebnis
+**COMMIT FREIGEGEBEN**

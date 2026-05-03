@@ -99,6 +99,7 @@
 ## Letzte Git-Commits
 
 ```
+c0fce70 feat(blog): add "Klimaanlage nachrüsten 2026" article with backlinks and quality gates
 a822d65 a11y: replace footer h4 headings with p elements for correct heading hierarchy
 bba9264 a11y: fix text contrast ratios in footer and notdienst page
 45d01a2 seo: optimize image alt texts for accessibility and search ranking
@@ -200,6 +201,45 @@ git log --oneline -10
 ---
 
 ## Session-Archiv
+
+### Session 2026-03-09 (Blog-Artikel: Klimaanlage nachrüsten 2026)
+
+#### Ziel
+Neuen Blog-Artikel "Klimaanlage nachrüsten 2026" erstellen — höchster SEO-Impact laut Content-Gap-Analyse (nur 1/26 Artikel zu Klimaanlage). Weltklasse-Qualität mit HVAC-Faktencheck, SEO-Optimierung und vollständigen Quality Gates.
+
+#### Completed
+- [x] **Content-Gap-Analyse:** 3 vorgeschlagene Artikel geprüft → alle existierten bereits → "Klimaanlage nachrüsten" als höchsten Impact identifiziert
+- [x] **Plan erstellt:** Detaillierter Blueprint mit H2/H3-Struktur, Verlinkungsstrategie, 5 Implementierungsschritte
+- [x] **Fakten-Recherche** (hvac-content Agent): ChemKlimaschutzV, R32/R290, SEER-Werte, BEG-Ausschluss, §35a EStG verifiziert
+- [x] **Artikel geschrieben** (copywriter Agent): ~3.000 Wörter, 8 H2-Sektionen, Kostenbeispiel, Checkliste
+- [x] **SEO-Review** (seo-specialist Agent): Title 75→52 Zeichen, Tags optimiert, Keyword-Platzierung geprüft
+- [x] **Fachliche Korrekturen:** R32 als Beispiel ergänzt (nicht nur R290), ChemKlimaschutzV seit 2015 (nicht 2024), passive Kühlung 3-5°C (nicht 2-3°C), Betriebskosten 50-300€ (nicht 150-250€)
+- [x] **Integration in blog.ts** (id: 28, featured: true, 8 FAQs für Structured Data)
+- [x] **2 Backlinks ergänzt:** Wärmepumpe Vorteile (~Zeile 2970), Klimaanlage Kosten (Fazit ~Zeile 7241)
+- [x] **Klimaanlage-Seite:** Blog-Link-Karte in "Ratgeber & Tipps" aktualisiert
+- [x] **Quality Gate 1:** hvac-content APPROVED (nach Korrekturen)
+- [x] **Quality Gate 2:** security-reviewer APPROVED (alle Kontaktdaten via CONTACT.* Template Literals)
+- [x] **Quality Gate 3:** VALIDATION_REPORT.md aktualisiert
+- [x] **Build & Lint:** Erfolgreich (83 Seiten generiert, 0 Fehler)
+- [x] **Commit & Push:** `c0fce70` → Vercel Auto-Deploy ausgelöst
+
+#### Geänderte Dateien
+| Datei | Änderung |
+|-------|----------|
+| `src/lib/api/blog.ts` | Neuer Artikel (id: 28) + 2 Backlinks in bestehenden Artikeln |
+| `src/app/klimaanlage/page.tsx` | Blog-Link-Karte "Förderung" → "Nachrüsten" ersetzt |
+| `VALIDATION_REPORT.md` | Neuer Validierungseintrag für 2026-03-09 |
+| `PROGRESS.md` | Blog-Content-Plan als erledigt markiert |
+
+#### Agents eingesetzt
+`hvac-content` → `copywriter` → `seo-specialist` → `frontend-dev` → `security-reviewer`
+
+#### Offene Punkte
+- [ ] Live-Verifizierung: `/blog/klimaanlage-nachruesten-2026-kosten-installation-tipps` nach Deploy prüfen
+- [ ] Google Search Console: Indexierung beantragen nach Deploy
+- [ ] Weitere Blog-Artikel laut Content-Plan (z.B. Heizungsvergleich, Fußbodenheizung nachrüsten)
+
+---
 
 ### Session 2026-02-16 (Service Area Schema Migration - KRITISCHER SEO-Fix)
 
@@ -1264,3 +1304,99 @@ Robuste interne Link-Architektur aufbauen: Jede wichtige Seite erhält 3-5 konte
 - [x] PROGRESS.md erstellt und initial befüllt
 - [x] `/heizcenter` Command mit Session-Management erweitert
 - [x] `/handoff` Command mit Projekt-Erkennung aktualisiert
+
+---
+
+## Session 2026-04-28 (n8n W-01 v2 Webhook-Wiring + Footer-Rebrand)
+
+### Ziel
+Lead-Forms (Kontakt / Angebot / Notdienst) auf den neuen n8n-Workflow `k8wSNCM2LV89ns34` "W-01 Website-Leads → Odoo" umstellen. Backend-Contract: HTTP 200 always, snake_case Tokens, `success`-Field im Body.
+
+### Completed
+- [x] Audit existierender Forms + POST-Logik (Explore-Subagent)
+- [x] Architektur-Entscheidung (User): Proxy via /api/* Routes beibehalten — Zod/Rate-Limit/Honeypot bleiben, /api/* mirror n8n HTTP-200-always Contract
+- [x] Token-Erweiterung (User-Decisions): `service_type` UI-Optionen erweitert um heizung_neu, heizung_wartung, badsanierung, notdienst; `emergency_type` neu mit verstopfung; warmwasser-ausfall + sonstiges → `other`
+- [x] Single source of truth: `src/lib/config/webhooks.ts` (Default `https://auto.heizcenter.de`, override via `N8N_WEBHOOK_BASE_URL`)
+- [x] `n8n-webhooks.ts` rewrite — HTTP-200-always parser, snake_case Payload (`address`/`postal_code`/`message` statt `street`/`description`), Calculator-Felder gefaltet in `message`, `building_year` nur 4-stellig
+- [x] Zod-Schemas auf neue Tokens umgestellt; Contact-`phone` ist jetzt Pflicht (matched Backend-Schema)
+- [x] Form-Komponenten: neue Select-Tokens, URL-Param-Normalizer in QuoteForm fuer Legacy-Internal-Links (`service=heizung` → `heizung_neu`, `propertyType=einfamilienhaus` → `efh`), Lead-ID in Success-Message
+- [x] Round-trip-Fix: "Werte anpassen" Link nutzt `rawPropertyType` (Calculator-Vokabular bleibt erhalten)
+- [x] `/api/contact|quote|emergency` auf HTTP-200-always Pattern umgestellt
+- [x] crm.ts auf schlanken Pass-through reduziert
+- [x] .env.example auf neuen Default-URL aktualisiert
+- [x] Build/Typecheck/Lint sauber (`tsc --noEmit`, `next lint`, `next build`)
+- [x] Live Smoke-Test (4/4 gruen): Contact → 2585, Validation-Error, Quote-Full → 2586, Emergency → 2587 ("Notfall erfasst, wir rufen sofort zurueck")
+- [x] Commit + Push (`d3a9234`)
+- [x] Vercel Env-Var-Diagnose: alte `N8N_WEBHOOK_BASE_URL=heizcenter.app.n8n.cloud` ueberschreibt Default → User updated auf `auto.heizcenter.de` + Redeploy
+- [x] Post-Redeploy Live-Verify: Lead 2589 numerisch + "Wir melden uns innerhalb 24h" → NEW Workflow aktiv
+- [x] Footer-Branding: `jedAI Solutions` → `Jevolution` (jevolution.de), Commit `7fbc653`
+
+### Geaenderte Dateien
+| Datei | Aenderung |
+|-------|-----------|
+| `src/lib/config/webhooks.ts` | NEU — single source of truth fuer Webhook-URLs |
+| `src/lib/api/n8n-webhooks.ts` | Rewrite: HTTP-200-always, snake_case Payload, neue Tokens |
+| `src/lib/api/crm.ts` | Schlanker Pass-through, gibt leadId/message durch |
+| `src/app/api/contact/route.ts` | HTTP-200-always Pattern |
+| `src/app/api/quote/route.ts` | HTTP-200-always Pattern |
+| `src/app/api/emergency/route.ts` | HTTP-200-always Pattern |
+| `src/lib/validations/contact.ts` | Neue Token-Enums, Contact-phone Pflicht |
+| `src/components/forms/contact-form.tsx` | Phone *, Lead-ID in Success |
+| `src/components/forms/quote-form.tsx` | Neue Select-Tokens, URL-Param-Normalizer, rawPropertyType |
+| `src/components/forms/emergency-form.tsx` | Neue Select-Tokens, Lead-ID in Success |
+| `src/components/layout/footer.tsx` | Footer-Credit Jevolution |
+| `.env.example` | Default-URL `auto.heizcenter.de` + Backend-Contract Hinweis |
+
+### Agents eingesetzt
+`Explore` (Audit) → direkte Implementation (Orchestrator)
+
+### Offene Punkte / Carry-Over
+- [ ] Test-Leads in Odoo archivieren (active=false): **2585, 2586, 2587, 2588, 2589**
+- [ ] CORS-Setup an n8n-Webhook waere noetig wenn jemals Direct-Posting (V2-Scope; V1 nutzt Proxy)
+- [ ] Q2 2026 Re-Audit (GEG→GMG, KfW 455-B, CO2-Preis 2027) — faellig Mai
+- [ ] NAP-Cleanup (11880, Telefonbuch, Apple Business, Bing Places)
+- [ ] Blog: Foerderlandschaft 2026
+
+### Session 2026-05-03 (Partner Landing Page: ZEWOTHERM)
+
+#### Ziel
+Neue Partner-Landingpage fuer ZEWOTHERM (Waermepumpe LAMBDA) auf Basis vom Hersteller bereitgestellter Textbausteine + Bilder. Lead-faehige Page mit Long-Tail-SEO (3K-Prozess, EU10L-EU35L, R290).
+
+#### Completed
+- [x] **Plan + Verifikation:** Plan in `~/.claude/plans/golden-tickling-wadler.md`, parallele Reviews durch `hvac-content` (APPROVED-WITH-CHANGES) + `ux-researcher` (SHIP-WITH-MINOR-CHANGES)
+- [x] **Page neu:** `src/app/partner/zewotherm/page.tsx` (~470 Zeilen, 11 Sections) — Pattern wie viessmann/page.tsx, alle reusable Components
+- [x] **Assets:** 4 Produktbilder + Logo + Hero-Bild nach `public/images/partners/zewotherm/`
+- [x] **Partner-Index:** ZEWOTHERM-Eintrag + `logoExt`-Override fuer PNG-Logos (entkoppelt SVG-Vektorisierung vom Ship)
+- [x] **Faktische Korrekturen** ggue. veraltetem Hersteller-DOCS:
+  - KfW 261/262 → KfW 358/359 (BEG-Reform — Page korrekter als DOCS)
+  - 30%/+20%/+30%/+5% BEG-Boni differenziert (Klimageschwindigkeitsbonus mit Heizungsart-Differenzierung)
+  - Manufacturer Schema: "ZEWOTHERM Heating GmbH" + URL zewotherm.com (HRB Koblenz 29119, Sitz Remagen)
+- [x] **Halluzinations-Bereinigung** nach 3-Quellen-Check (Page ↔ DOCS ↔ Web):
+  - "vollmodulierende Inverter-Technik" entfernt (kein DOCS-Beleg)
+  - "Smart-Grid-Ready / PV-Kopplung" entfernt
+  - "KfW-40/55-Häuser mit Flächenheizung" beim EU10L entfernt
+  - "Spielt Stärken bei Heizkörpern aus" beim EU13L entfernt
+  - "Leistungs-Spitze der Serie" → "Größtes Modell der LAMBDA-Serie"
+  - SCOP an DOCS angeglichen (6,1)
+  - "Made in Germany" → "Hersteller mit Sitz in Remagen"
+  - Garantie+Monitoring entbundelt
+  - Kühl-FAQ neutraler
+- [x] **UX-Fixes:** Mid-Page-CTA nach Förderung, KI-Familienbild durch Stats-Strip ersetzt (SCOP/70°C/R290), EU35L-Card Mobile-Fix
+- [x] **Quality Gates:** 1 (hvac-content APPROVED), 2 (security-reviewer APPROVED, keine hardcoded Kontaktdaten), 3 (VALIDATION_REPORT.md aktualisiert)
+- [x] **Build & Lint:** ESLint 0 Fehler, Build erfolgreich (84 Pages, /partner/zewotherm Static 1.25 kB)
+- [x] **Smoketest:** Dev-Server alle URLs 200
+
+#### Geänderte Dateien
+| Datei | Aenderung |
+|---|---|
+| `src/app/partner/zewotherm/page.tsx` | NEU |
+| `src/app/partner/page.tsx` | EDIT — ZEWOTHERM-Eintrag + logoExt-Override |
+| `public/images/partners/zewotherm.png` | NEU (Logo) |
+| `public/images/partners/zewotherm/` | NEU (5 Bilder: Hero + 4 Produktbilder) |
+| `VALIDATION_REPORT.md` | Validierungseintrag 2026-05-03 |
+
+#### Agents eingesetzt
+`hvac-content` (Fact-Check 2x) → `ux-researcher` → `security-reviewer`
+
+#### Offene Punkte
+- [ ] Logo PNG → SVG vektorisieren (kein Ship-Blocker, logoExt-Override greift)

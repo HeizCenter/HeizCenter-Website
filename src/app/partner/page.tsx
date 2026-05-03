@@ -14,7 +14,16 @@ export const metadata: Metadata = {
   },
 };
 
-const partners = [
+type Partner = {
+  name: string;
+  slug: string;
+  description: string;
+  badge: string;
+  highlights: string[];
+  logoExt?: "svg" | "png";
+};
+
+const partners: Partner[] = [
   {
     name: "Viessmann",
     slug: "viessmann",
@@ -71,6 +80,14 @@ const partners = [
     badge: "Weltmarktführer",
     highlights: ["Heizen + Kühlen", "Bis 70°C", "SCOP bis 5,15"],
   },
+  {
+    name: "ZEWOTHERM",
+    slug: "zewotherm",
+    description: "Patentierter 3K-Prozess. SCOP bis 6,1, Vorlauf bis 70 °C ohne Heizstab. Hersteller mit Sitz in Remagen – ideal für Neubau & Altbau-Sanierung.",
+    badge: "3K-Prozess",
+    highlights: ["SCOP bis 6,1", "Bis 70 °C VL", "R290 Kältemittel"],
+    logoExt: "png",
+  },
 ];
 
 export default function PartnerPage() {
@@ -120,7 +137,7 @@ export default function PartnerPage() {
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src={`/images/partners/${partner.slug}.svg`}
+                  src={`/images/partners/${partner.slug}.${partner.logoExt ?? "svg"}`}
                   alt={`${partner.name} Logo`}
                   className="w-auto h-auto max-h-12"
                 />
