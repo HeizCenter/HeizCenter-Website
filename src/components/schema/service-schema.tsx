@@ -56,8 +56,8 @@ export function ServiceSchema({ serviceType }: ServiceSchemaProps) {
             brand: [
               { "@type": "Brand", name: "Viessmann" },
               { "@type": "Brand", name: "Vaillant" },
-              { "@type": "Brand", name: "Stiebel Eltron" },
               { "@type": "Brand", name: "Daikin" },
+              { "@type": "Brand", name: "ZEWOTHERM" },
             ],
             offers: {
               "@type": "AggregateOffer",
@@ -77,7 +77,7 @@ export function ServiceSchema({ serviceType }: ServiceSchemaProps) {
             brand: [
               { "@type": "Brand", name: "Viessmann" },
               { "@type": "Brand", name: "Vaillant" },
-              { "@type": "Brand", name: "Stiebel Eltron" },
+              { "@type": "Brand", name: "Buderus" },
             ],
             offers: {
               "@type": "AggregateOffer",
@@ -96,7 +96,7 @@ export function ServiceSchema({ serviceType }: ServiceSchemaProps) {
               "Grundwasser-Wärmepumpe mit höchster Effizienz. Nutzung des Grundwassers als Wärmequelle.",
             brand: [
               { "@type": "Brand", name: "Viessmann" },
-              { "@type": "Brand", name: "Stiebel Eltron" },
+              { "@type": "Brand", name: "Vaillant" },
             ],
             offers: {
               "@type": "AggregateOffer",

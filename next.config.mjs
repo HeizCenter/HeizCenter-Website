@@ -111,6 +111,9 @@ const nextConfig = {
         destination: "/standorte/schwabmuenchen",
         statusCode: 301,
       },
+      // Removed partner pages (2026-05-03) → Partner-Übersicht
+      { source: "/partner/junkers", destination: "/partner", statusCode: 301 },
+      { source: "/partner/stiebel-eltron", destination: "/partner", statusCode: 301 },
       // Blog article consolidation redirects
       {
         source: "/blog/solarthermie-kosten-2025",

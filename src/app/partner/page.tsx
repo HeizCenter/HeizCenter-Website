@@ -7,8 +7,8 @@ import { getCanonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Unsere Premium-Partner | Viessmann, Vaillant, Buderus & mehr",
-  description: "HeizCenter arbeitet mit den führenden Herstellern zusammen: Viessmann, Vaillant, Buderus, Wolf, Stiebel Eltron, Junkers, Bosch, Daikin. Testsieger-Qualität.",
-  keywords: ["Hersteller", "Partner", "Viessmann", "Vaillant", "Buderus", "Wolf", "Stiebel Eltron", "Daikin"],
+  description: "HeizCenter arbeitet mit den führenden Herstellern zusammen: Viessmann, Vaillant, Buderus, Wolf, Bosch, Daikin und ZEWOTHERM. Testsieger-Qualität.",
+  keywords: ["Hersteller", "Partner", "Viessmann", "Vaillant", "Buderus", "Wolf", "Bosch", "Daikin", "ZEWOTHERM"],
   alternates: {
     canonical: getCanonicalUrl("/partner"),
   },
@@ -51,20 +51,6 @@ const partners: Partner[] = [
     description: "Kompakte CHA-Monoblock Serie Made in Bavaria. Modulierende Inverter-Technologie mit integriertem 9 kW Heizstab.",
     badge: "Made in Bavaria",
     highlights: ["Kompakt", "Heizstab inkl.", "SCOP bis 4,7"],
-  },
-  {
-    name: "Stiebel Eltron",
-    slug: "stiebel-eltron",
-    description: "Testsieger WPL-A 10.2 Plus. Cold Climate Technologie bis -25°C. Made in Germany seit 1924.",
-    badge: "Cold Climate",
-    highlights: ["Testsieger", "Bis -25°C", "SCOP bis 4,9"],
-  },
-  {
-    name: "Junkers Bosch",
-    slug: "junkers",
-    description: "Teil der Bosch Thermotechnik. Bewährte Compress Serie mit ausgezeichnetem Preis-Leistungs-Verhältnis.",
-    badge: "Bosch Gruppe",
-    highlights: ["Preis-Leistung", "Bewährt", "SCOP bis 4,6"],
   },
   {
     name: "Bosch",

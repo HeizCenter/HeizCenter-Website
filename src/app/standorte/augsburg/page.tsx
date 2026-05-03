@@ -115,7 +115,7 @@ const faqs: FAQItem[] = [
   {
     question: "Welche Wärmepumpen-Marken installieren Sie in Augsburg?",
     answer:
-      "Wir installieren Wärmepumpen führender Hersteller wie Viessmann, Vaillant, Stiebel Eltron, Daikin und Bosch. Alle Marken bieten höchste Effizienz und sind perfekt für die klimatischen Bedingungen in Augsburg und Schwaben geeignet.",
+      "Wir installieren Wärmepumpen führender Hersteller wie Viessmann, Vaillant, Buderus, Wolf, Daikin, Bosch und ZEWOTHERM. Alle Marken bieten höchste Effizienz und sind perfekt für die klimatischen Bedingungen in Augsburg und Schwaben geeignet.",
   },
   {
     question: "Wie lange dauert eine Badsanierung in Augsburg?",
