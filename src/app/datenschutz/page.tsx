@@ -70,7 +70,7 @@ export default function DatenschutzPage() {
             Vercel ist ein Cloud-Hosting-Dienst für statische Websites und Serverless Functions. Bei Aufruf dieser Website werden automatisch Informationen (z.B. IP-Adresse, Browsertyp, Betriebssystem, Zugriffszeit) in Serverlogfiles gespeichert.
           </p>
           <p className="mb-4">
-            <strong>Datenübermittlung in die USA:</strong> Vercel Inc. hat seinen Sitz in den USA. Die Datenübermittlung erfolgt auf Grundlage von Art. 49 Abs. 1 lit. a DSGVO (Einwilligung) bzw. auf Grundlage der EU-Standardvertragsklauseln. Weitere Informationen finden Sie in der Datenschutzerklärung von Vercel:{" "}
+            <strong>Datenübermittlung in die USA:</strong> Vercel Inc. hat seinen Sitz in den USA. Die Datenübermittlung stützt sich auf den Angemessenheitsbeschluss der EU-Kommission zum EU-US Data Privacy Framework (Art. 45 DSGVO), unter dem Vercel Inc. zertifiziert ist, sowie ergänzend auf die EU-Standardvertragsklauseln. Weitere Informationen finden Sie in der Datenschutzerklärung von Vercel:{" "}
             <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-[#0F5B78] hover:underline">
               https://vercel.com/legal/privacy-policy
             </a>
@@ -136,10 +136,24 @@ export default function DatenschutzPage() {
 
           <h3 className="text-2xl font-bold mb-4">Cookies</h3>
           <p className="mb-4">
-            Unsere Internetseiten verwenden so genannte „Cookies". Cookies sind kleine Datenpakete und richten auf Ihrem Endgerät keinen Schaden an. Sie werden entweder vorübergehend für die Dauer einer Sitzung (Session-Cookies) oder dauerhaft (permanente Cookies) auf Ihrem Endgerät gespeichert.
+            Cookies sind kleine Datenpakete und richten auf Ihrem Endgerät keinen Schaden an. Sie werden entweder vorübergehend für die Dauer einer Sitzung (Session-Cookies) oder dauerhaft (permanente Cookies) auf Ihrem Endgerät gespeichert.
           </p>
           <p className="mb-4">
-            Cookies, die zur Durchführung des elektronischen Kommunikationsvorgangs oder zur Bereitstellung bestimmter Funktionen erforderlich sind (notwendige Cookies), werden auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO gespeichert.
+            Diese Website setzt derzeit keine Cookies. Im Speicher Ihres Browsers legt sie nur auf der Seite „Kostenrechner“ einen Eintrag ab (siehe „Kostenrechner“ unten). Sollten wir künftig Cookies einsetzen, gilt: Cookies, die zur Durchführung des elektronischen Kommunikationsvorgangs oder zur Bereitstellung bestimmter, von Ihnen erwünschter Funktionen erforderlich sind (notwendige Cookies), werden auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO und § 25 Abs. 2 Nr. 2 TDDDG gespeichert. Alle anderen Cookies setzen wir nur mit Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO, § 25 Abs. 1 TDDDG); die Einwilligung ist jederzeit für die Zukunft widerrufbar.
+          </p>
+          <p className="mb-4">
+            Einzelheiten finden Sie in unserem{" "}
+            <a href="/cookie-hinweis" className="text-[#0F5B78] hover:underline">
+              Cookie-Hinweis
+            </a>.
+          </p>
+
+          <h3 className="text-2xl font-bold mb-4 mt-8">Kostenrechner</h3>
+          <p className="mb-4">
+            Auf der Seite „Kostenrechner“ werden Ihre Eingaben (z. B. Wohnfläche, Baujahr, Heizungsart, Anzahl der Bewohner, Angaben zum Einkommensbonus) unter dem Namen „heizcenter-calculator-values“ im lokalen Speicher Ihres Browsers (Local Storage) abgelegt, damit sie beim nächsten Aufruf des Rechners erhalten bleiben. Der Eintrag wird beim Aufruf der Seite angelegt, bleibt auf Ihrem Gerät und wird nicht an uns übertragen. Er bleibt gespeichert, bis Sie ihn über die Einstellungen Ihres Browsers löschen (Websitedaten löschen).
+          </p>
+          <p className="mb-4">
+            Rechtsgrundlage ist § 25 Abs. 2 Nr. 2 TDDDG in Verbindung mit Art. 6 Abs. 1 lit. f DSGVO (unser berechtigtes Interesse, Ihnen die erneute Eingabe zu ersparen).
           </p>
 
           <h3 className="text-2xl font-bold mb-4 mt-8">Server-Log-Dateien</h3>
@@ -154,6 +168,29 @@ export default function DatenschutzPage() {
             <li>Uhrzeit der Serveranfrage</li>
             <li>IP-Adresse</li>
           </ul>
+
+          <h3 className="text-2xl font-bold mb-4 mt-8">Anfragen über unsere Formulare</h3>
+          <p className="mb-4">
+            Wenn Sie uns über das Kontaktformular, das Angebotsformular oder das Notdienstformular eine Anfrage senden, verarbeiten wir die Angaben, die Sie dort machen – je nach Formular Name, E-Mail-Adresse, Telefonnummer, Anschrift bzw. Einsatzort, Ihre Nachricht und Angaben zu Ihrem Vorhaben –, um Ihre Anfrage zu bearbeiten.
+          </p>
+          <p className="mb-4">
+            <strong>Weg Ihrer Anfrage:</strong> Das Formular wird über unseren Website-Hoster Vercel (siehe Abschnitt 2) an unser Automatisierungssystem n8n übermittelt. n8n legt die Anfrage in unserem Kundenverwaltungssystem (Odoo) an. Beide Systeme betreiben wir selbst auf einem gemieteten Server der Hostinger International Ltd. in einem Rechenzentrum in der EU. Zum Schutz vor Missbrauch wird Ihre IP-Adresse zur Begrenzung der Anfragen pro Absender für höchstens etwa 20 Minuten im Arbeitsspeicher gehalten und nicht dauerhaft gespeichert.
+          </p>
+          <p className="mb-4">
+            <strong>Interne Benachrichtigung:</strong> Über eingehende Anfragen werden unsere Mitarbeitenden über den Nachrichtendienst Telegram (Telegram FZ-LLC, Vereinigte Arabische Emirate) benachrichtigt.
+          </p>
+          <p className="mb-4">
+            <strong>KI-gestützter Antwortentwurf:</strong> Für Kontakt- und Angebotsanfragen erstellt ein KI-Sprachmodell der Mistral AI, 15 rue des Halles, 75001 Paris, Frankreich, einen Antwortentwurf. Dafür werden Name, E-Mail-Adresse, Telefonnummer und Nachricht sowie bei Angebotsanfragen die Anschrift an Mistral AI übermittelt. Der Entwurf wird als interne Notiz in unserem Kundenverwaltungssystem abgelegt und nicht automatisch an Sie versendet; ein Mitarbeitender prüft und beantwortet Ihre Anfrage selbst. Mistral AI verarbeitet die Daten als unser Auftragsverarbeiter auf Grundlage eines Auftragsverarbeitungsvertrags und speichert sie nach der Verarbeitung bis zu 30 Tage zur Missbrauchserkennung. Die Nutzung Ihrer Daten zum Training der KI-Modelle von Mistral AI haben wir ausgeschlossen.
+          </p>
+          <p className="mb-4">
+            <strong>Ergänzung von Firmendaten:</strong> Unser Kundenverwaltungssystem übermittelt die Domain Ihrer E-Mail-Adresse (der Teil nach dem „@“) an die Odoo S.A., Chaussée de Namur 40, 1367 Grand-Rosière, Belgien, die dazu öffentlich verfügbare Firmendaten (z. B. Firmenname, Branche) zurückliefert. Bei E-Mail-Adressen allgemeiner Anbieter liefert der Dienst in der Regel keine Daten.
+          </p>
+          <p className="mb-4">
+            <strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO, soweit Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist; in allen übrigen Fällen sowie für Missbrauchsschutz, interne Benachrichtigung, Antwortentwurf und Ergänzung von Firmendaten unser berechtigtes Interesse an einer schnellen und vollständigen Bearbeitung von Anfragen (Art. 6 Abs. 1 lit. f DSGVO).
+          </p>
+          <p className="mb-4">
+            <strong>Speicherdauer:</strong> Die Protokolle des Automatisierungssystems werden nach 30 Tagen gelöscht. Anfragen, aus denen kein Auftrag entsteht, löschen wir 24 Monate nach dem letzten Kontakt. Entsteht ein Auftrag, gelten die gesetzlichen Aufbewahrungsfristen (bis zu 10 Jahre nach Handels- und Steuerrecht).
+          </p>
 
           <h3 className="text-2xl font-bold mb-4 mt-8">WhatsApp Business</h3>
           <p className="mb-4">
@@ -172,8 +209,18 @@ export default function DatenschutzPage() {
 
         <section id="section-5" className="mb-12">
           <h2 className="text-3xl font-bold mb-6">5. Analyse-Tools und Werbung</h2>
+          <h3 className="text-2xl font-bold mb-4">Vercel Web Analytics</h3>
           <p className="mb-4">
-            Diese Website nutzt keine Analyse-Tools und beinhaltet keine Werbung für Produkte oder Dienstleistungen Dritter.
+            Wir nutzen Vercel Web Analytics, um die Nutzung unserer Website statistisch auszuwerten (z. B. aufgerufene Seiten, Herkunftsland, Gerätetyp). Anbieter ist die Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, USA.
+          </p>
+          <p className="mb-4">
+            Vercel Web Analytics setzt keine Cookies und speichert keine Informationen auf Ihrem Endgerät. Besucher werden nicht über mehrere Tage oder über verschiedene Websites hinweg wiedererkannt; die Auswertung erfolgt ausschließlich zusammengefasst. Die Daten werden über die Domain dieser Website erhoben.
+          </p>
+          <p className="mb-4">
+            Rechtsgrundlage ist unser berechtigtes Interesse an einer bedarfsgerechten Gestaltung unserer Website (Art. 6 Abs. 1 lit. f DSGVO). Zur Datenübermittlung in die USA siehe Abschnitt 2 (Hosting).
+          </p>
+          <p className="mb-4">
+            Diese Website beinhaltet keine Werbung für Produkte oder Dienstleistungen Dritter.
           </p>
         </section>
 

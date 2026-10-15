@@ -1449,3 +1449,16 @@ keine
 | `src/lib/api/blog.ts` | Konstante `GMODG_HINWEIS`, 2 Ratgeber neu, 9 Beiträge korrigiert |
 | `src/app/faq/page.tsx` | 2 FAQ-Antworten |
 | `VALIDATION_REPORT.md` | Report 2026-09-09 vorangestellt |
+
+## Session 2026-10-15 (GTM für Google Ads — vorbereitet, wartet auf Andrej/Ads-Dienstleister)
+
+### Completed
+- [x] Anfrage Andrej / Ads-Dienstleister: GTM `GTM-KBSNLM3Q` einbauen → **nicht eingebaut**, weil kein Cookie-Banner existiert (§ 25 TDDDG, Consent Mode v2).
+- [x] Container öffentlich geprüft: Version 1, leer (keine Tags/Trigger/CMP).
+- [x] Rückfrage an Andrej + Ads-Dienstleister formuliert (CMP oder eigener Banner, GTM vor/nach Einwilligung, Conversions als dataLayer-Events, Remarketing/Enhanced Conversions/GA4, Lesezugriff).
+- [x] Entwurf Datenschutzerklärung + Cookie-Hinweis: `docs/ENTWURF_datenschutz-gtm-google-ads_2026-10-15.md` (Google-/Vercel-Adressen gegen Quelle geprüft).
+
+### Offene Punkte
+- [ ] Antwort Andrej/Ads-Dienstleister abwarten → dann Banner + Consent Mode v2 + GTM (vorhandene Komponente `src/components/analytics/google-tag-manager.tsx`) + DSE live.
+- [ ] Nebenbefund: DSE Abschnitt 5 „keine Analyse-Tools“ falsch (Vercel Analytics läuft); Cookie-Hinweis listet veraltete Odoo-Cookies; DSE ohne Abschnitt zu Kontaktformularen.
+- [x] HEC-144 Teil 1 (Commits 6535e7f, 970bbe2; Text geprüft Jev, Deploy 15.10., Freigabe Andrej folgt): DSE §2 Vercel-Transfergrundlage (DPF statt Art. 49 Einwilligung), §4 Cookies/Kostenrechner-localStorage/Formulare (n8n, Odoo, Telegram, Mistral, Odoo-IAP, Fristen), §5 Vercel Web Analytics; Cookie-Hinweis neu (Odoo-/Google-Liste raus). Prod gemessen: 0 Cookies, localStorage nur `/rechner`. Gate 2 `security-reviewer` APPROVED. Offen für Jev: Telegram-Drittland, Mistral-DPA/Training, Rechner-Speicher beim Aufruf, VVT VT-07.
