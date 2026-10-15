@@ -1,5 +1,6 @@
 "use client";
 
+import { trackLead } from "@/lib/consent";
 import { useState } from "react";
 import { useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -67,6 +68,7 @@ export function EmergencyForm() {
       const result = await response.json();
 
       if (result.success) {
+        trackLead("notdienst");
         const baseMsg =
           result.message ||
           "Ihre Notfallanfrage wurde erfasst! Wir rufen Sie umgehend zurück.";

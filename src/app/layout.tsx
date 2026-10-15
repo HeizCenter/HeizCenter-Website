@@ -5,6 +5,8 @@ import "./globals.css";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { SITE_URL } from "@/lib/seo";
+import { ConsentGtm } from "@/components/analytics/consent-gtm";
+import { ConsentBanner } from "@/components/consent/consent-banner";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -67,6 +69,8 @@ export default function RootLayout({
         <main className="min-h-screen">{children}</main>
         <Footer />
         <Analytics />
+        <ConsentBanner />
+        <ConsentGtm />
       </body>
     </html>
   );

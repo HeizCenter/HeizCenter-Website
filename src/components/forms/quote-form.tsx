@@ -1,5 +1,6 @@
 "use client";
 
+import { trackLead } from "@/lib/consent";
 import { useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import { useForm, Controller } from "react-hook-form";
@@ -183,6 +184,7 @@ export function QuoteForm(props: QuoteFormProps) {
       const result = await response.json();
 
       if (result.success) {
+        trackLead("angebot");
         const baseMsg =
           result.message ||
           "Vielen Dank für Ihre Anfrage! Wir melden uns innerhalb von 24 Stunden bei Ihnen.";

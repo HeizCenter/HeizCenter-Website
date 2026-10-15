@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { getCanonicalUrl } from "@/lib/seo";
 import { CONTACT } from "@/lib/config/contact";
+import { isConsentEnabled } from "@/lib/consent";
 
 export const metadata: Metadata = {
   title: "Datenschutzerklärung | HeizCenter",
@@ -139,7 +140,10 @@ export default function DatenschutzPage() {
             Cookies sind kleine Datenpakete und richten auf Ihrem Endgerät keinen Schaden an. Sie werden entweder vorübergehend für die Dauer einer Sitzung (Session-Cookies) oder dauerhaft (permanente Cookies) auf Ihrem Endgerät gespeichert.
           </p>
           <p className="mb-4">
-            Diese Website setzt derzeit keine Cookies. Im Speicher Ihres Browsers legt sie nur auf der Seite „Kostenrechner“ einen Eintrag ab (siehe „Kostenrechner“ unten). Sollten wir künftig Cookies einsetzen, gilt: Cookies, die zur Durchführung des elektronischen Kommunikationsvorgangs oder zur Bereitstellung bestimmter, von Ihnen erwünschter Funktionen erforderlich sind (notwendige Cookies), werden auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO und § 25 Abs. 2 Nr. 2 TDDDG gespeichert. Alle anderen Cookies setzen wir nur mit Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO, § 25 Abs. 1 TDDDG); die Einwilligung ist jederzeit für die Zukunft widerrufbar.
+            {isConsentEnabled()
+              ? "Ohne Ihre Einwilligung setzt diese Website keine Cookies. Im Speicher Ihres Browsers legt sie Ihre Auswahl im Cookie-Banner ab (siehe Abschnitt 5) sowie auf der Seite „Kostenrechner“ Ihre Eingaben (siehe „Kostenrechner“ unten). Mit Ihrer Einwilligung setzt Google Cookies (siehe „Google Ads“ in Abschnitt 5). Es gilt:"
+              : "Diese Website setzt derzeit keine Cookies. Im Speicher Ihres Browsers legt sie nur auf der Seite „Kostenrechner“ einen Eintrag ab (siehe „Kostenrechner“ unten). Sollten wir künftig Cookies einsetzen, gilt:"}{" "}
+            Cookies, die zur Durchführung des elektronischen Kommunikationsvorgangs oder zur Bereitstellung bestimmter, von Ihnen erwünschter Funktionen erforderlich sind (notwendige Cookies), werden auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO und § 25 Abs. 2 Nr. 2 TDDDG gespeichert. Alle anderen Cookies setzen wir nur mit Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO, § 25 Abs. 1 TDDDG); die Einwilligung ist jederzeit für die Zukunft widerrufbar.
           </p>
           <p className="mb-4">
             Einzelheiten finden Sie in unserem{" "}
@@ -209,7 +213,56 @@ export default function DatenschutzPage() {
 
         <section id="section-5" className="mb-12">
           <h2 className="text-3xl font-bold mb-6">5. Analyse-Tools und Werbung</h2>
-          <h3 className="text-2xl font-bold mb-4">Vercel Web Analytics</h3>
+          {isConsentEnabled() && (
+            <>
+              <h3 className="text-2xl font-bold mb-4">Einwilligungsverwaltung (Cookie-Banner)</h3>
+              <p className="mb-4">
+                Beim ersten Besuch fragen wir über ein Banner ab, ob Sie in den Einsatz von Marketing-Diensten (Google Tag Manager, Google Ads) einwilligen. Ohne Ihre Einwilligung werden diese Dienste nicht geladen und es werden keine Daten an Google übertragen.
+              </p>
+              <p className="mb-4">
+                Ihre Auswahl und der Zeitpunkt der Entscheidung werden unter dem Namen „hc_consent“ im lokalen Speicher Ihres Browsers abgelegt, damit das Banner nicht bei jedem Seitenaufruf erneut erscheint. Diese Speicherung ist erforderlich, um Ihre Entscheidung umzusetzen und nachweisen zu können (Art. 6 Abs. 1 lit. c DSGVO i. V. m. Art. 7 Abs. 1 DSGVO, § 25 Abs. 2 Nr. 2 TDDDG). Nach 12 Monaten fragen wir erneut.
+              </p>
+              <p className="mb-4">
+                Sie können Ihre Einwilligung jederzeit über den Link „Cookie-Einstellungen“ im Fußbereich jeder Seite ändern oder widerrufen. Bei einem Widerruf löschen wir die von Google auf dieser Domain gesetzten Cookies und laden die Seite ohne die Marketing-Dienste neu.
+              </p>
+
+              <h3 className="text-2xl font-bold mb-4 mt-8">Google Tag Manager</h3>
+              <p className="mb-4">
+                Wir nutzen den Google Tag Manager. Anbieter ist die Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Der Google Tag Manager ist ein Werkzeug, mit dem wir Marketing-Dienste auf unserer Website einbinden. Er selbst erstellt keine Nutzerprofile und speichert keine Cookies. Beim Laden wird jedoch Ihre IP-Adresse an Google übertragen; dabei kann es auch zu einer Übermittlung an die Google LLC in den USA kommen.
+              </p>
+              <p className="mb-4">
+                Der Google Tag Manager wird nur geladen, wenn Sie über unser Cookie-Banner eingewilligt haben. Rechtsgrundlage ist Ihre Einwilligung (Art. 6 Abs. 1 lit. a DSGVO, § 25 Abs. 1 TDDDG); sie ist jederzeit widerrufbar.
+              </p>
+
+              <h3 className="text-2xl font-bold mb-4 mt-8">Google Ads (Conversion-Tracking)</h3>
+              <p className="mb-4">
+                Wir nutzen Google Ads, um auf unsere Leistungen aufmerksam zu machen. Anbieter ist die Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland.
+              </p>
+              <p className="mb-4">
+                Wenn Sie über eine Google-Anzeige auf unsere Website gelangen, kann Google ein Cookie setzen. Senden Sie danach eine Anfrage über eines unserer Formulare ab oder tippen Sie auf unsere Telefonnummer bzw. den WhatsApp-Link, erkennen Google und wir, dass eine Anzeige zu dieser Kontaktaufnahme geführt hat („Conversion“). An Google wird dabei nur die Art der Kontaktaufnahme gemeldet, nicht deren Inhalt. Wir erhalten ausschließlich statistische Auswertungen (z. B. Anzahl der Conversions je Anzeige), keine Informationen, mit denen wir Sie persönlich identifizieren können.
+              </p>
+              <p className="mb-4">
+                Die Verarbeitung erfolgt ausschließlich auf Grundlage Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO, § 25 Abs. 1 TDDDG); sie ist jederzeit widerrufbar. Die von Google Ads gesetzten Cookies werden nach spätestens 90 Tagen gelöscht. Die Datenübermittlung in die USA stützt sich auf den Angemessenheitsbeschluss der EU-Kommission zum EU-US Data Privacy Framework (Art. 45 DSGVO), unter dem die Google LLC zertifiziert ist, sowie ergänzend auf die EU-Standardvertragsklauseln.
+              </p>
+              <p className="mb-4">
+                Weitere Informationen:{" "}
+                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-[#0F5B78] hover:underline">
+                  Datenschutzerklärung von Google
+                </a>
+                {" · "}
+                <a href="https://adssettings.google.com/" target="_blank" rel="noopener noreferrer" className="text-[#0F5B78] hover:underline">
+                  Google-Werbeeinstellungen
+                </a>
+              </p>
+
+              <h3 className="text-2xl font-bold mb-4 mt-8">Google Consent Mode</h3>
+              <p className="mb-4">
+                Wir verwenden den Google Consent Mode (Version 2). Er teilt den Google-Diensten Ihre Auswahl im Cookie-Banner mit, sodass Werbe- und Analyse-Cookies nur nach Ihrer Zustimmung gespeichert werden. Da der Google Tag Manager bei uns erst nach Ihrer Einwilligung geladen wird, werden ohne Einwilligung keine Daten an Google übertragen.
+              </p>
+            </>
+          )}
+
+          <h3 className={`text-2xl font-bold mb-4${isConsentEnabled() ? " mt-8" : ""}`}>Vercel Web Analytics</h3>
           <p className="mb-4">
             Wir nutzen Vercel Web Analytics, um die Nutzung unserer Website statistisch auszuwerten (z. B. aufgerufene Seiten, Herkunftsland, Gerätetyp). Anbieter ist die Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, USA.
           </p>

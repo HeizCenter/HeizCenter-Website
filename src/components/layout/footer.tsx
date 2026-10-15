@@ -3,6 +3,7 @@ import Image from "next/image";
 import { LOCATIONS } from "@/lib/constants/locations";
 import { Phone, Mail, MapPin } from "lucide-react";
 import { CONTACT, getPhoneLink, getEmailLink } from "@/lib/config/contact";
+import { CookieSettingsLink } from "@/components/consent/cookie-settings-link";
 
 export function Footer() {
   return (
@@ -220,6 +221,9 @@ export function Footer() {
                 >
                   Cookie-Hinweis
                 </Link>
+              </li>
+              <li>
+                <CookieSettingsLink className="text-slate-300 hover:text-white transition-colors" />
               </li>
             </ul>
           </div>

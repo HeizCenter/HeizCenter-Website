@@ -1,5 +1,7 @@
 import { Metadata } from "next";
 import { getCanonicalUrl } from "@/lib/seo";
+import { isConsentEnabled } from "@/lib/consent";
+import { CookieSettingsLink } from "@/components/consent/cookie-settings-link";
 
 export const metadata: Metadata = {
   title: "Cookie-Richtlinien | HeizCenter",
@@ -20,11 +22,22 @@ export default function CookieHinweisPage() {
             Cookies sind kleine Textdateien, die eine Website in Ihrem Browser speichert. Ähnlich funktionieren Einträge im
             Speicher Ihres Browsers (z. B. „Local Storage“), mit denen eine Website Informationen auf Ihrem Gerät ablegen kann.
           </p>
-          <p className="mb-4">
-            <strong>Diese Website setzt derzeit keine Cookies.</strong> Im Speicher Ihres Browsers legt sie nur auf der Seite
-            „Kostenrechner“ einen Eintrag ab, damit Ihre Eingaben beim nächsten Aufruf erhalten bleiben. Für die
-            Reichweitenmessung nutzen wir Vercel Web Analytics, das ohne Cookies arbeitet.
-          </p>
+          {isConsentEnabled() ? (
+            <p className="mb-4">
+              <strong>Ohne Ihre Einwilligung setzt diese Website keine Cookies.</strong> Im Speicher Ihres Browsers legt sie
+              Ihre Auswahl im Cookie-Banner ab sowie auf der Seite „Kostenrechner“ Ihre Eingaben. Nur wenn Sie im
+              Cookie-Banner zustimmen, werden der Google Tag Manager und Google Ads geladen, die Cookies setzen. Ihre
+              Auswahl können Sie jederzeit ändern:{" "}
+              <CookieSettingsLink className="text-[#0F5B78] underline" />. Für die Reichweitenmessung nutzen wir Vercel
+              Web Analytics, das ohne Cookies arbeitet.
+            </p>
+          ) : (
+            <p className="mb-4">
+              <strong>Diese Website setzt derzeit keine Cookies.</strong> Im Speicher Ihres Browsers legt sie nur auf der Seite
+              „Kostenrechner“ einen Eintrag ab, damit Ihre Eingaben beim nächsten Aufruf erhalten bleiben. Für die
+              Reichweitenmessung nutzen wir Vercel Web Analytics, das ohne Cookies arbeitet.
+            </p>
+          )}
           <p className="mb-6">
             Die folgende Übersicht zeigt, welche Dienste auf Ihrem Gerät Informationen speichern oder auslesen:
           </p>
@@ -41,6 +54,36 @@ export default function CookieHinweisPage() {
                 </tr>
               </thead>
               <tbody>
+                {isConsentEnabled() && (
+                  <>
+                    <tr>
+                      <td className="border border-slate-300 px-4 py-3">
+                        <strong>Einwilligung</strong><br />
+                        <span className="text-sm">(notwendig)</span>
+                      </td>
+                      <td className="border border-slate-300 px-4 py-3">
+                        Speichert Ihre Auswahl im Cookie-Banner und den Zeitpunkt der Entscheidung. Nach 12 Monaten fragen wir
+                        erneut.
+                      </td>
+                      <td className="border border-slate-300 px-4 py-3">
+                        hc_consent (Local Storage, HeizCenter)
+                      </td>
+                    </tr>
+                    <tr className="bg-slate-50">
+                      <td className="border border-slate-300 px-4 py-3">
+                        <strong>Marketing</strong><br />
+                        <span className="text-sm">(nur mit Einwilligung)</span>
+                      </td>
+                      <td className="border border-slate-300 px-4 py-3">
+                        Google Ads Conversion-Tracking über den Google Tag Manager: misst, ob eine Anzeige zu einer Anfrage,
+                        einem Anruf oder einer WhatsApp-Nachricht geführt hat. Löschung nach spätestens 90 Tagen.
+                      </td>
+                      <td className="border border-slate-300 px-4 py-3">
+                        _gcl_au, _gcl_aw (Google)
+                      </td>
+                    </tr>
+                  </>
+                )}
                 <tr>
                   <td className="border border-slate-300 px-4 py-3">
                     <strong>Funktion</strong><br />

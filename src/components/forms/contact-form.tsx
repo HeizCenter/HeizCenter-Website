@@ -1,5 +1,6 @@
 "use client";
 
+import { trackLead } from "@/lib/consent";
 import { useState, useEffect } from "react";
 import { useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -69,6 +70,7 @@ export function ContactForm({ initialMessage = "", initialSubject = "" }: Contac
       const result = await response.json();
 
       if (result.success) {
+        trackLead("kontakt");
         const baseMsg =
           result.message ||
           "Vielen Dank für Ihre Nachricht! Wir melden uns in Kürze bei Ihnen.";
