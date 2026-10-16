@@ -141,7 +141,7 @@ export default function DatenschutzPage() {
           </p>
           <p className="mb-4">
             {isConsentEnabled()
-              ? "Ohne Ihre Einwilligung setzt diese Website keine Cookies. Im Speicher Ihres Browsers legt sie Ihre Auswahl im Cookie-Banner ab (siehe Abschnitt 5) sowie auf der Seite „Kostenrechner“ Ihre Eingaben (siehe „Kostenrechner“ unten). Mit Ihrer Einwilligung setzt Google Cookies (siehe „Google Ads“ in Abschnitt 5). Es gilt:"
+              ? "Ohne Ihre Einwilligung setzt diese Website keine Cookies. Im Speicher Ihres Browsers legt sie Ihre Auswahl im Cookie-Banner ab (siehe Abschnitt 5) sowie auf der Seite „Kostenrechner“ Ihre Eingaben (siehe „Kostenrechner“ unten). Mit Ihrer Einwilligung setzt Google Cookies (siehe „Google Analytics“ und „Google Ads“ in Abschnitt 5). Es gilt:"
               : "Diese Website setzt derzeit keine Cookies. Im Speicher Ihres Browsers legt sie nur auf der Seite „Kostenrechner“ einen Eintrag ab (siehe „Kostenrechner“ unten). Sollten wir künftig Cookies einsetzen, gilt:"}{" "}
             Cookies, die zur Durchführung des elektronischen Kommunikationsvorgangs oder zur Bereitstellung bestimmter, von Ihnen erwünschter Funktionen erforderlich sind (notwendige Cookies), werden auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO und § 25 Abs. 2 Nr. 2 TDDDG gespeichert. Alle anderen Cookies setzen wir nur mit Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO, § 25 Abs. 1 TDDDG); die Einwilligung ist jederzeit für die Zukunft widerrufbar.
           </p>
@@ -217,13 +217,13 @@ export default function DatenschutzPage() {
             <>
               <h3 className="text-2xl font-bold mb-4">Einwilligungsverwaltung (Cookie-Banner)</h3>
               <p className="mb-4">
-                Beim ersten Besuch fragen wir über ein Banner ab, ob Sie in den Einsatz von Marketing-Diensten (Google Tag Manager, Google Ads) einwilligen. Ohne Ihre Einwilligung werden diese Dienste nicht geladen und es werden keine Daten an Google übertragen.
+                Beim ersten Besuch fragen wir über ein Banner ab, ob Sie in den Einsatz von Diensten der Kategorien „Statistik“ (Google Analytics) und „Marketing“ (Google Ads) einwilligen; beide werden über den Google Tag Manager eingebunden. Sie können beiden, einer oder keiner Kategorie zustimmen. Ohne Ihre Einwilligung werden diese Dienste nicht geladen und es werden keine Daten an Google übertragen.
               </p>
               <p className="mb-4">
                 Ihre Auswahl und der Zeitpunkt der Entscheidung werden unter dem Namen „hc_consent“ im lokalen Speicher Ihres Browsers abgelegt, damit das Banner nicht bei jedem Seitenaufruf erneut erscheint. Diese Speicherung ist erforderlich, um Ihre Entscheidung umzusetzen (§ 25 Abs. 2 Nr. 2 TDDDG, Art. 6 Abs. 1 lit. f DSGVO). Ein Protokoll Ihrer Entscheidung auf unseren Servern führen wir nicht. Nach 12 Monaten fragen wir erneut.
               </p>
               <p className="mb-4">
-                Sie können Ihre Einwilligung jederzeit über den Link „Cookie-Einstellungen“ im Fußbereich jeder Seite ändern oder widerrufen. Bei einem Widerruf löschen wir die von Google auf dieser Domain gesetzten Cookies und laden die Seite ohne die Marketing-Dienste neu.
+                Sie können Ihre Einwilligung jederzeit über den Link „Cookie-Einstellungen“ im Fußbereich jeder Seite ändern oder widerrufen. Bei einem Widerruf löschen wir die von Google für die betroffene Kategorie auf dieser Domain gesetzten Cookies und laden die Seite mit Ihrer neuen Auswahl neu.
               </p>
 
               <h3 className="text-2xl font-bold mb-4 mt-8">Google Tag Manager</h3>
@@ -231,7 +231,18 @@ export default function DatenschutzPage() {
                 Wir nutzen den Google Tag Manager. Anbieter ist die Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Der Google Tag Manager ist ein Werkzeug, mit dem wir Marketing-Dienste auf unserer Website einbinden. Er selbst erstellt keine Nutzerprofile und speichert keine Cookies. Beim Laden wird jedoch Ihre IP-Adresse an Google übertragen; dabei kann es auch zu einer Übermittlung an die Google LLC in den USA kommen.
               </p>
               <p className="mb-4">
-                Der Google Tag Manager wird nur geladen, wenn Sie über unser Cookie-Banner eingewilligt haben. Rechtsgrundlage ist Ihre Einwilligung (Art. 6 Abs. 1 lit. a DSGVO, § 25 Abs. 1 TDDDG); sie ist jederzeit widerrufbar.
+                Der Google Tag Manager wird nur geladen, wenn Sie über unser Cookie-Banner mindestens einer Kategorie zugestimmt haben. Rechtsgrundlage ist Ihre Einwilligung (Art. 6 Abs. 1 lit. a DSGVO, § 25 Abs. 1 TDDDG); sie ist jederzeit widerrufbar.
+              </p>
+
+              <h3 className="text-2xl font-bold mb-4 mt-8">Google Analytics 4 (Statistik)</h3>
+              <p className="mb-4">
+                Mit Ihrer Einwilligung in die Kategorie „Statistik“ nutzen wir Google Analytics 4, um zu verstehen, wie unsere Website genutzt wird (z. B. welche Seiten aufgerufen werden, wie Besucher zu uns finden und wie oft Anfragen gestellt werden). Anbieter ist die Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland.
+              </p>
+              <p className="mb-4">
+                Google Analytics setzt Cookies mit einer pseudonymen Kennung und verarbeitet dabei insbesondere: aufgerufene Seiten und Interaktionen (z. B. das Absenden eines Formulars – nur dessen Art, nicht der Inhalt), Browser- und Geräteinformationen, die zuvor besuchte Seite (Referrer), den ungefähren Standort (aus der IP-Adresse abgeleitet) und den Zeitpunkt. IP-Adressen werden von Google Analytics 4 nach Angaben von Google nicht gespeichert. Wir erhalten ausschließlich zusammengefasste Auswertungen.
+              </p>
+              <p className="mb-4">
+                Die Verarbeitung erfolgt ausschließlich auf Grundlage Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO, § 25 Abs. 1 TDDDG); sie ist jederzeit widerrufbar. Die Analytics-Cookies („_ga“-Cookies) werden nach spätestens 2 Jahren gelöscht; die Nutzungsdaten in Google Analytics werden nach höchstens 14 Monaten gelöscht. Zur Datenübermittlung in die USA siehe „Google Ads“ unten.
               </p>
 
               <h3 className="text-2xl font-bold mb-4 mt-8">Google Ads (Conversion-Tracking)</h3>
@@ -239,7 +250,7 @@ export default function DatenschutzPage() {
                 Wir nutzen Google Ads, um auf unsere Leistungen aufmerksam zu machen. Anbieter ist die Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland.
               </p>
               <p className="mb-4">
-                Wenn Sie über eine Google-Anzeige auf unsere Website gelangen, kann Google ein Cookie setzen. Senden Sie danach eine Anfrage über eines unserer Formulare ab oder tippen Sie auf unsere Telefonnummer bzw. den WhatsApp-Link, erkennen Google und wir, dass eine Anzeige zu dieser Kontaktaufnahme geführt hat („Conversion“). Personalisierte Werbung (Remarketing) und Reichweitenanalyse über Google sind dabei ausgeschaltet.
+                Wenn Sie über eine Google-Anzeige auf unsere Website gelangen, kann Google ein Cookie setzen. Senden Sie danach eine Anfrage über eines unserer Formulare ab oder tippen Sie auf unsere Telefonnummer bzw. den WhatsApp-Link, erkennen Google und wir, dass eine Anzeige zu dieser Kontaktaufnahme geführt hat („Conversion“). Dies geschieht nur mit Ihrer Einwilligung in die Kategorie „Marketing“. Personalisierte Werbung (Remarketing) ist ausgeschaltet.
               </p>
               <p className="mb-4">
                 Dabei verarbeitet Google insbesondere: Ihre IP-Adresse, Browser- und Geräteinformationen, die Klick-Kennung der Anzeige (GCLID), die aufgerufene Seite und die zuvor besuchte Seite (Referrer), den Zeitpunkt sowie Cookie-Kennungen. Aus unseren Formularen melden wir an Google nur die Art der Kontaktaufnahme (Kontakt-, Angebots- oder Notdienstanfrage), nicht deren Inhalt. Wir erhalten ausschließlich statistische Auswertungen (z. B. Anzahl der Conversions je Anzeige), keine Informationen, mit denen wir Sie persönlich identifizieren können. Google verarbeitet diese Daten teilweise als eigener Verantwortlicher auch für eigene Zwecke; Näheres in der Datenschutzerklärung von Google.
@@ -260,7 +271,7 @@ export default function DatenschutzPage() {
 
               <h3 className="text-2xl font-bold mb-4 mt-8">Google Consent Mode</h3>
               <p className="mb-4">
-                Wir verwenden den Google Consent Mode (Version 2). Er teilt den Google-Diensten Ihre Auswahl im Cookie-Banner mit, sodass Werbe- und Analyse-Cookies nur nach Ihrer Zustimmung gespeichert werden. Da der Google Tag Manager bei uns erst nach Ihrer Einwilligung geladen wird, werden ohne Einwilligung keine Daten an Google übertragen.
+                Wir verwenden den Google Consent Mode (Version 2). Er teilt den Google-Diensten Ihre Auswahl im Cookie-Banner mit, sodass Analyse-Cookies nur nach Zustimmung zu „Statistik“ und Werbe-Cookies nur nach Zustimmung zu „Marketing“ gespeichert werden. Personalisierte Werbung ist unabhängig von Ihrer Auswahl ausgeschaltet. Da der Google Tag Manager bei uns erst nach Ihrer Einwilligung geladen wird, werden ohne Einwilligung keine Daten an Google übertragen.
               </p>
             </>
           )}

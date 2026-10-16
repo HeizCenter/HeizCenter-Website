@@ -6,6 +6,7 @@ import {
   CONSENT_CHANGE_EVENT,
   CONSENT_STORAGE_KEY,
   GTM_ID,
+  hasAnyConsent,
   isConsentEnabled,
   pushConsentDefault,
   pushConsentUpdate,
@@ -14,8 +15,8 @@ import {
 } from "@/lib/consent";
 
 /**
- * Lädt GTM ausschließlich nach Zustimmung (Variante A, HEC-145).
- * Vorher werden keine Anfragen an Google gestellt.
+ * Lädt GTM ausschließlich nach Zustimmung zu Statistik und/oder Marketing
+ * (Variante A, HEC-145). Vorher werden keine Anfragen an Google gestellt.
  */
 export function ConsentGtm() {
   const [load, setLoad] = useState(false);
@@ -24,9 +25,10 @@ export function ConsentGtm() {
     if (!isConsentEnabled()) return;
 
     const activate = () => {
-      if (readConsent() !== "granted") return;
+      const state = readConsent();
+      if (!state || !hasAnyConsent(state)) return;
       pushConsentDefault();
-      pushConsentUpdate("granted");
+      pushConsentUpdate(state);
       setLoad(true);
     };
 
@@ -45,9 +47,9 @@ export function ConsentGtm() {
       else if (href.includes("wa.me/")) trackEvent("whatsapp_click");
     };
 
-    // Widerruf in einem anderen Tab: GTM auch hier entladen
+    // Änderung in einem anderen Tab: mit neuer Auswahl neu laden
     const onStorage = (e: StorageEvent) => {
-      if (e.key === CONSENT_STORAGE_KEY && readConsent() !== "granted") window.location.reload();
+      if (e.key === CONSENT_STORAGE_KEY) window.location.reload();
     };
 
     document.addEventListener("click", onClick, { capture: true });

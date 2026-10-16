@@ -26,10 +26,10 @@ export default function CookieHinweisPage() {
             <p className="mb-4">
               <strong>Ohne Ihre Einwilligung setzt diese Website keine Cookies.</strong> Im Speicher Ihres Browsers legt sie
               Ihre Auswahl im Cookie-Banner ab sowie auf der Seite „Kostenrechner“ Ihre Eingaben. Nur wenn Sie im
-              Cookie-Banner zustimmen, werden der Google Tag Manager und Google Ads geladen, die Cookies setzen. Ihre
-              Auswahl können Sie jederzeit ändern:{" "}
-              <CookieSettingsLink className="text-[#0F5B78] underline" />. Für die Reichweitenmessung nutzen wir Vercel
-              Web Analytics, das ohne Cookies arbeitet.
+              Cookie-Banner zustimmen, werden über den Google Tag Manager Google Analytics (Statistik) bzw. Google Ads
+              (Marketing) geladen, die Cookies setzen. Ihre Auswahl können Sie jederzeit ändern:{" "}
+              <CookieSettingsLink className="text-[#0F5B78] underline" />. Ohne Einwilligung nutzen wir für die
+              Reichweitenmessung nur Vercel Web Analytics, das ohne Cookies arbeitet.
             </p>
           ) : (
             <p className="mb-4">
@@ -70,6 +70,19 @@ export default function CookieHinweisPage() {
                       </td>
                     </tr>
                     <tr className="bg-slate-50">
+                      <td className="border border-slate-300 px-4 py-3">
+                        <strong>Statistik</strong><br />
+                        <span className="text-sm">(nur mit Einwilligung)</span>
+                      </td>
+                      <td className="border border-slate-300 px-4 py-3">
+                        Google Analytics über den Google Tag Manager: Auswertung, wie unsere Website genutzt wird, mit
+                        pseudonymer Kennung. Löschung nach spätestens 2 Jahren.
+                      </td>
+                      <td className="border border-slate-300 px-4 py-3">
+                        _ga, _ga_* (Google)
+                      </td>
+                    </tr>
+                    <tr>
                       <td className="border border-slate-300 px-4 py-3">
                         <strong>Marketing</strong><br />
                         <span className="text-sm">(nur mit Einwilligung)</span>
