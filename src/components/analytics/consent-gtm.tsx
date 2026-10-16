@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { GoogleTagManager } from "./google-tag-manager";
 import {
   CONSENT_CHANGE_EVENT,
+  CONSENT_STORAGE_KEY,
   GTM_ID,
   isConsentEnabled,
   pushConsentDefault,
@@ -44,8 +45,17 @@ export function ConsentGtm() {
       else if (href.includes("wa.me/")) trackEvent("whatsapp_click");
     };
 
+    // Widerruf in einem anderen Tab: GTM auch hier entladen
+    const onStorage = (e: StorageEvent) => {
+      if (e.key === CONSENT_STORAGE_KEY && readConsent() !== "granted") window.location.reload();
+    };
+
     document.addEventListener("click", onClick, { capture: true });
-    return () => document.removeEventListener("click", onClick, { capture: true });
+    window.addEventListener("storage", onStorage);
+    return () => {
+      document.removeEventListener("click", onClick, { capture: true });
+      window.removeEventListener("storage", onStorage);
+    };
   }, [load]);
 
   return load ? <GoogleTagManager gtmId={GTM_ID} /> : null;

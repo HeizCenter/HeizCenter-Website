@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import {
@@ -13,30 +13,56 @@ import {
 
 export function ConsentBanner() {
   const [open, setOpen] = useState(false);
+  const dialogRef = useRef<HTMLDivElement>(null);
+  const returnFocusRef = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
     if (!isConsentEnabled()) return;
     if (readConsent() === null) setOpen(true);
 
-    const reopen = () => setOpen(true);
+    const reopen = () => {
+      returnFocusRef.current = document.activeElement as HTMLElement | null;
+      setOpen(true);
+    };
     window.addEventListener(CONSENT_OPEN_EVENT, reopen);
     return () => window.removeEventListener(CONSENT_OPEN_EVENT, reopen);
   }, []);
+
+  // Fokus auf den Dialog; Platz unten freihalten, damit Footer-Links (Impressum) erreichbar bleiben
+  useEffect(() => {
+    const dialog = dialogRef.current;
+    if (!open || !dialog) return;
+
+    dialog.focus();
+    const reserve = () => {
+      document.body.style.paddingBottom = `${dialog.offsetHeight}px`;
+    };
+    reserve();
+    const observer = new ResizeObserver(reserve);
+    observer.observe(dialog);
+    return () => {
+      observer.disconnect();
+      document.body.style.paddingBottom = "";
+    };
+  }, [open]);
 
   if (!open) return null;
 
   const choose = (choice: ConsentChoice) => {
     setOpen(false);
+    returnFocusRef.current?.focus();
     saveConsent(choice);
   };
 
   return (
     <div
+      ref={dialogRef}
+      tabIndex={-1}
       role="dialog"
       aria-modal="false"
       aria-labelledby="consent-title"
       aria-describedby="consent-text"
-      className="fixed inset-x-0 bottom-0 z-[60] border-t border-slate-200 bg-white shadow-[0_-4px_16px_rgba(0,0,0,0.08)]"
+      className="fixed inset-x-0 bottom-0 z-40 border-t border-slate-200 bg-white shadow-[0_-4px_16px_rgba(0,0,0,0.08)] focus:outline-none"
     >
       <div className="container flex flex-col gap-4 py-4 md:flex-row md:items-center md:justify-between">
         <div className="max-w-3xl text-sm text-slate-700">

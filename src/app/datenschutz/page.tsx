@@ -220,7 +220,7 @@ export default function DatenschutzPage() {
                 Beim ersten Besuch fragen wir über ein Banner ab, ob Sie in den Einsatz von Marketing-Diensten (Google Tag Manager, Google Ads) einwilligen. Ohne Ihre Einwilligung werden diese Dienste nicht geladen und es werden keine Daten an Google übertragen.
               </p>
               <p className="mb-4">
-                Ihre Auswahl und der Zeitpunkt der Entscheidung werden unter dem Namen „hc_consent“ im lokalen Speicher Ihres Browsers abgelegt, damit das Banner nicht bei jedem Seitenaufruf erneut erscheint. Diese Speicherung ist erforderlich, um Ihre Entscheidung umzusetzen und nachweisen zu können (Art. 6 Abs. 1 lit. c DSGVO i. V. m. Art. 7 Abs. 1 DSGVO, § 25 Abs. 2 Nr. 2 TDDDG). Nach 12 Monaten fragen wir erneut.
+                Ihre Auswahl und der Zeitpunkt der Entscheidung werden unter dem Namen „hc_consent“ im lokalen Speicher Ihres Browsers abgelegt, damit das Banner nicht bei jedem Seitenaufruf erneut erscheint. Diese Speicherung ist erforderlich, um Ihre Entscheidung umzusetzen (§ 25 Abs. 2 Nr. 2 TDDDG, Art. 6 Abs. 1 lit. f DSGVO). Ein Protokoll Ihrer Entscheidung auf unseren Servern führen wir nicht. Nach 12 Monaten fragen wir erneut.
               </p>
               <p className="mb-4">
                 Sie können Ihre Einwilligung jederzeit über den Link „Cookie-Einstellungen“ im Fußbereich jeder Seite ändern oder widerrufen. Bei einem Widerruf löschen wir die von Google auf dieser Domain gesetzten Cookies und laden die Seite ohne die Marketing-Dienste neu.
@@ -239,10 +239,13 @@ export default function DatenschutzPage() {
                 Wir nutzen Google Ads, um auf unsere Leistungen aufmerksam zu machen. Anbieter ist die Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland.
               </p>
               <p className="mb-4">
-                Wenn Sie über eine Google-Anzeige auf unsere Website gelangen, kann Google ein Cookie setzen. Senden Sie danach eine Anfrage über eines unserer Formulare ab oder tippen Sie auf unsere Telefonnummer bzw. den WhatsApp-Link, erkennen Google und wir, dass eine Anzeige zu dieser Kontaktaufnahme geführt hat („Conversion“). An Google wird dabei nur die Art der Kontaktaufnahme gemeldet, nicht deren Inhalt. Wir erhalten ausschließlich statistische Auswertungen (z. B. Anzahl der Conversions je Anzeige), keine Informationen, mit denen wir Sie persönlich identifizieren können.
+                Wenn Sie über eine Google-Anzeige auf unsere Website gelangen, kann Google ein Cookie setzen. Senden Sie danach eine Anfrage über eines unserer Formulare ab oder tippen Sie auf unsere Telefonnummer bzw. den WhatsApp-Link, erkennen Google und wir, dass eine Anzeige zu dieser Kontaktaufnahme geführt hat („Conversion“). Personalisierte Werbung (Remarketing) und Reichweitenanalyse über Google sind dabei ausgeschaltet.
               </p>
               <p className="mb-4">
-                Die Verarbeitung erfolgt ausschließlich auf Grundlage Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO, § 25 Abs. 1 TDDDG); sie ist jederzeit widerrufbar. Die von Google Ads gesetzten Cookies werden nach spätestens 90 Tagen gelöscht. Die Datenübermittlung in die USA stützt sich auf den Angemessenheitsbeschluss der EU-Kommission zum EU-US Data Privacy Framework (Art. 45 DSGVO), unter dem die Google LLC zertifiziert ist, sowie ergänzend auf die EU-Standardvertragsklauseln.
+                Dabei verarbeitet Google insbesondere: Ihre IP-Adresse, Browser- und Geräteinformationen, die Klick-Kennung der Anzeige (GCLID), die aufgerufene Seite und die zuvor besuchte Seite (Referrer), den Zeitpunkt sowie Cookie-Kennungen. Aus unseren Formularen melden wir an Google nur die Art der Kontaktaufnahme (Kontakt-, Angebots- oder Notdienstanfrage), nicht deren Inhalt. Wir erhalten ausschließlich statistische Auswertungen (z. B. Anzahl der Conversions je Anzeige), keine Informationen, mit denen wir Sie persönlich identifizieren können. Google verarbeitet diese Daten teilweise als eigener Verantwortlicher auch für eigene Zwecke; Näheres in der Datenschutzerklärung von Google.
+              </p>
+              <p className="mb-4">
+                Die Verarbeitung erfolgt ausschließlich auf Grundlage Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO, § 25 Abs. 1 TDDDG); sie ist jederzeit widerrufbar. Die Conversion-Cookies auf unserer Domain („_gcl_“-Cookies) werden nach spätestens 90 Tagen gelöscht; Cookies, die Google auf eigenen Domains setzt, können bis zu 13 Monate gespeichert bleiben. Die Datenübermittlung in die USA stützt sich auf den Angemessenheitsbeschluss der EU-Kommission zum EU-US Data Privacy Framework (Art. 45 DSGVO), unter dem die Google LLC zertifiziert ist, sowie ergänzend auf die EU-Standardvertragsklauseln.
               </p>
               <p className="mb-4">
                 Weitere Informationen:{" "}

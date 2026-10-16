@@ -2,7 +2,7 @@
  * Einwilligung für Marketing-Dienste (Google Tag Manager / Google Ads).
  *
  * Variante A (HEC-145): GTM wird erst nach Zustimmung geladen.
- * Ohne gesetzte NEXT_PUBLIC_GTM_ID ist das gesamte Modul inaktiv.
+ * Ohne gültige NEXT_PUBLIC_GTM_ID ist das gesamte Modul inaktiv.
  */
 
 export const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID ?? "";
@@ -23,7 +23,8 @@ interface StoredConsent {
 }
 
 export function isConsentEnabled(): boolean {
-  return GTM_ID.startsWith("GTM-");
+  // Strenges Format: die ID landet in einem Inline-Script; Platzhalter zählt nicht
+  return /^GTM-[A-Z0-9]{4,12}$/.test(GTM_ID) && GTM_ID !== "GTM-XXXXXXX";
 }
 
 /** Gespeicherte Auswahl, oder null wenn keine gültige (fehlt, alt, andere Version). */
@@ -46,16 +47,18 @@ export function saveConsent(choice: ConsentChoice): void {
     const value: StoredConsent = { v: CONSENT_VERSION, ads: choice, ts: Date.now() };
     localStorage.setItem(CONSENT_STORAGE_KEY, JSON.stringify(value));
   } catch {
-    // Speicher blockiert: Auswahl gilt nur für diesen Seitenaufruf
+    // Speicher blockiert: Auswahl wird nicht gespeichert, GTM lädt dann nicht (fail-closed)
   }
 
-  if (previous === "granted" && choice === "denied") {
-    // Widerruf: geladenes GTM lässt sich nicht entladen → Google-Cookies
-    // der eigenen Domain löschen und Seite ohne GTM neu laden.
-    pushConsentUpdate("denied");
-    deleteGoogleCookies();
-    window.location.reload();
-    return;
+  if (choice === "denied") {
+    // Auch nach abgelaufener Einwilligung können alte Google-Cookies liegen
+    deleteGoogleStorage();
+    if (previous === "granted") {
+      // Widerruf: geladenes GTM lässt sich nicht entladen → Seite ohne GTM neu laden
+      pushConsentUpdate("denied");
+      window.location.reload();
+      return;
+    }
   }
 
   window.dispatchEvent(new CustomEvent(CONSENT_CHANGE_EVENT, { detail: choice }));
@@ -72,8 +75,12 @@ function gtag(..._args: unknown[]): void {
   window.dataLayer.push(arguments);
 }
 
-/** Consent Mode v2: Standard „denied“ setzen — vor dem Laden von GTM. */
+let defaultPushed = false;
+
+/** Consent Mode v2: Standard „denied“ setzen — einmal, vor dem Laden von GTM. */
 export function pushConsentDefault(): void {
+  if (defaultPushed) return;
+  defaultPushed = true;
   gtag("consent", "default", {
     ad_storage: "denied",
     ad_user_data: "denied",
@@ -82,12 +89,17 @@ export function pushConsentDefault(): void {
   });
 }
 
+/**
+ * Die Einwilligung deckt nur Conversion-Messung für Google Ads ab.
+ * Personalisierte Werbung (Remarketing) und Analyse bleiben abgelehnt —
+ * erst mit Banner, DSE und neuer CONSENT_VERSION erweitern.
+ */
 export function pushConsentUpdate(choice: ConsentChoice): void {
   gtag("consent", "update", {
     ad_storage: choice,
     ad_user_data: choice,
-    ad_personalization: choice,
-    analytics_storage: choice,
+    ad_personalization: "denied",
+    analytics_storage: "denied",
   });
 }
 
@@ -104,15 +116,24 @@ export function trackLead(formType: LeadFormType): void {
   trackEvent("generate_lead", { form_type: formType });
 }
 
-function deleteGoogleCookies(): void {
+const GOOGLE_KEY = /^(_gcl|_ga|_gid|_gat)/;
+
+function deleteGoogleStorage(): void {
   const host = window.location.hostname;
   const domains = ["", host, `.${host.replace(/^www\./, "")}`];
   document.cookie.split(";").forEach((entry) => {
     const name = entry.split("=")[0].trim();
-    if (!/^(_gcl|_ga|_gid|_gat)/.test(name)) return;
+    if (!GOOGLE_KEY.test(name)) return;
     domains.forEach((domain) => {
       const domainPart = domain ? `; domain=${domain}` : "";
       document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/${domainPart}`;
     });
   });
+  try {
+    Object.keys(localStorage)
+      .filter((key) => GOOGLE_KEY.test(key))
+      .forEach((key) => localStorage.removeItem(key));
+  } catch {
+    // Speicher blockiert: nichts zu löschen
+  }
 }
