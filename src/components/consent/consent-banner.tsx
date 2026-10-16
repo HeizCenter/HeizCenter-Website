@@ -21,6 +21,7 @@ export function ConsentBanner() {
   const [selection, setSelection] = useState<ConsentState>(CONSENT_NONE);
   const dialogRef = useRef<HTMLDivElement>(null);
   const returnFocusRef = useRef<HTMLElement | null>(null);
+  const firstCheckboxRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     if (!isConsentEnabled()) return;
@@ -53,6 +54,11 @@ export function ConsentBanner() {
       document.body.style.paddingBottom = "";
     };
   }, [open]);
+
+  // Nach „Auswahl anpassen“ bzw. Öffnen über den Footer: Fokus auf die erste Kategorie
+  useEffect(() => {
+    if (open && showDetails) firstCheckboxRef.current?.focus();
+  }, [open, showDetails]);
 
   if (!open) return null;
 
@@ -94,6 +100,7 @@ export function ConsentBanner() {
               <legend className="sr-only">Kategorien auswählen</legend>
               <label className="flex items-start gap-2">
                 <input
+                  ref={firstCheckboxRef}
                   type="checkbox"
                   className="mt-0.5 h-4 w-4 accent-[#0F5B78]"
                   checked={selection.analytics}

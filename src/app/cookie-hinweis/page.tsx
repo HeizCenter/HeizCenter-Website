@@ -76,7 +76,7 @@ export default function CookieHinweisPage() {
                       </td>
                       <td className="border border-slate-300 px-4 py-3">
                         Google Analytics über den Google Tag Manager: Auswertung, wie unsere Website genutzt wird, mit
-                        pseudonymer Kennung. Löschung nach spätestens 2 Jahren.
+                        pseudonymer Kennung. Löschung spätestens 2 Jahre nach dem letzten Besuch.
                       </td>
                       <td className="border border-slate-300 px-4 py-3">
                         _ga, _ga_* (Google)

@@ -228,7 +228,7 @@ export default function DatenschutzPage() {
 
               <h3 className="text-2xl font-bold mb-4 mt-8">Google Tag Manager</h3>
               <p className="mb-4">
-                Wir nutzen den Google Tag Manager. Anbieter ist die Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Der Google Tag Manager ist ein Werkzeug, mit dem wir Marketing-Dienste auf unserer Website einbinden. Er selbst erstellt keine Nutzerprofile und speichert keine Cookies. Beim Laden wird jedoch Ihre IP-Adresse an Google übertragen; dabei kann es auch zu einer Übermittlung an die Google LLC in den USA kommen.
+                Wir nutzen den Google Tag Manager. Anbieter ist die Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Der Google Tag Manager ist ein Werkzeug, mit dem wir Statistik- und Marketing-Dienste auf unserer Website einbinden. Er selbst erstellt keine Nutzerprofile und speichert keine Cookies. Beim Laden wird jedoch Ihre IP-Adresse an Google übertragen; dabei kann es auch zu einer Übermittlung an die Google LLC in den USA kommen.
               </p>
               <p className="mb-4">
                 Der Google Tag Manager wird nur geladen, wenn Sie über unser Cookie-Banner mindestens einer Kategorie zugestimmt haben. Rechtsgrundlage ist Ihre Einwilligung (Art. 6 Abs. 1 lit. a DSGVO, § 25 Abs. 1 TDDDG); sie ist jederzeit widerrufbar.
@@ -239,10 +239,10 @@ export default function DatenschutzPage() {
                 Mit Ihrer Einwilligung in die Kategorie „Statistik“ nutzen wir Google Analytics 4, um zu verstehen, wie unsere Website genutzt wird (z. B. welche Seiten aufgerufen werden, wie Besucher zu uns finden und wie oft Anfragen gestellt werden). Anbieter ist die Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland.
               </p>
               <p className="mb-4">
-                Google Analytics setzt Cookies mit einer pseudonymen Kennung und verarbeitet dabei insbesondere: aufgerufene Seiten und Interaktionen (z. B. das Absenden eines Formulars – nur dessen Art, nicht der Inhalt), Browser- und Geräteinformationen, die zuvor besuchte Seite (Referrer), den ungefähren Standort (aus der IP-Adresse abgeleitet) und den Zeitpunkt. IP-Adressen werden von Google Analytics 4 nach Angaben von Google nicht gespeichert. Wir erhalten ausschließlich zusammengefasste Auswertungen.
+                Google Analytics setzt Cookies mit einer pseudonymen Kennung und verarbeitet dabei insbesondere: aufgerufene Seiten und Interaktionen (z. B. das Absenden eines Formulars – nur dessen Art, nicht der Inhalt), Browser- und Geräteinformationen, die zuvor besuchte Seite (Referrer), den ungefähren Standort und den Zeitpunkt. Ihre IP-Adresse wird dabei an Google übertragen; nach Angaben von Google wird sie bei Nutzern in der EU nur zur Bestimmung des ungefähren Standorts verwendet und weder protokolliert noch gespeichert. Wir erhalten ausschließlich zusammengefasste Auswertungen. Google verarbeitet die Daten für Google Analytics als unser Auftragsverarbeiter (Google Ads Data Processing Terms).
               </p>
               <p className="mb-4">
-                Die Verarbeitung erfolgt ausschließlich auf Grundlage Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO, § 25 Abs. 1 TDDDG); sie ist jederzeit widerrufbar. Die Analytics-Cookies („_ga“-Cookies) werden nach spätestens 2 Jahren gelöscht; die Nutzungsdaten in Google Analytics werden nach höchstens 14 Monaten gelöscht. Zur Datenübermittlung in die USA siehe „Google Ads“ unten.
+                Die Verarbeitung erfolgt ausschließlich auf Grundlage Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO, § 25 Abs. 1 TDDDG); sie ist jederzeit widerrufbar. Die Analytics-Cookies („_ga“-Cookies) werden spätestens 2 Jahre nach Ihrem letzten Besuch gelöscht; Daten auf Nutzer- und Ereignisebene werden in Google Analytics nach der von uns eingestellten Frist von höchstens 14 Monaten gelöscht. Zur Datenübermittlung in die USA siehe „Google Ads“ unten.
               </p>
 
               <h3 className="text-2xl font-bold mb-4 mt-8">Google Ads (Conversion-Tracking)</h3>
