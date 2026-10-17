@@ -1462,3 +1462,20 @@ keine
 - [ ] Antwort Andrej/Ads-Dienstleister abwarten → dann Banner + Consent Mode v2 + GTM (vorhandene Komponente `src/components/analytics/google-tag-manager.tsx`) + DSE live.
 - [ ] Nebenbefund: DSE Abschnitt 5 „keine Analyse-Tools“ falsch (Vercel Analytics läuft); Cookie-Hinweis listet veraltete Odoo-Cookies; DSE ohne Abschnitt zu Kontaktformularen.
 - [x] HEC-144 Teil 1 (Commits 6535e7f, 970bbe2; Text geprüft Jev, Deploy 15.10., Freigabe Andrej folgt): DSE §2 Vercel-Transfergrundlage (DPF statt Art. 49 Einwilligung), §4 Cookies/Kostenrechner-localStorage/Formulare (n8n, Odoo, Telegram, Mistral, Odoo-IAP, Fristen), §5 Vercel Web Analytics; Cookie-Hinweis neu (Odoo-/Google-Liste raus). Prod gemessen: 0 Cookies, localStorage nur `/rechner`. Gate 2 `security-reviewer` APPROVED. Offen für Jev: Telegram-Drittland, Mistral-DPA/Training, Rechner-Speicher beim Aufruf, VVT VT-07.
+
+## Session 2026-10-16/17 (HEC-145 GTM + Einwilligung, HEC-144 Teil 2 + DSE-Durchsicht)
+
+### Completed
+- [x] Antwort Ads-Dienstleister eingearbeitet: eigener Banner, Variante A (GTM erst nach Zustimmung), GA4 ja, kein Remarketing / keine Enhanced Conversions.
+- [x] Einwilligung granular: Statistik (GA4 + Vercel Web Analytics) / Marketing (Google Ads), Consent Mode v2, `ad_personalization` immer denied, `CONSENT_VERSION` 2; Events `generate_lead {form_type}`, `phone_click`, `whatsapp_click` nur nach Zustimmung.
+- [x] DSE/Cookie-Hinweis Teil 2 (GTM, GA4, Ads, Consent Mode) hinter `NEXT_PUBLIC_GTM_ID`; juristische Durchsicht umgesetzt (Art. 15–18, BayLDA, Logfiles, Pflichtangaben, Art. 22, WhatsApp, Fonts raus, Stand).
+- [x] code-reviewer GO, security-reviewer Freigabe mit Auflagen (Auflagen im Code erfüllt; Container-Auflage an Ads-Dienstleister).
+- [x] Vercel: Prod-Projekt = Team `heizcenters-projects`; Env `NEXT_PUBLIC_GTM_ID` nur Preview + Branch; Preview-E2E grün.
+
+### Offene Punkte
+- [ ] Ads-Dienstleister: Einwilligung je Tag (`ad_storage` / `analytics_storage`), GA4-Property (Signals/Datenfreigabe aus, Aufbewahrung, Datenverarbeitungsbedingungen), GTM-Lesezugriff, Bescheid nach Veröffentlichung.
+- [ ] Andrej: Freigabe DSE auf Stand `e73a7ab` · Jev: Hostinger-AVV.
+- [ ] Danach: Cookies messen, DSE angleichen, Env Production, Merge `main`, Prod-Messung, linear-verifier.
+
+### Geaenderte Dateien
+`src/lib/consent.ts`, `src/components/analytics/consent-gtm.tsx`, `src/components/analytics/consent-vercel-analytics.tsx`, `src/components/consent/*`, `src/app/layout.tsx`, `src/components/layout/footer.tsx`, `src/components/forms/*`, `src/app/datenschutz/page.tsx`, `src/app/cookie-hinweis/page.tsx` (Branch `info/hec-145-gtm-consent`, bis `e73a7ab`)
