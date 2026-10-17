@@ -15,7 +15,8 @@ export default function DatenschutzPage() {
   return (
     <div className="container py-16">
       <div className="max-w-4xl mx-auto prose prose-slate max-w-none">
-        <h1 className="text-4xl font-bold mb-8">Datenschutzerklärung</h1>
+        <h1 className="text-4xl font-bold mb-2">Datenschutzerklärung</h1>
+        <p className="mb-8 text-sm text-slate-500">Stand: Oktober 2026</p>
 
         <nav className="mb-8 p-4 bg-slate-50 rounded-lg">
           <h2 className="text-lg font-bold mb-3">Inhaltsverzeichnis</h2>
@@ -25,7 +26,6 @@ export default function DatenschutzPage() {
             <li><a href="#section-3" className="text-[#0F5B78] hover:underline">3. Allgemeine Hinweise und Pflichtinformationen</a></li>
             <li><a href="#section-4" className="text-[#0F5B78] hover:underline">4. Datenerfassung auf dieser Website</a></li>
             <li><a href="#section-5" className="text-[#0F5B78] hover:underline">5. Analyse-Tools und Werbung</a></li>
-            <li><a href="#section-6" className="text-[#0F5B78] hover:underline">6. Plugins und Tools</a></li>
           </ol>
         </nav>
 
@@ -118,12 +118,22 @@ export default function DatenschutzPage() {
 
           <h3 className="text-2xl font-bold mb-4 mt-8">Beschwerderecht bei der zuständigen Aufsichtsbehörde</h3>
           <p className="mb-4">
-            Im Falle von Verstößen gegen die DSGVO steht den Betroffenen ein Beschwerderecht bei einer Aufsichtsbehörde zu.
+            Im Falle von Verstößen gegen die DSGVO steht den Betroffenen ein Beschwerderecht bei einer Aufsichtsbehörde zu, insbesondere in dem Mitgliedstaat ihres gewöhnlichen Aufenthalts, ihres Arbeitsplatzes oder des Orts des mutmaßlichen Verstoßes (Art. 77 DSGVO). Für uns zuständig ist das Bayerische Landesamt für Datenschutzaufsicht (BayLDA) in Ansbach.
           </p>
 
           <h3 className="text-2xl font-bold mb-4 mt-8">Recht auf Datenübertragbarkeit</h3>
           <p className="mb-4">
             Sie haben das Recht, Daten, die wir auf Grundlage Ihrer Einwilligung oder in Erfüllung eines Vertrags automatisiert verarbeiten, an sich oder an einen Dritten in einem gängigen, maschinenlesbaren Format aushändigen zu lassen.
+          </p>
+
+          <h3 className="text-2xl font-bold mb-4 mt-8">Auskunft, Berichtigung und Löschung</h3>
+          <p className="mb-4">
+            Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung (Art. 15 DSGVO) sowie ein Recht auf Berichtigung (Art. 16 DSGVO) oder Löschung (Art. 17 DSGVO) dieser Daten. Hierzu können Sie sich jederzeit an uns wenden (Kontaktdaten siehe „Hinweis zur verantwortlichen Stelle“).
+          </p>
+
+          <h3 className="text-2xl font-bold mb-4 mt-8">Recht auf Einschränkung der Verarbeitung</h3>
+          <p className="mb-4">
+            Sie haben das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen (Art. 18 DSGVO), insbesondere wenn Sie die Richtigkeit Ihrer Daten bestreiten, die Verarbeitung unrechtmäßig ist, wir Ihre Daten nicht mehr benötigen, Sie diese aber zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen brauchen, oder wenn Sie Widerspruch nach Art. 21 DSGVO eingelegt haben und noch nicht feststeht, wessen Interessen überwiegen.
           </p>
 
           <h3 className="text-2xl font-bold mb-4 mt-8">SSL- bzw. TLS-Verschlüsselung</h3>
@@ -172,10 +182,13 @@ export default function DatenschutzPage() {
             <li>Uhrzeit der Serveranfrage</li>
             <li>IP-Adresse</li>
           </ul>
+          <p className="mb-4">
+            Die Erfassung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO; wir haben ein berechtigtes Interesse an der technisch fehlerfreien Darstellung und der Sicherheit unserer Website. Die Server-Log-Dateien werden von unserem Hoster nicht mit anderen Daten zusammengeführt und nach Ablauf der von ihm vorgesehenen, kurzen Aufbewahrungsfrist automatisch gelöscht.
+          </p>
 
           <h3 className="text-2xl font-bold mb-4 mt-8">Anfragen über unsere Formulare</h3>
           <p className="mb-4">
-            Wenn Sie uns über das Kontaktformular, das Angebotsformular oder das Notdienstformular eine Anfrage senden, verarbeiten wir die Angaben, die Sie dort machen – je nach Formular Name, E-Mail-Adresse, Telefonnummer, Anschrift bzw. Einsatzort, Ihre Nachricht und Angaben zu Ihrem Vorhaben –, um Ihre Anfrage zu bearbeiten.
+            Wenn Sie uns über das Kontaktformular, das Angebotsformular oder das Notdienstformular eine Anfrage senden, verarbeiten wir die Angaben, die Sie dort machen – je nach Formular Name, E-Mail-Adresse, Telefonnummer, Anschrift bzw. Einsatzort, Ihre Nachricht und Angaben zu Ihrem Vorhaben –, um Ihre Anfrage zu bearbeiten. Die als Pflichtfeld gekennzeichneten Angaben benötigen wir dafür; ohne sie können wir Ihre Anfrage nicht bearbeiten.
           </p>
           <p className="mb-4">
             <strong>Weg Ihrer Anfrage:</strong> Das Formular wird über unseren Website-Hoster Vercel (siehe Abschnitt 2) an unser Automatisierungssystem n8n übermittelt. n8n legt die Anfrage in unserem Kundenverwaltungssystem (Odoo) an. Beide Systeme betreiben wir selbst auf einem gemieteten Server der Hostinger International Ltd. in einem Rechenzentrum in der EU. Zum Schutz vor Missbrauch wird Ihre IP-Adresse zur Begrenzung der Anfragen pro Absender für höchstens etwa 20 Minuten im Arbeitsspeicher gehalten und nicht dauerhaft gespeichert.
@@ -184,7 +197,7 @@ export default function DatenschutzPage() {
             <strong>Interne Benachrichtigung:</strong> Über eingehende Anfragen werden unsere Mitarbeitenden über den Nachrichtendienst Telegram (Telegram FZ-LLC, Vereinigte Arabische Emirate) benachrichtigt.
           </p>
           <p className="mb-4">
-            <strong>KI-gestützter Antwortentwurf:</strong> Für Kontakt- und Angebotsanfragen erstellt ein KI-Sprachmodell der Mistral AI, 15 rue des Halles, 75001 Paris, Frankreich, einen Antwortentwurf. Dafür werden Name, E-Mail-Adresse, Telefonnummer und Nachricht sowie bei Angebotsanfragen die Anschrift an Mistral AI übermittelt. Der Entwurf wird als interne Notiz in unserem Kundenverwaltungssystem abgelegt und nicht automatisch an Sie versendet; ein Mitarbeitender prüft und beantwortet Ihre Anfrage selbst. Mistral AI verarbeitet die Daten als unser Auftragsverarbeiter auf Grundlage eines Auftragsverarbeitungsvertrags und speichert sie nach der Verarbeitung bis zu 30 Tage zur Missbrauchserkennung. Die Nutzung Ihrer Daten zum Training der KI-Modelle von Mistral AI haben wir ausgeschlossen.
+            <strong>KI-gestützter Antwortentwurf:</strong> Für Kontakt- und Angebotsanfragen erstellt ein KI-Sprachmodell der Mistral AI, 15 rue des Halles, 75001 Paris, Frankreich, einen Antwortentwurf. Dafür werden Name, E-Mail-Adresse, Telefonnummer und Nachricht sowie bei Angebotsanfragen die Anschrift an Mistral AI übermittelt. Der Entwurf wird als interne Notiz in unserem Kundenverwaltungssystem abgelegt und nicht automatisch an Sie versendet; ein Mitarbeitender prüft und beantwortet Ihre Anfrage selbst. Eine automatisierte Entscheidung im Sinne von Art. 22 DSGVO findet nicht statt. Mistral AI verarbeitet die Daten als unser Auftragsverarbeiter auf Grundlage eines Auftragsverarbeitungsvertrags und speichert sie nach der Verarbeitung bis zu 30 Tage zur Missbrauchserkennung. Die Nutzung Ihrer Daten zum Training der KI-Modelle von Mistral AI haben wir ausgeschlossen.
           </p>
           <p className="mb-4">
             <strong>Ergänzung von Firmendaten:</strong> Unser Kundenverwaltungssystem übermittelt die Domain Ihrer E-Mail-Adresse (der Teil nach dem „@“) an die Odoo S.A., Chaussée de Namur 40, 1367 Grand-Rosière, Belgien, die dazu öffentlich verfügbare Firmendaten (z. B. Firmenname, Branche) zurückliefert. Bei E-Mail-Adressen allgemeiner Anbieter liefert der Dienst in der Regel keine Daten.
@@ -198,7 +211,7 @@ export default function DatenschutzPage() {
 
           <h3 className="text-2xl font-bold mb-4 mt-8">WhatsApp Business</h3>
           <p className="mb-4">
-            Wir bieten Besuchern unserer Webseite die Möglichkeit, mit uns über den Nachrichtendienst WhatsApp in Kontakt zu treten. Hierfür verwenden wir die sog. „Business-Version" von WhatsApp.
+            Wir bieten Besuchern unserer Webseite die Möglichkeit, mit uns über den Nachrichtendienst WhatsApp in Kontakt zu treten. Hierfür verwenden wir die sog. „Business-Version" von WhatsApp. Unsere Website setzt dafür nur einen Link; beim Besuch der Website werden keine Daten an WhatsApp übertragen. Erst wenn Sie den Link nutzen und uns schreiben, verarbeitet WhatsApp (Anbieter: WhatsApp Ireland Limited) Ihre Nachricht; dabei können Daten auch an die Meta Platforms Inc. in den USA übermittelt werden.
           </p>
           <p className="mb-4">
             Die Datenverarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung) bzw. Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse).
@@ -217,7 +230,7 @@ export default function DatenschutzPage() {
             <>
               <h3 className="text-2xl font-bold mb-4">Einwilligungsverwaltung (Cookie-Banner)</h3>
               <p className="mb-4">
-                Beim ersten Besuch fragen wir über ein Banner ab, ob Sie in den Einsatz von Diensten der Kategorien „Statistik“ (Google Analytics) und „Marketing“ (Google Ads) einwilligen; beide werden über den Google Tag Manager eingebunden. Sie können beiden, einer oder keiner Kategorie zustimmen. Ohne Ihre Einwilligung werden diese Dienste nicht geladen und es werden keine Daten an Google übertragen.
+                Beim ersten Besuch fragen wir über ein Banner ab, ob Sie in den Einsatz von Diensten der Kategorien „Statistik“ (Google Analytics) und „Marketing“ (Google Ads) einwilligen; Google Analytics und Google Ads werden über den Google Tag Manager eingebunden, zur Kategorie „Statistik“ gehört außerdem Vercel Web Analytics. Sie können beiden, einer oder keiner Kategorie zustimmen. Ohne Ihre Einwilligung werden diese Dienste nicht geladen und es werden keine Daten an Google übertragen.
               </p>
               <p className="mb-4">
                 Ihre Auswahl und der Zeitpunkt der Entscheidung werden unter dem Namen „hc_consent“ im lokalen Speicher Ihres Browsers abgelegt, damit das Banner nicht bei jedem Seitenaufruf erneut erscheint. Diese Speicherung ist erforderlich, um Ihre Entscheidung umzusetzen (§ 25 Abs. 2 Nr. 2 TDDDG, Art. 6 Abs. 1 lit. f DSGVO). Ein Protokoll Ihrer Entscheidung auf unseren Servern führen wir nicht. Nach 12 Monaten fragen wir erneut.
@@ -284,36 +297,13 @@ export default function DatenschutzPage() {
             Vercel Web Analytics setzt keine Cookies und speichert keine Informationen auf Ihrem Endgerät. Besucher werden nicht über mehrere Tage oder über verschiedene Websites hinweg wiedererkannt; die Auswertung erfolgt ausschließlich zusammengefasst. Die Daten werden über die Domain dieser Website erhoben.
           </p>
           <p className="mb-4">
-            Rechtsgrundlage ist unser berechtigtes Interesse an einer bedarfsgerechten Gestaltung unserer Website (Art. 6 Abs. 1 lit. f DSGVO). Zur Datenübermittlung in die USA siehe Abschnitt 2 (Hosting).
+            {isConsentEnabled()
+              ? "Da das Skript dafür Informationen von Ihrem Endgerät ausliest (z. B. Browser und Bildschirmgröße), nutzen wir Vercel Web Analytics nur mit Ihrer Einwilligung in die Kategorie „Statistik“ (Art. 6 Abs. 1 lit. a DSGVO, § 25 Abs. 1 TDDDG); die Einwilligung ist jederzeit widerrufbar."
+              : "Rechtsgrundlage ist unser berechtigtes Interesse an einer bedarfsgerechten Gestaltung unserer Website (Art. 6 Abs. 1 lit. f DSGVO)."}{" "}
+            Zur Datenübermittlung in die USA siehe Abschnitt 2 (Hosting).
           </p>
           <p className="mb-4">
             Diese Website beinhaltet keine Werbung für Produkte oder Dienstleistungen Dritter.
-          </p>
-        </section>
-
-        <section id="section-6" className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">6. Plugins und Tools</h2>
-
-          <h3 className="text-2xl font-bold mb-4">Google Fonts (lokales Hosting)</h3>
-          <p className="mb-4">
-            Diese Seite nutzt zur einheitlichen Darstellung von Schriftarten so genannte Google Fonts, die von Google bereitgestellt werden. Die Google Fonts sind lokal installiert. Eine Verbindung zu Servern von Google findet dabei nicht statt.
-          </p>
-          <p className="mb-4">
-            Weitere Informationen:{" "}
-            <a href="https://developers.google.com/fonts/faq" target="_blank" rel="noopener noreferrer" className="text-[#0F5B78] hover:underline">
-              Google Fonts FAQ
-            </a>
-          </p>
-
-          <h3 className="text-2xl font-bold mb-4 mt-8">Font Awesome (lokales Hosting)</h3>
-          <p className="mb-4">
-            Diese Seite nutzt zur einheitlichen Darstellung von Schriftarten Font Awesome. Font Awesome ist lokal installiert. Eine Verbindung zu Servern von Fonticons, Inc. findet dabei nicht statt.
-          </p>
-          <p className="mb-4">
-            Weitere Informationen:{" "}
-            <a href="https://fontawesome.com/privacy" target="_blank" rel="noopener noreferrer" className="text-[#0F5B78] hover:underline">
-              Font Awesome Privacy
-            </a>
           </p>
         </section>
 

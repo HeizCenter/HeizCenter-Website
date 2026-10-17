@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { SITE_URL } from "@/lib/seo";
 import { ConsentGtm } from "@/components/analytics/consent-gtm";
+import { ConsentVercelAnalytics } from "@/components/analytics/consent-vercel-analytics";
 import { ConsentBanner } from "@/components/consent/consent-banner";
 
 const geistSans = localFont({
@@ -68,7 +68,7 @@ export default function RootLayout({
         <Header />
         <main className="min-h-screen">{children}</main>
         <Footer />
-        <Analytics />
+        <ConsentVercelAnalytics />
         <ConsentBanner />
         <ConsentGtm />
       </body>

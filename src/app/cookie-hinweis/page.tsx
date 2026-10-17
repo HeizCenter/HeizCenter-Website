@@ -28,8 +28,8 @@ export default function CookieHinweisPage() {
               Ihre Auswahl im Cookie-Banner ab sowie auf der Seite „Kostenrechner“ Ihre Eingaben. Nur wenn Sie im
               Cookie-Banner zustimmen, werden über den Google Tag Manager Google Analytics (Statistik) bzw. Google Ads
               (Marketing) geladen, die Cookies setzen. Ihre Auswahl können Sie jederzeit ändern:{" "}
-              <CookieSettingsLink className="text-[#0F5B78] underline" />. Ohne Einwilligung nutzen wir für die
-              Reichweitenmessung nur Vercel Web Analytics, das ohne Cookies arbeitet.
+              <CookieSettingsLink className="text-[#0F5B78] underline" />. Auch Vercel Web Analytics, das ohne Cookies
+              arbeitet, läuft nur mit Ihrer Einwilligung in „Statistik“.
             </p>
           ) : (
             <p className="mb-4">
@@ -115,7 +115,9 @@ export default function CookieHinweisPage() {
                 <tr className="bg-slate-50">
                   <td className="border border-slate-300 px-4 py-3">
                     <strong>Statistik</strong><br />
-                    <span className="text-sm">(cookielos)</span>
+                    <span className="text-sm">
+                      {isConsentEnabled() ? "(cookielos, nur mit Einwilligung)" : "(cookielos)"}
+                    </span>
                   </td>
                   <td className="border border-slate-300 px-4 py-3">
                     Vercel Web Analytics: zusammengefasste Auswertung, welche Seiten wie oft aufgerufen werden.

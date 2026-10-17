@@ -85,9 +85,9 @@ export function ConsentBanner() {
             Cookies für Statistik und Werbung
           </p>
           <p id="consent-text">
-            Mit Ihrer Zustimmung nutzen wir über den Google Tag Manager Google Analytics (Statistik: wie unsere Website
-            genutzt wird) und Google Ads (Marketing: ob unsere Anzeigen zu Anfragen führen). Dabei setzt Google Cookies
-            und überträgt Daten an Google, auch in die USA. Ohne Zustimmung wird nichts davon geladen. Sie können Ihre
+            Mit Ihrer Zustimmung nutzen wir für Statistik Google Analytics und Vercel Web Analytics (wie unsere Website
+            genutzt wird) und für Marketing Google Ads (ob unsere Anzeigen zu Anfragen führen). Google setzt dabei
+            Cookies und überträgt Daten an Google, auch in die USA. Ohne Zustimmung wird nichts davon geladen. Sie können Ihre
             Auswahl jederzeit über „Cookie-Einstellungen“ im Fußbereich ändern. Mehr in unserer{" "}
             <Link href="/datenschutz" className="text-[#0F5B78] underline">
               Datenschutzerklärung
@@ -107,7 +107,8 @@ export function ConsentBanner() {
                   onChange={(e) => setSelection({ ...selection, analytics: e.target.checked })}
                 />
                 <span>
-                  <strong>Statistik</strong> – Google Analytics: Auswertung, welche Seiten wie genutzt werden (mit pseudonymer Kennung).
+                  <strong>Statistik</strong> – Google Analytics (mit pseudonymer Kennung) und Vercel Web Analytics (ohne
+                  Cookies): Auswertung, welche Seiten wie genutzt werden.
                 </span>
               </label>
               <label className="flex items-start gap-2">
