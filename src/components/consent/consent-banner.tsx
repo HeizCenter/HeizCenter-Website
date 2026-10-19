@@ -26,7 +26,7 @@ const CATEGORIES: { key: keyof ConsentState; title: string; text: string }[] = [
   {
     key: "ads",
     title: "Marketing",
-    text: "Google Ads: ob eine Anzeige zu einer Anfrage, einem Anruf oder einer WhatsApp-Nachricht geführt hat. Keine personalisierte Werbung.",
+    text: "Google Ads: ob eine Anzeige zu einer Anfrage, einem Anruf, einer WhatsApp-Nachricht oder E-Mail geführt hat. Keine personalisierte Werbung.",
   },
 ];
 

@@ -89,7 +89,7 @@ export default function CookieHinweisPage() {
                       </td>
                       <td className="border border-slate-300 px-4 py-3">
                         Google Ads Conversion-Tracking über den Google Tag Manager: misst, ob eine Anzeige zu einer Anfrage,
-                        einem Anruf oder einer WhatsApp-Nachricht geführt hat. Cookies auf unserer Domain werden nach spätestens
+                        einem Anruf, einer WhatsApp-Nachricht oder E-Mail geführt hat. Cookies auf unserer Domain werden nach spätestens
                         90 Tagen gelöscht, Cookies auf Google-eigenen Domains nach bis zu 13 Monaten.
                       </td>
                       <td className="border border-slate-300 px-4 py-3">
