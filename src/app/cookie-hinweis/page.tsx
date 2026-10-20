@@ -93,7 +93,8 @@ export default function CookieHinweisPage() {
                         90 Tagen gelöscht, Cookies auf Google-eigenen Domains nach bis zu 13 Monaten.
                       </td>
                       <td className="border border-slate-300 px-4 py-3">
-                        _gcl_* (z. B. _gcl_au, Google)
+                        _gcl_au (Cookie, Google)<br />
+                        _gcl_ls (Local Storage, Google)
                       </td>
                     </tr>
                   </>
