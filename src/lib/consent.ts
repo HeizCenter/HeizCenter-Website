@@ -67,6 +67,8 @@ export function saveConsent(state: ConsentState): void {
 
   const revoked = (previous?.analytics && !state.analytics) || (previous?.ads && !state.ads);
   if (revoked) {
+    // GA4 sendet beim Verlassen der Seite noch „user_engagement“ — nach Widerruf unterbinden
+    if (previous?.analytics && !state.analytics) disableGoogleAnalytics();
     // Geladenes GTM lässt sich nicht entladen → Seite mit neuer Auswahl neu laden
     pushConsentUpdate(state);
     window.location.reload();
@@ -127,6 +129,16 @@ export type LeadFormType = "kontakt" | "angebot" | "notdienst";
 
 export function trackLead(formType: LeadFormType): void {
   trackEvent("generate_lead", { form_type: formType });
+}
+
+/** Offizieller Opt-out von Google Analytics je Mess-ID (window['ga-disable-G-…'] = true). */
+function disableGoogleAnalytics(): void {
+  const loaded = (window as unknown as { google_tag_manager?: Record<string, unknown> }).google_tag_manager ?? {};
+  Object.keys(loaded)
+    .filter((id) => /^G-[A-Z0-9]+$/.test(id))
+    .forEach((id) => {
+      (window as unknown as Record<string, boolean>)[`ga-disable-${id}`] = true;
+    });
 }
 
 const ANALYTICS_KEY = /^(_ga|_gid|_gat)/;
