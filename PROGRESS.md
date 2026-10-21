@@ -1499,3 +1499,32 @@ keine
 |-------|-----------|
 | `src/lib/consent.ts` | `ga-disable` vor Reload beim Widerruf von Statistik |
 | `src/app/datenschutz/page.tsx`, `src/app/cookie-hinweis/page.tsx`, `src/components/consent/consent-banner.tsx` | mailto-Conversion, GA4-Fristen, `_gcl_ls` |
+
+## Session 2026-10-21 (Wünsche Ads-Dienstleister: HEC-158, HEC-159, HEC-160)
+
+### Completed
+- [x] HEC-144 geschlossen (Anweisung Jev)
+- [x] **HEC-158 live** (`a9f7dca`): LAMBDA EUREKA (EU10L–EU35L) auf /partner, FAQ-Vorlaufzeit Wärmepumpe 6–12 Wochen → In Review, Kundenbestätigung offen
+- [x] **HEC-159 live 15:07 UTC** (`e9739ba`, `69f9996`): Förderaussagen auf KfW-Merkblatt 458 (09/2026) + BEG-EM-Richtlinie 17.08.2026
+  - neue Single Source `src/lib/config/foerderung.ts`, Rechner mit Einkommensstufen/Kind/Selbstnutzer, Obergrenze 70 % (80 % nur mit 40-%-Einkommensbonus)
+  - Merkblatt widerlegte mehr als „70 → 80 %“: Effizienz-/Emissionsbonus gibt es nicht, Solarthermie allein max. 70 %, Neubau kein 458-Zuschuss, Gas-Hybrid ohne Klimabonus, Antrag nur mit bedingtem Vertrag
+  - Gate 1 hvac-content 3 Läufe (13 → 2 → 0 Blocker), Gate 2 APPROVED, VALIDATION_REPORT 2026-10-21; Prod per curl + Playwright geprüft → In Review
+  - GitHub-Webhook löste für `69f9996` kein Vercel-Deployment aus → Prod-Build per Vercel-API (`create_deployment`, gitSource SHA)
+- [x] HEC-160 (Telefon optional): Entscheid A erfasst, blockiert durch W-01-Änderung (HEC-113)
+
+### Offene Punkte
+- [ ] HEC-158/159: Bestätigung Andrej, dann linear-verifier
+- [ ] HEC-160: W-01 „Validate Contact“ zuerst, dann Formular
+- [ ] HEC-161: Werte zum 01.02.2027 (Klimabonus 12 %, Deckel 27.250 €; Blog-Beispielwerte hartkodiert)
+- [ ] Andrej fragen: /faq „Installationstermine oft 2–4 Wochen“ vs. 6–12 Wochen
+
+### Geaenderte Dateien
+| Datei | Aenderung |
+|-------|-----------|
+| `src/lib/config/foerderung.ts` | neu: Sätze, Deckel, Obergrenze, Textbausteine |
+| `src/components/calculator/price-calculator.tsx` | Einkommensstufen, Kind, Selbstnutzer, Gas-Alter, MFH-Anteil, Obergrenze |
+| `src/lib/api/blog.ts` | Förderaussagen in 21+ Artikeln (3 Durchgänge, Blog-Agent) |
+| `src/app/{foerderung,waermepumpe,solar,rechner,faq,heizung}/…`, Startseite, 6 Partner-, 22 Standortseiten, Schema-/CTA-Komponenten, OG-Bilder | Förderangaben |
+| `src/app/partner/page.tsx`, `src/app/waermepumpe/page.tsx` | HEC-158 |
+| `VALIDATION_REPORT.md` | Eintrag 2026-10-21 (HEC-159) |
+Agents: Blog-Agent (frontend/general), hvac-content (Gate 1, 3 Läufe), tester (Gate 2)
