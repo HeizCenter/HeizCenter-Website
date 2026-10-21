@@ -313,3 +313,23 @@ Neuer Hersteller-Partner ZEWOTHERM (Wärmepumpe LAMBDA) auf HEIZcenter-Website i
 
 ### Ergebnis
 **COMMIT FREIGEGEBEN**
+
+## Content Validation Report - 2026-10-21
+
+### Gepruefte Aenderungen
+- `src/app/partner/page.tsx`: ZEWOTHERM-Karte um „Wärmepumpe LAMBDA EUREKA (Modelle EU10L, EU13L, EU15L, EU20L und EU35L)“ ergänzt, Keywords „LAMBDA Wärmepumpe“, „LAMBDA EUREKA“ (Wunsch Ads-Dienstleister; dessen Vorschlag „EU08L“ nicht übernommen — existiert laut lambda-wp.at und zewotherm.com nicht)
+- `src/app/waermepumpe/page.tsx`: FAQ Vorlaufzeit 6-8 → 6-12 Wochen (Betriebsangabe Andrej über Ads-Dienstleister)
+
+### Gate 1: Fachliche Pruefung
+- Pruefer: hvac-content
+- Status: APPROVED
+- Anmerkungen: Modelle konsistent mit /partner/zewotherm, lambda-wp.at, zewotherm.com; keine neuen Werte erfunden. Hinweis: allgemeine FAQ „Installationstermine oft 2-4 Wochen“ (/faq) mit Andrej klären; „EUREKA“ optional auf der Detailseite ergänzen.
+
+### Gate 2: Kontaktdaten-Validierung
+- Nicht betroffen (keine Kontaktdaten geändert)
+
+### Ergebnis
+COMMIT FREIGEGEBEN
+
+---
+

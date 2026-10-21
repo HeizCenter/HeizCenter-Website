@@ -117,7 +117,7 @@ const faqs: FAQItem[] = [
   {
     question: "Wie lange dauert die Installation?",
     answer:
-      "Die Installation einer Luft-Wasser-Wärmepumpe dauert in der Regel 2-3 Tage. Bei Erdwärmepumpen mit Bohrung müssen Sie etwa 1 Woche einplanen. Nach der Installation führen wir die Inbetriebnahme und Einweisung durch. Die Vorlaufzeit bis zur Installation beträgt aktuell etwa 6-8 Wochen.",
+      "Die Installation einer Luft-Wasser-Wärmepumpe dauert in der Regel 2-3 Tage. Bei Erdwärmepumpen mit Bohrung müssen Sie etwa 1 Woche einplanen. Nach der Installation führen wir die Inbetriebnahme und Einweisung durch. Die Vorlaufzeit bis zur Installation beträgt aktuell etwa 6-12 Wochen.",
   },
   {
     question: "Welche Wärmepumpe ist die richtige für mich?",

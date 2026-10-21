@@ -8,7 +8,7 @@ import { getCanonicalUrl } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "Unsere Premium-Partner | Viessmann, Vaillant, Buderus & mehr",
   description: "HeizCenter arbeitet mit den führenden Herstellern zusammen: Viessmann, Vaillant, Buderus, Wolf, Bosch, Daikin und ZEWOTHERM. Testsieger-Qualität.",
-  keywords: ["Hersteller", "Partner", "Viessmann", "Vaillant", "Buderus", "Wolf", "Bosch", "Daikin", "ZEWOTHERM"],
+  keywords: ["Hersteller", "Partner", "Viessmann", "Vaillant", "Buderus", "Wolf", "Bosch", "Daikin", "ZEWOTHERM", "LAMBDA Wärmepumpe", "LAMBDA EUREKA"],
   alternates: {
     canonical: getCanonicalUrl("/partner"),
   },
@@ -69,7 +69,7 @@ const partners: Partner[] = [
   {
     name: "ZEWOTHERM",
     slug: "zewotherm",
-    description: "Patentierter 3K-Prozess. SCOP bis 6,1, Vorlauf bis 70 °C ohne Heizstab. Hersteller mit Sitz in Remagen – ideal für Neubau & Altbau-Sanierung.",
+    description: "Wärmepumpe LAMBDA EUREKA (Modelle EU10L, EU13L, EU15L, EU20L und EU35L). Patentierter 3K-Prozess. SCOP bis 6,1, Vorlauf bis 70 °C ohne Heizstab. Hersteller mit Sitz in Remagen – ideal für Neubau & Altbau-Sanierung.",
     badge: "3K-Prozess",
     highlights: ["SCOP bis 6,1", "Bis 70 °C VL", "R290 Kältemittel"],
     logoExt: "png",
