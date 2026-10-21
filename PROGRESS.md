@@ -1479,3 +1479,23 @@ keine
 
 ### Geaenderte Dateien
 `src/lib/consent.ts`, `src/components/analytics/consent-gtm.tsx`, `src/components/analytics/consent-vercel-analytics.tsx`, `src/components/consent/*`, `src/app/layout.tsx`, `src/components/layout/footer.tsx`, `src/components/forms/*`, `src/app/datenschutz/page.tsx`, `src/app/cookie-hinweis/page.tsx` (Branch `info/hec-145-gtm-consent`, bis `e73a7ab`)
+
+## Session 2026-10-19 bis 21 (GTM live, Ads-Kampagnen gestartet)
+
+### Completed
+- [x] Antwort Ads-Dienstleister 19.10. eingearbeitet: Einwilligung je Tag im Container, mailto als 6. Conversion, GA4-Fristen (Ereignisse 2 Monate, Nutzer 14 Monate) → Banner/DSE/Cookie-Hinweis (`7c94837`)
+- [x] GA4-Kontoeinstellungen von Andrej geprüft (Datenverarbeitungsbedingungen akzeptiert, Datenweitergabe abgewählt)
+- [x] Veröffentlichten Container v2 geprüft (13 Tags, alle mit `ad_storage`/`analytics_storage`, keine Enhanced Conversions, keine Fremd-Tags); Preview-Messung je Kategorie; `_gcl_ls` (localStorage) entdeckt und dokumentiert (`cd04369`)
+- [x] **Go-live 20.10.:** Env `NEXT_PUBLIC_GTM_ID` Production, `main` fast-forward, Prod-Deploy; Prod-Messung grün; Widerrufs-Nachlauf von GA4 per `ga-disable` behoben (`23d7cb8`)
+- [x] Ads-Dienstleister hat 21.10. getestet, Kampagnen laufen; HEC-145 Done + verified; HEC-144 Verify 3/4 (Mistral-Screenshot fehlt, Entscheid Jev: nicht weiter verfolgen)
+
+### Offene Punkte
+- [ ] HEC-144 schließen (Anweisung Jev)
+- [ ] Wünsche Ads-Dienstleister: LAMBDA auf /partner, Förder-Update KfW 458 (bis 80 %, neue Boni) inkl. Rechner, FAQ-Vorlaufzeit 6–12 Wochen, Telefon optional (Entscheid Andrej)
+- [ ] Testleads aus dem Ads-Test in Odoo archivieren (Andrej)
+
+### Geaenderte Dateien
+| Datei | Aenderung |
+|-------|-----------|
+| `src/lib/consent.ts` | `ga-disable` vor Reload beim Widerruf von Statistik |
+| `src/app/datenschutz/page.tsx`, `src/app/cookie-hinweis/page.tsx`, `src/components/consent/consent-banner.tsx` | mailto-Conversion, GA4-Fristen, `_gcl_ls` |
