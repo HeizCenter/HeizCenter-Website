@@ -361,7 +361,7 @@ export default function BuderusPage() {
               <ul className="text-sm text-slate-600 space-y-1">
                 <li>• Austausch Ölheizung gegen Wärmepumpe</li>
                 <li>• Testsieger-Modell extrem leise</li>
-                <li>• Förderung: bis 70% KfW BEG möglich</li>
+                <li>• Förderung: bis 80% KfW BEG möglich</li>
                 <li>• Jährliche Einsparung: ~2.200€</li>
               </ul>
             </div>

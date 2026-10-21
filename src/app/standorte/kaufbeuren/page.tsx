@@ -35,7 +35,7 @@ const services: LocationService[] = [
   {
     title: "Wärmepumpe",
     description:
-      "Moderne Wärmepumpen für Kaufbeuren. BEG-Förderung bis 70%. Professionelle Installation.",
+      "Moderne Wärmepumpen für Kaufbeuren. BEG-Förderung bis 80%. Professionelle Installation.",
     icon: Zap,
     href: "/waermepumpe",
   },
@@ -157,7 +157,7 @@ export default function KaufbeurenPage() {
             </p>
             <p className="text-slate-700 mb-6">
               <strong>Ihre Vorteile:</strong> Bis zu 45% niedrigere Heizkosten im
-              Vergleich zur Gasheizung, BEG-Förderung bis 70%, CO2-neutrales Heizen.
+              Vergleich zur Gasheizung, BEG-Förderung bis 80%, CO2-neutrales Heizen.
               Kostenlose Vor-Ort-Beratung in Kaufbeuren mit individueller
               Wirtschaftlichkeitsberechnung.
             </p>

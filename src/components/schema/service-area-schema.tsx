@@ -95,7 +95,7 @@ export function ServiceAreaSchema({
           "itemOffered": {
             "@type": "Service",
             "name": "Wärmepumpen-Installation",
-            "description": "Professionelle Wärmepumpen-Installation mit BEG-Förderung bis zu 70%",
+            "description": "Professionelle Wärmepumpen-Installation mit BEG-Förderung bis zu 80%",
             "url": "https://www.heizcenter.de/waermepumpe",
           },
         },

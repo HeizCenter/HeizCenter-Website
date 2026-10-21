@@ -44,7 +44,7 @@ const services: LocationService[] = [
   {
     title: "Wärmepumpe",
     description:
-      "Moderne Wärmepumpen für Memmingen und Unterallgäu. BEG-Förderung bis 70%. Effizient heizen.",
+      "Moderne Wärmepumpen für Memmingen und Unterallgäu. BEG-Förderung bis 80%. Effizient heizen.",
     icon: Zap,
     href: "/waermepumpe",
   },
@@ -100,7 +100,7 @@ const faqs: FAQItem[] = [
   {
     question: "Was kostet eine Wärmepumpe im Allgäu?",
     answer:
-      "Eine Wärmepumpe im Raum Memmingen kostet zwischen 15.000 und 35.000 Euro inkl. Installation. Bei großen Grundstücken im Allgäu ist oft eine Erdwärmepumpe sinnvoll. Mit der BEG-Förderung von bis zu 70% reduzieren sich Ihre Kosten erheblich. Wir beraten Sie kostenlos vor Ort.",
+      "Eine Wärmepumpe im Raum Memmingen kostet zwischen 15.000 und 35.000 Euro inkl. Installation. Bei großen Grundstücken im Allgäu ist oft eine Erdwärmepumpe sinnvoll. Mit der BEG-Förderung von bis zu 80% reduzieren sich Ihre Kosten erheblich. Wir beraten Sie kostenlos vor Ort.",
   },
   {
     question: "Lohnt sich eine Pelletheizung in Memmingen?",
@@ -115,7 +115,7 @@ const faqs: FAQItem[] = [
   {
     question: "Gibt es Förderung für Heizungstausch in Bayern?",
     answer:
-      "Ja, in Bayern profitieren Sie von der BEG-Förderung mit bis zu 70% Zuschuss beim Umstieg auf Wärmepumpe oder Pelletheizung. Zusätzlich gibt es das bayerische Programm 10.000-Häuser und kommunale Förderungen. Wir helfen Ihnen bei der Antragstellung.",
+      "Ja, in Bayern profitieren Sie von der BEG-Förderung mit bis zu 80% Zuschuss beim Umstieg auf Wärmepumpe oder Pelletheizung. Zusätzlich gibt es das bayerische Programm 10.000-Häuser und kommunale Förderungen. Wir helfen Ihnen bei der Antragstellung.",
   },
   {
     question: "Welche Heizung empfehlen Sie bei fehlendem Gasanschluss?",
@@ -195,7 +195,7 @@ export default function MemmingenPage() {
             <li>Luft-Wasser-Wärmepumpen: Ideal für Memminger Klimabedingungen</li>
             <li>Erdwärmepumpen: Perfekt bei großen Grundstücken im Allgäu</li>
             <li>Grundwasser-Wärmepumpen: Höchste Effizienz (mit Genehmigung)</li>
-            <li>BEG-Förderung bis 70%: Wir helfen bei der Antragstellung</li>
+            <li>BEG-Förderung bis 80%: Wir helfen bei der Antragstellung</li>
             <li>Kombination mit bestehenden Heizsystemen (Hybrid)</li>
           </ul>
           <p className="text-slate-700 mb-6">
@@ -309,7 +309,7 @@ export default function MemmingenPage() {
             </Link>
             <Link href="/blog/foerderung-heizung-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
               <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Förderung Heizungstausch 2026</h3>
-              <p className="text-slate-600 text-sm">BEG-Förderung bis 70% – alle Details und Antragsschritte.</p>
+              <p className="text-slate-600 text-sm">BEG-Förderung bis 80% – alle Details und Antragsschritte.</p>
             </Link>
             <Link href="/blog/barrierefreies-bad-planen-ratgeber" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
               <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Barrierefreies Bad planen</h3>

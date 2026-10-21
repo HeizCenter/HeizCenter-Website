@@ -97,7 +97,7 @@ const faqs: FAQItem[] = [
   {
     question: "Gibt es Förderung für neue Heizungen?",
     answer:
-      "Ja! Die BEG-Förderung unterstützt den Heizungstausch mit bis zu 70% – sowohl für Wärmepumpen als auch für Pelletheizungen (30% Basis + 20% Klimageschwindigkeitsbonus + 30% Einkommensbonus). Hinweis: Bei Biomasse benötigen Sie für den Klimabonus eine Kombination mit Solar/PV. Wir helfen bei der Antragstellung.",
+      "Ja! Die BEG-Förderung unterstützt den Heizungstausch mit bis zu 80% – sowohl für Wärmepumpen als auch für Pelletheizungen (30% Grundförderung + 16% Klimageschwindigkeitsbonus bei Antrag bis 31.01.2027, danach sinkend + bis zu 40% Einkommensbonus; Boni nur für Selbstnutzer). Wir helfen bei der Antragstellung.",
   },
   {
     question: "Wie lange dauert der Heizungstausch?",
@@ -300,7 +300,7 @@ export default function HeizungPage() {
                   🌞 60% Warmwasser-Deckung durch Sonne
                 </p>
                 <p className="font-semibold text-[#0F5B78]">
-                  🎁 Bis zu 70% KfW-Förderung bei Heizungstausch
+                  🎁 Bis zu 80% KfW-Förderung bei Heizungstausch
                 </p>
               </div>
             </div>
@@ -340,7 +340,7 @@ export default function HeizungPage() {
             </Link>
             <Link href="/blog/foerderung-heizung-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
               <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Förderung Heizungstausch 2026</h3>
-              <p className="text-slate-600 text-sm">Bis zu 70% BEG-Förderung – alle Boni und Antragsschritte.</p>
+              <p className="text-slate-600 text-sm">Bis zu 80% BEG-Förderung – alle Boni und Antragsschritte.</p>
             </Link>
             <Link href="/blog/heizung-entlueften-anleitung-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
               <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Heizung entlüften: Anleitung</h3>

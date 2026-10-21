@@ -21,11 +21,12 @@ import { ServiceSchema } from "@/components/schema/service-schema";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
 import { FAQSchema } from "@/components/schema/faq-schema";
 import { getCanonicalUrl } from "@/lib/seo";
+import { FOERDER_TEXT } from "@/lib/config/foerderung";
 
 export const metadata: Metadata = {
-  title: "Wärmepumpe Augsburg, Ulm - Bis 70% Förderung | HeizCenter",
+  title: `Wärmepumpe Augsburg, Ulm - Bis ${FOERDER_TEXT.max} Förderung | HeizCenter`,
   description:
-    "Moderne Wärmepumpen vom Experten in Augsburg, Ulm und Memmingen. Bis zu 45% Heizkosten sparen. BEG-Förderung bis 70%. Kostenlose Beratung.",
+    `Moderne Wärmepumpen vom Experten in Augsburg, Ulm und Memmingen. Bis zu 45% Heizkosten sparen. BEG-Förderung bis ${FOERDER_TEXT.max}. Kostenlose Beratung.`,
   keywords: [
     "Wärmepumpe",
     "Wärmepumpe Augsburg",
@@ -41,13 +42,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Wärmepumpe Installation | HeizCenter",
     description:
-      "Moderne Wärmepumpen mit bis zu 70% Förderung. Professionelle Installation und Wartung.",
+      `Moderne Wärmepumpen mit bis zu ${FOERDER_TEXT.max} Förderung. Professionelle Installation und Wartung.`,
   },
 };
 
 const benefits = [
   "Bis zu 40–45% niedrigere Heizkosten im Vergleich zur Gasheizung",
-  "BEG-Förderung bis zu 70% der Investitionskosten (bis Ende 2028)",
+  `BEG-Förderung bis zu ${FOERDER_TEXT.max} der förderfähigen Kosten (Klimageschwindigkeitsbonus bei Antrag bis 31.01.2027)`,
   "Umweltfreundlich und CO2-neutral heizen",
   "Heizen und Kühlen mit einem System",
   "Unabhängig von Öl und Gas",
@@ -70,7 +71,7 @@ const features = [
   {
     title: "Staatliche Förderung (KfW 458)",
     description:
-      "Profitieren Sie von der BEG-Förderung: bis zu 70% Zuschuss für den Heizungstausch (30% Basis + 20% Klimageschwindigkeitsbonus + 30% Einkommensbonus). Alternativ: Steuerbonus nach § 35c EStG. Wir unterstützen Sie bei der Antragstellung.",
+      `Profitieren Sie von der BEG-Förderung: bis zu ${FOERDER_TEXT.max} Zuschuss für den Heizungstausch (${FOERDER_TEXT.grund} Grundförderung + Klimageschwindigkeitsbonus (${FOERDER_TEXT.klimaHinweis}) + bis zu ${FOERDER_TEXT.einkommenMax} Einkommensbonus). Alternativ: Steuerbonus nach § 35c EStG. Wir unterstützen Sie bei der Antragstellung.`,
     icon: Award,
   },
   {
@@ -97,12 +98,12 @@ const faqs: FAQItem[] = [
   {
     question: "Wie hoch sind die Kosten für eine Wärmepumpe?",
     answer:
-      "Die Kosten für eine Wärmepumpe liegen je nach System zwischen 20.000€ und 35.000€ inklusive Installation. Luft-Wasser-Wärmepumpen sind günstiger (ca. 20.000-25.000€), Erdwärmepumpen etwas teurer (ca. 25.000-35.000€). Dank BEG-Förderung von bis zu 70% reduzieren sich Ihre Nettokosten erheblich. Wir erstellen Ihnen ein individuelles Angebot.",
+      "Die Kosten für eine Wärmepumpe liegen je nach System zwischen 20.000€ und 35.000€ inklusive Installation. Luft-Wasser-Wärmepumpen sind günstiger (ca. 20.000-25.000€), Erdwärmepumpen etwas teurer (ca. 25.000-35.000€). Dank BEG-Förderung von bis zu 80% reduzieren sich Ihre Nettokosten erheblich. Wir erstellen Ihnen ein individuelles Angebot.",
   },
   {
     question: "Welche Förderung gibt es für Wärmepumpen?",
     answer:
-      "Die Bundesförderung für effiziente Gebäude (BEG) fördert Wärmepumpen über das KfW-Programm 458 mit bis zu 70% der Investitionskosten. Die Basisförderung beträgt 30%, weitere 20% gibt es beim Austausch einer alten Öl-, Gas- oder Nachtspeicherheizung (Klimageschwindigkeitsbonus - in voller Höhe bis Ende 2028), und zusätzliche 30% wenn Ihr Haushaltseinkommen unter 40.000€ liegt (Einkommensbonus). Alternativ können Sie die steuerliche Förderung nach § 35c EStG nutzen (20% über 3 Jahre). Wir unterstützen Sie gerne bei der Antragstellung. Aktuelle Infos: kfw.de/458",
+      `Die Bundesförderung für effiziente Gebäude (BEG) fördert Wärmepumpen über das KfW-Programm 458 mit bis zu ${FOERDER_TEXT.max} der förderfähigen Kosten (bis ${FOERDER_TEXT.kostenEfh} im Einfamilienhaus, maximal ${FOERDER_TEXT.maxZuschussEfh} Zuschuss). Die Grundförderung beträgt ${FOERDER_TEXT.grund}. Dazu kommt für selbstnutzende Eigentümer der Klimageschwindigkeitsbonus von ${FOERDER_TEXT.klima} beim Austausch einer funktionstüchtigen Öl-, Kohle-, Gas-Etagen- oder Nachtspeicherheizung oder einer mindestens 20 Jahre alten Gas- oder Biomasseheizung (bei Antrag bis 31.01.2027, danach sinkt er halbjährlich um 4 Prozentpunkte und entfällt für Anträge ab 01.08.2028). Außerdem gibt es für Selbstnutzer einen Einkommensbonus: 40% bis 30.000€, 30% bis 40.000€ und 10% bis 50.000€ zu versteuerndes Haushaltsjahreseinkommen (mit einem minderjährigen, kindergeldberechtigten Kind steigen die Grenzen um 10.000€). Insgesamt gilt eine Obergrenze von ${FOERDER_TEXT.maxStandard}; ${FOERDER_TEXT.maxBedingung}. Gefördert werden nur Bestandsgebäude, deren Bauantrag mindestens fünf Jahre zurückliegt. Alternativ können Sie die steuerliche Förderung nach § 35c EStG nutzen (20% über 3 Jahre). Wir unterstützen Sie gerne bei der Antragstellung. Aktuelle Infos: kfw.de/458`,
   },
   {
     question: "Eignet sich eine Wärmepumpe für mein Altbau?",
@@ -151,12 +152,12 @@ export default function WaermepumpePage() {
 
       <ServiceHero
         title="Wärmepumpe in Augsburg, Ulm & Memmingen"
-        description="Zukunftssicher heizen mit erneuerbarer Energie. Profitieren Sie von bis zu 70% staatlicher Förderung und sparen Sie bis zu 45% Ihrer Heizkosten."
+        description={`Zukunftssicher heizen mit erneuerbarer Energie. Profitieren Sie von bis zu ${FOERDER_TEXT.max} staatlicher Förderung und sparen Sie bis zu 45% Ihrer Heizkosten.`}
         benefits={benefits}
         icon={Zap}
-        badge="Bis zu 70% Förderung"
+        badge={`Bis zu ${FOERDER_TEXT.max} Förderung`}
         imageSrc="/images/Waermepumpe.webp"
-        imageAlt="Moderne Luft-Wasser-Wärmepumpe vor Einfamilienhaus - Bis 70% BEG-Förderung mit HeizCenter Bayern"
+        imageAlt={`Moderne Luft-Wasser-Wärmepumpe vor Einfamilienhaus - Bis ${FOERDER_TEXT.max} BEG-Förderung mit HeizCenter Bayern`}
       />
 
       <FeaturesSection
@@ -377,7 +378,7 @@ export default function WaermepumpePage() {
               <strong>Gut zu wissen:</strong> Die meisten aktuellen Markengeräte erfüllen die neuen Grenzwerte bereits. Die Anforderungen sind reine Fördervoraussetzungen – die TA-Lärm-Grenzwerte bleiben unverändert. Ab 2028 werden zusätzlich natürliche Kältemittel (z. B. Propan R290) für die Förderung vorausgesetzt.
             </p>
             <p className="text-xs text-slate-500 mt-2">
-              Rechtsgrundlage: BEG-EM-Richtlinie vom 21.12.2023
+              Rechtsgrundlage: BEG-EM-Richtlinie vom 17.08.2026, Technische Mindestanforderungen Nr. 3.4.4 und 3.4.5
             </p>
           </div>
         </div>
@@ -416,7 +417,7 @@ export default function WaermepumpePage() {
                   Solarthermie-System: €8.000 - €18.000
                   <br />
                   <span className="text-[#FFCA28] font-semibold">
-                    Bei Heizungstausch: bis zu 70% Förderung
+                    Bei Heizungstausch: bis zu {FOERDER_TEXT.max} Förderung
                   </span>
                   <br />
                   <span className="text-white/70 text-sm">

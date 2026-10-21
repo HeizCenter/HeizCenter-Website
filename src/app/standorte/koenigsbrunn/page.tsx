@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 const services: LocationService[] = [
   {
     title: "Wärmepumpe",
-    description: "Moderne Wärmepumpen für Königsbrunn. BEG-Förderung bis 70%.",
+    description: "Moderne Wärmepumpen für Königsbrunn. BEG-Förderung bis 80%.",
     icon: Zap,
     href: "/waermepumpe",
   },
@@ -121,7 +121,7 @@ export default function KoenigsbrunnPage() {
             <strong>Wärmepumpen-Installation in Königsbrunn:</strong> Wir
             installieren moderne Luft-Wasser-Wärmepumpen, die perfekt zu den
             Neubaustandards in Königsbrunn passen. Dank BEG-Förderung von bis zu
-            70% wird die Investition besonders attraktiv. Bei größeren Grundstücken
+            80% wird die Investition besonders attraktiv. Bei größeren Grundstücken
             bieten sich auch Erdwärmepumpen an - wir beraten Sie kostenlos.
           </p>
 

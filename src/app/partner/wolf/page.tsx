@@ -350,7 +350,7 @@ export default function WolfPage() {
               <ul className="text-sm text-slate-600 space-y-1">
                 <li>• Austausch Gasheizung</li>
                 <li>• Kompakte Aufstellung möglich</li>
-                <li>• Förderung: bis 70% KfW BEG möglich</li>
+                <li>• Förderung: bis 80% KfW BEG möglich</li>
                 <li>• JAZ: 4,1 | Einsparung: ~1.900€/Jahr</li>
               </ul>
             </div>

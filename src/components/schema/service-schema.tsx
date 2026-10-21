@@ -34,7 +34,7 @@ export function ServiceSchema({ serviceType }: ServiceSchemaProps) {
     serviceType: "Wärmepumpen-Installation",
     name: "Wärmepumpen-Installation & Wartung",
     description:
-      "Professionelle Wärmepumpen-Installation mit BEG-Förderung bis zu 70%. Luft-Wasser, Sole-Wasser und Wasser-Wasser Wärmepumpen von führenden Herstellern.",
+      "Professionelle Wärmepumpen-Installation mit BEG-Förderung bis zu 80%. Luft-Wasser, Sole-Wasser und Wasser-Wasser Wärmepumpen von führenden Herstellern.",
     provider: {
       "@type": "PlumbingHeatingContractor",
       name: "HeizCenter GmbH",
@@ -443,7 +443,7 @@ export function ServiceSchema({ serviceType }: ServiceSchemaProps) {
     serviceType: "Solarthermie-Installation",
     name: "Solarthermie-Installation & Beratung",
     description:
-      "Professionelle Solarthermie-Anlagen für Warmwasser und Heizungsunterstützung. Bis zu 70% KfW-Förderung. Installation von Flach- und Vakuumröhrenkollektoren in Augsburg, Ulm und Memmingen.",
+      "Professionelle Solarthermie-Anlagen für Warmwasser und Heizungsunterstützung. Bis zu 70% KfW-Förderung, im Zuge eines Heizungstauschs bis zu 80%. Installation von Flach- und Vakuumröhrenkollektoren in Augsburg, Ulm und Memmingen.",
     provider: {
       "@type": "PlumbingHeatingContractor",
       name: "HeizCenter GmbH",
@@ -488,7 +488,7 @@ export function ServiceSchema({ serviceType }: ServiceSchemaProps) {
               highPrice: "18000",
               eligibleQuantity: {
                 "@type": "QuantitativeValue",
-                value: "Nach 70% KfW-Förderung: 2400-5400 EUR",
+                value: "Nach 80% KfW-Förderung (Höchstsatz): 1600-3600 EUR",
               },
             },
           },
@@ -554,7 +554,7 @@ export function ServiceSchema({ serviceType }: ServiceSchemaProps) {
             "@type": "Service",
             name: "KfW-Förderberatung Solarthermie",
             description:
-              "Kostenlose Beratung zur KfW-Förderung. Bis zu 70% Zuschuss: 30% Basis + 20% Geschwindigkeitsbonus + 30% Einkommensbonus.",
+              "Kostenlose Beratung zur KfW-Förderung. Bis zu 80% Zuschuss: 30% Grundförderung + 16% Klimageschwindigkeitsbonus (Antrag bis 31.01.2027, danach sinkend) + bis zu 40% Einkommensbonus.",
           },
         },
       ],

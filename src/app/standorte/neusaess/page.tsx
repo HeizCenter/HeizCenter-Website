@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 const services: LocationService[] = [
   {
     title: "Wärmepumpe",
-    description: "Moderne Wärmepumpen für Neusäß. BEG-Förderung bis 70%.",
+    description: "Moderne Wärmepumpen für Neusäß. BEG-Förderung bis 80%.",
     icon: Zap,
     href: "/waermepumpe",
   },
@@ -193,7 +193,7 @@ export default function NeusaessPage() {
                 <p className="text-slate-700">Ortsteile im Servicegebiet</p>
               </div>
               <div className="bg-white p-6 rounded-lg text-center">
-                <div className="text-4xl font-bold text-[#0F5B78] mb-2">70%</div>
+                <div className="text-4xl font-bold text-[#0F5B78] mb-2">80%</div>
                 <p className="text-slate-700">BEG-Förderung für Wärmepumpen</p>
               </div>
             </div>

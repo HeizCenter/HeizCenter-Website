@@ -44,7 +44,7 @@ const services: LocationService[] = [
   {
     title: "Wärmepumpe",
     description:
-      "Moderne Wärmepumpen für Klosterlechfeld und Umgebung. BEG-Förderung bis 70%. Energieeffizient und umweltfreundlich heizen.",
+      "Moderne Wärmepumpen für Klosterlechfeld und Umgebung. BEG-Förderung bis 80%. Energieeffizient und umweltfreundlich heizen.",
     icon: Zap,
     href: "/waermepumpe",
   },
@@ -179,12 +179,12 @@ export default function KlosterlechfeldPage() {
           <ul className="list-disc list-inside space-y-2 text-slate-700 mb-6">
             <li>Kostenlose Vor-Ort-Beratung und Wirtschaftlichkeitsberechnung</li>
             <li>Fachgerechte Installation durch zertifizierte Techniker</li>
-            <li>Unterstützung bei BEG-Förderanträgen (bis 70% Zuschuss)</li>
+            <li>Unterstützung bei BEG-Förderanträgen (bis 80% Zuschuss)</li>
             <li>Hydraulischer Abgleich für maximale Effizienz</li>
             <li>Wartung und Kundendienst aus einer Hand</li>
           </ul>
           <p className="text-slate-700 mb-6">
-            Dank der staatlichen BEG-Förderung von bis zu 70% wird der Umstieg auf
+            Dank der staatlichen BEG-Förderung von bis zu 80% wird der Umstieg auf
             eine Wärmepumpe besonders attraktiv. Wir helfen Ihnen bei der
             Antragstellung und sorgen dafür, dass Sie alle verfügbaren Förderungen
             optimal nutzen können.

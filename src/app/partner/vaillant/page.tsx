@@ -360,7 +360,7 @@ export default function VaillantPage() {
               <ul className="text-sm text-slate-600 space-y-1">
                 <li>• Austausch Gasheizung gegen Wärmepumpe</li>
                 <li>• 300L Warmwasserspeicher uniSTOR</li>
-                <li>• Förderung: bis 70% KfW BEG möglich</li>
+                <li>• Förderung: bis 80% KfW BEG möglich</li>
                 <li>• JAZ: 4,2 | Einsparung: ~2.100€/Jahr</li>
               </ul>
             </div>

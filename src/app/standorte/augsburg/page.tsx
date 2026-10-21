@@ -44,7 +44,7 @@ const services: LocationService[] = [
   {
     title: "Wärmepumpe",
     description:
-      "Moderne Wärmepumpen für Augsburg. BEG-Förderung bis 70%. Energieeffizient und umweltfreundlich heizen.",
+      "Moderne Wärmepumpen für Augsburg. BEG-Förderung bis 80%. Energieeffizient und umweltfreundlich heizen.",
     icon: Zap,
     href: "/waermepumpe",
   },
@@ -100,12 +100,12 @@ const faqs: FAQItem[] = [
   {
     question: "Was kostet eine Wärmepumpe in Augsburg?",
     answer:
-      "Die Kosten für eine Wärmepumpe in Augsburg liegen zwischen 15.000 und 35.000 Euro inkl. Installation. Dank BEG-Förderung erhalten Sie bis zu 70% Zuschuss, sodass Ihre Investition oft unter 15.000 Euro liegt. Wir erstellen Ihnen ein kostenloses Angebot mit genauer Berechnung.",
+      "Die Kosten für eine Wärmepumpe in Augsburg liegen zwischen 15.000 und 35.000 Euro inkl. Installation. Dank BEG-Förderung erhalten Sie bis zu 80% Zuschuss, sodass Ihre Investition oft unter 15.000 Euro liegt. Wir erstellen Ihnen ein kostenloses Angebot mit genauer Berechnung.",
   },
   {
     question: "Gibt es Förderung für Heizungstausch in Bayern?",
     answer:
-      "Ja, in Bayern profitieren Sie von der BEG-Förderung des Bundes mit bis zu 70% Zuschuss beim Umstieg auf eine Wärmepumpe. Zusätzlich gibt es kommunale Förderprogramme. Wir unterstützen Sie bei der Antragstellung und sorgen dafür, dass Sie alle verfügbaren Förderungen optimal nutzen.",
+      "Ja, in Bayern profitieren Sie von der BEG-Förderung des Bundes mit bis zu 80% Zuschuss beim Umstieg auf eine Wärmepumpe. Zusätzlich gibt es kommunale Förderprogramme. Wir unterstützen Sie bei der Antragstellung und sorgen dafür, dass Sie alle verfügbaren Förderungen optimal nutzen.",
   },
   {
     question: "Wie schnell ist der Notdienst in Augsburg vor Ort?",
@@ -192,12 +192,12 @@ export default function AugsburgPage() {
           <ul className="list-disc list-inside space-y-2 text-slate-700 mb-6">
             <li>Kostenlose Vor-Ort-Beratung und Wirtschaftlichkeitsberechnung</li>
             <li>Fachgerechte Installation durch zertifizierte Techniker</li>
-            <li>Unterstützung bei BEG-Förderanträgen (bis 70% Zuschuss)</li>
+            <li>Unterstützung bei BEG-Förderanträgen (bis 80% Zuschuss)</li>
             <li>Hydraulischer Abgleich für maximale Effizienz</li>
             <li>Wartung und Kundendienst aus einer Hand</li>
           </ul>
           <p className="text-slate-700 mb-6">
-            Dank der staatlichen BEG-Förderung von bis zu 70% wird der Umstieg
+            Dank der staatlichen BEG-Förderung von bis zu 80% wird der Umstieg
             auf eine Wärmepumpe in Augsburg besonders attraktiv. Wir helfen
             Ihnen bei der Antragstellung und sorgen dafür, dass Sie alle
             verfügbaren Förderungen optimal nutzen können.
@@ -289,7 +289,7 @@ export default function AugsburgPage() {
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             <Link href="/blog/waermepumpe-kosten-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
               <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Wärmepumpe: Kosten & Förderung 2026</h3>
-              <p className="text-slate-600 text-sm">Aktuelle Preise und bis zu 70% BEG-Förderung.</p>
+              <p className="text-slate-600 text-sm">Aktuelle Preise und bis zu 80% BEG-Förderung.</p>
             </Link>
             <Link href="/blog/foerderung-heizung-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
               <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Förderung Heizungstausch 2026</h3>

@@ -358,7 +358,7 @@ export default function ViessmannPage() {
               <ul className="text-sm text-slate-600 space-y-1">
                 <li>• Austausch Ölheizung gegen Wärmepumpe</li>
                 <li>• Warmwasserspeicher 300L integriert</li>
-                <li>• Förderung: bis 70% KfW BEG möglich</li>
+                <li>• Förderung: bis 80% KfW BEG möglich</li>
                 <li>• Jährliche Einsparung: ~1.800€</li>
               </ul>
             </div>

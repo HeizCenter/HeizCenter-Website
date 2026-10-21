@@ -245,7 +245,7 @@ function getMockBlogPosts(): BlogPost[] {
       title: 'Wärmepumpe Kosten 2026: Kompletter Überblick',
       excerpt: 'Was kostet eine Wärmepumpe 2026 wirklich? Alle Kosten, Förderungen und versteckte Ausgaben im Detail erklärt.',
       content: `
-        <p class="text-xl leading-relaxed text-slate-600 mb-8">Sie überlegen, Ihre alte Heizung gegen eine Wärmepumpe zu tauschen? Mit bis zu 70% Förderung war der Zeitpunkt nie besser. Hier erfahren Sie, was eine Wärmepumpe 2026 <em>wirklich</em> kostet – und was nach der Förderung übrig bleibt.</p>
+        <p class="text-xl leading-relaxed text-slate-600 mb-8">Sie überlegen, Ihre alte Heizung gegen eine Wärmepumpe zu tauschen? Mit bis zu 80% Förderung war der Zeitpunkt nie besser. Hier erfahren Sie, was eine Wärmepumpe 2026 <em>wirklich</em> kostet – und was nach der Förderung übrig bleibt.</p>
 
         <div class="flex flex-wrap gap-4 mb-8 text-sm text-slate-600">
           <span class="flex items-center gap-1">✓ Über 500 Wärmepumpen in Bayern installiert</span>
@@ -254,7 +254,7 @@ function getMockBlogPosts(): BlogPost[] {
         </div>
 
         <div class="highlight-quote">
-          Durchschnittliche Gesamtkosten für eine Wärmepumpe 2026: zwischen 27.000 und 50.000 Euro. Nach Förderung oft nur 9.000 bis 18.000 Euro.
+          Durchschnittliche Gesamtkosten für eine Wärmepumpe 2026: zwischen 27.000 und 50.000 Euro. Nach Förderung oft nur 5.400 bis 19.000 Euro.
         </div>
 
         <h2>Die ehrliche Kostenaufstellung</h2>
@@ -312,7 +312,7 @@ function getMockBlogPosts(): BlogPost[] {
 
         <h2>Die Förderung macht's möglich</h2>
 
-        <p>Hier wird es spannend. Der Staat will, dass Sie auf erneuerbare Energien umsteigen – und zahlt dafür ordentlich mit. Bis zu <strong>70% der Kosten</strong> übernimmt die KfW. In unserem <a href="/blog/foerderung-heizung-2026" class="text-[#0F5B78] font-medium hover:underline">Ratgeber zur Heizungsförderung 2026</a> erklären wir alle Förderbausteine im Detail.</p>
+        <p>Hier wird es spannend. Der Staat will, dass Sie auf erneuerbare Energien umsteigen – und zahlt dafür ordentlich mit. Bis zu <strong>80% der förderfähigen Kosten</strong> übernimmt die KfW. In unserem <a href="/blog/foerderung-heizung-2026" class="text-[#0F5B78] font-medium hover:underline">Ratgeber zur Heizungsförderung 2026</a> erklären wir alle Förderbausteine im Detail.</p>
 
         <table class="cost-table">
           <thead>
@@ -326,34 +326,29 @@ function getMockBlogPosts(): BlogPost[] {
             <tr>
               <td><strong>Grundförderung</strong></td>
               <td class="price">30%</td>
-              <td>Alte Heizung ist mind. 2 Jahre alt</td>
+              <td>Bestehendes Wohngebäude (Bauantrag mind. 5 Jahre alt)</td>
             </tr>
             <tr>
               <td><strong>Klimageschwindigkeits-Bonus</strong></td>
-              <td class="price">+20%</td>
-              <td>Austausch von Öl-/Gas-/Kohleheizung</td>
+              <td class="price">+16%</td>
+              <td>Selbstnutzer: Austausch einer funktionstüchtigen Öl-, Kohle-, Gas-Etagen- oder Nachtspeicherheizung oder einer mind. 20 Jahre alten Gas-/Biomasseheizung</td>
             </tr>
             <tr>
               <td><strong>Einkommensbonus</strong></td>
-              <td class="price">+30%</td>
-              <td>Zu versteuerndes Einkommen unter 40.000 €</td>
-            </tr>
-            <tr>
-              <td><strong>Effizienzbonus</strong></td>
-              <td class="price">+5%</td>
-              <td>Wärmepumpe mit natürlichem Kältemittel</td>
+              <td class="price">+10 bis 40%</td>
+              <td>Selbstnutzer: zu versteuerndes Haushaltseinkommen bis 30.000 € (40%), 40.000 € (30%) oder 50.000 € (10%)</td>
             </tr>
             <tr class="highlight-row">
               <td><strong>Maximum</strong></td>
-              <td class="price">70%</td>
-              <td>Gedeckelt bei 21.000 € Zuschuss</td>
+              <td class="price">70% / 80%</td>
+              <td>In der Regel max. 70% = 19.600 € Zuschuss; 80% = 22.400 € nur für Selbstnutzer mit zvE bis 30.000 € (mit Kind bis 40.000 €) – jeweils Einfamilienhaus, 28.000 € förderfähige Kosten</td>
             </tr>
           </tbody>
         </table>
 
-        <h3>Rechenbeispiel: Familie Müller aus <a href="/standorte/augsburg" class="text-[#0F5B78] font-medium hover:underline">Augsburg</a></h3>
+        <h3>Rechenbeispiel: ein Einfamilienhaus in <a href="/standorte/augsburg" class="text-[#0F5B78] font-medium hover:underline">Augsburg</a></h3>
 
-        <p>Die Müllers tauschen ihre 25 Jahre alte Gasheizung gegen eine Luft-Wasser-Wärmepumpe für 32.000 Euro. Beide arbeiten, das zu versteuernde Haushaltseinkommen liegt bei 65.000 Euro.</p>
+        <p>Angenommen, die selbstnutzenden Eigentümer tauschen eine 25 Jahre alte Gasheizung gegen eine Luft-Wasser-Wärmepumpe für 32.000 Euro. Beide arbeiten, das zu versteuernde Haushaltseinkommen liegt bei 65.000 Euro.</p>
 
         <div class="comparison-grid">
           <div class="comparison-card">
@@ -362,19 +357,19 @@ function getMockBlogPosts(): BlogPost[] {
             <p style="color: #64748b; font-size: 0.9rem;">Voller Betrag aus eigener Tasche</p>
           </div>
           <div class="comparison-card recommended">
-            <div class="comparison-card-title">Mit 50% Förderung</div>
-            <div class="comparison-card-price">16.000 € <span>Eigenanteil</span></div>
-            <p style="color: #64748b; font-size: 0.9rem;">30% Basis + 20% Geschwindigkeitsbonus</p>
+            <div class="comparison-card-title">Mit 46% Förderung</div>
+            <div class="comparison-card-price">19.120 € <span>Eigenanteil</span></div>
+            <p style="color: #64748b; font-size: 0.9rem;">30% Basis + 16% Geschwindigkeitsbonus auf max. 28.000 € förderfähige Kosten = 12.880 € Zuschuss</p>
           </div>
         </div>
 
-        <p>Hätten die Müllers ein Einkommen unter 40.000 Euro, käme der Einkommensbonus dazu – dann wären es nur noch <strong>9.600 Euro</strong> Eigenanteil für eine komplett neue Heizungsanlage.</p>
+        <p>Läge das zu versteuernde Haushaltseinkommen bei höchstens 30.000 Euro, käme der Einkommensbonus von 40% dazu – in diesem Fall gilt die erhöhte Obergrenze von 80%, das wären 22.400 Euro Zuschuss und nur noch <strong>9.600 Euro</strong> Eigenanteil für eine komplett neue Heizungsanlage.</p>
 
         <div class="callout callout-info">
           <span class="callout-icon">ℹ️</span>
-          <div class="callout-title">Der Geschwindigkeitsbonus läuft aus</div>
+          <div class="callout-title">Der Geschwindigkeitsbonus sinkt</div>
           <div class="callout-content">
-            <p>Die 20% Klimageschwindigkeits-Bonus gibt es nur noch bis Ende 2028. Danach reduziert er sich schrittweise. Wer wechseln will, sollte nicht zu lange warten.</p>
+            <p>Die 16% Klimageschwindigkeits-Bonus gibt es für Anträge bis 31.01.2027. Ab 01.02.2027 sinkt er halbjährlich um 4 Prozentpunkte und entfällt für Anträge ab 01.08.2028. Wer wechseln will, sollte nicht zu lange warten.</p>
           </div>
         </div>
 
@@ -473,7 +468,7 @@ function getMockBlogPosts(): BlogPost[] {
           <div class="pro-list">
             <div class="pro-list-title">✓ Dafür spricht</div>
             <ul>
-              <li>Bis zu 70% Förderung vom Staat</li>
+              <li>Bis zu 80% Förderung vom Staat</li>
               <li>30-50% niedrigere Heizkosten</li>
               <li>Keine Abhängigkeit von Gas-/Ölpreisen</li>
               <li>Wertsteigerung der Immobilie</li>
@@ -513,7 +508,7 @@ function getMockBlogPosts(): BlogPost[] {
         </div>
 
         <div class="bg-amber-50 border border-amber-200 rounded-lg p-4 mt-6">
-          <p class="text-amber-800 text-sm"><strong>⏰ Hinweis:</strong> Der Klimageschwindigkeits-Bonus (20% Förderung) läuft Ende 2028 aus. Wer jetzt plant, sichert sich die maximale Förderung.</p>
+          <p class="text-amber-800 text-sm"><strong>⏰ Hinweis:</strong> Der Klimageschwindigkeits-Bonus (16% Förderung) sinkt ab 01.02.2027 halbjährlich um 4 Prozentpunkte und entfällt für Anträge ab 01.08.2028. Wer jetzt plant, sichert sich die maximale Förderung.</p>
         </div>
 
         <h2>Häufig gestellte Fragen (FAQ)</h2>
@@ -522,7 +517,7 @@ function getMockBlogPosts(): BlogPost[] {
         <p>Eine komplett installierte Wärmepumpe kostet zwischen <strong>27.000 und 50.000 Euro</strong>, je nach Typ. Luft-Wasser-Wärmepumpen liegen bei 27.000-40.000 Euro, während Erdwärme- und Wasser-Wasser-Wärmepumpen aufgrund der Bohrkosten 40.000-50.000 Euro kosten. Im Preis enthalten sind Gerät, Installation, hydraulischer Abgleich und Inbetriebnahme.</p>
 
         <h3>Wie viel Förderung bekomme ich für eine Wärmepumpe?</h3>
-        <p>Sie erhalten mindestens <strong>30% Grundförderung</strong> über die KfW. Mit dem Klimageschwindigkeits-Bonus (20% beim Austausch von Öl/Gas/Kohle) kommen Sie auf 50%. Der Einkommensbonus (30% bei Einkommen unter 40.000 Euro) und der Effizienzbonus (5% für natürliche Kältemittel) ermöglichen maximal <strong>70% Förderung</strong>, gedeckelt bei 21.000 Euro Zuschuss.</p>
+        <p>Sie erhalten mindestens <strong>30% Grundförderung</strong> über die KfW. Als selbstnutzender Eigentümer kommt der Klimageschwindigkeits-Bonus (16% beim Austausch einer funktionstüchtigen Öl-, Kohle-, Gas-Etagen- oder Nachtspeicherheizung oder einer mindestens 20 Jahre alten Gasheizung) hinzu – dann sind es 46%. Mit dem Einkommensbonus (40% bis 30.000 Euro, 30% bis 40.000 Euro, 10% bis 50.000 Euro zu versteuerndes Haushaltseinkommen) steigt die Förderung weiter, ist aber in der Regel bei 70% gedeckelt (max. 19.600 Euro Zuschuss für ein Einfamilienhaus mit 28.000 Euro förderfähigen Kosten). <strong>80% Förderung</strong> bzw. 22.400 Euro gibt es nur für Selbstnutzer mit zu versteuerndem Haushaltseinkommen bis 30.000 Euro (mit minderjährigem, kindergeldberechtigtem Kind bis 40.000 Euro).</p>
 
         <h3>Was kostet eine Wärmepumpe im laufenden Betrieb pro Jahr?</h3>
         <p>Die jährlichen Betriebskosten liegen bei <strong>1.500 bis 2.100 Euro</strong>. Davon entfallen 1.200-1.800 Euro auf Stromkosten und 150-300 Euro auf Wartung. Der Schornsteinfeger entfällt bei reiner Wärmepumpe komplett (bei Hybrid mit Gas weiterhin nötig). Im Vergleich zu Gas- oder Ölheizungen sparen Sie etwa 30-50% der laufenden Kosten.</p>
@@ -540,7 +535,7 @@ function getMockBlogPosts(): BlogPost[] {
         <p>Häufige Zusatzkosten sind: <strong>Starkstromanschluss</strong> (500-2.000 Euro), größere Heizkörper bei sehr kleinen Altbau-Radiatoren (2.000-5.000 Euro), neuer Warmwasserspeicher (1.000-3.000 Euro) und Fundamentarbeiten für das Außengerät (500-1.500 Euro). Seriöse Anbieter klären diese Punkte bei der Vor-Ort-Besichtigung und kalkulieren sie direkt ins Angebot ein.</p>
 
         <h3>Kann ich die Förderung auch nachträglich beantragen?</h3>
-        <p><strong>Nein</strong>, der Förderantrag muss zwingend <strong>vor Auftragsvergabe</strong> bei der KfW gestellt werden. Wer zuerst unterschreibt und dann die Förderung beantragt, verliert den Anspruch komplett. Lassen Sie den Antrag daher von einem erfahrenen Fachbetrieb begleiten oder nutzen Sie einen Energieberater.</p>
+        <p><strong>Nein</strong>, vor der Antragstellung schließen Sie mit dem Fachbetrieb einen Liefer- bzw. Leistungsvertrag mit aufschiebender oder auflösender Bedingung (Zusage der KfW) und voraussichtlichem Umsetzungsdatum und laden ihn im Antrag hoch. Wer einen Vertrag ohne diese Bedingung unterschreibt oder vor der Antragstellung mit dem Bau beginnt, verliert den Anspruch komplett. Mit der Ausführung beginnen Sie nach der Zusage – oder auf eigenes Risiko schon nach der Antragstellung. Lassen Sie den Antrag daher von einem erfahrenen Fachbetrieb begleiten oder nutzen Sie einen Energieberater.</p>
       `,
       category: 'Wärmepumpe',
       author: 'HeizCenter Redaktion',
@@ -551,13 +546,13 @@ function getMockBlogPosts(): BlogPost[] {
       featured: true,
       faqs: [
         { question: 'Was kostet eine Wärmepumpe 2026 insgesamt mit Einbau?', answer: 'Eine komplett installierte Wärmepumpe kostet zwischen 27.000 und 50.000 Euro, je nach Typ. Luft-Wasser-Wärmepumpen liegen bei 27.000-40.000 Euro, während Erdwärme- und Wasser-Wasser-Wärmepumpen aufgrund der Bohrkosten 40.000-50.000 Euro kosten. Im Preis enthalten sind Gerät, Installation, hydraulischer Abgleich und Inbetriebnahme.' },
-        { question: 'Wie viel Förderung bekomme ich für eine Wärmepumpe?', answer: 'Sie erhalten mindestens 30% Grundförderung über die KfW. Mit dem Klimageschwindigkeits-Bonus (20% beim Austausch von Öl/Gas/Kohle) kommen Sie auf 50%. Der Einkommensbonus (30% bei Einkommen unter 40.000 Euro) und der Effizienzbonus (5% für natürliche Kältemittel) ermöglichen maximal 70% Förderung, gedeckelt bei 21.000 Euro Zuschuss.' },
+        { question: 'Wie viel Förderung bekomme ich für eine Wärmepumpe?', answer: 'Sie erhalten mindestens 30% Grundförderung über die KfW. Als selbstnutzender Eigentümer kommt der Klimageschwindigkeits-Bonus (16% beim Austausch einer funktionstüchtigen Öl-, Kohle-, Gas-Etagen- oder Nachtspeicherheizung oder einer mindestens 20 Jahre alten Gasheizung) hinzu – dann sind es 46%. Mit dem Einkommensbonus (40% bis 30.000 Euro, 30% bis 40.000 Euro, 10% bis 50.000 Euro zu versteuerndes Haushaltseinkommen) steigt die Förderung weiter, ist aber in der Regel bei 70% gedeckelt (max. 19.600 Euro Zuschuss für ein Einfamilienhaus mit 28.000 Euro förderfähigen Kosten). 80% Förderung bzw. 22.400 Euro gibt es nur für Selbstnutzer mit zu versteuerndem Haushaltseinkommen bis 30.000 Euro (mit minderjährigem, kindergeldberechtigtem Kind bis 40.000 Euro).' },
         { question: 'Was kostet eine Wärmepumpe im laufenden Betrieb pro Jahr?', answer: 'Die jährlichen Betriebskosten liegen bei 1.500 bis 2.100 Euro. Davon entfallen 1.200-1.800 Euro auf Stromkosten und 150-300 Euro auf Wartung. Der Schornsteinfeger entfällt bei reiner Wärmepumpe komplett (bei Hybrid mit Gas weiterhin nötig). Im Vergleich zu Gas- oder Ölheizungen sparen Sie etwa 30-50% der laufenden Kosten.' },
         { question: 'Wann rechnet sich eine Wärmepumpe finanziell?', answer: 'Mit der aktuellen Förderung amortisiert sich eine Wärmepumpe typischerweise in 8-12 Jahren. Bei einer Lebensdauer von über 20 Jahren profitieren Sie danach 10+ Jahre von niedrigeren Heizkosten. Die Amortisationszeit verkürzt sich bei höherer Förderung, besserer Dämmung und steigenden Gas-/Ölpreisen.' },
         { question: 'Welche Wärmepumpe eignet sich am besten für Altbau?', answer: 'Für Altbauten eignen sich Luft-Wasser-Wärmepumpen am besten, da sie keine aufwendigen Erdarbeiten benötigen. Wichtig ist eine ausreichende Vorlauftemperatur (55-60°C) für die vorhandenen Heizkörper. Bei sehr schlecht gedämmten Häusern sollten Sie entweder die Dämmung verbessern oder größere Heizkörper einplanen. Ein hydraulischer Abgleich ist in jedem Fall Pflicht.' },
         { question: 'Wie lange dauert der Einbau einer Wärmepumpe?', answer: 'Die reine Installation dauert 2-5 Tage, je nach Komplexität. Von der ersten Beratung bis zur fertigen Anlage sollten Sie einen Planungsvorlauf von 2-4 Monaten einrechnen. Das beinhaltet Vor-Ort-Besichtigung, Angebotserstellung, Förderantrag bei der KfW, Materialbeschaffung und Terminkoordination.' },
         { question: 'Welche versteckten Kosten kommen bei einer Wärmepumpe hinzu?', answer: 'Häufige Zusatzkosten sind: Starkstromanschluss (500-2.000 Euro), größere Heizkörper bei sehr kleinen Altbau-Radiatoren (2.000-5.000 Euro), neuer Warmwasserspeicher (1.000-3.000 Euro) und Fundamentarbeiten für das Außengerät (500-1.500 Euro). Seriöse Anbieter klären diese Punkte bei der Vor-Ort-Besichtigung und kalkulieren sie direkt ins Angebot ein.' },
-        { question: 'Kann ich die Förderung auch nachträglich beantragen?', answer: 'Nein, der Förderantrag muss zwingend vor Auftragsvergabe bei der KfW gestellt werden. Wer zuerst unterschreibt und dann die Förderung beantragt, verliert den Anspruch komplett. Lassen Sie den Antrag daher von einem erfahrenen Fachbetrieb begleiten oder nutzen Sie einen Energieberater.' },
+        { question: 'Kann ich die Förderung auch nachträglich beantragen?', answer: 'Nein, vor der Antragstellung schließen Sie mit dem Fachbetrieb einen Liefer- bzw. Leistungsvertrag mit aufschiebender oder auflösender Bedingung (Zusage der KfW) und voraussichtlichem Umsetzungsdatum und laden ihn im Antrag hoch. Wer einen Vertrag ohne diese Bedingung unterschreibt oder vor der Antragstellung mit dem Bau beginnt, verliert den Anspruch komplett. Mit der Ausführung beginnen Sie nach der Zusage – oder auf eigenes Risiko schon nach der Antragstellung. Lassen Sie den Antrag daher von einem erfahrenen Fachbetrieb begleiten oder nutzen Sie einen Energieberater.' },
       ],
     },
     {
@@ -736,19 +731,18 @@ function getMockBlogPosts(): BlogPost[] {
         <p>Die BEG-Förderung ist unabhängig vom GModG und bleibt der große Pluspunkt beim Heizungstausch:</p>
 
         <div class="highlight-quote">
-          Bis zu 70% der Kosten für eine neue Wärmepumpe werden vom Staat übernommen. Das reduziert eine 35.000-€-Investition auf 10.500 €.
+          Bis zu 80% der förderfähigen Kosten für eine neue Wärmepumpe werden vom Staat übernommen. Bei einem zu versteuernden Haushaltseinkommen bis 30.000 € reduziert das eine 35.000-€-Investition auf 12.600 € (22.400 € Zuschuss auf max. 28.000 € förderfähige Kosten). Sonst liegt die Obergrenze bei 70%.
         </div>
 
         <p>Die Förderung setzt sich zusammen aus:</p>
 
         <ul>
           <li><strong>30% Grundförderung</strong> – bekommt jeder</li>
-          <li><strong>20% Klimageschwindigkeits-Bonus</strong> – beim Austausch alter Öl-/Gasheizungen</li>
-          <li><strong>30% Einkommensbonus</strong> – bei Haushaltseinkommen unter 40.000 €</li>
-          <li><strong>5% Effizienzbonus</strong> – für Wärmepumpen mit natürlichem Kältemittel</li>
+          <li><strong>16% Klimageschwindigkeits-Bonus</strong> – für Selbstnutzer beim Austausch einer funktionstüchtigen Öl-, Kohle-, Gas-Etagen- oder Nachtspeicherheizung oder einer mind. 20 Jahre alten Gasheizung</li>
+          <li><strong>10–40% Einkommensbonus</strong> – für Selbstnutzer mit zu versteuerndem Haushaltseinkommen bis 50.000 € (40% bis 30.000 €, 30% bis 40.000 €)</li>
         </ul>
 
-        <p>Das Maximum liegt bei 70% – aber selbst 50% machen aus einer 35.000-€-Investition eine 17.500-€-Investition. Alle Details im <a href="/blog/beg-foerderung-2026" class="text-[#0F5B78] font-medium hover:underline">BEG-Ratgeber</a>.</p>
+        <p>Das Maximum liegt bei 70%, für Selbstnutzer mit zu versteuerndem Haushaltseinkommen bis 30.000 € (mit Kind bis 40.000 €) bei 80% – aber selbst 46% machen aus einer 35.000-€-Investition eine 22.120-€-Investition. Alle Details im <a href="/blog/beg-foerderung-2026" class="text-[#0F5B78] font-medium hover:underline">BEG-Ratgeber</a>.</p>
 
         <h2>Was würden wir jetzt empfehlen?</h2>
 
@@ -842,10 +836,10 @@ function getMockBlogPosts(): BlogPost[] {
     {
       id: 3,
       slug: 'beg-foerderung-2026',
-      title: 'BEG Förderung 2026: Bis zu 70% Zuschuss für Ihre Heizung',
+      title: 'BEG Förderung 2026: Bis zu 80% Zuschuss für Ihre Heizung',
       excerpt: 'So beantragen Sie die BEG Förderung richtig. Alle Fördersätze, Voraussetzungen und Tipps.',
       content: `
-        <p class="text-xl leading-relaxed text-slate-600 mb-8">70% Zuschuss vom Staat für eine neue Heizung – klingt zu gut um wahr zu sein? Ist es aber. Die BEG-Förderung macht's möglich. Hier erfahren Sie, wie Sie das Maximum rausholen.</p>
+        <p class="text-xl leading-relaxed text-slate-600 mb-8">80% Zuschuss vom Staat für eine neue Heizung – klingt zu gut um wahr zu sein? Ist es aber. Die BEG-Förderung macht's möglich. Hier erfahren Sie, wie Sie das Maximum rausholen.</p>
 
         <div class="flex flex-wrap gap-4 mb-8 text-sm text-slate-600">
           <span class="flex items-center gap-1">✓ Über 200 erfolgreiche Förderanträge</span>
@@ -857,7 +851,7 @@ function getMockBlogPosts(): BlogPost[] {
 
         <p>Die Bundesförderung für effiziente Gebäude (BEG) ist das zentrale Förderprogramm für den Heizungstausch in Deutschland. Seit 2024 läuft alles über die KfW – nicht mehr über das BAFA.</p>
 
-        <p>Das Grundprinzip: Sie tauschen Ihre alte Heizung gegen ein klimafreundliches System und bekommen einen Teil der Kosten zurück. Je nachdem, welche Boni Sie sammeln, sind bis zu 70% drin.</p>
+        <p>Das Grundprinzip: Sie tauschen Ihre alte Heizung gegen ein klimafreundliches System und bekommen einen Teil der Kosten zurück. Je nachdem, welche Boni Sie sammeln, sind bis zu 80% der förderfähigen Kosten drin.</p>
 
         <h2>Die Förder-Bausteine im Überblick</h2>
 
@@ -868,28 +862,21 @@ function getMockBlogPosts(): BlogPost[] {
             <div class="comparison-header">Grundförderung</div>
             <div class="comparison-body">
               <p class="text-3xl font-bold text-[#0F5B78] mb-2">30%</p>
-              <p>Bekommt jeder, der eine alte Heizung (mind. 2 Jahre) gegen ein förderfähiges System tauscht.</p>
+              <p>Bekommt jeder, der in einem bestehenden Wohngebäude (Bauantrag mind. 5 Jahre alt) eine alte Heizung gegen ein förderfähiges System tauscht.</p>
             </div>
           </div>
           <div class="comparison-card">
             <div class="comparison-header">Klimageschwindigkeits-Bonus</div>
             <div class="comparison-body">
-              <p class="text-3xl font-bold text-[#0F5B78] mb-2">+20%</p>
-              <p>Für selbstnutzende Eigentümer, die funktionstüchtige Öl-, Kohle-, Nachtspeicher-, Gas-Etagenheizungen oder alte Gas-/Biomasseheizungen (>20 Jahre) ersetzen.</p>
+              <p class="text-3xl font-bold text-[#0F5B78] mb-2">+16%</p>
+              <p>Für selbstnutzende Eigentümer, die funktionstüchtige Öl-, Kohle-, Nachtspeicher-, Gas-Etagenheizungen oder alte Gas-/Biomasseheizungen (mind. 20 Jahre) ersetzen. Die alte Heizung muss fachgerecht demontiert und entsorgt werden; danach darf das Gebäude nicht mehr fossil oder mit Gas beheizt werden.</p>
             </div>
           </div>
           <div class="comparison-card">
             <div class="comparison-header">Einkommensbonus</div>
             <div class="comparison-body">
-              <p class="text-3xl font-bold text-[#0F5B78] mb-2">+30%</p>
-              <p>Für Haushalte mit zu versteuerndem Jahreseinkommen unter 40.000 €. Nur für Selbstnutzer.</p>
-            </div>
-          </div>
-          <div class="comparison-card">
-            <div class="comparison-header">Effizienzbonus</div>
-            <div class="comparison-body">
-              <p class="text-3xl font-bold text-[#0F5B78] mb-2">+5%</p>
-              <p>Für Wärmepumpen mit natürlichem Kältemittel (z.B. Propan R290).</p>
+              <p class="text-3xl font-bold text-[#0F5B78] mb-2">+10 bis 40%</p>
+              <p>Nach zu versteuerndem Haushaltsjahreseinkommen: 40% bis 30.000 €, 30% bis 40.000 €, 10% bis 50.000 € (mit mind. einem minderjährigen, kindergeldberechtigten Kind je 10.000 € höher). Nur für Selbstnutzer. Die Gesamtförderung ist auf 70% gedeckelt, bei Einkommen bis 30.000 € (mit Kind bis 40.000 €) auf 80%.</p>
             </div>
           </div>
         </div>
@@ -898,7 +885,7 @@ function getMockBlogPosts(): BlogPost[] {
           <span class="callout-icon">⚠️</span>
           <div class="callout-title">Zeitdruck beim Klimageschwindigkeits-Bonus</div>
           <div class="callout-content">
-            <p>Der 20%-Bonus läuft nur noch bis Ende 2028. Wer eine alte Ölheizung hat, sollte jetzt handeln – später gibt's weniger Geld.</p>
+            <p>Der 16%-Bonus gilt für Anträge bis 31.01.2027. Danach sinkt er halbjährlich um 4 Prozentpunkte und entfällt für Anträge ab 01.08.2028. Wer eine alte Ölheizung hat, sollte jetzt handeln – später gibt's weniger Geld.</p>
           </div>
         </div>
 
@@ -918,26 +905,26 @@ function getMockBlogPosts(): BlogPost[] {
           </thead>
           <tbody>
             <tr>
-              <td><strong>Familie Schmidt</strong><br><span class="text-sm text-slate-500">Ölheizung raus, Wärmepumpe rein</span></td>
+              <td><strong>Rechenbeispiel A</strong><br><span class="text-sm text-slate-500">Selbstnutzer, Ölheizung raus, Wärmepumpe rein</span></td>
               <td>32.000 €</td>
-              <td>50%</td>
-              <td class="price">15.000 €*</td>
-              <td>17.000 €</td>
+              <td>46%</td>
+              <td class="price">12.880 €*</td>
+              <td>19.120 €</td>
             </tr>
             <tr class="highlight-row">
-              <td><strong>Herr Meier</strong><br><span class="text-sm text-slate-500">Geringes Einkommen, Gasheizung >20 J.</span></td>
+              <td><strong>Rechenbeispiel B</strong><br><span class="text-sm text-slate-500">Selbstnutzer, Einkommen bis 30.000 €, Gasheizung >20 J.</span></td>
               <td>28.000 €</td>
-              <td>70%</td>
-              <td class="price">19.600 €</td>
-              <td>8.400 €</td>
+              <td>80%</td>
+              <td class="price">22.400 €</td>
+              <td>5.600 €</td>
             </tr>
           </tbody>
         </table>
 
-        <p class="text-sm text-slate-600 mt-2">* Förderfähige Kosten sind auf 30.000 € gedeckelt, daher max. 15.000 € bei 50%.</p>
+        <p class="text-sm text-slate-600 mt-2">* Förderfähige Kosten sind beim Einfamilienhaus auf 28.000 € gedeckelt, daher max. 12.880 € bei 46%.</p>
 
         <div class="highlight-quote">
-          Herr Meier aus Bobingen zahlte für seine neue Wärmepumpe nur 8.400 € statt 28.000 €. Der Staat übernahm den Rest.
+          Im Rechenbeispiel B kostet die neue Wärmepumpe nur 5.600 € statt 28.000 €. Der Staat übernimmt den Rest – möglich, weil bei einem Einkommen bis 30.000 € die Obergrenze von 80% gilt.
         </div>
 
         <div class="bg-slate-50 border border-slate-200 rounded-lg p-4 my-6 text-center">
@@ -963,7 +950,7 @@ function getMockBlogPosts(): BlogPost[] {
             <ul>
               <li>Reine Gasheizungen</li>
               <li>Ölheizungen</li>
-              <li>Hybridheizungen unter 65% EE</li>
+              <li>Gaskessel in Hybridheizungen</li>
               <li>Gebrauchte Anlagen</li>
             </ul>
           </div>
@@ -975,9 +962,9 @@ function getMockBlogPosts(): BlogPost[] {
 
         <div class="callout callout-info">
           <span class="callout-icon">ℹ️</span>
-          <div class="callout-title">Erst Antrag, dann Vertrag!</div>
+          <div class="callout-title">Erst Vertrag mit Bedingung, dann Antrag!</div>
           <div class="callout-content">
-            <p>Sie müssen den Förderantrag stellen, <strong>bevor</strong> Sie den Auftrag unterschreiben. Andersrum gibt's kein Geld. Angebote einholen ist erlaubt – unterschreiben nicht.</p>
+            <p>Vor dem Antrag unterschreiben Sie einen Vertrag mit <strong>aufschiebender oder auflösender Bedingung</strong> (Zusage der KfW) und voraussichtlichem Umsetzungsdatum – den laden Sie im Antrag hoch. Ein Vertrag ohne diese Bedingung oder ein Baubeginn vor Antragstellung? Dann gibt's kein Geld.</p>
           </div>
         </div>
 
@@ -987,23 +974,23 @@ function getMockBlogPosts(): BlogPost[] {
           <div class="bg-white border border-slate-200 rounded-lg p-4">
             <div class="flex items-center gap-3 mb-2">
               <span class="w-8 h-8 bg-[#0F5B78] text-white rounded-full flex items-center justify-center font-bold">1</span>
-              <span class="font-bold">Angebote einholen</span>
+              <span class="font-bold">Angebot & Vertrag mit Bedingung</span>
             </div>
-            <p class="text-sm text-slate-600">Lassen Sie sich beraten und holen Sie Angebote ein. Prüfen Sie, ob das System förderfähig ist. <em>Noch nichts unterschreiben!</em></p>
+            <p class="text-sm text-slate-600">Lassen Sie sich beraten und holen Sie Angebote ein. Prüfen Sie, ob das System förderfähig ist. <em>Nur mit aufschiebender oder auflösender Bedingung (KfW-Zusage) unterschreiben!</em></p>
           </div>
           <div class="bg-white border border-slate-200 rounded-lg p-4">
             <div class="flex items-center gap-3 mb-2">
               <span class="w-8 h-8 bg-[#0F5B78] text-white rounded-full flex items-center justify-center font-bold">2</span>
               <span class="font-bold">Antrag bei KfW stellen</span>
             </div>
-            <p class="text-sm text-slate-600">Registrieren im KfW-Zuschussportal, Unterlagen hochladen, Fördernummer erhalten.</p>
+            <p class="text-sm text-slate-600">Registrieren im KfW-Zuschussportal, Unterlagen inkl. Vertrag hochladen, Zusage erhalten.</p>
           </div>
           <div class="bg-white border border-slate-200 rounded-lg p-4">
             <div class="flex items-center gap-3 mb-2">
               <span class="w-8 h-8 bg-[#0F5B78] text-white rounded-full flex items-center justify-center font-bold">3</span>
-              <span class="font-bold">Auftrag erteilen & installieren</span>
+              <span class="font-bold">Nach Zusage installieren</span>
             </div>
-            <p class="text-sm text-slate-600">Jetzt dürfen Sie unterschreiben. Der Fachbetrieb baut die Anlage ein und dokumentiert alles.</p>
+            <p class="text-sm text-slate-600">Jetzt darf es losgehen. Der Fachbetrieb baut die Anlage ein und dokumentiert alles.</p>
           </div>
           <div class="bg-white border border-slate-200 rounded-lg p-4">
             <div class="flex items-center gap-3 mb-2">
@@ -1022,7 +1009,7 @@ function getMockBlogPosts(): BlogPost[] {
           <li><strong>"Ich hab schon unterschrieben..."</strong> – Passiert leider oft. Manche Handwerker drängen zum schnellen Abschluss. Lassen Sie sich nicht unter Druck setzen.</li>
           <li><strong>Wärmepumpe nicht auf der Liste</strong> – Nicht jedes Gerät ist förderfähig. Wir arbeiten nur mit geprüften, förderfähigen Systemen.</li>
           <li><strong>Hydraulischer Abgleich vergessen</strong> – Klingt technisch, ist aber Pflicht. Ohne gibt's keine Förderung.</li>
-          <li><strong>Einkommensnachweis falsch</strong> – Beim 30%-Einkommensbonus muss der Steuerbescheid passen. Nicht schätzen, sondern nachweisen.</li>
+          <li><strong>Einkommensnachweis falsch</strong> – Beim Einkommensbonus zählen nur die Einkommensteuerbescheide des zweiten und dritten Jahres vor Antragseingang. Nicht schätzen, sondern nachweisen.</li>
         </ul>
 
         <h2>Brauche ich das Geld sofort? Der KfW-Kredit</h2>
@@ -1035,10 +1022,10 @@ function getMockBlogPosts(): BlogPost[] {
 
         <h2>Wie lange gilt die Förderung noch?</h2>
 
-        <p>Stand heute (2025) läuft das Programm weiter. Aber:</p>
+        <p>Stand heute (Oktober 2026) läuft das Programm weiter. Aber:</p>
 
         <ul>
-          <li>Der Klimageschwindigkeits-Bonus (20%) läuft 2028 aus</li>
+          <li>Der Klimageschwindigkeits-Bonus (16%) sinkt ab 01.02.2027 halbjährlich um 4 Prozentpunkte und entfällt für Anträge ab 01.08.2028</li>
           <li>Politische Unsicherheiten können zu Kürzungen führen</li>
           <li>Wenn das Budget aufgebraucht ist, kann es Wartezeiten geben</li>
         </ul>
@@ -1064,28 +1051,28 @@ function getMockBlogPosts(): BlogPost[] {
         <h2>Häufig gestellte Fragen (FAQ)</h2>
 
         <h3>Wie stelle ich den BEG-Förderantrag richtig?</h3>
-        <p>Der Antrag muss <strong>vor Auftragsvergabe</strong> im KfW-Zuschussportal gestellt werden. Sie registrieren sich online, laden alle Unterlagen hoch (Angebot, Energieausweis, ggf. Einkommensnachweis) und erhalten eine Fördernummer. Erst danach dürfen Sie den Auftrag unterschreiben. Nach Installation reichen Sie Rechnungen und technische Nachweise ein, die KfW prüft und überweist den Zuschuss.</p>
+        <p>Vor der Antragstellung schließen Sie mit dem Fachbetrieb einen <strong>Liefer- bzw. Leistungsvertrag mit aufschiebender oder auflösender Bedingung (Zusage der KfW) und voraussichtlichem Umsetzungsdatum</strong>. Dann registrieren Sie sich im KfW-Zuschussportal, laden alle Unterlagen hoch (Vertrag, Energieausweis, ggf. Einkommensnachweis) und erhalten die Zusage. Danach beginnt die Ausführung – auf eigenes Risiko auch schon vor der Zusage. Nach Installation reichen Sie Rechnungen und technische Nachweise ein, die KfW prüft und überweist den Zuschuss.</p>
 
         <h3>Wer ist antragsberechtigt für die BEG-Förderung?</h3>
-        <p><strong>Eigentümer und Mieter</strong> von Wohngebäuden können die Förderung beantragen. Auch Wohnungseigentümergemeinschaften (WEG), Kommunen und gemeinnützige Organisationen sind antragsberechtigt. Der Einkommensbonus (30%) steht nur selbstnutzenden Eigentümern zu. Bei vermieteten Objekten entfällt dieser Bonus, die Grundförderung (30%) und der Klimageschwindigkeits-Bonus (20%) sind aber möglich.</p>
+        <p>Antragsberechtigt sind nur <strong>private Eigentümer (natürliche Personen)</strong> von Wohngebäuden – selbstnutzend oder vermietend – sowie Wohnungseigentümergemeinschaften (WEG). Nicht antragsberechtigt sind Mieter, Kommunen, im Grundbuch eingetragene GbR und Nießbraucher. Der Einkommensbonus (10–40%) und der Klimageschwindigkeits-Bonus (16%) stehen nur selbstnutzenden Eigentümern zu. Bei vermieteten Objekten entfallen diese Boni, die Grundförderung (30%) ist aber möglich.</p>
 
         <h3>Kann ich mehrere Boni miteinander kombinieren?</h3>
-        <p><strong>Ja</strong>, die Boni sind kombinierbar. Die Grundförderung (30%) können alle erhalten. Der Klimageschwindigkeits-Bonus (20%) kommt beim Austausch alter Öl-/Gasheizungen hinzu. Der Einkommensbonus (30%) gilt zusätzlich bei Einkommen unter 40.000 Euro. Der Effizienzbonus (5%) für natürliche Kältemittel addiert sich ebenfalls. Maximal sind <strong>70% Förderung</strong> möglich, gedeckelt bei 21.000 Euro Zuschuss.</p>
+        <p><strong>Ja</strong>, die Boni sind kombinierbar. Die Grundförderung (30%) können alle erhalten. Der Klimageschwindigkeits-Bonus (16%) kommt für Selbstnutzer beim Austausch einer funktionstüchtigen Öl-, Kohle-, Gas-Etagen- oder Nachtspeicherheizung oder einer mindestens 20 Jahre alten Gas- oder Biomasseheizung hinzu. Der Einkommensbonus gilt zusätzlich für Selbstnutzer: 40% bis 30.000 Euro, 30% bis 40.000 Euro und 10% bis 50.000 Euro zu versteuerndes Haushaltseinkommen. Maximal sind <strong>80% Förderung</strong> möglich (nur bei zu versteuerndem Haushaltseinkommen bis 30.000 Euro, mit minderjährigem, kindergeldberechtigtem Kind bis 40.000 Euro), gedeckelt bei 22.400 Euro Zuschuss für ein Einfamilienhaus. In allen anderen Fällen liegt die Obergrenze bei 70% (max. 19.600 Euro).</p>
 
         <h3>Wie lange dauert es, bis ich die Förderung erhalte?</h3>
         <p>Nach Einreichung der vollständigen Verwendungsnachweise (Rechnungen, technische Dokumentation) prüft die KfW die Unterlagen. Die Bearbeitungszeit liegt in der Regel bei <strong>4-8 Wochen</strong>. Bei Rückfragen kann es länger dauern. Der Zuschuss wird direkt auf Ihr Konto überwiesen. Planen Sie also ein, dass Sie die Rechnung zunächst selbst bezahlen müssen.</p>
 
         <h3>Welche Heizungssysteme werden 2026 gefördert?</h3>
-        <p>Gefördert werden <strong>Wärmepumpen</strong> (Luft, Sole, Wasser), <strong>Pelletheizungen</strong>, <strong>Solarthermie</strong> (als Ergänzung), <strong>Fernwärmeanschlüsse</strong> und <strong>Brennstoffzellen</strong>. Hybridheizungen sind förderfähig, wenn sie mindestens 65% erneuerbare Energien nutzen. Reine Gas- oder Ölheizungen sind nicht förderfähig. Das System muss auf der KfW-Liste förderfähiger Geräte stehen.</p>
+        <p>Gefördert werden <strong>Wärmepumpen</strong> (Luft, Sole, Wasser), <strong>Pelletheizungen</strong>, <strong>Solarthermie</strong> (als Ergänzung), <strong>Fernwärmeanschlüsse</strong> und <strong>Brennstoffzellen</strong>. Bei Hybridheizungen wird nur der erneuerbare Wärmeerzeuger (z. B. die Wärmepumpe) nach den allgemeinen KfW-458-Regeln gefördert, ohne Klimageschwindigkeitsbonus; der Gaskessel selbst ist nicht förderfähig. Reine Gas- oder Ölheizungen sind nicht förderfähig. Das System muss auf der KfW-Liste förderfähiger Geräte stehen.</p>
 
         <h3>Was ist der maximale Förderbetrag bei der BEG?</h3>
-        <p>Die förderfähigen Kosten sind auf <strong>30.000 Euro</strong> pro Wohneinheit gedeckelt. Bei 70% Förderung ergibt das einen maximalen Zuschuss von <strong>21.000 Euro</strong>. Bei 50% Förderung sind es maximal 15.000 Euro Zuschuss. Wenn Ihre Investition höher liegt (z.B. 40.000 Euro), werden nur die ersten 30.000 Euro für die Förderberechnung herangezogen.</p>
+        <p>Die förderfähigen Kosten sind beim Einfamilienhaus bzw. für die erste Wohneinheit auf <strong>28.000 Euro</strong> gedeckelt (2.–6. Wohneinheit je 15.000 Euro, ab der 7. je 8.000 Euro). Bei 80% Förderung (nur bei zu versteuerndem Haushaltseinkommen bis 30.000 Euro, mit Kind bis 40.000 Euro) ergibt das einen maximalen Zuschuss von <strong>22.400 Euro</strong>, bei der regulären Obergrenze von 70% maximal 19.600 Euro. Bei 46% Förderung sind es maximal 12.880 Euro Zuschuss. Wenn Ihre Investition höher liegt (z.B. 40.000 Euro), werden nur die ersten 28.000 Euro für die Förderberechnung herangezogen. Ab 01.02.2027 sinkt der Betrag für die erste Wohneinheit halbjährlich um 750 Euro.</p>
 
         <h3>Kann ich die BEG-Förderung mit einem KfW-Kredit kombinieren?</h3>
         <p><strong>Ja</strong>, das ist möglich. Sie können den BEG-Zuschuss mit dem zinsgünstigen KfW-Ergänzungskredit 358/359 (bis zu 120.000 Euro pro Wohneinheit) kombinieren. Der Zuschuss reduziert Ihre Investition, den Rest finanzieren Sie günstig. In der Praxis bedeutet das: Sie zahlen weniger Eigenkapital und die monatlichen Raten liegen oft unter den eingesparten Heizkosten. Hinweis: Der KfW-Kredit 261 ist für Komplettsanierungen zum Effizienzhaus gedacht, nicht für den Einzelmaßnahmen-Heizungstausch.</p>
 
-        <h3>Was passiert, wenn ich den Antrag erst nach Auftragsvergabe stelle?</h3>
-        <p><strong>Dann verfällt der Förderanspruch komplett.</strong> Die KfW zahlt keinen Cent, wenn Sie den Vertrag vor Antragstellung unterschrieben haben. Angebote einholen ist erlaubt, aber unterschreiben Sie nichts, bevor die Fördernummer da ist. Lassen Sie sich von keinem Handwerker unter Druck setzen. Seriöse Fachbetriebe kennen diese Regel und halten sich daran.</p>
+        <h3>Was passiert, wenn ich vor dem Antrag ohne Förderbedingung unterschreibe?</h3>
+        <p><strong>Dann verfällt der Förderanspruch komplett.</strong> Ein Vertrag ohne aufschiebende oder auflösende Bedingung (Zusage der KfW) oder ein Baubeginn vor Antragstellung gilt als Vorhabenbeginn – dann zahlt die KfW keinen Cent. Angebote einholen ist erlaubt; unterschreiben Sie aber nur einen Vertrag mit dieser Bedingung und beginnen Sie mit der Ausführung nach der Zusage (auf eigenes Risiko schon nach der Antragstellung). Lassen Sie sich von keinem Handwerker unter Druck setzen. Seriöse Fachbetriebe kennen diese Regel und halten sich daran.</p>
       `,
       category: 'Förderung',
       author: 'HeizCenter Redaktion',
@@ -1095,14 +1082,14 @@ function getMockBlogPosts(): BlogPost[] {
       tags: ['BEG', 'Förderung', 'Zuschuss', 'KfW', 'BAFA'],
       featured: false,
       faqs: [
-        { question: 'Wie stelle ich den BEG-Förderantrag richtig?', answer: 'Der Antrag muss vor Auftragsvergabe im KfW-Zuschussportal gestellt werden. Sie registrieren sich online, laden alle Unterlagen hoch (Angebot, Energieausweis, ggf. Einkommensnachweis) und erhalten eine Fördernummer. Erst danach dürfen Sie den Auftrag unterschreiben. Nach Installation reichen Sie Rechnungen und technische Nachweise ein, die KfW prüft und überweist den Zuschuss.' },
-        { question: 'Wer ist antragsberechtigt für die BEG-Förderung?', answer: 'Eigentümer und Mieter von Wohngebäuden können die Förderung beantragen. Auch Wohnungseigentümergemeinschaften (WEG), Kommunen und gemeinnützige Organisationen sind antragsberechtigt. Der Einkommensbonus (30%) steht nur selbstnutzenden Eigentümern zu. Bei vermieteten Objekten entfällt dieser Bonus, die Grundförderung (30%) und der Klimageschwindigkeits-Bonus (20%) sind aber möglich.' },
-        { question: 'Kann ich mehrere Boni miteinander kombinieren?', answer: 'Ja, die Boni sind kombinierbar. Die Grundförderung (30%) können alle erhalten. Der Klimageschwindigkeits-Bonus (20%) kommt beim Austausch alter Öl-/Gasheizungen hinzu. Der Einkommensbonus (30%) gilt zusätzlich bei Einkommen unter 40.000 Euro. Der Effizienzbonus (5%) für natürliche Kältemittel addiert sich ebenfalls. Maximal sind 70% Förderung möglich, gedeckelt bei 21.000 Euro Zuschuss.' },
+        { question: 'Wie stelle ich den BEG-Förderantrag richtig?', answer: 'Vor der Antragstellung schließen Sie mit dem Fachbetrieb einen Liefer- bzw. Leistungsvertrag mit aufschiebender oder auflösender Bedingung (Zusage der KfW) und voraussichtlichem Umsetzungsdatum. Dann registrieren Sie sich im KfW-Zuschussportal, laden alle Unterlagen hoch (Vertrag, Energieausweis, ggf. Einkommensnachweis) und erhalten die Zusage. Danach beginnt die Ausführung – auf eigenes Risiko auch schon vor der Zusage. Nach Installation reichen Sie Rechnungen und technische Nachweise ein, die KfW prüft und überweist den Zuschuss.' },
+        { question: 'Wer ist antragsberechtigt für die BEG-Förderung?', answer: 'Antragsberechtigt sind nur private Eigentümer (natürliche Personen) von Wohngebäuden – selbstnutzend oder vermietend – sowie Wohnungseigentümergemeinschaften (WEG). Nicht antragsberechtigt sind Mieter, Kommunen, im Grundbuch eingetragene GbR und Nießbraucher. Der Einkommensbonus (10–40%) und der Klimageschwindigkeits-Bonus (16%) stehen nur selbstnutzenden Eigentümern zu. Bei vermieteten Objekten entfallen diese Boni, die Grundförderung (30%) ist aber möglich.' },
+        { question: 'Kann ich mehrere Boni miteinander kombinieren?', answer: 'Ja, die Boni sind kombinierbar. Die Grundförderung (30%) können alle erhalten. Der Klimageschwindigkeits-Bonus (16%) kommt für Selbstnutzer beim Austausch einer funktionstüchtigen Öl-, Kohle-, Gas-Etagen- oder Nachtspeicherheizung oder einer mindestens 20 Jahre alten Gas- oder Biomasseheizung hinzu. Der Einkommensbonus gilt zusätzlich für Selbstnutzer: 40% bis 30.000 Euro, 30% bis 40.000 Euro und 10% bis 50.000 Euro zu versteuerndes Haushaltseinkommen. Maximal sind 80% Förderung möglich (nur bei zu versteuerndem Haushaltseinkommen bis 30.000 Euro, mit minderjährigem, kindergeldberechtigtem Kind bis 40.000 Euro), gedeckelt bei 22.400 Euro Zuschuss für ein Einfamilienhaus. In allen anderen Fällen liegt die Obergrenze bei 70% (max. 19.600 Euro).' },
         { question: 'Wie lange dauert es, bis ich die Förderung erhalte?', answer: 'Nach Einreichung der vollständigen Verwendungsnachweise (Rechnungen, technische Dokumentation) prüft die KfW die Unterlagen. Die Bearbeitungszeit liegt in der Regel bei 4-8 Wochen. Bei Rückfragen kann es länger dauern. Der Zuschuss wird direkt auf Ihr Konto überwiesen. Planen Sie also ein, dass Sie die Rechnung zunächst selbst bezahlen müssen.' },
-        { question: 'Welche Heizungssysteme werden 2026 gefördert?', answer: 'Gefördert werden Wärmepumpen (Luft, Sole, Wasser), Pelletheizungen, Solarthermie (als Ergänzung), Fernwärmeanschlüsse und Brennstoffzellen. Hybridheizungen sind förderfähig, wenn sie mindestens 65% erneuerbare Energien nutzen. Reine Gas- oder Ölheizungen sind nicht förderfähig. Das System muss auf der KfW-Liste förderfähiger Geräte stehen.' },
-        { question: 'Was ist der maximale Förderbetrag bei der BEG?', answer: 'Die förderfähigen Kosten sind auf 30.000 Euro pro Wohneinheit gedeckelt. Bei 70% Förderung ergibt das einen maximalen Zuschuss von 21.000 Euro. Bei 50% Förderung sind es maximal 15.000 Euro Zuschuss. Wenn Ihre Investition höher liegt (z.B. 40.000 Euro), werden nur die ersten 30.000 Euro für die Förderberechnung herangezogen.' },
+        { question: 'Welche Heizungssysteme werden 2026 gefördert?', answer: 'Gefördert werden Wärmepumpen (Luft, Sole, Wasser), Pelletheizungen, Solarthermie (als Ergänzung), Fernwärmeanschlüsse und Brennstoffzellen. Bei Hybridheizungen wird nur der erneuerbare Wärmeerzeuger (z. B. die Wärmepumpe) nach den allgemeinen KfW-458-Regeln gefördert, ohne Klimageschwindigkeitsbonus; der Gaskessel selbst ist nicht förderfähig. Reine Gas- oder Ölheizungen sind nicht förderfähig. Das System muss auf der KfW-Liste förderfähiger Geräte stehen.' },
+        { question: 'Was ist der maximale Förderbetrag bei der BEG?', answer: 'Die förderfähigen Kosten sind beim Einfamilienhaus bzw. für die erste Wohneinheit auf 28.000 Euro gedeckelt (2.–6. Wohneinheit je 15.000 Euro, ab der 7. je 8.000 Euro). Bei 80% Förderung (nur bei zu versteuerndem Haushaltseinkommen bis 30.000 Euro, mit Kind bis 40.000 Euro) ergibt das einen maximalen Zuschuss von 22.400 Euro, bei der regulären Obergrenze von 70% maximal 19.600 Euro. Bei 46% Förderung sind es maximal 12.880 Euro Zuschuss. Wenn Ihre Investition höher liegt (z.B. 40.000 Euro), werden nur die ersten 28.000 Euro für die Förderberechnung herangezogen. Ab 01.02.2027 sinkt der Betrag für die erste Wohneinheit halbjährlich um 750 Euro.' },
         { question: 'Kann ich die BEG-Förderung mit einem KfW-Kredit kombinieren?', answer: 'Ja, das ist möglich. Sie können den BEG-Zuschuss mit dem zinsgünstigen KfW-Ergänzungskredit 358/359 (bis zu 120.000 Euro pro Wohneinheit) kombinieren. Der Zuschuss reduziert Ihre Investition, den Rest finanzieren Sie günstig. In der Praxis bedeutet das: Sie zahlen weniger Eigenkapital und die monatlichen Raten liegen oft unter den eingesparten Heizkosten. Hinweis: Der KfW-Kredit 261 ist für Komplettsanierungen zum Effizienzhaus gedacht, nicht für den Einzelmaßnahmen-Heizungstausch.' },
-        { question: 'Was passiert, wenn ich den Antrag erst nach Auftragsvergabe stelle?', answer: 'Dann verfällt der Förderanspruch komplett. Die KfW zahlt keinen Cent, wenn Sie den Vertrag vor Antragstellung unterschrieben haben. Angebote einholen ist erlaubt, aber unterschreiben Sie nichts, bevor die Fördernummer da ist. Lassen Sie sich von keinem Handwerker unter Druck setzen. Seriöse Fachbetriebe kennen diese Regel und halten sich daran.' },
+        { question: 'Was passiert, wenn ich vor dem Antrag ohne Förderbedingung unterschreibe?', answer: 'Dann verfällt der Förderanspruch komplett. Ein Vertrag ohne aufschiebende oder auflösende Bedingung (Zusage der KfW) oder ein Baubeginn vor Antragstellung gilt als Vorhabenbeginn – dann zahlt die KfW keinen Cent. Angebote einholen ist erlaubt; unterschreiben Sie aber nur einen Vertrag mit dieser Bedingung und beginnen Sie mit der Ausführung nach der Zusage (auf eigenes Risiko schon nach der Antragstellung). Lassen Sie sich von keinem Handwerker unter Druck setzen. Seriöse Fachbetriebe kennen diese Regel und halten sich daran.' },
       ],
     },
     {
@@ -1160,7 +1147,7 @@ function getMockBlogPosts(): BlogPost[] {
         </div>
 
         <div class="bg-amber-50 border-l-4 border-amber-400 p-4 my-6">
-          <p class="font-semibold text-amber-900 mb-2">Praxisbeispiel: Familie Huber aus Bobingen</p>
+          <p class="font-semibold text-amber-900 mb-2">Rechenbeispiel: Einfamilienhaus in Bobingen</p>
           <p class="text-amber-800">Einfamilienhaus, 140 m², Altbau von 1985. Alte Gasheizung nach 22 Jahren defekt. Neues Brennwertgerät (Viessmann Vitodens 300-W) mit 200-Liter-Speicher: <strong>9.800 €</strong> schlüsselfertig installiert.</p>
         </div>
 
@@ -1240,7 +1227,7 @@ function getMockBlogPosts(): BlogPost[] {
             <div class="text-2xl mb-2">🔋</div>
             <h4 class="font-bold text-slate-900 mb-2">Gas-Hybridheizung</h4>
             <p class="text-slate-700 mb-3">Gasheizung + Wärmepumpe oder Solarthermie in Kombination</p>
-            <p class="text-green-700 font-medium">Förderung: Bis zu 70% auf den erneuerbaren Anteil</p>
+            <p class="text-green-700 font-medium">Förderung: nur der erneuerbare Wärmeerzeuger, ohne Klimabonus (30%, mit Einkommensbonus max. 70%); der Gaskessel ist nicht förderfähig</p>
           </div>
           <div class="comparison-card bg-white border border-blue-200 rounded-lg p-5">
             <div class="text-2xl mb-2">💨</div>
@@ -1260,7 +1247,7 @@ function getMockBlogPosts(): BlogPost[] {
           <li>Maximal 40.000 € Kosten ansetzbar = bis zu 8.000 € Steuerersparnis</li>
         </ul>
 
-        <p>Bei einer Gasheizung für 10.000 € sind das immerhin 2.000 € zurück. Besser als nichts – aber verglichen mit 50-70% BEG-Förderung für eine Wärmepumpe ist das ein Tropfen auf den heißen Stein.</p>
+        <p>Bei einer Gasheizung für 10.000 € sind das immerhin 2.000 € zurück. Besser als nichts – aber verglichen mit 46–80% BEG-Förderung für eine Wärmepumpe ist das ein Tropfen auf den heißen Stein.</p>
 
         <div class="bg-slate-50 border border-slate-200 rounded-lg p-4 my-6 text-center">
           <p class="text-slate-700 mb-2"><strong>Nicht sicher, welche Heizung sich für Sie wirklich lohnt?</strong></p>
@@ -1310,13 +1297,13 @@ ${GMODG_HINWEIS}
           <div class="grid grid-cols-4 gap-2 text-sm p-3 border-b border-slate-200">
             <div class="text-slate-600">Förderung</div>
             <div class="text-center text-red-600">Keine (nur Steuer)</div>
-            <div class="text-center text-green-600">30 – 70%</div>
+            <div class="text-center text-green-600">30 – 80%</div>
             <div class="text-center text-green-600">30 – 70%*</div>
           </div>
           <div class="grid grid-cols-4 gap-2 text-sm p-3 border-b border-slate-200">
             <div class="text-slate-600">Nach Förderung</div>
             <div class="text-center font-medium">9.000 – 15.000 €</div>
-            <div class="text-center font-medium text-green-700">7.500 – 17.500 €</div>
+            <div class="text-center font-medium text-green-700">5.000 – 17.500 €</div>
             <div class="text-center font-medium">8.000 – 14.000 €</div>
           </div>
           <div class="grid grid-cols-4 gap-2 text-sm p-3 border-b border-slate-200">
@@ -1332,7 +1319,7 @@ ${GMODG_HINWEIS}
             <div class="text-center font-bold">~42.000 €</div>
           </div>
         </div>
-        <p class="text-sm text-slate-500 -mt-4 mb-8">*Förderung nur auf den erneuerbaren Anteil der Hybridheizung</p>
+        <p class="text-sm text-slate-500 -mt-4 mb-8">*Gefördert wird nur der erneuerbare Wärmeerzeuger (z. B. die Wärmepumpe), ohne Klimageschwindigkeitsbonus; der Gaskessel selbst ist nicht förderfähig</p>
 
         <p>Die Zahlen sprechen eine klare Sprache: <strong>Auf 15 Jahre gerechnet ist die Wärmepumpe fast 20.000 € günstiger</strong> – trotz der höheren Anschaffungskosten. Einen noch detaillierteren Vergleich finden Sie in unserem <a href="/blog/heizung-vergleich-2026-waermepumpe-gas-oel-pellets" class="text-[#0F5B78] font-medium hover:underline">großen Heizungsvergleich 2026</a>.</p>
 
@@ -1349,7 +1336,7 @@ ${GMODG_HINWEIS}
           </ul>
         </div>
 
-        <p>Aber: Selbst in diesen Fällen sollten Sie zumindest die <strong>Gas-Hybridvariante</strong> prüfen. Die ist förderfähig und gibt Ihnen Flexibilität für später.</p>
+        <p>Aber: Selbst in diesen Fällen sollten Sie zumindest die <strong>Gas-Hybridvariante</strong> prüfen. Deren Wärmepumpe ist förderfähig (ohne Klimabonus), und sie gibt Ihnen Flexibilität für später.</p>
 
         <h2>Fazit: Die Gasheizung als Auslaufmodell</h2>
 
@@ -1409,13 +1396,13 @@ ${GMODG_HINWEIS}
         <p>Das hängt von Ihrer Situation ab. Eine Gasheizung hat <strong>niedrige Anschaffungskosten</strong>, aber hohe Betriebskosten (ca. 1.500 Euro mehr pro Jahr als eine Wärmepumpe). Es gibt praktisch <strong>keine Förderung</strong> mehr, nur einen Steuerbonus (max. 2.000 Euro). Auf 15 Jahre gerechnet ist eine Wärmepumpe trotz höherer Anschaffungskosten oft 20.000 Euro günstiger. Gas kann sinnvoll sein bei Notfällen, kurzfristigem Verkauf oder extremen Platzbeschränkungen.</p>
 
         <h3>Welche Förderung gibt es 2026 für Gasheizungen?</h3>
-        <p>Reine Gasheizungen werden <strong>nicht mehr gefördert</strong> über die BEG. Nur <strong>Gas-Hybridheizungen</strong> (Gas + Wärmepumpe/Solarthermie) erhalten bis zu 70% Förderung auf den erneuerbaren Anteil. Alternativ können Sie über den Steuerbonus (§ 35c EStG) 20% der Handwerkerkosten über 3 Jahre absetzen, maximal 8.000 Euro Steuerersparnis bei 40.000 Euro Investition.</p>
+        <p>Reine Gasheizungen werden <strong>nicht mehr gefördert</strong> über die BEG. Bei <strong>Gas-Hybridheizungen</strong> (Gas + Wärmepumpe/Solarthermie) wird der erneuerbare Wärmeerzeuger (z. B. die Wärmepumpe) nach den allgemeinen KfW-458-Regeln gefördert – weil weiter mit Gas geheizt wird, ohne Klimageschwindigkeitsbonus, also 30% plus ggf. Einkommensbonus (max. 70%); der Gaskessel selbst ist nicht förderfähig. Alternativ können Sie über den Steuerbonus (§ 35c EStG) 20% der Handwerkerkosten über 3 Jahre absetzen, maximal 8.000 Euro Steuerersparnis bei 40.000 Euro Investition.</p>
 
         <h3>Was sagt das Heizungsgesetz 2026 (GModG) zu Gasheizungen?</h3>
         <p>Bestehende Gasheizungen dürfen weiterlaufen, Reparaturen sind erlaubt, eine Austauschpflicht gibt es nicht. Die frühere 65%-Regel wurde mit der Novelle vom 23. Juli 2026 gestrichen. Wer nach dem 29. Juli 2026 eine neue Gasheizung einbaut, muss ab 2029 steigende Bioanteile nachweisen: 10% ab 2029, 15% ab 2030, 30% ab 2035, 60% ab 2040 – oder einen Erfüllungsweg wie Solarthermie oder Wärmepumpen-Hybrid nutzen (§ 43 GModG).</p>
 
         <h3>Welche Alternative zur Gasheizung ist am besten?</h3>
-        <p>Die <strong>Wärmepumpe</strong> ist für die meisten Hausbesitzer 2026 die wirtschaftlichste Alternative. Anschaffung 25.000-35.000 Euro, aber mit 30-70% BEG-Förderung. Betriebskosten nur ca. 1.300 Euro pro Jahr (statt 2.900 Euro bei Gas). Auf 15 Jahre gerechnet etwa 20.000 Euro günstiger. Alternativen: Gas-Hybrid (Kombination aus beiden), Pelletheizung (wenn Platz vorhanden) oder Fernwärme (wo verfügbar).</p>
+        <p>Die <strong>Wärmepumpe</strong> ist für die meisten Hausbesitzer 2026 die wirtschaftlichste Alternative. Anschaffung 25.000-35.000 Euro, aber mit 30-80% BEG-Förderung. Betriebskosten nur ca. 1.300 Euro pro Jahr (statt 2.900 Euro bei Gas). Auf 15 Jahre gerechnet etwa 20.000 Euro günstiger. Alternativen: Gas-Hybrid (Kombination aus beiden), Pelletheizung (wenn Platz vorhanden) oder Fernwärme (wo verfügbar).</p>
 
         <h3>Was ist eine H2-ready Gasheizung?</h3>
         <p>Eine <strong>wasserstofffähige Gasheizung</strong>, die später auf Wasserstoff umgerüstet werden kann. Die Idee: Heute mit Erdgas heizen, künftig mit grünem Wasserstoff. In der Praxis sind diese Geräte 2025 kaum verfügbar und es ist völlig unklar, ob und wann flächendeckend Wasserstoff verfügbar sein wird. Experten raten eher zu bewährten erneuerbaren Lösungen wie Wärmepumpen.</p>
@@ -1434,9 +1421,9 @@ ${GMODG_HINWEIS}
         { question: 'Was kostet eine neue Gasheizung 2026 komplett mit Einbau?', answer: 'Eine komplette Gas-Brennwertheizung inklusive Installation kostet 9.000 bis 15.000 Euro. Im Preis enthalten sind Brennwertgerät (3.000-7.800 Euro), Warmwasserspeicher falls nötig (1.000-1.500 Euro), Installation mit hydraulischem Abgleich (2.000-3.000 Euro) und Demontage der Altanlage (500-1.000 Euro). Ein neuer Gasanschluss kostet zusätzlich 1.500-2.500 Euro.' },
         { question: 'Was kostet eine Gasheizung im laufenden Betrieb pro Jahr?', answer: 'Die jährlichen Betriebskosten liegen bei etwa 2.850 bis 2.940 Euro für ein typisches Einfamilienhaus. Das setzt sich zusammen aus Gasverbrauch (ca. 2.400 Euro), CO₂-Abgabe 2025 (ca. 220 Euro), Wartung (150-200 Euro) und Schornsteinfeger (80-120 Euro). Das entspricht etwa 240-245 Euro pro Monat.' },
         { question: 'Lohnt sich eine Gasheizung 2026 noch?', answer: 'Das hängt von Ihrer Situation ab. Eine Gasheizung hat niedrige Anschaffungskosten, aber hohe Betriebskosten (ca. 1.500 Euro mehr pro Jahr als eine Wärmepumpe). Es gibt praktisch keine Förderung mehr, nur einen Steuerbonus (max. 2.000 Euro). Auf 15 Jahre gerechnet ist eine Wärmepumpe trotz höherer Anschaffungskosten oft 20.000 Euro günstiger. Gas kann sinnvoll sein bei Notfällen, kurzfristigem Verkauf oder extremen Platzbeschränkungen.' },
-        { question: 'Welche Förderung gibt es 2026 für Gasheizungen?', answer: 'Reine Gasheizungen werden nicht mehr gefördert über die BEG. Nur Gas-Hybridheizungen (Gas + Wärmepumpe/Solarthermie) erhalten bis zu 70% Förderung auf den erneuerbaren Anteil. Alternativ können Sie über den Steuerbonus (§ 35c EStG) 20% der Handwerkerkosten über 3 Jahre absetzen, maximal 8.000 Euro Steuerersparnis bei 40.000 Euro Investition.' },
+        { question: 'Welche Förderung gibt es 2026 für Gasheizungen?', answer: 'Reine Gasheizungen werden nicht mehr gefördert über die BEG. Bei Gas-Hybridheizungen (Gas + Wärmepumpe/Solarthermie) wird der erneuerbare Wärmeerzeuger (z. B. die Wärmepumpe) nach den allgemeinen KfW-458-Regeln gefördert – weil weiter mit Gas geheizt wird, ohne Klimageschwindigkeitsbonus, also 30% plus ggf. Einkommensbonus (max. 70%); der Gaskessel selbst ist nicht förderfähig. Alternativ können Sie über den Steuerbonus (§ 35c EStG) 20% der Handwerkerkosten über 3 Jahre absetzen, maximal 8.000 Euro Steuerersparnis bei 40.000 Euro Investition.' },
         { question: 'Was sagt das Heizungsgesetz 2026 (GModG) zu Gasheizungen?', answer: 'Bestehende Gasheizungen dürfen weiterlaufen, Reparaturen sind erlaubt, eine Austauschpflicht gibt es nicht. Die frühere 65%-Regel wurde mit der Novelle vom 23. Juli 2026 gestrichen. Wer nach dem 29. Juli 2026 eine neue Gasheizung einbaut, muss ab 2029 steigende Bioanteile nachweisen: 10% ab 2029, 15% ab 2030, 30% ab 2035, 60% ab 2040 – oder einen Erfüllungsweg wie Solarthermie oder Wärmepumpen-Hybrid nutzen (§ 43 GModG).' },
-        { question: 'Welche Alternative zur Gasheizung ist am besten?', answer: 'Die Wärmepumpe ist für die meisten Hausbesitzer 2026 die wirtschaftlichste Alternative. Anschaffung 25.000-35.000 Euro, aber mit 30-70% BEG-Förderung. Betriebskosten nur ca. 1.300 Euro pro Jahr (statt 2.900 Euro bei Gas). Auf 15 Jahre gerechnet etwa 20.000 Euro günstiger. Alternativen: Gas-Hybrid (Kombination aus beiden), Pelletheizung (wenn Platz vorhanden) oder Fernwärme (wo verfügbar).' },
+        { question: 'Welche Alternative zur Gasheizung ist am besten?', answer: 'Die Wärmepumpe ist für die meisten Hausbesitzer 2026 die wirtschaftlichste Alternative. Anschaffung 25.000-35.000 Euro, aber mit 30-80% BEG-Förderung. Betriebskosten nur ca. 1.300 Euro pro Jahr (statt 2.900 Euro bei Gas). Auf 15 Jahre gerechnet etwa 20.000 Euro günstiger. Alternativen: Gas-Hybrid (Kombination aus beiden), Pelletheizung (wenn Platz vorhanden) oder Fernwärme (wo verfügbar).' },
         { question: 'Was ist eine H2-ready Gasheizung?', answer: 'Eine wasserstofffähige Gasheizung, die später auf Wasserstoff umgerüstet werden kann. Die Idee: Heute mit Erdgas heizen, künftig mit grünem Wasserstoff. In der Praxis sind diese Geräte 2025 kaum verfügbar und es ist völlig unklar, ob und wann flächendeckend Wasserstoff verfügbar sein wird. Experten raten eher zu bewährten erneuerbaren Lösungen wie Wärmepumpen.' },
         { question: 'Wie entwickelt sich die CO₂-Abgabe für Gas?', answer: 'Die CO₂-Abgabe steigt kontinuierlich: 2025: 55 Euro pro Tonne, 2026: 65 Euro, ab 2027 im Marktkorridor 55-65 Euro, danach unbegrenzt. Experten rechnen langfristig mit 100-150 Euro pro Tonne. Bei 20.000 kWh Gasverbrauch zahlen Sie 2025 etwa 220 Euro CO₂-Steuer pro Jahr, bei 100 Euro/Tonne wären das 500-600 Euro zusätzlich.' },
       ],
@@ -1445,7 +1432,7 @@ ${GMODG_HINWEIS}
       id: 5,
       slug: 'pelletheizung-kosten-2026',
       title: 'Pelletheizung Kosten 2026: Anschaffung, Betrieb & Förderung',
-      excerpt: 'Was kostet eine Pelletheizung 2026? Kompletter Überblick über Anschaffung, Betriebskosten und bis zu 70% BEG-Förderung (mit Kombination).',
+      excerpt: 'Was kostet eine Pelletheizung 2026? Kompletter Überblick über Anschaffung, Betriebskosten und bis zu 80% BEG-Förderung.',
       content: `
         <p class="text-xl text-slate-700 leading-relaxed mb-6">Sie interessieren sich für eine Pelletheizung und fragen sich, ob sich das für Ihr Haus rechnet? Die kurze Antwort: Ja, für viele Hausbesitzer ist eine Pelletheizung 2026 eine der wirtschaftlichsten Optionen – vorausgesetzt, Sie haben den Platz dafür und wissen, worauf Sie achten müssen.</p>
 
@@ -1455,7 +1442,7 @@ ${GMODG_HINWEIS}
           <span class="flex items-center gap-1">✓ KfW-Förderberatung inklusive</span>
         </div>
 
-        <p>In diesem Artikel zeige ich Ihnen die echten Kosten – nicht nur die Anschaffung, sondern auch, was Sie jährlich zahlen. Und vor allem: Wie Sie durch geschickte Kombination mit Solarthermie bis zu 70% Förderung rausholen.</p>
+        <p>In diesem Artikel zeige ich Ihnen die echten Kosten – nicht nur die Anschaffung, sondern auch, was Sie jährlich zahlen. Und vor allem: Wie Sie mit den richtigen Boni bis zu 80% Förderung rausholen.</p>
 
         <h2>Was kostet eine Pelletheizung wirklich?</h2>
 
@@ -1496,8 +1483,8 @@ ${GMODG_HINWEIS}
         </div>
 
         <div class="bg-amber-50 border-l-4 border-amber-400 p-4 my-6">
-          <p class="font-semibold text-amber-900 mb-2">Praxisbeispiel: Familie Bauer aus Günzburg</p>
-          <p class="text-amber-800">Einfamilienhaus, 160 m², alte Ölheizung von 1998. Neuer ÖkoFEN Pellematic (18 kW), Gewebetank im Keller, kombiniert mit 6 m² Solarthermie für Warmwasser. Gesamtkosten: <strong>34.500 €</strong>. Nach 50% Förderung: <strong>17.250 € Eigenanteil</strong>.</p>
+          <p class="font-semibold text-amber-900 mb-2">Rechenbeispiel: Einfamilienhaus in Günzburg</p>
+          <p class="text-amber-800">Einfamilienhaus, 160 m², alte Ölheizung von 1998. Neuer ÖkoFEN Pellematic (18 kW), Gewebetank im Keller, kombiniert mit 6 m² Solarthermie für Warmwasser. Gesamtkosten: <strong>34.500 €</strong>. Nach 46% Förderung auf max. 28.000 € förderfähige Kosten (12.880 €): <strong>21.620 € Eigenanteil</strong>.</p>
         </div>
 
         <h2>Der Platzbedarf: Die ehrliche Wahrheit</h2>
@@ -1570,65 +1557,60 @@ ${GMODG_HINWEIS}
 
         <p><strong>Die Ersparnis?</strong> Rund 1.000 – 1.500 € pro Jahr gegenüber Gas. Und das wird jedes Jahr mehr, weil die CO₂-Abgabe auf fossile Brennstoffe weiter steigt.</p>
 
-        <h2>Förderung 2026: So kommen Sie auf bis zu 70%</h2>
+        <h2>Förderung 2026: So kommen Sie auf bis zu 80%</h2>
 
-        <p>Jetzt wird's spannend. Pelletheizungen werden üppig gefördert – aber es gibt einen wichtigen Haken, den viele nicht kennen:</p>
+        <p>Jetzt wird's spannend. Pelletheizungen werden üppig gefördert – aber es gibt Bedingungen, die viele nicht kennen:</p>
 
         <div class="callout callout-warning my-6">
-          <div class="callout-title">Achtung: Klimageschwindigkeits-Bonus bei Biomasse</div>
+          <div class="callout-title">Achtung: Klimageschwindigkeits-Bonus nur beim Heizungstausch</div>
           <div class="callout-content">
-            <p>Den 20%-Klimabonus gibt's bei Pelletheizungen <strong>nur in Kombination mit Solarthermie, PV oder Wärmepumpe</strong>. Eine reine Pelletheizung bekommt ihn nicht! Deshalb empfehlen wir fast immer die Kombination mit einer kleinen Solarthermie-Anlage.</p>
+            <p>Den 16%-Klimabonus gibt's bei Pelletheizungen – genau wie bei Wärmepumpen – <strong>nur für Selbstnutzer, die eine funktionstüchtige Öl-, Kohle-, Gas-Etagen- oder Nachtspeicherheizung oder eine mindestens 20 Jahre alte Gas- oder Biomasseheizung ersetzen</strong>. Eine Solaranlage ist dafür keine Voraussetzung. Wir empfehlen die Kombination mit einer kleinen Solarthermie-Anlage trotzdem oft – aus technischen und wirtschaftlichen Gründen, nicht wegen der Förderung.</p>
           </div>
         </div>
 
-        <div class="comparison-grid grid md:grid-cols-4 gap-3 my-8">
+        <div class="comparison-grid grid md:grid-cols-3 gap-3 my-8">
           <div class="text-center p-4 bg-[#0F5B78] text-white rounded-lg">
             <div class="text-3xl font-bold mb-1">30%</div>
             <div class="text-sm">Grundförderung</div>
             <div class="text-xs text-white/70 mt-1">für alle</div>
           </div>
           <div class="text-center p-4 bg-[#0F5B78] text-white rounded-lg">
-            <div class="text-3xl font-bold mb-1">+20%</div>
+            <div class="text-3xl font-bold mb-1">+16%</div>
             <div class="text-sm">Klima-Bonus*</div>
-            <div class="text-xs text-white/70 mt-1">nur mit Solar/PV</div>
+            <div class="text-xs text-white/70 mt-1">nur beim Heizungstausch</div>
           </div>
           <div class="text-center p-4 bg-[#0F5B78] text-white rounded-lg">
-            <div class="text-3xl font-bold mb-1">+30%</div>
+            <div class="text-3xl font-bold mb-1">+10–40%</div>
             <div class="text-sm">Einkommensbonus</div>
-            <div class="text-xs text-white/70 mt-1">≤40.000 € Eink.</div>
-          </div>
-          <div class="text-center p-4 bg-green-600 text-white rounded-lg">
-            <div class="text-3xl font-bold mb-1">+2.500€</div>
-            <div class="text-sm">Emissionsbonus</div>
-            <div class="text-xs text-white/70 mt-1">≤2,5 mg/m³ Staub</div>
+            <div class="text-xs text-white/70 mt-1">≤50.000 € Eink. (40% bis 30.000 €)</div>
           </div>
         </div>
-        <p class="text-sm text-slate-500 -mt-4 mb-8">*Klimageschwindigkeits-Bonus nur bei Austausch fossiler Heizung UND Kombination mit erneuerbarer Warmwasserbereitung</p>
+        <p class="text-sm text-slate-500 -mt-4 mb-8">*Klimageschwindigkeits-Bonus nur für Selbstnutzer bei Austausch einer funktionstüchtigen Öl-, Kohle-, Gas-Etagen- oder Nachtspeicherheizung bzw. einer mind. 20 Jahre alten Gas-/Biomasseheizung. Gesamtförderung max. 70%, bei zu versteuerndem Einkommen bis 30.000 € (mit Kind bis 40.000 €) max. 80%.</p>
 
-        <h3>Beispielrechnungen aus der Praxis</h3>
+        <h3>Beispielrechnungen</h3>
 
         <div class="cost-table my-8">
           <div class="space-y-4">
             <div class="bg-slate-50 rounded-lg p-4">
               <div class="flex justify-between items-center mb-2">
                 <span class="font-semibold text-slate-900">Variante 1: Standard (30%)</span>
-                <span class="text-sm text-slate-600">Reine Pelletheizung, kein Klimabonus</span>
+                <span class="text-sm text-slate-600">Ohne Klimabonus (z. B. vermietetes Haus)</span>
               </div>
-              <div class="text-slate-700">30.000 € × 30% = <span class="font-bold text-[#0F5B78]">9.000 € Förderung → 21.000 € Eigenanteil</span></div>
+              <div class="text-slate-700">30.000 € Kosten, davon 28.000 € förderfähig × 30% = <span class="font-bold text-[#0F5B78]">8.400 € Förderung → 21.600 € Eigenanteil</span></div>
             </div>
             <div class="bg-green-50 rounded-lg p-4">
               <div class="flex justify-between items-center mb-2">
-                <span class="font-semibold text-slate-900">Variante 2: Mit Solar (50%)</span>
-                <span class="text-sm text-slate-600">Pellet + Solarthermie = Klimabonus</span>
+                <span class="font-semibold text-slate-900">Variante 2: Mit Klimabonus (46%)</span>
+                <span class="text-sm text-slate-600">Selbstnutzer ersetzt alte Ölheizung = Klimabonus</span>
               </div>
-              <div class="text-slate-700">30.000 € × 50% = <span class="font-bold text-green-700">15.000 € Förderung → 15.000 € Eigenanteil</span></div>
+              <div class="text-slate-700">28.000 € förderfähig × 46% = <span class="font-bold text-green-700">12.880 € Förderung → 17.120 € Eigenanteil</span></div>
             </div>
             <div class="bg-green-100 rounded-lg p-4 border-2 border-green-400">
               <div class="flex justify-between items-center mb-2">
-                <span class="font-semibold text-slate-900">Variante 3: Maximum (70%)</span>
-                <span class="text-sm text-slate-600">Solar + Einkommensbonus (≤40.000€)</span>
+                <span class="font-semibold text-slate-900">Variante 3: Maximum (80%)</span>
+                <span class="text-sm text-slate-600">Klimabonus + Einkommensbonus (zvE ≤30.000€, 86% gedeckelt auf 80%)</span>
               </div>
-              <div class="text-slate-700">30.000 € × 70% = <span class="font-bold text-green-700">21.000 € Förderung → 9.000 € Eigenanteil</span></div>
+              <div class="text-slate-700">28.000 € förderfähig × 80% = <span class="font-bold text-green-700">22.400 € Förderung → 7.600 € Eigenanteil</span></div>
             </div>
           </div>
         </div>
@@ -1678,9 +1660,9 @@ ${GMODG_HINWEIS}
             <div class="text-center">32.000 €</div>
           </div>
           <div class="grid grid-cols-3 gap-2 text-sm p-3 border-b border-slate-200">
-            <div class="text-slate-600">Nach 50% Förderung</div>
-            <div class="text-center">15.000 €</div>
-            <div class="text-center">16.000 €</div>
+            <div class="text-slate-600">Nach 46% Förderung</div>
+            <div class="text-center">17.120 €</div>
+            <div class="text-center">19.120 €</div>
           </div>
           <div class="grid grid-cols-3 gap-2 text-sm p-3 border-b border-slate-200">
             <div class="text-slate-600">Betrieb × 20 Jahre</div>
@@ -1689,8 +1671,8 @@ ${GMODG_HINWEIS}
           </div>
           <div class="grid grid-cols-3 gap-2 text-sm p-3 bg-slate-50 rounded-b-lg">
             <div class="font-bold">Gesamtkosten 20 Jahre</div>
-            <div class="text-center font-bold">~50.000 €</div>
-            <div class="text-center font-bold text-green-700">~42.000 €</div>
+            <div class="text-center font-bold">~52.000 €</div>
+            <div class="text-center font-bold text-green-700">~45.000 €</div>
           </div>
         </div>
 
@@ -1712,7 +1694,7 @@ ${GMODG_HINWEIS}
           <div class="text-center">
             <div class="w-12 h-12 bg-[#0F5B78] text-white rounded-full flex items-center justify-center mx-auto mb-3 text-xl font-bold">3</div>
             <h4 class="font-semibold mb-1">Förderantrag</h4>
-            <p class="text-sm text-slate-600">Wir unterstützen beim KfW-Antrag – VOR Auftragserteilung!</p>
+            <p class="text-sm text-slate-600">Wir unterstützen beim KfW-Antrag – mit Vertrag unter Förderbedingung, VOR Baubeginn!</p>
           </div>
           <div class="text-center">
             <div class="w-12 h-12 bg-[#0F5B78] text-white rounded-full flex items-center justify-center mx-auto mb-3 text-xl font-bold">4</div>
@@ -1729,10 +1711,10 @@ ${GMODG_HINWEIS}
           <li>Sie <strong>genug Lagerplatz</strong> haben (alter Heizölraum ideal)</li>
           <li>Sie Wert auf <strong>regionale, nachwachsende Brennstoffe</strong> legen</li>
           <li>Ihr Haus <strong>hohe Vorlauftemperaturen</strong> benötigt</li>
-          <li>Sie die <strong>Kombination mit Solarthermie</strong> für maximale Förderung nutzen</li>
+          <li>Sie die <strong>Kombination mit Solarthermie</strong> für das Warmwasser einplanen</li>
         </ul>
 
-        <p>Mit 50-70% Förderung zahlen Sie effektiv nur 9.000-15.000 € für eine zukunftssichere Heizung, die Sie unabhängig von steigenden Gaspreisen macht.</p>
+        <p>Mit 46-80% Förderung zahlen Sie effektiv nur 7.600-17.120 € für eine zukunftssichere Heizung, die Sie unabhängig von steigenden Gaspreisen macht.</p>
 
         <div class="bg-gradient-to-br from-[#0F5B78] to-[#0D4A5F] text-white rounded-xl p-6 my-8">
           <h3 class="text-xl font-bold mb-4">Pelletheizung oder doch was anderes?</h3>
@@ -1762,7 +1744,7 @@ ${GMODG_HINWEIS}
         <p>Als Faustregel gilt: <strong>1 m³ Lagerraum pro Tonne Pellets</strong>. Für ein Einfamilienhaus mit 5-6 Tonnen Jahresbedarf benötigen Sie etwa 8-10 m³ Lagervolumen, entsprechend einem Raum von ca. 2,5 x 2,5 x 1,5 Meter. Ein Gewebetank (Sacksilo) ist die platzsparendste Lösung mit nur 2x2 Metern Grundfläche. Ein alter Heizölraum lässt sich ideal umnutzen.</p>
 
         <h3>Wie viel BEG-Förderung gibt es für Pelletheizungen?</h3>
-        <p>Die Grundförderung beträgt <strong>30%</strong>. Den Klimageschwindigkeits-Bonus (20%) erhalten Sie nur bei Kombination mit Solarthermie, PV oder Wärmepumpe. Der Einkommensbonus (30% bei Einkommen unter 40.000 Euro) ist zusätzlich möglich. Insgesamt sind bis zu <strong>70% Förderung</strong> möglich, maximal 21.000 Euro Zuschuss. Eine Pelletheizung mit Solarthermie erhält in der Regel 50% Förderung.</p>
+        <p>Die Grundförderung beträgt <strong>30%</strong>. Den Klimageschwindigkeits-Bonus (16%) erhalten Selbstnutzer – wie bei Wärmepumpen – beim Austausch einer funktionstüchtigen Öl-, Kohle-, Gas-Etagen- oder Nachtspeicherheizung oder einer mindestens 20 Jahre alten Gas- oder Biomasseheizung. Der Einkommensbonus (40% bis 30.000 Euro, 30% bis 40.000 Euro, 10% bis 50.000 Euro zu versteuerndes Haushaltseinkommen) ist für Selbstnutzer zusätzlich möglich. Gedeckelt ist die Förderung bei 70% (max. 19.600 Euro beim Einfamilienhaus); bis zu <strong>80% Förderung</strong> bzw. 22.400 Euro gibt es nur bei einem zu versteuernden Haushaltseinkommen bis 30.000 Euro (mit Kind bis 40.000 Euro). Mit Klimabonus erhält eine Pelletheizung in der Regel 46% Förderung.</p>
 
         <h3>Pelletheizung oder Wärmepumpe - was ist besser?</h3>
         <p>Das hängt von Ihrem Haus ab. <strong>Pelletheizung ist besser</strong>, wenn Sie Lagerplatz haben, hohe Vorlauftemperaturen benötigen (schlecht gedämmter Altbau) und auf regionale Brennstoffe setzen wollen. <strong>Wärmepumpe ist besser</strong>, wenn kein Lagerplatz vorhanden ist, das Haus gut gedämmt ist, Sie eine PV-Anlage haben und wartungsfrei heizen möchten. Auf 20 Jahre ist die Wärmepumpe etwa 8.000 Euro günstiger, aber beide Systeme sind förderfähig.</p>
@@ -1787,7 +1769,7 @@ ${GMODG_HINWEIS}
         { question: 'Was kostet eine Pelletheizung 2026 komplett installiert?', answer: 'Eine komplette Pelletheizung inklusive Lager, Fördersystem und Installation kostet 28.000 bis 35.000 Euro. Darin enthalten sind Pelletkessel (15.000-20.000 Euro), Pelletlager (3.000-5.000 Euro), Fördersystem (2.000-3.000 Euro), Pufferspeicher (2.000-3.000 Euro) und Installation mit hydraulischem Abgleich (4.000-6.000 Euro). Eine eventuelle Schornsteinsanierung kostet zusätzlich 1.000-2.000 Euro.' },
         { question: 'Wie viel kosten Pellets aktuell pro Tonne?', answer: 'Der aktuelle Pelletpreis liegt bei 350 bis 450 Euro pro Tonne (Stand 2026). Ein typisches Einfamilienhaus verbraucht etwa 3 Tonnen pro Jahr, was Brennstoffkosten von 1.050-1.350 Euro entspricht. Der Preis schwankt saisonal – am günstigsten ist eine Bestellung im Frühsommer. Pellets sind deutlich günstiger und preislich stabiler als Gas oder Öl.' },
         { question: 'Wie viel Platz braucht eine Pelletheizung im Keller?', answer: 'Als Faustregel gilt: 1 m³ Lagerraum pro Tonne Pellets. Für ein Einfamilienhaus mit 5-6 Tonnen Jahresbedarf benötigen Sie etwa 8-10 m³ Lagervolumen, entsprechend einem Raum von ca. 2,5 x 2,5 x 1,5 Meter. Ein Gewebetank (Sacksilo) ist die platzsparendste Lösung mit nur 2x2 Metern Grundfläche. Ein alter Heizölraum lässt sich ideal umnutzen.' },
-        { question: 'Wie viel BEG-Förderung gibt es für Pelletheizungen?', answer: 'Die Grundförderung beträgt 30%. Den Klimageschwindigkeits-Bonus (20%) erhalten Sie nur bei Kombination mit Solarthermie, PV oder Wärmepumpe. Der Einkommensbonus (30% bei Einkommen unter 40.000 Euro) ist zusätzlich möglich. Insgesamt sind bis zu 70% Förderung möglich, maximal 21.000 Euro Zuschuss. Eine Pelletheizung mit Solarthermie erhält in der Regel 50% Förderung.' },
+        { question: 'Wie viel BEG-Förderung gibt es für Pelletheizungen?', answer: 'Die Grundförderung beträgt 30%. Den Klimageschwindigkeits-Bonus (16%) erhalten Selbstnutzer – wie bei Wärmepumpen – beim Austausch einer funktionstüchtigen Öl-, Kohle-, Gas-Etagen- oder Nachtspeicherheizung oder einer mindestens 20 Jahre alten Gas- oder Biomasseheizung. Der Einkommensbonus (40% bis 30.000 Euro, 30% bis 40.000 Euro, 10% bis 50.000 Euro zu versteuerndes Haushaltseinkommen) ist für Selbstnutzer zusätzlich möglich. Gedeckelt ist die Förderung bei 70% (max. 19.600 Euro beim Einfamilienhaus); bis zu 80% Förderung bzw. 22.400 Euro gibt es nur bei einem zu versteuernden Haushaltseinkommen bis 30.000 Euro (mit Kind bis 40.000 Euro). Mit Klimabonus erhält eine Pelletheizung in der Regel 46% Förderung.' },
         { question: 'Pelletheizung oder Wärmepumpe - was ist besser?', answer: 'Das hängt von Ihrem Haus ab. Pelletheizung ist besser, wenn Sie Lagerplatz haben, hohe Vorlauftemperaturen benötigen (schlecht gedämmter Altbau) und auf regionale Brennstoffe setzen wollen. Wärmepumpe ist besser, wenn kein Lagerplatz vorhanden ist, das Haus gut gedämmt ist, Sie eine PV-Anlage haben und wartungsfrei heizen möchten. Auf 20 Jahre ist die Wärmepumpe etwa 8.000 Euro günstiger, aber beide Systeme sind förderfähig.' },
         { question: 'Was kostet eine Pelletheizung im Betrieb pro Jahr?', answer: 'Die jährlichen Betriebskosten liegen bei 1.480 bis 1.960 Euro. Das setzt sich zusammen aus Pellets (1.050-1.350 Euro), Wartung inkl. Reinigung (250-350 Euro), Schornsteinfeger (100-140 Euro) und Strom für das Fördersystem (80-120 Euro). Eine CO₂-Abgabe entfällt komplett. Im Vergleich zu Gasheizungen (ca. 2.900 Euro/Jahr) sparen Sie etwa 1.000-1.500 Euro jährlich.' },
         { question: 'Wie wartungsintensiv ist eine Pelletheizung?', answer: 'Pelletheizungen benötigen mehr Wartung als Gas oder Wärmepumpe. Einmal jährlich ist eine Vollwartung mit Reinigung des Kessels, Brennraums und Wärmetauschers nötig (250-350 Euro). Die Aschebox müssen Sie 2-4 Mal pro Jahr selbst leeren (je nach Modell). Moderne Kessel verfügen über automatische Reinigungssysteme, die den Aufwand minimieren. Der Wartungsaufwand ist deutlich höher als bei einer Wärmepumpe.' },
@@ -2115,7 +2097,7 @@ ${GMODG_HINWEIS}
         <p>Häufige Zusatzkosten, die erst beim Abriss sichtbar werden: <strong>Schimmel hinter Fliesen</strong> (500-2.000 Euro Sanierung), marode Rohre (1.000-3.000 Euro für neue Leitungen), nicht normkonforme Elektrik (800-1.500 Euro Nachrüstung) und beschädigter Estrich (1.000-2.500 Euro). Planen Sie daher <strong>15-20% Puffer</strong> ein. Bei einem 15.000-Euro-Bad also 2.500-3.000 Euro Reserve.</p>
 
         <h3>Lohnt sich eine Kombination mit Heizungstausch?</h3>
-        <p><strong>Absolut</strong>, wenn die Heizung ohnehin ansteht. Sie sparen Anfahrtskosten, Baustelleneinrichtung und Koordinationsaufwand. Zudem gibt es für Heizungstausch die BEG-Förderung (30-70%), die Sie mit der KfW-Barrierefreiheit kombinieren können. Besonders sinnvoll: Fußbodenheizung im Bad mit neuer Wärmepumpe kombinieren. Viele unserer Kunden nutzen die Gelegenheit für beide Maßnahmen gleichzeitig.</p>
+        <p><strong>Absolut</strong>, wenn die Heizung ohnehin ansteht. Sie sparen Anfahrtskosten, Baustelleneinrichtung und Koordinationsaufwand. Zudem gibt es für Heizungstausch die BEG-Förderung (30-80%), die Sie mit der KfW-Barrierefreiheit kombinieren können. Besonders sinnvoll: Fußbodenheizung im Bad mit neuer Wärmepumpe kombinieren. Viele unserer Kunden nutzen die Gelegenheit für beide Maßnahmen gleichzeitig.</p>
       `,
       category: 'Sanitär & Bad',
       author: 'HeizCenter Redaktion',
@@ -2132,16 +2114,16 @@ ${GMODG_HINWEIS}
         { question: 'Was steigert den Immobilienwert am meisten?', answer: 'Eine bodengleiche Dusche ist die beste Investition – sie macht das Bad modern, barrierefrei und größer wirkend. Auch wichtig: hochwertige Armaturen (fallen sofort auf), gute Beleuchtung und ein großzügiger Waschtisch. Ein neues Bad steigert den Immobilienwert um 3-5%. Bei einem 300.000-Euro-Haus sind das 9.000-15.000 Euro – ein Großteil der Investition wird also zurückgeholt.' },
         { question: 'Welche Fliesen sind 2026 am besten?', answer: 'Feinsteinzeug in Holz- oder Natursteinoptik ist der aktuelle Standard. Es sieht aus wie Marmor oder Parkett, kostet aber nur ein Drittel und ist deutlich pflegeleichter. Großformate (60x120 cm oder größer) sind modern und reduzieren Fugen. Empfehlung: Rutschfeste Fliesen mit R10 oder R11 für Dusche und Boden. Fliesen mit 30x60 cm kosten ab 20 Euro/m², Großformate ab 40 Euro/m².' },
         { question: 'Was sind versteckte Kosten bei Badsanierung?', answer: 'Häufige Zusatzkosten, die erst beim Abriss sichtbar werden: Schimmel hinter Fliesen (500-2.000 Euro Sanierung), marode Rohre (1.000-3.000 Euro für neue Leitungen), nicht normkonforme Elektrik (800-1.500 Euro Nachrüstung) und beschädigter Estrich (1.000-2.500 Euro). Planen Sie daher 15-20% Puffer ein. Bei einem 15.000-Euro-Bad also 2.500-3.000 Euro Reserve.' },
-        { question: 'Lohnt sich eine Kombination mit Heizungstausch?', answer: 'Absolut, wenn die Heizung ohnehin ansteht. Sie sparen Anfahrtskosten, Baustelleneinrichtung und Koordinationsaufwand. Zudem gibt es für Heizungstausch die BEG-Förderung (30-70%), die Sie mit der KfW-Barrierefreiheit kombinieren können. Besonders sinnvoll: Fußbodenheizung im Bad mit neuer Wärmepumpe kombinieren. Viele unserer Kunden nutzen die Gelegenheit für beide Maßnahmen gleichzeitig.' },
+        { question: 'Lohnt sich eine Kombination mit Heizungstausch?', answer: 'Absolut, wenn die Heizung ohnehin ansteht. Sie sparen Anfahrtskosten, Baustelleneinrichtung und Koordinationsaufwand. Zudem gibt es für Heizungstausch die BEG-Förderung (30-80%), die Sie mit der KfW-Barrierefreiheit kombinieren können. Besonders sinnvoll: Fußbodenheizung im Bad mit neuer Wärmepumpe kombinieren. Viele unserer Kunden nutzen die Gelegenheit für beide Maßnahmen gleichzeitig.' },
       ],
     },
     {
       id: 8,
       slug: 'foerderung-heizung-2026',
-      title: 'Heizungsförderung 2026: So holen Sie sich bis zu 21.000 € zurück',
+      title: 'Heizungsförderung 2026: So holen Sie sich bis zu 22.400 € zurück',
       excerpt: 'Ihr Schritt-für-Schritt-Guide durch den Förderdschungel: Welche Zuschüsse Sie bekommen, wie Sie sie beantragen und welche Fehler Sie unbedingt vermeiden sollten.',
       content: `
-        <p class="text-xl text-slate-600 mb-8">Der Staat zahlt bis zu 70% Ihrer neuen Heizung – das sind bei einer Wärmepumpe schnell 15.000 bis 21.000 Euro. Trotzdem verschenken viele Hausbesitzer Geld, weil sie Fristen verpassen oder Anträge falsch stellen. Hier erfahren Sie, wie Sie das Maximum herausholen.</p>
+        <p class="text-xl text-slate-600 mb-8">Der Staat zahlt bis zu 80% Ihrer neuen Heizung – das sind bei einer Wärmepumpe schnell 12.880 bis 22.400 Euro. Trotzdem verschenken viele Hausbesitzer Geld, weil sie Fristen verpassen oder Anträge falsch stellen. Hier erfahren Sie, wie Sie das Maximum herausholen.</p>
 
         <!-- Trust Badge -->
         <div class="flex flex-wrap gap-3 my-6">
@@ -2149,9 +2131,9 @@ ${GMODG_HINWEIS}
           <span class="inline-flex items-center gap-2 bg-slate-100 px-3 py-1.5 rounded-full text-sm"><span class="text-green-600">✓</span> 0 abgelehnte Anträge bei korrekter Abwicklung</span>
         </div>
 
-        <h2>Die 4 Förder-Bausteine auf einen Blick</h2>
+        <h2>Die 3 Förder-Bausteine auf einen Blick</h2>
 
-        <p>Die Heizungsförderung 2025 ist ein Baukastensystem. Je nachdem, wer Sie sind und was Sie austauschen, können Sie verschiedene Bausteine kombinieren:</p>
+        <p>Die Heizungsförderung 2026 ist ein Baukastensystem. Je nachdem, wer Sie sind und was Sie austauschen, können Sie verschiedene Bausteine kombinieren:</p>
 
         <!-- Förder-Bausteine Visualization -->
         <div class="space-y-3 my-8">
@@ -2163,31 +2145,24 @@ ${GMODG_HINWEIS}
             </div>
           </div>
           <div class="flex items-center gap-4 p-4 bg-amber-50 rounded-lg border-l-4 border-amber-500">
-            <div class="text-3xl font-bold text-amber-700">+20%</div>
+            <div class="text-3xl font-bold text-amber-700">+16%</div>
             <div>
               <div class="font-semibold text-slate-900">Klimageschwindigkeits-Bonus</div>
-              <div class="text-sm text-slate-600">Für Selbstnutzer, die eine alte Heizung rauswerfen (Gas >20 Jahre, Öl, Nachtspeicher)</div>
+              <div class="text-sm text-slate-600">Für Selbstnutzer, die eine alte Heizung rauswerfen (Gas ab 20 Jahren oder Gas-Etagenheizung, Öl, Kohle, Nachtspeicher) – fachgerecht demontiert und entsorgt, danach keine fossile oder Gas-Heizung mehr im Gebäude</div>
             </div>
           </div>
           <div class="flex items-center gap-4 p-4 bg-green-50 rounded-lg border-l-4 border-green-500">
-            <div class="text-3xl font-bold text-green-700">+30%</div>
+            <div class="text-3xl font-bold text-green-700">+10–40%</div>
             <div>
               <div class="font-semibold text-slate-900">Einkommensbonus</div>
-              <div class="text-sm text-slate-600">Bei Haushaltseinkommen bis 40.000 €/Jahr (nur Selbstnutzer)</div>
-            </div>
-          </div>
-          <div class="flex items-center gap-4 p-4 bg-blue-50 rounded-lg border-l-4 border-blue-500">
-            <div class="text-3xl font-bold text-blue-700">+5%</div>
-            <div>
-              <div class="font-semibold text-slate-900">Effizienzbonus</div>
-              <div class="text-sm text-slate-600">Für Wärmepumpen mit Propan (R290) oder Erdwärme/Grundwasser</div>
+              <div class="text-sm text-slate-600">40% bis 30.000 €, 30% bis 40.000 €, 10% bis 50.000 € zu versteuerndes Haushaltseinkommen/Jahr (nur Selbstnutzer)</div>
             </div>
           </div>
         </div>
 
         <div class="callout callout-info">
           <div class="callout-title">Rechenbeispiel</div>
-          <p>Rechnerisch kommen Sie auf 85% – aber <strong>gedeckelt wird bei 70%</strong>. Bei 30.000 € Investition sind das <strong>maximal 21.000 € Zuschuss</strong>.</p>
+          <p>Rechnerisch kommen Sie auf bis zu 86% – aber <strong>gedeckelt wird bei 70%</strong>, bei einem zu versteuernden Haushaltseinkommen bis 30.000 € (mit Kind bis 40.000 €) bei 80%. Beim Einfamilienhaus mit 28.000 € förderfähigen Kosten sind das <strong>maximal 19.600 € bzw. 22.400 € Zuschuss</strong>.</p>
         </div>
 
         <h2>Was wird überhaupt gefördert?</h2>
@@ -2198,11 +2173,11 @@ ${GMODG_HINWEIS}
           <div class="bg-green-50 border border-green-200 rounded-lg p-5">
             <div class="text-green-800 font-semibold mb-3">✓ Förderfähig</div>
             <ul class="space-y-2 text-sm text-green-800">
-              <li>• <strong><a href="/waermepumpe" class="text-[#0F5B78] font-medium hover:underline">Wärmepumpen</a></strong> (30-70%)</li>
-              <li>• <strong>Pelletheizungen</strong> (30-60% + 2.500 € Emissionsbonus)</li>
+              <li>• <strong><a href="/waermepumpe" class="text-[#0F5B78] font-medium hover:underline">Wärmepumpen</a></strong> (30-80%)</li>
+              <li>• <strong>Pelletheizungen</strong> (30-80%)</li>
               <li>• <strong><a href="/solar" class="text-[#0F5B78] font-medium hover:underline">Solarthermie</a></strong> (30-70%)</li>
-              <li>• <strong>Brennstoffzellen</strong> (30-70%)</li>
-              <li>• <strong>Fernwärmeanschluss</strong> (30-70%)</li>
+              <li>• <strong>Brennstoffzellen</strong> (30-80%)</li>
+              <li>• <strong>Fernwärmeanschluss</strong> (30-80%)</li>
             </ul>
           </div>
           <div class="bg-red-50 border border-red-200 rounded-lg p-5">
@@ -2211,12 +2186,12 @@ ${GMODG_HINWEIS}
               <li>• Gasheizungen (auch neue!)</li>
               <li>• Ölheizungen</li>
               <li>• H2-Ready nur Mehrkosten</li>
-              <li>• Hybridheizungen mit >35% Gasanteil</li>
+              <li>• Gaskessel in Hybridheizungen</li>
             </ul>
           </div>
         </div>
 
-        <h2>Wer kriegt was? Drei Szenarien aus der Praxis</h2>
+        <h2>Wer kriegt was? Drei Rechenbeispiele</h2>
 
         <!-- Szenario Cards -->
         <div class="space-y-6 my-8">
@@ -2224,7 +2199,7 @@ ${GMODG_HINWEIS}
             <div class="flex items-center gap-3 mb-4">
               <div class="w-12 h-12 bg-[#0F5B78] rounded-full flex items-center justify-center text-white text-xl">👤</div>
               <div>
-                <div class="font-bold text-lg">Familie Müller, Augsburg</div>
+                <div class="font-bold text-lg">Rechenbeispiel 1: Familie in Augsburg</div>
                 <div class="text-sm text-slate-600">Selbstnutzer, 25 Jahre alte Gasheizung, Einkommen 45.000 €</div>
               </div>
             </div>
@@ -2235,15 +2210,15 @@ ${GMODG_HINWEIS}
               </div>
               <div>
                 <div class="text-slate-500">Förderung</div>
-                <div class="font-semibold text-green-600">30% + 20% = 50% → 14.000 €</div>
+                <div class="font-semibold text-green-600">30% + 16% + 10% = 56% → 15.680 €</div>
               </div>
               <div>
                 <div class="text-slate-500">Eigenanteil</div>
-                <div class="font-semibold">14.000 €</div>
+                <div class="font-semibold">12.320 €</div>
               </div>
               <div>
                 <div class="text-slate-500">Monatlich (10J Kredit)</div>
-                <div class="font-semibold">~125 €</div>
+                <div class="font-semibold">~110 €</div>
               </div>
             </div>
           </div>
@@ -2252,7 +2227,7 @@ ${GMODG_HINWEIS}
             <div class="flex items-center gap-3 mb-4">
               <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center text-white text-xl">👥</div>
               <div>
-                <div class="font-bold text-lg">Ehepaar Schmidt, Bobingen</div>
+                <div class="font-bold text-lg">Rechenbeispiel 2: Rentnerpaar in Bobingen</div>
                 <div class="text-sm text-slate-600">Rentner, Ölheizung, Einkommen 32.000 €, Wärmepumpe mit R290</div>
               </div>
             </div>
@@ -2263,15 +2238,15 @@ ${GMODG_HINWEIS}
               </div>
               <div>
                 <div class="text-slate-500">Förderung</div>
-                <div class="font-semibold text-green-600">30% + 20% + 30% + 5% = 70% → 21.000 €</div>
+                <div class="font-semibold text-green-600">30% + 16% + 30% = 76%, gedeckelt auf 70% von 28.000 € → 19.600 €</div>
               </div>
               <div>
                 <div class="text-slate-500">Eigenanteil</div>
-                <div class="font-semibold">9.000 €</div>
+                <div class="font-semibold">10.400 €</div>
               </div>
               <div>
-                <div class="text-slate-500">Das Beste:</div>
-                <div class="font-semibold">Maximum erreicht!</div>
+                <div class="text-slate-500">Hinweis:</div>
+                <div class="font-semibold">Obergrenze 70% (80% erst bis 30.000 € Einkommen)</div>
               </div>
             </div>
           </div>
@@ -2280,7 +2255,7 @@ ${GMODG_HINWEIS}
             <div class="flex items-center gap-3 mb-4">
               <div class="w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center text-white text-xl">🏢</div>
               <div>
-                <div class="font-bold text-lg">Herr Weber, Günzburg</div>
+                <div class="font-bold text-lg">Rechenbeispiel 3: Vermieter in Günzburg</div>
                 <div class="text-sm text-slate-600">Vermieter, MFH mit 4 Wohnungen</div>
               </div>
             </div>
@@ -2291,7 +2266,7 @@ ${GMODG_HINWEIS}
               </div>
               <div>
                 <div class="text-slate-500">Förderfähig</div>
-                <div class="font-semibold">30.000 + 3×15.000 = 75.000 €</div>
+                <div class="font-semibold">28.000 + 3×15.000 = 73.000 €</div>
               </div>
               <div>
                 <div class="text-slate-500">Förderung</div>
@@ -2309,7 +2284,7 @@ ${GMODG_HINWEIS}
 
         <div class="callout callout-warning">
           <div class="callout-title">Die #1 Regel</div>
-          <p><strong>Niemals mit den Arbeiten anfangen, bevor Sie die Förderzusage haben!</strong> Auch kein „schon mal Material bestellen" oder „Termin für Installation machen". Das kostet Sie die komplette Förderung.</p>
+          <p><strong>Niemals mit den Arbeiten anfangen, bevor der Antrag gestellt ist!</strong> Ein Baubeginn oder ein Vertrag ohne Förderbedingung vor der Antragstellung kostet Sie die komplette Förderung. Wer nach dem Antrag, aber vor der Zusage beginnt, tut das auf eigenes Risiko.</p>
         </div>
 
         <div class="space-y-4 my-8">
@@ -2337,8 +2312,8 @@ ${GMODG_HINWEIS}
           <div class="flex gap-4 items-start p-4 bg-slate-50 rounded-lg">
             <div class="w-10 h-10 bg-[#0F5B78] text-white rounded-full flex items-center justify-center font-bold shrink-0">4</div>
             <div>
-              <div class="font-semibold text-slate-900">Erst NACH Zusage: Installation beauftragen</div>
-              <p class="text-sm text-slate-600 mt-1">Jetzt darf's losgehen! Sie haben 36 Monate Zeit, die Maßnahme abzuschließen.</p>
+              <div class="font-semibold text-slate-900">Nach der Zusage: mit der Installation beginnen</div>
+              <p class="text-sm text-slate-600 mt-1">Jetzt darf's losgehen – ein Start schon nach der Antragstellung ist zulässig, aber auf eigenes Risiko. Sie haben 36 Monate Zeit, die Maßnahme abzuschließen.</p>
             </div>
           </div>
           <div class="flex gap-4 items-start p-4 bg-slate-50 rounded-lg">
@@ -2365,12 +2340,12 @@ ${GMODG_HINWEIS}
           <tbody>
             <tr>
               <td><strong>Maximaler Prozentsatz</strong></td>
-              <td class="text-green-600 font-semibold">Bis 70%</td>
+              <td class="text-green-600 font-semibold">Bis 70% (80% bei Einkommen bis 30.000 €)</td>
               <td>20%</td>
             </tr>
             <tr>
               <td><strong>Bei 30.000 € Investition</strong></td>
-              <td class="text-green-600 font-semibold">Bis 21.000 €</td>
+              <td class="text-green-600 font-semibold">Bis 19.600 € bzw. 22.400 € (max. 28.000 € förderfähig)</td>
               <td>6.000 €</td>
             </tr>
             <tr>
@@ -2395,7 +2370,7 @@ ${GMODG_HINWEIS}
             <div class="text-2xl">❌</div>
             <div>
               <div class="font-semibold text-red-800">Arbeiten vor Antragstellung</div>
-              <p class="text-sm text-red-700 mt-1">Auch ein „vorbereitender" Termin mit dem Heizungsbauer zählt als Beginn. Förderung = 0 €.</p>
+              <p class="text-sm text-red-700 mt-1">Ein Baubeginn oder ein Vertrag ohne Förderbedingung vor der Antragstellung zählt als Vorhabenbeginn. Förderung = 0 €.</p>
             </div>
           </div>
           <div class="flex gap-4 p-4 bg-red-50 rounded-lg border border-red-200">
@@ -2409,14 +2384,7 @@ ${GMODG_HINWEIS}
             <div class="text-2xl">❌</div>
             <div>
               <div class="font-semibold text-red-800">Einkommensnachweis fehlt</div>
-              <p class="text-sm text-red-700 mt-1">Für den 30% Einkommensbonus brauchen Sie die Steuerbescheide 2022/2023. Rechtzeitig suchen!</p>
-            </div>
-          </div>
-          <div class="flex gap-4 p-4 bg-red-50 rounded-lg border border-red-200">
-            <div class="text-2xl">❌</div>
-            <div>
-              <div class="font-semibold text-red-800">Falsche Wärmepumpe gewählt</div>
-              <p class="text-sm text-red-700 mt-1">Für den 5% Effizienzbonus brauchen Sie Propan (R290) oder Erdwärme. R32 zählt NICHT.</p>
+              <p class="text-sm text-red-700 mt-1">Für den Einkommensbonus zählen ausschließlich die Einkommensteuerbescheide des zweiten und dritten Kalenderjahres vor Antragseingang – bei einem Antrag 2026 also 2023 und 2024. Rechtzeitig suchen!</p>
             </div>
           </div>
         </div>
@@ -2425,7 +2393,7 @@ ${GMODG_HINWEIS}
 
         <div class="callout callout-warning">
           <div class="callout-title">Wichtig zu wissen</div>
-          <p>Der <strong>Klimageschwindigkeits-Bonus (20%) sinkt ab 2029</strong> alle zwei Jahre um 3%. Wer also 2026 handelt, bekommt mehr als wer 2030 handelt. Und nach der nächsten Bundestagswahl könnte das gesamte Fördersystem angepasst werden.</p>
+          <p>Der <strong>Klimageschwindigkeits-Bonus (16%) sinkt ab 01.02.2027</strong> halbjährlich um 4 Prozentpunkte und entfällt für Anträge ab 01.08.2028. Wer also 2026 handelt, bekommt mehr als wer 2028 handelt. Und nach der nächsten Bundestagswahl könnte das gesamte Fördersystem angepasst werden.</p>
         </div>
 
         <h2>Brauchen Sie Hilfe beim Förderantrag?</h2>
@@ -2458,16 +2426,16 @@ ${GMODG_HINWEIS}
         <h2>Häufig gestellte Fragen (FAQ)</h2>
 
         <h3>Wie hoch ist die maximale Förderung für eine Heizung 2026?</h3>
-        <p>Die maximale Förderung beträgt <strong>70% der förderfähigen Kosten</strong>, gedeckelt bei <strong>21.000 Euro Zuschuss</strong>. Das erreichen Sie, wenn Sie alle vier Förderbausteine kombinieren: 30% Grundförderung + 20% Klimageschwindigkeits-Bonus + 30% Einkommensbonus + 5% Effizienzbonus. Bei 30.000 Euro Investition erhalten Sie maximal 21.000 Euro zurück.</p>
+        <p>Die maximale Förderung beträgt <strong>80% der förderfähigen Kosten</strong>, gedeckelt bei <strong>22.400 Euro Zuschuss</strong> für ein Einfamilienhaus – allerdings nur für Selbstnutzer mit zu versteuerndem Haushaltseinkommen bis 30.000 Euro (mit minderjährigem, kindergeldberechtigtem Kind bis 40.000 Euro). Das erreichen Sie, wenn Sie alle drei Förderbausteine kombinieren: 30% Grundförderung + 16% Klimageschwindigkeits-Bonus + 40% Einkommensbonus = 86%, gedeckelt auf 80%. In allen anderen Fällen liegt die Obergrenze bei 70%, also maximal 19.600 Euro bei 28.000 Euro förderfähigen Kosten.</p>
 
         <h3>Wer kann die Heizungsförderung beantragen?</h3>
-        <p>Antragsberechtigt sind Selbstnutzer, Vermieter und Wohnungseigentümergemeinschaften für bestehende Wohngebäude. Voraussetzung ist ein Gebäude, das vor dem 1. Januar 2024 gebaut wurde. Die 30% Grundförderung steht allen offen, während Klimabonus und Einkommensbonus nur Selbstnutzern vorbehalten sind.</p>
+        <p>Antragsberechtigt sind private Eigentümer (natürliche Personen) – Selbstnutzer und Vermieter – sowie Wohnungseigentümergemeinschaften. Voraussetzung ist ein bestehendes Wohngebäude, dessen Bauantrag bzw. Bauanzeige bei Antragstellung mindestens 5 Jahre zurückliegt. Die 30% Grundförderung steht allen offen, während Klimabonus und Einkommensbonus nur Selbstnutzern vorbehalten sind.</p>
 
-        <h3>Welche Einkommensgrenze gilt für den 30% Einkommensbonus?</h3>
-        <p>Der Einkommensbonus von 30% wird gewährt, wenn Ihr zu versteuerndes Haushaltseinkommen <strong>maximal 40.000 Euro pro Jahr</strong> beträgt. Maßgeblich ist der Durchschnitt der Steuerbescheide der letzten zwei Jahre. Bei einem Paar zählt das gemeinsame Einkommen beider Partner.</p>
+        <h3>Welche Einkommensgrenze gilt für den Einkommensbonus?</h3>
+        <p>Der Einkommensbonus ist nach dem zu versteuernden Haushaltsjahreseinkommen gestaffelt: <strong>40% bis 30.000 Euro, 30% bis 40.000 Euro und 10% bis 50.000 Euro</strong>. Mit mindestens einem minderjährigen, kindergeldberechtigten Kind steigen die Grenzen jeweils um 10.000 Euro. Maßgeblich ist der Durchschnitt des zu versteuernden Einkommens aus dem zweiten und dritten Kalenderjahr vor Antragseingang (Antrag 2026: 2023 und 2024); als Nachweis zählen ausschließlich die Einkommensteuerbescheide. Bei einem Paar zählt das gemeinsame Einkommen beider Partner.</p>
 
         <h3>Muss ich den Förderantrag vor oder nach dem Einbau stellen?</h3>
-        <p>Zwingend <strong>vor Beginn jeglicher Arbeiten</strong>. Auch Vertragsunterzeichnung oder Materialbestellung gelten als Maßnahmenbeginn und führen zum Förderverlust. Unterschreiben Sie Verträge nur mit aufschiebender Bedingung und stellen Sie den Antrag erst nach Erhalt der KfW-Zusage los. Erst nach Förderzusage darf installiert werden.</p>
+        <p>Zwingend <strong>vor Beginn jeglicher Arbeiten</strong>. Vor der Antragstellung schließen Sie einen Liefer- bzw. Leistungsvertrag mit aufschiebender oder auflösender Bedingung (Zusage der KfW) und voraussichtlichem Umsetzungsdatum und laden ihn im Antrag hoch. Ein Vertrag ohne diese Bedingung oder ein Baubeginn vor Antragstellung gilt als Vorhabenbeginn und führt zum Förderverlust. Mit der Installation beginnen Sie nach der Förderzusage – oder auf eigenes Risiko schon nach der Antragstellung.</p>
 
         <h3>Wie lange dauert es, bis die Förderung ausgezahlt wird?</h3>
         <p>Nach vollständiger Antragsstellung erhalten Sie oft <strong>innerhalb von Minuten</strong> eine Zusage bei automatisierter Prüfung. Nach Abschluss der Arbeiten reichen Sie Rechnungen und Bestätigung nach Durchführung ein. Die Auszahlung erfolgt dann in der Regel <strong>binnen 4-8 Wochen</strong> direkt auf Ihr Konto.</p>
@@ -2486,10 +2454,10 @@ ${GMODG_HINWEIS}
       tags: ['Förderung', 'BEG', 'KfW', 'Wärmepumpe', 'Zuschuss', 'Steuerbonus'],
       featured: true,
       faqs: [
-        { question: 'Wie hoch ist die maximale Förderung für eine Heizung 2026?', answer: 'Die maximale Förderung beträgt 70% der förderfähigen Kosten, gedeckelt bei 21.000 Euro Zuschuss. Das erreichen Sie, wenn Sie alle vier Förderbausteine kombinieren: 30% Grundförderung + 20% Klimageschwindigkeits-Bonus + 30% Einkommensbonus + 5% Effizienzbonus. Bei 30.000 Euro Investition erhalten Sie maximal 21.000 Euro zurück.' },
-        { question: 'Wer kann die Heizungsförderung beantragen?', answer: 'Antragsberechtigt sind Selbstnutzer, Vermieter und Wohnungseigentümergemeinschaften für bestehende Wohngebäude. Voraussetzung ist ein Gebäude, das vor dem 1. Januar 2024 gebaut wurde. Die 30% Grundförderung steht allen offen, während Klimabonus und Einkommensbonus nur Selbstnutzern vorbehalten sind.' },
-        { question: 'Welche Einkommensgrenze gilt für den 30% Einkommensbonus?', answer: 'Der Einkommensbonus von 30% wird gewährt, wenn Ihr zu versteuerndes Haushaltseinkommen maximal 40.000 Euro pro Jahr beträgt. Maßgeblich ist der Durchschnitt der Steuerbescheide der letzten zwei Jahre. Bei einem Paar zählt das gemeinsame Einkommen beider Partner.' },
-        { question: 'Muss ich den Förderantrag vor oder nach dem Einbau stellen?', answer: 'Zwingend vor Beginn jeglicher Arbeiten. Auch Vertragsunterzeichnung oder Materialbestellung gelten als Maßnahmenbeginn und führen zum Förderverlust. Unterschreiben Sie Verträge nur mit aufschiebender Bedingung und stellen Sie den Antrag erst nach Erhalt der KfW-Zusage los. Erst nach Förderzusage darf installiert werden.' },
+        { question: 'Wie hoch ist die maximale Förderung für eine Heizung 2026?', answer: 'Die maximale Förderung beträgt 80% der förderfähigen Kosten, gedeckelt bei 22.400 Euro Zuschuss für ein Einfamilienhaus – allerdings nur für Selbstnutzer mit zu versteuerndem Haushaltseinkommen bis 30.000 Euro (mit minderjährigem, kindergeldberechtigtem Kind bis 40.000 Euro). Das erreichen Sie, wenn Sie alle drei Förderbausteine kombinieren: 30% Grundförderung + 16% Klimageschwindigkeits-Bonus + 40% Einkommensbonus = 86%, gedeckelt auf 80%. In allen anderen Fällen liegt die Obergrenze bei 70%, also maximal 19.600 Euro bei 28.000 Euro förderfähigen Kosten.' },
+        { question: 'Wer kann die Heizungsförderung beantragen?', answer: 'Antragsberechtigt sind private Eigentümer (natürliche Personen) – Selbstnutzer und Vermieter – sowie Wohnungseigentümergemeinschaften. Voraussetzung ist ein bestehendes Wohngebäude, dessen Bauantrag bzw. Bauanzeige bei Antragstellung mindestens 5 Jahre zurückliegt. Die 30% Grundförderung steht allen offen, während Klimabonus und Einkommensbonus nur Selbstnutzern vorbehalten sind.' },
+        { question: 'Welche Einkommensgrenze gilt für den Einkommensbonus?', answer: 'Der Einkommensbonus ist nach dem zu versteuernden Haushaltsjahreseinkommen gestaffelt: 40% bis 30.000 Euro, 30% bis 40.000 Euro und 10% bis 50.000 Euro. Mit mindestens einem minderjährigen, kindergeldberechtigten Kind steigen die Grenzen jeweils um 10.000 Euro. Maßgeblich ist der Durchschnitt des zu versteuernden Einkommens aus dem zweiten und dritten Kalenderjahr vor Antragseingang (Antrag 2026: 2023 und 2024); als Nachweis zählen ausschließlich die Einkommensteuerbescheide. Bei einem Paar zählt das gemeinsame Einkommen beider Partner.' },
+        { question: 'Muss ich den Förderantrag vor oder nach dem Einbau stellen?', answer: 'Zwingend vor Beginn jeglicher Arbeiten. Vor der Antragstellung schließen Sie einen Liefer- bzw. Leistungsvertrag mit aufschiebender oder auflösender Bedingung (Zusage der KfW) und voraussichtlichem Umsetzungsdatum und laden ihn im Antrag hoch. Ein Vertrag ohne diese Bedingung oder ein Baubeginn vor Antragstellung gilt als Vorhabenbeginn und führt zum Förderverlust. Mit der Installation beginnen Sie nach der Förderzusage – oder auf eigenes Risiko schon nach der Antragstellung.' },
         { question: 'Wie lange dauert es, bis die Förderung ausgezahlt wird?', answer: 'Nach vollständiger Antragsstellung erhalten Sie oft innerhalb von Minuten eine Zusage bei automatisierter Prüfung. Nach Abschluss der Arbeiten reichen Sie Rechnungen und Bestätigung nach Durchführung ein. Die Auszahlung erfolgt dann in der Regel binnen 4-8 Wochen direkt auf Ihr Konto.' },
         { question: 'Kann ich als Mieter auch Förderung für eine neue Heizung bekommen?', answer: 'Nein, als Mieter sind Sie nicht antragsberechtigt. Die Förderung steht nur Eigentümern zu – also Ihrem Vermieter. Er kann die Förderung beantragen, wenn er die Heizung modernisiert. Als Mieter haben Sie aber nach dem Heizungsgesetz ein Recht darauf, dass Ihr Vermieter die Heizung auf dem Stand der Technik hält.' },
         { question: 'Welches KfW-Programm ist für die Heizungsförderung zuständig?', answer: 'Seit dem 1. Januar 2024 läuft die Heizungsförderung über die KfW-Förderung 458 (Zuschuss Heizungsoptimierung) in Kombination mit der BEG-Einzelmaßnahme. Früher war die BAFA zuständig – diese Zuständigkeit wurde zur KfW verlagert. Förderanträge stellen Sie online im Portal „Meine KfW".' },
@@ -2837,9 +2805,9 @@ ${GMODG_HINWEIS}
       id: 10,
       slug: 'waermepumpe-vorteile-nachteile-2026',
       title: 'Wärmepumpe Vorteile und Nachteile 2026: Der komplette Überblick',
-      excerpt: 'Lohnt sich eine Wärmepumpe? 41% günstiger als Gas, bis 70% Förderung, aber auch echte Nachteile. Hier die Fakten für Ihre Entscheidung.',
+      excerpt: 'Lohnt sich eine Wärmepumpe? 41% günstiger als Gas, bis 80% Förderung, aber auch echte Nachteile. Hier die Fakten für Ihre Entscheidung.',
       content: `
-        <p class="text-xl leading-relaxed text-slate-600 mb-8">925 Euro weniger Heizkosten pro Jahr. 21.000 Euro Förderung vom Staat. Eine Entscheidung, die Ihr Haus zukunftssicher macht – und die sich bereits nach 5 Jahren auszahlt.</p>
+        <p class="text-xl leading-relaxed text-slate-600 mb-8">925 Euro weniger Heizkosten pro Jahr. Bis zu 22.400 Euro Förderung vom Staat. Eine Entscheidung, die Ihr Haus zukunftssicher macht – und die sich bereits nach 5 Jahren auszahlt.</p>
 
         <p>„Lohnt sich eine Wärmepumpe für mich?" – Diese Frage stellen uns täglich Hausbesitzer aus Augsburg, Memmingen und der gesamten Region. Die ehrliche Antwort: <strong>Für die meisten ja, aber nicht für jeden.</strong> Deshalb zeigen wir Ihnen hier alle Fakten – Vorteile UND Nachteile, damit Sie die richtige Entscheidung für Ihr Zuhause treffen können.</p>
 
@@ -2851,7 +2819,7 @@ ${GMODG_HINWEIS}
               <li><strong>Marktanteil 2026:</strong> 42% aller neuen Heizungen</li>
               <li><strong>CO₂-Einsparung:</strong> 2.620 kg pro Jahr vs. Gas/Öl</li>
               <li><strong>Betriebskosten:</strong> 41% günstiger als Gasheizung</li>
-              <li><strong>Förderung:</strong> Bis zu 70% (max. 21.000 €)</li>
+              <li><strong>Förderung:</strong> Bis zu 80% (max. 22.400 €)</li>
               <li><strong>JAZ:</strong> 3,2–4,5 je nach Typ</li>
             </ul>
           </div>
@@ -2920,19 +2888,18 @@ ${GMODG_HINWEIS}
           </div>
         </div>
 
-        <h3>2. Förderung: Bis zu 21.000 Euro geschenkt</h3>
+        <h3>2. Förderung: Bis zu 22.400 Euro geschenkt</h3>
 
-        <p>Ja, richtig gelesen: Der Staat übernimmt bis zu 70% Ihrer Investition. Das sind bei einer durchschnittlichen Wärmepumpe <strong>bis zu 21.000 Euro Zuschuss</strong>, die Sie nicht zurückzahlen müssen. Die KfW-Förderung 2026 macht Wärmepumpen damit oft günstiger als eine neue Gasheizung:</p>
+        <p>Ja, richtig gelesen: Der Staat übernimmt bis zu 80% der förderfähigen Kosten. Das sind bei einer durchschnittlichen Wärmepumpe <strong>bis zu 22.400 Euro Zuschuss</strong>, die Sie nicht zurückzahlen müssen. Die KfW-Förderung 2026 macht Wärmepumpen damit oft günstiger als eine neue Gasheizung:</p>
 
         <ul>
-          <li><strong>30% Basisförderung</strong> für alle Wärmepumpen</li>
-          <li><strong>+20% Klimageschwindigkeitsbonus</strong> (bei Austausch fossiler Heizung, bis Ende 2028)</li>
-          <li><strong>+30% Einkommensbonus</strong> (bei Haushaltseinkommen unter 40.000 €/Jahr)</li>
-          <li><strong>+5% Effizienzbonus</strong> (natürliches Kältemittel wie Propan oder Erdwärme/Wasser)</li>
-          <li><strong>Maximum: 70%</strong> der förderfähigen Kosten (max. 30.000 € = bis zu 21.000 € Zuschuss)</li>
+          <li><strong>30% Basisförderung</strong> für alle Wärmepumpen in bestehenden Wohngebäuden</li>
+          <li><strong>+16% Klimageschwindigkeitsbonus</strong> (für Selbstnutzer bei Austausch einer funktionstüchtigen Öl-, Kohle-, Gas-Etagen- oder Nachtspeicherheizung oder einer mind. 20 Jahre alten Gasheizung; sinkt ab 01.02.2027 halbjährlich um 4 Prozentpunkte und entfällt für Anträge ab 01.08.2028)</li>
+          <li><strong>+10 bis 40% Einkommensbonus</strong> (für Selbstnutzer: 40% bis 30.000 €, 30% bis 40.000 €, 10% bis 50.000 € zu versteuerndes Haushaltseinkommen/Jahr)</li>
+          <li><strong>Maximum: 70%</strong> der förderfähigen Kosten (Einfamilienhaus max. 28.000 € = bis zu 19.600 € Zuschuss); <strong>80%</strong> (= 22.400 €) nur für Selbstnutzer mit zu versteuerndem Haushaltseinkommen bis 30.000 € (mit Kind bis 40.000 €)</li>
         </ul>
 
-        <p><strong>Rechenbeispiel:</strong> Bei Anschaffungskosten von 32.000 € werden maximal 30.000 € gefördert. Mit 70% Förderung erhalten Sie 21.000 € Zuschuss – Ihr Eigenanteil beträgt nur <strong>11.000 €</strong>. Das ist günstiger als eine neue Gasheizung!</p>
+        <p><strong>Rechenbeispiel:</strong> Bei Anschaffungskosten von 32.000 € werden maximal 28.000 € gefördert. Mit 80% Förderung (Selbstnutzer mit zu versteuerndem Haushaltseinkommen bis 30.000 €) erhalten Sie 22.400 € Zuschuss – Ihr Eigenanteil beträgt nur <strong>9.600 €</strong>. Das ist günstiger als eine neue Gasheizung!</p>
 
         <div class="callout callout-success">
           <span class="callout-icon">✓</span>
@@ -2963,7 +2930,7 @@ ${GMODG_HINWEIS}
 
         <p>Das perfekte Duo: Tagsüber produziert Ihre Photovoltaik-Anlage auf dem Dach kostenlosen Strom. Die Wärmepumpe nutzt diesen Strom zum Heizen. Resultat: <strong>60-70% weniger Energiekosten</strong> als mit fossilen Heizungen.</p>
 
-        <p><strong>Real-Beispiel aus Bobingen:</strong> Familie mit Effizienzhaus, 12 kWp PV + Speicher + Wärmepumpe:</p>
+        <p><strong>Rechenbeispiel:</strong> Effizienzhaus mit 12 kWp PV + Speicher + Wärmepumpe:</p>
         <ul>
           <li>Früher mit Gas: 2.800 € Energiekosten pro Jahr</li>
           <li>Jetzt mit WP + PV: nur noch 720 € pro Jahr</li>
@@ -3021,7 +2988,7 @@ ${GMODG_HINWEIS}
 
         <p>Wir versprechen Ihnen keine Wunder. Wärmepumpen haben auch Nachteile. Die gute Nachricht: Die meisten sind lösbar, beherrschbar oder werden durch staatliche Förderung ausgeglichen. Hier die volle Wahrheit.</p>
 
-        <h3>Nachteil 1: Hohe Anschaffungskosten – aber 70% Förderung</h3>
+        <h3>Nachteil 1: Hohe Anschaffungskosten – aber bis zu 80% Förderung</h3>
 
         <p>Ja, eine Wärmepumpe kostet mehr als eine Gasheizung. Keine Schönfärberei. Aber:</p>
 
@@ -3052,7 +3019,7 @@ ${GMODG_HINWEIS}
           </tbody>
         </table>
 
-        <p><strong>Die Lösung:</strong> Mit 70% Förderung reduziert sich der Eigenanteil auf 8.100-12.000 € – <strong>damit sind Sie auf dem gleichen Niveau wie bei einer Gasheizung</strong>, die jedoch keine Förderung erhält. Und dann sparen Sie ab dem ersten Tag bei den Betriebskosten.</p>
+        <p><strong>Die Lösung:</strong> Mit 80% Förderung (max. 22.400 € Zuschuss, nur bei zu versteuerndem Haushaltseinkommen bis 30.000 €) reduziert sich der Eigenanteil auf 5.400-17.600 € – <strong>damit sind Sie oft auf dem gleichen Niveau wie bei einer Gasheizung</strong>, die jedoch keine Förderung erhält. Und dann sparen Sie ab dem ersten Tag bei den Betriebskosten.</p>
 
         <h3>Nachteil 2: Dämmung muss stimmen – aber nicht perfekt</h3>
 
@@ -3219,7 +3186,7 @@ ${GMODG_HINWEIS}
 
         <p><strong>Rechnen wir nach:</strong></p>
         <ul>
-          <li>Mit 70% Förderung: Eigenanteil oft <strong>niedriger als neue Gasheizung</strong></li>
+          <li>Mit bis zu 80% Förderung: Eigenanteil oft <strong>niedriger als neue Gasheizung</strong></li>
           <li>Betriebskosten: <strong>41% günstiger</strong> als Gas (925 €/Jahr Ersparnis)</li>
           <li>Amortisation: 5-11 Jahre (je nach Gebäude)</li>
           <li>Danach 10-15 Jahre <strong>fast kostenlos heizen</strong></li>
@@ -3289,14 +3256,14 @@ ${GMODG_HINWEIS}
               <td>32.000 €</td>
             </tr>
             <tr>
-              <td>Förderung (55%)</td>
+              <td>Förderung (46% von max. 28.000 €)</td>
               <td>0 €</td>
-              <td class="price">−17.600 €</td>
+              <td class="price">−12.880 €</td>
             </tr>
             <tr>
               <td><strong>Eigenanteil</strong></td>
               <td><strong>10.000 €</strong></td>
-              <td><strong>14.400 €</strong></td>
+              <td><strong>19.120 €</strong></td>
             </tr>
             <tr>
               <td>Betriebskosten/Jahr</td>
@@ -3311,11 +3278,11 @@ ${GMODG_HINWEIS}
             <tr class="highlight-row">
               <td><strong>15-Jahres-Gesamtkosten</strong></td>
               <td><strong>51.730 €</strong></td>
-              <td class="price"><strong>34.455 €</strong></td>
+              <td class="price"><strong>39.175 €</strong></td>
             </tr>
             <tr class="highlight-row">
               <td colspan="2"><strong>ERSPARNIS ÜBER 15 JAHRE:</strong></td>
-              <td class="price"><strong>17.275 €</strong></td>
+              <td class="price"><strong>12.555 €</strong></td>
             </tr>
           </tbody>
         </table>
@@ -3366,13 +3333,13 @@ ${GMODG_HINWEIS}
           <li>Ihre aktuelle Heizung ohnehin erneuert werden muss</li>
           <li>Ihr Haus zumindest teilweise gedämmt ist (oder Sie bereit sind, kleine Maßnahmen umzusetzen)</li>
           <li>Sie Wert auf niedrige Betriebskosten und Unabhängigkeit legen</li>
-          <li>Sie die Förderung mitnehmen wollen (bis Ende 2028 besonders hoch)</li>
+          <li>Sie die Förderung mitnehmen wollen (Klimageschwindigkeitsbonus sinkt ab 01.02.2027 und entfällt für Anträge ab 01.08.2028)</li>
         </ul>
 
         <p><strong>Die Zahlen sprechen für sich:</strong></p>
         <ul>
           <li>925 € weniger Heizkosten pro Jahr</li>
-          <li>Bis zu 21.000 € Förderung vom Staat</li>
+          <li>Bis zu 22.400 € Förderung vom Staat</li>
           <li>Amortisation in 5-11 Jahren</li>
           <li>26.000 € Gesamtersparnis über 15 Jahre</li>
           <li>43% Wertsteigerung Ihrer Immobilie</li>
@@ -3407,7 +3374,7 @@ ${GMODG_HINWEIS}
         <p>Ja, problemlos! Moderne Wärmepumpen sind für den deutschen Winter ausgelegt und funktionieren bis <strong>-20°C</strong> zuverlässig. Selbst bei -10°C erreichen sie noch eine JAZ von 2,5-3,0. Der Notfall-Heizstab springt nur bei extremer Kälte ein und wird fast nie gebraucht. Erdwärmepumpen sind noch unempfindlicher, da die Bodentemperatur konstant bei 8-12°C liegt – unabhängig von der Außentemperatur.</p>
 
         <h3>Kann ich eine Wärmepumpe mit Solar kombinieren?</h3>
-        <p>Absolut, das ist sogar die ideale Kombination! Tagsüber produziert Ihre PV-Anlage kostenlosen Strom, den die Wärmepumpe nutzt. Resultat: <strong>60-70% weniger Energiekosten</strong> als mit fossilen Heizungen. Ein Praxisbeispiel aus Bobingen zeigt: Mit 12 kWp PV + Speicher + Wärmepumpe sinken die Energiekosten von 2.800 Euro (Gas) auf nur 720 Euro pro Jahr – eine Ersparnis von 2.080 Euro jährlich bei 78% Eigenversorgung.</p>
+        <p>Absolut, das ist sogar die ideale Kombination! Tagsüber produziert Ihre PV-Anlage kostenlosen Strom, den die Wärmepumpe nutzt. Resultat: <strong>60-70% weniger Energiekosten</strong> als mit fossilen Heizungen. Ein Rechenbeispiel zeigt: Mit 12 kWp PV + Speicher + Wärmepumpe sinken die Energiekosten von 2.800 Euro (Gas) auf nur 720 Euro pro Jahr – eine Ersparnis von 2.080 Euro jährlich bei 78% Eigenversorgung.</p>
 
         <h3>Wie lange hält eine Wärmepumpe und was muss gewartet werden?</h3>
         <p>Hochwertige Wärmepumpen haben eine Lebensdauer von <strong>15-20 Jahren</strong>, Premium-Modelle sogar bis 25+ Jahre. Wartung wird alle 1-2 Jahre empfohlen (keine Pflicht), kostet 150-300 Euro. Im Gegensatz zu Öl- und Gasheizungen entfallen Schornsteinfeger, Abgasmessung und Kaminreinigung komplett. Moderne Anlagen melden Probleme selbst per App und sind deutlich weniger störanfällig als Brennwertkessel.</p>
@@ -3427,7 +3394,7 @@ ${GMODG_HINWEIS}
         { question: 'Wie laut ist eine Wärmepumpe wirklich?', answer: 'Moderne Luftwärmepumpen erzeugen in 1 Meter Entfernung 45-65 dB(A), vergleichbar mit einem Kühlschrank bis normalem Fernseher. Gesetzliche Grenzwerte liegen bei 55 dB(A) tags und 40 dB(A) nachts – aktuelle Geräte halten das problemlos ein. Im Nachtmodus arbeiten sie noch leiser. Erdwärmepumpen im Keller sind nahezu geräuschlos (30-45 dB). In 95% der Fälle gibt es keine Probleme mit Nachbarn.' },
         { question: 'Was kostet der Betrieb einer Wärmepumpe pro Jahr?', answer: 'Bei einer JAZ von 4,0 und 20.000 kWh Wärmebedarf benötigen Sie 5.000 kWh Strom pro Jahr. Mit Wärmepumpen-Stromtarif (27 ct/kWh) ergeben sich Jahreskosten von 1.337 Euro. Das ist 41% günstiger als Gas (2.262 Euro) und spart Ihnen 925 Euro pro Jahr. Mit eigener Photovoltaik-Anlage sinken die Kosten auf bis zu 720 Euro jährlich.' },
         { question: 'Funktioniert eine Wärmepumpe auch bei minus 20 Grad?', answer: 'Ja, problemlos! Moderne Wärmepumpen sind für den deutschen Winter ausgelegt und funktionieren bis -20°C zuverlässig. Selbst bei -10°C erreichen sie noch eine JAZ von 2,5-3,0. Der Notfall-Heizstab springt nur bei extremer Kälte ein und wird fast nie gebraucht. Erdwärmepumpen sind noch unempfindlicher, da die Bodentemperatur konstant bei 8-12°C liegt – unabhängig von der Außentemperatur.' },
-        { question: 'Kann ich eine Wärmepumpe mit Solar kombinieren?', answer: 'Absolut, das ist sogar die ideale Kombination! Tagsüber produziert Ihre PV-Anlage kostenlosen Strom, den die Wärmepumpe nutzt. Resultat: 60-70% weniger Energiekosten als mit fossilen Heizungen. Ein Praxisbeispiel aus Bobingen zeigt: Mit 12 kWp PV + Speicher + Wärmepumpe sinken die Energiekosten von 2.800 Euro (Gas) auf nur 720 Euro pro Jahr – eine Ersparnis von 2.080 Euro jährlich bei 78% Eigenversorgung.' },
+        { question: 'Kann ich eine Wärmepumpe mit Solar kombinieren?', answer: 'Absolut, das ist sogar die ideale Kombination! Tagsüber produziert Ihre PV-Anlage kostenlosen Strom, den die Wärmepumpe nutzt. Resultat: 60-70% weniger Energiekosten als mit fossilen Heizungen. Ein Rechenbeispiel zeigt: Mit 12 kWp PV + Speicher + Wärmepumpe sinken die Energiekosten von 2.800 Euro (Gas) auf nur 720 Euro pro Jahr – eine Ersparnis von 2.080 Euro jährlich bei 78% Eigenversorgung.' },
         { question: 'Wie lange hält eine Wärmepumpe und was muss gewartet werden?', answer: 'Hochwertige Wärmepumpen haben eine Lebensdauer von 15-20 Jahren, Premium-Modelle sogar bis 25+ Jahre. Wartung wird alle 1-2 Jahre empfohlen (keine Pflicht), kostet 150-300 Euro. Im Gegensatz zu Öl- und Gasheizungen entfallen Schornsteinfeger, Abgasmessung und Kaminreinigung komplett. Moderne Anlagen melden Probleme selbst per App und sind deutlich weniger störanfällig als Brennwertkessel.' },
         { question: 'Was sind die niedrigsten Betriebskosten: Wärmepumpe oder Gas?', answer: 'Wärmepumpen sind klar günstiger. Bei 20.000 kWh Wärmebedarf zahlen Sie mit Gas 2.262 Euro/Jahr, mit Wärmepumpe (JAZ 4,0) nur 1.337 Euro/Jahr. Das sind 925 Euro Ersparnis jährlich (41% günstiger). Über 15 Jahre summiert sich das auf 26.000 Euro Gesamtersparnis. Mit Photovoltaik-Kombination erhöht sich die Ersparnis sogar auf bis zu 2.080 Euro pro Jahr.' },
       ],
@@ -3436,7 +3403,7 @@ ${GMODG_HINWEIS}
       id: 11,
       slug: 'gasheizung-verbot-2026-geg',
       title: 'Gasheizung Verbot 2026: Was das GModG wirklich bedeutet',
-      excerpt: 'Gasheizungsverbot Deutschland 2026: Seit 29. Juli 2026 gilt das Gebäudemodernisierungsgesetz. Keine 65%-Regel mehr, keine Austauschpflicht, Bioanteil-Stufen ab 2029, Förderung bis 70%. Keine Panik – wir klären auf!',
+      excerpt: 'Gasheizungsverbot Deutschland 2026: Seit 29. Juli 2026 gilt das Gebäudemodernisierungsgesetz. Keine 65%-Regel mehr, keine Austauschpflicht, Bioanteil-Stufen ab 2029, Förderung bis 80%. Keine Panik – wir klären auf!',
       content: `
         <h2>Gasheizung Verbot 2026: Das Gebäudemodernisierungsgesetz (GModG) verständlich erklärt</h2>
 
@@ -3453,7 +3420,7 @@ ${GMODG_HINWEIS}
             <li><strong>Keine Austauschpflicht:</strong> Die früheren Regeln zum Betriebsverbot alter Kessel (§ 72) sind weggefallen</li>
             <li><strong>65%-Regel gestrichen:</strong> Für Neubauten und Bestandsgebäude</li>
             <li><strong>Bioanteil-Stufen:</strong> Neue Gas-/Ölheizungen ab 2029: 10% → 2030: 15% → 2035: 30% → 2040: 60%</li>
-            <li><strong>Förderung:</strong> Bis zu 70% Zuschuss für Wärmepumpen & Co. (max. 21.000 €)</li>
+            <li><strong>Förderung:</strong> Bis zu 80% Zuschuss für Wärmepumpen & Co. (max. 22.400 €)</li>
           </ul>
         </div>
 
@@ -3520,7 +3487,7 @@ ${GMODG_HINWEIS}
 
         <ol>
           <li><strong>Reparatur prüfen:</strong> Lässt sich die Anlage instand setzen, ist das immer erlaubt</li>
-          <li><strong>Wärmepumpe, Pellets oder Wärmenetz:</strong> Keine Brennstoff-Nachweispflicht, bis zu 70% Förderung</li>
+          <li><strong>Wärmepumpe, Pellets oder Wärmenetz:</strong> Keine Brennstoff-Nachweispflicht, bis zu 80% Förderung</li>
           <li><strong>Neue Gas- oder Ölheizung:</strong> Erlaubt – mit Bioanteil-Stufen ab 2029. Bei einer <strong>Havarie im Jahr 2028</strong> greift die Pflicht erst zwölf Monate nach dem Einbau; ab 2029 läuft eine bestehende Pflicht bei Ausfall zwölf Monate weiter (§ 43 Abs. 7)</li>
         </ol>
 
@@ -3577,10 +3544,10 @@ ${GMODG_HINWEIS}
 
         <ul>
           <li><strong>Funktion:</strong> Nutzt Umweltwärme aus Luft, Erde oder Wasser</li>
-          <li><strong>Kosten:</strong> 25.000–40.000 € vor Förderung, <strong>11.000–20.000 € nach <a href="/foerderung" class="text-[#0F5B78] font-medium hover:underline">Förderung</a></strong></li>
+          <li><strong>Kosten:</strong> 25.000–40.000 € vor Förderung, <strong>ca. 5.000–27.000 € nach <a href="/foerderung" class="text-[#0F5B78] font-medium hover:underline">Förderung</a></strong></li>
           <li><strong>Betriebskosten:</strong> Ca. 1.250 €/Jahr (vs. 1.620 € Gas)</li>
           <li><strong>CO₂-Einsparung:</strong> Bis zu 2.620 kg/Jahr</li>
-          <li><strong>Förderung:</strong> Bis zu 70% (Grundförderung 30% + Geschwindigkeitsbonus 20% + Einkommensbonus 30%)</li>
+          <li><strong>Förderung:</strong> Bis zu 80% (Grundförderung 30% + Geschwindigkeitsbonus 16% + Einkommensbonus bis 40%; gedeckelt auf 70%, auf 80% nur bei zu versteuerndem Haushaltseinkommen bis 30.000 €, mit Kind bis 40.000 €)</li>
         </ul>
 
         <h3>Pelletheizung</h3>
@@ -3589,7 +3556,7 @@ ${GMODG_HINWEIS}
           <li><strong>Funktion:</strong> Verbrennung von Holzpellets (klimaneutral)</li>
           <li><strong>Kosten:</strong> 9.500–20.200 € vor Förderung</li>
           <li><strong>Betriebskosten:</strong> Ca. 1.215 €/Jahr (günstiger als Gas)</li>
-          <li><strong>Förderung:</strong> Bis zu 70% + 2.500 € Emissionsminderungszuschlag</li>
+          <li><strong>Förderung:</strong> Bis zu 80% – gleiche Regeln wie bei der Wärmepumpe</li>
         </ul>
 
         <h3>Fernwärme (wo verfügbar)</h3>
@@ -3619,7 +3586,7 @@ ${GMODG_HINWEIS}
           <li><strong>Expertenrat:</strong> Nur sinnvoll in ausgewiesenen H₂-Netzgebieten</li>
         </ul>
 
-        <h2>Kosten und Förderung: Bis zu 70% Zuschuss</h2>
+        <h2>Kosten und Förderung: Bis zu 80% Zuschuss</h2>
 
         <p>Die größte Sorge vieler Hausbesitzer sind die Kosten. Die gute Nachricht: <strong>Der Staat fördert massiv!</strong></p>
 
@@ -3637,38 +3604,33 @@ ${GMODG_HINWEIS}
             <tr style="background-color: #f8f9fa;">
               <td style="padding: 10px; border: 1px solid #ddd;"><strong>Grundförderung</strong></td>
               <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">30%</td>
-              <td style="padding: 10px; border: 1px solid #ddd;">Für alle Eigentümer</td>
+              <td style="padding: 10px; border: 1px solid #ddd;">Für alle Eigentümer bestehender Wohngebäude</td>
             </tr>
             <tr>
               <td style="padding: 10px; border: 1px solid #ddd;"><strong>Geschwindigkeitsbonus</strong></td>
-              <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">+20%</td>
-              <td style="padding: 10px; border: 1px solid #ddd;">Austausch bis Ende 2028</td>
+              <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">+16%</td>
+              <td style="padding: 10px; border: 1px solid #ddd;">Selbstnutzer: Austausch einer funktionstüchtigen Öl-, Kohle-, Gas-Etagen- oder Nachtspeicherheizung oder einer Gas-/Biomasseheizung ab 20 Jahren; für Anträge bis 31.01.2027, danach halbjährlich −4 Prozentpunkte, entfällt für Anträge ab 01.08.2028</td>
             </tr>
             <tr style="background-color: #f8f9fa;">
               <td style="padding: 10px; border: 1px solid #ddd;"><strong>Einkommensbonus</strong></td>
-              <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">+30%</td>
-              <td style="padding: 10px; border: 1px solid #ddd;">Einkommen <40.000 €/Jahr</td>
-            </tr>
-            <tr>
-              <td style="padding: 10px; border: 1px solid #ddd;"><strong>Emissionsminderung</strong></td>
-              <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">+2.500 €</td>
-              <td style="padding: 10px; border: 1px solid #ddd;">Nur für Biomasseheizungen</td>
+              <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">+10–40%</td>
+              <td style="padding: 10px; border: 1px solid #ddd;">Selbstnutzer: zu versteuerndes Einkommen bis 30.000 € (40%), 40.000 € (30%) oder 50.000 € (10%) pro Jahr</td>
             </tr>
           </tbody>
         </table>
 
-        <p><strong>Maximale Förderung:</strong> 70% von max. 30.000 € förderfähigen Kosten = <strong>21.000 € Zuschuss</strong></p>
+        <p><strong>Maximale Förderung:</strong> 70% von max. 28.000 € förderfähigen Kosten (Einfamilienhaus) = <strong>19.600 € Zuschuss</strong>; für Selbstnutzer mit zu versteuerndem Haushaltseinkommen bis 30.000 € (mit Kind bis 40.000 €) 80% = <strong>22.400 € Zuschuss</strong></p>
 
-        <h3>Praxisbeispiel: Wärmepumpe mit Förderung</h3>
+        <h3>Rechenbeispiel: Wärmepumpe mit Förderung</h3>
 
         <div style="background-color: #e8f4f8; padding: 20px; border-left: 4px solid #0F5B78; margin: 20px 0;">
           <p><strong>Ausgangssituation:</strong> Einfamilienhaus, Luft-Wasser-Wärmepumpe</p>
           <ul>
             <li>Gesamtkosten vor Förderung: 32.000 €</li>
-            <li>Förderung (50% = Grundförderung + Geschwindigkeitsbonus): -16.000 €</li>
-            <li><strong>Nettokosten: 16.000 €</strong></li>
+            <li>Förderung (46% = Grundförderung + Geschwindigkeitsbonus, auf max. 28.000 € förderfähige Kosten): -12.880 €</li>
+            <li><strong>Nettokosten: 19.120 €</strong></li>
           </ul>
-          <p style="margin-bottom: 0;"><strong>Mit Einkommensbonus (70%):</strong> Nur 9.600 € Eigenanteil!</p>
+          <p style="margin-bottom: 0;"><strong>Mit Einkommensbonus (Einkommen bis 30.000 €, gedeckelt auf 80%):</strong> Nur 9.600 € Eigenanteil!</p>
         </div>
 
         <h3>Zusätzliche Finanzierungshilfen</h3>
@@ -3703,24 +3665,24 @@ ${GMODG_HINWEIS}
 
         <h3>Wenn Ihre Heizung bald kaputt geht</h3>
 
-        <p>Beauftragen Sie eine Energieberatung (50–80% gefördert) und holen Sie Kostenvoranschläge für Wärmepumpe, Pellets und Fernwärme ein. Bereiten Sie den Förderantrag bei der KfW vor – wichtig ist, dass dieser <em>vor</em> Vertragsschluss gestellt wird. Prüfen Sie die Gebäudedämmung, denn diese macht die Wärmepumpe effizienter. Nutzen Sie den Zeitplan: Der Geschwindigkeitsbonus läuft bis Ende 2028.</p>
+        <p>Beauftragen Sie eine Energieberatung (50–80% gefördert) und holen Sie Kostenvoranschläge für Wärmepumpe, Pellets und Fernwärme ein. Bereiten Sie den Förderantrag bei der KfW vor – wichtig ist ein Vertrag mit aufschiebender oder auflösender Bedingung (Zusage der KfW), und mit dem Einbau wird nach der Zusage begonnen (auf eigenes Risiko schon nach der Antragstellung). Prüfen Sie die Gebäudedämmung, denn diese macht die Wärmepumpe effizienter. Nutzen Sie den Zeitplan: Der Geschwindigkeitsbonus sinkt ab 01.02.2027 halbjährlich um 4 Prozentpunkte und entfällt für Anträge ab 01.08.2028.</p>
 
         <h3>Wenn Ihre Heizung akut kaputt ist</h3>
 
-        <p>Reparatur prüfen. Geht das nicht: Wärmepumpe oder Pellets mit bis zu 70% Förderung – oder eine neue Gasheizung, dann mit Bioanteil-Stufen ab 2029 und der Havarie-Regel des § 43 Abs. 7. Bei Förderung schnell handeln – der Antrag muss vor Vertragsschluss gestellt werden.</p>
+        <p>Reparatur prüfen. Geht das nicht: Wärmepumpe oder Pellets mit bis zu 80% Förderung – oder eine neue Gasheizung, dann mit Bioanteil-Stufen ab 2029 und der Havarie-Regel des § 43 Abs. 7. Bei Förderung schnell handeln – vor dem Antrag braucht es einen Vertrag mit aufschiebender oder auflösender Bedingung (KfW-Zusage), mit dem Einbau beginnen Sie nach der Zusage oder auf eigenes Risiko schon nach der Antragstellung.</p>
 
         <h2>Bußgelder und Kontrollen</h2>
 
         <p>Ob und in welcher Höhe bei einem Verstoß Bußgelder in Betracht kommen, ist eine Einzelfallfrage – wir beziffern hier bewusst nichts. Für private Hausbesitzer mit funktionierender Heizung ergibt sich aus dem GModG keine Pflicht, die man versäumen könnte.</p>
         <h2>Warum jetzt handeln lohnt</h2>
 
-        <p>Auch wenn Sie Zeit haben – es gibt gute Gründe, <strong>jetzt</strong> aktiv zu werden: Der Geschwindigkeitsbonus läuft bis Ende 2028 und bringt zusätzliche 20%. Der CO₂-Preis steigt kontinuierlich (aktuell 55 €/Tonne), was Gas jährlich teurer macht. Handwerker sind noch verfügbar ohne Engpässe durch Ansturm. Und frühzeitige Planung gibt Ihnen Sicherheit, die beste Lösung für Ihr Haus zu finden – jedes Jahr mit erneuerbarer Energie spart außerdem 2,6 Tonnen CO₂.</p>
+        <p>Auch wenn Sie Zeit haben – es gibt gute Gründe, <strong>jetzt</strong> aktiv zu werden: Der Geschwindigkeitsbonus bringt für Anträge bis 31.01.2027 zusätzliche 16%, sinkt danach halbjährlich um 4 Prozentpunkte und entfällt für Anträge ab 01.08.2028. Der CO₂-Preis steigt kontinuierlich (aktuell 55 €/Tonne), was Gas jährlich teurer macht. Handwerker sind noch verfügbar ohne Engpässe durch Ansturm. Und frühzeitige Planung gibt Ihnen Sicherheit, die beste Lösung für Ihr Haus zu finden – jedes Jahr mit erneuerbarer Energie spart außerdem 2,6 Tonnen CO₂.</p>
 
         <h2>Fazit: Kein Verbot, keine Austauschpflicht – aber Handeln lohnt sich</h2>
 
         <p>Das sogenannte "Gasheizungsverbot" gibt es nicht. Seit der Novelle vom 23. Juli 2026 gilt: Bestehende Gasheizungen dürfen weiterlaufen, beim Austausch haben Sie die freie Wahl, und wer bei Gas oder Öl bleibt, muss ab 2029 steigende Bioanteile nachweisen.</p>
 
-        <p><strong>Die wichtigsten Eckpunkte:</strong> Keine Austauschpflicht für funktionierende Heizungen. Die 65%-Regel ist gestrichen. Neue Gas- und Ölheizungen: 10% ab 2029, 15% ab 2030, 30% ab 2035, 60% ab 2040 Bio oder Wasserstoff – oder ein Erfüllungsweg wie Solarthermie oder Wärmepumpen-Hybrid. Bis zu 70% staatliche Förderung für Wärmepumpen und Co. sind verfügbar.</p>
+        <p><strong>Die wichtigsten Eckpunkte:</strong> Keine Austauschpflicht für funktionierende Heizungen. Die 65%-Regel ist gestrichen. Neue Gas- und Ölheizungen: 10% ab 2029, 15% ab 2030, 30% ab 2035, 60% ab 2040 Bio oder Wasserstoff – oder ein Erfüllungsweg wie Solarthermie oder Wärmepumpen-Hybrid. Bis zu 80% staatliche Förderung für Wärmepumpen und Co. sind verfügbar.</p>
 
         <p>Wer jetzt handelt, profitiert von hohen Förderungen, sinkenden Betriebskosten und steigender Unabhängigkeit von fossilen Energiepreisen. Lesen Sie dazu auch unseren <a href="/blog/heizung-vergleich-2026-waermepumpe-gas-oel-pellets" class="text-[#0F5B78] font-medium hover:underline">umfassenden Heizungsvergleich 2026</a> und informieren Sie sich über die <a href="/blog/gasheizung-kosten-2026" class="text-[#0F5B78] font-medium hover:underline">tatsächlichen Kosten einer Gasheizung</a>. Wir beraten Sie persönlich in <a href="/standorte/augsburg" class="text-[#0F5B78] font-medium hover:underline">Augsburg</a>, <a href="/standorte/ulm" class="text-[#0F5B78] font-medium hover:underline">Ulm</a> und <a href="/standorte/memmingen" class="text-[#0F5B78] font-medium hover:underline">Memmingen</a>.</p>
 
@@ -3748,13 +3710,13 @@ ${GMODG_HINWEIS}
         <p>Es gibt keine generelle Austauschpflicht. Die frühere Vorschrift zum Betriebsverbot alter Kessel (§ 72 GEG) ist weggefallen. Ob für ein konkretes Gerät eine andere Vorschrift greift, klären wir im Einzelfall.</p>
 
         <h3>Was passiert, wenn meine Gasheizung kaputt geht?</h3>
-        <p>Reparatur ist immer erlaubt. Bei einem Totalschaden können Sie direkt auf Wärmepumpe oder Pellets umsteigen (bis zu 70% Förderung, keine Brennstoff-Nachweispflicht) oder eine neue Gasheizung einbauen. Wird nach einer Havarie im Jahr 2028 eine neue Gas- oder Ölheizung eingebaut, greift die Bioanteil-Pflicht erst zwölf Monate nach dem Einbau (§ 43 Abs. 7 GModG).</p>
+        <p>Reparatur ist immer erlaubt. Bei einem Totalschaden können Sie direkt auf Wärmepumpe oder Pellets umsteigen (bis zu 80% Förderung, keine Brennstoff-Nachweispflicht) oder eine neue Gasheizung einbauen. Wird nach einer Havarie im Jahr 2028 eine neue Gas- oder Ölheizung eingebaut, greift die Bioanteil-Pflicht erst zwölf Monate nach dem Einbau (§ 43 Abs. 7 GModG).</p>
 
         <h3>Bekomme ich noch Förderung für eine H2-ready Gasheizung?</h3>
         <p>H2-ready Gasheizungen erhalten <strong>keine direkte BEG-Förderung</strong> mehr. Gefördert werden nur die Mehrkosten gegenüber einer normalen Gasheizung (ca. 1.000-2.000 Euro). Experten raten zur Vorsicht: Die Verfügbarkeit von grünem Wasserstoff ist ungewiss und die Kosten werden vermutlich hoch sein. H2-ready lohnt sich nur, wenn Ihre Kommune ein konkretes Wasserstoff-Netz plant.</p>
 
         <h3>Welche Alternativen zur Gasheizung werden gefördert?</h3>
-        <p>Gefördert werden: <strong>Wärmepumpen</strong> (bis 70%), <strong>Pelletheizungen</strong> (bis 70% + 2.500 Euro Emissionsbonus), <strong>Solarthermie</strong> (30-70%), <strong>Fernwärmeanschluss</strong> (30-70%), <strong>Brennstoffzellen</strong> (30-70%) und <strong>Hybridheizungen</strong> mit mindestens 65% erneuerbaren Energien. Die höchste Förderung erhalten Selbstnutzer mit Einkommensbonus (unter 40.000 Euro/Jahr) beim Austausch einer Öl-/Gasheizung.</p>
+        <p>Gefördert werden: <strong>Wärmepumpen</strong> (bis 80%), <strong>Pelletheizungen</strong> (bis 80%), <strong>Solarthermie</strong> (30-70%), <strong>Fernwärmeanschluss</strong> (30-80%), <strong>Brennstoffzellen</strong> (30-80%) und bei <strong>Hybridheizungen</strong> der erneuerbare Wärmeerzeuger (ohne Klimabonus; der Gaskessel selbst nicht). Die höchste Förderung erhalten Selbstnutzer mit Einkommensbonus (bis 30.000 Euro/Jahr zu versteuerndes Einkommen) beim Austausch einer funktionstüchtigen Ölheizung oder einer mindestens 20 Jahre alten Gasheizung.</p>
 
         <h3>Was bedeutet die kommunale Wärmeplanung für mich?</h3>
         <p>Die kommunale Wärmeplanung zeigt, in welchen Gebieten Fernwärme, Wasserstoffnetze oder dezentrale Lösungen (Wärmepumpen) vorgesehen sind. Seit der Novelle 2026 löst sie <strong>keine Heizungspflicht</strong> mehr aus. Sie bleibt aber die beste Informationsquelle dafür, ob ein Wärmenetz in Ihrer Straße kommt.</p>
@@ -3770,9 +3732,9 @@ ${GMODG_HINWEIS}
         { question: 'Ist die Gasheizung ab 2026 wirklich verboten?', answer: 'Nein, es gibt kein Verbot. Bestehende Gasheizungen dürfen weiterlaufen, so lange sie funktionieren, und dürfen repariert werden. Auch neue Gasheizungen dürfen eingebaut werden. Für Gas- und Ölheizungen, die nach dem 29. Juli 2026 eingebaut werden, gilt ab 2029 eine Stufenregel: mindestens 10% Bio/Wasserstoff, ab 2030 15%, ab 2035 30%, ab 2040 60% (§ 43 GModG).' },
         { question: 'Gilt die 65%-Regel noch?', answer: 'Nein. Die Vorgabe, dass neue Heizungen zu mindestens 65% erneuerbare Energien nutzen müssen, wurde mit der Novelle vom 23. Juli 2026 gestrichen – für Neubauten und Bestandsgebäude. Auch die Kopplung an die kommunale Wärmeplanung ist entfallen.' },
         { question: 'Wann muss ich meine Gasheizung spätestens austauschen?', answer: 'Es gibt keine generelle Austauschpflicht. Die frühere Vorschrift zum Betriebsverbot alter Kessel (§ 72 GEG) ist weggefallen. Ob für ein konkretes Gerät eine andere Vorschrift greift, klären wir im Einzelfall.' },
-        { question: 'Was passiert, wenn meine Gasheizung kaputt geht?', answer: 'Reparatur ist immer erlaubt. Bei einem Totalschaden können Sie direkt auf Wärmepumpe oder Pellets umsteigen (bis zu 70% Förderung, keine Brennstoff-Nachweispflicht) oder eine neue Gasheizung einbauen. Wird nach einer Havarie im Jahr 2028 eine neue Gas- oder Ölheizung eingebaut, greift die Bioanteil-Pflicht erst zwölf Monate nach dem Einbau (§ 43 Abs. 7 GModG).' },
+        { question: 'Was passiert, wenn meine Gasheizung kaputt geht?', answer: 'Reparatur ist immer erlaubt. Bei einem Totalschaden können Sie direkt auf Wärmepumpe oder Pellets umsteigen (bis zu 80% Förderung, keine Brennstoff-Nachweispflicht) oder eine neue Gasheizung einbauen. Wird nach einer Havarie im Jahr 2028 eine neue Gas- oder Ölheizung eingebaut, greift die Bioanteil-Pflicht erst zwölf Monate nach dem Einbau (§ 43 Abs. 7 GModG).' },
         { question: 'Bekomme ich noch Förderung für eine H2-ready Gasheizung?', answer: 'H2-ready Gasheizungen erhalten keine direkte BEG-Förderung mehr. Gefördert werden nur die Mehrkosten gegenüber einer normalen Gasheizung (ca. 1.000-2.000 Euro). Experten raten zur Vorsicht: Die Verfügbarkeit von grünem Wasserstoff ist ungewiss und die Kosten werden vermutlich hoch sein. H2-ready lohnt sich nur, wenn Ihre Kommune ein konkretes Wasserstoff-Netz plant.' },
-        { question: 'Welche Alternativen zur Gasheizung werden gefördert?', answer: 'Gefördert werden: Wärmepumpen (bis 70%), Pelletheizungen (bis 70% + 2.500 Euro Emissionsbonus), Solarthermie (30-70%), Fernwärmeanschluss (30-70%), Brennstoffzellen (30-70%) und Hybridheizungen mit mindestens 65% erneuerbaren Energien. Die höchste Förderung erhalten Selbstnutzer mit Einkommensbonus (unter 40.000 Euro/Jahr) beim Austausch einer Öl-/Gasheizung.' },
+        { question: 'Welche Alternativen zur Gasheizung werden gefördert?', answer: 'Gefördert werden: Wärmepumpen (bis 80%), Pelletheizungen (bis 80%), Solarthermie (30-70%), Fernwärmeanschluss (30-80%), Brennstoffzellen (30-80%) und bei Hybridheizungen der erneuerbare Wärmeerzeuger (ohne Klimabonus; der Gaskessel selbst nicht). Die höchste Förderung erhalten Selbstnutzer mit Einkommensbonus (bis 30.000 Euro/Jahr zu versteuerndes Einkommen) beim Austausch einer funktionstüchtigen Ölheizung oder einer mindestens 20 Jahre alten Gasheizung.' },
         { question: 'Was bedeutet die kommunale Wärmeplanung für mich?', answer: 'Die kommunale Wärmeplanung zeigt, in welchen Gebieten Fernwärme, Wasserstoffnetze oder dezentrale Lösungen (Wärmepumpen) vorgesehen sind. Seit der Novelle 2026 löst sie keine Heizungspflicht mehr aus. Sie bleibt aber die beste Informationsquelle dafür, ob ein Wärmenetz in Ihrer Straße kommt.' },
       ],
     },
@@ -3784,14 +3746,14 @@ ${GMODG_HINWEIS}
       content: `
         <h2>Heizung Vergleich 2026: Der ultimative Guide für Ihre Heizungsentscheidung</h2>
 
-        <p>Die Wahl der richtigen <a href="/heizung" class="text-[#0F5B78] font-medium hover:underline">Heizung</a> ist 2026 eine der wichtigsten finanziellen und ökologischen Entscheidungen für Hausbesitzer. Mit dem Gebäudemodernisierungsgesetz (GModG, seit Juli 2026), steigenden CO₂-Preisen und <a href="/foerderung" class="text-[#0F5B78] font-medium hover:underline">staatlichen Förderungen von bis zu 70%</a> hat sich die Landschaft dramatisch verändert. <strong>Die gute Nachricht: Wärmepumpen sind seit 2022 günstiger als Gasheizungen</strong> – sowohl in den Gesamtkosten als auch langfristig. Dieser umfassende Vergleich zeigt Ihnen alle Heizsysteme im Detail.</p>
+        <p>Die Wahl der richtigen <a href="/heizung" class="text-[#0F5B78] font-medium hover:underline">Heizung</a> ist 2026 eine der wichtigsten finanziellen und ökologischen Entscheidungen für Hausbesitzer. Mit dem Gebäudemodernisierungsgesetz (GModG, seit Juli 2026), steigenden CO₂-Preisen und <a href="/foerderung" class="text-[#0F5B78] font-medium hover:underline">staatlichen Förderungen von bis zu 80%</a> hat sich die Landschaft dramatisch verändert. <strong>Die gute Nachricht: Wärmepumpen sind seit 2022 günstiger als Gasheizungen</strong> – sowohl in den Gesamtkosten als auch langfristig. Dieser umfassende Vergleich zeigt Ihnen alle Heizsysteme im Detail.</p>
 
         <div style="background-color: #e8f4f8; padding: 20px; border-left: 4px solid #0F5B78; margin: 20px 0;">
           <h3 style="margin-top: 0;">🔍 Schnellüberblick: Die Systeme im Vergleich</h3>
           <ul style="margin-bottom: 0;">
             <li><strong>Günstigste Betriebskosten:</strong> Wärmepumpe (715 €/Jahr) & Pellets (740 €/Jahr)</li>
             <li><strong>Teuerste Betriebskosten:</strong> Fernwärme (1.245 €/Jahr) & Gas (1.180 €/Jahr)</li>
-            <li><strong>Höchste Förderung:</strong> Bis zu 70% für Wärmepumpe, 60% für Pellets (inkl. Einkommensbonus)</li>
+            <li><strong>Höchste Förderung:</strong> Bis zu 80% für Wärmepumpe und Pellets (bei Einkommen bis 30.000 €, sonst max. 70%)</li>
             <li><strong>Keine Förderung:</strong> Gas & Öl (Auslaufmodelle)</li>
             <li><strong>20-Jahre-Gesamtkosten:</strong> Wärmepumpe 45.000 € vs. Gas 65.000 €</li>
           </ul>
@@ -3865,20 +3827,20 @@ ${GMODG_HINWEIS}
             <tr style="background-color: #f8f9fa;">
               <td style="padding: 10px; border: 1px solid #ddd;"><strong>Luft-Wärmepumpe</strong></td>
               <td style="padding: 10px; border: 1px solid #ddd; text-align: right;">27.000–40.000 €</td>
-              <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">70% (21.000 €)</td>
-              <td style="padding: 10px; border: 1px solid #ddd; text-align: right;">9.000–14.000 €</td>
+              <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">80% (22.400 €)</td>
+              <td style="padding: 10px; border: 1px solid #ddd; text-align: right;">5.400–17.600 €</td>
             </tr>
             <tr>
               <td style="padding: 10px; border: 1px solid #ddd;"><strong>Erdwärmepumpe</strong></td>
               <td style="padding: 10px; border: 1px solid #ddd; text-align: right;">40.000–50.000 €</td>
-              <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">70% (21.000 €)</td>
-              <td style="padding: 10px; border: 1px solid #ddd; text-align: right;">19.000–29.000 €</td>
+              <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">80% (22.400 €)</td>
+              <td style="padding: 10px; border: 1px solid #ddd; text-align: right;">17.600–27.600 €</td>
             </tr>
             <tr style="background-color: #f8f9fa;">
               <td style="padding: 10px; border: 1px solid #ddd;"><strong>Pelletheizung</strong></td>
               <td style="padding: 10px; border: 1px solid #ddd; text-align: right;">20.000–50.000 €</td>
-              <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">70% + 2.500 €</td>
-              <td style="padding: 10px; border: 1px solid #ddd; text-align: right;">6.000–17.500 €</td>
+              <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">80% (22.400 €)</td>
+              <td style="padding: 10px; border: 1px solid #ddd; text-align: right;">4.000–27.600 €</td>
             </tr>
             <tr>
               <td style="padding: 10px; border: 1px solid #ddd;"><strong>Gasheizung</strong></td>
@@ -3895,8 +3857,8 @@ ${GMODG_HINWEIS}
             <tr>
               <td style="padding: 10px; border: 1px solid #ddd;"><strong>Fernwärme</strong></td>
               <td style="padding: 10px; border: 1px solid #ddd; text-align: right;">5.000–20.000 €</td>
-              <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">70%</td>
-              <td style="padding: 10px; border: 1px solid #ddd; text-align: right;">1.500–6.000 €</td>
+              <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">80%</td>
+              <td style="padding: 10px; border: 1px solid #ddd; text-align: right;">1.000–4.000 €</td>
             </tr>
             <tr style="background-color: #f8f9fa;">
               <td style="padding: 10px; border: 1px solid #ddd;"><strong>Hybridheizung</strong></td>
@@ -3907,7 +3869,7 @@ ${GMODG_HINWEIS}
           </tbody>
         </table>
 
-        <p><strong>Wichtig:</strong> Die 70% Förderung für Wärmepumpen setzt sich zusammen aus: 30% Grundförderung + 20% Geschwindigkeitsbonus (bis Ende 2028) + 30% Einkommensbonus (bei Einkommen <40.000 €/Jahr). Diese addieren sich auf max. 80%, sind aber auf 70% gedeckelt.</p>
+        <p><strong>Wichtig:</strong> Die 80% Förderung für Wärmepumpen und Pelletheizungen setzt sich zusammen aus: 30% Grundförderung + 16% Geschwindigkeitsbonus (für Anträge bis 31.01.2027, danach halbjährlich −4 Prozentpunkte, ab 01.08.2028 entfallen) + 40% Einkommensbonus (bei Einkommen bis 30.000 €/Jahr, mit Kind bis 40.000 €). Diese addieren sich auf 86% und sind auf 80% gedeckelt – diese erhöhte Obergrenze gilt nur in diesem Einkommensfall. Für alle anderen liegt die Obergrenze bei 70% (max. 19.600 €). Förderfähig sind beim Einfamilienhaus max. 28.000 €.</p>
 
         <h2>Betriebskosten pro Jahr: Der entscheidende Faktor</h2>
 
@@ -4081,7 +4043,7 @@ ${GMODG_HINWEIS}
             <strong>Vorteile</strong>
             <ul style="margin: 5px 0;">
               <li>Niedrigste Betriebskosten (715 €/Jahr)</li>
-              <li>Bis zu 70% Förderung (21.000 €)</li>
+              <li>Bis zu 80% Förderung (22.400 €)</li>
               <li>0 kg CO₂ (mit Ökostrom)</li>
               <li>Kein Schornstein, kein Tank</li>
               <li>Keine gesetzliche Brennstoff-Nachweispflicht</li>
@@ -4131,7 +4093,7 @@ ${GMODG_HINWEIS}
             <strong>Vorteile</strong>
             <ul style="margin: 5px 0;">
               <li>Niedrige Betriebskosten (740 €/Jahr)</li>
-              <li>Bis zu 70% + 2.500 € Förderung</li>
+              <li>Bis zu 80% Förderung</li>
               <li>CO₂-neutral</li>
               <li>Unabhängig von Strom/Gas</li>
               <li>Keine gesetzliche Brennstoff-Nachweispflicht</li>
@@ -4311,7 +4273,7 @@ ${GMODG_HINWEIS}
 
         <div style="background-color: #d4edda; padding: 20px; border-left: 4px solid #28a745; margin: 20px 0;">
           <h3 style="margin-top: 0; color: #155724;">Wärmepumpe ist 2026 die beste Wahl</h3>
-          <p>Mit den <strong>günstigsten Betriebskosten</strong> von nur 715 Euro pro Jahr (gegenüber 1.180 Euro bei Gas) und der <strong>höchsten Förderung</strong> bis zu 21.000 Euro Zuschuss überzeugt die Wärmepumpe auf ganzer Linie. Die 20-Jahre-Gesamtkosten liegen bei 45.000 Euro – das sind <strong>20.000 Euro Ersparnis</strong> gegenüber Gas. Mit Ökostrom entstehen 0 kg CO₂ (vs. 4.000 kg Gas). Das System kennt keine gesetzliche Brennstoff-Nachweispflicht, erfordert keine teuren Umbauten und amortisiert sich bereits nach 4 bis 6 Jahren.</p>
+          <p>Mit den <strong>günstigsten Betriebskosten</strong> von nur 715 Euro pro Jahr (gegenüber 1.180 Euro bei Gas) und der <strong>höchsten Förderung</strong> bis zu 22.400 Euro Zuschuss überzeugt die Wärmepumpe auf ganzer Linie. Die 20-Jahre-Gesamtkosten liegen bei 45.000 Euro – das sind <strong>20.000 Euro Ersparnis</strong> gegenüber Gas. Mit Ökostrom entstehen 0 kg CO₂ (vs. 4.000 kg Gas). Das System kennt keine gesetzliche Brennstoff-Nachweispflicht, erfordert keine teuren Umbauten und amortisiert sich bereits nach 4 bis 6 Jahren.</p>
         </div>
 
         <p><strong>Gasheizungen sind 2026 eine Kostenfalle:</strong> Keine Förderung, steigende CO₂-Steuer, ab 2029 Bioanteil-Pflicht, höchste 20-Jahres-Kosten. Selbst die niedrigen Anschaffungskosten können die enormen Betriebskosten nicht ausgleichen.</p>
@@ -4330,7 +4292,7 @@ ${GMODG_HINWEIS}
           </p>
         </div>
 
-        <p><strong>Handeln Sie jetzt und sichern Sie sich die 70% Förderung – der Geschwindigkeitsbonus läuft bis Ende 2028!</strong> Mehr Details finden Sie in unseren spezialisierten Ratgebern: <a href="/blog/waermepumpe-kosten-2026" class="text-[#0F5B78] font-medium hover:underline">Was kostet eine Wärmepumpe 2026?</a>, <a href="/blog/gasheizung-kosten-2026" class="text-[#0F5B78] font-medium hover:underline">Gasheizung Kosten 2026</a> und <a href="/blog/foerderung-heizung-2026" class="text-[#0F5B78] font-medium hover:underline">Heizungsförderung 2026: So holen Sie sich bis zu 21.000 € zurück</a>.</p>
+        <p><strong>Handeln Sie jetzt und sichern Sie sich bis zu 80% Förderung – der Geschwindigkeitsbonus sinkt ab 01.02.2027 halbjährlich und entfällt für Anträge ab 01.08.2028!</strong> Mehr Details finden Sie in unseren spezialisierten Ratgebern: <a href="/blog/waermepumpe-kosten-2026" class="text-[#0F5B78] font-medium hover:underline">Was kostet eine Wärmepumpe 2026?</a>, <a href="/blog/gasheizung-kosten-2026" class="text-[#0F5B78] font-medium hover:underline">Gasheizung Kosten 2026</a> und <a href="/blog/foerderung-heizung-2026" class="text-[#0F5B78] font-medium hover:underline">Heizungsförderung 2026: So holen Sie sich bis zu 22.400 € zurück</a>.</p>
 
         <h2>Häufig gestellte Fragen (FAQ)</h2>
 
@@ -4341,13 +4303,13 @@ ${GMODG_HINWEIS}
         <p>Für Altbauten eignen sich <strong>Luft-Wasser-Wärmepumpen</strong> am besten, da sie keine aufwendigen Erdarbeiten benötigen und auch bei höheren Vorlauftemperaturen (55-60°C) effizient arbeiten. Fraunhofer-Feldtests zeigen: Selbst teilsanierte Altbauten von 15-170 Jahren erreichen JAZ-Werte von 3,4-4,3. Wichtig ist ein hydraulischer Abgleich und eventuell größere Heizkörper in 2-3 Räumen (günstiger als Fußbodenheizung). Bei sehr schlechter Dämmung sind Pelletheizungen eine gute Alternative.</p>
 
         <h3>Welche Heizung hat die beste Förderung 2026?</h3>
-        <p>Wärmepumpen und Pelletheizungen erhalten mit <strong>bis zu 70% Förderung</strong> die höchste Unterstützung. Das entspricht maximal 21.000 Euro Zuschuss bei 30.000 Euro Investition. Die Bausteine: 30% Grundförderung + 20% Klimageschwindigkeits-Bonus + 30% Einkommensbonus (unter 40.000 Euro Einkommen) + 5% Effizienzbonus (natürliches Kältemittel). Gasheizungen erhalten seit 2024 keine Förderung mehr, Ölheizungen ebenfalls nicht.</p>
+        <p>Wärmepumpen und Pelletheizungen erhalten mit <strong>bis zu 80% Förderung</strong> die höchste Unterstützung – zu gleichen Bedingungen. Das entspricht maximal 22.400 Euro Zuschuss bei 28.000 Euro förderfähigen Kosten (Einfamilienhaus), allerdings nur für Selbstnutzer mit zu versteuerndem Haushaltseinkommen bis 30.000 Euro (mit Kind bis 40.000 Euro); sonst liegt die Obergrenze bei 70% (max. 19.600 Euro). Die Bausteine: 30% Grundförderung + 16% Klimageschwindigkeits-Bonus + 10–40% Einkommensbonus (40% bis 30.000 Euro, 30% bis 40.000 Euro, 10% bis 50.000 Euro Einkommen). Gasheizungen erhalten seit 2024 keine Förderung mehr, Ölheizungen ebenfalls nicht.</p>
 
         <h3>Welche Heizung ist am zukunftssichersten?</h3>
         <p>Wärmepumpen und Pelletheizungen haben nach dem GModG <strong>keine Brennstoff-Nachweispflicht</strong> und erfordern keine Nachrüstungen. Neue Gas- und Ölheizungen (Einbau nach 29.07.2026) müssen ab 2029 steigende Bioanteile nachweisen: 10% ab 2029, 15% ab 2030, 30% ab 2035, 60% ab 2040 (§ 43 GModG). Wer jetzt eine neue Gas- oder Ölheizung einbaut, muss diese laufenden Pflichten einplanen.</p>
 
         <h3>Kann ich verschiedene Heizsysteme kombinieren?</h3>
-        <p>Ja, Hybridheizungen kombinieren mehrere Systeme. Beliebt sind: <strong>Wärmepumpe + Gasheizung</strong> (Gas nur für Spitzenlast), <strong>Wärmepumpe + Solarthermie</strong> (maximale Effizienz) oder <strong>Pellets + Solar</strong> (100% erneuerbar). Wichtig für die Förderung: Die Wärmepumpe muss mindestens 65% der Jahreswärme liefern. Hybridlösungen eignen sich besonders für Altbauten mit hohem Wärmebedarf, kosten aber mehr (30.000-45.000 Euro).</p>
+        <p>Ja, Hybridheizungen kombinieren mehrere Systeme. Beliebt sind: <strong>Wärmepumpe + Gasheizung</strong> (Gas nur für Spitzenlast), <strong>Wärmepumpe + Solarthermie</strong> (maximale Effizienz) oder <strong>Pellets + Solar</strong> (100% erneuerbar). Wichtig für die Förderung: Gefördert wird nur der erneuerbare Wärmeerzeuger; bei einer Kombination mit Gas gibt es keinen Klimageschwindigkeitsbonus, und der Gaskessel selbst ist nicht förderfähig. Hybridlösungen eignen sich besonders für Altbauten mit hohem Wärmebedarf, kosten aber mehr (30.000-45.000 Euro).</p>
 
         <h3>Welche Heizung hat die niedrigsten Betriebskosten?</h3>
         <p>Wärmepumpen mit PV-Anlage haben die niedrigsten laufenden Kosten mit nur <strong>720 Euro/Jahr</strong> bei 70% Eigenversorgung. Ohne PV liegen Wärmepumpen bei 1.337 Euro/Jahr, Pellets bei 1.215 Euro/Jahr. Gas kommt auf 2.262 Euro/Jahr, Öl auf 2.414 Euro/Jahr. Die Ersparnis von Wärmepumpe gegenüber Gas beträgt 925 Euro pro Jahr – über 20 Jahre sind das 18.500 Euro Unterschied nur bei den Betriebskosten.</p>
@@ -4362,9 +4324,9 @@ ${GMODG_HINWEIS}
       faqs: [
         { question: 'Welche Heizung ist auf lange Sicht am günstigsten?', answer: 'Die Wärmepumpe hat die niedrigsten Gesamtkosten über 20 Jahre mit nur 45.300 Euro (inkl. Förderung). Pelletheizungen liegen mit 43.300 Euro sogar leicht darunter, erfordern aber Platz für Lager und regelmäßiges Befüllen. Gas kommt auf 65.200 Euro, Öl auf 68.200 Euro. Mit Photovoltaik-Kombination sinken die Wärmepumpen-Kosten auf nur 38.000-42.000 Euro – unschlagbar günstig bei gleichzeitig niedrigsten Betriebskosten.' },
         { question: 'Welche Heizung ist die beste für einen Altbau?', answer: 'Für Altbauten eignen sich Luft-Wasser-Wärmepumpen am besten, da sie keine aufwendigen Erdarbeiten benötigen und auch bei höheren Vorlauftemperaturen (55-60°C) effizient arbeiten. Fraunhofer-Feldtests zeigen: Selbst teilsanierte Altbauten von 15-170 Jahren erreichen JAZ-Werte von 3,4-4,3. Wichtig ist ein hydraulischer Abgleich und eventuell größere Heizkörper in 2-3 Räumen (günstiger als Fußbodenheizung). Bei sehr schlechter Dämmung sind Pelletheizungen eine gute Alternative.' },
-        { question: 'Welche Heizung hat die beste Förderung 2026?', answer: 'Wärmepumpen erhalten mit bis zu 70% Förderung die höchste Unterstützung, Pelletheizungen bis zu 60% (70% nur in Kombination mit Solar/PV/WP). Das entspricht maximal 21.000 Euro Zuschuss bei 30.000 Euro Investition. Die Bausteine: 30% Grundförderung + 20% Klimageschwindigkeits-Bonus (bei Pellets nur mit Kombinationsanlage) + 30% Einkommensbonus (unter 40.000 Euro Einkommen) + 5% Effizienzbonus (natürliches Kältemittel, nur WP). Gasheizungen erhalten seit 2024 keine Förderung mehr, Ölheizungen ebenfalls nicht.' },
+        { question: 'Welche Heizung hat die beste Förderung 2026?', answer: 'Wärmepumpen und Pelletheizungen erhalten mit bis zu 80% Förderung die höchste Unterstützung – zu gleichen Bedingungen. Das entspricht maximal 22.400 Euro Zuschuss bei 28.000 Euro förderfähigen Kosten (Einfamilienhaus), allerdings nur für Selbstnutzer mit zu versteuerndem Haushaltseinkommen bis 30.000 Euro (mit Kind bis 40.000 Euro); sonst liegt die Obergrenze bei 70% (max. 19.600 Euro). Die Bausteine: 30% Grundförderung + 16% Klimageschwindigkeits-Bonus + 10–40% Einkommensbonus (40% bis 30.000 Euro, 30% bis 40.000 Euro, 10% bis 50.000 Euro Einkommen). Gasheizungen erhalten seit 2024 keine Förderung mehr, Ölheizungen ebenfalls nicht.' },
         { question: 'Welche Heizung ist am zukunftssichersten?', answer: 'Wärmepumpen und Pelletheizungen haben nach dem GModG keine Brennstoff-Nachweispflicht und erfordern keine Nachrüstungen. Neue Gas- und Ölheizungen (Einbau nach 29.07.2026) müssen ab 2029 steigende Bioanteile nachweisen: 10% ab 2029, 15% ab 2030, 30% ab 2035, 60% ab 2040 (§ 43 GModG). Wer jetzt eine neue Gas- oder Ölheizung einbaut, muss diese laufenden Pflichten einplanen.' },
-        { question: 'Kann ich verschiedene Heizsysteme kombinieren?', answer: 'Ja, Hybridheizungen kombinieren mehrere Systeme. Beliebt sind: Wärmepumpe + Gasheizung (Gas nur für Spitzenlast), Wärmepumpe + Solarthermie (maximale Effizienz) oder Pellets + Solar (100% erneuerbar). Wichtig für die Förderung: Die Wärmepumpe muss mindestens 65% der Jahreswärme liefern. Hybridlösungen eignen sich besonders für Altbauten mit hohem Wärmebedarf, kosten aber mehr (30.000-45.000 Euro).' },
+        { question: 'Kann ich verschiedene Heizsysteme kombinieren?', answer: 'Ja, Hybridheizungen kombinieren mehrere Systeme. Beliebt sind: Wärmepumpe + Gasheizung (Gas nur für Spitzenlast), Wärmepumpe + Solarthermie (maximale Effizienz) oder Pellets + Solar (100% erneuerbar). Wichtig für die Förderung: Gefördert wird nur der erneuerbare Wärmeerzeuger; bei einer Kombination mit Gas gibt es keinen Klimageschwindigkeitsbonus, und der Gaskessel selbst ist nicht förderfähig. Hybridlösungen eignen sich besonders für Altbauten mit hohem Wärmebedarf, kosten aber mehr (30.000-45.000 Euro).' },
         { question: 'Welche Heizung hat die niedrigsten Betriebskosten?', answer: 'Wärmepumpen mit PV-Anlage haben die niedrigsten laufenden Kosten mit nur 720 Euro/Jahr bei 70% Eigenversorgung. Ohne PV liegen Wärmepumpen bei 1.337 Euro/Jahr, Pellets bei 1.215 Euro/Jahr. Gas kommt auf 2.262 Euro/Jahr, Öl auf 2.414 Euro/Jahr. Die Ersparnis von Wärmepumpe gegenüber Gas beträgt 925 Euro pro Jahr – über 20 Jahre sind das 18.500 Euro Unterschied nur bei den Betriebskosten.' },
       ],
     },
@@ -4383,7 +4345,7 @@ ${GMODG_HINWEIS}
         <li><strong>Wirkungsgrad:</strong> 30–40% (vs. Wärmepumpe 300–500%)</li>
         <li><strong>CO₂-Ausstoß:</strong> 3.500–4.500 kg/Jahr</li>
         <li><strong>Beste Alternative:</strong> Luft-Wasser-Wärmepumpe (1.100 €/Jahr Heizkosten)</li>
-        <li><strong>Förderung 2026:</strong> Bis zu 70% (max. 21.000 €) für Wärmepumpe</li>
+        <li><strong>Förderung 2026:</strong> Bis zu 80% (max. 22.400 €) für Wärmepumpe</li>
         <li><strong>Amortisation:</strong> 7–11 Jahre (mit Förderung)</li>
         <li><strong>Gesetzeslage:</strong> Kein Austauschverbot; die 65%-Regel ist seit Juli 2026 gestrichen (GModG)</li>
       </ul>
@@ -4483,8 +4445,8 @@ ${GMODG_HINWEIS}
         <td style="padding: 12px;"><strong>25.000–40.000 €</strong></td>
       </tr>
       <tr>
-        <td style="padding: 12px;">Mit BEG-Förderung (bis zu 70%)</td>
-        <td style="padding: 12px;"><strong>7.500–12.000 €</strong></td>
+        <td style="padding: 12px;">Mit BEG-Förderung (80%, bei Einkommen bis 30.000 €)</td>
+        <td style="padding: 12px;"><strong>5.000–17.600 €</strong></td>
       </tr>
       <tr style="background-color: #f9f9f9;">
         <td style="padding: 12px;">Jährliche Heizkosten</td>
@@ -4517,7 +4479,7 @@ ${GMODG_HINWEIS}
     <h3>Infrarotheizung</h3>
     <ul>
       <li><strong>Kosten:</strong> 5.000–7.500 € (Komplettsystem für 150 m²)</li>
-      <li><strong>Mit Förderung:</strong> Keine direkte BEG-Förderung (nur in Kombination mit PV möglich)</li>
+      <li><strong>Mit Förderung:</strong> Keine BEG-Förderung</li>
       <li><strong>Jährliche Heizkosten:</strong> 2.100–2.500 € (ähnlich wie Nachtspeicher!)</li>
       <li><strong>JAZ:</strong> 0,95–1,0 (95–100% des Stroms wird in Wärme umgewandelt)</li>
     </ul>
@@ -4528,7 +4490,7 @@ ${GMODG_HINWEIS}
     <h3>Pelletheizung</h3>
     <ul>
       <li><strong>Kosten:</strong> 25.000–45.000 € (inkl. Pelletlager)</li>
-      <li><strong>Mit BEG-Förderung (30%):</strong> 17.500–31.500 €</li>
+      <li><strong>Mit BEG-Förderung (30%):</strong> 17.500–36.600 €</li>
       <li><strong>Jährliche Heizkosten:</strong> 1.400–1.700 € (Pelletpreis 2025: ca. 300 €/Tonne)</li>
       <li><strong>Wirkungsgrad:</strong> 90–95%</li>
       <li><strong>CO₂-Bilanz:</strong> Nahezu klimaneutral</li>
@@ -4550,14 +4512,14 @@ ${GMODG_HINWEIS}
     <h3>Sole-Wasser-Wärmepumpe (Erdwärme)</h3>
     <ul>
       <li><strong>Kosten:</strong> 35.000–50.000 € (inkl. Erdarbeiten)</li>
-      <li><strong>Mit BEG-Förderung (bis zu 70%):</strong> 10.500–15.000 €</li>
+      <li><strong>Mit BEG-Förderung (80%, bei Einkommen bis 30.000 €):</strong> 12.600–27.600 €</li>
       <li><strong>Jährliche Heizkosten:</strong> 900–1.000 € (JAZ 4,5–5,0)</li>
       <li><strong>Effizienz:</strong> Höchste JAZ aller Systeme</li>
     </ul>
     <p><strong>Vorteile:</strong> Höchste Effizienz, sehr niedrige Betriebskosten, auch für Altbau geeignet</p>
     <p><strong>Nachteile:</strong> Sehr hohe Anfangsinvestition, Genehmigung erforderlich, Erdarbeiten nötig</p>
 
-    <h2>BEG-Förderung 2026: Bis zu 70% Zuschuss für den Heizungstausch</h2>
+    <h2>BEG-Förderung 2026: Bis zu 80% Zuschuss für den Heizungstausch</h2>
 
     <div style="background-color: #d4edda; padding: 20px; border-left: 4px solid #28a745; margin: 20px 0;">
       <h3 style="margin-top: 0;">Förderbausteine im Überblick</h3>
@@ -4570,38 +4532,39 @@ ${GMODG_HINWEIS}
         <tr style="background-color: white;">
           <td style="padding: 10px;">Grundförderung</td>
           <td style="padding: 10px;"><strong>30%</strong></td>
-          <td style="padding: 10px;">Für alle Wärmepumpen</td>
+          <td style="padding: 10px;">Für alle Wärmepumpen in bestehenden Wohngebäuden</td>
         </tr>
         <tr style="background-color: #f9f9f9;">
           <td style="padding: 10px;">Geschwindigkeitsbonus</td>
-          <td style="padding: 10px;"><strong>+20%</strong></td>
-          <td style="padding: 10px;">Austausch funktionsfähiger Öl-/Gas-/Nachtspeicherheizung bis Ende 2028</td>
+          <td style="padding: 10px;"><strong>+16%</strong></td>
+          <td style="padding: 10px;">Selbstnutzer: Austausch funktionsfähiger Öl-, Kohle-, Gas-Etagen- oder Nachtspeicherheizung oder einer Gasheizung ab 20 Jahren; für Anträge bis 31.01.2027, danach halbjährlich −4 Prozentpunkte, entfällt ab 01.08.2028</td>
         </tr>
         <tr style="background-color: white;">
           <td style="padding: 10px;">Einkommensbonus</td>
-          <td style="padding: 10px;"><strong>+30%</strong></td>
-          <td style="padding: 10px;">Haushaltseinkommen unter 40.000 €/Jahr</td>
+          <td style="padding: 10px;"><strong>+10–40%</strong></td>
+          <td style="padding: 10px;">Selbstnutzer: zu versteuerndes Haushaltseinkommen bis 30.000 € (40%), 40.000 € (30%) oder 50.000 € (10%) pro Jahr</td>
         </tr>
         <tr style="background-color: #28a745; color: white;">
           <td style="padding: 10px;"><strong>GESAMT</strong></td>
-          <td style="padding: 10px;"><strong>bis 70%</strong></td>
-          <td style="padding: 10px;"><strong>Max. 21.000 € Zuschuss</strong></td>
+          <td style="padding: 10px;"><strong>bis 70% / 80%</strong></td>
+          <td style="padding: 10px;"><strong>Max. 19.600 € Zuschuss (Einfamilienhaus); 80% = 22.400 € nur bei Einkommen bis 30.000 € (mit Kind bis 40.000 €)</strong></td>
         </tr>
       </table>
     </div>
 
-    <h3>Praxisbeispiel: Förderung für Wärmepumpe</h3>
+    <h3>Rechenbeispiel: Förderung für Wärmepumpe</h3>
     <ul>
       <li><strong>Kosten Wärmepumpe:</strong> 32.000 €</li>
-      <li><strong>Grundförderung (30%):</strong> -9.600 €</li>
-      <li><strong>Geschwindigkeitsbonus (20%):</strong> -6.400 €</li>
-      <li><strong>Gesamtförderung (50%):</strong> <strong>-16.000 €</strong></li>
-      <li><strong>Eigenanteil:</strong> <strong>16.000 €</strong></li>
-      <li><strong>Amortisation:</strong> 9 Jahre (durch 1.780 € Ersparnis/Jahr)</li>
+      <li><strong>Förderfähige Kosten:</strong> max. 28.000 €</li>
+      <li><strong>Grundförderung (30%):</strong> -8.400 €</li>
+      <li><strong>Geschwindigkeitsbonus (16%):</strong> -4.480 €</li>
+      <li><strong>Gesamtförderung (46%):</strong> <strong>-12.880 €</strong></li>
+      <li><strong>Eigenanteil:</strong> <strong>19.120 €</strong></li>
+      <li><strong>Amortisation:</strong> 11 Jahre (durch 1.780 € Ersparnis/Jahr)</li>
     </ul>
 
     <h3>Voraussetzungen für BEG-Förderung</h3>
-    <p>Folgende Bedingungen müssen erfüllt sein: Der Antrag muss <strong>vor Auftragsvergabe</strong> bei der KfW gestellt werden. Die Durchführung erfolgt durch einen <strong>zertifizierten Fachbetrieb</strong> (wie HeizCenter). Ein <strong>hydraulischer Abgleich</strong> nach Verfahren B ist Pflicht. Die Wärmepumpe muss eine <strong>JAZ von mindestens 3,0</strong> (Luft) bzw. 4,0 (Erdwärme) erreichen. Eine <strong>Energieberatung</strong> wird empfohlen und zusätzlich mit 80% gefördert.</p>
+    <p>Folgende Bedingungen müssen erfüllt sein: Der Antrag wird <strong>vor Baubeginn</strong> gestellt, auf Basis eines Liefer-/Leistungsvertrags mit aufschiebender oder auflösender Bedingung (Zusage der KfW). Die Durchführung erfolgt durch einen <strong>zertifizierten Fachbetrieb</strong> (wie HeizCenter). Ein <strong>hydraulischer Abgleich</strong> nach Verfahren B ist Pflicht. Die Wärmepumpe muss eine <strong>JAZ von mindestens 3,0</strong> (Luft) bzw. 4,0 (Erdwärme) erreichen. Eine <strong>Energieberatung</strong> wird empfohlen und zusätzlich mit 80% gefördert.</p>
 
     <h2>Schritt-für-Schritt: So ersetzen Sie Ihre Nachtspeicherheizung</h2>
 
@@ -4638,9 +4601,9 @@ ${GMODG_HINWEIS}
     <p><strong>Problem:</strong> Hohe Vorlauftemperaturen nötig → JAZ sinkt auf 2,5–3,0 → höhere Kosten</p>
     <p><strong>Lösung:</strong> Mindestens Dachbodendämmung (U-Wert < 0,24 W/m²K) nachrüsten</p>
 
-    <h3>Förderantrag nach Auftragserteilung</h3>
-    <p><strong>Problem:</strong> KfW lehnt Antrag ab → Verlust von bis zu 21.000 €</p>
-    <p><strong>Lösung:</strong> <strong>Immer erst Antrag stellen, dann Auftrag erteilen!</strong></p>
+    <h3>Vertrag ohne Bedingung vor dem Förderantrag</h3>
+    <p><strong>Problem:</strong> Ein Vertrag ohne aufschiebende oder auflösende Bedingung vor dem Antrag (oder ein Baubeginn vor Antragstellung) gilt als Vorhabenbeginn → keine Förderung, Verlust von bis zu 22.400 €</p>
+    <p><strong>Lösung:</strong> <strong>Vertrag nur mit aufschiebender oder auflösender Bedingung (KfW-Zusage) schließen, dann Antrag stellen – mit der Ausführung erst nach der Zusage beginnen.</strong></p>
 
     <h3>Keine Energieberatung</h3>
     <p><strong>Problem:</strong> Falsches System gewählt → schlechte Effizienz oder zu hohe Kosten</p>
@@ -4672,7 +4635,7 @@ ${GMODG_HINWEIS}
     <ul>
       <li><strong>Zentralheizung:</strong> Beschluss der WEG nötig (einfache Mehrheit bei energetischer Sanierung)</li>
       <li><strong>Einzelheizung:</strong> Austausch eigenständig möglich, aber Genehmigung des Verwalters einholen</li>
-      <li><strong>Förderung:</strong> Jeder Eigentümer kann individuell BEG beantragen</li>
+      <li><strong>Förderung:</strong> Bei der Zentralheizung stellt die WEG (in der Regel die Verwaltung) den Basisantrag für die Grundförderung; selbstnutzende Eigentümer können zusätzlich für ihre Wohnung einen Zusatzantrag auf Klimageschwindigkeits- und Einkommensbonus stellen. Bei der Einzelheizung im Sondereigentum beantragt der Wohnungseigentümer selbst.</li>
     </ul>
 
     <h2>Wirtschaftlichkeitsvergleich: 20-Jahres-Gesamtkosten</h2>
@@ -4697,10 +4660,10 @@ ${GMODG_HINWEIS}
         </tr>
         <tr style="background-color: #d4edda;">
           <td style="padding: 12px; border: 1px solid #ddd;"><strong>Wärmepumpe</strong></td>
-          <td style="padding: 12px; border: 1px solid #ddd;">16.000 €</td>
+          <td style="padding: 12px; border: 1px solid #ddd;">19.120 €</td>
           <td style="padding: 12px; border: 1px solid #ddd;">22.000 €</td>
           <td style="padding: 12px; border: 1px solid #ddd;">5.000 €</td>
-          <td style="padding: 12px; border: 1px solid #ddd;"><strong>43.000 €</strong></td>
+          <td style="padding: 12px; border: 1px solid #ddd;"><strong>46.120 €</strong></td>
         </tr>
         <tr style="background-color: #f9f9f9;">
           <td style="padding: 12px; border: 1px solid #ddd;">Infrarot</td>
@@ -4711,10 +4674,10 @@ ${GMODG_HINWEIS}
         </tr>
         <tr>
           <td style="padding: 12px; border: 1px solid #ddd;">Pellets</td>
-          <td style="padding: 12px; border: 1px solid #ddd;">21.000 €</td>
+          <td style="padding: 12px; border: 1px solid #ddd;">21.600 €</td>
           <td style="padding: 12px; border: 1px solid #ddd;">30.000 €</td>
           <td style="padding: 12px; border: 1px solid #ddd;">6.000 €</td>
-          <td style="padding: 12px; border: 1px solid #ddd;"><strong>57.000 €</strong></td>
+          <td style="padding: 12px; border: 1px solid #ddd;"><strong>57.600 €</strong></td>
         </tr>
         <tr style="background-color: #f9f9f9;">
           <td style="padding: 12px; border: 1px solid #ddd;">Gas</td>
@@ -4726,11 +4689,11 @@ ${GMODG_HINWEIS}
       </tbody>
     </table>
 
-    <p><strong>Fazit:</strong> Trotz höherer Anschaffungskosten ist die Wärmepumpe über 20 Jahre <strong>16.600 € günstiger</strong> als die Nachtspeicherheizung!</p>
+    <p><strong>Fazit:</strong> Trotz höherer Anschaffungskosten ist die Wärmepumpe über 20 Jahre <strong>13.480 € günstiger</strong> als die Nachtspeicherheizung!</p>
 
     <h2>Fazit: Nachtspeicherheizung ersetzen – lohnt sich 2026 mehr denn je</h2>
 
-    <p>Die wichtigsten Erkenntnisse auf einen Blick: Es besteht <strong>keine Austauschpflicht</strong>, der Wechsel ist aber wirtschaftlich hochgradig sinnvoll. Mit einer Wärmepumpe sparen Sie rund <strong>1.780 Euro pro Jahr</strong>. Dank <strong>bis zu 70 Prozent Förderung</strong> (maximal 21.000 Euro) erreichen Sie eine Amortisation in 7 bis 11 Jahren. Die <strong>CO₂-Einsparung</strong> beträgt 2.700 bis 3.700 kg pro Jahr – das entspricht 20.000 Kilometer Autofahrt. Infrarotheizungen sind keine echte Alternative, da sie ähnlich hohe Betriebskosten verursachen. Wichtig: Der Geschwindigkeitsbonus von 20 Prozent gilt nur noch bis Ende 2028.</p>
+    <p>Die wichtigsten Erkenntnisse auf einen Blick: Es besteht <strong>keine Austauschpflicht</strong>, der Wechsel ist aber wirtschaftlich hochgradig sinnvoll. Mit einer Wärmepumpe sparen Sie rund <strong>1.780 Euro pro Jahr</strong>. Dank <strong>bis zu 80 Prozent Förderung</strong> (maximal 22.400 Euro) erreichen Sie eine Amortisation in 7 bis 11 Jahren. Die <strong>CO₂-Einsparung</strong> beträgt 2.700 bis 3.700 kg pro Jahr – das entspricht 20.000 Kilometer Autofahrt. Infrarotheizungen sind keine echte Alternative, da sie ähnlich hohe Betriebskosten verursachen. Wichtig: Der Geschwindigkeitsbonus von 16 Prozent sinkt ab 01.02.2027 halbjährlich um 4 Prozentpunkte und entfällt für Anträge ab 01.08.2028.</p>
 
     <h3>Unsere Empfehlung für 2026</h3>
     <ol>
@@ -4758,8 +4721,8 @@ ${GMODG_HINWEIS}
     <h3>Wie viel spare ich mit einer Wärmepumpe?</h3>
     <p>Im Durchschnitt <strong>1.780 € pro Jahr</strong> bei einem 150 m²-Haus (Nachtspeicher: 2.880 €/Jahr vs. Wärmepumpe: 1.100 €/Jahr). Über 20 Jahre sind das <strong>35.600 € Ersparnis</strong>.</p>
 
-    <h3>Welche Förderung gibt es 2025?</h3>
-    <p>Für Wärmepumpen: <strong>30% Grundförderung + 20% Geschwindigkeitsbonus + 5% Effizienzbonus + 30% Einkommensbonus = bis 70%</strong> (max. 21.000 €). Für Pelletheizungen max. 60% (kein Effizienzbonus). Bei Biomasse erfordert der Klimabonus eine Kombination mit Solar/PV.</p>
+    <h3>Welche Förderung gibt es 2026?</h3>
+    <p>Für Wärmepumpen: <strong>30% Grundförderung + 16% Geschwindigkeitsbonus + 10–40% Einkommensbonus</strong>, gedeckelt auf 70% (max. 19.600 €); <strong>bis 80%</strong> (max. 22.400 €) nur bei einem zu versteuernden Haushaltseinkommen bis 30.000 € (mit Kind bis 40.000 €). Für Pelletheizungen gelten dieselben Sätze und Bedingungen.</p>
 
     <h3>Ist eine Wärmepumpe auch im Altbau sinnvoll?</h3>
     <p><strong>Ja</strong>, wenn das Gebäude mindestens eine Dachbodendämmung hat (U-Wert < 0,24 W/m²K). Bei sehr schlechter Dämmung sollte zuerst die Gebäudehülle verbessert werden. Erdwärmepumpen funktionieren auch bei höheren Vorlauftemperaturen gut.</p>
@@ -4793,8 +4756,8 @@ ${GMODG_HINWEIS}
           answer: 'Im Durchschnitt 1.780 Euro pro Jahr bei einem 150 m²-Haus (Nachtspeicher: 2.880 Euro/Jahr vs. Wärmepumpe: 1.100 Euro/Jahr). Über 20 Jahre sind das 35.600 Euro Ersparnis.',
         },
         {
-          question: 'Welche Förderung gibt es 2025?',
-          answer: 'Für Wärmepumpen: 30% Grundförderung + 20% Geschwindigkeitsbonus + 5% Effizienzbonus + 30% Einkommensbonus = bis 70% (max. 21.000 Euro). Für Pelletheizungen max. 60% (kein Effizienzbonus). Bei Biomasse erfordert der Klimabonus eine Kombination mit Solar/PV.',
+          question: 'Welche Förderung gibt es 2026?',
+          answer: 'Für Wärmepumpen: 30% Grundförderung + 16% Geschwindigkeitsbonus + 10–40% Einkommensbonus, gedeckelt auf 70% (max. 19.600 Euro); bis 80% (max. 22.400 Euro) nur bei einem zu versteuernden Haushaltseinkommen bis 30.000 Euro (mit Kind bis 40.000 Euro). Für Pelletheizungen gelten dieselben Sätze und Bedingungen.',
         },
         {
           question: 'Ist eine Wärmepumpe auch im Altbau sinnvoll?',
@@ -4834,7 +4797,7 @@ ${GMODG_HINWEIS}
         <li><strong>Betriebskosten:</strong> 10–15% günstiger als Heizkörper</li>
         <li><strong>Vorlauftemperatur:</strong> 28–35°C (vs. 55–75°C Heizkörper)</li>
         <li><strong>Perfekt für:</strong> Wärmepumpen (JAZ bis zu 5,0)</li>
-        <li><strong>Förderung:</strong> Bis zu 70% in Kombination mit Wärmepumpe</li>
+        <li><strong>Förderung:</strong> Bis zu 80% in Kombination mit Wärmepumpe (nur im Bestandsgebäude)</li>
         <li><strong>Wertsteigerung:</strong> 3–8% höherer Immobilienwert</li>
       </ul>
     </div>
@@ -5235,8 +5198,8 @@ ${GMODG_HINWEIS}
       </tr>
       <tr style="background-color: #d4edda;">
         <td style="padding: 12px;">Höchste BEG-Förderung</td>
-        <td style="padding: 12px;">Wärmepumpe + Flächenheizung = 30–70% Zuschuss</td>
-        <td style="padding: 12px;"><strong>Bis 21.000 €</strong></td>
+        <td style="padding: 12px;">Wärmepumpe + Flächenheizung im Bestandsgebäude = 30–80% Zuschuss</td>
+        <td style="padding: 12px;"><strong>Bis 22.400 €</strong></td>
       </tr>
       <tr style="background-color: #f9f9f9;">
         <td style="padding: 12px;">Längere Lebensdauer</td>
@@ -5245,7 +5208,7 @@ ${GMODG_HINWEIS}
       </tr>
     </table>
 
-    <h3>Praxisbeispiel: Gesamtkosten & Förderung</h3>
+    <h3>Rechenbeispiel: Gesamtkosten & Förderung</h3>
 
     <div style="background-color: #d4edda; padding: 20px; border-left: 4px solid #28a745; margin: 20px 0;">
       <h4 style="margin-top: 0;">150 m²-Haus, Neubau (2025)</h4>
@@ -5263,18 +5226,18 @@ ${GMODG_HINWEIS}
           <td style="text-align: right;"><strong>40.500 €</strong></td>
         </tr>
         <tr>
-          <td>BEG-Förderung (50%: 30% Basis + 20% Geschwindigkeitsbonus):</td>
-          <td style="text-align: right;"><strong>- 20.250 €</strong></td>
+          <td>BEG-Förderung (KfW 458): Neubauten werden nicht gefördert (Finanzierung ggf. über KfW-Kredit 297/298):</td>
+          <td style="text-align: right;"><strong>0 €</strong></td>
         </tr>
         <tr style="border-top: 2px solid #28a745; background-color: #28a745; color: white;">
           <td><strong>Eigenanteil:</strong></td>
-          <td style="text-align: right;"><strong>20.250 €</strong></td>
+          <td style="text-align: right;"><strong>40.500 €</strong></td>
         </tr>
         <tr>
           <td colspan="2" style="padding-top: 15px;"><strong>Jährliche Heizkosten:</strong> 950 €/Jahr (vs. 1.650 € Gas-Heizkörper)</td>
         </tr>
         <tr>
-          <td colspan="2"><strong>Ersparnis:</strong> 700 €/Jahr = <strong>Amortisation in 10 Jahren</strong></td>
+          <td colspan="2"><strong>Ersparnis:</strong> <strong>700 €/Jahr</strong> gegenüber Gasheizung mit Heizkörpern</td>
         </tr>
       </table>
     </div>
@@ -5314,7 +5277,7 @@ ${GMODG_HINWEIS}
 
     <h2>Fazit: Fußbodenheizung 2025 – Komfort trifft Effizienz</h2>
 
-    <p>Die wichtigsten Erkenntnisse: Mit <strong>10–15% Energieeinsparung</strong> gegenüber Heizkörpern sparen Sie 150–300 Euro pro Jahr. <strong>Perfekt für Wärmepumpen</strong> erreichen Sie eine JAZ von 4,5–5,0 statt nur 3,5 mit Heizkörpern. Der <strong>höchste Wohnkomfort</strong> bietet gleichmäßige Wärme, keine Zugluft und ist gesünder für Allergiker. Die <strong>Wertsteigerung</strong> beträgt 3–8% des Immobilienwerts. <strong>Nachrüstung ist möglich</strong> mit Dünnschicht- oder Trockensystemen für 80–150 Euro pro Quadratmeter. Die <strong>BEG-Förderung</strong> beträgt bis zu 70% in Kombination mit Wärmepumpe (maximal 21.000 Euro). Beachten Sie jedoch: Die Investition liegt 750–1.500 Euro über Heizkörpern, die Reaktionszeit beträgt träge 2–4 Stunden, und beim Bodenbelag sind Fliesen ideal, Echtholz kritisch.</p>
+    <p>Die wichtigsten Erkenntnisse: Mit <strong>10–15% Energieeinsparung</strong> gegenüber Heizkörpern sparen Sie 150–300 Euro pro Jahr. <strong>Perfekt für Wärmepumpen</strong> erreichen Sie eine JAZ von 4,5–5,0 statt nur 3,5 mit Heizkörpern. Der <strong>höchste Wohnkomfort</strong> bietet gleichmäßige Wärme, keine Zugluft und ist gesünder für Allergiker. Die <strong>Wertsteigerung</strong> beträgt 3–8% des Immobilienwerts. <strong>Nachrüstung ist möglich</strong> mit Dünnschicht- oder Trockensystemen für 80–150 Euro pro Quadratmeter. Die <strong>BEG-Förderung</strong> beträgt bis zu 80% in Kombination mit Wärmepumpe (maximal 22.400 Euro). Beachten Sie jedoch: Die Investition liegt 750–1.500 Euro über Heizkörpern, die Reaktionszeit beträgt träge 2–4 Stunden, und beim Bodenbelag sind Fliesen ideal, Echtholz kritisch.</p>
 
     <h3>Unsere Empfehlung für 2026</h3>
     <ol>
@@ -5327,7 +5290,7 @@ ${GMODG_HINWEIS}
     <div class="cta-box">
       <p class="cta-locations">📍 <strong>Unsere Standorte:</strong> <a href="/standorte/bobingen" class="text-[#0F5B78] font-medium hover:underline">Bobingen</a> (<a href="/standorte/augsburg" class="text-[#0F5B78] font-medium hover:underline">Augsburg</a>) · <a href="/standorte/gutenzell-huerbel" class="text-[#0F5B78] font-medium hover:underline">Gutenzell-Hürbel</a> (<a href="/standorte/ulm" class="text-[#0F5B78] font-medium hover:underline">Ulm</a>/<a href="/standorte/memmingen" class="text-[#0F5B78] font-medium hover:underline">Memmingen</a>) · <a href="/standorte/klosterlechfeld" class="text-[#0F5B78] font-medium hover:underline">Klosterlechfeld</a></p>
       <h4>Fußbodenheizung perfekt mit Wärmepumpe kombinieren?</h4>
-      <p>Wir planen Ihre ideale Heizlösung – von der Beratung über Förderantrag bis zur Installation. Profitieren Sie von bis zu 70% BEG-Förderung!</p>
+      <p>Wir planen Ihre ideale Heizlösung – von der Beratung über Förderantrag bis zur Installation. Profitieren Sie von bis zu 80% BEG-Förderung!</p>
       <p>
         <strong>Telefon:</strong> <a href="tel:${CONTACT.PHONE_LINK}">${CONTACT.PHONE_DISPLAY}</a><br>
         <strong>E-Mail:</strong> <a href="mailto:${CONTACT.EMAIL}">${CONTACT.EMAIL}</a>
@@ -5357,7 +5320,7 @@ ${GMODG_HINWEIS}
     <p><strong>Ideal:</strong> Wärmepumpen (JAZ 4,5–5,0 durch niedrige Vorlauftemperatur). <strong>Sehr gut:</strong> Gasheizung, Pelletheizung, Solarthermie. <strong>Nicht empfohlen:</strong> Alte Ölheizung (hohe Betriebskosten, keine Förderung).</p>
 
     <h3>Gibt es Förderung für Fußbodenheizung?</h3>
-    <p><strong>Direkte Förderung:</strong> Nein. <strong>ABER:</strong> In Kombination mit Wärmepumpe bis zu <strong>70% BEG-Förderung</strong> (30% Basis + 20% Geschwindigkeitsbonus + ggf. 30% Einkommensbonus) auf die Gesamtkosten (Wärmepumpe + Fußbodenheizung), max. 21.000 €.</p>
+    <p><strong>Direkte Förderung:</strong> Nein. <strong>ABER:</strong> In Kombination mit Wärmepumpe bis zu <strong>80% BEG-Förderung</strong> (30% Basis + 16% Geschwindigkeitsbonus + ggf. 10–40% Einkommensbonus; gedeckelt auf 70%, auf 80% nur bei zu versteuerndem Haushaltseinkommen bis 30.000 €) auf die Gesamtkosten (Wärmepumpe + Fußbodenheizung), max. 19.600 € bzw. 22.400 € beim Einfamilienhaus im Bestand. Neubauten erhalten keine KfW-458-Förderung.</p>
 
     <h3>Was passiert bei einem Rohrbruch?</h3>
     <p>Moderne PE-Xa/PE-RT-Rohre sind sehr robust (Lebensdauer 30–50 Jahre). Bei Leckage: Leckage-Ortung per Thermografie (500–1.500 €), Reparatur durch punktuelles Öffnen des Estrichs (1.000–3.000 €). <strong>Vorbeugung:</strong> Nur zertifizierte Fachbetriebe beauftragen!</p>
@@ -5396,7 +5359,7 @@ ${GMODG_HINWEIS}
         },
         {
           question: 'Gibt es Förderung für Fußbodenheizung?',
-          answer: 'Direkte Förderung: Nein. ABER: In Kombination mit Wärmepumpe bis zu 70% BEG-Förderung (30% Basis + 20% Geschwindigkeitsbonus + ggf. 30% Einkommensbonus) auf die Gesamtkosten (Wärmepumpe + Fußbodenheizung), max. 21.000 Euro.',
+          answer: 'Direkte Förderung: Nein. ABER: In Kombination mit Wärmepumpe bis zu 80% BEG-Förderung (30% Basis + 16% Geschwindigkeitsbonus + ggf. 10–40% Einkommensbonus; gedeckelt auf 70%, auf 80% nur bei zu versteuerndem Haushaltseinkommen bis 30.000 Euro) auf die Gesamtkosten (Wärmepumpe + Fußbodenheizung), max. 19.600 Euro bzw. 22.400 Euro beim Einfamilienhaus im Bestand. Neubauten erhalten keine KfW-458-Förderung.',
         },
         {
           question: 'Was passiert bei einem Rohrbruch?',
@@ -5863,7 +5826,7 @@ ${GMODG_HINWEIS}
             </tr>
             <tr style="background-color: #f9f9f9;">
               <td style="padding: 10px; border: 1px solid #ddd;"><strong>Förderung</strong></td>
-              <td style="padding: 10px; border: 1px solid #ddd;">Bis 70% (BEG)</td>
+              <td style="padding: 10px; border: 1px solid #ddd;">Bis 80% (BEG)</td>
               <td style="padding: 10px; border: 1px solid #ddd;">0% (fossil)</td>
             </tr>
             <tr>
@@ -5898,24 +5861,24 @@ ${GMODG_HINWEIS}
           <tr style="background-color: #0F5B78; color: white;">
             <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Wärmepumpen-Typ</th>
             <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Gerät + Installation</th>
-            <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Mit BEG-Förderung (bis zu 70%)</th>
+            <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Mit BEG-Förderung (80% bei Einkommen bis 30.000 €, max. 22.400 €)</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td style="padding: 10px; border: 1px solid #ddd;">Luft-Wasser-Wärmepumpe</td>
             <td style="padding: 10px; border: 1px solid #ddd;">20.000–30.000 €</td>
-            <td style="padding: 10px; border: 1px solid #ddd;">6.000–9.000 €</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">4.000–7.600 €</td>
           </tr>
           <tr style="background-color: #f9f9f9;">
             <td style="padding: 10px; border: 1px solid #ddd;">Sole-Wasser-Wärmepumpe</td>
             <td style="padding: 10px; border: 1px solid #ddd;">25.000–40.000 €</td>
-            <td style="padding: 10px; border: 1px solid #ddd;">7.500–12.000 €</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">5.000–17.600 €</td>
           </tr>
           <tr>
             <td style="padding: 10px; border: 1px solid #ddd;">Wasser-Wasser-Wärmepumpe</td>
             <td style="padding: 10px; border: 1px solid #ddd;">30.000–45.000 €</td>
-            <td style="padding: 10px; border: 1px solid #ddd;">9.000–13.500 €</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">7.600–22.600 €</td>
           </tr>
         </tbody>
       </table>
@@ -6022,7 +5985,7 @@ ${GMODG_HINWEIS}
         </tbody>
       </table>
 
-      <h2>3. Förderung & Wirtschaftlichkeit 2025</h2>
+      <h2>3. Förderung & Wirtschaftlichkeit 2026</h2>
 
       <h3>BEG-Förderung für Wärmepumpen (Stand 2026)</h3>
       <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
@@ -6037,27 +6000,22 @@ ${GMODG_HINWEIS}
           <tr>
             <td style="padding: 10px; border: 1px solid #ddd;">Grundförderung</td>
             <td style="padding: 10px; border: 1px solid #ddd;">30%</td>
-            <td style="padding: 10px; border: 1px solid #ddd;">Alle WP-Systeme</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Alle WP-Systeme in bestehenden Wohngebäuden</td>
           </tr>
           <tr style="background-color: #f9f9f9;">
             <td style="padding: 10px; border: 1px solid #ddd;">Geschwindigkeitsbonus</td>
-            <td style="padding: 10px; border: 1px solid #ddd;">+20%</td>
-            <td style="padding: 10px; border: 1px solid #ddd;">Austausch alte Öl-/Gasheizung bis 2028</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">+16%</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Selbstnutzer: Austausch einer funktionstüchtigen Öl-, Kohle-, Gas-Etagen- oder Nachtspeicherheizung oder einer Gasheizung ab 20 Jahren; für Anträge bis 31.01.2027, danach halbjährlich −4 Prozentpunkte, entfällt ab 01.08.2028</td>
           </tr>
           <tr>
             <td style="padding: 10px; border: 1px solid #ddd;">Einkommensbonus</td>
-            <td style="padding: 10px; border: 1px solid #ddd;">+30%</td>
-            <td style="padding: 10px; border: 1px solid #ddd;">Haushaltseinkommen ≤40.000 €/Jahr</td>
-          </tr>
-          <tr style="background-color: #f9f9f9;">
-            <td style="padding: 10px; border: 1px solid #ddd;">Effizienzbonus</td>
-            <td style="padding: 10px; border: 1px solid #ddd;">+5%</td>
-            <td style="padding: 10px; border: 1px solid #ddd;">Natürliche Kältemittel (z.B. Propan) oder Erdwärme/Wasser</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">+10–40%</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Selbstnutzer: zu versteuerndes Haushaltseinkommen ≤30.000 € (40%), ≤40.000 € (30%), ≤50.000 € (10%) pro Jahr</td>
           </tr>
           <tr style="background-color: #e8f4f8;">
             <td style="padding: 10px; border: 1px solid #ddd;"><strong>Maximalförderung</strong></td>
-            <td style="padding: 10px; border: 1px solid #ddd;"><strong>70%</strong></td>
-            <td style="padding: 10px; border: 1px solid #ddd;">Alle Boni kombiniert (max. 30.000 €)</td>
+            <td style="padding: 10px; border: 1px solid #ddd;"><strong>70% / 80%</strong></td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Alle Boni kombiniert (86%): gedeckelt auf 70%, auf 80% nur bei zu versteuerndem Einkommen bis 30.000 € (mit Kind bis 40.000 €); max. 28.000 € förderfähig beim Einfamilienhaus</td>
           </tr>
         </tbody>
       </table>
@@ -6065,9 +6023,9 @@ ${GMODG_HINWEIS}
       <h3>Rechenbeispiel: 25.000 € Wärmepumpe</h3>
       <ul>
         <li><strong>Grundförderung (30%):</strong> 7.500 €</li>
-        <li><strong>Geschwindigkeitsbonus (20%):</strong> + 5.000 €</li>
-        <li><strong>Gesamt-Förderung (50%):</strong> 12.500 €</li>
-        <li><strong>Eigenanteil:</strong> 12.500 €</li>
+        <li><strong>Geschwindigkeitsbonus (16%):</strong> + 4.000 €</li>
+        <li><strong>Gesamt-Förderung (46%):</strong> 11.500 €</li>
+        <li><strong>Eigenanteil:</strong> 13.500 €</li>
       </ul>
 
       <p><strong>→ Mit Förderung kostet die Wärmepumpe oft weniger als eine neue Gasheizung!</strong></p>
@@ -6135,7 +6093,7 @@ ${GMODG_HINWEIS}
       <h3>Vorteile Wärmepumpe</h3>
       <ul>
         <li><strong>Sehr niedrige Betriebskosten:</strong> 50–70% günstiger als Gas (bei WP-Stromtarif)</li>
-        <li><strong>Hohe Förderung:</strong> Bis zu 70% Zuschuss vom Staat</li>
+        <li><strong>Hohe Förderung:</strong> Bis zu 80% Zuschuss vom Staat</li>
         <li><strong>Klimafreundlich:</strong> Bis zu 100% CO₂-frei mit Ökostrom</li>
         <li><strong>Keine fossilen Brennstoffe:</strong> Unabhängig von Gas-/Ölpreisen</li>
         <li><strong>Kühlfunktion im Sommer:</strong> Viele Modelle können auch kühlen</li>
@@ -6220,8 +6178,8 @@ ${GMODG_HINWEIS}
             <td style="padding: 10px; border: 1px solid #ddd;">10.000 €</td>
           </tr>
           <tr style="background-color: #f9f9f9;">
-            <td style="padding: 10px; border: 1px solid #ddd;">Förderung (50%)</td>
-            <td style="padding: 10px; border: 1px solid #ddd;">-12.500 €</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Förderung (46%)</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">-11.500 €</td>
             <td style="padding: 10px; border: 1px solid #ddd;">0 €</td>
           </tr>
           <tr>
@@ -6236,13 +6194,13 @@ ${GMODG_HINWEIS}
           </tr>
           <tr style="background-color: #e8f4f8;">
             <td style="padding: 10px; border: 1px solid #ddd;"><strong>Gesamtkosten (20 Jahre)</strong></td>
-            <td style="padding: 10px; border: 1px solid #ddd;"><strong>38.500 €</strong></td>
+            <td style="padding: 10px; border: 1px solid #ddd;"><strong>39.500 €</strong></td>
             <td style="padding: 10px; border: 1px solid #ddd;"><strong>60.000 €</strong></td>
           </tr>
         </tbody>
       </table>
 
-      <p><strong>→ Ersparnis über 20 Jahre: 21.500 € für die Wärmepumpe!</strong></p>
+      <p><strong>→ Ersparnis über 20 Jahre: 20.500 € für die Wärmepumpe!</strong></p>
 
       <h2>9. Häufige Fragen (FAQ)</h2>
 
@@ -6269,7 +6227,7 @@ ${GMODG_HINWEIS}
       <p>Für vergünstigte Wärmepumpen-Tarife ist ein separater Zähler erforderlich. Installation durch Netzbetreiber (~200–500 €), amortisiert sich aber schnell durch niedrigere kWh-Preise.</p>
 
       <h3>Gibt es Förderung für Gas-Hybridheizungen?</h3>
-      <p>Ja, wenn der erneuerbare Anteil (z. B. Wärmepumpe) mindestens 65% der Heizlast deckt. Gefördert wird aber nur der EE-Anteil, nicht die Gastherme.</p>
+      <p>Ja, aber nur für den erneuerbaren Wärmeerzeuger (z. B. die Wärmepumpe) nach den allgemeinen KfW-458-Regeln; die Gastherme selbst ist nicht förderfähig. Weil weiterhin mit Gas geheizt wird, gibt es keinen Klimageschwindigkeitsbonus – höchstens 30% Grundförderung plus ggf. Einkommensbonus (max. 70%).</p>
 
       <h2>10. Fazit & Entscheidungshilfe</h2>
 
@@ -6278,7 +6236,7 @@ ${GMODG_HINWEIS}
         <p><strong>Wärmepumpe gewinnt in fast allen Kategorien:</strong></p>
         <ul>
           <li>✅ Niedrigere Gesamtkosten über 20 Jahre (trotz höherer Anschaffung)</li>
-          <li>✅ Bis zu 70% staatliche Förderung (Gas: 0%)</li>
+          <li>✅ Bis zu 80% staatliche Förderung (Gas: 0%)</li>
           <li>✅ 50–70% niedrigere Betriebskosten</li>
           <li>✅ Klimafreundlich & zukunftssicher (keine Brennstoff-Nachweispflicht)</li>
           <li>✅ Unabhängig von fossilen Brennstoffen</li>
@@ -6343,7 +6301,7 @@ ${GMODG_HINWEIS}
         },
         {
           question: 'Gibt es Förderung für Gas-Hybridheizungen?',
-          answer: 'Ja, wenn der erneuerbare Anteil (z. B. Wärmepumpe) mindestens 65% der Heizlast deckt. Gefördert wird aber nur der EE-Anteil, nicht die Gastherme.',
+          answer: 'Ja, aber nur für den erneuerbaren Wärmeerzeuger (z. B. die Wärmepumpe) nach den allgemeinen KfW-458-Regeln; die Gastherme selbst ist nicht förderfähig. Weil weiterhin mit Gas geheizt wird, gibt es keinen Klimageschwindigkeitsbonus – höchstens 30% Grundförderung plus ggf. Einkommensbonus (max. 70%).',
         },
       ],
     },
@@ -6373,8 +6331,8 @@ ${GMODG_HINWEIS}
             </tr>
             <tr style="background-color: #f9f9f9;">
               <td style="padding: 10px; border: 1px solid #ddd;"><strong>Förderung (max.)</strong></td>
-              <td style="padding: 10px; border: 1px solid #ddd;">Bis 70%</td>
-              <td style="padding: 10px; border: 1px solid #ddd;">Bis 50%</td>
+              <td style="padding: 10px; border: 1px solid #ddd;">Bis 80%</td>
+              <td style="padding: 10px; border: 1px solid #ddd;">Bis 80%</td>
             </tr>
             <tr>
               <td style="padding: 10px; border: 1px solid #ddd;"><strong>Betriebskosten/Jahr</strong></td>
@@ -6413,19 +6371,19 @@ ${GMODG_HINWEIS}
           <tr style="background-color: #0F5B78; color: white;">
             <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Wärmepumpen-Typ</th>
             <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Gerät + Installation</th>
-            <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Mit Förderung (50%)</th>
+            <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Mit Förderung (46%, max. 28.000 € förderfähig)</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td style="padding: 10px; border: 1px solid #ddd;">Luft-Wasser-Wärmepumpe</td>
             <td style="padding: 10px; border: 1px solid #ddd;">20.000–30.000 €</td>
-            <td style="padding: 10px; border: 1px solid #ddd;">10.000–15.000 €</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">10.800–17.120 €</td>
           </tr>
           <tr style="background-color: #f9f9f9;">
             <td style="padding: 10px; border: 1px solid #ddd;">Sole-Wasser-Wärmepumpe</td>
             <td style="padding: 10px; border: 1px solid #ddd;">25.000–40.000 €</td>
-            <td style="padding: 10px; border: 1px solid #ddd;">12.500–20.000 €</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">13.500–27.120 €</td>
           </tr>
         </tbody>
       </table>
@@ -6464,8 +6422,8 @@ ${GMODG_HINWEIS}
             <td style="padding: 10px; border: 1px solid #ddd;"><strong>15.000–28.500 €</strong></td>
           </tr>
           <tr>
-            <td style="padding: 10px; border: 1px solid #ddd;">Mit Förderung (50%)</td>
-            <td style="padding: 10px; border: 1px solid #ddd;">7.500–14.250 €</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Mit Förderung (46%)</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">8.100–15.620 €</td>
           </tr>
         </tbody>
       </table>
@@ -6557,23 +6515,22 @@ ${GMODG_HINWEIS}
 
       <h3>BEG-Förderung Wärmepumpe</h3>
       <ul>
-        <li><strong>Grundförderung:</strong> 30% für alle Wärmepumpen</li>
-        <li><strong>Geschwindigkeitsbonus:</strong> +20% (Austausch alter Heizung bis 2028)</li>
-        <li><strong>Einkommensbonus:</strong> +30% (Haushaltseinkommen ≤40.000 €)</li>
-        <li><strong>Maximal:</strong> 70% (begrenzt auf 30.000 € förderfähige Kosten)</li>
+        <li><strong>Grundförderung:</strong> 30% für alle Wärmepumpen in bestehenden Wohngebäuden</li>
+        <li><strong>Geschwindigkeitsbonus:</strong> +16% (Selbstnutzer, Austausch einer funktionstüchtigen Öl-, Kohle-, Gas-Etagen- oder Nachtspeicherheizung oder einer Gasheizung ab 20 Jahren; sinkt ab 01.02.2027 halbjährlich um 4 Prozentpunkte, entfällt für Anträge ab 01.08.2028)</li>
+        <li><strong>Einkommensbonus:</strong> +10–40% (Selbstnutzer; 40% bis 30.000 €, 30% bis 40.000 €, 10% bis 50.000 € zu versteuerndes Haushaltseinkommen)</li>
+        <li><strong>Maximal:</strong> 70%, bei zu versteuerndem Haushaltseinkommen bis 30.000 € (mit Kind bis 40.000 €) 80% (begrenzt auf 28.000 € förderfähige Kosten beim Einfamilienhaus)</li>
       </ul>
 
       <h3>BEG-Förderung Pelletheizung</h3>
       <ul>
-        <li><strong>Grundförderung:</strong> 30% für Biomasse-Heizungen</li>
-        <li><strong>Klimageschwindigkeitsbonus:</strong> +20% beim Austausch alter Öl-/Gas-Heizungen (nur mit Solar/PV-Kombination)</li>
-        <li><strong>Einkommensbonus:</strong> +30% (Haushaltseinkommen ≤40.000 €) – auch für Biomasse berechtigt!</li>
-        <li><strong>Emissionsbonus:</strong> +2.500 € bei Feinstaubgrenzwert unter 2,5 mg/m³</li>
-        <li><strong>Maximal:</strong> 60% (kein Effizienzbonus bei Biomasse)</li>
+        <li><strong>Grundförderung:</strong> 30% für Biomasse-Heizungen in bestehenden Wohngebäuden</li>
+        <li><strong>Klimageschwindigkeitsbonus:</strong> +16% beim Austausch einer funktionstüchtigen Öl-, Kohle-, Gas-Etagen- oder Nachtspeicherheizung oder einer Gas- oder Biomasseheizung ab 20 Jahren (nur Selbstnutzer, gleiche Bedingungen wie bei der Wärmepumpe)</li>
+        <li><strong>Einkommensbonus:</strong> +10–40% (40% bis 30.000 €, 30% bis 40.000 €, 10% bis 50.000 € Haushaltseinkommen) – auch für Biomasse berechtigt!</li>
+        <li><strong>Maximal:</strong> 70%, bei zu versteuerndem Haushaltseinkommen bis 30.000 € (mit Kind bis 40.000 €) 80% (begrenzt auf 28.000 € förderfähige Kosten beim Einfamilienhaus)</li>
       </ul>
 
       <div style="background-color: #d4edda; padding: 15px; border-left: 4px solid #28a745; margin: 20px 0;">
-        <p style="margin: 0;"><strong>💰 Förderung im Vergleich:</strong> Wärmepumpen bis 70%, Pelletheizungen bis 60%. Der Unterschied: Wärmepumpen können den 5% Effizienzbonus erhalten (natürliche Kältemittel), Pelletheizungen nicht.</p>
+        <p style="margin: 0;"><strong>💰 Förderung im Vergleich:</strong> Wärmepumpen und Pelletheizungen werden nach denselben Regeln gefördert – jeweils bis 70%, bei einem zu versteuernden Haushaltseinkommen bis 30.000 € (mit Kind bis 40.000 €) bis 80%. Bei der Förderung gibt es also keinen Unterschied.</p>
       </div>
 
       <h2>4. Platzbedarf & Lagerung</h2>
@@ -6671,7 +6628,7 @@ ${GMODG_HINWEIS}
         <li><strong>Höchster Komfort:</strong> Vollautomatisch, keine Brennstoffbeschaffung</li>
         <li><strong>Sehr wartungsarm:</strong> Keine Asche, kein Schornstein</li>
         <li><strong>Kein Platzbedarf für Lagerung:</strong> Nur 2–3 m²</li>
-        <li><strong>Bis zu 70% Förderung</strong></li>
+        <li><strong>Bis zu 80% Förderung</strong></li>
         <li><strong>Klimafreundlich:</strong> 100% CO₂-frei mit Ökostrom</li>
         <li><strong>Kein Feinstaub</strong></li>
         <li><strong>Kühlfunktion möglich</strong></li>
@@ -6701,7 +6658,6 @@ ${GMODG_HINWEIS}
         <li><strong>Ascheentsorgung:</strong> ~150 kg/Jahr</li>
         <li><strong>Feinstaubemissionen:</strong> 50–200 g/Jahr</li>
         <li><strong>Schornsteinfeger:</strong> Pflicht + Kosten (120–180 €/Jahr)</li>
-        <li><strong>Geringere Förderung:</strong> Nur bis 50% (vs. 70% bei WP)</li>
         <li><strong>Pelletpreis volatil:</strong> 250–400 €/Tonne</li>
       </ul>
 
@@ -6712,7 +6668,7 @@ ${GMODG_HINWEIS}
         <li><strong>Neubauten & sanierte Häuser</strong> (gute Dämmung)</li>
         <li><strong>Komfortorientierte Hausbesitzer</strong> (keine Zeit für Wartung)</li>
         <li><strong>Wenig Platz:</strong> Kein Raum für Pelletlager</li>
-        <li><strong>Maximale Förderung nutzen</strong> (bis 70%)</li>
+        <li><strong>Maximale Förderung nutzen</strong> (bis 80%)</li>
         <li><strong>Klimaneutralität angestrebt</strong> (mit Ökostrom)</li>
         <li><strong>Kombination mit PV-Anlage möglich</strong></li>
       </ul>
@@ -6748,9 +6704,9 @@ ${GMODG_HINWEIS}
             <td style="padding: 10px; border: 1px solid #ddd;">20.000 €</td>
           </tr>
           <tr style="background-color: #f9f9f9;">
-            <td style="padding: 10px; border: 1px solid #ddd;">Förderung (70% vs. 50%)</td>
-            <td style="padding: 10px; border: 1px solid #ddd;">-12.500 €</td>
-            <td style="padding: 10px; border: 1px solid #ddd;">-8.000 €</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Förderung (je 46%)</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">-11.500 €</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">-9.200 €</td>
           </tr>
           <tr>
             <td style="padding: 10px; border: 1px solid #ddd;">Energiekosten (20 Jahre)</td>
@@ -6764,13 +6720,13 @@ ${GMODG_HINWEIS}
           </tr>
           <tr style="background-color: #e8f4f8;">
             <td style="padding: 10px; border: 1px solid #ddd;"><strong>Gesamtkosten (20 Jahre)</strong></td>
-            <td style="padding: 10px; border: 1px solid #ddd;"><strong>36.500 €</strong></td>
-            <td style="padding: 10px; border: 1px solid #ddd;"><strong>50.000 €</strong></td>
+            <td style="padding: 10px; border: 1px solid #ddd;"><strong>37.500 €</strong></td>
+            <td style="padding: 10px; border: 1px solid #ddd;"><strong>48.800 €</strong></td>
           </tr>
         </tbody>
       </table>
 
-      <p><strong>→ Ersparnis über 20 Jahre: 13.500 € für die Wärmepumpe!</strong></p>
+      <p><strong>→ Ersparnis über 20 Jahre: 11.300 € für die Wärmepumpe!</strong></p>
 
       <h2>10. Häufige Fragen (FAQ)</h2>
 
@@ -6784,7 +6740,7 @@ ${GMODG_HINWEIS}
       <p>Theoretisch ja: Bäume binden beim Wachstum CO₂, das bei Verbrennung wieder freigesetzt wird. Praktisch entstehen jedoch Emissionen durch Transport, Trocknung und Pelletierung (~10–20% der Gesamtbilanz). Zudem entsteht Feinstaub.</p>
 
       <h3>Welches System ist zukunftssicherer?</h3>
-      <p>Wärmepumpen haben nach dem GModG keine Brennstoff-Nachweispflicht und werden langfristig stärker gefördert. Pelletheizungen gelten zwar als erneuerbar, aber Feinstaubgrenzwerte könnten künftig verschärft werden. Bei steigendem Strommix-Anteil erneuerbarer Energien wird die Wärmepumpe noch klimafreundlicher.</p>
+      <p>Wärmepumpen haben nach dem GModG keine Brennstoff-Nachweispflicht. Pelletheizungen gelten zwar als erneuerbar, aber Feinstaubgrenzwerte könnten künftig verschärft werden. Bei steigendem Strommix-Anteil erneuerbarer Energien wird die Wärmepumpe noch klimafreundlicher.</p>
 
       <h3>Kann eine Wärmepumpe auch bei -15°C heizen?</h3>
       <p>Ja! Moderne Luft-Wärmepumpen arbeiten bis -20°C (teilweise -25°C). Die Effizienz (JAZ) sinkt bei Kälte, aber die Heizleistung bleibt ausreichend. Bei extrem kalten Regionen kann ein Heizstab als Backup dienen.</p>
@@ -6793,13 +6749,12 @@ ${GMODG_HINWEIS}
 
       <div style="background-color: #e8f4f8; padding: 20px; border-left: 4px solid #0F5B78; margin: 20px 0;">
         <h3 style="margin-top: 0;">Unsere klare Empfehlung</h3>
-        <p><strong>Wärmepumpe gewinnt in 8 von 10 Kategorien:</strong></p>
+        <p><strong>Wärmepumpe gewinnt in 7 von 10 Kategorien:</strong></p>
         <ul>
           <li>✅ Höherer Komfort (vollautomatisch)</li>
           <li>✅ Weniger Wartung (0 vs. 30 h/Jahr)</li>
           <li>✅ Weniger Platzbedarf (2 vs. 10 m²)</li>
-          <li>✅ Höhere Förderung (70% vs. 50%)</li>
-          <li>✅ Niedrigere Gesamtkosten (20 Jahre: -13.500 €)</li>
+          <li>✅ Niedrigere Gesamtkosten (20 Jahre: -11.300 €)</li>
           <li>✅ Kein Feinstaub</li>
           <li>✅ Zukunftssicherer (keine Brennstoff-Nachweispflicht)</li>
           <li>✅ Optional Kühlfunktion</li>
@@ -6848,7 +6803,7 @@ ${GMODG_HINWEIS}
         },
         {
           question: 'Welches System ist zukunftssicherer?',
-          answer: 'Wärmepumpen haben nach dem GModG keine Brennstoff-Nachweispflicht und werden langfristig stärker gefördert. Pelletheizungen gelten zwar als erneuerbar, aber Feinstaubgrenzwerte könnten künftig verschärft werden. Bei steigendem Strommix-Anteil erneuerbarer Energien wird die Wärmepumpe noch klimafreundlicher.',
+          answer: 'Wärmepumpen haben nach dem GModG keine Brennstoff-Nachweispflicht. Pelletheizungen gelten zwar als erneuerbar, aber Feinstaubgrenzwerte könnten künftig verschärft werden. Bei steigendem Strommix-Anteil erneuerbarer Energien wird die Wärmepumpe noch klimafreundlicher.',
         },
         {
           question: 'Kann eine Wärmepumpe auch bei -15°C heizen?',
@@ -7178,7 +7133,7 @@ ${GMODG_HINWEIS}
       <ul>
         <li>❌ <strong>Luft-Luft-Wärmepumpen</strong> (Split-Klimaanlagen mit Heizfunktion) sind seit 2024 <strong>nicht mehr BEG-förderfähig</strong></li>
         <li>❌ <strong>Reine Klimageräte</strong> (nur Kühlen) waren nie förderfähig</li>
-        <li>✅ <strong>Luft-Wasser-Wärmepumpen</strong> (zentrale Heizung mit optionaler Kühlung) erhalten weiterhin BEG-Förderung (bis 70%)</li>
+        <li>✅ <strong>Luft-Wasser-Wärmepumpen</strong> (zentrale Heizung mit optionaler Kühlung) erhalten weiterhin BEG-Förderung (bis 80%)</li>
       </ul>
       <p><strong>Hinweis:</strong> Split-Klimaanlagen können zwar auch heizen, zählen aber als "Luft-Luft-Wärmepumpen" und sind damit von der staatlichen Förderung ausgeschlossen.</p>
 
@@ -7917,7 +7872,7 @@ ${GMODG_HINWEIS}
 
         <div class="my-6 p-4 bg-blue-50 border-l-4 border-blue-500 rounded-r"><p class="font-semibold text-blue-900">Wichtig:</p><p class="text-slate-700">PV-Anlagen bis 30 kWp sind seit 2023 von der Mehrwertsteuer befreit – Sie zahlen 0% statt 19%!</p></div>
 
-        <h2>Staatliche Förderungen 2025</h2>
+        <h2>Staatliche Förderungen 2026</h2>
 
         <h3>KfW-Förderung für Solarthermie (BEG 458)</h3>
         <p>Die Bundesförderung für effiziente Gebäude (BEG) bietet 2026 attraktive Zuschüsse über die KfW:</p>
@@ -7925,23 +7880,24 @@ ${GMODG_HINWEIS}
         <p><strong>Basis-Förderung:</strong></p>
         <ul>
           <li>30% der förderfähigen Kosten</li>
-          <li>Maximal 60.000 € Investitionskosten pro Wohneinheit</li>
+          <li>Maximal 28.000 € förderfähige Kosten (Einfamilienhaus bzw. erste Wohneinheit)</li>
         </ul>
 
-        <p><strong>Klima-Geschwindigkeitsbonus:</strong></p>
+        <p><strong>Klima-Geschwindigkeitsbonus (nur im Zuge eines Heizungstauschs):</strong></p>
         <ul>
-          <li>+20% bei Austausch funktionsfähiger Öl-, Kohle- oder Nachtspeicherheizungen (nur bis 2028)</li>
-          <li>+20% bei Austausch alter Gasheizungen (20+ Jahre, nur bis 2028)</li>
+          <li>+16% für Selbstnutzer, wenn zusammen mit der Solarthermie ein neuer Wärmeerzeuger (z. B. eine Wärmepumpe) eine funktionsfähige Öl-, Kohle-, Gas-Etagen- oder Nachtspeicherheizung oder eine alte Gas- oder Biomasseheizung (20+ Jahre) ersetzt</li>
+          <li>Eine Solarthermieanlage allein ersetzt keinen Wärmeerzeuger – neben einer weiterlaufenden Öl- oder Gasheizung gibt es keinen Klimabonus</li>
+          <li>Gilt für Anträge bis 31.01.2027, sinkt danach halbjährlich um 4 Prozentpunkte und entfällt für Anträge ab 01.08.2028</li>
         </ul>
 
         <p><strong>Einkommensbonus:</strong></p>
         <ul>
-          <li>+30% für Haushalte mit zu versteuerndem Jahreseinkommen unter 40.000 €</li>
+          <li>+40% bis 30.000 €, +30% bis 40.000 €, +10% bis 50.000 € zu versteuerndem Haushaltsjahreseinkommen (nur Selbstnutzer)</li>
         </ul>
 
-        <p><strong>Maximum:</strong> Bis zu 70% Förderung möglich (30% Basis + 20% Geschwindigkeit + 30% Einkommen, allerdings begrenzt auf maximal 70%).</p>
+        <p><strong>Maximum:</strong> Solarthermie als Einzelmaßnahme: 30%, mit Einkommensbonus bis 70% (30% + 40%). Im Zuge eines Heizungstauschs (z. B. zusammen mit einer Wärmepumpe) sind bis zu 80% möglich (30% Basis + 16% Geschwindigkeit + 40% Einkommen = 86%, begrenzt auf 80%) – allerdings nur bei einem zu versteuernden Haushaltseinkommen bis 30.000 € (mit Kind bis 40.000 €). In allen anderen Fällen liegt die Obergrenze bei 70%.</p>
 
-        <p><strong>Beispielrechnung:</strong> Eine Solarthermieanlage für 12.000 € mit Geschwindigkeitsbonus wird mit 6.000 € (50%) gefördert. Eigenanteil: 6.000 €.</p>
+        <p><strong>Beispielrechnung:</strong> Eine Solarthermieanlage für 12.000 € als Einzelmaßnahme (ohne Heizungstausch) wird mit 3.600 € (30%) gefördert. Eigenanteil: 8.400 €.</p>
 
         <h3>Photovoltaik Förderung</h3>
         <p><strong>KfW-Kredit 270:</strong></p>
@@ -8032,7 +7988,7 @@ ${GMODG_HINWEIS}
           <li>KfW fördert beide Systeme kombiniert (BEG 458)</li>
         </ul>
 
-        <p><strong>Kosten:</strong> 25.000-35.000 € (komplett), KfW-Förderung bis zu 70% möglich</p>
+        <p><strong>Kosten:</strong> 25.000-35.000 € (komplett), KfW-Förderung bis zu 80% möglich</p>
 
         <h3>Photovoltaik + Wärmepumpe</h3>
         <p>Der Klassiker für energieautarke Eigenheime:</p>
@@ -8065,7 +8021,7 @@ ${GMODG_HINWEIS}
         <ul>
           <li>Hoher optischer Wirkungsgrad (bis 80%, Jahresnutzungsgrad ca. 50%)</li>
           <li>Direkter Wärmeertrag ohne Umwandlungsverluste</li>
-          <li>Hohe KfW-Förderung bis 70%</li>
+          <li>KfW-Förderung: 30%, mit Einkommensbonus bis 70% (im Zuge eines Heizungstauschs bis 80%)</li>
           <li>Ideal für Heizungsmodernisierung</li>
           <li>Geringerer Flächenbedarf für Warmwasser</li>
           <li>Einfache Integration in bestehende Heizsysteme</li>
@@ -8150,19 +8106,19 @@ ${GMODG_HINWEIS}
         <h3>Regulatorische Änderungen</h3>
         <ul>
           <li>Gebäudemodernisierungsgesetz (GModG, seit 29.07.2026): 65%-Regel gestrichen, Bioanteil-Stufen für neue Gas-/Ölheizungen ab 2029</li>
-          <li>KfW-Förderung: Geschwindigkeitsbonus läuft 2028 aus</li>
+          <li>KfW-Förderung: Geschwindigkeitsbonus sinkt ab 01.02.2027 halbjährlich um 4 Prozentpunkte und entfällt für Anträge ab 01.08.2028</li>
           <li>EEG-Vergütung: Degression um 1% halbjährlich</li>
           <li>Regionale PV-Pflicht: Immer mehr Bundesländer führen sie ein</li>
         </ul>
 
-        <blockquote class="my-8 p-6 bg-slate-50 border-l-4 border-[#0F5B78] rounded-r"><p class="font-semibold text-lg mb-2">Fazit</p><p class="text-slate-700">Beide Technologien haben 2025 ihre Berechtigung. Photovoltaik bietet höhere Rendite und Flexibilität, während Solarthermie durch hohe Förderung und direkte Wärmenutzung punktet. Die ideale Lösung hängt von Ihren individuellen Prioritäten ab: Priorisieren Sie Rendite und Unabhängigkeit, wählen Sie PV. Modernisieren Sie Ihre Heizung und wollen maximale Förderung, ist Solarthermie optimal. Bei ausreichend Dachfläche und Budget empfehlen wir die Kombination beider Systeme – oder innovative PVT-Kollektoren als platzsparende Alternative.</p></blockquote>
+        <blockquote class="my-8 p-6 bg-slate-50 border-l-4 border-[#0F5B78] rounded-r"><p class="font-semibold text-lg mb-2">Fazit</p><p class="text-slate-700">Beide Technologien haben 2026 ihre Berechtigung. Photovoltaik bietet höhere Rendite und Flexibilität, während Solarthermie durch hohe Förderung und direkte Wärmenutzung punktet. Die ideale Lösung hängt von Ihren individuellen Prioritäten ab: Priorisieren Sie Rendite und Unabhängigkeit, wählen Sie PV. Modernisieren Sie Ihre Heizung und wollen maximale Förderung, ist Solarthermie optimal. Bei ausreichend Dachfläche und Budget empfehlen wir die Kombination beider Systeme – oder innovative PVT-Kollektoren als platzsparende Alternative.</p></blockquote>
 
         <h2>Nächste Schritte zur Entscheidungsfindung</h2>
         <ol>
           <li><strong>Energiebedarf analysieren:</strong> Strom- und Wärmeverbrauch der letzten 2-3 Jahre prüfen</li>
           <li><strong>Dachfläche bewerten:</strong> Ausrichtung, Neigung, Verschattung, verfügbare Fläche</li>
           <li><strong>Budget festlegen:</strong> Eigenkapital und Finanzierungsmöglichkeiten klären</li>
-          <li><strong>Förderung beantragen:</strong> KfW-Antrag VOR Vertragsschluss stellen</li>
+          <li><strong>Förderung beantragen:</strong> Vertrag mit aufschiebender oder auflösender Bedingung (KfW-Zusage) schließen, dann KfW-Antrag stellen – Ausführung nach Zusage (auf eigenes Risiko ab Antragstellung)</li>
           <li><strong>Angebote einholen:</strong> Mindestens 3 Fachbetriebe vergleichen</li>
           <li><strong>Wirtschaftlichkeit rechnen:</strong> Amortisation mit Förderung durchkalkulieren</li>
         </ol>
@@ -8184,7 +8140,7 @@ ${GMODG_HINWEIS}
         <p>Solarthermie für Warmwasser kostet <strong>5.000-8.000 €</strong> (mit 30-70% KfW-Förderung). Eine vergleichbare 5 kWp PV-Anlage kostet <strong>10.500-13.500 €</strong> (0% MwSt., keine Direktförderung). PV amortisiert sich jedoch schneller (8-12 Jahre) als Solarthermie (10-15 Jahre mit Förderung).</p>
 
         <h3>Welche Förderung ist höher – Solarthermie oder Photovoltaik?</h3>
-        <p><strong>KfW-Förderung für Solarthermie (BEG 458) ist höher:</strong> Bis zu 70% Direktzuschuss (30% Basis + 20% Geschwindigkeitsbonus + 30% Einkommensbonus). Photovoltaik erhält nur zinsgünstige KfW-Kredite (Programm 270) und indirekte Vorteile durch 0% MwSt. sowie EEG-Einspeisevergütung von 7,9 Cent/kWh.</p>
+        <p><strong>KfW-Förderung für Solarthermie (BEG 458) ist höher:</strong> Als Einzelmaßnahme 30% Direktzuschuss, mit Einkommensbonus bis zu 70% (30% + 40%). Den Klimageschwindigkeitsbonus (16%) und damit bis zu 80% gibt es nur im Zuge eines Heizungstauschs, z. B. zusammen mit einer Wärmepumpe (80% nur bei zu versteuerndem Haushaltseinkommen bis 30.000 €). Photovoltaik erhält nur zinsgünstige KfW-Kredite (Programm 270) und indirekte Vorteile durch 0% MwSt. sowie EEG-Einspeisevergütung von 7,9 Cent/kWh.</p>
 
         <h3>Benötige ich für beide Systeme viel Dachfläche?</h3>
         <p><strong>Solarthermie braucht weniger Platz:</strong> 4-6 m² für Warmwasser, 10-15 m² mit Heizungsunterstützung. Photovoltaik benötigt für vergleichbaren Energieertrag 25-50 m² (5-10 kWp). Für kleine Dächer unter 20 m² ist Solarthermie platzsparender, bei großen Dächern ab 40 m² lohnt sich PV mehr.</p>
@@ -8201,7 +8157,7 @@ ${GMODG_HINWEIS}
         { question: 'Was spart mehr Stromkosten – PV oder Solarthermie?', answer: 'Photovoltaik spart deutlich mehr: Eine 10 kWp PV-Anlage spart bei 40% Eigenverbrauch rund 1.200 €/Jahr an Stromkosten. Solarthermie reduziert nur die Gas-/Ölkosten für Warmwasser um 200-400 €/Jahr. Mit PV können Sie zusätzlich Elektroauto, Wärmepumpe und Haushaltsgeräte versorgen.' },
         { question: 'Kann ich beide Systeme gleichzeitig installieren?', answer: 'Ja, bei ausreichend Dachfläche (min. 40-50 m²) ist die Kombination sinnvoll: PV für Strom und Elektroauto, Solarthermie für effiziente Warmwasserbereitung. Die Systeme stören sich nicht, da sie unterschiedliche Energieformen erzeugen. Alternativ prüfen Sie PVT-Hybridkollektoren, die beides auf einer Fläche kombinieren.' },
         { question: 'Wie unterscheiden sich die Investitionskosten?', answer: 'Solarthermie für Warmwasser kostet 5.000-8.000 € (mit 30-70% KfW-Förderung). Eine vergleichbare 5 kWp PV-Anlage kostet 10.500-13.500 € (0% MwSt., keine Direktförderung). PV amortisiert sich jedoch schneller (8-12 Jahre) als Solarthermie (10-15 Jahre mit Förderung).' },
-        { question: 'Welche Förderung ist höher – Solarthermie oder Photovoltaik?', answer: 'Die KfW-Förderung für Solarthermie (BEG 458) ist höher: Bis zu 70% Direktzuschuss (30% Basis + 20% Geschwindigkeitsbonus + 30% Einkommensbonus). Photovoltaik erhält nur zinsgünstige KfW-Kredite (Programm 270) und indirekte Vorteile durch 0% MwSt. sowie EEG-Einspeisevergütung von 7,9 Cent/kWh.' },
+        { question: 'Welche Förderung ist höher – Solarthermie oder Photovoltaik?', answer: 'Die KfW-Förderung für Solarthermie (BEG 458) ist höher: Als Einzelmaßnahme 30% Direktzuschuss, mit Einkommensbonus bis zu 70% (30% + 40%). Den Klimageschwindigkeitsbonus (16%) und damit bis zu 80% gibt es nur im Zuge eines Heizungstauschs, z. B. zusammen mit einer Wärmepumpe (80% nur bei zu versteuerndem Haushaltseinkommen bis 30.000 €). Photovoltaik erhält nur zinsgünstige KfW-Kredite (Programm 270) und indirekte Vorteile durch 0% MwSt. sowie EEG-Einspeisevergütung von 7,9 Cent/kWh.' },
         { question: 'Benötige ich für beide Systeme viel Dachfläche?', answer: 'Solarthermie braucht weniger Platz: 4-6 m² für Warmwasser, 10-15 m² mit Heizungsunterstützung. Photovoltaik benötigt für vergleichbaren Energieertrag 25-50 m² (5-10 kWp). Für kleine Dächer unter 20 m² ist Solarthermie platzsparender, bei großen Dächern ab 40 m² lohnt sich PV mehr.' },
       ],
     },
@@ -8209,9 +8165,9 @@ ${GMODG_HINWEIS}
       id: 21,
       slug: 'kfw-foerderung-solarthermie-2026',
       title: 'KfW Förderung für Solarthermie 2026: Bis zu 70% Zuschuss sichern',
-      excerpt: 'KfW-Förderung Solarthermie 2026: Bis 70% Zuschuss möglich. Wir zeigen Ihnen die Fördersätze, Antragsschritte und typische Fallstricke – aus unserer täglichen Praxis.',
+      excerpt: 'KfW-Förderung Solarthermie 2026: Bis 70% Zuschuss möglich, im Zuge eines Heizungstauschs bis 80%. Wir zeigen Ihnen die Fördersätze, Antragsschritte und typische Fallstricke – aus unserer täglichen Praxis.',
       content: `
-        <p>70% Förderung für Solarthermie – klingt verlockend, oder? Die gute Nachricht: Ja, das ist 2025 tatsächlich möglich. Die weniger gute: Nicht jeder bekommt den vollen Satz. Was Sie wirklich bekommen können und wie der Antrag funktioniert, zeigen wir Ihnen hier – Schritt für Schritt.</p>
+        <p>70% Förderung für Solarthermie – klingt verlockend, oder? Die gute Nachricht: Ja, das ist 2026 tatsächlich möglich, im Zuge eines Heizungstauschs sogar bis zu 80%. Die weniger gute: Nicht jeder bekommt den vollen Satz. Was Sie wirklich bekommen können und wie der Antrag funktioniert, zeigen wir Ihnen hier – Schritt für Schritt.</p>
 
         <h2>Übersicht: KfW-Förderung für Solarthermie 2026</h2>
 
@@ -8220,14 +8176,14 @@ ${GMODG_HINWEIS}
         <h3>Wichtigste Eckdaten 2026</h3>
         <ul>
           <li><strong>Basis-Förderung:</strong> 30% der förderfähigen Kosten</li>
-          <li><strong>Klima-Geschwindigkeitsbonus:</strong> +20% (befristet bis 2028)</li>
-          <li><strong>Einkommensbonus:</strong> +30% für Haushalte unter 40.000 € Jahreseinkommen</li>
-          <li><strong>Maximale Förderung:</strong> 70% (Kombination aller Boni)</li>
-          <li><strong>Förderhöchstgrenze:</strong> 60.000 € förderfähige Kosten pro Wohneinheit</li>
-          <li><strong>Mindestförderbetrag:</strong> 300 € (entspricht ca. 1.000 € Investition)</li>
+          <li><strong>Klima-Geschwindigkeitsbonus:</strong> +16% nur im Zuge eines Heizungstauschs, z. B. zusammen mit einer Wärmepumpe (für Anträge bis 31.01.2027, danach halbjährlich −4 Prozentpunkte, entfällt ab 01.08.2028)</li>
+          <li><strong>Einkommensbonus:</strong> +10 bis 40% für Haushalte bis 50.000 € zu versteuerndem Jahreseinkommen (40% bis 30.000 €, 30% bis 40.000 €)</li>
+          <li><strong>Maximale Förderung:</strong> Solarthermie als Einzelmaßnahme bis 70% (30% + 40% Einkommensbonus); im Zuge eines Heizungstauschs 70%, bei zu versteuerndem Haushaltseinkommen bis 30.000 € (mit Kind bis 40.000 €) 80% (Kombination aller Boni)</li>
+          <li><strong>Förderhöchstgrenze:</strong> 28.000 € förderfähige Kosten für Einfamilienhaus bzw. erste Wohneinheit (2.–6. Wohneinheit je 15.000 €, ab der 7. je 8.000 €)</li>
+          <li><strong>Mindestinvestition:</strong> 300 € (brutto)</li>
         </ul>
 
-        <div class="my-6 p-4 bg-blue-50 border-l-4 border-blue-500 rounded-r"><p class="font-semibold text-blue-900">Wichtig:</p><p class="text-slate-700">Der Antrag muss VOR Beginn der Maßnahme gestellt werden. Eine Beauftragung vor Antragstellung führt zur Ablehnung!</p></div>
+        <div class="my-6 p-4 bg-blue-50 border-l-4 border-blue-500 rounded-r"><p class="font-semibold text-blue-900">Wichtig:</p><p class="text-slate-700">Vor der Antragstellung wird ein Liefer- bzw. Leistungsvertrag mit aufschiebender oder auflösender Bedingung (Zusage der KfW) und voraussichtlichem Umsetzungsdatum geschlossen und im Antrag hochgeladen. Ein Vertrag ohne diese Bedingung oder ein Baubeginn vor Antragstellung schließt die Förderung aus!</p></div>
 
         <h2>Fördersätze im Detail</h2>
 
@@ -8243,43 +8199,44 @@ ${GMODG_HINWEIS}
 
         <p><strong>Beispiel:</strong> Eine Solarthermieanlage für 10.000 € erhält 3.000 € Förderung (30%).</p>
 
-        <h3>Klima-Geschwindigkeitsbonus: +20%</h3>
-        <p>Dieser zeitlich befristete Bonus wird gewährt beim Austausch von:</p>
+        <h3>Klima-Geschwindigkeitsbonus: +16%</h3>
+        <p>Dieser zeitlich befristete Bonus wird selbstnutzenden Eigentümern nur im Zuge eines Heizungstauschs gewährt – also wenn zusammen mit der Solarthermie ein neuer Wärmeerzeuger (z. B. eine Wärmepumpe) eine dieser Heizungen ersetzt. Eine Solarthermieanlage allein ersetzt keinen Wärmeerzeuger; läuft die alte Öl- oder Gasheizung weiter, gibt es keinen Klimabonus. Begünstigt ist der Austausch von:</p>
         <ul>
           <li>Funktionsfähigen Öl-, Kohle- oder Nachtspeicherheizungen</li>
-          <li>Gasheizungen, die 20 Jahre oder älter sind</li>
+          <li>Gas- oder Biomasseheizungen, die 20 Jahre oder älter sind</li>
           <li>Gasetagen­heizungen, unabhängig vom Alter</li>
         </ul>
 
         <p><strong>Befristung:</strong> Der Geschwindigkeitsbonus wird schrittweise reduziert:</p>
         <ul>
-          <li>Bis 31.12.2028: volle 20%</li>
-          <li>01.01.2029 - 31.12.2029: nur noch 17%</li>
-          <li>Ab 01.01.2030: nur noch 14%</li>
+          <li>Anträge bis 31.01.2027: volle 16%</li>
+          <li>Ab 01.02.2027: halbjährlich (zum 01.02. und 01.08.) jeweils 4 Prozentpunkte weniger</li>
+          <li>Anträge ab 01.08.2028: kein Geschwindigkeitsbonus mehr</li>
         </ul>
 
-        <p><strong>Beispiel:</strong> Bei Austausch einer alten Ölheizung erhöht sich die Förderung von 30% auf 50% (30% Basis + 20% Geschwindigkeit).</p>
+        <p><strong>Beispiel:</strong> Wird die alte Ölheizung zusammen mit der Solarthermie durch eine Wärmepumpe ersetzt, erhöht sich die Förderung von 30% auf 46% (30% Basis + 16% Geschwindigkeit).</p>
 
-        <h3>Einkommensbonus: +30%</h3>
-        <p>Haushalte mit zu versteuerndem Jahreseinkommen unter 40.000 € erhalten zusätzliche 30% Förderung.</p>
+        <h3>Einkommensbonus: +10 bis 40%</h3>
+        <p>Haushalte erhalten je nach zu versteuerndem Jahreseinkommen zusätzlich 40% (bis 30.000 €), 30% (bis 40.000 €) oder 10% (bis 50.000 €) Förderung. Mit mindestens einem minderjährigen, kindergeldberechtigten Kind steigen die Grenzen um 10.000 €.</p>
 
         <p><strong>Wichtige Hinweise:</strong></p>
         <ul>
           <li>Gilt für Selbstnutzer von Wohngebäuden</li>
           <li>Einkommensgrenze bezieht sich auf zu versteuerndes Einkommen (nach Abzügen)</li>
-          <li>Nachweispflicht durch Einkommenssteuerbescheid</li>
+          <li>Maßgeblich ist der Durchschnitt des zu versteuernden Einkommens aus dem zweiten und dritten Kalenderjahr vor Antragseingang (Antrag 2026: 2023 und 2024)</li>
+          <li>Nachweis ausschließlich durch die Einkommensteuerbescheide dieser Jahre</li>
           <li>Bei Ehepartnern zählt das gemeinsame Einkommen</li>
         </ul>
 
-        <p><strong>Beispiel:</strong> Ein Haushalt mit 35.000 € Jahreseinkommen beim Ölheizungstausch erhält: 30% (Basis) + 20% (Geschwindigkeit) + 30% (Einkommen) = 70% Förderung (maximal möglich).</p>
+        <p><strong>Beispiel:</strong> Ein Haushalt mit 35.000 € Jahreseinkommen, der seine Ölheizung durch eine Wärmepumpe mit Solarthermie ersetzt, erhält: 30% (Basis) + 16% (Geschwindigkeit) + 30% (Einkommen) = 76%, gedeckelt auf 70% Förderung.</p>
 
-        <h3>Maximale Förderung: 70%</h3>
-        <p>Die Kombination aller Boni ist möglich, allerdings gilt eine Obergrenze von 70%:</p>
+        <h3>Maximale Förderung: 70% bzw. 80%</h3>
+        <p>Im Zuge eines Heizungstauschs ist die Kombination aller Boni möglich, allerdings gilt eine Obergrenze von 70% – für Selbstnutzer mit zu versteuerndem Haushaltseinkommen bis 30.000 € (mit Kind bis 40.000 €) von 80%. Für Solarthermie als Einzelmaßnahme entfällt der Geschwindigkeitsbonus, das Maximum liegt dann bei 30% + 40% = 70%:</p>
         <ul>
           <li>30% Basis-Förderung</li>
-          <li>+20% Geschwindigkeitsbonus</li>
-          <li>+30% Einkommensbonus</li>
-          <li>= 80% rechnerisch, aber begrenzt auf maximal 70%</li>
+          <li>+16% Geschwindigkeitsbonus</li>
+          <li>+40% Einkommensbonus</li>
+          <li>= 86% rechnerisch, aber begrenzt auf maximal 80% (nur im genannten Einkommensfall)</li>
         </ul>
 
         <h2>Förderfähige Kosten und Höchstgrenzen</h2>
@@ -8297,16 +8254,16 @@ ${GMODG_HINWEIS}
 
         <h3>Maximale förderfähige Kosten</h3>
         <ul>
-          <li><strong>Wohngebäude:</strong> 60.000 € pro Wohneinheit</li>
+          <li><strong>Wohngebäude:</strong> 28.000 € für Einfamilienhaus bzw. erste Wohneinheit, je 15.000 € für die 2.–6. und je 8.000 € ab der 7. Wohneinheit</li>
           <li><strong>Nichtwohngebäude:</strong> 1.000 € pro m² Nettogrundfläche, maximal 15 Mio. €</li>
         </ul>
 
         <p><strong>Beispielrechnung Einfamilienhaus:</strong></p>
         <ul>
           <li>Gesamtkosten Solarthermieanlage: 15.000 €</li>
-          <li>Förderfähige Kosten: 15.000 € (unter 60.000 € Grenze)</li>
-          <li>Förderung bei 50% (Basis + Geschwindigkeit): 7.500 €</li>
-          <li>Eigenanteil: 7.500 €</li>
+          <li>Förderfähige Kosten: 15.000 € (unter 28.000 € Grenze)</li>
+          <li>Förderung bei 30% (Basis, ohne Heizungstausch): 4.500 €</li>
+          <li>Eigenanteil: 10.500 €</li>
         </ul>
 
         <h2>Technische Voraussetzungen</h2>
@@ -8362,10 +8319,10 @@ ${GMODG_HINWEIS}
           <li><strong>Antrag ausfüllen:</strong> Alle erforderlichen Angaben eintragen</li>
           <li><strong>Dokumente hochladen:</strong>
             <ul>
-              <li>Kostenvoranschlag des Fachbetriebs</li>
+              <li>Liefer-/Leistungsvertrag mit aufschiebender oder auflösender Bedingung (KfW-Zusage) und voraussichtlichem Umsetzungsdatum</li>
               <li>Technische Datenblätter der Kollektoren (Solar Keymark)</li>
               <li>Grundriss/Lageplan des Gebäudes</li>
-              <li>Bei Einkommensbonus: Einkommenssteuerbescheid</li>
+              <li>Bei Einkommensbonus: Einkommensteuerbescheide des zweiten und dritten Kalenderjahres vor Antragseingang</li>
             </ul>
           </li>
           <li><strong>Antrag absenden:</strong> Elektronisch übermitteln</li>
@@ -8375,7 +8332,7 @@ ${GMODG_HINWEIS}
         <ul>
           <li><strong>Bearbeitungszeit:</strong> 4-8 Wochen (aktuell)</li>
           <li><strong>Zuwendungsbescheid:</strong> Schriftliche Förderzusage mit Auflagen</li>
-          <li><strong>Maßnahmenbeginn:</strong> Erst nach Erhalt des Bescheids beauftragen!</li>
+          <li><strong>Ausführung:</strong> Nach Erhalt der Zusage mit der Installation beginnen – ein früherer Start nach Antragstellung erfolgt auf eigenes Risiko.</li>
         </ul>
 
         <div class="my-6 p-4 bg-blue-50 border-l-4 border-blue-500 rounded-r"><p class="font-semibold text-blue-900">Wichtig:</p><p class="text-slate-700">Lieferverträge und Leistungsvereinbarungen dürfen erst nach Erhalt des Zuwendungsbescheids geschlossen werden. Planungsleistungen sind vorher erlaubt.</p></div>
@@ -8412,9 +8369,9 @@ ${GMODG_HINWEIS}
         <h2>Häufige Fehler und wie Sie sie vermeiden</h2>
 
         <h3>Fehler 1: Vorzeitiger Maßnahmenbeginn</h3>
-        <p><strong>Problem:</strong> Beauftragung vor Antragstellung oder vor Bewilligung</p>
+        <p><strong>Problem:</strong> Vertrag ohne Förderbedingung oder Baubeginn vor Antragstellung</p>
         <p><strong>Folge:</strong> Förderantrag wird abgelehnt, kein Zuschuss</p>
-        <p><strong>Lösung:</strong> Erst Antrag stellen, dann auf Bewilligung warten, dann beauftragen</p>
+        <p><strong>Lösung:</strong> Erst Vertrag mit aufschiebender oder auflösender Bedingung schließen, dann Antrag stellen, mit der Ausführung nach der Zusage (oder auf eigenes Risiko nach Antragstellung) beginnen</p>
 
         <h3>Fehler 2: Unvollständige Unterlagen</h3>
         <p><strong>Problem:</strong> Fehlende Solar Keymark, unvollständiger Kostenvoranschlag</p>
@@ -8446,7 +8403,7 @@ ${GMODG_HINWEIS}
         <p><strong>Nicht kombinierbar:</strong></p>
         <ul>
           <li>Doppelförderung für dieselbe Maßnahme ist ausgeschlossen</li>
-          <li>Steuerbonus §35c nicht mit KfW-Zuschuss kombinierbar</li>
+          <li>Keine gleichzeitige Steuerförderung nach § 35a oder § 35c EStG für dieselbe Maßnahme</li>
         </ul>
 
         <h3>Regionale Förderprogramme</h3>
@@ -8480,19 +8437,19 @@ ${GMODG_HINWEIS}
           <li>Amortisation: 18,7 Jahre</li>
         </ul>
 
-        <h3>Beispiel 2: Heizungsunterstützung mit Ölheizungstausch</h3>
+        <h3>Beispiel 2: Heizungsunterstützung neben bestehender Ölheizung</h3>
         <ul>
           <li>Gesamtkosten: 14.000 €</li>
-          <li>Förderung: 50% (30% Basis + 20% Geschwindigkeit) = 7.000 €</li>
-          <li>Eigenanteil: 7.000 €</li>
+          <li>Förderung: 30% Basis = 4.200 € (kein Klimabonus, da die Ölheizung weiterläuft)</li>
+          <li>Eigenanteil: 9.800 €</li>
           <li>Jährliche Ersparnis: 650 € (Öl + Strom)</li>
-          <li>Amortisation: 10,8 Jahre</li>
+          <li>Amortisation: 15,1 Jahre</li>
         </ul>
 
-        <h3>Beispiel 3: Maximale Förderung (70%)</h3>
+        <h3>Beispiel 3: Maximale Förderung als Einzelmaßnahme (70%, Einkommen bis 30.000 €)</h3>
         <ul>
           <li>Gesamtkosten: 16.000 €</li>
-          <li>Förderung: 70% (30% + 20% + 30% Einkommensbonus) = 11.200 €</li>
+          <li>Förderung: 70% (30% Basis + 40% Einkommensbonus) = 11.200 €</li>
           <li>Eigenanteil: 4.800 €</li>
           <li>Jährliche Ersparnis: 700 €</li>
           <li>Amortisation: 6,9 Jahre</li>
@@ -8503,20 +8460,20 @@ ${GMODG_HINWEIS}
           <li>Gesamtkosten Solarthermie: 22.000 €</li>
           <li>Gesamtkosten Wärmepumpe: 28.000 €</li>
           <li>Gesamtinvestition: 50.000 €</li>
-          <li>Förderung gesamt: 50% (kombiniert) = 25.000 €</li>
-          <li>Eigenanteil: 25.000 €</li>
+          <li>Förderung gesamt: 46% von max. 28.000 € förderfähigen Kosten = 12.880 €</li>
+          <li>Eigenanteil: 37.120 €</li>
           <li>Jährliche Ersparnis: 2.200 € (alte Ölheizung)</li>
-          <li>Amortisation: 11,4 Jahre</li>
+          <li>Amortisation: 16,9 Jahre</li>
         </ul>
 
         <h2>Zukunft der KfW-Förderung</h2>
 
         <h3>Geplante Änderungen</h3>
         <ul>
-          <li><strong>2028:</strong> Reduzierung des Geschwindigkeitsbonus beginnt</li>
-          <li><strong>2029:</strong> Geschwindigkeitsbonus nur noch 17%</li>
-          <li><strong>2030:</strong> Geschwindigkeitsbonus nur noch 14%</li>
-          <li><strong>Ab 2031:</strong> Geschwindigkeitsbonus könnte entfallen</li>
+          <li><strong>01.02.2027:</strong> Reduzierung des Geschwindigkeitsbonus beginnt (16% → 12%)</li>
+          <li><strong>01.08.2027:</strong> Geschwindigkeitsbonus nur noch 8%</li>
+          <li><strong>01.02.2028:</strong> Geschwindigkeitsbonus nur noch 4%</li>
+          <li><strong>Ab 01.08.2028:</strong> Geschwindigkeitsbonus entfällt</li>
         </ul>
 
         <p>Die Basis-Förderung von 30% bleibt voraussichtlich bis mindestens 2030 bestehen, da sie Teil der Klimaschutzstrategie der Bundesregierung ist.</p>
@@ -8531,7 +8488,7 @@ ${GMODG_HINWEIS}
 
         <p>Solarthermieanlagen haben bisher nur einen kleinen Teil dieser Mittel in Anspruch genommen, sodass ausreichend Budget verfügbar ist.</p>
 
-        <blockquote class="my-8 p-6 bg-slate-50 border-l-4 border-[#0F5B78] rounded-r"><p class="font-semibold text-lg mb-2">Fazit</p><p class="text-slate-700">Die KfW-Förderung (seit 2024 über KfW statt BAFA) macht Solarthermieanlagen extrem attraktiv. Mit bis zu 70% Zuschuss amortisiert sich die Investition je nach Konstellation bereits nach 7-12 Jahren. Der Geschwindigkeitsbonus läuft 2028 aus – wer jetzt plant, profitiert maximal. Besonders lohnend ist die Kombination von Solarthermie mit Wärmepumpen beim Heizungstausch. Wichtig: Antrag immer VOR Beauftragung im KfW-Portal stellen und alle technischen Mindestanforderungen einhalten.</p></blockquote>
+        <blockquote class="my-8 p-6 bg-slate-50 border-l-4 border-[#0F5B78] rounded-r"><p class="font-semibold text-lg mb-2">Fazit</p><p class="text-slate-700">Die KfW-Förderung (seit 2024 über KfW statt BAFA) macht Solarthermieanlagen extrem attraktiv. Mit bis zu 70% Zuschuss (im Zuge eines Heizungstauschs bis zu 80%) amortisiert sich die Investition je nach Konstellation bereits nach 7-12 Jahren. Der Geschwindigkeitsbonus sinkt ab 01.02.2027 und entfällt für Anträge ab 01.08.2028 – wer jetzt plant, profitiert maximal. Besonders lohnend ist die Kombination von Solarthermie mit Wärmepumpen beim Heizungstausch. Wichtig: Vor dem Antrag nur einen Vertrag mit aufschiebender oder auflösender Bedingung (KfW-Zusage) unterschreiben, mit der Ausführung nach der Zusage (oder auf eigenes Risiko nach Antragstellung) beginnen und alle technischen Mindestanforderungen einhalten.</p></blockquote>
 
         <h2>Ihre nächsten Schritte</h2>
         <ol>
@@ -8562,19 +8519,19 @@ ${GMODG_HINWEIS}
         <h2>Häufig gestellte Fragen (FAQ)</h2>
 
         <h3>Wie viel Förderung bekomme ich für Solarthermie 2026?</h3>
-        <p>Die Basis-Förderung beträgt <strong>30% der förderfähigen Kosten</strong>. Mit Klima-Geschwindigkeitsbonus (20% bei Öl-/Gasheizungstausch) und Einkommensbonus (30% bei Einkommen unter 40.000 €) sind bis zu <strong>70% Zuschuss</strong> möglich. Maximal werden 60.000 € Investitionskosten pro Wohneinheit gefördert.</p>
+        <p>Die Basis-Förderung beträgt <strong>30% der förderfähigen Kosten</strong>. Mit Einkommensbonus (40% bis 30.000 €, 30% bis 40.000 €, 10% bis 50.000 € Einkommen) sind für Solarthermie als Einzelmaßnahme bis zu <strong>70% Zuschuss</strong> möglich. Den Klima-Geschwindigkeitsbonus (16%) gibt es nur im Zuge eines Heizungstauschs – wenn zusammen mit der Solarthermie ein neuer Wärmeerzeuger (z. B. eine Wärmepumpe) eine funktionstüchtige Öl-, Kohle-, Gas-Etagen- oder Nachtspeicherheizung oder eine mindestens 20 Jahre alte Gasheizung ersetzt. Dann sind bis zu 80% möglich (80% nur bei zu versteuerndem Haushaltseinkommen bis 30.000 €, mit Kind bis 40.000 €; sonst höchstens 70%). Maximal werden 28.000 € förderfähige Kosten für ein Einfamilienhaus bzw. die erste Wohneinheit gefördert.</p>
 
         <h3>Wie beantrage ich die KfW-Förderung für Solarthermie?</h3>
-        <p>Seit Januar 2024 läuft die Heizungsförderung über die <strong>KfW (BEG-Programm 458)</strong>, nicht mehr über BAFA. Antrag online über das <strong>KfW-Zuschussportal</strong> stellen – zwingend VOR Vertragsabschluss mit Fachbetrieb. Nach Bewilligung haben Sie 36 Monate Zeit für Umsetzung und Verwendungsnachweis.</p>
+        <p>Seit Januar 2024 läuft die Heizungsförderung über die <strong>KfW (BEG-Programm 458)</strong>, nicht mehr über BAFA. Antrag online über das <strong>KfW-Zuschussportal</strong> stellen – auf Basis eines Vertrags mit dem Fachbetrieb, der eine aufschiebende oder auflösende Bedingung (Zusage der KfW) enthält und vor der Antragstellung geschlossen und hochgeladen wird. Mit der Ausführung nach der Zusage beginnen – oder auf eigenes Risiko schon nach der Antragstellung. Nach Bewilligung haben Sie 36 Monate Zeit für Umsetzung und Verwendungsnachweis.</p>
 
         <h3>Gibt es eine Frist für die Antragstellung?</h3>
-        <p>Der Antrag muss <strong>vor Vertragsabschluss</strong> bei der KfW eingereicht werden. Nach Bewilligung haben Sie <strong>36 Monate</strong> Zeit für Installation und Verwendungsnachweis. Der Geschwindigkeitsbonus (20%) läuft 2028 aus – danach sinkt die Förderung schrittweise auf 30% Basis.</p>
+        <p>Vor der Antragstellung wird ein <strong>Vertrag mit aufschiebender oder auflösender Bedingung</strong> (Zusage der KfW) und voraussichtlichem Umsetzungsdatum geschlossen; ein Vertrag ohne diese Bedingung oder ein Baubeginn vor Antragstellung schließt die Förderung aus. Nach Bewilligung haben Sie <strong>36 Monate</strong> Zeit für Installation und Verwendungsnachweis. Der Geschwindigkeitsbonus (16%) sinkt ab 01.02.2027 halbjährlich um 4 Prozentpunkte und entfällt für Anträge ab 01.08.2028.</p>
 
         <h3>Kann ich mehrere Förderungen kombinieren?</h3>
-        <p>Ja, aber eingeschränkt: KfW BEG-Einzelmaßnahmen (458) lassen sich mit KfW-Effizienzhausförderung kombinieren, sofern keine <strong>Doppelförderung derselben Maßnahme</strong> erfolgt. Regionale Programme (z.B. Bayern 10.000-Häuser-Programm, L-Bank) sind zusätzlich möglich. Energieberatung wird separat mit 80% gefördert.</p>
+        <p>Ja, aber eingeschränkt: Eine Kombination von BEG-Einzelmaßnahmen (458) mit der BEG-Wohngebäudeförderung (Effizienzhaus) ist <strong>ausgeschlossen</strong>, dazwischen gilt eine Sperrfrist von drei Jahren. Kombinierbar ist der KfW-Ergänzungskredit 358/359. Mit anderen öffentlichen Mitteln darf bis zu 60% der geförderten Kosten kumuliert werden. Eine gleichzeitige Steuerförderung nach § 35a oder § 35c EStG für dieselbe Maßnahme ist nicht möglich. Energieberatung wird separat mit 80% gefördert.</p>
 
         <h3>Welche Solarthermieanlagen sind förderfähig?</h3>
-        <p>Förderfähig sind Anlagen mit <strong>Solar-Keymark-Zertifikat</strong> und Mindestkollektorfläche von 7 m² (Bestandsgebäude) bzw. 20 m² (Neubau). Warmwasseranlagen benötigen mindestens <strong>20% solare Deckung</strong>, Kombianlagen mindestens 50 kWh/m² Jahresertrag. Nur Fachbetriebe aus der Energieeffizienz-Expertenliste dürfen installieren.</p>
+        <p>Förderfähig sind Anlagen mit <strong>Solar-Keymark-Zertifikat</strong> und Mindestkollektorfläche von 7 m². Gefördert werden nur bestehende Wohngebäude, deren Bauantrag mindestens 5 Jahre zurückliegt – Neubauten erhalten keine KfW-458-Förderung. Warmwasseranlagen benötigen mindestens <strong>20% solare Deckung</strong>, Kombianlagen mindestens 50 kWh/m² Jahresertrag. Nur Fachbetriebe aus der Energieeffizienz-Expertenliste dürfen installieren.</p>
 
         <h3>Wie lange dauert es bis zur Förderauszahlung?</h3>
         <p>Nach Antragstellung: <strong>4-8 Wochen Bearbeitungszeit</strong> für Bewilligung. Nach Installation und Verwendungsnachweis: <strong>6-12 Wochen</strong> bis zur Auszahlung. Planen Sie insgesamt 3-6 Monate vom Antrag bis zum Geldeingang ein. Bei unvollständigen Unterlagen verlängert sich die Frist erheblich.</p>
@@ -8587,11 +8544,11 @@ ${GMODG_HINWEIS}
       tags: ['KfW Förderung', 'Solarthermie', 'Zuschuss', 'BEG', 'Förderung Heizung', 'Geschwindigkeitsbonus', 'Antragstellung'],
       featured: true,
       faqs: [
-        { question: 'Wie viel Förderung bekomme ich für Solarthermie 2026?', answer: 'Die Basis-Förderung beträgt 30% der förderfähigen Kosten. Mit Klima-Geschwindigkeitsbonus (20% bei Öl-/Gasheizungstausch) und Einkommensbonus (30% bei Einkommen unter 40.000 €) sind bis zu 70% Zuschuss möglich. Maximal werden 60.000 € Investitionskosten pro Wohneinheit gefördert.' },
-        { question: 'Wie beantrage ich die KfW-Förderung für Solarthermie?', answer: 'Seit Januar 2024 läuft die Heizungsförderung über die KfW (BEG-Programm 458), nicht mehr über BAFA. Antrag online über das KfW-Zuschussportal stellen – zwingend VOR Vertragsabschluss mit Fachbetrieb. Nach Bewilligung haben Sie 36 Monate Zeit für Umsetzung und Verwendungsnachweis.' },
-        { question: 'Gibt es eine Frist für die Antragstellung?', answer: 'Der Antrag muss vor Vertragsabschluss bei der KfW eingereicht werden. Nach Bewilligung haben Sie 36 Monate Zeit für Installation und Verwendungsnachweis. Der Geschwindigkeitsbonus (20%) läuft 2028 aus – danach sinkt die Förderung schrittweise auf 30% Basis.' },
-        { question: 'Kann ich mehrere Förderungen kombinieren?', answer: 'Ja, aber eingeschränkt: KfW BEG-Einzelmaßnahmen (458) lassen sich mit KfW-Effizienzhausförderung kombinieren, sofern keine Doppelförderung derselben Maßnahme erfolgt. Regionale Programme (z.B. Bayern 10.000-Häuser-Programm, L-Bank) sind zusätzlich möglich. Energieberatung wird separat mit 80% gefördert.' },
-        { question: 'Welche Solarthermieanlagen sind förderfähig?', answer: 'Förderfähig sind Anlagen mit Solar-Keymark-Zertifikat und Mindestkollektorfläche von 7 m² (Bestandsgebäude) bzw. 20 m² (Neubau). Warmwasseranlagen benötigen mindestens 20% solare Deckung, Kombianlagen mindestens 50 kWh/m² Jahresertrag. Nur Fachbetriebe aus der Energieeffizienz-Expertenliste dürfen installieren.' },
+        { question: 'Wie viel Förderung bekomme ich für Solarthermie 2026?', answer: 'Die Basis-Förderung beträgt 30% der förderfähigen Kosten. Mit Einkommensbonus (40% bis 30.000 €, 30% bis 40.000 €, 10% bis 50.000 € Einkommen) sind für Solarthermie als Einzelmaßnahme bis zu 70% Zuschuss möglich. Den Klima-Geschwindigkeitsbonus (16%) gibt es nur im Zuge eines Heizungstauschs – wenn zusammen mit der Solarthermie ein neuer Wärmeerzeuger (z. B. eine Wärmepumpe) eine funktionstüchtige Öl-, Kohle-, Gas-Etagen- oder Nachtspeicherheizung oder eine mindestens 20 Jahre alte Gasheizung ersetzt. Dann sind bis zu 80% möglich (80% nur bei zu versteuerndem Haushaltseinkommen bis 30.000 €, mit Kind bis 40.000 €; sonst höchstens 70%). Maximal werden 28.000 € förderfähige Kosten für ein Einfamilienhaus bzw. die erste Wohneinheit gefördert.' },
+        { question: 'Wie beantrage ich die KfW-Förderung für Solarthermie?', answer: 'Seit Januar 2024 läuft die Heizungsförderung über die KfW (BEG-Programm 458), nicht mehr über BAFA. Antrag online über das KfW-Zuschussportal stellen – auf Basis eines Vertrags mit dem Fachbetrieb, der eine aufschiebende oder auflösende Bedingung (Zusage der KfW) enthält und vor der Antragstellung geschlossen und hochgeladen wird. Mit der Ausführung nach der Zusage beginnen – oder auf eigenes Risiko schon nach der Antragstellung. Nach Bewilligung haben Sie 36 Monate Zeit für Umsetzung und Verwendungsnachweis.' },
+        { question: 'Gibt es eine Frist für die Antragstellung?', answer: 'Vor der Antragstellung wird ein Vertrag mit aufschiebender oder auflösender Bedingung (Zusage der KfW) und voraussichtlichem Umsetzungsdatum geschlossen; ein Vertrag ohne diese Bedingung oder ein Baubeginn vor Antragstellung schließt die Förderung aus. Nach Bewilligung haben Sie 36 Monate Zeit für Installation und Verwendungsnachweis. Der Geschwindigkeitsbonus (16%) sinkt ab 01.02.2027 halbjährlich um 4 Prozentpunkte und entfällt für Anträge ab 01.08.2028.' },
+        { question: 'Kann ich mehrere Förderungen kombinieren?', answer: 'Ja, aber eingeschränkt: Eine Kombination von BEG-Einzelmaßnahmen (458) mit der BEG-Wohngebäudeförderung (Effizienzhaus) ist ausgeschlossen, dazwischen gilt eine Sperrfrist von drei Jahren. Kombinierbar ist der KfW-Ergänzungskredit 358/359. Mit anderen öffentlichen Mitteln darf bis zu 60% der geförderten Kosten kumuliert werden. Eine gleichzeitige Steuerförderung nach § 35a oder § 35c EStG für dieselbe Maßnahme ist nicht möglich. Energieberatung wird separat mit 80% gefördert.' },
+        { question: 'Welche Solarthermieanlagen sind förderfähig?', answer: 'Förderfähig sind Anlagen mit Solar-Keymark-Zertifikat und Mindestkollektorfläche von 7 m². Gefördert werden nur bestehende Wohngebäude, deren Bauantrag mindestens 5 Jahre zurückliegt – Neubauten erhalten keine KfW-458-Förderung. Warmwasseranlagen benötigen mindestens 20% solare Deckung, Kombianlagen mindestens 50 kWh/m² Jahresertrag. Nur Fachbetriebe aus der Energieeffizienz-Expertenliste dürfen installieren.' },
         { question: 'Wie lange dauert es bis zur Förderauszahlung?', answer: 'Nach Antragstellung: 4-8 Wochen Bearbeitungszeit für Bewilligung. Nach Installation und Verwendungsnachweis: 6-12 Wochen bis zur Auszahlung. Planen Sie insgesamt 3-6 Monate vom Antrag bis zum Geldeingang ein. Bei unvollständigen Unterlagen verlängert sich die Frist erheblich.' },
       ],
     },
@@ -8628,7 +8585,7 @@ ${GMODG_HINWEIS}
         <h3>Wirtschaftliche Vorteile</h3>
         <ul>
           <li><strong>Geringere Betriebskosten:</strong> 20-30% weniger Stromverbrauch als reine Wärmepumpe</li>
-          <li><strong>Hohe Förderung:</strong> Bis zu 70% KfW-Zuschuss möglich (BEG 458)</li>
+          <li><strong>Hohe Förderung:</strong> Bis zu 80% KfW-Zuschuss möglich (BEG 458)</li>
           <li><strong>Wertsteigerung:</strong> Immobilie erfüllt höchste Energiestandards</li>
           <li><strong>Zukunftssicher:</strong> Wärmepumpen-Hybrid ist ein Erfüllungsweg nach § 43 GModG (Wärmepumpenleistung mind. 30% bzw. 40% des Spitzenlasterzeugers)</li>
           <li><strong>Unabhängigkeit:</strong> Reduzierte Abhängigkeit von Strompreisen</li>
@@ -8681,7 +8638,7 @@ ${GMODG_HINWEIS}
           <li>Höchste Effizienz (JAZ 4,5-5,5)</li>
           <li>Konstante Quellentemperatur</li>
           <li>Leiser Betrieb</li>
-          <li>Ideal für Neubau</li>
+          <li>Ideal für Neubau (Neubauten erhalten jedoch keinen Zuschuss aus KfW 458)</li>
         </ul>
 
         <p><strong>Kosten:</strong></p>
@@ -8689,8 +8646,8 @@ ${GMODG_HINWEIS}
           <li>Wärmepumpe mit Erdsonde: 25.000-35.000 €</li>
           <li>Solarthermie (12 m²): 12.000-16.000 €</li>
           <li>Gesamtinvestition: 37.000-51.000 €</li>
-          <li>Förderung (50%): 18.500-25.500 €</li>
-          <li>Eigenanteil: 18.500-25.500 €</li>
+          <li>Förderung bei Heizungstausch im Bestandsgebäude (Selbstnutzer mit Klimageschwindigkeitsbonus, 46% von max. 28.000 € förderfähigen Kosten): 12.880 €</li>
+          <li>Eigenanteil: 24.120-38.120 €</li>
         </ul>
 
         <h3>Variante 2: Luft-Wärmepumpe + Solarthermie</h3>
@@ -8707,8 +8664,8 @@ ${GMODG_HINWEIS}
           <li>Luft-Wärmepumpe: 15.000-22.000 €</li>
           <li>Solarthermie (12 m²): 12.000-16.000 €</li>
           <li>Gesamtinvestition: 27.000-38.000 €</li>
-          <li>Förderung (50%): 13.500-19.000 €</li>
-          <li>Eigenanteil: 13.500-19.000 €</li>
+          <li>Förderung (46%, max. 28.000 € förderfähig): 12.420-12.880 €</li>
+          <li>Eigenanteil: 14.580-25.120 €</li>
         </ul>
 
         <div class="my-6 p-4 bg-blue-50 border-l-4 border-blue-500 rounded-r"><p class="font-semibold text-blue-900">Tipp:</p><p class="text-slate-700">Luft-Wärmepumpen profitieren besonders von Solarthermie, da die solare Vorwärmung die niedrigere Quellentemperatur der Außenluft ausgleicht.</p></div>
@@ -8793,19 +8750,19 @@ ${GMODG_HINWEIS}
         <p><strong>Fördersätze:</strong></p>
         <ul>
           <li>Basis-Förderung: 30%</li>
-          <li>Geschwindigkeitsbonus (Heizungstausch): +20%</li>
-          <li>Einkommensbonus (<40.000 €): +30%</li>
-          <li><strong>Maximum: 70%</strong></li>
-          <li><strong>Förderobergrenze: 30.000 € pro Wohneinheit</strong></li>
+          <li>Geschwindigkeitsbonus (Heizungstausch, nur Selbstnutzer): +16%</li>
+          <li>Einkommensbonus (bis 30.000 € / 40.000 € / 50.000 €): +40% / +30% / +10%</li>
+          <li><strong>Maximum: 70%</strong> (80% bei zu versteuerndem Haushaltseinkommen bis 30.000 €, mit Kind bis 40.000 €)</li>
+          <li><strong>Förderobergrenze: 28.000 € förderfähige Kosten (Einfamilienhaus bzw. erste Wohneinheit)</strong></li>
         </ul>
 
-        <div class="my-6 p-4 bg-amber-50 border-l-4 border-amber-500 rounded-r"><p class="font-semibold text-amber-900">⚠️ Wichtig zur Förderobergrenze:</p><p class="text-slate-700">Die KfW-Förderung (BEG 458) ist auf maximal 30.000 € pro Wohneinheit gedeckelt. Bei 70% Fördersatz bedeutet das: Nur Investitionskosten bis 42.857 € werden voll gefördert. Bei höheren Kosten (z.B. 53.500 € für Sole-WP + Solar) bleibt der Zuschuss bei 30.000 €.</p></div>
+        <div class="my-6 p-4 bg-amber-50 border-l-4 border-amber-500 rounded-r"><p class="font-semibold text-amber-900">⚠️ Wichtig zur Förderobergrenze:</p><p class="text-slate-700">Die KfW-Förderung (BEG 458) ist beim Einfamilienhaus auf maximal 28.000 € förderfähige Kosten gedeckelt. Bei 70% Fördersatz bedeutet das: höchstens 19.600 € Zuschuss, bei 80% (nur bei Einkommen bis 30.000 €) höchstens 22.400 €. Bei höheren Kosten (z.B. 53.500 € für Sole-WP + Solar) werden trotzdem nur 28.000 € gefördert.</p></div>
 
         <p><strong>Beispielrechnung (Heizungstausch):</strong></p>
         <ul>
           <li>Gesamtkosten: 34.000 €</li>
-          <li>Förderung (50%): 17.000 €</li>
-          <li>Eigenanteil: 17.000 €</li>
+          <li>Förderung (46% von max. 28.000 €): 12.880 €</li>
+          <li>Eigenanteil: 21.120 €</li>
         </ul>
 
         <h3>Betriebskosten-Vergleich</h3>
@@ -8841,20 +8798,20 @@ ${GMODG_HINWEIS}
 
         <h3>Amortisationsrechnung</h3>
 
-        <p><strong>Szenario: Ölheizungstausch, 50% Förderung</strong></p>
+        <p><strong>Szenario: Ölheizungstausch, 46% Förderung</strong></p>
         <ul>
           <li>Investition Hybrid-System: 34.000 €</li>
-          <li>KfW-Förderung (50%): -17.000 €</li>
-          <li>Eigenanteil: 17.000 €</li>
+          <li>KfW-Förderung (46% von max. 28.000 €): -12.880 €</li>
+          <li>Eigenanteil: 21.120 €</li>
           <li>Jährliche Ersparnis: 1.412 €</li>
-          <li><strong>Amortisation: 12 Jahre</strong></li>
+          <li><strong>Amortisation: 15 Jahre</strong></li>
         </ul>
 
         <p><strong>Nach 20 Jahren Betrieb:</strong></p>
         <ul>
           <li>Gesamtersparnis: 28.240 €</li>
-          <li>Abzüglich Eigenanteil: 11.240 € Gewinn</li>
-          <li>Rendite: ca. 4,5% p.a.</li>
+          <li>Abzüglich Eigenanteil: 7.120 € Gewinn</li>
+          <li>Rendite: ca. 3% p.a.</li>
         </ul>
 
         <h2>Hydraulische Einbindung</h2>
@@ -8997,7 +8954,7 @@ ${GMODG_HINWEIS}
           <li>Optimierungsvorschläge</li>
         </ul>
 
-        <blockquote class="my-8 p-6 bg-slate-50 border-l-4 border-[#0F5B78] rounded-r"><p class="font-semibold text-lg mb-2">Fazit</p><p class="text-slate-700">Die Kombination von Wärmepumpe und Solarthermie ist eine der intelligentesten Investitionen in moderne Heiztechnik. Mit 20-30% weniger Stromverbrauch als reine Wärmepumpen, hoher KfW-Förderung bis 70% und Amortisationszeiten von 10-15 Jahren überzeugt das Hybrid-System wirtschaftlich. Die ideale Auslegung erreichen Sie mit 0,06-0,08 m² Kollektorfläche pro m² Wohnfläche und einem 800-1.000 L Pufferspeicher. Besonders Luft-Wärmepumpen profitieren von der solaren Unterstützung, da diese die niedrigere Quellentemperatur ausgleicht und die Jahresarbeitszahl auf über 4,0 steigert.</p></blockquote>
+        <blockquote class="my-8 p-6 bg-slate-50 border-l-4 border-[#0F5B78] rounded-r"><p class="font-semibold text-lg mb-2">Fazit</p><p class="text-slate-700">Die Kombination von Wärmepumpe und Solarthermie ist eine der intelligentesten Investitionen in moderne Heiztechnik. Mit 20-30% weniger Stromverbrauch als reine Wärmepumpen, hoher KfW-Förderung bis 80% und Amortisationszeiten von 10-15 Jahren überzeugt das Hybrid-System wirtschaftlich. Die ideale Auslegung erreichen Sie mit 0,06-0,08 m² Kollektorfläche pro m² Wohnfläche und einem 800-1.000 L Pufferspeicher. Besonders Luft-Wärmepumpen profitieren von der solaren Unterstützung, da diese die niedrigere Quellentemperatur ausgleicht und die Jahresarbeitszahl auf über 4,0 steigert.</p></blockquote>
 
         <h2>Checkliste: Ihre nächsten Schritte</h2>
         <ol>
@@ -9008,7 +8965,7 @@ ${GMODG_HINWEIS}
           <li><strong>Angebote einholen:</strong> Mindestens 3 qualifizierte Fachbetriebe</li>
           <li><strong>Förderung prüfen:</strong> KfW-Voraussetzungen (BEG 458) und Förderhöhe ermitteln</li>
           <li><strong>Finanzierung klären:</strong> Eigenkapital + KfW-Ergänzungskredit 358/359 kombinieren</li>
-          <li><strong>KfW-Antrag stellen:</strong> VOR Beauftragung im KfW-Zuschussportal einreichen</li>
+          <li><strong>KfW-Antrag stellen:</strong> mit Vertrag unter aufschiebender oder auflösender Bedingung im KfW-Zuschussportal einreichen – Ausführung nach Zusage (auf eigenes Risiko ab Antragstellung)</li>
           <li><strong>Installation planen:</strong> Zeitfenster mit Fachbetrieb abstimmen</li>
           <li><strong>Nach Installation:</strong> Hydraulischer Abgleich und Optimierung</li>
         </ol>
@@ -9028,7 +8985,7 @@ ${GMODG_HINWEIS}
         <h2>Häufig gestellte Fragen (FAQ)</h2>
 
         <h3>Was kostet eine Hybrid-Heizung mit Wärmepumpe und Solarthermie?</h3>
-        <p>Die Gesamtkosten liegen bei <strong>34.000-45.000 €</strong> je nach Systemgröße: Luft-Wärmepumpe 20.000-28.000 €, Solarthermie (8-15 m²) 8.000-12.000 €, Pufferspeicher (800-1.000 L) 2.000-3.000 €, plus Hydraulik und Montage 4.000-6.000 €. Mit 50-70% KfW-Förderung reduziert sich der Eigenanteil auf 10.200-22.500 €.</p>
+        <p>Die Gesamtkosten liegen bei <strong>34.000-45.000 €</strong> je nach Systemgröße: Luft-Wärmepumpe 20.000-28.000 €, Solarthermie (8-15 m²) 8.000-12.000 €, Pufferspeicher (800-1.000 L) 2.000-3.000 €, plus Hydraulik und Montage 4.000-6.000 €. Mit 46-80% KfW-Förderung (max. 28.000 € förderfähige Kosten) reduziert sich der Eigenanteil auf 11.600-32.120 €.</p>
 
         <h3>Wie viel Energie spare ich gegenüber einer reinen Wärmepumpe?</h3>
         <p>Ein Hybrid-System spart <strong>20-30% Stromkosten</strong> gegenüber einer reinen Wärmepumpe. Bei 15.000 kWh Wärmebedarf verbraucht eine reine Luft-WP 4.286 kWh Strom (1.286 € bei 0,30 €/kWh), während das Hybrid-System nur 2.625 kWh benötigt (788 €/Jahr). Das entspricht einer jährlichen Ersparnis von 498 €.</p>
@@ -9037,7 +8994,7 @@ ${GMODG_HINWEIS}
         <p>Ja, besonders im <strong>teilsanierten Altbau</strong> ist die Kombination sinnvoll. Solarthermie übernimmt Mai-September komplett die Warmwasserbereitung und entlastet die Wärmepumpe in der Übergangszeit. Bei höheren Vorlauftemperaturen (45-55 °C) profitiert die Wärmepumpe überproportional von der solaren Vorwärmung. Die JAZ steigt von 3,2-3,5 auf 3,8-4,2.</p>
 
         <h3>Welche Förderung gibt es für Hybrid-Systeme?</h3>
-        <p>Sie erhalten <strong>50-70% KfW-Zuschuss</strong> (BEG 458): 30% Basis + 20% Geschwindigkeitsbonus (Öl-/Gasheizungstausch bis 2028) + optional 30% Einkommensbonus (Einkommen unter 40.000 €) + 5% Effizienzbonus (natürliches Kältemittel). Maximal 60.000 € förderfähige Kosten, also bis zu 42.000 € Zuschuss möglich.</p>
+        <p>Sie erhalten <strong>46-80% KfW-Zuschuss</strong> (BEG 458): 30% Basis + 16% Geschwindigkeitsbonus (für Selbstnutzer beim Tausch einer funktionstüchtigen Öl-, Kohle-, Gas-Etagen- oder Nachtspeicherheizung oder einer mindestens 20 Jahre alten Gasheizung; sinkt ab 01.02.2027 und entfällt für Anträge ab 01.08.2028) + optional 10-40% Einkommensbonus (40% bis 30.000 €, 30% bis 40.000 €, 10% bis 50.000 € Einkommen), gedeckelt auf 70%, auf 80% nur bei einem zu versteuernden Haushaltseinkommen bis 30.000 € (mit Kind bis 40.000 €). Maximal 28.000 € förderfähige Kosten beim Einfamilienhaus, also bis zu 19.600 € bzw. 22.400 € Zuschuss möglich.</p>
 
         <h3>Funktioniert das System auch bei Ost-West-Dach?</h3>
         <p>Ja, aber mit <strong>10-15% geringeren Erträgen</strong> als bei Süddach. Ost-West-Dächer liefern morgens und abends Wärme, was gut zum Verbrauchsprofil passt. Empfehlung: Kollektorfläche um 20-30% vergrößern (statt 10 m² dann 12-13 m²), um die Ertragsminderung auszugleichen. Nordausrichtung ist ungeeignet (nur 40-50% Ertrag).</p>
@@ -9053,10 +9010,10 @@ ${GMODG_HINWEIS}
       tags: ['Hybrid-Heizung', 'Wärmepumpe', 'Solarthermie', 'Heizung Kombination', 'Effizienz', 'Heizkosten sparen', 'Förderung'],
       featured: true,
       faqs: [
-        { question: 'Was kostet eine Hybrid-Heizung mit Wärmepumpe und Solarthermie?', answer: 'Die Gesamtkosten liegen bei 34.000-45.000 € je nach Systemgröße: Luft-Wärmepumpe 20.000-28.000 €, Solarthermie (8-15 m²) 8.000-12.000 €, Pufferspeicher (800-1.000 L) 2.000-3.000 €, plus Hydraulik und Montage 4.000-6.000 €. Mit 50-70% KfW-Förderung reduziert sich der Eigenanteil auf 10.200-22.500 €.' },
+        { question: 'Was kostet eine Hybrid-Heizung mit Wärmepumpe und Solarthermie?', answer: 'Die Gesamtkosten liegen bei 34.000-45.000 € je nach Systemgröße: Luft-Wärmepumpe 20.000-28.000 €, Solarthermie (8-15 m²) 8.000-12.000 €, Pufferspeicher (800-1.000 L) 2.000-3.000 €, plus Hydraulik und Montage 4.000-6.000 €. Mit 46-80% KfW-Förderung (max. 28.000 € förderfähige Kosten) reduziert sich der Eigenanteil auf 11.600-32.120 €.' },
         { question: 'Wie viel Energie spare ich gegenüber einer reinen Wärmepumpe?', answer: 'Ein Hybrid-System spart 20-30% Stromkosten gegenüber einer reinen Wärmepumpe. Bei 15.000 kWh Wärmebedarf verbraucht eine reine Luft-WP 4.286 kWh Strom (1.286 € bei 0,30 €/kWh), während das Hybrid-System nur 2.625 kWh benötigt (788 €/Jahr). Das entspricht einer jährlichen Ersparnis von 498 €.' },
         { question: 'Lohnt sich die Kombination auch im Altbau?', answer: 'Ja, besonders im teilsanierten Altbau ist die Kombination sinnvoll. Solarthermie übernimmt Mai-September komplett die Warmwasserbereitung und entlastet die Wärmepumpe in der Übergangszeit. Bei höheren Vorlauftemperaturen (45-55 °C) profitiert die Wärmepumpe überproportional von der solaren Vorwärmung. Die JAZ steigt von 3,2-3,5 auf 3,8-4,2.' },
-        { question: 'Welche Förderung gibt es für Hybrid-Systeme?', answer: 'Sie erhalten 50-70% KfW-Zuschuss (BEG 458): 30% Basis + 20% Geschwindigkeitsbonus (Öl-/Gasheizungstausch bis 2028) + optional 30% Einkommensbonus (Einkommen unter 40.000 €) + 5% Effizienzbonus (natürliches Kältemittel). Maximal 60.000 € förderfähige Kosten, also bis zu 42.000 € Zuschuss möglich.' },
+        { question: 'Welche Förderung gibt es für Hybrid-Systeme?', answer: 'Sie erhalten 46-80% KfW-Zuschuss (BEG 458): 30% Basis + 16% Geschwindigkeitsbonus (für Selbstnutzer beim Tausch einer funktionstüchtigen Öl-, Kohle-, Gas-Etagen- oder Nachtspeicherheizung oder einer mindestens 20 Jahre alten Gasheizung; sinkt ab 01.02.2027 und entfällt für Anträge ab 01.08.2028) + optional 10-40% Einkommensbonus (40% bis 30.000 €, 30% bis 40.000 €, 10% bis 50.000 € Einkommen), gedeckelt auf 70%, auf 80% nur bei einem zu versteuernden Haushaltseinkommen bis 30.000 € (mit Kind bis 40.000 €). Maximal 28.000 € förderfähige Kosten beim Einfamilienhaus, also bis zu 19.600 € bzw. 22.400 € Zuschuss möglich.' },
         { question: 'Funktioniert das System auch bei Ost-West-Dach?', answer: 'Ja, aber mit 10-15% geringeren Erträgen als bei Süddach. Ost-West-Dächer liefern morgens und abends Wärme, was gut zum Verbrauchsprofil passt. Empfehlung: Kollektorfläche um 20-30% vergrößern (statt 10 m² dann 12-13 m²), um die Ertragsminderung auszugleichen. Nordausrichtung ist ungeeignet (nur 40-50% Ertrag).' },
         { question: 'Brauche ich einen speziellen Pufferspeicher?', answer: 'Ja, ein Schichtenspeicher oder Kombispeicher (800-1.000 L) ist optimal. Er verfügt über zwei Wärmetauscher: einen für Solarthermie (unten/mitte) und einen für die Wärmepumpe (oben). Alternativ: Frischwasserstation für hygienisches Trinkwasser im Durchlaufprinzip. Kosten: 2.000-3.500 € je nach Größe und Ausstattung.' },
       ],
@@ -9109,7 +9066,7 @@ ${GMODG_HINWEIS}
         <p>Als Faustregel können Sie mit 500 bis 750 Euro pro Quadratmeter Kollektorfläche rechnen – inklusive aller Komponenten und der Installation.</p>
 
         <div class="bg-amber-50 border-l-4 border-amber-400 p-4 my-6">
-          <p class="font-semibold text-amber-900 mb-2">Praxisbeispiel: Familie Kraus aus Königsbrunn</p>
+          <p class="font-semibold text-amber-900 mb-2">Rechenbeispiel: Einfamilienhaus in Königsbrunn</p>
           <p class="text-amber-800">Einfamilienhaus, 4 Personen, bestehende Gasheizung. 6 m² Flachkollektoren für Warmwasser, 300-Liter-Speicher. Gesamtkosten: <strong>4.800 €</strong>. Nach 30% KfW-Förderung: <strong>3.360 € Eigenanteil</strong>. Ersparnis: ca. 280 €/Jahr an Gaskosten.</p>
         </div>
 
@@ -9217,9 +9174,9 @@ ${GMODG_HINWEIS}
 
         <p>Die <strong>Grundförderung beträgt 30 Prozent</strong> der förderfähigen Kosten. Dazu kommen zwei mögliche Boni:</p>
 
-        <p>Der <strong>Klimageschwindigkeitsbonus</strong> bringt zusätzliche 20 Prozent, wenn Sie eine alte Öl- oder Gasheizung ersetzen. Der <strong>Einkommensbonus</strong> von 30 Prozent steht Haushalten mit einem zu versteuernden Jahreseinkommen unter 40.000 Euro zu.</p>
+        <p>Der <strong>Klimageschwindigkeitsbonus</strong> bringt zusätzliche 16 Prozent – aber nur im Zuge eines Heizungstauschs: wenn zusammen mit der Solarthermie ein neuer Wärmeerzeuger (z. B. eine Wärmepumpe) als Selbstnutzer eine funktionstüchtige Öl-, Kohle-, Gas-Etagen- oder Nachtspeicherheizung oder eine mindestens 20 Jahre alte Gasheizung ersetzt. Eine Solaranlage neben einer weiterlaufenden Öl- oder Gasheizung erhält ihn nicht. Der <strong>Einkommensbonus</strong> von 40, 30 oder 10 Prozent steht selbstnutzenden Haushalten mit einem zu versteuernden Jahreseinkommen bis 30.000, 40.000 bzw. 50.000 Euro zu.</p>
 
-        <p>Theoretisch ergibt das 80 Prozent – die KfW deckelt aber bei <strong>maximal 70 Prozent</strong>. Die förderfähigen Kosten sind auf 30.000 Euro begrenzt (60.000 Euro, wenn ein individueller Sanierungsfahrplan vorliegt).</p>
+        <p>Für Solarthermie als Einzelmaßnahme sind damit 30 Prozent plus Einkommensbonus möglich, also höchstens 70 Prozent. Im Zuge eines Heizungstauschs ergibt das theoretisch bis zu 86 Prozent – die KfW deckelt aber bei <strong>maximal 70 Prozent</strong>, nur bei einem zu versteuernden Haushaltseinkommen bis 30.000 Euro (mit Kind bis 40.000 Euro) bei 80 Prozent. Die förderfähigen Kosten sind beim Einfamilienhaus auf 28.000 Euro begrenzt.</p>
 
         <div class="overflow-x-auto my-6">
           <table class="min-w-full border-collapse">
@@ -9228,7 +9185,7 @@ ${GMODG_HINWEIS}
                 <th class="border border-slate-300 px-4 py-3 text-left font-semibold">Anlage</th>
                 <th class="border border-slate-300 px-4 py-3 text-left font-semibold">Kosten</th>
                 <th class="border border-slate-300 px-4 py-3 text-left font-semibold">30% Förderung</th>
-                <th class="border border-slate-300 px-4 py-3 text-left font-semibold">70% Förderung</th>
+                <th class="border border-slate-300 px-4 py-3 text-left font-semibold">70% Förderung (Einkommen bis 30.000 €)</th>
               </tr>
             </thead>
             <tbody>
@@ -9255,8 +9212,8 @@ ${GMODG_HINWEIS}
         </div>
 
         <div class="my-6 p-4 bg-amber-50 border-l-4 border-amber-500 rounded-r">
-          <p class="font-semibold text-amber-900">Wichtig: Antrag vor Vertragsabschluss</p>
-          <p class="text-slate-700">Sie müssen den KfW-Antrag stellen, bevor Sie den Installateur beauftragen. Nachträgliche Anträge werden ohne Prüfung abgelehnt. Der Bewilligungszeitraum beträgt 36 Monate.</p>
+          <p class="font-semibold text-amber-900">Wichtig: Erst Vertrag mit Förderbedingung, dann Antrag</p>
+          <p class="text-slate-700">Vor dem KfW-Antrag schließen Sie mit dem Installateur einen Vertrag mit aufschiebender oder auflösender Bedingung (Zusage der KfW) und voraussichtlichem Umsetzungsdatum. Ein Vertrag ohne diese Bedingung oder ein Baubeginn vor Antragstellung schließt die Förderung aus. Der Bewilligungszeitraum beträgt 36 Monate.</p>
         </div>
 
         <h3>Alternative: Steuerbonus §35c</h3>
@@ -9306,22 +9263,22 @@ ${GMODG_HINWEIS}
                 <td class="border border-slate-300 px-4 py-3">37 Jahre</td>
               </tr>
               <tr class="bg-slate-50">
-                <td class="border border-slate-300 px-4 py-3">Warmwasser, 70% Förderung, Öl</td>
+                <td class="border border-slate-300 px-4 py-3">Warmwasser, 70% Förderung (Einkommen bis 30.000 €), Öl</td>
                 <td class="border border-slate-300 px-4 py-3">2.400 Euro</td>
                 <td class="border border-slate-300 px-4 py-3">250 Euro</td>
                 <td class="border border-slate-300 px-4 py-3">10 Jahre</td>
               </tr>
               <tr>
-                <td class="border border-slate-300 px-4 py-3">Kombi + Wärmepumpe, 50% Förderung</td>
-                <td class="border border-slate-300 px-4 py-3">20.000 Euro</td>
+                <td class="border border-slate-300 px-4 py-3">Kombi + Wärmepumpe, 46% Förderung</td>
+                <td class="border border-slate-300 px-4 py-3">27.120 Euro</td>
                 <td class="border border-slate-300 px-4 py-3">1.800 Euro</td>
-                <td class="border border-slate-300 px-4 py-3">11 Jahre</td>
+                <td class="border border-slate-300 px-4 py-3">15 Jahre</td>
               </tr>
               <tr class="bg-slate-50">
-                <td class="border border-slate-300 px-4 py-3">Kombi + Wärmepumpe, 70% Förderung</td>
-                <td class="border border-slate-300 px-4 py-3">12.000 Euro</td>
+                <td class="border border-slate-300 px-4 py-3">Kombi + Wärmepumpe, 80% Förderung (Einkommen bis 30.000 €)</td>
+                <td class="border border-slate-300 px-4 py-3">17.600 Euro</td>
                 <td class="border border-slate-300 px-4 py-3">1.800 Euro</td>
-                <td class="border border-slate-300 px-4 py-3">7 Jahre</td>
+                <td class="border border-slate-300 px-4 py-3">10 Jahre</td>
               </tr>
             </tbody>
           </table>
@@ -9340,7 +9297,7 @@ ${GMODG_HINWEIS}
               <li>✓ Sie <strong>keine Wärmepumpe</strong> haben (Gas, Öl, Pellet)</li>
               <li>✓ Ihr Warmwasserverbrauch hoch ist (große Familie)</li>
               <li>✓ Die Dachfläche <strong>begrenzt</strong> ist (Solarthermie braucht weniger Platz für Wärme)</li>
-              <li>✓ Sie eine <strong>Pelletheizung</strong> planen (Fördervoraussetzung!)</li>
+              <li>✓ Sie eine <strong>Pelletheizung</strong> planen (sinnvolle Kombination)</li>
             </ul>
           </div>
           <div class="bg-blue-50 border border-blue-200 rounded-lg p-5">
@@ -9367,7 +9324,7 @@ ${GMODG_HINWEIS}
           </div>
           <div class="comparison-card bg-white border border-slate-200 rounded-lg p-4">
             <h4 class="font-bold text-slate-900 mb-2">+ Pelletheizung</h4>
-            <p class="text-sm text-slate-600">Wichtig! Für den Klimabonus muss Warmwasser solar abgedeckt sein. Perfekte Kombination.</p>
+            <p class="text-sm text-slate-600">Perfekte Kombination: Im Sommer übernimmt die Solaranlage das Warmwasser. Eine Voraussetzung für den Klimabonus ist das aber nicht.</p>
           </div>
           <div class="comparison-card bg-white border border-slate-200 rounded-lg p-4">
             <h4 class="font-bold text-slate-900 mb-2">+ Wärmepumpe</h4>
@@ -9384,7 +9341,7 @@ ${GMODG_HINWEIS}
         <p>Nach dieser Analyse lässt sich klar sagen, in welchen Fällen Solarthermie wirtschaftlich sinnvoll ist – und in welchen nicht.</p>
 
         <h3>Solarthermie ist sinnvoll, wenn:</h3>
-        <p>Sie eine alte Öl- oder Gasheizung (älter als 20 Jahre) ersetzen und damit den Klimageschwindigkeitsbonus erhalten. Die Kombination mit einer neuen Wärmepumpe ist der wirtschaftlich beste Fall.</p>
+        <p>Sie als Selbstnutzer eine funktionstüchtige Ölheizung oder eine mindestens 20 Jahre alte Gasheizung durch einen neuen Wärmeerzeuger (z. B. eine Wärmepumpe) ersetzen und damit den Klimageschwindigkeitsbonus erhalten. Die Kombination mit einer neuen Wärmepumpe ist der wirtschaftlich beste Fall.</p>
 
         <p>Ihr Dach nach Süden ausgerichtet ist (Abweichung bis 30 Grad ist akzeptabel) und keine Verschattung durch Bäume oder Nachbargebäude vorliegt.</p>
 
@@ -9423,12 +9380,12 @@ ${GMODG_HINWEIS}
       tags: ['Solarthermie', 'Kosten', 'Förderung', 'Wirtschaftlichkeit', 'Amortisation', 'KfW', 'Warmwasser', 'Heizung'],
       featured: true,
       faqs: [
-        { question: 'Was kostet eine Solarthermie-Anlage 2026 komplett?', answer: 'Eine Warmwasser-Anlage (4-6 m²) kostet 5.000-8.000 € komplett installiert. Eine Kombi-Anlage mit Heizungsunterstützung (10-15 m²) liegt bei 12.000-18.000 €. Enthalten sind Kollektoren, Speicher, Rohrleitungen, Regelung und Montage. Mit 30-70% KfW-Förderung reduziert sich der Eigenanteil auf 2.400-12.600 €.' },
+        { question: 'Was kostet eine Solarthermie-Anlage 2026 komplett?', answer: 'Eine Warmwasser-Anlage (4-6 m²) kostet 5.000-8.000 € komplett installiert. Eine Kombi-Anlage mit Heizungsunterstützung (10-15 m²) liegt bei 12.000-18.000 €. Enthalten sind Kollektoren, Speicher, Rohrleitungen, Regelung und Montage. Mit 30-70% KfW-Förderung (Einzelmaßnahme) reduziert sich der Eigenanteil auf 1.500-12.600 €.' },
         { question: 'Wie hoch sind die laufenden Kosten?', answer: 'Die jährlichen Betriebskosten betragen 30-100 €: Strom für Regelung und Pumpe (30-50 €), Wartung alle 2-3 Jahre (100-150 €, umgerechnet 33-50 €/Jahr). Nach 5-10 Jahren steht ein Solarflüssigkeitswechsel an (200-400 €), nach 10-15 Jahren eventuell ein Pumpentausch (200-400 €).' },
-        { question: 'Wann amortisiert sich die Investition?', answer: 'Mit 70% Förderung (Öl-Heizungstausch, Einkommensbonus): 7-10 Jahre. Mit 50% Förderung (nur Geschwindigkeitsbonus): 10-15 Jahre. Mit 30% Basis-Förderung: 18-37 Jahre (nur bei hohen Energiepreisen sinnvoll). Lebensdauer der Anlage: 25-30 Jahre, danach arbeitet sie viele Jahre im Plus.' },
+        { question: 'Wann amortisiert sich die Investition?', answer: 'Mit 70-80% Förderung (Einkommensbonus bei zu versteuerndem Einkommen bis 30.000 €; 80% nur zusammen mit einem Heizungstausch, z. B. Wärmepumpe): ca. 10 Jahre. Mit 46% Förderung (Geschwindigkeitsbonus im Zuge eines Heizungstauschs): 11-16 Jahre. Mit 30% Basis-Förderung: 18-37 Jahre (nur bei hohen Energiepreisen sinnvoll). Lebensdauer der Anlage: 25-30 Jahre, danach arbeitet sie viele Jahre im Plus.' },
         { question: 'Flachkollektor oder Röhrenkollektor – was ist besser?', answer: 'Flachkollektoren (400-600 €/m²) sind Standard für Warmwasser und Süddächer. Röhrenkollektoren (600-900 €/m²) lohnen sich bei Ost-/West-Ausrichtung, Heizungsunterstützung oder begrenzter Dachfläche. Sie liefern 20-30% mehr Ertrag, kosten aber 50% mehr. Faustformel: Bei weniger als 8 m² Dachfläche Röhrenkollektoren wählen.' },
         { question: 'Brauche ich mindestens eine bestimmte Dachfläche?', answer: 'Für Warmwasser: Minimum 4 m² (1 Person), optimal 5-6 m² (4-Personen-Haushalt). Für Heizungsunterstützung: Minimum 10 m², optimal 12-15 m² für Einfamilienhäuser mit 120-150 m² Wohnfläche. Maximale Fläche: 20 m² (größer führt zu Stillstandsproblemen im Sommer).' },
-        { question: 'Kann ich Solarthermie mit Wärmepumpe kombinieren?', answer: 'Ja, und das ist sehr sinnvoll. Solar übernimmt Mai-September die komplette Warmwasserbereitung, die Wärmepumpe spart 20-30% Stromkosten. Kosten: 34.000-45.000 € komplett, mit 50-70% Förderung. Vorteil: Höhere JAZ (bis 4,2 statt 3,5), geringere Wärmepumpen-Verschleiß, optimale Ausnutzung beider Systeme.' },
+        { question: 'Kann ich Solarthermie mit Wärmepumpe kombinieren?', answer: 'Ja, und das ist sehr sinnvoll. Solar übernimmt Mai-September die komplette Warmwasserbereitung, die Wärmepumpe spart 20-30% Stromkosten. Kosten: 34.000-45.000 € komplett, mit 46-80% Förderung. Vorteil: Höhere JAZ (bis 4,2 statt 3,5), geringere Wärmepumpen-Verschleiß, optimale Ausnutzung beider Systeme.' },
       ],
     },
     {
@@ -9580,10 +9537,10 @@ ${GMODG_HINWEIS}
             <strong>KfW-Förderung für PVT-Anlagen:</strong>
           </p>
           <ul>
-            <li><strong>Solarthermie-Anteil:</strong> 30% Basisförderung + 5% Effizienzbonus = 35%</li>
-            <li><strong>Geschwindigkeitsbonus:</strong> +20% bei Ölheizungsaustausch bis 31.12.2028</li>
-            <li><strong>Einkommensbonus:</strong> +30% bei Haushaltseinkommen unter €40.000</li>
-            <li><strong>Max. Förderung:</strong> Bis zu 70% der förderfähigen Kosten (thermischer Teil)</li>
+            <li><strong>Solarthermie-Anteil:</strong> 30% Basisförderung</li>
+            <li><strong>Geschwindigkeitsbonus:</strong> +16% nur im Zuge eines Heizungstauschs – für Selbstnutzer, wenn zusammen mit der PVT-Anlage ein neuer Wärmeerzeuger (z. B. eine Wärmepumpe) eine funktionstüchtige Ölheizung ersetzt (Anträge bis 31.01.2027, danach halbjährlich −4 Prozentpunkte, entfällt ab 01.08.2028)</li>
+            <li><strong>Einkommensbonus:</strong> +10 bis 40% bei Haushaltseinkommen bis €50.000 (40% bis €30.000, 30% bis €40.000)</li>
+            <li><strong>Max. Förderung:</strong> als Einzelmaßnahme 70% der förderfähigen Kosten (thermischer Teil, 30% + 40% Einkommensbonus); 80% nur im Zuge eines Heizungstauschs bei Haushaltseinkommen bis €30.000 (mit Kind bis €40.000)</li>
           </ul>
 
           <div class="bg-amber-50 border-l-4 border-amber-500 p-6 my-8">
@@ -9701,7 +9658,7 @@ ${GMODG_HINWEIS}
             <li><strong>Dachprüfung:</strong> Statik, Ausrichtung, Verschattung, Neigung</li>
             <li><strong>Systemauslegung:</strong> PVT-Fläche, Speichergröße, Hydraulik</li>
             <li><strong>Heizungsintegration:</strong> Anbindung an bestehende/neue Heizung</li>
-            <li><strong>Förderantrag:</strong> KfW-Antrag vor Auftragserteilung</li>
+            <li><strong>Förderantrag:</strong> Vertrag mit Förderbedingung, dann KfW-Antrag vor Baubeginn</li>
             <li><strong>Installation:</strong> Fachbetrieb für PV und Solarthermie</li>
             <li><strong>Inbetriebnahme:</strong> Hydraulischer Abgleich, Regelung optimieren</li>
           </ol>
@@ -9859,7 +9816,7 @@ ${GMODG_HINWEIS}
         <p><strong>Gesamtenergieertr ag ja, einzelne Wirkungsgrade nein.</strong> PVT liefert 50-80% mehr Gesamtenergie pro m² als reine PV. Elektrisch: 15-18% (vs. 20-22% bei reiner PV). Thermisch: 40-60% (vs. 60-80% bei reiner Solarthermie). Vorteil: Auf begrenzter Dachfläche maximaler kombinierter Ertrag – ideal für kleine Dächer unter 30 m².</p>
 
         <h3>Gibt es Förderung für PVT-Kollektoren?</h3>
-        <p>Ja, über <strong>KfW BEG 458 (Heizungstechnik)</strong> für den thermischen Teil: 30% Basis + optional 20% Geschwindigkeitsbonus + 30% Einkommensbonus = bis zu 70% auf die Wärmekomponente. Der PV-Teil erhält keine Direktförderung, profitiert aber von 0% MwSt. und EEG-Einspeisevergütung (7,9 Cent/kWh). Gesamtförderquote: typisch 35-45%.</p>
+        <p>Ja, über <strong>KfW BEG 458 (Heizungstechnik)</strong> für den thermischen Teil: 30% Basis + bis zu 40% Einkommensbonus + 16% Geschwindigkeitsbonus nur im Zuge eines Heizungstauschs (z. B. zusammen mit einer Wärmepumpe) auf die Wärmekomponente, gedeckelt auf 70% (80% nur bei zu versteuerndem Haushaltseinkommen bis 30.000 €, mit Kind bis 40.000 €). Der PV-Teil erhält keine Direktförderung, profitiert aber von 0% MwSt. und EEG-Einspeisevergütung (7,9 Cent/kWh). Für den thermischen Teil heißt das: 30% Grundförderung, 46% mit Klimabonus, wenn Selbstnutzer zusammen mit der PVT-Anlage eine funktionstüchtige Öl-, Kohle-, Gas-Etagen- oder Nachtspeicherheizung oder eine mindestens 20 Jahre alte Gasheizung durch einen neuen Wärmeerzeuger ersetzen, mit Einkommensbonus mehr.</p>
 
         <h3>Für wen lohnt sich PVT?</h3>
         <p>PVT ist ideal bei <strong>begrenzter Dachfläche</strong> (unter 40 m²), wo Sie Strom UND Wärme benötigen. Optimal: Kombination mit Wärmepumpe (PVT liefert Strom für WP und Wärme fürs Warmwasser). Weniger sinnvoll: Bei großen Dächern ab 50 m² – dort sind getrennte optimierte Systeme effizienter und günstiger.</p>
@@ -9878,7 +9835,7 @@ ${GMODG_HINWEIS}
         { question: 'Wie funktionieren PVT-Kollektoren genau?', answer: 'PVT-Kollektoren (Photovoltaik-Thermie) kombinieren Stromerzeugung und Wärmegewinnung in einem Modul. Photovoltaik-Zellen erzeugen Strom aus Sonnenlicht, während ein Wärmetauscher auf der Rückseite die Abwärme der PV-Zellen nutzt. Diese Kühlung erhöht den elektrischen Wirkungsgrad um 5-10% und liefert gleichzeitig nutzbare Wärme für Warmwasser oder Heizungsunterstützung.' },
         { question: 'Was kosten PVT-Kollektoren im Vergleich zu getrennten Systemen?', answer: 'Ein PVT-System (8-12 Module, ca. 25-35 m²) kostet 25.000-35.000 € komplett installiert. Getrennte Systeme (10 kWp PV + 10 m² Solarthermie) kosten zusammen 30.000-40.000 €. PVT spart 10-15% Kosten und 50% Dachfläche. Der Preis pro m² liegt bei 800-1.200 €, etwa 30-50% über reiner PV.' },
         { question: 'Ist die Effizienz höher als bei getrennten Systemen?', answer: 'Gesamtenergieertrag ja, einzelne Wirkungsgrade nein. PVT liefert 50-80% mehr Gesamtenergie pro m² als reine PV. Elektrisch: 15-18% (vs. 20-22% bei reiner PV). Thermisch: 40-60% (vs. 60-80% bei reiner Solarthermie). Vorteil: Auf begrenzter Dachfläche maximaler kombinierter Ertrag – ideal für kleine Dächer unter 30 m².' },
-        { question: 'Gibt es Förderung für PVT-Kollektoren?', answer: 'Ja, über KfW BEG 458 (Heizungstechnik) für den thermischen Teil: 30% Basis + optional 20% Geschwindigkeitsbonus + 30% Einkommensbonus = bis zu 70% auf die Wärmekomponente. Der PV-Teil erhält keine Direktförderung, profitiert aber von 0% MwSt. und EEG-Einspeisevergütung (7,9 Cent/kWh). Gesamtförderquote: typisch 35-45%.' },
+        { question: 'Gibt es Förderung für PVT-Kollektoren?', answer: 'Ja, über KfW BEG 458 (Heizungstechnik) für den thermischen Teil: 30% Basis + bis zu 40% Einkommensbonus + 16% Geschwindigkeitsbonus nur im Zuge eines Heizungstauschs (z. B. zusammen mit einer Wärmepumpe) auf die Wärmekomponente, gedeckelt auf 70% (80% nur bei zu versteuerndem Haushaltseinkommen bis 30.000 €, mit Kind bis 40.000 €). Der PV-Teil erhält keine Direktförderung, profitiert aber von 0% MwSt. und EEG-Einspeisevergütung (7,9 Cent/kWh). Für den thermischen Teil heißt das: 30% Grundförderung, 46% mit Klimabonus, wenn Selbstnutzer zusammen mit der PVT-Anlage eine funktionstüchtige Öl-, Kohle-, Gas-Etagen- oder Nachtspeicherheizung oder eine mindestens 20 Jahre alte Gasheizung durch einen neuen Wärmeerzeuger ersetzen, mit Einkommensbonus mehr.' },
         { question: 'Für wen lohnt sich PVT?', answer: 'PVT ist ideal bei begrenzter Dachfläche (unter 40 m²), wo Sie Strom UND Wärme benötigen. Optimal: Kombination mit Wärmepumpe (PVT liefert Strom für WP und Wärme fürs Warmwasser). Weniger sinnvoll: Bei großen Dächern ab 50 m² – dort sind getrennte optimierte Systeme effizienter und günstiger.' },
         { question: 'Wie lang ist die Lebensdauer von PVT-Modulen?', answer: 'Die Lebensdauer liegt bei 20-25 Jahren für die PV-Komponente (mit 80-85% Leistungsgarantie nach 25 Jahren) und 25-30 Jahren für die thermische Komponente. Wichtig: Regelmäßige Wartung alle 2-3 Jahre (150-250 €), um Frostschutz und Wärmetauscher zu prüfen. Nach 20 Jahren: PV-Module austauschen, Thermik weiterlaufen lassen.' },
       ],
@@ -10362,7 +10319,7 @@ ${GMODG_HINWEIS}
               </li>
               <li class="flex items-start gap-3">
                 <span class="text-slate-400 font-bold">☐</span>
-                <span>KfW-Förderantrag VOR Auftragserteilung gestellt</span>
+                <span>KfW-Förderantrag VOR Baubeginn gestellt (Vertrag mit Förderbedingung)</span>
               </li>
               <li class="flex items-start gap-3">
                 <span class="text-slate-400 font-bold">☐</span>
@@ -10440,9 +10397,9 @@ ${GMODG_HINWEIS}
       id: 26,
       slug: 'waermepumpe-altbau',
       title: 'Wärmepumpe im Altbau: Lohnt sich das? Kosten, Voraussetzungen & Tipps',
-      excerpt: 'Wärmepumpe im Altbau nachrüsten? Erfahren Sie, wann es sich lohnt, welche Voraussetzungen nötig sind und wie Sie bis zu 70% Förderung erhalten.',
+      excerpt: 'Wärmepumpe im Altbau nachrüsten? Erfahren Sie, wann es sich lohnt, welche Voraussetzungen nötig sind und wie Sie bis zu 80% Förderung erhalten.',
       content: `
-        <p class="text-xl leading-relaxed text-slate-600 mb-8">Wärmepumpen galten lange als Technologie nur für Neubauten. Das stimmt heute nicht mehr. Mit moderner Technik und attraktiven Förderungen von bis zu 70% ist die Wärmepumpe auch im Altbau eine wirtschaftlich sinnvolle Lösung – wenn die Voraussetzungen stimmen.</p>
+        <p class="text-xl leading-relaxed text-slate-600 mb-8">Wärmepumpen galten lange als Technologie nur für Neubauten. Das stimmt heute nicht mehr. Mit moderner Technik und attraktiven Förderungen von bis zu 80% ist die Wärmepumpe auch im Altbau eine wirtschaftlich sinnvolle Lösung – wenn die Voraussetzungen stimmen.</p>
 
         <div class="flex flex-wrap gap-4 mb-8 text-sm text-slate-600">
           <span class="flex items-center gap-1">✓ Über 200 Altbau-Projekte realisiert</span>
@@ -10451,7 +10408,7 @@ ${GMODG_HINWEIS}
         </div>
 
         <div class="highlight-quote">
-          Mit bis zu 70% Förderung und modernen Hochtemperatur-Wärmepumpen ist der Altbau kein Hindernis mehr. Die Amortisation liegt oft bei nur 8–12 Jahren.
+          Mit bis zu 80% Förderung und modernen Hochtemperatur-Wärmepumpen ist der Altbau kein Hindernis mehr. Die Amortisation liegt oft bei nur 8–12 Jahren.
         </div>
 
         <h2>Funktioniert eine Wärmepumpe im Altbau?</h2>
@@ -10558,8 +10515,8 @@ ${GMODG_HINWEIS}
         </table>
 
         <div class="bg-amber-50 border-l-4 border-amber-400 p-4 my-6">
-          <p class="font-semibold text-amber-900 mb-2">💡 Praxisbeispiel: Familie Maier aus Gutenzell-Hürbel</p>
-          <p class="text-amber-800">Altbau von 1978, 160 m², Heizung bisher mit Öl. Neue Luft-Wasser-Wärmepumpe (Hochtemperatur) mit Pufferspeicher. Gesamtkosten: 42.000 €. Mit 50% Förderung (auf 30.000 € gedeckelt): <strong>15.000 € Zuschuss → Eigenanteil 27.000 €</strong>. Ersparnis gegenüber Öl: ca. 1.400 €/Jahr.</p>
+          <p class="font-semibold text-amber-900 mb-2">💡 Rechenbeispiel: Altbau in Gutenzell-Hürbel</p>
+          <p class="text-amber-800">Altbau von 1978, 160 m², Heizung bisher mit Öl. Neue Luft-Wasser-Wärmepumpe (Hochtemperatur) mit Pufferspeicher. Gesamtkosten: 42.000 €. Mit 46% Förderung (auf 28.000 € gedeckelt): <strong>12.880 € Zuschuss → Eigenanteil 29.120 €</strong>. Ersparnis gegenüber Öl: ca. 1.400 €/Jahr.</p>
         </div>
 
         <h3>Betriebskosten im Vergleich</h3>
@@ -10589,7 +10546,7 @@ ${GMODG_HINWEIS}
           </tbody>
         </table>
 
-        <h2>Förderung 2026: Bis zu 70% Zuschuss</h2>
+        <h2>Förderung 2026: Bis zu 80% Zuschuss</h2>
 
         <p>Der Staat fördert den Umstieg auf erneuerbare Energien großzügig. Gerade im Altbau ist die Förderung besonders attraktiv:</p>
 
@@ -10606,20 +10563,16 @@ ${GMODG_HINWEIS}
               <td class="price">30%</td>
             </tr>
             <tr>
-              <td>Klimageschwindigkeitsbonus (bei Austausch fossiler Heizung)</td>
-              <td class="price">+20%</td>
+              <td>Klimageschwindigkeitsbonus (Selbstnutzer, bei Austausch einer funktionstüchtigen Öl-, Kohle-, Gas-Etagen- oder Nachtspeicherheizung oder einer mind. 20 Jahre alten Gasheizung)</td>
+              <td class="price">+16%</td>
             </tr>
             <tr>
-              <td><strong>ODER</strong> Einkommensbonus (unter 40.000 € zvE)</td>
-              <td class="price">+30%</td>
-            </tr>
-            <tr>
-              <td>Effizienzbonus (natürliches Kältemittel oder Erdwärme)</td>
-              <td class="price">+5%</td>
+              <td>Einkommensbonus (Selbstnutzer: bis 30.000 € / 40.000 € / 50.000 € zvE)</td>
+              <td class="price">+40% / +30% / +10%</td>
             </tr>
             <tr>
               <td><strong>Realistisch erreichbar</strong></td>
-              <td class="price"><strong>50–65%</strong></td>
+              <td class="price"><strong>46–70% (80% bei zvE bis 30.000 €)</strong></td>
             </tr>
           </tbody>
         </table>
@@ -10628,7 +10581,7 @@ ${GMODG_HINWEIS}
           <span class="callout-icon">⚠️</span>
           <div class="callout-title">Wichtig: Förderhöchstgrenze beachten</div>
           <div class="callout-content">
-            <p>Die förderfähigen Kosten sind auf <strong>30.000 €</strong> gedeckelt (selbstgenutztes EFH). Klimabonus und Einkommensbonus sind <strong>nicht kombinierbar</strong> – Sie erhalten entweder den einen oder den anderen!</p>
+            <p>Die förderfähigen Kosten sind auf <strong>28.000 €</strong> gedeckelt (selbstgenutztes EFH). Klimabonus und Einkommensbonus sind <strong>kombinierbar</strong> – zusammen mit der Grundförderung ist die Förderung aber auf 70% gedeckelt, auf 80% nur bei einem zvE bis 30.000 € (mit Kind bis 40.000 €)!</p>
           </div>
         </div>
 
@@ -10639,10 +10592,10 @@ ${GMODG_HINWEIS}
           <div class="callout-title">Beispielrechnung: Altbau mit Gasheizung</div>
           <div class="callout-content">
             <p><strong>Gesamtkosten:</strong> 38.000 €<br>
-            <strong>Förderfähige Kosten (max.):</strong> 30.000 €<br>
-            <strong>Förderung 50% (30% Grund + 20% Klimabonus):</strong> -15.000 €<br>
-            <strong>= Eigenanteil:</strong> 23.000 €</p>
-            <p class="text-sm mt-2">Bei Einkommensbonus statt Klimabonus: 60% von 30.000 € = 18.000 € Förderung → 20.000 € Eigenanteil</p>
+            <strong>Förderfähige Kosten (max.):</strong> 28.000 €<br>
+            <strong>Förderung 46% (30% Grund + 16% Klimabonus):</strong> -12.880 €<br>
+            <strong>= Eigenanteil:</strong> 25.120 €</p>
+            <p class="text-sm mt-2">Mit zusätzlichem Einkommensbonus (30% bei zvE bis 40.000 €): 76%, gedeckelt auf 70% von 28.000 € = 19.600 € Förderung → 18.400 € Eigenanteil</p>
           </div>
         </div>
 
@@ -10655,10 +10608,10 @@ ${GMODG_HINWEIS}
         <p>Lassen Sie sich von qualifizierten Fachbetrieben Angebote erstellen. Achten Sie auf Referenzen im Altbau-Bereich.</p>
 
         <h3>Schritt 3: Förderantrag stellen</h3>
-        <p><strong>Wichtig:</strong> Der Antrag muss VOR der Auftragserteilung bei der KfW eingereicht werden!</p>
+        <p><strong>Wichtig:</strong> Vor dem Antrag schließen Sie einen Vertrag mit aufschiebender oder auflösender Bedingung (Zusage der KfW) – mit der Installation beginnen Sie nach der Zusage (oder auf eigenes Risiko schon nach der Antragstellung)!</p>
 
         <h3>Schritt 4: Installation</h3>
-        <p>Nach dem Zuwendungsbescheid können Sie den Auftrag erteilen. Die Installation dauert in der Regel 2–4 Tage.</p>
+        <p>Nach der Zusage kann der Fachbetrieb mit der Installation beginnen. Die Installation dauert in der Regel 2–4 Tage.</p>
 
         <h2>Fazit: Wärmepumpe im Altbau lohnt sich</h2>
 
@@ -11137,9 +11090,9 @@ ${GMODG_HINWEIS}
 
         <p>Wichtig: Materialkosten sind nicht absetzbar. Die Rechnung muss als Überweisung beglichen werden (keine Barzahlung). Bewahren Sie Rechnung und Kontoauszug auf.</p>
 
-        <h3>Praxisbeispiel: Familie Maier aus Bobingen</h3>
+        <h3>Rechenbeispiel: Dachgeschosswohnung in Bobingen</h3>
 
-        <p>Die Maiers wohnen im Dachgeschoss eines Altbaus, 65 m², Südausrichtung. Im Sommer 2025 haben sie ein Single-Split-Gerät der Mittelklasse nachrüsten lassen.</p>
+        <p>Angenommen wird eine Dachgeschosswohnung in einem Altbau, 65 m², Südausrichtung, in der ein Single-Split-Gerät der Mittelklasse nachgerüstet wird.</p>
 
         <table class="cost-table">
           <thead>
@@ -11172,7 +11125,7 @@ ${GMODG_HINWEIS}
           </tbody>
         </table>
 
-        <p>Laufende Stromkosten: Die Maiers kühlen die Wohnung rund 60 Abende pro Jahr für je 3 bis 4 Stunden. Bei einem COP von rund 3,5 im Kühlbetrieb ergibt das Stromkosten von schätzungsweise <strong>80 bis 120 Euro pro Jahr</strong>.</p>
+        <p>Laufende Stromkosten: Angenommen wird, dass die Wohnung rund 60 Abende pro Jahr für je 3 bis 4 Stunden gekühlt wird. Bei einem COP von rund 3,5 im Kühlbetrieb ergibt das Stromkosten von schätzungsweise <strong>80 bis 120 Euro pro Jahr</strong>.</p>
 
         <h2>Klimaanlage oder Wärmepumpe mit Kühlfunktion?</h2>
 

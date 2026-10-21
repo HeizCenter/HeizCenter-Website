@@ -26,9 +26,9 @@ import { SolarComparisonSection } from "@/components/sections/solar-comparison";
 import { getCanonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Solarthermie Augsburg, Ulm - 70% KfW Förderung | HeizCenter",
+  title: "Solarthermie Augsburg, Ulm - bis 70% KfW Förderung | HeizCenter",
   description:
-    "Solarthermie-Anlagen vom Experten in Augsburg, Ulm und Memmingen. Bis zu 70% staatliche Förderung. Warmwasser & Heizungsunterstützung. Kostenlose Beratung.",
+    "Solarthermie-Anlagen vom Experten in Augsburg, Ulm und Memmingen. Bis zu 70% staatliche Förderung, im Zuge eines Heizungstauschs bis zu 80%. Warmwasser & Heizungsunterstützung. Kostenlose Beratung.",
   keywords: [
     "Solarthermie",
     "Solarthermie Augsburg",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
 };
 
 const benefits = [
-  "Bis zu 70% staatliche Förderung für Ihre Solarthermie-Anlage (bis Ende 2028)",
+  "Bis zu 70% staatliche Förderung für Ihre Solarthermie-Anlage, im Zuge eines Heizungstauschs bis zu 80%",
   "60% Ihres Warmwasserbedarfs durch kostenlose Sonnenenergie",
   "Bis zu 25% Heizkosten sparen mit Heizungsunterstützung",
   "Umweltfreundlich und CO2-neutral Warmwasser bereiten",
@@ -67,9 +67,9 @@ const features = [
     icon: Sun,
   },
   {
-    title: "Bis zu 70% Förderung",
+    title: "Bis zu 70% Förderung (mit Heizungstausch 80%)",
     description:
-      "Profitieren Sie von der KfW-Förderung: 30% Basisförderung + 20% Klimageschwindigkeitsbonus + 30% Einkommensbonus. Maximal 70% Zuschuss möglich (bis Ende 2028).",
+      "Profitieren Sie von der KfW-Förderung: 30% Grundförderung + bis zu 40% Einkommensbonus für Selbstnutzer. Wird zusammen mit der Solaranlage die alte Öl-, Gas- oder Nachtspeicherheizung ersetzt (z. B. durch eine Wärmepumpe), kommen 16% Klimageschwindigkeitsbonus dazu (Antrag bis 31.01.2027, danach sinkend). Höchstens 70%, 80% nur bei zu versteuerndem Haushaltseinkommen bis 30.000 € (mit Kind 40.000 €).",
     icon: Award,
   },
   {
@@ -107,12 +107,12 @@ const faqs: FAQItem[] = [
   {
     question: "Wie hoch ist die KfW-Förderung für Solarthermie 2026?",
     answer:
-      "Die KfW fördert Solarthermie-Anlagen über die Bundesförderung für effiziente Gebäude (BEG). Basisförderung: 30% der Investitionskosten. Klimageschwindigkeitsbonus: +20% beim Austausch alter Öl- oder Gasheizungen (in voller Höhe bis Ende 2028). Einkommensbonus: +30% bei zu versteuerndem Haushaltseinkommen unter 40.000€. Maximal 70% Förderung möglich. Wir unterstützen Sie bei der Antragstellung.",
+      "Die KfW fördert Solarthermie-Anlagen über die Bundesförderung für effiziente Gebäude (BEG). Grundförderung: 30% der förderfähigen Kosten. Klimageschwindigkeitsbonus: +16% für selbstnutzende Eigentümer, aber nur wenn im Zuge der Maßnahme die alte Heizung durch einen neuen förderfähigen Wärmeerzeuger ersetzt wird – beim Austausch einer funktionstüchtigen Öl-, Kohle-, Gas-Etagen- oder Nachtspeicherheizung oder einer mindestens 20 Jahre alten Gas- oder Biomasseheizung (bei Antrag bis 31.01.2027, danach sinkt er halbjährlich um 4 Prozentpunkte und entfällt für Anträge ab 01.08.2028). Einkommensbonus (nur Selbstnutzer): +40% bis 30.000€, +30% bis 40.000€, +10% bis 50.000€ zu versteuerndes Haushaltsjahreseinkommen; mit einem minderjährigen, kindergeldberechtigten Kind steigen die Grenzen um 10.000€. Eine Solarthermieanlage allein ersetzt keine Heizung, daher sind als Einzelmaßnahme höchstens 70% möglich (30% + 40%). 80% gibt es nur im Zuge eines Heizungstauschs und bei zu versteuerndem Haushaltseinkommen bis 30.000€ (mit Kind 40.000€). Wir unterstützen Sie bei der Antragstellung.",
   },
   {
     question: "Was kostet eine Solarthermie-Anlage?",
     answer:
-      "Warmwasser-System (4-Personen-Haushalt): 5.000-10.000€ inklusive Installation. Nach 30% KfW-Förderung: 3.500-7.000€. Kombi-System mit Heizungsunterstützung: 8.000-18.000€ inklusive Installation. Bei Kombination mit Heizungstausch bis zu 70% Förderung möglich, als Einzelmaßnahme 30% Basisförderung. Die Kosten hängen von Kollektorfläche, Speichergröße und Dachbeschaffenheit ab.",
+      "Warmwasser-System (4-Personen-Haushalt): 5.000-10.000€ inklusive Installation. Nach 30% KfW-Förderung: 3.500-7.000€. Kombi-System mit Heizungsunterstützung: 8.000-18.000€ inklusive Installation. Bei Kombination mit Heizungstausch bis zu 80% Förderung möglich, als Einzelmaßnahme 30% Grundförderung. Die Kosten hängen von Kollektorfläche, Speichergröße und Dachbeschaffenheit ab.",
   },
   {
     question: "Wie viel Warmwasser kann ich mit Solarthermie erzeugen?",
@@ -122,7 +122,7 @@ const faqs: FAQItem[] = [
   {
     question: "Lohnt sich Solarthermie mit Heizungsunterstützung?",
     answer:
-      "Ja, besonders in der Übergangszeit (Frühling/Herbst) entlastet eine Kombi-Anlage Ihre Heizung deutlich. Sie deckt 15-25% Ihres jährlichen Heizbedarfs und 60-70% des Warmwassers. Für ein Einfamilienhaus (150 m²) benötigen Sie 12-15 m² Kollektorfläche. Mit bis zu 70% KfW-Förderung (bei Heizungstausch) amortisiert sich die Anlage in 6-10 Jahren bei einer Lebensdauer von 30-40 Jahren.",
+      "Ja, besonders in der Übergangszeit (Frühling/Herbst) entlastet eine Kombi-Anlage Ihre Heizung deutlich. Sie deckt 15-25% Ihres jährlichen Heizbedarfs und 60-70% des Warmwassers. Für ein Einfamilienhaus (150 m²) benötigen Sie 12-15 m² Kollektorfläche. Mit bis zu 80% KfW-Förderung (bei Heizungstausch) amortisiert sich die Anlage in 6-10 Jahren bei einer Lebensdauer von 30-40 Jahren.",
   },
   {
     question: "Solarthermie oder Photovoltaik - was ist besser?",
@@ -171,7 +171,7 @@ export default function SolarPage() {
         icon={Sun}
         badge="Bis zu 70% KfW-Förderung"
         imageSrc="/images/Solaranlage.webp"
-        imageAlt="Solarthermie Flachkollektoren auf Hausdach - 70% KfW-Förderung mit HeizCenter"
+        imageAlt="Solarthermie Flachkollektoren auf Hausdach - KfW-Förderung mit HeizCenter"
       />
 
       <FeaturesSection
@@ -287,9 +287,9 @@ export default function SolarPage() {
                   <div className="mb-2 text-sm font-medium text-slate-600">Kosten</div>
                   <div className="text-2xl font-bold">8.000 - 18.000 €</div>
                   <div className="mt-2 text-sm text-slate-600">
-                    Bei Heizungstausch bis 70%: <span className="font-semibold text-green-600">ab 2.400 €</span>
+                    Mit Heizungstausch bis 80%: <span className="font-semibold text-green-600">ab 1.600 €</span>
                     <br />
-                    <span className="text-xs">Einzelmaßnahme: 30% Basisförderung</span>
+                    <span className="text-xs">Einzelmaßnahme: 30% Grundförderung</span>
                   </div>
                 </div>
 
@@ -367,7 +367,7 @@ export default function SolarPage() {
           <div className="mb-12 text-center">
             <h2 className="mb-4 text-3xl font-bold">KfW-Förderung 2026: Bis zu 70% Zuschuss</h2>
             <p className="mx-auto max-w-2xl text-lg text-white/90">
-              Nutzen Sie die staatliche Förderung für Ihre Solarthermie-Anlage (Geschwindigkeitsbonus in voller Höhe bis Ende 2028)
+              Nutzen Sie die staatliche Förderung für Ihre Solarthermie-Anlage – im Zuge eines Heizungstauschs mit Klimageschwindigkeitsbonus bis zu 80%
             </p>
           </div>
 
@@ -378,27 +378,27 @@ export default function SolarPage() {
                   <div className="mb-3 text-4xl font-bold text-primary">30%</div>
                   <h3 className="mb-2 text-lg font-bold">Basisförderung</h3>
                   <p className="text-sm text-slate-600">
-                    Für alle förderfähigen Solarthermie-Anlagen. Mindestinvestition: 2.000 €
+                    Für alle förderfähigen Solarthermie-Anlagen in bestehenden Wohngebäuden. Mindestinvestition: 300 € (brutto)
                   </p>
                 </CardContent>
               </Card>
 
               <Card className="border-0">
                 <CardContent className="p-6">
-                  <div className="mb-3 text-4xl font-bold text-primary">+20%</div>
+                  <div className="mb-3 text-4xl font-bold text-primary">+16%</div>
                   <h3 className="mb-2 text-lg font-bold">Klimageschwindigkeitsbonus</h3>
                   <p className="text-sm text-slate-600">
-                    Beim Austausch alter Öl-, Gas- oder Nachtspeicherheizungen
+                    Nur wenn zusammen mit der Solaranlage die alte Öl-, Gas- oder Nachtspeicherheizung durch eine neue Heizung (z. B. Wärmepumpe) ersetzt wird; für Selbstnutzer, Antrag bis 31.01.2027
                   </p>
                 </CardContent>
               </Card>
 
               <Card className="border-0">
                 <CardContent className="p-6">
-                  <div className="mb-3 text-4xl font-bold text-primary">+30%</div>
+                  <div className="mb-3 text-4xl font-bold text-primary">bis +40%</div>
                   <h3 className="mb-2 text-lg font-bold">Einkommensbonus</h3>
                   <p className="text-sm text-slate-600">
-                    Bei zu versteuerndem Haushaltseinkommen unter 40.000 € jährlich
+                    Für Selbstnutzer: 40% bis 30.000 €, 30% bis 40.000 €, 10% bis 50.000 € zu versteuerndem Haushaltsjahreseinkommen
                   </p>
                 </CardContent>
               </Card>
@@ -412,16 +412,12 @@ export default function SolarPage() {
                   <span className="font-bold">14.000 €</span>
                 </div>
                 <div className="flex justify-between text-sm text-slate-600">
-                  <span>Basisförderung (30%)</span>
+                  <span>Grundförderung (30%)</span>
                   <span>- 4.200 €</span>
                 </div>
                 <div className="flex justify-between text-sm text-slate-600">
-                  <span>Klimageschwindigkeitsbonus (20%)</span>
-                  <span>- 2.800 €</span>
-                </div>
-                <div className="flex justify-between text-sm text-slate-600">
-                  <span>Einkommensbonus (30%, auf 20% gekappt wegen 70%-Deckelung)</span>
-                  <span>- 2.800 €</span>
+                  <span>Einkommensbonus (40%)</span>
+                  <span>- 5.600 €</span>
                 </div>
                 <div className="flex justify-between border-t-2 border-primary pt-2 text-lg">
                   <span className="font-bold">Ihre Investition</span>
@@ -429,7 +425,7 @@ export default function SolarPage() {
                 </div>
               </div>
               <p className="mt-4 text-sm text-slate-600">
-                * Maximal 70% Gesamtförderung. Wir unterstützen Sie bei der Antragstellung!
+                * Rechenbeispiel Solarthermie als Einzelmaßnahme, selbstnutzender Eigentümer mit zu versteuerndem Haushaltseinkommen bis 30.000 € (mit Kind 40.000 €): 70%. Ohne Einkommensbonus 30%. Den Klimageschwindigkeitsbonus gibt es nur, wenn gleichzeitig die alte Heizung ersetzt wird. Wir unterstützen Sie bei der Antragstellung!
               </p>
             </div>
           </div>
@@ -454,7 +450,7 @@ export default function SolarPage() {
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             <Link href="/blog/kfw-foerderung-solarthermie-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
               <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">KfW-Förderung Solarthermie 2026</h3>
-              <p className="text-slate-600 text-sm">Bis zu 70% Zuschuss – alle Fördermöglichkeiten und Antragsschritte.</p>
+              <p className="text-slate-600 text-sm">Bis zu 80% Zuschuss beim Heizungstausch – alle Fördermöglichkeiten und Antragsschritte.</p>
             </Link>
             <Link href="/blog/waermepumpe-kosten-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
               <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Wärmepumpe + Solar kombinieren</h3>
@@ -509,7 +505,7 @@ export default function SolarPage() {
 
       <CTASection
         title="Bereit für kostenlose Sonnenenergie?"
-        description="Lassen Sie sich jetzt kostenlos beraten und profitieren Sie von bis zu 70% KfW-Förderung für Ihre Solarthermie-Anlage."
+        description="Lassen Sie sich jetzt kostenlos beraten und profitieren Sie von bis zu 70% KfW-Förderung für Ihre Solarthermie-Anlage – im Zuge eines Heizungstauschs bis zu 80%."
       />
     </>
   );

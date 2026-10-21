@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 const services: LocationService[] = [
   {
     title: "Wärmepumpe",
-    description: "Moderne Wärmepumpen für Neu-Ulm. BEG-Förderung bis 70%.",
+    description: "Moderne Wärmepumpen für Neu-Ulm. BEG-Förderung bis 80%.",
     icon: Zap,
     href: "/waermepumpe",
   },
@@ -122,7 +122,7 @@ export default function NeuUlmPage() {
             <strong>Wärmepumpen-Installation in Neu-Ulm:</strong> Wir
             installieren moderne Luft-Wasser-Wärmepumpen mit Flüsterbetrieb für
             dicht bebaute Gebiete und Erdwärmepumpen für größere Grundstücke.
-            BEG-Förderung von bis zu 70% macht den Umstieg attraktiv. Viele
+            BEG-Förderung von bis zu 80% macht den Umstieg attraktiv. Viele
             Kunden in Neu-Ulm kombinieren die Wärmepumpe mit Photovoltaik für
             maximale Unabhängigkeit.
           </p>

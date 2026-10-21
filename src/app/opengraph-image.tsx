@@ -7,7 +7,7 @@ export const alt = "HeizCenter - Wärmepumpen, Heizung & Sanitär in Bayern";
 export default function Image() {
   return generateOGImage({
     title: "Wärmepumpen, Heizung & Sanitär in Bayern",
-    subtitle: "Professionelle Installation und Wartung. Bis zu 70% KfW-Förderung.",
+    subtitle: "Professionelle Installation und Wartung. Bis zu 80% KfW-Förderung.",
     badge: "HeizCenter GmbH",
   });
 }

@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 const services: LocationService[] = [
   {
     title: "Wärmepumpe",
-    description: "Moderne Wärmepumpen für Friedberg. BEG-Förderung bis 70%.",
+    description: "Moderne Wärmepumpen für Friedberg. BEG-Förderung bis 80%.",
     icon: Zap,
     href: "/waermepumpe",
   },
@@ -124,7 +124,7 @@ export default function FriedbergPage() {
             Stadtrand empfehlen wir Luft-Wasser-Wärmepumpen oder bei größeren
             Grundstücken Erdwärmepumpen. In der Altstadt kommen oft
             Luft-Wasser-Wärmepumpen mit Innena...ufstellung zum Einsatz, um die
-            historische Fassade zu erhalten. BEG-Förderung bis 70% macht den
+            historische Fassade zu erhalten. BEG-Förderung bis 80% macht den
             Umstieg attraktiv.
           </p>
 

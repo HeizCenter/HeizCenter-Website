@@ -4,11 +4,12 @@ import { Button } from "@/components/ui/button";
 import { Euro, FileText, CheckCircle, Info, ExternalLink, Scale, BookOpen, MapPin } from "lucide-react";
 import Link from "next/link";
 import { getCanonicalUrl } from "@/lib/seo";
+import { FOERDER_TEXT } from "@/lib/config/foerderung";
 
 export const metadata: Metadata = {
   title: "Förderung Wärmepumpen & Heizung 2026 | HeizCenter",
   description:
-    "Informationen zu BEG-Förderung, KfW-Zuschüssen und anderen Förderprogrammen für Wärmepumpen, Heizungsmodernisierung und Badsanierung. Bis zu 70% Förderung möglich.",
+    `Informationen zu BEG-Förderung, KfW-Zuschüssen und anderen Förderprogrammen für Wärmepumpen, Heizungsmodernisierung und Badsanierung. Bis zu ${FOERDER_TEXT.max} Förderung möglich.`,
   keywords: ["BEG Förderung", "KfW", "Zuschuss", "Wärmepumpe", "Heizungsförderung", "BAFA", "§ 35c EStG"],
   alternates: {
     canonical: getCanonicalUrl("/foerderung"),
@@ -27,7 +28,7 @@ export default function FoerderungPage() {
               Förderung & Zuschüsse 2026
             </h1>
             <p className="text-xl text-slate-600 mb-8">
-              Bis zu 70% Zuschuss für Ihre neue Heizung. Wir helfen bei der Antragstellung.
+              Bis zu {FOERDER_TEXT.max} Zuschuss für Ihre neue Heizung. Wir helfen bei der Antragstellung.
             </p>
           </div>
         </div>
@@ -57,7 +58,7 @@ export default function FoerderungPage() {
               </li>
             </ul>
             <p className="text-sm text-slate-600">
-              <strong>Fazit:</strong> Die Heizungsförderung (bis 70% Zuschuss) ist 2026 in vollem Umfang verfügbar. Bei Vollsanierungen zum Effizienzhaus empfehlen wir eine frühzeitige Antragstellung.
+              <strong>Fazit:</strong> Die Heizungsförderung (bis {FOERDER_TEXT.max} Zuschuss) ist 2026 in vollem Umfang verfügbar. Bei Vollsanierungen zum Effizienzhaus empfehlen wir eine frühzeitige Antragstellung.
             </p>
           </div>
 
@@ -72,15 +73,16 @@ export default function FoerderungPage() {
                 </CardTitle>
               </CardHeader>
               <CardContent className="pt-4">
-                <div className="text-4xl font-bold text-[#0F5B78] mb-4">bis 70%</div>
+                <div className="text-4xl font-bold text-[#0F5B78] mb-4">bis {FOERDER_TEXT.max}</div>
                 <ul className="space-y-2 text-slate-600 text-sm">
                   <li>✓ Grundförderung: 30%</li>
-                  <li>✓ Klimageschwindigkeitsbonus: +20%</li>
-                  <li>✓ Einkommensbonus: +30%</li>
-                  <li className="font-semibold">✓ Max. 70% Gesamtförderung</li>
+                  <li>✓ Klimageschwindigkeitsbonus: +{FOERDER_TEXT.klima} (Antrag bis 31.01.2027, danach halbjährlich sinkend)</li>
+                  <li>✓ Einkommensbonus: bis +{FOERDER_TEXT.einkommenMax}</li>
+                  <li className="font-semibold">✓ Max. {FOERDER_TEXT.maxStandard} Gesamtförderung, {FOERDER_TEXT.maxBedingung}</li>
+                  <li>✓ Auch private Vermieter & WEG (nur Grundförderung, Boni nur für Selbstnutzer)</li>
                 </ul>
                 <p className="mt-4 text-xs text-slate-500">
-                  Förderfähige Kosten bis 30.000€ (1. Wohneinheit)
+                  Förderfähige Kosten bis {FOERDER_TEXT.kostenEfh} (1. Wohneinheit) – max. {FOERDER_TEXT.maxZuschussEfh} Zuschuss
                 </p>
                 <a
                   href="https://www.kfw.de/inlandsfoerderung/Privatpersonen/Bestehende-Immobilie/F%C3%B6rderprodukte/Heizungsf%C3%B6rderung-f%C3%BCr-Privatpersonen-(458)/"
@@ -101,14 +103,13 @@ export default function FoerderungPage() {
                 </CardTitle>
               </CardHeader>
               <CardContent className="pt-4">
-                <div className="text-4xl font-bold text-[#0F5B78] mb-4">bis 35%</div>
+                <div className="text-4xl font-bold text-[#0F5B78] mb-4">30%</div>
                 <ul className="space-y-2 text-slate-600 text-sm">
                   <li>✓ Grundförderung: 30%</li>
-                  <li>✓ Effizienzbonus: +5%</li>
-                  <li>✓ Für Vermieter & WEG</li>
+                  <li>✓ Für Unternehmen als Eigentümer von Wohngebäuden</li>
                 </ul>
                 <p className="mt-4 text-xs text-slate-500">
-                  Förderfähige Kosten bis 30.000€ pro Wohneinheit
+                  Förderfähige Kosten: 28.000 € für die 1. Wohneinheit, je 15.000 € für die 2.–6., je 8.000 € ab der 7.
                 </p>
                 <a
                   href="https://www.kfw.de/inlandsfoerderung/Unternehmen/Energie-und-Umwelt/F%C3%B6rderprodukte/Heizungsf%C3%B6rderung-f%C3%BCr-Unternehmen-Wohngeb%C3%A4ude-(459)/"
@@ -129,10 +130,9 @@ export default function FoerderungPage() {
                 </CardTitle>
               </CardHeader>
               <CardContent className="pt-4">
-                <div className="text-4xl font-bold text-[#0F5B78] mb-4">bis 35%</div>
+                <div className="text-4xl font-bold text-[#0F5B78] mb-4">30%</div>
                 <ul className="space-y-2 text-slate-600 text-sm">
                   <li>✓ Grundförderung: 30%</li>
-                  <li>✓ Effizienzbonus: +5%</li>
                   <li>✓ Gewerbe, Industrie, Kommune</li>
                 </ul>
                 <p className="mt-4 text-xs text-slate-500">
@@ -161,7 +161,6 @@ export default function FoerderungPage() {
                 <div className="text-4xl font-bold text-[#0F5B78] mb-4">15%</div>
                 <ul className="space-y-2 text-slate-600">
                   <li>✓ Lüftungsanlagen mit Wärmerückgewinnung</li>
-                  <li>✓ Solarthermische Anlagen</li>
                   <li>✓ Gebäudeautomation</li>
                 </ul>
                 <p className="mt-4 text-sm text-slate-500">
@@ -190,9 +189,6 @@ export default function FoerderungPage() {
                   <li>✓ Dämmung Rohrleitungen</li>
                   <li>✓ Thermostatventile</li>
                 </ul>
-                <p className="mt-4 text-sm text-slate-500">
-                  Emissionsminderung Biomasse: bis 50%
-                </p>
                 <a
                   href="https://www.bafa.de/DE/Energie/Effiziente_Gebaeude/Sanierung_Wohngebaeude/Heizungsoptimierung/heizungsoptimierung_node.html"
                   target="_blank"
@@ -212,11 +208,12 @@ export default function FoerderungPage() {
               Wichtig zu wissen
             </h3>
             <ul className="space-y-2 text-slate-700">
-              <li>• Antrag muss <strong>vor</strong> Maßnahmenbeginn gestellt werden</li>
-              <li>• Nur zertifizierte Fachbetriebe (wie HeizCenter) sind berechtigt</li>
+              <li>• Antrag muss <strong>vor</strong> Maßnahmenbeginn gestellt werden – mit einem Liefer-/Leistungsvertrag, der unter der Bedingung der KfW-Zusage geschlossen wurde</li>
+              <li>• Das Fachunternehmen (z. B. HeizCenter) erstellt die Bestätigung zum Antrag (BzA), den Antrag stellt der Eigentümer selbst</li>
               <li>• Auszahlung nach Fertigstellung und Verwendungsnachweis</li>
               <li>• Kombination mit KfW-Kredit möglich</li>
-              <li>• Einkommensbonus bei zu versteuerndem Haushaltseinkommen bis 40.000€/Jahr</li>
+              <li>• Einkommensbonus (nur Selbstnutzer): 40% bis 30.000€, 30% bis 40.000€, 10% bis 50.000€ zu versteuerndes Haushaltsjahreseinkommen – mit minderjährigem, kindergeldberechtigtem Kind steigen die Grenzen um 10.000€</li>
+              <li>• Klimageschwindigkeitsbonus (nur Selbstnutzer): {FOERDER_TEXT.klimaHinweis}; für Anträge ab 01.08.2028 entfällt er. Die förderfähigen Kosten der 1. Wohneinheit sinken ab 01.02.2027 halbjährlich um 750€</li>
               <li>• <strong>Ab 2026:</strong> Luft-Wärmepumpen müssen 10 dB(A) unter dem EU-Ökodesign-Grenzwert liegen (vorher 5 dB) — prüfen Sie vor dem Kauf die Schallwerte</li>
             </ul>
           </div>
@@ -427,7 +424,7 @@ export default function FoerderungPage() {
             </Link>
             <Link href="/blog/waermepumpe-kosten-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
               <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">Wärmepumpe: Kosten & Förderung</h3>
-              <p className="text-slate-600 text-sm">Aktuelle Preise und wie Sie bis zu 70% Zuschuss erhalten.</p>
+              <p className="text-slate-600 text-sm">Aktuelle Preise und wie Sie bis zu {FOERDER_TEXT.max} Zuschuss erhalten.</p>
             </Link>
             <Link href="/blog/kfw-foerderung-solarthermie-2026" className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all border border-slate-100">
               <h3 className="font-semibold text-lg text-slate-900 group-hover:text-[#0F5B78] transition-colors mb-2">KfW-Förderung Solarthermie</h3>
@@ -473,10 +470,11 @@ export default function FoerderungPage() {
       <section className="bg-[#0F5B78] text-white py-16">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6">Wir übernehmen die Antragstellung</h2>
+            <h2 className="text-3xl font-bold mb-6">Wir begleiten Ihre Antragstellung</h2>
             <p className="text-xl mb-8">
-              Als zertifizierter Fachbetrieb unterstützen wir Sie bei allen Schritten der
-              Förderantragstellung - von der Beratung bis zur Auszahlung.
+              Als Fachbetrieb erstellen wir die Bestätigung zum Antrag (BzA) und unterstützen Sie bei allen
+              Schritten – von der Beratung bis zur Auszahlung. Den Antrag in „Meine KfW“ stellen Sie als
+              Eigentümer selbst.
             </p>
             <div className="grid md:grid-cols-3 gap-6 mb-8">
               {[

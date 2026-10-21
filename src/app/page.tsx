@@ -53,7 +53,7 @@ const services = [
     description: "Kostenlose Sonnenenergie für Warmwasser & Heizung",
     href: "/solar",
     icon: Sun,
-    badge: "Bis 70% Förderung",
+    badge: "Bis 80% Förderung",
   },
 ];
 

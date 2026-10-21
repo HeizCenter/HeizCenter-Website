@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 const services: LocationService[] = [
   {
     title: "Wärmepumpe",
-    description: "Moderne Wärmepumpen für Laupheim. BEG-Förderung bis 70%.",
+    description: "Moderne Wärmepumpen für Laupheim. BEG-Förderung bis 80%.",
     icon: Zap,
     href: "/waermepumpe",
   },
@@ -122,7 +122,7 @@ export default function LaupheimPage() {
             <strong>Wärmepumpen-Expertise für Laupheim:</strong> Wir installieren
             Luft-Wasser-Wärmepumpen für einfache Installation und
             Erdwärmepumpen für maximale Effizienz bei größeren Grundstücken.
-            BEG-Förderung von bis zu 70% reduziert die Investitionskosten
+            BEG-Förderung von bis zu 80% reduziert die Investitionskosten
             erheblich. Auch für Gewerbeobjekte in Laupheim bieten wir
             maßgeschneiderte Wärmepumpen-Lösungen an.
           </p>

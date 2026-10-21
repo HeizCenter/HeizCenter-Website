@@ -95,7 +95,7 @@ const features = [
   {
     title: "Zertifiziert & förderfähig",
     description:
-      "Mit EHPA-Gütesiegel zertifiziert und voll BEG-förderfähig. Durch R290 zusätzlich +5 % Effizienzbonus möglich.",
+      "Mit EHPA-Gütesiegel zertifiziert und voll BEG-förderfähig.",
     icon: Shield,
   },
 ];
@@ -124,7 +124,7 @@ const faqs: FAQItem[] = [
   {
     question: "Welche Förderung gibt es für die LAMBDA Wärmepumpe?",
     answer:
-      "Die LAMBDA ist voll BEG-förderfähig (BAFA-Zuschuss BEG EM): 30 % Grundförderung beim Heizungstausch; +20 % Klimageschwindigkeitsbonus beim vorzeitigen Tausch funktionsfähiger Öl-, Kohle-, Gasetagen- und Nachtspeicherheizungen (ohne Mindestalter) sowie Gas- und Biomasseheizungen ab 20 Jahren Alter; +30 % Einkommensbonus bei zu versteuerndem Haushaltseinkommen unter 40.000 €; +5 % Effizienzbonus durch das natürliche Kältemittel R290. Maximale Gesamtförderung: 70 %. Ergänzend ist der KfW-Kredit 358/359 (Heizungstausch-Ergänzungskredit) möglich. Wir beraten Sie kostenlos zur optimalen Förderkombination.",
+      "Die LAMBDA ist BEG-förderfähig (KfW-Zuschuss 458 für bestehende Wohngebäude): 30 % Grundförderung beim Heizungstausch; +16 % Klimageschwindigkeitsbonus für selbstnutzende Eigentümer beim vorzeitigen Tausch funktionsfähiger Öl-, Kohle-, Gasetagen- und Nachtspeicherheizungen (ohne Mindestalter) sowie Gas- und Biomasseheizungen ab 20 Jahren Alter (bei Antrag bis 31.01.2027, danach halbjährlich sinkend, für Anträge ab 01.08.2028 entfällt er); Einkommensbonus für Selbstnutzer: 40 % bis 30.000 €, 30 % bis 40.000 €, 10 % bis 50.000 € zu versteuerndes Haushaltsjahreseinkommen (mit minderjährigem, kindergeldberechtigtem Kind +10.000 € Grenze). Insgesamt höchstens 70 %, 80 % nur bei zu versteuerndem Haushaltseinkommen bis 30.000 € (mit Kind 40.000 €). Ergänzend ist der KfW-Kredit 358/359 (Heizungstausch-Ergänzungskredit) möglich. Wir beraten Sie kostenlos zur optimalen Förderkombination.",
   },
   {
     question: "Welches Kältemittel nutzt die LAMBDA und ist es zukunftssicher?",
@@ -345,16 +345,16 @@ export default function ZewothermPage() {
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-4 text-center">
-              Bis zu 70 % Förderung sichern
+              Bis zu 80 % Förderung sichern
             </h2>
             <p className="text-slate-700 text-center mb-10 max-w-2xl mx-auto">
               Die Investition in eine Wärmepumpe wird durch die Bundesförderung
               für effiziente Gebäude (BEG EM) staatlich unterstützt. Je nach
-              Ausgangslage und Einkommen sind bis zu 70 % der förderfähigen
+              Ausgangslage und Einkommen sind bis zu 80 % der förderfähigen
               Kosten möglich.
             </p>
 
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-3 gap-6">
               <div className="bg-white p-6 rounded-lg border-2 border-[#0F5B78]/20">
                 <div className="text-3xl font-bold text-[#0F5B78] mb-2">30 %</div>
                 <h3 className="font-bold mb-1">Grundförderung</h3>
@@ -365,30 +365,22 @@ export default function ZewothermPage() {
               </div>
 
               <div className="bg-white p-6 rounded-lg border-2 border-[#0F5B78]/20">
-                <div className="text-3xl font-bold text-[#0F5B78] mb-2">+20 %</div>
+                <div className="text-3xl font-bold text-[#0F5B78] mb-2">+16 %</div>
                 <h3 className="font-bold mb-1">Klimageschwindigkeitsbonus</h3>
                 <p className="text-sm text-slate-600">
                   Beim vorzeitigen Tausch funktionsfähiger Öl-, Kohle-,
                   Gasetagen- und Nachtspeicherheizungen sowie Gas- und
-                  Biomasseheizungen ab 20 Jahren.
+                  Biomasseheizungen ab 20 Jahren. Für Selbstnutzer, bei Antrag bis 31.01.2027.
                 </p>
               </div>
 
               <div className="bg-white p-6 rounded-lg border-2 border-[#0F5B78]/20">
-                <div className="text-3xl font-bold text-[#0F5B78] mb-2">+30 %</div>
+                <div className="text-3xl font-bold text-[#0F5B78] mb-2">bis +40 %</div>
                 <h3 className="font-bold mb-1">Einkommensbonus</h3>
                 <p className="text-sm text-slate-600">
-                  Für selbstnutzende Eigentümer mit zu versteuerndem
-                  Haushaltseinkommen unter 40.000 € pro Jahr.
-                </p>
-              </div>
-
-              <div className="bg-white p-6 rounded-lg border-2 border-[#0F5B78]/20">
-                <div className="text-3xl font-bold text-[#0F5B78] mb-2">+5 %</div>
-                <h3 className="font-bold mb-1">Effizienzbonus</h3>
-                <p className="text-sm text-slate-600">
-                  Für Wärmepumpen mit natürlichen Kältemitteln wie R290 –
-                  greift bei allen LAMBDA-Modellen.
+                  Für selbstnutzende Eigentümer: 40 % bis 30.000 €, 30 % bis
+                  40.000 €, 10 % bis 50.000 € zu versteuerndem
+                  Haushaltsjahreseinkommen.
                 </p>
               </div>
             </div>

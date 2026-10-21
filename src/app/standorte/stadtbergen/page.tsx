@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 const services: LocationService[] = [
   {
     title: "Wärmepumpe",
-    description: "Moderne Wärmepumpen für Stadtbergen. BEG-Förderung bis 70%.",
+    description: "Moderne Wärmepumpen für Stadtbergen. BEG-Förderung bis 80%.",
     icon: Zap,
     href: "/waermepumpe",
   },
@@ -123,7 +123,7 @@ export default function StadtbergenPage() {
             installieren platzsparende Luft-Wasser-Wärmepumpen, die auch bei
             kleineren Grundstücken funktionieren. Besonders bei Reihenhäusern
             achten wir auf niedrige Lärmemissionen, damit die Nachbarn nicht
-            gestört werden. BEG-Förderung von bis zu 70% reduziert die Kosten
+            gestört werden. BEG-Förderung von bis zu 80% reduziert die Kosten
             erheblich. Viele Kunden in Stadtbergen kombinieren die Wärmepumpe mit
             Photovoltaik auf dem Dach.
           </p>
@@ -197,7 +197,7 @@ export default function StadtbergenPage() {
                 <p className="text-slate-700">Wärmepumpen in Stadtbergen installiert</p>
               </div>
               <div className="bg-white p-6 rounded-lg text-center">
-                <div className="text-4xl font-bold text-[#0F5B78] mb-2">70%</div>
+                <div className="text-4xl font-bold text-[#0F5B78] mb-2">80%</div>
                 <p className="text-slate-700">BEG-Förderung für neue Heizungen</p>
               </div>
             </div>

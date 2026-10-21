@@ -17,8 +17,8 @@ export const metadata: Metadata = {
 };
 
 const waermepumpeFAQs: FAQItem[] = [
-  { question: "Was kostet eine Wärmepumpe?", answer: "Komplettsystem ab 25.000€ inkl. Installation. Mit BEG-Förderung (bis 70%) reduziert sich der Eigenanteil auf ca. 7.500€." },
-  { question: "Wie hoch ist die Förderung?", answer: "Bis zu 70% durch BEG-Förderung: 30% Grundförderung + 20% Klimageschwindigkeitsbonus (bis Ende 2028) + bis zu 30% Einkommensbonus. Max. 70% Gesamtförderung möglich." },
+  { question: "Was kostet eine Wärmepumpe?", answer: "Komplettsystem ab 25.000€ inkl. Installation. Mit BEG-Förderung (bis 80%) reduziert sich der Eigenanteil im besten Fall auf ca. 5.000€." },
+  { question: "Wie hoch ist die Förderung?", answer: "Bis zu 80% durch BEG-Förderung: 30% Grundförderung + 16% Klimageschwindigkeitsbonus (nur Selbstnutzer, bei Antrag bis 31.01.2027, danach halbjährlich sinkend, ab 01.08.2028 entfällt er) + bis zu 40% Einkommensbonus (nur Selbstnutzer). Höchstens 70% Gesamtförderung, 80% nur bei zu versteuerndem Haushaltseinkommen bis 30.000€ (mit Kind 40.000€), auf bis zu 28.000€ förderfähige Kosten (Einfamilienhaus) möglich, das sind maximal 22.400€ Zuschuss." },
   { question: "Funktioniert eine Wärmepumpe im Altbau?", answer: "Ja, mit richtiger Planung. Wichtig: gute Dämmung und ggf. Flächenheizung (Fußbodenheizung). Wir prüfen kostenlos die Eignung." },
   { question: "Wie laut ist eine Wärmepumpe?", answer: "Moderne Luft-Wärmepumpen haben 35-50 dB im Betrieb. Vergleichbar mit leiser Unterhaltung. Wir achten auf optimale Aufstellung." },
   { question: "Welche Wärmepumpe ist die beste?", answer: "Kommt auf Ihr Gebäude an. Luft-Wasser für Standardfälle, Erdwärme für höchste Effizienz, Grundwasser für beste Jahresarbeitszahl. Wir beraten individuell." },

@@ -35,7 +35,7 @@ const services: LocationService[] = [
   {
     title: "Wärmepumpe",
     description:
-      "Moderne Wärmepumpen für Landsberg. BEG-Förderung bis 70%. Professionelle Installation.",
+      "Moderne Wärmepumpen für Landsberg. BEG-Förderung bis 80%. Professionelle Installation.",
     icon: Zap,
     href: "/waermepumpe",
   },
@@ -160,7 +160,7 @@ export default function LandsbergPage() {
             </p>
             <p className="text-slate-700 mb-6">
               <strong>Ihre Vorteile:</strong> Bis zu 45% niedrigere Heizkosten,
-              BEG-Förderung bis 70%, unabhängig von Öl und Gas. Kostenlose Beratung
+              BEG-Förderung bis 80%, unabhängig von Öl und Gas. Kostenlose Beratung
               vor Ort in Landsberg inklusive Wirtschaftlichkeitsberechnung.
             </p>
 

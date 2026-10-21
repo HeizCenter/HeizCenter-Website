@@ -78,7 +78,7 @@ export function LocalBusinessSchema({
             itemOffered: {
               "@type": "Service",
               name: "Wärmepumpen-Installation",
-              description: "Professionelle Wärmepumpen-Installation mit BEG-Förderung bis zu 70%",
+              description: "Professionelle Wärmepumpen-Installation mit BEG-Förderung bis zu 80%",
               url: "https://www.heizcenter.de/waermepumpe",
             },
           },
@@ -190,7 +190,7 @@ export function LocalBusinessSchema({
           itemOffered: {
             "@type": "Service",
             name: "Wärmepumpen-Installation",
-            description: "Professionelle Wärmepumpen-Installation mit BEG-Förderung bis zu 70%",
+            description: "Professionelle Wärmepumpen-Installation mit BEG-Förderung bis zu 80%",
             url: "https://www.heizcenter.de/waermepumpe",
           },
         },
@@ -297,7 +297,7 @@ export function LocalBusinessSchema({
           itemOffered: {
             "@type": "Service",
             name: "Wärmepumpen-Installation",
-            description: "Professionelle Wärmepumpen-Installation mit BEG-Förderung bis zu 70%",
+            description: "Professionelle Wärmepumpen-Installation mit BEG-Förderung bis zu 80%",
             url: "https://www.heizcenter.de/waermepumpe",
           },
         },
@@ -435,7 +435,7 @@ export function LocationPageSchema({
           itemOffered: {
             "@type": "Service",
             name: "Wärmepumpen-Installation",
-            description: "Professionelle Wärmepumpen-Installation mit BEG-Förderung bis zu 70%",
+            description: "Professionelle Wärmepumpen-Installation mit BEG-Förderung bis zu 80%",
             url: "https://www.heizcenter.de/waermepumpe",
           },
         },

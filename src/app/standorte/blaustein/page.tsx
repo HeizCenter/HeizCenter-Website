@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 const services: LocationService[] = [
   {
     title: "Wärmepumpe",
-    description: "Moderne Wärmepumpen für Blaustein. BEG-Förderung bis 70%.",
+    description: "Moderne Wärmepumpen für Blaustein. BEG-Förderung bis 80%.",
     icon: Zap,
     href: "/waermepumpe",
   },
@@ -123,7 +123,7 @@ export default function BlausteinPage() {
             Sie kostenlos, welches System für Ihr Grundstück optimal ist. Bei
             größeren Grundstücken empfehlen wir oft Erdwärmepumpen mit
             Erdkollektoren - die hohe Effizienz amortisiert die etwas höheren
-            Investitionskosten schnell. BEG-Förderung bis 70% macht den Umstieg
+            Investitionskosten schnell. BEG-Förderung bis 80% macht den Umstieg
             attraktiv. Viele Kunden in Blaustein kombinieren ihre Wärmepumpe mit
             Photovoltaik für maximale Unabhängigkeit.
           </p>

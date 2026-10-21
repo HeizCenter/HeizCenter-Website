@@ -1,3 +1,42 @@
+# Content Validation Report - 2026-10-21 (HEC-159)
+
+## Förder-Update KfW 458 auf Stand Merkblatt 09/2026 (Website, Rechner, Blog)
+
+### Anlass
+Wunsch der Ads-Agentur (Kick-off mit Andrej, Mail 21.10.2026): „bis zu 80 %“ auf /waermepumpe, /foerderung und im Title, Rechner aktualisieren. Freigabe Jev 21.10.2026. Bei der Umsetzung zeigte das Merkblatt weitere veraltete Aussagen (Effizienzbonus, Emissionsbonus, Obergrenze, Neubau, Antragsberechtigung, Antragsreihenfolge, Solarthermie mit Klimabonus).
+
+Fachliche Quellen (einzige zulässige): KfW-Merkblatt 458, Stand 09/2026 (kfw.de/458, abgerufen 21.10.2026); BEG-EM-Richtlinie vom 17.08.2026 (BAnz AT 27.08.2026 B1), Nr. 8.3, 8.4.4, 8.6, 9.2.1, 9.4.1, TMA 3.4.4/3.4.5; kfw.de/458 für KfW 459/522.
+
+### Geprüfte Änderungen
+- `src/lib/config/foerderung.ts` (neu): Single Source of Truth — Grund 30 %, Klimabonus 16 % (bis 31.01.2027, danach −4 Pkt./Halbjahr, ab 01.08.2028 null), Einkommensbonus 40/30/10 % bis 30/40/50 Tsd. € (+10 Tsd. mit Kind), Obergrenze 70 % bzw. 80 % nur mit 40-%-Einkommensbonus, Kostendeckel 28.000/15.000/8.000 €.
+- `src/components/calculator/price-calculator.tsx`: Einkommensstufen + Kind, Gas ≥/< 20 Jahre, Selbstnutzer-Checkbox (ohne → 30 %), Boni nur auf den selbst genutzten WE-Anteil, Gewerbe nur 30 %, Obergrenze 70/80 %, Label „Nachtspeicherheizung“.
+- Seiten: /foerderung (+OG), /waermepumpe (+OG), /solar (Solarthermie bis 70 %, 80 % nur mit Heizungstausch; Beispiel neu), /rechner, /faq, /heizung, Startseite (+OG), 6 Partnerseiten, 22 Standortseiten, Schema-Komponenten, CTA-Komponenten, Solar-Vergleich.
+- `src/lib/api/blog.ts`: drei Durchgänge in 21+ Beiträgen — Effizienz-/Emissionsbonus entfernt, keine Solar-Pflicht für Biomasse, 70-%-Deckel in Beispielen, Neubau ohne 458-Zuschuss, Gas-Hybrid ohne Klimabonus (8.4.4), Antragsberechtigung, Einkommensnachweis, Vertrag mit aufschiebender Bedingung vor Antrag (9.2.1), Kumulierung (8.6), erfundene Kunden → „Rechenbeispiel“.
+
+### Gate 1: Fachliche Prüfung
+- **Prüfer:** hvac-content (Auftrag: nur Merkblatt/Richtlinie als Quelle)
+- **Lauf 1:** REJECTED — 13 Blocker (u. a. Solarthermie + Klimabonus, Antragsberechtigung, Einkommenszeitraum, Gas-Hybrid 80 %, „Wir übernehmen die Antragstellung“, Eigenanteil-Rechenfehler, Antrag vor Auftrag, Mindestinvestition, Kombination mit Effizienzhaus, KfW 459 „für Vermieter“, Emissionsminderung, BAFA statt KfW) + 6 Hinweise
+- **Lauf 2:** REJECTED — 2 Restblocker (/solar Badge/CTA 80 %, Blog „erst Antrag, dann Auftrag“)
+- **Lauf 3:** **APPROVED**
+- **Anmerkungen:** Kurzformen „bis 80 %“ in Titeln/Badges (Wärmepumpe, Pellets) bewusst behalten — Kundenwunsch, Wert erreichbar, Bedingung im Fließtext. Hartkodierte Beispielwerte im Blog (12.880 €, 28.000 €, 22.400 €, 16 %) → Wiedervorlage HEC-161 (01.02.2027).
+
+### Gate 2: Kontaktdaten-Validierung
+- **Prüfer 1:** Claude (Implementierer) — grep über den Diff auf Tel/Mail/Adresse/Öffnungszeiten: keine (einziger Treffer „Kältemittel: R290“ = Fehlalarm)
+- **Prüfer 2:** tester-Agent — unabhängige Gegenprüfung des Diffs gegen `contact.ts`
+- **Gefundene Kontaktdaten:** nur `CONTACT.PHONE_SCHEMA` in `partner/bosch/page.tsx` (unverändert, Zeile wegen Textänderung im Diff)
+- **Übereinstimmung mit contact.ts:** JA
+- **Status:** APPROVED
+
+### Technische Prüfung
+- `tsc --noEmit`: 0 Fehler · `eslint` geänderte Dateien: 0 Fehler · `next build`: erfolgreich
+- Gebauter Output: „Effizienzbonus“, „Emissionsbonus“, „Emissionsminderungszuschlag“ = 0 Treffer
+- Rechner im Browser (Playwright, `next start`): Öl/≤30 Tsd. 80 % · Öl/30–40 Tsd. ohne Kind 70 % · mit Kind 80 % · Öl/40–50 Tsd. 56 % · Gas < 20 J./> 60 Tsd. 30 % · vermietet 30 % · Gewerbe 30 %
+
+### Ergebnis
+COMMIT FREIGEGEBEN
+
+---
+
 # Content Validation Report - 2026-09-09
 
 ## Website auf GModG-Stand (Heizungsgesetz-Novelle 23.07.2026)

@@ -45,7 +45,7 @@ const services: LocationService[] = [
   {
     title: "Wärmepumpe",
     description:
-      "Moderne Wärmepumpen für Gutenzell-Hürbel und Umgebung. BEG-Förderung bis 70%. Energieeffizient und umweltfreundlich heizen.",
+      "Moderne Wärmepumpen für Gutenzell-Hürbel und Umgebung. BEG-Förderung bis 80%. Energieeffizient und umweltfreundlich heizen.",
     icon: Zap,
     href: "/waermepumpe",
   },
@@ -114,7 +114,7 @@ const faqs: FAQItem[] = [
   {
     question: "Was kostet eine Wärmepumpe im Raum Ulm/Memmingen?",
     answer:
-      "Die Kosten für eine Wärmepumpe liegen zwischen 15.000 und 35.000 Euro inkl. Installation. In Baden-Württemberg und Bayern profitieren Sie von der BEG-Förderung mit bis zu 70% Zuschuss. Wir erstellen Ihnen ein kostenloses Angebot mit Förderberechnung.",
+      "Die Kosten für eine Wärmepumpe liegen zwischen 15.000 und 35.000 Euro inkl. Installation. In Baden-Württemberg und Bayern profitieren Sie von der BEG-Förderung mit bis zu 80% Zuschuss. Wir erstellen Ihnen ein kostenloses Angebot mit Förderberechnung.",
   },
   {
     question: "Wie schnell ist der Notdienst in Ulm und Memmingen vor Ort?",
@@ -124,7 +124,7 @@ const faqs: FAQItem[] = [
   {
     question: "Welche Förderungen gibt es für Heizungstausch in der Region?",
     answer:
-      "In unserer Region profitieren Sie von der BEG-Förderung des Bundes mit bis zu 70% Zuschuss. Zusätzlich gibt es in Baden-Württemberg das Programm 'Klimaschutz-Plus' und in Bayern das '10.000-Häuser-Programm'. Wir beraten Sie zu allen Fördermöglichkeiten.",
+      "In unserer Region profitieren Sie von der BEG-Förderung des Bundes mit bis zu 80% Zuschuss. Zusätzlich gibt es in Baden-Württemberg das Programm 'Klimaschutz-Plus' und in Bayern das '10.000-Häuser-Programm'. Wir beraten Sie zu allen Fördermöglichkeiten.",
   },
 ];
 
@@ -190,12 +190,12 @@ export default function GutenzellHuerbelPage() {
           <ul className="list-disc list-inside space-y-2 text-slate-700 mb-6">
             <li>Kostenlose Vor-Ort-Beratung und Wirtschaftlichkeitsberechnung</li>
             <li>Fachgerechte Installation durch zertifizierte Techniker</li>
-            <li>Unterstützung bei BEG-Förderanträgen (bis 70% Zuschuss)</li>
+            <li>Unterstützung bei BEG-Förderanträgen (bis 80% Zuschuss)</li>
             <li>Hydraulischer Abgleich für maximale Effizienz</li>
             <li>Wartung und Kundendienst aus einer Hand</li>
           </ul>
           <p className="text-slate-700 mb-6">
-            Dank der staatlichen BEG-Förderung von bis zu 70% wird der Umstieg auf
+            Dank der staatlichen BEG-Förderung von bis zu 80% wird der Umstieg auf
             eine Wärmepumpe besonders attraktiv. Wir helfen Ihnen bei der
             Antragstellung und sorgen dafür, dass Sie alle verfügbaren Förderungen
             optimal nutzen können.

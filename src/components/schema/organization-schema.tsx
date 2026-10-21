@@ -151,7 +151,7 @@ export function OrganizationSchema() {
             "@type": "Service",
             name: "Wärmepumpe Installation",
             description:
-              "Professionelle Wärmepumpen-Installation mit BEG-Förderung bis zu 70%. Luft-Wasser, Sole-Wasser und Wasser-Wasser Wärmepumpen.",
+              "Professionelle Wärmepumpen-Installation mit BEG-Förderung bis zu 80%. Luft-Wasser, Sole-Wasser und Wasser-Wasser Wärmepumpen.",
             provider: {
               "@type": "Organization",
               name: "HeizCenter GmbH",

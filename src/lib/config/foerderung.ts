@@ -1,7 +1,9 @@
 /**
  * Heizungsförderung KfW 458 (BEG EM) — Single Source of Truth.
  *
- * Quelle ausschließlich kfw.de/458, abgerufen 21.10.2026 (HEC-159).
+ * Quelle ausschließlich kfw.de/458 und Merkblatt 458 (Stand 09/2026), abgerufen 21.10.2026 (HEC-159).
+ * Gefördert werden nur bestehende Wohngebäude (Bauantrag mindestens 5 Jahre vor Antrag) —
+ * kein Neubau. Boni gibt es genau zwei: Klimageschwindigkeitsbonus und Einkommensbonus.
  * ACHTUNG: Klimageschwindigkeitsbonus und Kostendeckel der 1. Wohneinheit
  * sinken ab 01.02.2027 halbjährlich (01.02./01.08.) — Werte dann hier anpassen
  * und Website neu bauen.
@@ -30,7 +32,9 @@ export const FOERDERUNG = {
   /** Mit minderjährigem Kind (Kindergeldberechtigung) steigen alle Grenzen um diesen Betrag */
   kindZuschlag: 10_000,
 
-  /** Höchstfördersatz */
+  /** Obergrenze des Fördersatzes je Wohneinheit, grundsätzlich */
+  maxStandard: 0.7,
+  /** Erhöhte Obergrenze — nur mit dem höchsten Einkommensbonus (bis 30.000 €, mit Kind bis 40.000 €) */
   max: 0.8,
 
   /** Förderfähige Kosten */
@@ -54,12 +58,20 @@ export function einkommensbonus(einkommen: number, mitKind: boolean): number {
   return stufe ? stufe.satz : 0;
 }
 
+/** Obergrenze des Fördersatzes: 80 % nur mit dem höchsten Einkommensbonus, sonst 70 % */
+export function obergrenze(einkommensbonusSatz: number): number {
+  return einkommensbonusSatz >= FOERDERUNG.einkommen[0].satz ? FOERDERUNG.max : FOERDERUNG.maxStandard;
+}
+
 const prozent = (wert: number) => `${Math.round(wert * 100)} %`;
 const euro = (wert: number) => `${wert.toLocaleString("de-DE")} €`;
 
 /** Fertige Textbausteine für Seiten und Blog */
 export const FOERDER_TEXT = {
   max: prozent(FOERDERUNG.max), // "80 %"
+  maxStandard: prozent(FOERDERUNG.maxStandard), // "70 %"
+  maxBedingung: `${prozent(FOERDERUNG.max)} nur bei zu versteuerndem Haushaltseinkommen bis ${euro(FOERDERUNG.einkommen[0].bis)} (mit Kind ${euro(FOERDERUNG.einkommen[0].bis + FOERDERUNG.kindZuschlag)})`,
+  maxHinweis: `${prozent(FOERDERUNG.max)} nur bei zu versteuerndem Haushaltseinkommen bis ${euro(FOERDERUNG.einkommen[0].bis)} (mit Kind ${euro(FOERDERUNG.einkommen[0].bis + FOERDERUNG.kindZuschlag)}), sonst höchstens ${prozent(FOERDERUNG.maxStandard)}`,
   grund: prozent(FOERDERUNG.grund), // "30 %"
   klima: prozent(FOERDERUNG.klima), // "16 %"
   einkommenMax: prozent(FOERDERUNG.einkommen[0].satz), // "40 %"

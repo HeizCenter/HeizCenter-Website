@@ -44,7 +44,7 @@ const services: LocationService[] = [
   {
     title: "Wärmepumpe",
     description:
-      "Moderne Wärmepumpen für Ulm und Neu-Ulm. BEG-Förderung bis 70%. Energieeffizient heizen.",
+      "Moderne Wärmepumpen für Ulm und Neu-Ulm. BEG-Förderung bis 80%. Energieeffizient heizen.",
     icon: Zap,
     href: "/waermepumpe",
   },
@@ -105,7 +105,7 @@ const faqs: FAQItem[] = [
   {
     question: "Welche Förderungen gibt es für Heizungstausch in Baden-Württemberg?",
     answer:
-      "In Baden-Württemberg profitieren Sie von der BEG-Förderung des Bundes mit bis zu 70% Zuschuss beim Umstieg auf eine Wärmepumpe. Zusätzlich gibt es das Landesprogramm 'Klimaschutz-Plus' und kommunale Förderprogramme der Stadt Ulm. Wir beraten Sie zu allen Fördermöglichkeiten.",
+      "In Baden-Württemberg profitieren Sie von der BEG-Förderung des Bundes mit bis zu 80% Zuschuss beim Umstieg auf eine Wärmepumpe. Zusätzlich gibt es das Landesprogramm 'Klimaschutz-Plus' und kommunale Förderprogramme der Stadt Ulm. Wir beraten Sie zu allen Fördermöglichkeiten.",
   },
   {
     question: "Bieten Sie Service auch in Neu-Ulm an?",
@@ -115,7 +115,7 @@ const faqs: FAQItem[] = [
   {
     question: "Was kostet eine Wärmepumpe in Ulm?",
     answer:
-      "Eine Wärmepumpe in Ulm kostet zwischen 15.000 und 35.000 Euro inkl. Installation. Mit der BEG-Förderung von bis zu 70% reduzieren sich Ihre Kosten erheblich. Wir erstellen Ihnen ein kostenloses Angebot mit exakter Förderberechnung für Ihr Projekt.",
+      "Eine Wärmepumpe in Ulm kostet zwischen 15.000 und 35.000 Euro inkl. Installation. Mit der BEG-Förderung von bis zu 80% reduzieren sich Ihre Kosten erheblich. Wir erstellen Ihnen ein kostenloses Angebot mit exakter Förderberechnung für Ihr Projekt.",
   },
   {
     question: "Installieren Sie auch in historischen Gebäuden in der Ulmer Altstadt?",
@@ -189,7 +189,7 @@ export default function UlmPage() {
           <ul className="list-disc list-inside space-y-2 text-slate-700 mb-6">
             <li>Spezialisierung auf Luft-Wasser-Wärmepumpen für Ulmer Stadtklima</li>
             <li>Erdwärmepumpen mit behördlicher Genehmigung</li>
-            <li>BEG-Förderberatung: Bis zu 70% staatlicher Zuschuss</li>
+            <li>BEG-Förderberatung: Bis zu 80% staatlicher Zuschuss</li>
             <li>Kombination mit Photovoltaik für maximale Unabhängigkeit</li>
             <li>Wartungsverträge für dauerhaft effizienten Betrieb</li>
           </ul>

@@ -5,6 +5,7 @@ import { PriceCalculator } from "@/components/calculator/price-calculator";
 import { Calculator, CheckCircle, Info, Loader2 } from "lucide-react";
 import { getCanonicalUrl } from "@/lib/seo";
 import { CONTACT } from "@/lib/config/contact";
+import { FOERDER_TEXT } from "@/lib/config/foerderung";
 
 export const metadata: Metadata = {
   title: "Wärmepumpen-Kostenrechner | HeizCenter",
@@ -130,7 +131,7 @@ export default function RechnerPage() {
         <div className="max-w-4xl mx-auto">
           <div className="bg-green-50 p-8 rounded-lg border-2 border-green-200">
             <h2 className="text-2xl font-bold mb-4 text-green-900">
-              KfW 458: Bis zu 70% Zuschuss möglich
+              KfW 458: Bis zu {FOERDER_TEXT.max} Zuschuss möglich
             </h2>
             <p className="text-green-800 mb-6">
               Die Bundesförderung für effiziente Gebäude (BEG) über das{" "}
@@ -146,21 +147,21 @@ export default function RechnerPage() {
             </p>
             <div className="grid md:grid-cols-3 gap-4 mb-6">
               <div className="bg-white p-4 rounded-lg">
-                <div className="text-3xl font-bold text-green-600 mb-2">30%</div>
+                <div className="text-3xl font-bold text-green-600 mb-2">{FOERDER_TEXT.grund}</div>
                 <div className="text-sm text-slate-600">Grundförderung für alle Wärmepumpen</div>
               </div>
               <div className="bg-white p-4 rounded-lg">
-                <div className="text-3xl font-bold text-green-600 mb-2">+20%</div>
-                <div className="text-sm text-slate-600">Klimageschwindigkeitsbonus (bis Ende 2028)</div>
+                <div className="text-3xl font-bold text-green-600 mb-2">+{FOERDER_TEXT.klima}</div>
+                <div className="text-sm text-slate-600">Klimageschwindigkeitsbonus (Antrag bis 31.01.2027, danach halbjährlich sinkend, ab 01.08.2028 entfällt er)</div>
               </div>
               <div className="bg-white p-4 rounded-lg">
-                <div className="text-3xl font-bold text-green-600 mb-2">+30%</div>
-                <div className="text-sm text-slate-600">Einkommensbonus (bis 40.000€/Jahr)</div>
+                <div className="text-3xl font-bold text-green-600 mb-2">bis +{FOERDER_TEXT.einkommenMax}</div>
+                <div className="text-sm text-slate-600">Einkommensbonus (40% bis 30.000€, 30% bis 40.000€, 10% bis 50.000€ Haushaltsjahreseinkommen)</div>
               </div>
             </div>
             <p className="text-sm text-green-700 mb-3">
-              <strong>Hinweis:</strong> Der Rechner berücksichtigt die Standard-BEG-Förderung von 50% (30% Grundförderung + 20% Klimageschwindigkeitsbonus).
-              Mit Einkommensbonus sind bis zu 70% möglich. Alternativ: Steuerbonus nach{" "}
+              <strong>Hinweis:</strong> Der Rechner berücksichtigt Ihre Angaben zu Klimageschwindigkeits- und Einkommensbonus (Beispiel: {FOERDER_TEXT.grund} + {FOERDER_TEXT.klima} = 46%).
+              Grundsätzlich höchstens {FOERDER_TEXT.maxStandard}, {FOERDER_TEXT.maxBedingung} (förderfähige Kosten bis {FOERDER_TEXT.kostenEfh} im Einfamilienhaus, maximal {FOERDER_TEXT.maxZuschussEfh} Zuschuss). Alternativ: Steuerbonus nach{" "}
               <a
                 href="https://www.gesetze-im-internet.de/estg/__35c.html"
                 target="_blank"
