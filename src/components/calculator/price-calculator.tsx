@@ -16,6 +16,7 @@ import {
 import { Slider } from "@/components/ui/slider";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import Link from "next/link";
+import { FOERDERUNG, FOERDER_TEXT, einkommensbonus, foerderfaehigeKosten } from "@/lib/config/foerderung";
 
 // localStorage key for persisting calculator values
 const STORAGE_KEY = "heizcenter-calculator-values";
@@ -31,19 +32,22 @@ interface PriceBreakdown {
   estimatedJAZ: number;
   annualSavings: number;
   hasKlimabonus: boolean;
-  hasEfficiencyBonus: boolean;
+  incomeBonusRate: number;
 }
 
-// BEG 2025 Förderung Konstanten (KfW 458)
-const FUNDING_CONSTANTS = {
-  BASE_RATE: 0.30,           // 30% Grundförderung
-  KLIMA_BONUS: 0.20,         // 20% Klimageschwindigkeitsbonus
-  INCOME_BONUS: 0.30,        // 30% Einkommensbonus (<40.000€/Jahr)
-  EFFICIENCY_BONUS: 0.05,    // 5% Effizienzbonus (JAZ ≥ 4.5)
-  MAX_FUNDING_RATE: 0.70,    // 70% Maximum
-  ELIGIBLE_COST_CAP: 30000,  // Max. förderfähige Kosten (1. Wohneinheit)
-  ADDITIONAL_UNIT_CAP: 15000, // Pro weitere Wohneinheit (max. 6)
+// Förderung KfW 458: Werte zentral in src/lib/config/foerderung.ts (HEC-159)
+
+// Einkommensklassen (zu versteuerndes Haushaltsjahreseinkommen) → Obergrenze in €
+const INCOME_BRACKETS: Record<string, { label: string; upTo: number }> = {
+  "bis-30": { label: "bis 30.000 €", upTo: 30_000 },
+  "bis-40": { label: "30.001 – 40.000 €", upTo: 40_000 },
+  "bis-50": { label: "40.001 – 50.000 €", upTo: 50_000 },
+  "bis-60": { label: "50.001 – 60.000 €", upTo: 60_000 },
+  "ueber-60": { label: "über 60.000 €", upTo: Number.POSITIVE_INFINITY },
 };
+
+// Klimageschwindigkeitsbonus: Öl, Kohle, Nachtspeicher, Gas-Etagenheizung oder Gas/Biomasse ab 20 Jahren
+const KLIMA_BONUS_HEATING = ["gas", "oil", "coal", "electric"];
 
 export function PriceCalculator() {
   const searchParams = useSearchParams();
@@ -58,7 +62,8 @@ export function PriceCalculator() {
   const [residents, setResidents] = useState<number>(3);
   const [pumpType, setPumpType] = useState<string>("air-water");
   const [propertyType, setPropertyType] = useState<string>("einfamilienhaus");
-  const [hasIncomeBonus, setHasIncomeBonus] = useState<boolean>(false);
+  const [incomeBracket, setIncomeBracket] = useState<string>("ueber-60");
+  const [hasChild, setHasChild] = useState<boolean>(false);
   const [numberOfUnits, setNumberOfUnits] = useState<number>(1);
   const [breakdown, setBreakdown] = useState<PriceBreakdown | null>(null);
 
@@ -98,7 +103,9 @@ export function PriceCalculator() {
           if (values.heatingSurface) setHeatingSurface(values.heatingSurface);
           if (values.residents) setResidents(values.residents);
           if (values.propertyType) setPropertyType(values.propertyType);
-          if (values.hasIncomeBonus !== undefined) setHasIncomeBonus(values.hasIncomeBonus);
+          if (values.incomeBracket && INCOME_BRACKETS[values.incomeBracket]) setIncomeBracket(values.incomeBracket);
+          else if (values.hasIncomeBonus === true) setIncomeBracket("bis-40"); // alte Speicherung: „unter 40.000 €“
+          if (values.hasChild !== undefined) setHasChild(values.hasChild === true);
           if (values.numberOfUnits) setNumberOfUnits(values.numberOfUnits);
         }
       } catch (e) {
@@ -122,20 +129,21 @@ export function PriceCalculator() {
         heatingSurface,
         residents,
         propertyType,
-        hasIncomeBonus,
+        incomeBracket,
+        hasChild,
         numberOfUnits,
       };
       localStorage.setItem(STORAGE_KEY, JSON.stringify(values));
     } catch (e) {
       console.warn("Could not save calculator values to localStorage:", e);
     }
-  }, [isInitialized, houseSize, pumpType, heatingType, insulation, buildingYear, heatingSurface, residents, propertyType, hasIncomeBonus, numberOfUnits]);
+  }, [isInitialized, houseSize, pumpType, heatingType, insulation, buildingYear, heatingSurface, residents, propertyType, incomeBracket, hasChild, numberOfUnits]);
 
   // Calculate price when values change
   useEffect(() => {
     calculatePrice();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [houseSize, heatingType, insulation, buildingYear, heatingSurface, residents, pumpType, propertyType, hasIncomeBonus, numberOfUnits]);
+  }, [houseSize, heatingType, insulation, buildingYear, heatingSurface, residents, pumpType, propertyType, incomeBracket, hasChild, numberOfUnits]);
 
   const calculatePrice = () => {
     // ============================================
@@ -241,40 +249,26 @@ export function PriceCalculator() {
     // 8. FÖRDERUNGSBERECHNUNG (BEG 2025 / KfW 458)
     // ============================================
 
-    // Förderfähige Kosten berechnen (mit Deckel)
-    let eligibleCostCap = FUNDING_CONSTANTS.ELIGIBLE_COST_CAP;
-    if (propertyType === "mehrfamilienhaus" && numberOfUnits > 1) {
-      // Zusätzliche Wohneinheiten (max. 6)
-      const additionalUnits = Math.min(numberOfUnits - 1, 5);
-      eligibleCostCap += additionalUnits * FUNDING_CONSTANTS.ADDITIONAL_UNIT_CAP;
-    }
-    const eligibleCosts = Math.min(totalCost, eligibleCostCap);
+    // Förderfähige Kosten berechnen (Deckel nach Wohneinheiten)
+    const units = propertyType === "mehrfamilienhaus" ? numberOfUnits : 1;
+    const eligibleCosts = Math.min(totalCost, foerderfaehigeKosten(units));
 
-    // Fördersatz berechnen
-    let subsidyRate = FUNDING_CONSTANTS.BASE_RATE; // 30% Grundförderung
+    // Grundförderung auf die förderfähigen Kosten des ganzen Gebäudes; Boni nur für die
+    // selbst genutzte Wohneinheit (deren gleicher Anteil an den Kosten), nicht für Gewerbe
+    const isPrivate = propertyType !== "gewerbe";
+    const hasKlimabonus = isPrivate && KLIMA_BONUS_HEATING.includes(heatingType);
+    const incomeBonusRate = isPrivate
+      ? einkommensbonus(INCOME_BRACKETS[incomeBracket]?.upTo ?? Number.POSITIVE_INFINITY, hasChild)
+      : 0;
+    const bonusRate = Math.min(
+      (hasKlimabonus ? FOERDERUNG.klima : 0) + incomeBonusRate,
+      FOERDERUNG.max - FOERDERUNG.grund,
+    );
+    const ownUnitShare = eligibleCosts / units;
+    const subsidyAmountExact = eligibleCosts * FOERDERUNG.grund + ownUnitShare * bonusRate;
+    const subsidyRate = eligibleCosts > 0 ? subsidyAmountExact / eligibleCosts : 0;
 
-    // Klimageschwindigkeitsbonus (20%) - für ALLE fossilen Heizungen inkl. Elektro/Nachtspeicher
-    const klimaBonusEligible = ["gas", "oil", "coal", "electric"];
-    const hasKlimabonus = klimaBonusEligible.includes(heatingType);
-    if (hasKlimabonus) {
-      subsidyRate += FUNDING_CONSTANTS.KLIMA_BONUS;
-    }
-
-    // Effizienzbonus (5%) - bei JAZ ≥ 4.5 für Luft-Wasser oder natürliche Kältemittel
-    const hasEfficiencyBonus = jaz >= 4.5;
-    if (hasEfficiencyBonus) {
-      subsidyRate += FUNDING_CONSTANTS.EFFICIENCY_BONUS;
-    }
-
-    // Einkommensbonus (30%) - Haushaltseinkommen < 40.000€/Jahr
-    if (hasIncomeBonus) {
-      subsidyRate += FUNDING_CONSTANTS.INCOME_BONUS;
-    }
-
-    // Maximum 70% Förderung
-    subsidyRate = Math.min(subsidyRate, FUNDING_CONSTANTS.MAX_FUNDING_RATE);
-
-    const subsidyAmount = Math.round(eligibleCosts * subsidyRate);
+    const subsidyAmount = Math.round(subsidyAmountExact);
     const netCost = totalCost - subsidyAmount;
 
     // ============================================
@@ -283,6 +277,7 @@ export function PriceCalculator() {
     // Heizkosten pro m² (aktualisierte Werte 2025)
     const oldHeatingCostPerSqm: Record<string, number> = {
       gas: 13,      // Korrigiert von 18
+      "gas-young": 13,
       oil: 16,      // Korrigiert von 22
       coal: 20,     // Korrigiert von 25
       electric: 40, // Korrigiert von 28 (Nachtspeicher sehr teuer!)
@@ -313,7 +308,7 @@ export function PriceCalculator() {
       estimatedJAZ: Math.round(finalJAZ * 10) / 10,
       annualSavings,
       hasKlimabonus,
-      hasEfficiencyBonus,
+      incomeBonusRate,
     });
   };
 
@@ -416,7 +411,7 @@ export function PriceCalculator() {
                 <span>6 Einheiten</span>
               </div>
               <p className="text-xs text-slate-500 mt-1">
-                Förderfähige Kosten: max. {formatCurrency(30000 + (Math.min(numberOfUnits - 1, 5) * 15000))}
+                Förderfähige Kosten: max. {formatCurrency(foerderfaehigeKosten(numberOfUnits))}
               </p>
             </div>
           )}
@@ -505,12 +500,17 @@ export function PriceCalculator() {
                 <SelectValue />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="gas">Gasheizung</SelectItem>
+                <SelectItem value="gas">Gasheizung (20 Jahre oder älter) / Gas-Etagenheizung</SelectItem>
+                <SelectItem value="gas-young">Gasheizung (jünger als 20 Jahre)</SelectItem>
                 <SelectItem value="oil">Ölheizung</SelectItem>
                 <SelectItem value="electric">Elektroheizung / Nachtspeicher</SelectItem>
                 <SelectItem value="coal">Kohle- / Holzheizung</SelectItem>
               </SelectContent>
             </Select>
+            <p className="text-xs text-slate-500 mt-1">
+              Klimageschwindigkeitsbonus ({FOERDER_TEXT.klimaHinweis}) beim Austausch von Öl-, Kohle-,
+              Nachtspeicher- oder Gas-Etagenheizung bzw. Gas-/Holzheizung ab 20 Jahren – nur bei selbst genutztem Wohneigentum.
+            </p>
           </div>
 
           {/* Number of Residents */}
@@ -533,25 +533,41 @@ export function PriceCalculator() {
             </div>
           </div>
 
-          {/* Income Bonus Checkbox */}
-          <div className="bg-green-50 rounded-lg p-4 border border-green-200">
+          {/* Einkommensbonus: Stufen nach zu versteuerndem Haushaltseinkommen */}
+          <div className="bg-green-50 rounded-lg p-4 border border-green-200 space-y-3">
+            <div>
+              <Label htmlFor="incomeBracket" className="font-semibold text-green-900 mb-2 block">
+                Zu versteuerndes Haushaltseinkommen (Einkommensbonus bis {FOERDER_TEXT.einkommenMax})
+              </Label>
+              <Select value={incomeBracket} onValueChange={setIncomeBracket}>
+                <SelectTrigger id="incomeBracket" className="bg-white">
+                  <SelectValue />
+                </SelectTrigger>
+                <SelectContent>
+                  {Object.entries(INCOME_BRACKETS).map(([value, { label }]) => (
+                    <SelectItem key={value} value={value}>
+                      {label}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+            </div>
             <div className="flex items-start space-x-3">
               <Checkbox
-                id="incomeBonus"
-                checked={hasIncomeBonus}
-                onCheckedChange={(checked) => setHasIncomeBonus(checked === true)}
+                id="hasChild"
+                checked={hasChild}
+                onCheckedChange={(checked) => setHasChild(checked === true)}
                 className="mt-1"
               />
-              <div>
-                <Label htmlFor="incomeBonus" className="font-semibold text-green-900 cursor-pointer">
-                  Einkommensbonus (+30%)
-                </Label>
-                <p className="text-xs text-green-700 mt-1">
-                  Zu versteuerndes Haushaltseinkommen unter 40.000€/Jahr.
-                  Nachweis durch Steuerbescheid erforderlich.
-                </p>
-              </div>
+              <Label htmlFor="hasChild" className="text-sm text-green-900 cursor-pointer font-normal">
+                Mindestens ein minderjähriges Kind im Haushalt (kindergeldberechtigt) – Einkommensgrenzen steigen um
+                10.000 €
+              </Label>
             </div>
+            <p className="text-xs text-green-700">
+              Einkommensbonus: 40 % bis 30.000 €, 30 % bis 40.000 €, 10 % bis 50.000 € – nur für selbst genutztes
+              Wohneigentum, Nachweis durch Steuerbescheid.
+            </p>
           </div>
 
           <div className="bg-[#0F5B78]/5 rounded-lg p-4 border border-[#0F5B78]/20">
@@ -602,10 +618,9 @@ export function PriceCalculator() {
                     Fördersatz ({formatPercent(breakdown.subsidyRate)})
                   </span>
                   <span className="text-xs text-green-700">
-                    {breakdown.hasKlimabonus && "inkl. Klimabonus"}
-                    {breakdown.hasEfficiencyBonus && breakdown.hasKlimabonus && " + "}
-                    {breakdown.hasEfficiencyBonus && "Effizienzbonus"}
-                    {hasIncomeBonus && " + Einkommensbonus"}
+                    {[breakdown.hasKlimabonus && "Klimabonus", breakdown.incomeBonusRate > 0 && "Einkommensbonus"]
+                      .filter(Boolean)
+                      .join(" + ")}
                   </span>
                 </div>
                 <div className="flex justify-between pt-2 border-t border-green-200">
@@ -643,7 +658,7 @@ export function PriceCalculator() {
                   {formatCurrency(breakdown.annualSavings)} pro Jahr
                 </p>
                 <p className="text-xs text-green-700">
-                  Im Vergleich zu Ihrer aktuellen {heatingType === "gas" ? "Gas" : heatingType === "oil" ? "Öl" : heatingType === "electric" ? "Elektro" : "Kohle"}-Heizung
+                  Im Vergleich zu Ihrer aktuellen {heatingType.startsWith("gas") ? "Gas" : heatingType === "oil" ? "Öl" : heatingType === "electric" ? "Elektro" : "Kohle"}-Heizung
                 </p>
               </div>
 
@@ -654,10 +669,12 @@ export function PriceCalculator() {
                   <div className="text-xs text-blue-800">
                     <strong>Förderung setzt sich zusammen aus:</strong>
                     <ul className="mt-1 space-y-0.5">
-                      <li>• 30% Grundförderung</li>
-                      {breakdown.hasKlimabonus && <li>• +20% Klimageschwindigkeitsbonus</li>}
-                      {breakdown.hasEfficiencyBonus && <li>• +5% Effizienzbonus (JAZ ≥ 4,5)</li>}
-                      {hasIncomeBonus && <li>• +30% Einkommensbonus</li>}
+                      <li>• {FOERDER_TEXT.grund} Grundförderung</li>
+                      {breakdown.hasKlimabonus && <li>• +{FOERDER_TEXT.klima} Klimageschwindigkeitsbonus (Antrag bis {FOERDERUNG.klimaGueltigBis})</li>}
+                      {breakdown.incomeBonusRate > 0 && <li>• +{formatPercent(breakdown.incomeBonusRate)} Einkommensbonus</li>}
+                      <li>• Höchstens {FOERDER_TEXT.max} der förderfähigen Kosten</li>
+                      {propertyType === "mehrfamilienhaus" && <li>• Boni nur auf den Anteil der selbst genutzten Wohneinheit</li>}
+                      {propertyType === "gewerbe" && <li>• Gewerbe: nur Grundförderung, keine Boni</li>}
                     </ul>
                   </div>
                 </div>
@@ -678,14 +695,14 @@ export function PriceCalculator() {
         <p className="text-xs text-slate-500">
           Berechnung basiert auf Durchschnittswerten. Förderung gemäß{" "}
           <a
-            href="https://www.kfw.de/inlandsfoerderung/Privatpersonen/Bestehende-Immobilie/F%C3%B6rderprodukte/Heizungsf%C3%B6rderung-f%C3%BCr-Privatpersonen-(458)/"
+            href={FOERDERUNG.quelleUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="text-[#0F5B78] hover:underline"
           >
             KfW 458
           </a>{" "}
-          (Stand 2025). Max. 70% Förderung, förderfähige Kosten bis 30.000€.
+          (Stand {FOERDERUNG.stand}). Max. {FOERDER_TEXT.max} Förderung, förderfähige Kosten bis {FOERDER_TEXT.kostenEfh} (Einfamilienhaus).
         </p>
       </div>
     </div>
