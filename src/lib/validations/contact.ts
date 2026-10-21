@@ -9,9 +9,14 @@ export const contactFormSchema = z.object({
     .min(2, "Name muss mindestens 2 Zeichen lang sein")
     .max(100, "Name ist zu lang"),
   email: z.string().email("Bitte geben Sie eine gültige E-Mail-Adresse ein"),
+  // Telefon optional seit HEC-160 (Antwort auch per E-Mail); Angebot/Notdienst bleiben Pflicht
   phone: z
     .string()
-    .min(5, "Bitte geben Sie eine gültige Telefonnummer ein"),
+    .trim()
+    .max(30, "Telefonnummer ist zu lang")
+    .regex(/^[0-9+()/.\s-]*$/, "Bitte nur Ziffern, Leerzeichen und + ( ) / - verwenden")
+    .refine((v) => v === "" || v.replace(/\D/g, "").length >= 5, "Bitte geben Sie eine gültige Telefonnummer ein")
+    .default(""),
   subject: z
     .string()
     .min(3, "Betreff muss mindestens 3 Zeichen lang sein")

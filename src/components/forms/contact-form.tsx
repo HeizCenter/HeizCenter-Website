@@ -147,7 +147,7 @@ export function ContactForm({ initialMessage = "", initialSubject = "" }: Contac
 
       {/* Phone */}
       <div>
-        <Label htmlFor="phone">Telefon *</Label>
+        <Label htmlFor="phone">Telefon (optional)</Label>
         <Input
           id="phone"
           type="tel"
