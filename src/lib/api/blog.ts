@@ -87,7 +87,7 @@ function enhanceBlogContent(htmlContent: string): string {
   // Wrap important paragraphs with <strong>Wichtig:</strong> or <strong>Hinweis:</strong> in callout boxes
   enhanced = enhanced.replace(
     /<p><strong>(Wichtig|Hinweis|Tipp|Achtung):<\/strong>([^<]*(?:<[^\/p][^>]*>.*?<\/[^>]+>)*[^<]*)<\/p>/gi,
-    '<div class="my-6 p-4 bg-blue-50 border-l-4 border-blue-500 rounded-r"><p class="font-semibold text-blue-900">$1:</p><p class="text-slate-700">$2</p></div>'
+    '<div class="not-article my-6 p-4 bg-blue-50 border-l-4 border-blue-500 rounded-r"><p class="font-semibold text-blue-900">$1:</p><p class="text-slate-700">$2</p></div>'
   );
 
   // Add visual spacing after lists
@@ -97,8 +97,27 @@ function enhanceBlogContent(htmlContent: string): string {
   // Wrap key takeaways/summaries in styled blockquotes
   enhanced = enhanced.replace(
     /<p><strong>(Zusammenfassung|Fazit):<\/strong>([^<]*)<\/p>/gi,
-    '<blockquote class="my-8 p-6 bg-slate-50 border-l-4 border-[#0F5B78] rounded-r"><p class="font-semibold text-lg mb-2">$1</p><p class="text-slate-700">$2</p></blockquote>'
+    '<blockquote class="not-article my-8 p-6 bg-slate-50 border-l-4 border-[#0F5B78] rounded-r"><p class="font-semibold text-lg mb-2">$1</p><p class="text-slate-700">$2</p></blockquote>'
   );
+
+  // Vom Typografie-Plugin (Klasse "article") ausnehmen, was eigene Gestaltung hat:
+  // Tabellen (cost-table, Inline-Styles), dunkle Boxen mit weißem Text, Callouts.
+  // Ohne die Ausnahme setzt das Plugin Farben auf th/strong/h3 und macht weißen Text unlesbar.
+  enhanced = enhanced.replace(/<(table|blockquote)\b([^>]*)>/g, (match, tag: string, attrs: string) =>
+    attrs.includes('class="')
+      ? match.replace('class="', 'class="not-article ')
+      : `<${tag} class="not-article"${attrs}>`
+  );
+  enhanced = enhanced.replace(/class="([^"]*)"/g, (match, classes: string) => {
+    if (/(^|\s)not-article(\s|$)/.test(classes)) return match;
+    const needsExclusion =
+      /(^|\s)bg-\[#0F5B78\](\s|$)/.test(classes) ||
+      /(^|\s)bg-gradient-/.test(classes) ||
+      /(^|\s)text-white(\s|$)/.test(classes) ||
+      /(^|\s)callout(\s|$)/.test(classes) ||
+      /(^|\s)cta-[a-z-]+(\s|$)/.test(classes); // .cta-box/.cta-locations: weißer Text aus globals.css
+    return needsExclusion ? `class="not-article ${classes}"` : match;
+  });
 
   console.log('[Blog Enhancement] Enhancement complete. Content length:', enhanced.length);
   return enhanced;

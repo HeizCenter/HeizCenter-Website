@@ -487,11 +487,6 @@ export default function BuderusPage() {
                 telephone: CONTACT.PHONE_SCHEMA,
               },
             },
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.8",
-              reviewCount: "60",
-            },
             manufacturer: {
               "@type": "Organization",
               name: "Buderus (Bosch Thermotechnik)",

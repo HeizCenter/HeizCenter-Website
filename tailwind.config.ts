@@ -123,6 +123,12 @@ const config: Config = {
       }
     }
   },
-  plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
+  plugins: [
+    require("tailwindcss-animate"),
+    // Klassenname "article" statt "prose": "prose" steht auf 40 Seiten (Partner,
+    // Standorte, Rechtliches), die ohne Plugin gebaut wurden und so bleiben sollen.
+    // Nur der Blog-Artikeltext nutzt "article"; Ausnahmen heißen "not-article".
+    require("@tailwindcss/typography")({ className: "article" }),
+  ],
 };
 export default config;

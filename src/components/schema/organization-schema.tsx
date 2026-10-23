@@ -138,8 +138,8 @@ export function OrganizationSchema() {
       },
     ],
 
-    // Note: aggregateRating and review are NOT supported on Organization type
-    // by Google Rich Results. These are only on LocalBusinessSchema.
+    // Kein aggregateRating/review in irgendeinem Schema der Site (seit 23.10.2026):
+    // Eigenbewertungen auf Organization/LocalBusiness ergeben keine Rich Results.
 
     // Services Offered
     hasOfferCatalog: {

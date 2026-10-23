@@ -476,11 +476,6 @@ export default function WolfPage() {
                 telephone: CONTACT.PHONE_SCHEMA,
               },
             },
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.7",
-              reviewCount: "60",
-            },
             manufacturer: {
               "@type": "Organization",
               name: "Wolf GmbH",

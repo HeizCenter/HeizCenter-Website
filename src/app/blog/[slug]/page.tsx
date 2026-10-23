@@ -27,6 +27,9 @@ export async function generateStaticParams() {
   return posts.map((post) => ({ slug: post.slug }));
 }
 
+// Unbekannte Slugs sofort 404 statt einmal rendern und ein Jahr als 404 cachen
+export const dynamicParams = false;
+
 export async function generateMetadata({
   params,
 }: BlogPostPageProps): Promise<Metadata> {
@@ -131,22 +134,18 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               />
 
               {/* Article Content */}
+              {/* Typografie über das Plugin (Klassenname "article", Farben in globals.css).
+                  Keine Farb- oder Größen-Modifier: die würden als Varianten hinter den
+                  Utilities landen und text-white/text-sm im Artikel-HTML überstimmen.
+                  Tabellen, dunkle Boxen und Callouts sind per not-article ausgenommen
+                  (enhanceBlogContent setzt die Klasse). */}
               <div
-                className="prose prose-slate prose-lg max-w-none mb-8
-                  prose-headings:font-bold prose-headings:tracking-tight
-                  prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6 prose-h2:leading-tight prose-h2:scroll-mt-20
-                  prose-h3:text-2xl prose-h3:mt-10 prose-h3:mb-4 prose-h3:leading-snug prose-h3:scroll-mt-20
-                  prose-h4:text-xl prose-h4:mt-8 prose-h4:mb-3 prose-h4:scroll-mt-20
-                  prose-p:text-lg prose-p:leading-relaxed prose-p:text-slate-700 prose-p:mb-6
-                  prose-li:text-lg prose-li:leading-relaxed prose-li:text-slate-700 prose-li:mb-2 prose-li:marker:text-[#0F5B78]
-                  prose-strong:text-slate-900 prose-strong:font-semibold
-                  prose-a:text-[#0F5B78] prose-a:font-medium prose-a:no-underline hover:prose-a:underline hover:prose-a:text-[#0D4A5F]
-                  prose-img:rounded-xl prose-img:shadow-lg prose-img:my-8
-                  prose-code:bg-slate-100 prose-code:text-slate-800 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-base
-                  prose-pre:bg-slate-900 prose-pre:text-slate-100
-                  prose-ul:my-6 prose-ol:my-6
-                  prose-table:text-base
-                  [&_.callout]:not-prose [&_blockquote]:not-prose"
+                className="article article-slate article-lg max-w-none mb-8
+                  article-headings:tracking-tight article-headings:scroll-mt-20
+                  article-h2:mt-12 article-h2:mb-6
+                  article-h3:mt-10 article-h3:mb-4
+                  article-a:no-underline hover:article-a:underline
+                  article-img:rounded-xl article-img:shadow-lg"
                 dangerouslySetInnerHTML={{ __html: post.content }}
               />
 

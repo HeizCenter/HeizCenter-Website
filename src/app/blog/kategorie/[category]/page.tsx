@@ -32,6 +32,8 @@ export async function generateStaticParams() {
   return categories.map((category) => ({ category: category.slug }));
 }
 
+export const dynamicParams = false;
+
 export async function generateMetadata({
   params,
 }: CategoryPageProps): Promise<Metadata> {

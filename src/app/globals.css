@@ -634,3 +634,10 @@
   padding-bottom: 1rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
+
+/* Blog-Artikeltext (Typografie-Plugin, Klassenname "article" in tailwind.config.ts) */
+.article {
+  --tw-prose-links: #0F5B78;
+  --tw-prose-bullets: #0F5B78;
+  --tw-prose-counters: #0F5B78;
+}

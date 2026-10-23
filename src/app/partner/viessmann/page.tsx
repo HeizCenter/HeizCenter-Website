@@ -484,11 +484,6 @@ export default function ViessmannPage() {
                 telephone: CONTACT.PHONE_SCHEMA,
               },
             },
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.8",
-              reviewCount: "60",
-            },
             manufacturer: {
               "@type": "Organization",
               name: "Viessmann Werke GmbH & Co. KG",
