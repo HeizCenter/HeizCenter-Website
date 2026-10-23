@@ -39,8 +39,11 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
       <div className="container flex h-16 items-center">
-        {/* Desktop Navigation - Left Side */}
-        <nav className="hidden md:flex items-center space-x-4 lg:space-x-5">
+        {/* Desktop Navigation - Left Side.
+            Erst ab xl (1280 px): 11 Links + Telefon/WhatsApp/CTA brauchen 1342 px — zwischen 768 und
+            1365 px lief die Leiste über den Rand (iPad, 1280er-Laptops; HEC-187). Darunter das Burger-Menü,
+            von 1280 bis 1365 px Telefon/WhatsApp nur als Icon. */}
+        <nav className="hidden xl:flex items-center space-x-4 lg:space-x-5">
           {navigation.map((item) => (
             <Link
               key={item.name}
@@ -53,19 +56,26 @@ export function Header() {
         </nav>
 
         {/* CTA Buttons - Right Side */}
-        <div className="hidden md:flex items-center space-x-3 lg:space-x-4 ml-auto">
-          <a href={getPhoneLink()} className="flex items-center gap-1.5 text-sm hover:text-[#0F5B78] transition-colors">
+        <div className="hidden xl:flex items-center space-x-3 lg:space-x-4 ml-auto">
+          <a
+            href={getPhoneLink()}
+            aria-label={`Anrufen: ${CONTACT.PHONE_DISPLAY}`}
+            title={CONTACT.PHONE_DISPLAY}
+            className="flex items-center gap-1.5 text-sm hover:text-[#0F5B78] transition-colors"
+          >
             <Phone className="h-4 w-4" />
-            <span className="font-medium whitespace-nowrap">{CONTACT.PHONE_DISPLAY}</span>
+            <span className="font-medium whitespace-nowrap hidden min-[1366px]:inline">{CONTACT.PHONE_DISPLAY}</span>
           </a>
           <a
             href={`https://wa.me/${CONTACT.WHATSAPP_MOBILE}`}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="WhatsApp"
+            title="WhatsApp"
             className="flex items-center gap-1.5 text-sm hover:text-[#0F5B78] transition-colors"
           >
             <MessageCircle className="h-4 w-4" />
-            <span className="font-medium whitespace-nowrap">WhatsApp</span>
+            <span className="font-medium whitespace-nowrap hidden min-[1366px]:inline">WhatsApp</span>
           </a>
           <Button asChild className="bg-[#FFCA28] hover:bg-[#F5B800] text-slate-900 font-semibold whitespace-nowrap">
             <Link href="/kontakt">Beratung anfragen</Link>
@@ -73,7 +83,7 @@ export function Header() {
         </div>
 
         {/* Mobile Menu */}
-        <div className="md:hidden flex w-full items-center justify-between">
+        <div className="xl:hidden flex w-full items-center justify-between">
           <Link href="/" className="flex items-center" aria-label="HeizCenter – Startseite">
             {/* Wortmarke in Markenblau für die weiße Leiste (Original ist weiß/gelb) */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
