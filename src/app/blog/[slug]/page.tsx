@@ -122,8 +122,9 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       <div className="container py-12">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-[1fr_280px] gap-12">
-            {/* Main Content */}
-            <article className="max-w-[75ch]">
+            {/* Main Content — min-w-0: als Grid-Item darf die Spalte nicht auf die Breite der
+                breitesten Tabelle wachsen (WebKit/iOS Safari tut das sonst, HEC-185) */}
+            <article className="max-w-[75ch] min-w-0 break-words">
               <PostHeader
                 title={post.title}
                 category={post.category}

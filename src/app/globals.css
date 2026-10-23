@@ -641,3 +641,29 @@
   --tw-prose-bullets: #0F5B78;
   --tw-prose-counters: #0F5B78;
 }
+
+/* Artikel-Tabellen (HEC-185): breiter als der Viewport → im eigenen Rahmen scrollen.
+   Ohne Rahmen vergrößert WebKit (iOS Safari) die ganze Artikelspalte auf Tabellenbreite. */
+.table-scroll {
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Raster im Artikel-HTML (grid-cols-3/4): Zellen dürfen schmaler werden als ihr längstes Wort */
+.article .grid > * {
+  min-width: 0;
+}
+
+/* Inline-Grids im Artikel-HTML (style="display: grid; grid-template-columns: 1fr 1fr …"):
+   Zellen dürfen schmaler werden als ihr längstes Wort, und unter 640 px stapeln sie sich —
+   sonst schiebt eine 2-spaltige Vor-/Nachteile-Box die Seite über den Viewport (HEC-185). */
+.article [style*="display: grid"] > * {
+  min-width: 0;
+}
+
+@media (max-width: 640px) {
+  .article [style*="display: grid"] {
+    grid-template-columns: 1fr !important;
+  }
+}

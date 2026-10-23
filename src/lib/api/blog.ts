@@ -108,6 +108,13 @@ function enhanceBlogContent(htmlContent: string): string {
       ? match.replace('class="', 'class="not-article ')
       : `<${tag} class="not-article"${attrs}>`
   );
+  // Jede Tabelle in einen scrollbaren Rahmen: 4–5-spaltige Tabellen sind breiter als ein
+  // Handy-Viewport; ohne Rahmen zieht WebKit (iOS Safari) die ganze Artikelspalte auf
+  // Tabellenbreite und die Seite muss gezoomt werden (HEC-185). Idempotent beim zweiten Aufruf.
+  enhanced = enhanced.replace(
+    /(?<!<div class="table-scroll">)<table\b[^>]*>[\s\S]*?<\/table>/g,
+    (table) => `<div class="table-scroll">${table}</div>`
+  );
   enhanced = enhanced.replace(/class="([^"]*)"/g, (match, classes: string) => {
     if (/(^|\s)not-article(\s|$)/.test(classes)) return match;
     const needsExclusion =
