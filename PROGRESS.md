@@ -1542,3 +1542,20 @@ Agents: Blog-Agent (frontend/general), hvac-content (Gate 1, 3 Läufe), tester (
 ### Geaenderte Dateien
 `public/images/partners/zewotherm.svg` (neu), `public/images/partners/zewotherm.png` (gelöscht), `src/app/partner/page.tsx`, `src/app/partner/zewotherm/page.tsx`, `CLAUDE.md`
 Agents: keine
+
+## Session 2026-10-23 (SEO-Audit, Blog Q4, KI-Sichtbarkeit — HEC-176/177/178)
+
+### Completed
+- [x] **Traffic-Analyse** (Vercel-API, REST mit CLI-Token): Blog = 72–83 % der Besucher, Juni 2.186 → Okt ~930; seit 20.10. zählt die Analytik nur Zustimmende (45 → 22/Tag); AI-Referrer Jan–Okt: ChatGPT 207, Copilot 60, Perplexity 40
+- [x] **SEO-Audit** (seo-specialist, 15 Befunde) → **HEC-176 Done/verified** (`597c784`, `abcf7ca`): robots ohne `/_next/`-Sperre, `@tailwindcss/typography` erstmals aktiv — auf den Blog begrenzt (`className: "article"`, `not-article` auf Tabellen/Boxen, Playwright-Diff 0 Regressionen über 27 Artikel; der erste Stand hatte den Telefon-CTA unsichtbar gemacht → Code-Review NO-GO), Sitemap 88 URLs ohne Build-Zeitstempel, Blog statisch, Organization-Schema mit USt-ID/`@id`, alle Eigenbewertungen aus LocalBusiness/Service/Product-Schemas, 9 Bildpfade, Kategorie-Bug, OG-Daten
+- [x] **HEC-177 In Review** (`db9db75`): 3 Artikel `heizungsfoerderung-2027`, `oelheizung-ersetzen-waermepumpe`, `heizung-springt-nicht-an` (Writer-Agenten → Scratch → Splice) + Fakten-Update 9 Artikel (DEPI, Verivox, Bundestag 15.10., DUH/BVerfG, § 42a, Wertschöpfungsbonus), /foerderung, /notdienst Gasgeruch-Reihenfolge (HEC-181). Gate 1 hvac-content 4 Läufe (3× REJECTED → APPROVED; 263 Patch-Ersetzungen), Gate 2 tester APPROVED, VALIDATION_REPORT 23.10.; Prod geprüft, Sitemap 91 URLs
+- [x] **HEC-178 Code** (`4ea91a5`): `/llms.txt` als Build-Route (80 URLs), IndexNow-Key + `docs/seo/indexnow_ping.sh` (Ping 202), `docs/seo/ai_referrals.sh`, README
+- [x] Tickets neu: HEC-179 (dünne Standortseiten), HEC-180 (Jahreswechsel 08.01.2027), HEC-181 (Notdienst/GEG-Widersprüche); Kommentar HEC-161 (Wertschöpfungsbonus Q1 2027); ZEWOTHERM-Logo SVG + CLAUDE.md (`9c6ff12`, `486b825`, `3dc728c`)
+
+### Offene Punkte
+- [ ] Jev: Search-Console-OAuth (Composio) → `docs/seo/gsc_2026-10.md`; Bing Webmaster Tools; Entitätsdaten; HEC-177-Wirkungsnachweis (GSC-Klicks bis 06.11.)
+- [ ] HEC-181 Rest (Andrej: Paketlogik Wartungsvertrag/Notdienst), HEC-179, HEC-180, Quartals-Re-Audit-Altlasten (siehe VALIDATION_REPORT 23.10., Gate-1-Anmerkungen)
+
+### Geaenderte Dateien
+`src/app/robots.ts`, `src/app/sitemap.ts`, `src/app/blog/[slug]/page.tsx`, `src/app/blog/kategorie/[category]/page.tsx`, `src/app/llms.txt/route.ts` (neu), `src/components/schema/*`, `src/app/partner/*/page.tsx` (Ratings), `tailwind.config.ts`, `src/app/globals.css`, `src/lib/api/blog.ts` (+3 Artikel, 9 Updates, `enhanceBlogContent`, `getCategorySlug`, `updated`), `src/app/foerderung/page.tsx`, `src/app/notdienst/page.tsx`, `public/273baa…txt`, `docs/seo/*`, `VALIDATION_REPORT.md`, `CLAUDE.md`
+Agents: seo-specialist (Audit), general-purpose (Themenrecherche, 3 Writer, 1 Updater, 5 Fixer), code-reviewer, hvac-content ×6 (Gate 1), tester (Gate 2), linear-verifier ×2
