@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -23,10 +24,18 @@ const navigation = [
 
 export function Header() {
   const [isMounted, setIsMounted] = useState(false);
+  // Mobiles Menü als kontrolliertes Sheet: schließt beim Tippen auf einen Link
+  // und bei jedem Routenwechsel (Jev 23.10.: blieb nach dem Seitenwechsel offen)
+  const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     setIsMounted(true);
   }, []);
+
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [pathname]);
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
       <div className="container flex h-16 items-center">
@@ -64,12 +73,20 @@ export function Header() {
         </div>
 
         {/* Mobile Menu */}
-        <div className="md:hidden flex items-center gap-4">
-          <Link href="/" className="font-bold text-lg text-[#0F5B78]">
-            HeizCenter
+        <div className="md:hidden flex w-full items-center justify-between">
+          <Link href="/" className="flex items-center" aria-label="HeizCenter – Startseite">
+            {/* Wortmarke in Markenblau für die weiße Leiste (Original ist weiß/gelb) */}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/logo-blue.svg"
+              alt="HeizCenter"
+              width={600}
+              height={130}
+              className="h-8 w-auto"
+            />
           </Link>
           {isMounted && (
-            <Sheet>
+            <Sheet open={menuOpen} onOpenChange={setMenuOpen}>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon">
                   <Menu className="h-6 w-6" />
@@ -82,6 +99,7 @@ export function Header() {
                   <Link
                     key={item.name}
                     href={item.href}
+                    onClick={() => setMenuOpen(false)}
                     className="text-lg font-medium transition-colors hover:text-[#0F5B78]"
                   >
                     {item.name}
@@ -90,6 +108,7 @@ export function Header() {
                 <div className="pt-4 border-t">
                   <a
                     href={getPhoneLink()}
+                    onClick={() => setMenuOpen(false)}
                     className="flex items-center gap-2 text-lg font-medium mb-3"
                   >
                     <Phone className="h-5 w-5" />
@@ -105,7 +124,7 @@ export function Header() {
                     <span>WhatsApp</span>
                   </a>
                   <Button asChild className="w-full mt-4 bg-[#FFCA28] hover:bg-[#F5B800] text-slate-900 font-semibold">
-                    <Link href="/kontakt">Beratung anfragen</Link>
+                    <Link href="/kontakt" onClick={() => setMenuOpen(false)}>Beratung anfragen</Link>
                   </Button>
                 </div>
               </nav>
