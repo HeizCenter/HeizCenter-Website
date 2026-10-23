@@ -1,5 +1,4 @@
 import { CONTACT } from '@/lib/config/contact';
-import { getSchemaRating, getSchemaReviews } from "@/lib/config/reviews";
 
 interface ServiceAreaSchemaProps {
   cityName: string;
@@ -70,8 +69,6 @@ export function ServiceAreaSchema({
         "latitude": mainOffice.latitude,
         "longitude": mainOffice.longitude,
       },
-      "aggregateRating": getSchemaRating(),
-      "review": getSchemaReviews(),
     },
     "areaServed": {
       "@type": "City",

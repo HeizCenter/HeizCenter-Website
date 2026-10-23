@@ -38,6 +38,7 @@ export interface BlogPost {
   author: string;
   authorBio?: string;
   date: string;
+  updated?: string; // letzte inhaltliche Überarbeitung (YYYY-MM-DD) → dateModified, Sitemap
   readingTime: number;
   image?: string;
   tags: string[];
@@ -173,6 +174,26 @@ export async function getBlogPostBySlug(slug: string): Promise<BlogPost | null> 
 }
 
 /**
+ * Kategorie-Name eines Artikels → Slug der Kategorie-Seite.
+ * Artikel tragen teils „Sanitär“, teils „Sanitär & Bad“; beide gehören zu /blog/kategorie/sanitaer.
+ */
+export function getCategorySlug(category: string): string {
+  const explicit: Record<string, string> = {
+    'Wärmepumpe': 'waermepumpe',
+    'Heizung': 'heizung',
+    'Sanitär': 'sanitaer',
+    'Sanitär & Bad': 'sanitaer',
+    'Klimaanlage': 'klimaanlage',
+    'Solar': 'solar',
+    'Förderung': 'foerderung',
+  };
+  return (
+    explicit[category] ??
+    category.toLowerCase().replace(/\s+/g, '-').replace(/ä/g, 'ae').replace(/ü/g, 'ue').replace(/ö/g, 'oe')
+  );
+}
+
+/**
  * Fetch blog posts by category
  */
 export async function getBlogPostsByCategory(categorySlug: string): Promise<BlogPost[]> {
@@ -180,7 +201,7 @@ export async function getBlogPostsByCategory(categorySlug: string): Promise<Blog
     // TODO: Replace with actual Odoo API call
     const posts = getMockBlogPosts();
     return posts.filter(post =>
-      post.category.toLowerCase().replace(/\s+/g, '-').replace(/ä/g, 'ae').replace(/ü/g, 'ue').replace(/ö/g, 'oe') === categorySlug
+      getCategorySlug(post.category) === categorySlug
     );
   } catch (error) {
     console.error(`Error fetching posts for category ${categorySlug}:`, error);
@@ -194,7 +215,12 @@ export async function getBlogPostsByCategory(categorySlug: string): Promise<Blog
 export async function getAllCategories(): Promise<BlogCategory[]> {
   try {
     // TODO: Replace with actual Odoo API call
-    return getMockCategories();
+    // count wird aus den Artikeln gezählt, die Werte in getMockCategories sind nur Platzhalter
+    const posts = getMockBlogPosts();
+    return getMockCategories().map(category => ({
+      ...category,
+      count: posts.filter(post => getCategorySlug(post.category) === category.slug).length,
+    }));
   } catch (error) {
     console.error('Error fetching categories:', error);
     return getMockCategories();
@@ -752,7 +778,7 @@ function getMockBlogPosts(): BlogPost[] {
           <div class="bg-slate-50 border border-slate-200 rounded-lg p-4">
             <p class="font-bold text-slate-900 mb-2">Heizung unter 15 Jahre</p>
             <p class="text-sm text-slate-600 mb-3">Funktioniert gut? Abwarten und beobachten. Behalten Sie die Wärmeplanung Ihrer Gemeinde im Blick.</p>
-            <a href="/newsletter" class="text-sm text-[#0F5B78] font-medium hover:underline">Newsletter abonnieren →</a>
+            <a href="/wartungsvertrag" class="text-sm text-[#0F5B78] font-medium hover:underline">Wartungsvertrag ansehen →</a>
           </div>
           <div class="bg-[#0F5B78] text-white rounded-lg p-4">
             <p class="font-bold mb-2">Heizung 15-25 Jahre</p>
@@ -7200,7 +7226,7 @@ ${GMODG_HINWEIS}
       author: 'HeizCenter Redaktion',
       date: '2026-01-10',
       readingTime: 12,
-      image: '/images/HeizCenter_Klimaanlage.webp',
+      image: '/images/klima.webp',
       tags: ['Klimaanlage', 'Kosten', 'Split-Klimaanlage', 'Betriebskosten', 'Installation', 'Energieeffizienz'],
       featured: false,
       faqs: [
@@ -8149,7 +8175,7 @@ ${GMODG_HINWEIS}
       author: 'HeizCenter Redaktion',
       date: '2026-01-28',
       readingTime: 18,
-      image: '/images/HeizCenter_Solar.webp',
+      image: '/images/Solaranlage.webp',
       tags: ['Solarthermie', 'Photovoltaik', 'Solar Vergleich', 'KfW Förderung', 'PV-Anlage', 'Solarenergie', 'Wirtschaftlichkeit'],
       featured: true,
       faqs: [
@@ -8540,7 +8566,7 @@ ${GMODG_HINWEIS}
       author: 'HeizCenter Redaktion',
       date: '2026-01-16',
       readingTime: 16,
-      image: '/images/HeizCenter_Solar.webp',
+      image: '/images/Solaranlage.webp',
       tags: ['KfW Förderung', 'Solarthermie', 'Zuschuss', 'BEG', 'Förderung Heizung', 'Geschwindigkeitsbonus', 'Antragstellung'],
       featured: true,
       faqs: [
@@ -9006,7 +9032,7 @@ ${GMODG_HINWEIS}
       author: 'HeizCenter Redaktion',
       date: '2026-01-19',
       readingTime: 17,
-      image: '/images/HeizCenter_Solar.webp',
+      image: '/images/Solaranlage.webp',
       tags: ['Hybrid-Heizung', 'Wärmepumpe', 'Solarthermie', 'Heizung Kombination', 'Effizienz', 'Heizkosten sparen', 'Förderung'],
       featured: true,
       faqs: [
@@ -9376,7 +9402,7 @@ ${GMODG_HINWEIS}
       author: 'HeizCenter Redaktion',
       date: '2026-02-10',
       readingTime: 14,
-      image: '/images/HeizCenter_Solar.webp',
+      image: '/images/Solaranlage.webp',
       tags: ['Solarthermie', 'Kosten', 'Förderung', 'Wirtschaftlichkeit', 'Amortisation', 'KfW', 'Warmwasser', 'Heizung'],
       featured: true,
       faqs: [
@@ -9828,7 +9854,7 @@ ${GMODG_HINWEIS}
       author: 'HeizCenter Redaktion',
       date: '2026-01-14',
       readingTime: 17,
-      image: '/images/HeizCenter_Solar.webp',
+      image: '/images/Solaranlage.webp',
       tags: ['PVT', 'Photovoltaik', 'Solarthermie', 'Hybrid', 'Wärmepumpe', 'Innovation', 'Effizienz'],
       featured: true,
       faqs: [
@@ -10381,7 +10407,7 @@ ${GMODG_HINWEIS}
       author: 'HeizCenter Redaktion',
       date: '2026-01-05',
       readingTime: 16,
-      image: '/images/HeizCenter_Solar.webp',
+      image: '/images/Solaranlage.webp',
       tags: ['Solarthermie Planung', 'Dimensionierung', 'Auslegung', 'Kollektorfläche', 'Speichergröße', 'Berechnung', 'Anlagenplanung'],
       featured: true,
       faqs: [
@@ -10637,7 +10663,7 @@ ${GMODG_HINWEIS}
       author: 'HeizCenter Redaktion',
       date: '2025-01-14',
       readingTime: 12,
-      image: '/images/HeizCenter_Waermepumpe.webp',
+      image: '/images/Waermepumpe.webp',
       tags: ['Wärmepumpe Altbau', 'Nachrüsten', 'Sanierung', 'Förderung', 'BEG', 'Kosten', 'Voraussetzungen'],
       featured: false,
     },
@@ -11258,7 +11284,7 @@ ${GMODG_HINWEIS}
       author: 'HeizCenter Redaktion',
       date: '2026-03-15',
       readingTime: 13,
-      image: '/images/HeizCenter_Klimaanlage.webp',
+      image: '/images/klima.webp',
       tags: ['Klimaanlage nachrüsten', 'Split-Klimaanlage', 'Klimaanlage Kosten', 'Klimaanlage Installation', 'Klimaanlage Altbau nachrüsten', 'Klimaanlage Wohnung nachrüsten'],
       featured: true,
       faqs: [

@@ -1,164 +1,80 @@
 import { MetadataRoute } from "next";
-import { getAllBlogPosts, getAllCategories } from "@/lib/api/blog";
+import {
+  getAllBlogPosts,
+  getAllCategories,
+  getCategorySlug,
+  type BlogPost,
+} from "@/lib/api/blog";
+
+const baseUrl = "https://www.heizcenter.de";
+
+type Entry = MetadataRoute.Sitemap[number];
+type Frequency = Entry["changeFrequency"];
+
+// Statische Seiten bekommen kein lastModified: Next kennt kein Änderungsdatum
+// je Route, und ein Build-Zeitstempel auf allen Seiten ist für Google ein
+// unbrauchbares Signal. Nur Blog-Einträge tragen ein echtes Datum.
+const staticPage = (
+  path: string,
+  changeFrequency: Frequency,
+  priority: number
+): Entry => ({
+  url: `${baseUrl}${path}`,
+  changeFrequency,
+  priority,
+});
+
+const postLastModified = (post: BlogPost) => new Date(post.updated ?? post.date);
+
+const latest = (dates: Date[]) =>
+  dates.length > 0 ? new Date(Math.max(...dates.map((d) => d.getTime()))) : undefined;
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = "https://www.heizcenter.de";
-
-  // Main pages
-  const mainPages = [
-    {
-      url: baseUrl,
-      lastModified: new Date(),
-      changeFrequency: "daily" as const,
-      priority: 1.0,
-    },
-    {
-      url: `${baseUrl}/waermepumpe`,
-      lastModified: new Date(),
-      changeFrequency: "weekly" as const,
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/heizung`,
-      lastModified: new Date(),
-      changeFrequency: "weekly" as const,
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/sanitaer`,
-      lastModified: new Date(),
-      changeFrequency: "weekly" as const,
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/klimaanlage`,
-      lastModified: new Date(),
-      changeFrequency: "weekly" as const,
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/kontakt`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/blog`,
-      lastModified: new Date(),
-      changeFrequency: "daily" as const,
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/rechner`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/standorte`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.7,
-    },
+  const mainPages: Entry[] = [
+    staticPage("", "weekly", 1.0),
+    staticPage("/waermepumpe", "weekly", 0.9),
+    staticPage("/heizung", "weekly", 0.9),
+    staticPage("/sanitaer", "weekly", 0.9),
+    staticPage("/klimaanlage", "weekly", 0.9),
+    staticPage("/solar", "weekly", 0.9),
+    staticPage("/kontakt", "monthly", 0.8),
+    staticPage("/rechner", "monthly", 0.8),
+    staticPage("/standorte", "monthly", 0.7),
   ];
 
-  // Additional pages (Day 25-26)
-  const additionalPages = [
-    {
-      url: `${baseUrl}/ueber-uns`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/karriere`,
-      lastModified: new Date(),
-      changeFrequency: "weekly" as const,
-      priority: 0.6,
-    },
-    {
-      url: `${baseUrl}/notdienst`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/faq`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/foerderung`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/checklisten`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
-    },
-    {
-      url: `${baseUrl}/wartungsvertrag`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
-    },
+  const additionalPages: Entry[] = [
+    staticPage("/ueber-uns", "monthly", 0.7),
+    staticPage("/karriere", "weekly", 0.6),
+    staticPage("/notdienst", "monthly", 0.8),
+    staticPage("/faq", "monthly", 0.7),
+    staticPage("/foerderung", "monthly", 0.7),
+    staticPage("/checklisten", "monthly", 0.6),
+    staticPage("/wartungsvertrag", "monthly", 0.6),
   ];
 
-  // Legal pages (noindex in metadata, but included in sitemap with low priority)
-  const legalPages = [
-    {
-      url: `${baseUrl}/impressum`,
-      lastModified: new Date(),
-      changeFrequency: "yearly" as const,
-      priority: 0.3,
-    },
-    {
-      url: `${baseUrl}/datenschutz`,
-      lastModified: new Date(),
-      changeFrequency: "yearly" as const,
-      priority: 0.3,
-    },
-    {
-      url: `${baseUrl}/agb`,
-      lastModified: new Date(),
-      changeFrequency: "yearly" as const,
-      priority: 0.3,
-    },
-    {
-      url: `${baseUrl}/cookie-hinweis`,
-      lastModified: new Date(),
-      changeFrequency: "yearly" as const,
-      priority: 0.3,
-    },
+  const partnerPages: Entry[] = [
+    staticPage("/partner", "monthly", 0.6),
+    ...["bosch", "buderus", "daikin", "vaillant", "viessmann", "wolf", "zewotherm"].map(
+      (slug) => staticPage(`/partner/${slug}`, "monthly", 0.5)
+    ),
   ];
 
-  // Main location pages (physical offices)
-  const mainLocationPages = [
-    {
-      url: `${baseUrl}/standorte/bobingen`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/standorte/gutenzell-huerbel`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/standorte/klosterlechfeld`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.8,
-    },
+  // Rechtliches ist indexierbar, aber nachrangig
+  const legalPages: Entry[] = [
+    staticPage("/impressum", "yearly", 0.3),
+    staticPage("/datenschutz", "yearly", 0.3),
+    staticPage("/agb", "yearly", 0.3),
+    staticPage("/cookie-hinweis", "yearly", 0.3),
   ];
 
-  // Service area location pages
+  // Büros
+  const mainLocationPages: Entry[] = [
+    staticPage("/standorte/bobingen", "monthly", 0.8),
+    staticPage("/standorte/gutenzell-huerbel", "monthly", 0.8),
+    staticPage("/standorte/klosterlechfeld", "monthly", 0.8),
+  ];
+
+  // Servicegebiete ohne Büro
   const locations = [
     "augsburg",
     "ulm",
@@ -174,7 +90,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "ottobeuren",
     "laupheim",
     "blaustein",
-    // Micro-location pages (Day 18-19)
     "landsberg",
     "kaufbeuren",
     "guenzburg",
@@ -185,35 +100,43 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "leutkirch",
     "schwabmuenchen",
   ];
+  const locationPages: Entry[] = locations.map((location) =>
+    staticPage(`/standorte/${location}`, "monthly", 0.6)
+  );
 
-  const locationPages = locations.map((location) => ({
-    url: `${baseUrl}/standorte/${location}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: 0.6,
-  }));
-
-  // Blog categories - dynamically from API
-  const categories = await getAllCategories();
-  const categoryPages = categories.map((category) => ({
-    url: `${baseUrl}/blog/kategorie/${category.slug}`,
-    lastModified: new Date(),
-    changeFrequency: "weekly" as const,
-    priority: 0.7,
-  }));
-
-  // Blog posts - dynamically from API (only existing posts)
   const posts = await getAllBlogPosts();
-  const blogPosts = posts.map((post) => ({
+
+  const blogIndex: Entry = {
+    url: `${baseUrl}/blog`,
+    lastModified: latest(posts.map(postLastModified)),
+    changeFrequency: "weekly",
+    priority: 0.8,
+  };
+
+  const categories = await getAllCategories();
+  const categoryPages: Entry[] = categories.map((category) => ({
+    url: `${baseUrl}/blog/kategorie/${category.slug}`,
+    lastModified: latest(
+      posts
+        .filter((post) => getCategorySlug(post.category) === category.slug)
+        .map(postLastModified)
+    ),
+    changeFrequency: "weekly",
+    priority: 0.5,
+  }));
+
+  const blogPosts: Entry[] = posts.map((post) => ({
     url: `${baseUrl}/blog/${post.slug}`,
-    lastModified: new Date(post.date),
-    changeFrequency: "monthly" as const,
+    lastModified: postLastModified(post),
+    changeFrequency: "monthly",
     priority: 0.7,
   }));
 
   return [
     ...mainPages,
+    blogIndex,
     ...additionalPages,
+    ...partnerPages,
     ...legalPages,
     ...mainLocationPages,
     ...locationPages,

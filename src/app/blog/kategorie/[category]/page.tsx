@@ -26,6 +26,12 @@ interface CategoryPageProps {
   };
 }
 
+// Kategorie-Seiten zur Build-Zeit rendern (sonst Server-Render ohne Cache je Abruf)
+export async function generateStaticParams() {
+  const categories = await getAllCategories();
+  return categories.map((category) => ({ category: category.slug }));
+}
+
 export async function generateMetadata({
   params,
 }: CategoryPageProps): Promise<Metadata> {

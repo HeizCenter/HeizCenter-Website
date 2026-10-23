@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft } from "lucide-react";
-import { getBlogPostBySlug, getRelatedPosts } from "@/lib/api/blog";
+import { getAllBlogPosts, getBlogPostBySlug, getRelatedPosts } from "@/lib/api/blog";
 import { PostHeader } from "@/components/blog/post-header";
 import { SocialShare } from "@/components/blog/social-share";
 import { RelatedPosts } from "@/components/blog/related-posts";
@@ -20,6 +20,13 @@ interface BlogPostPageProps {
   };
 }
 
+// Alle Artikel zur Build-Zeit rendern — sonst liefert Vercel jeden Abruf als
+// Server-Render ohne Cache (x-vercel-cache: MISS, cache-control: no-store).
+export async function generateStaticParams() {
+  const posts = await getAllBlogPosts();
+  return posts.map((post) => ({ slug: post.slug }));
+}
+
 export async function generateMetadata({
   params,
 }: BlogPostPageProps): Promise<Metadata> {
@@ -31,19 +38,31 @@ export async function generateMetadata({
     };
   }
 
+  const url = getCanonicalUrl(`/blog/${post.slug}`);
+  const image = post.image ? `https://www.heizcenter.de${post.image}` : undefined;
+
   return {
-    title: `${post.title} - HeizCenter Ratgeber`,
+    title: `${post.title} | HeizCenter`,
     description: post.excerpt,
     keywords: post.tags,
     alternates: {
-      canonical: getCanonicalUrl(`/blog/${post.slug}`),
+      canonical: url,
     },
     openGraph: {
       title: post.title,
       description: post.excerpt,
       type: "article",
+      url,
       publishedTime: post.date,
+      modifiedTime: post.updated ?? post.date,
       authors: [post.author],
+      ...(image && { images: [{ url: image, alt: post.title }] }),
+    },
+    twitter: {
+      card: image ? "summary_large_image" : "summary",
+      title: post.title,
+      description: post.excerpt,
+      ...(image && { images: [image] }),
     },
   };
 }
@@ -73,6 +92,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         excerpt={post.excerpt}
         content={post.content}
         date={post.date}
+        updated={post.updated}
         slug={post.slug}
         image={post.image}
         tags={post.tags}

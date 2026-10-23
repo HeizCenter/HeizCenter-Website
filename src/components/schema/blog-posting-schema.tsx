@@ -3,6 +3,7 @@ interface BlogPostingSchemaProps {
   excerpt: string;
   content: string;
   date: string;
+  updated?: string;
   slug: string;
   image?: string;
   tags: string[];
@@ -14,19 +15,19 @@ export function BlogPostingSchema({
   excerpt,
   content,
   date,
+  updated,
   slug,
   image,
   tags,
   category,
 }: BlogPostingSchemaProps) {
-  // Calculate word count and reading time
-  const wordCount = content.trim().split(/\s+/).length;
+  // Wortzahl aus dem sichtbaren Text, nicht aus dem HTML (Tags und Klassen zählen sonst mit)
+  const text = content.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
+  const wordCount = text ? text.split(" ").length : 0;
   const readingTimeMinutes = Math.ceil(wordCount / 200);
 
   // Get first 500 characters of content for articleBody
-  const articleBodyPreview = content
-    .replace(/<[^>]*>/g, "") // Remove HTML tags
-    .slice(0, 500);
+  const articleBodyPreview = text.slice(0, 500);
 
   const schema = {
     "@context": "https://schema.org",
@@ -50,7 +51,7 @@ export function BlogPostingSchema({
       },
     },
     datePublished: date,
-    dateModified: date,
+    dateModified: updated ?? date,
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": `https://www.heizcenter.de/blog/${slug}`,

@@ -1,5 +1,8 @@
-import { getSchemaRating, getSchemaReviews } from "@/lib/config/reviews";
 import { CONTACT } from '@/lib/config/contact';
+
+// Kein aggregateRating/review mehr im Markup: Eigenbewertungen auf
+// LocalBusiness zeigt Google nicht als Sterne an, unbelegte Werte sind ein Risiko.
+// Die Testimonials bleiben sichtbar auf den Seiten.
 
 interface LocalBusinessSchemaProps {
   location: "bobingen" | "gutenzell" | "klosterlechfeld";
@@ -55,8 +58,6 @@ export function LocalBusinessSchema({
       "https://www.instagram.com/heizcentermb/",
       "https://www.linkedin.com/company/heizcenter/",
     ],
-    aggregateRating: getSchemaRating(),
-    review: getSchemaReviews(),
     areaServed: [
       { "@type": "City", name: "Augsburg" },
       { "@type": "City", name: "Bobingen" },
@@ -160,8 +161,6 @@ export function LocalBusinessSchema({
       name: "HeizCenter GmbH",
       url: "https://www.heizcenter.de",
     },
-    aggregateRating: getSchemaRating(),
-    review: getSchemaReviews(),
     areaServed: [
       { "@type": "City", name: "Ulm" },
       { "@type": "City", name: "Memmingen" },
@@ -271,8 +270,6 @@ export function LocalBusinessSchema({
       name: "HeizCenter GmbH",
       url: "https://www.heizcenter.de",
     },
-    aggregateRating: getSchemaRating(),
-    review: getSchemaReviews(),
     areaServed: [
       { "@type": "City", name: "Klosterlechfeld" },
       { "@type": "City", name: "Augsburg" },
@@ -415,8 +412,6 @@ export function LocationPageSchema({
       name: "HeizCenter GmbH",
       url: "https://www.heizcenter.de",
     },
-    aggregateRating: getSchemaRating(),
-    review: getSchemaReviews(),
     areaServed: serviceCities.map((city) => ({
       "@type": "City",
       name: city,

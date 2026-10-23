@@ -4,13 +4,14 @@ export function OrganizationSchema() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Organization",
+    // Die LocalBusiness-Schemas der Standorte verweisen per parentOrganization auf diese @id
+    "@id": "https://www.heizcenter.de/#organization",
     name: "HeizCenter GmbH",
     alternateName: "HeizCenter",
     url: "https://www.heizcenter.de",
     logo: "https://www.heizcenter.de/images/logo.png",
-    foundingDate: "2015",
     description:
-      "HeizCenter GmbH ist Ihr kompetenter Partner für Wärmepumpen, Heizung, Sanitär und Klimaanlagen in Bayern und Baden-Württemberg. Mit über 8 Jahren Erfahrung bieten wir professionelle Installation, Wartung und Notdienst.",
+      "HeizCenter GmbH ist Ihr kompetenter Partner für Wärmepumpen, Heizung, Sanitär und Klimaanlagen in Bayern und Baden-Württemberg. Mit über 20 Jahren Erfahrung bieten wir professionelle Installation, Wartung und Notdienst.",
     slogan: "Ihre Experten für moderne Heizsysteme",
 
     // Contact Information
@@ -203,7 +204,7 @@ export function OrganizationSchema() {
             "@type": "Service",
             name: "Heizung Notdienst",
             description:
-              "24/7 Notdienst für Heizungsausfälle und Störungen. Schnelle Hilfe innerhalb von 2-4 Stunden.",
+              "24/7 Heizungsnotdienst für Wartungskunden bei Heizungsausfällen und Störungen.",
             provider: {
               "@type": "Organization",
               name: "HeizCenter GmbH",
@@ -226,16 +227,9 @@ export function OrganizationSchema() {
       ],
     },
 
-    // Business Characteristics
-    numberOfEmployees: {
-      "@type": "QuantitativeValue",
-      value: "15-20",
-    },
-
-    // Legal/Organizational Info
+    // Rechtliches — USt-ID wie im Impressum (src/app/impressum/page.tsx)
     legalName: "HeizCenter GmbH",
-    taxID: "DE123456789", // Note: Replace with actual tax ID
-    vatID: "DE123456789", // Note: Replace with actual VAT ID
+    vatID: "DE366482129",
   };
 
   return (
