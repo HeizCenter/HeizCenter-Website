@@ -129,6 +129,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 title={post.title}
                 category={post.category}
                 date={post.date}
+                updated={post.updated}
                 readingTime={post.readingTime}
                 author={post.author}
                 tags={post.tags}

@@ -1,19 +1,29 @@
 import { Badge } from "@/components/ui/badge";
-import { Calendar, Clock, User } from "lucide-react";
+import { Calendar, Clock, RefreshCw, User } from "lucide-react";
 
 export interface PostHeaderProps {
   title: string;
   category: string;
   date: string;
+  updated?: string;
   readingTime: number;
   author: string;
   tags?: string[];
+}
+
+function formatDate(value: string): string {
+  return new Date(value).toLocaleDateString("de-DE", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
 }
 
 export function PostHeader({
   title,
   category,
   date,
+  updated,
   readingTime,
   author,
   tags = [],
@@ -33,12 +43,17 @@ export function PostHeader({
         </span>
         <span className="flex items-center gap-2">
           <Calendar className="h-5 w-5" />
-          {new Date(date).toLocaleDateString("de-DE", {
-            year: "numeric",
-            month: "long",
-            day: "numeric",
-          })}
+          <time dateTime={date}>{formatDate(date)}</time>
         </span>
+        {/* Sichtbares Aktualisierungsdatum: sonst wirkt ein überarbeiteter Ratgeber wie vom Januar */}
+        {updated && updated !== date && (
+          <span className="flex items-center gap-2">
+            <RefreshCw className="h-5 w-5" />
+            <span>
+              aktualisiert am <time dateTime={updated}>{formatDate(updated)}</time>
+            </span>
+          </span>
+        )}
         <span className="flex items-center gap-2">
           <Clock className="h-5 w-5" />
           {readingTime} Min. Lesezeit
