@@ -1568,3 +1568,24 @@ Agents: keine
 ### Geaenderte Dateien
 `src/app/robots.ts`, `src/app/sitemap.ts`, `src/app/blog/[slug]/page.tsx`, `src/app/blog/kategorie/[category]/page.tsx`, `src/app/llms.txt/route.ts` (neu), `src/components/schema/*`, `src/app/partner/*/page.tsx` (Ratings), `tailwind.config.ts`, `src/app/globals.css`, `src/lib/api/blog.ts` (+3 Artikel, 9 Updates, `enhanceBlogContent`, `getCategorySlug`, `updated`), `src/app/foerderung/page.tsx`, `src/app/notdienst/page.tsx`, `public/273baa…txt`, `docs/seo/*`, `VALIDATION_REPORT.md`, `CLAUDE.md`, `src/components/layout/header.tsx`, `public/images/logo-blue.svg` (neu), `docs/qa/mobile-menu-prod.mjs` (neu), `docs/qa/article-overflow.mjs` (neu), `src/components/calculator/price-calculator.tsx`, `src/app/page.tsx`, `src/components/sections/cta-section.tsx`, `src/app/karriere/page.tsx`, `src/app/{datenschutz,impressum,cookie-hinweis}/page.tsx`, `docs/qa/rechner-overflow.mjs` (neu), `docs/qa/header-widths.mjs` (neu)
 Agents: seo-specialist (Audit), general-purpose (Themenrecherche, 3 Writer, 1 Updater, 5 Fixer), code-reviewer, hvac-content ×6 (Gate 1), tester (Gate 2), linear-verifier ×7
+
+## Session 2026-10-23/24 (autonom, „mit technischer und geschäftlicher Verifikation“)
+
+### Completed
+- [x] **HEC-183 umgeplant (Entscheid, kein Code):** cookieloser Klickzähler entfällt — widerspricht HEC-145 (selbst cookieloses Vercel Analytics nur nach „Statistik“; JS-Beacon = Zugriff auf die Endeinrichtung nach strenger Lesart § 25 TDDDG / EDPB 2/2023); die Tabelle hätte zudem in der Backoffice-DB gelegen. Klicks jetzt GA4 mit Einwilligung + Hochrechnung (≈ 49 %). DoD per §2-Kommentar geändert; wartet auf Google-Zugang für n8n (Jev) und HEC-166
+- [x] **HEC-188 Done/verified** (`a2136ad`, `aacfd48`): Solar-Abschlussbox mobil volle Breite (war 404 px, auch bei 430 px abgeschnitten); neues `docs/qa/site-overflow.mjs` meldet auch geclippten Inhalt; Verifier-Befund „Skript kann bei Fehlerseite/0 URLs grün werden“ behoben (HTTP-Status + Mindestanzahl, Mutationsprobe rot)
+- [x] **HEC-182 In Review** (`a75d692`): Nachtspeicher-Ratgeber (Top-Seite der Heizsaison) mit GSC-Titel, Abschnitt „Neue Modelle“, Luft-Luft-WP, Fakten-Refresh (21 Quellen); Pellet-Einleitung mit Kosten. Gate 1 drei Läufe (7/10 → 5/7 → alle APPROVED, 85 Korrekturen) + Web-Stichprobe (alle Zahlen belegt); Prod: Titel, JSON-LD, WebKit PASS, IndexNow 200. Wirkungsnachweis ab 21.11.2026
+- [x] **HEC-189 neu** (Artikel „Förderung Klimaanlage“ bis 31.01.2027, Wirkung Juni 2027) — aus HEC-182 abgetrennt nach GSC-Saisonprüfung (Klima-Cluster 94 % Mai–August)
+
+### Befunde (als Kommentare abgelegt)
+- HEC-161: Richtlinie 17.08.2026 enthält 15 % WP-Grundförderung + 15 % Wertschöpfungsbonus ab Q1 2027 schon als Text; iMSys-Pflicht fehlt auf 6 Seiten; Energieberatung 50 %/650 € widersprüchlich in 3 Artikeln; TFAQ 8.11 Biomasse
+- HEC-189: Klimaanlagen-Artikel nennen Split-Geräte „nicht förderfähig“ — falsch für Luft-Luft-WP als Heizung
+- HEC-182: Pellet-Badges „Über 120 Pelletheizungen“, „Zertifizierter Fachbetrieb für Biomasse“ unbelegt → Re-Audit/Andrej
+
+### Offene Punkte
+- [ ] Jev: Google-OAuth-Credential in n8n (GA4 `properties/559110715` + GSC) → dann HEC-183; HEC-182/188 auf dem Handy ansehen
+- [ ] 21.11.2026: HEC-182-Wirkungsnachweis (GSC), 06.11.: HEC-177
+
+### Geaenderte Dateien
+`src/components/sections/solar-process-section.tsx`, `src/lib/api/blog.ts`, `VALIDATION_REPORT.md`, `docs/qa/site-overflow.mjs` (neu), `docs/qa/article-overflow.mjs`
+Agents: general-purpose (Autor, Web-Stichprobe), hvac-content ×3 (Gate 1), linear-verifier ×2
