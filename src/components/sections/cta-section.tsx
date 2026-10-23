@@ -86,7 +86,7 @@ export function CTASection({
                 <span className="text-sm text-slate-600">Besuchen</span>
               </Link>
             </div>
-            <Button asChild size="lg" className="text-lg">
+            <Button asChild size="lg" className="text-lg h-auto py-2.5 whitespace-normal text-center sm:h-10 sm:py-0 sm:whitespace-nowrap">
               <Link href={buildContactUrl()}>Jetzt Beratungstermin vereinbaren</Link>
             </Button>
           </div>

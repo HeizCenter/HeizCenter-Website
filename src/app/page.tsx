@@ -244,7 +244,7 @@ export default function Home() {
           <p className="text-xl mb-8 text-slate-700">
             Lassen Sie sich kostenlos und unverbindlich beraten!
           </p>
-          <Button asChild size="lg" className="bg-[#FFCA28] hover:bg-[#F5B800] text-slate-900 text-lg">
+          <Button asChild size="lg" className="bg-[#FFCA28] hover:bg-[#F5B800] text-slate-900 text-lg h-auto py-2.5 whitespace-normal text-center sm:h-10 sm:py-0 sm:whitespace-nowrap">
             <Link href="/kontakt?tab=quote&message=Ich möchte einen Beratungstermin für meine neue Heizung vereinbaren.">Jetzt Beratungstermin vereinbaren</Link>
           </Button>
         </div>

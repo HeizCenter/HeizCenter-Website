@@ -66,7 +66,7 @@ export default function KarrierePage() {
             ].map((job, i) => (
               <Card key={i} className="hover:shadow-lg transition-shadow">
                 <CardHeader>
-                  <div className="flex items-start justify-between">
+                  <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
                     <div>
                       <CardTitle className="text-2xl mb-2">{job.title}</CardTitle>
                       <div className="flex gap-4 text-slate-600">

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default function CookieHinweisPage() {
   return (
     <div className="container py-16">
-      <div className="max-w-4xl mx-auto prose prose-slate">
+      <div className="max-w-4xl mx-auto prose prose-slate break-words">
         <h1 className="text-4xl font-bold mb-8">Cookie-Richtlinien</h1>
 
         <section className="mb-8">
