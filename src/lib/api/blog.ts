@@ -2408,9 +2408,9 @@ ${GMODG_HINWEIS}
       id: 5,
       slug: 'pelletheizung-kosten-2026',
       title: 'Pelletheizung Kosten 2026: Anschaffung, Betrieb & Förderung',
-      excerpt: 'Was kostet eine Pelletheizung 2026? Kompletter Überblick über Anschaffung, Betriebskosten und bis zu 80% BEG-Förderung.',
+      excerpt: 'Was kostet eine Pelletheizung? 28.000–35.000 € komplett installiert, 2.290–2.700 € Betrieb pro Jahr – dazu Förderung, Platzbedarf und Vergleich mit Gas.',
       content: `
-        <p class="text-xl text-slate-700 leading-relaxed mb-6">Sie interessieren sich für eine Pelletheizung und fragen sich, ob sich das für Ihr Haus rechnet? Die kurze Antwort: Eine Pelletheizung kann sich 2026 rechnen, der Kostenvorteil gegenüber Gas ist beim Pelletpreis vom Oktober 2026 aber klein – vorausgesetzt, Sie haben den Platz dafür und wissen, worauf Sie achten müssen.</p>
+        <p class="text-xl text-slate-700 leading-relaxed mb-6">Eine Pelletheizung kostet komplett installiert 28.000 bis 35.000 Euro – im Rechenbeispiel aus Günzburg bleiben nach 46 % Förderung (auf höchstens 28.000 Euro förderfähige Kosten) 21.620 Euro Eigenanteil. Im Betrieb kommen 2.290 bis 2.700 Euro pro Jahr hinzu. Die kurze Einordnung: Eine Pelletheizung kann sich 2026 rechnen, der Kostenvorteil gegenüber Gas ist beim Pelletpreis vom Oktober 2026 aber klein – vorausgesetzt, Sie haben den Platz dafür und wissen, worauf Sie achten müssen.</p>
 
         <div class="flex flex-wrap gap-4 mb-8 text-sm text-slate-600">
           <span class="flex items-center gap-1">✓ Zertifizierter Fachbetrieb für Biomasse</span>
@@ -2737,7 +2737,7 @@ ${GMODG_HINWEIS}
       category: 'Heizung',
       author: 'HeizCenter Redaktion',
       date: '2026-02-07',
-      updated: '2026-10-23',
+      updated: '2026-10-24',
       readingTime: 10,
       image: '/images/Heizung_Modernisierung.webp',
       tags: ['Pelletheizung', 'Kosten', 'Förderung', 'BEG', 'Biomasse'],
@@ -5307,34 +5307,36 @@ ${GMODG_HINWEIS}
     {
       id: 13,
       slug: 'nachtspeicherheizung-ersetzen-2026',
-      title: 'Nachtspeicherheizung ersetzen 2026: Beste Alternativen & Kosten',
-      excerpt: 'Nachtspeicherheizung ersetzen? Alle Alternativen 2026, Kosten mit Förderung, gesetzliche Lage nach dem GModG 2026 und Schritt-für-Schritt-Anleitung für den Austausch.',
+      title: 'Nachtspeicherheizung ersetzen: Kosten, Pflicht, neue Modelle',
+      excerpt: 'Nachtspeicherheizung austauschen? Keine Austauschpflicht, aber im Beispielhaus rund 4.000 € Strom pro Jahr: Alternativen, Kosten, Förderung, neue Modelle.',
       content: `
     <h2>Nachtspeicherheizung ersetzen 2026: Der umfassende Ratgeber</h2>
 
     <div style="background-color: #e8f4f8; padding: 20px; border-left: 4px solid #0F5B78; margin: 20px 0;">
       <h3 style="margin-top: 0;">Schnellübersicht: Nachtspeicherheizung 2026</h3>
       <ul style="margin-bottom: 0;">
-        <li><strong>Aktuelle Kosten:</strong> 2.500–3.600 €/Jahr (150 m²-Haus)</li>
-        <li><strong>Wirkungsgrad:</strong> 30–40% (vs. Wärmepumpe 300–500%)</li>
-        <li><strong>CO₂-Ausstoß:</strong> 3.500–4.500 kg/Jahr</li>
-        <li><strong>Beste Alternative:</strong> Luft-Wasser-Wärmepumpe (1.100 €/Jahr Heizkosten)</li>
-        <li><strong>Förderung 2026:</strong> Bis zu 80% (max. 22.400 €) für Wärmepumpe</li>
-        <li><strong>Amortisation:</strong> 7–11 Jahre (mit Förderung)</li>
-        <li><strong>Gesetzeslage:</strong> Kein Austauschverbot; die 65%-Regel ist seit Juli 2026 gestrichen (GModG)</li>
+        <li><strong>Aktuelle Kosten:</strong> rund 4.000 € Strom pro Jahr (150 m²-Haus, 20.000 kWh zu rund 20 ct/kWh)</li>
+        <li><strong>Effizienz:</strong> 1 kWh Strom ergibt 1 kWh Wärme – eine Luft-Wasser-Wärmepumpe macht daraus in Bestandsgebäuden im Mittel 3,4 kWh</li>
+        <li><strong>CO₂-Ausstoß:</strong> rund 6,9 Tonnen pro Jahr (Strommix 2025)</li>
+        <li><strong>Mit Heizungsnetz:</strong> Luft-Wasser-Wärmepumpe, 27.000–40.000 € vor Förderung, rund 1.400 € Strom pro Jahr – im Nachtspeicher-Haus kommen neue Heizkörper oder Fußbodenheizung und Rohre hinzu</li>
+        <li><strong>Ohne Heizungsnetz:</strong> Luft-Luft-Wärmepumpe (Split-Gerät mit Heizfunktion), 12.500–17.500 € vor Förderung (co2online-Beispiel: 130 m², fünf Räume), rund 1.400–1.900 € Strom pro Jahr im 150-m²-Haus</li>
+        <li><strong>Förderung 2026:</strong> 46 % für Selbstnutzer bei Antrag bis 31.01.2027, mit Einkommensbonus bis 70 % bzw. 80 % (max. 22.400 €)</li>
+        <li><strong>Amortisation:</strong> rund 6–12 Jahre für die Wärmepumpe (46 % Förderung, ohne Heizkörper und Rohre)</li>
+        <li><strong>Gesetzeslage:</strong> Keine Austauschpflicht; die 65%-Regel ist seit Juli 2026 gestrichen (GModG)</li>
       </ul>
     </div>
 
     <h2>Warum sollten Sie Ihre Nachtspeicherheizung ersetzen?</h2>
 
     <h3>1. Extrem hohe Betriebskosten</h3>
-    <p>Nachtspeicherheizungen gehören zu den <strong>teuersten Heizsystemen</strong> auf dem Markt:</p>
+    <p>Nachtspeicherheizungen gehören zu den <strong>teuersten Heizsystemen</strong> im Betrieb. Wir rechnen mit einem Beispielhaus: 150 m² Wohnfläche und rund 130 kWh Heizstrom je m² und Jahr – diesen typischen Verbrauch setzt co2online an. Das sind 19.500 kWh, gerundet 20.000 kWh; mit derselben Wärmemenge rechnen unsere Ratgeber zu <a href="/blog/gasheizung-kosten-2026" class="text-[#0F5B78] font-medium hover:underline">Gasheizung</a> und <a href="/blog/pelletheizung-kosten-2026" class="text-[#0F5B78] font-medium hover:underline">Pelletheizung</a>.</p>
     <ul>
-      <li><strong>Stromverbrauch:</strong> 14.000–18.000 kWh/Jahr (150 m²-Haus)</li>
-      <li><strong>Heizkosten:</strong> 2.500–3.600 €/Jahr (bei 20 ct/kWh)</li>
-      <li><strong>Zum Vergleich Wärmepumpe:</strong> 1.100 €/Jahr = <strong>1.780 € Ersparnis/Jahr</strong></li>
-      <li><strong>Veraltete Speichertechnik:</strong> 30–50% Wärmeverlust über Nacht</li>
+      <li><strong>Stromverbrauch:</strong> rund 20.000 kWh/Jahr (150 m²-Haus)</li>
+      <li><strong>Heizkosten:</strong> rund 4.000 €/Jahr – bei rund 20 ct/kWh im Niedertarif (Marktvergleich 2025/26 laut co2online); Tagstrom zum Nachladen und Grundpreis kommen hinzu</li>
+      <li><strong>Zum Vergleich Wärmepumpe:</strong> 20.000 kWh ÷ Jahresarbeitszahl 3,4 = rund 5.900 kWh Strom × 24 ct/kWh = rund 1.400 €/Jahr – <strong>rund 2.600 € Ersparnis/Jahr</strong></li>
+      <li><strong>Ungeregelte Wärmeabgabe:</strong> Die gespeicherte Wärme bleibt im Haus, ältere Geräte geben sie aber schlecht regelbar ab – auch dann, wenn niemand sie braucht. Wer zur Sicherheit zu viel lädt, bezahlt Strom für Wärme zur falschen Zeit.</li>
     </ul>
+    <p>Den Nachtspeicher rechnen wir bewusst mit dem günstigen Niedertarif, die Wärmepumpe mit dem durchschnittlichen Wärmepumpentarif von 24 ct/kWh bei separatem Zähler (Verbraucherzentrale NRW, Marktcheck 2025; ohne eigenen Zähler im Mittel 31,5 ct/kWh) und der mittleren Jahresarbeitszahl von 3,4 aus dem Feldtest des Fraunhofer ISE in Bestandsgebäuden; Grundpreise fallen bei beiden an und sind nicht enthalten. Je nach Tarif kann Heizstrom teurer sein – bei 25 ct/kWh wären es 5.000 € statt 4.000 € im Jahr, die Ersparnis fiele dann entsprechend größer aus. Selbst mit der schwächsten Luft-Wasser-Wärmepumpe des Feldtests (Jahresarbeitszahl 2,6) blieben rund 2.150 € Ersparnis im Jahr.</p>
 
     <h3>2. Schlechte Energieeffizienz</h3>
     <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
@@ -5348,44 +5350,50 @@ ${GMODG_HINWEIS}
       <tbody>
         <tr style="background-color: #f9f9f9;">
           <td style="padding: 12px; border: 1px solid #ddd;">Nachtspeicher</td>
-          <td style="padding: 12px; border: 1px solid #ddd;">30–40%</td>
-          <td style="padding: 12px; border: 1px solid #ddd;">❌ Sehr schlecht</td>
+          <td style="padding: 12px; border: 1px solid #ddd;">100 % im Gerät: 1 kWh Strom → 1 kWh Wärme</td>
+          <td style="padding: 12px; border: 1px solid #ddd;">❌ Sehr schlecht (teuer im Betrieb)</td>
         </tr>
         <tr>
-          <td style="padding: 12px; border: 1px solid #ddd;">Wärmepumpe</td>
-          <td style="padding: 12px; border: 1px solid #ddd;">300–500% (JAZ 3,0–5,0)</td>
+          <td style="padding: 12px; border: 1px solid #ddd;">Luft-Wasser-Wärmepumpe</td>
+          <td style="padding: 12px; border: 1px solid #ddd;">JAZ im Mittel 3,4 (Bestandsgebäude: 2,6–4,9)</td>
           <td style="padding: 12px; border: 1px solid #ddd;">✅ Exzellent</td>
         </tr>
         <tr style="background-color: #f9f9f9;">
+          <td style="padding: 12px; border: 1px solid #ddd;">Erdwärmepumpe</td>
+          <td style="padding: 12px; border: 1px solid #ddd;">JAZ im Mittel 4,3 (Bestandsgebäude: 3,6–5,4)</td>
+          <td style="padding: 12px; border: 1px solid #ddd;">✅ Exzellent</td>
+        </tr>
+        <tr>
           <td style="padding: 12px; border: 1px solid #ddd;">Gasheizung</td>
           <td style="padding: 12px; border: 1px solid #ddd;">90–98%</td>
           <td style="padding: 12px; border: 1px solid #ddd;">✅ Sehr gut</td>
         </tr>
-        <tr>
+        <tr style="background-color: #f9f9f9;">
           <td style="padding: 12px; border: 1px solid #ddd;">Infrarotheizung</td>
-          <td style="padding: 12px; border: 1px solid #ddd;">95–100%</td>
-          <td style="padding: 12px; border: 1px solid #ddd;">⚠️ Gut (aber teuer im Betrieb)</td>
+          <td style="padding: 12px; border: 1px solid #ddd;">100 % im Gerät: 1 kWh Strom → 1 kWh Wärme</td>
+          <td style="padding: 12px; border: 1px solid #ddd;">⚠️ Wie Nachtspeicher (teuer im Betrieb)</td>
         </tr>
       </tbody>
     </table>
+    <p><strong>Und die oft genannten „30–40 % Wirkungsgrad“?</strong> Sie beziehen sich auf die Primärenergie, nicht auf das Gerät: Die EU setzt den Wirkungsgrad der Stromerzeugung im Durchschnitt mit 40 % an und rechnet Strom deshalb mit dem Faktor 2,5 in Primärenergie um; den Wirkungsgrad elektrischer Einzelraumheizgeräte selbst setzt sie mit 100 % an (Ökodesign-Verordnung (EU) 2015/1188). Der Unterschied zur Wärmepumpe liegt woanders: Sie holt zusätzlich Umweltwärme aus Luft oder Erdreich – im Feldtest des Fraunhofer ISE mit 77 Wärmepumpen in Bestandsgebäuden im Mittel 3,4 kWh Wärme je kWh Strom (Luft-Wasser) bzw. 4,3 kWh (Erdwärme).</p>
 
     <h3>3. Hohe CO₂-Emissionen</h3>
     <ul>
-      <li><strong>Nachtspeicher:</strong> 3.500–4.500 kg CO₂/Jahr</li>
-      <li><strong>Wärmepumpe:</strong> 500–800 kg CO₂/Jahr (mit Ökostrom: 0 kg)</li>
-      <li><strong>CO₂-Preis 2025:</strong> 55 €/Tonne = <strong>193 € Mehrkosten/Jahr</strong> für Nachtspeicher</li>
+      <li><strong>Nachtspeicher:</strong> rund 6,9 t CO₂/Jahr (20.000 kWh × 344 g CO₂/kWh, deutscher Strommix 2025, Schätzwert des Umweltbundesamts)</li>
+      <li><strong>Luft-Wasser-Wärmepumpe:</strong> rund 2,0 t CO₂/Jahr (rund 5.900 kWh Strom) – mit Solarstrom vom eigenen Dach weniger</li>
+      <li><strong>CO₂-Preis:</strong> Der nationale CO₂-Preis – 2026 und 2027 im Korridor von 55–65 €/Tonne – gilt für Benzin, Diesel, Heizöl und Erdgas, nicht für Ihren Heizstrom. Er verteuert dagegen jede neue Gas- oder Ölheizung; ab 2028 soll sich der Preis im EU-Emissionshandel am Markt bilden.</li>
     </ul>
 
     <h3>4. Keine Flexibilität bei der Steuerung</h3>
     <ul>
-      <li>Wärme muss nachts gespeichert werden → keine spontane Anpassung möglich</li>
+      <li>Bei älteren Geräten muss die Wärme nachts gespeichert werden → keine spontane Anpassung möglich (neuere Geräte regeln besser, siehe „Neue Nachtspeicher-Modelle“)</li>
       <li>Bei milden Temperaturen Überhitzung, bei Kälteeinbruch zu wenig Wärme</li>
       <li>Moderne Systeme bieten Smart-Home-Integration, App-Steuerung und Einzelraumregelung</li>
     </ul>
 
     <h2>Gesetzliche Lage 2026: Müssen Nachtspeicherheizungen ersetzt werden?</h2>
 
-    <h3>Gibt es ein Austauschverbot? Nein.</h3>
+    <h3>Gibt es ein Betriebsverbot oder eine Austauschpflicht? Nein.</h3>
     <p>Die wichtigsten rechtlichen Fakten:</p>
 
     <div style="background-color: #fff3cd; padding: 15px; border-left: 4px solid #ffc107; margin: 20px 0;">
@@ -5393,105 +5401,161 @@ ${GMODG_HINWEIS}
       <ul style="margin-bottom: 0;">
         <li><strong>Bestandsschutz:</strong> Funktionierende Nachtspeicher dürfen weiterbetrieben werden</li>
         <li><strong>Keine Austauschpflicht:</strong> Auch bei Defekt kein Zwang zum Wechsel des Systems</li>
-        <li><strong>65%-Regel gestrichen:</strong> Bei einem Neueinbau wählen Sie frei zwischen den im Gesetz genannten Heizungsarten (§ 42 GModG)</li>
+        <li><strong>65%-Regel gestrichen:</strong> Bei einem Neueinbau wählen Sie frei zwischen den im Gesetz genannten Heizungsarten (§ 42 GModG); für neue Stromdirektheizungen gelten Einschränkungen (§ 46 GModG, siehe unten)</li>
         <li><strong>Nur bei neuer Gas-/Ölheizung:</strong> Bioanteil-Stufen ab 2029 (10% → 60% bis 2040, § 43 GModG)</li>
-        <li><strong>Mietwohnungen:</strong> Vermieter können nicht zum sofortigen Austausch gezwungen werden</li>
+        <li><strong>Mietwohnungen:</strong> Das GModG verpflichtet Vermieter nicht zum Austausch funktionierender Nachtspeicher</li>
       </ul>
     </div>
 
     <h3>Ausnahmen und Sonderfälle</h3>
     <ul>
-      <li><strong>Asbesthaltige Geräte:</strong> Austauschpflicht bei Gefährdung (nur sehr alte Modelle vor 1984)</li>
-      <li><strong>Kommunale Satzungen:</strong> Einzelne Gemeinden können strengere Regeln erlassen</li>
+      <li><strong>Asbesthaltige Geräte:</strong> Auch hier gibt es keine allgemeine Austauschpflicht. Bei Geräten aus der Zeit vor 1984 ist Asbest möglich; Ausbau und Entsorgung dürfen nur Fachbetriebe mit Asbest-Sachkunde durchführen (TRGS 519). Ob ein beschädigtes Gerät weiterbetrieben werden sollte, klären Sie im Einzelfall mit einem Fachbetrieb</li>
+      <li><strong>Wärmenetz-Gebiete:</strong> Hat Ihre Gemeinde per Satzung oder Anschluss- und Benutzungszwang den Anschluss an ein Wärmenetz vorgesehen, fördert die BEG nur den Netzanschluss, nicht die Einzelheizung (KfW-Merkblatt 458) – fragen Sie vorab bei Ihrer Gemeinde nach</li>
       <li><strong>Denkmalschutz:</strong> Sonderregelungen möglich, Förderung auch hier verfügbar</li>
     </ul>
 
-    <h2>🔄 Die 5 besten Alternativen zur Nachtspeicherheizung 2026</h2>
+    <h2>🔄 Die 6 wichtigsten Alternativen zur Nachtspeicherheizung 2026</h2>
 
-    <h3>Luft-Wasser-Wärmepumpe – unser Favorit</h3>
+    <p><strong>Wichtig vorab:</strong> Ein Haus mit Nachtspeicher-Einzelöfen hat in der Regel kein wasserführendes Heizsystem – keine Heizkörper, keine Heizungsrohre (Finanztip). Für eine Luft-Wasser- oder Erdwärmepumpe, eine Pellet- oder Gasheizung muss dieses Heizungsnetz neu entstehen. Ohne Heizungsnetz kommen die Luft-Luft-Wärmepumpe und, als Ergänzung, die Infrarotheizung aus. Neue Heizkörper, Fußbodenheizung und Rohre zählen bei der KfW zu den förderfähigen Kosten (KfW-Infoblatt, Nr. 4.2.5) – diese sind aber auf 28.000 € für die erste Wohneinheit begrenzt.</p>
+
+    <h3>Luft-Wasser-Wärmepumpe (mit neuem Heizungsnetz)</h3>
     <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
       <tr style="background-color: #0F5B78; color: white;">
         <th style="padding: 12px; text-align: left;">Kriterium</th>
         <th style="padding: 12px; text-align: left;">Details</th>
       </tr>
       <tr style="background-color: #f9f9f9;">
-        <td style="padding: 12px;">Anschaffungskosten</td>
-        <td style="padding: 12px;"><strong>25.000–40.000 €</strong></td>
+        <td style="padding: 12px;">Wärmepumpe inkl. Installation</td>
+        <td style="padding: 12px;"><strong>27.000–40.000 €</strong> (Gerät, Montage, hydraulischer Abgleich, Inbetriebnahme; bei einer Zentralheizung inklusive Abbau der Altanlage – den Ausbau mehrerer Nachtspeicher klären Sie im Angebot)</td>
       </tr>
       <tr>
-        <td style="padding: 12px;">Mit BEG-Förderung (80%, bei Einkommen bis 30.000 €)</td>
-        <td style="padding: 12px;"><strong>5.000–17.600 €</strong></td>
+        <td style="padding: 12px;">Zusätzlich im Nachtspeicher-Haus</td>
+        <td style="padding: 12px;">Heizkörper oder Fußbodenheizung plus Rohrnetz – nicht in den 27.000–40.000 € enthalten; ein Heizkörper kostete beim Tausch im Mittel 679 € (326–1.207 €, Verbraucherzentrale Rheinland-Pfalz), die Rohre nach Aufwand</td>
       </tr>
       <tr style="background-color: #f9f9f9;">
-        <td style="padding: 12px;">Jährliche Heizkosten</td>
-        <td style="padding: 12px;">1.100 € (vs. 2.880 € Nachtspeicher)</td>
+        <td style="padding: 12px;">Eigenanteil Wärmepumpe mit 46 % Förderung (Selbstnutzer)</td>
+        <td style="padding: 12px;"><strong>14.580–27.120 €</strong></td>
+      </tr>
+      <tr>
+        <td style="padding: 12px;">Mit 80 % Förderung (Einkommen bis 30.000 €, mit Kind bis 40.000 €)</td>
+        <td style="padding: 12px;"><strong>5.400–17.600 €</strong></td>
+      </tr>
+      <tr style="background-color: #f9f9f9;">
+        <td style="padding: 12px;">Jährliche Stromkosten</td>
+        <td style="padding: 12px;">rund 1.400 € (vs. rund 4.000 € Nachtspeicher)</td>
       </tr>
       <tr>
         <td style="padding: 12px;">Ersparnis pro Jahr</td>
-        <td style="padding: 12px;"><strong>1.780 €/Jahr</strong></td>
+        <td style="padding: 12px;"><strong>rund 2.600 €</strong> Stromkosten, abzüglich 150–300 € Wartung</td>
       </tr>
       <tr style="background-color: #f9f9f9;">
         <td style="padding: 12px;">Amortisation</td>
-        <td style="padding: 12px;">8–13 Jahre (mit Förderung)</td>
+        <td style="padding: 12px;">rund 6–12 Jahre (46 % Förderung, ohne Heizkörper und Rohre)</td>
       </tr>
       <tr>
         <td style="padding: 12px;">JAZ (Effizienz)</td>
-        <td style="padding: 12px;">3,5–4,5 (350–450% Wirkungsgrad)</td>
+        <td style="padding: 12px;">im Mittel 3,4 in Bestandsgebäuden (Spanne 2,6–4,9, Fraunhofer ISE)</td>
       </tr>
       <tr style="background-color: #f9f9f9;">
         <td style="padding: 12px;">CO₂-Einsparung</td>
-        <td style="padding: 12px;">2.700–3.700 kg/Jahr</td>
+        <td style="padding: 12px;">rund 4,9 t/Jahr (Strommix 2025)</td>
       </tr>
       <tr>
         <td style="padding: 12px;">Lebensdauer</td>
-        <td style="padding: 12px;">20–25 Jahre</td>
+        <td style="padding: 12px;">meist 15–20 Jahre, hochwertige Geräte länger (Erfahrungswert); die 20-Jahres-Rechnung unterstellt 20 Jahre Betrieb</td>
       </tr>
     </table>
-    <p><strong>Vorteile:</strong> Höchste Effizienz, kühlt im Sommer, unabhängig von fossilen Brennstoffen, höchste Förderung</p>
-    <p><strong>Nachteile:</strong> Hohe Anschaffungskosten, Außengerät benötigt Platz, nicht für unsanierte Altbauten geeignet</p>
+    <p>Die 27.000–40.000 € stammen aus unserem Ratgeber <a href="/blog/waermepumpe-kosten-2026" class="text-[#0F5B78] font-medium hover:underline">Wärmepumpe Kosten 2026</a> und gelten für den Tausch einer vorhandenen Zentralheizung; in einer Auswertung von 160 Angeboten der Verbraucherzentrale Rheinland-Pfalz lagen 61 % zwischen 30.000 und 40.000 € – ohne Heizkörpertausch. Im Nachtspeicher-Haus kommt das Heizungsnetz dazu. Legen Sie die Heizflächen für niedrige Vorlauftemperaturen aus: Ausreichend große Heizkörper arbeiten laut Fraunhofer ISE im Mittel mit ähnlich niedrigen Temperaturen wie eine Fußbodenheizung. Was Rohre und Heizflächen in Ihrem Haus kosten, lässt sich seriös erst nach einer Besichtigung sagen; zur Flächenheizung lesen Sie unseren Ratgeber <a href="/blog/fussbodenheizung-kosten-vorteile-2026" class="text-[#0F5B78] font-medium hover:underline">Fußbodenheizung</a>.</p>
+    <p><strong>Vorteile:</strong> Effizienter als Luft-Luft-Wärmepumpen, liefert auch Warmwasser, unabhängig von fossilen Brennstoffen, Förderung derzeit bis 70 bzw. 80 % (wie bei Luft-Luft-Wärmepumpe und Pelletheizung)</p>
+    <p><strong>Nachteile:</strong> Hohe Anschaffungskosten, im Nachtspeicher-Haus zusätzlich Heizkörper bzw. Fußbodenheizung und Rohre, Außengerät benötigt Platz. Im unsanierten Altbau nur mit Heizlastberechnung und passend ausgelegten Heizflächen effizient – das Baujahr allein entscheidet nicht (siehe <a href="/blog/waermepumpe-altbau" class="text-[#0F5B78] font-medium hover:underline">Wärmepumpe im Altbau</a>).</p>
+
+    <h3>Luft-Luft-Wärmepumpe (Split-Gerät mit Heizfunktion)</h3>
+    <p>Für Häuser ohne Heizungsnetz ist sie die naheliegende Alternative: Ein Außengerät versorgt über Kältemittelleitungen mehrere Innengeräte, die die Raumluft direkt erwärmen – im Sommer kühlen sie auch. Heizkörper und Heizungsrohre sind nicht nötig.</p>
+    <ul>
+      <li><strong>Kosten:</strong> rund 12.500–17.500 € inkl. Installation für ein Einfamilienhaus mit 130 m² und fünf Räumen (Multi-Split: 1 Außen- und 5 Innengeräte, co2online). Mehr als fünf Innengeräte sind bei den meisten Modellen nicht möglich – größere Häuser brauchen ein zweites Außengerät. Unser Beispielhaus hat 150 m²: Bei mehr als fünf beheizten Räumen liegt der Preis über dieser Spanne.</li>
+      <li><strong>Förderung:</strong> KfW 458 wie bei anderen Wärmepumpen, wenn das Gerät überwiegend zum Heizen genutzt wird; das Außengerät muss in der BAFA-Liste stehen, Geräte bis 12 kW brauchen Effizienzklasse A++ oder A+++ (KfW, Technische FAQ 8.21; BEG EM, TMA 3.4.2). Beim Austausch einer Nachtspeicherheizung gibt es 30 % + 16 % Klimageschwindigkeitsbonus – genau diesen Fall rechnet die KfW in ihren Beispielen vor (dort wird die Nachtspeicherheizung vollständig deinstalliert). Wer nur einzelne Räume umrüstet, klärt vorab mit dem Fachunternehmen, ob die Bedingungen erfüllt sind: Für Luft-Luft-Wärmepumpen ist als Förderbedingung (unabhängig von der gestrichenen gesetzlichen 65%-Pflicht) ein Anteil von mindestens 65 % erneuerbarer Wärme im versorgten Bereich nachzuweisen (KfW, Technische FAQ 8.21).</li>
+      <li><strong>Eigenanteil:</strong> 6.750–9.450 € mit 46 % Förderung, 2.500–3.500 € mit 80 %; Vermieter (30 %): 8.750–12.250 €</li>
+      <li><strong>Jährliche Stromkosten:</strong> rund 1.400–1.900 € (Jahresarbeitszahl meist 2,5–3,5 laut co2online, 24 ct/kWh) – Warmwasser kommt separat dazu, die meisten Geräte können keins bereiten</li>
+      <li><strong>Wartung:</strong> etwa 200 €/Jahr (co2online)</li>
+    </ul>
+    <p><strong>Vorteile:</strong> Kein Heizungsnetz nötig, Einbau Raum für Raum möglich, kühlt im Sommer, deutlich günstiger als eine Luft-Wasser-Wärmepumpe mit neuem Heizungsnetz</p>
+    <p><strong>Nachteile:</strong> Weniger effizient als Luft-Wasser- oder Erdwärmepumpen, keine Warmwasserbereitung, Luftzug und Geräusche der Innengeräte, für Multi-Split-Geräte ist meist ein Drehstromanschluss nötig (co2online). Im unsanierten Altbau und als alleinige Heizung im teilsanierten Altbau stuft co2online sie als ungeeignet ein – gut passt sie zu gut gedämmten Häusern. Ab 1. Januar 2028 fördert die BEG nur noch Wärmepumpen mit natürlichen Kältemitteln (BEG EM, TMA 3.4.4).</p>
 
     <h3>Infrarotheizung</h3>
     <ul>
-      <li><strong>Kosten:</strong> 5.000–7.500 € (Komplettsystem für 150 m²)</li>
-      <li><strong>Mit Förderung:</strong> Keine BEG-Förderung</li>
-      <li><strong>Jährliche Heizkosten:</strong> 2.100–2.500 € (ähnlich wie Nachtspeicher!)</li>
-      <li><strong>JAZ:</strong> 0,95–1,0 (95–100% des Stroms wird in Wärme umgewandelt)</li>
+      <li><strong>Kosten:</strong> grob 5.000–7.500 € für ein Komplettsystem im 150-m²-Haus (Richtwert ohne Gewähr, Angebote weichen ab)</li>
+      <li><strong>Mit Förderung:</strong> Keine BEG-Förderung – Elektro-Direktheizungen wie Nachtstrom- und Infrarotheizungen sind ausdrücklich nicht förderfähig (KfW-Infoblatt, Nr. 9.2)</li>
+      <li><strong>Jährliche Heizkosten:</strong> ähnlich hoch wie beim Nachtspeicher – beide wandeln 1 kWh Strom in 1 kWh Wärme um; im Beispielhaus rund 4.000 € mit Heizstromtarif, ohne günstigen Heizstromtarif mehr</li>
+      <li><strong>Effizienz:</strong> 1 kWh Strom ergibt 1 kWh Wärme</li>
     </ul>
-    <p><strong>Vorteile:</strong> Geringe Anschaffungskosten, schnelle Installation, gesunde Strahlungswärme, ideal für Einzelräume</p>
+    <p><strong>Vorteile:</strong> Geringe Anschaffungskosten, schnelle Installation, als angenehm empfundene Strahlungswärme, ideal für Einzelräume</p>
     <p><strong>Nachteile:</strong> Hohe Betriebskosten (ähnlich Nachtspeicher), keine Förderung, nicht für Hauptheizsystem geeignet</p>
     <p><strong>Empfehlung:</strong> Nur als Übergangs- oder Zusatzheizung, nicht als Hauptsystem!</p>
 
     <h3>Pelletheizung</h3>
     <ul>
-      <li><strong>Kosten:</strong> 25.000–45.000 € (inkl. Pelletlager)</li>
-      <li><strong>Mit BEG-Förderung (30%):</strong> 17.500–36.600 €</li>
-      <li><strong>Jährliche Heizkosten:</strong> 1.400–1.700 € (Pelletpreis 2025: ca. 300 €/Tonne)</li>
-      <li><strong>Wirkungsgrad:</strong> 90–95%</li>
+      <li><strong>Kosten:</strong> 28.000–35.000 € komplett installiert inkl. Lager (Ratgeber <a href="/blog/pelletheizung-kosten-2026" class="text-[#0F5B78] font-medium hover:underline">Pelletheizung Kosten 2026</a>) – zuzüglich Heizkörper bzw. Fußbodenheizung und Rohre. Nachtspeicher brauchen keinen Schornstein; fehlt er, ist für den Pelletkessel eine Abgasanlage zu bauen (förderfähig, KfW-Infoblatt, Nr. 4.2.7).</li>
+      <li><strong>Mit BEG-Förderung (46 % für Selbstnutzer):</strong> 15.120–22.120 € Eigenanteil; Vermieter (30 %): 19.600–26.600 €</li>
+      <li><strong>Jährliche Heizkosten:</strong> Pellets 1.860–2.090 € (4–4,5 t zu 464,61 €/t, DEPI-Preis Oktober 2026), mit Wartung, Schornsteinfeger und Strom 2.290–2.700 €</li>
+      <li><strong>Nutzungsgrad:</strong> rund 90 %</li>
       <li><strong>CO₂-Bilanz:</strong> Nahezu klimaneutral</li>
     </ul>
-    <p><strong>Vorteile:</strong> CO₂-neutral, niedrige Betriebskosten, Förderung verfügbar, unabhängig von Öl/Gas</p>
-    <p><strong>Nachteile:</strong> Hohe Investition, Lagerraum benötigt (6–8 m³), regelmäßige Wartung nötig</p>
+    <p><strong>Vorteile:</strong> nahezu klimaneutral, deutlich niedrigere Betriebskosten als der Nachtspeicher, Förderung derzeit nach denselben Sätzen wie bei der Wärmepumpe, kein Außengerät, unabhängig von Öl/Gas</p>
+    <p><strong>Nachteile:</strong> Hohe Investition, Lagerraum benötigt (8–10 m³ für 5–6 t Pellets), regelmäßige Wartung nötig, Betriebskosten über denen der Wärmepumpe</p>
 
     <h3>Gas-Brennwertheizung</h3>
     <ul>
-      <li><strong>Kosten:</strong> 9.000–15.500 € (inkl. Installation)</li>
-      <li><strong>Förderung 2026:</strong> Keine BEG-Förderung mehr (nur noch "H2-ready"-Geräte gefördert)</li>
-      <li><strong>Jährliche Heizkosten:</strong> 1.600–2.000 € (Gaspreis 2025: ca. 11 ct/kWh)</li>
-      <li><strong>Wirkungsgrad:</strong> 96–98%</li>
+      <li><strong>Kosten:</strong> 9.000–15.000 € inkl. Installation (Ratgeber <a href="/blog/gasheizung-kosten-2026" class="text-[#0F5B78] font-medium hover:underline">Gasheizung Kosten 2026</a>) – im Nachtspeicher-Haus zusätzlich Gasanschluss (im Gas-Ratgeber mit 1.500–2.500 € angesetzt; Kosten und Machbarkeit eines Neuanschlusses klärt der Netzbetreiber), Abgasführung sowie Heizkörper und Rohre</li>
+      <li><strong>Förderung 2026:</strong> Keine BEG-Förderung für die Gasheizung selbst. Bei wasserstofffähigen Geräten fördert die KfW nur die Mehrausgaben (pauschal 5 % der Gesamtausgaben) und nur bei Betrieb mit grünem oder blauem Wasserstoff oder Biomethan im Direktbezug – ein „H2-ready“-Label allein reicht nicht (KfW-Infoblatt, Nr. 4.1.5).</li>
+      <li><strong>Jährliche Heizkosten:</strong> rund 2.630–2.720 € inkl. Wartung und Schornsteinfeger (20.000 kWh zu 12 ct/kWh, Gas-Ratgeber); mit dem Verivox-Durchschnitt vom 01.10.2026 (12,7 ct/kWh) rund 140 € mehr</li>
+      <li><strong>Wirkungsgrad:</strong> bis zu 98 % (Brennwerttechnik, Herstellerangabe)</li>
     </ul>
     <p><strong>Vorteile:</strong> Bewährte Technik, moderate Anschaffungskosten, geringer Platzbedarf</p>
-    <p><strong>Nachteile:</strong> Keine Förderung, fossiler Brennstoff, CO₂-Preis steigt (2025: 55 €/Tonne)</p>
+    <p><strong>Nachteile:</strong> Keine Förderung, fossiler Brennstoff, CO₂-Preis 2026 und 2027 im Korridor von 55–65 €/Tonne, ab 2028 Marktpreis im EU-Emissionshandel (Bundestag, 15.10.2026)</p>
     <p><strong>Achtung:</strong> Bei Einbau nach dem 29.07.2026 ab 2029 Bioanteil-Pflicht: 10% ab 2029, 15% ab 2030, 30% ab 2035, 60% ab 2040 (§ 43 GModG)</p>
 
     <h3>Sole-Wasser-Wärmepumpe (Erdwärme)</h3>
     <ul>
-      <li><strong>Kosten:</strong> 35.000–50.000 € (inkl. Erdarbeiten)</li>
-      <li><strong>Mit BEG-Förderung (80%, bei Einkommen bis 30.000 €):</strong> 12.600–27.600 €</li>
-      <li><strong>Jährliche Heizkosten:</strong> 900–1.000 € (JAZ 4,5–5,0)</li>
-      <li><strong>Effizienz:</strong> Höchste JAZ aller Systeme</li>
+      <li><strong>Kosten:</strong> 40.000–50.000 € inkl. Bohrung (Ratgeber Wärmepumpe Kosten 2026) – zuzüglich Heizkörper bzw. Fußbodenheizung und Rohre</li>
+      <li><strong>Mit BEG-Förderung:</strong> 27.120–37.120 € Eigenanteil mit 46 %, 17.600–27.600 € mit 80 % (Einkommen bis 30.000 €)</li>
+      <li><strong>Jährliche Stromkosten:</strong> rund 1.100 € (20.000 kWh ÷ JAZ 4,3 = rund 4.650 kWh × 24 ct/kWh)</li>
+      <li><strong>Effizienz:</strong> Höchste JAZ aller Systeme (im Mittel 4,3, Fraunhofer ISE)</li>
     </ul>
     <p><strong>Vorteile:</strong> Höchste Effizienz, sehr niedrige Betriebskosten, auch für Altbau geeignet</p>
     <p><strong>Nachteile:</strong> Sehr hohe Anfangsinvestition, Genehmigung erforderlich, Erdarbeiten nötig</p>
+
+    <h2>Neue Nachtspeicher-Modelle: Lohnt sich ein neues Gerät?</h2>
+
+    <p>Viele Besitzer fragen, ob eine moderne Nachtspeicherheizung die alte einfach ersetzen kann – und ob Nachtspeicher „wieder im Kommen“ sind. Die kurze Antwort: Neue Geräte regeln deutlich besser, an der Physik ändern sie nichts.</p>
+
+    <h3>Was neue Geräte besser machen</h3>
+    <ul>
+      <li><strong>Aufladung nach Bedarf:</strong> Eine digitale Aufladesteuerung ermittelt über Außentemperaturfühler und Wettervorhersagen den geschätzten Wärmebedarf und stellt die Ladung für den nächsten Tag ein; das bieten einige Hersteller an (ADAC). Bei älteren Geräten stellen Sie die Ladung am Vorabend von Hand ein.</li>
+      <li><strong>Geregelte Wärmeabgabe:</strong> Ein regelbares Gebläse passt die abgegebene Wärme an den Bedarf an, statt sie vor allem ungeregelt über das Gehäuse abzustrahlen. Elektronische Raumtemperaturregelung mit Wochenprogramm, Fenster-offen-Erkennung und Fernbedienung kommen hinzu.</li>
+      <li><strong>Gedämmter Speicherkern:</strong> Nach Angaben von Versorgern soll eine hochwertige Wärmedämmung die Wärme bis zur Abgabe im Kern halten, sodass kaum Wärme unkontrolliert nach außen dringt. Alte Geräte sind dagegen oft schadstoffbelastet – Asbest bei Baujahren vor 1984 (co2online).</li>
+    </ul>
+    <p>Seit dem 1. Januar 2018 müssen neue Speicherheizgeräte in der EU einen Raumheizungs-Jahresnutzungsgrad von mindestens 38,5 % erreichen – gerechnet auf Primärenergie. Pluspunkte bringen in dieser Bewertung genau die genannten Regelfunktionen, und welche Laderegelung ein Gerät hat, müssen Hersteller in der Bedienungsanleitung und auf ihrer Website angeben (Ökodesign-Verordnung (EU) 2015/1188). Wer die „beste Nachtspeicherheizung“ sucht, vergleicht also diese Angaben: elektronische Aufladesteuerung mit Raum- oder Außentemperatur, Gebläse, Wochenprogramm, Fenster-offen-Erkennung.</p>
+
+    <h3>Die physikalische Grenze: 1 kWh Strom bleibt 1 kWh Wärme</h3>
+    <p>Auch das beste neue Gerät macht aus einer Kilowattstunde Strom genau eine Kilowattstunde Wärme – Direktstromheizungen erreichen nur den Wert 1 (co2online). Eine Luft-Wasser-Wärmepumpe kam im Feldtest des Fraunhofer ISE in Bestandsgebäuden im Mittel auf 3,4 kWh Wärme je kWh Strom, eine Erdwärmepumpe auf 4,3 kWh. Für jede Kilowattstunde Wärme braucht ein neuer Nachtspeicher also eine Kilowattstunde Strom, die Luft-Wasser-Wärmepumpe rund 0,3 kWh. Eine bessere Regelung vermeidet Verschwendung – zu volle Speicher, Wärme zur falschen Zeit –, den Faktor von mehr als drei holt sie nicht auf.</p>
+
+    <h3>Warum Nachtspeicher „wieder im Kommen“ sein sollen</h3>
+    <p>Hinter dem Schlagwort stehen dynamische Stromtarife: Seit dem 1. Januar 2025 müssen alle Stromlieferanten Kunden mit intelligentem Messsystem (Smart Meter) einen dynamischen Tarif anbieten (§ 41a Abs. 2 EnWG). Ein Speicherheizgerät könnte dann laden, wenn Strom gerade günstig ist, und so überschüssigen Wind- und Solarstrom aufnehmen. co2online sieht darin eine mögliche Zukunft für neue, intelligente Speicherheizungen, nennt aber auch die Hürden: Flächendeckende Smart Meter und günstige Grünstromtarife fehlen bisher.</p>
+    <p>Zwei Punkte relativieren das: Ohne Smart Meter gibt es keinen dynamischen Tarif. Und dieselbe Flexibilität nutzt auch eine Wärmepumpe – geförderte Geräte müssen eine digitale Schnittstelle zur netzorientierten Steuerung haben (BEG EM, TMA 3.4.3), und ein intelligentes Messsystem müssen Sie für eine geförderte Wärmepumpe bei Anträgen ab 21. Juli 2026 ohnehin bestellen, sofern Ihr Anschluss noch keines hat (KfW-Infoblatt, Nr. 4.1.3.2). Auch beim günstigsten Börsenstrom braucht die Wärmepumpe je Kilowattstunde Wärme nur knapp ein Drittel der Strommenge.</p>
+
+    <h3>Keine Förderung für neue Nachtspeicher</h3>
+    <p>Nachtspeicher- und Infrarotheizungen sind Stromdirektheizungen und ausdrücklich nicht förderfähig (KfW-Infoblatt, Nr. 9.2). Auch in Kombination mit Photovoltaik gelten sie nicht als förderfähige „innovative Heiztechnik“ (KfW, Technische FAQ Einzelmaßnahmen). Ein neues Gerät kostet laut co2online etwa 1.000 € (3.000 Watt) bis 2.000 € (7.000 Watt), jeweils ohne Installation.</p>
+
+    <h3>Darf man neue Nachtspeicher einbauen?</h3>
+    <p>Ja, mit Einschränkungen. Nachtspeicher zählen als Stromdirektheizung (§ 3 GModG). Neu eingebaut werden darf eine Stromdirektheizung in einem bestehenden Gebäude mit Wohnungen nur, wenn es die Anforderungen an den baulichen Wärmeschutz um mindestens 30 % unterschreitet – das gilt nicht für Häuser mit höchstens zwei Wohnungen, von denen der Eigentümer eine selbst bewohnt, und nicht beim Austausch einer bestehenden Einzelraum-Stromdirektheizung (§ 46 GModG).</p>
+
+    <h3>Wann ein neues Gerät trotzdem sinnvoll sein kann</h3>
+    <ul>
+      <li><strong>Einzelne, zeitweise genutzte Räume:</strong> Gästezimmer, Ferienhaus oder Büroraum, die nur gelegentlich geheizt werden – oder ein einzelnes defektes Gerät, das bis zur geplanten Sanierung ersetzt werden muss.</li>
+      <li><strong>Sehr gut gedämmte Wohnung:</strong> Bei kleinem Wärmebedarf fällt der Mehrverbrauch gegenüber einer Wärmepumpe auch absolut klein aus. Wo das GModG neue Stromdirektheizungen einschränkt, verlangt es genau das: einen Wärmeschutz, der die Anforderungen um mindestens 30 % unterschreitet.</li>
+      <li><strong>Kein Heizkreis machbar:</strong> Wenn für ein zentrales Heizsystem kein Platz ist (ADAC) und auch kein Außengerät für eine Luft-Luft-Wärmepumpe möglich ist, bleibt oft nur der Austausch der Einzelgeräte.</li>
+    </ul>
+    <p>In allen anderen Fällen ist die Rechnung eindeutig: Im Beispielhaus kostet der Nachtspeicher rund 4.000 € Strom im Jahr, die Luft-Wasser-Wärmepumpe rund 1.400 € – daran ändert auch ein neues Speichergerät nichts, weil es für jede Kilowattstunde Wärme weiterhin eine Kilowattstunde Strom braucht. Den Einbau einzelner Speicherheizgeräte führen wir nicht aus – dafür ist ein Elektrofachbetrieb der richtige Ansprechpartner.</p>
 
     <h2>BEG-Förderung 2026: Bis zu 80% Zuschuss für den Heizungstausch</h2>
 
@@ -5511,20 +5575,22 @@ ${GMODG_HINWEIS}
         <tr style="background-color: #f9f9f9;">
           <td style="padding: 10px;">Geschwindigkeitsbonus</td>
           <td style="padding: 10px;"><strong>+16%</strong></td>
-          <td style="padding: 10px;">Selbstnutzer: Austausch funktionsfähiger Öl-, Kohle-, Gas-Etagen- oder Nachtspeicherheizung oder einer Gasheizung ab 20 Jahren; für Anträge bis 31.01.2027, danach halbjährlich −4 Prozentpunkte, entfällt ab 01.08.2028</td>
+          <td style="padding: 10px;">Selbstnutzer: Austausch einer funktionsfähigen Öl-, Kohle-, Gas-Etagen- oder Nachtspeicherheizung (unabhängig vom Alter) oder einer Gas- bzw. Biomasseheizung ab 20 Jahren; die alte Heizung wird fachgerecht demontiert und entsorgt; für Anträge bis 31.01.2027, danach halbjährlich −4 Prozentpunkte, entfällt ab 01.08.2028</td>
         </tr>
         <tr style="background-color: white;">
           <td style="padding: 10px;">Einkommensbonus</td>
           <td style="padding: 10px;"><strong>+10–40%</strong></td>
-          <td style="padding: 10px;">Selbstnutzer: zu versteuerndes Haushaltseinkommen bis 30.000 € (40%), 40.000 € (30%) oder 50.000 € (10%) pro Jahr</td>
+          <td style="padding: 10px;">Selbstnutzer: zu versteuerndes Haushaltseinkommen bis 30.000 € (40%), 40.000 € (30%) oder 50.000 € (10%) pro Jahr; mit minderjährigem, kindergeldberechtigtem Kind steigt jede Grenze einmalig um 10.000 €</td>
         </tr>
         <tr style="background-color: #28a745; color: white;">
           <td style="padding: 10px;"><strong>GESAMT</strong></td>
           <td style="padding: 10px;"><strong>bis 70% / 80%</strong></td>
-          <td style="padding: 10px;"><strong>Max. 19.600 € Zuschuss (Einfamilienhaus); 80% = 22.400 € nur bei Einkommen bis 30.000 € (mit Kind bis 40.000 €)</strong></td>
+          <td style="padding: 10px;"><strong>Max. 19.600 € Zuschuss (Einfamilienhaus, förderfähige Kosten max. 28.000 €, ab 01.02.2027 halbjährlich 750 € weniger); 80% = 22.400 € nur bei Einkommen bis 30.000 € (mit Kind bis 40.000 €)</strong></td>
         </tr>
       </table>
     </div>
+
+    <p><strong>Hinweis zu 2027:</strong> Ab dem 01.02.2027 sinken der Klimageschwindigkeitsbonus (auf 12 %) und der Höchstbetrag der förderfähigen Kosten (auf 27.250 €). Für Wärmepumpen ist zudem ein Wertschöpfungsbonus vorgesehen, dessen Detailregelung im Laufe des 1. Quartals 2027 eingeführt werden soll: Die Grundförderung sinkt dann auf 15 %, in der EU oder in assoziierten Märkten gefertigte Wärmepumpen sollen zusätzlich 15 % erhalten. Die Details stehen noch aus – mehr dazu in unserem Ratgeber <a href="/blog/heizungsfoerderung-2027" class="text-[#0F5B78] font-medium hover:underline">Heizungsförderung 2027</a>.</p>
 
     <h3>Rechenbeispiel: Förderung für Wärmepumpe</h3>
     <ul>
@@ -5534,32 +5600,33 @@ ${GMODG_HINWEIS}
       <li><strong>Geschwindigkeitsbonus (16%):</strong> -4.480 €</li>
       <li><strong>Gesamtförderung (46%):</strong> <strong>-12.880 €</strong></li>
       <li><strong>Eigenanteil:</strong> <strong>19.120 €</strong></li>
-      <li><strong>Amortisation:</strong> 11 Jahre (durch 1.780 € Ersparnis/Jahr)</li>
+      <li><strong>Amortisation:</strong> rund 8 Jahre (rund 2.600 € Stromkosten-Ersparnis pro Jahr, abzüglich 150–300 € Wartung)</li>
     </ul>
+    <p><strong>Heizkörper und Rohre nicht vergessen:</strong> Mit 32.000 € erreicht die Wärmepumpe allein schon den Höchstbetrag von 28.000 € förderfähigen Kosten. Jeder Euro für das neue Heizungsnetz kommt deshalb voll zum Eigenanteil hinzu und verlängert die Amortisation – um rund fünf Monate je 1.000 €.</p>
 
     <h3>Voraussetzungen für BEG-Förderung</h3>
-    <p>Folgende Bedingungen müssen erfüllt sein: Der Antrag wird <strong>vor Baubeginn</strong> gestellt, auf Basis eines Liefer-/Leistungsvertrags mit aufschiebender oder auflösender Bedingung (Zusage der KfW). Die Durchführung erfolgt durch einen <strong>zertifizierten Fachbetrieb</strong> (wie HeizCenter). Ein <strong>hydraulischer Abgleich</strong> nach Verfahren B ist Pflicht. Die Wärmepumpe muss eine <strong>JAZ von mindestens 3,0</strong> (Luft) bzw. 4,0 (Erdwärme) erreichen. Eine <strong>Energieberatung</strong> wird empfohlen und zusätzlich mit 80% gefördert.</p>
+    <p>Folgende Bedingungen müssen erfüllt sein: Der Antrag wird <strong>vor Baubeginn</strong> gestellt, auf Basis eines Liefer-/Leistungsvertrags mit aufschiebender oder auflösender Bedingung (Zusage der KfW). Die Maßnahme führt ein <strong>Fachunternehmen</strong> durch, das auch die Bestätigung zum Antrag (BzA) und nach Abschluss die Bestätigung nach Durchführung (BnD) ausstellt. Ein <strong>hydraulischer Abgleich</strong> nach Verfahren B ist Pflicht; bei Luft-Luft-Split-Geräten entfällt er (KfW, Technische FAQ 8.04). Die Wärmepumpe muss so ausgelegt sein, dass sie eine <strong>JAZ von mindestens 3,0</strong> erreicht (BEG EM, TMA 3.4.6); für Luft-Luft-Wärmepumpen ist keine JAZ-Berechnung nötig. Für den Klimageschwindigkeitsbonus wird die alte Nachtspeicherheizung fachgerecht demontiert und entsorgt. Eine <strong>Energieberatung</strong> wird empfohlen; das BAFA bezuschusst sie mit 50 % des Honorars, höchstens 650 € beim Ein- oder Zweifamilienhaus.</p>
 
     <h2>Schritt-für-Schritt: So ersetzen Sie Ihre Nachtspeicherheizung</h2>
 
-    <h3>Phase 1: Vorbereitung (3–6 Wochen)</h3>
+    <h3>Phase 1: Vorbereitung und Förderantrag</h3>
     <ol>
-      <li><strong>Energieberatung:</strong> Analyse Ihrer Immobilie (Kosten: 800–1.500 €, Förderung: 80%)</li>
-      <li><strong>Heizsystem wählen:</strong> Basierend auf Gebäudezustand, Budget und Platzverhältnissen</li>
+      <li><strong>Energieberatung:</strong> Analyse Ihrer Immobilie (Honorar je nach Aufwand; BAFA-Zuschuss 50 % des Honorars, höchstens 650 € beim Ein- oder Zweifamilienhaus)</li>
+      <li><strong>Heizsystem wählen:</strong> Basierend auf Gebäudezustand, Budget und Platzverhältnissen – mit oder ohne neues Heizungsnetz</li>
       <li><strong>Angebote einholen:</strong> Mindestens 3 Fachbetriebe vergleichen</li>
-      <li><strong>Förderantrag:</strong> KfW-Antrag <strong>vor</strong> Auftragserteilung stellen</li>
+      <li><strong>Förderantrag:</strong> Ihr Fachunternehmen erstellt die Bestätigung zum Antrag (BzA), Sie schließen einen Vertrag mit aufschiebender oder auflösender Bedingung und stellen dann den KfW-Antrag im Portal „Meine KfW“ – <strong>vor</strong> Beginn der Arbeiten</li>
     </ol>
 
-    <h3>Phase 2: Installation (1–3 Wochen)</h3>
+    <h3>Phase 2: Installation (Richtwert 1–3 Wochen, je nach Umfang des Heizungsnetzes)</h3>
     <ol>
-      <li><strong>Demontage:</strong> Alte Nachtspeicher entfernen und fachgerecht entsorgen</li>
+      <li><strong>Demontage:</strong> Alte Nachtspeicher entfernen und fachgerecht entsorgen – bei Geräten vor 1984 ist Asbest möglich, zerlegen dürfen sie nur Fachbetriebe mit Asbest-Sachkunde (TRGS 519)</li>
       <li><strong>Elektroarbeiten:</strong> Neue Leitungen verlegen (Wärmepumpe: Starkstrom 400V)</li>
       <li><strong>Heizungsinstallation:</strong> Wärmepumpe, Speicher, Rohrleitungen installieren</li>
       <li><strong>Hydraulischer Abgleich:</strong> Optimierung der Wärmeverteilung (Förderpflicht!)</li>
       <li><strong>Inbetriebnahme:</strong> Test, Einstellung und Einweisung</li>
     </ol>
 
-    <h3>Phase 3: Förderabwicklung (8–12 Wochen)</h3>
+    <h3>Phase 3: Förderabwicklung</h3>
     <ol>
       <li><strong>Verwendungsnachweis:</strong> Rechnungen und Nachweise bei der KfW einreichen</li>
       <li><strong>Auszahlung:</strong> Förderbetrag wird auf Ihr Konto überwiesen</li>
@@ -5568,12 +5635,12 @@ ${GMODG_HINWEIS}
     <h2>Die 7 häufigsten Fehler beim Austausch (und wie Sie sie vermeiden)</h2>
 
     <h3>Infrarotheizung als Hauptheizsystem</h3>
-    <p><strong>Problem:</strong> Betriebskosten fast genauso hoch wie Nachtspeicher (2.100–2.500 €/Jahr)</p>
+    <p><strong>Problem:</strong> Gleicher Stromverbrauch wie beim Nachtspeicher – im Beispielhaus rund 4.000 € im Jahr</p>
     <p><strong>Lösung:</strong> Infrarot nur als Zusatz- oder Übergangsheizung nutzen</p>
 
     <h3>Wärmepumpe ohne Dämmung im Altbau</h3>
-    <p><strong>Problem:</strong> Hohe Vorlauftemperaturen nötig → JAZ sinkt auf 2,5–3,0 → höhere Kosten</p>
-    <p><strong>Lösung:</strong> Mindestens Dachbodendämmung (U-Wert < 0,24 W/m²K) nachrüsten</p>
+    <p><strong>Problem:</strong> Hohe Heizlast und hohe Vorlauftemperaturen → niedrigere Jahresarbeitszahl (im Fraunhofer-Feldtest lagen die Werte von Luft-Wasser-Wärmepumpen zwischen 2,6 und 4,9) → höhere Stromkosten</p>
+    <p><strong>Lösung:</strong> Heizlast berechnen lassen und die Dämmung der obersten Geschossdecke prüfen – oft günstig und wirkungsvoll (siehe <a href="/blog/waermepumpe-altbau" class="text-[#0F5B78] font-medium hover:underline">Wärmepumpe im Altbau</a>)</p>
 
     <h3>Vertrag ohne Bedingung vor dem Förderantrag</h3>
     <p><strong>Problem:</strong> Ein Vertrag ohne aufschiebende oder auflösende Bedingung vor dem Antrag (oder ein Baubeginn vor Antragstellung) gilt als Vorhabenbeginn → keine Förderung, Verlust von bis zu 22.400 €</p>
@@ -5581,46 +5648,47 @@ ${GMODG_HINWEIS}
 
     <h3>Keine Energieberatung</h3>
     <p><strong>Problem:</strong> Falsches System gewählt → schlechte Effizienz oder zu hohe Kosten</p>
-    <p><strong>Lösung:</strong> Energieberatung nutzen (800 € Eigenanteil, spart oft 5.000+ € Mehrkosten)</p>
+    <p><strong>Lösung:</strong> Energieberatung nutzen (BAFA-Zuschuss 50 % des Honorars, höchstens 650 € beim Ein- oder Zweifamilienhaus) – sie hilft, Fehlentscheidungen und unnötige Mehrkosten zu vermeiden</p>
 
     <h3>Zu kleine Wärmepumpe</h3>
-    <p><strong>Problem:</strong> Elektrischer Heizstab springt oft an → Stromkosten steigen um 40%</p>
+    <p><strong>Problem:</strong> Der elektrische Heizstab springt häufig an → die Stromkosten steigen spürbar</p>
     <p><strong>Lösung:</strong> Heizlastberechnung nach DIN EN 12831 durch Fachbetrieb</p>
 
-    <h3>Alte Heizkörper behalten</h3>
-    <p><strong>Problem:</strong> Wärmepumpe braucht 55–60°C Vorlauf → JAZ sinkt auf 2,8</p>
-    <p><strong>Lösung:</strong> Flächenheizung (Fußboden/Wand) oder größere Heizkörper (35–45°C Vorlauf → JAZ 4,0+)</p>
+    <h3>Neue Heizflächen zu knapp auslegen</h3>
+    <p><strong>Problem:</strong> Zu kleine Heizkörper brauchen höhere Vorlauftemperaturen – jedes Kelvin weniger Vorlauf verbessert die Effizienz um drei bis vier Prozent (Verbraucherzentrale Rheinland-Pfalz), jedes Kelvin mehr kostet entsprechend</p>
+    <p><strong>Lösung:</strong> Heizkörper oder Fußbodenheizung nach raumweiser Heizlast für niedrige Vorlauftemperaturen auslegen – ausreichend große Heizkörper kommen laut Fraunhofer ISE im Mittel mit ähnlich niedrigen Temperaturen aus wie Flächenheizungen</p>
 
-    <h3>Billigstanbieter ohne Zertifizierung</h3>
-    <p><strong>Problem:</strong> Keine KfW-Förderung, schlechte Installation, keine Garantie</p>
-    <p><strong>Lösung:</strong> Nur zertifizierte Fachbetriebe beauftragen (wie HeizCenter GmbH)</p>
+    <h3>Billigstes Angebot ohne Leistungsvergleich</h3>
+    <p><strong>Problem:</strong> Unvollständige Angebote (z. B. ohne hydraulischen Abgleich oder Demontage), mangelhafte Installation – und die KfW verlangt Bestätigungen eines Fachunternehmens (BzA, BnD)</p>
+    <p><strong>Lösung:</strong> Angebote auf gleichen Leistungsumfang prüfen und ein Fachunternehmen mit Referenzen beauftragen, das die KfW-Bestätigungen ausstellt</p>
 
     <h2>Sonderfälle: Mietwohnung & Eigentumswohnung</h2>
 
     <h3>Mietwohnung mit Nachtspeicher</h3>
     <ul>
       <li><strong>Keine Austauschpflicht</strong> für Vermieter (GModG kennt keine Austauschpflicht)</li>
-      <li><strong>Modernisierungsumlage:</strong> Vermieter darf max. 10% der Kosten (nach Förderung) auf Miete umlegen</li>
-      <li><strong>Beispiel:</strong> 16.000 € Eigenanteil → max. 133 €/Monat Mieterhöhung (wird oft durch Heizkostensenkung ausgeglichen)</li>
-      <li><strong>Mieterrechte:</strong> Bei unwirtschaftlicher Heizung kann Mietminderung geltend gemacht werden</li>
+      <li><strong>Modernisierungsumlage:</strong> Nach einem geförderten Heizungstausch darf der Vermieter die Jahresmiete um höchstens 10% der Kosten (abzüglich Förderung) erhöhen; 15% der Kosten gelten pauschal als Erhaltungsaufwand und zählen nicht mit (§ 559e BGB)</li>
+      <li><strong>Kappungsgrenze:</strong> Die Monatsmiete darf dadurch innerhalb von sechs Jahren um höchstens 0,50 € je m² Wohnfläche steigen – bei 80 m² also um höchstens 40 € im Monat (wird oft durch Heizkostensenkung ausgeglichen)</li>
+      <li><strong>Mieterrechte:</strong> Hohe Stromkosten allein sind in der Regel kein Mangel und berechtigen nicht zur Mietminderung; ob bei unzureichender Heizleistung ein Mangel vorliegt, ist eine Einzelfallfrage – im Zweifel Mieterverein oder Rechtsberatung fragen</li>
     </ul>
 
     <h3>Eigentumswohnung (WEG)</h3>
     <ul>
       <li><strong>Zentralheizung:</strong> Beschluss der WEG nötig (einfache Mehrheit bei energetischer Sanierung)</li>
-      <li><strong>Einzelheizung:</strong> Austausch eigenständig möglich, aber Genehmigung des Verwalters einholen</li>
-      <li><strong>Förderung:</strong> Bei der Zentralheizung stellt die WEG (in der Regel die Verwaltung) den Basisantrag für die Grundförderung; selbstnutzende Eigentümer können zusätzlich für ihre Wohnung einen Zusatzantrag auf Klimageschwindigkeits- und Einkommensbonus stellen. Bei der Einzelheizung im Sondereigentum beantragt der Wohnungseigentümer selbst.</li>
+      <li><strong>Einzelheizung:</strong> Der Austausch im eigenen Sondereigentum ist grundsätzlich eigenständig möglich; bei Eingriffen ins Gemeinschaftseigentum (z. B. Außengerät an der Fassade, Wanddurchbrüche) ist ein Beschluss der Eigentümerversammlung nötig</li>
+      <li><strong>Förderung:</strong> Bei der Zentralheizung stellt die WEG (in der Regel die Verwaltung) den Basisantrag für die Grundförderung; selbstnutzende Eigentümer können zusätzlich für ihre Wohnung einen Zusatzantrag auf Klimageschwindigkeits- und Einkommensbonus stellen. Bei der Einzelheizung im Sondereigentum beantragt der Wohnungseigentümer selbst; der Förderhöchstbetrag des Gebäudes wird dann anteilig auf alle Wohneinheiten verteilt (KfW-Beispiel: 17.600 € je Wohneinheit bei fünf Wohneinheiten).</li>
     </ul>
 
     <h2>Wirtschaftlichkeitsvergleich: 20-Jahres-Gesamtkosten</h2>
+
+    <p>Annahmen: Beispielhaus mit 20.000 kWh Wärme pro Jahr, heutige Preise ohne Preissteigerung, Selbstnutzer mit 46 % Förderung. Nicht enthalten sind Heizkörper bzw. Fußbodenheizung und Rohre für die wassergeführten Systeme sowie – je nach Angebot – Ausbau und Entsorgung der Nachtspeicher; Warmwasser ist in keiner Zeile eingerechnet.</p>
 
     <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
       <thead>
         <tr style="background-color: #0F5B78; color: white;">
           <th style="padding: 12px; text-align: left;">Heizsystem</th>
           <th style="padding: 12px; text-align: left;">Anschaffung (mit Förderung)</th>
-          <th style="padding: 12px; text-align: left;">20 Jahre Betrieb</th>
-          <th style="padding: 12px; text-align: left;">Wartung (20 Jahre)</th>
+          <th style="padding: 12px; text-align: left;">20 Jahre Betrieb (Energie, Wartung)</th>
           <th style="padding: 12px; text-align: left;"><strong>Gesamtkosten</strong></th>
         </tr>
       </thead>
@@ -5628,52 +5696,56 @@ ${GMODG_HINWEIS}
         <tr style="background-color: #ffcccc;">
           <td style="padding: 12px; border: 1px solid #ddd;"><strong>Nachtspeicher</strong></td>
           <td style="padding: 12px; border: 1px solid #ddd;">0 € (bereits vorhanden)</td>
-          <td style="padding: 12px; border: 1px solid #ddd;">57.600 €</td>
-          <td style="padding: 12px; border: 1px solid #ddd;">2.000 €</td>
-          <td style="padding: 12px; border: 1px solid #ddd;"><strong>59.600 €</strong></td>
+          <td style="padding: 12px; border: 1px solid #ddd;">80.000 €</td>
+          <td style="padding: 12px; border: 1px solid #ddd;"><strong>80.000 €</strong></td>
         </tr>
         <tr style="background-color: #d4edda;">
-          <td style="padding: 12px; border: 1px solid #ddd;"><strong>Wärmepumpe</strong></td>
-          <td style="padding: 12px; border: 1px solid #ddd;">19.120 €</td>
-          <td style="padding: 12px; border: 1px solid #ddd;">22.000 €</td>
-          <td style="padding: 12px; border: 1px solid #ddd;">5.000 €</td>
-          <td style="padding: 12px; border: 1px solid #ddd;"><strong>46.120 €</strong></td>
+          <td style="padding: 12px; border: 1px solid #ddd;"><strong>Luft-Wasser-Wärmepumpe</strong></td>
+          <td style="padding: 12px; border: 1px solid #ddd;">19.120 € + Heizungsnetz</td>
+          <td style="padding: 12px; border: 1px solid #ddd;">32.500 €</td>
+          <td style="padding: 12px; border: 1px solid #ddd;"><strong>51.620 € + Heizungsnetz</strong></td>
+        </tr>
+        <tr style="background-color: #d4edda;">
+          <td style="padding: 12px; border: 1px solid #ddd;"><strong>Luft-Luft-Wärmepumpe</strong></td>
+          <td style="padding: 12px; border: 1px solid #ddd;">8.100 €</td>
+          <td style="padding: 12px; border: 1px solid #ddd;">36.000 €</td>
+          <td style="padding: 12px; border: 1px solid #ddd;"><strong>44.100 €</strong></td>
         </tr>
         <tr style="background-color: #f9f9f9;">
           <td style="padding: 12px; border: 1px solid #ddd;">Infrarot</td>
           <td style="padding: 12px; border: 1px solid #ddd;">6.000 €</td>
-          <td style="padding: 12px; border: 1px solid #ddd;">46.000 €</td>
-          <td style="padding: 12px; border: 1px solid #ddd;">500 €</td>
-          <td style="padding: 12px; border: 1px solid #ddd;"><strong>52.500 €</strong></td>
+          <td style="padding: 12px; border: 1px solid #ddd;">ab 80.000 €</td>
+          <td style="padding: 12px; border: 1px solid #ddd;"><strong>ab 86.000 €</strong></td>
         </tr>
         <tr>
           <td style="padding: 12px; border: 1px solid #ddd;">Pellets</td>
-          <td style="padding: 12px; border: 1px solid #ddd;">21.600 €</td>
-          <td style="padding: 12px; border: 1px solid #ddd;">30.000 €</td>
-          <td style="padding: 12px; border: 1px solid #ddd;">6.000 €</td>
-          <td style="padding: 12px; border: 1px solid #ddd;"><strong>57.600 €</strong></td>
+          <td style="padding: 12px; border: 1px solid #ddd;">17.120 € + Heizungsnetz</td>
+          <td style="padding: 12px; border: 1px solid #ddd;">50.000 €</td>
+          <td style="padding: 12px; border: 1px solid #ddd;"><strong>67.120 € + Heizungsnetz</strong></td>
         </tr>
         <tr style="background-color: #f9f9f9;">
           <td style="padding: 12px; border: 1px solid #ddd;">Gas</td>
-          <td style="padding: 12px; border: 1px solid #ddd;">12.000 €</td>
-          <td style="padding: 12px; border: 1px solid #ddd;">36.000 €</td>
-          <td style="padding: 12px; border: 1px solid #ddd;">4.000 €</td>
-          <td style="padding: 12px; border: 1px solid #ddd;"><strong>52.000 €</strong></td>
+          <td style="padding: 12px; border: 1px solid #ddd;">12.000 € + Gasanschluss, Heizungsnetz</td>
+          <td style="padding: 12px; border: 1px solid #ddd;">53.500 €</td>
+          <td style="padding: 12px; border: 1px solid #ddd;"><strong>65.500 € + Gasanschluss, Heizungsnetz</strong></td>
         </tr>
       </tbody>
     </table>
 
-    <p><strong>Fazit:</strong> Trotz höherer Anschaffungskosten ist die Wärmepumpe über 20 Jahre <strong>13.480 € günstiger</strong> als die Nachtspeicherheizung!</p>
+    <p style="font-size: 0.9em;">Rechenwege: Nachtspeicher 20.000 kWh × 20 ct/kWh = 4.000 € pro Jahr. Luft-Wasser-Wärmepumpe 32.000 € vor Förderung (Rechenbeispiel oben), 1.400 € Strom + 225 € Wartung (Mitte von 150–300 €) pro Jahr. Luft-Luft-Wärmepumpe 15.000 € vor Förderung (Mitte der co2online-Spanne für ein Haus mit 130 m² und fünf Räumen; im 150-m²-Beispielhaus mit mehr beheizten Räumen kann ein zweites Außengerät hinzukommen), Jahresarbeitszahl 3,0 = rund 6.670 kWh × 24 ct/kWh = 1.600 € Strom + 200 € Wartung pro Jahr. Infrarot 6.000 € (gerundeter Richtwert aus der Spanne 5.000–7.500 €), Betrieb mit Heizstromtarif wie Nachtspeicher. Pellets 30.000 € vor Förderung und 2.500 € Betrieb pro Jahr (Pellet-Ratgeber). Gas 12.000 € und 2.675 € pro Jahr (Mitte der Spanne im Gas-Ratgeber), ohne Kosten der Bioanteil-Pflicht ab 2029.</p>
 
-    <h2>Fazit: Nachtspeicherheizung ersetzen – lohnt sich 2026 mehr denn je</h2>
+    <p><strong>Fazit:</strong> Trotz höherer Anschaffungskosten ist die Luft-Wasser-Wärmepumpe über 20 Jahre <strong>rund 28.400 € günstiger</strong> als die Nachtspeicherheizung – davon gehen die Kosten für Heizkörper und Rohre ab. Die Luft-Luft-Wärmepumpe liegt <strong>rund 35.900 €</strong> unter den Kosten der Nachtspeicherheizung – bei einem gut gedämmten Haus mit höchstens fünf beheizten Räumen; braucht das Haus mehr Innengeräte oder ein zweites Außengerät, fällt der Abstand kleiner aus.</p>
 
-    <p>Die wichtigsten Erkenntnisse auf einen Blick: Es besteht <strong>keine Austauschpflicht</strong>, der Wechsel ist aber wirtschaftlich hochgradig sinnvoll. Mit einer Wärmepumpe sparen Sie rund <strong>1.780 Euro pro Jahr</strong>. Dank <strong>bis zu 80 Prozent Förderung</strong> (maximal 22.400 Euro) erreichen Sie eine Amortisation in 7 bis 11 Jahren. Die <strong>CO₂-Einsparung</strong> beträgt 2.700 bis 3.700 kg pro Jahr – das entspricht 20.000 Kilometer Autofahrt. Infrarotheizungen sind keine echte Alternative, da sie ähnlich hohe Betriebskosten verursachen. Wichtig: Der Geschwindigkeitsbonus von 16 Prozent sinkt ab 01.02.2027 halbjährlich um 4 Prozentpunkte und entfällt für Anträge ab 01.08.2028.</p>
+    <h2>Fazit: Nachtspeicherheizung ersetzen – rechnet sich in vielen Fällen</h2>
+
+    <p>Die wichtigsten Erkenntnisse auf einen Blick: Es besteht <strong>keine Austauschpflicht</strong>, der Wechsel rechnet sich aber in vielen Fällen – wie deutlich, hängt vor allem von den Kosten für das neue Heizungsnetz ab. Mit einer Luft-Wasser-Wärmepumpe sparen Sie im Beispielhaus rund <strong>2.600 Euro Stromkosten pro Jahr</strong>. Selbstnutzer erhalten <strong>46 Prozent Förderung</strong>, mit Einkommensbonus bis 70 bzw. 80 Prozent (maximal 22.400 Euro). Mit 46 Prozent amortisiert sich die Wärmepumpe selbst in rund 6 bis 12 Jahren – Heizkörper und Rohre kommen hinzu. Wo kein Heizungsnetz entstehen soll, ist die <strong>Luft-Luft-Wärmepumpe</strong> die günstigere Lösung, sofern das Haus gut gedämmt ist. Die <strong>CO₂-Einsparung</strong> der Luft-Wasser-Wärmepumpe beträgt rund 4,9 Tonnen pro Jahr. Neue Nachtspeicher regeln besser, brauchen aber für jede Kilowattstunde Wärme weiterhin eine Kilowattstunde Strom; Infrarotheizungen sind keine echte Alternative, da sie ähnlich hohe Betriebskosten verursachen. Wichtig: Der Geschwindigkeitsbonus von 16 Prozent sinkt ab 01.02.2027 halbjährlich um 4 Prozentpunkte und entfällt für Anträge ab 01.08.2028.</p>
 
     <h3>Unsere Empfehlung für 2026</h3>
     <ol>
-      <li><strong>Beste Wahl:</strong> Luft-Wasser-Wärmepumpe (höchste Förderung, niedrigste Betriebskosten)</li>
-      <li><strong>Alternative Erdwärme:</strong> Bei gut gedämmtem Haus und ausreichend Grundstücksfläche</li>
-      <li><strong>Übergangslösung:</strong> Pelletheizung bei fehlendem Starkstromanschluss</li>
+      <li><strong>Mit neuem Heizungsnetz:</strong> Luft-Wasser-Wärmepumpe – liefert auch Warmwasser und ist bei passender Auslegung auch in nicht oder teilweise sanierten Häusern effizient; dafür höhere Anschaffungskosten als bei der Luft-Luft-Wärmepumpe</li>
+      <li><strong>Ohne Heizungsnetz:</strong> Luft-Luft-Wärmepumpe – deutlich günstiger in der Anschaffung, aber nur bei gut gedämmtem Haus und überschaubarer Raumzahl sinnvoll; Warmwasser bleibt separat</li>
+      <li><strong>Alternative Erdwärme:</strong> Wenn Grundstücksfläche, Genehmigung und Budget passen – höchste Effizienz, auch im Altbau geeignet</li>
+      <li><strong>Ohne Außengerät:</strong> Pelletheizung, wenn Platz für Lager und Abgasanlage vorhanden ist</li>
       <li><strong>NICHT empfohlen:</strong> Infrarot als Hauptheizsystem (nur als Ergänzung)</li>
     </ol>
 
@@ -5690,68 +5762,110 @@ ${GMODG_HINWEIS}
     <h2>Häufig gestellte Fragen (FAQ)</h2>
 
     <h3>Muss ich meine Nachtspeicherheizung gesetzlich ersetzen?</h3>
-    <p><strong>Nein.</strong> Es gibt kein generelles Austauschverbot für Nachtspeicherheizungen. Sie dürfen funktionierende Geräte weiterbetrieben. Die frühere 65%-Erneuerbare-Pflicht wurde mit dem GModG im Juli 2026 gestrichen; bei einem Neueinbau wählen Sie frei.</p>
+    <p><strong>Nein.</strong> Es gibt weder ein generelles Betriebsverbot noch eine Austauschpflicht für Nachtspeicherheizungen. Sie dürfen funktionierende Geräte weiterbetreiben. Die frühere 65%-Erneuerbare-Pflicht wurde mit dem GModG im Juli 2026 gestrichen; bei einem Neueinbau wählen Sie die Heizungsart frei (für neue Stromdirektheizungen gelten Einschränkungen, § 46 GModG).</p>
+
+    <h3>Gibt es neue, sparsamere Nachtspeicherheizungen?</h3>
+    <p>Neue Geräte regeln besser: Eine elektronische Aufladesteuerung richtet die Ladung nach Raum- oder Außentemperatur, ein Gebläse gibt die Wärme nach Bedarf ab, dazu kommen Wochenprogramm und Fenster-offen-Erkennung. Seit 2018 müssen neue Speicherheizgeräte in der EU einen Raumheizungs-Jahresnutzungsgrad von mindestens 38,5 % erreichen. An der Physik ändert das nichts: Aus 1 kWh Strom wird 1 kWh Wärme, eine Luft-Wasser-Wärmepumpe macht daraus im Mittel 3,4 kWh. Eine BEG-Förderung gibt es für Nachtspeicher nicht; sinnvoll sind neue Geräte nur in Einzelfällen.</p>
+
+    <h3>Was kostet es, eine Nachtspeicherheizung durch eine Wärmepumpe zu ersetzen?</h3>
+    <p>Zwei Wege: Eine Luft-Wasser-Wärmepumpe kostet 27.000–40.000 Euro mit Installation, nach 46 % Förderung 14.580–27.120 Euro. Dazu kommen Heizkörper oder Fußbodenheizung und Rohre, die im Nachtspeicher-Haus fehlen – allein ein Heizkörper kostet beim Tausch im Mittel 679 Euro. Eine Luft-Luft-Wärmepumpe braucht kein Heizungsnetz: 12.500–17.500 Euro für ein Einfamilienhaus mit 130 m² und fünf Räumen, nach 46 % Förderung 6.750–9.450 Euro; Warmwasser bleibt separat. 46 % erhalten Selbstnutzer bei Antrag bis 31.01.2027, Vermieter 30 %; bis 80 % nur bei zu versteuerndem Haushaltseinkommen bis 30.000 Euro (mit Kind 40.000 Euro).</p>
 
     <h3>Wie viel spare ich mit einer Wärmepumpe?</h3>
-    <p>Im Durchschnitt <strong>1.780 € pro Jahr</strong> bei einem 150 m²-Haus (Nachtspeicher: 2.880 €/Jahr vs. Wärmepumpe: 1.100 €/Jahr). Über 20 Jahre sind das <strong>35.600 € Ersparnis</strong>.</p>
+    <p>Im Beispielhaus mit 150 m² <strong>rund 2.600 € Stromkosten pro Jahr</strong> (Nachtspeicher: rund 4.000 €/Jahr vs. Luft-Wasser-Wärmepumpe: rund 1.400 €/Jahr). Nach der Wartung der Wärmepumpe (150–300 €/Jahr) bleiben 2.300–2.450 €, über 20 Jahre also <strong>46.000–49.000 € Ersparnis</strong> – davon geht die Investition ab.</p>
 
     <h3>Welche Förderung gibt es 2026?</h3>
-    <p>Für Wärmepumpen: <strong>30% Grundförderung + 16% Geschwindigkeitsbonus + 10–40% Einkommensbonus</strong>, gedeckelt auf 70% (max. 19.600 €); <strong>bis 80%</strong> (max. 22.400 €) nur bei einem zu versteuernden Haushaltseinkommen bis 30.000 € (mit Kind bis 40.000 €). Für Pelletheizungen gelten dieselben Sätze und Bedingungen.</p>
+    <p>Für Wärmepumpen: <strong>30% Grundförderung + 16% Geschwindigkeitsbonus + 10–40% Einkommensbonus</strong>, gedeckelt auf 70% (max. 19.600 €); <strong>bis 80%</strong> (max. 22.400 €) nur bei einem zu versteuernden Haushaltseinkommen bis 30.000 € (mit Kind bis 40.000 €). Den Geschwindigkeitsbonus erhalten Selbstnutzer, die eine funktionstüchtige Nachtspeicherheizung ersetzen – unabhängig von deren Alter, bei Antrag bis 31.01.2027. Für Pelletheizungen und Luft-Luft-Wärmepumpen gelten derzeit dieselben Fördersätze; die technischen Anforderungen unterscheiden sich je nach Gerät.</p>
 
     <h3>Ist eine Wärmepumpe auch im Altbau sinnvoll?</h3>
-    <p><strong>Ja</strong>, wenn das Gebäude mindestens eine Dachbodendämmung hat (U-Wert < 0,24 W/m²K). Bei sehr schlechter Dämmung sollte zuerst die Gebäudehülle verbessert werden. Erdwärmepumpen funktionieren auch bei höheren Vorlauftemperaturen gut.</p>
+    <p><strong>Ja</strong>, in den meisten Fällen. Entscheidend sind Heizlast und Vorlauftemperatur, nicht das Baujahr: Im Feldtest des Fraunhofer ISE erreichten Luft-Wasser-Wärmepumpen in Bestandsgebäuden im Mittel eine Jahresarbeitszahl von 3,4, einen Zusammenhang mit dem Baujahr fanden die Forscher nicht. Im Nachtspeicher-Haus werden Heizkörper oder Fußbodenheizung ohnehin neu geplant – legen Sie sie für niedrige Vorlauftemperaturen aus. Eine Dämmung der obersten Geschossdecke senkt die Heizlast zusätzlich.</p>
 
     <h3>Wie lange dauert die Installation?</h3>
-    <p>Demontage der Nachtspeicher + Installation einer Wärmepumpe: <strong>1–3 Wochen</strong> (inkl. Elektroarbeiten, Rohrleitungen, hydraulischer Abgleich).</p>
+    <p>Als Richtwert <strong>1–3 Wochen</strong> für Demontage der Nachtspeicher und Installation einer Luft-Wasser-Wärmepumpe samt Elektroarbeiten, Rohrleitungen und hydraulischem Abgleich – je nach Umfang des neuen Heizungsnetzes. Hinzu kommen Planung, Förderantrag und die Wartezeit bis zur KfW-Zusage.</p>
 
     <h3>Ist Infrarotheizung eine gute Alternative?</h3>
-    <p><strong>Nur bedingt.</strong> Infrarotheizungen haben fast genauso hohe Betriebskosten wie Nachtspeicher (2.100–2.500 €/Jahr) und erhalten keine BEG-Förderung. Sie eignen sich nur als Zusatz- oder Übergangsheizung, nicht als Hauptheizsystem.</p>
+    <p><strong>Nur bedingt.</strong> Infrarotheizungen brauchen für dieselbe Wärme genauso viel Strom wie Nachtspeicher – im Beispielhaus rund 4.000 € im Jahr mit Heizstromtarif – und erhalten keine BEG-Förderung. Sie eignen sich nur als Zusatz- oder Übergangsheizung, nicht als Hauptheizsystem.</p>
 
     <h3>Kann ich die Förderung auch als Mieter beantragen?</h3>
-    <p><strong>Nein</strong>, nur der Eigentümer kann die BEG-Förderung beantragen. Allerdings darf der Vermieter maximal 10% der Kosten (nach Förderung) auf die Miete umlegen – oft wird dies durch niedrigere Heizkosten kompensiert.</p>
+    <p><strong>Nein</strong>, nur der Eigentümer kann die BEG-Förderung beantragen. Nach einem geförderten Heizungstausch darf der Vermieter die Jahresmiete um höchstens 10% der Kosten (abzüglich Förderung) erhöhen, die Monatsmiete aber höchstens um 0,50 € je m² Wohnfläche innerhalb von sechs Jahren (§ 559e BGB) – oft wird dies durch niedrigere Heizkosten kompensiert.</p>
 
     <h3>Was kostet die Entsorgung alter Nachtspeicher?</h3>
-    <p>Fachgerechte Entsorgung: <strong>50–150 € pro Gerät</strong> (asbesthaltige Geräte vor 1984: 200–400 €). Dies ist im Installationspreis meist enthalten.</p>
+    <p>Rückbau, Demontage und Abholung kosten laut co2online erfahrungsgemäß <strong>100–230 € pro Gerät</strong>, bei Schadstoffbelastung (Asbest ist bei Geräten vor 1984 möglich) können die Kosten abweichen. Asbesthaltige Geräte dürfen nur Fachbetriebe mit Asbest-Sachkunde (TRGS 519) zerlegen. Ob Ausbau und Entsorgung im Angebot enthalten sind, sollten Sie vor der Beauftragung klären; beim geförderten Heizungstausch zählen Ausbau und Entsorgung der alten Heizung zu den förderfähigen Kosten.</p>
+
+    <h2>Quellen (Stand Oktober 2026)</h2>
+
+    <p>Die Zahlen dieses Ratgebers stützen sich auf die folgenden Quellen (am 23.10.2026 abgerufen); Preisangaben ohne Quelle sind Richtwerte. Rechenbeispiele sind Modellrechnungen ohne Gewähr; verbindlich ist allein die Förderzusage der KfW.</p>
+    <ul>
+      <li>KfW, Heizungsförderung für Privatpersonen – Wohngebäude (458): Fördersätze, Klimageschwindigkeitsbonus auch beim Austausch einer Nachtstromspeicherheizung, Höchstbetrag 28.000 €, Beispiel „Klima-Split-Anlage (Maßnahme im Sondereigentum)“ – eine Luft-Luft-Wärmepumpe ersetzt eine Nachtstromspeicherheizung – mit 30 % + 16 % – <a href="https://www.kfw.de/inlandsfoerderung/Privatpersonen/Bestehende-Immobilie/F%C3%B6rderprodukte/Heizungsf%C3%B6rderung-f%C3%BCr-Privatpersonen-Wohngeb%C3%A4ude-(458)/" target="_blank" rel="noopener">kfw.de/458</a> (abgerufen 23.10.2026)</li>
+      <li>KfW, Merkblatt Heizungsförderung 458 (Stand 09/2026): Klimageschwindigkeitsbonus für Nachtstromspeicherheizungen unabhängig vom Alter; Förderausschluss für Einzelheizungen, wenn die Gemeinde per Satzung oder Anschluss- und Benutzungszwang einen Wärmenetz-Anschluss vorgesehen hat – <a href="https://www.kfw.de/PDF/Download-Center/F%C3%B6rderprogramme-(Inlandsf%C3%B6rderung)/PDF-Dokumente/6000005131_M_458.pdf" target="_blank" rel="noopener">Merkblatt (PDF)</a> (abgerufen 23.10.2026)</li>
+      <li>KfW, Infoblatt zu den förderfähigen Maßnahmen und Leistungen, Version 11.0 (09/2026): Nr. 4.1.3.2 iMSys-Bestellpflicht, Nr. 4.1.5 wasserstofffähige Heizungen (pauschal 5 % Mehrausgaben, „H2-ready“-Label reicht nicht), Nr. 4.2.5 Heizkörper und Flächenheizungen, Nr. 4.2.7 Abgasanlagen, Nr. 4.2.8 Ausbau und Entsorgung, Nr. 4.3 Klimageschwindigkeitsbonus, Nr. 9.2 Elektro-Direktheizungen (Nachtstrom-, Infrarotheizungen) nicht förderfähig, Nr. 1.8 Wärmepumpen mit lokaler Wertschöpfung – <a href="https://www.kfw.de/PDF/Download-Center/F%C3%B6rderprogramme-(Inlandsf%C3%B6rderung)/PDF-Dokumente/6000004863_Infoblatt_BEG_F%C3%B6rderf%C3%A4hige_Ma%C3%9Fnahmen.pdf" target="_blank" rel="noopener">Infoblatt (PDF)</a> (abgerufen 23.10.2026)</li>
+      <li>KfW, Liste der technischen FAQ – Einzelmaßnahmen, Version 7.0 (06/2026): Nr. 8.04, 8.18 und 8.21 Luft-Luft-Wärmepumpen inkl. Split-Klimaanlagen mit Heizfunktion (bei Split-Geräten kein hydraulischer Abgleich, keine JAZ-Berechnung); Photovoltaik mit Stromdirektheizung ist keine innovative Heiztechnik – <a href="https://www.kfw.de/PDF/Download-Center/F%C3%B6rderprogramme-(Inlandsf%C3%B6rderung)/PDF-Dokumente/6000004864_BEG_TFAQ_EM.pdf" target="_blank" rel="noopener">Technische FAQ (PDF)</a> (abgerufen 23.10.2026)</li>
+      <li>BMWE, Förderrichtlinie BEG Einzelmaßnahmen vom 17.08.2026 (BAnz AT 27.08.2026 B1): TMA 3.4.2 (Luft-Luft bis 12 kW: Effizienzklasse A++ oder A+++), 3.4.3 (digitale Schnittstelle), 3.4.4 (natürliche Kältemittel ab 01.01.2028), 3.4.6 (JAZ mindestens 3,0), Nr. 8.4.4 Klimageschwindigkeitsbonus, Nr. 8.4.1 c) und 8.4.6 Wertschöpfungsbonus ab 1. Quartal 2027, Nr. 8.3.1 Höchstgrenze der förderfähigen Ausgaben – <a href="https://www.bundesanzeiger.de/pub/publication/jLXvW09kHTQoDINAdoC/content/jLXvW09kHTQoDINAdoC/BAnz%20AT%2027.08.2026%20B1.pdf?inline" target="_blank" rel="noopener">Bundesanzeiger (PDF)</a> (abgerufen 23.10.2026)</li>
+      <li>Fraunhofer ISE, Pressemitteilung vom 03.11.2025 „Wärmepumpen heizen auch im Altbau klimafreundlich“: 77 Anlagen, JAZ Luft-Wasser im Mittel 3,4 (2,6–4,9), Erdreich 4,3 (3,6–5,4), kein Zusammenhang mit dem Baujahr, Heizkörper bei ausreichender Größe mit ähnlich niedrigen Temperaturen wie Flächenheizungen – <a href="https://www.ise.fraunhofer.de/de/presse-und-medien/presseinformationen/2025/waermepumpen-heizen-auch-im-altbau-klimafreundlich-forschungsprojekt-des-fraunhofer-ise-abgeschlossen.html" target="_blank" rel="noopener">ise.fraunhofer.de</a> (abgerufen 23.10.2026)</li>
+      <li>co2online, „Nachtspeicherheizung: Kosten, Verbrauch und Entsorgung“ (19.03.2026): Niedertarif rund 20 ct/kWh (2025/26), typischer Verbrauch rund 130 kWh/m², Gerätepreise etwa 1.000 € (3.000 W) bis 2.000 € (7.000 W), Entsorgung 100–230 € je Gerät, Asbest vor 1984, intelligente Speicherheizungen und dynamische Tarife – <a href="https://www.co2online.de/energie-sparen/strom-sparen/nachtspeicherheizung/nachtspeicherheizung-kosten-und-verbrauch/" target="_blank" rel="noopener">co2online.de</a> (abgerufen 23.10.2026)</li>
+      <li>co2online, „Luft-Luft-Wärmepumpe: Arten, Kosten &amp; Förderung“ (23.09.2026): 12.500–17.500 € für 130 m² mit fünf Räumen, höchstens fünf Innengeräte bei den meisten Modellen, JAZ meist 2,5–3,5, Wartung etwa 200 €/Jahr, Warmwasser separat, Eignung nach Dämmstandard, Direktstromheizungen mit Wert 1 – <a href="https://www.co2online.de/modernisieren-und-bauen/waermepumpe/luft-luft-waermepumpe/" target="_blank" rel="noopener">co2online.de</a> (abgerufen 23.10.2026)</li>
+      <li>Verbraucherzentrale NRW, Marktcheck Wärmepumpen-Stromtarife (Pressemitteilung vom 23.03.2026): durchschnittlich 24 ct/kWh inkl. Netzentgeltreduktion bei separatem Zähler (ohne eigenen Zähler im Mittel 31,5 ct/kWh, dafür pauschale Entlastung) plus ca. 140 € Grundpreis; Befragung im August 2025 – <a href="https://www.presseportal.de/pm/121716/6241247" target="_blank" rel="noopener">presseportal.de</a> (abgerufen 23.10.2026)</li>
+      <li>Umweltbundesamt, „CO₂-Emissionen pro Kilowattstunde Strom 2025 nur leicht gesunken“ (23.03.2026): 344 g CO₂/kWh – <a href="https://www.umweltbundesamt.de/themen/co2-emissionen-pro-kilowattstunde-strom-2025-nur" target="_blank" rel="noopener">umweltbundesamt.de</a> (abgerufen 23.10.2026)</li>
+      <li>Deutscher Bundestag, Änderung des Brennstoffemissionshandelsgesetzes vom 15.10.2026: CO₂-Preis für Benzin, Diesel, Heizöl und Erdgas 2027 zwischen 55 und 65 €/t, EU-Emissionshandel ab 2028 geplant – <a href="https://www.bundestag.de/dokumente/textarchiv/2026/kw42-de-brennstoffemissionshandelsgesetz-1223608" target="_blank" rel="noopener">bundestag.de</a> (abgerufen 23.10.2026)</li>
+      <li>§ 41a Abs. 2 EnWG (dynamische Stromtarife für Kunden mit intelligentem Messsystem ab 01.01.2025) – <a href="https://www.gesetze-im-internet.de/enwg_2005/__41a.html" target="_blank" rel="noopener">gesetze-im-internet.de</a>; § 3 und § 46 GModG (Stromdirektheizung) – <a href="https://www.gesetze-im-internet.de/geg/__46.html" target="_blank" rel="noopener">gesetze-im-internet.de</a>; § 559e BGB (Mieterhöhung nach Heizungstausch) – <a href="https://www.gesetze-im-internet.de/bgb/__559e.html" target="_blank" rel="noopener">gesetze-im-internet.de</a> (jeweils abgerufen 23.10.2026)</li>
+      <li>Verordnung (EU) 2015/1188 (Ökodesign Einzelraumheizgeräte): Umrechnungskoeffizient 2,5, Mindest-Raumheizungs-Jahresnutzungsgrad 38,5 % für Speicherheizgeräte ab 01.01.2018, Regelfunktionen – <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32015R1188" target="_blank" rel="noopener">eur-lex.europa.eu</a> (abgerufen 23.10.2026)</li>
+      <li>ADAC, „Nachtspeicherheizung: Kosten, Austausch und Förderung“: digitale Aufladesteuerung, Bedienung älterer Geräte, Ausnahmen bei fehlendem Platz für ein zentrales Heizsystem – <a href="https://www.adac.de/rund-ums-haus/energie/versorgung/nachtspeicherheizung/" target="_blank" rel="noopener">adac.de</a> (abgerufen 23.10.2026)</li>
+      <li>Lechwerke (Energieversorger), „Nachtspeicherheizungen – effiziente Lösung oder Auslaufmodell?“: Wärmedämmung des Speicherkerns, statische und dynamische Bauarten, Einsatz bei zeitweiser Nutzung – <a href="https://www.lew.de/fuer-zuhause/waerme/waermestrom/nachtspeicherheizung" target="_blank" rel="noopener">lew.de</a> (abgerufen 23.10.2026)</li>
+      <li>Finanztip, „Nachtspeicherheizung“ (Stand 13.05.2025): kein wasserführendes Heizsystem, kein Schornstein, Stromverschwendung durch zu große Wärmespeicherung – <a href="https://www.finanztip.de/nachtspeicherheizung/" target="_blank" rel="noopener">finanztip.de</a> (abgerufen 23.10.2026)</li>
+      <li>Verbraucherzentrale Rheinland-Pfalz, Auswertung von 160 Angeboten für Luft-Wasser-Wärmepumpen (05.06.2025): 61 % zwischen 30.000 und 40.000 € ohne Heizkörpertausch, Heizkörpertausch 326–1.207 €, im Mittel 679 €, 3–4 % Effizienz je Kelvin Vorlauftemperatur – <a href="https://www.verbraucherzentrale-rlp.de/sites/default/files/2025-06/250605_vz-rlp_auswertung_wp_angebote.pdf" target="_blank" rel="noopener">verbraucherzentrale-rlp.de (PDF)</a> (abgerufen 23.10.2026)</li>
+      <li>BAFA, Bundesförderung Energieberatung für Wohngebäude: 50 % des Honorars, max. 650 € bei Ein- und Zweifamilienhäusern – <a href="https://www.bafa.de/DE/Energie/Energieberatung/Energieberatung_Wohngebaeude/energieberatung_wohngebaeude_node.html" target="_blank" rel="noopener">bafa.de</a> (abgerufen 23.10.2026)</li>
+      <li>DEPI, Pelletpreis Oktober 2026: 464,61 €/t bei 6 t Abnahme – <a href="https://www.depi.de/pelletpreis-wirtschaftlichkeit/" target="_blank" rel="noopener">depi.de</a> (abgerufen 23.10.2026)</li>
+      <li>Verivox, Gaspreise: 12,7 ct/kWh im Durchschnitt (Stand 01.10.2026) – <a href="https://www.verivox.de/gas/gaspreise/" target="_blank" rel="noopener">verivox.de</a> (abgerufen 23.10.2026)</li>
+      <li>Eigene Ratgeber mit den übernommenen Werten: <a href="/blog/waermepumpe-kosten-2026" class="text-[#0F5B78] font-medium hover:underline">Wärmepumpe Kosten 2026</a> (27.000–40.000 € Luft-Wasser, 40.000–50.000 € Erdwärme, Wartung 150–300 €), <a href="/blog/pelletheizung-kosten-2026" class="text-[#0F5B78] font-medium hover:underline">Pelletheizung Kosten 2026</a>, <a href="/blog/gasheizung-kosten-2026" class="text-[#0F5B78] font-medium hover:underline">Gasheizung Kosten 2026</a></li>
+    </ul>
       `,
       category: 'Heizung',
       author: 'HeizCenter Redaktion',
       date: '2026-01-25',
-      readingTime: 14,
+      updated: '2026-10-24',
+      readingTime: 18,
       image: '/images/HeizCenter_Heizung.webp',
       tags: ['Nachtspeicherheizung', 'Heizungstausch', 'Wärmepumpe', 'Förderung', 'Kosten', 'Altbau', 'Wirtschaftlichkeit'],
       featured: true,
       faqs: [
         {
           question: 'Muss ich meine Nachtspeicherheizung gesetzlich ersetzen?',
-          answer: 'Nein. Es gibt kein generelles Austauschverbot für Nachtspeicherheizungen. Sie dürfen funktionierende Geräte weiterbetrieben. Die frühere 65%-Erneuerbare-Pflicht wurde mit dem GModG im Juli 2026 gestrichen; bei einem Neueinbau wählen Sie frei.',
+          answer: 'Nein. Es gibt weder ein generelles Betriebsverbot noch eine Austauschpflicht für Nachtspeicherheizungen. Sie dürfen funktionierende Geräte weiterbetreiben. Die frühere 65%-Erneuerbare-Pflicht wurde mit dem GModG im Juli 2026 gestrichen; bei einem Neueinbau wählen Sie die Heizungsart frei (für neue Stromdirektheizungen gelten Einschränkungen, § 46 GModG).',
+        },
+        {
+          question: 'Gibt es neue, sparsamere Nachtspeicherheizungen?',
+          answer: 'Neue Geräte regeln besser: Eine elektronische Aufladesteuerung richtet die Ladung nach Raum- oder Außentemperatur, ein Gebläse gibt die Wärme nach Bedarf ab, dazu kommen Wochenprogramm und Fenster-offen-Erkennung. Seit 2018 müssen neue Speicherheizgeräte in der EU einen Raumheizungs-Jahresnutzungsgrad von mindestens 38,5 % erreichen. An der Physik ändert das nichts: Aus 1 kWh Strom wird 1 kWh Wärme, eine Luft-Wasser-Wärmepumpe macht daraus im Mittel 3,4 kWh. Eine BEG-Förderung gibt es für Nachtspeicher nicht; sinnvoll sind neue Geräte nur in Einzelfällen.',
+        },
+        {
+          question: 'Was kostet es, eine Nachtspeicherheizung durch eine Wärmepumpe zu ersetzen?',
+          answer: 'Zwei Wege: Eine Luft-Wasser-Wärmepumpe kostet 27.000–40.000 Euro mit Installation, nach 46 % Förderung 14.580–27.120 Euro. Dazu kommen Heizkörper oder Fußbodenheizung und Rohre, die im Nachtspeicher-Haus fehlen – allein ein Heizkörper kostet beim Tausch im Mittel 679 Euro. Eine Luft-Luft-Wärmepumpe braucht kein Heizungsnetz: 12.500–17.500 Euro für ein Einfamilienhaus mit 130 m² und fünf Räumen, nach 46 % Förderung 6.750–9.450 Euro; Warmwasser bleibt separat. 46 % erhalten Selbstnutzer bei Antrag bis 31.01.2027, Vermieter 30 %; bis 80 % nur bei zu versteuerndem Haushaltseinkommen bis 30.000 Euro (mit Kind 40.000 Euro).',
         },
         {
           question: 'Wie viel spare ich mit einer Wärmepumpe?',
-          answer: 'Im Durchschnitt 1.780 Euro pro Jahr bei einem 150 m²-Haus (Nachtspeicher: 2.880 Euro/Jahr vs. Wärmepumpe: 1.100 Euro/Jahr). Über 20 Jahre sind das 35.600 Euro Ersparnis.',
+          answer: 'Im Beispielhaus mit 150 m² rund 2.600 Euro Stromkosten pro Jahr (Nachtspeicher: rund 4.000 Euro/Jahr vs. Luft-Wasser-Wärmepumpe: rund 1.400 Euro/Jahr). Nach der Wartung der Wärmepumpe (150–300 Euro/Jahr) bleiben 2.300–2.450 Euro, über 20 Jahre also 46.000–49.000 Euro Ersparnis – davon geht die Investition ab.',
         },
         {
           question: 'Welche Förderung gibt es 2026?',
-          answer: 'Für Wärmepumpen: 30% Grundförderung + 16% Geschwindigkeitsbonus + 10–40% Einkommensbonus, gedeckelt auf 70% (max. 19.600 Euro); bis 80% (max. 22.400 Euro) nur bei einem zu versteuernden Haushaltseinkommen bis 30.000 Euro (mit Kind bis 40.000 Euro). Für Pelletheizungen gelten dieselben Sätze und Bedingungen.',
+          answer: 'Für Wärmepumpen: 30% Grundförderung + 16% Geschwindigkeitsbonus + 10–40% Einkommensbonus, gedeckelt auf 70% (max. 19.600 Euro); bis 80% (max. 22.400 Euro) nur bei einem zu versteuernden Haushaltseinkommen bis 30.000 Euro (mit Kind bis 40.000 Euro). Den Geschwindigkeitsbonus erhalten Selbstnutzer, die eine funktionstüchtige Nachtspeicherheizung ersetzen – unabhängig von deren Alter, bei Antrag bis 31.01.2027. Für Pelletheizungen und Luft-Luft-Wärmepumpen gelten derzeit dieselben Fördersätze; die technischen Anforderungen unterscheiden sich je nach Gerät.',
         },
         {
           question: 'Ist eine Wärmepumpe auch im Altbau sinnvoll?',
-          answer: 'Ja, wenn das Gebäude mindestens eine Dachbodendämmung hat (U-Wert < 0,24 W/m²K). Bei sehr schlechter Dämmung sollte zuerst die Gebäudehülle verbessert werden. Erdwärmepumpen funktionieren auch bei höheren Vorlauftemperaturen gut.',
+          answer: 'Ja, in den meisten Fällen. Entscheidend sind Heizlast und Vorlauftemperatur, nicht das Baujahr: Im Feldtest des Fraunhofer ISE erreichten Luft-Wasser-Wärmepumpen in Bestandsgebäuden im Mittel eine Jahresarbeitszahl von 3,4, einen Zusammenhang mit dem Baujahr fanden die Forscher nicht. Im Nachtspeicher-Haus werden Heizkörper oder Fußbodenheizung ohnehin neu geplant – legen Sie sie für niedrige Vorlauftemperaturen aus. Eine Dämmung der obersten Geschossdecke senkt die Heizlast zusätzlich.',
         },
         {
           question: 'Wie lange dauert die Installation?',
-          answer: 'Demontage der Nachtspeicher + Installation einer Wärmepumpe: 1–3 Wochen (inkl. Elektroarbeiten, Rohrleitungen, hydraulischer Abgleich).',
+          answer: 'Als Richtwert 1–3 Wochen für Demontage der Nachtspeicher und Installation einer Luft-Wasser-Wärmepumpe samt Elektroarbeiten, Rohrleitungen und hydraulischem Abgleich – je nach Umfang des neuen Heizungsnetzes. Hinzu kommen Planung, Förderantrag und die Wartezeit bis zur KfW-Zusage.',
         },
         {
           question: 'Ist Infrarotheizung eine gute Alternative?',
-          answer: 'Nur bedingt. Infrarotheizungen haben fast genauso hohe Betriebskosten wie Nachtspeicher (2.100–2.500 Euro/Jahr) und erhalten keine BEG-Förderung. Sie eignen sich nur als Zusatz- oder Übergangsheizung, nicht als Hauptheizsystem.',
+          answer: 'Nur bedingt. Infrarotheizungen brauchen für dieselbe Wärme genauso viel Strom wie Nachtspeicher – im Beispielhaus rund 4.000 Euro im Jahr mit Heizstromtarif – und erhalten keine BEG-Förderung. Sie eignen sich nur als Zusatz- oder Übergangsheizung, nicht als Hauptheizsystem.',
         },
         {
           question: 'Kann ich die Förderung auch als Mieter beantragen?',
-          answer: 'Nein, nur der Eigentümer kann die BEG-Förderung beantragen. Allerdings darf der Vermieter maximal 10% der Kosten (nach Förderung) auf die Miete umlegen – oft wird dies durch niedrigere Heizkosten kompensiert.',
+          answer: 'Nein, nur der Eigentümer kann die BEG-Förderung beantragen. Nach einem geförderten Heizungstausch darf der Vermieter die Jahresmiete um höchstens 10% der Kosten (abzüglich Förderung) erhöhen, die Monatsmiete aber höchstens um 0,50 Euro je m² Wohnfläche innerhalb von sechs Jahren (§ 559e BGB) – oft wird dies durch niedrigere Heizkosten kompensiert.',
         },
         {
           question: 'Was kostet die Entsorgung alter Nachtspeicher?',
-          answer: 'Fachgerechte Entsorgung: 50–150 Euro pro Gerät (asbesthaltige Geräte vor 1984: 200–400 Euro). Dies ist im Installationspreis meist enthalten.',
+          answer: 'Rückbau, Demontage und Abholung kosten laut co2online erfahrungsgemäß 100–230 Euro pro Gerät, bei Schadstoffbelastung (Asbest ist bei Geräten vor 1984 möglich) können die Kosten abweichen. Asbesthaltige Geräte dürfen nur Fachbetriebe mit Asbest-Sachkunde (TRGS 519) zerlegen. Ob Ausbau und Entsorgung im Angebot enthalten sind, sollten Sie vor der Beauftragung klären; beim geförderten Heizungstausch zählen Ausbau und Entsorgung der alten Heizung zu den förderfähigen Kosten.',
         },
       ],
     },

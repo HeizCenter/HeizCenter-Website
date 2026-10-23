@@ -431,3 +431,26 @@ COMMIT FREIGEGEBEN
 
 ---
 
+
+## Content Validation Report - 2026-10-24 (HEC-182)
+
+### Gepruefte Aenderungen
+- `src/lib/api/blog.ts`, `nachtspeicherheizung-ersetzen-2026`: Titel/Excerpt nach GSC-Abfragen („Nachtspeicherheizung ersetzen: Kosten, Pflicht, neue Modelle“), neuer Abschnitt „Neue Nachtspeicher-Modelle“, Luft-Luft-Wärmepumpe als Alternative, Fakten-Refresh (Verbrauch, Nachtstrom, Wirkungsgrad, JAZ Fraunhofer ISE, Preise Stand Oktober 2026, Förderung inkl. Hinweis 2027, Mieterhöhung § 559e BGB, 20-Jahres-Vergleich), 2 neue FAQ (10 gesamt), Quellenliste mit 21 Quellen
+- `src/lib/api/blog.ts`, `pelletheizung-kosten-2026`: Einleitung beginnt mit den Kosten, neuer Excerpt (nur Zahlen aus dem Artikel)
+
+### Gate 1: Fachliche Pruefung
+- Pruefer: hvac-content (drei unabhaengige Laeufe) + Web-Stichprobe der Quellen (general-purpose, eigener Kontext)
+- Runde 1: 3/10 APPROVED, 7 REJECTED (u. a. erfundene Asbest-Austauschpflicht, unbelegte kommunale Satzungen, Mietminderung, „Genehmigung des Verwalters“ statt WEG-Beschluss, unfaires Label „Beste Alternative“, Luft-Luft-Preisbasis, fehlender Hinweis 2027) → 66 Korrekturen angewendet
+- Web-Stichprobe: alle Zahlen gegen die zitierten Quellen bestaetigt (§ 41a Abs. 2 EnWG, co2online, Fraunhofer ISE, VZ NRW/RLP, UBA, BAFA, ADAC, Finanztip); 5 Wortlaut-Korrekturen angewendet
+- Runde 2: 5/7 APPROVED, 2 PFLICHT (Preisbasis Schnelluebersicht, „hoechste Investition“) → 19 Korrekturen angewendet; § 42 GModG gegen gesetze-im-internet.de gelesen
+- Runde 3: E2, E3 APPROVED → alle 10 Einheiten APPROVED; 4 optionale Praezisierungen angewendet
+- Status: APPROVED
+
+### Gate 2: Kontaktdaten-Validierung
+- Pruefer 1: Implementierer — `git diff -U0` enthaelt 0 hinzugefuegte und 0 entfernte Zeilen mit `CONTACT`, `tel:`, `mailto:`, `+49` oder `@heizcenter`
+- Pruefer 2: hvac-content (Runden 1–3) — CTA nur ueber `${CONTACT.PHONE_LINK|PHONE_DISPLAY|EMAIL}`, keine Literale
+- Gefundene Kontaktdaten: keine geaenderten; CTA unveraendert aus `contact.ts`
+- Status: NICHT AUSGELOEST (keine Kontaktdaten-Aenderung)
+
+### Ergebnis
+COMMIT FREIGEGEBEN
