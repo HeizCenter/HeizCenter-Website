@@ -20,7 +20,6 @@ type Partner = {
   description: string;
   badge: string;
   highlights: string[];
-  logoExt?: "svg" | "png";
 };
 
 const partners: Partner[] = [
@@ -72,7 +71,6 @@ const partners: Partner[] = [
     description: "Wärmepumpe LAMBDA EUREKA (Modelle EU10L, EU13L, EU15L, EU20L und EU35L). Patentierter 3K-Prozess. SCOP bis 6,1, Vorlauf bis 70 °C ohne Heizstab. Hersteller mit Sitz in Remagen – ideal für Neubau & Altbau-Sanierung.",
     badge: "3K-Prozess",
     highlights: ["SCOP bis 6,1", "Bis 70 °C VL", "R290 Kältemittel"],
-    logoExt: "png",
   },
 ];
 
@@ -123,7 +121,7 @@ export default function PartnerPage() {
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src={`/images/partners/${partner.slug}.${partner.logoExt ?? "svg"}`}
+                  src={`/images/partners/${partner.slug}.svg`}
                   alt={`${partner.name} Logo`}
                   className="w-auto h-auto max-h-12"
                 />

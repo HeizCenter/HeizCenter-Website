@@ -161,7 +161,7 @@ export default function ZewothermPage() {
         badge="3K-Prozess · SCOP 6,1"
         imageSrc="/images/partners/zewotherm/lambda-hero.jpg"
         imageAlt="ZEWOTHERM Wärmepumpe LAMBDA EU35L vor modernem Gebäude – installiert von HeizCenter"
-        logoSrc="/images/partners/zewotherm.png"
+        logoSrc="/images/partners/zewotherm.svg"
       />
 
       <FeaturesSection
