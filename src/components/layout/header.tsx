@@ -118,6 +118,7 @@ export function Header() {
                     href={`https://wa.me/${CONTACT.WHATSAPP_MOBILE}`}
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={() => setMenuOpen(false)}
                     className="flex items-center gap-2 text-lg font-medium transition-colors hover:text-[#0F5B78]"
                   >
                     <MessageCircle className="h-5 w-5" />

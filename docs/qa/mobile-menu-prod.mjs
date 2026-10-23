@@ -38,6 +38,13 @@ await p.getByRole('dialog').getByRole('link', { name: 'Ratgeber', exact: true })
 await p.waitForURL('**/blog', { timeout: 15000 });
 await p.waitForTimeout(600);
 res.secondRound = { path: new URL(p.url()).pathname, dialogs: await p.locator('[role="dialog"]').count() };
+// dritte Runde (Verifier-Befund 23.10.): WhatsApp öffnet einen neuen Tab — das Menü auf der Seite muss trotzdem zugehen
+await p.getByRole('button', { name: 'Toggle menu' }).click();
+await p.getByRole('dialog').waitFor({ state: 'visible' });
+const [popup] = await Promise.all([ctx.waitForEvent('page'), p.getByRole('dialog').getByRole('link', { name: 'WhatsApp' }).click()]);
+await p.waitForTimeout(600);
+res.whatsappRound = { popupHost: new URL(popup.url()).host, dialogs: await p.locator('[role="dialog"]').count() };
+await popup.close();
 await p.screenshot({ path: process.env.S + '/mobile-after-nav.png' });
 // Desktop-Gegenprobe: Textlogo-freie Leiste, Nav sichtbar
 const d = await b.newPage({ viewport: { width: 1280, height: 800 } });
@@ -48,6 +55,7 @@ await b.close();
 console.log(JSON.stringify(res, null, 1));
 const ok = res.dialogsAfterConsent === 0 && res.logoVisible && Math.round(res.logoBox.height) === 32 && res.headerTextFallback === 0
   && res.dialogOpenAfterClick && res.pathAfterNav === '/solar' && res.dialogCountAfterNav === 0 && !res.bodyScrollLocked
-  && res.secondRound.path === '/blog' && res.secondRound.dialogs === 0;
+  && res.secondRound.path === '/blog' && res.secondRound.dialogs === 0
+  && /(^|\.)(wa\.me|whatsapp\.com)$/.test(res.whatsappRound.popupHost) && res.whatsappRound.dialogs === 0; // wa.me leitet auf api.whatsapp.com weiter
 console.log(ok ? 'RESULT: PASS' : 'RESULT: FAIL');
 process.exit(ok ? 0 : 1);
