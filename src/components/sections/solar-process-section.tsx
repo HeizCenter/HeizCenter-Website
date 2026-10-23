@@ -510,7 +510,7 @@ export function SolarProcessSection() {
 
         {/* CTA Section */}
         <div className="mt-16 text-center">
-          <div className="inline-flex flex-col sm:flex-row items-center gap-4 p-6 bg-gradient-to-r from-primary/5 via-transparent to-solar/5 rounded-2xl border border-slate-200">
+          <div className="flex w-full flex-col items-center gap-4 p-6 sm:inline-flex sm:w-auto sm:flex-row bg-gradient-to-r from-primary/5 via-transparent to-solar/5 rounded-2xl border border-slate-200">
             <div className="text-center sm:text-left">
               <p className="font-semibold text-slate-800">
                 Bereit für den ersten Schritt?
@@ -519,14 +519,14 @@ export function SolarProcessSection() {
                 Kostenlose Beratung – unverbindlich und persönlich
               </p>
             </div>
-            <div className="flex gap-3">
-              <Button asChild variant="outline" size="lg">
+            <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
+              <Button asChild variant="outline" size="lg" className="w-full sm:w-auto">
                 <Link href={getPhoneLink()} className="gap-2">
                   <Phone className="w-4 h-4" />
                   Anrufen
                 </Link>
               </Button>
-              <Button asChild size="lg" className="gap-2">
+              <Button asChild size="lg" className="w-full gap-2 sm:w-auto">
                 <Link href="/kontakt?tab=quote&service=solar">
                   Beratung starten
                   <ArrowRight className="w-4 h-4" />
