@@ -1528,3 +1528,17 @@ keine
 | `src/app/partner/page.tsx`, `src/app/waermepumpe/page.tsx` | HEC-158 |
 | `VALIDATION_REPORT.md` | Eintrag 2026-10-21 (HEC-159) |
 Agents: Blog-Agent (frontend/general), hvac-content (Gate 1, 3 Läufe), tester (Gate 2)
+
+## Session 2026-10-23 (Aufräumen)
+
+### Completed
+- [x] ZEWOTHERM-Logo PNG → SVG (`9c6ff12`): Vektor aus dem Icon-Sprite von zewotherm.com (`#zewotherm-logo`), Farbe `#0069b4` aus dem alten PNG; `logoExt`-Override entfernt, PNG gelöscht; tsc + lint grün, Dev-Server-Screenshot /partner (232×42) und /partner/zewotherm (267×48)
+- [x] Website-`CLAUDE.md` eingecheckt (`486b825`), Kontaktdaten = `contact.ts`
+- [x] Status-Note korrigiert: HEC-158/159/160 sind seit 22.10. Done
+
+### Offene Punkte
+- [ ] Push beider Commits (= Prod-Deploy), danach Deployment prüfen
+
+### Geaenderte Dateien
+`public/images/partners/zewotherm.svg` (neu), `public/images/partners/zewotherm.png` (gelöscht), `src/app/partner/page.tsx`, `src/app/partner/zewotherm/page.tsx`, `CLAUDE.md`
+Agents: keine
