@@ -1537,7 +1537,7 @@ Agents: Blog-Agent (frontend/general), hvac-content (Gate 1, 3 Läufe), tester (
 - [x] Status-Note korrigiert: HEC-158/159/160 sind seit 22.10. Done
 
 ### Offene Punkte
-- [ ] Push beider Commits (= Prod-Deploy), danach Deployment prüfen
+- [x] Push beider Commits (Prod-Deploy geprüft, am Abend)
 
 ### Geaenderte Dateien
 `public/images/partners/zewotherm.svg` (neu), `public/images/partners/zewotherm.png` (gelöscht), `src/app/partner/page.tsx`, `src/app/partner/zewotherm/page.tsx`, `CLAUDE.md`
@@ -1553,11 +1553,14 @@ Agents: keine
 - [x] Tickets neu: HEC-179 (dünne Standortseiten), HEC-180 (Jahreswechsel 08.01.2027), HEC-181 (Notdienst/GEG-Widersprüche); Kommentar HEC-161 (Wertschöpfungsbonus Q1 2027); ZEWOTHERM-Logo SVG + CLAUDE.md (`9c6ff12`, `486b825`, `3dc728c`)
 - [x] **Search Console angebunden** (Composio `google_search_console`, Konto jev.noskov@gmail.com → `sc-domain:heizcenter.de`; jevolution.de getrennt unter info@jevolution.de, nur in `/jevolution`): 16 Monate + 90 Tage ausgewertet → `docs/seo/gsc_2026-10.md` (Klicks Jun 881 → Okt ≈ 520, CTR 0,5–0,8 % bei Pos. 7–10, Blog 80 %, Cluster „Förderung Klimaanlage“ ~10 k Impr. ohne Artikel → **HEC-182**); Sitemap neu eingereicht; 3 neue Artikel „Google nicht bekannt“, /standorte/leutkirch nicht indexiert
 - [x] **GA4 angebunden** (Composio `google_analytics`, info@jevolution.de, `properties/559110715`): seit 21.10. 68 Sessions, Lead-Events 6, alle „direct“ attribuiert; Schlüsselereignisse nur Ads-Lifecycle (`qualify_lead`, `close_convert_lead`, `purchase`) — Website-Events unmarkiert, API readonly → Zuarbeit Jev/Ads; Zugänge in `/heizcenter` dokumentiert
+- [x] **HEC-183 angelegt** (Transparenz für Andrej): cookiefreier Klickzähler Anruf/WhatsApp/E-Mail → n8n-Wochenbericht mit LLM-Interpretation (Zahlen-Firewall) → Hermes-Tool `website_report` → Fähigkeiten-Seite (§11); Umsetzung nächste Session
+- [x] **HEC-184 In Review** (`dcf6f14`, `ad1c89e`; Jev mobil: Menü blieb nach Seitenwechsel offen, Leiste zeigte Text): Sheet kontrolliert (schließt bei Link-Klick + `usePathname`-Wechsel), `public/images/logo-blue.svg` = Wortmarke + Dach aus `logo.svg` in `#0F5B78` ohne Claim-Zeile (der gelbe Pfad enthielt Claim **und** „Center“ — nach Subpfad-Startkoordinate getrennt) statt Text; Prod-Playwright 375×812 grün (`docs/qa/mobile-menu-prod.mjs`); Cookie-Hinweis ist selbst `role=dialog` → im Test zuerst „Ablehnen“
 
 ### Offene Punkte
-- [ ] Jev: Search-Console-OAuth (Composio) → `docs/seo/gsc_2026-10.md`; Bing Webmaster Tools; Entitätsdaten; HEC-177-Wirkungsnachweis (GSC-Klicks bis 06.11.)
+- [ ] Jev: HEC-184 auf dem Handy ansehen; GA4-Editor-Rolle (Andrej) → 4 Website-Ereignisse als Schlüsselereignisse markieren; Bing Webmaster Tools; Entitätsdaten; „Indexierung beantragen“ für die 3 neuen URLs; HEC-177-Wirkungsnachweis (GSC-Klicks bis 06.11.)
+- [ ] Nächste Session: HEC-183 zuerst (Klickzähler + Wochenbericht + Hermes-Tool), dann HEC-182 (Artikel „Förderung Klimaanlage“ + Title-Schärfung)
 - [ ] HEC-181 Rest (Andrej: Paketlogik Wartungsvertrag/Notdienst), HEC-179, HEC-180, Quartals-Re-Audit-Altlasten (siehe VALIDATION_REPORT 23.10., Gate-1-Anmerkungen)
 
 ### Geaenderte Dateien
-`src/app/robots.ts`, `src/app/sitemap.ts`, `src/app/blog/[slug]/page.tsx`, `src/app/blog/kategorie/[category]/page.tsx`, `src/app/llms.txt/route.ts` (neu), `src/components/schema/*`, `src/app/partner/*/page.tsx` (Ratings), `tailwind.config.ts`, `src/app/globals.css`, `src/lib/api/blog.ts` (+3 Artikel, 9 Updates, `enhanceBlogContent`, `getCategorySlug`, `updated`), `src/app/foerderung/page.tsx`, `src/app/notdienst/page.tsx`, `public/273baa…txt`, `docs/seo/*`, `VALIDATION_REPORT.md`, `CLAUDE.md`
-Agents: seo-specialist (Audit), general-purpose (Themenrecherche, 3 Writer, 1 Updater, 5 Fixer), code-reviewer, hvac-content ×6 (Gate 1), tester (Gate 2), linear-verifier ×2
+`src/app/robots.ts`, `src/app/sitemap.ts`, `src/app/blog/[slug]/page.tsx`, `src/app/blog/kategorie/[category]/page.tsx`, `src/app/llms.txt/route.ts` (neu), `src/components/schema/*`, `src/app/partner/*/page.tsx` (Ratings), `tailwind.config.ts`, `src/app/globals.css`, `src/lib/api/blog.ts` (+3 Artikel, 9 Updates, `enhanceBlogContent`, `getCategorySlug`, `updated`), `src/app/foerderung/page.tsx`, `src/app/notdienst/page.tsx`, `public/273baa…txt`, `docs/seo/*`, `VALIDATION_REPORT.md`, `CLAUDE.md`, `src/components/layout/header.tsx`, `public/images/logo-blue.svg` (neu), `docs/qa/mobile-menu-prod.mjs` (neu)
+Agents: seo-specialist (Audit), general-purpose (Themenrecherche, 3 Writer, 1 Updater, 5 Fixer), code-reviewer, hvac-content ×6 (Gate 1), tester (Gate 2), linear-verifier ×3
