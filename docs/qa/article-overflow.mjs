@@ -4,7 +4,8 @@
 import { webkit, chromium, devices } from '/Users/Q285389/.npm-global/lib/node_modules/playwright/index.mjs';
 import { readFileSync } from 'node:fs';
 const base = process.env.BASE || 'http://localhost:3124';
-const urls = readFileSync(process.env.URLS, 'utf8').trim().split('\n');
+const urls = readFileSync(process.env.URLS, 'utf8').trim().split('\n').filter(Boolean);
+if (urls.length < 10) { console.log(`RESULT: FAIL (nur ${urls.length} URLs)`); process.exit(1); }
 const delay = Number(process.env.DELAY || 0);
 const probe = () => {
   const iw = innerWidth, sw = document.documentElement.scrollWidth; const over = [];
@@ -22,7 +23,7 @@ let fail = 0;
 const b = await webkit.launch();
 for (const [label, opts] of [['WebKit 430', { ...devices['iPhone 15 Pro Max'] }], ['WebKit 375', { viewport: { width: 375, height: 812 }, deviceScaleFactor: 3, isMobile: true, hasTouch: true, userAgent: devices['iPhone 15 Pro Max'].userAgent }]]) {
   const ctx = await b.newContext(opts); const p = await ctx.newPage(); const bad = []; let scrollingTables = 0, wrappersTotal = 0, tablesTotal = 0;
-  for (const u of urls) { await p.goto(base + u, { waitUntil: 'load' }); await p.waitForTimeout(150 + delay);
+  for (const u of urls) { const res = await p.goto(base + u, { waitUntil: 'load' }); if (!res || res.status() >= 400) { bad.push(`${u} HTTP ${res ? res.status() : '–'}`); continue; } await p.waitForTimeout(150 + delay);
     const r = await p.evaluate(probe); wrappersTotal += r.wrappers; tablesTotal += r.tables; scrollingTables += r.scrolling;
     if (r.sw > r.iw || r.n) bad.push(`${u} sw=${r.sw}/${r.iw} n=${r.n}\n   ` + r.over.join('\n   ')); }
   console.log(`=== ${label}: ${bad.length}/${urls.length} Seiten mit Überlauf · Tabellen ${tablesTotal}, Wrapper ${wrappersTotal}, davon scrollend ${scrollingTables}`); if (bad.length) { console.log(bad.join('\n')); fail++; }
