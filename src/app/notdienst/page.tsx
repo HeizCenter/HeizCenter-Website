@@ -61,7 +61,7 @@ export default function NotdienstPage() {
               </div>
             </div>
             <p className="text-sm mt-4 text-white/70">
-              Bei lebensbedrohlichen Situationen (z.B. Gasgeruch, Wasserrohrbruch) rufen Sie bitte sofort an.
+              Bei Gasgeruch: keine Schalter betätigen, Fenster öffnen, Gashahn zu (wenn gefahrlos erreichbar), Haus verlassen und von außen die Störungsnummer des Gasnetzbetreibers oder die Feuerwehr anrufen – erst danach uns. Bei Wasserrohrbruch rufen Sie bitte sofort an.
             </p>
           </div>
         </div>
@@ -114,8 +114,8 @@ export default function NotdienstPage() {
           <div className="grid md:grid-cols-2 gap-6">
             {[
               "Heizungsausfall im Winter",
-              "Rohrbruch oder Wassersch aden",
-              "Gasgeruch",
+              "Rohrbruch oder Wasserschäden",
+              "Gasgeruch – erst von außen Gasnetzbetreiber oder Feuerwehr anrufen, dann uns",
               "Heizung macht laute Geräusche",
               "Wasser läuft nicht ab",
               "Keine Warmwasserversorgung",

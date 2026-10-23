@@ -5,7 +5,7 @@ Next.js 14+, TypeScript, Tailwind CSS, deployed on Vercel.
 ## Domain Context
 
 HeizCenter ist ein deutsches HVAC-Unternehmen mit:
-- 2 Standorten: Bobingen (Bayern), Gutenzell-Huerbel (Baden-Wuerttemberg)
+- 3 Standorten: Bobingen und Klosterlechfeld (Bayern), Gutenzell-Huerbel (Baden-Wuerttemberg)
 - Services: Waermepumpe, Heizung, Sanitaer, Klimaanlage, Solar
 - 24 Service-Staedte in Bayern und Baden-Wuerttemberg
 - BEG/KfW Foerderberatung

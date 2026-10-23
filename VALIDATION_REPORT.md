@@ -1,3 +1,41 @@
+# Content Validation Report - 2026-10-23 (HEC-177)
+
+## Blog Q4/2026: 3 neue Artikel + Fakten-Update von 9 Bestandsartikeln, /foerderung, /notdienst (Gasgeruch)
+
+### Anlass
+Traffic-Analyse 23.10.2026 (Vercel Analytics: Blog = 72–83 % der Besucher, letzter neuer Artikel 15.03., Besucher Juni 2.186 → Oktober ~930) + Themenrecherche (Google-Suggest, Quellen 2026). Entscheid Claude Code (Vorgabe Jev „selbst entscheiden“): Heizungsförderung 2027 (Stichtag 31.01.2027, angekündigter Wertschöpfungsbonus), Ölheizung 2027 (behalten oder umrüsten), Heizung springt nicht an (Saison, Notdienst nur für Wartungskunden). Fakten-Updates: DEPI-Pelletpreis Oktober 2026, Verivox-Gaspreis 12,7 ct, Bundestag 15.10.2026 (CO₂ 55–65 €/t auch 2027, ETS 2 ab 2028), DUH-Verfassungsbeschwerde/BVerfG-Organklage, § 42a-Frist 01.12.2026, KfW-PM 08.07.2026 (Wertschöpfungsbonus angekündigt).
+
+Fachliche Quellen: `src/lib/config/foerderung.ts` (verbindlich für Fördersätze), kfw.de/458 (23.10.2026), KfW-PM 08.07.2026, bundestag.de Textarchiv kw42 (15.10.2026) + hib 646/2026, gesetze-im-internet.de § 42a/§ 72, gmodg.bund.de, UBA-Emissionsfaktoren, heizoel24 (23.10.2026), DEPI (Oktober 2026), Verivox (Oktober 2026), Hersteller-Hilfeseiten (Viessmann, Vaillant, Buderus), DVGW, Deutscher Feuerwehrverband („CO macht K.O.“), DEPI Pelletlager, Deutscher Mieterbund, LfU Bayern. Quellenmemos je Artikel und je Patch im Session-Scratch (`articles/*.sources.md`, `fixes-*.md`).
+
+### Geprüfte Änderungen
+- `src/lib/api/blog.ts`: neu `heizungsfoerderung-2027` (id 29), `oelheizung-ersetzen-waermepumpe` (30), `heizung-springt-nicht-an` (31), je mit `faqs` (FAQ-Schema), Slugs ohne Jahr (außer Jahresthema), jede Zahl mit Quelle + Abrufdatum im Text; Updates mit `updated: '2026-10-23'` in pelletheizung-kosten-2026, waermepumpe-vs-gasheizung-vergleich-2026, waermepumpe-vs-pelletheizung-vergleich-2026, gasheizung-kosten-2026, heizung-vergleich-2026-waermepumpe-gas-oel-pellets, heizungsgesetz-2024, beg-foerderung-2026, foerderung-heizung-2026, waermepumpe-kosten-2026 (Preise, CO₂-Doppelzählung im Gaspreis entfernt, Betriebskosten-Tabelle auf 15.000-kWh-Basis der TCO-Tabelle, absolute Zusagen „Festpreis/übernehmen den Antrag/garantiert/Anspruch“ entfernt, unbelegte Kennzahlen neutralisiert).
+- `src/app/foerderung/page.tsx`: Hinweis Wertschöpfungsbonus (angekündigt, Details ausstehend), GModG-Kasten statt „GMG in Abstimmung“, Stand Oktober 2026, „nach heutigem Stand … abhängig von Bundesmitteln“.
+- `src/app/notdienst/page.tsx` (HEC-181, sicherheitsrelevant vorgezogen): Gasgeruch-Reihenfolge (keine Schalter, lüften, Gashahn zu, Haus verlassen, von außen Netzbetreiber/Feuerwehr, erst danach HeizCenter), Tippfehler „Wasserschäden“.
+- `CLAUDE.md`: 3 Standorte.
+
+### Gate 1: Fachliche Prüfung
+- **Prüfer:** hvac-content — je neuer Artikel ein Lauf + ein Lauf für die Updates; Korrekturen als Patches (old → new, jeder Anker genau 1×; 207 + 56 Ersetzungen) durch general-purpose-Agenten mit Quellenabruf
+- **Lauf 1 (4 Prüfungen):** REJECTED — Notfall 3 Blocker (Gasgeruch-Ablauf vor die Checkliste, Pumpen-Selbsthilfe, „inklusive Notdienst“) + 10; Förderung 5 Blocker (Partner-Herkunft, „Zusage ist sicher“, Gutenzell = BW, Grundförderung/Enddatum, Fahrplan-Zeile) + 16; Ölheizung 4 Blocker (Förderung „sicher“, „inkl. Förderantrag“, Tank-Zusagen, Tank leerfahren) + 16; Updates 2 Blocker (DUH-Satz, CO₂ im Heizölpreis) + 16
+- **Lauf 2 (Re-Check aller Patches):** REJECTED — 3 Blocker (alte Zahl neben neuer in vs-Pellet/vs-Gas) + 17 (Altzusagen in Bestandsartikeln, heizung-vergleich-Zahlen)
+- **Lauf 3 (Abschluss):** REJECTED — 4 Blocker nur noch in heizung-vergleich (Umfeld der neu basierten Betriebskosten-Tabelle) + 6
+- **Lauf 4 (heizung-vergleich, S5, S6):** **APPROVED** — Rechenprobe 1.400/1.550/2.400/2.400 € = TCO-Betrieb ÷ 20, 0 Altwerte, FAQ = faqs[], HTML balanciert
+- **Anmerkungen:** Entscheidungen konservativ: keine Werksstandorte der Partner, keine „sicher/garantiert“-Förderaussagen (KfW: kein Rechtsanspruch), keine Tank-/Festpreis-/„inkl. Antrag“-Zusagen (Site: BzA von HeizCenter, Antrag stellt der Eigentümer), Bundesrat/Verkündung nicht behauptet. Folgetickets: HEC-181 (Service-/Standortseiten; zusätzlich `components/forms/emergency-form.tsx` und Gasgeruch-Hinweise ohne Wartungskunden-Vorbehalt auf standorte/augsburg, bobingen, gutenzell-huerbel, ulm, click-to-call.tsx, cta-banner.tsx); Quartals-Re-Audit: waermepumpe-vorteile-nachteile-2026 (925 €/26.000 €, „übernimmt die Förderabwicklung … Garantiert“, „Über 500 Wärmepumpen“, „Über 800 Heizungsinstallationen“), heizung-vergleich (Wartung 20 J., PV-Block, Amortisation 4–6 J.), vsG „~0,5 t/Jahr“.
+
+### Gate 2: Kontaktdaten-Validierung
+- **Prüfer 1:** Claude (Implementierer) — Regex über 1.009 hinzugefügte Diff-Zeilen: 0 Telefon, 0 E-Mail, 0 Straße; 4 fünfstellige Treffer = DIN EN 12831/URL-IDs; `${CONTACT.*}` 12×
+- **Prüfer 2:** tester-Agent — unabhängig: nur `${CONTACT.PHONE_LINK|PHONE_DISPLAY|EMAIL}` in 3 CTA-Blöcken (+3 je Konstante gegenüber HEAD), 0 Literale, 0 Notrufnummern, Standorte/Bundesländer konsistent mit `locations.ts`
+- **Übereinstimmung mit contact.ts:** JA
+- **Status:** APPROVED
+
+### Technische Prüfung
+- `tsc --noEmit`: 0 Fehler · `next build`: erfolgreich, 30 Artikel + 6 Kategorien prerendered
+- Lokal (`next start`): 3 neue URLs 200, JSON-LD BreadcrumbList/BlogPosting/FAQPage parsebar, 8/10/12 interne Links, FAQ 6/6/8; /foerderung „Stand der Informationen: Oktober 2026“; Screenshots Fördertabelle und Gasgeruch-Box/Checkliste geprüft
+
+### Ergebnis
+COMMIT FREIGEGEBEN
+
+---
+
 # Content Validation Report - 2026-10-21 (HEC-159)
 
 ## Förder-Update KfW 458 auf Stand Merkblatt 09/2026 (Website, Rechner, Blog)

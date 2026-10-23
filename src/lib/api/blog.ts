@@ -285,6 +285,909 @@ export async function getRelatedPosts(postId: number, limit: number = 3): Promis
 function getMockBlogPosts(): BlogPost[] {
   return [
     {
+      id: 29,
+      slug: 'heizungsfoerderung-2027',
+      title: 'Heizungsförderung 2027: Stichtag 31.01.2027 & Wertschöpfungsbonus',
+      excerpt: 'Heizungsförderung 2027: Bis 31.01.2027 gelten noch 16 % Klimabonus und 28.000 € Höchstbetrag. Was der angekündigte Wertschöpfungsbonus ändern könnte.',
+      content: `
+            <p class="text-xl leading-relaxed text-slate-600 mb-8">Wer in Augsburg, Ulm, Memmingen oder Landsberg für 2027 eine Wärmepumpe plant, hat ein Datum im Kalender: den 31. Januar 2027. Bis dahin gelten für den KfW-Zuschuss noch 16 % Klimageschwindigkeitsbonus und 28.000 € förderfähige Kosten – ab dem 1. Februar sinken beide Werte, danach jedes halbe Jahr weiter. Dazu hat die Bundesregierung am 8. Juli 2026 Eckpunkte für einen „Wertschöpfungsbonus“ für EU-gefertigte Wärmepumpen im ersten Quartal 2027 veröffentlicht, die die KfW wiedergibt. Dieser Artikel trennt, was heute gilt, was nur angekündigt ist und was die Frist in Euro bedeutet.</p>
+    
+            <p class="text-sm text-slate-500 mb-6">Stand: 23. Oktober 2026 – alle Förderwerte am selben Tag gegen kfw.de/458 geprüft.</p>
+    
+            <div class="flex flex-wrap gap-4 mb-8 text-sm text-slate-600">
+              <span class="flex items-center gap-1">✓ 3 Standorte in Bayern &amp; BW</span>
+              <span class="flex items-center gap-1">✓ Beratung + Bestätigung zum Antrag (BzA)</span>
+              <span class="flex items-center gap-1">✓ Partner: Viessmann, Vaillant, Buderus, Wolf, Bosch, Daikin, ZEWOTHERM</span>
+            </div>
+    
+            <div class="highlight-quote">
+              Für die Frist zählt der KfW-Antrag, nicht der Einbau. Wer als Selbstnutzer mit passender Altheizung bis 31.01.2027 beantragt, kann bei mindestens 28.000 € förderfähigen Kosten ohne Einkommensbonus mit 12.880 € rechnen – ab 01.02.2027 sind es 11.445 €. Der Wertschöpfungsbonus ist nur angekündigt; für EU-gefertigte Wärmepumpen bliebe der Gesamtsatz bei 30 % – Warten bringt nach heutigem Stand nichts.
+            </div>
+    
+            <h2>Was gilt heute? Die Heizungsförderung im Oktober 2026</h2>
+    
+            <p>Seit dem 21. Juli 2026 gelten neue Bedingungen für den KfW-Zuschuss 458, zusammengefasst in der <a href="https://www.kfw.de/%C3%9Cber-die-KfW/Newsroom/Aktuelles/Pressemitteilungen-Details_900928.html" target="_blank" rel="noopener">KfW-Pressemitteilung vom 08.07.2026 (abgerufen 23.10.2026)</a>. Der Zuschuss besteht aus einer Grundförderung und – nur für selbstnutzende Eigentümer – aus bis zu zwei Boni:</p>
+    
+            <table class="cost-table">
+              <thead>
+                <tr>
+                  <th>Baustein</th>
+                  <th>Fördersatz</th>
+                  <th>Für wen</th>
+                  <th>Bedingung</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Grundförderung</strong></td>
+                  <td class="price">30 %</td>
+                  <td>alle Antragsteller, auch Vermieter</td>
+                  <td>bestehendes Wohngebäude, kein Neubau</td>
+                </tr>
+                <tr>
+                  <td><strong>Klimageschwindigkeitsbonus</strong></td>
+                  <td class="price">16 %</td>
+                  <td>nur Selbstnutzer</td>
+                  <td>Austausch einer funktionstüchtigen Öl-, Kohle-, Gas-Etagen- oder Nachtstromspeicherheizung bzw. einer mindestens 20 Jahre alten Gas- oder Biomasseheizung; Antrag bis 31.01.2027, danach sinkend</td>
+                </tr>
+                <tr>
+                  <td><strong>Einkommensbonus</strong></td>
+                  <td class="price">40 / 30 / 10 %</td>
+                  <td>nur Selbstnutzer</td>
+                  <td>zu versteuerndes Haushaltsjahreseinkommen bis 30.000 / 40.000 / 50.000 € – Durchschnitt des 2. und 3. Kalenderjahres vor Antragseingang (Antrag 2026: 2023/24, Antrag 2027: 2024/25); mit mindestens einem minderjährigen, kindergeldberechtigten Kind steigt jede Grenze einmalig um 10.000 € (nicht je Kind)</td>
+                </tr>
+                <tr>
+                  <td><strong>Obergrenze</strong></td>
+                  <td class="price">70 % (80 %)</td>
+                  <td>je Wohneinheit</td>
+                  <td>80 % nur mit dem 40-%-Einkommensbonus</td>
+                </tr>
+                <tr>
+                  <td><strong>Höchstbetrag der förderfähigen Kosten</strong></td>
+                  <td class="price">28.000 €</td>
+                  <td>1. Wohneinheit</td>
+                  <td>Obergrenze der Kosten, auf die der Fördersatz angewendet wird – nicht der maximale Zuschuss; 15.000 € je 2.–6. Wohneinheit, 8.000 € ab der 7.</td>
+                </tr>
+              </tbody>
+            </table>
+    
+            <p>Quelle: <a href="https://www.kfw.de/inlandsfoerderung/Privatpersonen/Bestehende-Immobilie/F%C3%B6rderprodukte/Heizungsf%C3%B6rderung-f%C3%BCr-Privatpersonen-Wohngeb%C3%A4ude-(458)/" target="_blank" rel="noopener">KfW, Heizungsförderung 458 (abgerufen 23.10.2026)</a>. Dort heißt es: „Der Zuschuss setzt sich aus der Grundförderung von 30 % und für selbstnutzende Eigentümer gegebenenfalls aus einer oder mehreren Bonusförderungen zusammen.“ Vermieter erhalten also nur die 30 %. Details: <a href="/foerderung" class="text-[#0F5B78] font-medium hover:underline">Förderseite</a> und <a href="/blog/beg-foerderung-2026" class="text-[#0F5B78] font-medium hover:underline">BEG-Förderung 2026</a>.</p>
+    
+            <h2>Was ändert sich am 1. Februar 2027?</h2>
+    
+            <p>Zwei Werte sinken halbjährlich. Die KfW auf der Produktseite 458 (abgerufen 23.10.2026):</p>
+    
+            <ul>
+              <li><strong>Klimageschwindigkeitsbonus:</strong> „Er sinkt erstmalig zum 01.02.2027 und danach halbjährlich zum 01.02. und 01.08. eines jeden Jahres um 4 %. Für Antragstellungen ab dem 01.08.2028 wird kein Klimageschwindigkeitsbonus mehr gewährt.“</li>
+              <li><strong>Höchstbetrag der förderfähigen Kosten:</strong> „Der Förderhöchstbetrag für die erste Wohneinheit sinkt erstmalig am 01.02.2027 und danach halbjährlich zum 01.02. und 01.08. eines jeden Jahres um 750 Euro.“</li>
+            </ul>
+    
+            <p>Daraus folgt rechnerisch dieser Fahrplan für ein Einfamilienhaus (die Zwischenwerte nennt die KfW nicht ausdrücklich):</p>
+    
+            <table class="cost-table">
+              <thead>
+                <tr>
+                  <th>Antrag gestellt</th>
+                  <th>Klimabonus</th>
+                  <th>Höchstbetrag der förderfähigen Kosten (1. WE)</th>
+                  <th>Grund + Klima</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>bis 31.01.2027</strong></td>
+                  <td class="price">16 %</td>
+                  <td class="price">28.000 €</td>
+                  <td class="price">46 %</td>
+                </tr>
+                <tr>
+                  <td>01.02. – 31.07.2027</td>
+                  <td class="price">12 %</td>
+                  <td class="price">27.250 €</td>
+                  <td class="price">42 %</td>
+                </tr>
+                <tr>
+                  <td>01.08.2027 – 31.01.2028</td>
+                  <td class="price">8 %</td>
+                  <td class="price">26.500 €</td>
+                  <td class="price">38 %</td>
+                </tr>
+                <tr>
+                  <td>01.02. – 31.07.2028</td>
+                  <td class="price">4 %</td>
+                  <td class="price">25.750 €</td>
+                  <td class="price">34 %</td>
+                </tr>
+                <tr>
+                  <td>01.08.2028 – 31.01.2029</td>
+                  <td class="price">0 %</td>
+                  <td class="price">25.000 €</td>
+                  <td class="price">30 %</td>
+                </tr>
+              </tbody>
+            </table>
+    
+            <p>Danach sinkt der Höchstbetrag der förderfähigen Kosten laut KfW weiter um 750 € je Halbjahr.</p>
+    
+            <p><strong>Wichtig:</strong> Maßgeblich ist das Datum, an dem Ihr Antrag im Portal „Meine KfW“ eingeht – nicht das Datum des Angebots, des Vertrags oder der Installation.</p>
+    
+            <h2>Rechenbeispiel: Antrag bis 31.01.2027 oder ab 01.02.2027?</h2>
+    
+            <p>Annahmen: Einfamilienhaus im Landkreis Augsburg, Ölheizung raus, Luft-Wasser-Wärmepumpe rein, förderfähige Kosten laut Angebot 30.000 €; Zeilen (a) bis (d) selbst bewohnt, Zeile (e) vermietet. Gerechnet wird mit dem Höchstbetrag der förderfähigen Kosten – der Kostenobergrenze, auf die der Fördersatz angewendet wird, nicht dem maximalen Zuschuss: 28.000 € bis 31.01.2027, 27.250 € ab 01.02.2027.</p>
+    
+            <table class="cost-table">
+              <thead>
+                <tr>
+                  <th>Haushalt</th>
+                  <th>Antrag bis 31.01.2027</th>
+                  <th>Antrag ab 01.02.2027</th>
+                  <th>Differenz</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>(a) ohne Einkommensbonus</strong><br>Einkommen über 50.000 €</td>
+                  <td>30 + 16 = 46 % von 28.000 € = <strong>12.880 €</strong></td>
+                  <td>30 + 12 = 42 % von 27.250 € = <strong>11.445 €</strong></td>
+                  <td class="price">−1.435 €</td>
+                </tr>
+                <tr>
+                  <td><strong>(b) Einkommensbonus 10 %</strong><br>bis 50.000 €</td>
+                  <td>30 + 16 + 10 = 56 % von 28.000 € = <strong>15.680 €</strong></td>
+                  <td>30 + 12 + 10 = 52 % von 27.250 € = <strong>14.170 €</strong></td>
+                  <td class="price">−1.510 €</td>
+                </tr>
+                <tr>
+                  <td><strong>(c) Einkommensbonus 30 %</strong><br>bis 40.000 €</td>
+                  <td>30 + 16 + 30 = 76 % → Deckel 70 % von 28.000 € = <strong>19.600 €</strong></td>
+                  <td>30 + 12 + 30 = 72 % → Deckel 70 % von 27.250 € = <strong>19.075 €</strong></td>
+                  <td class="price">−525 €</td>
+                </tr>
+                <tr>
+                  <td><strong>(d) Einkommensbonus 40 %</strong><br>bis 30.000 €</td>
+                  <td>30 + 16 + 40 = 86 % → Deckel 80 % von 28.000 € = <strong>22.400 €</strong></td>
+                  <td>30 + 12 + 40 = 82 % → Deckel 80 % von 27.250 € = <strong>21.800 €</strong></td>
+                  <td class="price">−600 €</td>
+                </tr>
+                <tr>
+                  <td><strong>(e) Vermieter</strong><br>nur Grundförderung</td>
+                  <td>30 % von 28.000 € = <strong>8.400 €</strong></td>
+                  <td>30 % von 27.250 € = <strong>8.175 €</strong></td>
+                  <td class="price">−225 €</td>
+                </tr>
+              </tbody>
+            </table>
+    
+            <p>Die KfW rechnet in ihrer Pressemitteilung dasselbe wie Zeile (d): Eine Familie mit 40.000 € Einkommen und Kind (Grenze daher 40.000 €) erhält „bis zum 31. Januar 2027 für eine neue Wärmepumpe, die 32.000 Euro kostet, eine Förderung von maximal 22.400 Euro (80 Prozent von 28.000 Euro)“. Alle Beträge sind Rechenbeispiele ohne Gewähr; verbindlich ist allein die Förderzusage der KfW. Ihre eigene Zahl liefert unser <a href="/rechner" class="text-[#0F5B78] font-medium hover:underline">Förder- und Kostenrechner</a> (Werte für Antrag bis 31.01.2027) mit Einkommensstufen; die Investitionskosten in der Region stehen in <a href="/blog/waermepumpe-kosten-2026" class="text-[#0F5B78] font-medium hover:underline">Wärmepumpe Kosten 2026</a>.</p>
+    
+            <h2>Für wen ist die Frist 31. Januar 2027 wirklich wichtig?</h2>
+    
+            <ul>
+              <li><strong>Selbstnutzer ohne oder mit 10 % Einkommensbonus:</strong> größter Verlust – 1.435 bzw. 1.510 €, rund 10 bis 11 % des Zuschusses. Antrag vor dem 1. Februar lohnt sich klar.</li>
+              <li><strong>Selbstnutzer mit 30 % Einkommensbonus:</strong> bis 31.07.2027 schützt der 70-%-Deckel (−525 €). Ab 01.08.2027 greift er nicht mehr: 30 + 8 + 30 = 68 % von 26.500 € = 18.020 €, also 1.580 € weniger als heute.</li>
+              <li><strong>Selbstnutzer mit 40 % Einkommensbonus:</strong> −600 €; ab 01.08.2027 liegt auch hier der rechnerische Satz unter dem 80-%-Deckel.</li>
+              <li><strong>Vermieter:</strong> −225 € je Halbjahr. Risiko: ein nicht in der EU gefertigtes Gerät, falls der Wertschöpfungsbonus so kommt.</li>
+            </ul>
+    
+            <p>Pellet, Hybrid und Fernwärme im Vergleich: <a href="/blog/foerderung-heizung-2026" class="text-[#0F5B78] font-medium hover:underline">Förderung Heizung 2026</a>.</p>
+    
+            <h2>Wertschöpfungsbonus: Was ist angekündigt – und was nicht?</h2>
+    
+            <p>Die Bundesregierung hat am 8. Juli 2026 Eckpunkte veröffentlicht, die die KfW so wiedergibt (Pressemitteilung, abgerufen 23.10.2026): „Im ersten Quartal 2027 soll ein Wertschöpfungsbonus eingeführt werden. Die Grundförderung sinkt dann für alle Wärmepumpen auf 15 Prozent. Gleichzeitig erhalten Wärmepumpen, die innerhalb der EU gefertigt wurden, einen Wertschöpfungsbonus in Höhe von 15 Prozent.“</p>
+    
+            <p>Die Produktseite 458 ist vorsichtiger: Für Wärmepumpen, „die innerhalb der EU und deren assoziierten Märkten produziert wurden“, bleibe die Grundförderung von 30 % „weiterhin möglich“; für Geräte von außerhalb „könnte die Grundförderung beispielsweise auf 15 % sinken“. Und: „Details zum Wertschöpfungsbonus sollen im 2. Halbjahr 2026 durch das BMWE bekanntgegeben werden.“ Am 23.10.2026 stehen diese Details dort noch nicht. Falls der Plan so kommt:</p>
+    
+            <ul>
+              <li><strong>EU-gefertigte Wärmepumpe:</strong> 15 % Grundförderung + 15 % Wertschöpfungsbonus = 30 %. Der Gesamtsatz bliebe damit unverändert.</li>
+              <li><strong>Nicht in der EU gefertigte Wärmepumpe:</strong> nur 15 % Grundförderung – bei 27.250 € förderfähigen Kosten rechnerisch 4.087,50 € weniger Zuschuss.</li>
+              <li><strong>Offen:</strong> der Starttermin im Quartal (auch vor dem 31. Januar möglich), die Definition von „in der EU gefertigt“, weitere Kriterien.</li>
+            </ul>
+    
+            <p><strong>Wichtig:</strong> Der Wertschöpfungsbonus ist eine Ankündigung („soll“), kein geltendes Recht – planen Sie nur mit den Werten, die heute auf kfw.de/458 stehen. Ob ein bestimmtes Modell die künftigen Kriterien erfüllt (Herstellungsort, Wertschöpfungsanteil), klären wir mit dem Hersteller, sobald das BMWE die Details veröffentlicht hat. Wer ein EU-gefertigtes Gerät plant, gewinnt nach heutigem Stand durch Warten nichts – verliert aber am 1. Februar 4 Punkte Klimabonus und 750 € beim Höchstbetrag der förderfähigen Kosten.</p>
+    
+            <h2>Haushalt 2027: Reicht das Geld für die Heizungsförderung?</h2>
+    
+            <p>Die KfW schreibt: „Die Förderung ist abhängig von der Verfügbarkeit von Bundesmitteln. Ein Rechtsanspruch besteht nicht.“ Die Mittel kommen aus dem Klima- und Transformationsfonds (KTF). Der Regierungsentwurf 2027 sieht dort laut <a href="https://www.bundestag.de/presse/hib/kurzmeldungen-1205230" target="_blank" rel="noopener">Bundestag, hib 646/2026 vom 17.08.2026 (abgerufen 23.10.2026)</a> für die „Förderung von Maßnahmen der Energieeffizienz und erneuerbarer Energien im Gebäudebereich“ 12,56 Milliarden Euro vor, „rund 590 Millionen Euro mehr als 2026“; davon entfallen „rund 8,24 Milliarden Euro auf Einzelmaßnahmen der Bundesförderung für effiziente Gebäude“ – zu diesem Programmteil gehört der Zuschuss 458. Beschlossen ist das nicht: Nach dem <a href="https://www.bundestag.de/dokumente/textarchiv/2026/kw34-haushalt-2027-ablauf-1187766" target="_blank" rel="noopener">Zeitplan des Bundestages (abgerufen 23.10.2026)</a> folgen die Bereinigungssitzung des Haushaltsausschusses am 12.11.2026 und die zweite und dritte Lesung mit Schlussabstimmung vom 24. bis 27.11.2026.</p>
+    
+            <p>Bei einer Anhörung des Umweltausschusses am 07.10.2026 (<a href="https://www.bundestag.de/presse/hib/kurzmeldungen-1223068" target="_blank" rel="noopener">Bundestag, hib 786/2026, abgerufen 23.10.2026</a>) warnte das Forum Ökologisch-Soziale Marktwirtschaft, die Deckelung des CO₂-Preises – vom Bundestag am 15.10.2026 beschlossen, Korridor 55–65 €/t auch 2027 (<a href="https://www.bundestag.de/dokumente/textarchiv/2026/kw42-de-brennstoffemissionshandelsgesetz-1223608" target="_blank" rel="noopener">Bundestag, Textarchiv, 15.10.2026, abgerufen 23.10.2026</a>) – reiße 2027 im KTF eine Finanzierungslücke von „schätzungsweise vier Milliarden Euro“. Die KfW erklärte im Juli 2026, bereits bestehende Zusagen behielten ihre Gültigkeit. Wie der Haushalt 2027 ausfällt, entscheidet der Bundestag Ende November.</p>
+    
+            <h2>6 bis 12 Wochen Vorlauf: Reicht die Zeit bis zum 31. Januar?</h2>
+    
+            <p>Ja – wenn Sie jetzt starten. Vom 23.10.2026 bis zum 31. Januar 2027 sind es 100 Tage; je später, desto knapper die Termine für Beratung, Angebot und BzA (der 31.01.2027 ist ein Sonntag; die BzA Ihres Fachbetriebs muss vorliegen – planen Sie Freitag, den 29.01., als letzten Werktag ein). Die Vorlaufzeit bis zur Installation beträgt bei uns aktuell etwa 6 bis 12 Wochen (siehe <a href="/waermepumpe" class="text-[#0F5B78] font-medium hover:underline">Wärmepumpe</a>). Für die Frist zählt aber der Antrag, nicht der Einbau. Die KfW regelt den Vorhabenbeginn so (Produktseite 458, abgerufen 23.10.2026):</p>
+    
+            <ul>
+              <li>„Um einen Antrag stellen zu können, muss ein Lieferungs- oder Leistungsvertrag vorliegen, in dem eine aufschiebende oder auflösende Bedingung enthalten ist. Darin ist mit Ihrem Fachunternehmen vereinbart, dass der Vertrag erst in Kraft tritt, wenn Sie von der KfW eine Förderzusage für Ihr Vorhaben erhalten.“</li>
+              <li>„Ohne diese Bedingung gilt der Vertragsabschluss als schädlicher Vorhabenbeginn.“</li>
+              <li>„Zusätzlich müssen Anträge in jedem Fall vor Beginn der Arbeiten vor Ort gestellt werden.“</li>
+            </ul>
+    
+            <p>Der Einbau darf also nach dem Antrag liegen – im Frühjahr 2027, sobald die Zusage vorliegt; die Bedingung formulieren wir nach dem KfW-Muster.</p>
+    
+            <h3>So läuft es bei HeizCenter ab</h3>
+    
+            <ol>
+              <li><strong>Beratung vor Ort</strong> in Augsburg, Ulm, Memmingen, Landsberg und Umgebung. Für ältere Gebäude: <a href="/blog/waermepumpe-altbau" class="text-[#0F5B78] font-medium hover:underline">Wärmepumpe im Altbau</a>.</li>
+              <li><strong>Angebot mit förderfähigen Kosten</strong> – getrennt ausgewiesen.</li>
+              <li><strong>Vertrag mit aufschiebender Bedingung</strong> – der Vertrag tritt erst in Kraft, wenn die KfW zugesagt hat; bleibt die Zusage aus, wird er nicht wirksam.</li>
+              <li><strong>Bestätigung zum Antrag (BzA)</strong> – erstellen wir als Fachunternehmen.</li>
+              <li><strong>Antrag im Portal „Meine KfW“</strong> – stellen Sie selbst mit der 15-stelligen BzA-ID, vor dem 1. Februar 2027 und vor jedem Handgriff vor Ort.</li>
+              <li><strong>Zusage abwarten, dann Einbau</strong> – mit 6 bis 12 Wochen Vorlauf.</li>
+              <li><strong>Nachweise einreichen</strong> – wer den Einkommensbonus zu den seit 21.07.2026 gültigen Konditionen beantragt hat, kann die Nachweise voraussichtlich erst ab Januar 2027 einreichen.</li>
+            </ol>
+    
+            <p><strong>Wichtig:</strong> In Mehrfamilienhäusern und Eigentümergemeinschaften beantragt die Boni nur der Eigentümer der selbst genutzten Wohneinheit – per Zusatzantrag, spätestens sechs Monate nach Zusage des Basisantrags und vor der Nachweiseinreichung für den Basisantrag.</p>
+    
+            <h2>Gibt es in Bayern eine zusätzliche Landesförderung?</h2>
+    
+            <p>Das frühere Landesprogramm ist beendet: Das bayerische 10.000-Häuser-Programm „wurde am 24.04.2022 nach dem Ausschöpfen der letzten Antragskontingente eingestellt“, „eine Wiederaufnahme des Programms ist nicht vorgesehen“ (<a href="https://www.energieatlas.bayern.de/buerger/10000_haeuser_programm" target="_blank" rel="noopener">Energie-Atlas Bayern, abgerufen 23.10.2026</a>). Ein Nachfolgeprogramm des Freistaats für den Heizungstausch ist uns zum 23.10.2026 nicht bekannt. Für Eigentümer in Bobingen oder Klosterlechfeld zählt deshalb die KfW-Förderung; für Gutenzell-Hürbel (Baden-Württemberg) gilt dieser Abschnitt nicht – Landes- und kommunale Programme prüfen wir im Beratungsgespräch.</p>
+    
+            <h2>Häufig gestellte Fragen (FAQ)</h2>
+    
+            <h3>Wie lange gibt es die Heizungsförderung noch?</h3>
+            <p>Ein Enddatum nennt die KfW auf der Produktseite 458 nicht; prüfen Sie vor dem Antrag die Geltungsdauer der aktuellen Förderrichtlinie. Einen Abbau in Stufen gibt es aber: Der Klimageschwindigkeitsbonus sinkt ab 01.02.2027 halbjährlich um 4 Prozentpunkte und entfällt für Anträge ab 01.08.2028, der Höchstbetrag der förderfähigen Kosten sinkt halbjährlich um 750 €. Die Grundförderung beträgt heute 30 %. Angekündigt ist für das erste Quartal 2027 (Starttermin offen): 15 % für alle Wärmepumpen plus 15 % Wertschöpfungsbonus für EU-gefertigte – Gesamtsatz dann 30 %. Alles unter dem Vorbehalt verfügbarer Bundesmittel; ein Rechtsanspruch besteht nicht.</p>
+    
+            <h3>Was ändert sich bei der Wärmepumpen-Förderung 2027?</h3>
+            <p>Zum 01.02.2027 sinkt der Klimageschwindigkeitsbonus von 16 auf 12 % und der Höchstbetrag der förderfähigen Kosten von 28.000 auf 27.250 €. Für Selbstnutzer ohne Einkommensbonus sind das bei 30.000 € Investition 11.445 statt 12.880 € Zuschuss. Dazu hat die Bundesregierung am 08.07.2026 Eckpunkte für einen Wertschöpfungsbonus im ersten Quartal 2027 veröffentlicht, die die KfW wiedergibt; die Details stehen noch aus.</p>
+    
+            <h3>Zählt für die Frist 31.01.2027 der Antrag oder der Einbau?</h3>
+            <p>Der Antrag im Portal „Meine KfW“. Dafür brauchen Sie einen Vertrag mit aufschiebender oder auflösender Bedingung und die Bestätigung zum Antrag (BzA) Ihres Fachbetriebs. Die Arbeiten vor Ort beginnen erst nach dem Antrag, der Einbau kann nach der Zusage im Frühjahr 2027 erfolgen.</p>
+    
+            <h3>Wie viel Förderung bekomme ich 2027 für eine Wärmepumpe in Bayern?</h3>
+            <p>Für den Heizungstausch ist uns in Bayern kein laufendes Landesprogramm bekannt (das 10.000-Häuser-Programm ist seit 2022 beendet); es zählt die KfW-Förderung: 30 % Grundförderung, für Selbstnutzer plus Klimageschwindigkeitsbonus und je nach Einkommen 10, 30 oder 40 % Einkommensbonus, gedeckelt auf 70 bzw. 80 % der förderfähigen Kosten. Bei Antrag vom 01.02. bis 31.07.2027 beträgt der Klimageschwindigkeitsbonus 12 % und der Höchstbetrag der förderfähigen Kosten 27.250 € (ab 01.08.2027 nur noch 8 % und 26.500 €). Ohne Einkommensbonus sind das 42 %, also 11.445 €; mit 40-%-Bonus maximal 21.800 € – nach heutigem Stand, ohne Rechtsanspruch.</p>
+    
+            <h3>Was ist der Wertschöpfungsbonus?</h3>
+            <p>Laut den Eckpunkten der Bundesregierung vom 08.07.2026, die die KfW in ihrer Pressemitteilung wiedergibt, soll im ersten Quartal 2027 die Grundförderung für alle Wärmepumpen auf 15 % sinken; in der EU gefertigte Wärmepumpen sollen zusätzlich 15 % Wertschöpfungsbonus erhalten – der Gesamtsatz bliebe damit bei 30 %. Der Starttermin ist offen; die Details soll das BMWE bekanntgeben, am 23.10.2026 liegen sie nicht vor. Es ist eine Ankündigung, kein geltendes Recht.</p>
+    
+            <h3>Muss ich den KfW-Antrag selbst stellen?</h3>
+            <p>Ja, der Antrag läuft über Ihr Konto im Portal „Meine KfW“, weil er an die Eigentümerin oder den Eigentümer gebunden ist. HeizCenter liefert vorher das Angebot mit förderfähigen Kosten, den Vertrag mit aufschiebender Bedingung und die BzA mit der 15-stelligen BzA-ID. Legen Sie Ihr Konto im Portal „Meine KfW“ rechtzeitig vor dem Stichtag an; den Antrag selbst stellen Sie dann mit der BzA-ID.</p>
+    
+            <h2>Fazit: Antrag vor dem 1. Februar 2027 – der Einbau kann warten</h2>
+    
+            <p>Die Heizungsförderung 2027 wird nach heutigem Stand nicht abgeschafft, aber Stufe für Stufe kleiner: 4 Punkte Klimabonus und 750 € beim Höchstbetrag der förderfähigen Kosten je Halbjahr. Bei einer 30.000-€-Wärmepumpe kostet der 1. Februar 2027 zwischen 225 € (Vermieter) und 1.510 € (Selbstnutzer mit 10-%-Einkommensbonus); der angekündigte Wertschöpfungsbonus ändert daran nach heutigem Stand nichts. Beratung, Angebot, Vertrag, BzA und Antrag sind bis zum Stichtag machbar, wenn Sie jetzt starten – je später, desto knapper die Termine; der Einbau folgt nach der Zusage – über den Haushalt 2027 entscheidet der Bundestag Ende November.</p>
+    
+            <p><strong>Weiterlesen:</strong></p>
+            <ul>
+              <li><a href="/foerderung" class="text-[#0F5B78] font-medium hover:underline">Förderung im Überblick</a></li>
+              <li><a href="/kontakt" class="text-[#0F5B78] font-medium hover:underline">Beratungstermin anfragen</a></li>
+            </ul>
+    
+            <div class="cta-box">
+              <p class="cta-locations">📍 <strong>Unsere Standorte:</strong> Bobingen (Augsburg) · Gutenzell-Hürbel (Ulm/Memmingen) · Klosterlechfeld</p>
+              <h4>Stichtag 31. Januar: Beratung und BzA jetzt einplanen</h4>
+              <p>Wir kommen zur Bestandsaufnahme, weisen die förderfähigen Kosten aus und erstellen als Fachbetrieb Ihre Bestätigung zum Antrag.</p>
+              <p>
+                <strong>✓</strong> Vor-Ort-Beratung in Augsburg, Ulm, Memmingen, Landsberg und Umgebung<br>
+                <strong>✓</strong> Angebot mit förderfähigen Kosten und Vertrag mit aufschiebender Bedingung<br>
+                <strong>✓</strong> Bestätigung zum Antrag (BzA) für Ihren KfW-Antrag vor dem 01.02.2027 (Termine bis zum Stichtag nach Verfügbarkeit)
+              </p>
+              <p>
+                <strong>Telefon:</strong> <a href="tel:${CONTACT.PHONE_LINK}">${CONTACT.PHONE_DISPLAY}</a><br>
+                <strong>E-Mail:</strong> <a href="mailto:${CONTACT.EMAIL}">${CONTACT.EMAIL}</a>
+              </p>
+            </div>
+          `,
+      category: 'Förderung',
+      author: 'HeizCenter Redaktion',
+      date: '2026-10-23',
+      readingTime: 11,
+      image: '/images/Heizung_Modernisierung.webp',
+      tags: ['Heizungsförderung 2027', 'Wärmepumpe Förderung 2027', 'KfW 458', 'Klimageschwindigkeitsbonus', 'Wertschöpfungsbonus', 'Förderung Bayern', 'BEG'],
+      featured: true,
+      faqs: [
+        { question: 'Wie lange gibt es die Heizungsförderung noch?', answer: 'Ein Enddatum nennt die KfW auf der Produktseite 458 nicht; prüfen Sie vor dem Antrag die Geltungsdauer der aktuellen Förderrichtlinie. Einen Abbau in Stufen gibt es aber: Der Klimageschwindigkeitsbonus sinkt ab 01.02.2027 halbjährlich um 4 Prozentpunkte und entfällt für Anträge ab 01.08.2028, der Höchstbetrag der förderfähigen Kosten sinkt halbjährlich um 750 €. Die Grundförderung beträgt heute 30 %. Angekündigt ist für das erste Quartal 2027 (Starttermin offen): 15 % für alle Wärmepumpen plus 15 % Wertschöpfungsbonus für EU-gefertigte – Gesamtsatz dann 30 %. Alles unter dem Vorbehalt verfügbarer Bundesmittel; ein Rechtsanspruch besteht nicht.' },
+        { question: 'Was ändert sich bei der Wärmepumpen-Förderung 2027?', answer: 'Zum 01.02.2027 sinkt der Klimageschwindigkeitsbonus von 16 auf 12 % und der Höchstbetrag der förderfähigen Kosten von 28.000 auf 27.250 €. Für Selbstnutzer ohne Einkommensbonus sind das bei 30.000 € Investition 11.445 statt 12.880 € Zuschuss. Dazu hat die Bundesregierung am 08.07.2026 Eckpunkte für einen Wertschöpfungsbonus im ersten Quartal 2027 veröffentlicht, die die KfW wiedergibt; die Details stehen noch aus.' },
+        { question: 'Zählt für die Frist 31.01.2027 der Antrag oder der Einbau?', answer: 'Der Antrag im Portal „Meine KfW“. Dafür brauchen Sie einen Vertrag mit aufschiebender oder auflösender Bedingung und die Bestätigung zum Antrag (BzA) Ihres Fachbetriebs. Die Arbeiten vor Ort beginnen erst nach dem Antrag, der Einbau kann nach der Zusage im Frühjahr 2027 erfolgen.' },
+        { question: 'Wie viel Förderung bekomme ich 2027 für eine Wärmepumpe in Bayern?', answer: 'Für den Heizungstausch ist uns in Bayern kein laufendes Landesprogramm bekannt (das 10.000-Häuser-Programm ist seit 2022 beendet); es zählt die KfW-Förderung: 30 % Grundförderung, für Selbstnutzer plus Klimageschwindigkeitsbonus und je nach Einkommen 10, 30 oder 40 % Einkommensbonus, gedeckelt auf 70 bzw. 80 % der förderfähigen Kosten. Bei Antrag vom 01.02. bis 31.07.2027 beträgt der Klimageschwindigkeitsbonus 12 % und der Höchstbetrag der förderfähigen Kosten 27.250 € (ab 01.08.2027 nur noch 8 % und 26.500 €). Ohne Einkommensbonus sind das 42 %, also 11.445 €; mit 40-%-Bonus maximal 21.800 € – nach heutigem Stand, ohne Rechtsanspruch.' },
+        { question: 'Was ist der Wertschöpfungsbonus?', answer: 'Laut den Eckpunkten der Bundesregierung vom 08.07.2026, die die KfW in ihrer Pressemitteilung wiedergibt, soll im ersten Quartal 2027 die Grundförderung für alle Wärmepumpen auf 15 % sinken; in der EU gefertigte Wärmepumpen sollen zusätzlich 15 % Wertschöpfungsbonus erhalten – der Gesamtsatz bliebe damit bei 30 %. Der Starttermin ist offen; die Details soll das BMWE bekanntgeben, am 23.10.2026 liegen sie nicht vor. Es ist eine Ankündigung, kein geltendes Recht.' },
+        { question: 'Muss ich den KfW-Antrag selbst stellen?', answer: 'Ja, der Antrag läuft über Ihr Konto im Portal „Meine KfW“, weil er an die Eigentümerin oder den Eigentümer gebunden ist. HeizCenter liefert vorher das Angebot mit förderfähigen Kosten, den Vertrag mit aufschiebender Bedingung und die BzA mit der 15-stelligen BzA-ID. Legen Sie Ihr Konto im Portal „Meine KfW“ rechtzeitig vor dem Stichtag an; den Antrag selbst stellen Sie dann mit der BzA-ID.' },
+      ],
+    },
+    {
+      id: 30,
+      slug: 'oelheizung-ersetzen-waermepumpe',
+      title: 'Ölheizung 2027: behalten oder auf Wärmepumpe umrüsten?',
+      excerpt: 'Keine Austauschpflicht, aber 172,71 €/100 l Heizöl und CO₂-Preis 55–65 €/t: Was die Ölheizung 2027 kostet, was die Umrüstung bringt – Klimabonus bis 31.01.2027.',
+      content: `
+            <p class="text-xl leading-relaxed text-slate-600 mb-8">Ihre Ölheizung ist 15, 20 oder 30 Jahre alt – und sie läuft noch. Jeden Herbst stellt sich dieselbe Frage: noch einmal Heizöl bestellen, oder ist jetzt der Moment für die Wärmepumpe? Dieser Ratgeber antwortet mit den Zahlen vom 23. Oktober 2026: Rechtslage nach dem GModG, CO₂-Preis 2027 laut Bundestagsbeschluss, Heizölpreis von heute, Umrüstkosten und Förderung – für Altbauten zwischen Augsburg, Landsberg, Ulm und Memmingen.</p>
+    
+            <p class="text-sm text-slate-500 mb-6">Stand: 23. Oktober 2026 – Preise und Bundestagsbeschluss an diesem Tag geprüft, Fördersätze Stand Oktober 2026 (KfW 458).</p>
+    
+            <div class="flex flex-wrap gap-4 mb-8 text-sm text-slate-600">
+              <span class="flex items-center gap-1">✓ 3 Standorte in Bayern &amp; BW</span>
+              <span class="flex items-center gap-1">✓ Hilfe bei der Förderantragstellung</span>
+              <span class="flex items-center gap-1">✓ Partner: Viessmann, Vaillant, Buderus, Wolf, Bosch, Daikin, ZEWOTHERM</span>
+            </div>
+    
+            <div class="highlight-quote">
+              Sie dürfen Ihre funktionierende Ölheizung behalten – eine Austauschpflicht gibt es seit dem GModG nicht mehr. Teuer bleibt sie trotzdem: Heizöl kostet heute 172,71 € je 100 Liter (Preis für 3.000 l Abnahme), der CO₂-Preis steckt mit 17 bis 20,5 Cent je Liter im Preis, ab 2028 ohne nationalen Preiskorridor (Marktpreis im EU-Emissionshandel). Selbstnutzer, die bis zum 31.01.2027 den KfW-Antrag stellen, können mit mindestens 46 % Zuschuss rechnen (Vermieter: 30 %; unter Vorbehalt verfügbarer Bundesmittel) – danach sinkt der Klimabonus halbjährlich.
+            </div>
+    
+            <h2>Ölheizung ab 2027: Was ist beschlossen – und was nicht?</h2>
+    
+            <h3>Keine Austauschpflicht – die 30-Jahre-Regel ist weg</h3>
+    
+            <p>Seit dem 29. Juli 2026 heißt das Gebäudeenergiegesetz offiziell Gebäudemodernisierungsgesetz (GModG). Der frühere § 71 GEG (65-%-Vorgabe) und der frühere § 72 GEG („Betriebsverbote bestimmter Heizungen“, also die frühere 30-Jahre-Regel für alte Konstanttemperaturkessel) sind entfallen (<a href="https://www.gmodg.bund.de/GModG/DE/GModGRegelungen/GModG_neu/GModG_neu-node.html" target="_blank" rel="noopener">GModG-Infoportal des Bundes (gmodg.bund.de), gelesen 23.10.2026</a>). Im Gesetzestext steht § 72 heute als „(weggefallen)“ (<a href="https://www.gesetze-im-internet.de/geg/__72.html" target="_blank" rel="noopener">gesetze-im-internet.de, 23.10.2026</a>). Sie dürfen Ihre Ölheizung also weiter betreiben, reparieren lassen und Verschleißteile tauschen – nach dem GModG ohne Frist; ob für Ihr Gerät andere Vorschriften (z. B. Immissionsschutz, Landesrecht) greifen, klären wir im Einzelfall. Details im <a href="/blog/heizungsgesetz-2024" class="text-[#0F5B78] font-medium hover:underline">Ratgeber zum Heizungsgesetz 2026</a>.</p>
+    
+            <p><strong>Wichtig:</strong> Wer nach dem 29. Juli 2026 eine <em>neue</em> Ölheizung einbaut, muss ab 2029 steigende Bioanteile nachweisen – 10 % ab 2029, 15 % ab 2030, 30 % ab 2035, 60 % ab 2040 (§ 43 GModG) – oder einen Erfüllungsweg wie Solarthermie oder Wärmepumpen-Hybrid wählen. „Öl gegen Öl“ ist keine einfache Verlängerung des Status quo mehr.</p>
+    
+            <h3>CO₂-Preis 2027: Korridor bleibt, EU-Handel kommt 2028</h3>
+    
+            <p>Der Bundestag hat am 15. Oktober 2026 die Änderung des Brennstoffemissionshandelsgesetzes beschlossen (303 Ja, 210 Nein, 52 Enthaltungen): Der CO₂-Preis auf Heizöl, Erdgas, Benzin und Diesel liegt 2027 – wie 2026 – im Korridor von 55 bis 65 Euro je Tonne. Grund ist die Verschiebung des EU-Emissionshandels für Gebäude und Verkehr (EU-ETS 2) auf 2028; ab dann bildet sich der Preis am Markt, ohne nationalen Preiskorridor (<a href="https://www.bundestag.de/dokumente/textarchiv/2026/kw42-de-brennstoffemissionshandelsgesetz-1223608" target="_blank" rel="noopener">Bundestag, 15.10.2026</a>).</p>
+    
+            <h3>Grünheizölquote: Entwurf bis 1. Dezember 2026 angekündigt</h3>
+    
+            <p>Nach § 42a GModG ist bis zum 1. Dezember 2026 durch die Bundesregierung ein Gesetz vorzulegen, das eine Grüngas-/Grünheizölquote einführt; es wird die Inverkehrbringer von Gas, Öl und Flüssiggas verpflichten, die Brennstoffe für die Wärmeversorgung von Gebäuden ab dem Jahr 2045 vollständig auf klimaneutrale Brennstoffe umzustellen (<a href="https://www.gesetze-im-internet.de/geg/__42a.html" target="_blank" rel="noopener">§ 42a GModG, gesetze-im-internet.de, 23.10.2026</a>). Was das je Liter kostet, weiß heute niemand – der Entwurf fehlt noch. Offen ist, ob und wie stark sich die Quote im Heizölpreis niederschlägt.</p>
+    
+            <h2>Was kostet der CO₂-Preis je Liter Heizöl? Der Rechenweg</h2>
+    
+            <p>Beim Verbrennen eines Liters leichten Heizöls entstehen rund 2,65 kg CO₂. Grundlage ist der Emissionsfaktor des Umweltbundesamts von 74,0 t CO₂ je Terajoule für Heizöl leicht (<a href="https://www.umweltbundesamt.de/system/files/medien/11850/publikationen/28_2022_cc.pdf" target="_blank" rel="noopener">UBA, CO₂-Emissionsfaktoren für fossile Brennstoffe, 2022, gelesen 23.10.2026</a>), umgerechnet 266 g je Kilowattstunde. Ein Liter Heizöl liefert rund 10 kWh (<a href="https://www.heizoel24.de/heizoelpreise" target="_blank" rel="noopener">heizoel24.de, 23.10.2026</a>) – also 2,65 bis 2,66 kg CO₂ je Liter. Für beide Enden des Korridors ergibt das:</p>
+    
+            <table class="cost-table">
+              <thead>
+                <tr>
+                  <th>CO₂-Preis</th>
+                  <th>Rechnung je Liter</th>
+                  <th>Aufschlag netto</th>
+                  <th>mit 19 % MwSt. (ungerundet gerechnet)</th>
+                  <th>bei 2.500 l im Jahr</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>55 €/t</strong> (Untergrenze)</td>
+                  <td>0,00265 t × 55 €</td>
+                  <td class="price">14,6 ct</td>
+                  <td class="price">17,3 ct</td>
+                  <td class="price">ca. 430 €</td>
+                </tr>
+                <tr>
+                  <td><strong>65 €/t</strong> (Obergrenze)</td>
+                  <td>0,00265 t × 65 €</td>
+                  <td class="price">17,2 ct</td>
+                  <td class="price">20,5 ct</td>
+                  <td class="price">ca. 510 €</td>
+                </tr>
+              </tbody>
+            </table>
+    
+            <p>heizoel24 weist in seiner eigenen Übersicht 17,4 bis 20,6 Cent je Liter aus – der Zehntelcent ist Rundung beim Emissionsfaktor. Der Korridor soll 2027 wie 2026 gelten; neu ist nicht die Höhe, sondern das Ende des nationalen Preiskorridors ab 2028 – danach bildet sich der Preis im EU-Emissionshandel am Markt.</p>
+    
+            <h2>Heizölpreis heute: 172,71 € je 100 Liter</h2>
+    
+            <p>Laut heizoel24 kostet Heizöl am 23. Oktober 2026 im Bundesdurchschnitt 172,71 Euro je 100 Liter (Bestellmenge 3.000 Liter) – 3,42 Euro mehr als vor einer Woche, 38,67 Euro mehr als vor drei Monaten. Die Spanne der letzten drei Jahre reichte von 85,59 Euro (1. Juni 2025) bis 179,02 Euro (16. September 2026), der Durchschnitt lag bei 104,83 Euro (<a href="https://www.heizoel24.de/heizoelpreise" target="_blank" rel="noopener">heizoel24.de, Abruf 23.10.2026</a>). Einen Vorjahresvergleich nennt die Quelle nicht, deshalb rechnen wir keinen.</p>
+    
+            <p>Zwischen Dreijahrestief und -hoch liegen über 90 Euro je 100 Liter – bei einer 2.500-Liter-Füllung mehr als 2.000 Euro. Das ist der eigentliche Nachteil der Ölheizung: ein Preis, den Sie weder beeinflussen noch verlässlich vorhersehen können. Der CO₂-Anteil ist daran nur der planbare Teil.</p>
+    
+            <h2>Rechenbeispiel: 2.500 Liter Heizöl gegen eine Wärmepumpe</h2>
+    
+            <p>Ein Einfamilienhaus verbraucht laut heizoel24 je nach Größe und Baujahr 2.000 bis 3.000 Liter Heizöl im Jahr. Wir rechnen mit 2.500 Litern – typisch für einen teilsanierten Altbau mit 140 bis 160 m² im Landkreis Augsburg oder Biberach. Die Annahmen legen wir offen:</p>
+    
+            <ul>
+              <li><strong>Energieinhalt Heizöl:</strong> rund 10 kWh je Liter (heizoel24) → 25.000 kWh Brennstoffenergie</li>
+              <li><strong>Jahresnutzungsgrad des alten Kessels:</strong> 85 % – Annahme für einen 15 bis 30 Jahre alten Kessel → rund 21.000 kWh nutzbare Wärme</li>
+              <li><strong>Jahresarbeitszahl der Wärmepumpe:</strong> 3,5 – Annahme für eine sauber eingestellte Luft-Wasser-Wärmepumpe mit Heizkörpern → 21.000 ÷ 3,5 = rund 6.000 kWh Strom</li>
+              <li><strong>Strompreis Wärmepumpentarif:</strong> 25 bis 30 ct/kWh – Annahme. Anker: 36,69 ct/kWh für Neukunden-Haushaltsstrom (<a href="https://www.finanztip.de/stromvergleich/strompreis/" target="_blank" rel="noopener">Finanztip, Stand Oktober 2026</a>), Wärmepumpenstrom „oft rund 20 Prozent günstiger“ (<a href="https://www.verivox.de/heizstrom/waermepumpe/" target="_blank" rel="noopener">Verivox, gelesen 23.10.2026</a>) – das obere Ende unserer Spanne.</li>
+            </ul>
+    
+            <table class="cost-table">
+              <thead>
+                <tr>
+                  <th>Jährliche Energiekosten</th>
+                  <th>Rechnung</th>
+                  <th>Kosten pro Jahr</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Ölheizung</strong> zum heutigen Preis</td>
+                  <td>2.500 l × 1,7271 €</td>
+                  <td class="price">ca. 4.320 €</td>
+                </tr>
+                <tr>
+                  <td><strong>Ölheizung</strong> zum Dreijahresdurchschnitt</td>
+                  <td>2.500 l × 1,0483 €</td>
+                  <td class="price">ca. 2.620 €</td>
+                </tr>
+                <tr>
+                  <td><strong>Wärmepumpe</strong> (JAZ 3,5)</td>
+                  <td>6.000 kWh × 0,25 bis 0,30 €</td>
+                  <td class="price">ca. 1.500 – 1.800 €</td>
+                </tr>
+              </tbody>
+            </table>
+    
+            <p>Die Ersparnis liegt je nach Ölpreis zwischen rund 800 und 2.800 Euro im Jahr. Unser <a href="/blog/waermepumpe-altbau" class="text-[#0F5B78] font-medium hover:underline">Altbau-Ratgeber</a> rechnet mit etwa 1.400 Euro – ein Heizölpreis zwischen Dreijahresschnitt und heutigem Stand. Nicht in der Tabelle: Bei der Wärmepumpe entfällt der Schornsteinfeger, die Wartung liegt bei 150 bis 300 Euro im Jahr (<a href="/blog/waermepumpe-kosten-2026" class="text-[#0F5B78] font-medium hover:underline">Kostenratgeber Wärmepumpe 2026</a>); bei der Ölheizung bleiben Brennerwartung, Kaminkehrer und die Pflichten rund um den Tank.</p>
+    
+            <p><strong>Hinweis:</strong> Keine dieser Zahlen ist auf den Euro genau – das wäre Scheingenauigkeit. Die Größenordnung zählt: gut ein Drittel bis zwei Fünftel der heutigen Heizölkosten. Ob Ihr Haus JAZ 3,5 erreicht, entscheiden Heizlast und Vorlauftemperatur. Bei 55 bis 70 °C Vorlauf liegt die JAZ eher bei 2,5 bis 3,0: Dann sind es 1.750 bis 2.500 € Strom im Jahr, und die Ersparnis zum Dreijahresschnitt schrumpft auf rund 100 bis 900 Euro.</p>
+    
+            <h2>Was kostet die Umrüstung von Öl auf Wärmepumpe?</h2>
+    
+            <p>Die Spannen stammen aus unseren Ratgebern <a href="/blog/waermepumpe-kosten-2026" class="text-[#0F5B78] font-medium hover:underline">Wärmepumpe Kosten 2026</a> und <a href="/blog/waermepumpe-altbau" class="text-[#0F5B78] font-medium hover:underline">Wärmepumpe im Altbau</a>:</p>
+    
+            <table class="cost-table">
+              <thead>
+                <tr>
+                  <th>Kostenposition</th>
+                  <th>Spanne (inkl. MwSt.)</th>
+                  <th>Wann fällig?</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Luft-Wasser-Wärmepumpe + Installation</strong> (inkl. Pufferspeicher)</td>
+                  <td class="price">30.000 – 45.000 €</td>
+                  <td>immer (Luft-Wasser inkl. Installation, ohne Altbau-Zusätze: 27.000 – 40.000 €)</td>
+                </tr>
+                <tr>
+                  <td>Heizkörpertausch in einzelnen Räumen</td>
+                  <td class="price">2.000 – 5.000 €</td>
+                  <td>wenn einzelne Heizkörper zu klein sind</td>
+                </tr>
+                <tr>
+                  <td>Elektroanpassung</td>
+                  <td class="price">500 – 1.500 €</td>
+                  <td>wenn kein passender 400-V-Anschluss da ist</td>
+                </tr>
+                <tr>
+                  <td>Hydraulischer Abgleich</td>
+                  <td class="price">500 – 1.000 €</td>
+                  <td>immer – Pflicht für die Förderung</td>
+                </tr>
+                <tr class="highlight-row">
+                  <td><strong>Gesamt vor Förderung (alle Positionen)</strong></td>
+                  <td class="price"><strong>33.000 – 52.500 €</strong></td>
+                  <td>Altbau-Ratgeber</td>
+                </tr>
+              </tbody>
+            </table>
+    
+            <p>Je nach Haus kommen ein neuer Warmwasserspeicher (1.000 – 3.000 €) und das Fundament für das Außengerät (500 – 1.500 €) dazu. Abbau und Entsorgung des alten Ölkessels gehören in ein seriöses Angebot – der Öltank ist ein eigener Posten.</p>
+    
+            <h3>Öltank: stilllegen oder entsorgen – und wer das darf</h3>
+    
+            <p>Heizöllageranlagen unterliegen der Anlagenverordnung AwSV: „Die Errichtung, Innenreinigung, Instandsetzung und Stilllegung von Heizölverbraucheranlagen darf nur durch Fachbetriebe nach § 62 AwSV vorgenommen werden“ (<a href="https://www.lfu.bayern.de/wasser/umgang_mit_wgs/heizoelverbraucheranlagen/index.htm" target="_blank" rel="noopener">Bayerisches Landesamt für Umwelt, gelesen 23.10.2026</a>). Oberirdische Tanks über 1.000 Liter und alle Erdtanks sind zudem prüfpflichtig nach § 46 AwSV; die AwSV ist Bundesrecht und gilt in Baden-Württemberg genauso.</p>
+    
+            <p>Konkret: Restöl abpumpen, Tank reinigen, ausbauen oder – wenn die zuständige Behörde es zulässt, bei Erdtanks – verfüllen, mit Nachweis für Ihre Anlagendokumentation. Die Kosten hängen von Tankart, Größe und Restmenge ab; Kellertanks sind in der Regel günstiger als Erdtanks. Eine belastbare Zahl liefert erst das Angebot eines Fachbetriebs nach § 62 AwSV, der den Tank besichtigt hat. Stimmen Sie die letzte Heizölbestellung auf den Umbautermin ab, lassen Sie den Tank im Winter aber nie leerlaufen (Brennerstörung). Restöl pumpt der Fachbetrieb vor der Stilllegung ab.</p>
+    
+            <h2>Förderung: 46 % für Selbstnutzer, bis zu 70 % (80 %) möglich – Antrag bis 31.01.2027</h2>
+    
+            <p>Der Austausch einer funktionierenden Ölheizung gegen eine Wärmepumpe ist genau der Fall, für den die KfW-Heizungsförderung (Zuschuss 458) gemacht ist. Die Sätze, Stand Oktober 2026:</p>
+    
+            <table class="cost-table">
+              <thead>
+                <tr>
+                  <th>Baustein</th>
+                  <th>Satz</th>
+                  <th>Bedingung</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Grundförderung</strong></td>
+                  <td class="price">30 %</td>
+                  <td>bestehendes Wohngebäude, Bauantrag mindestens 5 Jahre alt</td>
+                </tr>
+                <tr>
+                  <td><strong>Klimageschwindigkeitsbonus</strong></td>
+                  <td class="price">+16 %</td>
+                  <td>Selbstnutzer beim Austausch einer funktionstüchtigen Ölheizung (ohne Mindestalter); Altkessel wird fachgerecht demontiert, danach keine fossile Heizung mehr im Gebäude (Hybrid mit altem Ölkessel: kein Bonus); Antrag bis 31.01.2027, danach halbjährlich sinkend, ab 01.08.2028 entfallen</td>
+                </tr>
+                <tr>
+                  <td><strong>Einkommensbonus</strong></td>
+                  <td class="price">+40 / +30 / +10 %</td>
+                  <td>Selbstnutzer mit zu versteuerndem Haushaltseinkommen bis 30.000 / 40.000 / 50.000 € (mit minderjährigem, kindergeldberechtigtem Kind jeweils +10.000 €)</td>
+                </tr>
+                <tr class="highlight-row">
+                  <td><strong>Obergrenze</strong></td>
+                  <td class="price">70 % (80 %)</td>
+                  <td>80 % nur mit dem höchsten Einkommensbonus; förderfähige Kosten max. 28.000 € je Einfamilienhaus (sinkt ab 01.02.2027 halbjährlich um 750 €)</td>
+                </tr>
+              </tbody>
+            </table>
+    
+            <p>In Euro, bezogen auf 28.000 Euro förderfähige Kosten: 46 % sind 12.880 Euro Zuschuss, 70 % sind 19.600 Euro, 80 % sind 22.400 Euro. Beim Rechenbeispiel aus dem Altbau-Ratgeber – Altbau von 1978, 160 m², bisher Öl, Gesamtkosten 42.000 Euro – bleiben nach 46 % Förderung 29.120 Euro Eigenanteil, mit 70 % wären es 22.400 Euro. Ihren Satz rechnet der <a href="/rechner" class="text-[#0F5B78] font-medium hover:underline">Förderrechner</a> in zwei Minuten aus, die Bedingungen erklärt unsere <a href="/foerderung" class="text-[#0F5B78] font-medium hover:underline">Förderseite</a>. Zwei Vorbehalte: Die Boni gelten nur für Selbstnutzer – Vermieter erhalten die Grundförderung von 30 % –, und die Förderung hängt von verfügbaren Bundesmitteln ab, ein Rechtsanspruch besteht nicht. Angekündigt, aber noch nicht in Kraft, ist ein Wertschöpfungsbonus (laut Eckpunkten für das erste Quartal 2027 vorgesehen, Starttermin offen): Die Grundförderung soll auf 15 % sinken, in der EU gefertigte Wärmepumpen sollen 15 % Wertschöpfungsbonus obendrauf erhalten – Details im Ratgeber <a href="/blog/heizungsfoerderung-2027" class="text-[#0F5B78] font-medium hover:underline">Heizungsförderung 2027</a>.</p>
+    
+            <p><strong>Wichtig:</strong> Erst der Vertrag mit aufschiebender oder auflösender Bedingung (Zusage der KfW), dann der Antrag, dann die Installation. Wer vorher beginnt oder einen Vertrag ohne diese Bedingung unterschreibt, kann keine Förderung mehr erhalten. Für den vollen Klimabonus muss der Antrag bis zum 31. Januar 2027 bei der KfW sein – im Winter, nicht im Frühjahr.</p>
+    
+            <h2>Funktioniert die Wärmepumpe mit meinen alten Heizkörpern?</h2>
+    
+            <p>An dieser Frage können Öl-Umrüstungen im Altbau tatsächlich scheitern – nicht am Gesetz, nicht an der Förderung. Entscheidend ist die Vorlauftemperatur, die Ihr Haus am kältesten Tag braucht:</p>
+    
+            <ul>
+              <li><strong>Fußbodenheizung:</strong> 30 – 35 °C – ideal</li>
+              <li><strong>Moderne Flachheizkörper:</strong> 45 – 55 °C – gut geeignet</li>
+              <li><strong>Alte Rippen- oder Gussheizkörper:</strong> 55 – 70 °C – möglich mit Hochtemperatur-Wärmepumpe</li>
+            </ul>
+    
+            <p>Für die dritte Gruppe – viele Ölheizungs-Altbauten zwischen Augsburg und Ulm – setzen wir unter anderem die <a href="/partner/zewotherm" class="text-[#0F5B78] font-medium hover:underline">ZEWOTHERM LAMBDA</a> ein: Vorlauf bis 70 °C ohne Heizstab, natürliches Kältemittel R290. Daneben installieren wir Wärmepumpen von Viessmann, Vaillant, Buderus, Wolf, Bosch und Daikin – herstellerunabhängig, nach Heizlast, nicht nach Katalog.</p>
+    
+            <div class="callout callout-info">
+              <span class="callout-icon">💡</span>
+              <div class="callout-title">Der 50-Grad-Test – kostet nichts, sagt viel</div>
+              <div class="callout-content">
+                <p>Stellen Sie an einem kalten Tag den Vorlauf Ihrer Ölheizung auf 50 °C und öffnen Sie alle Thermostate (aussagekräftig nur bei Außentemperaturen um oder unter 0 °C; an Standardkesseln nur kurz). Werden alle Räume warm, ist eine Wärmepumpe sehr wahrscheinlich ohne Heizkörpertausch möglich. Bleiben einzelne Räume kalt, reicht meist der Tausch genau dieser Heizkörper.</p>
+              </div>
+            </div>
+    
+            <p>Die Heizlast berechnen wir nach DIN EN 12831 – als Faustregel liegt ein unsanierter Altbau vor 1980 bei 100 bis 150 W/m², ein teilsanierter bei 60 bis 100 W/m². Daraus ergibt sich die Gerätegröße, nicht aus dem Typenschild des alten Ölkessels. Mehr auf unserer <a href="/waermepumpe" class="text-[#0F5B78] font-medium hover:underline">Wärmepumpen-Seite</a>.</p>
+    
+            <h2>Zeitplan: Jetzt planen heißt Winter 2027/28 ohne Öl</h2>
+    
+            <p>Die Vorlaufzeit bis zur Installation beträgt bei uns aktuell etwa 6 bis 12 Wochen, der Einbau einer Luft-Wasser-Wärmepumpe dauert 2 bis 3 Tage (<a href="/waermepumpe" class="text-[#0F5B78] font-medium hover:underline">Wärmepumpen-Seite</a>). Mit Vor-Ort-Termin, Angebot und Förderantrag sind es insgesamt 2 bis 4 Monate:</p>
+    
+            <ol>
+              <li><strong>November / Dezember 2026:</strong> <a href="/kontakt" class="text-[#0F5B78] font-medium hover:underline">Beratung vor Ort</a> – Heizlast, Heizkörper-Check, individuelles Angebot mit Förderberechnung</li>
+              <li><strong>Bis 31. Januar 2027:</strong> Vertrag mit Förderbedingung, KfW-Antrag mit 16 % Klimabonus</li>
+              <li><strong>Frühjahr 2027:</strong> Installation nach KfW-Zusage – die Ölheizung läuft bis zum Umbautag, die letzte Heizölbestellung wird auf den Umbautermin abgestimmt</li>
+              <li><strong>Sommer 2027:</strong> Tank stilllegen oder ausbauen, Kellerraum frei</li>
+              <li><strong>Winter 2027/28:</strong> die erste Heizsaison ohne Heizölbestellung</li>
+            </ol>
+    
+            <p>Wer bis zum nächsten Ausfall wartet, entscheidet im Januar bei minus zehn Grad unter Zeitdruck – und zahlt für Notlösung und Umrüstung doppelt.</p>
+    
+            <h2>Entscheidungshilfe: Behalten oder umrüsten?</h2>
+    
+            <div class="pro-con-list">
+              <div class="pro-list">
+                <div class="pro-list-title">Behalten, wenn …</div>
+                <ul>
+                  <li>… die Anlage unter 15 Jahre alt ist und störungsfrei läuft</li>
+                  <li>… Sie das Haus in den nächsten 3 bis 5 Jahren verkaufen oder abreißen</li>
+                  <li>… Dach oder Fenster ohnehin saniert werden – erst sanieren, dann Heizlast rechnen, dann Wärmepumpe</li>
+                  <li>… es keinen Aufstellort für ein Außengerät gibt und kein Wärmenetz kommt</li>
+                </ul>
+              </div>
+              <div class="con-list">
+                <div class="con-list-title">Umrüsten, wenn …</div>
+                <ul>
+                  <li>… die Ölheizung 15 bis 30 Jahre alt ist – geplant statt im Notfall</li>
+                  <li>… Sie selbst im Haus wohnen (Klimabonus 16 % nur für Selbstnutzer)</li>
+                  <li>… Ihr zu versteuerndes Haushaltseinkommen unter 50.000 Euro liegt – dann kommt der Einkommensbonus dazu</li>
+                  <li>… der 50-Grad-Test bestanden ist oder nur einzelne Heizkörper zu klein sind</li>
+                </ul>
+              </div>
+            </div>
+    
+            <p>Und die neue Ölheizung? Erlaubt und in der Anschaffung günstiger, aber ohne Förderung, mit CO₂-Preis ab 2028 ohne nationalen Preiskorridor (Marktpreis im EU-Emissionshandel), Bio-Treppe ab 2029 und der angekündigten Grünheizölquote. In unserem <a href="/blog/heizung-vergleich-2026-waermepumpe-gas-oel-pellets" class="text-[#0F5B78] font-medium hover:underline">Heizungsvergleich 2026</a> landet Öl über 20 Jahre auf dem letzten Platz – auch hinter Pellets, der Alternative für Häuser ohne Platz für ein Außengerät.</p>
+    
+            <h2>Häufig gestellte Fragen (FAQ)</h2>
+    
+            <h3>Muss ich meine Ölheizung ab 2027 austauschen?</h3>
+            <p>Nein, nicht nach dem GModG. Das seit 29. Juli 2026 geltende Gesetz kennt keine Austauschpflicht für funktionierende Heizungen; die 30-Jahre-Regel in § 72 GEG ist weggefallen. Nur wer eine <em>neue</em> Ölheizung einbaut, muss ab 2029 steigende Bioanteile nachweisen.</p>
+    
+            <h3>Wie hoch ist der CO₂-Preis auf Heizöl 2027 – und was macht das je Liter aus?</h3>
+            <p>Der Bundestag hat am 15. Oktober 2026 den Korridor von 55 bis 65 Euro je Tonne auch für 2027 beschlossen. Bei 2,65 kg CO₂ je Liter sind das 17,3 bis 20,5 Cent je Liter inklusive Mehrwertsteuer; ab 2028 gilt der EU-Emissionshandel ETS 2 ohne nationalen Preiskorridor, der Preis bildet sich dann am Markt.</p>
+    
+            <h3>Was kostet die Umrüstung von Ölheizung auf Wärmepumpe?</h3>
+            <p>Im Altbau 33.000 bis 52.500 Euro vor Förderung: Wärmepumpe mit Installation und Pufferspeicher (30.000 – 45.000 €), bei Bedarf Heizkörpertausch und Elektroanpassung, immer der hydraulische Abgleich. Dazu die Tank-Stilllegung durch einen AwSV-Fachbetrieb – je nach Tankart, Größe und Restmenge.</p>
+    
+            <h3>Welche Förderung gibt es beim Tausch einer Ölheizung gegen eine Wärmepumpe?</h3>
+            <p>30 % Grundförderung plus 16 % Klimageschwindigkeitsbonus für Selbstnutzer – die funktionierende Ölheizung qualifiziert ohne Mindestalter. Mit Einkommensbonus bis zu 70 %, 80 % nur bei zu versteuerndem Haushaltseinkommen bis 30.000 Euro (mit Kind 40.000 €), jeweils auf maximal 28.000 Euro förderfähige Kosten (sinkt ab 01.02.2027 halbjährlich um 750 €). Den vollen Klimabonus gibt es nur für Anträge bis 31.01.2027.</p>
+    
+            <h3>Funktioniert eine Wärmepumpe mit meinen alten Heizkörpern?</h3>
+            <p>In den meisten Altbauten ja. Alte Rippen- und Gussheizkörper brauchen 55 bis 70 °C Vorlauf – das schaffen Hochtemperatur-Wärmepumpen wie die ZEWOTHERM LAMBDA (bis 70 °C ohne Heizstab). Werden beim 50-Grad-Test alle Räume warm, ist meist kein Heizkörpertausch nötig.</p>
+    
+            <h3>Was passiert mit dem Öltank?</h3>
+            <p>Stilllegung und Entsorgung dürfen nur Fachbetriebe nach § 62 AwSV ausführen. Der Tank wird leergepumpt, gereinigt und ausgebaut oder – wenn die zuständige Behörde es zulässt, bei Erdtanks – verfüllt. Stimmen Sie die letzte Heizölbestellung auf den Umbautermin ab, lassen Sie den Tank im Winter aber nie leerlaufen (Brennerstörung); Restöl pumpt der Fachbetrieb vorher ab. Eine belastbare Zahl liefert erst das Angebot des Fachbetriebs nach Besichtigung des Tanks.</p>
+    
+            <h2>Fazit: Behalten ist erlaubt, Umrüsten ist günstiger – im richtigen Zeitfenster</h2>
+    
+            <p>Niemand zwingt Sie zum Austausch. Aber die Zahlen vom 23. Oktober 2026 sind eindeutig: 172,71 Euro je 100 Liter Heizöl, 17 bis 20,5 Cent CO₂-Preis je Liter, ab 2028 ohne nationalen Preiskorridor (Marktpreis im EU-Emissionshandel), eine angekündigte Grünheizölquote (Gesetzentwurf bis 01.12.2026 fällig) – dagegen für Selbstnutzer 46 bis 70 Prozent Zuschuss, bei Einkommen bis 30.000 € bis 80 Prozent (voller Klimabonus nur bis 31. Januar 2027) und Betriebskosten von rund 35 bis 42 % der heutigen Heizölkosten. Wer eine 15 bis 30 Jahre alte Ölheizung hat, selbst im Haus wohnt und den 50-Grad-Test besteht, plant die Umrüstung in diesem Winter – nicht im nächsten.</p>
+    
+            <p><strong>Weiterlesen:</strong></p>
+            <ul>
+              <li><a href="/blog/waermepumpe-altbau" class="text-[#0F5B78] font-medium hover:underline">Wärmepumpe im Altbau: Kosten, Voraussetzungen &amp; Tipps</a></li>
+              <li><a href="/blog/waermepumpe-kosten-2026" class="text-[#0F5B78] font-medium hover:underline">Wärmepumpe Kosten 2026: Kompletter Überblick</a></li>
+              <li><a href="/blog/heizungsfoerderung-2027" class="text-[#0F5B78] font-medium hover:underline">Heizungsförderung 2027: Stichtag 31.01.2027 &amp; Wertschöpfungsbonus</a></li>
+              <li><a href="/blog/heizungsgesetz-2024" class="text-[#0F5B78] font-medium hover:underline">Heizungsgesetz 2026 (GModG): Das gilt jetzt für Hausbesitzer</a></li>
+              <li><a href="/blog/heizung-vergleich-2026-waermepumpe-gas-oel-pellets" class="text-[#0F5B78] font-medium hover:underline">Heizung Vergleich 2026: Wärmepumpe vs Gas vs Öl vs Pellets</a></li>
+            </ul>
+    
+            <div class="cta-box">
+              <p class="cta-locations">📍 <strong>Unsere Standorte:</strong> Bobingen (Augsburg) · Gutenzell-Hürbel (Ulm/Memmingen) · Klosterlechfeld</p>
+              <h4>Ölheizung raus, Wärmepumpe rein – wir rechnen es für Ihr Haus durch</h4>
+              <p>Heizlast, Vorlauftemperatur, Förderung bis 31.01.2027: Wir kommen zur Bestandsaufnahme und erstellen Ihnen ein individuelles Angebot mit Förderberechnung – kostenlos und unverbindlich, auch wenn am Ende „behalten“ herauskommt.</p>
+              <p>
+                <strong>✓</strong> Hilfe bei der KfW-Antragstellung (Bestätigung zum Antrag von uns, den Antrag stellen Sie als Eigentümer)<br>
+                <strong>✓</strong> Hochtemperatur-Wärmepumpen bis 70 °C Vorlauf für Altbau-Heizkörper
+              </p>
+              <p>
+                <strong>Telefon:</strong> <a href="tel:${CONTACT.PHONE_LINK}">${CONTACT.PHONE_DISPLAY}</a><br>
+                <strong>E-Mail:</strong> <a href="mailto:${CONTACT.EMAIL}">${CONTACT.EMAIL}</a>
+              </p>
+            </div>
+          `,
+      category: 'Heizung',
+      author: 'HeizCenter Redaktion',
+      date: '2026-10-23',
+      readingTime: 11,
+      image: '/images/HeizCenter_Heizung.webp',
+      tags: ['Ölheizung', 'Ölheizung umrüsten', 'Wärmepumpe', 'CO₂-Preis 2027', 'Heizölpreis', 'Förderung', 'Altbau'],
+      featured: true,
+      faqs: [
+        { question: 'Muss ich meine Ölheizung ab 2027 austauschen?', answer: 'Nein, nicht nach dem GModG. Das seit 29. Juli 2026 geltende Gesetz kennt keine Austauschpflicht für funktionierende Heizungen; die 30-Jahre-Regel in § 72 GEG ist weggefallen. Nur wer eine neue Ölheizung einbaut, muss ab 2029 steigende Bioanteile nachweisen.' },
+        { question: 'Wie hoch ist der CO₂-Preis auf Heizöl 2027 – und was macht das je Liter aus?', answer: 'Der Bundestag hat am 15. Oktober 2026 den Korridor von 55 bis 65 Euro je Tonne auch für 2027 beschlossen. Bei 2,65 kg CO₂ je Liter sind das 17,3 bis 20,5 Cent je Liter inklusive Mehrwertsteuer; ab 2028 gilt der EU-Emissionshandel ETS 2 ohne nationalen Preiskorridor, der Preis bildet sich dann am Markt.' },
+        { question: 'Was kostet die Umrüstung von Ölheizung auf Wärmepumpe?', answer: 'Im Altbau 33.000 bis 52.500 Euro vor Förderung: Wärmepumpe mit Installation und Pufferspeicher (30.000 – 45.000 €), bei Bedarf Heizkörpertausch und Elektroanpassung, immer der hydraulische Abgleich. Dazu die Tank-Stilllegung durch einen AwSV-Fachbetrieb – je nach Tankart, Größe und Restmenge.' },
+        { question: 'Welche Förderung gibt es beim Tausch einer Ölheizung gegen eine Wärmepumpe?', answer: '30 % Grundförderung plus 16 % Klimageschwindigkeitsbonus für Selbstnutzer – die funktionierende Ölheizung qualifiziert ohne Mindestalter. Mit Einkommensbonus bis zu 70 %, 80 % nur bei zu versteuerndem Haushaltseinkommen bis 30.000 Euro (mit Kind 40.000 €), jeweils auf maximal 28.000 Euro förderfähige Kosten (sinkt ab 01.02.2027 halbjährlich um 750 €). Den vollen Klimabonus gibt es nur für Anträge bis 31.01.2027.' },
+        { question: 'Funktioniert eine Wärmepumpe mit meinen alten Heizkörpern?', answer: 'In den meisten Altbauten ja. Alte Rippen- und Gussheizkörper brauchen 55 bis 70 °C Vorlauf – das schaffen Hochtemperatur-Wärmepumpen wie die ZEWOTHERM LAMBDA (bis 70 °C ohne Heizstab). Werden beim 50-Grad-Test alle Räume warm, ist meist kein Heizkörpertausch nötig.' },
+        { question: 'Was passiert mit dem Öltank?', answer: 'Stilllegung und Entsorgung dürfen nur Fachbetriebe nach § 62 AwSV ausführen. Der Tank wird leergepumpt, gereinigt und ausgebaut oder – wenn die zuständige Behörde es zulässt, bei Erdtanks – verfüllt. Stimmen Sie die letzte Heizölbestellung auf den Umbautermin ab, lassen Sie den Tank im Winter aber nie leerlaufen (Brennerstörung); Restöl pumpt der Fachbetrieb vorher ab. Eine belastbare Zahl liefert erst das Angebot des Fachbetriebs nach Besichtigung des Tanks.' },
+      ],
+    },
+    {
+          id: 31,
+          slug: 'heizung-springt-nicht-an',
+          title: 'Heizung springt nicht an? Ursachen, Soforttipps & Notdienst',
+          excerpt: 'Heizung springt nicht an? Checkliste für die ersten fünf Minuten, typische Ursachen bei Gas, Öl und Wärmepumpe, Mieterrechte und wann der Notdienst nötig ist.',
+          content: `
+            <p class="text-xl leading-relaxed text-slate-600 mb-8">Der erste kalte Morgen des Jahres, das Thermostat steht auf 4 – und der Heizkörper bleibt kalt. Wenn die Heizung nicht anspringt, ist das selten ein Totalschaden: Zu Beginn der Heizperiode stecken oft Sommerbetrieb, ein klemmendes Ventil oder zu wenig Wasserdruck dahinter. Dieser Ratgeber zeigt, was Sie in den ersten fünf Minuten ohne Eingriff in Gas, Öl und Elektrik des Geräts selbst prüfen können, welche Ursachen bei Gas, Öl und Wärmepumpe typisch sind, was für Mieter gilt – und wann die Anlage sofort in Fachhände gehört.</p>
+    
+            <div class="flex flex-wrap gap-4 mb-8 text-sm text-slate-600">
+              <span class="flex items-center gap-1">✓ 3 Standorte in Bayern &amp; BW</span>
+              <span class="flex items-center gap-1">✓ Über 20 Jahre Erfahrung</span>
+              <span class="flex items-center gap-1">✓ Notdienst für Wartungskunden</span>
+            </div>
+    
+            <p class="text-sm text-slate-500 mb-6">Stand: 23. Oktober 2026</p>
+    
+            <div class="highlight-quote">
+              Springt die Heizung nicht an, prüfen Sie zuerst Betriebsart und Zeitprogramm, Strom und Sicherung, den Wasserdruck (im Einfamilienhaus typisch 1 bis 2 bar) und die Störanzeige. Entstören Sie nur so oft, wie Ihre Bedienungsanleitung es erlaubt – unsere Empfehlung: höchstens einmal. Bei Gasgeruch zuerst: keine Schalter, keine Flammen, Fenster auf, Gashahn zu (wenn gefahrlos erreichbar), Haus verlassen und von außen die Störungsnummer des Netzbetreibers anrufen (Ablauf unten). Bei austretendem Wasser, wiederholter Störabschaltung oder Frostgefahr gehört die Anlage sofort in Fachhände.
+            </div>
+    
+            <p><strong>Achtung:</strong> Stopp – riecht es nach Gas, diese Checkliste nicht abarbeiten: Auch Notschalter, Sicherung und Thermostat sind Schalter. Dann gilt ausschließlich dieser Ablauf (<a href="https://www.dvgw.de/themen/gas/verbraucherinformationen/was-tun-bei-gasgeruch">DVGW</a>):</p>
+    
+            <ol>
+              <li><strong>Keine Flammen, keine Funken:</strong> keine Licht- und Geräteschalter betätigen, keine Stecker ziehen, kein Telefon oder Handy im Haus benutzen.</li>
+              <li><strong>Türen und Fenster weit öffnen</strong>, für Durchzug sorgen – keinen Ventilator und keine Dunstabzugshaube einschalten.</li>
+              <li><strong>Gashahn zu</strong> – am Zähler oder Haupthahn, aber nur, wenn er gefahrlos erreichbar ist. Den Gashahn erst wieder öffnen, wenn Netzbetreiber oder Fachbetrieb die Anlage freigegeben haben (<a href="https://www.feuerwehr-rodgau.de/index.php/informationen/was-tun-bei-gasgeruch" target="_blank" rel="noopener">Feuerwehr Rodgau, gelesen 23.10.2026</a>; <a href="https://www.dvgw.de/medien/dvgw/sicherheit/g479-anhang-a.pdf" target="_blank" rel="noopener">DVGW G 479 (Hochwasser-Merkblatt), Anhang A, gelesen 23.10.2026</a>).</li>
+              <li><strong>Mitbewohner warnen</strong> – klopfen, nicht klingeln.</li>
+              <li><strong>Haus verlassen</strong>, Abstand halten und erst nach Entwarnung durch Feuerwehr oder Netzbetreiber wieder betreten.</li>
+              <li><strong>Erst von außerhalb</strong> die Störungsnummer Ihres Gasnetzbetreibers anrufen. Speichern Sie die Störungsnummer vorab im Handy. Kennen Sie sie nicht: nicht im Haus suchen, ins Freie gehen und die Feuerwehr benachrichtigen.</li>
+            </ol>
+    
+            <h2>Schnell-Checkliste: Was Sie in den ersten fünf Minuten prüfen</h2>
+    
+            <ol>
+              <li>
+                <strong>Betriebsart und Zeitprogramm</strong><br>
+                Steht die Regelung noch auf Sommerbetrieb oder „nur Warmwasser“? Stimmen Uhrzeit und Heizzeiten? Nach einem Stromausfall fallen manche Regler auf die Grundeinstellung zurück (<a href="https://www.viessmann.de/de/wissen/wartung-und-reparatur/heizung-wird-nicht-warm.html">Viessmann</a>, <a href="https://www.vaillant.de/ratgeber/heizungstipps/heizungsstoerung-beheben/">Vaillant</a>).
+              </li>
+              <li>
+                <strong>Raumthermostat höher stellen</strong><br>
+                Ist die eingestellte Temperatur schon erreicht, zündet die Heizung schlicht nicht.
+              </li>
+              <li>
+                <strong>Strom: Sicherung, Notschalter, Wartungsschalter</strong><br>
+                Bleibt das Display dunkel: Sicherung, Heizungsnotschalter (meist neben der Heizraumtür, mit Kontrollleuchte) und Wartungsschalter am Gerät prüfen. Löst die Sicherung sofort wieder aus, nicht erneut einschalten.
+              </li>
+              <li>
+                <strong>Fehlercode notieren</strong><br>
+                Code (z. B. bei Vaillant F.22 oder F.28) und Seriennummer vom Typenschild aufschreiben – das verkürzt die Diagnose.
+              </li>
+              <li>
+                <strong>Wasserdruck ablesen</strong><br>
+                Sollwert laut Bedienungsanleitung bzw. grüner Bereich am Manometer; kalt typisch 1 bis 1,5 bar (<a href="https://www.vaillant.de/ratgeber/technologie-verstehen/gasheizung/niedriger-wasserdruck-heizung/">Vaillant</a>), unter 0,5 bar schalten viele Geräte ab. Nach Bedienungsanleitung und in der Regel nur bei kalter Anlage nachfüllen, nicht über den dort genannten Höchstdruck (das Sicherheitsventil öffnet meist bei 3 bar); bei Wärmepumpen füllt nur der Fachbetrieb nach (Füllwasserqualität).
+              </li>
+              <li>
+                <strong>Brennstoff</strong><br>
+                Gashahn am Gerät offen (nur prüfen, wenn es nicht nach Gas riecht)? Einen vom Netzbetreiber oder Fachbetrieb geschlossenen Hahn am Zähler nicht selbst öffnen. Öltank gefüllt, Entnahmeventil geöffnet? Pellets: Füllstand am Regler prüfen; Pelletlager nicht betreten (Kohlenmonoxid), Förderschnecke und Abdeckungen nicht öffnen (<a href="https://www.depi.de/sicherheit-im-pelletlager/" target="_blank" rel="noopener">DEPI, gelesen 23.10.2026</a>).
+              </li>
+              <li>
+                <strong>Heizkörper: Luft oder Ventil?</strong><br>
+                Nur oben warm oder Gluckern heißt Luft im System – siehe unsere <a href="/blog/heizung-entlueften-anleitung-2026" class="text-[#0F5B78] font-medium hover:underline">Anleitung zum Heizung entlüften</a>. Bleibt ein einzelner Heizkörper kalt, klemmt häufig das Thermostatventil.
+              </li>
+              <li>
+                <strong>Einmal entstören – nicht mehrfach</strong><br>
+                Bleibt die Störung, Fachbetrieb anrufen und Fehlercode nennen.
+              </li>
+            </ol>
+    
+            <h2>Welche Ursachen sind typisch – je nach Heizsystem?</h2>
+    
+            <h3>Gastherme: Zündung, Gasversorgung, Störabschaltung</h3>
+    
+            <p>Moderne Gasgeräte unternehmen mehrere Zündversuche – bei der Vaillant ecoTEC plus (40–63 kW) laut <a href="https://www.vaillant.de/api/download/product/de/betriebsanleitung_ecotec-plus-vc-5-5-40-63-kw_292258.pdf">Betriebsanleitung</a> fünf –, bevor sie mit F.28 auf Störung gehen; ein Klicken ohne Flamme ist dieses Zündsystem bei der Arbeit. Riecht es dabei nach Gas, gilt sofort der Ablauf „Gasgeruch“ am Anfang des Artikels – nicht im Haus telefonieren.</p>
+    
+            <ul>
+              <li><strong>Gasversorgung:</strong> <a href="https://www.vaillant.de/ratgeber/technologie-verstehen/gasheizung/gasheizung-zuendet-nicht/">Vaillants</a> Test (nur, wenn es nicht nach Gas riecht): Funktioniert der Gasherd, liegt das Problem eher am Heizgerät; bei Verdacht auf eine Versorgungsstörung ist der Netzbetreiber zuständig.</li>
+              <li><strong>Gefrorene Kondensatleitung:</strong> Eis im Kondensatablauf eines Brennwertgeräts verhindert die Zündung; vorsichtig auftauen (Gerät aus; an Kunststoff keine offene Flamme und kein Heißluftgebläse; den Siphon danach wieder gefüllt einsetzen, sonst können Abgase austreten; im Zweifel Fachbetrieb).</li>
+              <li><strong>Lüfter oder Gasventil:</strong> Fällt der Abgaslüfter aus, sperrt die Sicherheitsschaltung die Zündung; ein undichtes Gasventil ist ein ernstes Sicherheitsrisiko. Riecht es nach Gas, gilt sofort der Ablauf „Gasgeruch“ (nicht im Haus telefonieren); sonst Gerät aus lassen, Fachbetrieb rufen.</li>
+              <li><strong>Entstören:</strong> Vaillant nennt in der Anleitung der ecoTEC plus (40–63 kW) spätestens nach drei erfolglosen Entstörversuchen den Fachhandwerker. Unsere Empfehlung ist konservativer: einmal entstören, dann anrufen.</li>
+            </ul>
+    
+            <p><strong>Achtung:</strong> Keine Eingriffe an Gasarmaturen, Gasleitungen oder Sicherheitseinrichtungen – außer dem Öffnen und Schließen der Absperrhähne nach Bedienungsanleitung. Der Versuch, eine Gasheizung selbst zu reparieren, ist laut Vaillant „nicht nur gefährlich, sondern auch verboten, sofern Sie nicht vom Fach sind“.</p>
+    
+            <h3>Ölheizung: Tankstand, Luft und Filter – besonders nach der Öllieferung</h3>
+    
+            <p>Öltanks dürfen nie leerlaufen: Unter der nötigen Füllhöhe – laut Viessmann in der Regel 15 bis 20 Zentimeter – bekommt der Brenner zu wenig Öl und saugt Verunreinigungen an, die Filter und Leitungen zusetzen (<a href="https://www.heizung.de/ratgeber/diverses/brennerstoerung-ursachen-und-loesungen.html">heizung.de</a>). Prüfen Sie auch das Entnahmeventil.</p>
+    
+            <p><strong>Heizung springt nicht an nach der Öllieferung?</strong> Beim Betanken aufgewirbelte Rückstände vom Tankboden können den Filter vor dem Brenner verstopfen. <a href="https://hauswaerme.shell.de/news-tipps/profi-tipps/problemlos-auftanken.html">Shell Hauswärme</a> empfiehlt, die Heizung kurz vor dem Betanken auszuschalten und erst etwa zwei Stunden danach wieder einzuschalten. Geht der Brenner trotzdem auf Störung, einmal entstören; kommt sie zurück, muss der Fachbetrieb Filter und Ölleitung prüfen und entlüften – Arbeiten an Tank und Leitungen sind ohnehin Sache eines Fachbetriebs nach Wasserrecht (AwSV).</p>
+    
+            <p><strong>Achtung:</strong> Jault oder kreischt die Ölheizung, ist laut Vaillant die Ölzufuhr gestört – am Heizungsnotschalter ausschalten, Servicetechniker rufen. Und: Ölbrenner nur einmal entstören. Bei jedem Startversuch wird Öl eingespritzt; wiederholtes Entstören kann Brenner oder Ölpumpe beschädigen oder unverbrannten Brennstoff in den Feuerraum bringen (<a href="https://www.heizsparer.de/spartipps/heizung-optimieren/brennerstoerung">Heizsparer</a>).</p>
+    
+            <h3>Wärmepumpe: Vereisung ist meist normal – der Fehlercode nicht</h3>
+    
+            <p>Eine bereifte Außeneinheit ist kein Defekt. Bosch Home Comfort nennt es einen „standardmäßigen physikalischen Vorgang“ zwischen etwa +5 °C und −5 °C; die Anlage taut in etwa 3 bis 10 Minuten automatisch ab, Dampf und Schmelzwasser sind dabei normal (<a href="https://www.bosch-homecomfort.com/de/de/wohngebaeude/wissen/heizungsratgeber/waermepumpe/waermepumpe-vereist/">Bosch</a>). Mehr zur Technik auf unserer Seite <a href="/waermepumpe" class="text-[#0F5B78] font-medium hover:underline">Wärmepumpe</a>.</p>
+    
+            <ul>
+              <li><strong>Nicht abschalten, nicht enteisen:</strong> 30 bis 90 Minuten beobachten; niemals heißes Wasser oder Werkzeug einsetzen.</li>
+              <li><strong>Luftwege frei?</strong> Laub, Schnee oder Staub vor Lufteinlass und -auslass verstärken die Vereisung.</li>
+              <li><strong>Dauerhaft vereist oder Fehlercode:</strong> Defekter Ventilator, verschmutzte Lamellen oder falsche Einstellungen – ein Fall für den Fachbetrieb.</li>
+              <li><strong>Nicht selbst eingreifen:</strong> Gehäuse nicht öffnen, nicht in den Lüfter greifen; Eingriffe am Kältekreis nur durch den Fachbetrieb.</li>
+            </ul>
+    
+            <h3>Pumpe, Thermostatventil, Luft: die Klassiker nach der Sommerpause</h3>
+    
+            <p>Störungen fallen laut Viessmann „am häufigsten zu Beginn der Heizperiode auf, wenn die Heizung lange im Sommerbetrieb lief“ – drei Bauteile sind dann besonders oft betroffen:</p>
+    
+            <ul>
+              <li><strong>Umwälzpumpe:</strong> Läuft der Kessel, bleiben aber Rohre und Heizflächen kalt, ist häufig die Pumpe (oder Luft bzw. das Umschaltventil) die Ursache; den Kessel dann ausschalten, sonst droht Überhitzung. Viessmanns Test: Schraubenzieher ans Pumpengehäuse halten und am Griff horchen – das Gehäuse kann heiß sein, den Klemmenkasten nicht öffnen. Nach dem Sommer kann das Laufrad festsitzen (<a href="https://www.heizsparer.de/spartipps/heizung-optimieren/die-10-haeufigsten-probleme-bei-heizungspumpen">Heizsparer</a>). Das Lösen übernimmt der Fachbetrieb: Dafür wird die Pumpe am Gehäuse geöffnet, und es kann heißes Heizungswasser unter Druck austreten (Verbrühungsgefahr).</li>
+              <li><strong>Thermostatventil:</strong> Stand das Thermostat den Sommer über auf Null, klemmt das Ventil darunter oft. Buderus beschreibt die Selbsthilfe: Thermostatkopf abnehmen, Ventilstift vorsichtig mit der Hand lockern. Geht er nicht frei, übernimmt der Fachbetrieb.</li>
+              <li><strong>Luft:</strong> Zuerst den Druck prüfen, dann die Heizkörper entlüften und den Druck erneut kontrollieren – nach dem Entlüften sinkt er.</li>
+            </ul>
+    
+            <h2>Heizung springt nicht an, aber warmes Wasser kommt – woran liegt das?</h2>
+    
+            <p>In der Regel funktioniert der Wärmeerzeuger dann, das Problem liegt im Heizkreis oder in der Regelung. <a href="https://www.buderus.de/de/heiztechnik-verstehen/heizungen/faq-zu-heizungen/heizung-wird-nicht-warm-5714">Buderus</a> nennt Sommermodus, Luft, fehlenden Wasserdruck oder eine defekte Umwälzpumpe; die Vaillant-Störungstabelle führt den Fall „Warmwasserbereitung störungsfrei; Heizung geht nicht in Betrieb“ auf die Ursache „Externes Regelgerät ist nicht richtig eingestellt“ zurück. Prüfen Sie also zuerst Betriebsart, Zeitprogramm und Raumthermostat.</p>
+    
+            <p>Bei Kombigeräten kommt das <strong>Umschaltventil</strong> hinzu, ein Drei-Wege-Ventil, das heißes Kesselwasser entweder in den Heizkreis oder zum Speicher leitet. Hängt es auf Warmwasser, gibt es heißes Wasser und kalte Heizkörper (<a href="https://www.heizsparer.de/heizung/warmwasseraufbereitung/die-top-10-der-warmwasser-probleme">Heizsparer</a>) – ein Fall für den Fachbetrieb. Die Zirkulationspumpe bewegt dagegen nur das Warmwasser in den Leitungen.</p>
+    
+            <h2>Symptom-Tabelle: selbst prüfen oder Fachbetrieb?</h2>
+    
+            <table class="cost-table">
+              <thead>
+                <tr>
+                  <th>Symptom</th>
+                  <th>Wahrscheinliche Ursache</th>
+                  <th>Selbst prüfen</th>
+                  <th>Fachbetrieb, wenn …</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Fehlercode Druck (z. B. bei Vaillant F.22)</strong></td>
+                  <td>Wasserdruck unter dem Minimum</td>
+                  <td>Manometer; nach Bedienungsanleitung nachfüllen – in der Regel nur bei kalter Anlage, nicht über den Höchstdruck (Sicherheitsventil meist 3 bar); Wärmepumpe: nur Fachbetrieb</td>
+                  <td>der Druck wiederholt fällt</td>
+                </tr>
+                <tr>
+                  <td><strong>Klicken, keine Flamme, Störung</strong></td>
+                  <td>Zündstörung, Gasversorgung</td>
+                  <td>Gashahn am Gerät, Gasherd-Test (nur, wenn es nicht nach Gas riecht), einmal entstören</td>
+                  <td>die Störung bleibt</td>
+                </tr>
+                <tr>
+                  <td><strong>Ölbrenner nach Lieferung gestört</strong></td>
+                  <td>Aufgewirbelte Rückstände, Luft, Filter</td>
+                  <td>Zwei Stunden warten, einmal entstören</td>
+                  <td>Filter und Leitung zu prüfen sind</td>
+                </tr>
+                <tr>
+                  <td><strong>Kessel läuft, Rohre kalt</strong></td>
+                  <td>Pumpe sitzt fest oder ist defekt</td>
+                  <td>Schraubenzieher-Test</td>
+                  <td>die Pumpe steht (Losmachen oder Tausch)</td>
+                </tr>
+                <tr>
+                  <td><strong>Einzelner Heizkörper kalt</strong></td>
+                  <td>Thermostatventil klemmt oder Luft im Heizkörper</td>
+                  <td>Kopf abnehmen, Stift lockern</td>
+                  <td>der Stift nicht frei geht</td>
+                </tr>
+                <tr>
+                  <td><strong>Reif/Eis an der Außeneinheit</strong></td>
+                  <td>Normale Bereifung bei Kälte und Feuchte, die Anlage taut selbst ab</td>
+                  <td>30 bis 90 Minuten beobachten, Luftwege frei</td>
+                  <td>sie dauerhaft vereist bleibt</td>
+                </tr>
+              </tbody>
+            </table>
+    
+            <h2>Wann müssen Sie sofort den Fachbetrieb – oder die Störungsnummer – rufen?</h2>
+    
+            <p><strong>Achtung bei Gasgeruch:</strong> Es gilt der Sechs-Schritte-Ablauf „Gasgeruch“ am Anfang dieses Artikels (nach <a href="https://www.dvgw.de/themen/gas/verbraucherinformationen/was-tun-bei-gasgeruch">DVGW</a>): keine Flammen, Funken, Schalter oder Telefone im Haus, Fenster auf, Gashahn zu (wenn gefahrlos erreichbar), Mitbewohner warnen, Haus verlassen – und erst von außerhalb die Störungsnummer Ihres Gasnetzbetreibers anrufen. Speichern Sie die Störungsnummer vorab im Handy. Kennen Sie sie nicht: nicht im Haus suchen, ins Freie gehen und die Feuerwehr benachrichtigen. Der Bereitschaftsdienst ist rund um die Uhr erreichbar und kostet auch bei Fehlalarm nichts. Den Gashahn erst wieder öffnen, wenn Netzbetreiber oder Fachbetrieb die Anlage freigegeben haben. Die Instandsetzung klären Sie danach mit einem Fachbetrieb – Wartungskunden erreichen unseren Notdienst, alle anderen zu den Geschäftszeiten.</p>
+    
+            <ul>
+              <li><strong>Abgasgeruch:</strong> Fenster und Türen öffnen, Gerät ausschalten, Fachbetrieb rufen – so steht es auch in der Vaillant-Betriebsanleitung. Kohlenmonoxid ist geruchlos: Bei Kopfschmerzen, Schwindel oder Übelkeit sofort ins Freie und den Notruf verständigen (<a href="https://www.feuerwehrverband.de/mediziner-und-schornsteinfeger-warnen-vor-erhoehten-kohlenmonoxid-risiken-in-der-heizsaison/" target="_blank" rel="noopener">Deutscher Feuerwehrverband, gelesen 23.10.2026</a>).</li>
+              <li><strong>Wasser läuft aus oder der Druck fällt ständig:</strong> Gerät ausschalten, Fachbetrieb beauftragen – Nachfüllen behebt kein Leck.</li>
+              <li><strong>Wiederholte Störabschaltung:</strong> Nicht weiter entstören, Fehlercode durchgeben.</li>
+              <li><strong>Frostgefahr:</strong> Im Winter drohen laut Vaillant „bereits nach kurzer Zeit Frostschäden“. Die Frostschutzfunktion arbeitet nur bei eingeschaltetem Gerät und sichert nicht die gesamte Anlage; steht die Heizung länger, muss sie notfalls vom Fachbetrieb entleert werden.</li>
+              <li><strong>Heizöl tritt aus oder starker Ölgeruch:</strong> Am Heizungsnotschalter ausschalten, lüften, kein offenes Feuer, Fachbetrieb rufen; bei größerem Austritt die Feuerwehr.</li>
+            </ul>
+    
+            <h2>Heizung ausgefallen in der Mietwohnung: Wer zahlt?</h2>
+    
+            <p>Nach Auffassung des <a href="https://mieterbund.de/aktuelles/meldungen/heizperiode-gestartet/">Deutschen Mieterbundes</a> beginnt die Heizperiode spätestens am 1. Oktober; die Heizung muss dann so eingestellt sein, dass zwischen 6 und 24 Uhr mindestens 20 bis 22 °C erreicht werden können, nachts etwa 18 °C. Fällt sie aus, liegt nach Auffassung des Mieterbundes ein Wohnungsmangel vor. Informieren Sie den Vermieter schnellstmöglich; laut Buderus ist er für die Reparatur zuständig und trägt die Kosten, Wartungskosten können je nach Mietvertrag als Betriebskosten umgelegt werden. Im Mehrfamilienhaus mit Zentralheizung sind Heizraum, Kessel, Gas-, Öl- und Notschalter Sache von Vermieter oder Hausverwaltung; Sie prüfen nur Raumthermostat, Thermostatventile und Heizkörper.</p>
+    
+            <p>Solange die Heizung nicht funktioniert, <strong>kann</strong> laut Mieterbund eine Mietminderung infrage kommen; als Beispiel nennt der Verband bei nur 16 bis 18 °C 20 bis 30 Prozent. Wichtig sind die frühe Meldung und ein Temperaturprotokoll. Nach Kontakt mit Vermieter oder Hausverwaltung und angemessener Frist (bei Frost: Stunden) kann der Mieter laut <a href="https://www.buderus.de/de/heiztechnik-verstehen/heizungen/heizung-notdienst-11220">Buderus</a> selbst einen Notdienst beauftragen, wenn der Vermieter nicht erreichbar ist oder untätig bleibt – der Vermieter trägt die notwendigen Kosten, unnötigen Mehraufwand der Mieter. Das ersetzt keine Rechtsberatung; im Streitfall helfen Mieterverein oder Verbraucherzentrale.</p>
+    
+            <h2>Notdienst bei HeizCenter: für wen und zu welchen Bedingungen?</h2>
+    
+            <p>Offen gesagt: Unser 24/7-Notdienst steht <strong>nur Kunden mit einem gültigen Wartungsvertrag</strong> zur Verfügung. Ohne bestehenden Wartungsvertrag können wir keinen Notdiensteinsatz übernehmen – es besteht kein Anspruch auf einen Notdiensteinsatz ohne Wartungsvertrag. Wartungskunden erreichen uns rund um die Uhr, auch an Feiertagen; Details und Service-Gebiete: <a href="/notdienst" class="text-[#0F5B78] font-medium hover:underline">Notdienst</a>.</p>
+    
+            <p>Alle anderen Haushalte erreichen uns für eine Reparaturanfrage zu unseren Geschäftszeiten telefonisch oder über das <a href="/kontakt" class="text-[#0F5B78] font-medium hover:underline">Kontaktformular</a>. Notdiensteinsätze werden nach Aufwand berechnet – Anfahrt, Arbeitszeit, Material –, außerhalb der Geschäftszeiten mit Zuschlägen; Buderus rät, diese Posten am Telefon zu klären, und nennt für einen Umwälzpumpentausch bis zu 400 Euro als Größenordnung (im Regelbetrieb; ein Notdiensteinsatz ist laut Buderus deutlich teurer).</p>
+    
+            <h2>Vorbeugen: Wartung vor der Heizsaison</h2>
+    
+            <p>Viessmann, Vaillant und Buderus empfehlen übereinstimmend eine jährliche Wartung: Verschleißteile, Brenner, Druck und Ausdehnungsgefäß werden geprüft – viele Ausfälle kündigen sich dabei an, bevor es kalt wird. Ablauf und Kosten erklärt unser Ratgeber <a href="/blog/heizung-wartung" class="text-[#0F5B78] font-medium hover:underline">Heizungswartung</a>. Mit einem <a href="/wartungsvertrag" class="text-[#0F5B78] font-medium hover:underline">Wartungsvertrag</a> (ab 179 Euro im Jahr) ist die Wartung fest eingeplant, Sie haben Priorität im Notfall und Rabatt auf Reparaturen.</p>
+    
+            <p>Für Gebäude mit mindestens sechs Wohnungen oder Nutzungseinheiten gilt zudem die Heizungsprüfung nach § 60b GModG für ältere Heizungen (keine Wärmepumpe) – bei Einbau vor dem 1. Oktober 2009 bis zum 30. September 2027, sonst innerhalb eines Jahres nach Ablauf von 15 Jahren nach Einbau; sie kann mit der Wartung verbunden werden (<a href="/blog/heizungsgesetz-2024" class="text-[#0F5B78] font-medium hover:underline">Ratgeber zum Heizungsgesetz</a>).</p>
+    
+            <h2>Heizungsausfall in Augsburg, Ulm, Memmingen oder Landsberg?</h2>
+    
+            <p>Mit drei Standorten in Bobingen, Klosterlechfeld und Gutenzell-Hürbel sind wir für Reparatur-, Wartungs- und Beratungsanfragen in <a href="/standorte/augsburg" class="text-[#0F5B78] font-medium hover:underline">Augsburg</a>, <a href="/standorte/ulm" class="text-[#0F5B78] font-medium hover:underline">Ulm</a>, <a href="/standorte/memmingen" class="text-[#0F5B78] font-medium hover:underline">Memmingen</a> und <a href="/standorte/landsberg" class="text-[#0F5B78] font-medium hover:underline">Landsberg</a> erreichbar; der 24/7-Notdienst gilt nur für Wartungskunden. Alle Leistungen: <a href="/heizung" class="text-[#0F5B78] font-medium hover:underline">Heizung</a>.</p>
+    
+            <h2>Häufig gestellte Fragen (FAQ)</h2>
+    
+            <h3>Heizung springt nicht an, aber warmes Wasser geht – woran liegt das?</h3>
+            <p>In der Regel funktioniert der Wärmeerzeuger dann, das Problem sitzt im Heizkreis oder in der Regelung: Sommerbetrieb, Zeitprogramm, Raumthermostat, Luft, fehlender Druck, eine stehende Pumpe oder ein hängendes Umschaltventil. Betriebsart und Druck prüfen Sie selbst, Pumpe und Umschaltventil der Fachbetrieb.</p>
+    
+            <h3>Heizung springt nicht an nach dem Sommer – was ist die häufigste Ursache?</h3>
+            <p>Meist der Sommer selbst: Regelung noch auf Sommerbetrieb, festgesetzte Thermostatventile, eine festsitzende Pumpe oder Luft im Heizkreis. Betriebsart umstellen, Ventile prüfen, entlüften und den Druck kontrollieren löst viele Fälle.</p>
+    
+            <h3>Heizung springt nicht an nach der Öllieferung – was tun?</h3>
+            <p>Beim Betanken aufgewirbelte Rückstände können den Filter verstopfen. Heizung vor der Lieferung ausschalten und erst etwa zwei Stunden danach einschalten; steht der Brenner trotzdem auf Störung, einmal entstören, dann den Fachbetrieb rufen.</p>
+    
+            <h3>Wie oft darf ich die Heizung entstören?</h3>
+            <p>Das legt Ihre Bedienungsanleitung fest. Bei Ölbrennern gilt: nur einmal, weil bei jedem Startversuch Öl eingespritzt wird. Vaillant nennt in der Anleitung der ecoTEC plus (40–63 kW) spätestens nach drei erfolglosen Versuchen den Fachhandwerker; wir empfehlen, schon nach dem ersten Versuch anzurufen.</p>
+    
+            <h3>Heizung ausgefallen: Wer zahlt als Mieter?</h3>
+            <p>Nach Mieterbund und Buderus liegt die Reparatur beim Vermieter (keine Rechtsberatung). Melden Sie den Ausfall sofort, am besten schriftlich, und protokollieren Sie die Temperaturen; nach Auffassung des Deutschen Mieterbundes liegt ein Wohnungsmangel vor, und eine Mietminderung kann infrage kommen.</p>
+    
+            <h3>Welcher Wasserdruck ist bei der Heizung normal?</h3>
+            <p>Maßgeblich sind der Sollwert in Ihrer Bedienungsanleitung bzw. der grüne Bereich am Manometer. Zur Orientierung: Im Einfamilienhaus laut Vaillant 1 bis 2 bar, kalt meist 1 bis 1,5 bar; Buderus nennt etwa 1,5 bis 2 bar. Unter 0,5 bar schalten viele Geräte ab und melden einen Fehlercode (bei Vaillant F.22).</p>
+    
+            <h3>Meine Wärmepumpe ist vereist – ist das ein Defekt?</h3>
+            <p>In der Regel nicht: Zwischen etwa +5 °C und −5 °C ist Reif an der Außeneinheit normal, die Anlage taut automatisch ab. Nicht abschalten und nicht enteisen; bleibt sie dauerhaft vereist oder zeigt einen Fehlercode, rufen Sie den Fachbetrieb.</p>
+    
+            <h3>Bekomme ich den HeizCenter-Notdienst ohne Wartungsvertrag?</h3>
+            <p>Nein. Unser 24/7-Notdienst steht ausschließlich Kunden mit einem gültigen Wartungsvertrag zur Verfügung; ohne Wartungsvertrag können wir keinen Notdiensteinsatz übernehmen.</p>
+    
+            <h2>Fazit: Erst prüfen, dann einmal entstören, dann anrufen</h2>
+    
+            <p>Die meisten Heizungen, die am ersten kalten Tag nicht anspringen, haben oft eine harmlose Ursache: Sommerbetrieb, Sicherung, Wasserdruck, Luft oder ein klemmendes Ventil lassen sich in Minuten prüfen und oft selbst beheben. Die Grenze: einmal entstören, keine Eingriffe an Gas und Öl, bei Gasgeruch sofort raus. Wer den Ausfall vermeiden will, lässt vor der Heizsaison warten – mit Wartungsvertrag steht Ihnen im Ernstfall unser Notdienst zur Verfügung (Einsatz nach Aufwand, siehe <a href="/notdienst" class="text-[#0F5B78] font-medium hover:underline">Notdienst</a>).</p>
+    
+            <p><strong>Weiterlesen:</strong></p>
+            <ul>
+              <li><a href="/blog/heizung-entlueften-anleitung-2026" class="text-[#0F5B78] font-medium hover:underline">Heizung entlüften: Schritt-für-Schritt-Anleitung</a></li>
+              <li><a href="/blog/heizung-wartung" class="text-[#0F5B78] font-medium hover:underline">Heizungswartung: Kosten, Ablauf und Nutzen</a></li>
+              <li><a href="/notdienst" class="text-[#0F5B78] font-medium hover:underline">Notdienst für Wartungskunden</a></li>
+              <li><a href="/wartungsvertrag" class="text-[#0F5B78] font-medium hover:underline">Wartungsverträge im Überblick</a></li>
+            </ul>
+    
+            <div class="cta-box">
+              <p class="cta-locations">📍 <strong>Unsere Standorte:</strong> Bobingen (Augsburg) · Klosterlechfeld (Landsberg) · Gutenzell-Hürbel (Ulm/Memmingen)</p>
+              <h4>Heizung springt nicht an? Wir helfen weiter</h4>
+              <p>Nennen Sie uns Fehlercode, Gerätetyp und was Sie bereits geprüft haben – dann bereiten wir die Reparatur gezielt vor. Wartungskunden erreichen unseren Notdienst rund um die Uhr, alle anderen können zu unseren Geschäftszeiten eine Reparatur anfragen.</p>
+              <p>
+                <strong>✓</strong> Reparatur und Wartung von Gas-, Öl-, Pellet- und Wärmepumpenanlagen<br>
+                <strong>✓</strong> 24/7-Notdienst für Kunden mit Wartungsvertrag<br>
+                <strong>✓</strong> Drei Standorte in Bayern und Baden-Württemberg
+              </p>
+              <p>
+                <strong>Telefon:</strong> <a href="tel:${CONTACT.PHONE_LINK}">${CONTACT.PHONE_DISPLAY}</a><br>
+                <strong>E-Mail:</strong> <a href="mailto:${CONTACT.EMAIL}">${CONTACT.EMAIL}</a>
+              </p>
+            </div>
+          `,
+          category: 'Heizung',
+          author: 'HeizCenter Redaktion',
+          date: '2026-10-23',
+          readingTime: 10,
+          image: '/images/notdienst.webp',
+          tags: ['Heizung springt nicht an', 'Heizungsausfall', 'Heizungsnotdienst', 'Heizungsstörung', 'Gastherme Störung', 'Ölheizung Störung', 'Wartungsvertrag'],
+          featured: true,
+          faqs: [
+            { question: 'Heizung springt nicht an, aber warmes Wasser geht – woran liegt das?', answer: 'In der Regel funktioniert der Wärmeerzeuger dann, das Problem sitzt im Heizkreis oder in der Regelung: Sommerbetrieb, Zeitprogramm, Raumthermostat, Luft, fehlender Druck, eine stehende Pumpe oder ein hängendes Umschaltventil. Betriebsart und Druck prüfen Sie selbst, Pumpe und Umschaltventil der Fachbetrieb.' },
+            { question: 'Heizung springt nicht an nach dem Sommer – was ist die häufigste Ursache?', answer: 'Meist der Sommer selbst: Regelung noch auf Sommerbetrieb, festgesetzte Thermostatventile, eine festsitzende Pumpe oder Luft im Heizkreis. Betriebsart umstellen, Ventile prüfen, entlüften und den Druck kontrollieren löst viele Fälle.' },
+            { question: 'Heizung springt nicht an nach der Öllieferung – was tun?', answer: 'Beim Betanken aufgewirbelte Rückstände können den Filter verstopfen. Heizung vor der Lieferung ausschalten und erst etwa zwei Stunden danach einschalten; steht der Brenner trotzdem auf Störung, einmal entstören, dann den Fachbetrieb rufen.' },
+            { question: 'Wie oft darf ich die Heizung entstören?', answer: 'Das legt Ihre Bedienungsanleitung fest. Bei Ölbrennern gilt: nur einmal, weil bei jedem Startversuch Öl eingespritzt wird. Vaillant nennt in der Anleitung der ecoTEC plus (40–63 kW) spätestens nach drei erfolglosen Versuchen den Fachhandwerker; wir empfehlen, schon nach dem ersten Versuch anzurufen.' },
+            { question: 'Heizung ausgefallen: Wer zahlt als Mieter?', answer: 'Nach Mieterbund und Buderus liegt die Reparatur beim Vermieter (keine Rechtsberatung). Melden Sie den Ausfall sofort, am besten schriftlich, und protokollieren Sie die Temperaturen; nach Auffassung des Deutschen Mieterbundes liegt ein Wohnungsmangel vor, und eine Mietminderung kann infrage kommen.' },
+            { question: 'Welcher Wasserdruck ist bei der Heizung normal?', answer: 'Maßgeblich sind der Sollwert in Ihrer Bedienungsanleitung bzw. der grüne Bereich am Manometer. Zur Orientierung: Im Einfamilienhaus laut Vaillant 1 bis 2 bar, kalt meist 1 bis 1,5 bar; Buderus nennt etwa 1,5 bis 2 bar. Unter 0,5 bar schalten viele Geräte ab und melden einen Fehlercode (bei Vaillant F.22).' },
+            { question: 'Meine Wärmepumpe ist vereist – ist das ein Defekt?', answer: 'In der Regel nicht: Zwischen etwa +5 °C und −5 °C ist Reif an der Außeneinheit normal, die Anlage taut automatisch ab. Nicht abschalten und nicht enteisen; bleibt sie dauerhaft vereist oder zeigt einen Fehlercode, rufen Sie den Fachbetrieb.' },
+            { question: 'Bekomme ich den HeizCenter-Notdienst ohne Wartungsvertrag?', answer: 'Nein. Unser 24/7-Notdienst steht ausschließlich Kunden mit einem gültigen Wartungsvertrag zur Verfügung; ohne Wartungsvertrag können wir keinen Notdiensteinsatz übernehmen.' },
+          ],
+        },
+    {
       id: 1,
       slug: 'waermepumpe-kosten-2026',
       title: 'Wärmepumpe Kosten 2026: Kompletter Überblick',
@@ -301,6 +1204,8 @@ function getMockBlogPosts(): BlogPost[] {
         <div class="highlight-quote">
           Durchschnittliche Gesamtkosten für eine Wärmepumpe 2026: zwischen 27.000 und 50.000 Euro. Nach Förderung oft nur 5.400 bis 19.000 Euro.
         </div>
+
+        <p><strong>Hinweis:</strong> Stand 23.10.2026 – Der Klimageschwindigkeitsbonus von 16% gilt für Anträge bis zum 31.01.2027; ab dem 01.02.2027 sinkt er auf 12%, und der Höchstbetrag der förderfähigen Kosten für die erste Wohneinheit fällt von 28.000 auf 27.250 Euro. Außerdem hat die Bundesregierung am 8. Juli 2026 Eckpunkte veröffentlicht, die die KfW so wiedergibt: „Im ersten Quartal 2027 soll ein Wertschöpfungsbonus eingeführt werden. Die Grundförderung sinkt dann für alle Wärmepumpen auf 15 Prozent. Gleichzeitig erhalten Wärmepumpen, die innerhalb der EU gefertigt wurden, einen Wertschöpfungsbonus in Höhe von 15 Prozent.“ Details zur Umsetzung und der genaue Kreis der Geräte stehen noch aus – unseren Ausblick lesen Sie unter <a href="/blog/heizungsfoerderung-2027" class="text-[#0F5B78] font-medium hover:underline">Heizungsförderung 2027</a>.</p>
 
         <h2>Die ehrliche Kostenaufstellung</h2>
 
@@ -459,7 +1364,7 @@ function getMockBlogPosts(): BlogPost[] {
           </tbody>
         </table>
 
-        <p>Der Clou: Bei einer guten Wärmepumpe (Jahresarbeitszahl 3,5 oder höher) kostet Sie eine Kilowattstunde Wärme etwa <strong>5-6 Cent</strong>. Zum Vergleich: Gas liegt bei 10-12 Cent, Öl bei 12-15 Cent pro kWh.</p>
+        <p>Der Clou: Bei einer guten Wärmepumpe (Jahresarbeitszahl 3,5 oder höher) kostet Sie eine Kilowattstunde Wärme etwa <strong>6-9 Cent</strong>. Zum Vergleich: Gas liegt bei rund 12,7 Cent (Verivox, Oktober 2026), Heizöl bei rund 17 Cent pro kWh (172,71 €/100 l, heizoel24, 23.10.2026).</p>
 
         <h2>Versteckte Kosten – darauf sollten Sie achten</h2>
 
@@ -542,7 +1447,7 @@ function getMockBlogPosts(): BlogPost[] {
           <h3 class="text-lg font-bold text-slate-900 mb-4">Kostenlose Vor-Ort-Analyse in 3 Schritten:</h3>
           <ol class="space-y-3 mb-6">
             <li class="flex gap-3"><span class="flex-shrink-0 w-6 h-6 bg-[#0F5B78] text-white rounded-full flex items-center justify-center text-sm font-bold">1</span><span><strong>Besichtigung</strong> – Unser Fachmann schaut sich Ihr Haus an (ca. 45 Min.)</span></li>
-            <li class="flex gap-3"><span class="flex-shrink-0 w-6 h-6 bg-[#0F5B78] text-white rounded-full flex items-center justify-center text-sm font-bold">2</span><span><strong>Berechnung</strong> – Sie erhalten ein Festpreis-Angebot inkl. Förderrechnung</span></li>
+            <li class="flex gap-3"><span class="flex-shrink-0 w-6 h-6 bg-[#0F5B78] text-white rounded-full flex items-center justify-center text-sm font-bold">2</span><span><strong>Berechnung</strong> – Sie erhalten ein individuelles Angebot inkl. Förderberechnung</span></li>
             <li class="flex gap-3"><span class="flex-shrink-0 w-6 h-6 bg-[#0F5B78] text-white rounded-full flex items-center justify-center text-sm font-bold">3</span><span><strong>Entscheidung</strong> – Sie entscheiden in Ruhe – ohne Verkaufsdruck</span></li>
           </ol>
           <div class="flex flex-col sm:flex-row gap-3">
@@ -553,7 +1458,7 @@ function getMockBlogPosts(): BlogPost[] {
         </div>
 
         <div class="bg-amber-50 border border-amber-200 rounded-lg p-4 mt-6">
-          <p class="text-amber-800 text-sm"><strong>⏰ Hinweis:</strong> Der Klimageschwindigkeits-Bonus (16% Förderung) sinkt ab 01.02.2027 halbjährlich um 4 Prozentpunkte und entfällt für Anträge ab 01.08.2028. Wer jetzt plant, sichert sich die maximale Förderung.</p>
+          <p class="text-amber-800 text-sm"><strong>⏰ Hinweis:</strong> Der Klimageschwindigkeits-Bonus (16% Förderung) sinkt ab 01.02.2027 halbjährlich um 4 Prozentpunkte und entfällt für Anträge ab 01.08.2028. Wer bis 31.01.2027 den KfW-Antrag stellt, erhält noch den vollen Klimabonus (vorbehaltlich Bundesmittel).</p>
         </div>
 
         <h2>Häufig gestellte Fragen (FAQ)</h2>
@@ -580,11 +1485,12 @@ function getMockBlogPosts(): BlogPost[] {
         <p>Häufige Zusatzkosten sind: <strong>Starkstromanschluss</strong> (500-2.000 Euro), größere Heizkörper bei sehr kleinen Altbau-Radiatoren (2.000-5.000 Euro), neuer Warmwasserspeicher (1.000-3.000 Euro) und Fundamentarbeiten für das Außengerät (500-1.500 Euro). Seriöse Anbieter klären diese Punkte bei der Vor-Ort-Besichtigung und kalkulieren sie direkt ins Angebot ein.</p>
 
         <h3>Kann ich die Förderung auch nachträglich beantragen?</h3>
-        <p><strong>Nein</strong>, vor der Antragstellung schließen Sie mit dem Fachbetrieb einen Liefer- bzw. Leistungsvertrag mit aufschiebender oder auflösender Bedingung (Zusage der KfW) und voraussichtlichem Umsetzungsdatum und laden ihn im Antrag hoch. Wer einen Vertrag ohne diese Bedingung unterschreibt oder vor der Antragstellung mit dem Bau beginnt, verliert den Anspruch komplett. Mit der Ausführung beginnen Sie nach der Zusage – oder auf eigenes Risiko schon nach der Antragstellung. Lassen Sie den Antrag daher von einem erfahrenen Fachbetrieb begleiten oder nutzen Sie einen Energieberater.</p>
+        <p><strong>Nein</strong>, vor der Antragstellung schließen Sie mit dem Fachbetrieb einen Liefer- bzw. Leistungsvertrag mit aufschiebender oder auflösender Bedingung (Zusage der KfW) und voraussichtlichem Umsetzungsdatum und laden ihn im Antrag hoch. Wer einen Vertrag ohne diese Bedingung unterschreibt oder vor der Antragstellung mit dem Bau beginnt, kann keine Förderung mehr erhalten. Mit der Ausführung beginnen Sie nach der Zusage – oder auf eigenes Risiko schon nach der Antragstellung. Lassen Sie den Antrag daher von einem erfahrenen Fachbetrieb begleiten oder nutzen Sie einen Energieberater.</p>
       `,
       category: 'Wärmepumpe',
       author: 'HeizCenter Redaktion',
       date: '2026-02-10',
+      updated: '2026-10-23',
       readingTime: 8,
       image: '/images/Waermepumpe.webp',
       tags: ['Wärmepumpe', 'Kosten', 'Förderung', 'BEG'],
@@ -597,7 +1503,7 @@ function getMockBlogPosts(): BlogPost[] {
         { question: 'Welche Wärmepumpe eignet sich am besten für Altbau?', answer: 'Für Altbauten eignen sich Luft-Wasser-Wärmepumpen am besten, da sie keine aufwendigen Erdarbeiten benötigen. Wichtig ist eine ausreichende Vorlauftemperatur (55-60°C) für die vorhandenen Heizkörper. Bei sehr schlecht gedämmten Häusern sollten Sie entweder die Dämmung verbessern oder größere Heizkörper einplanen. Ein hydraulischer Abgleich ist in jedem Fall Pflicht.' },
         { question: 'Wie lange dauert der Einbau einer Wärmepumpe?', answer: 'Die reine Installation dauert 2-5 Tage, je nach Komplexität. Von der ersten Beratung bis zur fertigen Anlage sollten Sie einen Planungsvorlauf von 2-4 Monaten einrechnen. Das beinhaltet Vor-Ort-Besichtigung, Angebotserstellung, Förderantrag bei der KfW, Materialbeschaffung und Terminkoordination.' },
         { question: 'Welche versteckten Kosten kommen bei einer Wärmepumpe hinzu?', answer: 'Häufige Zusatzkosten sind: Starkstromanschluss (500-2.000 Euro), größere Heizkörper bei sehr kleinen Altbau-Radiatoren (2.000-5.000 Euro), neuer Warmwasserspeicher (1.000-3.000 Euro) und Fundamentarbeiten für das Außengerät (500-1.500 Euro). Seriöse Anbieter klären diese Punkte bei der Vor-Ort-Besichtigung und kalkulieren sie direkt ins Angebot ein.' },
-        { question: 'Kann ich die Förderung auch nachträglich beantragen?', answer: 'Nein, vor der Antragstellung schließen Sie mit dem Fachbetrieb einen Liefer- bzw. Leistungsvertrag mit aufschiebender oder auflösender Bedingung (Zusage der KfW) und voraussichtlichem Umsetzungsdatum und laden ihn im Antrag hoch. Wer einen Vertrag ohne diese Bedingung unterschreibt oder vor der Antragstellung mit dem Bau beginnt, verliert den Anspruch komplett. Mit der Ausführung beginnen Sie nach der Zusage – oder auf eigenes Risiko schon nach der Antragstellung. Lassen Sie den Antrag daher von einem erfahrenen Fachbetrieb begleiten oder nutzen Sie einen Energieberater.' },
+        { question: 'Kann ich die Förderung auch nachträglich beantragen?', answer: 'Nein, vor der Antragstellung schließen Sie mit dem Fachbetrieb einen Liefer- bzw. Leistungsvertrag mit aufschiebender oder auflösender Bedingung (Zusage der KfW) und voraussichtlichem Umsetzungsdatum und laden ihn im Antrag hoch. Wer einen Vertrag ohne diese Bedingung unterschreibt oder vor der Antragstellung mit dem Bau beginnt, kann keine Förderung mehr erhalten. Mit der Ausführung beginnen Sie nach der Zusage – oder auf eigenes Risiko schon nach der Antragstellung. Lassen Sie den Antrag daher von einem erfahrenen Fachbetrieb begleiten oder nutzen Sie einen Energieberater.' },
       ],
     },
     {
@@ -617,6 +1523,16 @@ function getMockBlogPosts(): BlogPost[] {
         </div>
 
         <p>Spoiler vorweg: Weniger Pflichten, als Sie vielleicht befürchten. Ihre funktionierende Heizung darf bleiben, Reparaturen sind erlaubt, und beim Austausch haben Sie die freie Wahl zwischen allen im Gesetz genannten Heizungsarten. Neu ist eine Stufenregel für neue Gas- und Ölheizungen ab 2029.</p>
+
+        <div class="callout callout-info">
+          <span class="callout-icon">ℹ️</span>
+          <div class="callout-title">Aktuelles (Stand 23.10.2026)</div>
+          <div class="callout-content">
+            <p><strong>Verfassungsbeschwerde der Deutschen Umwelthilfe:</strong> Die DUH hat gemeinsam mit vier Mieterinnen und Mietern Verfassungsbeschwerde gegen das GModG beim Bundesverfassungsgericht eingereicht (Meldung vom 29.09.2026). Die Organisation argumentiert, das Gesetz verstoße gegen die im Grundgesetz verankerte Pflicht zum Klimaschutz (Art. 20a GG). Das Verfahren ist anhängig – das Gesetz gilt unverändert weiter.</p>
+            <p><strong>Organklage der Linksfraktion erfolglos:</strong> Die Organklage der Linksfraktion im Zusammenhang mit dem Gesetz hat das Bundesverfassungsgericht als unzulässig verworfen, weil bereits das Rechtsschutzbedürfnis fehlte (Meldung vom 09.07.2026). Über die Verfassungsmäßigkeit des Gesetzes selbst hat das Gericht damit nicht entschieden.</p>
+            <p><strong>Grüngas-/Grünheizölquote (§ 42a GModG):</strong> Das Gesetz zur Quote ist bis zum 1. Dezember 2026 durch die Bundesregierung vorzulegen – Einzelheiten im Kasten „Angekündigt, aber noch nicht beschlossen“ weiter unten. Auf gmodg.bund.de war am 23.10.2026 noch kein Gesetzentwurf veröffentlicht.</p>
+          </div>
+        </div>
 
         <h2>Die 65%-Regel ist gestrichen</h2>
 
@@ -708,7 +1624,7 @@ function getMockBlogPosts(): BlogPost[] {
           <span class="callout-icon">⚠️</span>
           <div class="callout-title">Angekündigt, aber noch nicht beschlossen</div>
           <div class="callout-content">
-            Nach § 42a GModG soll die Bundesregierung bis zum 1. Dezember 2026 ein Gesetz mit einer Grüngas- und Grünheizölquote vorlegen; ab 2045 sollen Brennstoffe vollständig klimaneutral sein. Dieses Gesetz liegt noch nicht vor – wir aktualisieren diesen Ratgeber, sobald es da ist.
+            Nach § 42a GModG ist bis zum 1. Dezember 2026 durch die Bundesregierung ein Gesetz vorzulegen, das eine Grüngas-/Grünheizölquote einführt; es wird die Inverkehrbringer von Gas, Öl und Flüssiggas verpflichten, die Brennstoffe für die Wärmeversorgung von Gebäuden ab dem Jahr 2045 vollständig auf klimaneutrale Brennstoffe umzustellen. Dieses Gesetz liegt noch nicht vor – wir aktualisieren diesen Ratgeber, sobald es da ist.
           </div>
         </div>
 
@@ -863,6 +1779,7 @@ function getMockBlogPosts(): BlogPost[] {
       category: 'Heizung',
       author: 'HeizCenter Redaktion',
       date: '2026-09-09',
+      updated: '2026-10-23',
       readingTime: 8,
       image: '/images/Heizung_Modernisierung.webp',
       tags: ['Heizungsgesetz', 'GEG', 'GModG', 'Erneuerbare Energien'],
@@ -887,14 +1804,16 @@ function getMockBlogPosts(): BlogPost[] {
         <p class="text-xl leading-relaxed text-slate-600 mb-8">80% Zuschuss vom Staat für eine neue Heizung – klingt zu gut um wahr zu sein? Ist es aber. Die BEG-Förderung macht's möglich. Hier erfahren Sie, wie Sie das Maximum rausholen.</p>
 
         <div class="flex flex-wrap gap-4 mb-8 text-sm text-slate-600">
-          <span class="flex items-center gap-1">✓ Über 200 erfolgreiche Förderanträge</span>
-          <span class="flex items-center gap-1">✓ Antragshilfe inklusive</span>
+          <span class="flex items-center gap-1">✓ Zahlreiche Förderanträge begleitet</span>
+          <span class="flex items-center gap-1">✓ Hilfe bei der Förderung</span>
           <span class="flex items-center gap-1">✓ Meisterbetrieb</span>
         </div>
 
         <h2>Kurz erklärt: Was ist die BEG-Förderung?</h2>
 
         <p>Die Bundesförderung für effiziente Gebäude (BEG) ist das zentrale Förderprogramm für den Heizungstausch in Deutschland. Seit 2024 läuft alles über die KfW – nicht mehr über das BAFA.</p>
+
+        <p><strong>Hinweis:</strong> Stand 23.10.2026 – Der Klimageschwindigkeitsbonus von 16% gilt für Anträge bis zum 31.01.2027; ab dem 01.02.2027 sinkt er auf 12%, und der Höchstbetrag der förderfähigen Kosten für die erste Wohneinheit fällt von 28.000 auf 27.250 Euro. Außerdem hat die Bundesregierung am 8. Juli 2026 Eckpunkte veröffentlicht, die die KfW so wiedergibt: „Im ersten Quartal 2027 soll ein Wertschöpfungsbonus eingeführt werden. Die Grundförderung sinkt dann für alle Wärmepumpen auf 15 Prozent. Gleichzeitig erhalten Wärmepumpen, die innerhalb der EU gefertigt wurden, einen Wertschöpfungsbonus in Höhe von 15 Prozent.“ Details zur Umsetzung und der genaue Kreis der Geräte stehen noch aus – unseren Ausblick lesen Sie unter <a href="/blog/heizungsfoerderung-2027" class="text-[#0F5B78] font-medium hover:underline">Heizungsförderung 2027</a>.</p>
 
         <p>Das Grundprinzip: Sie tauschen Ihre alte Heizung gegen ein klimafreundliches System und bekommen einen Teil der Kosten zurück. Je nachdem, welche Boni Sie sammeln, sind bis zu 80% der förderfähigen Kosten drin.</p>
 
@@ -1078,12 +1997,12 @@ function getMockBlogPosts(): BlogPost[] {
         <p>Unsere ehrliche Einschätzung: Die aktuellen Fördersätze sind historisch hoch. Ob es 2026 oder 2027 noch genauso viel gibt, weiß niemand. Wer ohnehin tauschen will, sollte die Gelegenheit nutzen.</p>
 
         <div class="bg-gradient-to-br from-slate-50 to-slate-100 border border-slate-200 rounded-xl p-6 my-6">
-          <h3 class="text-lg font-bold text-slate-900 mb-3">Wir übernehmen den Papierkram</h3>
-          <p class="text-slate-600 mb-4">Bei HeizCenter unterstützen wir Sie bei der kompletten Antragstellung:</p>
+          <h3 class="text-lg font-bold text-slate-900 mb-3">Wir begleiten Ihren Förderantrag</h3>
+          <p class="text-slate-600 mb-4">Bei HeizCenter unterstützen wir Sie rund um den Förderantrag (Bestätigung zum Antrag von uns, den Antrag stellen Sie als Eigentümer):</p>
           <ul class="space-y-2 mb-6 text-slate-700">
             <li class="flex items-start gap-2">✓ <span>Förderberechnung für Ihre Situation</span></li>
             <li class="flex items-start gap-2">✓ <span>Alle erforderlichen Nachweise</span></li>
-            <li class="flex items-start gap-2">✓ <span>Garantiert förderfähige Systeme</span></li>
+            <li class="flex items-start gap-2">✓ <span>Förderfähige Geräte laut KfW-Liste</span></li>
             <li class="flex items-start gap-2">✓ <span>Hilfe beim KfW-Portal</span></li>
           </ul>
           <div class="flex flex-col sm:flex-row gap-3">
@@ -1117,11 +2036,12 @@ function getMockBlogPosts(): BlogPost[] {
         <p><strong>Ja</strong>, das ist möglich. Sie können den BEG-Zuschuss mit dem zinsgünstigen KfW-Ergänzungskredit 358/359 (bis zu 120.000 Euro pro Wohneinheit) kombinieren. Der Zuschuss reduziert Ihre Investition, den Rest finanzieren Sie günstig. In der Praxis bedeutet das: Sie zahlen weniger Eigenkapital und die monatlichen Raten liegen oft unter den eingesparten Heizkosten. Hinweis: Der KfW-Kredit 261 ist für Komplettsanierungen zum Effizienzhaus gedacht, nicht für den Einzelmaßnahmen-Heizungstausch.</p>
 
         <h3>Was passiert, wenn ich vor dem Antrag ohne Förderbedingung unterschreibe?</h3>
-        <p><strong>Dann verfällt der Förderanspruch komplett.</strong> Ein Vertrag ohne aufschiebende oder auflösende Bedingung (Zusage der KfW) oder ein Baubeginn vor Antragstellung gilt als Vorhabenbeginn – dann zahlt die KfW keinen Cent. Angebote einholen ist erlaubt; unterschreiben Sie aber nur einen Vertrag mit dieser Bedingung und beginnen Sie mit der Ausführung nach der Zusage (auf eigenes Risiko schon nach der Antragstellung). Lassen Sie sich von keinem Handwerker unter Druck setzen. Seriöse Fachbetriebe kennen diese Regel und halten sich daran.</p>
+        <p><strong>Dann können Sie keine Förderung mehr erhalten.</strong> Ein Vertrag ohne aufschiebende oder auflösende Bedingung (Zusage der KfW) oder ein Baubeginn vor Antragstellung gilt als Vorhabenbeginn – dann zahlt die KfW keinen Cent. Angebote einholen ist erlaubt; unterschreiben Sie aber nur einen Vertrag mit dieser Bedingung und beginnen Sie mit der Ausführung nach der Zusage (auf eigenes Risiko schon nach der Antragstellung). Lassen Sie sich von keinem Handwerker unter Druck setzen. Seriöse Fachbetriebe kennen diese Regel und halten sich daran.</p>
       `,
       category: 'Förderung',
       author: 'HeizCenter Redaktion',
       date: '2025-11-05',
+      updated: '2026-10-23',
       readingTime: 10,
       image: '/images/Heizung_Modernisierung.webp',
       tags: ['BEG', 'Förderung', 'Zuschuss', 'KfW', 'BAFA'],
@@ -1134,7 +2054,7 @@ function getMockBlogPosts(): BlogPost[] {
         { question: 'Welche Heizungssysteme werden 2026 gefördert?', answer: 'Gefördert werden Wärmepumpen (Luft, Sole, Wasser), Pelletheizungen, Solarthermie (als Ergänzung), Fernwärmeanschlüsse und Brennstoffzellen. Bei Hybridheizungen wird nur der erneuerbare Wärmeerzeuger (z. B. die Wärmepumpe) nach den allgemeinen KfW-458-Regeln gefördert, ohne Klimageschwindigkeitsbonus; der Gaskessel selbst ist nicht förderfähig. Reine Gas- oder Ölheizungen sind nicht förderfähig. Das System muss auf der KfW-Liste förderfähiger Geräte stehen.' },
         { question: 'Was ist der maximale Förderbetrag bei der BEG?', answer: 'Die förderfähigen Kosten sind beim Einfamilienhaus bzw. für die erste Wohneinheit auf 28.000 Euro gedeckelt (2.–6. Wohneinheit je 15.000 Euro, ab der 7. je 8.000 Euro). Bei 80% Förderung (nur bei zu versteuerndem Haushaltseinkommen bis 30.000 Euro, mit Kind bis 40.000 Euro) ergibt das einen maximalen Zuschuss von 22.400 Euro, bei der regulären Obergrenze von 70% maximal 19.600 Euro. Bei 46% Förderung sind es maximal 12.880 Euro Zuschuss. Wenn Ihre Investition höher liegt (z.B. 40.000 Euro), werden nur die ersten 28.000 Euro für die Förderberechnung herangezogen. Ab 01.02.2027 sinkt der Betrag für die erste Wohneinheit halbjährlich um 750 Euro.' },
         { question: 'Kann ich die BEG-Förderung mit einem KfW-Kredit kombinieren?', answer: 'Ja, das ist möglich. Sie können den BEG-Zuschuss mit dem zinsgünstigen KfW-Ergänzungskredit 358/359 (bis zu 120.000 Euro pro Wohneinheit) kombinieren. Der Zuschuss reduziert Ihre Investition, den Rest finanzieren Sie günstig. In der Praxis bedeutet das: Sie zahlen weniger Eigenkapital und die monatlichen Raten liegen oft unter den eingesparten Heizkosten. Hinweis: Der KfW-Kredit 261 ist für Komplettsanierungen zum Effizienzhaus gedacht, nicht für den Einzelmaßnahmen-Heizungstausch.' },
-        { question: 'Was passiert, wenn ich vor dem Antrag ohne Förderbedingung unterschreibe?', answer: 'Dann verfällt der Förderanspruch komplett. Ein Vertrag ohne aufschiebende oder auflösende Bedingung (Zusage der KfW) oder ein Baubeginn vor Antragstellung gilt als Vorhabenbeginn – dann zahlt die KfW keinen Cent. Angebote einholen ist erlaubt; unterschreiben Sie aber nur einen Vertrag mit dieser Bedingung und beginnen Sie mit der Ausführung nach der Zusage (auf eigenes Risiko schon nach der Antragstellung). Lassen Sie sich von keinem Handwerker unter Druck setzen. Seriöse Fachbetriebe kennen diese Regel und halten sich daran.' },
+        { question: 'Was passiert, wenn ich vor dem Antrag ohne Förderbedingung unterschreibe?', answer: 'Dann können Sie keine Förderung mehr erhalten. Ein Vertrag ohne aufschiebende oder auflösende Bedingung (Zusage der KfW) oder ein Baubeginn vor Antragstellung gilt als Vorhabenbeginn – dann zahlt die KfW keinen Cent. Angebote einholen ist erlaubt; unterschreiben Sie aber nur einen Vertrag mit dieser Bedingung und beginnen Sie mit der Ausführung nach der Zusage (auf eigenes Risiko schon nach der Antragstellung). Lassen Sie sich von keinem Handwerker unter Druck setzen. Seriöse Fachbetriebe kennen diese Regel und halten sich daran.' },
       ],
     },
     {
@@ -1148,7 +2068,7 @@ function getMockBlogPosts(): BlogPost[] {
         <div class="flex flex-wrap gap-4 mb-8 text-sm text-slate-600">
           <span class="flex items-center gap-1">✓ Über 800 Heizungsinstallationen pro Jahr</span>
           <span class="flex items-center gap-1">✓ Ehrliche Kosten-Nutzen-Beratung</span>
-          <span class="flex items-center gap-1">✓ Meisterbetrieb seit 2010</span>
+          <span class="flex items-center gap-1">✓ Fachbetrieb mit über 20 Jahren Erfahrung</span>
         </div>
 
         <p>In diesem Artikel zeige ich Ihnen transparent, was eine neue Gasheizung 2026 wirklich kostet – und ob es für Ihre Situation bessere Alternativen gibt. Denn manchmal ist die günstigste Anschaffung langfristig die teuerste Lösung.</p>
@@ -1219,13 +2139,13 @@ function getMockBlogPosts(): BlogPost[] {
             <h4 class="font-bold text-slate-900 mb-3">Jährliche Betriebskosten</h4>
             <ul class="space-y-2 text-slate-700">
               <li><strong>Gasverbrauch:</strong> ca. 2.400 €<br><span class="text-sm text-slate-500">(20.000 kWh × 12 Cent/kWh)</span></li>
-              <li><strong>CO₂-Abgabe 2025:</strong> ca. 220 €<br><span class="text-sm text-slate-500">(55 €/Tonne × 4 Tonnen)</span></li>
+              <li><strong>CO₂-Preis:</strong> im Gaspreis enthalten<br><span class="text-sm text-slate-500">(55–65 €/Tonne × 4 Tonnen = 220–260 € netto, Korridor 2026/2027)</span></li>
               <li><strong>Wartung:</strong> 150 – 200 €</li>
               <li><strong>Schornsteinfeger:</strong> 80 – 120 €</li>
             </ul>
             <div class="mt-4 pt-4 border-t border-slate-200">
-              <p class="font-bold text-lg text-red-600">Gesamt: ca. 2.850 – 2.940 €/Jahr</p>
-              <p class="text-sm text-slate-500">= 240 – 245 € pro Monat</p>
+              <p class="font-bold text-lg text-red-600">Gesamt: ca. 2.630 – 2.720 €/Jahr</p>
+              <p class="text-sm text-slate-500">= 219 – 227 € pro Monat</p>
             </div>
           </div>
           <div class="comparison-card bg-blue-50 border border-blue-200 rounded-lg p-5">
@@ -1243,23 +2163,26 @@ function getMockBlogPosts(): BlogPost[] {
           </div>
         </div>
 
-        <p>Der Unterschied? <strong>Rund 1.500 € pro Jahr</strong> – zugunsten der <a href="/waermepumpe" class="text-[#0F5B78] font-medium hover:underline">Wärmepumpe</a>. Und das trotz höherer Anschaffungskosten. Rechnet man die <a href="/foerderung" class="text-[#0F5B78] font-medium hover:underline">Heizungsförderung</a> ein, amortisiert sich eine Wärmepumpe oft schon nach 6-8 Jahren.</p>
+        <p>Der Unterschied? <strong>Rund 1.300 – 1.450 € pro Jahr</strong> – zugunsten der <a href="/waermepumpe" class="text-[#0F5B78] font-medium hover:underline">Wärmepumpe</a>. Und das trotz höherer Anschaffungskosten. Rechnet man die <a href="/foerderung" class="text-[#0F5B78] font-medium hover:underline">Heizungsförderung</a> ein, amortisiert sich eine Wärmepumpe oft schon nach 6-8 Jahren.</p>
 
-        <h2>CO₂-Preis: Das wird noch teurer</h2>
+        <h2>CO₂-Preis: Korridor bis 2027, danach Marktpreis</h2>
 
-        <p>Ein Punkt, der oft unterschätzt wird: Die CO₂-Abgabe steigt jedes Jahr. Und das ist gesetzlich so gewollt.</p>
+        <p>Ein Punkt, der oft unterschätzt wird: Die CO₂-Abgabe ist in den vergangenen Jahren Schritt für Schritt gestiegen. Für 2027 hat der Bundestag am 15. Oktober 2026 beschlossen, den Preis wie 2026 im Korridor von 55 bis 65 Euro je Tonne zu halten. Ab 2028 soll der nationale CO₂-Preis in den europäischen Emissionshandel für Gebäude und Verkehr (ETS 2) übergehen – den Preis bestimmt dann der Markt.</p>
 
         <div class="bg-slate-100 rounded-lg p-5 my-6">
           <h4 class="font-bold text-slate-900 mb-3">Entwicklung der CO₂-Abgabe</h4>
           <div class="space-y-2">
             <div class="flex justify-between"><span>2024:</span><strong>45 €/Tonne</strong></div>
             <div class="flex justify-between"><span>2025:</span><strong>55 €/Tonne</strong></div>
-            <div class="flex justify-between"><span>2026:</span><strong>65 €/Tonne (geplant)</strong></div>
-            <div class="flex justify-between text-red-700"><span>2027+:</span><strong>Marktkorridor 55-65 €, dann unbegrenzt</strong></div>
+            <div class="flex justify-between"><span>2026:</span><strong>55–65 €/Tonne (Korridor)</strong></div>
+            <div class="flex justify-between"><span>2027:</span><strong>55–65 €/Tonne (Korridor, Bundestag 15.10.2026)</strong></div>
+            <div class="flex justify-between text-red-700"><span>ab 2028 (geplant):</span><strong>EU-Emissionshandel ETS 2 – Marktpreis</strong></div>
           </div>
         </div>
 
-        <p>Was heißt das konkret? Bei einem typischen Einfamilienhaus (20.000 kWh Gasverbrauch) zahlen Sie 2025 etwa 220 € CO₂-Abgabe pro Jahr. 2027 könnten das schon 300 € sein. Experten rechnen langfristig mit 100-150 €/Tonne – das wären dann 500-600 € zusätzlich pro Jahr. Nur für die CO₂-Steuer.</p>
+        <p>Was heißt das konkret? Bei einem typischen Einfamilienhaus (20.000 kWh Gasverbrauch, rund 4 Tonnen CO₂) zahlen Sie bei 55 €/Tonne etwa 220 € netto CO₂-Abgabe pro Jahr, am oberen Rand des Korridors (65 €/Tonne) rund 260 € netto. Mehr soll es 2027 nach dem Bundestagsbeschluss vom 15.10.2026 nicht werden. Ab 2028 soll sich der Preis im EU-Emissionshandel bilden; Experten rechnen langfristig mit 100-150 €/Tonne – das wären dann 400-600 € pro Jahr. Nur für die CO₂-Steuer.</p>
+
+        <p><strong>Hinweis:</strong> Stand 23.10.2026 – Der Gaspreis selbst liegt inzwischen etwas über den 12 Cent/kWh unserer Beispielrechnung: Verivox weist für Haushalte zum 1. Oktober 2026 einen Durchschnitt von 12,7 Cent/kWh aus (inklusive aller Steuern und Abgaben). Zum Jahreswechsel 2027 erwartet Verivox flächendeckende Preiserhöhungen von 10 bis 20 Prozent je nach Tarif – für ein Einfamilienhaus bis zu 500 Euro mehr im Jahr.</p>
 
         <h2>Förderung 2026: Die ernüchternde Wahrheit</h2>
 
@@ -1353,20 +2276,20 @@ ${GMODG_HINWEIS}
           </div>
           <div class="grid grid-cols-4 gap-2 text-sm p-3 border-b border-slate-200">
             <div class="text-slate-600">Betrieb/Jahr</div>
-            <div class="text-center text-red-600 font-medium">~2.900 €</div>
+            <div class="text-center text-red-600 font-medium">~2.700 €</div>
             <div class="text-center text-green-600 font-medium">~1.300 €</div>
             <div class="text-center font-medium">~2.000 €</div>
           </div>
           <div class="grid grid-cols-4 gap-2 text-sm p-3 bg-slate-50 rounded-b-lg">
             <div class="text-slate-600 font-medium">15-Jahres-Kosten</div>
-            <div class="text-center font-bold text-red-700">~55.000 €</div>
+            <div class="text-center font-bold text-red-700">~52.500 €</div>
             <div class="text-center font-bold text-green-700">~32.000 €</div>
             <div class="text-center font-bold">~42.000 €</div>
           </div>
         </div>
         <p class="text-sm text-slate-500 -mt-4 mb-8">*Gefördert wird nur der erneuerbare Wärmeerzeuger (z. B. die Wärmepumpe), ohne Klimageschwindigkeitsbonus; der Gaskessel selbst ist nicht förderfähig</p>
 
-        <p>Die Zahlen sprechen eine klare Sprache: <strong>Auf 15 Jahre gerechnet ist die Wärmepumpe fast 20.000 € günstiger</strong> – trotz der höheren Anschaffungskosten. Einen noch detaillierteren Vergleich finden Sie in unserem <a href="/blog/heizung-vergleich-2026-waermepumpe-gas-oel-pellets" class="text-[#0F5B78] font-medium hover:underline">großen Heizungsvergleich 2026</a>.</p>
+        <p>Die Zahlen sprechen eine klare Sprache: <strong>Auf 15 Jahre gerechnet ist die Wärmepumpe rund 20.000 € günstiger</strong> – trotz der höheren Anschaffungskosten. Einen noch detaillierteren Vergleich finden Sie in unserem <a href="/blog/heizung-vergleich-2026-waermepumpe-gas-oel-pellets" class="text-[#0F5B78] font-medium hover:underline">großen Heizungsvergleich 2026</a>.</p>
 
         <h2>Wann macht Gas trotzdem Sinn?</h2>
 
@@ -1389,7 +2312,7 @@ ${GMODG_HINWEIS}
 
         <ul>
           <li><strong>Anschaffung:</strong> 9.000-15.000 € – günstig im Vergleich</li>
-          <li><strong>Betriebskosten:</strong> ~2.900 €/Jahr und steigend</li>
+          <li><strong>Betriebskosten:</strong> ~2.700 €/Jahr, Tendenz steigend (Verivox erwartet für 2027 je nach Tarif 10–20% höhere Gaspreise)</li>
           <li><strong>Förderung:</strong> Nur noch Steuerbonus (max. 2.000 €)</li>
           <li><strong>Zukunftsperspektive:</strong> Unsicher – steigende CO₂-Kosten, auslaufende Technologie</li>
         </ul>
@@ -1435,10 +2358,10 @@ ${GMODG_HINWEIS}
         <p>Eine komplette Gas-Brennwertheizung inklusive Installation kostet <strong>9.000 bis 15.000 Euro</strong>. Im Preis enthalten sind Brennwertgerät (3.000-7.800 Euro), Warmwasserspeicher falls nötig (1.000-1.500 Euro), Installation mit hydraulischem Abgleich (2.000-3.000 Euro) und Demontage der Altanlage (500-1.000 Euro). Ein neuer Gasanschluss kostet zusätzlich 1.500-2.500 Euro.</p>
 
         <h3>Was kostet eine Gasheizung im laufenden Betrieb pro Jahr?</h3>
-        <p>Die jährlichen Betriebskosten liegen bei etwa <strong>2.850 bis 2.940 Euro</strong> für ein typisches Einfamilienhaus. Das setzt sich zusammen aus Gasverbrauch (ca. 2.400 Euro), CO₂-Abgabe 2025 (ca. 220 Euro), Wartung (150-200 Euro) und Schornsteinfeger (80-120 Euro). Das entspricht etwa 240-245 Euro pro Monat.</p>
+        <p>Die jährlichen Betriebskosten liegen bei etwa <strong>2.630 bis 2.720 Euro</strong> für ein typisches Einfamilienhaus. Das setzt sich zusammen aus Gasverbrauch (ca. 2.400 Euro bei 12 Cent/kWh; der CO₂-Preis von 220-260 Euro netto ist darin bereits enthalten), Wartung (150-200 Euro) und Schornsteinfeger (80-120 Euro). Das entspricht etwa 219-227 Euro pro Monat.</p>
 
         <h3>Lohnt sich eine Gasheizung 2026 noch?</h3>
-        <p>Das hängt von Ihrer Situation ab. Eine Gasheizung hat <strong>niedrige Anschaffungskosten</strong>, aber hohe Betriebskosten (ca. 1.500 Euro mehr pro Jahr als eine Wärmepumpe). Es gibt praktisch <strong>keine Förderung</strong> mehr, nur einen Steuerbonus (max. 2.000 Euro). Auf 15 Jahre gerechnet ist eine Wärmepumpe trotz höherer Anschaffungskosten oft 20.000 Euro günstiger. Gas kann sinnvoll sein bei Notfällen, kurzfristigem Verkauf oder extremen Platzbeschränkungen.</p>
+        <p>Das hängt von Ihrer Situation ab. Eine Gasheizung hat <strong>niedrige Anschaffungskosten</strong>, aber hohe Betriebskosten (ca. 1.300-1.450 Euro mehr pro Jahr als eine Wärmepumpe). Es gibt praktisch <strong>keine Förderung</strong> mehr, nur einen Steuerbonus (max. 2.000 Euro). Auf 15 Jahre gerechnet ist eine Wärmepumpe trotz höherer Anschaffungskosten oft 20.000 Euro günstiger. Gas kann sinnvoll sein bei Notfällen, kurzfristigem Verkauf oder extremen Platzbeschränkungen.</p>
 
         <h3>Welche Förderung gibt es 2026 für Gasheizungen?</h3>
         <p>Reine Gasheizungen werden <strong>nicht mehr gefördert</strong> über die BEG. Bei <strong>Gas-Hybridheizungen</strong> (Gas + Wärmepumpe/Solarthermie) wird der erneuerbare Wärmeerzeuger (z. B. die Wärmepumpe) nach den allgemeinen KfW-458-Regeln gefördert – weil weiter mit Gas geheizt wird, ohne Klimageschwindigkeitsbonus, also 30% plus ggf. Einkommensbonus (max. 70%); der Gaskessel selbst ist nicht förderfähig. Alternativ können Sie über den Steuerbonus (§ 35c EStG) 20% der Handwerkerkosten über 3 Jahre absetzen, maximal 8.000 Euro Steuerersparnis bei 40.000 Euro Investition.</p>
@@ -1447,30 +2370,31 @@ ${GMODG_HINWEIS}
         <p>Bestehende Gasheizungen dürfen weiterlaufen, Reparaturen sind erlaubt, eine Austauschpflicht gibt es nicht. Die frühere 65%-Regel wurde mit der Novelle vom 23. Juli 2026 gestrichen. Wer nach dem 29. Juli 2026 eine neue Gasheizung einbaut, muss ab 2029 steigende Bioanteile nachweisen: 10% ab 2029, 15% ab 2030, 30% ab 2035, 60% ab 2040 – oder einen Erfüllungsweg wie Solarthermie oder Wärmepumpen-Hybrid nutzen (§ 43 GModG).</p>
 
         <h3>Welche Alternative zur Gasheizung ist am besten?</h3>
-        <p>Die <strong>Wärmepumpe</strong> ist für die meisten Hausbesitzer 2026 die wirtschaftlichste Alternative. Anschaffung 25.000-35.000 Euro, aber mit 30-80% BEG-Förderung. Betriebskosten nur ca. 1.300 Euro pro Jahr (statt 2.900 Euro bei Gas). Auf 15 Jahre gerechnet etwa 20.000 Euro günstiger. Alternativen: Gas-Hybrid (Kombination aus beiden), Pelletheizung (wenn Platz vorhanden) oder Fernwärme (wo verfügbar).</p>
+        <p>Die <strong>Wärmepumpe</strong> ist für die meisten Hausbesitzer 2026 die wirtschaftlichste Alternative. Anschaffung 25.000-35.000 Euro, aber mit 30-80% BEG-Förderung. Betriebskosten nur ca. 1.300 Euro pro Jahr (statt rund 2.700 Euro bei Gas). Auf 15 Jahre gerechnet etwa 20.000 Euro günstiger. Alternativen: Gas-Hybrid (Kombination aus beiden), Pelletheizung (wenn Platz vorhanden) oder Fernwärme (wo verfügbar).</p>
 
         <h3>Was ist eine H2-ready Gasheizung?</h3>
         <p>Eine <strong>wasserstofffähige Gasheizung</strong>, die später auf Wasserstoff umgerüstet werden kann. Die Idee: Heute mit Erdgas heizen, künftig mit grünem Wasserstoff. In der Praxis sind diese Geräte 2025 kaum verfügbar und es ist völlig unklar, ob und wann flächendeckend Wasserstoff verfügbar sein wird. Experten raten eher zu bewährten erneuerbaren Lösungen wie Wärmepumpen.</p>
 
         <h3>Wie entwickelt sich die CO₂-Abgabe für Gas?</h3>
-        <p>Die CO₂-Abgabe steigt kontinuierlich: <strong>2025: 55 Euro pro Tonne</strong>, 2026: 65 Euro, ab 2027 im Marktkorridor 55-65 Euro, danach unbegrenzt. Experten rechnen langfristig mit 100-150 Euro pro Tonne. Bei 20.000 kWh Gasverbrauch zahlen Sie 2025 etwa 220 Euro CO₂-Steuer pro Jahr, bei 100 Euro/Tonne wären das 500-600 Euro zusätzlich.</p>
+        <p>Die CO₂-Abgabe lag 2025 bei 55 Euro pro Tonne. <strong>2026 gilt ein Korridor von 55 bis 65 Euro pro Tonne</strong>; für 2027 hat der Bundestag am 15. Oktober 2026 denselben Korridor beschlossen. Ab 2028 soll der nationale CO₂-Preis in den europäischen Emissionshandel für Gebäude und Verkehr (ETS 2) übergehen; den Preis bestimmt dann der Markt. Experten rechnen langfristig mit 100-150 Euro pro Tonne. Bei 20.000 kWh Gasverbrauch (rund 4 Tonnen CO₂) zahlen Sie im Korridor 220 bis 260 Euro netto CO₂-Abgabe pro Jahr, bei 100 Euro pro Tonne wären es rund 400 Euro.</p>
       `,
       category: 'Heizung',
       author: 'HeizCenter Redaktion',
       date: '2026-02-08',
+      updated: '2026-10-23',
       readingTime: 9,
       image: '/images/HeizCenter_Heizung.webp',
       tags: ['Gasheizung', 'Kosten', 'Brennwertkessel', 'Förderung'],
       featured: false,
       faqs: [
         { question: 'Was kostet eine neue Gasheizung 2026 komplett mit Einbau?', answer: 'Eine komplette Gas-Brennwertheizung inklusive Installation kostet 9.000 bis 15.000 Euro. Im Preis enthalten sind Brennwertgerät (3.000-7.800 Euro), Warmwasserspeicher falls nötig (1.000-1.500 Euro), Installation mit hydraulischem Abgleich (2.000-3.000 Euro) und Demontage der Altanlage (500-1.000 Euro). Ein neuer Gasanschluss kostet zusätzlich 1.500-2.500 Euro.' },
-        { question: 'Was kostet eine Gasheizung im laufenden Betrieb pro Jahr?', answer: 'Die jährlichen Betriebskosten liegen bei etwa 2.850 bis 2.940 Euro für ein typisches Einfamilienhaus. Das setzt sich zusammen aus Gasverbrauch (ca. 2.400 Euro), CO₂-Abgabe 2025 (ca. 220 Euro), Wartung (150-200 Euro) und Schornsteinfeger (80-120 Euro). Das entspricht etwa 240-245 Euro pro Monat.' },
-        { question: 'Lohnt sich eine Gasheizung 2026 noch?', answer: 'Das hängt von Ihrer Situation ab. Eine Gasheizung hat niedrige Anschaffungskosten, aber hohe Betriebskosten (ca. 1.500 Euro mehr pro Jahr als eine Wärmepumpe). Es gibt praktisch keine Förderung mehr, nur einen Steuerbonus (max. 2.000 Euro). Auf 15 Jahre gerechnet ist eine Wärmepumpe trotz höherer Anschaffungskosten oft 20.000 Euro günstiger. Gas kann sinnvoll sein bei Notfällen, kurzfristigem Verkauf oder extremen Platzbeschränkungen.' },
+        { question: 'Was kostet eine Gasheizung im laufenden Betrieb pro Jahr?', answer: 'Die jährlichen Betriebskosten liegen bei etwa 2.630 bis 2.720 Euro für ein typisches Einfamilienhaus. Das setzt sich zusammen aus Gasverbrauch (ca. 2.400 Euro bei 12 Cent/kWh; der CO₂-Preis von 220-260 Euro netto ist darin bereits enthalten), Wartung (150-200 Euro) und Schornsteinfeger (80-120 Euro). Das entspricht etwa 219-227 Euro pro Monat.' },
+        { question: 'Lohnt sich eine Gasheizung 2026 noch?', answer: 'Das hängt von Ihrer Situation ab. Eine Gasheizung hat niedrige Anschaffungskosten, aber hohe Betriebskosten (ca. 1.300-1.450 Euro mehr pro Jahr als eine Wärmepumpe). Es gibt praktisch keine Förderung mehr, nur einen Steuerbonus (max. 2.000 Euro). Auf 15 Jahre gerechnet ist eine Wärmepumpe trotz höherer Anschaffungskosten oft 20.000 Euro günstiger. Gas kann sinnvoll sein bei Notfällen, kurzfristigem Verkauf oder extremen Platzbeschränkungen.' },
         { question: 'Welche Förderung gibt es 2026 für Gasheizungen?', answer: 'Reine Gasheizungen werden nicht mehr gefördert über die BEG. Bei Gas-Hybridheizungen (Gas + Wärmepumpe/Solarthermie) wird der erneuerbare Wärmeerzeuger (z. B. die Wärmepumpe) nach den allgemeinen KfW-458-Regeln gefördert – weil weiter mit Gas geheizt wird, ohne Klimageschwindigkeitsbonus, also 30% plus ggf. Einkommensbonus (max. 70%); der Gaskessel selbst ist nicht förderfähig. Alternativ können Sie über den Steuerbonus (§ 35c EStG) 20% der Handwerkerkosten über 3 Jahre absetzen, maximal 8.000 Euro Steuerersparnis bei 40.000 Euro Investition.' },
         { question: 'Was sagt das Heizungsgesetz 2026 (GModG) zu Gasheizungen?', answer: 'Bestehende Gasheizungen dürfen weiterlaufen, Reparaturen sind erlaubt, eine Austauschpflicht gibt es nicht. Die frühere 65%-Regel wurde mit der Novelle vom 23. Juli 2026 gestrichen. Wer nach dem 29. Juli 2026 eine neue Gasheizung einbaut, muss ab 2029 steigende Bioanteile nachweisen: 10% ab 2029, 15% ab 2030, 30% ab 2035, 60% ab 2040 – oder einen Erfüllungsweg wie Solarthermie oder Wärmepumpen-Hybrid nutzen (§ 43 GModG).' },
-        { question: 'Welche Alternative zur Gasheizung ist am besten?', answer: 'Die Wärmepumpe ist für die meisten Hausbesitzer 2026 die wirtschaftlichste Alternative. Anschaffung 25.000-35.000 Euro, aber mit 30-80% BEG-Förderung. Betriebskosten nur ca. 1.300 Euro pro Jahr (statt 2.900 Euro bei Gas). Auf 15 Jahre gerechnet etwa 20.000 Euro günstiger. Alternativen: Gas-Hybrid (Kombination aus beiden), Pelletheizung (wenn Platz vorhanden) oder Fernwärme (wo verfügbar).' },
+        { question: 'Welche Alternative zur Gasheizung ist am besten?', answer: 'Die Wärmepumpe ist für die meisten Hausbesitzer 2026 die wirtschaftlichste Alternative. Anschaffung 25.000-35.000 Euro, aber mit 30-80% BEG-Förderung. Betriebskosten nur ca. 1.300 Euro pro Jahr (statt rund 2.700 Euro bei Gas). Auf 15 Jahre gerechnet etwa 20.000 Euro günstiger. Alternativen: Gas-Hybrid (Kombination aus beiden), Pelletheizung (wenn Platz vorhanden) oder Fernwärme (wo verfügbar).' },
         { question: 'Was ist eine H2-ready Gasheizung?', answer: 'Eine wasserstofffähige Gasheizung, die später auf Wasserstoff umgerüstet werden kann. Die Idee: Heute mit Erdgas heizen, künftig mit grünem Wasserstoff. In der Praxis sind diese Geräte 2025 kaum verfügbar und es ist völlig unklar, ob und wann flächendeckend Wasserstoff verfügbar sein wird. Experten raten eher zu bewährten erneuerbaren Lösungen wie Wärmepumpen.' },
-        { question: 'Wie entwickelt sich die CO₂-Abgabe für Gas?', answer: 'Die CO₂-Abgabe steigt kontinuierlich: 2025: 55 Euro pro Tonne, 2026: 65 Euro, ab 2027 im Marktkorridor 55-65 Euro, danach unbegrenzt. Experten rechnen langfristig mit 100-150 Euro pro Tonne. Bei 20.000 kWh Gasverbrauch zahlen Sie 2025 etwa 220 Euro CO₂-Steuer pro Jahr, bei 100 Euro/Tonne wären das 500-600 Euro zusätzlich.' },
+        { question: 'Wie entwickelt sich die CO₂-Abgabe für Gas?', answer: 'Die CO₂-Abgabe lag 2025 bei 55 Euro pro Tonne. 2026 gilt ein Korridor von 55 bis 65 Euro pro Tonne; für 2027 hat der Bundestag am 15. Oktober 2026 denselben Korridor beschlossen. Ab 2028 soll der nationale CO₂-Preis in den europäischen Emissionshandel für Gebäude und Verkehr (ETS 2) übergehen; den Preis bestimmt dann der Markt. Experten rechnen langfristig mit 100-150 Euro pro Tonne. Bei 20.000 kWh Gasverbrauch (rund 4 Tonnen CO₂) zahlen Sie im Korridor 220 bis 260 Euro netto CO₂-Abgabe pro Jahr, bei 100 Euro pro Tonne wären es rund 400 Euro.' },
       ],
     },
     {
@@ -1479,7 +2403,7 @@ ${GMODG_HINWEIS}
       title: 'Pelletheizung Kosten 2026: Anschaffung, Betrieb & Förderung',
       excerpt: 'Was kostet eine Pelletheizung 2026? Kompletter Überblick über Anschaffung, Betriebskosten und bis zu 80% BEG-Förderung.',
       content: `
-        <p class="text-xl text-slate-700 leading-relaxed mb-6">Sie interessieren sich für eine Pelletheizung und fragen sich, ob sich das für Ihr Haus rechnet? Die kurze Antwort: Ja, für viele Hausbesitzer ist eine Pelletheizung 2026 eine der wirtschaftlichsten Optionen – vorausgesetzt, Sie haben den Platz dafür und wissen, worauf Sie achten müssen.</p>
+        <p class="text-xl text-slate-700 leading-relaxed mb-6">Sie interessieren sich für eine Pelletheizung und fragen sich, ob sich das für Ihr Haus rechnet? Die kurze Antwort: Eine Pelletheizung kann sich 2026 rechnen, der Kostenvorteil gegenüber Gas ist beim Pelletpreis vom Oktober 2026 aber klein – vorausgesetzt, Sie haben den Platz dafür und wissen, worauf Sie achten müssen.</p>
 
         <div class="flex flex-wrap gap-4 mb-8 text-sm text-slate-600">
           <span class="flex items-center gap-1">✓ Zertifizierter Fachbetrieb für Biomasse</span>
@@ -1566,24 +2490,24 @@ ${GMODG_HINWEIS}
           </div>
         </div>
 
-        <p><strong>Meine Faustregel:</strong> Sie brauchen etwa 1 m³ Lagerraum pro Tonne Pellets. Für ein typisches Einfamilienhaus bedeutet das 5-6 Tonnen Jahresbedarf = ca. 8-10 m³ Lagervolumen. Das entspricht einem Raum von etwa 2,5 x 2,5 x 1,5 Meter.</p>
+        <p><strong>Meine Faustregel:</strong> Sie brauchen rund 1,5 m³ Lagerraum pro Tonne Pellets (Schüttdichte ca. 650 kg/m³). Für ein typisches Einfamilienhaus (4-4,5 Tonnen Jahresbedarf, Lager für 5-6 Tonnen) bedeutet das ca. 8-10 m³ Lagervolumen. Das entspricht einem Raum von etwa 2,5 x 2,5 x 1,5 Meter.</p>
 
         <h2>Jährliche Betriebskosten: Hier wird's interessant</h2>
 
-        <p>Pellets haben einen riesigen Vorteil: keine CO₂-Abgabe. Während Gasheizer jedes Jahr mehr zahlen, bleiben Ihre Kosten stabil.</p>
+        <p>Pellets haben einen riesigen Vorteil: keine CO₂-Abgabe. Preisstabil sind Pellets allerdings nicht (Oktober 2026: rund 27 % über Vorjahr).</p>
 
         <div class="comparison-grid grid md:grid-cols-2 gap-4 my-8">
           <div class="comparison-card bg-green-50 border border-green-200 rounded-lg p-5">
             <h4 class="font-bold text-slate-900 mb-3">Pelletheizung – jährlich</h4>
             <ul class="space-y-2 text-slate-700">
-              <li><strong>Pellets (3 Tonnen):</strong> ca. 1.050 – 1.350 €<br><span class="text-sm text-slate-500">(350-450 €/Tonne × 3 t)</span></li>
+              <li><strong>Pellets (4–4,5 Tonnen):</strong> ca. 1.860 – 2.090 €<br><span class="text-sm text-slate-500">(DEPI-Pelletpreis Oktober 2026: 464,61 €/t × 4–4,5 t; Preis bei 6 t Abnahme, kleinere Mengen teurer)</span></li>
               <li><strong>Wartung:</strong> 250 – 350 €<br><span class="text-sm text-slate-500">(inkl. Reinigung, Filter)</span></li>
               <li><strong>Schornsteinfeger:</strong> 100 – 140 €</li>
               <li><strong>Strom (Fördersystem):</strong> 80 – 120 €</li>
               <li><strong>CO₂-Abgabe:</strong> 0 €</li>
             </ul>
             <div class="mt-4 pt-4 border-t border-green-300">
-              <p class="font-bold text-lg text-green-700">Gesamt: ca. 1.480 – 1.960 €/Jahr</p>
+              <p class="font-bold text-lg text-green-700">Gesamt: ca. 2.290 – 2.700 €/Jahr</p>
             </div>
           </div>
           <div class="comparison-card bg-red-50 border border-red-200 rounded-lg p-5">
@@ -1592,15 +2516,15 @@ ${GMODG_HINWEIS}
               <li><strong>Gas (20.000 kWh):</strong> ca. 2.400 €<br><span class="text-sm text-slate-500">(12 Cent/kWh)</span></li>
               <li><strong>Wartung:</strong> 150 – 200 €</li>
               <li><strong>Schornsteinfeger:</strong> 80 – 120 €</li>
-              <li><strong>CO₂-Abgabe:</strong> ca. 220 €<br><span class="text-sm text-slate-500">(steigt jährlich!)</span></li>
+              <li><strong>CO₂-Preis:</strong> im Gaspreis enthalten<br><span class="text-sm text-slate-500">(2027 im Korridor 55–65 €/t)</span></li>
             </ul>
             <div class="mt-4 pt-4 border-t border-red-300">
-              <p class="font-bold text-lg text-red-700">Gesamt: ca. 2.850 – 2.940 €/Jahr</p>
+              <p class="font-bold text-lg text-red-700">Gesamt: ca. 2.630 – 2.720 €/Jahr</p>
             </div>
           </div>
         </div>
 
-        <p><strong>Die Ersparnis?</strong> Rund 1.000 – 1.500 € pro Jahr gegenüber Gas. Und das wird jedes Jahr mehr, weil die CO₂-Abgabe auf fossile Brennstoffe weiter steigt.</p>
+        <p><strong>Die Ersparnis?</strong> Beim Brennstoff liegen Pellets vorn (1.860 – 2.090 € statt 2.400 € für Gas); nach Wartung, Schornsteinfeger und Strom bleiben im Mittel rund 200 € pro Jahr gegenüber Gas, je nach Pelletmenge und Wartungskosten zwischen etwa null und 400 € (Stand Pelletpreis Oktober 2026). Die CO₂-Abgabe auf Gas bleibt 2027 im Korridor von 55–65 €/Tonne (Bundestagsbeschluss vom 15.10.2026); ab 2028 soll sich der Preis im EU-Emissionshandel am Markt bilden.</p>
 
         <h2>Förderung 2026: So kommen Sie auf bis zu 80%</h2>
 
@@ -1711,12 +2635,12 @@ ${GMODG_HINWEIS}
           </div>
           <div class="grid grid-cols-3 gap-2 text-sm p-3 border-b border-slate-200">
             <div class="text-slate-600">Betrieb × 20 Jahre</div>
-            <div class="text-center">35.000 €</div>
+            <div class="text-center">50.000 €</div>
             <div class="text-center">26.000 €</div>
           </div>
           <div class="grid grid-cols-3 gap-2 text-sm p-3 bg-slate-50 rounded-b-lg">
             <div class="font-bold">Gesamtkosten 20 Jahre</div>
-            <div class="text-center font-bold">~52.000 €</div>
+            <div class="text-center font-bold">~67.000 €</div>
             <div class="text-center font-bold text-green-700">~45.000 €</div>
           </div>
         </div>
@@ -1783,19 +2707,19 @@ ${GMODG_HINWEIS}
         <p>Eine komplette Pelletheizung inklusive Lager, Fördersystem und Installation kostet <strong>28.000 bis 35.000 Euro</strong>. Darin enthalten sind Pelletkessel (15.000-20.000 Euro), Pelletlager (3.000-5.000 Euro), Fördersystem (2.000-3.000 Euro), Pufferspeicher (2.000-3.000 Euro) und Installation mit hydraulischem Abgleich (4.000-6.000 Euro). Eine eventuelle Schornsteinsanierung kostet zusätzlich 1.000-2.000 Euro.</p>
 
         <h3>Wie viel kosten Pellets aktuell pro Tonne?</h3>
-        <p>Der aktuelle Pelletpreis liegt bei <strong>350 bis 450 Euro pro Tonne</strong> (Stand 2026). Ein typisches Einfamilienhaus verbraucht etwa 3 Tonnen pro Jahr, was Brennstoffkosten von 1.050-1.350 Euro entspricht. Der Preis schwankt saisonal – am günstigsten ist eine Bestellung im Frühsommer. Pellets sind deutlich günstiger und preislich stabiler als Gas oder Öl.</p>
+        <p>Der DEPI-Pelletpreis liegt im Oktober 2026 bei <strong>464,61 Euro pro Tonne</strong> (Abnahme 6 Tonnen, inkl. MwSt.; rund 2,3% über September und rund 27% über Oktober 2025). Ein typisches Einfamilienhaus mit 20.000 kWh Wärmebedarf verbraucht bei 90% Nutzungsgrad und 5 kWh je Kilogramm etwa 4-4,5 Tonnen pro Jahr, was Brennstoffkosten von rund 1.860-2.090 Euro entspricht. Der Preis schwankt saisonal – am günstigsten ist eine Bestellung im Frühsommer. Pro Kilowattstunde Brennstoffenergie (9,29 Cent) bleiben Pellets günstiger als Gas (Verivox-Durchschnitt Oktober 2026: 12,7 Cent/kWh).</p>
 
         <h3>Wie viel Platz braucht eine Pelletheizung im Keller?</h3>
-        <p>Als Faustregel gilt: <strong>1 m³ Lagerraum pro Tonne Pellets</strong>. Für ein Einfamilienhaus mit 5-6 Tonnen Jahresbedarf benötigen Sie etwa 8-10 m³ Lagervolumen, entsprechend einem Raum von ca. 2,5 x 2,5 x 1,5 Meter. Ein Gewebetank (Sacksilo) ist die platzsparendste Lösung mit nur 2x2 Metern Grundfläche. Ein alter Heizölraum lässt sich ideal umnutzen.</p>
+        <p>Als Faustregel gilt: <strong>rund 1,5 m³ Lagerraum pro Tonne Pellets</strong> (Schüttdichte ca. 650 kg/m³). Für ein Einfamilienhaus mit 4-4,5 Tonnen Jahresbedarf und einem Lager für 5-6 Tonnen benötigen Sie etwa 8-10 m³ Lagervolumen, entsprechend einem Raum von ca. 2,5 x 2,5 x 1,5 Meter. Ein Gewebetank (Sacksilo) ist die platzsparendste Lösung mit nur 2x2 Metern Grundfläche. Ein alter Heizölraum lässt sich ideal umnutzen.</p>
 
         <h3>Wie viel BEG-Förderung gibt es für Pelletheizungen?</h3>
         <p>Die Grundförderung beträgt <strong>30%</strong>. Den Klimageschwindigkeits-Bonus (16%) erhalten Selbstnutzer – wie bei Wärmepumpen – beim Austausch einer funktionstüchtigen Öl-, Kohle-, Gas-Etagen- oder Nachtspeicherheizung oder einer mindestens 20 Jahre alten Gas- oder Biomasseheizung. Der Einkommensbonus (40% bis 30.000 Euro, 30% bis 40.000 Euro, 10% bis 50.000 Euro zu versteuerndes Haushaltseinkommen) ist für Selbstnutzer zusätzlich möglich. Gedeckelt ist die Förderung bei 70% (max. 19.600 Euro beim Einfamilienhaus); bis zu <strong>80% Förderung</strong> bzw. 22.400 Euro gibt es nur bei einem zu versteuernden Haushaltseinkommen bis 30.000 Euro (mit Kind bis 40.000 Euro). Mit Klimabonus erhält eine Pelletheizung in der Regel 46% Förderung.</p>
 
         <h3>Pelletheizung oder Wärmepumpe - was ist besser?</h3>
-        <p>Das hängt von Ihrem Haus ab. <strong>Pelletheizung ist besser</strong>, wenn Sie Lagerplatz haben, hohe Vorlauftemperaturen benötigen (schlecht gedämmter Altbau) und auf regionale Brennstoffe setzen wollen. <strong>Wärmepumpe ist besser</strong>, wenn kein Lagerplatz vorhanden ist, das Haus gut gedämmt ist, Sie eine PV-Anlage haben und wartungsfrei heizen möchten. Auf 20 Jahre ist die Wärmepumpe etwa 8.000 Euro günstiger, aber beide Systeme sind förderfähig.</p>
+        <p>Das hängt von Ihrem Haus ab. <strong>Pelletheizung ist besser</strong>, wenn Sie Lagerplatz haben, hohe Vorlauftemperaturen benötigen (schlecht gedämmter Altbau) und auf regionale Brennstoffe setzen wollen. <strong>Wärmepumpe ist besser</strong>, wenn kein Lagerplatz vorhanden ist, das Haus gut gedämmt ist, Sie eine PV-Anlage haben und wartungsfrei heizen möchten. Auf 20 Jahre ist die Wärmepumpe etwa 22.000 Euro günstiger, aber beide Systeme sind förderfähig.</p>
 
         <h3>Was kostet eine Pelletheizung im Betrieb pro Jahr?</h3>
-        <p>Die jährlichen Betriebskosten liegen bei <strong>1.480 bis 1.960 Euro</strong>. Das setzt sich zusammen aus Pellets (1.050-1.350 Euro), Wartung inkl. Reinigung (250-350 Euro), Schornsteinfeger (100-140 Euro) und Strom für das Fördersystem (80-120 Euro). Eine CO₂-Abgabe entfällt komplett. Im Vergleich zu Gasheizungen (ca. 2.900 Euro/Jahr) sparen Sie etwa 1.000-1.500 Euro jährlich.</p>
+        <p>Die jährlichen Betriebskosten liegen bei <strong>2.290 bis 2.700 Euro</strong>. Das setzt sich zusammen aus Pellets (ca. 1.860-2.090 Euro für 4-4,5 Tonnen bei 464,61 Euro/Tonne, DEPI Oktober 2026), Wartung inkl. Reinigung (250-350 Euro), Schornsteinfeger (100-140 Euro) und Strom für das Fördersystem (80-120 Euro). Eine CO₂-Abgabe entfällt komplett. Im Vergleich zu Gasheizungen (ca. 2.700 Euro/Jahr) sparen Sie im Mittel rund 200 Euro jährlich, je nach Pelletmenge und Wartungskosten zwischen etwa null und 400 Euro.</p>
 
         <h3>Wie wartungsintensiv ist eine Pelletheizung?</h3>
         <p>Pelletheizungen benötigen <strong>mehr Wartung</strong> als Gas oder Wärmepumpe. Einmal jährlich ist eine Vollwartung mit Reinigung des Kessels, Brennraums und Wärmetauschers nötig (250-350 Euro). Die Aschebox müssen Sie 2-4 Mal pro Jahr selbst leeren (je nach Modell). Moderne Kessel verfügen über automatische Reinigungssysteme, die den Aufwand minimieren. Der Wartungsaufwand ist deutlich höher als bei einer Wärmepumpe.</p>
@@ -1806,17 +2730,18 @@ ${GMODG_HINWEIS}
       category: 'Heizung',
       author: 'HeizCenter Redaktion',
       date: '2026-02-07',
+      updated: '2026-10-23',
       readingTime: 10,
       image: '/images/Heizung_Modernisierung.webp',
       tags: ['Pelletheizung', 'Kosten', 'Förderung', 'BEG', 'Biomasse'],
       featured: false,
       faqs: [
         { question: 'Was kostet eine Pelletheizung 2026 komplett installiert?', answer: 'Eine komplette Pelletheizung inklusive Lager, Fördersystem und Installation kostet 28.000 bis 35.000 Euro. Darin enthalten sind Pelletkessel (15.000-20.000 Euro), Pelletlager (3.000-5.000 Euro), Fördersystem (2.000-3.000 Euro), Pufferspeicher (2.000-3.000 Euro) und Installation mit hydraulischem Abgleich (4.000-6.000 Euro). Eine eventuelle Schornsteinsanierung kostet zusätzlich 1.000-2.000 Euro.' },
-        { question: 'Wie viel kosten Pellets aktuell pro Tonne?', answer: 'Der aktuelle Pelletpreis liegt bei 350 bis 450 Euro pro Tonne (Stand 2026). Ein typisches Einfamilienhaus verbraucht etwa 3 Tonnen pro Jahr, was Brennstoffkosten von 1.050-1.350 Euro entspricht. Der Preis schwankt saisonal – am günstigsten ist eine Bestellung im Frühsommer. Pellets sind deutlich günstiger und preislich stabiler als Gas oder Öl.' },
-        { question: 'Wie viel Platz braucht eine Pelletheizung im Keller?', answer: 'Als Faustregel gilt: 1 m³ Lagerraum pro Tonne Pellets. Für ein Einfamilienhaus mit 5-6 Tonnen Jahresbedarf benötigen Sie etwa 8-10 m³ Lagervolumen, entsprechend einem Raum von ca. 2,5 x 2,5 x 1,5 Meter. Ein Gewebetank (Sacksilo) ist die platzsparendste Lösung mit nur 2x2 Metern Grundfläche. Ein alter Heizölraum lässt sich ideal umnutzen.' },
+        { question: 'Wie viel kosten Pellets aktuell pro Tonne?', answer: 'Der DEPI-Pelletpreis liegt im Oktober 2026 bei 464,61 Euro pro Tonne (Abnahme 6 Tonnen, inkl. MwSt.; rund 2,3% über September und rund 27% über Oktober 2025). Ein typisches Einfamilienhaus mit 20.000 kWh Wärmebedarf verbraucht bei 90% Nutzungsgrad und 5 kWh je Kilogramm etwa 4-4,5 Tonnen pro Jahr, was Brennstoffkosten von rund 1.860-2.090 Euro entspricht. Der Preis schwankt saisonal – am günstigsten ist eine Bestellung im Frühsommer. Pro Kilowattstunde Brennstoffenergie (9,29 Cent) bleiben Pellets günstiger als Gas (Verivox-Durchschnitt Oktober 2026: 12,7 Cent/kWh).' },
+        { question: 'Wie viel Platz braucht eine Pelletheizung im Keller?', answer: 'Als Faustregel gilt: rund 1,5 m³ Lagerraum pro Tonne Pellets (Schüttdichte ca. 650 kg/m³). Für ein Einfamilienhaus mit 4-4,5 Tonnen Jahresbedarf und einem Lager für 5-6 Tonnen benötigen Sie etwa 8-10 m³ Lagervolumen, entsprechend einem Raum von ca. 2,5 x 2,5 x 1,5 Meter. Ein Gewebetank (Sacksilo) ist die platzsparendste Lösung mit nur 2x2 Metern Grundfläche. Ein alter Heizölraum lässt sich ideal umnutzen.' },
         { question: 'Wie viel BEG-Förderung gibt es für Pelletheizungen?', answer: 'Die Grundförderung beträgt 30%. Den Klimageschwindigkeits-Bonus (16%) erhalten Selbstnutzer – wie bei Wärmepumpen – beim Austausch einer funktionstüchtigen Öl-, Kohle-, Gas-Etagen- oder Nachtspeicherheizung oder einer mindestens 20 Jahre alten Gas- oder Biomasseheizung. Der Einkommensbonus (40% bis 30.000 Euro, 30% bis 40.000 Euro, 10% bis 50.000 Euro zu versteuerndes Haushaltseinkommen) ist für Selbstnutzer zusätzlich möglich. Gedeckelt ist die Förderung bei 70% (max. 19.600 Euro beim Einfamilienhaus); bis zu 80% Förderung bzw. 22.400 Euro gibt es nur bei einem zu versteuernden Haushaltseinkommen bis 30.000 Euro (mit Kind bis 40.000 Euro). Mit Klimabonus erhält eine Pelletheizung in der Regel 46% Förderung.' },
-        { question: 'Pelletheizung oder Wärmepumpe - was ist besser?', answer: 'Das hängt von Ihrem Haus ab. Pelletheizung ist besser, wenn Sie Lagerplatz haben, hohe Vorlauftemperaturen benötigen (schlecht gedämmter Altbau) und auf regionale Brennstoffe setzen wollen. Wärmepumpe ist besser, wenn kein Lagerplatz vorhanden ist, das Haus gut gedämmt ist, Sie eine PV-Anlage haben und wartungsfrei heizen möchten. Auf 20 Jahre ist die Wärmepumpe etwa 8.000 Euro günstiger, aber beide Systeme sind förderfähig.' },
-        { question: 'Was kostet eine Pelletheizung im Betrieb pro Jahr?', answer: 'Die jährlichen Betriebskosten liegen bei 1.480 bis 1.960 Euro. Das setzt sich zusammen aus Pellets (1.050-1.350 Euro), Wartung inkl. Reinigung (250-350 Euro), Schornsteinfeger (100-140 Euro) und Strom für das Fördersystem (80-120 Euro). Eine CO₂-Abgabe entfällt komplett. Im Vergleich zu Gasheizungen (ca. 2.900 Euro/Jahr) sparen Sie etwa 1.000-1.500 Euro jährlich.' },
+        { question: 'Pelletheizung oder Wärmepumpe - was ist besser?', answer: 'Das hängt von Ihrem Haus ab. Pelletheizung ist besser, wenn Sie Lagerplatz haben, hohe Vorlauftemperaturen benötigen (schlecht gedämmter Altbau) und auf regionale Brennstoffe setzen wollen. Wärmepumpe ist besser, wenn kein Lagerplatz vorhanden ist, das Haus gut gedämmt ist, Sie eine PV-Anlage haben und wartungsfrei heizen möchten. Auf 20 Jahre ist die Wärmepumpe etwa 22.000 Euro günstiger, aber beide Systeme sind förderfähig.' },
+        { question: 'Was kostet eine Pelletheizung im Betrieb pro Jahr?', answer: 'Die jährlichen Betriebskosten liegen bei 2.290 bis 2.700 Euro. Das setzt sich zusammen aus Pellets (ca. 1.860-2.090 Euro für 4-4,5 Tonnen bei 464,61 Euro/Tonne, DEPI Oktober 2026), Wartung inkl. Reinigung (250-350 Euro), Schornsteinfeger (100-140 Euro) und Strom für das Fördersystem (80-120 Euro). Eine CO₂-Abgabe entfällt komplett. Im Vergleich zu Gasheizungen (ca. 2.700 Euro/Jahr) sparen Sie im Mittel rund 200 Euro jährlich, je nach Pelletmenge und Wartungskosten zwischen etwa null und 400 Euro.' },
         { question: 'Wie wartungsintensiv ist eine Pelletheizung?', answer: 'Pelletheizungen benötigen mehr Wartung als Gas oder Wärmepumpe. Einmal jährlich ist eine Vollwartung mit Reinigung des Kessels, Brennraums und Wärmetauschers nötig (250-350 Euro). Die Aschebox müssen Sie 2-4 Mal pro Jahr selbst leeren (je nach Modell). Moderne Kessel verfügen über automatische Reinigungssysteme, die den Aufwand minimieren. Der Wartungsaufwand ist deutlich höher als bei einer Wärmepumpe.' },
         { question: 'Kann ich meinen alten Heizölraum für Pellets nutzen?', answer: 'Ja, ideal! Ein alter Heizölraum lässt sich perfekt zum Pelletlager umbauen. Sie benötigen schräge Einbauten für den Pelletabzug und ggf. eine Staubschutztür. Die Kosten für den Umbau liegen bei 2.500-4.000 Euro. Die Kapazität hängt von der Raumgröße ab, meist passen 6-8 Tonnen hinein. Das ist eine der wirtschaftlichsten Lösungen, da Sie vorhandenen Raum nutzen.' },
       ],
@@ -2172,13 +3097,15 @@ ${GMODG_HINWEIS}
 
         <!-- Trust Badge -->
         <div class="flex flex-wrap gap-3 my-6">
-          <span class="inline-flex items-center gap-2 bg-slate-100 px-3 py-1.5 rounded-full text-sm"><span class="text-green-600">✓</span> Über 400 Förderanträge begleitet</span>
-          <span class="inline-flex items-center gap-2 bg-slate-100 px-3 py-1.5 rounded-full text-sm"><span class="text-green-600">✓</span> 0 abgelehnte Anträge bei korrekter Abwicklung</span>
+          <span class="inline-flex items-center gap-2 bg-slate-100 px-3 py-1.5 rounded-full text-sm"><span class="text-green-600">✓</span> Zahlreiche Förderanträge begleitet</span>
+          <span class="inline-flex items-center gap-2 bg-slate-100 px-3 py-1.5 rounded-full text-sm"><span class="text-green-600">✓</span> Fachbetrieb mit über 20 Jahren Erfahrung</span>
         </div>
 
         <h2>Die 3 Förder-Bausteine auf einen Blick</h2>
 
         <p>Die Heizungsförderung 2026 ist ein Baukastensystem. Je nachdem, wer Sie sind und was Sie austauschen, können Sie verschiedene Bausteine kombinieren:</p>
+
+        <p><strong>Hinweis:</strong> Stand 23.10.2026 – Der Klimageschwindigkeitsbonus von 16% gilt für Anträge bis zum 31.01.2027; ab dem 01.02.2027 sinkt er auf 12%, und der Höchstbetrag der förderfähigen Kosten für die erste Wohneinheit fällt von 28.000 auf 27.250 Euro. Außerdem hat die Bundesregierung am 8. Juli 2026 Eckpunkte veröffentlicht, die die KfW so wiedergibt: „Im ersten Quartal 2027 soll ein Wertschöpfungsbonus eingeführt werden. Die Grundförderung sinkt dann für alle Wärmepumpen auf 15 Prozent. Gleichzeitig erhalten Wärmepumpen, die innerhalb der EU gefertigt wurden, einen Wertschöpfungsbonus in Höhe von 15 Prozent.“ Details zur Umsetzung und der genaue Kreis der Geräte stehen noch aus – unseren Ausblick lesen Sie unter <a href="/blog/heizungsfoerderung-2027" class="text-[#0F5B78] font-medium hover:underline">Heizungsförderung 2027</a>.</p>
 
         <!-- Förder-Bausteine Visualization -->
         <div class="space-y-3 my-8">
@@ -2443,7 +3370,7 @@ ${GMODG_HINWEIS}
 
         <h2>Brauchen Sie Hilfe beim Förderantrag?</h2>
 
-        <p>Die Förderabwicklung kann nerven – Formulare, Fristen, technische Anforderungen. Deshalb machen wir das bei HeizCenter komplett für Sie – ob in <a href="/standorte/augsburg" class="text-[#0F5B78] font-medium hover:underline">Augsburg</a>, <a href="/standorte/ulm" class="text-[#0F5B78] font-medium hover:underline">Ulm</a> oder <a href="/standorte/memmingen" class="text-[#0F5B78] font-medium hover:underline">Memmingen</a>:</p>
+        <p>Die Förderabwicklung kann nerven – Formulare, Fristen, technische Anforderungen. Deshalb begleiten wir Sie bei HeizCenter – ob in <a href="/standorte/augsburg" class="text-[#0F5B78] font-medium hover:underline">Augsburg</a>, <a href="/standorte/ulm" class="text-[#0F5B78] font-medium hover:underline">Ulm</a> oder <a href="/standorte/memmingen" class="text-[#0F5B78] font-medium hover:underline">Memmingen</a>:</p>
 
         <ul class="space-y-2 my-6">
           <li class="flex items-center gap-2"><span class="text-green-600">✓</span> Persönliche Fördermittelberechnung</li>
@@ -2455,7 +3382,7 @@ ${GMODG_HINWEIS}
 
         <div class="bg-[#0F5B78] text-white rounded-xl p-8 my-8">
           <h3 class="text-xl font-bold mb-4">Kostenlose Förderberatung</h3>
-          <p class="text-white/90 mb-4">Wir berechnen, wie viel Förderung für Sie drin ist – und übernehmen auf Wunsch den gesamten Antragsprozess.</p>
+          <p class="text-white/90 mb-4">Wir berechnen, wie viel Förderung für Sie drin ist – und begleiten Sie auf Wunsch durch den Antragsprozess (BzA von uns, Antrag durch Sie).</p>
           <div class="flex flex-wrap gap-3">
             <a href="/kontakt" class="inline-flex items-center gap-2 bg-white text-[#0F5B78] px-5 py-2.5 rounded-lg font-medium hover:bg-slate-100 transition-colors">
               Beratungstermin buchen
@@ -2494,6 +3421,7 @@ ${GMODG_HINWEIS}
       category: 'Förderung',
       author: 'HeizCenter Redaktion',
       date: '2026-02-04',
+      updated: '2026-10-23',
       readingTime: 12,
       image: '/images/Heizung_Modernisierung.webp',
       tags: ['Förderung', 'BEG', 'KfW', 'Wärmepumpe', 'Zuschuss', 'Steuerbonus'],
@@ -3796,8 +4724,8 @@ ${GMODG_HINWEIS}
         <div style="background-color: #e8f4f8; padding: 20px; border-left: 4px solid #0F5B78; margin: 20px 0;">
           <h3 style="margin-top: 0;">🔍 Schnellüberblick: Die Systeme im Vergleich</h3>
           <ul style="margin-bottom: 0;">
-            <li><strong>Günstigste Betriebskosten:</strong> Wärmepumpe (715 €/Jahr) & Pellets (740 €/Jahr)</li>
-            <li><strong>Teuerste Betriebskosten:</strong> Fernwärme (1.245 €/Jahr) & Gas (1.180 €/Jahr)</li>
+            <li><strong>Günstigste Betriebskosten:</strong> Wärmepumpe (rund 1.400 €/Jahr), danach Pellets (rund 1.550 €/Jahr, Pelletpreis Oktober 2026)</li>
+            <li><strong>Teuerste Betriebskosten:</strong> Öl und Gas (je rund 2.400 €/Jahr)</li>
             <li><strong>Höchste Förderung:</strong> Bis zu 80% für Wärmepumpe und Pellets (bei Einkommen bis 30.000 €, sonst max. 70%)</li>
             <li><strong>Keine Förderung:</strong> Gas & Öl (Auslaufmodelle)</li>
             <li><strong>20-Jahre-Gesamtkosten:</strong> Wärmepumpe 45.000 € vs. Gas 65.000 €</li>
@@ -3918,58 +4846,51 @@ ${GMODG_HINWEIS}
 
         <h2>Betriebskosten pro Jahr: Der entscheidende Faktor</h2>
 
-        <p>Für eine typische 70-m²-Wohnung zeigt der <strong>Heizspiegel 2025</strong> folgende jährliche Heizkosten:</p>
+        <p>Für ein Einfamilienhaus mit 15.000 kWh Wärmebedarf ergeben sich im Mittel über 20 Jahre folgende <strong>Betriebskosten pro Jahr</strong>:</p>
 
         <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
           <thead>
             <tr style="background-color: #0F5B78; color: white;">
               <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Heizsystem</th>
-              <th style="padding: 12px; text-align: right; border: 1px solid #ddd;">Kosten/Jahr 2025</th>
-              <th style="padding: 12px; text-align: center; border: 1px solid #ddd;">Trend</th>
+              <th style="padding: 12px; text-align: right; border: 1px solid #ddd;">Betriebskosten/Jahr (15.000 kWh, Mittel über 20 Jahre)</th>
             </tr>
           </thead>
           <tbody>
             <tr style="background-color: #d4edda;">
               <td style="padding: 10px; border: 1px solid #ddd;"><strong>🏆 Wärmepumpe</strong></td>
-              <td style="padding: 10px; border: 1px solid #ddd; text-align: right;"><strong>715 €</strong></td>
-              <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">↗ +5%</td>
+              <td style="padding: 10px; border: 1px solid #ddd; text-align: right;"><strong>1.400 €</strong></td>
             </tr>
             <tr style="background-color: #d4edda;">
-              <td style="padding: 10px; border: 1px solid #ddd;"><strong>🏆 Pellets</strong></td>
-              <td style="padding: 10px; border: 1px solid #ddd; text-align: right;"><strong>740 €</strong></td>
-              <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">↗ +20%</td>
+              <td style="padding: 10px; border: 1px solid #ddd;"><strong>Pellets</strong></td>
+              <td style="padding: 10px; border: 1px solid #ddd; text-align: right;"><strong>1.550 €</strong></td>
             </tr>
             <tr>
               <td style="padding: 10px; border: 1px solid #ddd;">Öl</td>
-              <td style="padding: 10px; border: 1px solid #ddd; text-align: right;">1.055 €</td>
-              <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">↗ +8%</td>
+              <td style="padding: 10px; border: 1px solid #ddd; text-align: right;">2.400 €</td>
             </tr>
             <tr style="background-color: #f8f9fa;">
               <td style="padding: 10px; border: 1px solid #ddd;">Gas</td>
-              <td style="padding: 10px; border: 1px solid #ddd; text-align: right;">1.180 €</td>
-              <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">↗ +15%</td>
-            </tr>
-            <tr>
-              <td style="padding: 10px; border: 1px solid #ddd;">Fernwärme</td>
-              <td style="padding: 10px; border: 1px solid #ddd; text-align: right;">1.245 €</td>
-              <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">↗ +10%</td>
+              <td style="padding: 10px; border: 1px solid #ddd; text-align: right;">2.400 €</td>
             </tr>
           </tbody>
         </table>
+        <p><em>Rechenbasis wie in der 20-Jahres-Tabelle unten: 15.000 kWh Wärmebedarf, Energie-/Brennstoffkosten ohne Wartung (Betrieb über 20 Jahre geteilt durch 20). Fernwärmepreise unterscheiden sich je Netz stark und sind hier nicht enthalten.</em></p>
 
-        <p><strong>Fazit:</strong> Wärmepumpen sind seit 2022 günstiger als Gas und sparen jährlich etwa <strong>465 € gegenüber Gas</strong> und <strong>340 € gegenüber Öl</strong>!</p>
+        <p><strong>Fazit:</strong> Wärmepumpen sind seit 2022 günstiger als Gas und sparen jährlich rund <strong>1.000 € gegenüber Gas</strong> und rund <strong>1.000 € gegenüber Öl</strong>!</p>
+
+        <p><strong>Hinweis:</strong> Stand 23.10.2026 – Heizöl kostete laut heizoel24 im Bundesdurchschnitt 172,71 € je 100 Liter (inkl. MwSt.), rund 3,42 € je 100 Liter mehr als eine Woche zuvor. Für das Einfamilienhaus mit 20.000 kWh Wärmebedarf aus der CO₂-Bilanz weiter unten (rund 2.000 Liter Heizöl bei etwa 10 kWh je Liter und 100 % Nutzungsgrad; bei 90–95 % Nutzungsgrad eher 2.100–2.200 Liter) sind das etwa 3.450 € allein für den Brennstoff, bei 2.100–2.200 Litern rund 3.600–3.800 € – ohne Wartung und Schornsteinfeger; der CO₂-Preis (bei 55–65 €/t und 2.100–2.200 Litern rund 370–450 €) ist darin bereits enthalten. Der Heizölpreis gilt für eine Abnahme von 3.000 Litern. Die Tabelle oben rechnet dagegen mit 15.000 kWh und dem Mittel über 20 Jahre.</p>
 
         <h3>Warum steigen die Betriebskosten unterschiedlich?</h3>
 
-        <p>Der Hauptgrund: <strong>CO₂-Preis 2025 beträgt 55 €/Tonne</strong> und trifft nur fossile Brennstoffe:</p>
+        <p>Der Hauptgrund: Der <strong>CO₂-Preis (2026 und 2027 im Korridor von 55–65 €/Tonne)</strong> trifft nur fossile Brennstoffe:</p>
 
         <ul>
-          <li>Gas: <strong>+144 €/Jahr</strong> CO₂-Steuer (bei 12.000 kWh)</li>
-          <li>Öl: <strong>+210 €/Jahr</strong> CO₂-Steuer (höhere Emissionen)</li>
+          <li>Gas: <strong>+157–186 €/Jahr</strong> CO₂-Preis (12.000 kWh ≙ 2,4 t CO₂ × 55–65 €/t, inkl. MwSt.)</li>
+          <li>Öl: <strong>+210–247 €/Jahr</strong> CO₂-Preis (1.200 Liter ≙ 3,2 t CO₂ × 55–65 €/t, inkl. MwSt. – höhere Emissionen)</li>
           <li>Wärmepumpe & Pellets: <strong>0 € CO₂-Steuer</strong></li>
         </ul>
 
-        <p>2026 und 2027 liegt der CO₂-Preis im Korridor von 55–65 €/Tonne (Versteigerung). Erst danach könnte er rein marktbasiert und deutlich höher liegen – <strong>Gas wird jedes Jahr teurer!</strong></p>
+        <p>2026 und 2027 liegt der CO₂-Preis im Korridor von 55–65 €/Tonne (Versteigerung). Erst danach könnte er rein marktbasiert und deutlich höher liegen.</p>
 
         <h2>⚡ Effizienz und Wirkungsgrad: Die technischen Fakten</h2>
 
@@ -3983,7 +4904,7 @@ ${GMODG_HINWEIS}
           <li><strong>Wasser-Wärmepumpe:</strong> JAZ 4,5–5,5 (beste Effizienz, aber selten möglich)</li>
         </ul>
 
-        <p><strong>Beispiel:</strong> Ein Haus mit 15.000 kWh Jahreswärmebedarf benötigt bei JAZ 3,5 nur <strong>4.286 kWh Strom</strong> (ca. 1.290 €/Jahr). Eine Gasheizung bräuchte <strong>15.000 kWh Gas</strong> (ca. 1.800 €/Jahr).</p>
+        <p><strong>Beispiel:</strong> Ein Haus mit 15.000 kWh Jahreswärmebedarf benötigt bei JAZ 3,5 nur <strong>4.286 kWh Strom</strong> (ca. 1.290 €/Jahr zu heutigen Preisen). Eine Gasheizung bräuchte <strong>15.000 kWh Gas</strong> (ca. 1.800 €/Jahr zu heutigen Preisen).</p>
 
         <h3>Fossile Systeme: Wirkungsgrad</h3>
 
@@ -4087,7 +5008,7 @@ ${GMODG_HINWEIS}
           <div style="background-color: #d4edda; padding: 15px; border-radius: 5px;">
             <strong>Vorteile</strong>
             <ul style="margin: 5px 0;">
-              <li>Niedrigste Betriebskosten (715 €/Jahr)</li>
+              <li>Niedrigste Betriebskosten (rund 1.400 €/Jahr bei 15.000 kWh)</li>
               <li>Bis zu 80% Förderung (22.400 €)</li>
               <li>0 kg CO₂ (mit Ökostrom)</li>
               <li>Kein Schornstein, kein Tank</li>
@@ -4122,11 +5043,11 @@ ${GMODG_HINWEIS}
             <strong>Nachteile</strong>
             <ul style="margin: 5px 0;">
               <li>KEINE Förderung (0 €)</li>
-              <li>Hohe Betriebskosten (1.180 €/Jahr)</li>
-              <li>+144 €/Jahr CO₂-Steuer (steigend)</li>
-              <li>4 t CO₂/Jahr</li>
+              <li>Hohe Betriebskosten (rund 2.400 €/Jahr)</li>
+              <li>+157–186 €/Jahr CO₂-Preis (bei 12.000 kWh, inkl. MwSt.; Korridor 55–65 €/t bis 2027)</li>
+              <li>4 t CO₂/Jahr (bei 20.000 kWh Wärmebedarf; bei 12.000 kWh rund 2,4 t)</li>
               <li>Bioanteil-Pflicht ab 2029 (10% → 60% bis 2040)</li>
-              <li>20-Jahre-TCO: 65.000 € (teuerste Option!)</li>
+              <li>20-Jahre-TCO: 65.200 € (nach Öl die zweitteuerste Option)</li>
             </ul>
           </div>
         </div>
@@ -4137,7 +5058,7 @@ ${GMODG_HINWEIS}
           <div style="background-color: #d4edda; padding: 15px; border-radius: 5px;">
             <strong>Vorteile</strong>
             <ul style="margin: 5px 0;">
-              <li>Niedrige Betriebskosten (740 €/Jahr)</li>
+              <li>Betriebskosten rund 1.550 €/Jahr (Pelletpreis Oktober 2026)</li>
               <li>Bis zu 80% Förderung</li>
               <li>CO₂-neutral</li>
               <li>Unabhängig von Strom/Gas</li>
@@ -4225,11 +5146,11 @@ ${GMODG_HINWEIS}
                 <td style="padding: 8px; border: 1px solid #ddd; text-align: right;"><strong>45.300 €</strong></td>
               </tr>
               <tr style="background-color: #d4edda;">
-                <td style="padding: 8px; border: 1px solid #ddd;"><strong>🏆 Pellets</strong></td>
+                <td style="padding: 8px; border: 1px solid #ddd;"><strong>Pellets</strong></td>
                 <td style="padding: 8px; border: 1px solid #ddd; text-align: right;">15.000 €</td>
-                <td style="padding: 8px; border: 1px solid #ddd; text-align: right;">24.000 €</td>
+                <td style="padding: 8px; border: 1px solid #ddd; text-align: right;">31.000 €</td>
                 <td style="padding: 8px; border: 1px solid #ddd; text-align: right;">4.300 €</td>
-                <td style="padding: 8px; border: 1px solid #ddd; text-align: right;"><strong>43.300 €</strong></td>
+                <td style="padding: 8px; border: 1px solid #ddd; text-align: right;"><strong>50.300 €</strong></td>
               </tr>
               <tr>
                 <td style="padding: 8px; border: 1px solid #ddd;">Öl</td>
@@ -4318,12 +5239,12 @@ ${GMODG_HINWEIS}
 
         <div style="background-color: #d4edda; padding: 20px; border-left: 4px solid #28a745; margin: 20px 0;">
           <h3 style="margin-top: 0; color: #155724;">Wärmepumpe ist 2026 die beste Wahl</h3>
-          <p>Mit den <strong>günstigsten Betriebskosten</strong> von nur 715 Euro pro Jahr (gegenüber 1.180 Euro bei Gas) und der <strong>höchsten Förderung</strong> bis zu 22.400 Euro Zuschuss überzeugt die Wärmepumpe auf ganzer Linie. Die 20-Jahre-Gesamtkosten liegen bei 45.000 Euro – das sind <strong>20.000 Euro Ersparnis</strong> gegenüber Gas. Mit Ökostrom entstehen 0 kg CO₂ (vs. 4.000 kg Gas). Das System kennt keine gesetzliche Brennstoff-Nachweispflicht, erfordert keine teuren Umbauten und amortisiert sich bereits nach 4 bis 6 Jahren.</p>
+          <p>Mit den <strong>günstigsten Betriebskosten</strong> von rund 1.400 Euro pro Jahr (gegenüber rund 2.400 Euro bei Gas) und der <strong>höchsten Förderung</strong> bis zu 22.400 Euro Zuschuss überzeugt die Wärmepumpe auf ganzer Linie. Die 20-Jahre-Gesamtkosten liegen bei 45.000 Euro – das sind <strong>20.000 Euro Ersparnis</strong> gegenüber Gas. Mit Ökostrom entstehen 0 kg CO₂ (vs. 4.000 kg Gas). Das System kennt keine gesetzliche Brennstoff-Nachweispflicht, erfordert keine teuren Umbauten und amortisiert sich bereits nach 4 bis 6 Jahren.</p>
         </div>
 
-        <p><strong>Gasheizungen sind 2026 eine Kostenfalle:</strong> Keine Förderung, steigende CO₂-Steuer, ab 2029 Bioanteil-Pflicht, höchste 20-Jahres-Kosten. Selbst die niedrigen Anschaffungskosten können die enormen Betriebskosten nicht ausgleichen.</p>
+        <p><strong>Gasheizungen sind 2026 eine Kostenfalle:</strong> Keine Förderung, steigende CO₂-Steuer, ab 2029 Bioanteil-Pflicht, 20-Jahres-Kosten rund 20.000 € über der Wärmepumpe. Selbst die niedrigen Anschaffungskosten können die enormen Betriebskosten nicht ausgleichen.</p>
 
-        <p><strong>Pelletheizungen sind die Alternative</strong> für Haushalte mit Platz und regionaler Pellet-Verfügbarkeit – besonders beliebt im ländlichen Raum wie dem <a href="/standorte/memmingen" class="text-[#0F5B78] font-medium hover:underline">Allgäu rund um Memmingen</a>. Ähnlich günstig wie Wärmepumpen, CO₂-neutral und mit hoher Förderung.</p>
+        <p><strong>Pelletheizungen sind die Alternative</strong> für Haushalte mit Platz und regionaler Pellet-Verfügbarkeit – besonders beliebt im ländlichen Raum wie dem <a href="/standorte/memmingen" class="text-[#0F5B78] font-medium hover:underline">Allgäu rund um Memmingen</a>. Im Betrieb teurer als Wärmepumpen, CO₂-neutral und mit hoher Förderung.</p>
 
         <p><strong>Die optimale Lösung: Wärmepumpe + Photovoltaik</strong> – maximale Unabhängigkeit, minimale Kosten, 0 Emissionen, Wertsteigerung der Immobilie.</p>
 
@@ -4337,12 +5258,12 @@ ${GMODG_HINWEIS}
           </p>
         </div>
 
-        <p><strong>Handeln Sie jetzt und sichern Sie sich bis zu 80% Förderung – der Geschwindigkeitsbonus sinkt ab 01.02.2027 halbjährlich und entfällt für Anträge ab 01.08.2028!</strong> Mehr Details finden Sie in unseren spezialisierten Ratgebern: <a href="/blog/waermepumpe-kosten-2026" class="text-[#0F5B78] font-medium hover:underline">Was kostet eine Wärmepumpe 2026?</a>, <a href="/blog/gasheizung-kosten-2026" class="text-[#0F5B78] font-medium hover:underline">Gasheizung Kosten 2026</a> und <a href="/blog/foerderung-heizung-2026" class="text-[#0F5B78] font-medium hover:underline">Heizungsförderung 2026: So holen Sie sich bis zu 22.400 € zurück</a>.</p>
+        <p><strong>Handeln Sie jetzt: Bei Antrag bis 31.01.2027 gilt noch der volle Klimabonus (bis 80% nur bei Einkommen bis 30.000 €, vorbehaltlich Bundesmittel) – danach sinkt er halbjährlich und entfällt für Anträge ab 01.08.2028!</strong> Mehr Details finden Sie in unseren spezialisierten Ratgebern: <a href="/blog/waermepumpe-kosten-2026" class="text-[#0F5B78] font-medium hover:underline">Was kostet eine Wärmepumpe 2026?</a>, <a href="/blog/gasheizung-kosten-2026" class="text-[#0F5B78] font-medium hover:underline">Gasheizung Kosten 2026</a> und <a href="/blog/foerderung-heizung-2026" class="text-[#0F5B78] font-medium hover:underline">Heizungsförderung 2026: So holen Sie sich bis zu 22.400 € zurück</a>.</p>
 
         <h2>Häufig gestellte Fragen (FAQ)</h2>
 
         <h3>Welche Heizung ist auf lange Sicht am günstigsten?</h3>
-        <p>Die <strong>Wärmepumpe hat die niedrigsten Gesamtkosten über 20 Jahre</strong> mit nur 45.300 Euro (inkl. Förderung). Pelletheizungen liegen mit 43.300 Euro sogar leicht darunter, erfordern aber Platz für Lager und regelmäßiges Befüllen. Gas kommt auf 65.200 Euro, Öl auf 68.200 Euro. Mit Photovoltaik-Kombination sinken die Wärmepumpen-Kosten auf nur 38.000-42.000 Euro – unschlagbar günstig bei gleichzeitig niedrigsten Betriebskosten.</p>
+        <p>Die <strong>Wärmepumpe hat die niedrigsten Gesamtkosten über 20 Jahre</strong> mit nur 45.300 Euro (inkl. Förderung). Pelletheizungen liegen bei aktuellem Pelletpreis mit rund 50.300 Euro darüber und erfordern zudem Platz für Lager und regelmäßiges Befüllen. Gas kommt auf 65.200 Euro, Öl auf 68.200 Euro. Mit Photovoltaik-Kombination sinken die Wärmepumpen-Kosten auf nur 38.000-42.000 Euro – unschlagbar günstig bei gleichzeitig niedrigsten Betriebskosten.</p>
 
         <h3>Welche Heizung ist die beste für einen Altbau?</h3>
         <p>Für Altbauten eignen sich <strong>Luft-Wasser-Wärmepumpen</strong> am besten, da sie keine aufwendigen Erdarbeiten benötigen und auch bei höheren Vorlauftemperaturen (55-60°C) effizient arbeiten. Fraunhofer-Feldtests zeigen: Selbst teilsanierte Altbauten von 15-170 Jahren erreichen JAZ-Werte von 3,4-4,3. Wichtig ist ein hydraulischer Abgleich und eventuell größere Heizkörper in 2-3 Räumen (günstiger als Fußbodenheizung). Bei sehr schlechter Dämmung sind Pelletheizungen eine gute Alternative.</p>
@@ -4357,22 +5278,23 @@ ${GMODG_HINWEIS}
         <p>Ja, Hybridheizungen kombinieren mehrere Systeme. Beliebt sind: <strong>Wärmepumpe + Gasheizung</strong> (Gas nur für Spitzenlast), <strong>Wärmepumpe + Solarthermie</strong> (maximale Effizienz) oder <strong>Pellets + Solar</strong> (100% erneuerbar). Wichtig für die Förderung: Gefördert wird nur der erneuerbare Wärmeerzeuger; bei einer Kombination mit Gas gibt es keinen Klimageschwindigkeitsbonus, und der Gaskessel selbst ist nicht förderfähig. Hybridlösungen eignen sich besonders für Altbauten mit hohem Wärmebedarf, kosten aber mehr (30.000-45.000 Euro).</p>
 
         <h3>Welche Heizung hat die niedrigsten Betriebskosten?</h3>
-        <p>Wärmepumpen mit PV-Anlage haben die niedrigsten laufenden Kosten mit nur <strong>720 Euro/Jahr</strong> bei 70% Eigenversorgung. Ohne PV liegen Wärmepumpen bei 1.337 Euro/Jahr, Pellets bei 1.215 Euro/Jahr. Gas kommt auf 2.262 Euro/Jahr, Öl auf 2.414 Euro/Jahr. Die Ersparnis von Wärmepumpe gegenüber Gas beträgt 925 Euro pro Jahr – über 20 Jahre sind das 18.500 Euro Unterschied nur bei den Betriebskosten.</p>
+        <p>Wärmepumpen haben die niedrigsten laufenden Kosten: rund 1.400 Euro/Jahr, mit PV-Anlage (70% Eigenversorgung) in 20 Jahren rund 22.000 statt 28.000 Euro. Pellets liegen bei rund 1.550 Euro/Jahr (Pelletpreis Oktober 2026), Gas und Öl bei je rund 2.400 Euro/Jahr (15.000 kWh, Mittel über 20 Jahre). Die Ersparnis der Wärmepumpe gegenüber Gas beträgt rund 1.000 Euro pro Jahr, über 20 Jahre rund 20.000 Euro nur bei den Betriebskosten.</p>
       `,
       category: 'Heizung',
       author: 'HeizCenter Redaktion',
       date: '2026-02-03',
+      updated: '2026-10-23',
       readingTime: 18,
       image: '/images/Heizung_Modernisierung.webp',
       tags: ['Heizung', 'Vergleich', 'Wärmepumpe', 'Gas', 'Pellets', 'Kosten', 'Förderung', 'TCO'],
       featured: true,
       faqs: [
-        { question: 'Welche Heizung ist auf lange Sicht am günstigsten?', answer: 'Die Wärmepumpe hat die niedrigsten Gesamtkosten über 20 Jahre mit nur 45.300 Euro (inkl. Förderung). Pelletheizungen liegen mit 43.300 Euro sogar leicht darunter, erfordern aber Platz für Lager und regelmäßiges Befüllen. Gas kommt auf 65.200 Euro, Öl auf 68.200 Euro. Mit Photovoltaik-Kombination sinken die Wärmepumpen-Kosten auf nur 38.000-42.000 Euro – unschlagbar günstig bei gleichzeitig niedrigsten Betriebskosten.' },
+        { question: 'Welche Heizung ist auf lange Sicht am günstigsten?', answer: 'Die Wärmepumpe hat die niedrigsten Gesamtkosten über 20 Jahre mit nur 45.300 Euro (inkl. Förderung). Pelletheizungen liegen bei aktuellem Pelletpreis mit rund 50.300 Euro darüber und erfordern zudem Platz für Lager und regelmäßiges Befüllen. Gas kommt auf 65.200 Euro, Öl auf 68.200 Euro. Mit Photovoltaik-Kombination sinken die Wärmepumpen-Kosten auf nur 38.000-42.000 Euro – unschlagbar günstig bei gleichzeitig niedrigsten Betriebskosten.' },
         { question: 'Welche Heizung ist die beste für einen Altbau?', answer: 'Für Altbauten eignen sich Luft-Wasser-Wärmepumpen am besten, da sie keine aufwendigen Erdarbeiten benötigen und auch bei höheren Vorlauftemperaturen (55-60°C) effizient arbeiten. Fraunhofer-Feldtests zeigen: Selbst teilsanierte Altbauten von 15-170 Jahren erreichen JAZ-Werte von 3,4-4,3. Wichtig ist ein hydraulischer Abgleich und eventuell größere Heizkörper in 2-3 Räumen (günstiger als Fußbodenheizung). Bei sehr schlechter Dämmung sind Pelletheizungen eine gute Alternative.' },
         { question: 'Welche Heizung hat die beste Förderung 2026?', answer: 'Wärmepumpen und Pelletheizungen erhalten mit bis zu 80% Förderung die höchste Unterstützung – zu gleichen Bedingungen. Das entspricht maximal 22.400 Euro Zuschuss bei 28.000 Euro förderfähigen Kosten (Einfamilienhaus), allerdings nur für Selbstnutzer mit zu versteuerndem Haushaltseinkommen bis 30.000 Euro (mit Kind bis 40.000 Euro); sonst liegt die Obergrenze bei 70% (max. 19.600 Euro). Die Bausteine: 30% Grundförderung + 16% Klimageschwindigkeits-Bonus + 10–40% Einkommensbonus (40% bis 30.000 Euro, 30% bis 40.000 Euro, 10% bis 50.000 Euro Einkommen). Gasheizungen erhalten seit 2024 keine Förderung mehr, Ölheizungen ebenfalls nicht.' },
         { question: 'Welche Heizung ist am zukunftssichersten?', answer: 'Wärmepumpen und Pelletheizungen haben nach dem GModG keine Brennstoff-Nachweispflicht und erfordern keine Nachrüstungen. Neue Gas- und Ölheizungen (Einbau nach 29.07.2026) müssen ab 2029 steigende Bioanteile nachweisen: 10% ab 2029, 15% ab 2030, 30% ab 2035, 60% ab 2040 (§ 43 GModG). Wer jetzt eine neue Gas- oder Ölheizung einbaut, muss diese laufenden Pflichten einplanen.' },
         { question: 'Kann ich verschiedene Heizsysteme kombinieren?', answer: 'Ja, Hybridheizungen kombinieren mehrere Systeme. Beliebt sind: Wärmepumpe + Gasheizung (Gas nur für Spitzenlast), Wärmepumpe + Solarthermie (maximale Effizienz) oder Pellets + Solar (100% erneuerbar). Wichtig für die Förderung: Gefördert wird nur der erneuerbare Wärmeerzeuger; bei einer Kombination mit Gas gibt es keinen Klimageschwindigkeitsbonus, und der Gaskessel selbst ist nicht förderfähig. Hybridlösungen eignen sich besonders für Altbauten mit hohem Wärmebedarf, kosten aber mehr (30.000-45.000 Euro).' },
-        { question: 'Welche Heizung hat die niedrigsten Betriebskosten?', answer: 'Wärmepumpen mit PV-Anlage haben die niedrigsten laufenden Kosten mit nur 720 Euro/Jahr bei 70% Eigenversorgung. Ohne PV liegen Wärmepumpen bei 1.337 Euro/Jahr, Pellets bei 1.215 Euro/Jahr. Gas kommt auf 2.262 Euro/Jahr, Öl auf 2.414 Euro/Jahr. Die Ersparnis von Wärmepumpe gegenüber Gas beträgt 925 Euro pro Jahr – über 20 Jahre sind das 18.500 Euro Unterschied nur bei den Betriebskosten.' },
+        { question: 'Welche Heizung hat die niedrigsten Betriebskosten?', answer: 'Wärmepumpen haben die niedrigsten laufenden Kosten: rund 1.400 Euro/Jahr, mit PV-Anlage (70% Eigenversorgung) in 20 Jahren rund 22.000 statt 28.000 Euro. Pellets liegen bei rund 1.550 Euro/Jahr (Pelletpreis Oktober 2026), Gas und Öl bei je rund 2.400 Euro/Jahr (15.000 kWh, Mittel über 20 Jahre). Die Ersparnis der Wärmepumpe gegenüber Gas beträgt rund 1.000 Euro pro Jahr, über 20 Jahre rund 20.000 Euro nur bei den Betriebskosten.' },
       ],
     },
     {
@@ -5851,7 +6773,7 @@ ${GMODG_HINWEIS}
       title: 'Wärmepumpe vs. Gasheizung 2026: Kosten, Effizienz & Förderung im Vergleich',
       excerpt: 'Detaillierter Vergleich: Wärmepumpe oder Gasheizung? Alle Kosten, Effizienz, Förderung, Vor- und Nachteile. Plus Entscheidungshilfe für Ihre Situation.',
       content: `
-      <h2>Wärmepumpe vs. Gasheizung 2025: Der große Vergleich</h2>
+      <h2>Wärmepumpe vs. Gasheizung 2026: Der große Vergleich</h2>
 
       <div style="background-color: #e8f4f8; padding: 20px; border-left: 4px solid #0F5B78; margin: 20px 0;">
         <h3 style="margin-top: 0;">⚡ Schnellvergleich auf einen Blick</h3>
@@ -5876,13 +6798,13 @@ ${GMODG_HINWEIS}
             </tr>
             <tr>
               <td style="padding: 10px; border: 1px solid #ddd;"><strong>Betriebskosten/Jahr</strong></td>
-              <td style="padding: 10px; border: 1px solid #ddd;">800–1.200 €</td>
-              <td style="padding: 10px; border: 1px solid #ddd;">1.500–2.500 €</td>
+              <td style="padding: 10px; border: 1px solid #ddd;">1.250–1.950 €</td>
+              <td style="padding: 10px; border: 1px solid #ddd;">2.900–3.300 €</td>
             </tr>
             <tr style="background-color: #f9f9f9;">
               <td style="padding: 10px; border: 1px solid #ddd;"><strong>CO₂-Emissionen</strong></td>
               <td style="padding: 10px; border: 1px solid #ddd;">~0,5 t/Jahr (Ökostrom: 0)</td>
-              <td style="padding: 10px; border: 1px solid #ddd;">~4,5 t/Jahr</td>
+              <td style="padding: 10px; border: 1px solid #ddd;">~4 t/Jahr</td>
             </tr>
             <tr>
               <td style="padding: 10px; border: 1px solid #ddd;"><strong>Gesetzeslage (GModG 2026)</strong></td>
@@ -5989,13 +6911,15 @@ ${GMODG_HINWEIS}
           <tr style="background-color: #f9f9f9;">
             <td style="padding: 10px; border: 1px solid #ddd;"><strong>Gasheizung (Brennwert)</strong></td>
             <td style="padding: 10px; border: 1px solid #ddd;">20.000 kWh Gas</td>
-            <td style="padding: 10px; border: 1px solid #ddd;">~2.000 € (10 ct/kWh)</td>
-            <td style="padding: 10px; border: 1px solid #ddd;">~4,5 t</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">~2.540 € (12,7 ct/kWh)</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">~4 t</td>
           </tr>
         </tbody>
       </table>
 
-      <p><strong>Jahreseinsparung Wärmepumpe vs. Gas:</strong> 500–1.000 € (je nach Stromtarif)</p>
+      <p><strong>Jahreseinsparung Wärmepumpe vs. Gas:</strong> 1.040–1.540 € (je nach Stromtarif)</p>
+
+      <p><strong>Hinweis:</strong> Stand 23.10.2026 – Die 12,7 ct/kWh sind der Verivox-Durchschnittspreis für Haushalte zum 1. Oktober 2026 (inklusive aller Steuern und Abgaben). Zum Jahreswechsel 2027 erwartet Verivox flächendeckende Preiserhöhungen von 10 bis 20 Prozent je nach Tarif – vor allem wegen der gestiegenen Großhandelspreise und wegen rund 3 Prozent höherer Gasnetzentgelte. Damit läge das Beispiel oben bei rund 2.790 bis 3.050 € Gaskosten pro Jahr.</p>
 
       <h3>Wartungskosten</h3>
       <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
@@ -6126,18 +7050,18 @@ ${GMODG_HINWEIS}
           </tr>
           <tr>
             <td style="padding: 10px; border: 1px solid #ddd;">Gasheizung</td>
-            <td style="padding: 10px; border: 1px solid #ddd;">~90 Tonnen</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">~80 Tonnen</td>
           </tr>
         </tbody>
       </table>
 
-      <p><strong>→ CO₂-Ersparnis über 20 Jahre: 50+ Tonnen (entspricht ~500.000 km Autofahrt)</strong></p>
+      <p><strong>→ CO₂-Ersparnis über 20 Jahre: rund 40 t (Strommix) bis 80 t (Ökostrom)</strong></p>
 
       <h2>5. Vor- und Nachteile im Überblick</h2>
 
       <h3>Vorteile Wärmepumpe</h3>
       <ul>
-        <li><strong>Sehr niedrige Betriebskosten:</strong> 50–70% günstiger als Gas (bei WP-Stromtarif)</li>
+        <li><strong>Sehr niedrige Betriebskosten:</strong> 40–60% günstiger als Gas (bei WP-Stromtarif)</li>
         <li><strong>Hohe Förderung:</strong> Bis zu 80% Zuschuss vom Staat</li>
         <li><strong>Klimafreundlich:</strong> Bis zu 100% CO₂-frei mit Ökostrom</li>
         <li><strong>Keine fossilen Brennstoffe:</strong> Unabhängig von Gas-/Ölpreisen</li>
@@ -6168,12 +7092,12 @@ ${GMODG_HINWEIS}
 
       <h3>Nachteile Gasheizung</h3>
       <ul>
-        <li><strong>Hohe Betriebskosten:</strong> Gas-Preis volatil (aktuell ~10–12 ct/kWh)</li>
+        <li><strong>Hohe Betriebskosten:</strong> Gas-Preis volatil (Verivox-Durchschnitt Oktober 2026: 12,7 ct/kWh; zum Jahreswechsel 2027 erwartet Verivox je nach Tarif 10–20% Aufschlag)</li>
         <li><strong>Keine Förderung:</strong> Staat unterstützt fossile Heizungen nicht mehr</li>
-        <li><strong>Hohe CO₂-Emissionen:</strong> ~4,5 Tonnen/Jahr</li>
+        <li><strong>Hohe CO₂-Emissionen:</strong> ~4 Tonnen/Jahr</li>
         <li><strong>Gesetzliche Pflichten:</strong> Bioanteil-Stufen ab 2029 bei Neueinbau (GModG § 43)</li>
         <li><strong>Gasanschluss erforderlich:</strong> Monatliche Grundgebühr (~10–20 €)</li>
-        <li><strong>CO₂-Steuer steigt:</strong> Bis 2027 auf 55–65 €/Tonne → höhere Gaskosten</li>
+        <li><strong>CO₂-Preis:</strong> 2026 und 2027 im Korridor 55–65 €/Tonne (Bundestag 15.10.2026), ab 2028 Marktpreis im EU-Emissionshandel ETS 2 → bleibt ein Kostenfaktor</li>
         <li><strong>Schornsteinfeger:</strong> Jährliche Pflicht + Kosten (80–150 €)</li>
         <li><strong>Wertverlust:</strong> Fossile Heizungen senken Immobilienwert</li>
       </ul>
@@ -6203,10 +7127,12 @@ ${GMODG_HINWEIS}
       </ul>
 
       <div style="background-color: #d4edda; padding: 20px; border-left: 4px solid #28a745; margin: 20px 0;">
-        <p style="margin: 0;"><strong>💡 Empfehlung 2025:</strong> In 90% der Fälle ist eine Wärmepumpe die bessere Wahl – dank Förderung, niedriger Betriebskosten und Zukunftssicherheit. Nur bei extremen Sonderfällen (unsanierter Altbau, sehr kurze Nutzungsdauer) kann Gas noch eine Option sein.</p>
+        <p style="margin: 0;"><strong>💡 Empfehlung 2026:</strong> In 90% der Fälle ist eine Wärmepumpe die bessere Wahl – dank Förderung, niedriger Betriebskosten und Zukunftssicherheit. Nur bei extremen Sonderfällen (unsanierter Altbau, sehr kurze Nutzungsdauer) kann Gas noch eine Option sein.</p>
       </div>
 
       <h2>8. Kosten-Hochrechnung über 20 Jahre</h2>
+
+      <p>Annahme: konstante Preise, Stand Oktober 2026 – die Rechnung schreibt die heutigen Energie- und Wartungskosten 20 Jahre fort.</p>
 
       <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
         <thead>
@@ -6230,7 +7156,7 @@ ${GMODG_HINWEIS}
           <tr>
             <td style="padding: 10px; border: 1px solid #ddd;">Energiekosten (20 Jahre)</td>
             <td style="padding: 10px; border: 1px solid #ddd;">20.000 € (1.000 €/Jahr)</td>
-            <td style="padding: 10px; border: 1px solid #ddd;">40.000 € (2.000 €/Jahr)</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">50.800 € (2.540 €/Jahr)</td>
           </tr>
           <tr style="background-color: #f9f9f9;">
             <td style="padding: 10px; border: 1px solid #ddd;">Wartung (20 Jahre)</td>
@@ -6240,12 +7166,12 @@ ${GMODG_HINWEIS}
           <tr style="background-color: #e8f4f8;">
             <td style="padding: 10px; border: 1px solid #ddd;"><strong>Gesamtkosten (20 Jahre)</strong></td>
             <td style="padding: 10px; border: 1px solid #ddd;"><strong>39.500 €</strong></td>
-            <td style="padding: 10px; border: 1px solid #ddd;"><strong>60.000 €</strong></td>
+            <td style="padding: 10px; border: 1px solid #ddd;"><strong>70.800 €</strong></td>
           </tr>
         </tbody>
       </table>
 
-      <p><strong>→ Ersparnis über 20 Jahre: 20.500 € für die Wärmepumpe!</strong></p>
+      <p><strong>→ Ersparnis über 20 Jahre: 31.300 € für die Wärmepumpe!</strong></p>
 
       <h2>9. Häufige Fragen (FAQ)</h2>
 
@@ -6262,7 +7188,7 @@ ${GMODG_HINWEIS}
       <p>Ja, bestehende Gasheizungen dürfen weiterlaufen und repariert werden; eine Austauschpflicht gibt es nach dem GModG nicht. Wer nach dem 29. Juli 2026 eine neue Gasheizung einbaut, muss ab 2029 steigende Bioanteile nachweisen (10% ab 2029, 15% ab 2030, 30% ab 2035, 60% ab 2040, § 43 GModG).</p>
 
       <h3>Lohnt sich eine Wärmepumpe trotz hoher Strompreise?</h3>
-      <p>Ja, dank JAZ von 3,5–4,5 ist Wärmepumpen-Strom selbst bei 30 ct/kWh günstiger als Gas (10 ct/kWh). Mit Wärmepumpen-Tarifen (20 ct/kWh) oder PV-Anlage wird die Ersparnis noch größer.</p>
+      <p>Ja, dank JAZ von 3,5–4,5 ist Wärmepumpen-Strom selbst bei 30 ct/kWh günstiger als Gas (12,7 ct/kWh, Verivox Oktober 2026). Mit Wärmepumpen-Tarifen (20 ct/kWh) oder PV-Anlage wird die Ersparnis noch größer.</p>
 
       <h3>Wie lange dauert die Installation?</h3>
       <p><strong>Wärmepumpe:</strong> 3–7 Tage (abhängig von Typ und Vorarbeiten)<br>
@@ -6282,7 +7208,7 @@ ${GMODG_HINWEIS}
         <ul>
           <li>✅ Niedrigere Gesamtkosten über 20 Jahre (trotz höherer Anschaffung)</li>
           <li>✅ Bis zu 80% staatliche Förderung (Gas: 0%)</li>
-          <li>✅ 50–70% niedrigere Betriebskosten</li>
+          <li>✅ 40–60% niedrigere Betriebskosten</li>
           <li>✅ Klimafreundlich & zukunftssicher (keine Brennstoff-Nachweispflicht)</li>
           <li>✅ Unabhängig von fossilen Brennstoffen</li>
         </ul>
@@ -6311,6 +7237,7 @@ ${GMODG_HINWEIS}
       category: 'Wärmepumpe',
       author: 'HeizCenter Redaktion',
       date: '2026-01-15',
+      updated: '2026-10-23',
       readingTime: 14,
       image: '/images/Waermepumpe.webp',
       tags: ['Wärmepumpe', 'Gasheizung', 'Heizungsvergleich', 'BEG-Förderung', 'Heizkosten', 'Effizienz', 'GModG 2026'],
@@ -6334,7 +7261,7 @@ ${GMODG_HINWEIS}
         },
         {
           question: 'Lohnt sich eine Wärmepumpe trotz hoher Strompreise?',
-          answer: 'Ja, dank JAZ von 3,5–4,5 ist Wärmepumpen-Strom selbst bei 30 ct/kWh günstiger als Gas (10 ct/kWh). Mit Wärmepumpen-Tarifen (20 ct/kWh) oder PV-Anlage wird die Ersparnis noch größer.',
+          answer: 'Ja, dank JAZ von 3,5–4,5 ist Wärmepumpen-Strom selbst bei 30 ct/kWh günstiger als Gas (12,7 ct/kWh, Verivox Oktober 2026). Mit Wärmepumpen-Tarifen (20 ct/kWh) oder PV-Anlage wird die Ersparnis noch größer.',
         },
         {
           question: 'Wie lange dauert die Installation?',
@@ -6356,7 +7283,7 @@ ${GMODG_HINWEIS}
       title: 'Wärmepumpe vs. Pelletheizung 2026: Kosten, Komfort & Nachhaltigkeit',
       excerpt: 'Wärmepumpe oder Pelletheizung? Detaillierter Vergleich der Kosten, Platzbedarf, Wartung, Förderung und Umweltbilanz. Plus Entscheidungshilfe.',
       content: `
-      <h2>Wärmepumpe vs. Pelletheizung 2025: Welches System passt zu Ihnen?</h2>
+      <h2>Wärmepumpe vs. Pelletheizung 2026: Welches System passt zu Ihnen?</h2>
 
       <div style="background-color: #e8f4f8; padding: 20px; border-left: 4px solid #0F5B78; margin: 20px 0;">
         <h3 style="margin-top: 0;">Schnellvergleich auf einen Blick</h3>
@@ -6381,8 +7308,8 @@ ${GMODG_HINWEIS}
             </tr>
             <tr>
               <td style="padding: 10px; border: 1px solid #ddd;"><strong>Betriebskosten/Jahr</strong></td>
-              <td style="padding: 10px; border: 1px solid #ddd;">800–1.200 €</td>
-              <td style="padding: 10px; border: 1px solid #ddd;">900–1.400 €</td>
+              <td style="padding: 10px; border: 1px solid #ddd;">1.150–1.250 €</td>
+              <td style="padding: 10px; border: 1px solid #ddd;">2.400–2.700 €</td>
             </tr>
             <tr style="background-color: #f9f9f9;">
               <td style="padding: 10px; border: 1px solid #ddd;"><strong>Wartungsaufwand</strong></td>
@@ -6505,13 +7432,13 @@ ${GMODG_HINWEIS}
           <tr>
             <td style="padding: 10px; border: 1px solid #ddd;"><strong>Pelletheizung</strong></td>
             <td style="padding: 10px; border: 1px solid #ddd;">4 Tonnen Pellets</td>
-            <td style="padding: 10px; border: 1px solid #ddd;">~1.200 € (300 €/t)</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">~1.860 € (465 €/t)</td>
             <td style="padding: 10px; border: 1px solid #ddd;">Mittel-Hoch</td>
           </tr>
         </tbody>
       </table>
 
-      <p><strong>Pelletpreisentwicklung 2023–2025:</strong> 250–400 €/Tonne (volatil je nach Holzmarktsituation)</p>
+      <p><strong>Pelletpreis:</strong> rund 465 €/Tonne (DEPI, Oktober 2026; volatil je nach Holzmarktsituation)</p>
 
       <h3>Wartungs- und Nebenkosten</h3>
       <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
@@ -6613,7 +7540,7 @@ ${GMODG_HINWEIS}
 
       <h3>Pelletheizung: Mehr Eigenarbeit erforderlich</h3>
       <ul>
-        <li>❌ <strong>Pelletbestellung:</strong> 1–2x pro Jahr (4–5 Tonnen à 300 €/t)</li>
+        <li>❌ <strong>Pelletbestellung:</strong> 1–2x pro Jahr (4–5 Tonnen à rund 465 €/t)</li>
         <li>❌ <strong>Ascheentleerung:</strong> Alle 4–8 Wochen (~150 kg/Jahr)</li>
         <li>❌ <strong>Reinigung Brenner & Wärmetauscher:</strong> Monatlich (ca. 2 h)</li>
         <li>❌ <strong>Schornsteinfeger:</strong> 2x jährlich (Messung + Kehrung)</li>
@@ -6703,7 +7630,7 @@ ${GMODG_HINWEIS}
         <li><strong>Ascheentsorgung:</strong> ~150 kg/Jahr</li>
         <li><strong>Feinstaubemissionen:</strong> 50–200 g/Jahr</li>
         <li><strong>Schornsteinfeger:</strong> Pflicht + Kosten (120–180 €/Jahr)</li>
-        <li><strong>Pelletpreis volatil:</strong> 250–400 €/Tonne</li>
+        <li><strong>Pelletpreis volatil:</strong> rund 465 €/Tonne (DEPI, Oktober 2026)</li>
       </ul>
 
       <h2>8. Wann lohnt sich welches System?</h2>
@@ -6729,7 +7656,7 @@ ${GMODG_HINWEIS}
       </ul>
 
       <div style="background-color: #d4edda; padding: 20px; border-left: 4px solid #28a745; margin: 20px 0;">
-        <p style="margin: 0;"><strong>💡 Empfehlung 2025:</strong> Wärmepumpen bieten heute das beste Gesamtpaket aus Komfort, Kosten, Förderung und Klimaschutz. Pelletheizungen sind nur noch für spezielle Altbau-Fälle oder sehr große Gebäude sinnvoll.</p>
+        <p style="margin: 0;"><strong>💡 Empfehlung 2026:</strong> Wärmepumpen bieten heute das beste Gesamtpaket aus Komfort, Kosten, Förderung und Klimaschutz. Pelletheizungen sind nur noch für spezielle Altbau-Fälle oder sehr große Gebäude sinnvoll.</p>
       </div>
 
       <h2>9. Kosten-Hochrechnung über 20 Jahre</h2>
@@ -6756,7 +7683,7 @@ ${GMODG_HINWEIS}
           <tr>
             <td style="padding: 10px; border: 1px solid #ddd;">Energiekosten (20 Jahre)</td>
             <td style="padding: 10px; border: 1px solid #ddd;">20.000 € (1.000 €/Jahr)</td>
-            <td style="padding: 10px; border: 1px solid #ddd;">24.000 € (1.200 €/Jahr)</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">37.200 € (1.860 €/Jahr)</td>
           </tr>
           <tr style="background-color: #f9f9f9;">
             <td style="padding: 10px; border: 1px solid #ddd;">Wartung (20 Jahre)</td>
@@ -6766,12 +7693,12 @@ ${GMODG_HINWEIS}
           <tr style="background-color: #e8f4f8;">
             <td style="padding: 10px; border: 1px solid #ddd;"><strong>Gesamtkosten (20 Jahre)</strong></td>
             <td style="padding: 10px; border: 1px solid #ddd;"><strong>37.500 €</strong></td>
-            <td style="padding: 10px; border: 1px solid #ddd;"><strong>48.800 €</strong></td>
+            <td style="padding: 10px; border: 1px solid #ddd;"><strong>62.000 €</strong></td>
           </tr>
         </tbody>
       </table>
 
-      <p><strong>→ Ersparnis über 20 Jahre: 11.300 € für die Wärmepumpe!</strong></p>
+      <p><strong>→ Ersparnis über 20 Jahre: 24.500 € für die Wärmepumpe!</strong></p>
 
       <h2>10. Häufige Fragen (FAQ)</h2>
 
@@ -6799,7 +7726,7 @@ ${GMODG_HINWEIS}
           <li>✅ Höherer Komfort (vollautomatisch)</li>
           <li>✅ Weniger Wartung (0 vs. 30 h/Jahr)</li>
           <li>✅ Weniger Platzbedarf (2 vs. 10 m²)</li>
-          <li>✅ Niedrigere Gesamtkosten (20 Jahre: -11.300 €)</li>
+          <li>✅ Niedrigere Gesamtkosten (20 Jahre: rund 24.500 € weniger)</li>
           <li>✅ Kein Feinstaub</li>
           <li>✅ Zukunftssicherer (keine Brennstoff-Nachweispflicht)</li>
           <li>✅ Optional Kühlfunktion</li>
@@ -6829,6 +7756,7 @@ ${GMODG_HINWEIS}
       category: 'Wärmepumpe',
       author: 'HeizCenter Redaktion',
       date: '2026-01-12',
+      updated: '2026-10-23',
       readingTime: 13,
       image: '/images/Waermepumpe.webp',
       tags: ['Wärmepumpe', 'Pelletheizung', 'Heizungsvergleich', 'Förderung', 'Biomasse', 'Heizkosten'],

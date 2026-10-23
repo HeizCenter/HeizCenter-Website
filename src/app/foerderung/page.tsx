@@ -58,7 +58,7 @@ export default function FoerderungPage() {
               </li>
             </ul>
             <p className="text-sm text-slate-600">
-              <strong>Fazit:</strong> Die Heizungsförderung (bis {FOERDER_TEXT.max} Zuschuss) ist 2026 in vollem Umfang verfügbar. Bei Vollsanierungen zum Effizienzhaus empfehlen wir eine frühzeitige Antragstellung.
+              <strong>Fazit:</strong> Die Heizungsförderung (bis {FOERDER_TEXT.max} Zuschuss) steht nach heutigem Stand zur Verfügung (abhängig von Bundesmitteln). Bei Vollsanierungen zum Effizienzhaus empfehlen wir eine frühzeitige Antragstellung.
             </p>
           </div>
 
@@ -214,6 +214,7 @@ export default function FoerderungPage() {
               <li>• Kombination mit KfW-Kredit möglich</li>
               <li>• Einkommensbonus (nur Selbstnutzer): 40% bis 30.000€, 30% bis 40.000€, 10% bis 50.000€ zu versteuerndes Haushaltsjahreseinkommen – mit minderjährigem, kindergeldberechtigtem Kind steigen die Grenzen um 10.000€</li>
               <li>• Klimageschwindigkeitsbonus (nur Selbstnutzer): {FOERDER_TEXT.klimaHinweis}; für Anträge ab 01.08.2028 entfällt er. Die förderfähigen Kosten der 1. Wohneinheit sinken ab 01.02.2027 halbjährlich um 750€</li>
+              <li>• <strong>Angekündigt (Stand 23.10.2026):</strong> Laut KfW-Pressemitteilung vom 08.07.2026 soll im ersten Quartal 2027 ein Wertschöpfungsbonus eingeführt werden: „Die Grundförderung sinkt dann für alle Wärmepumpen auf 15 Prozent. Gleichzeitig erhalten Wärmepumpen, die innerhalb der EU gefertigt wurden, einen Wertschöpfungsbonus in Höhe von 15 Prozent.“ Die Details zur Umsetzung und der genaue Kreis der Geräte stehen noch aus – mehr dazu unter <Link href="/blog/heizungsfoerderung-2027" className="text-[#0F5B78] hover:underline">Heizungsförderung 2027</Link></li>
               <li>• <strong>Ab 2026:</strong> Luft-Wärmepumpen müssen 10 dB(A) unter dem EU-Ökodesign-Grenzwert liegen (vorher 5 dB) — prüfen Sie vor dem Kauf die Schallwerte</li>
             </ul>
           </div>
@@ -502,9 +503,9 @@ export default function FoerderungPage() {
       <section className="container py-8">
         <div className="max-w-5xl mx-auto">
           <div className="bg-amber-50 border-l-4 border-amber-500 rounded-r-lg p-5">
-            <h3 className="font-bold text-amber-900 mb-2">Ausblick: Vom GEG zum Gebäudemodernisierungsgesetz (GMG)</h3>
+            <h3 className="font-bold text-amber-900 mb-2">Vom GEG zum Gebäudemodernisierungsgesetz (GModG)</h3>
             <p className="text-slate-700 text-sm mb-2">
-              Das Gebäudeenergiegesetz (GEG) soll zum <strong>Gebäudemodernisierungsgesetz (GMG)</strong> weiterentwickelt werden. Der Gesetzentwurf befindet sich aktuell in der politischen Abstimmung. Ziel ist es, Sanierungsanreize zu stärken und bürokratische Hürden abzubauen.
+              Seit dem 29. Juli 2026 gilt das <strong>Gebäudemodernisierungsgesetz (GModG)</strong>; die 65-%-Regel ist gestrichen. Ziel ist es, Sanierungsanreize zu stärken und bürokratische Hürden abzubauen.
             </p>
             <p className="text-slate-700 text-sm">
               <strong>Für Hausbesitzer bedeutet das:</strong> Die bestehenden BEG-Förderprogramme bleiben bis auf Weiteres gültig. Wer jetzt einen Heizungstausch plant, kann die aktuelle Förderung nutzen — unabhängig von der Gesetzesreform.
@@ -580,7 +581,7 @@ export default function FoerderungPage() {
               oder Ihren Steuerberater.
             </p>
             <p className="text-slate-600 text-xs mt-3">
-              Stand der Informationen: Februar 2026. Rechtsgrundlagen: BEG-Förderrichtlinie, § 35c EStG.
+              Stand der Informationen: Oktober 2026. Rechtsgrundlagen: BEG-Förderrichtlinie, § 35c EStG.
             </p>
           </div>
         </div>
