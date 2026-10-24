@@ -139,7 +139,7 @@ export default function WolfPage() {
         icon={Award}
         badge="Made in Bavaria"
         imageSrc="/images/partners/wolf/hero.webp"
-        imageAlt="WOLF CHA-Monoblock Wärmepumpe an einem sanierten Einfamilienhaus"
+        imageAlt="WOLF CHA-Monoblock 07/10 Wärmepumpe, Außeneinheit"
         imageCredit="WOLF GmbH"
         logoSrc="/images/partners/wolf.svg"
       />
