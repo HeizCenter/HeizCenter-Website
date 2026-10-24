@@ -139,7 +139,7 @@ export default function ViessmannPage() {
         icon={Award}
         badge="Testsieger 2024"
         imageSrc="/images/Waermepumpe.webp"
-        imageAlt="Viessmann Vitocal Wärmepumpe - Testsieger, installiert von HeizCenter"
+        imageAlt="Wärmepumpe am Einfamilienhaus – Symbolbild"
         logoSrc="/images/partners/viessmann.svg"
       />
 
