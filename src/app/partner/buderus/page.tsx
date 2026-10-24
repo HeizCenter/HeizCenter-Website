@@ -138,8 +138,9 @@ export default function BuderusPage() {
         benefits={benefits}
         icon={Award}
         badge="Testsieger 2024"
-        imageSrc="/images/Waermepumpe.webp"
-        imageAlt="Buderus Logatherm Wärmepumpe - Leise und effizient, installiert von HeizCenter"
+        imageSrc="/images/partners/buderus/hero.webp"
+        imageAlt="Buderus Logatherm WLW186i AR Wärmepumpe an einem Neubau"
+        imageCredit="Bosch Thermotechnik GmbH, Buderus Deutschland"
         logoSrc="/images/partners/buderus.svg"
       />
 

@@ -138,8 +138,9 @@ export default function WolfPage() {
         benefits={benefits}
         icon={Award}
         badge="Made in Bavaria"
-        imageSrc="/images/Waermepumpe.webp"
-        imageAlt="Wolf CHA Monoblock Wärmepumpe - Made in Bavaria, installiert von HeizCenter"
+        imageSrc="/images/partners/wolf/hero.webp"
+        imageAlt="WOLF CHA-Monoblock Wärmepumpe an einem sanierten Einfamilienhaus"
+        imageCredit="WOLF GmbH"
         logoSrc="/images/partners/wolf.svg"
       />
 

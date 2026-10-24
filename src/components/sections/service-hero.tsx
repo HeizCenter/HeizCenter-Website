@@ -13,6 +13,8 @@ interface ServiceHeroProps {
   badge?: string;
   imageSrc?: string;
   imageAlt?: string;
+  /** Bildnachweis, wenn die Lizenz ihn verlangt (z. B. Herstellerbilder, HEC-190) */
+  imageCredit?: string;
   logoSrc?: string;
 }
 
@@ -24,6 +26,7 @@ export function ServiceHero({
   badge,
   imageSrc,
   imageAlt,
+  imageCredit,
   logoSrc,
 }: ServiceHeroProps) {
   return (
@@ -96,6 +99,11 @@ export function ServiceHero({
                   className="object-cover"
                   priority
                 />
+                {imageCredit && (
+                  <span className="absolute bottom-2 right-3 rounded bg-black/40 px-2 py-0.5 text-[11px] text-white/90">
+                    Bild: {imageCredit}
+                  </span>
+                )}
               </div>
             ) : (
               <div className="aspect-square bg-gradient-to-br from-[#0F5B78]/10 to-[#0F5B78]/20 rounded-3xl flex items-center justify-center">
