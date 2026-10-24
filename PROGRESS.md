@@ -1589,3 +1589,19 @@ Agents: seo-specialist (Audit), general-purpose (Themenrecherche, 3 Writer, 1 Up
 ### Geaenderte Dateien
 `src/components/sections/solar-process-section.tsx`, `src/lib/api/blog.ts`, `VALIDATION_REPORT.md`, `docs/qa/site-overflow.mjs` (neu), `docs/qa/article-overflow.mjs`
 Agents: general-purpose (Autor, Web-Stichprobe), hvac-content ×3 (Gate 1), linear-verifier ×2
+
+## Session 2026-10-24 (Nachmittag/Abend: Partnerseiten, Architekturkarte)
+
+### Completed
+- [x] **HEC-190 Done/verified** (`06a4bb1`, `01d6312`, `1438196`): offizielle Herstellerbilder nur mit belegtem Nutzungsrecht — Buderus/Bosch (Bosch-Thermotechnik-Bedingungen § 3.2, Bildnachweis Pflicht), WOLF (Mediacenter 1a, Studio-Freisteller statt „amateurhaftem“ Ambiente-Bild); Viessmann, Vaillant, Daikin nur mit Freigabe → Stockfoto bleibt, Weg in `docs/partner-bilder.md`; neues `ServiceHero`-Prop `imageCredit`; ehrliche Alt-Texte („Symbolbild“)
+- [x] **HEC-191 Done/verified** (`87732b9`, `58d930b`): Audit aller 8 Partnerseiten (`docs/partner-texte-audit.md`, 323 Aussagen, nur 40 haltbar; 22 Referenzprojekte mit nicht existierenden Modellen, „Testsieger 2024“, falsche Garantien, Preise unter Markt) → Neufassung: Herstellerfakten 2026 mit Quellen, keine Preise/Referenzen/unbelegten Zusagen, F-Gase gegen EUR-Lex VO 2024/573 Anhang IV (8 b/8 d/9 b ab 01.01.2027, „grundsätzlich“); Verifier-Befund „Heizlastberechnung 88× zugesagt“ (Fehler im eigenen Brief) behoben → 19 Sachaussagen. Gate 1 drei Runden
+- [x] **Architekturkarte** (Artifact „Карта системы HeizCenter“, https://claude.ai/artifact/U6uGToiaLquZ4Y9pF2nkEK): 6 Zonen, Datenflüsse als Rohre, Status je Baustein, Stand 24.10.
+- [x] HEC-192 neu (Phase 2 Partnerseiten + seitenweite Zusagen, wartet auf Andrej)
+
+### Offene Punkte
+- [ ] Andrej: Fragenliste (Partnerstatus, Referenzen, kostenlose Beratung, Heizlastberechnung, Daikin-Sortiment); Bildfreigaben Viessmann/Vaillant/Daikin
+- [ ] Hauptlinie 22.10.: HEC-166, HEC-97, HEC-7 → HEC-140
+
+### Geaenderte Dateien
+`src/app/partner/**`, `src/components/sections/service-hero.tsx`, `public/images/partners/{buderus,bosch,wolf}/hero.webp`, `docs/partner-bilder.md`, `docs/partner-texte-audit.md`, `VALIDATION_REPORT.md`
+Agents: general-purpose (Bildrechte-Recherche, Text-Audit, 2 Autoren, Architektur-Inventur), hvac-content ×4 (Gate 1), linear-verifier ×4
