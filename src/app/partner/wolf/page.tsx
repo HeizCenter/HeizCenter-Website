@@ -7,117 +7,129 @@ import Link from "next/link";
 import {
   Award,
   Zap,
-  Shield,
+  Leaf,
   Thermometer,
+  Snowflake,
   Settings,
-  CheckCircle2,
 } from "lucide-react";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
 import { getCanonicalUrl } from "@/lib/seo";
-import { CONTACT } from "@/lib/config/contact";
+import { FOERDER_TEXT } from "@/lib/config/foerderung";
+
+// Herstellerangaben: docs/partner-texte-audit.md, Abschnitt 5 (Stand 24.10.2026).
+// WIEDERVORLAGE 01/2027: BWS-1 (R407C) darf ab 01.01.2027 als Neugerät nicht mehr in Verkehr gebracht werden –
+// Block streichen oder durch ein WOLF-Gerät mit natürlichem Kältemittel ersetzen.
+// F-Gase-Verbot ab 01.01.2027 (BWS-1 mit R407C): EU-Kommission, Verordnung (EU) 2024/573,
+// https://climate.ec.europa.eu/areas-action/fluorinated-greenhouse-gases/climate-friendly-alternatives-f-gases/air-conditioning_en
 
 export const metadata: Metadata = {
-  title: "Wolf Wärmepumpen & Heizungen | HeizCenter Partner",
+  title: "Wolf Wärmepumpen: CHA-Monoblock aus Mainburg | HeizCenter",
   description:
-    "Wolf CHA Monoblock Wärmepumpen - Kompakt, effizient, zuverlässig. Modulierende Inverter-Technologie. Premium Heizungssysteme Made in Germany. Augsburg & Ulm.",
+    "WOLF CHA-Monoblock Wärmepumpen, laut WOLF in Mainburg (Bayern) entwickelt und gefertigt: natürliches Kältemittel R290, bis 70 °C Vorlauf ohne Heizstab, Effizienzklasse A+++. Beratung, Planung mit Heizlastberechnung und Einbau durch HeizCenter in der Region Augsburg, Ulm und Memmingen.",
   alternates: {
     canonical: getCanonicalUrl("/partner/wolf"),
   },
   keywords: [
     "Wolf",
-    "CHA",
+    "WOLF CHA",
+    "CHA-Monoblock",
     "CHC",
-    "Monoblock",
     "Wärmepumpe",
-    "Heizung",
+    "R290",
+    "Mainburg",
     "Augsburg",
     "Ulm",
   ],
 };
 
 const benefits = [
-  "Kompakte Monoblock-Bauweise",
-  "Modulierende Inverter-Technologie",
-  "CHA-Monoblock bis 20 kW Leistung",
-  "Integrierter 9 kW Elektro-Heizstab",
-  "Made in Germany - Mainburg, Bayern",
-  "5 Jahre Garantie auf Wärmepumpen",
+  "CHA-Monoblock: laut WOLF in Mainburg (Bayern) entwickelt und gefertigt",
+  "Bis 70 °C Vorlauf im reinen Wärmepumpenbetrieb – ohne Heizstab",
+  "Natürliches Kältemittel R290, Effizienzklasse A+++ (35 °C)",
+  "CHA-07 und CHA-10 mit eingebautem 9-kW-Heizstab für Spitzenlasten",
+  "Heizen und aktives Kühlen mit einem Gerät",
+  "Beratung, Planung mit Heizlastberechnung und Einbau durch HeizCenter",
 ];
 
 const features = [
   {
-    title: "Kompakt & Platzsparend",
+    title: "Made in Germany",
     description:
-      "Wolf Wärmepumpen überzeugen durch kompakte Abmessungen. Perfekt für kleine Grundstücke und enge Platzverhältnisse.",
-    icon: Settings,
-  },
-  {
-    title: "Modulierende Technologie",
-    description:
-      "Inverter-geregelte Wärmepumpen passen die Leistung stufenlos an den Bedarf an. Höchste Effizienz und Komfort.",
-    icon: Zap,
-  },
-  {
-    title: "Breites Leistungsspektrum",
-    description:
-      "CHA-Monoblock Serie von 7 bis 20 kW. Für Einfamilienhäuser bis kleine Gewerbeimmobilien.",
-    icon: Thermometer,
-  },
-  {
-    title: "Integrierter Heizstab",
-    description:
-      "9 kW Elektro-Heizstab serienmäßig integriert für Spitzenlasten und Backup. Keine zusätzlichen Kosten.",
+      "Die CHA-Monoblock wird laut WOLF in Mainburg (Bayern) entwickelt und gefertigt.",
     icon: Award,
   },
   {
-    title: "Made in Mainburg",
+    title: "Bis 70 °C ohne Heizstab",
     description:
-      "Entwicklung und Produktion in Bayern. Deutsche Qualität und kurze Lieferwege.",
-    icon: Shield,
+      "Im reinen Wärmepumpenbetrieb erreicht die CHA bis 70 °C Vorlauf – ein Plus für Altbauten mit Heizkörpern. Ob Ihre Heizkörper reichen, zeigt die Heizlastberechnung.",
+    icon: Thermometer,
   },
   {
-    title: "Smart Grid Ready",
+    title: "Natürliches Kältemittel R290",
     description:
-      "Optimale Integration mit PV-Anlagen und Smart Home Systemen über Schnittstellen.",
-    icon: CheckCircle2,
+      "Die CHA arbeitet mit Propan (R290). WOLF nennt ein Treibhauspotenzial (GWP) von 0,02.",
+    icon: Leaf,
+  },
+  {
+    title: "Effizienzklasse A+++",
+    description:
+      "Bei 35 °C Vorlauf, also etwa mit Fußbodenheizung, erreicht die CHA die Effizienzklasse A+++.",
+    icon: Zap,
+  },
+  {
+    title: "Heizstab für Spitzenlasten",
+    description:
+      "CHA-07 und CHA-10 haben einen 9-kW-Elektroheizstab eingebaut. Er ist für Spitzenlasten gedacht; im Normalbetrieb heizt die Wärmepumpe allein.",
+    icon: Settings,
+  },
+  {
+    title: "Heizen und Kühlen",
+    description:
+      "Die CHA kann im Sommer aktiv kühlen – ein Gerät für das ganze Jahr.",
+    icon: Snowflake,
   },
 ];
 
 const faqs: FAQItem[] = [
   {
-    question: "Welche Wolf Wärmepumpen bietet HeizCenter an?",
+    question: "Welche WOLF-Wärmepumpen gibt es?",
     answer:
-      "Wir installieren die Wolf CHA-Monoblock Serie (7, 10, 16/20 kW) für Luft-Wasser-Anwendungen sowie die CHC-Monoblock Serie für kompakte Lösungen. Für Erdwärme bieten wir die BWS-1 Serie an. Alle Modelle mit modernster Inverter-Technologie.",
+      "Für Ein- und Zweifamilienhäuser die CHA-Monoblock 07 und 10, als Paket mit Warmwasserspeicher das Wärmepumpen-Center CHC und für Mehrfamilienhäuser die CHA-16/20 und CHA-20/24. Für Erdwärme gibt es die Sole-Wasser-Wärmepumpe BWS-1 (Kältemittel R407C, siehe Hinweis zur F-Gase-Verordnung oben). Welches Gerät und welche Größe zu Ihrem Haus passen, ermitteln wir mit der Heizlastberechnung.",
   },
   {
-    question: "Was kostet eine Wolf CHA Monoblock Wärmepumpe?",
+    question: "Was kostet eine WOLF CHA?",
     answer:
-      "Eine Wolf CHA-07 Monoblock kostet ab 7.100€ (nur Gerät), die CHA-10 ab 7.900€. Mit Installation, Hydraulikmodul, Warmwasserspeicher und Inbetriebnahme rechnen Sie mit 18.000-28.000€ für ein komplettes System im Einfamilienhaus.",
+      "Das hängt vor allem von Ihrem Haus ab: Heizlast, Aufstellort, Heizkörper oder Fußbodenheizung, Warmwasser und Elektroanschluss. Typische Kostenpositionen erklärt unser Ratgeber „Wärmepumpe Kosten 2026“ im Blog. Ihren Preis nennen wir im Angebot, auf Grundlage der Heizlastberechnung. Welcher Zuschuss möglich ist, steht auf unserer Förderseite.",
   },
   {
     question: "Was ist der Unterschied zwischen CHA und CHC?",
     answer:
-      "CHA-Monoblock ist die Standard-Serie mit Außenaufstellung (7-20 kW). CHC-Monoblock ist die kompakte Serie für kleinere Leistungen (4-8 kW) mit besonders platzsparenden Abmessungen. Beide nutzen die modulierende Inverter-Technologie.",
+      "Die CHA ist die Monoblock-Wärmepumpe für die Außenaufstellung. Das Wärmepumpen-Center CHC kombiniert dieses CHA-Außengerät mit einer Inneneinheit samt 180 oder 280 Liter Warmwasserspeicher – ein abgestimmtes Paket für Ein- und Zweifamilienhäuser.",
   },
   {
-    question: "Ist der Elektro-Heizstab wirklich integriert?",
+    question: "Hat die CHA einen eingebauten Heizstab?",
     answer:
-      "Ja! Alle Wolf CHA-Monoblock Modelle haben einen 9 kW Elektro-Heizstab serienmäßig integriert (bei 3~400V). Dieser springt nur bei Spitzenlasten oder sehr niedrigen Außentemperaturen an. Das spart Kosten für einen externen Heizstab.",
+      "Ja, CHA-07 und CHA-10 haben einen 9-kW-Elektroheizstab eingebaut. Er ist für Spitzenlasten gedacht; im reinen Wärmepumpenbetrieb erreicht die CHA bereits bis 70 °C Vorlauf.",
   },
   {
-    question: "Wie effizient sind Wolf Wärmepumpen?",
+    question: "Wie effizient ist die WOLF CHA?",
     answer:
-      "Die Wolf CHA-Monoblock Serie erreicht SCOP-Werte bis 4,7 (A++). Die Effizienz ist sehr gut, wenn auch nicht ganz auf dem Niveau der Premiummodelle von Viessmann oder Vaillant. Dafür ist das Preis-Leistungs-Verhältnis ausgezeichnet.",
+      "Bei 35 °C Vorlauf erreicht die CHA die Effizienzklasse A+++. Wie effizient Ihre Anlage im Alltag arbeitet, hängt vor allem von der Vorlauftemperatur Ihres Hauses ab – je niedriger, desto besser.",
   },
   {
-    question: "Eignet sich Wolf für Altbau?",
+    question: "Eignet sich WOLF für einen Altbau mit Heizkörpern?",
     answer:
-      "Die Wolf CHA-Monoblock kann Vorlauftemperaturen bis 60°C erreichen, bei Unterstützung durch den Heizstab auch höher. Für gut gedämmte Altbauten und Modernisierungen ist Wolf sehr gut geeignet. Bei sehr hohem Heizbedarf empfehlen wir Hochtemperatur-Modelle anderer Hersteller.",
+      "Mit bis zu 70 °C Vorlauf ohne Heizstab passt die CHA auch in viele Altbauten mit Heizkörpern. Entscheidend ist die Heizlastberechnung: Sie zeigt, ob Ihre vorhandenen Heizkörper reichen.",
   },
   {
-    question: "Kann ich Wolf mit Photovoltaik kombinieren?",
+    question: "Kann ich WOLF mit Photovoltaik kombinieren?",
     answer:
-      "Ja! Wolf Wärmepumpen sind Smart Grid Ready und können über Schnittstellen mit PV-Anlagen gekoppelt werden. Die Wolf Smartset Regelung ermöglicht intelligente Steuerung für optimalen Eigenverbrauch.",
+      "Ja. CHA-07 und CHA-10 haben einen PV-Eingang, die CHA-16/20 ist laut WOLF SG Ready und EEBus-fähig. Bedient wird die Anlage über WOLF Link und die Smartset-App.",
+  },
+  {
+    question: "Welche Garantie gibt WOLF?",
+    answer:
+      "WOLF gibt 5 Jahre Garantie auf in Deutschland gekaufte, installierte und online registrierte Wärmeerzeuger. Voraussetzungen laut WOLF: Registrierung innerhalb von 12 Monaten nach der Inbetriebnahme, Inbetriebnahme durch einen WOLF-Fachpartner und Nachweis der Wartung. Wer die Inbetriebnahme Ihrer Anlage übernimmt, klären wir im Angebot. Für unsere Montagearbeiten gilt die gesetzliche Gewährleistung.",
   },
 ];
 
@@ -129,12 +141,12 @@ export default function WolfPage() {
         items={[
           { name: "Startseite", url: "" },
           { name: "Partner", url: "/partner" },
-          { name: "wolf", url: "/partner/wolf" },
+          { name: "Wolf", url: "/partner/wolf" },
         ]}
       />
       <ServiceHero
         title="Wolf Wärmepumpen & Heizungen"
-        description="Kompakte Monoblock-Systeme mit modulierender Inverter-Technologie. Made in Mainburg, Bayern. Die CHA-Serie überzeugt durch Zuverlässigkeit und gutes Preis-Leistungs-Verhältnis."
+        description="Die CHA-Monoblock wird laut WOLF in Mainburg entwickelt und gefertigt: natürliches Kältemittel R290, bis 70 °C Vorlauf ohne Heizstab und Effizienzklasse A+++. Wir beraten Sie, planen die Anlage mit Heizlastberechnung und bauen sie ein."
         benefits={benefits}
         icon={Award}
         badge="Made in Bavaria"
@@ -145,16 +157,14 @@ export default function WolfPage() {
       />
 
       <FeaturesSection
-        title="Warum Wolf? Kompakt. Effizient. Zuverlässig."
+        title="Warum Wolf? CHA-Monoblock aus Mainburg"
         features={features}
       />
 
       {/* Product Overview */}
       <section className="container py-16">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8">
-            Wolf Produktlinien bei HeizCenter
-          </h2>
+          <h2 className="text-3xl font-bold mb-8">Aktuelle WOLF-Wärmepumpen</h2>
 
           <div className="space-y-8">
             {/* CHA Monoblock Wärmepumpen */}
@@ -165,116 +175,147 @@ export default function WolfPage() {
 
               <div className="mb-6">
                 <h4 className="text-xl font-semibold mb-3">
-                  CHA-Monoblock 07 & 10 - Einfamilienhäuser
+                  CHA-Monoblock 07 und 10 – für Ein- und Zweifamilienhäuser
                 </h4>
                 <p className="text-slate-700 mb-3">
-                  Die beliebtesten Modelle für Einfamilienhäuser. Kompakte
-                  Monoblock-Bauweise mit allen Komponenten im Außengerät.
+                  Luft-Wasser-Wärmepumpe in Monoblock-Bauweise: Der Kältekreis
+                  sitzt im Außengerät.
                 </p>
                 <ul className="list-disc list-inside space-y-2 text-slate-600 mb-4">
-                  <li>Leistung: CHA-07 (5,2 kW) | CHA-10 (7,5 kW) bei A7/W35</li>
-                  <li>SCOP: bis 4,7 (A++)</li>
-                  <li>Vorlauftemperatur: bis 60°C</li>
-                  <li>Kältemittel: R410A oder R32</li>
-                  <li>9 kW Elektro-Heizstab integriert (3~400V)</li>
-                  <li>Modulierende Inverter-Regelung</li>
-                  <li>Überströmventil inklusive</li>
-                  <li>Aktiv- oder Passiv-Kühlung möglich</li>
+                  <li>
+                    Vorlauftemperatur: bis 70 °C im reinen
+                    Wärmepumpenbetrieb, ohne Heizstab
+                  </li>
+                  <li>Kältemittel: R290 (Propan), GWP 0,02 laut WOLF</li>
+                  <li>Effizienzklasse: A+++ bei 35 °C</li>
+                  <li>9-kW-Elektroheizstab eingebaut, für Spitzenlasten</li>
+                  <li>Aktive Kühlung möglich</li>
+                  <li>PV-Eingang; Bedienung über WOLF Link und Smartset-App</li>
                 </ul>
-                <p className="font-semibold text-[#0F5B78]">
-                  CHA-07: ab 7.100€ (Gerät) | Komplett ab 18.000€<br />
-                  CHA-10: ab 7.900€ (Gerät) | Komplett ab 19.500€
+                <p className="text-slate-700">
+                  Welche der beiden Größen passt, ergibt die
+                  Heizlastberechnung für Ihr Haus.
                 </p>
               </div>
 
               <div className="mb-6 pt-6 border-t border-slate-200">
                 <h4 className="text-xl font-semibold mb-3">
-                  CHA-Monoblock 16/20 - Größere Objekte
+                  CHA-Monoblock 16/20 und 20/24 – für Mehrfamilienhäuser
                 </h4>
                 <p className="text-slate-700 mb-3">
-                  Höhere Leistungen für größere Einfamilienhäuser, Doppelhäuser
-                  oder kleinere Gewerbeobjekte.
+                  Laut WOLF speziell für Mehrfamilienhäuser entwickelt.
                 </p>
-                <ul className="list-disc list-inside space-y-2 text-slate-600 mb-4">
-                  <li>Leistung: 10-15 kW bei A7/W35</li>
-                  <li>Modulierende Leistung 20-100%</li>
-                  <li>Vorlauftemperatur: bis 65°C</li>
-                  <li>9 kW Heizstab serienmäßig</li>
-                  <li>Ideal für größere Objekte</li>
+                <ul className="list-disc list-inside space-y-2 text-slate-600">
+                  <li>
+                    Max. Heizleistung: 16,7 bzw. 19,6 kW bei −7 °C außen und
+                    35 °C Vorlauf
+                  </li>
+                  <li>Vorlauftemperatur: bis 70 °C – auch für bestehende Heizkörper</li>
+                  <li>Kaskade bis 100 kW</li>
+                  <li>CHA-16/20: SG Ready und EEBus</li>
                 </ul>
-                <p className="font-semibold text-[#0F5B78]">
-                  Preis ab: 9.500€ (Gerät) | Komplett ab 22.000€
-                </p>
               </div>
 
               <div className="pt-6 border-t border-slate-200">
                 <h4 className="text-xl font-semibold mb-3">
-                  CHC-Monoblock - Kompakt-Serie
+                  Wärmepumpen-Center CHC – Paket mit Warmwasserspeicher
                 </h4>
                 <p className="text-slate-700 mb-3">
-                  Besonders kompakte Bauweise für kleine Grundstücke und enge
-                  Platzverhältnisse.
+                  CHA-Außengerät plus Inneneinheit mit Warmwasserspeicher –
+                  laut WOLF für Ein- und Zweifamilienhäuser.
                 </p>
-                <ul className="list-disc list-inside space-y-2 text-slate-600 mb-4">
-                  <li>Leistung: 4-8 kW</li>
-                  <li>Kleinste Abmessungen in der Klasse</li>
-                  <li>Ideal für kleinere Häuser</li>
-                  <li>Modulierende Inverter-Technologie</li>
+                <ul className="list-disc list-inside space-y-2 text-slate-600">
+                  <li>CHC/200: Inneneinheit mit 180 Liter Warmwasserspeicher</li>
+                  <li>CHC/300: Inneneinheit mit 280 Liter Warmwasserspeicher</li>
                 </ul>
-                <p className="font-semibold text-[#0F5B78]">
-                  Preis ab: 7.500€ (Gerät) | Komplett ab 18.500€
-                </p>
               </div>
             </div>
 
-            {/* BWS Erdwärmepumpen */}
+            {/* BWS-1 Erdwärme */}
             <div className="bg-white p-8 rounded-lg border-2 border-slate-200">
-              <h3 className="text-2xl font-bold mb-4">
-                BWS-1 Erdwärmepumpen
-              </h3>
+              <h3 className="text-2xl font-bold mb-4">Erdwärme: BWS-1</h3>
               <p className="text-slate-700 mb-4">
-                Sole-Wasser-Wärmepumpen für höchste Effizienz durch Nutzung der
-                konstanten Erdwärme. Für Neubau mit ausreichend Grundstück.
+                Die Sole-Wasser-Wärmepumpe BWS-1 holt die Wärme aus Erdsonden
+                oder Erdkollektoren.
               </p>
-
               <ul className="list-disc list-inside space-y-2 text-slate-600 mb-4">
-                <li>Leistung: 5-16 kW</li>
-                <li>SCOP: bis 5,2 (höchste Effizienz)</li>
-                <li>Sehr leise (nur Innengerät)</li>
-                <li>Erdsonden oder Erdkollektoren</li>
-                <li>Modulierende Inverter-Technologie</li>
-                <li>Langlebig und wartungsarm</li>
+                <li>Leistungsgrößen: 6, 8, 10, 12 oder 16 kW</li>
+                <li>Vorlauftemperatur: bis 63 °C</li>
+                <li>Effizienzklasse: A+++ bei 35 °C</li>
+                <li>Kältemittel: R407C (fluoriertes Kältemittel)</li>
               </ul>
-
-              <p className="font-semibold text-[#0F5B78]">
-                BWS-1 Preise: ab 11.000€ (Gerät) | Komplett ab 28.000-38.000€
+              <p className="text-sm text-slate-600">
+                Hinweis: Nach der EU-F-Gase-Verordnung dürfen Kompakt- und
+                Monoblock-Wärmepumpen bis 50 kW mit Kältemitteln ab einem GWP
+                von 150 – dazu gehört R407C – ab 01.01.2027 grundsätzlich nicht mehr neu in
+                Verkehr gebracht werden. Für eine Erdwärmeanlage beraten wir Sie
+                deshalb auch zu Geräten mit natürlichem Kältemittel.
               </p>
             </div>
 
-            {/* CGB-2 Brennwertkessel */}
+            {/* CGB-2 Brennwertgeräte */}
             <div className="bg-white p-8 rounded-lg border-2 border-slate-200">
               <h3 className="text-2xl font-bold mb-4">
-                CGB-2 Brennwertkessel für Gas
+                CGB-2 Gas-Brennwertthermen
               </h3>
               <p className="text-slate-700 mb-4">
-                Wenn eine Wärmepumpe nicht umsetzbar ist, bieten Wolf
-                Brennwertkessel höchste Effizienz bei Gasheizungen.
+                Wenn eine Wärmepumpe in Ihrem Haus (noch) nicht passt, beraten
+                wir auch zu Gas-Brennwertgeräten von WOLF.
               </p>
+              <ul className="list-disc list-inside space-y-1 text-slate-600 mb-4">
+                <li>
+                  CGB-2 in mehreren Leistungsgrößen (CGB-2-14, -20 und -24),
+                  auch als Kombigerät CGB-2K
+                </li>
+                <li>
+                  Normnutzungsgrad bei 40/30 °C: bis 110 % (Hi) bzw. 99 % (Hs)
+                </li>
+              </ul>
+              <p className="text-sm text-slate-600">
+                Wichtig: Für neu eingebaute Gasheizungen schreibt das
+                Gebäudemodernisierungsgesetz ab 2029 einen steigenden Bioanteil
+                vor – oder einen anderen Erfüllungsweg, etwa einen
+                Wärmepumpen-Hybrid. Über die KfW-Heizungsförderung wird ein
+                Gaskessel nicht gefördert. Mehr im{" "}
+                <Link
+                  href="/blog/heizungsgesetz-2024"
+                  className="text-[#0F5B78] font-medium hover:underline"
+                >
+                  Ratgeber Heizungsgesetz 2026
+                </Link>
+                .
+              </p>
+            </div>
 
-              <div className="mb-4">
-                <h4 className="text-lg font-semibold mb-2">
-                  CGB-2-14/20 - Kompakt-Wandgerät
-                </h4>
-                <ul className="list-disc list-inside space-y-1 text-slate-600">
-                  <li>Leistung: 14-20 kW</li>
-                  <li>Normnutzungsgrad: bis 98%</li>
-                  <li>Kompakte Bauweise</li>
-                  <li>Ideal für Einfamilienhäuser</li>
-                </ul>
-              </div>
-
-              <p className="font-semibold text-[#0F5B78] mt-4">
-                CGB-2 Preise: ab 3.100€ (Gerät) | Komplett ab 7.200€
+            {/* Kosten und Förderung */}
+            <div className="bg-[#0F5B78]/5 p-6 rounded-lg">
+              <h3 className="text-xl font-bold mb-3">Kosten und Förderung</h3>
+              <p className="text-slate-700 mb-3">
+                Was eine Wärmepumpe bei Ihnen kostet, hängt vor allem vom Haus
+                ab: Heizlast, Aufstellort, Heizkörper oder Fußbodenheizung und
+                Warmwasser. Einen Überblick über typische Kostenpositionen gibt
+                unser{" "}
+                <Link
+                  href="/blog/waermepumpe-kosten-2026"
+                  className="text-[#0F5B78] font-medium hover:underline"
+                >
+                  Ratgeber „Wärmepumpe Kosten 2026“
+                </Link>
+                . Ihren Preis nennen wir im Angebot – auf Grundlage der
+                Heizlastberechnung.
+              </p>
+              <p className="text-slate-700">
+                Für den Einbau in ein bestehendes Wohngebäude gibt es bis zu{" "}
+                {FOERDER_TEXT.maxStandard} der förderfähigen Kosten als
+                Zuschuss; {FOERDER_TEXT.maxBedingung}. Wie
+                sich das zusammensetzt, steht auf unserer{" "}
+                <Link
+                  href="/foerderung"
+                  className="text-[#0F5B78] font-medium hover:underline"
+                >
+                  Förderseite
+                </Link>
+                .
               </p>
             </div>
           </div>
@@ -291,114 +332,42 @@ export default function WolfPage() {
 
             <div className="prose prose-slate max-w-none">
               <p className="text-lg text-slate-700 mb-6">
-                Als autorisierter <strong>Wolf Fachpartner</strong> verbinden wir
-                die bayerische Qualität aus Mainburg mit unserem lokalen Service.
-                Wolf-Wärmepumpen überzeugen durch ein ausgezeichnetes
-                Preis-Leistungs-Verhältnis und kompakte Bauweise.
+                Wir beraten Sie zu WOLF-Wärmepumpen, planen die Anlage mit
+                Heizlastberechnung und bauen sie ein. Weil wir Wärmepumpen
+                mehrerer Hersteller einbauen, richtet sich unsere Empfehlung
+                nach Ihrem Haus – nicht nach einem Katalog.
               </p>
 
               <div className="grid md:grid-cols-2 gap-6 my-8">
                 <div className="bg-white p-6 rounded-lg">
                   <h3 className="text-xl font-bold mb-3 text-[#0F5B78]">
-                    Fachpartner-Vorteile
+                    Vor dem Einbau
                   </h3>
                   <ul className="space-y-2 text-slate-700">
-                    <li>✓ Zertifizierte Wolf-Installation</li>
-                    <li>✓ 5 Jahre Garantie auf Wärmepumpen</li>
-                    <li>✓ Original-Ersatzteile ab Lager</li>
-                    <li>✓ Kurze Lieferwege aus Bayern</li>
+                    <li>✓ Beratung vor Ort</li>
+                    <li>✓ Heizlastberechnung für Modell und Größe</li>
+                    <li>✓ Planung des Aufstellorts</li>
+                    <li>✓ Förderberatung (KfW-Heizungsförderung)</li>
                   </ul>
                 </div>
 
                 <div className="bg-white p-6 rounded-lg">
                   <h3 className="text-xl font-bold mb-3 text-[#0F5B78]">
-                    Unsere Leistungen
+                    Nach dem Einbau
                   </h3>
                   <ul className="space-y-2 text-slate-700">
-                    <li>✓ Kostenlose Beratung vor Ort</li>
-                    <li>✓ Heizlastberechnung nach DIN</li>
-                    <li>✓ Förderantrag-Unterstützung</li>
-                    <li>✓ Installation in 2-3 Tagen</li>
+                    <li>✓ Wartung, auf Wunsch mit Wartungsvertrag</li>
+                    <li>✓ 24/7-Notdienst für Wartungskunden</li>
+                    <li>✓ Ansprechpartner in der Region</li>
                   </ul>
                 </div>
               </div>
 
               <p className="text-lg text-slate-700">
-                Profitieren Sie von über <strong>20 Jahren Erfahrung</strong> mit
-                Wolf-Produkten. Mehr als 60 zufriedene Kunden vertrauen auf
-                unsere Expertise.
+                Den Zuschuss der KfW beantragen Sie als Eigentümer selbst im
+                Portal „Meine KfW“ – wir sagen Ihnen, welche Unterlagen Sie
+                dafür brauchen. Ihr nächster Schritt: ein Beratungstermin.
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Local Installation References */}
-      <section className="container py-16">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8">
-            Wolf-Installationen in der Region
-          </h2>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-[#0F5B78]/5 p-6 rounded-lg">
-              <h3 className="font-bold text-lg mb-2">
-                Einfamilienhaus Augsburg (2024)
-              </h3>
-              <p className="text-slate-700 mb-3">
-                Wolf CHA-Monoblock 10, 7,5 kW | Baujahr 1995
-              </p>
-              <ul className="text-sm text-slate-600 space-y-1">
-                <li>• Austausch Gasheizung</li>
-                <li>• Kompakte Aufstellung möglich</li>
-                <li>• Förderung: bis 80% KfW BEG möglich</li>
-                <li>• JAZ: 4,1 | Einsparung: ~1.900€/Jahr</li>
-              </ul>
-            </div>
-
-            <div className="bg-[#0F5B78]/5 p-6 rounded-lg">
-              <h3 className="font-bold text-lg mb-2">
-                Neubau Bobingen (2024)
-              </h3>
-              <p className="text-slate-700 mb-3">
-                Wolf CHA-Monoblock 07, 5,2 kW | KfW55
-              </p>
-              <ul className="text-sm text-slate-600 space-y-1">
-                <li>• Fußbodenheizung</li>
-                <li>• SCOP 4,7 (A++)</li>
-                <li>• Kleines Grundstück</li>
-                <li>• Heizkosten: ~450€/Jahr</li>
-              </ul>
-            </div>
-
-            <div className="bg-[#0F5B78]/5 p-6 rounded-lg">
-              <h3 className="font-bold text-lg mb-2">
-                Doppelhaushälfte Ulm (2023)
-              </h3>
-              <p className="text-slate-700 mb-3">
-                Wolf CHC-Monoblock, 6 kW
-              </p>
-              <ul className="text-sm text-slate-600 space-y-1">
-                <li>• Sehr wenig Platz im Garten</li>
-                <li>• Kompakteste Lösung gewählt</li>
-                <li>• Trotzdem effizient</li>
-                <li>• JAZ: 4,0</li>
-              </ul>
-            </div>
-
-            <div className="bg-[#0F5B78]/5 p-6 rounded-lg">
-              <h3 className="font-bold text-lg mb-2">
-                Modernisierung Memmingen (2024)
-              </h3>
-              <p className="text-slate-700 mb-3">
-                Wolf CHA-Monoblock 16/20
-              </p>
-              <ul className="text-sm text-slate-600 space-y-1">
-                <li>• Größeres Einfamilienhaus</li>
-                <li>• Heizkörper behalten</li>
-                <li>• 60°C Vorlauftemperatur</li>
-                <li>• Heizstab als Backup</li>
-              </ul>
             </div>
           </div>
         </div>
@@ -443,48 +412,12 @@ export default function WolfPage() {
                 Alle Hersteller
               </h4>
               <p className="text-sm text-slate-600">
-                Weitere Premium-Partner entdecken
+                Weitere Hersteller im Überblick
               </p>
             </Link>
           </div>
         </div>
       </section>
-
-      {/* Schema.org Structured Data */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Product",
-            name: "Wolf CHA-Monoblock Wärmepumpe",
-            brand: {
-              "@type": "Brand",
-              name: "Wolf",
-            },
-            description:
-              "Kompakte Monoblock Wärmepumpen von Wolf. Made in Mainburg, Bayern. Installation durch HeizCenter.",
-            category: "Wärmepumpe",
-            offers: {
-              "@type": "AggregateOffer",
-              priceCurrency: "EUR",
-              lowPrice: "18000",
-              highPrice: "38000",
-              availability: "https://schema.org/InStock",
-              seller: {
-                "@type": "LocalBusiness",
-                name: "HeizCenter GmbH",
-                telephone: CONTACT.PHONE_SCHEMA,
-              },
-            },
-            manufacturer: {
-              "@type": "Organization",
-              name: "Wolf GmbH",
-              url: "https://www.wolf.eu",
-            },
-          }),
-        }}
-      />
     </>
   );
 }

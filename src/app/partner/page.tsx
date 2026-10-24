@@ -4,11 +4,19 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Award, CheckCircle2, Star } from "lucide-react";
 import { getCanonicalUrl } from "@/lib/seo";
+import { FOERDER_TEXT } from "@/lib/config/foerderung";
+
+// Herstellerangaben: docs/partner-texte-audit.md, Abschnitt 1 (Stand 24.10.2026).
+// Testsieger nur mit Modell, Ausgabe, Note und www.test.de.
+// WIEDERVORLAGE ca. 03/2028: Viessmann-Testsieger (test 10/2025) entfernen – Werbefrist i. d. R. 2,5 Jahre ab 23.09.2025.
+// WIEDERVORLAGE Ende 01/2027: Buderus-Testsieger (test 8/2024) entfernen – Werbefrist i. d. R. 2,5 Jahre.
+// „Partner“, „zertifiziert“ und Garantiezusagen von HeizCenter erst nach Bestätigung durch Andrej.
 
 export const metadata: Metadata = {
-  title: "Unsere Premium-Partner | Viessmann, Vaillant, Buderus & mehr",
-  description: "HeizCenter arbeitet mit den führenden Herstellern zusammen: Viessmann, Vaillant, Buderus, Wolf, Bosch, Daikin und ZEWOTHERM. Testsieger-Qualität.",
-  keywords: ["Hersteller", "Partner", "Viessmann", "Vaillant", "Buderus", "Wolf", "Bosch", "Daikin", "ZEWOTHERM", "LAMBDA Wärmepumpe", "LAMBDA EUREKA"],
+  title: "Wärmepumpen-Hersteller: Viessmann, Vaillant, Buderus & mehr | HeizCenter",
+  description:
+    "Wärmepumpen von Viessmann, Vaillant, Buderus, Wolf, Bosch, Daikin und ZEWOTHERM – Beratung, Einbau und Wartung durch HeizCenter in der Region Augsburg, Ulm und Memmingen.",
+  keywords: ["Hersteller", "Wärmepumpe", "Viessmann", "Vaillant", "Buderus", "Wolf", "Bosch", "Daikin", "ZEWOTHERM", "LAMBDA Wärmepumpe", "LAMBDA EUREKA"],
   alternates: {
     canonical: getCanonicalUrl("/partner"),
   },
@@ -26,51 +34,58 @@ const partners: Partner[] = [
   {
     name: "Viessmann",
     slug: "viessmann",
-    description: "Testsieger Stiftung Warentest 2024 & 2025. Vitocal Wärmepumpen mit höchster Effizienz und bis zu 75°C Vorlauftemperatur.",
-    badge: "Testsieger 2024",
-    highlights: ["Made in Germany", "10 Jahre Garantie", "SCOP bis 5,1"],
+    description:
+      "Vitocal-Wärmepumpen mit R290: 250-A und 150-A bis 70 °C, die neue 200-A ie bis 75 °C Vorlauf. Die Vitocal 250-A (Typ A10) war Testsieger bei Stiftung Warentest – test 10/2025, GUT (2,0), www.test.de.",
+    badge: "Vitocal",
+    highlights: ["Natürliches Kältemittel R290", "Bis 75 °C (Vitocal 200-A ie)", "Effizienzklasse bis A+++"],
   },
   {
     name: "Vaillant",
     slug: "vaillant",
-    description: "Marktführer mit 150+ Jahren Erfahrung. aroTHERM Serie mit Green iQ Technology und bis zu 75°C Vorlauftemperatur.",
-    badge: "Marktführer",
-    highlights: ["Green iQ", "Bis 75°C", "SCOP bis 5,4"],
+    description:
+      "Seit 1874. Die aroTHERM plus mit R290 liefert bis 75 °C Vorlauf; dazu aroTHERM pro, Split plus und die Erdwärmepumpe geoCOMPACT exclusive.",
+    badge: "Seit 1874",
+    highlights: ["Natürliches Kältemittel R290", "aroTHERM plus bis 75 °C", "SCOP bis 5,1 (35 °C)"],
   },
   {
     name: "Buderus",
     slug: "buderus",
-    description: "Testsieger 2024. Unerhört leise Logatherm Serie. Bosch-Qualität seit 1731 mit natürlichem R290 Kältemittel.",
-    badge: "Testsieger",
-    highlights: ["Unerhört leise", "Bosch Gruppe", "SCOP bis 5,2"],
+    description:
+      "Gegründet 1731, seit 2003 Teil der Bosch-Gruppe. Unerhört leise Logatherm-Wärmepumpen mit R290. Die Logatherm WLW186i-10 AR E war Testsieger bei Stiftung Warentest – test 8/2024, GUT (2,3), www.test.de.",
+    badge: "Seit 1731",
+    highlights: ["Unerhört leise (SILENT plus)", "Bis 75 °C (WLW186i AR)", "Bosch-Gruppe"],
   },
   {
     name: "Wolf",
     slug: "wolf",
-    description: "Kompakte CHA-Monoblock Serie Made in Bavaria. Modulierende Inverter-Technologie mit integriertem 9 kW Heizstab.",
+    description:
+      "CHA-Monoblock, laut WOLF entwickelt und gefertigt in Mainburg (Bayern): R290, bis 70 °C Vorlauf ohne Heizstab, Effizienzklasse A+++ bei 35 °C.",
     badge: "Made in Bavaria",
-    highlights: ["Kompakt", "Heizstab inkl.", "SCOP bis 4,7"],
+    highlights: ["Natürliches Kältemittel R290", "Bis 70 °C ohne Heizstab", "9-kW-Heizstab für Spitzenlasten (CHA-07/10)"],
   },
   {
     name: "Bosch",
     slug: "bosch",
-    description: "Weltkonzern-Qualität. Compress 7000 Serie mit A+++-Effizienz und Smart Home Ready Funktionen.",
-    badge: "Weltkonzern",
-    highlights: ["Innovation", "Smart Home", "SCOP bis 5,1"],
+    description:
+      "Teil der Bosch-Gruppe. Compress 3800i bis 8800i AW mit R290 – bis 75 °C Vorlauf mit der 6800i und 8800i AW, Bedienung per HomeCom-Easy-App.",
+    badge: "Seit 1886",
+    highlights: ["Natürliches Kältemittel R290", "Bis 75 °C (6800i/8800i AW)", "SCOP bis 5,1 (3800i AW, 35 °C)"],
   },
   {
     name: "Daikin",
     slug: "daikin",
-    description: "Weltmarktführer Klimatechnik. Altherma Wärmepumpen für Heizen & Kühlen. Japanische Qualität seit 1924.",
-    badge: "Weltmarktführer",
-    highlights: ["Heizen + Kühlen", "Bis 70°C", "SCOP bis 5,15"],
+    description:
+      "Gegründet 1924 in Osaka. Altherma-Wärmepumpen für Heizen und Kühlen – die neue Altherma 4 H mit R290 liefert bis 75 °C Vorlauf. Dazu Split-Klimageräte.",
+    badge: "Seit 1924",
+    highlights: ["Heizen + Kühlen", "Bis 75 °C (Altherma 4 H)", "Effizienzklasse bis A+++"],
   },
   {
     name: "ZEWOTHERM",
     slug: "zewotherm",
-    description: "Wärmepumpe LAMBDA EUREKA (Modelle EU10L, EU13L, EU15L, EU20L und EU35L). Patentierter 3K-Prozess. SCOP bis 6,1, Vorlauf bis 70 °C ohne Heizstab. Hersteller mit Sitz in Remagen – ideal für Neubau & Altbau-Sanierung.",
+    description:
+      "Wärmepumpe LAMBDA EUREKA (Modelle EU10L, EU13L, EU15L, EU20L und EU35L) mit patentiertem 3K-Prozess – entwickelt von LAMBDA (Tirol), in Lizenz gefertigt von ZEWOTHERM in Remagen. Laut Hersteller SCOP bis 6,1 bei 35 °C, Vorlauf bis 70 °C ohne Heizstab.",
     badge: "3K-Prozess",
-    highlights: ["SCOP bis 6,1", "Bis 70 °C VL", "R290 Kältemittel"],
+    highlights: ["SCOP bis 6,1 (35 °C)", "Bis 70 °C ohne Heizstab", "Natürliches Kältemittel R290"],
   },
 ];
 
@@ -82,24 +97,25 @@ export default function PartnerPage() {
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Unsere Premium-Partner
+              Unsere Hersteller
             </h1>
             <p className="text-xl text-white/90 mb-6">
-              HeizCenter arbeitet ausschließlich mit führenden Herstellern zusammen.
-              Testsieger-Qualität, langjährige Erfahrung und modernste Technologie für Ihr Zuhause.
+              Aktuelle Wärmepumpen bekannter Hersteller – geplant, eingebaut und
+              gewartet von HeizCenter. Welche Marke und welches Modell zu Ihrem
+              Haus passen, entscheidet die Heizlastberechnung.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm">
               <div className="flex items-center gap-2">
                 <Award className="h-5 w-5" />
-                <span>Mehrere Testsieger</span>
+                <span>Sieben Hersteller zur Auswahl</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="h-5 w-5" />
-                <span>Zertifizierte Fachpartner</span>
+                <span>Planung mit Heizlastberechnung</span>
               </div>
               <div className="flex items-center gap-2">
                 <Star className="h-5 w-5" />
-                <span>5 Jahre Garantie</span>
+                <span>Wartungsvertrag mit 24/7-Notdienst</span>
               </div>
             </div>
           </div>
@@ -110,7 +126,7 @@ export default function PartnerPage() {
       <section className="container py-12 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl font-bold text-center mb-8 text-slate-700">
-            Unsere Hersteller-Partner
+            Hersteller, mit denen wir arbeiten
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
             {partners.map((partner) => (
@@ -166,22 +182,24 @@ export default function PartnerPage() {
         </div>
       </section>
 
-      {/* Why Premium Partners */}
+      {/* Testurteile, Garantie, Auswahl */}
       <section className="bg-slate-50 py-16">
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-center mb-12">
-              Warum wir nur mit Premium-Herstellern arbeiten
+              Testurteile, Garantie und die richtige Auswahl
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center">
                 <div className="bg-[#0F5B78]/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Award className="h-8 w-8 text-[#0F5B78]" />
                 </div>
-                <h3 className="font-bold mb-2">Testsieger-Qualität</h3>
+                <h3 className="font-bold mb-2">Testsieger mit Note</h3>
                 <p className="text-sm text-slate-600">
-                  Mehrere unserer Partner sind Testsieger bei Stiftung Warentest.
-                  Höchste Qualität und Zuverlässigkeit garantiert.
+                  Zwei Wärmepumpen dieser Hersteller waren Testsieger bei
+                  Stiftung Warentest: Viessmann Vitocal 250-A, Typ A10 (test 10/2025, GUT
+                  2,0) und Buderus Logatherm WLW186i-10 AR E (test 8/2024, GUT
+                  2,3) – www.test.de. Die Urteile gelten nur für die genannten Modelle.
                 </p>
               </div>
 
@@ -189,10 +207,12 @@ export default function PartnerPage() {
                 <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <CheckCircle2 className="h-8 w-8 text-green-600" />
                 </div>
-                <h3 className="font-bold mb-2">Lange Garantie</h3>
+                <h3 className="font-bold mb-2">Herstellergarantie</h3>
                 <p className="text-sm text-slate-600">
-                  5-10 Jahre Garantie auf Wärmepumpen. Langfristige Sicherheit
-                  und Ersatzteilversorgung durch Markenhersteller.
+                  Je nach Marke 2 bis 6 Jahre, mit Zusatzpaketen teils länger –
+                  fast immer mit Registrierung und jährlicher Wartung. Die
+                  Bedingungen stehen auf der jeweiligen Herstellerseite; was für
+                  Ihr Gerät gilt, klären wir im Angebot.
                 </p>
               </div>
 
@@ -200,10 +220,11 @@ export default function PartnerPage() {
                 <div className="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Star className="h-8 w-8 text-orange-600" />
                 </div>
-                <h3 className="font-bold mb-2">Fachpartner-Service</h3>
+                <h3 className="font-bold mb-2">Auswahl nach Heizlast</h3>
                 <p className="text-sm text-slate-600">
-                  Als zertifizierte Fachpartner bieten wir Ihnen Original-Ersatzteile,
-                  Werksschulungen und erstklassigen Service.
+                  Wir bauen Wärmepumpen mehrerer Hersteller ein. Welches Gerät
+                  und welche Größe passen, entscheidet die Heizlastberechnung
+                  für Ihr Haus – nicht der Katalog.
                 </p>
               </div>
             </div>
@@ -226,9 +247,9 @@ export default function PartnerPage() {
               <ul className="space-y-2 text-slate-700">
                 <li>✓ Luft-Wasser-Wärmepumpen (Monoblock & Split)</li>
                 <li>✓ Erdwärmepumpen (Sole-Wasser)</li>
-                <li>✓ Hochtemperatur-Wärmepumpen (bis 75°C)</li>
-                <li>✓ Cold Climate bis -25°C</li>
-                <li>✓ A+++-Energieeffizienz</li>
+                <li>✓ Hochtemperatur-Wärmepumpen (bis 75 °C)</li>
+                <li>✓ Betrieb auch bei strengem Frost (je nach Modell bis −22 bis −28 °C)</li>
+                <li>✓ Effizienzklasse bis A+++</li>
               </ul>
             </div>
 
@@ -237,11 +258,10 @@ export default function PartnerPage() {
                 Kältemittel & Umwelt
               </h3>
               <ul className="space-y-2 text-slate-700">
-                <li>✓ R290 (natürliches Propan, GWP 3)</li>
-                <li>✓ R32 (niedriges GWP)</li>
-                <li>✓ F-Gase-frei verfügbar</li>
-                <li>✓ Green iQ / Smart Grid Ready</li>
-                <li>✓ PV-Integration möglich</li>
+                <li>✓ R290 (Propan), Treibhauspotenzial nahe null</li>
+                <li>✓ F-Gas-frei verfügbar: Wärmepumpen mit R290 gibt es bei allen sieben Herstellern</li>
+                <li>Hinweis: R32 (GWP 675) ist in neuen Monoblöcken bis 50 kW und Luft-Wasser-Splits bis 12 kW ab 2027 grundsätzlich nicht mehr zulässig (EU-F-Gase-Verordnung 2024/573, Anhang IV)</li>
+                <li>✓ Kopplung mit Photovoltaik möglich, Smart Grid je nach Modell</li>
               </ul>
             </div>
 
@@ -250,11 +270,10 @@ export default function PartnerPage() {
                 Anwendungsbereiche
               </h3>
               <ul className="space-y-2 text-slate-700">
-                <li>✓ Neubau (KfW40/55)</li>
+                <li>✓ Neubau</li>
                 <li>✓ Altbau & Modernisierung</li>
-                <li>✓ Einfamilienhäuser</li>
-                <li>✓ Mehrfamilienhäuser</li>
-                <li>✓ Gewerbe & Industrie</li>
+                <li>✓ Ein- und Zweifamilienhäuser</li>
+                <li>✓ Heizen und Kühlen (je nach Modell)</li>
               </ul>
             </div>
 
@@ -263,11 +282,10 @@ export default function PartnerPage() {
                 Service & Garantie
               </h3>
               <ul className="space-y-2 text-slate-700">
-                <li>✓ 5-10 Jahre Herstellergarantie</li>
-                <li>✓ Original-Ersatzteile</li>
-                <li>✓ Regelmäßige Wartung</li>
-                <li>✓ 24/7 Notdienst</li>
-                <li>✓ Fachpartner-Zertifizierung</li>
+                <li>✓ Herstellergarantie nach den Bedingungen des Herstellers</li>
+                <li>✓ Planung mit Heizlastberechnung</li>
+                <li>✓ Regelmäßige Wartung, auf Wunsch mit Wartungsvertrag</li>
+                <li>✓ 24/7-Notdienst für Wartungskunden</li>
               </ul>
             </div>
           </div>
@@ -280,15 +298,26 @@ export default function PartnerPage() {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Welcher Hersteller passt zu Ihnen?
           </h2>
-          <p className="text-xl mb-8 text-slate-700 max-w-2xl mx-auto">
-            Lassen Sie sich kostenlos beraten! Wir finden gemeinsam die perfekte
-            Wärmepumpe von einem unserer Premium-Partner für Ihr Projekt.
+          <p className="text-xl mb-4 text-slate-700 max-w-2xl mx-auto">
+            Wir beraten Sie gern und finden mit Ihnen die passende Wärmepumpe
+            für Ihr Haus – auf Grundlage einer Heizlastberechnung.
+          </p>
+          <p className="text-base mb-8 text-slate-600 max-w-2xl mx-auto">
+            Was eine Wärmepumpe kostet, erklärt unser{" "}
+            <Link href="/blog/waermepumpe-kosten-2026" className="text-[#0F5B78] font-medium hover:underline">
+              Ratgeber „Wärmepumpe Kosten 2026“
+            </Link>
+            . Im bestehenden Wohngebäude gibt es bis zu {FOERDER_TEXT.maxStandard} der förderfähigen Kosten als Zuschuss; {FOERDER_TEXT.maxBedingung} – mehr auf unserer{" "}
+            <Link href="/foerderung" className="text-[#0F5B78] font-medium hover:underline">
+              Förderseite
+            </Link>
+            .
           </p>
           <Link
             href="/kontakt"
             className="inline-block bg-[#FFCA28] hover:bg-[#F5B800] text-slate-900 text-lg font-semibold px-8 py-4 rounded-lg transition-colors"
           >
-            Jetzt kostenlose Beratung anfragen
+            Beratung anfragen
           </Link>
         </div>
       </section>
@@ -300,8 +329,8 @@ export default function PartnerPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "ItemList",
-            name: "HeizCenter Premium-Partner",
-            description: "Führende Hersteller von Wärmepumpen und Heizungssystemen",
+            name: "Wärmepumpen-Hersteller bei HeizCenter",
+            description: "Hersteller, deren Wärmepumpen HeizCenter berät, einbaut und wartet",
             itemListElement: partners.map((partner, index) => ({
               "@type": "ListItem",
               position: index + 1,

@@ -7,28 +7,33 @@ import Link from "next/link";
 import {
   Award,
   Zap,
-  Shield,
+  Leaf,
   Thermometer,
-  Settings,
-  CheckCircle2,
+  Volume2,
+  ShieldCheck,
 } from "lucide-react";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
 import { getCanonicalUrl } from "@/lib/seo";
-import { CONTACT } from "@/lib/config/contact";
+import { FOERDER_TEXT } from "@/lib/config/foerderung";
+
+// Herstellerangaben: docs/partner-texte-audit.md, Abschnitt 2 (Stand 24.10.2026).
+// WIEDERVORLAGE ca. 03/2028: Testsieger-Hinweis (test 10/2025) entfernen – Werbefrist i. d. R. 2,5 Jahre ab 23.09.2025.
+// Testurteil nur für den getesteten Typ AWO-E-AC 251.A10, immer mit Ausgabe, Note und www.test.de.
 
 export const metadata: Metadata = {
-  title: "Viessmann Wärmepumpen & Heizungen | HeizCenter Partner",
+  title: "Viessmann Wärmepumpen: Vitocal 250-A, 150-A, 200-A ie | HeizCenter",
   description:
-    "Premium Viessmann Wärmepumpen und Heizungssysteme. Vitocal Serie, Vitodens Brennwerttechnik. Testsieger 2024. Professionelle Installation in Augsburg & Ulm.",
+    "Viessmann Vitocal Wärmepumpen mit natürlichem Kältemittel R290 – vom Einstiegsmodell Vitocal 150-A bis zur neuen Vitocal 200-A ie mit bis zu 75 °C Vorlauf. Beratung, Planung mit Heizlastberechnung und Einbau durch HeizCenter in der Region Augsburg, Ulm und Memmingen.",
   keywords: [
     "Viessmann",
     "Vitocal",
+    "Vitocal 250-A",
+    "Vitocal 200-A ie",
     "Vitodens",
     "Wärmepumpe",
-    "Heizung",
+    "R290",
     "Augsburg",
     "Ulm",
-    "Testsieger",
   ],
   alternates: {
     canonical: getCanonicalUrl("/partner/viessmann"),
@@ -36,88 +41,88 @@ export const metadata: Metadata = {
 };
 
 const benefits = [
-  "Testsieger Stiftung Warentest 2024 & 2025",
-  "Made in Germany - Höchste Qualitätsstandards",
-  "Vitocal Wärmepumpen mit höchster Energieeffizienzklasse",
-  "Bis zu 75°C Vorlauftemperatur für Altbau",
-  "10 Jahre Garantie auf Wärmepumpen",
-  "Professionelle Fachpartner-Installation",
+  "Vitocal 250-A (Typ A10): Testsieger bei Stiftung Warentest, test 10/2025, Qualitätsurteil GUT (2,0) – www.test.de",
+  "Vitocal 250-A, 150-A und 200-A ie mit natürlichem Kältemittel R290",
+  "Vorlauf bis 70 °C, mit der neuen Vitocal 200-A ie bis 75 °C",
+  "Effizienzklasse bis A+++ (je nach Modell und Typ)",
+  "Viessmann-Garantie bis 5 Jahre bei Aufschaltung über ViCare, mit System Plus bis 6 Jahre",
+  "Beratung, Planung mit Heizlastberechnung und Einbau durch HeizCenter",
 ];
 
 const features = [
   {
-    title: "Testsieger-Qualität",
+    title: "Vitocal 250-A (Typ A10): Testsieger test 10/2025",
     description:
-      "Die Vitocal 250-A ist Testsieger bei Stiftung Warentest 2024 und 2025 mit Note GUT (2,0). Höchste Effizienz und Zuverlässigkeit.",
+      "Die Vitocal 250-A (Typ AWO-E-AC 251.A10, 10 kW) war Testsieger im Wärmepumpentest der Stiftung Warentest: test 10/2025, Qualitätsurteil GUT (2,0) – www.test.de. Das Urteil gilt für diesen getesteten Typ.",
     icon: Award,
   },
   {
-    title: "Hohe Vorlauftemperatur",
+    title: "Natürliches Kältemittel R290",
     description:
-      "Vitocal 350-G erreicht bis 72°C, Vitocal 300-A und 350-A bis 65°C. Perfekt für unsanierte Altbauten mit Heizkörpern.",
+      "Vitocal 250-A, 150-A und 200-A ie arbeiten mit Propan (R290). Sein Treibhauspotenzial liegt nahe null.",
+    icon: Leaf,
+  },
+  {
+    title: "Vorlauf bis 70 °C – oder 75 °C",
+    description:
+      "Vitocal 250-A und 150-A liefern bis 70 °C Vorlauf (bei bis zu −10 °C außen), die neue Vitocal 200-A ie bis 75 °C. Ob Ihre Heizkörper reichen, zeigt die Heizlastberechnung.",
     icon: Thermometer,
   },
   {
-    title: "Höchste Energieeffizienz",
+    title: "Effizienzklasse bis A+++",
     description:
-      "SCOP-Werte bis 5,1 bei der Vitocal 250-A. Bis zu 75% Energieeinsparung gegenüber Öl- und Gasheizungen.",
+      "Je nach Modell und Typ A++ bis A+++. Rund drei Viertel der Heizwärme holt die Wärmepumpe aus der Außenluft; was Sie gegenüber Öl oder Gas sparen, hängt von Strom- und Brennstoffpreisen ab.",
     icon: Zap,
   },
   {
-    title: "Umweltfreundliches R290",
+    title: "Leiser Betrieb",
     description:
-      "Natürliches Kältemittel Propan (R290) mit GWP von nur 3. Zukunftssicher und umweltfreundlich.",
-    icon: Shield,
+      "Laut Viessmann 35 dB(A) Schalldruck in 5 m Abstand im geräuschreduzierten Betrieb (Vitocal 250-A, wandnahe Aufstellung). Wie laut es an Ihrer Grundstücksgrenze wird, hängt vor allem vom Aufstellort ab.",
+    icon: Volume2,
   },
   {
-    title: "Smart Grid Ready",
+    title: "Viessmann-Garantie: bis zu 6 Jahre",
     description:
-      "Integration mit Photovoltaik und Smart Home. Intelligente Steuerung über ViCare App für optimale Effizienz.",
-    icon: Settings,
-  },
-  {
-    title: "10 Jahre Garantie",
-    description:
-      "Viessmann bietet bis zu 10 Jahre Garantie auf Wärmepumpen. Lange Lebensdauer von 20+ Jahren.",
-    icon: CheckCircle2,
+      "Viessmann gewährt bis zu 5 Jahre Garantie, wenn die Anlage über die ViCare-App aufgeschaltet ist, mit System Plus bis zu 6 Jahre. Voraussetzung ist unter anderem die Wartung durch einen Fachbetrieb.",
+    icon: ShieldCheck,
   },
 ];
 
 const faqs: FAQItem[] = [
   {
-    question: "Welche Viessmann Wärmepumpen installiert HeizCenter?",
+    question: "Welche Viessmann-Wärmepumpen kommen für mein Haus in Frage?",
     answer:
-      "Wir installieren die gesamte Vitocal Serie: Vitocal 150-A (Einsteigermodell), Vitocal 250-A (Testsieger), Vitocal 300-A (Hochtemperatur), und Vitocal 350-G (Erdwärme). Je nach Gebäude, Heizsystem und Budget wählen wir das optimale Modell für Sie aus.",
+      "Zum Viessmann-Programm für Ein- und Zweifamilienhäuser gehören unter anderem die Luft-Wasser-Wärmepumpen Vitocal 250-A und 150-A (beide mit R290 und bis 70 °C Vorlauf), die neue Vitocal 200-A ie für Vorlauftemperaturen bis 75 °C sowie die Sole-Wasser-Wärmepumpen Vitocal 222-G und 333-G für Erdwärme. Welches Modell und welche Größe zu Ihrem Haus passen, ermitteln wir mit der Heizlastberechnung.",
   },
   {
-    question: "Was kostet eine Viessmann Vitocal Wärmepumpe?",
+    question: "Was kostet eine Viessmann-Wärmepumpe?",
     answer:
-      "Eine Vitocal 150-A oder 250-A Luft-Wasser-Wärmepumpe kostet ab 7.000€ (nur Gerät). Mit Installation, Zubehör und Inbetriebnahme rechnen Sie mit 18.000-28.000€ für ein Einfamilienhaus. Erdwärmepumpen wie die Vitocal 222-G starten ab 11.000€ Gerätepreis. Genaue Kosten ermitteln wir nach Vor-Ort-Besichtigung.",
+      "Das hängt vor allem von Ihrem Haus ab: Heizlast, Aufstellort, Heizkörper oder Fußbodenheizung, Warmwasser und Elektroanschluss. Typische Kostenpositionen erklärt unser Ratgeber „Wärmepumpe Kosten 2026“ im Blog. Ihren Preis nennen wir im Angebot, auf Grundlage der Heizlastberechnung. Welcher Zuschuss möglich ist, steht auf unserer Förderseite.",
   },
   {
-    question: "Warum ist die Vitocal 250-A Testsieger?",
+    question: "Wie hat die Vitocal 250-A bei Stiftung Warentest abgeschnitten?",
     answer:
-      "Die Stiftung Warentest hat die Vitocal 250-A 2024 und 2025 mit GUT (2,0) bewertet. Sie überzeugt durch hohe Effizienz (SCOP 5,1), niedrige Betriebskosten, leisen Betrieb (35 dB(A)) und hervorragende Verarbeitung. Das Preis-Leistungs-Verhältnis ist ausgezeichnet.",
+      "Im Wärmepumpentest 10/2025 der Stiftung Warentest (fünf Luft-Wasser-Wärmepumpen in Monoblock-Bauweise mit 10 bis 12 kW und R290) wurde die Vitocal 250-A, Typ AWO-E-AC 251.A10, mit dem Qualitätsurteil GUT (2,0) Testsieger (www.test.de). Bewertet wurden vor allem Energieeffizienz und Umwelteigenschaften sowie die Handhabung. Das Urteil gilt für diesen getesteten Typ.",
   },
   {
-    question: "Eignet sich Viessmann für Altbau?",
+    question: "Eignet sich Viessmann für einen Altbau mit Heizkörpern?",
     answer:
-      "Ja! Die Vitocal 300-A und 350-A Serie erreichen Vorlauftemperaturen bis 65-72°C und eignen sich daher auch für unsanierte Altbauten mit klassischen Heizkörpern. Keine aufwändige Sanierung oder Austausch der Heizkörper nötig.",
+      "Oft ja. Die Vitocal 250-A und 150-A liefern laut Viessmann bis 70 °C Vorlauf (bei bis zu −10 °C außen), die neue Vitocal 200-A ie bis 75 °C. Ob Ihre vorhandenen Heizkörper ausreichen oder einzelne getauscht werden sollten, zeigt die Heizlastberechnung.",
   },
   {
-    question: "Wie laut sind Viessmann Wärmepumpen?",
+    question: "Wie laut ist eine Vitocal 250-A?",
     answer:
-      "Die Vitocal 250-A erreicht im Normalbetrieb 35 dB(A) in 5m Abstand - das ist sehr leise. Im Flüstermodus sind es sogar nur 30 dB(A). Damit sind Viessmann Wärmepumpen deutlich leiser als viele Konkurrenzprodukte.",
+      "Viessmann nennt 35 dB(A) Schalldruck in 5 m Abstand im geräuschreduzierten Betrieb bei wandnaher Aufstellung. Wie laut es an Ihrer Grundstücksgrenze wird, hängt vor allem vom Aufstellort ab – den legen wir bei der Planung mit Ihnen fest.",
   },
   {
     question: "Welche Garantie gibt Viessmann?",
     answer:
-      "Viessmann bietet 2 Jahre Herstellergarantie standardmäßig. Bei Registrierung und jährlicher Wartung durch Fachpartner wie HeizCenter können Sie die Garantie auf bis zu 10 Jahre verlängern. Die Lebensdauer einer Vitocal liegt bei 20+ Jahren.",
+      "Viessmann gewährt bis zu 5 Jahre Garantie, wenn die Anlage über die ViCare-App aufgeschaltet ist, und mit der System-Plus-Garantie bis zu 6 Jahre. Voraussetzung ist unter anderem die Wartung durch einen Fachbetrieb; die vollständigen Bedingungen stehen auf viessmann.de. Für unsere Montagearbeiten gilt die gesetzliche Gewährleistung.",
   },
   {
-    question: "Kann ich meine Vitocal mit Photovoltaik verbinden?",
+    question: "Kann ich eine Vitocal mit meiner Photovoltaikanlage verbinden?",
     answer:
-      "Ja! Alle Vitocal Modelle sind Smart Grid Ready und können mit PV-Anlagen gekoppelt werden. Die Wärmepumpe nutzt dann bevorzugt selbst erzeugten Solarstrom. Über die ViCare App können Sie alles überwachen und steuern.",
+      "Eine Kopplung mit Photovoltaik ist möglich; die Wärmepumpe kann dann bevorzugt selbst erzeugten Strom nutzen. Bedient wird sie per ViCare-App (bei 222-G und 333-G über Vitoconnect). Welche Funktionen Ihr Modell genau bietet, klären wir in der Beratung.",
   },
 ];
 
@@ -129,22 +134,22 @@ export default function ViessmannPage() {
         items={[
           { name: "Startseite", url: "" },
           { name: "Partner", url: "/partner" },
-          { name: "viessmann", url: "/partner/viessmann" },
+          { name: "Viessmann", url: "/partner/viessmann" },
         ]}
       />
       <ServiceHero
         title="Viessmann Wärmepumpen & Heizungen"
-        description="Premium Qualität Made in Germany. Testsieger der Stiftung Warentest. Die Vitocal Serie überzeugt durch höchste Effizienz, Zuverlässigkeit und innovative Technologie."
+        description="Vitocal-Wärmepumpen für Neubau und Altbau – vom Einstiegsmodell Vitocal 150-A bis zur neuen Vitocal 200-A ie für hohe Vorlauftemperaturen. Wir beraten Sie, planen die Anlage mit Heizlastberechnung und bauen sie ein."
         benefits={benefits}
         icon={Award}
-        badge="Testsieger 2024"
+        badge="Vitocal-Wärmepumpen"
         imageSrc="/images/Waermepumpe.webp"
         imageAlt="Wärmepumpe am Einfamilienhaus – Symbolbild"
         logoSrc="/images/partners/viessmann.svg"
       />
 
       <FeaturesSection
-        title="Warum Viessmann? Premium-Qualität für Ihr Zuhause"
+        title="Warum Viessmann? Vitocal-Wärmepumpen im Überblick"
         features={features}
       />
 
@@ -152,134 +157,164 @@ export default function ViessmannPage() {
       <section className="container py-16">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold mb-8">
-            Viessmann Produktlinien bei HeizCenter
+            Aktuelle Viessmann-Wärmepumpen
           </h2>
 
           <div className="space-y-8">
             {/* Vitocal Wärmepumpen */}
             <div className="bg-white p-8 rounded-lg border-2 border-[#0F5B78]/20">
               <h3 className="text-2xl font-bold mb-4 text-[#0F5B78]">
-                Vitocal Wärmepumpen Serie
+                Vitocal Wärmepumpen
               </h3>
 
               <div className="mb-6">
                 <h4 className="text-xl font-semibold mb-3">
-                  Vitocal 250-A - Der Testsieger
+                  Vitocal 250-A – Luft-Wasser-Monoblock mit R290
                 </h4>
                 <p className="text-slate-700 mb-3">
-                  Stiftung Warentest Testsieger 2024 & 2025 mit Note GUT (2,0).
-                  Die beliebteste Luft-Wasser-Wärmepumpe von Viessmann für
-                  Einfamilienhäuser.
+                  Im Wärmepumpentest der Stiftung Warentest (test 10/2025, fünf
+                  Luft-Wasser-Monoblöcke mit 10 bis 12 kW und R290) erhielt die
+                  Vitocal 250-A, Typ A10, das Qualitätsurteil GUT (2,0) und wurde
+                  Testsieger – www.test.de. Das Urteil gilt für diesen Typ.
                 </p>
-                <ul className="list-disc list-inside space-y-2 text-slate-600 mb-4">
-                  <li>Leistung: 4-20 kW (verschiedene Modellgrößen)</li>
-                  <li>SCOP: bis 5,1 (A+++)</li>
-                  <li>Vorlauftemperatur: bis 60°C</li>
-                  <li>Kältemittel: R290 (natürliches Propan)</li>
-                  <li>Schallleistung: 35 dB(A) in 5m Abstand</li>
-                  <li>Monoblock-Bauweise für einfache Installation</li>
-                  <li>Integrierte Kühlfunktion im Sommer</li>
+                <ul className="list-disc list-inside space-y-2 text-slate-600">
+                  <li>Leistung: 2,6 bis 18,5 kW (je nach Typ)</li>
+                  <li>Vorlauftemperatur: bis 70 °C (bei bis zu −10 °C außen)</li>
+                  <li>Kältemittel: R290 (Propan)</li>
+                  <li>
+                    Effizienzklasse: A+++ (Typ 10 bis 19), A++ (Typ 04 bis 08,
+                    230 V)
+                  </li>
+                  <li>
+                    SCOP 5,0 bei 35 °C Vorlauf (Typ A10, Datenblatt,
+                    durchschnittliches Klima)
+                  </li>
+                  <li>
+                    Schalldruck 35 dB(A) in 5 m im geräuschreduzierten Betrieb
+                    (laut Viessmann, wandnahe Aufstellung)
+                  </li>
+                  <li>Kühlen möglich – am besten über eine Fußbodenheizung</li>
                 </ul>
-                <p className="font-semibold text-[#0F5B78]">
-                  Preis ab: 7.000€ (Gerät) | Komplett ab 18.000€
-                </p>
               </div>
 
               <div className="mb-6 pt-6 border-t border-slate-200">
                 <h4 className="text-xl font-semibold mb-3">
-                  Vitocal 150-A - Einsteigermodell
+                  Vitocal 150-A – Einstiegsmodell mit R290
                 </h4>
                 <p className="text-slate-700 mb-3">
-                  Preiswerte Alternative mit bewährter Viessmann-Qualität.
-                  Perfekt für kleinere Einfamilienhäuser.
+                  Das Einstiegsmodell der Vitocal-Luft-Wasser-Wärmepumpen.
                 </p>
-                <ul className="list-disc list-inside space-y-2 text-slate-600 mb-4">
-                  <li>Leistung: 4-8 kW</li>
-                  <li>SCOP: bis 4,5 (A++)</li>
-                  <li>Vorlauftemperatur: bis 55°C</li>
-                  <li>Kompakt und leise</li>
+                <ul className="list-disc list-inside space-y-2 text-slate-600">
+                  <li>Leistung: 2,1 bis 14,9 kW</li>
+                  <li>Vorlauftemperatur: bis 70 °C (bei bis zu −10 °C außen)</li>
+                  <li>Kältemittel: R290 (Propan)</li>
+                  <li>Effizienzklasse: A++ bis A+++ je nach Typ</li>
                 </ul>
-                <p className="font-semibold text-[#0F5B78]">
-                  Preis ab: 7.000€ (Gerät) | Komplett ab 16.000€
-                </p>
               </div>
 
               <div className="mb-6 pt-6 border-t border-slate-200">
                 <h4 className="text-xl font-semibold mb-3">
-                  Vitocal 300-A & 350-A - Hochtemperatur für Altbau
+                  Vitocal 200-A ie – neu für Altbauten mit Heizkörpern
                 </h4>
                 <p className="text-slate-700 mb-3">
-                  Speziell entwickelt für Altbauten und Bestandsgebäude mit
-                  hohem Wärmebedarf. Erreicht hohe Vorlauftemperaturen ohne
-                  Heizstab.
+                  Seit 09/2026 auf dem Markt: die Vitocal für hohe
+                  Vorlauftemperaturen.
                 </p>
                 <ul className="list-disc list-inside space-y-2 text-slate-600 mb-4">
-                  <li>Vorlauftemperatur: bis 65-72°C</li>
-                  <li>Auch bei -20°C Außentemperatur effizient</li>
-                  <li>Ideal für unsanierte Altbauten</li>
-                  <li>Keine Heizkörper-Anpassung nötig</li>
+                  <li>Vorlauftemperatur: bis 75 °C (70 °C bei −10 °C außen)</li>
+                  <li>Leistung: 6 bis 12 kW</li>
+                  <li>Kältemittel: R290 (Propan)</li>
+                  <li>Effizienzklasse: A+++</li>
                 </ul>
-                <p className="font-semibold text-[#0F5B78]">
-                  Preis ab: 9.000€ (Gerät) | Komplett ab 22.000€
+                <p className="text-slate-700">
+                  Ob Ihre vorhandenen Heizkörper für eine Wärmepumpe reichen,
+                  zeigt die Heizlastberechnung.
                 </p>
               </div>
 
               <div className="pt-6 border-t border-slate-200">
                 <h4 className="text-xl font-semibold mb-3">
-                  Vitocal 222-G & 350-G - Erdwärmepumpen
+                  Vitocal 222-G und 333-G – Erdwärme
                 </h4>
                 <p className="text-slate-700 mb-3">
-                  Höchste Effizienz durch Nutzung der konstanten Erdwärme. Für
-                  Neubau mit ausreichend Grundstücksfläche.
+                  Sole-Wasser-Wärmepumpen holen die Wärme aus Erdsonden oder
+                  Flächenkollektoren; ein Außengerät gibt es nicht.
                 </p>
-                <ul className="list-disc list-inside space-y-2 text-slate-600 mb-4">
-                  <li>SCOP: bis 5,4 (höchste Effizienz)</li>
-                  <li>Sehr leise (kein Außengerät)</li>
-                  <li>Erdsonden oder Flächenkollektoren</li>
-                  <li>Vorlauftemperatur: bis 72°C (Modell 350-G)</li>
+                <ul className="list-disc list-inside space-y-2 text-slate-600">
+                  <li>
+                    Vitocal 222-G: 5,8 bis 10,4 kW, Warmwasserspeicher
+                    integriert, Vorlauf bis 65 °C
+                  </li>
+                  <li>
+                    Vitocal 222-G: SCOP bis 5,4 nach EN 14825
+                    (Niedertemperatur, kaltes Klima)
+                  </li>
+                  <li>Vitocal 333-G: 1,7 bis 11,4 kW</li>
                 </ul>
-                <p className="font-semibold text-[#0F5B78]">
-                  Preis ab: 11.000€ (Gerät) | Komplett ab 28.000-35.000€
-                </p>
               </div>
             </div>
 
-            {/* Vitodens Brennwertkessel */}
+            {/* Vitodens Brennwertgeräte */}
             <div className="bg-white p-8 rounded-lg border-2 border-slate-200">
               <h3 className="text-2xl font-bold mb-4">
-                Vitodens Brennwertkessel für Gas
+                Vitodens Gas-Brennwertgeräte
               </h3>
               <p className="text-slate-700 mb-4">
-                Falls eine Wärmepumpe (noch) nicht in Frage kommt, sind
-                Vitodens Brennwertkessel die effizienteste Lösung für
-                Gasheizungen.
+                Wenn eine Wärmepumpe in Ihrem Haus (noch) nicht passt, beraten
+                wir auch zu Gas-Brennwertgeräten von Viessmann.
               </p>
+              <ul className="list-disc list-inside space-y-1 text-slate-600 mb-4">
+                <li>
+                  Vitodens 200-W (wandhängend): 2,5 bis 32 kW, Normnutzungsgrad
+                  bis 98 % (Hs)
+                </li>
+                <li>Vitodens 300-W (wandhängend): 1,9 bis 25 kW</li>
+              </ul>
+              <p className="text-sm text-slate-600">
+                Wichtig: Für neu eingebaute Gasheizungen schreibt das
+                Gebäudemodernisierungsgesetz ab 2029 einen steigenden Bioanteil
+                vor – oder einen anderen Erfüllungsweg, etwa einen
+                Wärmepumpen-Hybrid. Über die KfW-Heizungsförderung wird ein
+                Gaskessel nicht gefördert. Mehr im{" "}
+                <Link
+                  href="/blog/heizungsgesetz-2024"
+                  className="text-[#0F5B78] font-medium hover:underline"
+                >
+                  Ratgeber Heizungsgesetz 2026
+                </Link>
+                .
+              </p>
+            </div>
 
-              <div className="mb-4">
-                <h4 className="text-lg font-semibold mb-2">
-                  Vitodens 200-W - Wandhängend
-                </h4>
-                <ul className="list-disc list-inside space-y-1 text-slate-600">
-                  <li>Leistung: 11-35 kW</li>
-                  <li>Normnutzungsgrad: bis 98%</li>
-                  <li>Mit integriertem Speicher erhältlich</li>
-                  <li>Ideal für Einfamilienhäuser</li>
-                </ul>
-              </div>
-
-              <div>
-                <h4 className="text-lg font-semibold mb-2">
-                  Vitodens 300-W - Premium-Wandgerät
-                </h4>
-                <ul className="list-disc list-inside space-y-1 text-slate-600">
-                  <li>Höchste Effizienz und Komfort</li>
-                  <li>Leistungsmodulation 10-100%</li>
-                  <li>Besonders leise</li>
-                </ul>
-              </div>
-
-              <p className="font-semibold text-[#0F5B78] mt-4">
-                Vitodens Preise: ab 3.500€ (Gerät) | Komplett ab 8.000€
+            {/* Kosten und Förderung */}
+            <div className="bg-[#0F5B78]/5 p-6 rounded-lg">
+              <h3 className="text-xl font-bold mb-3">Kosten und Förderung</h3>
+              <p className="text-slate-700 mb-3">
+                Was eine Wärmepumpe bei Ihnen kostet, hängt vor allem vom Haus
+                ab: Heizlast, Aufstellort, Heizkörper oder Fußbodenheizung und
+                Warmwasser. Einen Überblick über typische Kostenpositionen gibt
+                unser{" "}
+                <Link
+                  href="/blog/waermepumpe-kosten-2026"
+                  className="text-[#0F5B78] font-medium hover:underline"
+                >
+                  Ratgeber „Wärmepumpe Kosten 2026“
+                </Link>
+                . Ihren Preis nennen wir im Angebot – auf Grundlage der
+                Heizlastberechnung.
+              </p>
+              <p className="text-slate-700">
+                Für den Einbau in ein bestehendes Wohngebäude gibt es bis zu{" "}
+                {FOERDER_TEXT.maxStandard} der förderfähigen Kosten als
+                Zuschuss; {FOERDER_TEXT.maxBedingung}. Wie
+                sich das zusammensetzt, steht auf unserer{" "}
+                <Link
+                  href="/foerderung"
+                  className="text-[#0F5B78] font-medium hover:underline"
+                >
+                  Förderseite
+                </Link>
+                .
               </p>
             </div>
           </div>
@@ -296,116 +331,42 @@ export default function ViessmannPage() {
 
             <div className="prose prose-slate max-w-none">
               <p className="text-lg text-slate-700 mb-6">
-                Als zertifizierter <strong>Viessmann Fachpartner</strong> bieten
-                wir Ihnen die komplette Bandbreite der Premium-Heiztechnik aus
-                Allendorf. Von der unabhängigen Beratung über die professionelle
-                Installation bis hin zum langfristigen Service - bei uns sind
-                Sie in den besten Händen.
+                Wir beraten Sie zu Viessmann-Wärmepumpen, planen die Anlage mit
+                Heizlastberechnung und bauen sie ein. Weil wir Wärmepumpen
+                mehrerer Hersteller einbauen, richtet sich unsere Empfehlung
+                nach Ihrem Haus – nicht nach einem Katalog.
               </p>
 
               <div className="grid md:grid-cols-2 gap-6 my-8">
                 <div className="bg-white p-6 rounded-lg">
                   <h3 className="text-xl font-bold mb-3 text-[#0F5B78]">
-                    Fachpartner-Vorteile
+                    Vor dem Einbau
                   </h3>
                   <ul className="space-y-2 text-slate-700">
-                    <li>✓ Zertifizierte Viessmann-Installation</li>
-                    <li>✓ Garantieverlängerung möglich (bis 10 Jahre)</li>
-                    <li>✓ Original-Ersatzteile und Werksschulung</li>
-                    <li>✓ Schneller Service und Wartung vor Ort</li>
+                    <li>✓ Beratung vor Ort</li>
+                    <li>✓ Heizlastberechnung für Modell und Größe</li>
+                    <li>✓ Planung des Aufstellorts</li>
+                    <li>✓ Förderberatung (KfW-Heizungsförderung)</li>
                   </ul>
                 </div>
 
                 <div className="bg-white p-6 rounded-lg">
                   <h3 className="text-xl font-bold mb-3 text-[#0F5B78]">
-                    Unsere Leistungen
+                    Nach dem Einbau
                   </h3>
                   <ul className="space-y-2 text-slate-700">
-                    <li>✓ Kostenlose Vor-Ort-Beratung</li>
-                    <li>✓ Heizlastberechnung nach DIN EN 12831</li>
-                    <li>✓ Fördermittel-Beratung (KfW BEG)</li>
-                    <li>✓ Komplette Installation in 2-3 Tagen</li>
+                    <li>✓ Wartung, auf Wunsch mit Wartungsvertrag</li>
+                    <li>✓ 24/7-Notdienst für Wartungskunden</li>
+                    <li>✓ Ansprechpartner in der Region</li>
                   </ul>
                 </div>
               </div>
 
               <p className="text-lg text-slate-700">
-                Über <strong>60 zufriedene Kunden</strong> in Augsburg, Ulm,
-                Memmingen und Umgebung vertrauen auf unsere Viessmann-Expertise.
-                Profitieren Sie von über 20 Jahren Erfahrung in der
-                Heizungstechnik.
+                Den Zuschuss der KfW beantragen Sie als Eigentümer selbst im
+                Portal „Meine KfW“ – wir sagen Ihnen, welche Unterlagen Sie
+                dafür brauchen. Ihr nächster Schritt: ein Beratungstermin.
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Local Installation References */}
-      <section className="container py-16">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8">
-            Viessmann-Installationen in der Region
-          </h2>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-[#0F5B78]/5 p-6 rounded-lg">
-              <h3 className="font-bold text-lg mb-2">
-                Einfamilienhaus Bobingen (2024)
-              </h3>
-              <p className="text-slate-700 mb-3">
-                Vitocal 250-A, 10 kW | Baujahr 1985 | Heizkörper
-              </p>
-              <ul className="text-sm text-slate-600 space-y-1">
-                <li>• Austausch Ölheizung gegen Wärmepumpe</li>
-                <li>• Warmwasserspeicher 300L integriert</li>
-                <li>• Förderung: bis 80% KfW BEG möglich</li>
-                <li>• Jährliche Einsparung: ~1.800€</li>
-              </ul>
-            </div>
-
-            <div className="bg-[#0F5B78]/5 p-6 rounded-lg">
-              <h3 className="font-bold text-lg mb-2">
-                Neubau Gutenzell-Hürbel (2024)
-              </h3>
-              <p className="text-slate-700 mb-3">
-                Vitocal 222-G, 8 kW Erdwärme | Fußbodenheizung
-              </p>
-              <ul className="text-sm text-slate-600 space-y-1">
-                <li>• 4 Erdsonden à 100m Tiefe</li>
-                <li>• SCOP 5,2 (A+++)</li>
-                <li>• PV-Anlage gekoppelt</li>
-                <li>• Heizkosten: ~400€/Jahr</li>
-              </ul>
-            </div>
-
-            <div className="bg-[#0F5B78]/5 p-6 rounded-lg">
-              <h3 className="font-bold text-lg mb-2">
-                Mehrfamilienhaus Augsburg (2023)
-              </h3>
-              <p className="text-slate-700 mb-3">
-                Vitocal 350-A, 20 kW | 6 Wohneinheiten
-              </p>
-              <ul className="text-sm text-slate-600 space-y-1">
-                <li>• Austausch Gasheizung</li>
-                <li>• 65°C Vorlauftemperatur</li>
-                <li>• Kaskadenschaltung mit Pufferspeicher</li>
-                <li>• Kollektive Heizkostenreduktion: 45%</li>
-              </ul>
-            </div>
-
-            <div className="bg-[#0F5B78]/5 p-6 rounded-lg">
-              <h3 className="font-bold text-lg mb-2">
-                Altbau-Sanierung Ulm (2024)
-              </h3>
-              <p className="text-slate-700 mb-3">
-                Vitocal 300-A, 12 kW | Baujahr 1960
-              </p>
-              <ul className="text-sm text-slate-600 space-y-1">
-                <li>• Hochtemperatur-Wärmepumpe</li>
-                <li>• Keine Heizkörper-Anpassung nötig</li>
-                <li>• Kombination mit Solarthermie</li>
-                <li>• JAZ: 3,8 trotz Altbau</li>
-              </ul>
             </div>
           </div>
         </div>
@@ -450,48 +411,12 @@ export default function ViessmannPage() {
                 Alle Hersteller
               </h4>
               <p className="text-sm text-slate-600">
-                Weitere Premium-Partner entdecken
+                Weitere Hersteller im Überblick
               </p>
             </Link>
           </div>
         </div>
       </section>
-
-      {/* Schema.org Structured Data */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Product",
-            name: "Viessmann Vitocal Wärmepumpe",
-            brand: {
-              "@type": "Brand",
-              name: "Viessmann",
-            },
-            description:
-              "Premium Wärmepumpen und Heizungssysteme von Viessmann. Testsieger Stiftung Warentest. Installation durch HeizCenter.",
-            category: "Wärmepumpe",
-            offers: {
-              "@type": "AggregateOffer",
-              priceCurrency: "EUR",
-              lowPrice: "16000",
-              highPrice: "35000",
-              availability: "https://schema.org/InStock",
-              seller: {
-                "@type": "LocalBusiness",
-                name: "HeizCenter GmbH",
-                telephone: CONTACT.PHONE_SCHEMA,
-              },
-            },
-            manufacturer: {
-              "@type": "Organization",
-              name: "Viessmann Werke GmbH & Co. KG",
-              url: "https://www.viessmann.de",
-            },
-          }),
-        }}
-      />
     </>
   );
 }

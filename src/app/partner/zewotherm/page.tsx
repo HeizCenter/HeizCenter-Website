@@ -17,12 +17,21 @@ import {
 } from "lucide-react";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
 import { getCanonicalUrl } from "@/lib/seo";
-import { CONTACT } from "@/lib/config/contact";
+import { FOERDERUNG, FOERDER_TEXT } from "@/lib/config/foerderung";
+
+// Herstellerangaben: docs/partner-texte-audit.md, Abschnitt 8 (Stand 24.10.2026).
+// Förderwerte ausschließlich aus src/lib/config/foerderung.ts (KfW 458).
+
+const euro = (wert: number) => `${wert.toLocaleString("de-DE")} €`;
+const einkommensStufen = FOERDERUNG.einkommen
+  .map((stufe) => `${Math.round(stufe.satz * 100)} % bis ${euro(stufe.bis)}`)
+  .join(", ");
+const kindZuschlag = euro(FOERDERUNG.kindZuschlag);
 
 export const metadata: Metadata = {
-  title: "ZEWOTHERM LAMBDA Wärmepumpe | HeizCenter Partner",
+  title: "ZEWOTHERM LAMBDA Wärmepumpe | HeizCenter",
   description:
-    "ZEWOTHERM Wärmepumpe LAMBDA: Luft-Wasser mit patentiertem 3K-Prozess, SCOP bis 6,1 (EN 14825), Vorlauf bis 70 °C, R290. Installation durch HeizCenter in Bayern & Baden-Württemberg.",
+    "ZEWOTHERM Wärmepumpe LAMBDA: Luft-Wasser mit patentiertem 3K-Prozess, laut Hersteller SCOP bis 6,1 bei 35 °C (EN 14825), Vorlauf bis 70 °C ohne Heizstab, R290. Beratung, Planung mit Heizlastberechnung und Einbau durch HeizCenter in Bayern & Baden-Württemberg.",
   keywords: [
     "ZEWOTHERM",
     "LAMBDA",
@@ -41,105 +50,104 @@ export const metadata: Metadata = {
 };
 
 const benefits = [
-  "Hersteller: ZEWOTHERM Heating GmbH, Sitz Remagen (Rheinland-Pfalz)",
-  "Patentierter 3K-Prozess für maximale Energieausbeute",
-  "Vorlauftemperatur bis 70 °C – ohne Heizstab, auch im Altbau",
-  "SCOP bis 6,1 (gem. EN 14825) – Spitzenwert seiner Klasse",
-  "Flüsterleiser Betrieb (gemessen nach EN 12102)",
-  "Natürliches Kältemittel R290 (GWP 3) – zukunftssicher",
+  "Entwickelt von LAMBDA (Tirol), in Lizenz gefertigt von ZEWOTHERM in Remagen",
+  "Patentierter 3K-Prozess für effiziente Abtauzyklen",
+  "Vorlauftemperatur bis 70 °C ohne Heizstab – auch für Altbauten mit Heizkörpern",
+  "SCOP bis 6,1 bei 35 °C, 4,5 bei 55 °C (EN 14825, Herstellerangabe)",
+  "Schallleistung ab 44 dB(A) nach EN 12102 (EU13L, laut ZEWOTHERM)",
+  "Natürliches Kältemittel R290, Treibhauspotenzial nahe null",
 ];
 
 const features = [
   {
     title: "Patentierter 3K-Prozess",
     description:
-      "Der patentierte 3K-Prozess arbeitet mit besonders kleiner Temperaturspreizung: effiziente Abtauzyklen, optimierter Kältekreis und geringe Stillstandsverluste – Grundlage für Spitzen-Effizienzwerte.",
+      "Das patentierte Verfahren von LAMBDA sorgt laut ZEWOTHERM für besonders effiziente Abtauzyklen, einen optimierten Kältemittelkreislauf und geringe Stillstandsverluste.",
     icon: Award,
   },
   {
-    title: "Hohe Vorlauftemperatur",
+    title: "Bis 70 °C ohne Heizstab",
     description:
-      "Bis 70 °C Vorlauftemperatur – ganz ohne Zusatz-Heizstab. Damit ist die LAMBDA auch für Altbau-Sanierungen mit Heizkörpern geeignet.",
+      "Bis 70 °C Vorlauftemperatur ohne Zusatz-Heizstab – damit kommt die LAMBDA auch für Altbauten mit Heizkörpern in Frage. Ob Ihre Heizkörper reichen, zeigt die Heizlastberechnung.",
     icon: Thermometer,
   },
   {
-    title: "Bis zu 30 % weniger Stromverbrauch",
+    title: "Bis zu 30 % weniger Strom",
     description:
-      "Im Vergleich zu anderen Hocheffizienz-Wärmepumpen mit A+++ Label verbraucht die LAMBDA bis zu 30 % weniger Strom (Herstellerangabe) – das senkt die Stromkosten über die gesamte Lebensdauer spürbar.",
+      "Laut ZEWOTHERM verbraucht die LAMBDA bis zu 30 % weniger Strom als andere A+++-Hocheffizienz-Wärmepumpen (Herstellerangabe).",
     icon: Zap,
   },
   {
-    title: "Flüsterleiser Betrieb",
+    title: "Leiser Betrieb",
     description:
-      "Eine der leisesten Luft-Kompakt-Wärmepumpenserien am Markt (gemessen nach EN 12102). Ideal für dicht bebaute Wohngebiete.",
+      "Schallleistung nach EN 12102 laut ZEWOTHERM: 44 dB(A) bei der EU13L, 45 dB(A) bei der EU10L, 46 dB(A) bei der EU15L und 50 dB(A) bei der EU20L.",
     icon: Volume2,
   },
   {
     title: "Heizen & Kühlen",
     description:
-      "Komfort über das ganze Jahr: Im Winter heizt die LAMBDA effizient, im Sommer kann sie aktiv kühlen – ein System für alle Jahreszeiten.",
+      "Kühlen ist laut Hersteller serienmäßig möglich – im Winter heizt die LAMBDA, im Sommer kann sie kühlen.",
     icon: Snowflake,
   },
   {
     title: "Natürliches Kältemittel R290",
     description:
-      "Propan (R290) hat einen GWP von nur 3 – klimafreundlich und zukunftssicher gegenüber kommenden F-Gase-Verschärfungen.",
+      "Propan (R290) hat ein Treibhauspotenzial nahe null und fällt als natürliches Kältemittel nicht unter die Verbote der EU-F-Gase-Verordnung.",
     icon: Leaf,
   },
   {
-    title: "EMS mit VPN-Fernzugriff",
+    title: "Verschlüsselter Fernzugriff",
     description:
-      "Integriertes Energiemanagement-System mit verschlüsseltem Fernzugriff per VPN – smartes Monitoring und schnelle Diagnose im Servicefall.",
+      "Über das Fernwartungsportal des Herstellers lässt sich die Anlage verschlüsselt aus der Ferne überwachen (Herstellerangabe).",
     icon: Settings,
   },
   {
-    title: "Zertifiziert & förderfähig",
+    title: "EHPA-Gütesiegel & förderfähig",
     description:
-      "Mit EHPA-Gütesiegel zertifiziert und voll BEG-förderfähig.",
+      "Die LAMBDA-Baureihe trägt das EHPA-Gütesiegel (Nr. AT-HP-01257) und steht laut Hersteller auf der Liste förderfähiger Wärmepumpen (KfW 458, bestehende Wohngebäude).",
     icon: Shield,
   },
 ];
 
 const faqs: FAQItem[] = [
   {
-    question: "Welche LAMBDA-Modelle installiert HeizCenter?",
+    question: "Welche LAMBDA-Modelle gibt es?",
     answer:
-      "Wir installieren die komplette LAMBDA-Serie: EU10L (kompakt für kleinere und mittlere Neubauten), EU13L (größere Wohnhäuser, modernisierte Altbauten), EU15L und EU20L (Mehrfamilienhäuser und Gewerbe ohne aufwendige Kaskadierung) sowie EU35L für Großobjekte. Welches Modell zu Ihrem Gebäude passt, ermitteln wir per Heizlastberechnung.",
+      "EU10L, EU13L und EU15L sind laut ZEWOTHERM kompakte Luft/Wasser-Wärmepumpen für Ein- und Zweifamilienhäuser mit 9,2 bis 15,4 kW Heizleistung bei −10 °C. Die EU20L (bis 21 kW) ist für größere Wohngebäude oder anspruchsvollere Sanierungen gedacht, die 2026 eingeführte EU35L (bis 33 kW) für große Anlagen und Kaskaden. Welches Modell zu Ihrem Gebäude passt, ermitteln wir mit der Heizlastberechnung.",
   },
   {
-    question: "Was ist der 3K-Prozess von ZEWOTHERM?",
+    question: "Was ist der 3K-Prozess?",
     answer:
-      "Der 3K-Prozess ist eine von ZEWOTHERM patentierte Verfahrenstechnik mit besonders kleiner Temperaturspreizung. Sie sorgt für effiziente Abtauzyklen, einen optimierten Kältekreis und geringe Stillstandsverluste. Das Ergebnis sind Spitzen-SCOP-Werte bis 6,1 (gemessen nach EN 14825) – einer der besten Werte für Luft-Wasser-Wärmepumpen am Markt.",
+      "Der 3K-Prozess ist ein patentiertes Verfahren von LAMBDA. Laut ZEWOTHERM sorgt er für besonders effiziente Abtauzyklen, einen optimierten Kältemittelkreislauf und geringe Stillstandsverluste. Der Hersteller nennt einen SCOP bis 6,1 bei 35 °C (Fußbodenheizung) und 4,5 bei 55 °C (Heizkörper), jeweils nach EN 14825.",
   },
   {
     question: "Eignet sich die LAMBDA auch für Altbau?",
     answer:
-      "Ja. Mit Vorlauftemperaturen bis 70 °C kommt die LAMBDA auch in unsanierten Altbauten ohne zusätzlichen Heizstab aus. Bestehende Heizkörper können in vielen Fällen weiter genutzt werden – ein aufwendiger Tausch ist meist nicht nötig.",
+      "Ja, mit bis zu 70 °C Vorlauf ohne Heizstab kommt sie auch für Altbauten mit Heizkörpern in Frage. Ob Ihre vorhandenen Heizkörper reichen oder einzelne getauscht werden sollten, zeigt die Heizlastberechnung.",
   },
   {
     question: "Wie laut ist die ZEWOTHERM LAMBDA?",
     answer:
-      "Die LAMBDA gehört zu den leisesten Luft-Kompakt-Wärmepumpenserien am Markt (Messung nach EN 12102). Damit ist sie auch für eng bebaute Wohngebiete und kleine Grundstücke geeignet, wo Schallschutz besonders wichtig ist.",
+      "ZEWOTHERM nennt Schallleistungen nach EN 12102 von 44 dB(A) (EU13L), 45 dB(A) (EU10L), 46 dB(A) (EU15L) und 50 dB(A) (EU20L). Wie laut es an Ihrer Grundstücksgrenze wird, hängt vor allem vom Aufstellort ab – den legen wir bei der Planung mit Ihnen fest.",
   },
   {
     question: "Welche Förderung gibt es für die LAMBDA Wärmepumpe?",
-    answer:
-      "Die LAMBDA ist BEG-förderfähig (KfW-Zuschuss 458 für bestehende Wohngebäude): 30 % Grundförderung beim Heizungstausch; +16 % Klimageschwindigkeitsbonus für selbstnutzende Eigentümer beim vorzeitigen Tausch funktionsfähiger Öl-, Kohle-, Gasetagen- und Nachtspeicherheizungen (ohne Mindestalter) sowie Gas- und Biomasseheizungen ab 20 Jahren Alter (bei Antrag bis 31.01.2027, danach halbjährlich sinkend, für Anträge ab 01.08.2028 entfällt er); Einkommensbonus für Selbstnutzer: 40 % bis 30.000 €, 30 % bis 40.000 €, 10 % bis 50.000 € zu versteuerndes Haushaltsjahreseinkommen (mit minderjährigem, kindergeldberechtigtem Kind +10.000 € Grenze). Insgesamt höchstens 70 %, 80 % nur bei zu versteuerndem Haushaltseinkommen bis 30.000 € (mit Kind 40.000 €). Ergänzend ist der KfW-Kredit 358/359 (Heizungstausch-Ergänzungskredit) möglich. Wir beraten Sie kostenlos zur optimalen Förderkombination.",
+    answer: `Die LAMBDA steht laut Hersteller auf der Liste förderfähiger Wärmepumpen. Für den Einbau in ein bestehendes Wohngebäude gibt es über die KfW-Heizungsförderung (Programm 458) ${FOERDER_TEXT.grund} Grundförderung. Selbstnutzende Eigentümer erhalten zusätzlich den Klimageschwindigkeitsbonus beim vorzeitigen Tausch funktionsfähiger Öl-, Kohle-, Gasetagen- und Nachtspeicherheizungen (ohne Mindestalter) sowie von Gas- und Biomasseheizungen ab 20 Jahren Alter: ${FOERDER_TEXT.klimaHinweis}; für Anträge ab ${FOERDERUNG.klimaEntfaelltAb} entfällt er. Dazu kommt für Selbstnutzer ein Einkommensbonus nach zu versteuerndem Haushaltsjahreseinkommen: ${einkommensStufen} (mit minderjährigem, kindergeldberechtigtem Kind steigen die Grenzen um ${kindZuschlag}). Insgesamt gilt eine Obergrenze von ${FOERDER_TEXT.maxStandard}; ${FOERDER_TEXT.maxBedingung}. Ergänzend ist der KfW-Ergänzungskredit 358/359 möglich. Den Zuschuss beantragen Sie als Eigentümer selbst bei der KfW – wir beraten Sie dazu.`,
   },
   {
-    question: "Welches Kältemittel nutzt die LAMBDA und ist es zukunftssicher?",
+    question: "Welches Kältemittel nutzt die LAMBDA?",
     answer:
-      "Die LAMBDA arbeitet mit R290 (Propan), einem natürlichen Kältemittel mit GWP von nur 3. Damit ist sie unabhängig von den kommenden Verschärfungen der F-Gase-Verordnung und langfristig zukunftssicher.",
+      "Die LAMBDA arbeitet mit R290 (Propan), einem natürlichen Kältemittel mit einem Treibhauspotenzial nahe null. Als natürliches Kältemittel fällt R290 nicht unter die Verbote der EU-F-Gase-Verordnung, die fluorierte Kältemittel schrittweise einschränkt.",
   },
   {
     question: "Kann die LAMBDA auch kühlen?",
     answer:
-      "Ja, die LAMBDA bietet laut Hersteller Heizen und Kühlen in einem System – Komfort über das ganze Jahr ohne separate Klimaanlage. Welche Kühl-Variante (über Flächenheizung oder Gebläsekonvektor) für Sie sinnvoll ist, klären wir im Beratungsgespräch.",
+      "Ja, laut Hersteller ist Kühlen serienmäßig möglich. Welche Kühl-Variante (über Flächenheizung oder Gebläsekonvektor) für Sie sinnvoll ist, klären wir im Beratungsgespräch.",
   },
   {
     question: "Welche Garantie bietet ZEWOTHERM?",
     answer:
-      "Laut Hersteller sind auf Wunsch bis zu 5 Jahre Garantie möglich. Zusätzlich bietet ZEWOTHERM ein smartes System-Monitoring zur transparenten Überwachung Ihrer Anlage. Als Fachpartner kümmern wir uns für Sie um Registrierung, Wartung und ggf. Garantieverlängerung.",
+      "ZEWOTHERM bietet gegen Aufpreis 5 Jahre Garantie auf die Hauptkomponenten. Voraussetzungen laut ZEWOTHERM sind unter anderem die Anbindung an das Fernwartungsportal, eine jährliche Wartung mit Protokoll und die Inbetriebnahme durch ZEWOTHERM oder einen Fachpartner. Ob die Garantie für Ihre Anlage in Frage kommt, klären wir im Angebot. Für unsere Montagearbeiten gilt die gesetzliche Gewährleistung.",
   },
 ];
 
@@ -155,17 +163,17 @@ export default function ZewothermPage() {
       />
       <ServiceHero
         title="ZEWOTHERM Wärmepumpe LAMBDA"
-        description="Premium-Wärmepumpentechnik der ZEWOTHERM Heating GmbH aus Remagen. Eine der effizientesten Luft-Wasser-Wärmepumpen am Markt – patentierter 3K-Prozess, SCOP bis 6,1 und Vorlauftemperaturen bis 70 °C, für Neubau und Altbau-Sanierung."
+        description="Die Wärmepumpe LAMBDA wird von der LAMBDA Wärmepumpen GmbH in Tirol entwickelt und von ZEWOTHERM in Remagen in Lizenz gefertigt. Mit dem patentierten 3K-Prozess nennt der Hersteller einen SCOP bis 6,1 bei 35 °C; die Vorlauftemperatur reicht bis 70 °C ohne Heizstab – für Neubau und Altbau-Sanierung."
         benefits={benefits}
         icon={Award}
-        badge="3K-Prozess · SCOP 6,1"
+        badge="3K-Prozess"
         imageSrc="/images/partners/zewotherm/lambda-hero.jpg"
-        imageAlt="ZEWOTHERM Wärmepumpe LAMBDA EU35L vor modernem Gebäude – installiert von HeizCenter"
+        imageAlt="ZEWOTHERM Wärmepumpe LAMBDA EU35L vor einem Mehrfamilienhaus (Herstellerbild)"
         logoSrc="/images/partners/zewotherm.svg"
       />
 
       <FeaturesSection
-        title="Warum ZEWOTHERM LAMBDA? Neue Maßstäbe für effizientes Heizen"
+        title="Warum ZEWOTHERM LAMBDA? Effizient, leise, bis 70 °C"
         features={features}
       />
 
@@ -176,23 +184,21 @@ export default function ZewothermPage() {
             Nachhaltige Wärme – leise, smart und leistungsstark
           </h2>
           <p className="text-slate-700 mb-10 text-center max-w-3xl mx-auto">
-            Wer auf Wärmepumpentechnologie setzt, entscheidet sich für eine
-            umweltfreundliche Heizlösung mit hohem Komfort. Die ZEWOTHERM
-            Wärmepumpe LAMBDA geht dabei einen Schritt weiter: Mit innovativer
-            Technik, niedrigem Stromverbrauch und besonders leisem Betrieb
-            erfüllt sie höchste Anforderungen an Nachhaltigkeit und
-            Wohnkomfort – sowohl im Neubau als auch in der Altbau-Sanierung.
+            Die ZEWOTHERM Wärmepumpe LAMBDA ist eine Luft-Wasser-Wärmepumpe in
+            Monoblock-Bauweise: mit niedrigem Stromverbrauch, leisem Betrieb und
+            Vorlauftemperaturen bis 70 °C – für den Neubau ebenso wie für die
+            Altbau-Sanierung.
           </p>
 
-          {/* Stats Strip — Trust-Signale statt KI-Bild */}
+          {/* Stats Strip — Herstellerangaben mit Bedingung */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="bg-[#0F5B78] text-white p-6 rounded-lg text-center">
-              <div className="text-4xl font-bold mb-1">6,1</div>
+              <div className="text-4xl font-bold mb-1">bis 6,1</div>
               <div className="text-sm uppercase tracking-wide opacity-90">
-                SCOP (EN 14825)
+                SCOP bei 35 °C
               </div>
               <p className="text-xs mt-2 opacity-80">
-                Spitzenwert für Luft-Wasser-Wärmepumpen
+                EN 14825, Herstellerangabe; 4,5 bei 55 °C
               </p>
             </div>
             <div className="bg-[#0F5B78] text-white p-6 rounded-lg text-center">
@@ -200,9 +206,7 @@ export default function ZewothermPage() {
               <div className="text-sm uppercase tracking-wide opacity-90">
                 Vorlauftemperatur
               </div>
-              <p className="text-xs mt-2 opacity-80">
-                Ohne Heizstab, auch im Altbau
-              </p>
+              <p className="text-xs mt-2 opacity-80">Ohne Heizstab</p>
             </div>
             <div className="bg-[#0F5B78] text-white p-6 rounded-lg text-center">
               <div className="text-4xl font-bold mb-1">R290</div>
@@ -210,7 +214,7 @@ export default function ZewothermPage() {
                 Natürliches Kältemittel
               </div>
               <p className="text-xs mt-2 opacity-80">
-                GWP 3 – F-Gase-sicher
+                Treibhauspotenzial nahe null
               </p>
             </div>
           </div>
@@ -225,8 +229,8 @@ export default function ZewothermPage() {
               Für jedes Gebäude die passende Leistungsklasse
             </h2>
             <p className="text-slate-600 text-center mb-10 max-w-2xl mx-auto">
-              Vom Einfamilienhaus bis zum Großobjekt – die LAMBDA-Serie deckt
-              alle Leistungsklassen ohne aufwendige Kaskadierung ab.
+              Vom Ein- und Zweifamilienhaus bis zu großen Wohngebäuden – für
+              große Anlagen lässt sich die EU35L kaskadieren.
             </p>
 
             <div className="relative w-full max-w-4xl mx-auto aspect-[16/9] mb-12 rounded-lg overflow-hidden bg-white p-4">
@@ -241,36 +245,38 @@ export default function ZewothermPage() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="bg-white p-6 rounded-lg border-2 border-slate-200">
-                <h3 className="text-xl font-bold mb-2 text-[#0F5B78]">EU10L</h3>
-                <p className="text-sm text-slate-600 mb-3">
-                  Kompakt & energieeffizient
-                </p>
-                <p className="text-slate-700">
-                  Perfekt für kleinere und mittelgroße Neubauten – energieeffizient
-                  und kompakt.
-                </p>
-              </div>
-
-              <div className="bg-white p-6 rounded-lg border-2 border-slate-200">
-                <h3 className="text-xl font-bold mb-2 text-[#0F5B78]">EU13L</h3>
-                <p className="text-sm text-slate-600 mb-3">
-                  Größere Wohnhäuser & Altbau
-                </p>
-                <p className="text-slate-700">
-                  Ideal für größere Wohnhäuser oder modernisierte Altbauten.
-                </p>
-              </div>
-
-              <div className="bg-white p-6 rounded-lg border-2 border-slate-200">
                 <h3 className="text-xl font-bold mb-2 text-[#0F5B78]">
-                  EU15L / EU20L
+                  EU10L / EU13L
                 </h3>
                 <p className="text-sm text-slate-600 mb-3">
-                  Mehrfamilienhaus & Gewerbe
+                  Ein- und Zweifamilienhaus
                 </p>
                 <p className="text-slate-700">
-                  Hohe Heizleistung für Mehrfamilienhäuser und gewerbliche
-                  Anwendungen – ohne aufwendige Kaskadierung.
+                  Kompakte Luft/Wasser-Wärmepumpen für Ein- und
+                  Zweifamilienhäuser. Welche Größe passt, zeigt die
+                  Heizlastberechnung.
+                </p>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg border-2 border-slate-200">
+                <h3 className="text-xl font-bold mb-2 text-[#0F5B78]">EU15L</h3>
+                <p className="text-sm text-slate-600 mb-3">
+                  Größere Ein- und Zweifamilienhäuser
+                </p>
+                <p className="text-slate-700">
+                  Die stärkste der drei kompakten Größen. EU10L bis EU15L leisten
+                  laut ZEWOTHERM 9,2 bis 15,4 kW bei −10 °C.
+                </p>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg border-2 border-slate-200">
+                <h3 className="text-xl font-bold mb-2 text-[#0F5B78]">EU20L</h3>
+                <p className="text-sm text-slate-600 mb-3">
+                  Größere Wohngebäude
+                </p>
+                <p className="text-slate-700">
+                  Bis 21 kW – laut ZEWOTHERM für größere Wohngebäude oder
+                  anspruchsvollere Sanierungen.
                 </p>
               </div>
 
@@ -278,22 +284,21 @@ export default function ZewothermPage() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <h3 className="text-xl font-bold mb-2 text-[#0F5B78]">
-                      EU35L – für Großobjekte
+                      EU35L – neu seit 2026
                     </h3>
                     <p className="text-slate-700 mb-3">
-                      Das größte Modell der LAMBDA-Serie. Ideal für gewerbliche
-                      Großobjekte, Verwaltungsgebäude und große
-                      Mehrfamilienanlagen mit hohem Wärmebedarf.
+                      Das größte Modell der LAMBDA-Serie mit bis zu 33 kW,
+                      ausgelegt für große Anlagen und Kaskaden.
                     </p>
                     <p className="text-sm text-slate-600">
-                      Auch hier ohne Kaskadierung einsetzbar – das spart
-                      Installationsaufwand und Wartungskosten.
+                      Laut ZEWOTHERM lassen sich mit kaskadierten EU35L bis zu
+                      200 Wohneinheiten versorgen.
                     </p>
                   </div>
                   <div className="relative aspect-square max-h-48 md:max-h-72 mx-auto w-full">
                     <Image
                       src="/images/partners/zewotherm/lambda-eu35l.png"
-                      alt="ZEWOTHERM LAMBDA EU35L für Großobjekte"
+                      alt="ZEWOTHERM LAMBDA EU35L"
                       fill
                       className="object-contain"
                       sizes="(min-width: 768px) 50vw, 100vw"
@@ -313,7 +318,7 @@ export default function ZewothermPage() {
             <div className="relative aspect-[3/4] max-h-[500px] mx-auto w-full">
               <Image
                 src="/images/partners/zewotherm/hydraulikstation.png"
-                alt="ZEWOTHERM Hydraulikstation für die LAMBDA Wärmepumpe"
+                alt="ZEWOTHERM Hydraulikstation (Zubehör) für die LAMBDA Wärmepumpe"
                 fill
                 className="object-contain"
                 sizes="(min-width: 768px) 50vw, 100vw"
@@ -321,18 +326,18 @@ export default function ZewothermPage() {
             </div>
             <div>
               <h2 className="text-3xl font-bold mb-4">
-                Komplettsystem mit Hydraulikstation
+                Monoblock mit passendem Zubehör
               </h2>
               <p className="text-slate-700 mb-4">
-                Die LAMBDA wird als komplettes System aus Außeneinheit
-                (Monoblock) und passender Hydraulikstation geliefert. Das
-                vereinfacht die Installation und reduziert die Schnittstellen –
-                für maximale Betriebssicherheit von Tag eins an.
+                Die LAMBDA ist eine Monoblock-Wärmepumpe: Der Kältekreis sitzt im
+                Außengerät, im Haus wird nicht mit Kältemittel gearbeitet.
+                Passende Hydraulik – die ZEWO PowerBox LAMBDA oder den ZEWO ECO
+                Kombispeicher – gibt es als Zubehör.
               </p>
               <ul className="space-y-2 text-slate-700">
                 <li>✓ Monoblock-Bauweise – keine Kältemittelarbeiten im Haus</li>
-                <li>✓ Passende Hydraulikstation aus dem ZEWOTHERM-System</li>
-                <li>✓ Smartes EMS mit Fernzugriff per VPN (Herstellerangabe)</li>
+                <li>✓ Hydraulik als Zubehör: PowerBox LAMBDA oder ECO Kombispeicher</li>
+                <li>✓ Verschlüsselter Fernzugriff über das Fernwartungsportal (Herstellerangabe)</li>
                 <li>✓ Heizen und Kühlen im selben System</li>
               </ul>
             </div>
@@ -345,42 +350,49 @@ export default function ZewothermPage() {
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-4 text-center">
-              Bis zu 80 % Förderung sichern
+              Bis zu {FOERDER_TEXT.maxStandard} Förderung – mit niedrigem Einkommen
+              bis zu {FOERDER_TEXT.max}
             </h2>
             <p className="text-slate-700 text-center mb-10 max-w-2xl mx-auto">
-              Die Investition in eine Wärmepumpe wird durch die Bundesförderung
-              für effiziente Gebäude (BEG EM) staatlich unterstützt. Je nach
-              Ausgangslage und Einkommen sind bis zu 80 % der förderfähigen
-              Kosten möglich.
+              Der Einbau einer Wärmepumpe in ein bestehendes Wohngebäude wird
+              über die KfW-Heizungsförderung (BEG EM, Programm 458) bezuschusst.
+              Maßstab sind die förderfähigen Kosten: {FOERDER_TEXT.maxHinweis}.
             </p>
 
             <div className="grid md:grid-cols-3 gap-6">
               <div className="bg-white p-6 rounded-lg border-2 border-[#0F5B78]/20">
-                <div className="text-3xl font-bold text-[#0F5B78] mb-2">30 %</div>
+                <div className="text-3xl font-bold text-[#0F5B78] mb-2">
+                  {FOERDER_TEXT.grund}
+                </div>
                 <h3 className="font-bold mb-1">Grundförderung</h3>
                 <p className="text-sm text-slate-600">
-                  Beim Tausch alter Öl-, Gas- oder Kohleheizungen gegen eine
-                  Wärmepumpe.
+                  Für den Einbau einer Wärmepumpe in ein bestehendes
+                  Wohngebäude.
                 </p>
               </div>
 
               <div className="bg-white p-6 rounded-lg border-2 border-[#0F5B78]/20">
-                <div className="text-3xl font-bold text-[#0F5B78] mb-2">+16 %</div>
+                <div className="text-3xl font-bold text-[#0F5B78] mb-2">
+                  +{FOERDER_TEXT.klima}
+                </div>
                 <h3 className="font-bold mb-1">Klimageschwindigkeitsbonus</h3>
                 <p className="text-sm text-slate-600">
                   Beim vorzeitigen Tausch funktionsfähiger Öl-, Kohle-,
                   Gasetagen- und Nachtspeicherheizungen sowie Gas- und
-                  Biomasseheizungen ab 20 Jahren. Für Selbstnutzer, bei Antrag bis 31.01.2027.
+                  Biomasseheizungen ab 20 Jahren. Für Selbstnutzer, bei Antrag
+                  bis {FOERDERUNG.klimaGueltigBis}, danach halbjährlich sinkend.
                 </p>
               </div>
 
               <div className="bg-white p-6 rounded-lg border-2 border-[#0F5B78]/20">
-                <div className="text-3xl font-bold text-[#0F5B78] mb-2">bis +40 %</div>
+                <div className="text-3xl font-bold text-[#0F5B78] mb-2">
+                  bis +{FOERDER_TEXT.einkommenMax}
+                </div>
                 <h3 className="font-bold mb-1">Einkommensbonus</h3>
                 <p className="text-sm text-slate-600">
-                  Für selbstnutzende Eigentümer: 40 % bis 30.000 €, 30 % bis
-                  40.000 €, 10 % bis 50.000 € zu versteuerndem
-                  Haushaltsjahreseinkommen.
+                  Für selbstnutzende Eigentümer: {einkommensStufen} zu
+                  versteuerndem Haushaltsjahreseinkommen; mit minderjährigem
+                  Kind steigen die Grenzen um {kindZuschlag}.
                 </p>
               </div>
             </div>
@@ -388,16 +400,15 @@ export default function ZewothermPage() {
             <div className="mt-8 bg-white p-6 rounded-lg border border-slate-200">
               <h3 className="font-bold mb-2">Ergänzungskredit KfW 358/359</h3>
               <p className="text-sm text-slate-700">
-                Für die nicht durch Zuschuss gedeckten förderfähigen Kosten
-                steht der zinsverbilligte KfW-Ergänzungskredit Heizungstausch
-                (358 für Selbstnutzer, 359 für Eigentümer mit Einkommensbonus)
-                bis zu 120.000 € förderfähige Kosten pro Wohneinheit zur
-                Verfügung. Wir prüfen gerne die optimale Kombination für Ihr
-                Vorhaben.
+                Zinsgünstiger Kredit bis 120.000 € je Wohneinheit für die
+                Kosten laut Zuschusszusage. Selbstnutzer mit einem
+                Haushaltseinkommen bis 90.000 € erhalten als
+                „Ergänzungskredit Plus“ (358) einen zusätzlichen Zinsvorteil.
+                Beantragt wird der Kredit über Ihre Bank.
               </p>
               <p className="text-xs text-slate-500 mt-3">
                 Hinweis: Förderbedingungen können sich ändern. Eine verbindliche
-                Auskunft erhalten Sie über die offiziellen Stellen (BAFA, KfW)
+                Auskunft erhalten Sie über die KfW
                 oder im Beratungsgespräch mit uns.
               </p>
             </div>
@@ -411,8 +422,8 @@ export default function ZewothermPage() {
                 Jetzt Förderung für Ihre LAMBDA prüfen lassen
               </Link>
               <p className="text-sm text-slate-600 mt-3">
-                Kostenlos &amp; unverbindlich – wir berechnen Ihren möglichen
-                Zuschuss.
+                Wir rechnen Ihnen vor, welcher Zuschuss für Ihr Vorhaben in
+                Frage kommt.
               </p>
             </div>
           </div>
@@ -427,44 +438,41 @@ export default function ZewothermPage() {
           </h2>
           <div className="prose prose-slate max-w-none">
             <p className="text-lg text-slate-700 mb-6">
-              Als Fachpartner für Wärmepumpen begleiten wir Ihr LAMBDA-Projekt
-              von der ersten Heizlastberechnung über die Förderantragstellung
-              bis zur Inbetriebnahme und langfristigen Wartung – alles aus
-              einer Hand.
+              Wir beraten Sie zur LAMBDA, planen die Anlage mit
+              Heizlastberechnung und bauen sie ein. Den Zuschuss der KfW
+              beantragen Sie als Eigentümer selbst im Portal „Meine KfW“ – wir
+              sagen Ihnen, welche Unterlagen Sie dafür brauchen.
             </p>
 
             <div className="grid md:grid-cols-2 gap-6 my-8 not-prose">
               <div className="bg-slate-50 p-6 rounded-lg">
                 <h3 className="text-xl font-bold mb-3 text-[#0F5B78]">
-                  Unser Service
+                  Vor dem Einbau
                 </h3>
                 <ul className="space-y-2 text-slate-700">
-                  <li>✓ Kostenlose Vor-Ort-Beratung in der Region</li>
-                  <li>✓ Heizlastberechnung nach DIN EN 12831</li>
-                  <li>✓ Förderberatung BEG EM &amp; KfW 358/359</li>
-                  <li>✓ Schallschutz-Planung für enge Bebauung</li>
-                  <li>✓ Komplette Installation in 2–3 Tagen</li>
+                  <li>✓ Beratung vor Ort in der Region</li>
+                  <li>✓ Heizlastberechnung für Modell und Größe</li>
+                  <li>✓ Planung des Aufstellorts</li>
+                  <li>✓ Förderberatung KfW 458 &amp; Ergänzungskredit 358/359</li>
                 </ul>
               </div>
 
               <div className="bg-slate-50 p-6 rounded-lg">
                 <h3 className="text-xl font-bold mb-3 text-[#0F5B78]">
-                  Nach der Inbetriebnahme
+                  Nach dem Einbau
                 </h3>
                 <ul className="space-y-2 text-slate-700">
-                  <li>✓ Einweisung &amp; Übergabe-Protokoll</li>
-                  <li>✓ Wartungsvertrag mit Festpreis</li>
-                  <li>✓ Fern-Diagnose über das EMS</li>
-                  <li>✓ 24/7 Notdienst in der Region</li>
-                  <li>✓ Garantie-Registrierung beim Hersteller</li>
+                  <li>✓ Wartung, auf Wunsch mit Wartungsvertrag</li>
+                  <li>✓ 24/7-Notdienst für Wartungskunden</li>
+                  <li>✓ Ansprechpartner in der Region</li>
                 </ul>
               </div>
             </div>
 
             <p className="text-lg text-slate-700">
-              Wir beraten Sie unabhängig: Wenn die LAMBDA für Ihr Gebäude die
-              beste Wahl ist, sagen wir das – wenn ein anderer Hersteller
-              besser passt, ebenso.
+              Wir bauen Wärmepumpen mehrerer Hersteller ein. Ob die LAMBDA oder
+              ein anderes Gerät besser zu Ihrem Haus passt, zeigt die
+              Heizlastberechnung – und das sagen wir Ihnen offen.
             </p>
           </div>
         </div>
@@ -509,46 +517,12 @@ export default function ZewothermPage() {
                 Alle Hersteller
               </h4>
               <p className="text-sm text-slate-600">
-                Weitere Premium-Partner entdecken
+                Weitere Hersteller im Überblick
               </p>
             </Link>
           </div>
         </div>
       </section>
-
-      {/* Schema.org Structured Data */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Product",
-            name: "ZEWOTHERM Wärmepumpe LAMBDA",
-            brand: {
-              "@type": "Brand",
-              name: "ZEWOTHERM",
-            },
-            description:
-              "Luft-Wasser-Wärmepumpe mit patentiertem 3K-Prozess, SCOP bis 6,1 (gem. EN 14825), Vorlauftemperatur bis 70 °C und natürlichem Kältemittel R290. Installation durch HeizCenter.",
-            category: "Wärmepumpe",
-            offers: {
-              "@type": "AggregateOffer",
-              priceCurrency: "EUR",
-              availability: "https://schema.org/InStock",
-              seller: {
-                "@type": "LocalBusiness",
-                name: "HeizCenter GmbH",
-                telephone: CONTACT.PHONE_SCHEMA,
-              },
-            },
-            manufacturer: {
-              "@type": "Organization",
-              name: "ZEWOTHERM Heating GmbH",
-              url: "https://zewotherm.com",
-            },
-          }),
-        }}
-      />
     </>
   );
 }

@@ -454,3 +454,23 @@ COMMIT FREIGEGEBEN
 
 ### Ergebnis
 COMMIT FREIGEGEBEN
+
+## Content Validation Report - 2026-10-24 (HEC-191 Phase 1, Partnerseiten)
+
+### Gepruefte Aenderungen
+- `src/app/partner/page.tsx`, `src/app/partner/opengraph-image.tsx`, `src/app/partner/{viessmann,vaillant,buderus,wolf,bosch,daikin,zewotherm}/page.tsx`: Neufassung nach Audit `docs/partner-texte-audit.md` (323 Aussagen; 91 falsch, 30 veraltet, 104 unbelegt, 23 riskant) — Preise, Produkt-JSON-LD mit Preisen, 22 Referenzkarten, Partner-/Zertifikatsstatus und unbelegte HeizCenter-Zusagen entfernt; Herstellerfakten auf aktuelles Programm 2026 mit Quellen; Testsieger nur exakt (Modell, Heft, Note); Garantien nur mit Absender und Bedingung; Foerderung ueber `FOERDER_TEXT`
+
+### Gate 1: Fachliche Pruefung
+- Pruefer: hvac-content (zwei Laeufe)
+- Runde 1: 5/9 APPROVED, 4 REJECTED (OG-Bild „Partner“, Bosch-Garantie ohne Bedingung, Daikin-F-Gase ohne Monoblock, ZEWOTHERM „6,1“ ohne „bis zu“) → 36 Korrekturen angewendet
+- Runde 2: 8/9 APPROVED; Vaillant: „grundsaetzlich“ im sichtbaren F-Gase-Satz → angewendet (vom Pruefer als Freigabebedingung formuliert, keine Runde 3 noetig)
+- F-Gase-Fristen vom Implementierer gegen EUR-Lex VO (EU) 2024/573 Anhang IV geprueft: Nr. 8 b (in sich geschlossen ≤ 12 kW, GWP ≥ 150) und 8 d (> 12 bis 50 kW, GWP ≥ 150) ab 01.01.2027, Nr. 9 b (Luft-Wasser-Split ≤ 12 kW, GWP ≥ 150) ab 01.01.2027, jeweils „außer wenn dies zur Einhaltung der Sicherheitsanforderungen am Standort erforderlich ist“ → Formulierung „grundsaetzlich“ auf allen Fundstellen
+- Status: APPROVED
+
+### Gate 2: Kontaktdaten-Validierung
+- Pruefer 1: Implementierer — keine Kontaktdaten-Literale in den 9 Dateien; Telefon/E-Mail nur ueber `CONTACT` in geteilten Komponenten
+- Pruefer 2: hvac-content (Runde 1, Punkt f) — keine Kontaktdaten in den 9 Einheiten
+- Status: NICHT AUSGELOEST (keine Kontaktdaten-Aenderung)
+
+### Ergebnis
+COMMIT FREIGEGEBEN

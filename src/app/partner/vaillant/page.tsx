@@ -7,116 +7,122 @@ import Link from "next/link";
 import {
   Award,
   Zap,
-  Shield,
+  Leaf,
   Thermometer,
   Snowflake,
-  CheckCircle2,
+  ShieldCheck,
 } from "lucide-react";
 import { BreadcrumbSchema } from "@/components/schema/breadcrumb-schema";
 import { getCanonicalUrl } from "@/lib/seo";
-import { CONTACT } from "@/lib/config/contact";
+import { FOERDER_TEXT } from "@/lib/config/foerderung";
+
+// Herstellerangaben: docs/partner-texte-audit.md, Abschnitt 3 (Stand 24.10.2026).
+// WIEDERVORLAGE 01/2027: aroTHERM Split plus (R32, Luft-Wasser-Split bis 12 kW) darf ab 01.01.2027 grundsätzlich nicht mehr neu in Verkehr gebracht werden –
+// Block streichen oder anpassen. geoCOMPACT exclusive 8/11 kW laut Vaillant nur bis Ende 2026 lieferbar – Verfügbarkeit prüfen.
 
 export const metadata: Metadata = {
-  title: "Vaillant Wärmepumpen & Heizungen | HeizCenter Partner",
+  title: "Vaillant Wärmepumpen: aroTHERM plus, pro & Split plus | HeizCenter",
   description:
-    "Premium Vaillant Wärmepumpen aroTHERM Serie. Effiziente Heizungssysteme ecoTEC. Marktführer mit über 150 Jahren Erfahrung. Installation in Augsburg & Ulm.",
+    "Vaillant aroTHERM plus mit natürlichem Kältemittel R290 und bis zu 75 °C Vorlauf, dazu aroTHERM pro, Split plus und geoCOMPACT exclusive für Erdwärme. Beratung, Planung mit Heizlastberechnung und Einbau durch HeizCenter in der Region Augsburg, Ulm und Memmingen.",
   alternates: {
     canonical: getCanonicalUrl("/partner/vaillant"),
   },
   keywords: [
     "Vaillant",
-    "aroTHERM",
+    "aroTHERM plus",
+    "aroTHERM pro",
+    "geoCOMPACT",
     "ecoTEC",
     "Wärmepumpe",
-    "Heizung",
+    "R290",
     "Augsburg",
     "Ulm",
   ],
 };
 
 const benefits = [
-  "Marktführer mit über 150 Jahren Erfahrung",
-  "aroTHERM plus mit höchster Effizienz (SCOP bis 5,4)",
-  "Bis zu 75°C Vorlauftemperatur",
-  "Extrem leise ab 19 dB(A) Innengerät",
-  "Green iQ Label - Nachhaltig & Effizient",
-  "5 Jahre Garantie auf Wärmepumpen",
+  "Vaillant – seit 1874, laut Vaillant in Deutschland entwickelt und in Europa gefertigt",
+  "aroTHERM plus: bis 75 °C Vorlauf für Altbauten mit Heizkörpern",
+  "Natürliches Kältemittel R290, Effizienzklasse A+++ (35 °C)",
+  "Heizen, Warmwasser und Kühlen mit einem Gerät",
+  "5 Jahre Vaillant-Garantie bei Registrierung, verbundenem Internetmodul und jährlicher Wartung",
+  "Beratung, Planung mit Heizlastberechnung und Einbau durch HeizCenter",
 ];
 
 const features = [
   {
-    title: "Marktführer-Qualität",
+    title: "Seit 1874",
     description:
-      "Vaillant ist seit 1874 Synonym für höchste Qualität in der Heiztechnik. Made in Germany mit weltweitem Service-Netzwerk.",
+      "Vaillant wurde 1874 gegründet. Die Geräte werden laut Vaillant in Deutschland entwickelt und in Europa gefertigt.",
     icon: Award,
   },
   {
-    title: "Bis 75°C Vorlauftemperatur",
+    title: "Bis 75 °C Vorlauf",
     description:
-      "aroTHERM plus erreicht bis 75°C für perfekte Altbau-Eignung. Auch bei -20°C Außentemperatur noch 65°C möglich.",
+      "Die aroTHERM plus liefert laut Vaillant bis 75 °C Vorlauftemperatur. Damit kommt sie für viele Altbauten mit Heizkörpern in Frage – ob Ihre Heizkörper reichen, zeigt die Heizlastberechnung.",
     icon: Thermometer,
   },
   {
-    title: "Höchste Energieeffizienz",
+    title: "Effizienzklasse A+++",
     description:
-      "SCOP-Werte bis 5,4 bei aroTHERM pro. Bis zu 75% Energieeinsparung und niedrigste Betriebskosten.",
+      "aroTHERM plus: Effizienzklasse A+++ bei 35 °C und ein SCOP bis 5,1 (Niedertemperatur). Laut Vaillant stammen bis zu 75 % der Heizenergie aus der Umwelt, nur rund 25 % aus Strom.",
     icon: Zap,
   },
   {
-    title: "Green iQ Technology",
+    title: "Natürliches Kältemittel R290",
     description:
-      "Umweltfreundliche Kältemittel R32 und R290. Intelligent, effizient und zukunftssicher.",
-    icon: Shield,
+      "Die aroTHERM plus und die Erdwärmepumpe geoCOMPACT exclusive arbeiten mit Propan (R290) – Treibhauspotenzial nahe null.",
+    icon: Leaf,
   },
   {
-    title: "Active Cooling",
+    title: "Heizen und Kühlen",
     description:
-      "Integrierte Kühlfunktion für angenehme Raumtemperaturen im Sommer. Heizen und Kühlen mit einem System.",
+      "Die aroTHERM plus ist laut Vaillant für Heizen, Warmwasserbereitung und Kühlen geeignet – ein Gerät für das ganze Jahr.",
     icon: Snowflake,
   },
   {
-    title: "5 Jahre Garantie",
+    title: "5 Jahre Vaillant-Garantie",
     description:
-      "Vaillant bietet 5 Jahre Garantie auf Wärmepumpen. Optional erweiterbar auf bis zu 10 Jahre.",
-    icon: CheckCircle2,
+      "Vaillant gibt 5 Jahre Garantie, wenn die Anlage innerhalb von 180 Tagen registriert wird, das Internetmodul dauerhaft verbunden bleibt und jährlich gewartet wird. Mit GarantiePREMIUM sind bis zu 10 Jahre möglich.",
+    icon: ShieldCheck,
   },
 ];
 
 const faqs: FAQItem[] = [
   {
-    question: "Welche Vaillant Wärmepumpen bietet HeizCenter an?",
+    question: "Welche Vaillant-Wärmepumpen gibt es aktuell?",
     answer:
-      "Wir installieren die gesamte aroTHERM Serie: aroTHERM plus (Monoblock, Außenaufstellung), aroTHERM Split plus (geteiltes System), und aroTHERM pro (Premium-Modell). Für Erdwärme bieten wir die flexoTHERM exclusive an. Je nach Anforderung finden wir das passende Modell.",
+      "Zum aktuellen Programm gehören die Luft-Wasser-Wärmepumpen aroTHERM plus (Monoblock, R290, bis 75 °C), aroTHERM pro (Kompaktklasse für freistehende Häuser, bis 70 °C), aroTHERM Split plus (Split-Gerät mit R32) und aroTHERM perform sowie für Erdwärme die geoCOMPACT exclusive mit R290. Welches Gerät und welche Größe zu Ihrem Haus passen, ermitteln wir mit der Heizlastberechnung.",
   },
   {
-    question: "Was kostet eine Vaillant aroTHERM Wärmepumpe?",
+    question: "Was kostet eine Vaillant aroTHERM?",
     answer:
-      "Eine aroTHERM plus Luft-Wasser-Wärmepumpe kostet ab 8.000€ (nur Gerät). Mit Installation, Pufferspeicher, Warmwasserbereitung und Inbetriebnahme rechnen Sie mit 19.000-30.000€ für ein Einfamilienhaus. Die aroTHERM Split plus ist etwas teurer, bietet aber mehr Flexibilität bei der Installation.",
+      "Das hängt vor allem von Ihrem Haus ab: Heizlast, Aufstellort, Heizkörper oder Fußbodenheizung, Warmwasser und Elektroanschluss. Typische Kostenpositionen erklärt unser Ratgeber „Wärmepumpe Kosten 2026“ im Blog. Ihren Preis nennen wir im Angebot, auf Grundlage der Heizlastberechnung. Welcher Zuschuss möglich ist, steht auf unserer Förderseite.",
   },
   {
     question: "Was ist der Unterschied zwischen aroTHERM plus und Split plus?",
     answer:
-      "aroTHERM plus ist ein Monoblock-System mit Außenaufstellung - alle Komponenten sind im Außengerät. aroTHERM Split plus ist ein geteiltes System: Außeneinheit + separate Inneneinheit. Split-Systeme sind flexibler in der Installation und oft etwas leiser im Innenbereich.",
+      "Bei der aroTHERM plus (Monoblock) sitzt der gesamte Kältekreis im Außengerät; ins Haus führen Wasser-, keine Kältemittelleitungen. Bei der aroTHERM Split plus sind Außen- und Inneneinheit getrennt und über Kältemittelleitungen verbunden. Die aroTHERM plus arbeitet mit R290 und bis 75 °C Vorlauf, die Split plus mit R32 und bis 62 °C. Für Split-Geräte mit R32 gilt ab 2027 eine Einschränkung durch die EU-F-Gase-Verordnung – mehr dazu oben bei der Split plus.",
   },
   {
-    question: "Eignet sich Vaillant für Altbau und hohe Heizkörper?",
+    question: "Eignet sich Vaillant für einen Altbau mit Heizkörpern?",
     answer:
-      "Ja! Die aroTHERM plus erreicht bis 75°C Vorlauftemperatur und ist speziell für Altbauten mit klassischen Heizkörpern konzipiert. Selbst bei -20°C Außentemperatur sind noch 65°C möglich - perfekt für unsanierte Gebäude.",
+      "Mit bis zu 75 °C Vorlauf eignet sich die aroTHERM plus für viele Altbauten mit Heizkörpern. Ob Ihre vorhandenen Heizkörper reichen oder einzelne getauscht werden sollten, zeigt die Heizlastberechnung.",
   },
   {
-    question: "Wie laut ist eine Vaillant aroTHERM Wärmepumpe?",
+    question: "Wie laut ist eine Vaillant aroTHERM plus?",
     answer:
-      "Die Außeneinheit erreicht 46-55 dB(A) je nach Modell und Leistung. Das Innengerät der aroTHERM Split plus ist extrem leise mit nur 19 dB(A) im Flüstermodus - kaum hörbar. Damit gehört Vaillant zu den leisesten Wärmepumpen am Markt.",
+      "Laut Vaillant ist die aroTHERM plus die leiseste Luft-Wasser-Wärmepumpe von Vaillant: 27,5 dB(A) Schalldruck in 3 m Abstand beim 3-kW-Gerät im Nachtbetrieb. Die Schallleistung im Flüsterbetrieb liegt je nach Größe bei 45 bis 50 dB(A). Wie laut es an Ihrer Grundstücksgrenze wird, hängt vor allem vom Aufstellort ab – den legen wir bei der Planung mit Ihnen fest.",
   },
   {
-    question: "Was ist Green iQ Technology?",
+    question: "Welche Garantie gibt Vaillant?",
     answer:
-      "Green iQ ist Vaillants Nachhaltigkeits-Label. Produkte mit diesem Label nutzen umweltfreundliche Kältemittel (R32, R290), erreichen höchste Energieeffizienz (A+++) und sind für die Integration mit erneuerbaren Energien (PV, Solar) optimiert.",
+      "Vaillant gibt 5 Jahre Garantie auf die aktuellen Wärmepumpen, wenn die Anlage innerhalb von 180 Tagen registriert wird, das Internetmodul dauerhaft mit dem Internet verbunden bleibt und die Anlage jährlich gewartet wird. Mit GarantiePREMIUM sind bis zu 10 Jahre möglich; ob und zu welchen Bedingungen das für Ihre Anlage gilt, klären wir im Angebot. Die vollständigen Bedingungen stehen auf vaillant.de. Für unsere Montagearbeiten gilt die gesetzliche Gewährleistung.",
   },
   {
-    question: "Kann ich aroTHERM mit Photovoltaik kombinieren?",
+    question: "Kann ich eine aroTHERM mit Photovoltaik kombinieren?",
     answer:
-      "Ja! Alle aroTHERM Modelle sind Smart Grid Ready und können optimal mit PV-Anlagen kombiniert werden. Die sensoNET App ermöglicht intelligente Steuerung, um bevorzugt selbst erzeugten Solarstrom zu nutzen.",
+      "Ja, über den Regler und das Energiemanagement ist eine Kopplung mit Photovoltaik möglich. Bedient wird die Anlage per myVAILLANT-App (Internetmodul myVAILLANT connect). Welche Funktionen Ihr Modell genau bietet, klären wir in der Beratung.",
   },
 ];
 
@@ -128,22 +134,22 @@ export default function VaillantPage() {
         items={[
           { name: "Startseite", url: "" },
           { name: "Partner", url: "/partner" },
-          { name: "vaillant", url: "/partner/vaillant" },
+          { name: "Vaillant", url: "/partner/vaillant" },
         ]}
       />
       <ServiceHero
         title="Vaillant Wärmepumpen & Heizungen"
-        description="Marktführer mit über 150 Jahren Erfahrung. Die aroTHERM Serie kombiniert höchste Effizienz mit leisem Betrieb und Langlebigkeit. Green iQ für nachhaltiges Heizen."
+        description="Die aroTHERM plus mit natürlichem Kältemittel R290 liefert bis 75 °C Vorlauf – für Neubau und viele Altbauten mit Heizkörpern. Dazu kommen aroTHERM pro, Split plus und die Erdwärmepumpe geoCOMPACT exclusive. Wir beraten Sie, planen die Anlage mit Heizlastberechnung und bauen sie ein."
         benefits={benefits}
         icon={Award}
-        badge="Marktführer"
+        badge="Seit 1874"
         imageSrc="/images/Waermepumpe.webp"
         imageAlt="Wärmepumpe am Einfamilienhaus – Symbolbild"
         logoSrc="/images/partners/vaillant.svg"
       />
 
       <FeaturesSection
-        title="Warum Vaillant? Qualität seit 1874"
+        title="Warum Vaillant? aroTHERM-Wärmepumpen im Überblick"
         features={features}
       />
 
@@ -151,137 +157,155 @@ export default function VaillantPage() {
       <section className="container py-16">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold mb-8">
-            Vaillant Produktlinien bei HeizCenter
+            Aktuelle Vaillant-Wärmepumpen
           </h2>
 
           <div className="space-y-8">
             {/* aroTHERM Wärmepumpen */}
             <div className="bg-white p-8 rounded-lg border-2 border-[#0F5B78]/20">
               <h3 className="text-2xl font-bold mb-4 text-[#0F5B78]">
-                aroTHERM Wärmepumpen Serie
+                aroTHERM Wärmepumpen
               </h3>
 
               <div className="mb-6">
                 <h4 className="text-xl font-semibold mb-3">
-                  aroTHERM plus - Monoblock Außenaufstellung
+                  aroTHERM plus – Monoblock für Neubau und Altbau
                 </h4>
                 <p className="text-slate-700 mb-3">
-                  Die beliebteste Luft-Wasser-Wärmepumpe von Vaillant. Kompakte
-                  Monoblock-Bauweise mit allen Komponenten im Außengerät. Ideal
-                  für Einfamilienhäuser.
+                  Luft-Wasser-Wärmepumpe in Monoblock-Bauweise: Der Kältekreis
+                  sitzt komplett im Außengerät.
                 </p>
-                <ul className="list-disc list-inside space-y-2 text-slate-600 mb-4">
-                  <li>Modelle: VWL 65/6 bis VWL 125/6 (6-12 kW)</li>
-                  <li>SCOP: bis 5,3 (A+++)</li>
-                  <li>Vorlauftemperatur: bis 75°C</li>
-                  <li>Kältemittel: R290 (natürliches Propan)</li>
-                  <li>Schallleistung: 52 dB(A) typisch</li>
-                  <li>Active Cooling serienmäßig</li>
-                  <li>Green iQ Label</li>
+                <ul className="list-disc list-inside space-y-2 text-slate-600">
+                  <li>
+                    Leistungsgrößen: 3, 5, 7, 10 und 12 kW (VWL 35/8.1 bis VWL
+                    125/8.1)
+                  </li>
+                  <li>Vorlauftemperatur: bis 75 °C</li>
+                  <li>Kältemittel: R290 (Propan)</li>
+                  <li>
+                    SCOP bis 5,1 (Niedertemperatur), Effizienzklasse A+++ bei
+                    35 °C
+                  </li>
+                  <li>
+                    Schallleistung im Flüsterbetrieb: 45 bis 50 dB(A) je nach
+                    Größe
+                  </li>
+                  <li>Kühlen möglich</li>
                 </ul>
-                <p className="font-semibold text-[#0F5B78]">
-                  Preis ab: 8.000€ (Gerät) | Komplett ab 19.000€
-                </p>
               </div>
 
               <div className="mb-6 pt-6 border-t border-slate-200">
                 <h4 className="text-xl font-semibold mb-3">
-                  aroTHERM Split plus - Geteiltes System
+                  aroTHERM pro – Kompaktklasse für freistehende Häuser
                 </h4>
-                <p className="text-slate-700 mb-3">
-                  Premium Split-System mit separater Innen- und Außeneinheit.
-                  Noch flexibler in der Installation, besonders leise im
-                  Innenbereich.
-                </p>
-                <ul className="list-disc list-inside space-y-2 text-slate-600 mb-4">
-                  <li>Modelle: VWL 35/8.2 AS bis VWL 75/8.2 AS (3-7 kW)</li>
-                  <li>Innengerät nur 19 dB(A) (Flüstermodus)</li>
-                  <li>Vorlauftemperatur: bis 62°C</li>
-                  <li>Kältemittel: R32</li>
-                  <li>Kompakte Inneneinheit</li>
-                  <li>Erhältlich ab November 2024</li>
+                <ul className="list-disc list-inside space-y-2 text-slate-600">
+                  <li>Leistung: 5 bis 11 kW</li>
+                  <li>Vorlauftemperatur: bis 70 °C</li>
+                  <li>SCOP bis 5,0 (Niedertemperatur)</li>
                 </ul>
-                <p className="font-semibold text-[#0F5B78]">
-                  Preis ab: 9.500€ (Gerät) | Komplett ab 21.000€
-                </p>
               </div>
 
               <div className="mb-6 pt-6 border-t border-slate-200">
                 <h4 className="text-xl font-semibold mb-3">
-                  aroTHERM pro - Premium-Serie
+                  aroTHERM Split plus – Split-Gerät
                 </h4>
                 <p className="text-slate-700 mb-3">
-                  Höchste Effizienz und Leistung für anspruchsvolle
-                  Einfamilienhäuser und kleinere Gewerbeobjekte.
+                  Außen- und Inneneinheit sind getrennt und über
+                  Kältemittelleitungen verbunden.
                 </p>
                 <ul className="list-disc list-inside space-y-2 text-slate-600 mb-4">
-                  <li>Leistung: 5-11 kW</li>
-                  <li>SCOP: bis 5,4 (höchste Effizienz)</li>
-                  <li>Vorlauftemperatur: bis 75°C</li>
-                  <li>Optimiert für Niedertemperatur-Anwendungen</li>
-                  <li>Höchste Energieeffizienz</li>
+                  <li>
+                    Leistung: 3 bis 7 kW (VWL 35/8.2 AS bis VWL 75/8.2 AS)
+                  </li>
+                  <li>Vorlauftemperatur: bis 62 °C</li>
+                  <li>Kältemittel: R32 (GWP 675)</li>
                 </ul>
-                <p className="font-semibold text-[#0F5B78]">
-                  Preis ab: 10.000€ (Gerät) | Komplett ab 23.000€
+                <p className="text-sm text-slate-600">
+                  Hinweis: Nach der EU-F-Gase-Verordnung dürfen
+                  Luft-Wasser-Split-Wärmepumpen bis 12 kW mit Kältemitteln ab
+                  einem GWP von 150 – also auch mit R32 – ab 01.01.2027 grundsätzlich nicht
+                  mehr neu in Verkehr gebracht werden. Was das für Ihr Vorhaben
+                  bedeutet, besprechen wir in der Beratung.
                 </p>
               </div>
 
               <div className="pt-6 border-t border-slate-200">
                 <h4 className="text-xl font-semibold mb-3">
-                  flexoTHERM exclusive - Erdwärmepumpe
+                  geoCOMPACT exclusive – Erdwärme mit R290
                 </h4>
                 <p className="text-slate-700 mb-3">
-                  Sole-Wasser-Wärmepumpe für höchste Effizienz durch Nutzung der
-                  Erdwärme. Für Neubau mit ausreichend Grundstücksfläche.
+                  Sole-Wasser-Wärmepumpe: Die Wärme kommt aus Erdsonden oder
+                  Erdkollektoren, ein Außengerät gibt es nicht.
                 </p>
-                <ul className="list-disc list-inside space-y-2 text-slate-600 mb-4">
-                  <li>SCOP: bis 5,5 (höchste Effizienz)</li>
-                  <li>Sehr leise (nur Innengerät)</li>
-                  <li>Erdsonden oder Flächenkollektoren</li>
-                  <li>Modulierender Betrieb für höchsten Komfort</li>
+                <ul className="list-disc list-inside space-y-2 text-slate-600">
+                  <li>Kältemittel: R290 (Propan)</li>
+                  <li>Vorlauftemperatur: bis 75 °C</li>
+                  <li>Warmwasserspeicher (185 Liter) integriert</li>
                 </ul>
-                <p className="font-semibold text-[#0F5B78]">
-                  Preis ab: 12.000€ (Gerät) | Komplett ab 30.000-38.000€
-                </p>
               </div>
             </div>
 
-            {/* ecoTEC Brennwertkessel */}
+            {/* ecoTEC Brennwertgeräte */}
             <div className="bg-white p-8 rounded-lg border-2 border-slate-200">
               <h3 className="text-2xl font-bold mb-4">
-                ecoTEC Brennwertkessel für Gas
+                ecoTEC Gas-Brennwertgeräte
               </h3>
               <p className="text-slate-700 mb-4">
-                Wenn eine Wärmepumpe nicht umsetzbar ist, sind ecoTEC
-                Brennwertkessel die effizienteste Gas-Heizlösung.
+                Wenn eine Wärmepumpe in Ihrem Haus (noch) nicht passt, beraten
+                wir auch zu Gas-Brennwertgeräten von Vaillant.
               </p>
+              <ul className="list-disc list-inside space-y-1 text-slate-600 mb-4">
+                <li>
+                  ecoTEC plus: 10 bis 30 kW, Raumheizungs-Energieeffizienz bis
+                  94 %
+                </li>
+                <li>ecoTEC exclusive: 15 bis 30 kW, Internetmodul inklusive</li>
+              </ul>
+              <p className="text-sm text-slate-600">
+                Wichtig: Für neu eingebaute Gasheizungen schreibt das
+                Gebäudemodernisierungsgesetz ab 2029 einen steigenden Bioanteil
+                vor – oder einen anderen Erfüllungsweg, etwa einen
+                Wärmepumpen-Hybrid. Über die KfW-Heizungsförderung wird ein
+                Gaskessel nicht gefördert. Mehr im{" "}
+                <Link
+                  href="/blog/heizungsgesetz-2024"
+                  className="text-[#0F5B78] font-medium hover:underline"
+                >
+                  Ratgeber Heizungsgesetz 2026
+                </Link>
+                .
+              </p>
+            </div>
 
-              <div className="mb-4">
-                <h4 className="text-lg font-semibold mb-2">
-                  ecoTEC plus - Kompakt-Wandgerät
-                </h4>
-                <ul className="list-disc list-inside space-y-1 text-slate-600">
-                  <li>Leistung: 12-30 kW</li>
-                  <li>Normnutzungsgrad: bis 98%</li>
-                  <li>Kompakte Abmessungen</li>
-                  <li>Ideal für Einfamilienhäuser</li>
-                </ul>
-              </div>
-
-              <div>
-                <h4 className="text-lg font-semibold mb-2">
-                  ecoTEC exclusive - Premium mit Green iQ
-                </h4>
-                <ul className="list-disc list-inside space-y-1 text-slate-600">
-                  <li>Höchste Effizienz und Komfort</li>
-                  <li>Green iQ Technology</li>
-                  <li>Modulierende Leistungsanpassung</li>
-                  <li>Integrierte Warmwasserbereitung möglich</li>
-                </ul>
-              </div>
-
-              <p className="font-semibold text-[#0F5B78] mt-4">
-                ecoTEC Preise: ab 3.200€ (Gerät) | Komplett ab 7.500€
+            {/* Kosten und Förderung */}
+            <div className="bg-[#0F5B78]/5 p-6 rounded-lg">
+              <h3 className="text-xl font-bold mb-3">Kosten und Förderung</h3>
+              <p className="text-slate-700 mb-3">
+                Was eine Wärmepumpe bei Ihnen kostet, hängt vor allem vom Haus
+                ab: Heizlast, Aufstellort, Heizkörper oder Fußbodenheizung und
+                Warmwasser. Einen Überblick über typische Kostenpositionen gibt
+                unser{" "}
+                <Link
+                  href="/blog/waermepumpe-kosten-2026"
+                  className="text-[#0F5B78] font-medium hover:underline"
+                >
+                  Ratgeber „Wärmepumpe Kosten 2026“
+                </Link>
+                . Ihren Preis nennen wir im Angebot – auf Grundlage der
+                Heizlastberechnung.
+              </p>
+              <p className="text-slate-700">
+                Für den Einbau in ein bestehendes Wohngebäude gibt es bis zu{" "}
+                {FOERDER_TEXT.maxStandard} der förderfähigen Kosten als
+                Zuschuss; {FOERDER_TEXT.maxBedingung}. Wie
+                sich das zusammensetzt, steht auf unserer{" "}
+                <Link
+                  href="/foerderung"
+                  className="text-[#0F5B78] font-medium hover:underline"
+                >
+                  Förderseite
+                </Link>
+                .
               </p>
             </div>
           </div>
@@ -298,116 +322,42 @@ export default function VaillantPage() {
 
             <div className="prose prose-slate max-w-none">
               <p className="text-lg text-slate-700 mb-6">
-                Als autorisierter <strong>Vaillant Fachpartner</strong> verbinden
-                wir die Premium-Qualität des Marktführers mit unserem lokalen
-                Service. Von der Planung bis zur langfristigen Betreuung Ihrer
-                Vaillant-Heizung sind wir Ihr Ansprechpartner in der Region
-                Augsburg, Ulm und Memmingen.
+                Wir beraten Sie zu Vaillant-Wärmepumpen, planen die Anlage mit
+                Heizlastberechnung und bauen sie ein. Weil wir Wärmepumpen
+                mehrerer Hersteller einbauen, richtet sich unsere Empfehlung
+                nach Ihrem Haus – nicht nach einem Katalog.
               </p>
 
               <div className="grid md:grid-cols-2 gap-6 my-8">
                 <div className="bg-white p-6 rounded-lg">
                   <h3 className="text-xl font-bold mb-3 text-[#0F5B78]">
-                    Fachpartner-Vorteile
+                    Vor dem Einbau
                   </h3>
                   <ul className="space-y-2 text-slate-700">
-                    <li>✓ Zertifizierte Vaillant-Installation</li>
-                    <li>✓ 5 Jahre Garantie standard, erweiterbar</li>
-                    <li>✓ Original-Ersatzteile ab Lager</li>
-                    <li>✓ Schulung an neuesten Modellen</li>
+                    <li>✓ Beratung vor Ort</li>
+                    <li>✓ Heizlastberechnung für Modell und Größe</li>
+                    <li>✓ Planung des Aufstellorts</li>
+                    <li>✓ Förderberatung (KfW-Heizungsförderung)</li>
                   </ul>
                 </div>
 
                 <div className="bg-white p-6 rounded-lg">
                   <h3 className="text-xl font-bold mb-3 text-[#0F5B78]">
-                    Unsere Leistungen
+                    Nach dem Einbau
                   </h3>
                   <ul className="space-y-2 text-slate-700">
-                    <li>✓ Kostenlose Erstberatung vor Ort</li>
-                    <li>✓ Heizlastberechnung DIN EN 12831</li>
-                    <li>✓ Förderantrag KfW BEG Unterstützung</li>
-                    <li>✓ Installation in 2-3 Tagen</li>
+                    <li>✓ Wartung, auf Wunsch mit Wartungsvertrag</li>
+                    <li>✓ 24/7-Notdienst für Wartungskunden</li>
+                    <li>✓ Ansprechpartner in der Region</li>
                   </ul>
                 </div>
               </div>
 
               <p className="text-lg text-slate-700">
-                Vertrauen Sie auf <strong>20+ Jahre Erfahrung</strong> mit
-                Vaillant-Produkten. Über 60 zufriedene Kunden haben bereits ihre
-                Heizung mit uns modernisiert. Profitieren Sie von unserem
-                Know-how.
+                Den Zuschuss der KfW beantragen Sie als Eigentümer selbst im
+                Portal „Meine KfW“ – wir sagen Ihnen, welche Unterlagen Sie
+                dafür brauchen. Ihr nächster Schritt: ein Beratungstermin.
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Local Installation References */}
-      <section className="container py-16">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8">
-            Vaillant-Installationen in der Region
-          </h2>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-[#0F5B78]/5 p-6 rounded-lg">
-              <h3 className="font-bold text-lg mb-2">
-                Einfamilienhaus Augsburg (2024)
-              </h3>
-              <p className="text-slate-700 mb-3">
-                aroTHERM plus VWL 95/6, 9 kW | Baujahr 1992
-              </p>
-              <ul className="text-sm text-slate-600 space-y-1">
-                <li>• Austausch Gasheizung gegen Wärmepumpe</li>
-                <li>• 300L Warmwasserspeicher uniSTOR</li>
-                <li>• Förderung: bis 80% KfW BEG möglich</li>
-                <li>• JAZ: 4,2 | Einsparung: ~2.100€/Jahr</li>
-              </ul>
-            </div>
-
-            <div className="bg-[#0F5B78]/5 p-6 rounded-lg">
-              <h3 className="font-bold text-lg mb-2">
-                Neubau Ulm (2024)
-              </h3>
-              <p className="text-slate-700 mb-3">
-                aroTHERM pro, 7 kW | KfW40-Standard
-              </p>
-              <ul className="text-sm text-slate-600 space-y-1">
-                <li>• Fußbodenheizung 35°C Vorlauf</li>
-                <li>• SCOP 5,4 (höchste Effizienz)</li>
-                <li>• PV-Anlage 10 kWp gekoppelt</li>
-                <li>• Heizkosten: ~350€/Jahr</li>
-              </ul>
-            </div>
-
-            <div className="bg-[#0F5B78]/5 p-6 rounded-lg">
-              <h3 className="font-bold text-lg mb-2">
-                Doppelhaushälfte Bobingen (2024)
-              </h3>
-              <p className="text-slate-700 mb-3">
-                aroTHERM Split plus VWL 55/8.2 AS
-              </p>
-              <ul className="text-sm text-slate-600 space-y-1">
-                <li>• Leise Inneneinheit nur 19 dB(A)</li>
-                <li>• Altbau mit Heizkörpern</li>
-                <li>• 62°C Vorlauftemperatur</li>
-                <li>• Nachbarn berichten: "kaum hörbar"</li>
-              </ul>
-            </div>
-
-            <div className="bg-[#0F5B78]/5 p-6 rounded-lg">
-              <h3 className="font-bold text-lg mb-2">
-                Reihenmittelhaus Memmingen (2023)
-              </h3>
-              <p className="text-slate-700 mb-3">
-                aroTHERM plus VWL 75/6, 7 kW
-              </p>
-              <ul className="text-sm text-slate-600 space-y-1">
-                <li>• Wenig Platz im Garten</li>
-                <li>• Kompakte Aufstellung</li>
-                <li>• Active Cooling genutzt im Sommer</li>
-                <li>• JAZ: 4,0 trotz Altbau</li>
-              </ul>
             </div>
           </div>
         </div>
@@ -452,48 +402,12 @@ export default function VaillantPage() {
                 Alle Hersteller
               </h4>
               <p className="text-sm text-slate-600">
-                Weitere Premium-Partner entdecken
+                Weitere Hersteller im Überblick
               </p>
             </Link>
           </div>
         </div>
       </section>
-
-      {/* Schema.org Structured Data */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Product",
-            name: "Vaillant aroTHERM Wärmepumpe",
-            brand: {
-              "@type": "Brand",
-              name: "Vaillant",
-            },
-            description:
-              "Premium Wärmepumpen und Heizungssysteme von Vaillant. aroTHERM Serie mit Green iQ Technology. Installation durch HeizCenter.",
-            category: "Wärmepumpe",
-            offers: {
-              "@type": "AggregateOffer",
-              priceCurrency: "EUR",
-              lowPrice: "19000",
-              highPrice: "38000",
-              availability: "https://schema.org/InStock",
-              seller: {
-                "@type": "LocalBusiness",
-                name: "HeizCenter GmbH",
-                telephone: CONTACT.PHONE_SCHEMA,
-              },
-            },
-            manufacturer: {
-              "@type": "Organization",
-              name: "Vaillant GmbH",
-              url: "https://www.vaillant.de",
-            },
-          }),
-        }}
-      />
     </>
   );
 }
