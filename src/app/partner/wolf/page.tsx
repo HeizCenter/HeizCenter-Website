@@ -25,7 +25,7 @@ import { FOERDER_TEXT } from "@/lib/config/foerderung";
 export const metadata: Metadata = {
   title: "Wolf Wärmepumpen: CHA-Monoblock aus Mainburg | HeizCenter",
   description:
-    "WOLF CHA-Monoblock Wärmepumpen, laut WOLF in Mainburg (Bayern) entwickelt und gefertigt: natürliches Kältemittel R290, bis 70 °C Vorlauf ohne Heizstab, Effizienzklasse A+++. Beratung, Planung mit Heizlastberechnung und Einbau durch HeizCenter in der Region Augsburg, Ulm und Memmingen.",
+    "WOLF CHA-Monoblock Wärmepumpen, laut WOLF in Mainburg (Bayern) entwickelt und gefertigt: natürliches Kältemittel R290, bis 70 °C Vorlauf ohne Heizstab, Effizienzklasse A+++. Beratung und Einbau durch HeizCenter in der Region Augsburg, Ulm und Memmingen.",
   alternates: {
     canonical: getCanonicalUrl("/partner/wolf"),
   },
@@ -48,7 +48,7 @@ const benefits = [
   "Natürliches Kältemittel R290, Effizienzklasse A+++ (35 °C)",
   "CHA-07 und CHA-10 mit eingebautem 9-kW-Heizstab für Spitzenlasten",
   "Heizen und aktives Kühlen mit einem Gerät",
-  "Beratung, Planung mit Heizlastberechnung und Einbau durch HeizCenter",
+  "Beratung, Planung und Einbau durch HeizCenter",
 ];
 
 const features = [
@@ -61,7 +61,7 @@ const features = [
   {
     title: "Bis 70 °C ohne Heizstab",
     description:
-      "Im reinen Wärmepumpenbetrieb erreicht die CHA bis 70 °C Vorlauf – ein Plus für Altbauten mit Heizkörpern. Ob Ihre Heizkörper reichen, zeigt die Heizlastberechnung.",
+      "Im reinen Wärmepumpenbetrieb erreicht die CHA bis 70 °C Vorlauf – ein Plus für Altbauten mit Heizkörpern. Ob Ihre Heizkörper reichen, hängt davon ab, wie viel Wärme die einzelnen Räume brauchen.",
     icon: Thermometer,
   },
   {
@@ -94,12 +94,12 @@ const faqs: FAQItem[] = [
   {
     question: "Welche WOLF-Wärmepumpen gibt es?",
     answer:
-      "Für Ein- und Zweifamilienhäuser die CHA-Monoblock 07 und 10, als Paket mit Warmwasserspeicher das Wärmepumpen-Center CHC und für Mehrfamilienhäuser die CHA-16/20 und CHA-20/24. Für Erdwärme gibt es die Sole-Wasser-Wärmepumpe BWS-1 (Kältemittel R407C, siehe Hinweis zur F-Gase-Verordnung oben). Welches Gerät und welche Größe zu Ihrem Haus passen, ermitteln wir mit der Heizlastberechnung.",
+      "Für Ein- und Zweifamilienhäuser die CHA-Monoblock 07 und 10, als Paket mit Warmwasserspeicher das Wärmepumpen-Center CHC und für Mehrfamilienhäuser die CHA-16/20 und CHA-20/24. Für Erdwärme gibt es die Sole-Wasser-Wärmepumpe BWS-1 (Kältemittel R407C, siehe Hinweis zur F-Gase-Verordnung oben). Welche Größe passt, hängt davon ab, wie viel Heizleistung Ihr Haus braucht.",
   },
   {
     question: "Was kostet eine WOLF CHA?",
     answer:
-      "Das hängt vor allem von Ihrem Haus ab: Heizlast, Aufstellort, Heizkörper oder Fußbodenheizung, Warmwasser und Elektroanschluss. Typische Kostenpositionen erklärt unser Ratgeber „Wärmepumpe Kosten 2026“ im Blog. Ihren Preis nennen wir im Angebot, auf Grundlage der Heizlastberechnung. Welcher Zuschuss möglich ist, steht auf unserer Förderseite.",
+      "Das hängt vor allem von Ihrem Haus ab: Heizlast, Aufstellort, Heizkörper oder Fußbodenheizung, Warmwasser und Elektroanschluss. Typische Kostenpositionen erklärt unser Ratgeber „Wärmepumpe Kosten 2026“ im Blog. Ihren Preis nennen wir im Angebot. Welcher Zuschuss möglich ist, steht auf unserer Förderseite.",
   },
   {
     question: "Was ist der Unterschied zwischen CHA und CHC?",
@@ -119,7 +119,7 @@ const faqs: FAQItem[] = [
   {
     question: "Eignet sich WOLF für einen Altbau mit Heizkörpern?",
     answer:
-      "Mit bis zu 70 °C Vorlauf ohne Heizstab passt die CHA auch in viele Altbauten mit Heizkörpern. Entscheidend ist die Heizlastberechnung: Sie zeigt, ob Ihre vorhandenen Heizkörper reichen.",
+      "Mit bis zu 70 °C Vorlauf ohne Heizstab passt die CHA auch in viele Altbauten mit Heizkörpern. Ob Ihre vorhandenen Heizkörper reichen, hängt von ihrer Größe und vom Wärmebedarf der einzelnen Räume ab.",
   },
   {
     question: "Kann ich WOLF mit Photovoltaik kombinieren?",
@@ -146,7 +146,7 @@ export default function WolfPage() {
       />
       <ServiceHero
         title="Wolf Wärmepumpen & Heizungen"
-        description="Die CHA-Monoblock wird laut WOLF in Mainburg entwickelt und gefertigt: natürliches Kältemittel R290, bis 70 °C Vorlauf ohne Heizstab und Effizienzklasse A+++. Wir beraten Sie, planen die Anlage mit Heizlastberechnung und bauen sie ein."
+        description="Die CHA-Monoblock wird laut WOLF in Mainburg entwickelt und gefertigt: natürliches Kältemittel R290, bis 70 °C Vorlauf ohne Heizstab und Effizienzklasse A+++. Beratung, Planung und Einbau übernehmen wir."
         benefits={benefits}
         icon={Award}
         badge="Made in Bavaria"
@@ -193,8 +193,8 @@ export default function WolfPage() {
                   <li>PV-Eingang; Bedienung über WOLF Link und Smartset-App</li>
                 </ul>
                 <p className="text-slate-700">
-                  Welche der beiden Größen passt, ergibt die
-                  Heizlastberechnung für Ihr Haus.
+                  Welche der beiden Größen passt, hängt von der Heizlast Ihres
+                  Hauses ab.
                 </p>
               </div>
 
@@ -301,8 +301,7 @@ export default function WolfPage() {
                 >
                   Ratgeber „Wärmepumpe Kosten 2026“
                 </Link>
-                . Ihren Preis nennen wir im Angebot – auf Grundlage der
-                Heizlastberechnung.
+                . Ihren Preis nennen wir im Angebot.
               </p>
               <p className="text-slate-700">
                 Für den Einbau in ein bestehendes Wohngebäude gibt es bis zu{" "}
@@ -332,10 +331,9 @@ export default function WolfPage() {
 
             <div className="prose prose-slate max-w-none">
               <p className="text-lg text-slate-700 mb-6">
-                Wir beraten Sie zu WOLF-Wärmepumpen, planen die Anlage mit
-                Heizlastberechnung und bauen sie ein. Weil wir Wärmepumpen
-                mehrerer Hersteller einbauen, richtet sich unsere Empfehlung
-                nach Ihrem Haus – nicht nach einem Katalog.
+                Wir beraten Sie zu WOLF-Wärmepumpen und bauen sie ein. Weil wir
+                Wärmepumpen mehrerer Hersteller einbauen, richtet sich unsere
+                Empfehlung nach Ihrem Haus – nicht nach einem Katalog.
               </p>
 
               <div className="grid md:grid-cols-2 gap-6 my-8">
@@ -345,7 +343,7 @@ export default function WolfPage() {
                   </h3>
                   <ul className="space-y-2 text-slate-700">
                     <li>✓ Beratung vor Ort</li>
-                    <li>✓ Heizlastberechnung für Modell und Größe</li>
+                    <li>✓ Gemeinsame Auswahl von Gerät und Größe</li>
                     <li>✓ Planung des Aufstellorts</li>
                     <li>✓ Förderberatung (KfW-Heizungsförderung)</li>
                   </ul>

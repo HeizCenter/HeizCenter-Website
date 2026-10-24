@@ -17,7 +17,7 @@ import { FOERDER_TEXT } from "@/lib/config/foerderung";
 export const metadata: Metadata = {
   title: "Daikin Altherma Wärmepumpen & Klimageräte | HeizCenter",
   description:
-    "Daikin Altherma Wärmepumpen für Heizen, Warmwasser und Kühlen – die neue Altherma 4 H mit natürlichem Kältemittel R290 liefert bis 75 °C Vorlauf. Dazu Split-Klimageräte wie die Perfera. Beratung, Planung mit Heizlastberechnung und Einbau durch HeizCenter.",
+    "Daikin Altherma Wärmepumpen für Heizen, Warmwasser und Kühlen – die neue Altherma 4 H mit natürlichem Kältemittel R290 liefert bis 75 °C Vorlauf. Dazu Split-Klimageräte wie die Perfera. Beratung und Einbau durch HeizCenter.",
   keywords: ["Daikin", "Altherma", "Altherma 4 H", "Wärmepumpe", "Klimaanlage", "Perfera", "Augsburg", "Ulm"],
   alternates: {
     canonical: getCanonicalUrl("/partner/daikin"),
@@ -30,7 +30,7 @@ const benefits = [
   "Betrieb bis −28 °C Außentemperatur (Altherma 4 H und 3 H HT)",
   "Heizen, Warmwasser und – je nach Variante – Kühlen",
   "Daikin-Garantie 2 Jahre, mit „Stand by Me“ 5 Jahre",
-  "Beratung, Planung mit Heizlastberechnung und Einbau durch HeizCenter",
+  "Beratung, Planung und Einbau durch HeizCenter",
 ];
 
 const features = [
@@ -74,12 +74,12 @@ const faqs: FAQItem[] = [
   {
     question: "Welche Daikin-Wärmepumpen gibt es?",
     answer:
-      "Für Altbauten mit Heizkörpern die Altherma 4 H (R290, bis 75 °C) und die Altherma 3 H HT (14 bis 18 kW, bis 70 °C), für Neubau und Niedertemperatur die Altherma 3 R (Split) bzw. Altherma 3 M (Monoblock) und für Erdwärme die Altherma 3 GEO. Welches Gerät und welche Größe zu Ihrem Haus passen, ermitteln wir mit der Heizlastberechnung.",
+      "Für Altbauten mit Heizkörpern die Altherma 4 H (R290, bis 75 °C) und die Altherma 3 H HT (14 bis 18 kW, bis 70 °C), für Neubau und Niedertemperatur die Altherma 3 R (Split) bzw. Altherma 3 M (Monoblock) und für Erdwärme die Altherma 3 GEO. Die passende Größe ergibt sich vor allem aus der Heizlast Ihres Hauses.",
   },
   {
     question: "Was kostet eine Daikin Altherma Wärmepumpe?",
     answer:
-      "Das hängt vor allem von Ihrem Haus ab: Heizlast, Aufstellort, Heizkörper oder Fußbodenheizung, Warmwasser und Elektroanschluss. Typische Kostenpositionen erklärt unser Ratgeber „Wärmepumpe Kosten 2026“ im Blog. Ihren Preis nennen wir im Angebot, auf Grundlage der Heizlastberechnung. Welcher Zuschuss möglich ist, steht auf unserer Förderseite.",
+      "Das hängt vor allem von Ihrem Haus ab: Heizlast, Aufstellort, Heizkörper oder Fußbodenheizung, Warmwasser und Elektroanschluss. Typische Kostenpositionen erklärt unser Ratgeber „Wärmepumpe Kosten 2026“ im Blog. Ihren Preis nennen wir im Angebot. Welcher Zuschuss möglich ist, steht auf unserer Förderseite.",
   },
   {
     question: "Kann eine Daikin Altherma heizen und kühlen?",
@@ -94,7 +94,7 @@ const faqs: FAQItem[] = [
   {
     question: "Eignet sich Daikin für einen Altbau mit Heizkörpern?",
     answer:
-      "Dafür gibt es die Altherma 4 H (bis 75 °C Vorlauf, auch bei −15 °C außen) und die Altherma 3 H HT (bis 70 °C, 14 bis 18 kW). Ob Ihre vorhandenen Heizkörper bleiben können, zeigt die Heizlastberechnung.",
+      "Dafür gibt es die Altherma 4 H (bis 75 °C Vorlauf, auch bei −15 °C außen) und die Altherma 3 H HT (bis 70 °C, 14 bis 18 kW). Ob Ihre vorhandenen Heizkörper bleiben können, hängt davon ab, wie viel Wärme die einzelnen Räume brauchen.",
   },
   {
     question: "Wie effizient sind Daikin-Wärmepumpen?",
@@ -118,7 +118,7 @@ export default function DaikinPage() {
     <>
       <ServiceHero
         title="Daikin Wärmepumpen & Klimaanlagen"
-        description="Altherma-Wärmepumpen heizen, bereiten Warmwasser und können je nach Variante kühlen. Die neue Altherma 4 H mit natürlichem Kältemittel R290 liefert bis 75 °C Vorlauf. Wir beraten Sie, planen die Anlage mit Heizlastberechnung und bauen sie ein."
+        description="Altherma-Wärmepumpen heizen, bereiten Warmwasser und können je nach Variante kühlen. Die neue Altherma 4 H mit natürlichem Kältemittel R290 liefert bis 75 °C Vorlauf. Wir beraten Sie, planen die Anlage und bauen sie ein."
         benefits={benefits}
         icon={Award}
         badge="Seit 1924"
@@ -138,7 +138,7 @@ export default function DaikinPage() {
 
               <div className="mb-6">
                 <h4 className="text-xl font-semibold mb-3">Altherma 4 H – Hochtemperatur mit R290</h4>
-                <p className="text-slate-700 mb-3">Für Altbauten mit Heizkörpern; ob Ihre Heizkörper bleiben können, zeigt die Heizlastberechnung.</p>
+                <p className="text-slate-700 mb-3">Für Altbauten mit Heizkörpern; ob Ihre Heizkörper bleiben können, hängt von deren Größe und vom Wärmebedarf der Räume ab.</p>
                 <ul className="list-disc list-inside space-y-2 text-slate-600">
                   <li>Vorlauftemperatur: bis 75 °C, auch bei −15 °C außen (8 bis 14 kW)</li>
                   <li>Kältemittel: R290 (Propan)</li>
@@ -223,7 +223,7 @@ export default function DaikinPage() {
                 <Link href="/blog/waermepumpe-kosten-2026" className="text-[#0F5B78] font-medium hover:underline">
                   Ratgeber „Wärmepumpe Kosten 2026“
                 </Link>
-                . Ihren Preis nennen wir im Angebot – auf Grundlage der Heizlastberechnung.
+                . Ihren Preis nennen wir im Angebot.
               </p>
               <p className="text-slate-700">
                 Für den Einbau einer Wärmepumpe in ein bestehendes Wohngebäude gibt es bis zu {FOERDER_TEXT.maxStandard} der förderfähigen Kosten als Zuschuss; {FOERDER_TEXT.maxBedingung}. Wie sich das zusammensetzt, steht auf unserer{" "}
@@ -244,14 +244,14 @@ export default function DaikinPage() {
             <h2 className="text-3xl font-bold mb-8">Warum Daikin mit HeizCenter?</h2>
             <div className="prose prose-slate max-w-none">
               <p className="text-lg text-slate-700 mb-6">
-                Wir beraten Sie zu Daikin-Wärmepumpen, planen die Anlage mit Heizlastberechnung und bauen sie ein. Weil wir Wärmepumpen mehrerer Hersteller einbauen, richtet sich unsere Empfehlung nach Ihrem Haus – nicht nach einem Katalog.
+                Wir beraten Sie zu Daikin-Wärmepumpen und bauen sie ein. Weil wir Wärmepumpen mehrerer Hersteller einbauen, richtet sich unsere Empfehlung nach Ihrem Haus – nicht nach einem Katalog.
               </p>
               <div className="grid md:grid-cols-2 gap-6 my-8">
                 <div className="bg-white p-6 rounded-lg">
                   <h3 className="text-xl font-bold mb-3 text-[#0F5B78]">Vor dem Einbau</h3>
                   <ul className="space-y-2 text-slate-700">
                     <li>✓ Beratung vor Ort</li>
-                    <li>✓ Heizlastberechnung und Dimensionierung</li>
+                    <li>✓ Auswahl des Altherma-Modells</li>
                     <li>✓ Planung des Aufstellorts</li>
                     <li>✓ Förderberatung (KfW-Heizungsförderung)</li>
                   </ul>

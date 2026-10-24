@@ -23,7 +23,7 @@ import { FOERDER_TEXT } from "@/lib/config/foerderung";
 export const metadata: Metadata = {
   title: "Vaillant Wärmepumpen: aroTHERM plus, pro & Split plus | HeizCenter",
   description:
-    "Vaillant aroTHERM plus mit natürlichem Kältemittel R290 und bis zu 75 °C Vorlauf, dazu aroTHERM pro, Split plus und geoCOMPACT exclusive für Erdwärme. Beratung, Planung mit Heizlastberechnung und Einbau durch HeizCenter in der Region Augsburg, Ulm und Memmingen.",
+    "Vaillant aroTHERM plus mit natürlichem Kältemittel R290 und bis zu 75 °C Vorlauf, dazu aroTHERM pro, Split plus und geoCOMPACT exclusive für Erdwärme. Beratung und Einbau durch HeizCenter in der Region Augsburg, Ulm und Memmingen.",
   alternates: {
     canonical: getCanonicalUrl("/partner/vaillant"),
   },
@@ -46,7 +46,7 @@ const benefits = [
   "Natürliches Kältemittel R290, Effizienzklasse A+++ (35 °C)",
   "Heizen, Warmwasser und Kühlen mit einem Gerät",
   "5 Jahre Vaillant-Garantie bei Registrierung, verbundenem Internetmodul und jährlicher Wartung",
-  "Beratung, Planung mit Heizlastberechnung und Einbau durch HeizCenter",
+  "Beratung und Einbau durch HeizCenter",
 ];
 
 const features = [
@@ -59,7 +59,7 @@ const features = [
   {
     title: "Bis 75 °C Vorlauf",
     description:
-      "Die aroTHERM plus liefert laut Vaillant bis 75 °C Vorlauftemperatur. Damit kommt sie für viele Altbauten mit Heizkörpern in Frage – ob Ihre Heizkörper reichen, zeigt die Heizlastberechnung.",
+      "Die aroTHERM plus liefert laut Vaillant bis 75 °C Vorlauftemperatur. Damit kommt sie für viele Altbauten mit Heizkörpern in Frage – ob Ihre Heizkörper reichen, hängt davon ab, wie viel Wärme die einzelnen Räume brauchen.",
     icon: Thermometer,
   },
   {
@@ -92,12 +92,12 @@ const faqs: FAQItem[] = [
   {
     question: "Welche Vaillant-Wärmepumpen gibt es aktuell?",
     answer:
-      "Zum aktuellen Programm gehören die Luft-Wasser-Wärmepumpen aroTHERM plus (Monoblock, R290, bis 75 °C), aroTHERM pro (Kompaktklasse für freistehende Häuser, bis 70 °C), aroTHERM Split plus (Split-Gerät mit R32) und aroTHERM perform sowie für Erdwärme die geoCOMPACT exclusive mit R290. Welches Gerät und welche Größe zu Ihrem Haus passen, ermitteln wir mit der Heizlastberechnung.",
+      "Zum aktuellen Programm gehören die Luft-Wasser-Wärmepumpen aroTHERM plus (Monoblock, R290, bis 75 °C), aroTHERM pro (Kompaktklasse für freistehende Häuser, bis 70 °C), aroTHERM Split plus (Split-Gerät mit R32) und aroTHERM perform sowie für Erdwärme die geoCOMPACT exclusive mit R290. Die nötige Größe richtet sich vor allem nach der Heizlast Ihres Hauses.",
   },
   {
     question: "Was kostet eine Vaillant aroTHERM?",
     answer:
-      "Das hängt vor allem von Ihrem Haus ab: Heizlast, Aufstellort, Heizkörper oder Fußbodenheizung, Warmwasser und Elektroanschluss. Typische Kostenpositionen erklärt unser Ratgeber „Wärmepumpe Kosten 2026“ im Blog. Ihren Preis nennen wir im Angebot, auf Grundlage der Heizlastberechnung. Welcher Zuschuss möglich ist, steht auf unserer Förderseite.",
+      "Das hängt vor allem von Ihrem Haus ab: Heizlast, Aufstellort, Heizkörper oder Fußbodenheizung, Warmwasser und Elektroanschluss. Typische Kostenpositionen erklärt unser Ratgeber „Wärmepumpe Kosten 2026“ im Blog. Den Preis für Ihr Haus nennen wir im Angebot. Welcher Zuschuss möglich ist, steht auf unserer Förderseite.",
   },
   {
     question: "Was ist der Unterschied zwischen aroTHERM plus und Split plus?",
@@ -107,7 +107,7 @@ const faqs: FAQItem[] = [
   {
     question: "Eignet sich Vaillant für einen Altbau mit Heizkörpern?",
     answer:
-      "Mit bis zu 75 °C Vorlauf eignet sich die aroTHERM plus für viele Altbauten mit Heizkörpern. Ob Ihre vorhandenen Heizkörper reichen oder einzelne getauscht werden sollten, zeigt die Heizlastberechnung.",
+      "Mit bis zu 75 °C Vorlauf eignet sich die aroTHERM plus für viele Altbauten mit Heizkörpern. Ob Ihre vorhandenen Heizkörper reichen oder einzelne getauscht werden sollten, hängt von ihrer Größe und vom Wärmebedarf der Räume ab.",
   },
   {
     question: "Wie laut ist eine Vaillant aroTHERM plus?",
@@ -139,7 +139,7 @@ export default function VaillantPage() {
       />
       <ServiceHero
         title="Vaillant Wärmepumpen & Heizungen"
-        description="Die aroTHERM plus mit natürlichem Kältemittel R290 liefert bis 75 °C Vorlauf – für Neubau und viele Altbauten mit Heizkörpern. Dazu kommen aroTHERM pro, Split plus und die Erdwärmepumpe geoCOMPACT exclusive. Wir beraten Sie, planen die Anlage mit Heizlastberechnung und bauen sie ein."
+        description="Die aroTHERM plus mit natürlichem Kältemittel R290 liefert bis 75 °C Vorlauf – für Neubau und viele Altbauten mit Heizkörpern. Dazu kommen aroTHERM pro, Split plus und die Erdwärmepumpe geoCOMPACT exclusive. Wir beraten Sie und bauen Ihre Wärmepumpe ein."
         benefits={benefits}
         icon={Award}
         badge="Seit 1874"
@@ -291,8 +291,7 @@ export default function VaillantPage() {
                 >
                   Ratgeber „Wärmepumpe Kosten 2026“
                 </Link>
-                . Ihren Preis nennen wir im Angebot – auf Grundlage der
-                Heizlastberechnung.
+                . Den Preis für Ihr Haus nennen wir im Angebot.
               </p>
               <p className="text-slate-700">
                 Für den Einbau in ein bestehendes Wohngebäude gibt es bis zu{" "}
@@ -322,10 +321,9 @@ export default function VaillantPage() {
 
             <div className="prose prose-slate max-w-none">
               <p className="text-lg text-slate-700 mb-6">
-                Wir beraten Sie zu Vaillant-Wärmepumpen, planen die Anlage mit
-                Heizlastberechnung und bauen sie ein. Weil wir Wärmepumpen
-                mehrerer Hersteller einbauen, richtet sich unsere Empfehlung
-                nach Ihrem Haus – nicht nach einem Katalog.
+                Wir beraten Sie zu Vaillant-Wärmepumpen und bauen sie ein. Weil
+                wir Wärmepumpen mehrerer Hersteller einbauen, richtet sich
+                unsere Empfehlung nach Ihrem Haus – nicht nach einem Katalog.
               </p>
 
               <div className="grid md:grid-cols-2 gap-6 my-8">
@@ -335,7 +333,7 @@ export default function VaillantPage() {
                   </h3>
                   <ul className="space-y-2 text-slate-700">
                     <li>✓ Beratung vor Ort</li>
-                    <li>✓ Heizlastberechnung für Modell und Größe</li>
+                    <li>✓ Angebot für Ihr Haus</li>
                     <li>✓ Planung des Aufstellorts</li>
                     <li>✓ Förderberatung (KfW-Heizungsförderung)</li>
                   </ul>

@@ -23,7 +23,7 @@ import { FOERDER_TEXT } from "@/lib/config/foerderung";
 export const metadata: Metadata = {
   title: "Viessmann Wärmepumpen: Vitocal 250-A, 150-A, 200-A ie | HeizCenter",
   description:
-    "Viessmann Vitocal Wärmepumpen mit natürlichem Kältemittel R290 – vom Einstiegsmodell Vitocal 150-A bis zur neuen Vitocal 200-A ie mit bis zu 75 °C Vorlauf. Beratung, Planung mit Heizlastberechnung und Einbau durch HeizCenter in der Region Augsburg, Ulm und Memmingen.",
+    "Viessmann Vitocal Wärmepumpen mit natürlichem Kältemittel R290 – vom Einstiegsmodell Vitocal 150-A bis zur neuen Vitocal 200-A ie mit bis zu 75 °C Vorlauf. Beratung, Planung und Einbau durch HeizCenter in der Region Augsburg, Ulm und Memmingen.",
   keywords: [
     "Viessmann",
     "Vitocal",
@@ -46,7 +46,7 @@ const benefits = [
   "Vorlauf bis 70 °C, mit der neuen Vitocal 200-A ie bis 75 °C",
   "Effizienzklasse bis A+++ (je nach Modell und Typ)",
   "Viessmann-Garantie bis 5 Jahre bei Aufschaltung über ViCare, mit System Plus bis 6 Jahre",
-  "Beratung, Planung mit Heizlastberechnung und Einbau durch HeizCenter",
+  "Beratung, Planung und Einbau durch HeizCenter",
 ];
 
 const features = [
@@ -65,7 +65,7 @@ const features = [
   {
     title: "Vorlauf bis 70 °C – oder 75 °C",
     description:
-      "Vitocal 250-A und 150-A liefern bis 70 °C Vorlauf (bei bis zu −10 °C außen), die neue Vitocal 200-A ie bis 75 °C. Ob Ihre Heizkörper reichen, zeigt die Heizlastberechnung.",
+      "Vitocal 250-A und 150-A liefern bis 70 °C Vorlauf (bei bis zu −10 °C außen), die neue Vitocal 200-A ie bis 75 °C. Ob Ihre Heizkörper reichen, hängt von ihrer Größe und vom Wärmebedarf der einzelnen Räume ab.",
     icon: Thermometer,
   },
   {
@@ -92,12 +92,12 @@ const faqs: FAQItem[] = [
   {
     question: "Welche Viessmann-Wärmepumpen kommen für mein Haus in Frage?",
     answer:
-      "Zum Viessmann-Programm für Ein- und Zweifamilienhäuser gehören unter anderem die Luft-Wasser-Wärmepumpen Vitocal 250-A und 150-A (beide mit R290 und bis 70 °C Vorlauf), die neue Vitocal 200-A ie für Vorlauftemperaturen bis 75 °C sowie die Sole-Wasser-Wärmepumpen Vitocal 222-G und 333-G für Erdwärme. Welches Modell und welche Größe zu Ihrem Haus passen, ermitteln wir mit der Heizlastberechnung.",
+      "Zum Viessmann-Programm für Ein- und Zweifamilienhäuser gehören unter anderem die Luft-Wasser-Wärmepumpen Vitocal 250-A und 150-A (beide mit R290 und bis 70 °C Vorlauf), die neue Vitocal 200-A ie für Vorlauftemperaturen bis 75 °C sowie die Sole-Wasser-Wärmepumpen Vitocal 222-G und 333-G für Erdwärme. Welche Größe passt, hängt von der Heizlast Ihres Hauses ab.",
   },
   {
     question: "Was kostet eine Viessmann-Wärmepumpe?",
     answer:
-      "Das hängt vor allem von Ihrem Haus ab: Heizlast, Aufstellort, Heizkörper oder Fußbodenheizung, Warmwasser und Elektroanschluss. Typische Kostenpositionen erklärt unser Ratgeber „Wärmepumpe Kosten 2026“ im Blog. Ihren Preis nennen wir im Angebot, auf Grundlage der Heizlastberechnung. Welcher Zuschuss möglich ist, steht auf unserer Förderseite.",
+      "Das hängt vor allem von Ihrem Haus ab: Heizlast, Aufstellort, Heizkörper oder Fußbodenheizung, Warmwasser und Elektroanschluss. Typische Kostenpositionen erklärt unser Ratgeber „Wärmepumpe Kosten 2026“ im Blog. Ihren Preis nennen wir im Angebot. Welcher Zuschuss möglich ist, steht auf unserer Förderseite.",
   },
   {
     question: "Wie hat die Vitocal 250-A bei Stiftung Warentest abgeschnitten?",
@@ -107,7 +107,7 @@ const faqs: FAQItem[] = [
   {
     question: "Eignet sich Viessmann für einen Altbau mit Heizkörpern?",
     answer:
-      "Oft ja. Die Vitocal 250-A und 150-A liefern laut Viessmann bis 70 °C Vorlauf (bei bis zu −10 °C außen), die neue Vitocal 200-A ie bis 75 °C. Ob Ihre vorhandenen Heizkörper ausreichen oder einzelne getauscht werden sollten, zeigt die Heizlastberechnung.",
+      "Oft ja. Die Vitocal 250-A und 150-A liefern laut Viessmann bis 70 °C Vorlauf (bei bis zu −10 °C außen), die neue Vitocal 200-A ie bis 75 °C. Ob Ihre vorhandenen Heizkörper ausreichen oder einzelne getauscht werden sollten, hängt davon ab, wie viel Wärme jeder Raum braucht.",
   },
   {
     question: "Wie laut ist eine Vitocal 250-A?",
@@ -139,7 +139,7 @@ export default function ViessmannPage() {
       />
       <ServiceHero
         title="Viessmann Wärmepumpen & Heizungen"
-        description="Vitocal-Wärmepumpen für Neubau und Altbau – vom Einstiegsmodell Vitocal 150-A bis zur neuen Vitocal 200-A ie für hohe Vorlauftemperaturen. Wir beraten Sie, planen die Anlage mit Heizlastberechnung und bauen sie ein."
+        description="Vitocal-Wärmepumpen für Neubau und Altbau – vom Einstiegsmodell Vitocal 150-A bis zur neuen Vitocal 200-A ie für hohe Vorlauftemperaturen. Wir beraten Sie, planen die Anlage und bauen sie ein."
         benefits={benefits}
         icon={Award}
         badge="Vitocal-Wärmepumpen"
@@ -228,7 +228,7 @@ export default function ViessmannPage() {
                 </ul>
                 <p className="text-slate-700">
                   Ob Ihre vorhandenen Heizkörper für eine Wärmepumpe reichen,
-                  zeigt die Heizlastberechnung.
+                  hängt von ihrer Größe und vom Wärmebedarf der Räume ab.
                 </p>
               </div>
 
@@ -300,8 +300,7 @@ export default function ViessmannPage() {
                 >
                   Ratgeber „Wärmepumpe Kosten 2026“
                 </Link>
-                . Ihren Preis nennen wir im Angebot – auf Grundlage der
-                Heizlastberechnung.
+                . Ihren Preis nennen wir im Angebot.
               </p>
               <p className="text-slate-700">
                 Für den Einbau in ein bestehendes Wohngebäude gibt es bis zu{" "}
@@ -331,10 +330,9 @@ export default function ViessmannPage() {
 
             <div className="prose prose-slate max-w-none">
               <p className="text-lg text-slate-700 mb-6">
-                Wir beraten Sie zu Viessmann-Wärmepumpen, planen die Anlage mit
-                Heizlastberechnung und bauen sie ein. Weil wir Wärmepumpen
-                mehrerer Hersteller einbauen, richtet sich unsere Empfehlung
-                nach Ihrem Haus – nicht nach einem Katalog.
+                Wir beraten Sie zu Viessmann-Wärmepumpen und bauen sie ein.
+                Weil wir Wärmepumpen mehrerer Hersteller einbauen, richtet sich
+                unsere Empfehlung nach Ihrem Haus – nicht nach einem Katalog.
               </p>
 
               <div className="grid md:grid-cols-2 gap-6 my-8">
@@ -344,7 +342,7 @@ export default function ViessmannPage() {
                   </h3>
                   <ul className="space-y-2 text-slate-700">
                     <li>✓ Beratung vor Ort</li>
-                    <li>✓ Heizlastberechnung für Modell und Größe</li>
+                    <li>✓ Auswahl von Modell und Größe</li>
                     <li>✓ Planung des Aufstellorts</li>
                     <li>✓ Förderberatung (KfW-Heizungsförderung)</li>
                   </ul>

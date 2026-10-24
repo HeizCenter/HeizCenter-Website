@@ -31,7 +31,7 @@ const kindZuschlag = euro(FOERDERUNG.kindZuschlag);
 export const metadata: Metadata = {
   title: "ZEWOTHERM LAMBDA Wärmepumpe | HeizCenter",
   description:
-    "ZEWOTHERM Wärmepumpe LAMBDA: Luft-Wasser mit patentiertem 3K-Prozess, laut Hersteller SCOP bis 6,1 bei 35 °C (EN 14825), Vorlauf bis 70 °C ohne Heizstab, R290. Beratung, Planung mit Heizlastberechnung und Einbau durch HeizCenter in Bayern & Baden-Württemberg.",
+    "ZEWOTHERM Wärmepumpe LAMBDA: Luft-Wasser mit patentiertem 3K-Prozess, laut Hersteller SCOP bis 6,1 bei 35 °C (EN 14825), Vorlauf bis 70 °C ohne Heizstab, R290. Beratung, Planung und Einbau durch HeizCenter in Bayern & Baden-Württemberg.",
   keywords: [
     "ZEWOTHERM",
     "LAMBDA",
@@ -68,7 +68,7 @@ const features = [
   {
     title: "Bis 70 °C ohne Heizstab",
     description:
-      "Bis 70 °C Vorlauftemperatur ohne Zusatz-Heizstab – damit kommt die LAMBDA auch für Altbauten mit Heizkörpern in Frage. Ob Ihre Heizkörper reichen, zeigt die Heizlastberechnung.",
+      "Bis 70 °C Vorlauftemperatur ohne Zusatz-Heizstab – damit kommt die LAMBDA auch für Altbauten mit Heizkörpern in Frage. Ob Ihre Heizkörper reichen, hängt von ihrer Größe und vom Wärmebedarf der einzelnen Räume ab.",
     icon: Thermometer,
   },
   {
@@ -113,7 +113,7 @@ const faqs: FAQItem[] = [
   {
     question: "Welche LAMBDA-Modelle gibt es?",
     answer:
-      "EU10L, EU13L und EU15L sind laut ZEWOTHERM kompakte Luft/Wasser-Wärmepumpen für Ein- und Zweifamilienhäuser mit 9,2 bis 15,4 kW Heizleistung bei −10 °C. Die EU20L (bis 21 kW) ist für größere Wohngebäude oder anspruchsvollere Sanierungen gedacht, die 2026 eingeführte EU35L (bis 33 kW) für große Anlagen und Kaskaden. Welches Modell zu Ihrem Gebäude passt, ermitteln wir mit der Heizlastberechnung.",
+      "EU10L, EU13L und EU15L sind laut ZEWOTHERM kompakte Luft/Wasser-Wärmepumpen für Ein- und Zweifamilienhäuser mit 9,2 bis 15,4 kW Heizleistung bei −10 °C. Die EU20L (bis 21 kW) ist für größere Wohngebäude oder anspruchsvollere Sanierungen gedacht, die 2026 eingeführte EU35L (bis 33 kW) für große Anlagen und Kaskaden. Welches Modell passt, hängt von der Heizlast Ihres Gebäudes ab.",
   },
   {
     question: "Was ist der 3K-Prozess?",
@@ -123,7 +123,7 @@ const faqs: FAQItem[] = [
   {
     question: "Eignet sich die LAMBDA auch für Altbau?",
     answer:
-      "Ja, mit bis zu 70 °C Vorlauf ohne Heizstab kommt sie auch für Altbauten mit Heizkörpern in Frage. Ob Ihre vorhandenen Heizkörper reichen oder einzelne getauscht werden sollten, zeigt die Heizlastberechnung.",
+      "Ja, mit bis zu 70 °C Vorlauf ohne Heizstab kommt sie auch für Altbauten mit Heizkörpern in Frage. Ob Ihre vorhandenen Heizkörper reichen oder einzelne getauscht werden sollten, hängt davon ab, wie viel Wärme jeder Raum braucht.",
   },
   {
     question: "Wie laut ist die ZEWOTHERM LAMBDA?",
@@ -253,8 +253,8 @@ export default function ZewothermPage() {
                 </p>
                 <p className="text-slate-700">
                   Kompakte Luft/Wasser-Wärmepumpen für Ein- und
-                  Zweifamilienhäuser. Welche Größe passt, zeigt die
-                  Heizlastberechnung.
+                  Zweifamilienhäuser. Welche Größe passt, richtet sich nach der
+                  Heizleistung, die Ihr Haus braucht.
                 </p>
               </div>
 
@@ -438,8 +438,7 @@ export default function ZewothermPage() {
           </h2>
           <div className="prose prose-slate max-w-none">
             <p className="text-lg text-slate-700 mb-6">
-              Wir beraten Sie zur LAMBDA, planen die Anlage mit
-              Heizlastberechnung und bauen sie ein. Den Zuschuss der KfW
+              Wir beraten Sie zur LAMBDA und bauen sie ein. Den Zuschuss der KfW
               beantragen Sie als Eigentümer selbst im Portal „Meine KfW“ – wir
               sagen Ihnen, welche Unterlagen Sie dafür brauchen.
             </p>
@@ -451,7 +450,7 @@ export default function ZewothermPage() {
                 </h3>
                 <ul className="space-y-2 text-slate-700">
                   <li>✓ Beratung vor Ort in der Region</li>
-                  <li>✓ Heizlastberechnung für Modell und Größe</li>
+                  <li>✓ Auswahl des LAMBDA-Modells</li>
                   <li>✓ Planung des Aufstellorts</li>
                   <li>✓ Förderberatung KfW 458 &amp; Ergänzungskredit 358/359</li>
                 </ul>
@@ -471,8 +470,8 @@ export default function ZewothermPage() {
 
             <p className="text-lg text-slate-700">
               Wir bauen Wärmepumpen mehrerer Hersteller ein. Ob die LAMBDA oder
-              ein anderes Gerät besser zu Ihrem Haus passt, zeigt die
-              Heizlastberechnung – und das sagen wir Ihnen offen.
+              ein anderes Gerät besser zu Ihrem Haus passt, sagen wir Ihnen
+              offen.
             </p>
           </div>
         </div>

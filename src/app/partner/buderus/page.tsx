@@ -25,7 +25,7 @@ import { FOERDER_TEXT } from "@/lib/config/foerderung";
 export const metadata: Metadata = {
   title: "Buderus Wärmepumpen: Logatherm WLW186i & mehr | HeizCenter",
   description:
-    "Buderus Logatherm Wärmepumpen mit natürlichem Kältemittel R290 – unerhört leise und mit bis zu 75 °C Vorlauf. Beratung, Planung mit Heizlastberechnung und Einbau durch HeizCenter in der Region Augsburg, Ulm und Memmingen.",
+    "Buderus Logatherm Wärmepumpen mit natürlichem Kältemittel R290 – unerhört leise und mit bis zu 75 °C Vorlauf. Beratung, Planung und Einbau durch HeizCenter in der Region Augsburg, Ulm und Memmingen.",
   alternates: {
     canonical: getCanonicalUrl("/partner/buderus"),
   },
@@ -48,7 +48,7 @@ const benefits = [
   "Bis 75 °C Vorlauf mit der Logatherm WLW186i AR",
   "Natürliches Kältemittel R290 bei WLW186i AR, WLW176i AR und WSW186i",
   "Buderus: gegründet 1731, seit 2003 Teil der Bosch-Gruppe",
-  "Beratung, Planung mit Heizlastberechnung und Einbau durch HeizCenter",
+  "Beratung, Einbau und Wartung durch HeizCenter",
 ];
 
 const features = [
@@ -67,7 +67,7 @@ const features = [
   {
     title: "Bis 75 °C Vorlauf",
     description:
-      "Die Logatherm WLW186i AR liefert bis 75 °C, bei −10 °C außen noch 65 °C – passend für viele Altbauten mit Heizkörpern. Ob Ihre Heizkörper reichen, zeigt die Heizlastberechnung.",
+      "Die Logatherm WLW186i AR liefert bis 75 °C, bei −10 °C außen noch 65 °C – passend für viele Altbauten mit Heizkörpern. Ob Ihre Heizkörper reichen, hängt von deren Größe und vom Wärmebedarf der Räume ab.",
     icon: Thermometer,
   },
   {
@@ -94,12 +94,12 @@ const faqs: FAQItem[] = [
   {
     question: "Welche Buderus-Wärmepumpen gibt es aktuell?",
     answer:
-      "Zum Programm gehören unter anderem die Luft-Wasser-Wärmepumpen Logatherm WLW186i AR (bis 75 °C), WLW186i MBE+ AR (für größere Häuser) und WLW176i AR (Neubau, bis 60 °C) sowie die Sole-Wasser-Wärmepumpe WSW186i mit R290. Welches Gerät und welche Größe zu Ihrem Haus passen, ermitteln wir mit der Heizlastberechnung.",
+      "Zum Programm gehören unter anderem die Luft-Wasser-Wärmepumpen Logatherm WLW186i AR (bis 75 °C), WLW186i MBE+ AR (für größere Häuser) und WLW176i AR (Neubau, bis 60 °C) sowie die Sole-Wasser-Wärmepumpe WSW186i mit R290. Wie groß das Gerät sein muss, bestimmt vor allem die Heizlast Ihres Hauses.",
   },
   {
     question: "Was kostet eine Buderus Logatherm?",
     answer:
-      "Das hängt vor allem von Ihrem Haus ab: Heizlast, Aufstellort, Heizkörper oder Fußbodenheizung, Warmwasser und Elektroanschluss. Typische Kostenpositionen erklärt unser Ratgeber „Wärmepumpe Kosten 2026“ im Blog. Ihren Preis nennen wir im Angebot, auf Grundlage der Heizlastberechnung. Welcher Zuschuss möglich ist, steht auf unserer Förderseite.",
+      "Das hängt vor allem von Ihrem Haus ab: Heizlast, Aufstellort, Heizkörper oder Fußbodenheizung, Warmwasser und Elektroanschluss. Typische Kostenpositionen erklärt unser Ratgeber „Wärmepumpe Kosten 2026“ im Blog. Ihren Preis nennen wir im Angebot. Welcher Zuschuss möglich ist, steht auf unserer Förderseite.",
   },
   {
     question: "Wie hat die WLW186i bei Stiftung Warentest abgeschnitten?",
@@ -114,7 +114,7 @@ const faqs: FAQItem[] = [
   {
     question: "Eignet sich Buderus für einen Altbau mit Heizkörpern?",
     answer:
-      "Die Logatherm WLW186i AR liefert bis 75 °C Vorlauf, bei −10 °C außen noch 65 °C – damit passt sie zu vielen Altbauten mit Heizkörpern. Ob Ihre vorhandenen Heizkörper reichen, zeigt die Heizlastberechnung.",
+      "Die Logatherm WLW186i AR liefert bis 75 °C Vorlauf, bei −10 °C außen noch 65 °C – damit passt sie zu vielen Altbauten mit Heizkörpern. Ob Ihre vorhandenen Heizkörper reichen, hängt davon ab, wie viel Wärme jeder Raum braucht.",
   },
   {
     question: "Was ist der Unterschied zwischen WLW176i und WLW186i?",
@@ -146,7 +146,7 @@ export default function BuderusPage() {
       />
       <ServiceHero
         title="Buderus Wärmepumpen & Heizungen"
-        description="Unerhört leise Logatherm-Wärmepumpen mit natürlichem Kältemittel R290 – mit bis zu 75 °C Vorlauf auch für Altbauten mit Heizkörpern. Wir beraten Sie, planen die Anlage mit Heizlastberechnung und bauen sie ein."
+        description="Unerhört leise Logatherm-Wärmepumpen mit natürlichem Kältemittel R290 – mit bis zu 75 °C Vorlauf auch für Altbauten mit Heizkörpern. Wir beraten Sie, planen die Anlage mit Ihnen und bauen sie ein."
         benefits={benefits}
         icon={Award}
         badge="Seit 1731"
@@ -298,8 +298,7 @@ export default function BuderusPage() {
                 >
                   Ratgeber „Wärmepumpe Kosten 2026“
                 </Link>
-                . Ihren Preis nennen wir im Angebot – auf Grundlage der
-                Heizlastberechnung.
+                . Ihren Preis nennen wir im Angebot.
               </p>
               <p className="text-slate-700">
                 Für den Einbau in ein bestehendes Wohngebäude gibt es bis zu{" "}
@@ -329,10 +328,10 @@ export default function BuderusPage() {
 
             <div className="prose prose-slate max-w-none">
               <p className="text-lg text-slate-700 mb-6">
-                Wir beraten Sie zu Buderus-Wärmepumpen, planen die Anlage mit
-                Heizlastberechnung und bauen sie ein. Weil wir Wärmepumpen
-                mehrerer Hersteller einbauen, richtet sich unsere Empfehlung
-                nach Ihrem Haus – nicht nach einem Katalog.
+                Wir beraten Sie zu Buderus-Wärmepumpen und übernehmen den
+                Einbau. Weil wir Wärmepumpen mehrerer Hersteller einbauen,
+                richtet sich unsere Empfehlung nach Ihrem Haus – nicht nach
+                einem Katalog.
               </p>
 
               <div className="grid md:grid-cols-2 gap-6 my-8">
@@ -342,7 +341,7 @@ export default function BuderusPage() {
                   </h3>
                   <ul className="space-y-2 text-slate-700">
                     <li>✓ Beratung vor Ort</li>
-                    <li>✓ Heizlastberechnung für Modell und Größe</li>
+                    <li>✓ Auswahl von Gerät und Größe</li>
                     <li>✓ Planung des Aufstellorts</li>
                     <li>✓ Förderberatung (KfW-Heizungsförderung)</li>
                   </ul>

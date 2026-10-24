@@ -474,3 +474,18 @@ COMMIT FREIGEGEBEN
 
 ### Ergebnis
 COMMIT FREIGEGEBEN
+
+## Content Validation Report - 2026-10-24 (HEC-191 Nacharbeit „Heizlastberechnung“)
+
+### Gepruefte Aenderungen
+- `src/app/partner/page.tsx` und 7 Markenseiten: 76 Ersetzungen — Heizlastberechnung nicht mehr als HeizCenter-Leistung zugesagt (unbelegt, Frage 7 an Andrej offen); verbleibende 19 Fundstellen „Heizlast“ sind Sachaussagen; zwei optionale Stilkorrekturen aus Gate 1
+
+### Gate 1: Fachliche Pruefung
+- Pruefer: hvac-content (Runde 3, eng): alle 8 Dateien APPROVED — keine Zusage einer Heizlastberechnung/DIN EN 12831/Dimensionierung, Sachaussagen fachlich richtig, keine neuen Fakten, Preise oder Kontaktdaten
+- Status: APPROVED
+
+### Gate 2: Kontaktdaten-Validierung
+- Status: NICHT AUSGELOEST (keine Kontaktdaten im Diff)
+
+### Ergebnis
+COMMIT FREIGEGEBEN

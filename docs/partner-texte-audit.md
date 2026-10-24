@@ -1,5 +1,7 @@
 # Audit Partnerseiten heizcenter.de: Texte, Belege, Vorschläge (HEC-191)
 
+> **Hinweis 24.10.2026 (HEC-191):** Vorschläge in diesem Bericht, die eine Heizlastberechnung als HeizCenter-Leistung formulieren (u. a. VA-31, WO-07, WO-27, DA-13, ZE-07), nur verwenden, wenn Andrej Frage 7 („Machen wir immer eine raumweise Heizlastberechnung nach DIN EN 12831?“) mit Ja beantwortet. Bis dahin: Sachaussage („Die Größe hängt von der Heizlast ab“), keine Zusage.
+
 **Stand:** 24.10.2026 · **Geprüft:** `src/app/partner/page.tsx` und `src/app/partner/{viessmann,vaillant,buderus,wolf,bosch,daikin,zewotherm}/page.tsx` (Repo-Stand `1438196`, Partnerseiten ohne lokale Änderungen) · **Methode:** jede inhaltliche Aussage klassifiziert und gegen Herstellerseiten 2026, test.de, kfw.de, Bundesanzeiger und die eigenen Single-Source-Dateien (`src/lib/config/foerderung.ts`, `src/lib/api/blog.ts`) geprüft; nur gelesen, nichts im Repo geändert. Keine Rechtsberatung.
 
 ## Kurzfazit

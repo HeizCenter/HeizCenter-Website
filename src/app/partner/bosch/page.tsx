@@ -13,7 +13,7 @@ import { FOERDER_TEXT } from "@/lib/config/foerderung";
 export const metadata: Metadata = {
   title: "Bosch Wärmepumpen: Compress 3800i bis 8800i AW | HeizCenter",
   description:
-    "Bosch Compress Luft-Wasser-Wärmepumpen mit natürlichem Kältemittel R290 – vom Einstiegsmodell 3800i AW bis zur 8800i AW mit bis zu 75 °C Vorlauf. Beratung, Planung mit Heizlastberechnung und Einbau durch HeizCenter in der Region Augsburg, Ulm und Memmingen.",
+    "Bosch Compress Luft-Wasser-Wärmepumpen mit natürlichem Kältemittel R290 – vom Einstiegsmodell 3800i AW bis zur 8800i AW mit bis zu 75 °C Vorlauf. Beratung, Planung und Einbau durch HeizCenter in der Region Augsburg, Ulm und Memmingen.",
   keywords: ["Bosch", "Compress", "Compress 5800i AW", "Compress 8800i AW", "Wärmepumpe", "R290", "Augsburg", "Ulm"],
   alternates: {
     canonical: getCanonicalUrl("/partner/bosch"),
@@ -26,7 +26,7 @@ const benefits = [
   "Bis 75 °C Vorlauf mit der Compress 6800i und 8800i AW",
   "Compress 5800i AW: laut Bosch die leiseste Wärmepumpe von Bosch",
   "Bosch-Systemgarantie 5 Jahre, mit HomeCom Pro bis 7 Jahre (Bedingungen laut Bosch)",
-  "Beratung, Planung mit Heizlastberechnung und Einbau durch HeizCenter",
+  "Beratung und Einbau durch HeizCenter",
 ];
 
 const features = [
@@ -51,7 +51,7 @@ const features = [
   {
     title: "Bis 75 °C Vorlauf",
     description:
-      "Compress 6800i AW und 8800i AW liefern bis 75 °C Vorlauf (bei −10 °C außen 65 bzw. 70 °C) – für Altbauten mit Heizkörpern. Ob Ihre Heizkörper reichen, zeigt die Heizlastberechnung.",
+      "Compress 6800i AW und 8800i AW liefern bis 75 °C Vorlauf (bei −10 °C außen 65 bzw. 70 °C) – für Altbauten mit Heizkörpern. Ob Ihre Heizkörper reichen, hängt von ihrer Größe und vom Wärmebedarf der einzelnen Räume ab.",
     icon: Thermometer,
   },
   {
@@ -72,17 +72,17 @@ const faqs: FAQItem[] = [
   {
     question: "Welche Bosch-Wärmepumpen gibt es aktuell?",
     answer:
-      "Das aktuelle Compress-Programm umfasst die Luft-Wasser-Wärmepumpen 3800i AW (Einstieg), 5800i AW (laut Bosch die leiseste Bosch-Wärmepumpe), 6800i AW (für die Sanierung, bis 75 °C) und 8800i AW (für Altbau und größere Häuser, bis 75 °C) – alle mit R290. Welches Gerät und welche Größe zu Ihrem Haus passen, ermitteln wir mit der Heizlastberechnung.",
+      "Das aktuelle Compress-Programm umfasst die Luft-Wasser-Wärmepumpen 3800i AW (Einstieg), 5800i AW (laut Bosch die leiseste Bosch-Wärmepumpe), 6800i AW (für die Sanierung, bis 75 °C) und 8800i AW (für Altbau und größere Häuser, bis 75 °C) – alle mit R290. Wie viel Leistung das Gerät braucht, hängt von der Heizlast Ihres Hauses ab.",
   },
   {
     question: "Was kostet eine Bosch Compress Wärmepumpe?",
     answer:
-      "Das hängt vor allem von Ihrem Haus ab: Heizlast, Aufstellort, Heizkörper oder Fußbodenheizung, Warmwasser und Elektroanschluss. Typische Kostenpositionen erklärt unser Ratgeber „Wärmepumpe Kosten 2026“ im Blog. Ihren Preis nennen wir im Angebot, auf Grundlage der Heizlastberechnung. Welcher Zuschuss möglich ist, steht auf unserer Förderseite.",
+      "Das hängt vor allem von Ihrem Haus ab: Heizlast, Aufstellort, Heizkörper oder Fußbodenheizung, Warmwasser und Elektroanschluss. Typische Kostenpositionen erklärt unser Ratgeber „Wärmepumpe Kosten 2026“ im Blog. Den Preis für Ihr Haus nennen wir im Angebot. Welcher Zuschuss möglich ist, steht auf unserer Förderseite.",
   },
   {
     question: "Eignet sich Bosch für einen Altbau mit Heizkörpern?",
     answer:
-      "Für Altbauten mit Heizkörpern kommen vor allem die Compress 6800i AW und 8800i AW in Frage: Sie liefern laut Bosch bis 75 °C Vorlauf, bei −10 °C außen noch 65 bzw. 70 °C. Ob Ihre vorhandenen Heizkörper reichen, zeigt die Heizlastberechnung.",
+      "Für Altbauten mit Heizkörpern kommen vor allem die Compress 6800i AW und 8800i AW in Frage: Sie liefern laut Bosch bis 75 °C Vorlauf, bei −10 °C außen noch 65 bzw. 70 °C. Ob Ihre vorhandenen Heizkörper reichen, hängt davon ab, wie viel Wärme jeder Raum braucht.",
   },
   {
     question: "Wie effizient sind Bosch-Wärmepumpen?",
@@ -111,7 +111,7 @@ export default function BoschPage() {
     <>
       <ServiceHero
         title="Bosch Wärmepumpen"
-        description="Bosch Compress Luft-Wasser-Wärmepumpen mit natürlichem Kältemittel R290 – vom Einstiegsmodell 3800i AW über die leise 5800i AW bis zur 8800i AW für Altbauten mit hohen Vorlauftemperaturen. Wir beraten Sie, planen die Anlage mit Heizlastberechnung und bauen sie ein."
+        description="Bosch Compress Luft-Wasser-Wärmepumpen mit natürlichem Kältemittel R290 – vom Einstiegsmodell 3800i AW über die leise 5800i AW bis zur 8800i AW für Altbauten mit hohen Vorlauftemperaturen. Wir beraten Sie und übernehmen den Einbau."
         benefits={benefits}
         icon={Award}
         badge="Bosch-Gruppe"
@@ -178,7 +178,7 @@ export default function BoschPage() {
                 <Link href="/blog/waermepumpe-kosten-2026" className="text-[#0F5B78] font-medium hover:underline">
                   Ratgeber „Wärmepumpe Kosten 2026“
                 </Link>
-                . Ihren Preis nennen wir im Angebot – auf Grundlage der Heizlastberechnung.
+                . Den Preis für Ihr Haus nennen wir im Angebot.
               </p>
               <p className="text-slate-700">
                 Für den Einbau in ein bestehendes Wohngebäude gibt es bis zu {FOERDER_TEXT.maxStandard} der förderfähigen Kosten als Zuschuss; {FOERDER_TEXT.maxBedingung}. Wie sich das zusammensetzt, steht auf unserer{" "}
@@ -199,14 +199,14 @@ export default function BoschPage() {
             <h2 className="text-3xl font-bold mb-8">Warum Bosch mit HeizCenter?</h2>
             <div className="prose prose-slate max-w-none">
               <p className="text-lg text-slate-700 mb-6">
-                Wir beraten Sie zu Bosch-Wärmepumpen, planen die Anlage mit Heizlastberechnung und bauen sie ein. Weil wir Wärmepumpen mehrerer Hersteller einbauen, richtet sich unsere Empfehlung nach Ihrem Haus – nicht nach einem Katalog.
+                Wir beraten Sie zu Bosch-Wärmepumpen und bauen sie ein. Weil wir Wärmepumpen mehrerer Hersteller einbauen, richtet sich unsere Empfehlung nach Ihrem Haus – nicht nach einem Katalog.
               </p>
               <div className="grid md:grid-cols-2 gap-6 my-8">
                 <div className="bg-white p-6 rounded-lg">
                   <h3 className="text-xl font-bold mb-3 text-[#0F5B78]">Vor dem Einbau</h3>
                   <ul className="space-y-2 text-slate-700">
                     <li>✓ Beratung vor Ort</li>
-                    <li>✓ Heizlastberechnung für Modell und Größe</li>
+                    <li>✓ Auswahl des Compress-Modells</li>
                     <li>✓ Planung des Aufstellorts</li>
                     <li>✓ Förderberatung (KfW-Heizungsförderung)</li>
                   </ul>

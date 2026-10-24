@@ -101,8 +101,7 @@ export default function PartnerPage() {
             </h1>
             <p className="text-xl text-white/90 mb-6">
               Aktuelle Wärmepumpen bekannter Hersteller – geplant, eingebaut und
-              gewartet von HeizCenter. Welche Marke und welches Modell zu Ihrem
-              Haus passen, entscheidet die Heizlastberechnung.
+              gewartet von HeizCenter.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm">
               <div className="flex items-center gap-2">
@@ -111,7 +110,7 @@ export default function PartnerPage() {
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="h-5 w-5" />
-                <span>Planung mit Heizlastberechnung</span>
+                <span>Beratung und Einbau</span>
               </div>
               <div className="flex items-center gap-2">
                 <Star className="h-5 w-5" />
@@ -220,11 +219,11 @@ export default function PartnerPage() {
                 <div className="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Star className="h-8 w-8 text-orange-600" />
                 </div>
-                <h3 className="font-bold mb-2">Auswahl nach Heizlast</h3>
+                <h3 className="font-bold mb-2">Auswahl nach Ihrem Haus</h3>
                 <p className="text-sm text-slate-600">
                   Wir bauen Wärmepumpen mehrerer Hersteller ein. Welches Gerät
-                  und welche Größe passen, entscheidet die Heizlastberechnung
-                  für Ihr Haus – nicht der Katalog.
+                  und welche Größe passen, hängt vom Gebäude ab – nicht vom
+                  Katalog.
                 </p>
               </div>
             </div>
@@ -283,7 +282,7 @@ export default function PartnerPage() {
               </h3>
               <ul className="space-y-2 text-slate-700">
                 <li>✓ Herstellergarantie nach den Bedingungen des Herstellers</li>
-                <li>✓ Planung mit Heizlastberechnung</li>
+                <li>✓ Beratung und Einbau durch HeizCenter</li>
                 <li>✓ Regelmäßige Wartung, auf Wunsch mit Wartungsvertrag</li>
                 <li>✓ 24/7-Notdienst für Wartungskunden</li>
               </ul>
@@ -300,7 +299,7 @@ export default function PartnerPage() {
           </h2>
           <p className="text-xl mb-4 text-slate-700 max-w-2xl mx-auto">
             Wir beraten Sie gern und finden mit Ihnen die passende Wärmepumpe
-            für Ihr Haus – auf Grundlage einer Heizlastberechnung.
+            für Ihr Haus.
           </p>
           <p className="text-base mb-8 text-slate-600 max-w-2xl mx-auto">
             Was eine Wärmepumpe kostet, erklärt unser{" "}
