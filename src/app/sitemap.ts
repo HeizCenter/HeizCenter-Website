@@ -64,6 +64,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     staticPage("/impressum", "yearly", 0.3),
     staticPage("/datenschutz", "yearly", 0.3),
     staticPage("/agb", "yearly", 0.3),
+    staticPage("/widerrufsbelehrung", "yearly", 0.3),
     staticPage("/cookie-hinweis", "yearly", 0.3),
   ];
 
