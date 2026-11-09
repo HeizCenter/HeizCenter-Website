@@ -215,14 +215,12 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <a
-                  href="/documents/HeizCenter_Widerrufsbelehrung.pdf"
-                  target="_blank"
-                  rel="noopener"
+                <Link
+                  href="/widerrufsbelehrung"
                   className="text-slate-300 hover:text-white transition-colors"
                 >
                   Widerrufsbelehrung
-                </a>
+                </Link>
               </li>
               <li>
                 <Link
