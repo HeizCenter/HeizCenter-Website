@@ -29,14 +29,25 @@ export default function AGBPage() {
             Um sie zu herunterzuladen, klicken Sie einfach auf den folgenden Button.
           </p>
 
-          <div className="mb-12">
+          <div className="mb-12 flex flex-wrap gap-4">
             <Button asChild size="lg" className="gap-2">
               <a href="/documents/HeizCenter_AGB.pdf" download>
                 <Download className="h-5 w-5" />
                 HeizCenter AGB
               </a>
             </Button>
+            <Button asChild size="lg" variant="outline" className="gap-2">
+              <a href="/documents/HeizCenter_Widerrufsbelehrung.pdf" download>
+                <Download className="h-5 w-5" />
+                Widerrufsbelehrung
+              </a>
+            </Button>
           </div>
+
+          <p className="mb-8 text-sm text-slate-600">
+            Die Widerrufsbelehrung samt Muster-Widerrufsformular für Verbraucher ist in den AGB
+            als Anlage enthalten und steht hier zusätzlich separat zum Download bereit.
+          </p>
 
           <div className="mt-8 text-sm text-slate-600">
             <p>
