@@ -215,6 +215,16 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <a
+                  href="/documents/HeizCenter_Widerrufsbelehrung.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  className="text-slate-300 hover:text-white transition-colors"
+                >
+                  Widerrufsbelehrung
+                </a>
+              </li>
+              <li>
                 <Link
                   href="/cookie-hinweis"
                   className="text-slate-300 hover:text-white transition-colors"
