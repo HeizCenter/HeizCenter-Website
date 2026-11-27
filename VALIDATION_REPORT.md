@@ -1,3 +1,48 @@
+# Content Validation Report - 2026-11-27 (HEC-245)
+
+## Karriere: drei Stellenanzeigen statt der drei Platzhalter
+
+### Anlass
+Auftrag 27.11.2026: SHK-Meister (m/w/d), Anlagenmechaniker SHK / SHK-Geselle (m/w/d) für Montage, offene Einladung an Fachleute der SHK-Branche (Anstellung oder andere Formen der Zusammenarbeit). Bisher standen drei Platzhalter aus dem Erstbau auf der Seite (Orte Augsburg, Ulm, Memmingen, ohne Aufgaben und Profil).
+
+### Quellen
+- Eigene, öffentliche PowerUs-Anzeige „Anlagenmechaniker SHK (m/w/d)“ von HeizCenter (powerus.de/job/anlagenmechaniker-shk-m-w-d-6a9f8e767eae441c3559fcc6, Abruf 27.11.2026): Aufgaben und Profil der Anzeige 2, Standorte „Bobingen, Gutenzell-Hürbel“.
+- Eigenes PowerUs-Arbeitgeberprofil (powerus.de/arbeitgeber/heizcenter-gmbh-6a9f8c3c8c2488400b40e56b, Abruf 27.11.2026), Rubrik „Mitarbeitervorteile“: 30 Tage Urlaub, Firmenwagen mit 1-%-Regelung, betriebliche Altersvorsorge, Weiterbildungen und Schulungen, hochwertiges Werkzeug; im Profiltext „übertarifliche Bezahlung“. Das deckt die sechs unveränderten Zeilen im Block „Das bieten wir dir in der Festanstellung“.
+- Anzeige 1 (SHK-Meister) ist neu geschrieben. Die im Auftrag genannte frühere Seite zu dieser Stelle war nicht auffindbar (Repo samt Historie, Hub, Vault, Drive, Notion, Wayback `/jobs` vom 16.07.2025: „derzeit keine offenen Stellen“). Abgleich folgt, sobald der Link vorliegt.
+- Anzeige 3 folgt dem Wortlaut des Auftrags; keine Beispiele für Vertragsformen ergänzt.
+
+### Geprüfte Änderungen
+- `src/app/karriere/page.tsx`: Konstante `STELLEN` (drei Anzeigen mit Einleitung, Aufgaben, Profil, Betreff), Sprungnavigation, Stellentitel als `h3`, Bewerben-Link je Anzeige auf `/kontakt?subject=…`, Kontaktzeile unter den Anzeigen, Metadaten samt Open Graph, Überschrift des Leistungsblocks („… in der Festanstellung“), Schritt 1 des Bewerbungsprozesses.
+- `docs/qa/karriere-bewerben.mjs` (neu): Prüfung der drei Anzeigen und der Bewerben-Links.
+- Kein Gehalt, keine neue Zusage, keine Standorte außer den beiden aus der eigenen Anzeige.
+
+### Gate 1: Fachliche Prüfung
+- **Prüfer:** hvac-content
+- **Lauf 1:** REJECTED — Leistungsblock galt optisch auch für „andere Formen der Zusammenarbeit“; Hinweise: Techniker-Alternative beim Meister, „Team führen“, Sprachniveau „B1/B2“ ohne Zweck, uneinheitliche Listenform.
+- **Lauf 2:** **APPROVED** — Überschrift des Leistungsblocks auf die Festanstellung begrenzt; Meister nur mit Meisterbrief im Installateur- und Heizungsbauerhandwerk; „Monteure anleiten“ statt „Team führen“; Deutschkenntnisse mit Zweck statt Niveau; „anerkannte Regeln der Technik“.
+- **Anmerkungen:** Die Belege (PowerUs) hat der Prüfer nicht selbst abgerufen. Aufgaben, Standorte und Bedingungen bestätigt Andrej (eigene DoD-Zeile in HEC-245).
+
+### Gate 2: Kontaktdaten-Validierung
+- **Prüfer 1:** Hauptsession — Kontaktzeile ausschließlich über `CONTACT.EMAIL`, `CONTACT.PHONE_DISPLAY`, `getEmailLink()`, `getPhoneLink()`; Ortsnamen der Anzeigen über `CONTACT.BOBINGEN.city` und `CONTACT.GUTENZELL.city`.
+- **Prüfer 2:** code-reviewer — unabhängige Gegenprüfung per grep (Ziffernfolgen, `+49`, E-Mail-Muster, `tel:`/`mailto:`, PLZ, Straßen, Öffnungszeiten): 0 Literale; gerendert `tel:+4982349665900` und `mailto:service@heizcenter.de`.
+- **Gefundene Kontaktdaten:** Telefon +49 8234 9665900, E-Mail service@heizcenter.de, Ortsnamen Bobingen und Gutenzell-Hürbel (in den Metadaten als reiner Ortsname ohne Straße und PLZ). Keine Postanschrift, keine Öffnungszeiten.
+- **Übereinstimmung mit contact.ts:** JA
+- **Status:** APPROVED
+
+### Technische Prüfung (lokaler Prod-Build, WebKit)
+- `site-overflow.mjs` für `/karriere` bei 320, 375 und 430 px: PASS.
+- `karriere-bewerben.mjs`: PASS (3 Anzeigen, Überschrift, Ort, Sprungmarke, Betreff im Formular je Anzeige).
+- Gegenprobe mit vier gezielten Defekten über einen verfälschenden Proxy: falscher Betreff, Sprungmarke ins Leere, falscher Ort, fehlende `id` — alle vier FAIL. Gegen den alten Stand auf Prod: FAIL (7).
+- Typecheck, Lint, Build: ohne Befund.
+
+### Offen
+- Abschnitt „Bewerbungen“ in der Datenschutzerklärung fehlt (Zweck, Rechtsgrundlage § 26 BDSG, Speicherdauer). Bewerbungen über das Formular laufen wie jede Kontaktanfrage (n8n, Odoo, KI-Antwortentwurf); diesen Weg beschreibt die Erklärung bereits, den Bewerbungsfall nicht. Änderung nur mit Andrejs Freigabe.
+
+### Ergebnis
+COMMIT FREIGEGEBEN
+
+---
+
 # Content Validation Report - 2026-10-23 (HEC-177)
 
 ## Blog Q4/2026: 3 neue Artikel + Fakten-Update von 9 Bestandsartikeln, /foerderung, /notdienst (Gasgeruch)
