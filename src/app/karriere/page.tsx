@@ -32,20 +32,30 @@ const STELLEN = [
     id: "shk-meister",
     kurz: "SHK-Meister",
     title: "SHK-Meister (m/w/d)",
-    location: STANDORTE,
+    location: "Region Augsburg",
     type: "Vollzeit",
     intro:
-      "Du übernimmst die fachliche Leitung unserer Baustellen und bist erster Ansprechpartner für unsere Monteure und unsere Kunden.",
+      "Gestalte Abläufe, Projekte und die Zukunft des Unternehmens aktiv mit – in einer Position, die mit dir wächst. Du arbeitest direkt mit unseren beiden Geschäftsführern zusammen: Einer kommt aus dem SHK-Handwerk, einer aus der Betriebswirtschaft.",
     listen: [
       {
         titel: "Deine Aufgaben",
         punkte: [
-          "Baustellen für Heizung, Wärmepumpe, Sanitär und Klima fachlich leiten – von der Vorbereitung bis zur Abnahme",
-          "Monteure einteilen, anleiten und bei schwierigen Arbeiten unterstützen",
-          "Kunden vor Ort beraten, Aufmaß nehmen und Angebote technisch vorbereiten",
-          "Material und Termine für die Baustellen abstimmen",
-          "Anlagen in Betrieb nehmen, Kunden einweisen und die Arbeiten dokumentieren",
-          "Auf fachgerechte Ausführung nach den anerkannten Regeln der Technik und auf Arbeitssicherheit achten",
+          "Planung und Beratung: Bestellungen, Projektplanung und Kundengespräche von der ersten Idee bis zum Angebot – du begleitest Projekte von A bis Z",
+          "Kundenkontakt und Verkauf: Du berätst Kunden zu Wärmepumpe und Sanierung und führst die Gespräche bis zum Abschluss",
+          "Kunden und Geschäftsentwicklung: Du pflegst bestehende Kundenbeziehungen und baust den regionalen Kundenstamm weiter aus",
+          "Mitarbeit vor Ort: Du bist regelmäßig auf den Baustellen unterwegs und hältst den direkten Draht zum Team",
+        ],
+      },
+      {
+        titel: "Das bieten wir dir",
+        punkte: [
+          "Überdurchschnittliches Meister-Gehalt",
+          "5 % Erfolgsbeteiligung: Prämie auf den Deckungsbeitrag erfolgreicher Abschlüsse",
+          "Geregelte 40-Stunden-Woche: Montag bis Donnerstag 8 bis 17 Uhr, Freitag bis 14 Uhr",
+          "Ein fester Homeoffice-Tag pro Woche",
+          "Eigener, neuer Firmenwagen, auch privat nutzbar – du startest morgens von zu Hause direkt zum Kunden",
+          "Persönliche Einarbeitung durch die Geschäftsführer und kurze Entscheidungswege",
+          "Echte Karrieremöglichkeiten: Mit dem Unternehmen wachsen deine Verantwortung, dein Gehalt und deine Möglichkeiten",
         ],
       },
       {
@@ -53,8 +63,7 @@ const STELLEN = [
         punkte: [
           "Meisterbrief im Installateur- und Heizungsbauerhandwerk",
           "Erfahrung mit der Modernisierung von Heizungsanlagen, gern mit Wärmepumpen",
-          "Freude daran, Monteure anzuleiten und Kunden verständlich zu beraten",
-          "Selbstständige und sorgfältige Arbeitsweise",
+          "Freude an Beratung und Verkauf",
           "Führerschein Klasse B",
           "Gute Deutschkenntnisse für die Beratung unserer Kunden",
         ],
