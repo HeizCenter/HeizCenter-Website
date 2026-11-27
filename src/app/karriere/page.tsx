@@ -318,7 +318,7 @@ export default function KarrierePage() {
                           {liste.punkte.map((punkt) => (
                             <li key={punkt} className="flex items-start gap-3 text-slate-700">
                               <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-[#0F5B78]" aria-hidden="true" />
-                              <span className="min-w-0 hyphens-auto break-words sm:hyphens-none">{punkt}</span>
+                              <span className="min-w-0 break-words max-[359px]:hyphens-auto">{punkt}</span>
                             </li>
                           ))}
                         </ul>

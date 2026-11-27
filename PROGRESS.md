@@ -1640,3 +1640,24 @@ Keine im Repo (nur Linear und Vault). Agents: linear-verifier ×1 (mit Nachlauf)
 ### Geaenderte Dateien
 `src/app/karriere/page.tsx`, `docs/qa/karriere-bewerben.mjs` (neu), `VALIDATION_REPORT.md`
 Agents: hvac-content (Gate 1, 3 Läufe), code-reviewer (Diff + Kontaktdaten), code-simplifier, linear-verifier
+
+## Session 2026-11-27 (Abend: Karriere-Seite aufgewertet, Bewerbungsweg)
+
+### Completed
+- [x] **HEC-247 In Review, DoD 1–4 vom Verifier bestätigt** (PR #13 `34b5ae7`, #14 `ef1ff86`, #15): `/karriere` nach dem Muster von `/ueber-uns` neu aufgebaut — dunkler Kopf mit Kontaktkarte (E-Mail, WhatsApp, Telefon), Anzeigenkarten mit Bewerben-Leiste, Angebot der Meisterstelle hervorgehoben, Leistungen als Kacheln, Schlussband. Der Button „Initiativbewerbung senden“ war weiß auf weiß (1,00:1) und ist ersetzt. Anzeigentexte unverändert
+- [x] **Bewerbungsweg umgestellt:** je Anzeige E-Mail-Link (Betreff der Stelle, kurze Vorlage, Anhänge im eigenen Mailprogramm) und WhatsApp-Link (vorbelegter Text), kein Link mehr ins allgemeine Kontaktformular. Kein eigenes Formular: die Website hat als Rückseite nur den Lead-Workflow ohne Dateien; ein Formular mit Anhang braucht erst ein Bewerbungspostfach (HEC-246)
+- [x] **Prüfwerkzeug:** `karriere-bewerben.mjs` prüft jedes Kontaktziel im Hauptinhalt gegen das Impressum (13 gezielte Defekte rot); neu `kontrast.mjs` (Links/Buttons ≥ 4,5:1, Grenzen im Kopf); `site-overflow.mjs` mit dritter Klasse — Wörter, die ein `overflow-hidden`-Vorfahr innerhalb des Fensters abschneidet
+- [x] **Zwei Runden Verify:** Runde 1 fand bei 320 px abgeschnittene Wörter in der Meister-Karte (Rasterspur mit Mindestbreite des Kastens) → behoben; Runde 2: DoD 1–4 ✅, Hinweis auf zu viel Silbentrennung → Trennung nur noch unter 360 px, Ausnahme für gekürzten Text im Skript enger gefasst
+
+### Befunde
+- Bei **320 px** haben 23 von 92 Seiten Überlauf (Blog-Artikel) — Altbestand, bisher nur bei 375 px durchgemessen (Kommentar an HEC-247)
+- `getWhatsAppLink()` ohne Argument zielt auf die Festnetznummer; benutzt nur von drei nicht eingebundenen Komponenten → HEC-226
+- E-Mail-Klicks werden nicht gemessen; WhatsApp-Klicks von Bewerbern zählen als `whatsapp_click` wie Kundenanfragen
+
+### Offene Punkte
+- [ ] Jev: Seite auf Handy und Rechner ansehen (letzte DoD-Zeile HEC-247)
+- [ ] Jev/Andrej: Postfach für Bewerbungen und welches Postfach der Mailbox-Agent liest (HEC-246, 11.12.); eigene Fotos für den Kopf der Seite nur mit geklärtem Nutzungsrecht
+
+### Geaenderte Dateien
+`src/app/karriere/page.tsx`, `docs/qa/karriere-bewerben.mjs`, `docs/qa/kontrast.mjs` (neu), `docs/qa/site-overflow.mjs`, `VALIDATION_REPORT.md`
+Agents: hvac-content (Gate 1), code-reviewer (Diff + Kontaktdaten), code-simplifier ×2, linear-verifier ×2
