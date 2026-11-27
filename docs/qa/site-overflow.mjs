@@ -1,7 +1,10 @@
-// HEC-188 — Mobil-Überlauf über alle Sitemap-URLs (WebKit = iOS Safari), zwei Klassen:
+// HEC-188 — Mobil-Überlauf über alle Sitemap-URLs (WebKit = iOS Safari), drei Klassen:
 //   1. Seite breiter als der Viewport (documentElement.scrollWidth > innerWidth)
 //   2. geclippter Inhalt: Text, Links/Buttons, Bilder oder umrandete Boxen ragen über den Rand,
 //      werden aber von einem overflow-hidden-Vorfahren abgeschnitten — scrollWidth sieht das nicht.
+//   3. Wörter, die ein overflow-hidden-Vorfahr innerhalb des Fensters abschneidet (HEC-247: Karte auf /karriere bei 320 px —
+//      die Elemente lagen im Fenster, ihr Text ragte über die Innenkante der Karte). Gewolltes Kürzen mit
+//      Auslassungspunkten oder line-clamp zählt nicht.
 // Ausgenommen: Elemente in einem horizontalen Scroll-Rahmen (overflow-x auto/scroll, z. B. div.table-scroll),
 // absolut/fest positionierte Deko und alles unter aria-hidden.
 // Aufruf: BASE=https://www.heizcenter.de WIDTH=375 DELAY=900 node docs/qa/site-overflow.mjs  (Playwright global, Browser webkit)
@@ -41,7 +44,28 @@ for (const u of urls) {
       if (scroller(el) || decor(el) || !content(el)) continue;
       out.push(`${el.tagName}.${(el.className || '').toString().slice(0, 50)} [${Math.round(rc.left)}–${Math.round(rc.right)}] «${(el.textContent || '').trim().replace(/\s+/g, ' ').slice(0, 30)}»`);
     }
-    return { iw, sw: document.documentElement.scrollWidth, n: out.length, out: out.slice(0, 4) };
+    // Klasse 3: wortgenau gegen jeden Vorfahren, der waagerecht abschneidet (hidden/clip)
+    const w = document.createTreeWalker(document.querySelector('main') || document.body, NodeFilter.SHOW_TEXT);
+    for (let t; (t = w.nextNode());) {
+      const el = t.parentElement;
+      if (!t.textContent.trim() || scroller(el) || decor(el)) continue;
+      const kanten = [];
+      for (let a = el; a && a !== document.body; a = a.parentElement) {
+        const cs = getComputedStyle(a);
+        // gewolltes Kürzen (Auslassungspunkte, line-clamp) ist kein Befund
+        if (cs.textOverflow === 'ellipsis' || (cs.webkitLineClamp && cs.webkitLineClamp !== 'none')) { kanten.length = 0; break; }
+        if (cs.overflowX === 'hidden' || cs.overflowX === 'clip') { const ar = a.getBoundingClientRect(); kanten.push([a, ar.left + parseFloat(cs.borderLeftWidth), ar.right - parseFloat(cs.borderRightWidth)]); }
+      }
+      if (!kanten.length) continue;
+      for (const m of t.textContent.matchAll(/\S+/g)) {
+        const rg = document.createRange(); rg.setStart(t, m.index); rg.setEnd(t, m.index + m[0].length);
+        for (const q of rg.getClientRects()) {
+          if (!q.width) continue;
+          for (const [a, L, R] of kanten) { const ueber = Math.max(L - q.left, q.right - R); if (ueber > 1) out.push(`abgeschnitten ${ueber.toFixed(1)} px «${m[0].slice(0, 30)}» in ${a.tagName}.${(a.className || '').toString().slice(0, 40)}`); }
+        }
+      }
+    }
+    return { iw, sw: document.documentElement.scrollWidth, n: out.length, out: [...new Set(out)].slice(0, 6) };
   });
   if (r.sw > r.iw || r.n) { bad++; console.log(`❌ ${u}  scrollWidth=${r.sw}/${r.iw}  Inhalt außerhalb=${r.n}\n   ` + r.out.join('\n   ')); }
 }

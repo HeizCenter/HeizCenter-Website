@@ -239,7 +239,7 @@ export default function KarrierePage() {
                     <li key={job.id}>
                       <a
                         href={`#${job.id}`}
-                        className="inline-flex items-center gap-2 rounded-lg border border-white/20 bg-white/10 px-4 py-2 font-medium backdrop-blur-sm transition-colors hover:bg-white/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
+                        className="inline-flex items-center gap-2 rounded-lg border border-white/20 bg-white/10 px-4 py-2 font-medium backdrop-blur-sm transition-colors hover:bg-white/15 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
                       >
                         <ArrowDown className="h-4 w-4 text-[#FFCA28]" aria-hidden="true" />
                         {job.kurz}
@@ -311,14 +311,14 @@ export default function KarrierePage() {
                     {job.listen.map((liste) => (
                       <div
                         key={liste.titel}
-                        className={liste.hervorgehoben ? "rounded-xl border border-[#0F5B78]/15 bg-[#E8F4F7] p-5" : undefined}
+                        className={liste.hervorgehoben ? "min-w-0 rounded-xl border border-[#0F5B78]/15 bg-[#E8F4F7] p-4 sm:p-5" : "min-w-0"}
                       >
                         <h4 className="mb-3 text-lg font-bold">{liste.titel}</h4>
                         <ul className="space-y-2.5">
                           {liste.punkte.map((punkt) => (
                             <li key={punkt} className="flex items-start gap-3 text-slate-700">
                               <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-[#0F5B78]" aria-hidden="true" />
-                              <span className="min-w-0">{punkt}</span>
+                              <span className="min-w-0 hyphens-auto break-words sm:hyphens-none">{punkt}</span>
                             </li>
                           ))}
                         </ul>
