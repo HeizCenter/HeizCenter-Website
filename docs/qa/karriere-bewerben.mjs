@@ -1,17 +1,17 @@
 // HEC-245 — Karriere: genau drei Anzeigen, jeder Bewerben-Link öffnet das Kontaktformular mit dem Betreff der Anzeige.
 // Rot, wenn: Seite nicht 200, Anzahl der Anzeigen ≠ 3, die Überschrift einer Anzeige nicht mit dem erwarteten Titel beginnt,
-// der Ort nicht stimmt, ein Platzhalter-Ort zurück ist, die Sprungmarke fehlt oder ins Leere zeigt,
+// der Ort nicht stimmt, eine der drei Platzhalter-Stellen aus dem Erstbau zurück ist, die Sprungmarke fehlt oder ins Leere zeigt,
 // ein Klick nicht auf /kontakt landet oder das Feld „Betreff“ nicht den erwarteten Text trägt.
 // Aufruf: BASE=https://www.heizcenter.de node docs/qa/karriere-bewerben.mjs  (Playwright global, Browser webkit)
 import { webkit, devices } from '/Users/Q285389/.npm-global/lib/node_modules/playwright/index.mjs';
 const base = process.env.BASE || 'http://localhost:3123', delay = Number(process.env.DELAY || 0);
 const ERWARTET = [
-  { id: 'shk-meister', titel: 'SHK-Meister (m/w/d)', betreff: 'Bewerbung SHK-Meister (m/w/d)' },
-  { id: 'anlagenmechaniker-shk', titel: 'Anlagenmechaniker SHK / SHK-Geselle (m/w/d)', betreff: 'Bewerbung Anlagenmechaniker SHK (m/w/d)' },
-  { id: 'initiativ', titel: 'Fachleute aus der SHK-Branche (m/w/d)', betreff: 'Initiativbewerbung / Zusammenarbeit' },
+  { id: 'shk-meister', titel: 'SHK-Meister (m/w/d)', ort: 'Region Augsburg', betreff: 'Bewerbung SHK-Meister (m/w/d)' },
+  { id: 'anlagenmechaniker-shk', titel: 'Anlagenmechaniker SHK / SHK-Geselle (m/w/d)', ort: 'Bobingen · Gutenzell-Hürbel', betreff: 'Bewerbung Anlagenmechaniker SHK (m/w/d)' },
+  { id: 'initiativ', titel: 'Fachleute aus der SHK-Branche (m/w/d)', ort: 'Bobingen · Gutenzell-Hürbel', betreff: 'Initiativbewerbung / Zusammenarbeit' },
 ];
-const PLATZHALTER = ['Augsburg', 'Ulm', 'Memmingen'];
-const ORT = 'Bobingen · Gutenzell-Hürbel';
+// Titel der Platzhalter aus dem Erstbau; die Städte taugen nicht als Merkmal, „Region Augsburg“ ist der Ort der Meisterstelle.
+const PLATZHALTER = ['Installateur / Heizungsbauer', 'Servicetechniker Wärmepumpen', 'Auszubildender'];
 const b = await webkit.launch();
 const ctx = await b.newContext({ ...devices['iPhone 15 Pro Max'] });
 const p = await ctx.newPage();
@@ -27,7 +27,6 @@ const karten = await p.locator('section [id]').evaluateAll((els) => els
   .filter((e) => e.querySelector('a[href^="/kontakt?subject="]'))
   .map((e) => ({
     id: e.id,
-    text: e.textContent,
     titel: e.querySelector('h3')?.textContent.trim() ?? '',
     ort: e.querySelector('svg.lucide-map-pin')?.parentElement.textContent.trim() ?? '',
   })));
@@ -36,12 +35,13 @@ for (const e of ERWARTET) {
   const k = karten.find((x) => x.id === e.id);
   if (!k) { fail(`Anzeige #${e.id} fehlt`); continue; }
   k.titel.startsWith(e.titel) ? ok(`#${e.id}: Überschrift „${k.titel}“`) : fail(`#${e.id}: Überschrift „${k.titel}“ statt „${e.titel}…“`);
-  k.ort === ORT ? ok(`#${e.id}: Ort „${k.ort}“`) : fail(`#${e.id}: Ort „${k.ort}“ statt „${ORT}“`);
+  k.ort === e.ort ? ok(`#${e.id}: Ort „${k.ort}“`) : fail(`#${e.id}: Ort „${k.ort}“ statt „${e.ort}“`);
   const sprung = await p.locator(`nav[aria-label="Offene Stellen"] a[href="#${e.id}"]`).count();
   sprung === 1 ? ok(`#${e.id}: Sprungmarke vorhanden`) : fail(`#${e.id}: ${sprung} Sprungmarken statt 1`);
-  const treffer = PLATZHALTER.filter((o) => new RegExp(`\\b${o}\\b`).test(k.text));
-  treffer.length ? fail(`#${e.id}: Platzhalter-Ort ${treffer.join(', ')}`) : ok(`#${e.id}: keine Platzhalter-Orte`);
 }
+const seite = await p.locator('main').count() ? await p.locator('main').innerText() : await p.locator('body').innerText();
+const alt = PLATZHALTER.filter((titel) => seite.includes(titel));
+alt.length ? fail(`Platzhalter-Stelle zurück: ${alt.join(', ')}`) : ok('keine Platzhalter-Stellen');
 for (const e of ERWARTET) {
   await p.goto(base + '/karriere', { waitUntil: 'load' });
   await ablehnen();
