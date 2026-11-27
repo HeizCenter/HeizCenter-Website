@@ -1,3 +1,44 @@
+# Content Validation Report - 2026-11-27 (HEC-247)
+
+## Karriere: Seite aufgewertet, Bewerbung per E-Mail und WhatsApp statt Kontaktformular
+
+### Anlass
+Auftrag Jev 27.11.2026: Seite im bestehenden Design aufwerten (Button „Initiativbewerbung senden“ war weiß auf weiß), und Bewerbungen nicht mehr als „allgemeine Anfrage“ über das Kontaktformular führen, weil dort keine Anhänge möglich sind. Entscheid: E-Mail-Link je Anzeige (Betreff der Stelle, kurze Vorlage, Anhänge im eigenen Mailprogramm), WhatsApp je Anzeige mit vorbelegtem Text, dazu Telefon. Kein Formular — die Website hat als Rückseite nur den Lead-Workflow ohne Dateien.
+
+### Geprüfte Änderungen
+- `src/app/karriere/page.tsx`: Aufbau nach dem Muster von `/ueber-uns` (dunkler Kopf mit Kontaktkarte, Anzeigenkarten mit Bewerben-Leiste, Leistungen als Kacheln, Schlussband). Die drei Anzeigentexte sind unverändert (HEC-245). Neue Kurztexte: Kopfkarte „So erreichst du uns“, Schritt 1 des Bewerbungsprozesses, Beschriftung der Buttons, Mail-Vorlage, drei WhatsApp-Texte.
+- `docs/qa/karriere-bewerben.mjs`: prüft E-Mail- und WhatsApp-Link je Anzeige und jedes Kontaktziel im Hauptinhalt gegen das Impressum. `docs/qa/kontrast.mjs` (neu): Kontrast aller Links und Buttons im Hauptinhalt.
+
+### Gate 1: Fachliche Prüfung
+- **Prüfer:** hvac-content (nur die neuen Kurztexte)
+- **Status:** APPROVED
+- **Anmerkungen:** „Unterlagen kannst du gleich mitschicken oder später nachreichen“ ist durch die eigene Bewerberseite („ganz ohne Papierkram“) und PowerUs („Kein Anschreiben nötig“) gedeckt; der Prüfer hat die Quellen nicht selbst abgerufen.
+
+### Gate 2: Kontaktdaten-Validierung
+- **Prüfer 1:** Hauptsession — E-Mail, Telefon und WhatsApp ausschließlich über `CONTACT.EMAIL`, `CONTACT.PHONE_DISPLAY`, `CONTACT.WHATSAPP_MOBILE`, `CONTACT.WHATSAPP_MOBILE_DISPLAY`, `getEmailLink()`, `getPhoneLink()`, `getWhatsAppLink(CONTACT.WHATSAPP_MOBILE, …)`.
+- **Prüfer 2:** code-reviewer — unabhängige Gegenprüfung per grep in allen drei Dateien und am gerenderten HTML: 0 Literale; im Hauptinhalt `mailto:service@heizcenter.de` ×6, `wa.me/4915111100331` ×5, `tel:+4982349665900` ×2.
+- **Gefundene Kontaktdaten:** E-Mail service@heizcenter.de, Telefon +49 8234 9665900, WhatsApp +49 151 11100331 (dasselbe Ziel wie Impressum, Kopfzeile und Kontaktseite). Keine Postanschrift. Die Arbeitszeit der Meisterstelle ist Anzeigentext aus der Vorlage (HEC-245).
+- **Übereinstimmung mit contact.ts:** JA
+- **Status:** APPROVED
+- **Nebenbefund:** `getWhatsAppLink()` ohne Argument zielt auf die Festnetznummer (`PHONE_WHATSAPP`). Benutzt wird das nur in drei nirgends eingebundenen Komponenten; gerendert wird auf der Website überall die Mobilnummer → HEC-226.
+
+### Technische Prüfung (lokaler Prod-Build, WebKit)
+- Befunde des Code-Reviews behoben: WhatsApp-Nummer in der Kopfkarte war bei 320–375 px abgeschnitten (Text bricht jetzt um); Fokusring der Buttons auf dem Schlussband war unsichtbar; Schrittnummern wurden doppelt vorgelesen.
+- `site-overflow.mjs` für `/karriere` bei 320, 375, 430, 768 und 1024 px: PASS.
+- `kontrast.mjs`: 16 Links/Buttons gemessen, 0 unter 4,5:1 (1366 und 375 px). Gegen den Stand vor dem Deploy: FAIL — „Initiativbewerbung senden“ mit 1,00:1.
+- `karriere-bewerben.mjs`: PASS. Gegenprobe mit dreizehn gezielten Defekten über einen verfälschenden Proxy (Betreff, Sprungmarke, Ort, fehlende `id`, Platzhalter-Titel, Ort der Meisterstelle, E-Mail-Adresse, WhatsApp-Nummer, WhatsApp-Text, Link ins Kontaktformular, Telefonnummer, Textvorlage, „+“ im Betreff): alle dreizehn FAIL.
+- Grenzen der Kontrastmessung stehen im Kopf des Skripts (Ruhezustand, keine absolut positionierten Geschwisterflächen); der Reviewer hat `/karriere` zusätzlich am Bildschirmfoto gemessen, auch im Hover: 16 von 16 ≥ 4,5:1.
+- Typecheck, Lint, Build: ohne Befund.
+
+### Offen
+- Welches Postfach der Mailbox-Agent liest, ist aus dem Hub nicht klärbar; liest er das Bewerbungspostfach, gehen Lebensläufe durch OCR und Klassifikator → HEC-246 (Empfehlung: eigenes Postfach für Bewerbungen).
+- Klicks auf E-Mail-Links werden nicht gemessen; WhatsApp-Klicks von Bewerbern zählen als `whatsapp_click` wie Kundenanfragen.
+
+### Ergebnis
+COMMIT FREIGEGEBEN
+
+---
+
 # Content Validation Report - 2026-11-27 (HEC-245)
 
 ## Karriere: drei Stellenanzeigen statt der drei Platzhalter
