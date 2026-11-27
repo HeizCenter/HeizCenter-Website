@@ -29,6 +29,7 @@ Auftrag Jev 27.11.2026: Seite im bestehenden Design aufwerten (Button „Initiat
 - `karriere-bewerben.mjs`: PASS. Gegenprobe mit dreizehn gezielten Defekten über einen verfälschenden Proxy (Betreff, Sprungmarke, Ort, fehlende `id`, Platzhalter-Titel, Ort der Meisterstelle, E-Mail-Adresse, WhatsApp-Nummer, WhatsApp-Text, Link ins Kontaktformular, Telefonnummer, Textvorlage, „+“ im Betreff): alle dreizehn FAIL.
 - Grenzen der Kontrastmessung stehen im Kopf des Skripts (Ruhezustand, keine absolut positionierten Geschwisterflächen); der Reviewer hat `/karriere` zusätzlich am Bildschirmfoto gemessen, auch im Hover: 16 von 16 ≥ 4,5:1.
 - Typecheck, Lint, Build: ohne Befund.
+- **Nachbesserung nach dem Verify (27.11., Stand nach `34b5ae7`):** Der linear-verifier fand bei 320 px abgeschnittene Wörter in der Karte der Meisterstelle (bis 9,6 px): Die Rasterspur übernahm die Mindestbreite des hervorgehobenen Kastens, die Karte schnitt ab. Behoben (`min-w-0`, Silbentrennung unter 640 px, schmalerer Innenabstand). `site-overflow.mjs` kennt jetzt eine dritte Klasse — Wörter, die ein `overflow-hidden`-Vorfahr innerhalb des Fensters abschneidet — und war damit gegen den Prod-Stand `34b5ae7` rot (5 Wörter), gegen den korrigierten Stand grün; über alle 92 URLs bei 375 px 0 Befunde. Keine Text- oder Kontaktdatenänderung.
 
 ### Offen
 - Welches Postfach der Mailbox-Agent liest, ist aus dem Hub nicht klärbar; liest er das Bewerbungspostfach, gehen Lebensläufe durch OCR und Klassifikator → HEC-246 (Empfehlung: eigenes Postfach für Bewerbungen).

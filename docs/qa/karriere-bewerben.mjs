@@ -87,7 +87,8 @@ for (const [name, sel, ziel] of WEGE) {
 const seite = await p.locator('main').count() ? await p.locator('main').innerText() : await p.locator('body').innerText();
 const alt = PLATZHALTER.filter((titel) => seite.includes(titel));
 alt.length ? fail(`Platzhalter-Stelle zurück: ${alt.join(', ')}`) : ok('keine Platzhalter-Stellen');
-const formular = (await hrefs('main a[href^="/kontakt"]')).length;
+// über den aufgelösten Pfad, damit auch ein absoluter Link auf die eigene Domain zählt
+const formular = await p.locator('main a[href]').evaluateAll((els) => els.filter((a) => a.pathname.startsWith('/kontakt')).length);
 formular === 0 ? ok('keine Bewerbung über das allgemeine Kontaktformular') : fail(`${formular} Link(s) von der Karriere-Seite ins Kontaktformular`);
 await b.close();
 console.log(bad ? `RESULT: FAIL (${bad})` : 'RESULT: PASS');
