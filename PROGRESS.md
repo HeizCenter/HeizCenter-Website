@@ -1605,3 +1605,38 @@ Agents: general-purpose (Autor, Web-Stichprobe), hvac-content ×3 (Gate 1), line
 ### Geaenderte Dateien
 `src/app/partner/**`, `src/components/sections/service-hero.tsx`, `public/images/partners/{buderus,bosch,wolf}/hero.webp`, `docs/partner-bilder.md`, `docs/partner-texte-audit.md`, `VALIDATION_REPORT.md`
 Agents: general-purpose (Bildrechte-Recherche, Text-Audit, 2 Autoren, Architektur-Inventur), hvac-content ×4 (Gate 1), linear-verifier ×4
+
+## Session 2026-10-29 (nachts, aus der /odoo-Session)
+
+### Completed
+- [x] **HEC-178 Done + verified** (8 ✅): DoD 1–3 nachgemessen — `docs/seo/gsc_2026-10.md` (`1924e56`, 80 Datenzeilen), `/llms.txt` 200 `text/plain` mit 80 Site-URLs, IndexNow-Key 200.
+- [x] GA4-Schlüsselereignisse am Wirkort geprüft (Composio `GOOGLE_ANALYTICS_LIST_KEY_EVENTS`, nur lesend): `generate_lead`, `phone_click`, `whatsapp_click`, `email_click` seit 29.10. 00:10–00:11 UTC markiert (Jev), dazu `form_start` — 8 statt 7.
+- [x] Rest nach ticket-disziplin §2 ausgelagert nach **HEC-206** (Todo, fällig 05.12.): Bing Webmaster, Entitätsabgleich, Vorschlag GA4-Kanalgruppe „KI“ (im ersten Verify-Lauf aufgefallen: abgehakt, aber nie verschickt), Messzeilen Oktober/November.
+
+### Offene Punkte
+- [ ] 01.11.: `docs/seo/ai_referrals.sh 2026-10` → Messzeile an HEC-206 · 01.12.: November
+- [ ] Jev: Bing Webmaster (Import aus GSC, Screenshot), Vorschlag Kanalgruppe „KI“ an den Ads-Dienstleister
+
+### Geaenderte Dateien
+Keine im Repo (nur Linear und Vault). Agents: linear-verifier ×1 (mit Nachlauf)
+
+## Session 2026-11-27 (Karriere: drei Stellenanzeigen)
+
+### Completed
+- [x] **HEC-245 Done/verified** (PR #10 `bab48ea`, PR #11 `b0df064`): `/karriere` zeigt statt der drei Platzhalter aus dem Erstbau (Augsburg, Ulm, Memmingen) drei Anzeigen — SHK-Meister (m/w/d), Anlagenmechaniker SHK / SHK-Geselle (m/w/d) – Montage, Fachleute aus der SHK-Branche (Initiativbewerbung und Zusammenarbeit). Je Anzeige Einleitung, Listen, Sprungmarke, Bewerben-Link ins Kontaktformular mit eigenem Betreff; Kontaktzeile aus `contact.ts`; Metadaten samt Open Graph; Leistungsblock gilt ausdrücklich für die Festanstellung
+- [x] Quellen: Meisterstelle nach HeizCenters eigener Bewerberseite (`karriere-online.perspectivefunnel.com/shk-meister/`: Region Augsburg, vier Aufgabenfelder, 5 % Erfolgsbeteiligung, 40-Stunden-Woche, Homeoffice-Tag, Firmenwagen); Anlagenmechaniker nach der eigenen PowerUs-Anzeige; Leistungsblock durch das PowerUs-Arbeitgeberprofil gedeckt. Erster Stand hatte einen frei geschriebenen Meister-Text (Link lag noch nicht vor), nach 6 Minuten auf Prod ersetzt
+- [x] Neu `docs/qa/karriere-bewerben.mjs`: Anzahl, Überschrift, Ort je Anzeige, Sprungmarke, keine Platzhalter-Stelle, vorbelegter Betreff; sechs gezielte Defekte machen es rot
+- [x] Gate 1 `hvac-content` drei Läufe (REJECTED → APPROVED → APPROVED), Gate 2 Kontaktdaten APPROVED, Prod: WebKit 375 px ohne Überlauf, IndexNow 200
+
+### Befunde
+- Datenschutzerklärung ohne Abschnitt „Bewerbungen“ → **HEC-246** (Todo, fällig 11.12., Entwurf im Ticket, braucht Andrejs Freigabe und den Entscheid, ob Bewerbungen vom KI-Antwortentwurf ausgenommen werden)
+- `contact.ts`: Gutenzell mit PLZ 88317, Impressum und Standortseiten zeigen 88484; Straßen sind Platzhalter → HEC-226
+- Unterseiten je Stelle und `JobPosting`-Markup (Google for Jobs) nicht gebaut — brauchen echte Adressen (HEC-226)
+
+### Offene Punkte
+- [ ] Andrej: die drei Anzeigen lesen und bestätigen oder korrigieren (einzige offene DoD-Zeile von HEC-245)
+- [ ] Überfällig aus früheren Sessions: GSC-Wirkungsnachweise HEC-177 (06.11.) und HEC-182 (21.11.), Messzeilen Oktober/November an HEC-206 (fällig 05.12.), Kurs-Check (letzter Lauf 02.11.)
+
+### Geaenderte Dateien
+`src/app/karriere/page.tsx`, `docs/qa/karriere-bewerben.mjs` (neu), `VALIDATION_REPORT.md`
+Agents: hvac-content (Gate 1, 3 Läufe), code-reviewer (Diff + Kontaktdaten), code-simplifier, linear-verifier
