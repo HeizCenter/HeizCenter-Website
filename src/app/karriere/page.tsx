@@ -1,19 +1,134 @@
 import { Metadata } from "next";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Briefcase, Heart, TrendingUp, Users, MapPin } from "lucide-react";
 import Link from "next/link";
 import { getCanonicalUrl } from "@/lib/seo";
+import { CONTACT, getEmailLink, getPhoneLink } from "@/lib/config/contact";
+
+const TITLE = "Karriere bei HeizCenter | SHK-Meister & Anlagenmechaniker";
+const DESCRIPTION =
+  "Jobs bei HeizCenter in Bobingen und Gutenzell-Hürbel: SHK-Meister (m/w/d), Anlagenmechaniker SHK (m/w/d) – oder melde dich initiativ.";
 
 export const metadata: Metadata = {
-  title: "Karriere bei HeizCenter | Jobs & Ausbildung",
-  description:
-    "Werde Teil des HeizCenter Teams! Ausbildungsplätze, Jobs für Installateure, Heizungsbauer und Servicetechniker in Bobingen, Klosterlechfeld und Gutenzell-Hürbel.",
-  keywords: ["Karriere", "Jobs", "Ausbildung", "Installateur", "Heizungsbauer", "Augsburg"],
+  title: TITLE,
+  description: DESCRIPTION,
+  keywords: ["Karriere", "Jobs", "SHK-Meister", "Anlagenmechaniker SHK", "SHK-Geselle", "Initiativbewerbung", "Bobingen"],
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    url: getCanonicalUrl("/karriere"),
+  },
   alternates: {
     canonical: getCanonicalUrl("/karriere"),
   },
 };
+
+const INITIATIV_BETREFF = "Initiativbewerbung / Zusammenarbeit";
+const STANDORTE = `${CONTACT.BOBINGEN.city} · ${CONTACT.GUTENZELL.city}`;
+
+const STELLEN = [
+  {
+    id: "shk-meister",
+    kurz: "SHK-Meister",
+    title: "SHK-Meister (m/w/d)",
+    location: STANDORTE,
+    type: "Vollzeit",
+    intro:
+      "Du übernimmst die fachliche Leitung unserer Baustellen und bist erster Ansprechpartner für unsere Monteure und unsere Kunden.",
+    listen: [
+      {
+        titel: "Deine Aufgaben",
+        punkte: [
+          "Baustellen für Heizung, Wärmepumpe, Sanitär und Klima fachlich leiten – von der Vorbereitung bis zur Abnahme",
+          "Monteure einteilen, anleiten und bei schwierigen Arbeiten unterstützen",
+          "Kunden vor Ort beraten, Aufmaß nehmen und Angebote technisch vorbereiten",
+          "Material und Termine für die Baustellen abstimmen",
+          "Anlagen in Betrieb nehmen, Kunden einweisen und die Arbeiten dokumentieren",
+          "Auf fachgerechte Ausführung nach den anerkannten Regeln der Technik und auf Arbeitssicherheit achten",
+        ],
+      },
+      {
+        titel: "Das bringst du mit",
+        punkte: [
+          "Meisterbrief im Installateur- und Heizungsbauerhandwerk",
+          "Erfahrung mit der Modernisierung von Heizungsanlagen, gern mit Wärmepumpen",
+          "Freude daran, Monteure anzuleiten und Kunden verständlich zu beraten",
+          "Selbstständige und sorgfältige Arbeitsweise",
+          "Führerschein Klasse B",
+          "Gute Deutschkenntnisse für die Beratung unserer Kunden",
+        ],
+      },
+    ],
+    subject: "Bewerbung SHK-Meister (m/w/d)",
+    cta: "Jetzt bewerben",
+  },
+  {
+    id: "anlagenmechaniker-shk",
+    kurz: "Anlagenmechaniker SHK",
+    title: "Anlagenmechaniker SHK / SHK-Geselle (m/w/d) – Montage",
+    location: STANDORTE,
+    type: "Vollzeit",
+    intro:
+      "Du montierst Heizungs- und Sanitäranlagen bei unseren Kunden – im Neubau und in der Sanierung.",
+    listen: [
+      {
+        titel: "Deine Aufgaben",
+        punkte: [
+          "Installation und Inbetriebnahme von Heizungs-, Sanitär- und Lüftungsanlagen",
+          "Montage von Wärmepumpen, Heizkörpern und Armaturen",
+          "Sanitärinstallationen im Neubau und im Bestand",
+          "Wartung, Reparatur und Störungsbeseitigung an bestehenden Anlagen",
+          "Dokumentation der ausgeführten Arbeiten",
+        ],
+      },
+      {
+        titel: "Das bringst du mit",
+        punkte: [
+          "Abgeschlossene Ausbildung als Anlagenmechaniker SHK (m/w/d) oder eine vergleichbare Qualifikation",
+          "Berufserfahrung in Heizung, Sanitär und Klimatechnik ist willkommen",
+          "Erfahrung mit Rohrleitungsbau, Presssystemen und hydraulischen Anschlüssen",
+          "Sicherer Umgang mit technischen Zeichnungen und Installationsplänen",
+          "Selbstständige, zuverlässige Arbeitsweise und freundliches Auftreten beim Kunden",
+          "Führerschein Klasse B",
+          "Gute Deutschkenntnisse für die Verständigung mit Kunden und Kollegen",
+          "Bereitschaft zur Weiterbildung, vor allem bei Wärmepumpen",
+        ],
+      },
+    ],
+    subject: "Bewerbung Anlagenmechaniker SHK (m/w/d)",
+    cta: "Jetzt bewerben",
+  },
+  {
+    id: "initiativ",
+    kurz: "Initiativ & Zusammenarbeit",
+    title: "Fachleute aus der SHK-Branche (m/w/d) – Initiativbewerbung und Zusammenarbeit",
+    location: STANDORTE,
+    type: "Anstellung oder Zusammenarbeit",
+    intro:
+      "Du kommst aus der SHK-Branche und suchst etwas Neues? Dann melde dich bei uns – auch wenn gerade keine passende Stelle ausgeschrieben ist.",
+    listen: [
+      {
+        titel: "Wen wir ansprechen",
+        punkte: [
+          "Monteure und Kundendiensttechniker (m/w/d) für Heizung, Sanitär, Klima und Solar",
+          "Weitere technische Fachkräfte (m/w/d), zum Beispiel aus Planung oder Kältetechnik",
+          "Kolleginnen und Kollegen fürs Büro (m/w/d) mit Erfahrung in einem SHK-Betrieb",
+        ],
+      },
+      {
+        titel: "Wie wir zusammenkommen",
+        punkte: [
+          "Festanstellung in unserem Team",
+          "Andere Formen der Zusammenarbeit – sag uns einfach, was du dir vorstellst",
+          "Schreib uns kurz, was du kannst und was du suchst – wir melden uns bei dir",
+        ],
+      },
+    ],
+    subject: INITIATIV_BETREFF,
+    cta: "Jetzt melden",
+  },
+];
 
 export default function KarrierePage() {
   return (
@@ -57,44 +172,85 @@ export default function KarrierePage() {
       {/* Open Positions */}
       <section className="bg-slate-50 py-16">
         <div className="container">
-          <h2 className="text-3xl font-bold text-center mb-12">Offene Stellen</h2>
+          <h2 className="text-3xl font-bold text-center mb-6">Offene Stellen</h2>
+          <nav aria-label="Offene Stellen" className="max-w-4xl mx-auto mb-10">
+            <ul className="flex flex-wrap justify-center gap-3">
+              {STELLEN.map((job) => (
+                <li key={job.id}>
+                  <a
+                    href={`#${job.id}`}
+                    className="inline-block rounded-full border border-[#0F5B78]/30 bg-white px-4 py-2 text-sm font-medium text-[#0F5B78] hover:bg-[#0F5B78]/5"
+                  >
+                    {job.kurz}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
           <div className="max-w-4xl mx-auto space-y-6">
-            {[
-              { title: "Installateur / Heizungsbauer (m/w/d)", location: "Augsburg", type: "Vollzeit" },
-              { title: "Servicetechniker Wärmepumpen (m/w/d)", location: "Ulm", type: "Vollzeit" },
-              { title: "Auszubildender Anlagenmechaniker SHK (m/w/d)", location: "Memmingen", type: "Ausbildung" },
-            ].map((job, i) => (
-              <Card key={i} className="hover:shadow-lg transition-shadow">
+            {STELLEN.map((job) => (
+              <Card key={job.id} id={job.id} className="scroll-mt-24 hover:shadow-lg transition-shadow">
                 <CardHeader>
                   <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
-                    <div>
-                      <CardTitle className="text-2xl mb-2">{job.title}</CardTitle>
-                      <div className="flex gap-4 text-slate-600">
+                    <div className="min-w-0">
+                      <h3 className="text-2xl font-semibold leading-tight tracking-tight mb-2 break-words">{job.title}</h3>
+                      <div className="flex flex-wrap gap-x-4 gap-y-1 text-slate-600">
                         <span className="flex items-center gap-1">
-                          <MapPin className="h-4 w-4" />
+                          <MapPin className="h-4 w-4 shrink-0" />
                           {job.location}
                         </span>
                         <span className="flex items-center gap-1">
-                          <Briefcase className="h-4 w-4" />
+                          <Briefcase className="h-4 w-4 shrink-0" />
                           {job.type}
                         </span>
                       </div>
                     </div>
-                    <Button asChild>
-                      <Link href="/kontakt?subject=Bewerbung">Jetzt bewerben</Link>
+                    <Button asChild className="shrink-0">
+                      <Link href={`/kontakt?subject=${encodeURIComponent(job.subject)}`} aria-label={`${job.cta}: ${job.title}`}>
+                        {job.cta}
+                      </Link>
                     </Button>
                   </div>
                 </CardHeader>
+                <CardContent>
+                  <p className="text-slate-700 mb-6">{job.intro}</p>
+                  <div className="grid gap-8 md:grid-cols-2">
+                    {job.listen.map((liste) => (
+                      <div key={liste.titel}>
+                        <h4 className="text-lg font-bold mb-3">{liste.titel}</h4>
+                        <ul className="space-y-2">
+                          {liste.punkte.map((punkt) => (
+                            <li key={punkt} className="flex items-start gap-3 text-slate-700">
+                              <span className="text-[#0F5B78]" aria-hidden="true">✓</span>
+                              <span className="min-w-0">{punkt}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
+                  </div>
+                </CardContent>
               </Card>
             ))}
           </div>
+          <p className="max-w-4xl mx-auto mt-8 text-center text-slate-600">
+            Du möchtest lieber direkt mit uns sprechen oder deine Unterlagen schicken? Schreib an{" "}
+            <a href={getEmailLink()} className="font-medium text-[#0F5B78] underline">
+              {CONTACT.EMAIL}
+            </a>{" "}
+            oder ruf uns an:{" "}
+            <a href={getPhoneLink()} className="font-medium text-[#0F5B78] underline whitespace-nowrap">
+              {CONTACT.PHONE_DISPLAY}
+            </a>
+            .
+          </p>
         </div>
       </section>
 
       {/* Benefits */}
       <section className="container py-16">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8">Unsere Benefits</h2>
+          <h2 className="text-3xl font-bold mb-8">Das bieten wir dir in der Festanstellung</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
@@ -136,7 +292,7 @@ export default function KarrierePage() {
             <div>
               <div className="text-5xl font-bold mb-3">1</div>
               <h3 className="text-xl font-bold mb-2">Bewerbung</h3>
-              <p className="text-white/90">Sende uns deine Unterlagen per E-Mail</p>
+              <p className="text-white/90">Schreib uns über das Formular oder schick deine Unterlagen per E-Mail</p>
             </div>
             <div>
               <div className="text-5xl font-bold mb-3">2</div>
@@ -151,7 +307,7 @@ export default function KarrierePage() {
           </div>
           <div className="mt-12">
             <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-              <Link href="/kontakt?subject=Initiativbewerbung">Initiativbewerbung senden</Link>
+              <Link href={`/kontakt?subject=${encodeURIComponent(INITIATIV_BETREFF)}`}>Initiativbewerbung senden</Link>
             </Button>
           </div>
         </div>
